@@ -117,8 +117,6 @@ class svr_base {
 
         /* timeout checking msec */
         unsigned long long m_last_check_msec;
-
-        std::string m_conf;
 };
 
 #endif

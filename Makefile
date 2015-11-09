@@ -9,7 +9,9 @@ CC=gcc
 CFLAGS=-g -I$(INCLUDE)
 
 COMMON_LIB=common_lib.a
+DIRECTORY_SERVER=directory_svr
 TINY_GOOGLE=mini_google
+MINI_GOOGLE_SLAVE=mini_google_slave
 
 cchighlight=\033[0;31m
 ccend=\033[0m
@@ -31,7 +33,8 @@ COMMON_LIB_INCLUDES= \
 	include/rpc_lock.h \
 	include/rpc_net.h \
 	include/rpc_http.h \
-	include/rpc_common.h
+	include/rpc_common.h \
+	include/mini_google_common.h \
 
 COMMON_LIB_OBJS= \
 	src/ezxml.o \
@@ -42,14 +45,25 @@ COMMON_LIB_OBJS= \
 	src/accept_event.o \
 	src/rpc_net.o \
 	src/rpc_http.o \
-	src/rpc_common.o
+	src/rpc_common.o \
+    src/mini_google_common.o \
+    src/file_mngr.o
+
+DIRECTORY_SERVER_OBJS= \
+	src/ds_svr.o \
+	src/main_ds_svr.o
 
 TINY_GOOGLE_OBJS= \
 	src/mini_google_svr.o \
 	main_master.o
 
+MINI_GOOGLE_SLAVE_OBJS=\
+	src/mini_google_slave_svr.o \
+    src/task_consumer.o \
+	main_slave.o
+
 # compiling all
-all: $(COMMON_LIB) $(TINY_GOOGLE)
+all: $(COMMON_LIB) $(DIRECTORY_SERVER) $(MINI_GOOGLE_SLAVE)
 	@echo -e "$(cchighlight)finish compiling$(ccend)"
 
 # compiling common_lib
@@ -62,8 +76,18 @@ $(COMMON_LIB): $(COMMON_LIB_OBJS)
 	@echo -e "$(cchighlight)successfully compiling $(COMMON_LIB)$(ccend)"
 
 # compiling directory_server
+$(DIRECTORY_SERVER): $(COMMON_LIB) $(DIRECTORY_SERVER_OBJS)
+	mkdir -p output/directory_server
+ifeq ($(OS),Linux)
+	$(CXX) $(CXXFLAGS) -lpthread -o $(DIRECTORY_SERVER) -Xlinker "-(" $(COMMON_LIB) $(DIRECTORY_SERVER_OBJS) -Xlinker "-)"
+else
+	$(CXX) $(CXXFLAGS) -lpthread -o $(DIRECTORY_SERVER) -Xlinker $(COMMON_LIB) $(DIRECTORY_SERVER_OBJS)
+endif
+	cp $(DIRECTORY_SERVER) output/directory_server
+	@echo -e "$(cchighlight)successfully compiling $(DIRECTORY_SERVER)$(ccend)"
+
+# compiling master server
 $(TINY_GOOGLE): $(COMMON_LIB) $(TINY_GOOGLE_OBJS)
-	echo $(OS)
 ifeq ($(OS),Linux)
 	$(CXX) $(CXXFLAGS) -lpthread -o $(TINY_GOOGLE) -Xlinker "-(" $(COMMON_LIB) $(TINY_GOOGLE_OBJS) -Xlinker "-)"
 else
@@ -71,10 +95,20 @@ else
 endif
 	@echo -e "$(cchighlight)successfully compiling $(TINY_GOOGLE)$(ccend)"
 
+# compiling slave server
+$(MINI_GOOGLE_SLAVE): $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS)
+ifeq ($(OS),Linux)
+	$(CXX) $(CXXFLAGS) -lpthread -o $(MINI_GOOGLE_SLAVE) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS) -Xlinker "-)"
+else
+	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_SLAVE) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS)
+endif
+	@echo -e "$(cchighlight)successfully compiling $(MINI_GOOGLE_SLAVE)$(ccend)"
+
 .PHONY: clean
 clean:
 	rm -f src/*.o
 	rm -f *.o
 	rm -f $(COMMON_LIB)
 	rm -f $(TINY_GOOGLE)
+	rm -f $(MINI_GOOGLE_SLAVE)
 	rm -rf output
