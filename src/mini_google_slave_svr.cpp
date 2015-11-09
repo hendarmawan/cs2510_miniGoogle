@@ -1,4 +1,5 @@
 #include "mini_google_slave_svr.h"
+#include <string.h>
 #include "rpc_log.h"
 #include "rpc_common.h"
 #include "rpc_http.h"
@@ -41,7 +42,11 @@ void mini_google_slave_event::process_default(const std::string &uri,
 
     ezxml_t root = ezxml_new("message");
     ezxml_set_txt(root, "invalid request");
-    rsp_body = ezxml_toxml(root);
+
+    char *text = ezxml_toxml(root);
+    rsp_body.assign(text);
+
+    free(text);
     ezxml_free(root);
 
     rsp_head = gen_http_head("404 Not Found", rsp_body.size());

@@ -46,6 +46,7 @@ COMMON_LIB_OBJS= \
 	src/rpc_net.o \
 	src/rpc_http.o \
 	src/rpc_common.o \
+	src/basic_proto.o \
     src/mini_google_common.o \
     src/file_mngr.o
 
@@ -98,7 +99,7 @@ endif
 # compiling slave server
 $(MINI_GOOGLE_SLAVE): $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS)
 ifeq ($(OS),Linux)
-	$(CXX) $(CXXFLAGS) -lpthread -o $(MINI_GOOGLE_SLAVE) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS) -Xlinker "-)"
+	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_SLAVE) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS) -Xlinker "-)"
 else
 	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_SLAVE) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS)
 endif
@@ -108,6 +109,7 @@ endif
 clean:
 	rm -f src/*.o
 	rm -f *.o
+	rm -f $(DIRECTORY_SERVER)
 	rm -f $(COMMON_LIB)
 	rm -f $(TINY_GOOGLE)
 	rm -f $(MINI_GOOGLE_SLAVE)

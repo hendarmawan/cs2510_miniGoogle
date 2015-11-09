@@ -57,7 +57,11 @@ void ds_event::process_default(const std::string &uri,
 
     ezxml_t root = ezxml_new("message");
     ezxml_set_txt(root, "invalid request");
-    rsp_body = ezxml_toxml(root);
+
+    char *text = ezxml_toxml(root);
+    rsp_body.assign(text);
+
+    free(text);
     ezxml_free(root);
 
     rsp_head = gen_http_head("404 Not Found", rsp_body.size());
@@ -118,7 +122,11 @@ void ds_event::process_register(const std::string &uri,
 
     root = ezxml_new("message");
     ezxml_set_txt(root, "succ");
-    rsp_body = ezxml_toxml(root);
+
+    char *text = ezxml_toxml(root);
+    rsp_body.assign(text);
+
+    free(text);
     ezxml_free(root);
 
     rsp_head = gen_http_head("200 OK", rsp_body.size());
@@ -159,7 +167,10 @@ void ds_event::process_get_insts_by_id(const std::string &uri,
         ezxml_set_txt(ezxml_add_child(child, "ip", 0), svr.ip.c_str());
         ezxml_set_txt(ezxml_add_child(child, "port", 0), ports[i].c_str());
     }
-    rsp_body = ezxml_toxml(root);
+    char *text = ezxml_toxml(root);
+    rsp_body.assign(text);
+
+    free(text);
     ezxml_free(root);
 
     rsp_head = gen_http_head("200 OK", rsp_body.size());

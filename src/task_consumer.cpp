@@ -1,9 +1,12 @@
 #include "task_consumer.h"
 #include <errno.h>
 #include <stdlib.h>
+#include "ezxml.h"
+#include "basic_proto.h"
 #include "rpc_log.h"
-#include "mini_google_common.h"
+#include "rpc_http.h"
 #include "file_mngr.h"
+#include "mini_google_common.h"
 
 /**
  * @brief construct
@@ -98,15 +101,19 @@ static int wordcount(const std::string &file_content,
 static void pack_report(std::string &report, const std::string &file_id,
         const std::string &slave_ip, unsigned short slave_port,
         std::map<std::string, int> &word_dict) {
+    
+    basic_proto bp;
+    bp.add_string(file_id.length(), file_id.c_str());
+    bp.add_string(slave_ip.length(), slave_ip.c_str());
+    bp.add_int(slave_port);
+    bp.add_int(word_dict.size());
 
-    ezxml_t root = ezxml_new("report");
-    ezxml_set_txt(root, "invalid request");
-    /* slave address */
-    ezxml_t slave = ezxml_add_child(root, "slave", 0);
-    ezxml_set_txt(ezxml_add_child(slave, "ip", 0), slave_ip.c_str());
-    ezxml_set_txt(ezxml_add_child(slave, "port", 0), num_to_str(slave_port).c_str());
-    rsp_body = ezxml_toxml(root);
-    ezxml_free(root);
+    std::map<std::string, int>::iterator iter; 
+    for (iter = word_dict.begin(); iter != word_dict.end(); ++iter) {
+        bp.add_string(iter->first.length(), iter->first.c_str());
+        bp.add_int(iter->second);
+    }
+    report.assign(bp.get_buf(), bp.get_buf_len());
 }
 
 /**
@@ -116,6 +123,10 @@ static void pack_report(std::string &report, const std::string &file_id,
  */
 int task_consumer::consume() {
     std::string file_id, file_content;
+
+//int get_insts_by_id(const std::string &ip, unsigned short port,
+//        int id, const std::string &version,
+//        std::vector<svr_inst_t> &svr_insts_list);
 
     /* poll */
     if (-1 == poll_task_from_master("136.142.35.172", 80, file_content)) {
@@ -136,6 +147,9 @@ int task_consumer::consume() {
     /* report, <file_id, slave_ip:slave_port, word_dict> */
     std::string req_head, req_body;
     pack_report(req_body, file_id, m_slave_ip, m_slave_port, word_dict);
+    req_head = gen_http_head("/report", "127.0.0.1", req_body.size());
+
+    RPC_DEBUG("report: %s", req_head.c_str());
 
     return -1;
 }
