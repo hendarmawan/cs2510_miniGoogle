@@ -2,6 +2,7 @@
 #include <string.h>
 #include "rpc_log.h"
 #include "rpc_common.h"
+#include "basic_proto.h"
 #include "rpc_http.h"
 #include "ezxml.h"
 #include "index_common.h"
@@ -74,6 +75,7 @@ void mini_google_event::process_poll(const std::string &uri, const std::string &
     if (ret != -1) {
         rsp_body.assign(t.file_content);
     }
+    rsp_head = gen_http_head("200 Ok", rsp_body.size());
 }
 
 void mini_google_event::dsptch_http_request(const std::string &uri,
@@ -127,3 +129,6 @@ int mini_google_svr::poll(index_task_t &t) {
     m_queue_lock.unlock();
     return ret;
 }
+
+
+
