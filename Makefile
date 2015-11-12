@@ -45,7 +45,7 @@ COMMON_LIB_OBJS= \
 	src/rpc_common.o
 
 TINY_GOOGLE_OBJS= \
-	src/mini_google_svr.o \
+	src/mini_google_master_svr.o \
 	main_master.o
 
 # compiling all

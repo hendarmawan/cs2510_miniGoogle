@@ -6,7 +6,7 @@
 #include "rpc_net.h"
 #include "rpc_http.h"
 #include "rpc_common.h"
-#include "mini_google_svr.h"
+#include "mini_google_master_svr.h"
 
 #define DS_IP "127.0.0.1"
 #define DS_PORT 8000
