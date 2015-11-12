@@ -17,7 +17,7 @@ class mini_google_slave_event: public http_event {
 
     private:
         void process_default(const std::string &uri,
-                const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
+                const std::string &req_body, std::string &rsp_head, std::string &rsp_body, const char *msg);
 
         void process_retrieve(const std::string &uri,
                 const std::string &req_body, std::string &rsp_head, std::string &rsp_body);

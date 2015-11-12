@@ -10,7 +10,7 @@ CFLAGS=-g -I$(INCLUDE)
 
 COMMON_LIB=common_lib.a
 DIRECTORY_SERVER=directory_svr
-TINY_GOOGLE=mini_google
+MINI_GOOGLE_MASTER=mini_google_master
 MINI_GOOGLE_SLAVE=mini_google_slave
 
 cchighlight=\033[0;31m
@@ -54,9 +54,9 @@ DIRECTORY_SERVER_OBJS= \
 	src/ds_svr.o \
 	src/main_ds_svr.o
 
-TINY_GOOGLE_OBJS= \
+MINI_GOOGLE_MASTER_OBJS= \
 	src/mini_google_master_svr.o \
-	main_master.o
+	src/main_master.o
 
 MINI_GOOGLE_SLAVE_OBJS=\
 	src/mini_google_slave_svr.o \
@@ -64,7 +64,7 @@ MINI_GOOGLE_SLAVE_OBJS=\
 	src/main_slave.o
 
 # compiling all
-all: $(COMMON_LIB) $(DIRECTORY_SERVER) $(MINI_GOOGLE_SLAVE)
+all: $(COMMON_LIB) $(DIRECTORY_SERVER) $(MINI_GOOGLE_SLAVE) $(MINI_GOOGLE_MASTER)
 	@echo -e "$(cchighlight)finish compiling$(ccend)"
 
 # compiling common_lib
@@ -88,13 +88,13 @@ endif
 	@echo -e "$(cchighlight)successfully compiling $(DIRECTORY_SERVER)$(ccend)"
 
 # compiling master server
-$(TINY_GOOGLE): $(COMMON_LIB) $(TINY_GOOGLE_OBJS)
+$(MINI_GOOGLE_MASTER): $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS)
 ifeq ($(OS),Linux)
-	$(CXX) $(CXXFLAGS) -lpthread -o $(TINY_GOOGLE) -Xlinker "-(" $(COMMON_LIB) $(TINY_GOOGLE_OBJS) -Xlinker "-)"
+	$(CXX) $(CXXFLAGS) -lpthread -o $(MINI_GOOGLE_MASTER) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS) -Xlinker "-)"
 else
-	$(CXX) $(CXXFLAGS) -lpthread -o $(TINY_GOOGLE) -Xlinker $(COMMON_LIB) $(TINY_GOOGLE_OBJS)
+	$(CXX) $(CXXFLAGS) -lpthread -o $(MINI_GOOGLE_MASTER) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS)
 endif
-	@echo -e "$(cchighlight)successfully compiling $(TINY_GOOGLE)$(ccend)"
+	@echo -e "$(cchighlight)successfully compiling $(MINI_GOOGLE_MASTER)$(ccend)"
 
 # compiling slave server
 $(MINI_GOOGLE_SLAVE): $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS)
@@ -111,6 +111,6 @@ clean:
 	rm -f *.o
 	rm -f $(DIRECTORY_SERVER)
 	rm -f $(COMMON_LIB)
-	rm -f $(TINY_GOOGLE)
+	rm -f $(MINI_GOOGLE_MASTER)
 	rm -f $(MINI_GOOGLE_SLAVE)
 	rm -rf output

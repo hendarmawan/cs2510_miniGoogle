@@ -35,13 +35,10 @@ void mini_google_slave_event::on_process() {
 }
 
 void mini_google_slave_event::process_default(const std::string &uri,
-        const std::string &req_body, std::string &rsp_head, std::string &rsp_body) {
-
-    RPC_WARNING("invalid request from client, uri=%s, ip=%s, port=%u", 
-            uri.c_str(), get_ip().c_str(), get_port());
+        const std::string &req_body, std::string &rsp_head, std::string &rsp_body, const char *msg) {
 
     ezxml_t root = ezxml_new("message");
-    ezxml_set_txt(root, "invalid request");
+    ezxml_set_txt(root, msg);
 
     char *text = ezxml_toxml(root);
     rsp_body.assign(text);
@@ -61,8 +58,16 @@ void mini_google_slave_event::process_retrieve(const std::string &uri,
     /* load file */
     std::string file_id = uri.c_str() + strlen("/retrieve?fid=");
     file_mngr *inst = file_mngr::create_instance();
-    inst->load(file_id, rsp_body);
+    int ret = inst->load(file_id, rsp_body);
+    if (-1 == ret) {
+        process_default(uri, req_body, rsp_head, rsp_body, "file not found");
+        RPC_INFO("retrieve file unsuccessfully, fid=%s, ip=%s, port=%u", 
+                file_id.c_str(), get_ip().c_str(), get_port());
+        return;
+    }
 
+    RPC_INFO("retrieve file successfully, fid=%s, ip=%s, port=%u", 
+            file_id.c_str(), get_ip().c_str(), get_port());
     rsp_head = gen_http_head("200 Ok", rsp_body.size());
 }
 
@@ -72,7 +77,9 @@ void mini_google_slave_event::dsptch_http_request(const std::string &uri,
     if (uri.find("/retrieve") == 0) {
         process_retrieve(uri, req_body, rsp_head, rsp_body);
     } else {
-        process_default(uri, req_body, rsp_head, rsp_body);
+        process_default(uri, req_body, rsp_head, rsp_body, "invalid request");
+        RPC_WARNING("invalid request from client, uri=%s, ip=%s, port=%u", 
+                uri.c_str(), get_ip().c_str(), get_port());
     }
 }
 

@@ -77,7 +77,7 @@ void mini_google_event::dsptch_http_request(const std::string &uri,
 
     if (uri.find("/put") == 0) {
         process_put(uri, req_body, rsp_head, rsp_body);
-    } else if (uri.find("/poll")){
+    } else if (uri.find("/poll") == 0){
         process_poll(uri, req_body, rsp_head, rsp_body);
     } else {
         process_default(uri, req_body, rsp_head, rsp_body);
