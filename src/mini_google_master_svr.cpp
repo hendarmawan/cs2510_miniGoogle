@@ -1,4 +1,5 @@
 #include "mini_google_master_svr.h"
+#include <string.h>
 #include "rpc_log.h"
 #include "rpc_common.h"
 #include "rpc_http.h"
@@ -69,7 +70,10 @@ void mini_google_event::process_poll(const std::string &uri, const std::string &
     RPC_DEBUG("get poll request !!!, %lu", req_body.length());
     RPC_DEBUG("%s", req_body.c_str());
     index_task_t t;
-    ((mini_google_svr*)m_svr)->poll(t);
+    int ret = ((mini_google_svr*)m_svr)->poll(t);
+    if (ret != -1) {
+        rsp_body.assign(t.file_content);
+    }
 }
 
 void mini_google_event::dsptch_http_request(const std::string &uri,
@@ -107,15 +111,19 @@ void mini_google_svr::put(index_task_t &t) {
     m_queue_lock.unlock();
 }
 
-index_task_t mini_google_svr::poll(index_task_t &t) {
+int mini_google_svr::poll(index_task_t &t) {
+    int ret = -1;
     m_queue_lock.lock();
     if(!m_queue.empty()){
+        RPC_INFO("queue not empty.");
         t = m_queue.front();
         m_queue.pop();
+        ret = 0;
     }
     else{
         RPC_INFO("There is no request in current queue.");
+        ret = -1;
     }
     m_queue_lock.unlock();
-    return t;
+    return ret;
 }

@@ -32,7 +32,7 @@ class mini_google_svr: public svr_base {
         virtual io_event *create_event(int fd,
                 const std::string &ip, unsigned short port);
         void put(index_task_t &t);
-        index_task_t poll(index_task_t &t);
+        int poll(index_task_t &t);
 
     private:
         mutex_lock m_queue_lock;
