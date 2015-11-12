@@ -61,7 +61,7 @@ TINY_GOOGLE_OBJS= \
 MINI_GOOGLE_SLAVE_OBJS=\
 	src/mini_google_slave_svr.o \
     src/task_consumer.o \
-	main_slave.o
+	src/main_slave.o
 
 # compiling all
 all: $(COMMON_LIB) $(DIRECTORY_SERVER) $(MINI_GOOGLE_SLAVE)
