@@ -35,6 +35,7 @@ COMMON_LIB_INCLUDES= \
 	include/rpc_http.h \
 	include/rpc_common.h \
 	include/mini_google_common.h \
+	include/file_mngr.h
 
 COMMON_LIB_OBJS= \
 	src/ezxml.o \
@@ -47,8 +48,8 @@ COMMON_LIB_OBJS= \
 	src/rpc_http.o \
 	src/rpc_common.o \
 	src/basic_proto.o \
-    src/mini_google_common.o \
-    src/file_mngr.o
+	src/mini_google_common.o \
+	src/file_mngr.o
 
 DIRECTORY_SERVER_OBJS= \
 	src/ds_svr.o \
@@ -60,7 +61,7 @@ MINI_GOOGLE_MASTER_OBJS= \
 
 MINI_GOOGLE_SLAVE_OBJS=\
 	src/mini_google_slave_svr.o \
-    src/task_consumer.o \
+	src/task_consumer.o \
 	src/main_slave.o
 
 # compiling all
@@ -90,9 +91,9 @@ endif
 # compiling master server
 $(MINI_GOOGLE_MASTER): $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS)
 ifeq ($(OS),Linux)
-	$(CXX) $(CXXFLAGS) -lpthread -o $(MINI_GOOGLE_MASTER) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS) -Xlinker "-)"
+	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_MASTER) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS) -Xlinker "-)"
 else
-	$(CXX) $(CXXFLAGS) -lpthread -o $(MINI_GOOGLE_MASTER) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS)
+	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_MASTER) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS)
 endif
 	@echo -e "$(cchighlight)successfully compiling $(MINI_GOOGLE_MASTER)$(ccend)"
 

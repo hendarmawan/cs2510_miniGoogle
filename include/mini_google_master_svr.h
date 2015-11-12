@@ -25,14 +25,17 @@ class mini_google_event: public http_event {
                 const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
         void process_poll(const std::string &uri,
                      const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
+        void process_report(const std::string &uri,
+                      const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
 };
 
 class mini_google_svr: public svr_base {
     public:
         virtual io_event *create_event(int fd,
                 const std::string &ip, unsigned short port);
-        void put(index_task_t &t);
+        int put(index_task_t &t);
         int poll(index_task_t &t);
+        int report(const std::string &req_body);
 
     private:
         mutex_lock m_queue_lock;

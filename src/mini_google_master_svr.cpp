@@ -1,11 +1,15 @@
 #include "mini_google_master_svr.h"
 #include <string.h>
+#include <errno.h>
+#include <time.h>
+#include <map>
 #include "rpc_log.h"
 #include "rpc_common.h"
 #include "basic_proto.h"
 #include "rpc_http.h"
 #include "ezxml.h"
 #include "index_common.h"
+#include "file_mngr.h"
 
 /***********************************************
  * mini_google_event
@@ -59,12 +63,18 @@ void mini_google_event::process_put(const std::string &uri,
     std::size_t pos = uri.find("url=");
     t.url = uri.substr(pos + strlen("url="));
     t.file_content = req_body;
-    t.uid = "1234566";
+    //t.uid = "1234566";
     //md5
-    rsp_body = "put successfully.";
-    rsp_head = gen_http_head("200 Ok", rsp_body.size());
-    ((mini_google_svr*)m_svr)->put(t);
-    RPC_INFO("put into the queue successfully.");
+    file_mngr *inst = file_mngr::create_instance();
+    inst->get_file_id(t.uid, t.file_content);
+    int ret = ((mini_google_svr*)m_svr)->put(t);
+    if(ret != -1){
+        rsp_body.assign(t.file_content);
+        rsp_head = gen_http_head("200 Ok", rsp_body.size());
+    }
+    else{
+        rsp_head = gen_http_head("404 Not Found", rsp_body.size());
+    }
 }
 
 void mini_google_event::process_poll(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
@@ -74,8 +84,23 @@ void mini_google_event::process_poll(const std::string &uri, const std::string &
     int ret = ((mini_google_svr*)m_svr)->poll(t);
     if (ret != -1) {
         rsp_body.assign(t.file_content);
+        rsp_head = gen_http_head("200 Ok", rsp_body.size());
     }
-    rsp_head = gen_http_head("200 Ok", rsp_body.size());
+    else{
+        rsp_head = gen_http_head("404 Not Found", rsp_body.size());
+    }
+}
+
+void mini_google_event::process_report(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
+    RPC_DEBUG("get report request !!!, %lu", req_body.length());
+    RPC_DEBUG("%s", req_body.c_str());
+    int ret = ((mini_google_svr*)m_svr)->report(req_body);
+    if (ret != -1) {
+        rsp_head = gen_http_head("200 Ok", rsp_body.size());
+    }
+    else{
+        rsp_head = gen_http_head("404 Not Found", rsp_body.size());
+    }
 }
 
 void mini_google_event::dsptch_http_request(const std::string &uri,
@@ -85,6 +110,8 @@ void mini_google_event::dsptch_http_request(const std::string &uri,
         process_put(uri, req_body, rsp_head, rsp_body);
     } else if (uri.find("/poll") == 0){
         process_poll(uri, req_body, rsp_head, rsp_body);
+    } else if (uri.find("/report") ==0){
+        process_report(uri, req_body, rsp_head, rsp_body);
     } else {
         process_default(uri, req_body, rsp_head, rsp_body);
     }
@@ -107,10 +134,11 @@ io_event *mini_google_svr::create_event(int fd,
     return (io_event*)evt;
 }
 
-void mini_google_svr::put(index_task_t &t) {
+int mini_google_svr::put(index_task_t &t) {
     m_queue_lock.lock();
     m_queue.push(t);
     m_queue_lock.unlock();
+    return 0;
 }
 
 int mini_google_svr::poll(index_task_t &t) {
@@ -129,6 +157,41 @@ int mini_google_svr::poll(index_task_t &t) {
     m_queue_lock.unlock();
     return ret;
 }
+
+int mini_google_svr::report(const std::string &req_body){
+    basic_proto bp (req_body.data(), req_body.size());
+    char* file_id;
+    char* slave_ip;
+    int file_id_len, slave_ip_len;
+    int slave_port;
+    int word_dict_size;
+    bp.read_string(file_id_len, file_id);
+    RPC_DEBUG("file id is: %s", file_id);
+    bp.read_string(slave_ip_len, slave_ip);
+    RPC_DEBUG("slave ip is: %s", slave_ip);
+    bp.read_int(slave_port);
+    RPC_DEBUG("slave port is: %d", slave_port);
+    bp.read_int(word_dict_size);
+    RPC_DEBUG("word dict size is: %d", word_dict_size);
+    std::map<std::string, int> word_dict;
+    std::map<std::string, int>::iterator it = word_dict.begin();
+    for(int i=0; i<word_dict_size; i++){
+        char* word;
+        //std::string word_str;
+        int word_len;
+        int count;
+        bp.read_string(word_len, word);
+        bp.read_int(count);
+        word_dict.insert(it, std::pair<std::string, int>(word, count));
+    }
+    return 0;
+}
+
+
+
+
+
+
 
 
 
