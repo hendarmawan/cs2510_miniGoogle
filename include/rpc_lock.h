@@ -32,6 +32,64 @@ class mutex_lock {
         pthread_mutex_t m_lock;
 };
 
+class rw_lock {
+    public:
+        rw_lock() { }
+        virtual ~rw_lock() { }
+
+    public:
+        int init() {
+            return pthread_rwlock_init(&m_lock, NULL);
+        }
+
+        int rdlock() {
+            return pthread_rwlock_rdlock(&m_lock);
+        }
+
+        int wrlock() {
+            return pthread_rwlock_wrlock(&m_lock);
+        }
+
+        int unlock() {
+            return pthread_rwlock_unlock(&m_lock);
+        }
+
+        void destroy() {
+            pthread_rwlock_destroy(&m_lock);
+        }
+
+    private:
+        pthread_rwlock_t m_lock;
+};
+
+class auto_wrlock {
+    public:
+        auto_wrlock(rw_lock *lock) : m_lock(lock) {
+            m_lock->wrlock();
+        }
+
+        virtual ~auto_wrlock() {
+            m_lock->unlock();
+        }
+
+    private:
+        rw_lock *m_lock;
+};
+
+class auto_rdlock {
+    public:
+        auto_rdlock(rw_lock *lock) : m_lock(lock) {
+            m_lock->rdlock();
+        }
+
+        virtual ~auto_rdlock() {
+            m_lock->unlock();
+        }
+
+    private:
+        rw_lock *m_lock;
+};
+
 class spin_lock {
     public:
         spin_lock() { }
