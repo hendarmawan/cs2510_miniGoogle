@@ -9,8 +9,10 @@ class file_mngr {
     protected:
         /**
          * @brief construct
+         *
+         * @param bMkdir
          */
-        file_mngr();
+        file_mngr(bool bMkdir);
 
         /**
          * @brief destruct
@@ -21,9 +23,11 @@ class file_mngr {
         /**
          * @brief create instance
          *
+         * @param bMkdir
+         *
          * @return 
          */
-        static file_mngr *create_instance();
+        static file_mngr *create_instance(bool bMkdir = false);
 
         /**
          * @brief destroy instance

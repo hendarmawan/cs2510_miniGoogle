@@ -16,22 +16,24 @@ file_mngr *file_mngr::m_pthis = NULL;
 
 /**
  * @brief construct
+ *
+ * @param mkdir
  */
-file_mngr::file_mngr() {
-    std::string path(DATA_ROOT);
+file_mngr::file_mngr(bool bMkdir) {
+    if (bMkdir) {
+        std::string path(DATA_ROOT);
+        const char *chs = "0123456789abcdef";
+        int chs_len = strlen(chs);
 
-    const char *chs = "0123456789abcdef";
-    int chs_len = strlen(chs);
-
-    mode_t mode = S_IRUSR | S_IWUSR | S_IXUSR | S_IRGRP | S_IWUSR| S_IXGRP;
-    mkdir (path.c_str(), mode);
-    for (int i = 0; i < chs_len; ++i) {
-        for (int j = 0; j < chs_len; ++j) {
-            mkdir((path + "/" + chs[i] + chs[j]).c_str(), mode);
+        mode_t mode = S_IRUSR | S_IWUSR | S_IXUSR | S_IRGRP | S_IWUSR| S_IXGRP;
+        mkdir (path.c_str(), mode);
+        for (int i = 0; i < chs_len; ++i) {
+            for (int j = 0; j < chs_len; ++j) {
+                mkdir((path + "/" + chs[i] + chs[j]).c_str(), mode);
+            }
         }
+        m_locks.resize(256);
     }
-
-    m_locks.resize(256);
 }
 
 /**
@@ -43,11 +45,13 @@ file_mngr::~file_mngr() {
 /**
  * @brief create instance
  *
+ * @param mkdir
+ *
  * @return 
  */
-file_mngr *file_mngr::create_instance() {
+file_mngr *file_mngr::create_instance(bool bMkdir) {
     if (!m_pthis) {
-        m_pthis = new file_mngr;
+        m_pthis = new file_mngr(bMkdir);
     }
     return m_pthis;
 }
