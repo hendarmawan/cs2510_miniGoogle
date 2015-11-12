@@ -1,8 +1,9 @@
-#include "mini_google_svr.h"
+#include "mini_google_master_svr.h"
 #include "rpc_log.h"
 #include "rpc_common.h"
 #include "rpc_http.h"
 #include "ezxml.h"
+#include "index_common.h"
 
 /***********************************************
  * mini_google_event
@@ -47,24 +48,36 @@ void mini_google_event::process_default(const std::string &uri,
     rsp_head = gen_http_head("404 Not Found", rsp_body.size());
 }
 
-void mini_google_event::process_index(const std::string &uri,
+void mini_google_event::process_put(const std::string &uri,
         const std::string &req_body, std::string &rsp_head, std::string &rsp_body) {
-    RPC_DEBUG("get index request !!!, %lu", req_body.length());
+    RPC_DEBUG("get put request !!!, %lu", req_body.length());
     RPC_DEBUG("%s", req_body.c_str());
 
     index_task_t t;
-    t.url = url;
-    t.content = file_content;
-
+    std::size_t pos = uri.find("url=");
+    t.url = uri.substr(pos + strlen("url="));
+    t.file_content = req_body;
+    t.uid = "1234566";
+    //md5
+    rsp_body = "put successfully.";
+    rsp_head = gen_http_head("200 Ok", rsp_body.size());
     ((mini_google_svr*)m_svr)->put(t);
+    RPC_INFO("put into the queue successfully.");
 }
 
-void mini_google_event::dsptch_http_request(const std::string &uri, 
+void mini_google_event::process_poll(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
+    RPC_DEBUG("get poll request !!!, %lu", req_body.length());
+    RPC_DEBUG("%s", req_body.c_str());
+    index_task_t t;
+    ((mini_google_svr*)m_svr)->poll(t);
+}
+
+void mini_google_event::dsptch_http_request(const std::string &uri,
         const std::string &req_body, std::string &rsp_head, std::string &rsp_body) {
 
     if (uri.find("/put") == 0) {
-        process_index(uri, req_body, rsp_head, rsp_body);
-    } else if (uri.find("/poll"))
+        process_put(uri, req_body, rsp_head, rsp_body);
+    } else if (uri.find("/poll")){
         process_poll(uri, req_body, rsp_head, rsp_body);
     } else {
         process_default(uri, req_body, rsp_head, rsp_body);
@@ -89,14 +102,20 @@ io_event *mini_google_svr::create_event(int fd,
 }
 
 void mini_google_svr::put(index_task_t &t) {
-    l.lock();
-    m_queue.push_back(t);
-    l.unlock();
+    m_queue_lock.lock();
+    m_queue.push(t);
+    m_queue_lock.unlock();
 }
 
 index_task_t mini_google_svr::poll(index_task_t &t) {
-    l.lock();
-    t = m_queue.pop();
-    l.unlock();
+    m_queue_lock.lock();
+    if(!m_queue.empty()){
+        t = m_queue.front();
+        m_queue.pop();
+    }
+    else{
+        RPC_INFO("There is no request in current queue.");
+    }
+    m_queue_lock.unlock();
     return t;
 }

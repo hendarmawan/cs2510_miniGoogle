@@ -55,7 +55,7 @@ DIRECTORY_SERVER_OBJS= \
 	src/main_ds_svr.o
 
 TINY_GOOGLE_OBJS= \
-	src/mini_google_svr.o \
+	src/mini_google_master_svr.o \
 	main_master.o
 
 MINI_GOOGLE_SLAVE_OBJS=\

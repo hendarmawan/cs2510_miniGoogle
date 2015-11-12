@@ -4,6 +4,8 @@
 #include <string>
 #include "http_event.h"
 #include "svr_base.h"
+#include <queue>
+#include "index_common.h"
 
 class mini_google_event: public http_event {
     public:
@@ -19,16 +21,24 @@ class mini_google_event: public http_event {
         void process_default(const std::string &uri,
                 const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
 
-        void process_index(const std::string &uri,
+        void process_put(const std::string &uri,
                 const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
+        void process_poll(const std::string &uri,
+                     const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
 };
 
 class mini_google_svr: public svr_base {
     public:
         virtual io_event *create_event(int fd,
                 const std::string &ip, unsigned short port);
+        void put(index_task_t &t);
+        index_task_t poll(index_task_t &t);
 
     private:
+        mutex_lock m_queue_lock;
+        std::queue<index_task_t> m_queue;
+        //mutex_lock m_lookup_tbl_lock;
+    
         // lookup table
 
         // lock for queue
