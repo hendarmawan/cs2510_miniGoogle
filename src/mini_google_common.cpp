@@ -10,6 +10,7 @@ int poll_task_from_master(const std::string &ip,
     std::string rsp_head;
 
     char head_buf[1024] = { 0 };
+    sprintf(head_buf, "GET /poll HTTP/1.1\r\nHost: %s\r\n\r\n", ip.c_str());
     sprintf(head_buf, "GET /~kovashka/publications.htm HTTP/1.1\r\nHost: %s\r\n\r\n", ip.c_str());
 
     req_head.assign(head_buf);

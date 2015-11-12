@@ -3,6 +3,7 @@
 
 #include <pthread.h>
 #include <map>
+#include "rpc_lock.h"
 #include "rpc_common.h"
 
 class task_consumer {
@@ -79,12 +80,20 @@ class task_consumer {
         void run_routine();
 
     private:
+        /* slave address */
         std::string m_slave_ip;
         unsigned short m_slave_port;
 
+        /* running flag */
         bool m_running;
+
+        /* thread handles */
         int m_thrds_num;
         std::vector<pthread_t> m_thrd_ids;
+
+        /* master nodes */
+        rw_lock m_masters_rwlock;
+        std::vector<svr_inst_t> m_masters;
 };
 
 #endif

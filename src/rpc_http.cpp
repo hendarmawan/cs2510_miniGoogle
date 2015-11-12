@@ -184,7 +184,6 @@ int http_talk(const std::string &ip, unsigned short port,
     }
 
     close(fd);
-    RPC_DEBUG("%s", rsp_head.c_str());
     return 0;
 }
 

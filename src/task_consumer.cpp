@@ -1,5 +1,6 @@
 #include "task_consumer.h"
 #include <errno.h>
+#include <time.h>
 #include <stdlib.h>
 #include "ezxml.h"
 #include "basic_proto.h"
@@ -14,7 +15,12 @@
 task_consumer::task_consumer(): 
     m_slave_port(0),
     m_running(true),
-    m_thrds_num(0){
+    m_thrds_num(0) {
+
+    svr_inst_t svr;
+    svr.ip = "136.142.35.172";
+    svr.port = 80;
+    m_masters.push_back(svr);
 }
 
 /**
@@ -55,7 +61,7 @@ void task_consumer::run_routine() {
  * @param file_content
  * @param word_dict
  */
-static int wordcount(const std::string &file_content,
+static void wordcount(const std::string &file_content,
         std::map<std::string, int> &word_dict) {
 
     int left = 0;
@@ -86,7 +92,6 @@ static int wordcount(const std::string &file_content,
             }
         }
     }
-    return 0;
 }
 
 /**
@@ -124,20 +129,26 @@ static void pack_report(std::string &report, const std::string &file_id,
 int task_consumer::consume() {
     std::string file_id, file_content;
 
-//int get_insts_by_id(const std::string &ip, unsigned short port,
-//        int id, const std::string &version,
-//        std::vector<svr_inst_t> &svr_insts_list);
+    /* choose a master randomly */
+    std::vector<svr_inst_t> masters;
+    do {
+        auto_rdlock al(&m_masters_rwlock);
+        masters = m_masters;
+    } while (false);
 
-    /* poll */
-    if (-1 == poll_task_from_master("136.142.35.172", 80, file_content)) {
+    if (masters.size() == 0) {
         return -1;
     }
+    srand((unsigned int)time(NULL));
+    svr_inst_t &master = masters[rand() % masters.size()];
 
-    /* word count */
+    /* poll task and compute wordcount */
+    if (-1 == poll_task_from_master(master.ip, master.port, file_content)) {
+        RPC_DEBUG("poll task failed, master_ip=%s, master_port=%u", master.ip.c_str(), master.port);
+        return -1;
+    }
     std::map<std::string, int> word_dict;
-    if (-1 == wordcount(file_content, word_dict)) {
-        return -1;
-    }
+    wordcount(file_content, word_dict);
 
     /* save file */
     file_mngr *inst = file_mngr::create_instance();
@@ -146,8 +157,21 @@ int task_consumer::consume() {
 
     /* report, <file_id, slave_ip:slave_port, word_dict> */
     std::string req_head, req_body;
+    std::string rsp_head, rsp_body;
+
     pack_report(req_body, file_id, m_slave_ip, m_slave_port, word_dict);
     req_head = gen_http_head("/report", "127.0.0.1", req_body.size());
+
+    for (int i = 0; i < (int)masters.size(); ++i) {
+        svr_inst_t &master = masters[i];
+        int ret = http_talk(master.ip, master.port, 
+                req_head, req_body, rsp_head, rsp_body);
+
+        if (ret < 0) {
+            RPC_WARNING("report to master error, ip=%s, port=%u", 
+                    master.ip.c_str(), master.port);
+        }
+    }
 
     RPC_DEBUG("report: %s", req_head.c_str());
 
