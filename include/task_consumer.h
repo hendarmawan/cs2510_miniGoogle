@@ -6,6 +6,15 @@
 #include "rpc_lock.h"
 #include "rpc_common.h"
 
+#define DS_IP "127.0.0.1"
+#define DS_PORT 8000
+#define RPC_MASTER_ID 520
+#define RPC_MASTER_VERSION "1.0.0"
+#define RPC_MASTER_NAME "mini_google_master"
+#define RPC_SLAVE_ID 521
+#define RPC_SLAVE_NAME "mini_google_slave"
+#define RPC_SLAVE_VERSION "1.0.0"
+
 class task_consumer {
     public:
         /**
@@ -72,12 +81,31 @@ class task_consumer {
          *
          * @return 
          */
-        static void *run_routine(void *args);
+        static void *task_routine(void *args);
 
         /**
          * @brief 
          */
-        void run_routine();
+        void task_routine();
+
+        /**
+         * @brief 
+         *
+         * @param args
+         *
+         * @return 
+         */
+        static void *master_routine(void *args);
+
+        /**
+         * @brief 
+         */
+        void master_routine();
+
+        /**
+         * @brief 
+         */
+        void update_masters();
 
     private:
         /* slave address */
@@ -90,6 +118,8 @@ class task_consumer {
         /* thread handles */
         int m_thrds_num;
         std::vector<pthread_t> m_thrd_ids;
+
+        pthread_t m_thrd_master;
 
         /* master nodes */
         rw_lock m_masters_rwlock;

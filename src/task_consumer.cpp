@@ -6,6 +6,7 @@
 #include "basic_proto.h"
 #include "rpc_log.h"
 #include "rpc_http.h"
+#include "rpc_net.h"
 #include "file_mngr.h"
 #include "mini_google_common.h"
 
@@ -16,11 +17,6 @@ task_consumer::task_consumer():
     m_slave_port(0),
     m_running(true),
     m_thrds_num(0) {
-
-    svr_inst_t svr;
-    svr.ip = "136.142.35.172";
-    svr.port = 80;
-    m_masters.push_back(svr);
 }
 
 /**
@@ -36,22 +32,71 @@ task_consumer::~task_consumer() {
  *
  * @return 
  */
-void *task_consumer::run_routine(void *args) {
+void *task_consumer::task_routine(void *args) {
     task_consumer *pthis = (task_consumer*)args;
-    pthis->run_routine();
+    pthis->task_routine();
     return NULL;
 }
 
 /**
  * @brief 
  */
-void task_consumer::run_routine() {
+void task_consumer::task_routine() {
     RPC_DEBUG("RUNNING");
     while (is_running()) {
         int ret = consume();
         if (ret < 0) {
-            sleep(m_thrds_num * 1);
+            usleep(m_thrds_num * 500 * 1000);
         }
+    }
+}
+
+/**
+ * @brief 
+ *
+ * @param args
+ *
+ * @return 
+ */
+void *task_consumer::master_routine(void *args) {
+    task_consumer *pthis = (task_consumer*)args;
+    pthis->master_routine();
+    return NULL;
+}
+
+/**
+ * @brief 
+ */
+void task_consumer::update_masters() {
+    std::vector<svr_inst_t> masters;
+    int ret = get_insts_by_id(DS_IP, DS_PORT,
+            RPC_MASTER_ID, RPC_MASTER_VERSION, masters);
+
+    if (0 == ret) {
+        auto_wrlock al(&m_masters_rwlock);
+        m_masters = masters;
+
+        for (int i = 0; i < masters.size(); ++i) {
+            RPC_INFO("%s:%u", masters[i].ip.c_str(), masters[i].port);
+        }
+    }
+}
+
+/**
+ * @brief 
+ */
+void task_consumer::master_routine() {
+    RPC_DEBUG("RUNNING");
+    update_masters();
+
+    unsigned long long prev_msec = get_cur_msec();
+    while (is_running()) {
+        unsigned long long curr_msec = get_cur_msec();
+        if (curr_msec - prev_msec >= 30 * 1000) {
+            update_masters();
+            prev_msec = curr_msec;
+        }
+        usleep(500 * 1000);
     }
 }
 
@@ -147,6 +192,7 @@ int task_consumer::consume() {
         RPC_DEBUG("poll task failed, master_ip=%s, master_port=%u", master.ip.c_str(), master.port);
         return -1;
     }
+
     std::map<std::string, int> word_dict;
     wordcount(file_content, word_dict);
 
@@ -155,27 +201,30 @@ int task_consumer::consume() {
     inst->get_file_id(file_id, file_content);
     inst->save(file_id, file_content);
 
+    RPC_INFO("compute for task succ, master_ip=%s, master_port=%u, file_id=%s, file_size=%lu, worddict_size=%lu", 
+            master.ip.c_str(), master.port, file_id.c_str(), file_content.size(), word_dict.size());
+
     /* report, <file_id, slave_ip:slave_port, word_dict> */
     std::string req_head, req_body;
     std::string rsp_head, rsp_body;
 
     pack_report(req_body, file_id, m_slave_ip, m_slave_port, word_dict);
-    req_head = gen_http_head("/report", "127.0.0.1", req_body.size());
-
     for (int i = 0; i < (int)masters.size(); ++i) {
         svr_inst_t &master = masters[i];
+        req_head = gen_http_head("/report", master.ip, req_body.size());
         int ret = http_talk(master.ip, master.port, 
                 req_head, req_body, rsp_head, rsp_body);
 
         if (ret < 0) {
             RPC_WARNING("report to master error, ip=%s, port=%u", 
                     master.ip.c_str(), master.port);
+        } else {
+            RPC_INFO("report to master succ, ip=%s, port=%u", 
+                    master.ip.c_str(), master.port);
         }
     }
 
-    RPC_DEBUG("report: %s", req_head.c_str());
-
-    return -1;
+    return 0;
 }
 
 /**
@@ -191,11 +240,16 @@ int task_consumer::run(int thrds_num) {
 
     for (int i = 0; i < (int)m_thrd_ids.size(); ++i) {
         /* create thread */
-        int ret = pthread_create(&m_thrd_ids[i], NULL, run_routine, this);
+        int ret = pthread_create(&m_thrd_ids[i], NULL, task_routine, this);
         if (0 != ret) {
             RPC_WARNING("pthread_create() error, errno=%d", errno);
             return -1;
         }
+    }
+    int ret = pthread_create(&m_thrd_master, NULL, master_routine, this);
+    if (0 != ret) {
+        RPC_WARNING("pthread_create() error, errno=%d", errno);
+        return -1;
     }
     return 0;
 }

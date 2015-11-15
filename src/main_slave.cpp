@@ -10,12 +10,6 @@
 #include "task_consumer.h"
 #include "file_mngr.h"
 
-#define DS_IP "127.0.0.1"
-#define DS_PORT 8000
-#define RPC_ID 520
-#define RPC_NAME "mini_google_slave"
-#define RPC_VERSION "1.0.0"
-
 static bool running = true;
 static void signal_proc(int signo) {
     running = false;
@@ -80,7 +74,7 @@ int main(int argc, char *argv[]) {
     signal(SIGINT, signal_proc);
     signal(SIGTERM, signal_proc);
 
-    file_mngr::create_instance();
+    file_mngr::create_instance(true);
 
     /* initialize server */
     mini_google_slave_svr *svr = new mini_google_slave_svr;
@@ -105,7 +99,7 @@ int main(int argc, char *argv[]) {
 
     /* register information */
     if (0 != register_information(DS_IP, DS_PORT,
-                RPC_ID, RPC_NAME, RPC_VERSION, ip, port)) {
+                RPC_SLAVE_ID, RPC_SLAVE_NAME, RPC_SLAVE_VERSION, ip, port)) {
         RPC_WARNING("register error");
     }
 
@@ -117,7 +111,7 @@ int main(int argc, char *argv[]) {
         if (curr_msec - prev_msec >= 30 * 1000) {
             /* update register information every 10 secs */
             if (0 != register_information(DS_IP, DS_PORT,
-                        RPC_ID, RPC_NAME, RPC_VERSION, ip, port)) {
+                        RPC_SLAVE_ID, RPC_SLAVE_NAME, RPC_SLAVE_VERSION, ip, port)) {
                 RPC_WARNING("update register information error");
             }
             prev_msec = curr_msec;
@@ -132,7 +126,7 @@ int main(int argc, char *argv[]) {
 
     /* delete */
     if (0 != unregister_information(DS_IP, DS_PORT,
-                RPC_ID, RPC_NAME, RPC_VERSION, ip, port)) {
+                RPC_SLAVE_ID, RPC_SLAVE_NAME, RPC_SLAVE_VERSION, ip, port)) {
         RPC_WARNING("unregister error");
     }
 
