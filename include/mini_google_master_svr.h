@@ -51,9 +51,9 @@ class mini_google_svr: public svr_base {
         mutex_lock m_queue_lock;
         std::queue<index_task_t> m_queue;
         mutex_lock invert_table_lock;
-        std::map<std::string, std::list<std::pair<std::string, int> > > invert_table;  //inverted table
+        //std::map<std::string, std::list<std::pair<std::string, int> > > invert_table;  //inverted table
         mutex_lock lookup_lock;
-        std::map<std::string, file_task_t > lookup_table;
+        //std::map<std::string, file_info_t > lookup_table;
         //mutex_lock m_lookup_tbl_lock;
     
         // lookup table

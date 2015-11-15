@@ -55,7 +55,7 @@ class lookup_table {
          *
          * @return 
          */
-        int get_file_info(const std::string &file_id, file_task_t &file_info);
+        int get_file_info(const std::string &file_id, file_info_t &file_info);
 
         /**
          * @brief set file info
@@ -65,7 +65,7 @@ class lookup_table {
          *
          * @return 
          */
-        int set_file_info(const std::string &file_id, const file_task_t &file_info);
+        int set_file_info(const std::string &file_id, const file_info_t &file_info);
 
     private:
         /**

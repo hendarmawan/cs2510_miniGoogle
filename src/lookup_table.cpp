@@ -39,7 +39,7 @@ void lookup_table::unlock_group(int group_id) {
  * @return 
  */
 int lookup_table::get_file_info(const std::string &file_id, 
-        file_task_t &file_info) {
+        file_info_t &file_info) {
     return 0;
 }
 
@@ -52,7 +52,7 @@ int lookup_table::get_file_info(const std::string &file_id,
  * @return 
  */
 int lookup_table::set_file_info(const std::string &file_id, 
-        const file_task_t &file_info) {
+        const file_info_t &file_info) {
     return 0;
 }
 

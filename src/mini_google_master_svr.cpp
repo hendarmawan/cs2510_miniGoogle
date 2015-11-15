@@ -192,150 +192,150 @@ int mini_google_svr::poll(index_task_t &t) {
 }
 
 int mini_google_svr::report(const std::string &req_body){
-    invert_table_lock.lock();
-    basic_proto bp (req_body.data(), req_body.size());
-    char* file_id;
-    char* slave_ip;
-    int file_id_len, slave_ip_len;
-    int slave_port;
-    int word_dict_size;
-    bp.read_string(file_id_len, file_id);
-    RPC_INFO("file id is: %s; slave ip is: %s; slave port is: %d; word dict size is: %d", file_id, slave_ip, slave_port, word_dict_size);
-    bp.read_string(slave_ip_len, slave_ip);
-    bp.read_int(slave_port);
-    bp.read_int(word_dict_size);
-    //std::map<std::string, int> word_dict;
-    //std::map<std::string, int>::iterator it = word_dict.begin();
-    std::map<std::string, std::list<std::pair<std::string, int> > >::iterator it;
-    for(int i=0; i<word_dict_size; i++){
-        char* word;
-        //std::string word_str;
-        int word_len;
-        int count;
-        bp.read_string(word_len, word);
-        bp.read_int(count);
-        it = invert_table.find(word);
-        if(it != invert_table.end()){ //the word has been contained in the table
-            std::list<std::pair<std::string, int> > doc_list = invert_table.find(word)->second;
-            std::list<std::pair<std::string, int> >::iterator iter;
-            int flag = 0;
-            for(iter = doc_list.begin(); iter != doc_list.end(); iter++){
-                if(strcmp((iter->first).c_str(), file_id) == 0){
-                    flag = 1;
-                    break;
-                }
-            }
-            if(flag == 0){
-                for(iter = doc_list.begin(); iter != doc_list.end(); iter++){
-                    if(iter->second<count){
-                        break;
-                    }
-                }
-                std::pair<std::string, int> p (file_id, count);
-                doc_list.insert(iter, p);
-                invert_table.erase(it);
-                it = invert_table.begin();
-                invert_table.insert(it, std::pair<std::string, std::list<std::pair<std::string, int> > > (word, doc_list));
-            }
-        }
-        else{  // the word is not contained in the table
-            std::list<std::pair<std::string, int> > d_list;
-            std::list<std::pair<std::string, int> >::iterator iter;
-            iter = d_list.begin();
-            d_list.insert(iter, std::pair<std::string, int> (file_id, count));
-            it = invert_table.begin();
-            invert_table.insert(it, std::pair<std::string, std::list<std::pair<std::string, int> > > (word, d_list));
-        }
-        //word_dict.insert(it, std::pair<std::string, int>(word, count));
-        
-        //std::map<std::string, std::list<std::pair<std::string, int> > > invert_table;
-        
-        //std::map<std::string, file_task_t > lookup_table;
-        
-    }
-    invert_table_lock.unlock();
+    //invert_table_lock.lock();
+    //basic_proto bp (req_body.data(), req_body.size());
+    //char* file_id;
+    //char* slave_ip;
+    //int file_id_len, slave_ip_len;
+    //int slave_port;
+    //int word_dict_size;
+    //bp.read_string(file_id_len, file_id);
+    //RPC_INFO("file id is: %s; slave ip is: %s; slave port is: %d; word dict size is: %d", file_id, slave_ip, slave_port, word_dict_size);
+    //bp.read_string(slave_ip_len, slave_ip);
+    //bp.read_int(slave_port);
+    //bp.read_int(word_dict_size);
+    ////std::map<std::string, int> word_dict;
+    ////std::map<std::string, int>::iterator it = word_dict.begin();
+    //std::map<std::string, std::list<std::pair<std::string, int> > >::iterator it;
+    //for(int i=0; i<word_dict_size; i++){
+    //    char* word;
+    //    //std::string word_str;
+    //    int word_len;
+    //    int count;
+    //    bp.read_string(word_len, word);
+    //    bp.read_int(count);
+    //    it = invert_table.find(word);
+    //    if(it != invert_table.end()){ //the word has been contained in the table
+    //        std::list<std::pair<std::string, int> > doc_list = invert_table.find(word)->second;
+    //        std::list<std::pair<std::string, int> >::iterator iter;
+    //        int flag = 0;
+    //        for(iter = doc_list.begin(); iter != doc_list.end(); iter++){
+    //            if(strcmp((iter->first).c_str(), file_id) == 0){
+    //                flag = 1;
+    //                break;
+    //            }
+    //        }
+    //        if(flag == 0){
+    //            for(iter = doc_list.begin(); iter != doc_list.end(); iter++){
+    //                if(iter->second<count){
+    //                    break;
+    //                }
+    //            }
+    //            std::pair<std::string, int> p (file_id, count);
+    //            doc_list.insert(iter, p);
+    //            invert_table.erase(it);
+    //            it = invert_table.begin();
+    //            invert_table.insert(it, std::pair<std::string, std::list<std::pair<std::string, int> > > (word, doc_list));
+    //        }
+    //    }
+    //    else{  // the word is not contained in the table
+    //        std::list<std::pair<std::string, int> > d_list;
+    //        std::list<std::pair<std::string, int> >::iterator iter;
+    //        iter = d_list.begin();
+    //        d_list.insert(iter, std::pair<std::string, int> (file_id, count));
+    //        it = invert_table.begin();
+    //        invert_table.insert(it, std::pair<std::string, std::list<std::pair<std::string, int> > > (word, d_list));
+    //    }
+    //    //word_dict.insert(it, std::pair<std::string, int>(word, count));
+    //    
+    //    //std::map<std::string, std::list<std::pair<std::string, int> > > invert_table;
+    //    
+    //    //std::map<std::string, file_info_t > lookup_table;
+    //    
+    //}
+    //invert_table_lock.unlock();
     return 0;
 }
 
 int mini_google_svr::retrieve(const std::string &file_id, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
-    lookup_lock.lock();
-    file_task_t retr_task;
-    std::map<std::string, file_task_t>::iterator iter;
-    for(iter = lookup_table.begin(); iter!=lookup_table.end(); iter++){
-        if(strcmp(file_id.c_str(), (iter->first).c_str()) == 0){
-            retr_task = iter->second;
-            break;
-        }
-    }
-    std::string req_head;
-    int conn_timeout_ms;
-    int send_timeout_ms;
-    int recv_timeout_ms;
-    http_talk(retr_task.ip, retr_task.port, req_head, req_body, rsp_head, rsp_body, conn_timeout_ms, send_timeout_ms, recv_timeout_ms);
-    lookup_lock.unlock();
-    if(iter==lookup_table.end()){
-        return -1;
-    }
+    //lookup_lock.lock();
+    //file_info_t retr_task;
+    //std::map<std::string, file_info_t>::iterator iter;
+    //for(iter = lookup_table.begin(); iter!=lookup_table.end(); iter++){
+    //    if(strcmp(file_id.c_str(), (iter->first).c_str()) == 0){
+    //        retr_task = iter->second;
+    //        break;
+    //    }
+    //}
+    //std::string req_head;
+    //int conn_timeout_ms;
+    //int send_timeout_ms;
+    //int recv_timeout_ms;
+    //http_talk(retr_task.ip, retr_task.port, req_head, req_body, rsp_head, rsp_body, conn_timeout_ms, send_timeout_ms, recv_timeout_ms);
+    //lookup_lock.unlock();
+    //if(iter==lookup_table.end()){
+    //    return -1;
+    //}
     return 0;
 }
 
 
 int mini_google_svr::query(const std::string &uri, std::vector<std::string> &file_v){
-    invert_table_lock.lock();
-    std::size_t pos = uri.find("word=");
-    std::string word_query = uri.substr(pos + strlen("word="));
-    std::size_t start = pos + strlen("word=");
-    std::size_t found = word_query.find("_");
-    int count = 0;
-    std::map<std::string, int> file_set;
-    std::map<std::string, int>::iterator it;
-    while(found != std::string::npos){
-        std::string key_word = word_query.substr(start, found);
-        std::list<std::pair<std::string, int> > ll = invert_table.find(key_word)->second;
-        std::list<std::pair<std::string, int> >::iterator iter1;
-        for(iter1 = ll.begin(); iter1 != ll.end(); iter1 ++){
-            it = file_set.find(iter1->first);
-            if(it == file_set.end()){
-                file_set.insert(std::pair<std::string, int>(iter1->first, 1));
-            }
-            else{
-                int cc = it->second;
-                file_set.erase(it);
-                file_set.insert(std::pair<std::string, int>(iter1->first, cc+1));
-            }
-        }
-        count++;
-        found = word_query.find("_", found+1);
-        start = found+1;
-    }
-    if(count==0){
-        std::string one_word = word_query;
-        std::list<std::pair<std::string, int> > ll = invert_table.find(one_word)->second;
-        std::list<std::pair<std::string, int> >::iterator iter1;
-        for(iter1 = ll.begin(); iter1 != ll.end(); iter1 ++){
-            it = file_set.find(iter1->first);
-            if(it == file_set.end()){
-                file_set.insert(std::pair<std::string, int>(iter1->first, 1));
-            }
-            else{
-                int cc = it->second;
-                file_set.erase(it);
-                file_set.insert(std::pair<std::string, int>(iter1->first, cc+1));
-            }
-        }
-    }
-    if(!file_set.empty()){
-        int max_count = file_set.begin()->second;
-        for(it = file_set.begin();it != file_set.end(); it ++){
-            if(it->second < max_count){
-                break;
-            }
-            else{
-                file_v.push_back(it->first);
-            }
-        }
-    }
-    invert_table_lock.unlock();
+    //invert_table_lock.lock();
+    //std::size_t pos = uri.find("word=");
+    //std::string word_query = uri.substr(pos + strlen("word="));
+    //std::size_t start = pos + strlen("word=");
+    //std::size_t found = word_query.find("_");
+    //int count = 0;
+    //std::map<std::string, int> file_set;
+    //std::map<std::string, int>::iterator it;
+    //while(found != std::string::npos){
+    //    std::string key_word = word_query.substr(start, found);
+    //    std::list<std::pair<std::string, int> > ll = invert_table.find(key_word)->second;
+    //    std::list<std::pair<std::string, int> >::iterator iter1;
+    //    for(iter1 = ll.begin(); iter1 != ll.end(); iter1 ++){
+    //        it = file_set.find(iter1->first);
+    //        if(it == file_set.end()){
+    //            file_set.insert(std::pair<std::string, int>(iter1->first, 1));
+    //        }
+    //        else{
+    //            int cc = it->second;
+    //            file_set.erase(it);
+    //            file_set.insert(std::pair<std::string, int>(iter1->first, cc+1));
+    //        }
+    //    }
+    //    count++;
+    //    found = word_query.find("_", found+1);
+    //    start = found+1;
+    //}
+    //if(count==0){
+    //    std::string one_word = word_query;
+    //    std::list<std::pair<std::string, int> > ll = invert_table.find(one_word)->second;
+    //    std::list<std::pair<std::string, int> >::iterator iter1;
+    //    for(iter1 = ll.begin(); iter1 != ll.end(); iter1 ++){
+    //        it = file_set.find(iter1->first);
+    //        if(it == file_set.end()){
+    //            file_set.insert(std::pair<std::string, int>(iter1->first, 1));
+    //        }
+    //        else{
+    //            int cc = it->second;
+    //            file_set.erase(it);
+    //            file_set.insert(std::pair<std::string, int>(iter1->first, cc+1));
+    //        }
+    //    }
+    //}
+    //if(!file_set.empty()){
+    //    int max_count = file_set.begin()->second;
+    //    for(it = file_set.begin();it != file_set.end(); it ++){
+    //        if(it->second < max_count){
+    //            break;
+    //        }
+    //        else{
+    //            file_v.push_back(it->first);
+    //        }
+    //    }
+    //}
+    //invert_table_lock.unlock();
     return 0;
 }
 
