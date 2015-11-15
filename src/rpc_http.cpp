@@ -20,7 +20,7 @@ std::string gen_http_head(
         const std::string &http_code, int content_len) {
 
     char buf[512] = { 0 };
-    sprintf(buf, "HTTP/1.1 %s\r\nContent-Length: %d\r\n\r\n", 
+    sprintf(buf, "HTTP/1.1 %s\r\nContent-Type:text/xml\r\nContent-Length: %d\r\n\r\n", 
             http_code.c_str(), content_len);
 
     return buf;

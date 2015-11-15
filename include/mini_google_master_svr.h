@@ -21,9 +21,23 @@ class mini_google_event: public http_event {
                 const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
 
     private:
-        void process_default(const std::string &uri,
-                const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
+        /**
+         * @brief default response, 404 + msg
+         *
+         * @param uri
+         * @param req_body
+         * @param rsp_head
+         * @param rsp_body
+         * @param msg
+         */
+        void process_default(
+                const std::string &uri,
+                const std::string &req_body, 
+                std::string &rsp_head, 
+                std::string &rsp_body,
+                const char *msg = NULL);
 
+    private:
         void process_put(const std::string &uri,
                 const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
         void process_poll(const std::string &uri,
@@ -34,6 +48,21 @@ class mini_google_event: public http_event {
                            const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
         void process_retrieve(const std::string &uri,
                         const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
+
+    private:
+        /**
+         * @brief backup
+         *
+         * @param uri [table|method|group_id]
+         * @param req_body
+         * @param rsp_head
+         * @param rsp_body
+         */
+        void process_backup(
+                const std::string &uri, 
+                const std::string &req_body, 
+                std::string &rsp_head, 
+                std::string &rsp_body);
 };
 
 class mini_google_svr: public svr_base {
@@ -46,6 +75,15 @@ class mini_google_svr: public svr_base {
 
         int query(const std::string &uri, std::vector<std::string> &file_v);
         int retrieve(const std::string &file_id, const std::string &req_body, std::string &rsp_head, std::string & rsp_body);
+
+    public:
+        invert_table &get_invert_table() {
+            return m_invert_table;
+        }
+
+        lookup_table &get_lookup_table() {
+            return m_lookup_table;
+        }
     
     private:
         mutex_lock m_queue_lock;

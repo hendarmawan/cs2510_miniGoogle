@@ -7,6 +7,7 @@
 #include "rpc_common.h"
 #include "basic_proto.h"
 #include "rpc_http.h"
+#include "rpc_net.h"
 #include "ezxml.h"
 #include "index_common.h"
 #include "file_mngr.h"
@@ -40,15 +41,32 @@ void mini_google_event::on_process() {
     m_svr->add_io_event(this);
 }
 
-void mini_google_event::process_default(const std::string &uri,
-        const std::string &req_body, std::string &rsp_head, std::string &rsp_body) {
+/**
+ * @brief default response, 404 + msg
+ *
+ * @param uri
+ * @param req_body
+ * @param rsp_head
+ * @param rsp_body
+ * @param msg
+ */
+void mini_google_event::process_default(
+        const std::string &uri,
+        const std::string &req_body, 
+        std::string &rsp_head, 
+        std::string &rsp_body,
+        const char *msg) {
 
-    RPC_WARNING("invalid request from client, uri=%s, ip=%s, port=%u", 
-            uri.c_str(), get_ip().c_str(), get_port());
+    RPC_WARNING("invalid request from client, uri=%s, ip=%s, port=%u, msg=%s", 
+            uri.c_str(), get_ip().c_str(), get_port(), msg ? msg : "none");
 
     ezxml_t root = ezxml_new("message");
-    ezxml_set_txt(root, "invalid request");
-    rsp_body = ezxml_toxml(root);
+    ezxml_set_txt(root, msg ? msg : "none");
+
+    char *text = ezxml_toxml(root);
+    rsp_body.assign(text) ;
+
+    free(text);
     ezxml_free(root);
 
     rsp_head = gen_http_head("404 Not Found", rsp_body.size());
@@ -131,6 +149,90 @@ void mini_google_event::process_retrieve(const std::string &uri, const std::stri
     }
 }
 
+/**
+ * @brief backup
+ *
+ * @param uri [table|method|group_id]
+ * @param req_body
+ * @param rsp_head
+ * @param rsp_body
+ */
+void mini_google_event::process_backup(
+        const std::string &uri, 
+        const std::string &req_body, 
+        std::string &rsp_head, 
+        std::string &rsp_body) {
+
+    /* parse the parameters in the uri */
+    int  group_id = -1;
+    char table[256] = { 0 }, method[256] = { 0 };
+    sscanf(uri.c_str(), "/backup?table=%[^&]&method=%[^&]&group_id=%d", table, method, &group_id);
+
+    RPC_INFO("incoming backup request, table=%s, method=%s, group_id=%d", 
+        table, method, group_id);
+
+    /* check parameters */
+    if (strcmp(table, "lookup_table") && strcmp(table, "invert_table")) {
+        process_default(uri, req_body, rsp_head, rsp_body, 
+            "table: lookup_table|invert_table");
+        return;
+    }
+    if (strcmp(method, "get_group_num") && strcmp(method, "get_group_data")) {
+        process_default(uri, req_body, rsp_head, rsp_body, 
+            "method: get_group_num|get_group_data");
+        return;
+    }
+    if (strcmp(method, "get_group_data") == 0 && group_id < 0) {
+        process_default(uri, req_body, rsp_head, rsp_body, 
+            "group id should be integer");
+        return;
+    }
+
+    /* get reference from mini_google_svr */
+    ezxml_t root = ezxml_new("message");
+
+    mini_google_svr *svr = (mini_google_svr*)m_svr;
+    invert_table &invert_tab = svr->get_invert_table();
+    lookup_table &lookup_tab = svr->get_lookup_table();
+
+    /* get group num */
+    if (strcmp(table, "lookup_table") == 0) {
+        ezxml_set_txt(
+            ezxml_add_child(root, "group_num", 0), 
+            num_to_str(lookup_tab.get_group_num()).c_str()
+        );
+    } 
+    else {
+        ezxml_set_txt(
+            ezxml_add_child(root, "group_num", 0), 
+            num_to_str(invert_tab.get_group_num()).c_str()
+        );
+    }
+
+    /* get group data */
+    if (strcmp(table, "lookup_table") == 0) {
+        ezxml_t sub = ezxml_add_child(root, "file_info_list", 0);
+
+        const single_table_t &tab = lookup_tab.lock_group(group_id);
+        single_table_t::const_iterator iter = tab.begin();
+        for (; iter != tab.end(); ++iter) {
+        }
+        lookup_tab.unlock_group(group_id);
+    } 
+    else {
+        const single_invert_table_t &tab = invert_tab.lock_group(group_id);
+        invert_tab.unlock_group(group_id);
+    }
+
+    /* pack message */
+    char *text = ezxml_toxml(root);
+    rsp_body.assign(text);
+
+    free(text);
+    ezxml_free(root);
+
+    rsp_head = gen_http_head("200 Ok", rsp_body.size());
+}
 
 void mini_google_event::dsptch_http_request(const std::string &uri,
         const std::string &req_body, std::string &rsp_head, std::string &rsp_body) {
@@ -145,6 +247,8 @@ void mini_google_event::dsptch_http_request(const std::string &uri,
         process_query(uri, req_body, rsp_head, rsp_body);
     } else if (uri.find("/retrieve") == 0){
         process_retrieve(uri, req_body, rsp_head, rsp_body);
+    } else if (uri.find("/backup") == 0){
+        process_backup(uri, req_body, rsp_head, rsp_body);
     } else {
         process_default(uri, req_body, rsp_head, rsp_body);
     }
