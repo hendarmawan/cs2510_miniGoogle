@@ -6,6 +6,7 @@
 #include "svr_base.h"
 #include <queue>
 #include "index_common.h"
+#include <map>
 
 class mini_google_event: public http_event {
     public:
@@ -27,6 +28,10 @@ class mini_google_event: public http_event {
                      const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
         void process_report(const std::string &uri,
                       const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
+        void process_query(const std::string &uri,
+                           const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
+        void process_retrieve(const std::string &uri,
+                        const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
 };
 
 class mini_google_svr: public svr_base {
@@ -36,10 +41,16 @@ class mini_google_svr: public svr_base {
         int put(index_task_t &t);
         int poll(index_task_t &t);
         int report(const std::string &req_body);
-
+        int query(const std::string &uri, std::vector<std::string> &file_v);
+        int retrieve(const std::string &file_id, const std::string &req_body, std::string &rsp_head, std::string & rsp_body);
+    
     private:
         mutex_lock m_queue_lock;
         std::queue<index_task_t> m_queue;
+        mutex_lock invert_table_lock;
+        std::map<std::string, std::list<std::pair<std::string, int> > > invert_table;  //inverted table
+        mutex_lock lookup_lock;
+        std::map<std::string, file_task_t > lookup_table;
         //mutex_lock m_lookup_tbl_lock;
     
         // lookup table
