@@ -74,7 +74,7 @@ class mini_google_svr: public svr_base {
         int report(const std::string &req_body);
 
         int query(const std::string &uri, std::vector<std::string> &file_v);
-        int retrieve(const std::string &file_id, const std::string &req_body, std::string &rsp_head, std::string & rsp_body);
+        int retrieve(const std::string &file_id, file_info_t &file_info);
 
     public:
         invert_table &get_invert_table() {

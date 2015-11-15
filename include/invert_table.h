@@ -9,7 +9,7 @@
 
 #define INVERT_TABLE_GROUP_NUM 1000
 
-typedef std::list<std::pair<std::string, int> > file_freq_list_t;
+typedef std::map<std::string, int > file_freq_list_t;
 typedef std::map<std::string, file_freq_list_t> single_invert_table_t;
 
 class invert_table {

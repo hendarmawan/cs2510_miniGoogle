@@ -138,15 +138,32 @@ void mini_google_event::process_query(const std::string &uri, const std::string 
 void mini_google_event::process_retrieve(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
     RPC_DEBUG("get retrieve request !!!, %lu", req_body.length());
     RPC_DEBUG("%s", req_body.c_str());
+    std::string req_head;
     std::size_t pos = uri.find("fid=");
     std::string file_id = uri.substr(pos + strlen("fid="));
-    int ret = ((mini_google_svr*)m_svr)->retrieve(file_id, req_body, rsp_head, rsp_body);
+    file_info_t file_info;
+    int ret = ((mini_google_svr*)m_svr)->retrieve(file_id, file_info);
     if (ret != -1){
         rsp_head = gen_http_head("200 Ok", rsp_body.size());
+        RPC_INFO("file id is %s, slave ip is %s, slave port is %d", file_id.c_str(), file_info.ip.c_str(), file_info.port);
     }
     else{
         rsp_head = gen_http_head("404 Not Found", rsp_body.size());
     }
+    int conn_timeout_ms;
+    int send_timeout_ms;
+    int recv_timeout_ms;
+    http_talk(file_info.ip, file_info.port, req_head, req_body, rsp_head, rsp_body);
+    return;
+}
+
+int mini_google_svr::retrieve(const std::string &file_id, file_info_t &file_info){
+    lookup_table lookup_t;
+    int ret = lookup_t.get_file_info(file_id, file_info);
+    if(ret == -1){
+        return -1;
+    }
+    return 0;
 }
 
 /**
@@ -233,6 +250,8 @@ void mini_google_event::process_backup(
 
     rsp_head = gen_http_head("200 Ok", rsp_body.size());
 }
+
+
 
 void mini_google_event::dsptch_http_request(const std::string &uri,
         const std::string &req_body, std::string &rsp_head, std::string &rsp_body) {
@@ -360,29 +379,6 @@ int mini_google_svr::report(const std::string &req_body){
     //invert_table_lock.unlock();
     return 0;
 }
-
-int mini_google_svr::retrieve(const std::string &file_id, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
-    //lookup_lock.lock();
-    //file_info_t retr_task;
-    //std::map<std::string, file_info_t>::iterator iter;
-    //for(iter = lookup_table.begin(); iter!=lookup_table.end(); iter++){
-    //    if(strcmp(file_id.c_str(), (iter->first).c_str()) == 0){
-    //        retr_task = iter->second;
-    //        break;
-    //    }
-    //}
-    //std::string req_head;
-    //int conn_timeout_ms;
-    //int send_timeout_ms;
-    //int recv_timeout_ms;
-    //http_talk(retr_task.ip, retr_task.port, req_head, req_body, rsp_head, rsp_body, conn_timeout_ms, send_timeout_ms, recv_timeout_ms);
-    //lookup_lock.unlock();
-    //if(iter==lookup_table.end()){
-    //    return -1;
-    //}
-    return 0;
-}
-
 
 int mini_google_svr::query(const std::string &uri, std::vector<std::string> &file_v){
     //invert_table_lock.lock();
