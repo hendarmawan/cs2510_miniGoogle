@@ -107,6 +107,18 @@ int file_mngr::get_file_id(std::string &file_id,
 int file_mngr::get_lock_index(const std::string &file_id) {
     char ch1 = file_id[0];
     char ch2 = file_id[1];
+    if (ch1 >= '0' && ch1 <= '9') {
+        ch1 -= '0';
+    }
+    if (ch1 >= 'a' && ch1 <= 'f') {
+        ch1 = ch1 - 'a' + 10;
+    }
+    if (ch2 >= '0' && ch2 <= '9') {
+        ch2 -= '0';
+    }
+    if (ch2 >= 'a' && ch2 <= 'f') {
+        ch2 = ch2 - 'a' + 10;
+    }
     return ch1 * 16 + ch2;
 }
 
