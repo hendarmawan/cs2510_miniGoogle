@@ -6,7 +6,7 @@
 #include "rpc_lock.h"
 #include "index_common.h"
 
-#define LOOKUP_TABLE_GROUP_NUM 1000
+#define LOOKUP_TABLE_GROUP_NUM 2000
 
 typedef std::map<std::string, file_info_t> single_table_t;
 

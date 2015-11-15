@@ -89,35 +89,14 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
-    /* register information */
-    if (0 != register_information(DS_IP, DS_PORT,
-                RPC_ID, RPC_NAME, RPC_VERSION, ip, port)) {
-        RPC_WARNING("register error");
-    }
-
     unsigned long long prev_msec = get_cur_msec();
     while (running) {
         svr->run_routine(10);
-
-        unsigned long long curr_msec = get_cur_msec();
-        if (curr_msec - prev_msec >= 30 * 1000) {
-            /* update register information every 10 secs */
-            if (0 != register_information(DS_IP, DS_PORT,
-                        RPC_ID, RPC_NAME, RPC_VERSION, ip, port)) {
-                RPC_WARNING("update register information error");
-            }
-            prev_msec = curr_msec;
-        }
     }
 
     svr->stop();
     svr->join();
 
-    /* delete */
-    if (0 != unregister_information(DS_IP, DS_PORT,
-                RPC_ID, RPC_NAME, RPC_VERSION, ip, port)) {
-        RPC_WARNING("unregister error");
-    }
     delete svr;
 
     RPC_WARNING("server exit");
