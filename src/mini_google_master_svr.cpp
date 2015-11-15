@@ -211,12 +211,12 @@ void mini_google_event::process_backup(
 
     /* get group data */
     if (strcmp(table, "lookup_table") == 0) {
-        ezxml_t sub = ezxml_add_child(root, "file_info_list", 0);
+        ezxml_t file_info_list = ezxml_add_child(root, "file_info_list", 0);
+
+        ezxml_t file_info = ezxml_add_child(file_info_list, "f", 0);
+        ezxml_set_attr(file_info, "ip", "127.0.0.1");
 
         const single_table_t &tab = lookup_tab.lock_group(group_id);
-        single_table_t::const_iterator iter = tab.begin();
-        for (; iter != tab.end(); ++iter) {
-        }
         lookup_tab.unlock_group(group_id);
     } 
     else {
