@@ -136,23 +136,18 @@ void mini_google_event::process_query(const std::string &uri, const std::string 
 }
 
 void mini_google_event::process_retrieve(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
-    RPC_DEBUG("get retrieve request !!!, %lu", req_body.length());
-    RPC_DEBUG("%s", req_body.c_str());
-    std::string req_head;
+
     std::size_t pos = uri.find("fid=");
     std::string file_id = uri.substr(pos + strlen("fid="));
     file_info_t file_info;
     int ret = ((mini_google_svr*)m_svr)->retrieve(file_id, file_info);
     if (ret != -1){
-        rsp_head = gen_http_head("200 Ok", rsp_body.size());
-        RPC_INFO("file id is %s, slave ip is %s, slave port is %d", file_id.c_str(), file_info.ip.c_str(), file_info.port);
+        process_default(uri, req_body, rsp_head, rsp_body, 
+            "lookup failed, file_id not found in lookup table");
+        return;
     }
-    else{
-        rsp_head = gen_http_head("404 Not Found", rsp_body.size());
-    }
-    int conn_timeout_ms;
-    int send_timeout_ms;
-    int recv_timeout_ms;
+
+    std::string req_head = gen_http_head(uri, file_info.ip, 0);
     http_talk(file_info.ip, file_info.port, req_head, req_body, rsp_head, rsp_body);
     return;
 }
@@ -160,6 +155,8 @@ void mini_google_event::process_retrieve(const std::string &uri, const std::stri
 int mini_google_svr::retrieve(const std::string &file_id, file_info_t &file_info){
     lookup_table lookup_t;
     int ret = lookup_t.get_file_info(file_id, file_info);
+    RPC_DEBUG("%s %d", file_info.ip.c_str(), file_info.port);
+    exit(0);
     if(ret == -1){
         return -1;
     }

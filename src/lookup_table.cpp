@@ -4,6 +4,8 @@
  * @brief construct
  */
 lookup_table::lookup_table() {
+    m_locks.resize(LOOKUP_TABLE_GROUP_NUM);
+    m_tables.resize(LOOKUP_TABLE_GROUP_NUM);
 }
 
 /**
@@ -20,7 +22,7 @@ lookup_table::~lookup_table() {
  * @return 
  */
 const single_table_t &lookup_table::lock_group(int group_id) {
-    rw_lock rwLock = m_locks.at(group_id);
+    rw_lock &rwLock = m_locks.at(group_id);
     rwLock.wrlock();
     return m_tables.at(group_id);
 }
@@ -31,7 +33,7 @@ const single_table_t &lookup_table::lock_group(int group_id) {
  * @param group_id
  */
 void lookup_table::unlock_group(int group_id) {
-    rw_lock rwLock = m_locks.at(group_id);
+    rw_lock &rwLock = m_locks.at(group_id);
     rwLock.unlock();
 }
 
@@ -45,24 +47,21 @@ void lookup_table::unlock_group(int group_id) {
  */
 int lookup_table::get_file_info(const std::string &file_id, 
         file_info_t &file_info) {
+
     int group_id = get_group_id(file_id);
-    rw_lock rwLock = m_locks.at(group_id);
-    rwLock.rdlock();
-    single_table_t s_table = m_tables.at(group_id);
-    single_table_t::iterator iter;
-    int flag = 0;
-    for(iter = s_table.begin();iter != s_table.end();iter ++){
-        if(strcmp(file_id.c_str(), (iter->first).c_str()) == 0){
-            file_info = iter->second;
-            flag = 1;
-            break;
-        }
-    }
-    rwLock.unlock();
-    if(flag == 0){
+    if (group_id < 0 || group_id >= LOOKUP_TABLE_GROUP_NUM) {
         return -1;
     }
-    return 0;
+
+    auto_rdlock al(&m_locks[group_id]);
+
+    single_table_t &s_table = m_tables[group_id];
+    if (s_table.count(file_id)) {
+        file_info = s_table[file_id];
+        return 0;
+    }
+
+    return -1;
 }
 
 /**
@@ -76,11 +75,14 @@ int lookup_table::get_file_info(const std::string &file_id,
 int lookup_table::set_file_info(const std::string &file_id, 
         const file_info_t &file_info) {
     int group_id = get_group_id(file_id);
-    rw_lock rwLock = m_locks.at(group_id);
-    rwLock.wrlock();
-    single_table_t s_table = m_tables.at(group_id);
+    if (group_id < 0 || group_id >= LOOKUP_TABLE_GROUP_NUM) {
+        return -1;
+    }
+
+    auto_wrlock al(&m_locks[group_id]);
+
+    single_table_t &s_table = m_tables[group_id];
     s_table[file_id] = file_info;
-    rwLock.unlock();
     return 0;
 }
 
@@ -94,5 +96,5 @@ int lookup_table::set_file_info(const std::string &file_id,
 int lookup_table::get_group_id(const std::string &file_id) {
     std::hash<std::string> hash_file;
     std::size_t file_ind = (hash_file(file_id)) % LOOKUP_TABLE_GROUP_NUM;
-    return (int) file_ind;
+    return (int)file_ind;
 }

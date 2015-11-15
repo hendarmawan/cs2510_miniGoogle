@@ -17,6 +17,11 @@ task_consumer::task_consumer():
     m_slave_port(0),
     m_running(true),
     m_thrds_num(0) {
+
+    svr_inst_t svr;
+    svr.ip = "127.0.0.1";
+    svr.port = 8000;
+    m_masters.push_back(svr);
 }
 
 /**
@@ -48,55 +53,6 @@ void task_consumer::task_routine() {
         if (ret < 0) {
             usleep(m_thrds_num * 500 * 1000);
         }
-    }
-}
-
-/**
- * @brief 
- *
- * @param args
- *
- * @return 
- */
-void *task_consumer::master_routine(void *args) {
-    task_consumer *pthis = (task_consumer*)args;
-    pthis->master_routine();
-    return NULL;
-}
-
-/**
- * @brief 
- */
-void task_consumer::update_masters() {
-    std::vector<svr_inst_t> masters;
-    int ret = get_insts_by_id(DS_IP, DS_PORT,
-            RPC_MASTER_ID, RPC_MASTER_VERSION, masters);
-
-    if (0 == ret) {
-        auto_wrlock al(&m_masters_rwlock);
-        m_masters = masters;
-
-        for (int i = 0; i < masters.size(); ++i) {
-            RPC_INFO("%s:%u", masters[i].ip.c_str(), masters[i].port);
-        }
-    }
-}
-
-/**
- * @brief 
- */
-void task_consumer::master_routine() {
-    RPC_DEBUG("RUNNING");
-    update_masters();
-
-    unsigned long long prev_msec = get_cur_msec();
-    while (is_running()) {
-        unsigned long long curr_msec = get_cur_msec();
-        if (curr_msec - prev_msec >= 30 * 1000) {
-            update_masters();
-            prev_msec = curr_msec;
-        }
-        usleep(500 * 1000);
     }
 }
 
@@ -245,11 +201,6 @@ int task_consumer::run(int thrds_num) {
             RPC_WARNING("pthread_create() error, errno=%d", errno);
             return -1;
         }
-    }
-    int ret = pthread_create(&m_thrd_master, NULL, master_routine, this);
-    if (0 != ret) {
-        RPC_WARNING("pthread_create() error, errno=%d", errno);
-        return -1;
     }
     return 0;
 }
