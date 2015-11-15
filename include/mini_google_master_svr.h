@@ -7,6 +7,8 @@
 #include <queue>
 #include "index_common.h"
 #include <map>
+#include "lookup_table.h"
+#include "invert_table.h"
 
 class mini_google_event: public http_event {
     public:
@@ -41,6 +43,7 @@ class mini_google_svr: public svr_base {
         int put(index_task_t &t);
         int poll(index_task_t &t);
         int report(const std::string &req_body);
+
         int query(const std::string &uri, std::vector<std::string> &file_v);
         int retrieve(const std::string &file_id, const std::string &req_body, std::string &rsp_head, std::string & rsp_body);
     
@@ -57,6 +60,8 @@ class mini_google_svr: public svr_base {
 
         // lock for queue
         // task queue m_queue
+        invert_table m_invert_table;
+        lookup_table m_lookup_table;
 };
 
 #endif

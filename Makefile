@@ -57,6 +57,8 @@ DIRECTORY_SERVER_OBJS= \
 
 MINI_GOOGLE_MASTER_OBJS= \
 	src/mini_google_master_svr.o \
+    src/lookup_table.o \
+    src/invert_table.o \
 	src/main_master.o
 
 MINI_GOOGLE_SLAVE_OBJS=\

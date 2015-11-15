@@ -9,7 +9,7 @@ struct index_task_t {
     std::string uid;
 };
 
-struct file_task_t {
+struct file_info_t {
     std::string ip;
     unsigned short port;
     std::string status;
