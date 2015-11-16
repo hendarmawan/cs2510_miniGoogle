@@ -81,7 +81,14 @@ class mini_google_svr: public svr_base {
     public:
         virtual io_event *create_event(int fd,
                 const std::string &ip, unsigned short port);
-        int put(index_task_t &t);
+        /**
+         * @brief append task to task queue
+         *
+         * @param t
+         *
+         * @return 
+         */
+        int put(index_task_t &task);
         int poll(index_task_t &t);
         int report(const std::string &req_body);
 
