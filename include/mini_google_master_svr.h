@@ -73,7 +73,7 @@ class mini_google_svr: public svr_base {
         int poll(index_task_t &t);
         int report(const std::string &req_body);
 
-        int query(const std::string &uri, std::vector<std::string> &file_v);
+        int query(const std::string &uri);
         int retrieve(const std::string &file_id, file_info_t &file_info);
         int reportInvert(const std::string &file_id, const std::string word, int count);
         int reportLookup(const std::string &file_id, const std::string &slave_ip, int slave_port);
