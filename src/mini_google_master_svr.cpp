@@ -159,20 +159,43 @@ void mini_google_event::process_poll(const std::string &uri, const std::string &
     }
 }
 
-void mini_google_event::process_report(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
+/**
+ * @brief process report from workers
+ *
+ * @param uri
+ * @param req_body
+ * @param rsp_head
+ * @param rsp_body
+ */
+void mini_google_event::process_report(
+        const std::string &uri, 
+        const std::string &req_body, 
+        std::string &rsp_head, 
+        std::string &rsp_body){
+
     basic_proto bp (req_body.data(), req_body.size());
+
+    /* file id */
     char* file_id;
-    char* slave_ip;
-    int file_id_len, slave_ip_len;
-    int slave_port;
-    int word_dict_size;
+    int file_id_len; 
     bp.read_string(file_id_len, file_id);
+
+    /* slave ip */
+    char* slave_ip;
+    int slave_ip_len;
     bp.read_string(slave_ip_len, slave_ip);
+
+    /* slave port */
+    int slave_port;
     bp.read_int(slave_port);
+
     int ret = ((mini_google_svr*) m_svr)->reportLookup(file_id, slave_ip, slave_port);
     RPC_INFO("incoming report request, slave_ip=%s, slave_port=%u, ret=%d", slave_ip, slave_port, ret);
 
+    /* word dict */
+    int word_dict_size; 
     bp.read_int(word_dict_size);
+
     for(int i=0;i<word_dict_size;i++){
         char* word;
         int word_len;
@@ -184,6 +207,7 @@ void mini_google_event::process_report(const std::string &uri, const std::string
             RPC_INFO("update unsucessfully.\n");
         }
     }
+    rsp_head = gen_http_head("200 Ok", 0);
 }
 
 int mini_google_svr::reportInvert(const std::string &file_id, const std::string word, int count){
