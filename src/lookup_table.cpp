@@ -15,13 +15,13 @@ lookup_table::~lookup_table() {
 }
 
 /**
- * @brief lock group, return the single_table_t data structure
+ * @brief lock group, return the single_lookup_table_t data structure
  *
  * @param group_id
  *
  * @return 
  */
-single_table_t *lookup_table::lock_group(int group_id) {
+single_lookup_table_t *lookup_table::lock_group(int group_id) {
     if (group_id < 0 || group_id >= LOOKUP_TABLE_GROUP_NUM) {
         return NULL;
     }
@@ -59,7 +59,7 @@ int lookup_table::get_file_info(const std::string &file_id,
 
     auto_rdlock al(&m_locks[group_id]);
 
-    single_table_t &s_table = m_tables[group_id];
+    single_lookup_table_t &s_table = m_tables[group_id];
     if (s_table.count(file_id)) {
         file_info = s_table[file_id];
         return 0;
@@ -86,7 +86,7 @@ int lookup_table::set_file_info(const std::string &file_id,
 
     auto_wrlock al(&m_locks[group_id]);
 
-    single_table_t &s_table = m_tables[group_id];
+    single_lookup_table_t &s_table = m_tables[group_id];
     s_table[file_id] = file_info;
     return 0;
 }

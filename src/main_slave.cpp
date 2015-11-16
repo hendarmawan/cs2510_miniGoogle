@@ -21,11 +21,16 @@ static void usage(int argc, char *argv[]) {
     printf("-t/--threads:   specify threads number\n");
     printf("-i/--ip:        specify service ip\n");
     printf("-p/--port:      specify service port\n");
+    printf("--master-ip:    specify master ip\n");
+    printf("--master-port:  specify master port\n");
 }
 
 int main(int argc, char *argv[]) {
     const char *ip = NULL;
     int port = 0;
+    const char *master_ip = NULL;
+    int master_port = 0;
+
     int threads_num = 4;
     int consumers_num = 1;
 
@@ -35,6 +40,8 @@ int main(int argc, char *argv[]) {
             { "help", no_argument, 0, 'h'},
             { "ip", required_argument, 0, 'i'},
             { "port", required_argument, 0, 'p'},
+            { "master-ip", required_argument, 0, 1},
+            { "master-port", required_argument, 0, 2},
             { "threads", required_argument, 0, 't'},
             { 0, 0, 0, 0 }
         };
@@ -56,20 +63,28 @@ int main(int argc, char *argv[]) {
             case 'p':
                 port = atoi(optarg);
                 break;
+            case 1:
+                master_ip = optarg;
+                break;
+            case 2:
+                master_port = atoi(optarg);
+                break;
             default:
                 usage(argc, argv);
                 exit(0);
         }
     }
-    if (0 == port || ip == NULL) {
+    if (0 == port || ip == NULL || 0 == master_port || master_ip == NULL) {
         usage(argc, argv);
         exit(0);
     }
 
     /* start service */
     RPC_DEBUG("threads num=%d", threads_num);
-    RPC_INFO("register ip=%s", ip);
-    RPC_INFO("register port=%d", port);
+    RPC_INFO("my ip=%s", ip);
+    RPC_INFO("my port=%d", port);
+    RPC_INFO("master ip=%s", master_ip);
+    RPC_INFO("master port=%d", master_port);
 
     signal(SIGINT, signal_proc);
     signal(SIGTERM, signal_proc);
@@ -90,6 +105,7 @@ int main(int argc, char *argv[]) {
 
     /* initialize task consumer */
     task_consumer *tc = new task_consumer;
+    tc->set_master_addr(master_ip, master_port);
     tc->set_slave_addr(ip, port);
 
     if (0 != tc->run(consumers_num)) {
@@ -97,25 +113,9 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
-    /* register information */
-    if (0 != register_information(DS_IP, DS_PORT,
-                RPC_SLAVE_ID, RPC_SLAVE_NAME, RPC_SLAVE_VERSION, ip, port)) {
-        RPC_WARNING("register error");
-    }
-
     unsigned long long prev_msec = get_cur_msec();
     while (running) {
         svr->run_routine(10);
-
-        unsigned long long curr_msec = get_cur_msec();
-        if (curr_msec - prev_msec >= 30 * 1000) {
-            /* update register information every 10 secs */
-            if (0 != register_information(DS_IP, DS_PORT,
-                        RPC_SLAVE_ID, RPC_SLAVE_NAME, RPC_SLAVE_VERSION, ip, port)) {
-                RPC_WARNING("update register information error");
-            }
-            prev_msec = curr_msec;
-        }
     }
 
     tc->stop();
@@ -123,12 +123,6 @@ int main(int argc, char *argv[]) {
 
     svr->stop();
     svr->join();
-
-    /* delete */
-    if (0 != unregister_information(DS_IP, DS_PORT,
-                RPC_SLAVE_ID, RPC_SLAVE_NAME, RPC_SLAVE_VERSION, ip, port)) {
-        RPC_WARNING("unregister error");
-    }
 
     delete svr;
     delete tc;
