@@ -1,9 +1,12 @@
 #include "invert_table.h"
+#include <functional>
 
 /**
  * @brief construct
  */
 invert_table::invert_table() {
+    m_locks.resize(INVERT_TABLE_GROUP_NUM);
+    m_tables.resize(INVERT_TABLE_GROUP_NUM);
 }
 
 /**
@@ -19,10 +22,12 @@ invert_table::~invert_table() {
  *
  * @return 
  */
-const single_invert_table_t &invert_table::lock_group(int group_id) {
-    rw_lock rwLock = m_locks.at(group_id);
-    rwLock.wrlock();
-    return m_tables.at(group_id);
+single_invert_table_t *invert_table::lock_group(int group_id) {
+    if (group_id < 0 || group_id >= INVERT_TABLE_GROUP_NUM) {
+        return NULL;
+    }
+    m_locks[group_id].rdlock();
+    return &m_tables[group_id];
 }
 
 /**
@@ -31,8 +36,10 @@ const single_invert_table_t &invert_table::lock_group(int group_id) {
  * @param group_id
  */
 void invert_table::unlock_group(int group_id) {
-    rw_lock rwLock = m_locks.at(group_id);
-    rwLock.unlock();
+    if (group_id < 0 || group_id >= INVERT_TABLE_GROUP_NUM) {
+        return;
+    }
+    m_locks[group_id].unlock();
 }
 
 /**
@@ -42,12 +49,16 @@ void invert_table::unlock_group(int group_id) {
  * @param file_id
  * @param freq
  */
-void invert_table::update(const std::string &term, 
+int invert_table::update(const std::string &term,
         const std::string &file_id, int freq) {
     int group_id = get_group_id(term);
-    rw_lock rwLock = m_locks.at(group_id);
-    rwLock.wrlock();
-    single_invert_table_t s_invert_table = m_tables.at(group_id);
+    if (group_id < 0 || group_id >= INVERT_TABLE_GROUP_NUM) {
+        return -1;
+    }
+    //rw_lock rwLock = m_locks.at(group_id);
+    auto_wrlock al(&m_locks[group_id]);
+    
+    single_invert_table_t &s_invert_table = m_tables[group_id];
     if(s_invert_table.count(term)){  //if has such term
         file_freq_list_t ffl = s_invert_table[term];
         ffl[file_id] = freq;
@@ -57,7 +68,7 @@ void invert_table::update(const std::string &term,
         freq_list[file_id] = freq;
         s_invert_table[term] = freq_list;
     }
-    rwLock.unlock();
+    return 0;
 }
 
 /**
@@ -71,16 +82,17 @@ void invert_table::update(const std::string &term,
 bool invert_table::search(const std::string &term,
         file_freq_list_t &file_list) {
     int group_id = get_group_id(term);
-    rw_lock rwLock = m_locks.at(group_id);
-    rwLock.rdlock();
-    single_invert_table_t s_invert_table = m_tables.at(group_id);
+    if (group_id < 0 || group_id >= INVERT_TABLE_GROUP_NUM) {
+        return false;
+    }
+    auto_rdlock al(&m_locks[group_id]);
+    single_invert_table_t &s_invert_table = m_tables[group_id];
     if(!s_invert_table.count(term)){
         return false;
     }
     else{
         file_list = s_invert_table[term];
     }
-    rwLock.unlock();
     return true;
 }
 

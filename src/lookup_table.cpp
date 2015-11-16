@@ -1,4 +1,5 @@
 #include "lookup_table.h"
+#include <functional>
 
 /**
  * @brief construct

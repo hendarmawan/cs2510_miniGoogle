@@ -110,15 +110,43 @@ void mini_google_event::process_poll(const std::string &uri, const std::string &
 }
 
 void mini_google_event::process_report(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
-    RPC_DEBUG("get report request !!!, %lu", req_body.length());
-    RPC_DEBUG("%s", req_body.c_str());
-    int ret = ((mini_google_svr*)m_svr)->report(req_body);
-    if (ret != -1) {
-        rsp_head = gen_http_head("200 Ok", rsp_body.size());
+    basic_proto bp (req_body.data(), req_body.size());
+    char* file_id;
+    char* slave_ip;
+    int file_id_len, slave_ip_len;
+    int slave_port;
+    int word_dict_size;
+    bp.read_string(file_id_len, file_id);
+    bp.read_string(slave_ip_len, slave_ip);
+    bp.read_int(slave_port);
+    int ret = ((mini_google_svr*) m_svr)->reportLookup(file_id, slave_ip, slave_port);
+    bp.read_int(word_dict_size);
+    for(int i=0;i<word_dict_size;i++){
+        char* word;
+        int word_len;
+        int count;
+        bp.read_string(word_len,word);
+        bp.read_int(count);
+        int ret = ((mini_google_svr*) m_svr)->reportInvert(file_id, word, count);
+        if(ret==-1){
+            RPC_INFO("update unsucessfully.\n");
+        }
     }
-    else{
-        rsp_head = gen_http_head("404 Not Found", rsp_body.size());
-    }
+}
+
+int mini_google_svr::reportInvert(const std::string &file_id, const std::string word, int count){
+    invert_table invert_t;
+    int ret = invert_t.update(word, file_id, count);
+    return ret;
+}
+
+int mini_google_svr::reportLookup(const std::string &file_id, const std::string & slave_ip, int slave_port){
+    file_info_t file_info;
+    file_info.ip = slave_ip;
+    file_info.port = (unsigned short)slave_port;
+    lookup_table lookup_t;
+    int ret = lookup_t.set_file_info(file_id, file_info);
+    return ret;
 }
 
 void mini_google_event::process_query(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
@@ -238,8 +266,10 @@ void mini_google_event::process_backup(
         }
     }
     else {
-        const single_invert_table_t &tab = invert_tab.lock_group(group_id);
-        invert_tab.unlock_group(group_id);
+        single_invert_table_t * tab = invert_tab.lock_group(group_id);
+        if (NULL != tab) {
+            invert_tab.unlock_group(group_id);
+        }
     }
 
     /* pack message */
@@ -313,72 +343,6 @@ int mini_google_svr::poll(index_task_t &t) {
     }
     m_queue_lock.unlock();
     return ret;
-}
-
-int mini_google_svr::report(const std::string &req_body){
-    //invert_table_lock.lock();
-    //basic_proto bp (req_body.data(), req_body.size());
-    //char* file_id;
-    //char* slave_ip;
-    //int file_id_len, slave_ip_len;
-    //int slave_port;
-    //int word_dict_size;
-    //bp.read_string(file_id_len, file_id);
-    //RPC_INFO("file id is: %s; slave ip is: %s; slave port is: %d; word dict size is: %d", file_id, slave_ip, slave_port, word_dict_size);
-    //bp.read_string(slave_ip_len, slave_ip);
-    //bp.read_int(slave_port);
-    //bp.read_int(word_dict_size);
-    ////std::map<std::string, int> word_dict;
-    ////std::map<std::string, int>::iterator it = word_dict.begin();
-    //std::map<std::string, std::list<std::pair<std::string, int> > >::iterator it;
-    //for(int i=0; i<word_dict_size; i++){
-    //    char* word;
-    //    //std::string word_str;
-    //    int word_len;
-    //    int count;
-    //    bp.read_string(word_len, word);
-    //    bp.read_int(count);
-    //    it = invert_table.find(word);
-    //    if(it != invert_table.end()){ //the word has been contained in the table
-    //        std::list<std::pair<std::string, int> > doc_list = invert_table.find(word)->second;
-    //        std::list<std::pair<std::string, int> >::iterator iter;
-    //        int flag = 0;
-    //        for(iter = doc_list.begin(); iter != doc_list.end(); iter++){
-    //            if(strcmp((iter->first).c_str(), file_id) == 0){
-    //                flag = 1;
-    //                break;
-    //            }
-    //        }
-    //        if(flag == 0){
-    //            for(iter = doc_list.begin(); iter != doc_list.end(); iter++){
-    //                if(iter->second<count){
-    //                    break;
-    //                }
-    //            }
-    //            std::pair<std::string, int> p (file_id, count);
-    //            doc_list.insert(iter, p);
-    //            invert_table.erase(it);
-    //            it = invert_table.begin();
-    //            invert_table.insert(it, std::pair<std::string, std::list<std::pair<std::string, int> > > (word, doc_list));
-    //        }
-    //    }
-    //    else{  // the word is not contained in the table
-    //        std::list<std::pair<std::string, int> > d_list;
-    //        std::list<std::pair<std::string, int> >::iterator iter;
-    //        iter = d_list.begin();
-    //        d_list.insert(iter, std::pair<std::string, int> (file_id, count));
-    //        it = invert_table.begin();
-    //        invert_table.insert(it, std::pair<std::string, std::list<std::pair<std::string, int> > > (word, d_list));
-    //    }
-    //    //word_dict.insert(it, std::pair<std::string, int>(word, count));
-    //    
-    //    //std::map<std::string, std::list<std::pair<std::string, int> > > invert_table;
-    //    
-    //    //std::map<std::string, file_info_t > lookup_table;
-    //    
-    //}
-    //invert_table_lock.unlock();
-    return 0;
 }
 
 int mini_google_svr::query(const std::string &uri, std::vector<std::string> &file_v){

@@ -39,7 +39,7 @@ class invert_table {
          *
          * @return 
          */
-        const single_invert_table_t &lock_group(int group_id);
+        single_invert_table_t *lock_group(int group_id);
 
         /**
          * @brief unlock group
@@ -56,7 +56,7 @@ class invert_table {
          * @param file_id
          * @param freq
          */
-        void update(const std::string &term, 
+        int update(const std::string &term,
                 const std::string &file_id, int freq);
 
         /**
