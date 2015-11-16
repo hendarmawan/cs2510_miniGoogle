@@ -16,6 +16,19 @@ std::string gen_http_head(
         const std::string &http_code, int content_len);
 
 /**
+ * @brief generate http head with specific http_code and content_len
+ *
+ * @param http_code
+ * @param content_len
+ * @param content_type
+ *
+ * @return 
+ */
+std::string gen_http_head(
+        const std::string &http_code, int content_len, 
+        const std::string &content_type);
+
+/**
  * @brief generate http head with specific uri, host, and content_len
  *
  * @param uri

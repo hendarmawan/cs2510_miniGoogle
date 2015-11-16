@@ -27,6 +27,26 @@ std::string gen_http_head(
 }
 
 /**
+ * @brief generate http head with specific http_code and content_len
+ *
+ * @param http_code
+ * @param content_len
+ * @param content_type
+ *
+ * @return 
+ */
+std::string gen_http_head(
+        const std::string &http_code, int content_len, 
+        const std::string &content_type) {
+
+    char buf[512] = { 0 };
+    sprintf(buf, "HTTP/1.1 %s\r\nContent-Type: %s\r\nContent-Length: %d\r\n\r\n", 
+            http_code.c_str(), content_type.c_str(), content_len);
+
+    return buf;
+}
+
+/**
  * @brief generate http head with specific uri, host, and content_len
  *
  * @param uri
@@ -173,6 +193,7 @@ int http_talk(const std::string &ip, unsigned short port,
     int ret = http_send(fd, req_head, req_body, send_timeout_ms);
     if (ret < 0) {
         RPC_WARNING("http_send() error, fd=%d", fd);
+        close(fd);
         return -1;
     }
 
@@ -180,6 +201,7 @@ int http_talk(const std::string &ip, unsigned short port,
     ret = http_recv(fd, rsp_head, rsp_body, recv_timeout_ms);
     if (ret < 0) {
         RPC_WARNING("http_recv() error, fd=%d", fd);
+        close(fd);
         return -1;
     }
 

@@ -19,8 +19,9 @@ static std::string get_time_str() {
 }
 
 #define RPC_DEBUG(format, args...) \
-    fprintf(stderr, "DEBUG %s %s:%d %s() " format"\n", \
-            get_time_str().c_str(), __FILE__, __LINE__, __func__, ##args)
+    ;
+    //fprintf(stderr, "DEBUG %s %s:%d %s() " format"\n", \
+    //        get_time_str().c_str(), __FILE__, __LINE__, __func__, ##args)
 
 #define RPC_INFO(format, args...) \
     fprintf(stderr, "INFO %s %s:%d %s() " format"\n", \
