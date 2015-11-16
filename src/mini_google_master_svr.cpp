@@ -120,6 +120,8 @@ void mini_google_event::process_report(const std::string &uri, const std::string
     bp.read_string(slave_ip_len, slave_ip);
     bp.read_int(slave_port);
     int ret = ((mini_google_svr*) m_svr)->reportLookup(file_id, slave_ip, slave_port);
+    RPC_INFO("incoming report request, slave_ip=%s, slave_port=%u, ret=%d", slave_ip, slave_port, ret);
+
     bp.read_int(word_dict_size);
     for(int i=0;i<word_dict_size;i++){
         char* word;
@@ -144,8 +146,7 @@ int mini_google_svr::reportLookup(const std::string &file_id, const std::string 
     file_info_t file_info;
     file_info.ip = slave_ip;
     file_info.port = (unsigned short)slave_port;
-    lookup_table lookup_t;
-    int ret = lookup_t.set_file_info(file_id, file_info);
+    int ret = m_lookup_table.set_file_info(file_id, file_info);
     return ret;
 }
 
@@ -169,7 +170,7 @@ void mini_google_event::process_retrieve(const std::string &uri, const std::stri
     std::string file_id = uri.substr(pos + strlen("fid="));
     file_info_t file_info;
     int ret = ((mini_google_svr*)m_svr)->retrieve(file_id, file_info);
-    if (ret != -1){
+    if (ret == -1){
         process_default(uri, req_body, rsp_head, rsp_body, 
             "lookup failed, file_id not found in lookup table");
         return;
@@ -177,14 +178,13 @@ void mini_google_event::process_retrieve(const std::string &uri, const std::stri
 
     std::string req_head = gen_http_head(uri, file_info.ip, 0);
     http_talk(file_info.ip, file_info.port, req_head, req_body, rsp_head, rsp_body);
+
+    rsp_head = gen_http_head("200 Ok", rsp_body.size());
     return;
 }
 
 int mini_google_svr::retrieve(const std::string &file_id, file_info_t &file_info){
-    lookup_table lookup_t;
-    int ret = lookup_t.get_file_info(file_id, file_info);
-    RPC_DEBUG("%s %d", file_info.ip.c_str(), file_info.port);
-    exit(0);
+    int ret = m_lookup_table.get_file_info(file_id, file_info);
     if(ret == -1){
         return -1;
     }
