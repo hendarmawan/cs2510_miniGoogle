@@ -4,7 +4,7 @@ INCLUDE='./include'
 IDLFILE=conf/idl2.xml
 
 CXX=g++
-CXXFLAGS=-g -I$(INCLUDE)
+CXXFLAGS=-g -std=c++0x -I$(INCLUDE)
 CC=gcc
 CFLAGS=-g -I$(INCLUDE)
 
