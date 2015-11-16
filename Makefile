@@ -9,7 +9,6 @@ CC=gcc
 CFLAGS=-g -I$(INCLUDE)
 
 COMMON_LIB=common_lib.a
-DIRECTORY_SERVER=directory_svr
 MINI_GOOGLE_MASTER=mini_google_master
 MINI_GOOGLE_SLAVE=mini_google_slave
 
@@ -51,10 +50,6 @@ COMMON_LIB_OBJS= \
 	src/mini_google_common.o \
 	src/file_mngr.o
 
-DIRECTORY_SERVER_OBJS= \
-	src/ds_svr.o \
-	src/main_ds_svr.o
-
 MINI_GOOGLE_MASTER_OBJS= \
 	src/mini_google_master_svr.o \
     src/lookup_table.o \
@@ -78,17 +73,6 @@ $(COMMON_LIB): $(COMMON_LIB_OBJS)
 	ar rcs $(COMMON_LIB) $(COMMON_LIB_OBJS)
 	cp $(COMMON_LIB) output/lib
 	@echo -e "$(cchighlight)successfully compiling $(COMMON_LIB)$(ccend)"
-
-# compiling directory_server
-$(DIRECTORY_SERVER): $(COMMON_LIB) $(DIRECTORY_SERVER_OBJS)
-	mkdir -p output/directory_server
-ifeq ($(OS),Linux)
-	$(CXX) $(CXXFLAGS) -lpthread -o $(DIRECTORY_SERVER) -Xlinker "-(" $(COMMON_LIB) $(DIRECTORY_SERVER_OBJS) -Xlinker "-)"
-else
-	$(CXX) $(CXXFLAGS) -lpthread -o $(DIRECTORY_SERVER) -Xlinker $(COMMON_LIB) $(DIRECTORY_SERVER_OBJS)
-endif
-	cp $(DIRECTORY_SERVER) output/directory_server
-	@echo -e "$(cchighlight)successfully compiling $(DIRECTORY_SERVER)$(ccend)"
 
 # compiling master server
 $(MINI_GOOGLE_MASTER): $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS)
