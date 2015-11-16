@@ -264,8 +264,10 @@ void mini_google_event::process_backup(
         }
     } 
     else {
-        const single_invert_table_t &tab = invert_tab.lock_group(group_id);
-        invert_tab.unlock_group(group_id);
+        single_invert_table_t * tab = invert_tab.lock_group(group_id);
+        if (NULL != tab) {
+            invert_tab.unlock_group(group_id);
+        }
     }
 
     /* pack message */

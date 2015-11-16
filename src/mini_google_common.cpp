@@ -1,4 +1,5 @@
 #include "mini_google_common.h"
+#include <string.h>
 #include "rpc_log.h"
 #include "rpc_http.h"
 

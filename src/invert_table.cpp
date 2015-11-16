@@ -1,4 +1,5 @@
 #include "invert_table.h"
+#include <functional>
 
 /**
  * @brief construct
