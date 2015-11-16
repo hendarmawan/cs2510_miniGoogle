@@ -230,8 +230,10 @@ void mini_google_event::process_backup(
         ezxml_t file_info = ezxml_add_child(file_info_list, "f", 0);
         ezxml_set_attr(file_info, "ip", "127.0.0.1");
 
-        const single_table_t &tab = lookup_tab.lock_group(group_id);
-        lookup_tab.unlock_group(group_id);
+        single_table_t *tab = lookup_tab.lock_group(group_id);
+        if (NULL != tab) {
+            lookup_tab.unlock_group(group_id);
+        }
     } 
     else {
         const single_invert_table_t &tab = invert_tab.lock_group(group_id);

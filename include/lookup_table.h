@@ -37,7 +37,7 @@ class lookup_table {
          *
          * @return 
          */
-        const single_table_t &lock_group(int group_id);
+        single_table_t *lock_group(int group_id);
 
         /**
          * @brief unlock group

@@ -14,14 +14,10 @@
  * @brief construct
  */
 task_consumer::task_consumer(): 
+    m_master_port(0),
     m_slave_port(0),
     m_running(true),
     m_thrds_num(0) {
-
-    svr_inst_t svr;
-    svr.ip = "127.0.0.1";
-    svr.port = 8000;
-    m_masters.push_back(svr);
 }
 
 /**
@@ -130,22 +126,14 @@ static void pack_report(std::string &report, const std::string &file_id,
 int task_consumer::consume() {
     std::string file_id, file_content;
 
-    /* choose a master randomly */
-    std::vector<svr_inst_t> masters;
-    do {
-        auto_rdlock al(&m_masters_rwlock);
-        masters = m_masters;
-    } while (false);
-
-    if (masters.size() == 0) {
-        return -1;
-    }
-    srand((unsigned int)time(NULL));
-    svr_inst_t &master = masters[rand() % masters.size()];
+    svr_inst_t master;
+    master.ip = m_master.ip;
+    master.port = m_master.port;
 
     /* poll task and compute wordcount */
-    if (-1 == poll_task_from_master(master.ip, master.port, file_content)) {
-        RPC_DEBUG("poll task failed, master_ip=%s, master_port=%u", master.ip.c_str(), master.port);
+    if (-1 == poll_task_from_master( master.ip, master.port, file_content)) {
+        RPC_DEBUG("poll task failed, master_ip=%s, master_port=%u", 
+                master.ip.c_str(), master.port);
         return -1;
     }
 
@@ -165,21 +153,19 @@ int task_consumer::consume() {
     std::string rsp_head, rsp_body;
 
     pack_report(req_body, file_id, m_slave_ip, m_slave_port, word_dict);
-    for (int i = 0; i < (int)masters.size(); ++i) {
-        svr_inst_t &master = masters[i];
-        req_head = gen_http_head("/report", master.ip, req_body.size());
-        int ret = http_talk(master.ip, master.port, 
-                req_head, req_body, rsp_head, rsp_body);
 
-        if (ret < 0) {
-            RPC_WARNING("report to master error, ip=%s, port=%u", 
-                    master.ip.c_str(), master.port);
-        } else {
-            RPC_INFO("report to master succ, ip=%s, port=%u", 
-                    master.ip.c_str(), master.port);
-        }
+    req_head = gen_http_head("/report", master.ip, req_body.size());
+    int ret = http_talk(master.ip, master.port, 
+            req_head, req_body, rsp_head, rsp_body);
+
+    if (ret < 0) {
+        RPC_WARNING("report to master error, ip=%s, port=%u", 
+                master.ip.c_str(), master.port);
+        return -1;
     }
 
+    RPC_INFO("report to master succ, ip=%s, port=%u", 
+            master.ip.c_str(), master.port);
     return 0;
 }
 
