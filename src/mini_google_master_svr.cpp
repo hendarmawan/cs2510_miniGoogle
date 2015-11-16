@@ -226,7 +226,7 @@ int mini_google_svr::reportLookup(const std::string &file_id, const std::string 
 }
 
 void mini_google_event::process_query(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
-    invert_table invert_t = ((mini_google_svr*)m_svr)->get_invert_table();
+    invert_table &invert_t = ((mini_google_svr*)m_svr)->get_invert_table();
     std::size_t pos = uri.find("word=");
     std::string word_query = uri.substr(pos+strlen("word="));
     std::size_t start = pos + strlen("word=");
@@ -240,20 +240,33 @@ void mini_google_event::process_query(const std::string &uri, const std::string 
         if(ret){
             ezxml_set_txt(root, key_word.c_str());
             file_freq_list_t::iterator iter;
+            ezxml_t file_kw = ezxml_add_child(root, "keyword", 0);
             for(iter = ffl.begin(); iter!=ffl.end(); iter++){
-                ezxml_t file_kw = ezxml_add_child(root, "keyword", 0);
                 ezxml_set_txt(ezxml_add_child(file_kw, "file_id", 0),(iter->first).c_str());
                 ezxml_set_txt(ezxml_add_child(file_kw, "frequency", 0), num_to_str(iter->second).c_str());
             }
-            std::string data(ezxml_toxml(root));
-            rsp_body.assign(data);
-            ezxml_free(root);
         }
         count++;
         found = word_query.find("+", found+1);
         start = found+1;
     }
-    
+    if(count==0){
+        std::string keyword = word_query;
+        file_freq_list_t ffl;
+        bool ret = invert_t.search(keyword,ffl);
+        if(ret){
+            ezxml_set_txt(root, keyword.c_str());
+            file_freq_list_t::iterator iter;
+            ezxml_t file_kw = ezxml_add_child(root, "keyword", 0);
+            for(iter = ffl.begin(); iter!=ffl.end(); iter++){
+                ezxml_set_txt(ezxml_add_child(file_kw, "file_id", 0),(iter->first).c_str());
+                ezxml_set_txt(ezxml_add_child(file_kw, "frequency", 0), num_to_str(iter->second).c_str());
+            }
+        }
+    }
+    std::string data(ezxml_toxml(root));
+    rsp_body.assign(data);
+    ezxml_free(root);
 }
 
 void mini_google_event::process_retrieve(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
