@@ -4,6 +4,8 @@
  * @brief construct
  */
 invert_table::invert_table() {
+    m_locks.resize(INVERT_TABLE_GROUP_NUM);
+    m_tables.resize(INVERT_TABLE_GROUP_NUM);
 }
 
 /**
