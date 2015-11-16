@@ -127,8 +127,8 @@ int task_consumer::consume() {
     std::string file_id, file_content;
 
     svr_inst_t master;
-    master.ip = m_master.ip;
-    master.port = m_master.port;
+    master.ip = m_master_ip;
+    master.port = m_master_port;
 
     /* poll task and compute wordcount */
     if (-1 == poll_task_from_master( master.ip, master.port, file_content)) {

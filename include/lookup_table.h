@@ -8,7 +8,7 @@
 
 #define LOOKUP_TABLE_GROUP_NUM 2000
 
-typedef std::map<std::string, file_info_t> single_table_t;
+typedef std::map<std::string, file_info_t> single_lookup_table_t;
 
 class lookup_table {
     public:
@@ -31,13 +31,13 @@ class lookup_table {
         int get_group_num() { return LOOKUP_TABLE_GROUP_NUM; }
 
         /**
-         * @brief lock group, return the single_table_t data structure
+         * @brief lock group, return the single_lookup_table_t data structure
          *
          * @param group_id
          *
          * @return 
          */
-        single_table_t *lock_group(int group_id);
+        single_lookup_table_t *lock_group(int group_id);
 
         /**
          * @brief unlock group
@@ -79,7 +79,7 @@ class lookup_table {
         
     private:
         std::vector<rw_lock> m_locks;
-        std::vector<single_table_t> m_tables;
+        std::vector<single_lookup_table_t> m_tables;
 };
 
 #endif
