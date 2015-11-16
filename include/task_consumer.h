@@ -56,13 +56,27 @@ class task_consumer {
 
     public:
         /**
+         * @brief set master address
+         *
+         * @param ip
+         * @param port
+         */
+        void set_master_addr(const std::string &ip, 
+                unsigned short port) {
+            m_master_ip = ip; 
+            m_master_port = port;
+        }
+
+        /**
          * @brief set slave address
          *
          * @param ip
          * @param port
          */
-        void set_slave_addr(const std::string &ip, unsigned short port) {
-            m_slave_ip = ip; m_slave_port = port;
+        void set_slave_addr(const std::string &ip, 
+                unsigned short port) {
+            m_slave_ip = ip; 
+            m_slave_port = port;
         }
 
     private:
@@ -88,26 +102,11 @@ class task_consumer {
          */
         void task_routine();
 
-        /**
-         * @brief 
-         *
-         * @param args
-         *
-         * @return 
-         */
-        static void *master_routine(void *args);
-
-        /**
-         * @brief 
-         */
-        void master_routine();
-
-        /**
-         * @brief 
-         */
-        void update_masters();
-
     private:
+        /* master address */
+        std::string m_master_ip;
+        unsigned short m_master_port;
+
         /* slave address */
         std::string m_slave_ip;
         unsigned short m_slave_port;
@@ -118,12 +117,6 @@ class task_consumer {
         /* thread handles */
         int m_thrds_num;
         std::vector<pthread_t> m_thrd_ids;
-
-        pthread_t m_thrd_master;
-
-        /* master nodes */
-        rw_lock m_masters_rwlock;
-        std::vector<svr_inst_t> m_masters;
 };
 
 #endif
