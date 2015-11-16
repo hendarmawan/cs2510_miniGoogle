@@ -3,6 +3,7 @@
 #include <errno.h>
 #include <time.h>
 #include <map>
+#include <openssl/md5.h>
 #include "rpc_log.h"
 #include "rpc_common.h"
 #include "basic_proto.h"
@@ -10,7 +11,38 @@
 #include "rpc_net.h"
 #include "ezxml.h"
 #include "index_common.h"
-#include "file_mngr.h"
+
+/**
+ * @brief get file id
+ *
+ * @param file_id
+ * @param file_content
+ *
+ * @return 
+ */
+static std::string get_file_id(const std::string &file_content) {
+
+    unsigned char md5[16] = { 0 };
+    MD5((const unsigned char*)file_content.c_str(), file_content.length(), md5);
+
+    std::string file_id;
+
+    for (int i = 0; i < 16; ++i) {
+        int low = md5[i] & 0x0f;
+        int hig = (md5[i] & 0xf0) >> 4;
+        if (hig < 10) {
+            file_id += hig + '0';
+        } else {
+            file_id += hig - 10 + 'a';
+        }
+        if (low < 10) {
+            file_id += low + '0';
+        } else {
+            file_id += low - 10 + 'a';
+        }
+    }
+    return file_id;
+}
 
 /***********************************************
  * mini_google_event
@@ -72,27 +104,36 @@ void mini_google_event::process_default(
     rsp_head = gen_http_head("404 Not Found", rsp_body.size());
 }
 
-void mini_google_event::process_put(const std::string &uri,
-        const std::string &req_body, std::string &rsp_head, std::string &rsp_body) {
-    RPC_DEBUG("get put request !!!, %lu", req_body.length());
-    RPC_DEBUG("%s", req_body.c_str());
+/**
+ * @brief append new task
+ *
+ * @param uri
+ * @param req_body
+ * @param rsp_head
+ * @param rsp_body
+ */
+void mini_google_event::process_put(
+        const std::string &uri,
+        const std::string &req_body, 
+        std::string &rsp_head, 
+        std::string &rsp_body) {
 
-    index_task_t t;
-    std::size_t pos = uri.find("url=");
-    t.url = uri.substr(pos + strlen("url="));
-    t.file_content = req_body;
-    //t.uid = "1234566";
-    //md5
-    file_mngr *inst = file_mngr::create_instance();
-    inst->get_file_id(t.uid, t.file_content);
-    int ret = ((mini_google_svr*)m_svr)->put(t);
+    /* build a task */
+    index_task_t task;
+    task.url     = uri.substr(uri.find("url=") + strlen("url="));
+    task.file_id = get_file_id(req_body);
+    task.file_content = req_body;
+
+    /* append task to the task queue */
+    int ret = ((mini_google_svr*)m_svr)->put(task);
     if(ret != -1){
-        rsp_body.assign(t.file_content);
         rsp_head = gen_http_head("200 Ok", rsp_body.size());
-    }
-    else{
+    } else {
         rsp_head = gen_http_head("404 Not Found", rsp_body.size());
     }
+
+    RPC_INFO("incoming put request, file_id=%s, file_size=%lu", 
+            task.file_id.c_str(), req_body.size());
 }
 
 void mini_google_event::process_poll(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
@@ -146,6 +187,7 @@ int mini_google_svr::reportLookup(const std::string &file_id, const std::string 
     file_info_t file_info;
     file_info.ip = slave_ip;
     file_info.port = (unsigned short)slave_port;
+    file_info.sz_port = num_to_str(slave_port);
     int ret = m_lookup_table.set_file_info(file_id, file_info);
     return ret;
 }
@@ -252,23 +294,26 @@ void mini_google_event::process_backup(
     }
 
     /* get group data */
-    if (strcmp(table, "lookup_table") == 0) {
-        ezxml_t file_info_list = ezxml_add_child(root, "file_info_list", 0);
+    if (strcmp(method, "get_group_data") == 0) {
+        if (strcmp(table, "lookup_table") == 0) {
+            ezxml_t file_info_list = ezxml_add_child(root, "file_info_list", 0);
 
-        single_lookup_table_t *s_table = lookup_tab.lock_group(group_id);
-        if (NULL != s_table) {
-            for (single_lookup_table_t::iterator iter = s_table->begin(); iter != s_table->end(); ++iter) {
-                ezxml_t file_info = ezxml_add_child(file_info_list, "f", 0);
-                ezxml_set_attr(file_info, "ip", iter->first.c_str());
-                ezxml_set_attr(file_info, "port", iter->second.sz_port.c_str());
+            single_lookup_table_t *s_table = lookup_tab.lock_group(group_id);
+            if (NULL != s_table) {
+                for (single_lookup_table_t::iterator iter = s_table->begin(); iter != s_table->end(); ++iter) {
+                    ezxml_t file_info = ezxml_add_child(file_info_list, "f", 0);
+                    ezxml_set_attr(file_info, "file_id", iter->first.c_str());
+                    ezxml_set_attr(file_info, "slave_ip", iter->second.ip.c_str());
+                    ezxml_set_attr(file_info, "slave_port", iter->second.sz_port.c_str());
+                }
+                lookup_tab.unlock_group(group_id);
             }
-            lookup_tab.unlock_group(group_id);
         }
-    }
-    else {
-        single_invert_table_t * tab = invert_tab.lock_group(group_id);
-        if (NULL != tab) {
-            invert_tab.unlock_group(group_id);
+        else {
+            single_invert_table_t * tab = invert_tab.lock_group(group_id);
+            if (NULL != tab) {
+                invert_tab.unlock_group(group_id);
+            }
         }
     }
 
@@ -279,7 +324,7 @@ void mini_google_event::process_backup(
     free(text);
     ezxml_free(root);
 
-    rsp_head = gen_http_head("200 Ok", rsp_body.size());
+    rsp_head = gen_http_head("200 Ok", rsp_body.size(), "text/xml");
 }
 
 
@@ -321,9 +366,16 @@ io_event *mini_google_svr::create_event(int fd,
     return (io_event*)evt;
 }
 
-int mini_google_svr::put(index_task_t &t) {
+/**
+ * @brief append task to task queue
+ *
+ * @param task
+ *
+ * @return 
+ */
+int mini_google_svr::put(index_task_t &task) {
     m_queue_lock.lock();
-    m_queue.push(t);
+    m_queue.push(task);
     m_queue_lock.unlock();
     return 0;
 }
@@ -336,10 +388,6 @@ int mini_google_svr::poll(index_task_t &t) {
         t = m_queue.front();
         m_queue.pop();
         ret = 0;
-    }
-    else{
-        RPC_INFO("There is no request in current queue.");
-        ret = -1;
     }
     m_queue_lock.unlock();
     return ret;
