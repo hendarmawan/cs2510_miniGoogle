@@ -11,6 +11,7 @@
 #include "rpc_net.h"
 #include "ezxml.h"
 #include "index_common.h"
+#include "ezxml.h"
 
 /**
  * @brief get file id
@@ -47,6 +48,14 @@ static std::string get_file_id(const std::string &file_content) {
 /***********************************************
  * mini_google_event
  ***********************************************/
+
+std::string num_to_str(int num) {
+    char buf[1024] = { 0 };
+    sprintf(buf, "%d", num);
+    return buf;
+}
+
+
 mini_google_event::mini_google_event(svr_base *svr): http_event(svr) {
 }
 
@@ -178,8 +187,8 @@ void mini_google_event::process_report(const std::string &uri, const std::string
 }
 
 int mini_google_svr::reportInvert(const std::string &file_id, const std::string word, int count){
-    invert_table invert_t;
-    int ret = invert_t.update(word, file_id, count);
+    //invert_table invert_t;
+    int ret = m_invert_table.update(word, file_id, count);
     return ret;
 }
 
@@ -193,15 +202,32 @@ int mini_google_svr::reportLookup(const std::string &file_id, const std::string 
 }
 
 void mini_google_event::process_query(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
-    RPC_DEBUG("get query request !!!, %lu", req_body.length());
-    RPC_DEBUG("%s", req_body.c_str());
-    std::vector<std::string> file_v;
-    int ret = ((mini_google_svr*)m_svr)->query(uri, file_v);
-    if (ret!=-1) {
-        rsp_head = gen_http_head("200 Ok", rsp_body.size());
-    }
-    else{
-        rsp_head = gen_http_head("404 Not Found", rsp_body.size());
+    invert_table invert_t = ((mini_google_svr*)m_svr)->get_invert_table();
+    std::size_t pos = uri.find("word=");
+    std::string word_query = uri.substr(pos+strlen("word="));
+    std::size_t start = pos + strlen("word=");
+    std::size_t found = word_query.find("+");
+    int count = 0;
+    ezxml_t root = ezxml_new("query_message");
+    while(found != std::string::npos){
+        std::string key_word = word_query.substr(start, found);
+        file_freq_list_t ffl;
+        bool ret = invert_t.search(key_word, ffl);
+        if(ret){
+            ezxml_set_txt(root, key_word.c_str());
+            file_freq_list_t::iterator iter;
+            for(iter = ffl.begin(); iter!=ffl.end(); iter++){
+                ezxml_t file_kw = ezxml_add_child(root, "keyword", 0);
+                ezxml_set_txt(ezxml_add_child(file_kw, "file_id", 0),(iter->first).c_str());
+                ezxml_set_txt(ezxml_add_child(file_kw, "frequency", 0), num_to_str(iter->second).c_str());
+            }
+            std::string data(ezxml_toxml(root));
+            rsp_body.assign(data);
+            ezxml_free(root);
+        }
+        count++;
+        found = word_query.find("+", found+1);
+        start = found+1;
     }
     
 }
@@ -393,7 +419,7 @@ int mini_google_svr::poll(index_task_t &t) {
     return ret;
 }
 
-int mini_google_svr::query(const std::string &uri, std::vector<std::string> &file_v){
+int mini_google_svr::query(const std::string &uri){
     //invert_table_lock.lock();
     //std::size_t pos = uri.find("word=");
     //std::string word_query = uri.substr(pos + strlen("word="));
