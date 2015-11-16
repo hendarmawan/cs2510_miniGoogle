@@ -4,14 +4,15 @@
 #include <string>
 
 struct index_task_t {
-    std::string file_content;
+    std::string file_id;
     std::string url;
-    std::string uid;
+    std::string file_content;
 };
 
 struct file_info_t {
     std::string ip;
     unsigned short port;
+    std::string sz_port;
     std::string status;
     std::string time_stamp;
 };
