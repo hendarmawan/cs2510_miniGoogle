@@ -54,12 +54,6 @@ class mini_google_event: public http_event {
                 const char *msg = NULL);
 
     private:
-        void process_query(const std::string &uri,
-                           const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
-        void process_retrieve(const std::string &uri,
-                        const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
-
-    private:
         /**
          * @brief append new task
          *
@@ -103,6 +97,35 @@ class mini_google_event: public http_event {
                 std::string &rsp_body);
 
         /**
+         * @brief retrieve file
+         *
+         * @param uri
+         * @param req_body
+         * @param rsp_head
+         * @param rsp_body
+         */
+        void process_retrieve(
+                const std::string &uri,
+                const std::string &req_body, 
+                std::string &rsp_head, 
+                std::string &rsp_body);
+
+        /**
+         * @brief query
+         *
+         * @param uri
+         * @param req_body
+         * @param rsp_head
+         * @param rsp_body
+         */
+        void process_query(
+                const std::string &uri,
+                const std::string &req_body, 
+                std::string &rsp_head, 
+                std::string &rsp_body);
+
+
+        /**
          * @brief backup
          *
          * @param uri params:[table|method|group_id]
@@ -139,9 +162,6 @@ class mini_google_svr: public svr_base {
          * @return number of tasks after poll
          */
         int poll(index_task_t &task);
-
-        int query(const std::string &uri);
-        int retrieve(const std::string &file_id, file_info_t &file_info);
     
     public:
         /**
@@ -165,16 +185,7 @@ class mini_google_svr: public svr_base {
     private:
         mutex_lock m_queue_lock;
         std::queue<index_task_t> m_queue;
-        mutex_lock invert_table_lock;
-        //std::map<std::string, std::list<std::pair<std::string, int> > > invert_table;  //inverted table
-        mutex_lock lookup_lock;
-        //std::map<std::string, file_info_t > lookup_table;
-        //mutex_lock m_lookup_tbl_lock;
-    
-        // lookup table
 
-        // lock for queue
-        // task queue m_queue
         invert_table m_invert_table;
         lookup_table m_lookup_table;
 };
