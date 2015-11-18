@@ -8,8 +8,12 @@
 
 class mutex_lock {
     public:
-        mutex_lock() { }
-        virtual ~mutex_lock() { }
+        mutex_lock() { 
+            this->init();
+        }
+        virtual ~mutex_lock() { 
+            this->destroy();
+        }
 
     public:
         int init() {
@@ -34,8 +38,12 @@ class mutex_lock {
 
 class rw_lock {
     public:
-        rw_lock() { }
-        virtual ~rw_lock() { }
+        rw_lock() { 
+            this->init();
+        }
+        virtual ~rw_lock() { 
+            this->destroy();
+        }
 
     public:
         int init() {
@@ -64,7 +72,7 @@ class rw_lock {
 
 class auto_wrlock {
     public:
-        auto_wrlock(rw_lock *lock) : m_lock(lock) {
+        auto_wrlock(rw_lock *lock): m_lock(lock) {
             m_lock->wrlock();
         }
 
@@ -78,7 +86,7 @@ class auto_wrlock {
 
 class auto_rdlock {
     public:
-        auto_rdlock(rw_lock *lock) : m_lock(lock) {
+        auto_rdlock(rw_lock *lock): m_lock(lock) {
             m_lock->rdlock();
         }
 
@@ -92,8 +100,12 @@ class auto_rdlock {
 
 class spin_lock {
     public:
-        spin_lock() { }
-        virtual ~spin_lock() { }
+        spin_lock() { 
+            this->init();
+        }
+        virtual ~spin_lock() { 
+            this->destroy();
+        }
 
     public:
         int init() {

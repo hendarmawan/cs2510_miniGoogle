@@ -133,8 +133,6 @@ int file_mngr::get_lock_index(const std::string &file_id) {
 int file_mngr::load(const std::string &file_id, 
         std::string &file_content) {
 
-    int ret_val = -1;
-
     char path[128] = { 0 };
     sprintf(path, "%s/%s/%s", DATA_ROOT, 
             file_id.substr(0, 2).c_str(), file_id.c_str());
@@ -151,14 +149,15 @@ int file_mngr::load(const std::string &file_id,
 
         in_file.read((char*)file_content.data(), file_content.size());
         in_file.close();
-        ret_val = 0;
-        RPC_DEBUG("save for file %s fail, path=%s", 
+
+        RPC_INFO("save for file %s fail, path=%s", 
                 file_id.c_str(), path);
-    } else {
-        RPC_DEBUG("retrieve for file %s fail, path=%s", 
-                file_id.c_str(), path);
-    }
-    return ret_val;
+        return 0;
+    } 
+
+    RPC_INFO("retrieve for file %s fail, path=%s", 
+            file_id.c_str(), path);
+    return -1;
 }
 
 /**
@@ -172,8 +171,6 @@ int file_mngr::load(const std::string &file_id,
 int file_mngr::save(const std::string &file_id, 
         const std::string &file_content) {
 
-    int ret_val = -1;
-
     char path[128] = { 0 };
     sprintf(path, "%s/%s/%s", DATA_ROOT, 
             file_id.substr(0, 2).c_str(), file_id.c_str());
@@ -186,12 +183,11 @@ int file_mngr::save(const std::string &file_id,
     if (out_file.is_open()) {
         out_file << file_content;
         out_file.close();
-        ret_val = 0;
-        RPC_DEBUG("save for file %s succ, path=%s", 
+        RPC_INFO("save for file %s succ, path=%s", 
                 file_id.c_str(), path);
-    } else {
-        RPC_DEBUG("save for file %s fail, path=%s", 
-                file_id.c_str(), path);
+        return 0;
     }
-    return ret_val;
+    RPC_INFO("save for file %s fail, path=%s", 
+            file_id.c_str(), path);
+    return -1;
 }

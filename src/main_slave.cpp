@@ -117,6 +117,7 @@ int main(int argc, char *argv[]) {
     while (running) {
         svr->run_routine(10);
     }
+    RPC_WARNING("server about to exit");
 
     tc->stop();
     tc->join();

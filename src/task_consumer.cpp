@@ -47,7 +47,7 @@ void task_consumer::task_routine() {
     while (is_running()) {
         int ret = consume();
         if (ret < 0) {
-            usleep(m_thrds_num * 500 * 1000);
+            usleep(500 * 1000);
         }
     }
 }

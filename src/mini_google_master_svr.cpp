@@ -140,18 +140,16 @@ void mini_google_event::process_put(
     } else {
         rsp_head = gen_http_head("404 Not Found", rsp_body.size());
     }
-
-    RPC_INFO("incoming put request, file_id=%s, file_size=%lu", 
-            task.file_id.c_str(), req_body.size());
 }
 
 void mini_google_event::process_poll(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
     RPC_DEBUG("get poll request !!!, %lu", req_body.length());
     RPC_DEBUG("%s", req_body.c_str());
-    index_task_t t;
-    int ret = ((mini_google_svr*)m_svr)->poll(t);
-    if (ret != -1) {
-        rsp_body.assign(t.file_content);
+
+    index_task_t task;
+    int ret = ((mini_google_svr*)m_svr)->poll(task);
+    if (ret >= 0) {
+        rsp_body.assign(task.file_content);
         rsp_head = gen_http_head("200 Ok", rsp_body.size());
     }
     else{
@@ -451,26 +449,44 @@ io_event *mini_google_svr::create_event(int fd,
  *
  * @param task
  *
- * @return 
+ * @return number of tasks in the queue after put
  */
-int mini_google_svr::put(index_task_t &task) {
+int mini_google_svr::put(const index_task_t &task) {
+    int ret_val = -1;
+
     m_queue_lock.lock();
     m_queue.push(task);
+    ret_val = m_queue.size();
     m_queue_lock.unlock();
-    return 0;
+
+    RPC_INFO("incoming put request, queue_size=%d, file_id=%s, file_size=%lu", 
+            ret_val, task.file_id.c_str(), task.file_content.size());
+    return ret_val;
 }
 
-int mini_google_svr::poll(index_task_t &t) {
-    int ret = -1;
+/**
+ * @brief pop a task from task queue
+ *
+ * @param task
+ *
+ * @return number of tasks after poll
+ */
+int mini_google_svr::poll(index_task_t &task) {
+    int ret_val = -1;
+
     m_queue_lock.lock();
     if(!m_queue.empty()){
-        RPC_INFO("queue not empty.");
-        t = m_queue.front();
+        task = m_queue.front();
         m_queue.pop();
-        ret = 0;
+        ret_val = m_queue.size();
     }
     m_queue_lock.unlock();
-    return ret;
+
+    if (ret_val >= 0) {
+        RPC_INFO("incoming poll request, queue_size=%d, file_id=%s, file_size=%lu", 
+                ret_val, task.file_id.c_str(), task.file_content.size());
+    }
+    return ret_val;
 }
 
 int mini_google_svr::query(const std::string &uri){
