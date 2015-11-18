@@ -32,7 +32,7 @@ int main(int argc, char *argv[]) {
     int master_port = 0;
 
     int threads_num = 4;
-    int consumers_num = 1;
+    int consumers_num = 10;
 
     /* command line options */
     while (true) {

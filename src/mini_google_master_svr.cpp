@@ -250,23 +250,40 @@ void mini_google_event::process_query(const std::string &uri, const std::string 
         found = word_query.find("+", found+1);
         start = found+1;
     }
+    file_freq_list_t ffl;
+    std::vector<std::string> ffl_ex;
     if(count==0){
         std::string keyword = word_query;
-        file_freq_list_t ffl;
         bool ret = invert_t.search(keyword,ffl);
+
+        RPC_INFO("incoming query request, word=%s, ret=%d, doc_num=%lu", 
+                keyword.c_str(), ret, ffl.size());
         if(ret){
-            ezxml_set_txt(root, keyword.c_str());
             file_freq_list_t::iterator iter;
             ezxml_t file_kw = ezxml_add_child(root, "keyword", 0);
-            for(iter = ffl.begin(); iter!=ffl.end(); iter++){
-                ezxml_set_txt(ezxml_add_child(file_kw, "file_id", 0),(iter->first).c_str());
-                ezxml_set_txt(ezxml_add_child(file_kw, "frequency", 0), num_to_str(iter->second).c_str());
+
+            ezxml_set_attr(file_kw, "keyword", keyword.c_str());
+
+            int i = 0;
+            for(iter = ffl.begin(); iter!=ffl.end(); iter++, ++i){
+                ffl_ex.push_back(num_to_str(iter->second));
+
+                ezxml_t file_info = ezxml_add_child(file_kw, "f", 0);
+                ezxml_set_attr(file_info, "file_id", iter->first.c_str());
+                ezxml_set_attr(file_info, "freq", ffl_ex[i].c_str());
+
+                RPC_INFO("%s, %d", iter->first.c_str(), iter->second);
             }
         }
     }
-    std::string data(ezxml_toxml(root));
+    char *resp_text = ezxml_toxml(root);
+    std::string data(resp_text);
     rsp_body.assign(data);
+
+    free(resp_text);
     ezxml_free(root);
+
+    rsp_head = gen_http_head("200 Ok", rsp_body.size(), "text/xml");
 }
 
 void mini_google_event::process_retrieve(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){

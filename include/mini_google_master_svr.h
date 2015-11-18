@@ -40,8 +40,6 @@ class mini_google_event: public http_event {
     private:
         void process_poll(const std::string &uri,
                      const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
-        void process_report(const std::string &uri,
-                      const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
         void process_query(const std::string &uri,
                            const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
         void process_retrieve(const std::string &uri,
@@ -57,6 +55,20 @@ class mini_google_event: public http_event {
          * @param rsp_body
          */
         void process_put(
+                const std::string &uri,
+                const std::string &req_body, 
+                std::string &rsp_head, 
+                std::string &rsp_body);
+
+        /**
+         * @brief process report from workers
+         *
+         * @param uri
+         * @param req_body
+         * @param rsp_head
+         * @param rsp_body
+         */
+        void process_report(
                 const std::string &uri,
                 const std::string &req_body, 
                 std::string &rsp_head, 
