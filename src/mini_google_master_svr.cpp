@@ -1,4 +1,5 @@
 #include "mini_google_master_svr.h"
+#include <assert.h>
 #include <string.h>
 #include <errno.h>
 #include <time.h>
@@ -186,29 +187,33 @@ void mini_google_event::process_report(
     basic_proto bp (req_body.data(), req_body.size());
 
     /* file id */
-    char* file_id;
+    char* sz_file_id;
     int file_id_len; 
-    bp.read_string(file_id_len, file_id);
+    bp.read_string(file_id_len, sz_file_id);
+
+    std::string file_id(sz_file_id, file_id_len);
 
     /* slave ip */
-    char* slave_ip;
+    char* sz_slave_ip;
     int slave_ip_len;
-    bp.read_string(slave_ip_len, slave_ip);
+    bp.read_string(slave_ip_len, sz_slave_ip);
+
+    std::string slave_ip(sz_slave_ip, slave_ip_len);
 
     /* slave port */
     int slave_port;
     bp.read_int(slave_port);
 
     RPC_INFO("incoming report request, file_id=%s, slave_ip=%s, slave_port=%u", 
-            file_id, slave_ip, slave_port);
+            file_id.c_str(), slave_ip.c_str(), slave_port);
 
     mini_google_svr *svr = (mini_google_svr*)m_svr;
 
     /* build lookup table */
-    file_info_t file_info(std::string(slave_ip, slave_ip_len), slave_port);
+    file_info_t file_info(slave_ip, slave_port);
     int ret = svr->get_lookup_table().set_file_info(file_id, file_info);
     if (ret < 0) {
-        RPC_WARNING("update lookup table error, file_id=%s", file_id);
+        RPC_WARNING("update lookup table error, file_id=%s", file_id.c_str());
     }
 
     /* build invert index */
@@ -216,16 +221,18 @@ void mini_google_event::process_report(
     bp.read_int(word_dict_size);
 
     for(int i=0; i < word_dict_size; i++){
-        char* word;
+        char* sz_word;
         int word_len, count;
 
-        bp.read_string(word_len, word);
+        bp.read_string(word_len, sz_word);
         bp.read_int(count);
 
-        int ret = svr->get_invert_table().update(std::string(word, word_len), file_id, count);
+        std::string word(sz_word, word_len);
+
+        int ret = svr->get_invert_table().update(word, file_id, count);
         if (ret < -1){
             RPC_WARNING("update invert table error, file_id=%s, word=%s, count=%d", 
-                    file_id, word, count);
+                    file_id.c_str(), word.c_str(), count);
         }
     }
     rsp_head = gen_http_head("200 Ok", 0);
