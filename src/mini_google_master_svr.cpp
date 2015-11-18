@@ -49,21 +49,22 @@ static std::string get_file_id(const std::string &file_content) {
  * mini_google_event
  ***********************************************/
 
-std::string num_to_str(int num) {
-    char buf[1024] = { 0 };
-    sprintf(buf, "%d", num);
-    return buf;
+/**
+ * @brief construct
+ *
+ * @param svr):
+ */
+mini_google_event::mini_google_event(svr_base *svr): 
+    http_event(svr) {
 }
 
-
-mini_google_event::mini_google_event(svr_base *svr): http_event(svr) {
-}
-
+/**
+ * @brief process callback
+ */
 void mini_google_event::on_process() {
 
     /* get request */
     std::string req_head = get_head();
-    RPC_DEBUG("%s", req_head.c_str());
     std::string req_body = get_body();
 
     /* handle process */
@@ -142,12 +143,23 @@ void mini_google_event::process_put(
     }
 }
 
-void mini_google_event::process_poll(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
-    RPC_DEBUG("get poll request !!!, %lu", req_body.length());
-    RPC_DEBUG("%s", req_body.c_str());
+/**
+ * @brief pop a task from task queue
+ *
+ * @param uri
+ * @param req_body
+ * @param rsp_head
+ * @param rsp_body
+ */
+void mini_google_event::process_poll(
+        const std::string &uri,
+        const std::string &req_body, 
+        std::string &rsp_head, 
+        std::string &rsp_body) {
 
     index_task_t task;
     int ret = ((mini_google_svr*)m_svr)->poll(task);
+
     if (ret >= 0) {
         rsp_body.assign(task.file_content);
         rsp_head = gen_http_head("200 Ok", rsp_body.size());
@@ -187,40 +199,36 @@ void mini_google_event::process_report(
     int slave_port;
     bp.read_int(slave_port);
 
-    int ret = ((mini_google_svr*) m_svr)->reportLookup(file_id, slave_ip, slave_port);
-    RPC_INFO("incoming report request, slave_ip=%s, slave_port=%u, ret=%d", slave_ip, slave_port, ret);
+    RPC_INFO("incoming report request, file_id=%s, slave_ip=%s, slave_port=%u", 
+            file_id, slave_ip, slave_port);
 
-    /* word dict */
+    mini_google_svr *svr = (mini_google_svr*)m_svr;
+
+    /* build lookup table */
+    file_info_t file_info(std::string(slave_ip, slave_ip_len), slave_port);
+    int ret = svr->get_lookup_table().set_file_info(file_id, file_info);
+    if (ret < 0) {
+        RPC_WARNING("update lookup table error, file_id=%s", file_id);
+    }
+
+    /* build invert index */
     int word_dict_size; 
     bp.read_int(word_dict_size);
 
-    for(int i=0;i<word_dict_size;i++){
+    for(int i=0; i < word_dict_size; i++){
         char* word;
-        int word_len;
-        int count;
-        bp.read_string(word_len,word);
+        int word_len, count;
+
+        bp.read_string(word_len, word);
         bp.read_int(count);
-        int ret = ((mini_google_svr*) m_svr)->reportInvert(file_id, word, count);
-        if(ret==-1){
-            RPC_INFO("update unsucessfully.\n");
+
+        int ret = svr->get_invert_table().update(std::string(word, word_len), file_id, count);
+        if (ret < -1){
+            RPC_WARNING("update invert table error, file_id=%s, word=%s, count=%d", 
+                    file_id, word, count);
         }
     }
     rsp_head = gen_http_head("200 Ok", 0);
-}
-
-int mini_google_svr::reportInvert(const std::string &file_id, const std::string word, int count){
-    //invert_table invert_t;
-    int ret = m_invert_table.update(word, file_id, count);
-    return ret;
-}
-
-int mini_google_svr::reportLookup(const std::string &file_id, const std::string & slave_ip, int slave_port){
-    file_info_t file_info;
-    file_info.ip = slave_ip;
-    file_info.port = (unsigned short)slave_port;
-    file_info.sz_port = num_to_str(slave_port);
-    int ret = m_lookup_table.set_file_info(file_id, file_info);
-    return ret;
 }
 
 void mini_google_event::process_query(const std::string &uri, const std::string &req_body, std::string &rsp_head, std::string &rsp_body){
@@ -231,49 +239,49 @@ void mini_google_event::process_query(const std::string &uri, const std::string 
     std::size_t found = word_query.find("+");
     int count = 0;
     ezxml_t root = ezxml_new("query_message");
-    while(found != std::string::npos){
-        std::string key_word = word_query.substr(start, found);
-        file_freq_list_t ffl;
-        bool ret = invert_t.search(key_word, ffl);
-        if(ret){
-            ezxml_set_txt(root, key_word.c_str());
-            file_freq_list_t::iterator iter;
-            ezxml_t file_kw = ezxml_add_child(root, "keyword", 0);
-            for(iter = ffl.begin(); iter!=ffl.end(); iter++){
-                ezxml_set_txt(ezxml_add_child(file_kw, "file_id", 0),(iter->first).c_str());
-                ezxml_set_txt(ezxml_add_child(file_kw, "frequency", 0), num_to_str(iter->second).c_str());
-            }
-        }
-        count++;
-        found = word_query.find("+", found+1);
-        start = found+1;
-    }
-    file_freq_list_t ffl;
-    std::vector<std::string> ffl_ex;
-    if(count==0){
-        std::string keyword = word_query;
-        bool ret = invert_t.search(keyword,ffl);
+    //while(found != std::string::npos){
+    //    std::string key_word = word_query.substr(start, found);
+    //    file_freq_list_t ffl;
+    //    bool ret = invert_t.search(key_word, ffl);
+    //    if(ret){
+    //        ezxml_set_txt(root, key_word.c_str());
+    //        file_freq_list_t::iterator iter;
+    //        ezxml_t file_kw = ezxml_add_child(root, "keyword", 0);
+    //        for(iter = ffl.begin(); iter!=ffl.end(); iter++){
+    //            ezxml_set_txt(ezxml_add_child(file_kw, "file_id", 0),(iter->first).c_str());
+    //            ezxml_set_txt(ezxml_add_child(file_kw, "frequency", 0), num_to_str(iter->second).c_str());
+    //        }
+    //    }
+    //    count++;
+    //    found = word_query.find("+", found+1);
+    //    start = found+1;
+    //}
+    //file_freq_list_t ffl;
+    //std::vector<std::string> ffl_ex;
+    //if(count==0){
+    //    std::string keyword = word_query;
+    //    bool ret = invert_t.search(keyword,ffl);
 
-        RPC_INFO("incoming query request, word=%s, ret=%d, doc_num=%lu", 
-                keyword.c_str(), ret, ffl.size());
-        if(ret){
-            file_freq_list_t::iterator iter;
-            ezxml_t file_kw = ezxml_add_child(root, "keyword", 0);
+    //    RPC_INFO("incoming query request, word=%s, ret=%d, doc_num=%lu", 
+    //            keyword.c_str(), ret, ffl.size());
+    //    if(ret){
+    //        file_freq_list_t::iterator iter;
+    //        ezxml_t file_kw = ezxml_add_child(root, "keyword", 0);
 
-            ezxml_set_attr(file_kw, "keyword", keyword.c_str());
+    //        ezxml_set_attr(file_kw, "keyword", keyword.c_str());
 
-            int i = 0;
-            for(iter = ffl.begin(); iter!=ffl.end(); iter++, ++i){
-                ffl_ex.push_back(num_to_str(iter->second));
+    //        int i = 0;
+    //        for(iter = ffl.begin(); iter!=ffl.end(); iter++, ++i){
+    //            ffl_ex.push_back(num_to_str(iter->second));
 
-                ezxml_t file_info = ezxml_add_child(file_kw, "f", 0);
-                ezxml_set_attr(file_info, "file_id", iter->first.c_str());
-                ezxml_set_attr(file_info, "freq", ffl_ex[i].c_str());
+    //            ezxml_t file_info = ezxml_add_child(file_kw, "f", 0);
+    //            ezxml_set_attr(file_info, "file_id", iter->first.c_str());
+    //            ezxml_set_attr(file_info, "freq", ffl_ex[i].c_str());
 
-                RPC_INFO("%s, %d", iter->first.c_str(), iter->second);
-            }
-        }
-    }
+    //            RPC_INFO("%s, %d", iter->first.c_str(), iter->second);
+    //        }
+    //    }
+    //}
     char *resp_text = ezxml_toxml(root);
     std::string data(resp_text);
     rsp_body.assign(data);
@@ -372,12 +380,18 @@ void mini_google_event::process_backup(
     }
 
     /* get group data */
+    char sz_file_info_list_size[128] = { 0 };
+    char sz_term_info_list_size[128] = { 0 };
+
     if (strcmp(method, "get_group_data") == 0) {
         if (strcmp(table, "lookup_table") == 0) {
             ezxml_t file_info_list = ezxml_add_child(root, "file_info_list", 0);
 
             single_lookup_table_t *s_table = lookup_tab.lock_group(group_id);
             if (NULL != s_table) {
+                sprintf(sz_file_info_list_size, "%lu", s_table->size());
+                ezxml_set_attr(file_info_list, "size", sz_file_info_list_size);
+
                 for (single_lookup_table_t::iterator iter = s_table->begin(); iter != s_table->end(); ++iter) {
                     ezxml_t file_info = ezxml_add_child(file_info_list, "f", 0);
                     ezxml_set_attr(file_info, "file_id", iter->first.c_str());
@@ -388,8 +402,25 @@ void mini_google_event::process_backup(
             }
         }
         else {
-            single_invert_table_t * tab = invert_tab.lock_group(group_id);
-            if (NULL != tab) {
+            ezxml_t term_info_list = ezxml_add_child(root, "term_info_list", 0);
+
+            single_invert_table_t * s_table = invert_tab.lock_group(group_id);
+            if (NULL != s_table) {
+                sprintf(sz_term_info_list_size, "%lu", s_table->size());
+                ezxml_set_attr(term_info_list, "size", sz_term_info_list_size);
+
+                for (single_invert_table_t::iterator iter = s_table->begin(); iter != s_table->end(); ++iter) {
+                    ezxml_t term_info = ezxml_add_child(term_info_list, "t", 0);
+                    ezxml_set_attr(term_info, "term", iter->first.c_str());
+                    
+                    const file_freq_list_t &freq_list = iter->second;
+                    for (file_freq_list_t::const_iterator sub_iter = freq_list.begin(); sub_iter != freq_list.end(); ++sub_iter) {
+                        ezxml_t file_info = ezxml_add_child(term_info, "f", 0);
+                        ezxml_set_attr(file_info, "file_id", sub_iter->first.c_str());
+                        ezxml_set_attr(file_info, "freq", sub_iter->second.sz_freq.c_str());
+                    }
+                }
+
                 invert_tab.unlock_group(group_id);
             }
         }
@@ -407,6 +438,14 @@ void mini_google_event::process_backup(
 
 
 
+/**
+ * @brief dispatcher
+ *
+ * @param uri
+ * @param req_body
+ * @param rsp_head
+ * @param rsp_body
+ */
 void mini_google_event::dsptch_http_request(const std::string &uri,
         const std::string &req_body, std::string &rsp_head, std::string &rsp_body) {
 

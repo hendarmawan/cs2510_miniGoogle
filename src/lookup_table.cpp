@@ -54,10 +54,6 @@ int lookup_table::get_file_info(const std::string &file_id,
         file_info_t &file_info) {
 
     int group_id = get_group_id(file_id);
-    if (group_id < 0 || group_id >= LOOKUP_TABLE_GROUP_NUM) {
-        return -1;
-    }
-
     auto_rdlock al(&m_locks[group_id]);
 
     single_lookup_table_t &s_table = m_tables[group_id];
@@ -81,10 +77,6 @@ int lookup_table::set_file_info(const std::string &file_id,
         const file_info_t &file_info) {
 
     int group_id = get_group_id(file_id);
-    if (group_id < 0 || group_id >= LOOKUP_TABLE_GROUP_NUM) {
-        return -1;
-    }
-
     auto_wrlock al(&m_locks[group_id]);
 
     single_lookup_table_t &s_table = m_tables[group_id];

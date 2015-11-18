@@ -5,11 +5,12 @@
 #include <vector>
 #include <list>
 #include "rpc_lock.h"
+#include "rpc_common.h"
 #include "index_common.h"
 
-#define INVERT_TABLE_GROUP_NUM 100
+#define INVERT_TABLE_GROUP_NUM 1000
 
-typedef std::map<std::string, int > file_freq_list_t;
+typedef std::map<std::string, file_freq_t> file_freq_list_t;
 typedef std::map<std::string, file_freq_list_t> single_invert_table_t;
 
 class invert_table {
@@ -72,7 +73,7 @@ class invert_table {
 
     public:
         /**
-         * @brief get group id by file_id
+         * @brief get group id by term
          *
          * @param term
          *

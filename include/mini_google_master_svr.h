@@ -12,11 +12,27 @@
 
 class mini_google_event: public http_event {
     public:
+        /**
+         * @brief construct
+         *
+         * @param svr
+         */
         mini_google_event(svr_base *svr);
 
     public:
+        /**
+         * @brief process callback
+         */
         virtual void on_process();
 
+        /**
+         * @brief dispatcher
+         *
+         * @param uri
+         * @param req_body
+         * @param rsp_head
+         * @param rsp_body
+         */
         void dsptch_http_request(const std::string &uri, 
                 const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
 
@@ -38,8 +54,6 @@ class mini_google_event: public http_event {
                 const char *msg = NULL);
 
     private:
-        void process_poll(const std::string &uri,
-                     const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
         void process_query(const std::string &uri,
                            const std::string &req_body, std::string &rsp_head, std::string &rsp_body);
         void process_retrieve(const std::string &uri,
@@ -55,6 +69,20 @@ class mini_google_event: public http_event {
          * @param rsp_body
          */
         void process_put(
+                const std::string &uri,
+                const std::string &req_body, 
+                std::string &rsp_head, 
+                std::string &rsp_body);
+
+        /**
+         * @brief pop a task from task queue
+         *
+         * @param uri
+         * @param req_body
+         * @param rsp_head
+         * @param rsp_body
+         */
+        void process_poll(
                 const std::string &uri,
                 const std::string &req_body, 
                 std::string &rsp_head, 
@@ -77,7 +105,7 @@ class mini_google_event: public http_event {
         /**
          * @brief backup
          *
-         * @param uri [table|method|group_id]
+         * @param uri params:[table|method|group_id]
          * @param req_body
          * @param rsp_head
          * @param rsp_body
@@ -112,19 +140,24 @@ class mini_google_svr: public svr_base {
          */
         int poll(index_task_t &task);
 
-        int report(const std::string &req_body);
-
         int query(const std::string &uri);
         int retrieve(const std::string &file_id, file_info_t &file_info);
-        int reportInvert(const std::string &file_id, const std::string word, int count);
-        int reportLookup(const std::string &file_id, const std::string &slave_ip, int slave_port);
-    
     
     public:
+        /**
+         * @brief get invert table
+         *
+         * @return 
+         */
         invert_table &get_invert_table() {
             return m_invert_table;
         }
 
+        /**
+         * @brief get lookup table
+         *
+         * @return 
+         */
         lookup_table &get_lookup_table() {
             return m_lookup_table;
         }

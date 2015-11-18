@@ -1,4 +1,5 @@
 #include "invert_table.h"
+#include "rpc_log.h"
 #include <functional>
 
 /**
@@ -51,23 +52,17 @@ void invert_table::unlock_group(int group_id) {
  */
 int invert_table::update(const std::string &term,
         const std::string &file_id, int freq) {
+
     int group_id = get_group_id(term);
-    if (group_id < 0 || group_id >= INVERT_TABLE_GROUP_NUM) {
-        return -1;
-    }
-    //rw_lock rwLock = m_locks.at(group_id);
     auto_wrlock al(&m_locks[group_id]);
     
     single_invert_table_t &s_invert_table = m_tables[group_id];
-    if(s_invert_table.count(term)){  //if has such term
-        file_freq_list_t ffl = s_invert_table[term];
-        ffl[file_id] = freq;
-    }
-    else{
+    if (!s_invert_table.count(term)) {
         file_freq_list_t freq_list;
-        freq_list[file_id] = freq;
         s_invert_table[term] = freq_list;
     }
+    s_invert_table[term][file_id] = file_freq_t(freq);
+
     return 0;
 }
 
@@ -81,18 +76,15 @@ int invert_table::update(const std::string &term,
  */
 bool invert_table::search(const std::string &term,
         file_freq_list_t &file_list) {
+
     int group_id = get_group_id(term);
-    if (group_id < 0 || group_id >= INVERT_TABLE_GROUP_NUM) {
-        return false;
-    }
     auto_rdlock al(&m_locks[group_id]);
+
     single_invert_table_t &s_invert_table = m_tables[group_id];
     if(!s_invert_table.count(term)){
         return false;
     }
-    else{
-        file_list = s_invert_table[term];
-    }
+    file_list = s_invert_table[term];
     return true;
 }
 
@@ -106,6 +98,5 @@ bool invert_table::search(const std::string &term,
 int invert_table::get_group_id(const std::string &term) {
     std::hash<std::string> hash_file;
     std::size_t term_ind = (hash_file(term)) % INVERT_TABLE_GROUP_NUM;
-    return (int) term_ind;
-    return 0;
+    return (int)term_ind;
 }

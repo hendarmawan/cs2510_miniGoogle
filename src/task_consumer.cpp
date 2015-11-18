@@ -145,9 +145,6 @@ int task_consumer::consume() {
     inst->get_file_id(file_id, file_content);
     inst->save(file_id, file_content);
 
-    RPC_INFO("compute for task succ, master_ip=%s, master_port=%u, file_id=%s, file_size=%lu, worddict_size=%lu", 
-            master.ip.c_str(), master.port, file_id.c_str(), file_content.size(), word_dict.size());
-
     /* report, <file_id, slave_ip:slave_port, word_dict> */
     std::string req_head, req_body;
     std::string rsp_head, rsp_body;
@@ -159,13 +156,13 @@ int task_consumer::consume() {
             req_head, req_body, rsp_head, rsp_body);
 
     if (ret < 0) {
-        RPC_WARNING("report to master error, ip=%s, port=%u", 
-                master.ip.c_str(), master.port);
+        RPC_WARNING("report to master error, master_ip=%s, master_port=%u, file_id=%s", 
+                master.ip.c_str(), master.port, file_id.c_str());
         return -1;
     }
 
-    RPC_INFO("report to master succ, ip=%s, port=%u", 
-            master.ip.c_str(), master.port);
+    RPC_INFO("report to master succ, master_ip=%s, master_port=%u, file_id=%s, file_size=%lu, worddict_size=%lu", 
+            master.ip.c_str(), master.port, file_id.c_str(), file_content.size(), word_dict.size());
     return 0;
 }
 
