@@ -1,18 +1,22 @@
 #include "mini_google_master_svr.h"
-#include <assert.h>
 #include <string.h>
 #include <errno.h>
 #include <time.h>
 #include <map>
 #include <openssl/md5.h>
+#include <algorithm>
 #include "rpc_log.h"
 #include "rpc_common.h"
+#include "mini_google_common.h"
 #include "basic_proto.h"
 #include "rpc_http.h"
 #include "rpc_net.h"
 #include "ezxml.h"
 #include "index_common.h"
 #include "ezxml.h"
+
+#define MAX(x,y) ((x)>(y)?(x):(y))
+#define MIN(x,y) ((x)<(y)?(x):(y))
 
 /**
  * @brief get file id
@@ -72,6 +76,46 @@ static void split_string(const std::string &str,
     if (word.length()) {
         words.push_back(str.substr(start));
     }
+}
+
+/**
+ * @brief summarize html file
+ *
+ * @param file_content
+ *
+ * @return 
+ */
+static std::string summarize(const std::string &file_content) {
+    int left = 0, word_count = 0;
+    std::string current_word;
+    std::string text;
+
+    for (const char *ptr = file_content.c_str(); *ptr != '\0'; ++ptr) {
+        if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z') || (*ptr >= '0' && *ptr <= '9')) {
+            if (*ptr >= 'A' && *ptr <= 'Z') {
+                //current_word += *ptr - 'A' + 'a';
+                current_word += *ptr;
+            } else {
+                current_word += *ptr;
+            }
+        } else {
+            if (left == 0) {
+                text += current_word + " ";
+                if (++word_count > 100) {
+                    break;
+                }
+            }
+
+            if (*ptr == '<') {
+                ++left;
+            } else if (*ptr == '>') {
+                --left;
+            }
+
+            current_word.clear();
+        }
+    }
+    return text;
 }
 
 /***********************************************
@@ -267,6 +311,23 @@ void mini_google_event::process_report(
 }
 
 /**
+ * @brief compare function
+ *
+ * @param a
+ * @param b
+ *
+ * @return 
+ */
+static bool compare(const std::pair<std::string, file_rank_t> &a, const std::pair<std::string, file_rank_t> &b) {
+    if (a.second.num > b.second.num) {
+        return true;
+    } else if (a.second.num < b.second.num) {
+        return false;
+    }
+    return a.second.freq > b.second.freq;
+}
+
+/**
  * @brief query
  *
  * @param uri
@@ -282,11 +343,12 @@ void mini_google_event::process_query(
 
     mini_google_svr *svr = (mini_google_svr*)m_svr;
 
-    invert_table &invert_tab = svr->get_invert_table();
-
     /* check parameters */
-    std::size_t pos = uri.find("words=");
-    if (pos == std::string::npos) {
+    int merge = 1;
+    char sz_words[1024] = { 0 };
+    sscanf(uri.c_str(), "/query?words=%[^&]&merge=%d", sz_words, &merge);
+
+    if (strlen(sz_words) == 0) {
         process_default(uri, req_body, rsp_head, rsp_body, 
             "query failed, no word found in uri");
         return;
@@ -296,24 +358,68 @@ void mini_google_event::process_query(
     ezxml_t root = ezxml_new("message");
 
     std::vector<std::string> words;
-    split_string(uri.substr(pos + strlen("words=")), "%20", words);
+    split_string(sz_words, "%20", words);
 
     /* query */
+    invert_table &invert_tab = svr->get_invert_table();
+
     std::vector<file_freq_list_t> ffls;
     ffls.resize(words.size());
 
     for (int i = 0; i < words.size(); ++i) {
         file_freq_list_t &ffl = ffls[i];
+        invert_tab.search(words[i], ffl);
+    }
 
-        ezxml_t xml_word = ezxml_add_child(root, "term", 0);
-        ezxml_set_attr(xml_word, "t", words[i].c_str());
+    std::map<std::string, file_rank_t> res_stat;
+    std::vector<std::pair<std::string, file_rank_t> > res_rank;
 
-        if (invert_tab.search(words[i], ffl)) {
-            for(file_freq_list_t::iterator iter = ffl.begin(); iter!=ffl.end(); iter++){
+    /* invert index */
+    if (!merge) {
+        for (int i = 0; i < words.size(); ++i) {
+            file_freq_list_t &ffl = ffls[i];
+
+            ezxml_t xml_word = ezxml_add_child(root, "term", 0);
+            ezxml_set_attr(xml_word, "t", words[i].c_str());
+
+            for (file_freq_list_t::iterator iter = ffl.begin(); iter != ffl.end(); ++iter){
                 ezxml_t xml_file = ezxml_add_child(xml_word, "f", 0);
                 ezxml_set_attr(xml_file, "file_id", iter->first.c_str());
                 ezxml_set_attr(xml_file, "freq", iter->second.sz_freq.c_str());
             }
+        }
+    }
+    /* merge data */
+    else {
+        /* file statistics */
+        for (int i = 0; i < ffls.size(); ++i) {
+            file_freq_list_t &ffl = ffls[i];
+
+            for (file_freq_list_t::iterator iter = ffl.begin(); iter != ffl.end(); ++iter){
+                if (!res_stat.count(iter->first)) {
+                    res_stat[iter->first] = file_rank_t(1, iter->second.freq);
+                } 
+                else {
+                    file_rank_t &fr = res_stat[iter->first];
+                    fr.freq = MIN(fr.freq, iter->second.freq);
+                    fr.num += 1;
+                }
+            }
+        }
+        /* rank files */
+        res_rank.assign(res_stat.begin(), res_stat.end());
+        std::sort(res_rank.begin(), res_rank.end(), compare);
+
+        ezxml_t xml_word = ezxml_add_child(root, "term", 0);
+        ezxml_set_attr(xml_word, "t", sz_words);
+
+        for (std::vector<std::pair<std::string, file_rank_t> >::iterator iter = res_rank.begin(); iter != res_rank.end(); ++iter) {
+            ezxml_t xml_file = ezxml_add_child(xml_word, "f", 0);
+            iter->second.sz_num = num_to_str(iter->second.num);
+            iter->second.sz_freq = num_to_str(iter->second.freq);
+            ezxml_set_attr(xml_file, "file_id", iter->first.c_str());
+            ezxml_set_attr(xml_file, "num", iter->second.sz_num.c_str());
+            ezxml_set_attr(xml_file, "freq", iter->second.sz_freq.c_str());
         }
     }
 
@@ -360,9 +466,7 @@ void mini_google_event::process_retrieve(
         return;
     }
 
-    /* http request */
-    std::string req_head = gen_http_head(uri, file_info.ip, 0);
-    ret = http_talk(file_info.ip, file_info.port, req_head, req_body, rsp_head, rsp_body);
+    ret = retrieve_file(file_info.ip, file_info.port, file_id, rsp_body);
     if (ret < 0) {
         process_default(uri, req_body, rsp_head, rsp_body, 
             "retrieve failed, inner error");
@@ -372,6 +476,120 @@ void mini_google_event::process_retrieve(
     RPC_INFO("incoming retrieve request, file_id=%s, slave_ip=%s, slave_port=%u",
             file_id.c_str(), file_info.ip.c_str(), file_info.port);
     rsp_head = gen_http_head("200 Ok", rsp_body.size());
+}
+
+/**
+ * @brief search
+ *
+ * @param uri
+ * @param req_body
+ * @param rsp_head
+ * @param rsp_body
+ */
+void mini_google_event::process_search(
+        const std::string &uri,
+        const std::string &req_body, 
+        std::string &rsp_head, 
+        std::string &rsp_body) {
+
+    mini_google_svr *svr = (mini_google_svr*)m_svr;
+
+    /* check parameters */
+    char sz_words[1024] = { 0 };
+    sscanf(uri.c_str(), "/search?words=%[^&]", sz_words);
+
+    if (strlen(sz_words) == 0) {
+        process_default(uri, req_body, rsp_head, rsp_body, 
+            "query failed, no word found in uri");
+        return;
+    }
+
+    /* split into words */
+    ezxml_t root = ezxml_new("message");
+
+    std::vector<std::string> words;
+    split_string(sz_words, "%20", words);
+
+    /* query */
+    invert_table &invert_tab = svr->get_invert_table();
+
+    std::vector<file_freq_list_t> ffls;
+    ffls.resize(words.size());
+
+    for (int i = 0; i < words.size(); ++i) {
+        file_freq_list_t &ffl = ffls[i];
+        invert_tab.search(words[i], ffl);
+    }
+
+    /* file statistics */
+    std::map<std::string, file_rank_t> res_stat;
+    std::vector<std::pair<std::string, file_rank_t> > res_rank;
+
+    for (int i = 0; i < ffls.size(); ++i) {
+        file_freq_list_t &ffl = ffls[i];
+
+        for (file_freq_list_t::iterator iter = ffl.begin(); iter != ffl.end(); ++iter){
+            if (!res_stat.count(iter->first)) {
+                res_stat[iter->first] = file_rank_t(1, iter->second.freq);
+            } 
+            else {
+                file_rank_t &fr = res_stat[iter->first];
+                fr.freq = MIN(fr.freq, iter->second.freq);
+                fr.num += 1;
+            }
+        }
+    }
+
+    /* rank files */
+    res_rank.assign(res_stat.begin(), res_stat.end());
+    std::sort(res_rank.begin(), res_rank.end(), compare);
+
+    if (res_rank.size() > 20) {
+        res_rank.resize(20);
+    }
+
+    /* retrieve files */
+    std::vector<std::string> res_file;
+    res_file.resize(res_rank.size());
+
+    for (int i = 0; i < res_rank.size(); ++i) {
+        file_info_t file_info;
+
+        std::string &file_id = res_rank[i].first;
+        std::string file_content;
+
+        if (0 == svr->get_lookup_table().get_file_info(file_id, file_info)) {
+            if (0 == retrieve_file(file_info.ip, file_info.port, file_id, file_content)) {
+                RPC_DEBUG("retrieve_file successfully, file_id=%s", file_id.c_str());
+            }
+        }
+        //res_file[i] = std::string("<![CDATA[") + summarize(file_content) + "]]>";
+        res_file[i] = summarize(file_content);
+    }
+
+    /* response */
+    ezxml_t xml_word = ezxml_add_child(root, "term", 0);
+    ezxml_set_attr(xml_word, "t", sz_words);
+
+    int i = 0;
+    for (std::vector<std::pair<std::string, file_rank_t> >::iterator iter = res_rank.begin(); iter != res_rank.end(); ++iter, ++i) {
+        ezxml_t xml_file = ezxml_add_child(xml_word, "f", 0);
+        iter->second.sz_num = num_to_str(iter->second.num);
+        iter->second.sz_freq = num_to_str(iter->second.freq);
+        ezxml_set_attr(xml_file, "file_id", iter->first.c_str());
+        ezxml_set_attr(xml_file, "num", iter->second.sz_num.c_str());
+        ezxml_set_attr(xml_file, "freq", iter->second.sz_freq.c_str());
+        ezxml_set_txt(xml_file, res_file[i].c_str());
+    }
+
+    char *resp_text = ezxml_toxml(root);
+    std::string data(resp_text);
+    rsp_body.assign(data);
+
+    free(resp_text);
+    ezxml_free(root);
+
+    rsp_head = gen_http_head("200 Ok", rsp_body.size(), "text/xml");
 }
 
 /**
@@ -512,6 +730,8 @@ void mini_google_event::dsptch_http_request(const std::string &uri,
         process_query(uri, req_body, rsp_head, rsp_body);
     } else if (uri.find("/retrieve") == 0){
         process_retrieve(uri, req_body, rsp_head, rsp_body);
+    } else if (uri.find("/search") == 0){
+        process_search(uri, req_body, rsp_head, rsp_body);
     } else if (uri.find("/backup") == 0){
         process_backup(uri, req_body, rsp_head, rsp_body);
     } else {

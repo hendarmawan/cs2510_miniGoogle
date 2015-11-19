@@ -124,6 +124,19 @@ class mini_google_event: public http_event {
                 std::string &rsp_head, 
                 std::string &rsp_body);
 
+        /**
+         * @brief search
+         *
+         * @param uri
+         * @param req_body
+         * @param rsp_head
+         * @param rsp_body
+         */
+        void process_search(
+                const std::string &uri,
+                const std::string &req_body, 
+                std::string &rsp_head, 
+                std::string &rsp_body);
 
         /**
          * @brief backup

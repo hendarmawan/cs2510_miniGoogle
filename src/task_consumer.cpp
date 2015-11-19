@@ -65,28 +65,27 @@ static void wordcount(const std::string &file_content,
     std::string current_word;
 
     for (const char *ptr = file_content.c_str(); *ptr != '\0'; ++ptr) {
-        if (*ptr == '<' || *ptr == '>') {
-            /* exclude words in '<>' pair */
+        if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z') || (*ptr >= '0' && *ptr <= '9')) {
+            if (*ptr >= 'A' && *ptr <= 'Z') {
+                current_word += *ptr - 'A' + 'a';
+            } else {
+                current_word += *ptr;
+            }
+        } else {
+            if (left == 0) {
+                if (current_word.length()) {
+                    if (!word_dict.count(current_word)) {
+                        word_dict[current_word] = 0;
+                    }
+                    word_dict[current_word] += 1;
+                }
+            }
             if (*ptr == '<') {
                 ++left;
-            } else {
+            } else if (*ptr == '>') {
                 --left;
             }
-        } 
-        else if (0 == left) {
-            if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z') || (*ptr >= '0' && *ptr <= '9')) {
-                if (*ptr >= 'A' && *ptr <= 'Z') {
-                    current_word += *ptr - 'A' + 'a';
-                } else {
-                    current_word += *ptr;
-                }
-            } else {
-                if (!word_dict.count(current_word)) {
-                    word_dict[current_word] = 0;
-                }
-                word_dict[current_word] += 1;
-                current_word.clear();
-            }
+            current_word.clear();
         }
     }
 }

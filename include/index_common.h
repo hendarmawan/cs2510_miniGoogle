@@ -40,4 +40,18 @@ struct file_freq_t {
     std::string sz_freq;
 };
 
+/* data structure used in ranking */
+struct file_rank_t {
+    file_rank_t() {
+    }
+    file_rank_t(int num, int freq) {
+        this->num = num;
+        this->freq = freq;
+    }
+    int num;
+    int freq;
+    std::string sz_freq;
+    std::string sz_num;
+};
+
 #endif
