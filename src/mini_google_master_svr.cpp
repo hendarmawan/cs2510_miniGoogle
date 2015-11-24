@@ -18,106 +18,6 @@
 #define MAX(x,y) ((x)>(y)?(x):(y))
 #define MIN(x,y) ((x)<(y)?(x):(y))
 
-/**
- * @brief get file id
- *
- * @param file_id
- * @param file_content
- *
- * @return 
- */
-static std::string get_file_id(const std::string &file_content) {
-
-    unsigned char md5[16] = { 0 };
-    MD5((const unsigned char*)file_content.c_str(), file_content.length(), md5);
-
-    std::string file_id;
-
-    for (int i = 0; i < 16; ++i) {
-        int low = md5[i] & 0x0f;
-        int hig = (md5[i] & 0xf0) >> 4;
-        if (hig < 10) {
-            file_id += hig + '0';
-        } else {
-            file_id += hig - 10 + 'a';
-        }
-        if (low < 10) {
-            file_id += low + '0';
-        } else {
-            file_id += low - 10 + 'a';
-        }
-    }
-    return file_id;
-}
-
-/**
- * @brief split string into words
- *
- * @param str
- * @param split
- * @param words
- */
-static void split_string(const std::string &str, 
-        const std::string &split, std::vector<std::string> &words) {
-
-    std::size_t start = 0;
-    std::size_t pos = str.find(split, start);
-
-    std::string word;
-    while (pos != std::string::npos) {
-        word = str.substr(start, pos);
-        if (word.length()) {
-            words.push_back(str.substr(start, pos - start));
-        }
-        start = pos + split.length();
-        pos = str.find(split, start);
-    }
-    word = str.substr(start, pos);
-    if (word.length()) {
-        words.push_back(str.substr(start));
-    }
-}
-
-/**
- * @brief summarize html file
- *
- * @param file_content
- *
- * @return 
- */
-static std::string summarize(const std::string &file_content) {
-    int left = 0, word_count = 0;
-    std::string current_word;
-    std::string text;
-
-    for (const char *ptr = file_content.c_str(); *ptr != '\0'; ++ptr) {
-        if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z') || (*ptr >= '0' && *ptr <= '9')) {
-            if (*ptr >= 'A' && *ptr <= 'Z') {
-                //current_word += *ptr - 'A' + 'a';
-                current_word += *ptr;
-            } else {
-                current_word += *ptr;
-            }
-        } else {
-            if (left == 0) {
-                text += current_word + " ";
-                if (++word_count > 100) {
-                    break;
-                }
-            }
-
-            if (*ptr == '<') {
-                ++left;
-            } else if (*ptr == '>') {
-                --left;
-            }
-
-            current_word.clear();
-        }
-    }
-    return text;
-}
-
 /***********************************************
  * mini_google_event
  ***********************************************/
@@ -300,7 +200,6 @@ void mini_google_event::process_report(
         bp.read_int(count);
 
         std::string word(sz_word, word_len);
-
         int ret = svr->get_invert_table().update(word, file_id, count);
         if (ret < -1){
             RPC_WARNING("update invert table error, file_id=%s, word=%s, count=%d", 
@@ -544,8 +443,9 @@ void mini_google_event::process_search(
     res_rank.assign(res_stat.begin(), res_stat.end());
     std::sort(res_rank.begin(), res_rank.end(), compare);
 
-    if (res_rank.size() > 20) {
-        res_rank.resize(20);
+    int limit = 20;
+    if (res_rank.size() > limit) {
+        res_rank.resize(limit);
     }
 
     /* retrieve files */
@@ -563,8 +463,11 @@ void mini_google_event::process_search(
                 RPC_DEBUG("retrieve_file successfully, file_id=%s", file_id.c_str());
             }
         }
-        //res_file[i] = std::string("<![CDATA[") + summarize(file_content) + "]]>";
-        res_file[i] = summarize(file_content);
+        std::vector<std::string> sentence_list;
+        html_to_sentences(file_content, sentence_list);
+        for (int i = 0; i < sentence_list.size(); ++i) {
+            res_file[i] += sentence_list[i] + "\n";
+        }
     }
 
     /* response */

@@ -11,6 +11,7 @@ CFLAGS=-g -I$(INCLUDE)
 COMMON_LIB=common_lib.a
 MINI_GOOGLE_MASTER=mini_google_master
 MINI_GOOGLE_SLAVE=mini_google_slave
+UISHELL=uishell
 
 cchighlight=\033[0;31m
 ccend=\033[0m
@@ -52,8 +53,8 @@ COMMON_LIB_OBJS= \
 
 MINI_GOOGLE_MASTER_OBJS= \
 	src/mini_google_master_svr.o \
-    src/lookup_table.o \
-    src/invert_table.o \
+	src/lookup_table.o \
+	src/invert_table.o \
 	src/main_master.o
 
 MINI_GOOGLE_SLAVE_OBJS=\
@@ -61,8 +62,12 @@ MINI_GOOGLE_SLAVE_OBJS=\
 	src/task_consumer.o \
 	src/main_slave.o
 
+UISHELL_OBJS=\
+	src/uishell.o \
+	src/main_uishell.o
+
 # compiling all
-all: $(COMMON_LIB) $(DIRECTORY_SERVER) $(MINI_GOOGLE_SLAVE) $(MINI_GOOGLE_MASTER)
+all: $(COMMON_LIB) $(UISHELL) $(DIRECTORY_SERVER) $(MINI_GOOGLE_SLAVE) $(MINI_GOOGLE_MASTER)
 	@echo -e "$(cchighlight)finish compiling$(ccend)"
 
 # compiling common_lib
@@ -89,6 +94,14 @@ ifeq ($(OS),Linux)
 	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_SLAVE) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS) -Xlinker "-)"
 else
 	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_SLAVE) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS)
+endif
+	@echo -e "$(cchighlight)successfully compiling $(MINI_GOOGLE_SLAVE)$(ccend)"
+
+$(UISHELL): $(COMMON_LIB) $(UISHELL_OBJS)
+ifeq ($(OS),Linux)
+	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(UISHELL) -Xlinker "-(" $(COMMON_LIB) $(UISHELL_OBJS) -Xlinker "-)"
+else
+	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(UISHELL) -Xlinker $(COMMON_LIB) $(UISHELL_OBJS)
 endif
 	@echo -e "$(cchighlight)successfully compiling $(MINI_GOOGLE_SLAVE)$(ccend)"
 

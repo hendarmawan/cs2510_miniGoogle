@@ -36,16 +36,6 @@ class file_mngr {
 
     public:
         /**
-         * @brief get file id
-         *
-         * @param file_id
-         * @param file_content
-         *
-         * @return 
-         */
-        int get_file_id(std::string &file_id, const std::string &file_content);
-
-        /**
          * @brief load file content
          *
          * @param file_id

@@ -67,37 +67,6 @@ void file_mngr::destroy_instance() {
 }
 
 /**
- * @brief get file id
- *
- * @param file_id
- * @param file_content
- *
- * @return 
- */
-int file_mngr::get_file_id(std::string &file_id, 
-        const std::string &file_content) {
-
-    unsigned char md5[16] = { 0 };
-    MD5((const unsigned char*)file_content.c_str(), file_content.length(), md5);
-
-    for (int i = 0; i < 16; ++i) {
-        int low = md5[i] & 0x0f;
-        int hig = (md5[i] & 0xf0) >> 4;
-        if (hig < 10) {
-            file_id += hig + '0';
-        } else {
-            file_id += hig - 10 + 'a';
-        }
-        if (low < 10) {
-            file_id += low + '0';
-        } else {
-            file_id += low - 10 + 'a';
-        }
-    }
-    return 0;
-}
-
-/**
  * @brief 
  *
  * @param file_id

@@ -123,25 +123,31 @@ static void pack_report(std::string &report, const std::string &file_id,
  * @return 
  */
 int task_consumer::consume() {
-    std::string file_id, file_content;
 
     svr_inst_t master;
+
     master.ip = m_master_ip;
     master.port = m_master_port;
 
     /* poll task and compute wordcount */
-    if (-1 == poll_task_from_master( master.ip, master.port, file_content)) {
+    std::string file_content;
+    if (0 >  poll_task_from_master( master.ip, master.port, file_content)) {
         RPC_DEBUG("poll task failed, master_ip=%s, master_port=%u", 
                 master.ip.c_str(), master.port);
         return -1;
     }
 
+    std::vector<std::string> word_list;
     std::map<std::string, int> word_dict;
-    wordcount(file_content, word_dict);
+
+    html_to_words(file_content, word_list);
+    for (int i = 0; i < word_list.size(); ++i) {
+        word_dict[word_list[i]] += 1;
+    }
 
     /* save file */
     file_mngr *inst = file_mngr::create_instance();
-    inst->get_file_id(file_id, file_content);
+    std::string file_id = get_file_id(file_content);
     inst->save(file_id, file_content);
 
     /* report, <file_id, slave_ip:slave_port, word_dict> */
