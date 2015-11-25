@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <getopt.h>
+#include <string.h>
 #include "rpc_log.h"
 #include "rpc_net.h"
 #include "rpc_http.h"
@@ -15,8 +16,8 @@ static void usage(int argc, char *argv[]) {
     printf("-t/--threads:   specify threads number\n");
     printf("-i/--ip:        specify service ip\n");
     printf("-p/--port:      specify service port\n");
-    printf("--index:        specify indexing task\n");
-    printf("--directory:    specify path that should be indexed\n");
+    printf("-n/--index:     specify that it is a task\n");
+    printf("-d/--directory: specify path that should be indexed\n");
 }
 
 static void cmd_usage() {
@@ -24,6 +25,7 @@ static void cmd_usage() {
     printf("query:          query for documents\n");
     printf("search:         query for documents while display the abstract\n");
     printf("retrieve:       retrieve document by its file_id\n");
+    printf("abstract:       abstract document by its file_id\n");
     printf("quit:           quit the program\n");
 }
 
@@ -36,7 +38,7 @@ static void cmd_usage() {
  */
 static void proc_index(const std::string &ip, 
         unsigned short port, const std::string &path) {
-    
+        
 }
 
 /**
@@ -59,7 +61,7 @@ static void proc_commandline(const std::string &ip,
     ui.open(ip, port);
 
     while (true) {
-        printf("> ");
+        printf("uishell > ");
         if (NULL != gets(line)) {
             sscanf(line, "%s%[ \t]%[^\n]", cmd, tmp, arg);
 
@@ -75,13 +77,26 @@ static void proc_commandline(const std::string &ip,
             /* query for documents */
             else if (0 == strcasecmp(cmd, "query")) {
                 std::vector<query_result_t> query_result;
-                if (0 > ui.query(arg, query_result)) {
+                std::string query;
+                for (const char *ptr = arg; *ptr != '\0'; ++ptr) {
+                    if (*ptr == ' ') {
+                        query += "%20";
+                    } else {
+                        query += *ptr;
+                    }
+                }
+
+                if (0 > ui.query(query, query_result)) {
                     printf("query failed!\n");
                 } else {
+                    printf("+-------------------------------------------------------+\n");
+                    printf("|  file_id                         | number | frequency |\n");
+                    printf("+-------------------------------------------------------+\n");
                     for (int i = 0; i < query_result.size(); ++i) {
-                        printf("%s %d\n", query_result[i].file_id.c_str(), 
-                                query_result[i].freq);
+                        printf("| %s |%8d|   %8d|\n", query_result[i].file_id.c_str(), 
+                                query_result[i].num, query_result[i].freq);
                     }
+                    printf("+-------------------------------------------------------+\n");
                 }
             }
             /* retrive for specific document */
@@ -91,6 +106,20 @@ static void proc_commandline(const std::string &ip,
                     printf("retrieve failed!\n");
                 } else {
                     printf("%s\n", file_content.c_str());
+                }
+            }
+            /* abstract for specific document */
+            else if (0 == strcasecmp(cmd, "abstract")) {
+                std::string file_content;
+                if (0 > ui.retrieve(arg, file_content)) {
+                    printf("retrieve failed!\n");
+                } else {
+                    std::vector<std::string> sentence_list;
+                    html_to_sentences(file_content, sentence_list);
+                    for (int i = 0; i < sentence_list.size(); ++i) {
+                        printf("%s\n", sentence_list[i].c_str());
+                    }
+                    printf("\n");
                 }
             }
             /* unrecognized cmd */
@@ -115,8 +144,8 @@ int main(int argc, char *argv[]) {
             { "ip", required_argument, 0, 'i'},
             { "port", required_argument, 0, 'p'},
             { "threads", required_argument, 0, 't'},
-            { "--index", required_argument, 0, 1},
-            { "--directory", required_argument, 0, 2},
+            { "index", required_argument, 0, 'n'},
+            { "directory", required_argument, 0, 'd'},
             { 0, 0, 0, 0 }
         };
         int option_index = 0;
@@ -137,10 +166,10 @@ int main(int argc, char *argv[]) {
             case 'p':
                 port = atoi(optarg);
                 break;
-            case 1:
+            case 'n':
                 index = true;
                 break;
-            case 2:
+            case 'd':
                 path = optarg;
                 break;
             default:

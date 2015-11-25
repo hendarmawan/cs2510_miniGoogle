@@ -259,6 +259,12 @@ void mini_google_event::process_query(
     std::vector<std::string> words;
     split_string(sz_words, "%20", words);
 
+    std::string str_words;
+    for (int i = 0; i < words.size(); ++i) {
+        str_words += words[i] + " ";
+    }
+    RPC_INFO("incoming query request, words=%s ", str_words.c_str());
+
     /* query */
     invert_table &invert_tab = svr->get_invert_table();
 
@@ -313,6 +319,9 @@ void mini_google_event::process_query(
         ezxml_set_attr(xml_word, "t", sz_words);
 
         for (std::vector<std::pair<std::string, file_rank_t> >::iterator iter = res_rank.begin(); iter != res_rank.end(); ++iter) {
+            if (iter->second.num != words.size()) {
+                break;
+            }
             ezxml_t xml_file = ezxml_add_child(xml_word, "f", 0);
             iter->second.sz_num = num_to_str(iter->second.num);
             iter->second.sz_freq = num_to_str(iter->second.freq);

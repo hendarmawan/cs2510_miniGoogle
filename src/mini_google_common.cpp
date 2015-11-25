@@ -188,6 +188,8 @@ void html_to_words(const std::string &file_content,
     int left = 0;
     std::string word;
 
+    bool skip_tag = false;
+
     for (const char *ptr = file_content.c_str(); *ptr != '\0'; ++ptr) {
         if ((*ptr >= 'a' && *ptr <= 'z') || (*ptr >= 'A' && *ptr <= 'Z') || (*ptr >= '0' && *ptr <= '9')) {
             if (*ptr >= 'A' && *ptr <= 'Z') {
@@ -197,12 +199,17 @@ void html_to_words(const std::string &file_content,
             }
         } else {
             if (left == 0) {
-                if (word.length()) {
+                if (word.length() && !skip_tag) {
                     word_list.push_back(word);
+                }
+            } else {
+                if (word == "style" || word == "script") {
+                    skip_tag = true;
                 }
             }
             if (*ptr == '<') {
                 ++left;
+                skip_tag = false;
             } else if (*ptr == '>') {
                 --left;
             }
@@ -223,17 +230,39 @@ void html_to_sentences(const std::string &file_content,
     int left = 0;
     std::string sentence;
 
+    bool skip_tag = false;
+
     for (const char *ptr = file_content.c_str(); *ptr != '\0'; ++ptr) {
         if (*ptr == '<' || *ptr == '>') {
             if (left == 0) {
-                if (sentence.length() > 0) {
-                    sentence_list.push_back(sentence);
+                std::string str;
+                for (int i = 0; i < sentence.length(); ++i) {
+                    char ch = sentence[i];
+                    if (str.length() == 0) {
+                        if (ch != ' ' && ch != '\t' && ch != '\r') str += ch;
+                    } else {
+                        if (ch == ' ' || ch == '\t' || ch == '\r') {
+                            if (str[str.length() - 1] != ' ') {
+                                str += ' ';
+                            }
+                        } else {
+                            str += ch;
+                        }
+                    }
+                }
+                if (str.length() > 0 && !skip_tag) {
+                    sentence_list.push_back(str);
+                }
+            } else {
+                if (sentence.substr(0, 5) == "style" || sentence.substr(0, 6) == "script") {
+                    skip_tag = true;
                 }
             }
             sentence.clear();
 
             if (*ptr == '<') {
                 ++left;
+                skip_tag = false;
             } else if (*ptr == '>') {
                 --left;
             }

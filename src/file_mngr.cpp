@@ -119,7 +119,7 @@ int file_mngr::load(const std::string &file_id,
         in_file.read((char*)file_content.data(), file_content.size());
         in_file.close();
 
-        RPC_INFO("save for file %s fail, path=%s", 
+        RPC_INFO("retrieve for file %s succ, path=%s", 
                 file_id.c_str(), path);
         return 0;
     } 
