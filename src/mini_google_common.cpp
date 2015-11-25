@@ -271,9 +271,9 @@ void html_to_sentences(const std::string &file_content,
                 for (int i = 0; i < sentence.length(); ++i) {
                     char ch = sentence[i];
                     if (str.length() == 0) {
-                        if (ch != ' ' && ch != '\t' && ch != '\r') str += ch;
+                        if (ch != ' ' && ch != '\t' && ch != '\r' && ch != '\n') str += ch;
                     } else {
-                        if (ch == ' ' || ch == '\t' || ch == '\r') {
+                        if (ch == ' ' || ch == '\t' || ch == '\r' && ch != '\n') {
                             if (str[str.length() - 1] != ' ') {
                                 str += ' ';
                             }
@@ -300,6 +300,26 @@ void html_to_sentences(const std::string &file_content,
             }
         } else {
             sentence += *ptr;
+        }
+    }
+    if (left == 0) {
+        std::string str;
+        for (int i = 0; i < sentence.length(); ++i) {
+            char ch = sentence[i];
+            if (str.length() == 0) {
+                if (ch != ' ' && ch != '\t' && ch != '\r' && ch != '\n') str += ch;
+            } else {
+                if (ch == ' ' || ch == '\t' || ch == '\r' && ch != '\n') {
+                    if (str[str.length() - 1] != ' ') {
+                        str += ' ';
+                    }
+                } else {
+                    str += ch;
+                }
+            }
+        }
+        if (str.length() > 0 && !skip_tag) {
+            sentence_list.push_back(str);
         }
     }
 }

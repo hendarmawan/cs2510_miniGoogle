@@ -87,7 +87,6 @@ static void *index_routine(void *param) {
         g_task_lock.unlock();
 
         if (running) {
-            RPC_INFO("[%d] sending task %s", ind, path.c_str());
 
             std::string file_content;
             std::ifstream in_file;
@@ -101,7 +100,12 @@ static void *index_routine(void *param) {
                 in_file.read((char*)file_content.data(), file_content.size());
                 in_file.close();
 
-                put_task_to_master(master_ip, master_port, file_content);
+                int ret = put_task_to_master(master_ip, master_port, file_content);
+                if (ret < 0) {
+                    RPC_INFO("[%d] sends task %s fail", ind, path.c_str());
+                } else {
+                    RPC_INFO("[%d] sends task %s succ", ind, path.c_str());
+                }
             } 
         }
     }

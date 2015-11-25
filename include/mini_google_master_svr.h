@@ -196,8 +196,11 @@ class mini_google_svr: public svr_base {
         }
     
     private:
+        /* task queue */
         mutex_lock m_queue_lock;
         std::queue<index_task_t> m_queue;
+
+        /* slave nodes */
 
         invert_table m_invert_table;
         lookup_table m_lookup_table;
