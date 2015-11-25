@@ -1,14 +1,25 @@
 #include <signal.h>
-#include <stdlib.h>
 #include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <dirent.h>
+#include <stdlib.h>
 #include <getopt.h>
 #include <string.h>
+#include <iostream>
+#include <fstream>
 #include "rpc_log.h"
 #include "rpc_net.h"
+#include "rpc_lock.h"
 #include "rpc_http.h"
 #include "rpc_common.h"
 #include "mini_google_master_svr.h"
 #include "uishell.h"
+
+std::string g_master_ip;
+unsigned short g_master_port;
+mutex_lock g_task_lock;
+std::deque<std::string> g_task_list;
 
 static void usage(int argc, char *argv[]) {
     printf("Usage: %s [options]\n", argv[0]);
@@ -30,15 +41,105 @@ static void cmd_usage() {
 }
 
 /**
- * @brief index a given directory
+ * @brief list directory recursively
+ *
+ * @param name
+ * @param level
+ */
+static void listdir(const char *name, int level) {
+    DIR *dir;
+    struct dirent *entry;
+
+    if (!(dir = opendir(name))) {
+        RPC_WARNING("opendir error, %s", name);
+        return;
+    }
+    while ((entry = readdir(dir)) != NULL) {
+        char path[1024] = { 0 };
+        sprintf(path, "%s/%s", name, entry->d_name);
+
+        if (entry->d_type == DT_DIR) {
+            if (strcmp(entry->d_name, ".") && strcmp(entry->d_name, "..")) {
+                listdir(path, level + 1);
+            }
+        } else {
+            g_task_list.push_back(path);
+        }
+    }
+}
+
+static void *index_routine(void *param) {
+    long long ind = (long long)param;
+    bool running = true;
+
+    std::string master_ip = g_master_ip;
+    unsigned short master_port = g_master_port;
+
+    std::string path;
+    while (running) {
+        g_task_lock.lock();
+        running = false;
+        if (g_task_list.size()) {
+            running = true;
+            path = g_task_list.front();
+            g_task_list.pop_front();
+        }
+        g_task_lock.unlock();
+
+        if (running) {
+            RPC_INFO("[%d] sending task %s", ind, path.c_str());
+
+            std::string file_content;
+            std::ifstream in_file;
+
+            in_file.open(path);
+            if (in_file.is_open()) {
+                in_file.seekg(0, in_file.end);
+                file_content.resize(in_file.tellg());
+                in_file.seekg(0, in_file.beg);
+
+                in_file.read((char*)file_content.data(), file_content.size());
+                in_file.close();
+
+                put_task_to_master(master_ip, master_port, file_content);
+            } 
+        }
+    }
+}
+
+/**
+ * @brief index files
  *
  * @param ip
  * @param port
  * @param path
  */
 static void proc_index(const std::string &ip, 
-        unsigned short port, const std::string &path) {
-        
+        unsigned short port, const std::string &path, int threads_num) {
+
+    /* add tasks */
+    struct stat stinfo;
+    stat(path.c_str(), &stinfo);
+
+    if (S_ISREG(stinfo.st_mode)) {
+        g_task_list.push_back(path);
+    } else {
+        listdir(path.c_str(), 0);
+    }
+
+    /* multi-thread */
+    g_master_ip = ip;
+    g_master_port = port;
+
+    std::vector<pthread_t> threads;
+    threads.resize(threads_num);
+    for (int i = 0; i < threads.size(); ++i) {
+        pthread_create(&threads[i], NULL, index_routine, (void*)(i + 1));
+    }
+    for (int i = 0; i < threads.size(); ++i) {
+        pthread_join(threads[i], NULL);
+    }
+    RPC_INFO("index process finished.");
 }
 
 /**
@@ -47,7 +148,7 @@ static void proc_index(const std::string &ip,
  * @param ip
  * @param port
  */
-static void proc_commandline(const std::string &ip, 
+static void proc_cmdline(const std::string &ip, 
         unsigned short port) {
 
     cmd_usage();
@@ -61,7 +162,7 @@ static void proc_commandline(const std::string &ip,
     ui.open(ip, port);
 
     while (true) {
-        printf("uishell > ");
+        printf("> ");
         if (NULL != gets(line)) {
             sscanf(line, "%s%[ \t]%[^\n]", cmd, tmp, arg);
 
@@ -149,7 +250,7 @@ int main(int argc, char *argv[]) {
             { 0, 0, 0, 0 }
         };
         int option_index = 0;
-        int c = getopt_long(argc, argv, "ht:i:p:", long_options, &option_index);
+        int c = getopt_long(argc, argv, "ht:i:p:nd:", long_options, &option_index);
         if (-1 == c) {
             break;
         }
@@ -190,10 +291,10 @@ int main(int argc, char *argv[]) {
 
     if (index) {
         /* handling index mode */
-        proc_index(ip, port, path);
+        proc_index(ip, port, path, threads_num);
     } else {
         /* handling command line mode */
-        proc_commandline(ip, port);
+        proc_cmdline(ip, port);
     }
 
     return 0;

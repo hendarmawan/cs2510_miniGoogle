@@ -16,6 +16,18 @@ struct query_result_t {
 };
 
 /**
+ * @brief put a task to the master
+ *
+ * @param ip
+ * @param port
+ * @param file_content
+ *
+ * @return -1: network error
+ */
+int put_task_to_master(const std::string &ip,
+        unsigned short port, const std::string &file_content);
+
+/**
  * @brief poll a task from the master
  *
  * @param ip

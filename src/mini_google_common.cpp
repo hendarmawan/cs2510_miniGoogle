@@ -6,6 +6,38 @@
 #include "ezxml.h"
 
 /**
+ * @brief put a task to the master
+ *
+ * @param ip
+ * @param port
+ * @param file_content
+ *
+ * @return -1: network error
+ */
+int put_task_to_master(const std::string &ip,
+        unsigned short port, const std::string &file_content) {
+
+    std::string req_head;
+    std::string rsp_head, rsp_body;
+
+    char head_buf[1024] = { 0 };
+    sprintf(head_buf, "POST /put HTTP/1.1\r\nHost: %s\r\nContent-Length: %d\r\n\r\n", 
+            ip.c_str(), file_content.size());
+
+    req_head.assign(head_buf);
+    int ret = http_talk(ip, port, req_head, file_content, rsp_head, rsp_body);
+    if (0 > ret) {
+        RPC_WARNING("http_talk() to master server error");
+        return -1;
+    }
+    if (strcasestr(rsp_head.c_str(), "HTTP/1.1 200 Ok") != rsp_head.c_str()) {
+        RPC_DEBUG("http_talk() to master server error");
+        return -2;
+    }
+    return 0;
+}
+
+/**
  * @brief poll a task from the master
  *
  * @param ip
