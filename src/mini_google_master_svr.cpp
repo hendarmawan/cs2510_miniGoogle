@@ -682,21 +682,13 @@ void mini_google_event::process_querySlave(
                                          std::string &rsp_body){
     
     mini_google_svr *svr = (mini_google_svr*)m_svr;
-    ezxml_t root = ezxml_new("slave_list");
-    //svr_insts_list_t m_svr_list;
-    svr_insts_list_t &svr_list = svr->get_slave_list();
-    svr_insts_list_t::iterator iter;
-    for(iter = svr_list.begin(); iter != svr_list.end(); ++iter){
-        ezxml_t xml_slave = ezxml_add_child(root, "single_slave", 0);
-        ezxml_set_attr(xml_slave, "slave_ip", iter->first.ip.c_str());
-        ezxml_set_attr(xml_slave, "slave_port", num_to_str((int)iter->first.port).c_str());
+    std::string data;
+    int ret = svr->get_slave_list(data);
+    if(ret==0){
+        RPC_INFO("query_slave successfully, %s", data.c_str());
+        rsp_body.assign(data);
+        rsp_head = gen_http_head("200 OK", rsp_body.size(), "text/xml");
     }
-    char *resp_text = ezxml_toxml(root);
-    std::string data(resp_text);
-    rsp_body.assign(data);
-    free(resp_text);
-    ezxml_free(root);
-    rsp_head = gen_http_head("200 OK", rsp_body.size(), "text/xml");
 }
 
 /**
@@ -750,6 +742,25 @@ io_event *mini_google_svr::create_event(int fd,
     evt->set_state("read_head");
     evt->set_timeout(RPC_RECV_TIMEOUT);
     return (io_event*)evt;
+}
+
+int mini_google_svr::get_slave_list(std::string &data){
+    m_svr_lock.lock();
+    ezxml_t root = ezxml_new("slave_list");
+    svr_insts_list_t::iterator iter;
+    for(iter = m_svr_list.begin(); iter != m_svr_list.end(); ++iter){
+        ezxml_t xml_slave = ezxml_add_child(root, "single_slave", 0);
+        ezxml_set_attr(xml_slave, "slave_ip", iter->first.ip.c_str());
+        iter->first.sz_port = num_to_str((int)iter->first.port);
+        ezxml_set_attr(xml_slave, "slave_port", iter->first.sz_port.c_str());
+    }
+    char *resp_text = ezxml_toxml(root);
+    std::string fdata(resp_text);
+    data.assign(fdata);
+    free(resp_text);
+    ezxml_free(root);
+    m_svr_lock.unlock();
+    return 0;
 }
 
 /**

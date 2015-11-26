@@ -210,6 +210,8 @@ class mini_google_svr: public svr_base {
          */
         int poll(index_task_t &task);
     
+        int get_slave_list(std::string &data);
+    
         /**
          * @brief register svr
          *
@@ -225,6 +227,7 @@ class mini_google_svr: public svr_base {
          */
     
         void do_unregister(svr_inst_t &svr);
+    
     
         void check_timeout(int timeout_s = 30);
 
@@ -263,15 +266,6 @@ class mini_google_svr: public svr_base {
          * @param port
          */
         int backup_invert_table(const std::string &ip, unsigned short port);
-
-        /**
-         * @brief get lookup table
-         *
-         * @return
-         */
-        svr_insts_list_t &get_slave_list(){
-            return m_svr_list;
-        }
     
     private:
         /* task queue */

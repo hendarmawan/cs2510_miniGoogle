@@ -14,6 +14,7 @@ struct svr_inst_t {
     std::string version;
     std::string ip;
     unsigned short port;
+    std::string sz_port;
 };
 
 /**
