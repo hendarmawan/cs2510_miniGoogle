@@ -34,7 +34,6 @@ static void usage(int argc, char *argv[]) {
 static void cmd_usage() {
     printf("help:           show this help\n");
     printf("query:          query for documents\n");
-    printf("search:         query for documents while display the abstract\n");
     printf("retrieve:       retrieve document by its file_id\n");
     printf("abstract:       abstract document by its file_id\n");
     printf("quit:           quit the program\n");
