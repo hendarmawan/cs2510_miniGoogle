@@ -21,11 +21,14 @@ file_mngr *file_mngr::m_pthis = NULL;
  */
 file_mngr::file_mngr(bool bMkdir) {
     if (bMkdir) {
+        mode_t mode = S_IRUSR | S_IWUSR | S_IXUSR | S_IRGRP | S_IWUSR| S_IXGRP;
+        mkdir(DATA_ROOT, mode);
+
         std::string path(DATA_ROOT);
+
         const char *chs = "0123456789abcdef";
         int chs_len = strlen(chs);
 
-        mode_t mode = S_IRUSR | S_IWUSR | S_IXUSR | S_IRGRP | S_IWUSR| S_IXGRP;
         mkdir (path.c_str(), mode);
         for (int i = 0; i < chs_len; ++i) {
             for (int j = 0; j < chs_len; ++j) {

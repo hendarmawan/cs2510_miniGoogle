@@ -158,6 +158,7 @@ class mini_google_svr: public svr_base {
         virtual io_event *create_event(int fd,
                 const std::string &ip, unsigned short port);
 
+    public:
         /**
          * @brief append task to task queue
          *
@@ -194,7 +195,24 @@ class mini_google_svr: public svr_base {
         lookup_table &get_lookup_table() {
             return m_lookup_table;
         }
-    
+
+    public:
+        /**
+         * @brief running in slave mode, back up lookup table from master
+         *
+         * @param ip
+         * @param port
+         */
+        int backup_lookup_table(const std::string &ip, unsigned short port);
+
+        /**
+         * @brief running in slave mode, back up invert table from master
+         *
+         * @param ip
+         * @param port
+         */
+        int backup_invert_table(const std::string &ip, unsigned short port);
+
     private:
         /* task queue */
         mutex_lock m_queue_lock;
@@ -202,6 +220,7 @@ class mini_google_svr: public svr_base {
 
         /* slave nodes */
 
+        /* index data structure */
         invert_table m_invert_table;
         lookup_table m_lookup_table;
 };

@@ -102,13 +102,14 @@ static void *index_routine(void *param) {
 
                 int ret = put_task_to_master(master_ip, master_port, file_content);
                 if (ret < 0) {
-                    RPC_INFO("[%d] sends task %s fail", ind, path.c_str());
+                    RPC_INFO("[%lld] sends task %s fail", ind, path.c_str());
                 } else {
-                    RPC_INFO("[%d] sends task %s succ", ind, path.c_str());
+                    RPC_INFO("[%lld] sends task %s succ", ind, path.c_str());
                 }
             } 
         }
     }
+    return NULL;
 }
 
 /**

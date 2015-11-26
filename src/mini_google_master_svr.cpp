@@ -712,3 +712,156 @@ int mini_google_svr::poll(index_task_t &task) {
     }
     return ret_val;
 }
+
+/**
+ * @brief running in slave mode, back up lookup table from master
+ *
+ * @param ip
+ * @param port
+ *
+ * @return
+ */
+int mini_google_svr::backup_lookup_table(const std::string &ip, 
+        unsigned short port) {
+
+    RPC_INFO("copying lookup table..., master_ip=%s, master_port=%u", ip.c_str(), port);
+
+    /* get group num */
+    std::string req_head = gen_http_head("/backup?table=lookup_table&method=get_group_num", ip, 0);
+    std::string rsp_head, rsp_body;
+
+    int ret = http_talk(ip, port, req_head, "", rsp_head, rsp_body);
+    if (ret < 0) {
+        RPC_WARNING("get group num error, ip=%s, port=%u", ip.c_str(), port);
+        return -1;
+    }
+    ezxml_t xml_root = ezxml_parse_str(
+            (char*)rsp_body.data(), rsp_body.size());
+
+    int group_num = -1;
+    ezxml_t xml_group_num = ezxml_child(xml_root, "group_num");
+    if (xml_group_num) {
+        group_num = atoi(xml_group_num->txt);
+    }
+    ezxml_free(xml_root);
+
+    /* get lookup table */
+    lookup_table &lookup = this->get_lookup_table();
+    if (group_num != lookup.get_group_num()) {
+        RPC_WARNING("copy lookup table error, group_num not equal");
+        return -1;
+    }
+    RPC_INFO("copying lookup_table..., group_num=%u", group_num);
+
+    /* get group data */
+    for (int i = 0; i < group_num; ++i) {
+        std::string req_head = gen_http_head("/backup?table=lookup_table&method=get_group_data&group_id=" + num_to_str(i), ip, 0);
+        std::string rsp_head, rsp_body;
+
+        int j, retry = 2;
+        for (j = 0; j < retry; ++j) {
+            int ret = http_talk(ip, port, req_head, "", rsp_head, rsp_body);
+            if (ret == 0) {
+                break;
+            }
+        }
+        if (j == retry) {
+            RPC_WARNING("get data error, try=%d, ip=%s, port=%u", j, ip.c_str(), port);
+            return -1;
+        }
+        RPC_INFO("get data succ, group_id=%d", i);
+
+        /* update data */
+        single_lookup_table_t &s_tab = *lookup.lock_group(i);
+
+        ezxml_t xml_root = ezxml_parse_str((char*)rsp_body.data(), rsp_body.size());
+        ezxml_t xml_file_info_list = ezxml_child(xml_root, "file_info_list");
+        if (xml_file_info_list) {
+            for (ezxml_t xml_f = ezxml_child(xml_file_info_list, "f"); xml_f != NULL; xml_f = xml_f->next) {
+                std::string file_id = ezxml_attr(xml_f, "file_id");
+                s_tab[file_id] = file_info_t(ezxml_attr(xml_f, "slave_ip"), atoi(ezxml_attr(xml_f, "slave_port")));
+            }
+        }
+        ezxml_free(xml_root);
+
+        lookup.unlock_group(i);
+    }
+
+    return 0;
+}
+
+/**
+ * @brief running in slave mode, back up invert table from master
+ *
+ * @param ip
+ * @param port
+ */
+int mini_google_svr::backup_invert_table(const std::string &ip, 
+        unsigned short port) {
+
+    RPC_INFO("copying invert table..., master_ip=%s, master_port=%u", ip.c_str(), port);
+
+    /* get group num */
+    std::string req_head = gen_http_head("/backup?table=invert_table&method=get_group_num", ip, 0);
+    std::string rsp_head, rsp_body;
+
+    int ret = http_talk(ip, port, req_head, "", rsp_head, rsp_body);
+    if (ret < 0) {
+        RPC_WARNING("get invert_table group num error, ip=%s, port=%u", ip.c_str(), port);
+        return -1;
+    }
+    ezxml_t xml_root = ezxml_parse_str(
+            (char*)rsp_body.data(), rsp_body.size());
+
+    int group_num = -1;
+    ezxml_t xml_group_num = ezxml_child(xml_root, "group_num");
+    if (xml_group_num) {
+        group_num = atoi(xml_group_num->txt);
+    }
+    ezxml_free(xml_root);
+
+    /* get invert table */
+    invert_table &invert = this->get_invert_table();
+    if (group_num != invert.get_group_num()) {
+        RPC_WARNING("copy invert table error, group_num not equal");
+        return -1;
+    }
+
+    RPC_INFO("copying invert_table..., group_num=%u", group_num);
+
+    /* get group data */
+    for (int i = 0; i < group_num; ++i) {
+        std::string req_head = gen_http_head("/backup?table=invert_table&method=get_group_data&group_id=" + num_to_str(i), ip, 0);
+        std::string rsp_head, rsp_body;
+
+        int j, retry = 2;
+        for (j = 0; j < retry; ++j) {
+            int ret = http_talk(ip, port, req_head, "", rsp_head, rsp_body);
+            if (ret == 0) {
+                break;
+            }
+        }
+        if (j == retry) {
+            RPC_WARNING("get data error, try=%d, ip=%s, port=%u", j, ip.c_str(), port);
+            return -1;
+        }
+        RPC_INFO("get data succ, group_id=%d", i);
+
+        /* update data */
+        single_invert_table_t &s_tab = *invert.lock_group(i);
+
+        ezxml_t xml_root = ezxml_parse_str((char*)rsp_body.data(), rsp_body.size());
+        ezxml_t xml_file_info_list = ezxml_child(xml_root, "file_info_list");
+        if (xml_file_info_list) {
+            for (ezxml_t xml_f = ezxml_child(xml_file_info_list, "f"); xml_f != NULL; xml_f = xml_f->next) {
+                std::string file_id = ezxml_attr(xml_f, "file_id");
+                s_tab[file_id] = file_info_t(ezxml_attr(xml_f, "slave_ip"), atoi(ezxml_attr(xml_f, "slave_port")));
+            }
+        }
+        ezxml_free(xml_root);
+
+        lookup.unlock_group(i);
+    }
+
+    return 0;
+}

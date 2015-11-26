@@ -258,4 +258,3 @@ int http_talk(const std::vector<std::string> &ips_list, unsigned short port,
     RPC_DEBUG("%s", rsp_head.c_str());
     return 0;
 }
-

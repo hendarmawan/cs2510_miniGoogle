@@ -21,7 +21,7 @@ int put_task_to_master(const std::string &ip,
     std::string rsp_head, rsp_body;
 
     char head_buf[1024] = { 0 };
-    sprintf(head_buf, "POST /put HTTP/1.1\r\nHost: %s\r\nContent-Length: %d\r\n\r\n", 
+    sprintf(head_buf, "POST /put HTTP/1.1\r\nHost: %s\r\nContent-Length: %lu\r\n\r\n", 
             ip.c_str(), file_content.size());
 
     req_head.assign(head_buf);
@@ -273,7 +273,7 @@ void html_to_sentences(const std::string &file_content,
                     if (str.length() == 0) {
                         if (ch != ' ' && ch != '\t' && ch != '\r' && ch != '\n') str += ch;
                     } else {
-                        if (ch == ' ' || ch == '\t' || ch == '\r' && ch != '\n') {
+                        if (ch == ' ' || ch == '\t' || ch == '\r' || ch == '\n') {
                             if (str[str.length() - 1] != ' ') {
                                 str += ' ';
                             }
@@ -309,7 +309,7 @@ void html_to_sentences(const std::string &file_content,
             if (str.length() == 0) {
                 if (ch != ' ' && ch != '\t' && ch != '\r' && ch != '\n') str += ch;
             } else {
-                if (ch == ' ' || ch == '\t' || ch == '\r' && ch != '\n') {
+                if (ch == ' ' || ch == '\t' || ch == '\r' || ch == '\n') {
                     if (str[str.length() - 1] != ' ') {
                         str += ' ';
                     }

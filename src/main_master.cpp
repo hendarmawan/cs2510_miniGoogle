@@ -18,11 +18,16 @@ static void usage(int argc, char *argv[]) {
     printf("-h/--help:      show this help\n");
     printf("-t/--threads:   specify threads number\n");
     printf("-p/--port:      specify service port\n");
+    printf("--master-ip:    specify master ip\n");
+    printf("--master-port:  specify master port\n");
 }
 
 int main(int argc, char *argv[]) {
     int port = 0;
     int threads_num = 4;
+
+    const char *master_ip = NULL;
+    int master_port = 0;
 
     /* command line options */
     while (true) {
@@ -30,6 +35,8 @@ int main(int argc, char *argv[]) {
             { "help", no_argument, 0, 'h'},
             { "port", required_argument, 0, 'p'},
             { "threads", required_argument, 0, 't'},
+            { "master-ip", required_argument, 0, 1},
+            { "master-port", required_argument, 0, 2},
             { 0, 0, 0, 0 }
         };
         int option_index = 0;
@@ -46,6 +53,12 @@ int main(int argc, char *argv[]) {
                 break;
             case 'p':
                 port = atoi(optarg);
+                break;
+            case 1:
+                master_ip = optarg;
+                break;
+            case 2:
+                master_port = atoi(optarg);
                 break;
             default:
                 usage(argc, argv);
@@ -74,6 +87,18 @@ int main(int argc, char *argv[]) {
     if (0 != svr->bind(port)) {
         RPC_WARNING("bind error");
         exit(-1);
+    }
+
+    /* backup master's memory */
+    if (master_ip && master_port) {
+        if (0 != svr->backup_lookup_table(master_ip, master_port)) {
+            RPC_WARNING("backup_lookup_table error");
+            exit(-1);
+        }
+        if (0 != svr->backup_invert_table(master_ip, master_port)) {
+            RPC_WARNING("backup_invert_table error");
+            exit(-1);
+        }
     }
 
     unsigned long long prev_msec = get_cur_msec();
