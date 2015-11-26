@@ -710,7 +710,13 @@ void mini_google_event::process_querySlave(
 void mini_google_event::dsptch_http_request(const std::string &uri,
         const std::string &req_body, std::string &rsp_head, std::string &rsp_body) {
 
-    if (uri.find("/put") == 0) {
+    if (uri.find("/register") == 0){
+        process_register(uri, req_body, rsp_head, rsp_body, true);
+    } else if (uri.find("/unregister") == 0){
+        process_register(uri, req_body, rsp_head, rsp_body, false);
+    } else if (uri.find("/query-slave") == 0){
+        process_querySlave(uri, req_body, rsp_head, rsp_body);
+    } else if (uri.find("/put") == 0) {
         process_put(uri, req_body, rsp_head, rsp_body);
     } else if (uri.find("/poll") == 0){
         process_poll(uri, req_body, rsp_head, rsp_body);
@@ -724,14 +730,7 @@ void mini_google_event::dsptch_http_request(const std::string &uri,
         process_search(uri, req_body, rsp_head, rsp_body);
     } else if (uri.find("/backup") == 0){
         process_backup(uri, req_body, rsp_head, rsp_body);
-    } else if (uri.find("/register") == 0){
-        process_register(uri, req_body, rsp_head, rsp_body, true);
-    } else if (uri.find("/unregister") == 0){
-        process_register(uri, req_body, rsp_head, rsp_body, false);
-    } else if (uri.find("/query-slave") == 0){
-        process_querySlave(uri, req_body, rsp_head, rsp_body);
-    }
-    else {
+    } else {
         process_default(uri, req_body, rsp_head, rsp_body);
     }
 }
@@ -854,7 +853,9 @@ int mini_google_svr::backup_lookup_table(const std::string &ip,
             RPC_WARNING("get data error, try=%d, ip=%s, port=%u", j, ip.c_str(), port);
             return -1;
         }
-        RPC_INFO("get data succ, group_id=%d", i);
+        if (i % 20 == 0) {
+            RPC_INFO("get data succ, group_id=%d", i);
+        }
 
         /* update data */
         single_lookup_table_t &s_tab = *lookup.lock_group(i);
@@ -930,7 +931,9 @@ int mini_google_svr::backup_invert_table(const std::string &ip,
             RPC_WARNING("get data error, try=%d, ip=%s, port=%u", j, ip.c_str(), port);
             return -1;
         }
-        RPC_INFO("get data succ, group_id=%d", i);
+        if (i % 20 == 0) {
+            RPC_INFO("get data succ, group_id=%d", i);
+        }
 
         /* update data */
         //single_invert_table_t &s_tab = *invert.lock_group(i);
@@ -988,12 +991,12 @@ void mini_google_svr::do_unregister(svr_inst_t &svr){
     
 }
 
-void mini_google_svr::check_timeout(){
+void mini_google_svr::check_timeout(int timeout_s){
     m_svr_lock.lock();
     unsigned long long cur_msec = get_cur_msec();
     svr_insts_list_t::iterator iter;
     for(iter = m_svr_list.begin(); iter != m_svr_list.end();){
-        if(cur_msec - iter->second >= 30 * 1000){
+        if(cur_msec - iter->second >= timeout_s * 1000){
             RPC_INFO("check_timeout, ip=%s, port=%d", iter->first.ip.c_str(), iter->first.port);
             m_svr_list.erase(iter++);
         }

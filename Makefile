@@ -103,7 +103,7 @@ ifeq ($(OS),Linux)
 else
 	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(UISHELL) -Xlinker $(COMMON_LIB) $(UISHELL_OBJS)
 endif
-	@echo -e "$(cchighlight)successfully compiling $(MINI_GOOGLE_SLAVE)$(ccend)"
+	@echo -e "$(cchighlight)successfully compiling $(UISHELL)$(ccend)"
 
 .PHONY: clean
 clean:

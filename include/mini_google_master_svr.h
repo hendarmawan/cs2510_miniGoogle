@@ -226,7 +226,7 @@ class mini_google_svr: public svr_base {
     
         void do_unregister(svr_inst_t &svr);
     
-        void check_timeout();
+        void check_timeout(int timeout_s = 30);
 
     public:
         /**

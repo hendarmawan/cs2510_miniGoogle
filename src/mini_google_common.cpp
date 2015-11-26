@@ -3,7 +3,86 @@
 #include <string.h>
 #include "rpc_log.h"
 #include "rpc_http.h"
+#include "rpc_common.h"
 #include "ezxml.h"
+
+/**
+ * @brief register to master server
+ *
+ * @param ip
+ * @param port
+ * @param my_ip
+ * @param my_port
+ *
+ * @return 
+ */
+int register_to_master(const std::string &ip, unsigned short port,
+        const std::string &my_ip, unsigned short my_port) {
+
+    std::string str_port = num_to_str(my_port);
+
+    ezxml_t root = ezxml_new("server");
+    ezxml_set_txt(ezxml_add_child(root, "ip", 0), my_ip.c_str());
+    ezxml_set_txt(ezxml_add_child(root, "port", 0), str_port.c_str());
+
+    char *text = ezxml_toxml(root);
+    std::string data(text);
+
+    free(text);
+    ezxml_free(root);
+
+    /* talk to master server */
+    std::string req_head, req_body;
+    std::string rsp_head, rsp_body;
+
+    req_head = gen_http_head("/register", ip, data.size());
+    req_body = data;
+    int ret = http_talk(ip, port, req_head, req_body, rsp_head, rsp_body);
+    if (0 > ret) {
+        RPC_WARNING("http_talk() to directory server error");
+        return -1;
+    }
+    return 0;
+}
+
+/**
+ * @brief unregister to master server
+ *
+ * @param ip
+ * @param port
+ * @param my_ip
+ * @param my_port
+ *
+ * @return 
+ */
+int unregister_to_master(const std::string &ip, unsigned short port,
+        const std::string &my_ip, unsigned short my_port) {
+
+    std::string str_port = num_to_str(my_port);
+
+    ezxml_t root = ezxml_new("server");
+    ezxml_set_txt(ezxml_add_child(root, "ip", 0), my_ip.c_str());
+    ezxml_set_txt(ezxml_add_child(root, "port", 0), num_to_str(my_port).c_str());
+
+    char *text = ezxml_toxml(root);
+    std::string data(text);
+
+    free(text);
+    ezxml_free(root);
+
+    /* talk to master server */
+    std::string req_head, req_body;
+    std::string rsp_head, rsp_body;
+
+    req_head = gen_http_head("/unregister", ip, data.size());
+    req_body = data;
+    int ret = http_talk(ip, port, req_head, req_body, rsp_head, rsp_body);
+    if (0 > ret) {
+        RPC_WARNING("http_talk() to directory server error");
+        return -1;
+    }
+    return 0;
+}
 
 /**
  * @brief put a task to the master

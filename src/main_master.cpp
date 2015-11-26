@@ -7,6 +7,7 @@
 #include "rpc_http.h"
 #include "rpc_common.h"
 #include "mini_google_master_svr.h"
+#include "mini_google_common.h"
 
 static bool running = true;
 static void signal_proc(int signo) {
@@ -17,14 +18,17 @@ static void usage(int argc, char *argv[]) {
     printf("Usage: %s [options]\n", argv[0]);
     printf("-h/--help:      show this help\n");
     printf("-t/--threads:   specify threads number\n");
+    printf("-i/--ip:        specify service ip\n");
     printf("-p/--port:      specify service port\n");
     printf("--master-ip:    specify master ip\n");
     printf("--master-port:  specify master port\n");
 }
 
 int main(int argc, char *argv[]) {
-    int port = 0;
     int threads_num = 4;
+
+    const char *ip = NULL;
+    int port = 0;
 
     const char *master_ip = NULL;
     int master_port = 0;
@@ -33,6 +37,7 @@ int main(int argc, char *argv[]) {
     while (true) {
         static struct option long_options[] = {
             { "help", no_argument, 0, 'h'},
+            { "ip", required_argument, 0, 'i'},
             { "port", required_argument, 0, 'p'},
             { "threads", required_argument, 0, 't'},
             { "master-ip", required_argument, 0, 1},
@@ -51,6 +56,9 @@ int main(int argc, char *argv[]) {
             case 't':
                 threads_num = atoi(optarg);
                 break;
+            case 'i':
+                ip = optarg;
+                break;
             case 'p':
                 port = atoi(optarg);
                 break;
@@ -65,7 +73,7 @@ int main(int argc, char *argv[]) {
                 exit(0);
         }
     }
-    if (0 == port) {
+    if (NULL == ip && 0 == port) {
         usage(argc, argv);
         exit(0);
     }
@@ -89,8 +97,13 @@ int main(int argc, char *argv[]) {
         exit(-1);
     }
 
-    /* backup master's memory */
     if (master_ip && master_port) {
+        /* register */
+        if (0 != register_to_master(master_ip, master_port, ip, port)) {
+            RPC_WARNING("register error");
+        }
+
+        /* backup master's memory */
         if (0 != svr->backup_lookup_table(master_ip, master_port)) {
             RPC_WARNING("backup_lookup_table error");
             exit(-1);
@@ -104,6 +117,29 @@ int main(int argc, char *argv[]) {
     unsigned long long prev_msec = get_cur_msec();
     while (running) {
         svr->run_routine(10);
+
+        unsigned long long curr_msec = get_cur_msec();
+        if (curr_msec - prev_msec >= 10 * 1000) {
+
+            /* update register information every 10 secs */
+            if (master_ip && master_port) {
+                if (0 != register_to_master(master_ip, master_port, ip, port)) {
+                    RPC_WARNING("register error");
+                }
+            }
+
+            /* check timeout */
+            svr->check_timeout(30);
+
+            prev_msec = curr_msec;
+        }
+    }
+
+    /* unregister */
+    if (master_ip && master_port) {
+        if (0 != unregister_to_master(master_ip, master_port, ip, port)) {
+            RPC_WARNING("unregister error");
+        }
     }
 
     svr->stop();

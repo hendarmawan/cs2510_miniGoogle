@@ -16,6 +16,32 @@ struct query_result_t {
 };
 
 /**
+ * @brief register to master server
+ *
+ * @param ip
+ * @param port
+ * @param my_ip
+ * @param my_port
+ *
+ * @return 
+ */
+int register_to_master(const std::string &ip, unsigned short port,
+        const std::string &my_ip, unsigned short my_port);
+
+/**
+ * @brief unregister to master server
+ *
+ * @param ip
+ * @param port
+ * @param my_ip
+ * @param my_port
+ *
+ * @return 
+ */
+int unregister_to_master(const std::string &ip, unsigned short port,
+        const std::string &my_ip, unsigned short my_port);
+
+/**
  * @brief put a task to the master
  *
  * @param ip
