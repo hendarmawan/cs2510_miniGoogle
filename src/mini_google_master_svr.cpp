@@ -873,11 +873,9 @@ int mini_google_svr::backup_lookup_table(const std::string &ip,
 
         ezxml_t xml_root = ezxml_parse_str((char*)rsp_body.data(), rsp_body.size());
         ezxml_t xml_file_info_list = ezxml_child(xml_root, "file_info_list");
-        if (xml_file_info_list) {
-            for (ezxml_t xml_f = ezxml_child(xml_file_info_list, "f"); xml_f != NULL; xml_f = xml_f->next) {
-                std::string file_id = ezxml_attr(xml_f, "file_id");
-                s_tab[file_id] = file_info_t(ezxml_attr(xml_f, "slave_ip"), atoi(ezxml_attr(xml_f, "slave_port")));
-            }
+        for (ezxml_t xml_f = ezxml_child(xml_file_info_list, "f"); xml_f != NULL; xml_f = xml_f->next) {
+            std::string file_id = ezxml_attr(xml_f, "file_id");
+            s_tab[file_id] = file_info_t(ezxml_attr(xml_f, "slave_ip"), atoi(ezxml_attr(xml_f, "slave_port")));
         }
         ezxml_free(xml_root);
 
@@ -947,19 +945,22 @@ int mini_google_svr::backup_invert_table(const std::string &ip,
         }
 
         /* update data */
-        //single_invert_table_t &s_tab = *invert.lock_group(i);
+        single_invert_table_t &s_tab = *invert.lock_group(i);
 
-        //ezxml_t xml_root = ezxml_parse_str((char*)rsp_body.data(), rsp_body.size());
-        //ezxml_t xml_file_info_list = ezxml_child(xml_root, "file_info_list");
-        //if (xml_file_info_list) {
-        //    for (ezxml_t xml_f = ezxml_child(xml_file_info_list, "f"); xml_f != NULL; xml_f = xml_f->next) {
-        //        std::string file_id = ezxml_attr(xml_f, "file_id");
-        //        s_tab[file_id] = file_info_t(ezxml_attr(xml_f, "slave_ip"), atoi(ezxml_attr(xml_f, "slave_port")));
-        //    }
-        //}
-        //ezxml_free(xml_root);
+        ezxml_t xml_root = ezxml_parse_str((char*)rsp_body.data(), rsp_body.size());
+        ezxml_t xml_term_info_list = ezxml_child(xml_root, "term_info_list");
+        for (ezxml_t xml_t = ezxml_child(xml_term_info_list, "t"); xml_t != NULL; xml_t = xml_t->next) {
+            std::string term = ezxml_attr(xml_t, "term");
+            file_freq_list_t &f_list = s_tab[term];
 
-        //lookup.unlock_group(i);
+            for (ezxml_t xml_f = ezxml_child(xml_t, "f"); xml_f != NULL; xml_f = xml_f->next) {
+                std::string file_id = ezxml_attr(xml_f, "file_id");
+                f_list[file_id] = file_freq_t(atoi(ezxml_attr(xml_f, "freq")));
+            }
+        }
+        ezxml_free(xml_root);
+
+        invert.unlock_group(i);
     }
 
     return 0;
