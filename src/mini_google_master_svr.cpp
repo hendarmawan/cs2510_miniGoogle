@@ -622,6 +622,84 @@ void mini_google_event::process_backup(
 }
 
 /**
+ * @brief register
+ *
+ * @param uri [table|method|group_id]
+ * @param req_body
+ * @param rsp_head
+ * @param rsp_body
+ */
+
+void mini_google_event::process_register(
+                                       const std::string &uri,
+                                       const std::string &req_body,
+                                       std::string &rsp_head, 
+                                         std::string &rsp_body, bool flag){
+    /*parse parameter in the xml*/
+    ezxml_t root = ezxml_parse_str((char*)req_body.data(), req_body.size());
+    if(NULL == root){
+        process_default(uri, req_body, rsp_head, rsp_body);
+        return;
+    }
+    if(!ezxml_child(root, "ip") || !ezxml_child(root, "port")){
+        ezxml_free(root);
+        process_default(uri, req_body, rsp_head, rsp_body);
+        RPC_WARNING("missing data in the register request, %s", req_body.c_str());
+        return;
+    }
+    svr_inst_t svr;
+    svr.ip = ezxml_child(root, "ip")->txt;
+    svr.port = atoi(ezxml_child(root, "port")->txt);
+    ezxml_free(root);
+    
+    /*succ*/
+    if(flag){
+        ((mini_google_svr*)m_svr)->do_register(svr);
+    }
+    else{
+        ((mini_google_svr*)m_svr)->do_unregister(svr);
+    }
+    root = ezxml_new("message");
+    ezxml_set_txt(root, "succ");
+    rsp_body = ezxml_toxml(root);
+    ezxml_free(root);
+    rsp_head = gen_http_head("200 OK", rsp_body.size());
+}
+
+/**
+ * @brief query-slave
+ *
+ * @param uri [table|method|group_id]
+ * @param req_body
+ * @param rsp_head
+ * @param rsp_body
+ */
+
+void mini_google_event::process_querySlave(
+                                         const std::string &uri,
+                                         const std::string &req_body,
+                                         std::string &rsp_head,
+                                         std::string &rsp_body){
+    
+    mini_google_svr *svr = (mini_google_svr*)m_svr;
+    ezxml_t root = ezxml_new("slave_list");
+    //svr_insts_list_t m_svr_list;
+    svr_insts_list_t &svr_list = svr->get_slave_list();
+    svr_insts_list_t::iterator iter;
+    for(iter = svr_list.begin(); iter != svr_list.end(); ++iter){
+        ezxml_t xml_slave = ezxml_add_child(root, "single_slave", 0);
+        ezxml_set_attr(xml_slave, "slave_ip", iter->first.ip.c_str());
+        ezxml_set_attr(xml_slave, "slave_port", num_to_str((int)iter->first.port).c_str());
+    }
+    char *resp_text = ezxml_toxml(root);
+    std::string data(resp_text);
+    rsp_body.assign(data);
+    free(resp_text);
+    ezxml_free(root);
+    rsp_head = gen_http_head("200 OK", rsp_body.size(), "text/xml");
+}
+
+/**
  * @brief dispatcher
  *
  * @param uri
@@ -646,7 +724,14 @@ void mini_google_event::dsptch_http_request(const std::string &uri,
         process_search(uri, req_body, rsp_head, rsp_body);
     } else if (uri.find("/backup") == 0){
         process_backup(uri, req_body, rsp_head, rsp_body);
-    } else {
+    } else if (uri.find("/register") == 0){
+        process_register(uri, req_body, rsp_head, rsp_body, true);
+    } else if (uri.find("/unregister") == 0){
+        process_register(uri, req_body, rsp_head, rsp_body, false);
+    } else if (uri.find("/query-slave") == 0){
+        process_querySlave(uri, req_body, rsp_head, rsp_body);
+    }
+    else {
         process_default(uri, req_body, rsp_head, rsp_body);
     }
 }
@@ -848,20 +933,76 @@ int mini_google_svr::backup_invert_table(const std::string &ip,
         RPC_INFO("get data succ, group_id=%d", i);
 
         /* update data */
-        single_invert_table_t &s_tab = *invert.lock_group(i);
+        //single_invert_table_t &s_tab = *invert.lock_group(i);
 
-        ezxml_t xml_root = ezxml_parse_str((char*)rsp_body.data(), rsp_body.size());
-        ezxml_t xml_file_info_list = ezxml_child(xml_root, "file_info_list");
-        if (xml_file_info_list) {
-            for (ezxml_t xml_f = ezxml_child(xml_file_info_list, "f"); xml_f != NULL; xml_f = xml_f->next) {
-                std::string file_id = ezxml_attr(xml_f, "file_id");
-                s_tab[file_id] = file_info_t(ezxml_attr(xml_f, "slave_ip"), atoi(ezxml_attr(xml_f, "slave_port")));
-            }
-        }
-        ezxml_free(xml_root);
+        //ezxml_t xml_root = ezxml_parse_str((char*)rsp_body.data(), rsp_body.size());
+        //ezxml_t xml_file_info_list = ezxml_child(xml_root, "file_info_list");
+        //if (xml_file_info_list) {
+        //    for (ezxml_t xml_f = ezxml_child(xml_file_info_list, "f"); xml_f != NULL; xml_f = xml_f->next) {
+        //        std::string file_id = ezxml_attr(xml_f, "file_id");
+        //        s_tab[file_id] = file_info_t(ezxml_attr(xml_f, "slave_ip"), atoi(ezxml_attr(xml_f, "slave_port")));
+        //    }
+        //}
+        //ezxml_free(xml_root);
 
-        lookup.unlock_group(i);
+        //lookup.unlock_group(i);
     }
 
     return 0;
 }
+
+void mini_google_svr::do_register(svr_inst_t &svr){
+    //typedef std::list<std::pair<svr_inst_t, unsigned long long> > svr_insts_list_t;
+    //m_svc_list
+    /* insert server into the svr inst list */
+    m_svr_lock.lock();
+    svr_insts_list_t::iterator iter;
+    for(iter = m_svr_list.begin(); iter != m_svr_list.end(); ++iter){
+        if(iter->first.ip == svr.ip && iter->first.port == svr.port){
+            break;
+        }
+    }
+    if (iter == m_svr_list.end()){
+        m_svr_list.push_back(std::pair<svr_inst_t, unsigned long long>(svr, get_cur_msec()));
+    }
+    else{
+        iter->second = get_cur_msec();
+    }
+    
+    m_svr_lock.unlock();
+    
+    RPC_INFO("register succ, ip=%s, port=%u", svr.ip.c_str(), svr.port);
+}
+
+void mini_google_svr::do_unregister(svr_inst_t &svr){
+    m_svr_lock.lock();
+    svr_insts_list_t::iterator iter;
+    for(iter = m_svr_list.begin(); iter != m_svr_list.end(); ++iter){
+        if(iter->first.ip == svr.ip && iter->first.port == svr.port){
+            m_svr_list.erase(iter);
+            break;
+        }
+    }
+    m_svr_lock.unlock();
+    RPC_INFO("unregister succ, ip=%s, port=%u", svr.ip.c_str(), svr.port);
+    
+}
+
+void mini_google_svr::check_timeout(){
+    m_svr_lock.lock();
+    unsigned long long cur_msec = get_cur_msec();
+    svr_insts_list_t::iterator iter;
+    for(iter = m_svr_list.begin(); iter != m_svr_list.end();){
+        if(cur_msec - iter->second >= 30 * 1000){
+            RPC_INFO("check_timeout, ip=%s, port=%d", iter->first.ip.c_str(), iter->first.port);
+            m_svr_list.erase(iter++);
+        }
+        else{
+            ++iter;
+        }
+    }
+    m_svr_lock.unlock();
+}
+
+
+
