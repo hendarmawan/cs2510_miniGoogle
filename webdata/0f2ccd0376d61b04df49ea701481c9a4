@@ -1,0 +1,44 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="page7.html"><img src="previous.gif" align=left></a>
+<a href="page9.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>GoogImager</h1>
+<font size="3">(Items in <font color="blue">blue</font> are new
+to the Google
+Image
+Search
+through GoogImager)</font>
+   <br></br>
+<p>GoogImager is a small utility for making a query to the Google Image
+Search using parameters of Google Advanced Search and some exclusive
+parameters.</p>
+<p>GoogImager features:</p>
+<p>Specify Logic Conditions</p>
+<p>Include/<font color="blue">exclude</font> certain domains in an image
+search</p>
+<p>Search for specific type of file: .jpg, 
+<font color="blue">.jpeg
+</font>, .gif</p>
+<p>Set the number of results per page, and 
+<font color="blue">which page to view for the
+search result
+</font></p>
+<p><font color="blue">"History of queries" for repeating previous searches
+with restoring all parameters of searching</font></p>
+<p><font color="blue">Search for images in non-English language</font></p>
+<p><font color="blue">Search for images, as well as text documents and
+google topic-specific
+searches, such as documents concerning Linux, Macintosh, and the
+Government</font></p><br>
+<IMG SRC="googimager.jpg"><br><br>
+<IMG SRC="googimager-history.jpg">
+<br><br>
+<font color="red">All information on this page was found at the <a
+href="http://www.googimager.com">GoogImager</a> web site</font>
+</font>
+</html>

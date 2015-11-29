@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="project_req4.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="project_req6.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Requirements (IC Cards)</font></h1> 
+ 
+</center> 
+<body>
+<p><font size="4" face="Arial, Helvetica, sans-serif">IC Cards continued:</font></p>
+<p align="center"><font size="4" face="Arial, Helvetica, sans-serif"><img src="images/handheld_ic_card.jpg" width="469" height="268"></font></p>
+<p align="center"><font size="4" face="Arial, Helvetica, sans-serif"><img src="images/handheld_ic_card2.jpg" width="469" height="268"></font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The handheld IC is used 
+  to format the data for handheld devices. The handheld IC sends data request 
+  messages to the crossing and track ICs.</font></p>
+<p align="center"><img src="images/vehicle_ic_card.jpg" width="469" height="268"></p>
+<p align="center"><img src="images/vehicle_ic_card2.jpg" width="469" height="268"></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The vehicle IC has a similar 
+  purpose to that of the handheld IC, but of course it is designed to provide 
+  data formatted for a device mounted in a vehicle.</font></p>
+</body>
+</html>

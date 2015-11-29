@@ -1,0 +1,294 @@
+<title>RELATIONAL ALGEBRA</title>
+<h1>RELATIONAL ALGEBRA</h1>
+
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/05">Click here for audio-text lecture and feed it to the speech agent</a></xs></center>
+<br>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/05a.rm">Click here for an audio lecture that can be played using RealPlayer</a></center>
+<br>
+<li> There are two distinctive approaches to
+     relational database languages:
+<br>
+     Relational Algebra<br>
+     Relational Calculus
+<br>
+     Both are relationally complete.
+<br>
+<li> Relational algebra consists of a collection
+     of operators on relations:
+<br>
+RESTRICT
+<br>
+PROJECT
+<br>
+PRODUCT (or TIMES)
+<br>
+UNION
+<br>
+INTERSECTION
+<br>
+DIFFERENCE
+<br>
+JOIN
+<br>
+DIVIDE
+<br>
+<li> Relations are closed under the algebra.
+<hr>
+<h1>RELATIONAL OPERATORS</h1>
+<pre>
+A   S#    NAME   STATUS   CITY
+    S1   Smith   Single London
+    S2   Clark  Married London
+<br>
+B   S#    NAME   STATUS   CITY
+    S1   Smith   Single London
+    S3   Jones   Single  Paris
+<br>
+A WHERE STATUS = 'Single'
+    S#    NAME   STATUS   CITY
+    S1   Smith   Single London
+<br>
+A [CITY]
+   CITY
+ London
+<br>
+A UNION B
+    S#    NAME   STATUS   CITY
+    S1   Smith   Single London
+    S2   Clark  Married London
+    S3   Jones   Single  Paris
+<br>
+A INTERSECT B
+    S#    NAME   STATUS   CITY
+    S1   Smith   Single London
+<br>
+A MINUS B
+    S#    NAME   STATUS   CITY
+    S2   Clark  Married London
+<br>
+B MINUS A
+    S#    NAME   STATUS   CITY
+    S3   Jones   Single  Paris
+<hr>
+C    STATUS   DREAM_CITY   (Cities people dream about)
+     Single   Paris
+     Single     Rio
+    Married    Pitt
+    Married Orlando
+<br>
+A NATURAL_JOIN C
+    S#    NAME   STATUS   CITY   DREAM_CITY
+    S1   Smith   Single London   Paris
+    S1   Smith   Single London     Rio
+    S2   Clark  Married London    Pitt
+    S2   Clark  Married London Orlando
+
+(A NATURAL_JOIN C) WHERE CITY=DREAM_CITY      (People who live in dream city)
+    S#    NAME   STATUS   CITY   DREAM_CITY
+    -
+<br>
+B NATURAL_JOIN C
+    S#    NAME   STATUS   CITY   DREAM_CITY
+    S1   Smith   Single London   Paris
+    S1   Smith   Single London     Rio
+    S3   Jones   Single  Paris   Paris
+    S3   Jones   Single  Paris     Rio
+
+(B NATURAL_JOIN C) WHERE CITY=DREAM_CITY      (People who live in dream city)
+    S#    NAME   STATUS   CITY   DREAM_CITY
+    S3   Jones   Single  Paris   Paris
+<hr>
+D    NAME  CITY   (People who own houses in cities)
+    Gates  Seattle
+    Gates   N.Y.C.
+   Siegel   Paris
+   Siegel   N.Y.C.
+   Siegel     Rio
+
+E    CITY       (List of dream cities)
+    Paris
+      Rio
+
+D DIVIDE_BY E   (People who own hosues in every dream city)
+     NAME
+   Siegel
+<hr>
+E   CITY
+    Paris
+      RIO
+
+F    NAME
+    Gates
+   Siegel
+
+F PRODUCT E   (or F TIMES E)
+   NAME   CITY
+  Gates  Paris
+  Gates    Rio
+ Siegel  Paris
+ Siegel    Rio
+</pre>
+<hr>
+<br><IMG SRC="images/fig51.gif"><br>
+<hr>
+<h1>THE RELATIONAL ALGEBRAIC LANGUAGE</h1>
+<br>
+<br>
+EXAMPLE 1: Restrict the S relation with the
+condition that supplier is in London, and
+store the result in a temporary relation T1.
+<br>
+T1 := S WHERE CITY = 'London'
+<br>
+Note: In the above, ':=' is the assignment
+      operator.
+<br>
+<br>
+EXAMPLE 2: Project T1 to attribute S# and store
+the result in a temporary relation T2.
+<br>
+T2 := T1 [ S# ]
+<br>
+<br>
+EXAMPLE 3: Find suppliers in London and
+store the result in a temporary relation T2.
+<br>
+T2 := (S WHERE CITY = 'London' ) [ S# ]
+<br>
+<br>
+<hr>
+<h1>THE RELATIONAL ALGEBRAIC LANGUAGE</h1>
+<br>
+<br>
+EXAMPLE 4: Find parts supplied by suppliers
+in London.
+<br>
+( T2 JOIN SP ) [ P# ]
+<br>
+or equivalently
+<br>
+( (S WHERE CITY = 'London' ) JOIN SP ) [ P# ]
+<br>
+Note: Why we did not project on P# before the join?
+<br>
+<br>
+EXAMPLE 5: Create snapshot relation SR containing
+parts supplied by suppliers in London.
+<br>
+SR := ( (S WHERE CITY = 'London' ) JOIN SP ) [ P# ]
+<br>
+<br>
+EXAMPLE 6: What new parts have been added by the
+suppliers in London during the last six months?
+<br>
+If SR1 is the snapshot relation created six months
+ago, and SR2 is the new snapshot relation, then
+the new parts can be obtained by:
+<br>
+SR2 MINUS SR1
+<br>
+<hr>
+<h1>THE RELATIONAL ALGEBRAIC LANGUAGE</h1>
+<br>
+<br>
+EXAMPLE 7: What parts are no longer supplied by
+the suppliers in London?
+<br>
+SR1 MINUS SR2
+<br>
+<br>
+EXAMPLE 8: What supplier supplies all the parts
+no longer supplied by the suppliers in London?
+<br>
+( SP [ S#, P# ] ) DIVIDE_BY ( SR1 MINUS SR2 )
+<br>
+Note: For the DIVIDE_BY operator to work, the
+two relations must be binary and unary.
+<br>
+<br>
+EXAMPLE 9: Where are the suppliers supplying
+all the parts no longer supplied by the
+suppliers in London?
+<br>
+<br>
+( (( SP [ S#, P# ] ) DIVIDE_BY ( SR1 MINUS SR2 ))
+  JOIN S ) [CITY]
+<hr>
+<h1>ADDITIONAL USEFUL OPERATORS</h1>
+<br>
+<li> Let theta represent any comparison operator
+<pre>
+     =, <>, <, >, >=, etc.
+</pre>
+     A theta-restriction on
+     relation R is of the form
+<br>
+     R  WHERE  X theta Y
+<br>
+Note: theta-restrction is the same as restriction.
+<br>
+<li> A theta-join is of the form
+<br>
+     A JOIN(X theta Y) B
+<br>
+     which is equivalent to
+<br>
+     ( A TIMES B ) WHERE X theta Y
+<br>
+     The condition 'X theta Y' is called the
+     theta-join condition, or simply join condition.
+<br>
+<li> Other useful opeartors include:
+<br>
+     EXTEND (to pad null values into relations to make them compatible)<br>
+     SUMMARIZE (to sum, avg or perform other aggregate functions)<br>
+     GENERALIZED-DIVIDE (to use a condition other than "equal")<br>
+     OUTER-JOIN (to keep all tuples in left, right, or both relations in performing the join)
+<hr>
+<h1>WHAT IS THE ALGEBRA FOR?</h1>
+<br>
+<li> The algrbra has a minimal set of operators:
+     restriction, projection, product,
+     union and difference.
+<br>
+<li> The algebra is an abstract language
+     to define user's intent on the
+     scope for retrieval, scope for update,
+     snapshot data, access rights, stability
+     requirements, integrity constraints, etc.
+<br>
+<li> The algrbra can be used in optimization
+     transformations. For example,
+<br>
+( ( S JOIN SP ) WHERE P# = 'P2' ) [ SNAME ]
+<br>
+is probably more efficient than
+<br>
+( S JOIN ( SP WHERE P# = 'P2' ) [ SNAME ]
+<br>
+<li> The algebra is used as an yardstick.
+     A language is said to be
+     RELATIONALLY COMPLETE
+     if it is as powerful as the algrbra.
+<hr>
+<h1>ABOUT THINGS YET TO COME</h1>
+<br>
+<li>Relational database is built upon a
+theory of relations
+<br>
+<br>
+<li>The three operations:<br>
+Project<br>
+Restrict<br>
+Join (equi-join)<br>
+are complete, i.e., you can formulate
+all formulatable queries using these
+three operators only!
+<br><br>
+<li>About languages:
+<br>
+structured query language (such as SQL)<br>
+relational algebra (operators)<br>
+relational calculus (logical predicates)<br>
+visual queries (user-oriented language)<br>
+natural language<br>

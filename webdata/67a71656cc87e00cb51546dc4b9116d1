@@ -1,0 +1,47 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="CSSD">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="p16.html"><img SRC="previous.gif"  align=LEFT></a><a href="p18.html"><img SRC="next.gif"  align=RIGHT></a>
+<p><br>
+<p><br>
+<center>
+<p><b><font size=+3>6.1 Middleware for Component-Based Software Engineering</font></b></center>
+
+<p><b><font size=+1>CORBA</font></b>
+<blockquote>Common Object Request Broker Architecture (CORBA) is an architecture
+and specification for creating, distributing, and managing distributed
+program objects in a network. It allows programs at different locations
+and developed by different vendors to communicate in a network through
+an "interface broker." CORBA was developed by a consortium of vendors through
+the Object Management Group (OMG), which currently includes over 500 member
+companies.</blockquote>
+<b><font size=+1>Enterprise Java Beans</font></b>
+<blockquote>Enterprise JavaBeans (EJB) is an architecture for setting up
+program component, written in the Java programming language, that run in
+the server parts of a computer network that uses the client/server model.
+Enterprise JavaBeans is built on the JavaBeans technology for distributing
+program components (which are called Bean, using the coffee metaphor) to
+client in a network.</blockquote>
+<b><font size=+1>COM+</font></b>
+<blockquote>COM+ is an extension of Component Object Model (COM), Microsoft's
+strategic building block approach for developing application programs.
+COM+ is both an object-oriented programming architecture and a set of operating
+system services. It adds to COM a new set of system services for application
+components while they are running, such as notifying them of significant
+events or ensuring they are authorized to run.</blockquote>
+<b>COM+ is viewed as Microsoft's answer to the Sun Microsystems-IBM-Oracle
+approach known as Enterprise JavaBeans (EJB).</b>
+<br><b>CORBA and Microsoft have agreed on a gateway approach so that a
+client object developed with the Component Object Model will be able to
+communicate with a CORBA server (and vice versa).</b>
+<blockquote>&nbsp;</blockquote>
+
+<br>&nbsp;
+</body>
+</html>

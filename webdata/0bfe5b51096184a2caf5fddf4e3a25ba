@@ -1,0 +1,50 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="index.htm"><img src="previous.gif" align="left" alt="Back to HOME"></a>
+<a href="background-01.htm"><img src="next.gif" align="right" alt="Query-by-Example in Relational DBMS" ></a>
+
+<br><br>
+<center>
+<table width="600">
+	<tr>
+		<td align="center">
+			<h1 align="center">Overview of the Presentation</h1>
+			<hr>
+			
+			<h3>1. Background of Query-by-Example (QBE)</h3>
+			<blockquote>
+				<p>
+					<a href="background-01.htm">Query-by-Example in Relational DBMS</a><br>
+					<a href="background-02.htm">Query-by-Example in Multimedia</a>
+				</p>
+				<p>
+					<a href="motivation-01.htm">Motivations for QBE Systems</a>
+					<br>
+&nbsp;</p>
+			</blockquote>
+			
+			<h3>2. <a href="visual-interface.htm">Visual Interfaces for QBE</a><br>
+&nbsp;</h3>
+			
+			<h3>3. Retrieving Multimedia </h3>
+			<blockquote>
+				<p>
+					<a href="retrieve-multimedia.htm">Methods for Retrieving Multimedia</a><br>
+					<a href="cbir-01.htm">Content-Based Image Retrieval</a><br>
+					<a href="cbir-04.htm">Applications of Content-Based Image Retrievals</a><br>
+					<a href="cbdr-01.htm">Content-Based Document Retrieval</a><br>
+				</p>
+			</blockquote>		
+			
+			<h3>Z. My Project</h3>
+			</td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

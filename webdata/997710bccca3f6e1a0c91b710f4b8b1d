@@ -1,0 +1,992 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_handshake</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_handshake
+</h1>    
+<a name="wp3731043"> </a><p class="pBody" >
+Ensures that specified request and acknowledge signals follow a specified handshake protocol.  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3731058"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkersa33.gif" height="106" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3731060"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3771878"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3771879"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">min_ack_cycle </em>
+</div>    
+<a name="wp3771880"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">max_ack_cycle </em>
+</div>    
+<a name="wp3771881"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">req_drop </em>
+</div>    
+<a name="wp3771882"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">deassert_count </em>
+</div>    
+<a name="wp3771883"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">max_ack_length </em>
+</div>    
+<a name="wp3771884"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3771885"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3771886"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3731062"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Class: </span>
+</div>    
+<a name="wp3771887"> </a><div class="pCellBodyLeft" >
+event-bounded assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3731063"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3731064"> </a><pre class="pCode1" >assert_handshake  
+</pre>    <a name="wp3771888"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level, min_ack_cycle, max_ack_cycle, req_drop, deassert_count,  
+</em></pre>    <a name="wp3771889"> </a><pre class="pCode1" ><em class="cEmphasis">		max_ack_length, property_type</em>,<em class="cEmphasis"> msg</em>,<em class="cEmphasis"> coverage_level </em>)] 
+</pre>    <a name="wp3771890"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, req, ack </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3731114"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3731067"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731069"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3731071"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3735777"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3735779"> </a><div class="pCellBodyLeft" >
+min_ack_cycle
+</div>    
+</td>
+    <td><a name="wp3735781"> </a><div class="pCellBodyLeft" >
+Minimum number of clock cycles before acknowledge. A value of 0 turns off the ack min cycle check. Default: 0.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3735771"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3735773"> </a><div class="pCellBodyLeft" >
+max_ack_cycle
+</div>    
+</td>
+    <td><a name="wp3735775"> </a><div class="pCellBodyLeft" >
+Maximum number of clock cycles before acknowledge. A value of 0 turns off the ack max cycle check. Default: 0.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3735765"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3735767"> </a><div class="pCellBodyLeft" >
+req_drop
+</div>    
+</td>
+    <td><a name="wp3735769"> </a><div class="pCellBodyLeft" >
+If greater than 0, value of <em class="cEmphasis">req</em> must remain TRUE until acknowledge. A value of 0 turns off the req drop check. Default: 0.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3735759"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3735761"> </a><div class="pCellBodyLeft" >
+deassert_count
+</div>    
+</td>
+    <td><a name="wp3735763"> </a><div class="pCellBodyLeft" >
+Maximum number of clock cycles after acknowledge that <em class="cEmphasis">req</em> can remain TRUE (i.e., <em class="cEmphasis">req</em> must not be stuck active). A value of 0 turns off the req deassert  check. Default: 0.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3735753"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3735755"> </a><div class="pCellBodyLeft" >
+max_ack_length
+</div>    
+</td>
+    <td><a name="wp3735757"> </a><div class="pCellBodyLeft" >
+Maximum number of clock cycles that <em class="cEmphasis">ack</em> can be TRUE. A value of 0 turns off the max ack length check. Default: 0.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3731091"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731093"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3731095"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3731097"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731099"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3731101"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3731103"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731105"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3731107"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3731148"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3731117"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731119"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3731121"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731123"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3731125"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731127"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3731129"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731131"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3731133"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731135"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">req</em>
+</div>    
+</td>
+    <td><a name="wp3731137"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731139"> </a><div class="pCellBodyLeft" >
+Expression that starts a transaction.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3731141"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731143"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">ack</em>
+</div>    
+</td>
+    <td><a name="wp3731145"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3731147"> </a><div class="pCellBodyLeft" >
+Expression that indicates the transaction is complete.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3731149"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3731150"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_handshake</code> assertion checker checks the single-bit expressions <span style="font-style: oblique" class="cCodeBodyEmphasis">req</span> and <span style="font-style: oblique" class="cCodeBodyEmphasis">ack</span> at each rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> to verify their values conform to the request-acknowledge handshake protocol specified by the checker parameters. A request event (where <span style="font-style: oblique" class="cCodeBodyEmphasis">req</span> transitions to TRUE) initiates a transaction on the rising edge of the clock and an acknowledge event (where <span style="font-style: oblique" class="cCodeBodyEmphasis">ack</span> transitions to TRUE) signals the transaction is complete on the rising edge of the clock. The transaction must not include multiple request events and every acknowledge must have a pending request. Other checks&#8212;&#8212;to ensure the acknowledge is received in a specified window, the request is held active until the acknowledge, the requests and acknowledges are not stuck active and the pulse length is not too long&#8212;&#8212;are enabled and controlled by the checker&#8217;s parameters.
+</p>    
+<a name="wp3755719"> </a><p class="pBody" >
+When a violation occurs, the checker discards any pending request. Checking is restarted the next cycle that <code class="cCodeBody">ack</code> is sampled FALSE.
+</p>    
+<a name="wp3755717"> </a><p class="pBody" >
+
+</p>    
+<a name="wp3736117"> </a><h4 class="pHead4" >
+Assertion Checks  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3736163"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3736165"> </a><div class="pCellBodyLeft" >
+multiple req violation
+</div>    
+</td>
+    <td><a name="wp3736167"> </a><div class="pCellBodyLeft" >
+The value of <em class="cEmphasis">req</em> transitioned to TRUE while waiting for an acknowledge or while acknowledge was asserted. Extra requests do not initiate new transactions. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3736169"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3736171"> </a><div class="pCellBodyLeft" >
+ack without req violation
+</div>    
+</td>
+    <td><a name="wp3736173"> </a><div class="pCellBodyLeft" >
+The value of <em class="cEmphasis">ack</em> transitioned to TRUE without a pending request.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3736175"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3736177"> </a><div class="pCellBodyLeft" >
+ack min cycle violation
+</div>    
+</td>
+    <td><a name="wp3736179"> </a><div class="pCellBodyLeft" >
+The value of ack transitioned to TRUE before <em class="cEmphasis">min_ack_cycle</em> clock cycles transpired after the request.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3736181"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3736183"> </a><div class="pCellBodyLeft" >
+ack max cycle violation
+</div>    
+</td>
+    <td><a name="wp3736185"> </a><div class="pCellBodyLeft" >
+The value of <em class="cEmphasis">ack</em> did not transition to TRUE before <em class="cEmphasis">max_ack_cycle</em> clock cycles transpired after the request.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3736204"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3736206"> </a><div class="pCellBodyLeft" >
+req drop violation
+</div>    
+</td>
+    <td><a name="wp3736208"> </a><div class="pCellBodyLeft" >
+The value of <em class="cEmphasis">req</em> transitioned from TRUE before an acknowledge.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3736198"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3736200"> </a><div class="pCellBodyLeft" >
+req deassert violation
+</div>    
+</td>
+    <td><a name="wp3736202"> </a><div class="pCellBodyLeft" >
+The value of req did not transition from TRUE before <em class="cEmphasis">deassert_count</em> clock cycles transpired after an acknowledge.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3736187"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3736189"> </a><div class="pCellBodyLeft" >
+ack max length violation
+</div>    
+</td>
+    <td><a name="wp3736234"> </a><div class="pCellBodyLeft" >
+The value of ack did not transition from TRUE before <em class="cEmphasis">max_ack_length </em>clock cycles transpired after an acknowledge.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3736149"> </a><h4 class="pHead4" >
+Cover Points  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3736120"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3736122"> </a><div class="pCellBodyLeft" >
+req_asserted
+</div>    
+</td>
+    <td><a name="wp3736124"> </a><div class="pCellBodyLeft" >
+A transaction initiated.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3736126"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3736128"> </a><div class="pCellBodyLeft" >
+ack_asserted
+</div>    
+</td>
+    <td><a name="wp3736130"> </a><div class="pCellBodyLeft" >
+A transaction  completed.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3731213"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3731214"> </a><pre class="pCode2" >assert_window, assert_win_change, assert_win_unchange
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3731215"> </a><h3 class="pHead3" >
+Examples
+</h3>    
+
+<a name="wp3751668"> </a><p class="pBody" >
+  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3751636"> </a><div class="pCellBodyLeft" >
+assert_handshake #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3751644"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3751646"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771891"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771892"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771893"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771894"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771895"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771896"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771897"> </a><div class="pCellBodyLeft" >
+&#8220;hold-holda handshake error&#8221;, 
+</div>    
+<a name="wp3771898"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3751650"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771899"> </a><div class="pCellBodyLeft" >
+// min_ack_cycle 
+</div>    
+<a name="wp3771900"> </a><div class="pCellBodyLeft" >
+// max_ack_cycle 
+</div>    
+<a name="wp3771901"> </a><div class="pCellBodyLeft" >
+// req_drop 
+</div>    
+<a name="wp3771902"> </a><div class="pCellBodyLeft" >
+// deassert_count 
+</div>    
+<a name="wp3771903"> </a><div class="pCellBodyLeft" >
+// max_ack_length
+</div>    
+<a name="wp3751651"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771904"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771905"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3751653"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3751655"> </a><div class="pCellBodyLeft" >
+valid_hold_holda (
+</div>    
+</td>
+    <td><a name="wp3751659"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3751661"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3751663"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3751665"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771906"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3771907"> </a><div class="pCellBodyLeft" >
+hold, 
+</div>    
+<a name="wp3771908"> </a><div class="pCellBodyLeft" >
+holda);
+</div>    
+</td>
+    <td><a name="wp3751667"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771909"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771910"> </a><div class="pCellBodyLeft" >
+// req 
+</div>    
+<a name="wp3771911"> </a><div class="pCellBodyLeft" >
+// ack
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3751985"> </a><p class="pBody" >
+Ensures that multiple <code class="cCodeBody">hold</code> requests are not made while waiting for a <code class="cCodeBody">holda</code> acknowledge and that every <code class="cCodeBody">holda</code> acknowledge is in response to a unique <code class="cCodeBody">hold</code> request.  </p>    <div align="left"><img src="images/ovl_checkers50.gif" height="89" width="428" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >  </p>    <div align="left"><img src="images/ovl_checkers68.gif" height="95" width="432" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3752381"> </a><p class="pBody" >
+After a violation, checking is turned off until <code class="cCodeBody">holda</code> acknowledge is sampled deasserted.  </p>    <div align="left"><img src="images/ovl_checkers47.gif" height="91" width="432" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3752426"> </a><p class="pBody" >
+  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3752394"> </a><div class="pCellBodyLeft" >
+assert_handshake #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3752402"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3752404"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771912"> </a><div class="pCellBodyLeft" >
+2, 
+</div>    
+<a name="wp3771913"> </a><div class="pCellBodyLeft" >
+3, 
+</div>    
+<a name="wp3771914"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771915"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771916"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771917"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771918"> </a><div class="pCellBodyLeft" >
+&#8220;hold-holda handshake error&#8221;, 
+</div>    
+<a name="wp3771919"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3752408"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771920"> </a><div class="pCellBodyLeft" >
+// min_ack_cycle 
+</div>    
+<a name="wp3771921"> </a><div class="pCellBodyLeft" >
+// max_ack_cycle 
+</div>    
+<a name="wp3771922"> </a><div class="pCellBodyLeft" >
+// req_drop 
+</div>    
+<a name="wp3771923"> </a><div class="pCellBodyLeft" >
+// deassert_count 
+</div>    
+<a name="wp3771924"> </a><div class="pCellBodyLeft" >
+// max_ack_length
+</div>    
+<a name="wp3752409"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771925"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771926"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3752411"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3752413"> </a><div class="pCellBodyLeft" >
+valid_hold_holda (
+</div>    
+</td>
+    <td><a name="wp3752417"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3752419"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3752421"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3752423"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771927"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3771928"> </a><div class="pCellBodyLeft" >
+hold, 
+</div>    
+<a name="wp3771929"> </a><div class="pCellBodyLeft" >
+holda);
+</div>    
+</td>
+    <td><a name="wp3752425"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771930"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771931"> </a><div class="pCellBodyLeft" >
+// req 
+</div>    
+<a name="wp3771932"> </a><div class="pCellBodyLeft" >
+// ack
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3752427"> </a><p class="pBody" >
+Ensures that multiple <code class="cCodeBody">hold</code> requests are not made while waiting for a <code class="cCodeBody">holda</code> acknowledge and that every <code class="cCodeBody">holda</code> acknowledge is in response to a unique <code class="cCodeBody">hold</code> request. Ensures <code class="cCodeBody">holda</code> acknowledge asserts 2 to 3 cycles after each hold request.   </p>    <div align="left"><img src="images/ovl_checkers66.gif" height="87" width="432" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3756876"> </a><p class="pBody" >
+
+</p>    
+<a name="wp3756790"> </a><p class="pBody" >
+  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3756758"> </a><div class="pCellBodyLeft" >
+assert_handshake #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3756766"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3756768"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771933"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771934"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771935"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771936"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771937"> </a><div class="pCellBodyLeft" >
+2, 
+</div>    
+<a name="wp3771938"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771939"> </a><div class="pCellBodyLeft" >
+&#8220;hold-holda handshake error&#8221;, 
+</div>    
+<a name="wp3771940"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3756772"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771941"> </a><div class="pCellBodyLeft" >
+// min_ack_cycle 
+</div>    
+<a name="wp3771942"> </a><div class="pCellBodyLeft" >
+// max_ack_cycle 
+</div>    
+<a name="wp3771943"> </a><div class="pCellBodyLeft" >
+// req_drop 
+</div>    
+<a name="wp3771944"> </a><div class="pCellBodyLeft" >
+// deassert_count 
+</div>    
+<a name="wp3771945"> </a><div class="pCellBodyLeft" >
+// max_ack_length
+</div>    
+<a name="wp3756773"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771946"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771947"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3756775"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3756777"> </a><div class="pCellBodyLeft" >
+valid_hold_holda (
+</div>    
+</td>
+    <td><a name="wp3756781"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3756783"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3756785"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3756787"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771948"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3771949"> </a><div class="pCellBodyLeft" >
+hold, 
+</div>    
+<a name="wp3771950"> </a><div class="pCellBodyLeft" >
+holda);
+</div>    
+</td>
+    <td><a name="wp3756789"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771951"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771952"> </a><div class="pCellBodyLeft" >
+// req 
+</div>    
+<a name="wp3771953"> </a><div class="pCellBodyLeft" >
+// ack
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3756791"> </a><p class="pBody" >
+Ensures that multiple <code class="cCodeBody">hold</code> requests are not made while waiting for a <code class="cCodeBody">holda</code> acknowledge and that every <code class="cCodeBody">holda</code> acknowledge is in response to a unique <code class="cCodeBody">hold</code> request. Ensures <code class="cCodeBody">holda</code> acknowledge asserts for 2 cycles.  </p>    <div align="left"><img src="images/ovl_checkers70.gif" height="89" width="432" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3756943"> </a><p class="pBody" >
+  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3756911"> </a><div class="pCellBodyLeft" >
+assert_handshake #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3756919"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3756921"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771954"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771955"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771956"> </a><div class="pCellBodyLeft" >
+1, 
+</div>    
+<a name="wp3771957"> </a><div class="pCellBodyLeft" >
+1, 
+</div>    
+<a name="wp3771958"> </a><div class="pCellBodyLeft" >
+0, 
+</div>    
+<a name="wp3771959"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771960"> </a><div class="pCellBodyLeft" >
+&#8220;hold-holda handshake error&#8221;, 
+</div>    
+<a name="wp3771961"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3756925"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771962"> </a><div class="pCellBodyLeft" >
+// min_ack_cycle 
+</div>    
+<a name="wp3771963"> </a><div class="pCellBodyLeft" >
+// max_ack_cycle 
+</div>    
+<a name="wp3771964"> </a><div class="pCellBodyLeft" >
+// req_drop 
+</div>    
+<a name="wp3771965"> </a><div class="pCellBodyLeft" >
+// deassert_count 
+</div>    
+<a name="wp3771966"> </a><div class="pCellBodyLeft" >
+// max_ack_length
+</div>    
+<a name="wp3756926"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771967"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771968"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3756928"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3756930"> </a><div class="pCellBodyLeft" >
+valid_hold_holda (
+</div>    
+</td>
+    <td><a name="wp3756934"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3756936"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3756938"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3756940"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771969"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3771970"> </a><div class="pCellBodyLeft" >
+hold, 
+</div>    
+<a name="wp3771971"> </a><div class="pCellBodyLeft" >
+holda);
+</div>    
+</td>
+    <td><a name="wp3756942"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771972"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771973"> </a><div class="pCellBodyLeft" >
+// req 
+</div>    
+<a name="wp3771974"> </a><div class="pCellBodyLeft" >
+// ack
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3756944"> </a><p class="pBody" >
+Ensures that multiple <code class="cCodeBody">hold</code> requests are not made while waiting for a <code class="cCodeBody">holda</code> acknowledge and that every <code class="cCodeBody">holda</code> acknowledge is in response to a unique <code class="cCodeBody">hold</code> request. Ensures <code class="cCodeBody">hold</code> request remains asserted until its <code class="cCodeBody">holda</code> acknowledge and then deasserts in the next cycle.  </p>    <div align="left"><img src="images/ovl_checkers73.gif" height="89" width="432" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3752390"> </a><p class="pBody" >
+
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

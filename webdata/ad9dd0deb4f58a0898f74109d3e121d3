@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0044)http://www.cs.pitt.edu/~chang/163/c17/01.htm -->
+  <title>Session Beans</title>
+  <meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+  <meta content="FrontPage.Editor.Document" name="ProgId">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <meta name="author" content="Chirag Vaidya">
+</head>
+<body>
+<a href="c05.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;"
+ src="previous.gif" align="left" title="" alt=""></a> <a href="c07.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;" src="next.gif"
+ align="right" title="" alt=""></a>
+<h2 align="center" style="color: rgb(51, 51, 255);"><big>Component Types -- Session Beans<br>
+</big></h2>
+<big style="color: rgb(255, 0, 0);"><big><big>Stateful Session Beans:</big></big></big>
+<ul>
+  <li>
+    <p style="margin-top: 12; margin-bottom: 0"><big><big>Represents processes that involve many interactions
+with a client.</big></big></li>
+  <li>
+    <p style="margin-top: 12; margin-bottom: 0"><big><big>Maintains its state between calls by the client</big></big></li>
+  <li>
+    <p style="margin-top: 12; margin-bottom: 0"><big><big>Have very short lifetime but long enough for the client
+to finish the transaction.</big></big></li>
+  <li>
+    <p style="margin-top: 12; margin-bottom: 0"><big><big><span style="color: rgb(204, 51, 204);">Dedicated to a
+single client</span> and cannot be accessed by
+other clients.</big></big></li>
+  <li>
+    <p style="margin-top: 12; margin-bottom: 0"><big><big>e.g., Web based shopping cart -- browsing catalog,
+selects items, buys or quits or saves cart for future use.
+    </big></big></li>
+</ul>
+<p>
+<br>
+<big style="color: rgb(255, 0, 0);"><big><big>Stateless Session Beans:</big></big></big></p>
+<ul>
+  <li>
+    <p style="margin-top: 12; margin-bottom: 0"><big><big>Provides business methods that execute one logical unit
+of work.</big></big></li>
+  <li>
+    <p style="margin-top: 12; margin-bottom: 0"><big><big>No states and hence <span
+ style="color: rgb(204, 51, 204);">not dedicated to a single client</span>.</big></big></li>
+  <li>
+    <p style="margin-top: 12; margin-bottom: 0"><big><big>Immediately processes information it receives from the
+client or external resources.</big></big></li>
+  <li>
+    <p style="margin-top: 12; margin-bottom: 0"><big><big>e.g., cashier for Web-based business -- methods for
+    applying discount and calculating taxes, or stock quote lookup.</big></big></li>
+</ul>
+</body>
+</html>

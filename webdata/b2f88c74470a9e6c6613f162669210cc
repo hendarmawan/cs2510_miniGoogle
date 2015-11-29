@@ -1,0 +1,26 @@
+<HTML>
+<TITLE>UML</TITLE>
+<FORM>
+<BODY background="grey.gif" link=blue Alink="#40E0D0" Vlink="#4169E1">
+<a href="uml_2.html"><img align="left" src="larrow.gif" border=0></a>
+<a href="uml_4.html"><img align="right" src="rarrow.gif" border=0></a>
+<p><br><br>
+<p><font size=+2 color=blue><br><br>
+<b><a href="UML.htm">A Hands-on Introduction to UML</b><br>
+(from <a href="http://bdn.borland.com/article/0,1410,31863,00.html">
+http://bdn.borland.com/article/0,1410,31863,00.html</a>)
+<br><br>
+
+<b>Components of the UML</b><br>
+<UL type="square">
+<LI><a href="class.html">Class and Object Diagram</a> 
+<LI><a href="usecase.html">Use Case Diagram</a>
+<LI><a href="state.html">State and Activity Diagram</a>
+<LI><a href="sequence.html">Sequence and Collaboration Diagram</a>
+<LI><a href="compdep.html">Component and Deployment Diagram</a>
+</UL>
+More Examples<br><br>
+<a href="http://www.qualiware.com/doc229.htm">UML diagram Examples</a><br>
+<a href="http://www.vtt.fi/tte/papers/j-uml/j-uml_examples.htm">J-UML Examples</a><br>
+<a href="http://cplus.about.com/compute/cplus/gi/dynamic/offsite.htm?site=http://www.ratio.co.uk/white.html">Example use of UML<a>
+</BODY></FORM></HTML>

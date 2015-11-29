@@ -1,0 +1,40 @@
+<title>Specification</title>
+<A HREF="../1530syl.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02.htm"><IMG SRC="next.gif" align=right></A>
+
+<h1>Specification</h1>
+
+
+<font color=red>
+<b>
+Informal Models
+</b><p>
+<a href="c02.htm"><i>Data Flow Diagram (The Good)</i></a>
+<br>(For more details, please also read <a href="http://www.yourdon.com/strucanalysis/chapters/ch9.html">online introduction on DFD</a>)
+<img src="goodbadugly.jpg" align=right>
+</font>
+
+<p>
+<b>
+Formal Models
+</b>
+(UML and Petri nets are not included in CS1530 syllabus)
+<p>
+<a href="../UML/uml_1.html"><i>
+UML: The Unified Modelling Language (The Bad)
+</i></a>
+<br>(For more details, please also read <a href="http://www.cs.pitt.edu/~chang/153/UML/UML.htm">online introduction on UML</a>)<p>
+
+<i>
+<a href="http://www.cs.pitt.edu/~chang/365/2petri/p1.htm">Petri Nets (The Ugly)</a>
+</i>
+<br>(Petri nets are included in graduate course based upon this classnote)
+
+<br><br>
+Note: DFD diagram is good because of its simplicity.
+UML diagrams are bad because of the complexity.  However
+UML diagrams are comprehensive and very useful.  UML
+is covered in CS1631.
+Petri Nets are theoretically sound and mathematically
+manipulatable, but ugly to the novice and uninitiated.
+Petri Net is covered in CS2310.

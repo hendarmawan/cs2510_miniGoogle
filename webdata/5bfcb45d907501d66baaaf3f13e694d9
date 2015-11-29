@@ -1,0 +1,22 @@
+<HTML>
+<HEAD><TITLE>CS2310 Seminar -- By Suresh Rangan</TITLE></HEAD>
+
+<BODY>
+
+<A href="04.html" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="06.html"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1><FONT color=mediumblue>ContentWord x Transcript Representation Contd.</FONT></H1>
+</CENTER>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><FONT size=5>Using our list of content words and transcripts, we can now generate a content-word x transcript matrix .</FONT></LI>
+       <BR><BR>
+       <LI><FONT size=5>If we replace blanks and X-es with zeroes and ones, we get a numerical matrix containing the same information .</FONT></LI>
+</UL></UL></UL></UL></UL></UL></UL>
+
+</BODY>
+</HTML>
+

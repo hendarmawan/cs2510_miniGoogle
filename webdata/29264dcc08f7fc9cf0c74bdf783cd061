@@ -1,0 +1,44 @@
+<html>
+<title>Active Medical Information System</title>
+<center>
+<h2>
+AN ACTIVE MEDICAL INFORMATION SYSTEM
+FOR INFORMATION RETRIEVAL, DISCOVERY AND FUSION
+</h2>
+
+<h3>
+Shi-Kuo Chang+, Daniel Graupe*, Keiko Hasegawa+ and Hubert Kordylewski*<br>
+<br>
++Visual Computer Laboratory, Department of Computer Science<br>
+University of Pittsburgh, Pittsburgh, PA 15260 USA<br>
+Email: [chang, keiko]@cs.pitt.edu<br>
+<br>
+and<br>
+<br>
+* Department of Electrical Engineering and Computer Science<br>
+University of Illinois, Chicago, IL 60680 USA<br>
+Email: [graupe, hkordyle]@eecs.uic.edu<br>
+</h3>
+
+<h2>Abstract</h2>
+</center>
+To accomplish the retrieval, discovery and fusion of medical information from diverse sources, 
+an active medical information system capable of
+retrieving, processing and filtering medical information, checking for
+semantic consistency, and structuring the relevant information for distribution is needed.
+We describe a framework for the human- and
+system-directed retrieval, discovery and fusion of medical information, which
+is based upon the observation that a significant
+event often manifests itself in different media over time.
+Therefore if we can index such manifestations and dynamically
+link them, then we can check for consistency and discover important and relevant medical information.
+<img src="fussfig/fussfig1.gif" width=600>
+This dynamic indexing technique is based upon
+the theory of active index.
+A powerful newly developed artificial neural network is used for
+the discovery of significant events.
+An experimental systemis implemented for further empirical research.  A
+<a href="http://www.cs.pitt.edu/~chang/365/README.AMIS2.html"> prototyping
+environment</a> is available to prototype similar systems.
+<img src="fussfig/fussfig2.gif" width=600>
+</html>

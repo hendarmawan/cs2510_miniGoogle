@@ -1,0 +1,170 @@
+<html>
+<!-- comment your comments here -->
+<head>   <title>CS 3710 / ISSP  3565: Speech and Natural Language
+Processing for Educational Applications (Spring 2009)</title> </head>
+<body text="#000000" bgcolor="#DFFFFF" link="#0000ED" vlink="#551A8A" alink="#FE0000">&nbsp;
+
+<!-- *********************************************************** -->
+
+<center><table BORDER=2 CELLSPACING=2 BGCOLOR="#FFFFFF" NOSAVE >
+
+<tr ALIGN=CENTER NOSAVE>
+<td COLSPAN="4" NOSAVE>
+<h2>Speech and Natural Language Processing for Educational Applications</h2>
+(CS 3710 / ISSP 3565: Advanced Topics in Artificial Intelligence)
+</td>
+</tr>
+
+<tr>
+<td><b>Time:</b></td>
+<td>MW 1:00-2:15&nbsp;</td>
+<td><b>Place</b></td>
+<td>6106 Sennott Square (note room change!)</td>
+</tr>
+
+<tr>
+<td><b>Professor:&nbsp;</b></td>
+<td><a href="http://www.cs.pitt.edu/~litman">Diane Litman</a></td>
+<td><b>Office Hours:</b></td>
+<td>By appointment (5105 Sennott Square or 741 LRDC)</td>
+</tr>
+
+<tr>
+<td><b>Email:&nbsp;</b></td>
+<td>litman at cs dot pitt dot edu</td>
+<td><b>Phone:&nbsp;</b></td>
+<td>412-624-8838 (Sennott Square); 412-624-1261 (LRDC)</td>
+</tr>
+
+</table></center>
+
+
+<h2>Description:</h2> 
+
+<blockquote>
+NLP-based applications in educational environments continue to
+develop
+at a fast pace. Initial work began as early as the 1960's on
+evaluating written essay-length and short-answer assessments,
+text-based intelligent tutoring systems (ITS), and proofreading
+tools. These fields continue to progress using innovative NLP
+techniques - statistical, rule-based, or some combination of the
+two. More recently, new technologies have made it possible to include
+speech in both assessment and ITS. Using a somewhat different
+approach, NLP techniques are being used to generate assessments and
+tools for curriculum development. As a community we are not only
+improving existing capabilities, but identifying and generating
+innovative and creative ways to use NLP in applications for writing,
+reading, speaking, and critical thinking.
+
+<i>[from Workshop Description, 4th Workshop on Innovative Use of
+ NLP for Building Educational Applications, 2009]</i>
+</blockquote>
+
+Topics will be drawn from the following areas:
+<ul>
+<li> Automated Scoring/Evaluation for oral and written student responses
+<ul>
+   <li> Content analysis, grammatical error detection, and discourse
+   analysis
+   <li> Machine translation for assessment, instruction, and curriculum
+   development
+</ul>
+<li> Intelligent Tutoring Systems
+<ul>
+   <li> Tutorial dialogue systems
+   <li> Multi-modal communication
+</ul>
+<li> Learner Meta-Cognition
+<ul>
+   <li> Systems that detect and adapt to learners' meta-cognitive or
+   emotional states
+</ul>
+<li> Empirical Methods
+<ul>
+   <li>  Annotation standards
+   <li>  Data mining of corpora
+</ul>
+<li> Classroom Tools
+<ul>
+   <li>  Automatic identification or generation of materials at a
+   particular readability or grade level
+   <li>  Automatic generation of test questions, e.g., multiple choice or
+   short answer
+   <li>  Processing of and access to online lecture materials (slides,
+   audio)
+   <li>  Language-based educational games
+</ul>
+<ul>
+<li> Deployed systems (both commercial products, and research prototypes
+in classrooms)
+</ul>
+</ul>
+
+<h2>Syllabus:</h2> 
+
+<p><a href=scheduleV2.html>Schedule</a> 
+
+<p><a href=readings.html>Readings</a> 
+
+<H2><A NAME="SECTION00050000000000000000">
+Course Requirements:</A>
+</H2>
+
+
+<p><a href=project.html>Course Project</a>: 40% (proposal: 8%, presentation: 8%, report: 24%)</TD>
+
+<p><a href=presentation.html>Class Presentations</a>: 25%
+
+<p><a href=essays.html>Reaction Essays</a> : 25%
+
+<p>Class Participation: 10%
+
+<p> Because in-class discussions are an important part of this course,
+absences are strongly discouraged. Even if an absence is unavoidable,
+you are still responsible for making arrangements to turn in the
+assignments on time. 
+Late assignments will not be accepted.
+<b>No extensions</b> will be given, except in case of
+extraordinary and <b>documented</b> circumstances (e.g., hospitalization).
+
+<h2>Academic Integrity:</h2> 
+
+<p>If you include material from any source in
+your presentation and/or projects, you must acknowledge it. Your
+presentations and projects should represent your (and your partner's,
+if applicable) original work.
+
+<h2>Students with Disabilities:</h2> 
+
+<p>If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412)
+648-7890/(412) 383-7355 (TTY), as early as possible in the term.  DRS
+will verify your disability and determine reasonable accomodations for
+this course.
+
+<h2>Links:</h2> 
+<ul>
+<li>
+<a href=http://www.sigslate.org>Special Interest Group on Speech and
+Language Technology in Education</a>, International Speech Communication Association 
+<li>
+<a href=http://journals.cambridge.org/action/displayIssue?jid=NLE&volumeId=12&issueId=02&iid=439978>Natural Language Engineering (Special Issue on Educational Applications)</a>, Volume 12, 2006.
+<li><a href=http://www.cs.cmu.edu/~max/mainpage_files/SLATE_files/SLaTE07-Call%20for%20Participation.htm>SLaTE Workshop on Speech and Language Technology in Education</a>, 2007.
+<li>
+<a href=http://www.cs.rochester.edu/u/tetreaul/acl-bea.html>The 3rd Workshop on Innovative Use of NLP for Building Educational Applications</a>, ACL, 2008.
+<li>
+<a href=http://purl.org/net/calico-workshop>Workshop on Automatic Analysis of Learner Language: Bridging Foreign Language Teaching Needs and NLP Possibilities</a>, CALICO, 2008. 
+</ul>
+
+<h2>Upcoming Meetings (with publication opportunites for your project!):</h2> 
+<ul>
+<li>March 6 paper deadline: <a href="http://www.cs.rochester.edu/~tetreaul/naacl-bea4.html">4th Workshop on Innovative Use of NLP for Building Educational
+Applications</a> (Colorado)
+<li>May 8 paper deadline: <a
+href="http://www.eee.bham.ac.uk/SLaTE2009/index.html">ISCA
+Workshop on Speech and Language Technology in Education</a> (UK)
+</ul>
+</body>
+

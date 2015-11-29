@@ -1,0 +1,85 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+
+
+
+
+
+
+<title>Multimedia Software Engineering</title>
+
+
+
+
+
+
+
+
+
+
+<body>
+
+<p align="center"><a href="p1.htm">
+<img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;<font face="Verdana" size="4"><b><font color="#0000FF">Overview of our CVC system and application of Negotiation</font></b>&nbsp; </font>
+<a href="p3.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></p>
+
+<p><font face="Verdana" size="5" color="#FF0000">Main Idea:</font></p>
+<div v:shape="_x0000_s1026" class="O">
+<p><font color="#FF0000">&nbsp;</font></p>
+  </div>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font size="5" color="#FF0000">
+<span style="font-family: Verdana">A solution to </span></font><span style="font-family: Verdana">
+<font size="5" color="#FF0000">the time/knowledge exchange problem</font></span><font face="Verdana" size="5" color="#FF0000"> 
+exists in the form of co-ordination of  </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font color="#FF0000"><font face="Verdana" size="5">the settlement of a bid</font><span style="font-family: Verdana"><font size="5">, 
+interoperating with the various Chronobots, </font></span>
+<font face="Verdana" size="5">using a metric known as </font></font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">the QoB (Quality of Bid). </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+&nbsp;</p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">But this assumes that the 
+participating chronobots are along the same knowledge plane.&nbsp; </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">Condition not necessarily true. </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+&nbsp;</p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">For instance, we now match 
+chronobots based on programming language skills </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">Lets assume there is a specific 
+requirement for people with experience with Patterns</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">We need to match to this 
+requirement people with experience in programming with </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">templates in C++ </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">This is because Patterns are 
+implemented using templates in the latest version of </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">C++ and .NET</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">
+<font face="Verdana" size="5" color="#FF0000">Gives rise to the concept of 
+Knowledge Distance</font></p>
+
+</body>

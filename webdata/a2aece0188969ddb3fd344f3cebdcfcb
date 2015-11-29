@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Enterprise JavaBeans</title>
+</head>
+
+<body>
+
+<p align="right"><a href="present05.htm">
+<img border="0" src="previous.gif" align="left" width="26" height="26"></a></p>
+<p align="center"><a href="present052.htm">
+<img border="0" src="next.gif" align="right" width="26" height="26"></a><b><font face="Times New Roman" size="6">Enterprise JavaBeans</font></b></p>
+<p align="center"><font face="Times New Roman" size="4">Types of Enterprise 
+  JavaBeans</font></p>
+
+<ul>
+  <li>
+  <p align="left"><font face="sans-serif" size="4" color="#666699">Entity Bean</font></li>
+</ul>
+<p><font size="4" face="Times New Roman">An <i>entity bean</i> represents a 
+business object in a persistent storage mechanism. Some examples of business 
+objects are customers, orders, and products. In the J2EE SDK, the persistent 
+storage mechanism is a relational database. Typically, each entity bean has an 
+underlying table in a relational database, and each instance of the bean 
+corresponds to a row in that table. </font></p>
+<p><font face="Times New Roman" size="4"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Features:</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Shared Access<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. Primary Key<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Relationships <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 4. Container-managed persistent</font></p>
+
+</body>
+
+</html>

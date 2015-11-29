@@ -1,0 +1,59 @@
+<title>Multimedia Software Engineering</title>
+<a href="server.html">  
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+</A> 
+<a href="prototype.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+</head>
+<h1 align="center"> 
+Mobile ASP.NET Web Applications</h1> 
+
+
+<body>
+
+
+<blockquote>
+  <p>&nbsp;</p>
+  <p><b>Challenges of Mobile Web Devices</b></p>
+  <ul>
+    <li><span class="normal">Various markup languages required</span><ul>
+      <li><span class="normal">&nbsp;HTML for PDAs</span></li>
+      <li><span class="normal">WML (wireless markup language ) for WAP (wireless 
+      application protocol) cell phones</span></li>
+      <li><span class="normal">cHTML (compact HTML) for Japanese i-mode phones</span></li>
+    </ul>
+    </li>
+    <li><span class="normal">Various form factors</span><ul>
+      <li><span class="normal">Horizontal/vertical screen orientation</span></li>
+      <li><span class="normal">Varying numbers of display lines permitted</span></li>
+      <li><span class="normal">Color or black &amp; white displays</span></li>
+    </ul>
+    </li>
+    <li><span class="normal">Various network connectivity</span><ul>
+      <li><span class="normal">From 9.6 KB cellular connections to 11 MB 
+      Wireless LANs.</span></li>
+    </ul>
+    </li>
+    <span class="normal">
+    <li>Various capabilities<ul>
+      <li>Display images</li>
+      <li>Make phone calls</li>
+      <li>Receive notification messages</li>
+    </ul>
+    </li>
+    </span>
+  </ul>
+  <p><b><span class="normal">Web Matrix</span></b></p>
+  <ul>
+    <li>Provides the tools you need to quickly develop mobile Web applications</li>
+    <li>Works for a wide variety of mobile browsers available today<ul>
+      <li>Reduces the challenge of writing and maintaining numerous 
+      web-applications for specific browsers</li>
+    </ul>
+    </li>
+  </ul>
+</blockquote>
+
+
+</body>
+
+</html>

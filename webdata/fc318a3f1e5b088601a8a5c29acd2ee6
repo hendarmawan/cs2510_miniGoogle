@@ -1,0 +1,43 @@
+<html> 
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="2.htm">  <IMG SRC="previous.gif" align=left></a><A HREF="previous.html">  </A> 
+ <a href="4.htm">  <IMG SRC="next.gif" align=right></a><A HREF="next.html">  </A> 
+ <center> 
+ <h1>TESTING THE INTERFACE</h1>
+ </center>
+	<h2 align="justify">Test Scenario</h2>
+	<p align="justify">The following scenario is used to test the 
+	MessageServerInterface. </p>
+	<p align="justify">1. Remote Control sends a message to the interface.</p>
+	<p align="justify">2. The Interface then converts the message from the 
+	Remote Control into a HTTP POST Message.</p>
+	<p align="justify">3. The Interface sends the HTTP POST Message constructed 
+	in step2 to the Message Server.</p>
+	<p align="justify">4. The Interface then sends a HTTP GET Message to the 
+	Message Server.</p>
+	<p align="justify">5. In step 4, the Interface retrieves the message from 
+	the Message Server. It is the same message that was sent in step 3.</p>
+	<p align="justify">6. The Interface then sends the message retrieved to the 
+	Remote Control.</p>
+	<p align="justify">&nbsp;</p>
+	<h2 align="justify">Inference from the Test</h2>
+	<p align="justify">1. Remote Control is <b>successfully</b> interfaced with 
+	the ActiveMQ Message Server which is running as a servlet.</p>
+	<p align="justify">2. Remote Control is able to POST to and GET Messages 
+	from the ActiveMQ Message server.</p>
+	<p align="justify">3. Any Message currently defined for the Virtual 
+	Classroom Chronobot can be used to test this interface.</p>
+	<p align="justify">4. The tests were carried out with the 8 messages 
+	provided by Xin Li. Here are the links to the test Messages.</p>
+	<p align="justify"><a href="Messages/2304UserLogin.XML">2304UserLogin.XML</a>&nbsp;
+	<a href="Messages/2450ListBidRoom.XML">2450ListBidRoom.XML</a>&nbsp;
+	<a href="Messages/2453ListBidRoomBid.XML">2453ListBidRoomBid.XML</a>
+	<a href="Messages/2454StartNewBid.XML">2454StartNewBid.XML</a></p>
+	<p align="justify"><a href="Messages/2459ListStartedBid.XML">
+	2459ListStartedBid.XML</a> <a href="Messages/2460ListPlacedBid.XML">
+	2460ListPlacedBid.XML</a> <a href="Messages/2480NoticeNewBid.XML">
+	2480NoticeNewBid.XML</a> <a href="Messages/2700NegotiateBid.XML">
+	2700NegotiateBid.XML</a></p>
+ 
+ </html> 

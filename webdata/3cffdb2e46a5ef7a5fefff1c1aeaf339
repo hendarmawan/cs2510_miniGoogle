@@ -1,0 +1,55 @@
+<HTML>
+  <HEAD>
+  <TITLE>Adlet Homepage</TITLE>
+  <META NAME="Adlet" CONTENT="Adlet Query Form">
+  <META NAME="Author" CONTENT="Longjiang Yang">
+  <META NAME="Date" CONTENT="Apr. 19 1998">
+  </HEAD>
+<BODY LINK="#0000FF" VLINK="#800080" BACKGROUND="background.gif">
+
+<FONT FACE="TIMES NEW ROMAN">
+<CENTER><B><FONT SIZE=+4><!FONT COLOR="#ff8888"><!/FONT>DELETE ADLET from CS VIRTUAL SITE</FONT></B><!B><!FONT SIZE=13><!/FONT><!/B>
+</CENTER>
+
+<BR>
+<HR><! WIDTH=%80 ALIGN=CENTER>
+
+<FORM METHOD=GET ACTION="corba_client.cgi">
+  <FONT SIZE=+2><!Please Input The Query:></FONT> 
+  <BR><BR>
+  <IMG SRC="smily.gif" BORDER=0>
+  <FONT SIZE=+2> <B>Delete DOCUMENT with ID</B>
+  <INPUT TYPE="TEXT" NAME="I_REPRESENT"><!SELECT NAME="flag">
+  <BR>
+  <BR> 
+
+<INPUT TYPE="hidden" NAME="flag" VALUE="old">
+<INPUT TYPE="hidden" NAME="ic_type" VALUE="ADLET">
+<INPUT TYPE="hidden" NAME="ic_id_list" VALUE="-1">
+<INPUT TYPE="hidden" NAME="message_type" VALUE="MSG_DELETE">
+<INPUT TYPE="hidden" NAME="content" VALUE="">
+<INPUT TYPE="hidden" NAME="tao_name" VALUE="delete">
+<INPUT TYPE="hidden" NAME="db_access" VALUE="">
+<INPUT TYPE="hidden" NAME="ic_par_num" VALUE="1">
+<INPUT TYPE="hidden" NAME="ic_par_1" VALUE="I_REPRESENT">
+
+<HR>
+<BR>
+<CENTER>
+  <P>
+  <INPUT TYPE="submit" NAME="button" VALUE="SUBMIT">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <INPUT TYPE="reset" VALUE="RESET">
+</CENTER>
+</FONT>
+</FORM>
+
+</FONT>
+
+<HR>
+
+<BR>
+<CENTER><FONT SIZE=+1><I><A HREF="index.html"><IMG SRC="bcal.gif" BORDER=0></A></I></CENTER>
+</BODY>
+</HTML>
+

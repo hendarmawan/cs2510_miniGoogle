@@ -1,0 +1,49 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="cbdr-01.htm"><img src="previous.gif" align="left" alt="Content-Based Document Retrieval"></a>
+<a href="cbdr-03.htm"><img src="next.gif" align="right" alt="Probabilistic Model"></a>
+
+<br><br>
+<center>
+<table width="600">
+	<tr>
+		<td>
+			<h1 align="center">Vector Based Model</h1>
+			<hr>			
+			
+			<p>
+			In its basic form, each document is represented by a vector:<br>
+			– A query is also represented by a vector.<br><br>
+			The coordinates of the vector are words:<br>
+			– Each element of the vector represents the frequency of the word in the document or the query.	
+			</p>
+
+			<p align="center">
+			<i>Each document is represented by:<br>
+			<img border="0" src="images/vbm-01.GIF" width="242" height="196"><br>
+			where each element in the vector represents the frequency of the word</i>
+			</p>
+			
+			<p align="center"><i>Given a collection of document, we can represent a set of documents as a term-document matrix:			
+			<img border="0" src="images/vbm-02.GIF" width="647" height="221"></i>
+			</p>
+			
+			<p align="center"><i>A query can be represented as the following vector:<br>
+			<img border="0" src="images/vbm-03.GIF" ></i>				
+			</p>
+			
+			<p align="center"><i>To determine relevance of a document given query, we map the query and document vector to a multidimensional space and calculate how close the vector q is compare to vector d.<br>
+			<img border="0" src="images/vbm-04.GIF" width="282" height="257"><br>
+			Similarity can be computed using the following formula:<br>
+			<img border="0" src="images/vbm-05.GIF" width="536" height="90"></i></p>
+		</td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

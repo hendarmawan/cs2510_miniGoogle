@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=iso-8859-1"
+ http-equiv="Content-Type">
+  <title>CS1675</title>
+  <link type="text/css" href="styles-site.css" rel="stylesheet">
+</head>
+<body>
+<div id="banner">
+<h1><a accesskey="1" href="http://www.cs.pitt.edu/%7Ehwa/cs1675/">CS1675</a></h1>
+<span class="description">Introduction to Machine Learning</span>
+</div>
+<div id="content">
+<div class="blog">
+<h2 class="date">Relevant Links</h2>
+<div class="blogbody">
+<h3 class="title">Machine Learning Resources</h3>
+<ul>
+  <li> <a href="http://www.ics.uci.edu/%7Emlearn/MLRepository.html">UC
+Irvine
+Machine Learning Repository</a> contains a variety of data collections
+that have
+been used in machine learning research.</li>
+  <li> Free Download: the <a
+ href="http://www.cs.waikato.ac.nz/%7Eml/weka/">Weka
+Project</a> provides a suite of machine learning algorithms. </li>
+  <li>You might find Matlab a useful software for data analysis. Matlab
+is a licensed software that you can run on the university unix
+machines maintained by the CSSD (log in to one of the
+unix.cis.pitt.edu machines using your pitt.edu account).
+  </li>
+</ul>
+
+<h3 class="title">Online Courses and Videos</h3>
+<ul>
+<li> Pedro Domingo's <a href="https://class.coursera.org/machlearning-001/lecture">videos on Coursera</a>
+<li> Andrew
+  Ng's <a href="https://class.coursera.org/ml-005/lecture/">videos on
+    Coursera</a> or his <a href="https://itunes.apple.com/us/itunes-u/machine-learning/id384233048?mt=10">iTunesU version</a>.
+</ul>
+<!--
+<h3 class="title">Project Ideas from other ML courses</h3>
+<ul>
+</ul>
+-->
+
+</div>
+</div>
+</div>
+<div id="links">
+<div class="side"><a href="index.html">Home</a><br>
+<a href="policy.htm">Course Policies</a><br>
+<a href="syl.htm">Syllabus</a><br>
+<a href="links.htm">Links</a><br>
+</div>
+</div>
+<br clear="all">
+<br>
+</body>
+</html>

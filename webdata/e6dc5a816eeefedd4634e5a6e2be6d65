@@ -1,0 +1,30 @@
+<html>
+<head><title>Chapter 11: Table of Contents</title></head>
+<body>
+<a href="c11.html"><IMG SRC="previous.gif" align=left></a>
+
+<a href="c11_2.html"><IMG SRC="next.gif" align=right></a>
+
+<center><h3><font color="blue">Chapter 11</font></h3>
+<h1>Table of Contents</h1>
+</center></h1>
+
+<hr size=3>
+<h2>
+<image src="bl_ball.gif"><a href="c11_2.html"> Introduction</a> <p>
+<image src="rd_ball.gif"><a href="c11_3.html"> Quality Requirements of Multimedia Information</a> <p>
+<image src="yl_ball.gif"> Synchronization Models
+    <ul>
+    <li><a href="c11_4.html"> Temporal Synchronization</a>
+    <li><a href="c11_5.html"> Temporal Models</a>
+    </ul>
+<image src="gr_ball.gif"><a href="c11_9.html"> Synchronization Mechanisms over Broadband Networks</a><p>
+<image src="cy_ball.gif"> <a href="c11_conclusion.html"> Conclusion</a><p>
+<image src="or_ball.gif"> <a href="c11_ref.html">References</a><p>
+</h2>
+
+</body>
+</html>
+
+
+

@@ -1,0 +1,91 @@
+<title>Milos Hauskrecht's Thesis Research Page</title>
+
+<BODY bgcolor="005567" text="#fff5ff" link="#ffb000"
+vlink="#af805f">
+
+<H2> Planning and control in stochastic domains with
+imperfect information.</H2> 
+
+<p> <b> by Milos Hauskrecht </b>
+
+<p>
+<large> <strong> Abstract </strong> </large>
+<p>
+Partially observable Markov decision processes (POMDPs) can be used 
+to model complex control problems that include both action outcome
+uncertainty and imperfect observability. A control problem within 
+the POMDP framework is expressed as a dynamic optimization problem 
+with a value function that combines costs or rewards from multiple 
+steps. Although the POMDP framework is more expressive than other simpler
+frameworks, like Markov decision processes (MDP), its associated optimization methods are more demanding computationally and only very small problems can be solved exactly in practice. The thesis focuses on two possible approaches that can be used to solve larger problems: approximation methods and exploitation of additional problem structure. 
+
+<p>
+First, a number of new efficient approximation methods and improvements of existing algorithms are proposed. These include (1) the fast informed bound method based on approximate dynamic programming updates that lead to piecewise linear and convex value functions with a constant number of linear vectors, (2) a grid-based point interpolation method that supports variable grids, (3) an incremental version of the linear vector method that updates value function derivatives, as well as (4) various heuristics for selecting grid-points. The new and existing methods are experimentally tested and compared on a set of three infinite discounted horizon problems of different complexity. The experimental results show that methods that preserve the shape of the value function over updates, such as the newly designed incremental linear vector and fast informed bound methods, tend to outperform other methods on the control performance test.
+
+<p>
+Second, the thesis presents a number of techniques for exploiting
+additional structure in the model of complex control problems.  These
+are studied as applied to a medical therapy planning problem - the
+management of patients with chronic ischemic heart disease. The new
+extensions proposed include factored and hierarchically structured
+models that combine the advantages of the POMDP and MDP frameworks and
+cut down the size and complexity of the information state space.
+<p>
+
+
+<hr>
+a technical report version of my PhD thesis
+<p>
+<large> <strong>
+Milos Hauskrecht </BR> 
+<a href="./report_PhD_thesis.pdf"> Planning and control in stochastic domains with
+imperfect information. </a> </BR>
+PhD thesis, MIT-LCS-TR-738, 1997 
+</strong> </large>
+<hr>
+
+<H3> POMDP problems used in the thesis </H3>
+
+The following is a list of POMDP problems I used to test my
+algorithms. The problems are stored in the format proposed by 
+Tony Cassandra.  
+
+<P>
+POMDP problems:
+<ul>
+<li> <a href="http://www.medg.lcs.mit.edu/people/milos/thesis/Maze20.pomdp"> Maze20: maze navigation problem from my AAAI-97 paper</a>
+<li> <a href="http://www.medg.lcs.mit.edu/people/milos/thesis/Maze20B.pomdp"> Maze20B: maze navigation problem with a zero cost absorbing goal state</a>
+<li> <a
+href="http://www.cs.brown.edu/people/arc/research/examples/shuttle.95.POMDP">
+Lonnie Chrisman's shuttle problem (from Tony's page)</a>
+</ul>
+
+<p>
+<H3> Thesis facts</H3>
+
+Thesis defended on August 5, 1997. Submitted to the Department of
+Electrical Engineering and Computer Science, MIT in August 1997 in partial
+fulfillment of the requirements for the degree of Doctor of Philosophy.
+<p>
+Supervisor: <a href="http://medg.lcs.mit.edu/people/psz/psz.html">
+Peter Szolovits</a>
+<p>
+Readers:
+<ul> 
+<li> <a href="http://people.csail.mit.edu/lpk/"> Leslie Pack
+Kaelbling</a>
+<li> <a href="http://www.researchgate.net/profile/Geoffrey_Rutledge">
+Geoffrey William Rutledge</a>
+<li> <a href="http://scholar.google.com/citations?user=G2-nFaIAAAAJ"> Paul
+A. Viola</a>
+</ul>
+</br>
+
+<hr>
+<i><a href="http://medg.lcs.mit.edu/people/milos.html">milos</a> 12/21/97 </i>
+
+</body>
+
+
+
+

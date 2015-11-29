@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_never_unknown</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_never_unknown
+</h1>    
+<a name="wp3769087"> </a><p class="pBody" >
+Ensures that the value of a specified expression contains only 0 and 1 bits when a qualifying expression is TRUE.  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3769102"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkers64.gif" height="107" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3769104"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3772036"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3772037"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">width </em>
+</div>    
+<a name="wp3772038"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3772039"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3772040"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3770377"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Class: </span>
+</div>    
+<a name="wp3772041"> </a><div class="pCellBodyLeft" >
+single-cycle assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3771351"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3769108"> </a><pre class="pCode1" >assert_never_unknown 
+</pre>    <a name="wp3772042"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level</em>, <em class="cEmphasis">width, property_type</em>,<em class="cEmphasis"> msg</em>,<em class="cEmphasis"> coverage_level </em>)] 
+</pre>    <a name="wp3772043"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, qualifier, test_expr </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3769152"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3769111"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769113"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3769115"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769117"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769119"> </a><div class="pCellBodyLeft" >
+width
+</div>    
+</td>
+    <td><a name="wp3769121"> </a><div class="pCellBodyLeft" >
+Width of the <em class="cEmphasis">test_expr</em> argument. Default: 1. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769135"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769137"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3769139"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769141"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769143"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3769145"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769147"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769149"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3769151"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3769186"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3769155"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769157"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3769159"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769161"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769163"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769165"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3769167"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769169"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769171"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769173"> </a><div class="pCellBodyLeft" >
+qualifier
+</div>    
+</td>
+    <td><a name="wp3769175"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769177"> </a><div class="pCellBodyLeft" >
+Expression that  indicates whether or not to check <em class="cEmphasis">test_expr</em> .
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769179"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769181"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">test_expr</em>
+</div>    
+</td>
+    <td><a name="wp3769183"> </a><div class="pCellBodyLeft" >
+[ <em class="cEmphasis">width</em> - 1: 0 ]
+</div>    
+</td>
+    <td><a name="wp3769185"> </a><div class="pCellBodyLeft" >
+Expression that should contain only 0 or 1 bits when qualifier is TRUE.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3769187"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3769188"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_never_unknown</code> assertion checker checks the expression <span style="font-style: oblique" class="cCodeBodyEmphasis">qualifier</span> at each rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> to determine if it should check <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span>. If <span style="font-style: oblique" class="cCodeBodyEmphasis">qualifier</span> is sampled TRUE, the checker evaluates <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> and if the value of <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> contains a bit that is not 0 or 1, the assertion fails.
+</p>    
+<a name="wp3769196"> </a><p class="pBody" >
+The checker is useful for ensuring certain data have only known values following a reset sequence. It also can be used to verify tristate input ports are driven and tristate output ports drive known values when necessary. 
+</p>    
+<a name="wp3769210"> </a><h4 class="pHead4" >
+Assertion Checks  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3769199"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769201"> </a><div class="pCellBodyLeft" >
+test_expr contains X/Z value
+</div>    
+</td>
+    <td><a name="wp3769203"> </a><div class="pCellBodyLeft" >
+The <em class="cEmphasis">test_expr</em> expression contained at least one bit that was not 0 or 1;  <em class="cEmphasis">qualifier</em> was sampled TRUE; and &#8216;OVL_XCHECK_OFF is not set.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3769230"> </a><h4 class="pHead4" >
+Cover Points  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3769213"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769215"> </a><div class="pCellBodyLeft" >
+qualifier
+</div>    
+</td>
+    <td><a name="wp3769217"> </a><div class="pCellBodyLeft" >
+A never_unknown check was initiated.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769219"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769221"> </a><div class="pCellBodyLeft" >
+test_expr_change
+</div>    
+</td>
+    <td><a name="wp3769223"> </a><div class="pCellBodyLeft" >
+Expression changed value.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3773990"> </a><h3 class="pHead3" >
+Notes
+</h3>    
+
+<a name="wp3773991"> </a><p class="pNumber" >
+ 1.	If &#8216;OVL_XCHECK_OFF is set, all <code class="cCodeBody">assert_never_unknown</code> checkers are turned off.
+</p>    
+<a name="wp3769231"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3769232"> </a><pre class="pCode2" >assert_never, assert_one_cold, assert_one_hot, assert_zero_one_hot
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3769233"> </a><h3 class="pHead3" >
+Example
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3769267"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3769236"> </a><div class="pCellBodyLeft" >
+ assert_never_unknown #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769244"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3769246"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772044"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3772045"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772046"> </a><div class="pCellBodyLeft" >
+&#8220;Error: data unknown or undriven&#8221;, 
+</div>    
+<a name="wp3772047"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3769250"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772048"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772049"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772050"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772051"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769252"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3769254"> </a><div class="pCellBodyLeft" >
+valid_data (
+</div>    
+</td>
+    <td><a name="wp3769258"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3769260"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769262"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3769264"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772052"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772053"> </a><div class="pCellBodyLeft" >
+rd_data, 
+</div>    
+<a name="wp3772054"> </a><div class="pCellBodyLeft" >
+data);
+</div>    
+</td>
+    <td><a name="wp3769266"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772055"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772056"> </a><div class="pCellBodyLeft" >
+// qualifier 
+</div>    
+<a name="wp3772057"> </a><div class="pCellBodyLeft" >
+// test_expr
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3769268"> </a><p class="pBody" >
+Ensures that values of <code class="cCodeBody">data</code> are known and driven when <code class="cCodeBody">rd_data</code> is TRUE.  </p>    <div align="left"><img src="images/ovl_checkers85.gif" height="92" width="435" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3771339"> </a><p class="pBody" >
+
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

@@ -1,0 +1,38 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Zubeyir Unlu">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="proj02.html"><img SRC="Previous.gif" BORDER=0 height=26 width=26 align=LEFT></a><a href="proj04.html"><img SRC="Next.gif" BORDER=0 height=26 width=26 align=RIGHT></a>
+<br>&nbsp;
+<p><br>
+<center>
+<p><b><font size=+2>What should be the advantages of the Active System
+usage for this implementation?</font></b>
+<hr WIDTH="100%"></center>
+
+<ul>
+<li>
+<font size=+1>The computer program can make comparison and other processes
+quickly.</font></li>
+
+<li>
+<font size=+1>Only the result should be shown and other redundant information
+are not shown. Therefore, the result arrives quickly to the customer.</font></li>
+
+<li>
+<font size=+1>Using active system is easy more than using telephone or
+other ways to make reservation.</font></li>
+
+<li>
+<font size=+1>Using graphics and controls is not necessary to enter the
+input data and to show the results. This makes the usage of this program
+simpler, suitable, fast and useful.</font></li>
+</ul>
+
+</body>
+</html>

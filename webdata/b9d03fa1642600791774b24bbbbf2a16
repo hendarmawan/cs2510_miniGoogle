@@ -1,0 +1,730 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0051)http://bdn.borland.com/article/0,1410,31863,00.html -->
+<!-- Vignette StoryServer 4 Tue Jan 31 12:46:32 2006 --><!-- Vignette StoryServer 4 Wed Feb 01 13:28:01 2006 --><HTML><HEAD><TITLE>Practical UML™: A Hands-On Introduction for Developers</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="" name=KEYWORDS>
+<META 
+content="This tutorial provides a quick introduction to the Unified Modeling Language™" 
+name=DESCRIPTION><LINK title=Default href="UML_files/defaultNew.htm" 
+type=text/css rel=stylesheet><LINK title=Default href="UML_files/styles2005.css" 
+type=text/css rel=stylesheet><LINK title=Default href="UML_files/bdn.htm" 
+type=text/css rel=stylesheet>
+<SCRIPT src="UML_files/library.js" type=text/javascript></SCRIPT>
+
+<SCRIPT src="UML_files/hide_show.js" type=text/javascript></SCRIPT>
+<!--Site Level a -->
+<META content="MSHTML 6.00.2800.1528" name=GENERATOR></HEAD>
+<BODY bgColor=#ffffff><A name=top></A><!-- Vignette StoryServer 4 Wed Feb 01 13:28:01 2006 --><!-- Site level is a -->
+<DIV id=borland-sites>
+<UL>
+  <LI class=first-site>
+  <DIV><A href="http://www.borland.com/">Borland.com</A></DIV></LI>
+  <LI class=selected>
+  <DIV><A href="http://bdn.borland.com/">Borland Developer 
+Network</A></DIV></LI>
+  <LI>
+  <DIV><A href="http://support.borland.com/">Borland Support 
+  Center</A></DIV></LI>
+  <LI>
+  <DIV><A href="http://borland.ewebsmartlink.com/">Borland 
+  University</A></DIV></LI>
+  <LI>
+  <DIV><A href="http://www.borland.com/ww/">Worldwide Sites</A></DIV></LI>
+  <LI class=country-label><A href="https://bdn.borland.com/cgi-bin/login/"><!-- Vignette StoryServer 4 Wed May 22 12:08:43 2002 --><A 
+  class=bigBlack href="https://bdn.borland.com/cgi-bin/login/">Login</A></A> 
+  </LI></UL></DIV><BR style="CLEAR: both">
+<DIV id=logo-area><A href="http://bdn.borland.com/"><IMG id=logo height=40 
+alt=Borland src="UML_files/bdnetwork2.gif" width=326 border=0></A> 
+<DIV id=toolbar>
+<FORM name=search action=http://www.google.com/custom method=get>
+<UL>
+  <LI><A href="https://bdn.borland.com/cgi-bin/login/">My Account </A></LI>
+  <LI><IMG height=20 alt="" src="UML_files/toolbar_separator.gif" width=2></LI>
+  <LI><A href="http://bdn.borland.com/info/">Help</A></LI>
+  <LI><IMG height=20 alt="" src="UML_files/toolbar_separator.gif" width=2></LI>
+  <LI class=searchbox><INPUT maxLength=255 size=31 name=q></LI>
+  <LI><IMG height=20 alt="" src="UML_files/toolbar_separator.gif" width=2></LI>
+  <LI><A class=search 
+  href="javascript:void%20document.search.submit()">Search</A></LI></UL><INPUT 
+type=hidden 
+value=S:http://bdn.borland.com;AH:left;BGC:#FFFFFF;LH:51;LC:#0000FF;L:http://bdn.borland.com/images/topnav/bdnetwork2.gif;LW:383;T:#000000;AWFID:beeeba6b5662a726; 
+name=cof> <INPUT type=hidden name=sitesearch> <INPUT type=hidden 
+value=borland.com name=sitesearch> <INPUT type=hidden value=borland.com 
+name=domains> </FORM></DIV></DIV><!-- BEGIN: Primary Navigation -->
+<DIV id=primary-nav>
+<DIV id=primary-nav-top></DIV>
+<UL id=primarynav>
+  <LI><A href="http://bdn.borland.com/article/0,1410,31863,00.html#"><IMG 
+  title="Application Lifecycle" height=7 
+  src="UML_files/application_lifecycle.gif" width=131 border=0></A> 
+  <UL>
+    <LI><A href="http://bdn.borland.com/caliberrm">CaliberRM</A> </LI>
+    <LI><A href="http://bdn.borland.com/together">Together</A> </LI>
+    <LI><A href="http://bdn.borland.com/java">JBuilder</A> </LI>
+    <LI><A href="http://bdn.borland.com/starteam">StarTeam</A> </LI></UL></LI>
+  <LI><A href="http://bdn.borland.com/article/0,1410,31863,00.html#"><IMG 
+  title=IDE height=7 src="UML_files/ide.gif" width=18 border=0></A> 
+  <UL>
+    <LI><A href="http://bdn.borland.com/java">Java</A> </LI>
+    <LI><A href="http://bdn.borland.com/delphi">Delphi</A> </LI>
+    <LI><A href="http://bdn.borland.com/csharp">C#</A> </LI>
+    <LI><A href="http://bdn.borland.com/cpp">C++</A> </LI></UL></LI>
+  <LI><A href="http://bdn.borland.com/article/0,1410,31863,00.html#"><IMG 
+  title="Application Middleware" height=7 
+  src="UML_files/application_middleware.gif" width=150 border=0></A> 
+  <UL>
+    <LI><A href="http://bdn.borland.com/appserver">AppServer</A> </LI>
+    <LI><A href="http://bdn.borland.com/corba">VisiBroker</A> </LI>
+    <LI><A href="http://bdn.borland.com/interbase">InterBase</A> </LI>
+    <LI><A href="http://bdn.borland.com/jdatastore">JDataStore</A> </LI></UL></LI>
+  <LI><A href="http://bdn.borland.com/article/0,1410,31863,00.html#"><IMG 
+  title="More Resources: Examples, Tools, Bugs, GetPublished, Events, Museum, etc." 
+  height=7 src="UML_files/more_resources.gif" width=101 border=0></A> 
+  <UL>
+    <LI><A 
+    title="View product demonstrations &amp; listen to Borland's developers and management." 
+    href="http://bdn.borland.com/bdntv">BDN TV &amp; Radio</A> </LI>
+    <LI><A href="http://blogs.borland.com/">Blogs</A> </LI>
+    <LI><A title="Find books covering Borland products." 
+    href="http://bdn.borland.com/books">Books</A> </LI>
+    <LI><A 
+    title="Submit bugs and feature requests. Also known as QualityCentral." 
+    href="http://qc.borland.com/">Bugs &amp; Suggestions</A> </LI>
+    <LI><A href="http://bdn.borland.com/chat">Chat</A> </LI>
+    <LI><A 
+    title="Browse the rich resources of Borland's Annual Developer Conference Procedings." 
+    href="http://bdn.borland.com/borcon">Conference Proceedings</A> </LI>
+    <LI><A title="View Borland related events in your area and post your own." 
+    href="http://ec.borland.com/">Events</A> </LI>
+    <LI><A title="Examples, code, etc.. Also known as CodeCentral." 
+    href="http://cc.borland.com/">Examples</A> </LI>
+    <LI><A title="Submit your own articles to bdn for publication and get paid." 
+    href="http://bdn.borland.com/getpublished">GetPublished</A> </LI>
+    <LI><A title="Download antique versions of Borland software." 
+    href="http://bdn.borland.com/museum">Museum</A> </LI>
+    <LI><A href="http://info.borland.com/newsgroups/">Newsgroups</A> </LI>
+    <LI><A title="Listings of bdn articles in XML format." 
+    href="http://news.borland.com/">News Feeds</A> </LI>
+    <LI><A title="Purchase Borland products online." 
+    href="http://shop.borland.com/">Shop</A> </LI>
+    <LI><A title="Browse the Borland Technology Partners database." 
+    href="http://btp.borland.com/">Technology Partners</A> 
+</LI></UL></LI></UL></DIV><!-- END: Primary Navigation -->
+<DIV id=mast></DIV>
+<P>&nbsp;</P>
+<P></P><!-- Vignette StoryServer 4 Wed Feb 01 01:04:43 2006 --><!-- BEGIN: Page Body ContentTable starts here-->
+<TABLE id=channels cellSpacing=0 cellPadding=0 border=0>
+  <TBODY>
+  <TR>
+    <TD id=channel-spacer-sm>&nbsp;</TD>
+    <TD id=channel-spacer>&nbsp;</TD>
+    <TD class=content-channel>
+      <DIV id=content><!-- Vignette StoryServer 4 Wed Feb 01 13:28:02 2006 -->
+      <SCRIPT language=JavaScript>
+
+  function ResourceWin(hurl) {
+wid = window.open(hurl, "ResourceWin",
+"toolbar=yes,status=no,directories=no,location=no,scrollbars=yes,width=1000,height=700,resizable=yes","true");
+}
+  
+
+</SCRIPT>
+
+      <META content="Randy Miller" name=author>
+      <META content=31863 name=id>
+      <META content="Dec 04 2003 12:00:00:000AM" name=date>
+      <META content="Dec 03 2003 10:48:25:000AM" name=creationdate>
+      <META content="Course Outline" name=type>
+      <META content=Public name=visibility>
+      <META content="" name=product>
+      <META content="" name=platform>
+      <P><BR><SPAN class=title3>Practical UML™: A Hands-On Introduction for 
+      Developers</SPAN> <SPAN class=contentSectionHeading>- by Randy 
+      Miller</SPAN><BR><BR><!-- Vignette StoryServer 4 Wed Feb 01 13:28:02 2006 -->Rating: 
+      <A href="http://bdn.borland.com/article/0,1410,31863,00.html#rating"><!-- Vignette StoryServer 4 Wed Feb 01 03:05:18 2006 --><IMG 
+      height=12 alt="Rating is 4.5 - 5" src="UML_files/star_5.gif" width=65 
+      border=0></A> &nbsp; &nbsp; Ratings:&nbsp;547 &nbsp; &nbsp; <A 
+      href="http://bdn.borland.com/article/0,1410,31863,00.html#rating">Rate 
+      it</A><BR><!-- end of rating summary component-->
+      <BLOCKQUOTE class=abstract><B>Abstract:</B> This tutorial provides a 
+        quick introduction to the Unified Modeling Language™&nbsp;</BLOCKQUOTE>
+      <P>
+      <P>The heart of object-oriented problem solving is the construction of a 
+      model. The model abstracts the essential details of the underlying problem 
+      from its usually complicated real world. Several modeling tools are 
+      wrapped under the heading of the <FONT color=#990000><B>UML</B></FONT>™, 
+      which stands for Unified Modeling Language™. The purpose of this course is 
+      to present important highlights of the UML.</P>
+      <P>At the center of the UML are its nine kinds of modeling diagrams, which 
+      we describe here.</P>
+      <UL>
+        <LI><A 
+        href="http://bdn.borland.com/article/0,1410,31863,00.html#use-case-diagram">Use 
+        case diagrams</A> 
+        <LI><A 
+        href="http://bdn.borland.com/article/0,1410,31863,00.html#classdiagrams">Class 
+        diagrams</A> 
+        <LI><A 
+        href="http://bdn.borland.com/article/0,1410,31863,00.html#object-diagrams">Object 
+        diagrams</A> 
+        <LI><A 
+        href="http://bdn.borland.com/article/0,1410,31863,00.html#sequence-diagrams">Sequence 
+        diagrams</A> 
+        <LI><A 
+        href="http://bdn.borland.com/article/0,1410,31863,00.html#collaboration-diagrams">Collaboration 
+        diagrams</A> 
+        <LI><A 
+        href="http://bdn.borland.com/article/0,1410,31863,00.html#statechart-diagrams">Statechart 
+        diagrams</A> 
+        <LI><A 
+        href="http://bdn.borland.com/article/0,1410,31863,00.html#activity-diagrams">Activity 
+        diagrams</A> 
+        <LI><A 
+        href="http://bdn.borland.com/article/0,1410,31863,00.html#component-and-deployment-diagrans">Component 
+        diagrams</A> 
+        <LI><A 
+        href="http://bdn.borland.com/article/0,1410,31863,00.html#component-and-deployment-diagrans">Deployment 
+        diagrams</A> </LI></UL>
+      <P>Some of the sections of this course contain links to pages with more 
+      detailed information. And every section has short questions. Use them to 
+      test your understanding of the section topic.</P>
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><SPAN class=head3>Why is UML important?</SPAN></P>
+      <P>Let's look at this question from the point of view of the construction 
+      trade. Architects design buildings. Builders use the designs to create 
+      buildings. The more complicated the building, the more critical the 
+      communication between architect and builder. Blueprints are the standard 
+      graphical language that both architects and builders must learn as part of 
+      their trade.</P>
+      <P>Writing software is not unlike constructing a building. The more 
+      complicated the underlying system, the more critical the communication 
+      among everyone involved in creating and deploying the software. In the 
+      past decade, the UML has emerged as the software blueprint language for 
+      analysts, designers, and programmers alike. It is now part of the software 
+      trade. The UML gives everyone from business analyst to designer to 
+      programmer a common vocabulary to talk about software design.</P>
+      <P>The UML is applicable to object-oriented problem solving. Anyone 
+      interested in learning UML must be familiar with the underlying tenet of 
+      object-oriented problem solving -- it all begins with the construction of 
+      a model. A <FONT color=#990000><B>model</B></FONT> is an abstraction of 
+      the underlying problem. The <FONT color=#990000><B>domain</B></FONT> is 
+      the actual world from which the problem comes.</P>
+      <P>Models consist of <FONT color=#990000><B>objects</B></FONT> that 
+      interact by sending each other <FONT color=#990000><B>messages</B></FONT>. 
+      Think of an object as "alive." Objects have things they know (<FONT 
+      color=#990000><B>attributes</B></FONT>) and things they can do (<FONT 
+      color=#990000><B>behaviors</B></FONT> or <FONT 
+      color=#990000><B>operations</B></FONT>). The values of an object's 
+      attributes determine its <FONT color=#990000><B>state</B></FONT>.</P>
+      <P><FONT color=#990000><B>Classes</B></FONT> are the "blueprints" for 
+      objects. A class wraps attributes (data) and behaviors (methods or 
+      functions) into a single distinct entity. Objects are <FONT 
+      color=#990000><B>instances</B></FONT> of classes.</P>
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><A name=use-case-diagram></A><FONT size=5><SPAN class=head3>Use case 
+      diagrams</SPAN></FONT></P>
+      <P><FONT color=#990000><B><A name=usecasediagrams></A>Use case 
+      diagrams</B></FONT> describe what a system does from the standpoint of an 
+      external observer. The emphasis is on <I>what</I> a system does rather 
+      than <I>how.</I></P>
+      <P>Use case diagrams are closely connected to scenarios. A <A 
+      name=scenario></A><FONT color=#990000><B>scenario</B></FONT> is an example 
+      of what happens when someone interacts with the system. Here is a scenario 
+      for a medical clinic.</P>
+      <DIV align=left>
+      <UL>
+        <P>"A patient calls the clinic to make an appointment for a yearly 
+        checkup. The receptionist finds the nearest empty time slot in the 
+        appointment book and schedules the appointment for that time slot. 
+      "</P></UL></DIV>
+      <P>A <A name=usecase></A><FONT color=#990000><B>use case</B></FONT> is a 
+      summary of scenarios for a single task or goal. An <A name=actor></A><FONT 
+      color=#990000><B>actor</B></FONT> is who or what initiates the events 
+      involved in that task. Actors are simply roles that people or objects 
+      play. The picture below is a <B>Make Appointment</B> use case for the 
+      medical clinic. The actor is a <B>Patient</B>. The connection between 
+      actor and use case is a <FONT color=#990000><B>communication 
+      association</B></FONT> (or <FONT color=#990000><B>communication</B></FONT> 
+      for short).</P>
+      <P><IMG height=76 alt="Use case" hspace=10 
+      src="UML_files/usecaseactorno3.gif" width=370 vspace=15></P>
+      <P>Actors are stick figures. Use cases are ovals. Communications are lines 
+      that link actors to use cases.</P>
+      <P>A use case diagram is a collection of actors, use cases, and their 
+      communications. We've put <B>Make Appointment</B> as part of a diagram 
+      with four actors and four use cases. Notice that a single use case can 
+      have multiple actors.</P>
+      <P><IMG height=234 alt="Use case diagram" hspace=10 
+      src="UML_files/actorsmultipleno3d.gif" width=460 vspace=15></P>
+      <P>Use case diagrams are helpful in three areas.</P>
+      <UL>
+        <LI><B>determining features (requirements)</B>. New use cases often 
+        generate new requirements as the system is analyzed and the design takes 
+        shape. 
+        <LI><B>communicating with clients</B>. Their notational simplicity makes 
+        use case diagrams a good way for developers to communicate with clients. 
+
+        <LI><B>generating test cases</B>. The collection of scenarios for a use 
+        case may suggest a suite of test cases for those scenarios. </LI></UL>
+<!--
+      <P><A href="http://bdn.borland.com/article/images/31863/usecase.html" 
+      target=_blank><IMG height=20 alt="More details" src="UML_files/more.gif" 
+      width=91 border=0></A></P>
+      <P><A href="http://bdn.borland.com/article/images/31863/q1frame.html" 
+      target=_blank><IMG height=20 alt="Self test" src="UML_files/test.gif" 
+      width=64 border=0><BR></A></P>
+-->
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><A name=classdiagrams></A><SPAN class=head3>Class diagrams</SPAN></P>
+      <P><FONT color=#990000><B><A name=classdiagram></A>A Class 
+      diagram</B></FONT> gives an overview of a system by showing its classes 
+      and the relationships among them. Class diagrams are static -- they 
+      display what interacts but not what happens when they do interact.</P>
+      <P>The class diagram below models a customer order from a retail catalog. 
+      The central class is the <B>Order</B>. Associated with it are the 
+      <B>Customer</B> making the purchase and the <B>Payment</B>. A 
+      <B>Payment</B> is one of three kinds: <B>Cash</B>, <B>Check</B>, or 
+      <B>Credit</B>. The order contains <B>OrderDetails</B> (line items), each 
+      with its associated <B>Item</B>.</P>
+      <P><IMG height=383 alt="Class diagram" hspace=5 
+      src="UML_files/classdiagramno3d.gif" width=773 vspace=15></P>
+      <P>UML class notation is a rectangle divided into three parts: class name, 
+      attributes, and operations. Names of abstract classes, such as 
+      <I><B>Payment</B>,</I> are in italics. Relationships between classes are 
+      the connecting links.</P>
+      <P>Our class diagram has three kinds of relationships.</P>
+      <UL>
+        <LI><FONT color=#990000><B><A 
+        name=association></A>association</B></FONT> -- a relationship between 
+        instances of the two classes. There is an association between two 
+        classes if an instance of one class must know about the other in order 
+        to perform its work. In a diagram, an association is a link connecting 
+        two classes. 
+        <LI><FONT color=#990000><B><A 
+        name=aggregation></A>aggregation</B></FONT> -- an association in which 
+        one class belongs to a collection. An aggregation has a diamond end 
+        pointing to the part containing the whole. In our diagram, <B>Order</B> 
+        has a collection of <B>OrderDetails</B>. 
+        <LI><FONT color=#990000><B><A 
+        name=generalization></A>generalization</B></FONT> -- an inheritance link 
+        indicating one class is a superclass of the other. A generalization has 
+        a triangle pointing to the superclass. <I><B>Payment</B></I> is a 
+        superclass of <B>Cash</B>, <B>Check</B>, and <B>Credit</B>. </LI></UL>
+      <P>An association has two ends. An end may have a <A 
+      name=rolename></A><FONT color=#990000><B>role name</B></FONT> to clarify 
+      the nature of the association. For example, an <B>OrderDetail</B> is a 
+      line item of each <B>Order</B>.</P>
+      <P>A <A name=navigable></A><FONT color=#990000><B>navigability</B></FONT> 
+      arrow on an association shows which direction the association can be 
+      traversed or queried. An <B>OrderDetail</B> can be queried about its 
+      <B>Item</B>, but not the other way around. The arrow also lets you know 
+      who "owns" the association's implementation; in this case, 
+      <B>OrderDetail</B> has an <B>Item</B>. Associations with no navigability 
+      arrows are bi-directional.</P>
+      <P>The <A name=multiplicity></A><FONT 
+      color=#990000><B>multiplicity</B></FONT> of an association end is the 
+      number of possible instances of the class associated with a single 
+      instance of the other end. Multiplicities are single numbers or ranges of 
+      numbers. In our example, there can be only one <B>Customer</B> for each 
+      <B>Order</B>, but a <B>Customer</B> can have any number of 
+      <B>Orders</B>.</P>
+      <P>This table gives the most common multiplicities.</P>
+      <UL>
+        <P>
+        <TABLE cellSpacing=2 cellPadding=0 border=1>
+          <TBODY>
+          <TR>
+            <TH bgColor=#ffffcc>Multiplicities</TH>
+            <TH bgColor=#ffffcc>Meaning</TH></TR>
+          <TR>
+            <TD><B>0..1</B></TD>
+            <TD>zero or one instance. The notation <I><B>n . . m</B></I> 
+              indicates <I><B>n</B></I> to<I> <B>m</B></I> instances.</TD></TR>
+          <TR>
+            <TD><B>0..*</B><I> &nbsp;or&nbsp; </I><B>*</B></TD>
+            <TD>no limit on the number of instances (including none).</TD></TR>
+          <TR>
+            <TD><B>1</B></TD>
+            <TD>exactly one instance</TD></TR>
+          <TR>
+            <TD><B>1..*</B></TD>
+            <TD>at least one instance</TD></TR></TBODY></TABLE></P></UL>
+      <P>Every class diagram has classes, associations, and multiplicities. 
+      Navigability and roles are optional items placed in a diagram to provide 
+      clarity.</P>
+<!--
+      <P><A href="http://bdn.borland.com/article/images/31863/classdiagram.html" 
+      target=_blank><IMG height=20 alt="More details" src="UML_files/more.gif" 
+      width=91 border=0></A></P>
+      <P><A href="http://bdn.borland.com/article/images/31863/q2frame.html" 
+      target=_blank><IMG height=20 alt="Self test" src="UML_files/test.gif" 
+      width=64 border=0><BR></A></P>
+-->
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><A name=object-diagrams></A><SPAN class=head3>Packages and object 
+      diagrams</SPAN></P>
+      <P>To simplify complex class diagrams, you can group classes into <A 
+      name=packages></A><FONT color=#990000><B>packages</B></FONT>. A package is 
+      a collection of logically related UML elements. The diagram below is a 
+      business model in which the classes are grouped into packages.</P>
+      <P><IMG height=266 alt="Package diagram" hspace=10 
+      src="UML_files/packageno3d.gif" width=402 vspace=15></P>
+      <P>Packages appear as rectangles with small tabs at the top. The package 
+      name is on the tab or inside the rectangle. The dotted arrows are <A 
+      name=dependency></A><FONT color=#990000><B>dependencies</B></FONT>. One 
+      package depends on another if changes in the other could possibly force 
+      changes in the first.</P>
+      <P><FONT color=#990000><B><A name=Objectdiagrams></A>Object 
+      diagrams</B></FONT> show instances instead of classes. They are useful for 
+      explaining small pieces with complicated relationships, especially 
+      recursive relationships.</P>
+      <P>This small class diagram shows that a university <B>Department</B> can 
+      contain lots of other <B>Departments</B>.</P>
+      <P><IMG height=116 alt="Recursive class diagram" hspace=10 
+      src="UML_files/departmentno3d.gif" width=410 vspace=15></P>
+      <P>The object diagram below instantiates the class diagram, replacing it 
+      by a concrete example.</P>
+      <P><IMG height=263 alt="Object diagram" hspace=10 
+      src="UML_files/objdiagno3d.gif" width=458 vspace=15></P>
+      <P>Each rectangle in the object diagram corresponds to a single instance. 
+      Instance names are underlined in UML diagrams. Class or instance names may 
+      be omitted from object diagrams as long as the diagram meaning is still 
+      clear.</P>
+<!--
+      <P><A href="http://bdn.borland.com/article/images/31863/q3frame.html" 
+      target=_blank><IMG height=20 alt="Self test" src="UML_files/test.gif" 
+      width=64 border=0><BR></A></P>
+-->
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><A name=sequence-diagrams></A><SPAN class=head3>Sequence 
+      diagrams</SPAN></P>
+      <P>Class and object diagrams are static model views. <FONT 
+      color=#990000><B><A name=Interactiondiagrams></A>Interaction 
+      diagrams</B></FONT> are dynamic. They describe how objects 
+collaborate.</P>
+      <P>A <A name=sequence></A><FONT color=#990000><B>sequence 
+      diagram</B></FONT> is an interaction diagram that details how operations 
+      are carried out -- what messages are sent and when. Sequence diagrams are 
+      organized according to time. The time progresses as you go down the page. 
+      The objects involved in the operation are listed from left to right 
+      according to when they take part in the message sequence.</P>
+      <P>Below is a sequence diagram for making a hotel reservation. The object 
+      initiating the sequence of messages is <B>a Reservation window</B>.</P>
+      <P><IMG height=414 alt="Sequence diagram" hspace=5 
+      src="UML_files/sequencediagno3d.gif" width=700 vspace=15></P>
+      <P>The <B>Reservation window</B> sends a <FONT 
+      size=4><TT>makeReservation()</TT></FONT> message to a <B>HotelChain</B>. 
+      The <B>HotelChain</B> then sends a <FONT 
+      size=4><TT>makeReservation()</TT></FONT> message to a <B>Hotel</B>. If the 
+      <B>Hotel</B> has available rooms, then it makes a <B>Reservation</B> and a 
+      <B>Confirmation</B>.</P>
+      <P>Each vertical dotted line is a <A name=lifelines></A><FONT 
+      color=#990000><B>lifeline</B></FONT>, representing the time that an object 
+      exists. Each arrow is a message call. An arrow goes from the sender to the 
+      top of the <A name=activation></A><FONT color=#990000><B>activation 
+      bar</B></FONT> of the message on the receiver's lifeline. The activation 
+      bar represents the duration of execution of the message.</P>
+      <P>In our diagram, the <B>Hotel</B> issues a <A name="self call"></A><FONT 
+      color=#990000><B>self call</B></FONT> to determine if a room is available. 
+      If so, then the <B>Hotel</B> creates a <B>Reservation</B> and a 
+      <B>Confirmation</B>. The asterisk on the self call means <FONT 
+      color=#990000><B>iteration</B></FONT> (to make sure there is available 
+      room for each day of the stay in the hotel). The expression in square 
+      brackets, [ ], is a <FONT color=#990000><B>condition</B></FONT>.</P>
+      <P>The diagram has a clarifying <A name=note></A><FONT 
+      color=#990000><B>note</B></FONT>, which is text inside a dog-eared 
+      rectangle. Notes can be put into any kind of UML diagram.</P>
+<!--
+      <P><A href="http://bdn.borland.com/article/images/31863/state.html" 
+      target=_blank><IMG height=20 alt="More details" src="UML_files/more.gif" 
+      width=91 border=0></A></P>
+      <P><A href="http://bdn.borland.com/article/images/31863/q4frame.html" 
+      target=_blank><IMG height=20 alt="Self test" src="UML_files/test.gif" 
+      width=64 border=0><BR></A></P>
+-->
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><A name=collaboration-diagrams></A><SPAN class=head3>Collaboration 
+      diagrams</SPAN></P>
+      <P><FONT color=#990000><B><A name=Collaboration></A>Collaboration 
+      diagrams</B></FONT> are also interaction diagrams. They convey the same 
+      information as sequence diagrams, but they focus on object roles instead 
+      of the times that messages are sent. In a sequence diagram, object roles 
+      are the vertices and messages are the connecting links.</P>
+      <P><IMG height=350 alt="Collaboration diagram" hspace=10 
+      src="UML_files/collaborationo3d.gif" width=670 vspace=15></P>
+      <P>The object-role rectangles are labeled with either class or object 
+      names (or both). Class names are preceded by colons ( : ).</P>
+      <P>Each message in a collaboration diagram has a <A 
+      name=sequencenumber></A><FONT color=#990000><B>sequence number</B></FONT>. 
+      The top-level message is numbered 1. Messages at the same level (sent 
+      during the same call) have the same decimal prefix but suffixes of 1, 2, 
+      etc. according to when they occur.</P>
+<!--
+      <P><A href="http://bdn.borland.com/article/images/31863/q5frame.html" 
+      target=_blank><IMG height=20 alt="Self test" src="UML_files/test.gif" 
+      width=64 border=0><BR></A></P>
+-->
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><A name=statechart-diagrams></A><SPAN class=head3>Statechart 
+      diagrams</SPAN></P>
+      <P>Objects have behaviors and state. The state of an object depends on its 
+      current activity or condition. A <FONT color=#990000><B><A 
+      name=Statediagrams></A>statechart diagram</B></FONT> shows the possible 
+      states of the object and the transitions that cause a change in state.</P>
+      <P>Our example diagram models the login part of an online banking system. 
+      Logging in consists of entering a valid social security number and 
+      personal id number, then submitting the information for validation.</P>
+      <P>Logging in can be factored into four non-overlapping states: <B>Getting 
+      SSN</B>, <B>Getting PIN</B>, <B>Validating</B>, and <B>Rejecting</B>. From 
+      each state comes a complete set of <A name=transitions></A><FONT 
+      color=#990000><B>transitions</B></FONT> that determine the subsequent 
+      state.</P>
+      <P><IMG height=405 alt="State diagram" hspace=10 
+      src="UML_files/statediagno3d.gif" width=770 vspace=15></P>
+      <P>States are rounded rectangles. Transitions are arrows from one state to 
+      another. Events or conditions that trigger transitions are written beside 
+      the arrows. Our diagram has two self-transition, one on <B>Getting SSN</B> 
+      and another on <B>Getting PIN</B>.</P>
+      <P>The initial state (black circle) is a dummy to start the action. Final 
+      states are also dummy states that terminate the action.</P>
+      <P>The action that occurs as a result of an event or condition is 
+      expressed in the form <FONT size=4><TT>/action</TT></FONT>. While in its 
+      <B>Validating</B> state, the object does not wait for an outside event to 
+      trigger a transition. Instead, it performs an activity. The result of that 
+      activity determines its subsequent state.</P>
+<!--
+      <P><A href="http://bdn.borland.com/article/images/31863/state.html#State" 
+      target=_blank><IMG height=20 alt="More details" src="UML_files/more.gif" 
+      width=91 border=0></A></P>
+      <P><A href="http://bdn.borland.com/article/images/31863/q6frame.html" 
+      target=_blank><IMG height=20 alt="Self test" src="UML_files/test.gif" 
+      width=64 border=0><BR></A></P>
+-->
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><A name=activity-diagrams></A><SPAN class=head3>Activity 
+      diagrams</SPAN></P>
+      <P>An <FONT color=#990000><B><A name=Activitydiagrams></A>activity 
+      diagram</B></FONT> is essentially a fancy flowchart. Activity diagrams and 
+      statechart diagrams are related. While a statechart diagram focuses 
+      attention on an object undergoing a process (or on a process as an 
+      object), an activity diagram focuses on the flow of activities involved in 
+      a single process. The activity diagram shows the how those activities 
+      depend on one another.</P>
+      <P>For our example, we used the following process.</P>
+      <UL>
+        <P>"Withdraw money from a bank account through an ATM."</P></UL>
+      <P>The three involved classes (people, etc.) of the activity are 
+      <B>Customer</B>, <B>ATM</B>, and <B>Bank</B>. The process begins at the 
+      black start circle at the top and ends at the concentric white/black stop 
+      circles at the bottom. The activities are rounded rectangles.</P>
+      <P><IMG height=634 alt="Activity diagram" hspace=10 
+      src="UML_files/activityno3d.gif" width=672 vspace=5></P>
+      <P>Activity diagrams can be divided into object <A name=swimlane></A><FONT 
+      color=#990000><B>swimlanes</B></FONT> that determine which object is 
+      responsible for which activity. A single <A 
+      name=activitytransition></A><FONT color=#990000><B>transition</B></FONT> 
+      comes out of each activity, connecting it to the next activity.</P>
+      <P>A transition may <A name=branch></A><FONT 
+      color=#990000><B>branch</B></FONT> into two or more mutually exclusive 
+      transitions. <FONT color=#990000><B>Guard expressions</B></FONT> 
+      (inside<NOBR> [ ])</NOBR> label the transitions coming out of a branch. A 
+      branch and its subsequent <A name=merge></A><FONT 
+      color=#990000><B>merge</B></FONT> marking the end of the branch appear in 
+      the diagram as hollow diamonds.</P>
+      <P>A transition may <A name=fork></A><FONT 
+      color=#990000><B>fork</B></FONT> into two or more parallel activities. The 
+      fork and the subsequent <A name=join></A><FONT 
+      color=#990000><B>join</B></FONT> of the threads coming out of the fork 
+      appear in the diagram as solid bars.</P>
+<!--
+      <P><A href="http://bdn.borland.com/article/images/31863/q7frame.html" 
+      target=_blank><IMG height=20 alt="Self test" src="UML_files/test.gif" 
+      width=64 border=0></A></P>
+-->
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><A name=component-and-deployment-diagrans></A><FONT size=5><SPAN 
+      class=head3>Component and deployment diagrams</SPAN></FONT></P>
+      <P>A <FONT color=#990000><B>component</B></FONT> is a code module. 
+      Component diagrams are physical analogs of class diagram. <FONT 
+      color=#990000><B>Deployment diagrams</B></FONT> show the physical 
+      configurations of software and hardware.</P>
+      <P>The following deployment diagram shows the relationships among software 
+      and hardware components involved in real estate transactions.<FONT 
+      color=#cc0000> </FONT></P>
+      <P><IMG height=372 alt="Deployment diagram" hspace=10 
+      src="UML_files/deploymentno3d.gif" width=716 vspace=15></P>
+      <P>The physical hardware is made up of <FONT 
+      color=#990000><B>nodes</B></FONT>. Each component belongs on a node. 
+      Components are shown as rectangles with two tabs at the upper left. </P>
+<!--
+      <P><A href="http://bdn.borland.com/article/images/31863/q8frame.html" 
+      target=_blank><IMG height=20 alt="Self test" src="UML_files/test.gif" 
+      width=64 border=0></A></P>
+-->
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P><SPAN class=head3>UML Tools</SPAN></P>
+      <P>Creating and modifying UML diagrams can be labor and time intensive. 
+      But in constructing the diagrams for this short course, we cut our efforts 
+      far short using Borland Together ControlCenter, which is the<I> 
+      </I>premier UML modeling tool. </P>
+      <P>Borland Together ControlCenter is available from Borland® Software 
+      Corporation at <A 
+      href="http://www.borland.com/">http://www.borland.com/</A>.</P>
+      <P>Borland ControlCenter always keeps diagrams and code in sync. But it's 
+      much more than a mere modeling tool. Borland ControlCenter accelerates 
+      development for teams using Java and leading application servers to build 
+      e-business and enterprise applications. Borland ControlCenter also 
+      supports teams using C++ and IDL, delivering wider coverage and support 
+      for large development organizations. Borland's "platform and building 
+      blocks<FONT size=2><SUP>TM</SUP></FONT>" architecture delivers deep 
+      integration across all aspects of software development: 
+      model-pattern-edit-test-compile-debug-version-doc-metric-audit-provision-assemble-deploy-run, 
+      leading to an environment in which business experts, modelers, and 
+      developers find they can work more productively, increasing the 
+      competitive value of what they build and reducing time to market.</P>
+      <P><IMG height=2 alt="Divider line" src="UML_files/blue_line.gif" 
+      width=1000></P>
+      <P>For the latest up-to-date techniques in the <FONT 
+      color=#990000><B>Unified Modeling Language</B></FONT> and <FONT 
+      color=#990000><B>Agile Software Development Processes</B></FONT>, 
+      subscribe to <A href="http://www.coadletter.com/coadletter/">The Coad 
+      Letter</A>. Visit <A href="http://bdn.borland.com/">The Borland Developer 
+      Network</A> for all of the latest information on how to deliver <FONT 
+      color=#990000><B>better software faster</B></FONT>.</P>
+      <P><A href="http://bdn.borland.com/coadletter/"><IMG 
+      src="UML_files/logolink.gif" border=0></A></P>
+      <P>
+      <HR>
+
+      <P class=footnote>Copyright © 2003 Borland Software Corporation, Inc. All 
+      rights reserved. All Borland and Borland brands and product names are 
+      trademarks or registered trademarks of Borland. You may not use any of the 
+      Borland trademarks without Borland's prior written permission. All other 
+      brand and product names may be trademarks or registered trademarks of 
+      their respective holders. </P>
+      <P class=footnote><FONT color=#666666>Last Revised: <CSOBJ region="0" 
+      format="MedDate" t="DateTime" h="12" w="96">Fri, Dec 1, 
+2003</CSOBJ></FONT>
+      <P align=left>
+      <P></P>
+      <DIV id=toolbar2>
+      <UL>
+        <LI>
+        <FORM name=shop action=/article/shopReferal/1,1980,31863,00.html 
+        method=post>&nbsp;<A class=shop 
+        href="javascript:void%20document.shop.submit()">Shop Borland</A>&nbsp; 
+        </FORM></LI>
+        <LI><IMG height=20 alt="" src="UML_files/toolbar_separator.gif" width=2> 
+        </LI>
+        <LI>
+        <FORM name=download 
+        action=http://www.borland.com/products/downloads/index.html 
+        method=get>&nbsp;<A class=downloads 
+        href="javascript:void%20document.download.submit()">Downloads</A>&nbsp; 
+        </FORM></LI></UL></DIV>
+      <P></SPAN>
+      <P><!-- Vignette StoryServer 4 Wed Feb 01 13:28:03 2006 --><!-- # of 1s: 9, # of 2s:7, # of 3s:15, # of 4s:88, # of 5s:428 428 is max, 0.163551 is scalar, 1.47196 is bar1a
+31863 is contentid-->
+      <FORM action=/article/rating/save/1,1930,31863,00.html method=post>
+      <TABLE cellSpacing=0 align=left border=0 VALIGN="Bottom">
+        <TBODY>
+        <TR height=1>
+          <TD colSpan=11><!-- Vignette StoryServer 4 Wed Feb 01 03:05:17 2006 --><IMG 
+            height=1 alt="Blue Bar" src="UML_files/bar_blue.gif" width=700 
+            border=0><!-line-></TD></TR>
+        <TR vAlign=bottom align=middle>
+          <TD align=right>Votes</TD>
+          <TD>&nbsp;</TD>
+          <TD>9</TD>
+          <TD>7</TD>
+          <TD>15</TD>
+          <TD>88</TD>
+          <TD>428</TD>
+          <TD>&nbsp;</TD>
+          <TD>&nbsp;</TD>
+          <TD align=middle rowSpan=4>
+            <TABLE cellSpacing=6>
+              <TBODY>
+              <TR>
+                <TD vAlign=center align=middle>Responses:&nbsp;547 
+                  <BR>Average:&nbsp;4.68007<BR>&nbsp;<BR>1=Poor, 5=Excellent </TD>
+                <TD vAlign=center align=middle><INPUT type=hidden value=31863 
+                  name=contentID> <!-- Vignette StoryServer 4 Wed Feb 01 13:28:03 2006 -->
+                  <TABLE cellSpacing=0 cellPadding=1 align=center border=0>
+                    <TBODY>
+                    <TR align=middle>
+                      <TD>1</TD>
+                      <TD>2</TD>
+                      <TD>3</TD>
+                      <TD>4</TD>
+                      <TD>5</TD></TR>
+                    <TR align=middle>
+                      <TD><INPUT type=radio value=1 name=rating></TD>
+                      <TD><INPUT type=radio value=2 name=rating></TD>
+                      <TD><INPUT type=radio value=3 name=rating></TD>
+                      <TD><INPUT type=radio value=4 name=rating></TD>
+                      <TD><INPUT type=radio value=5 
+                  name=rating></TD></TR></TBODY></TABLE><INPUT type=submit value="Rate Article" name="Submit Rating"> 
+<!-- end of rating component--><BR></TD>
+                <TD><SPAN class=body3><A 
+                  href="http://threads.borland.com/threads/threads.exe/add?&amp;sysid=1&amp;contentid=31863&amp;title=Practical UML™: A Hands-On Introduction for Developers">Add</A> 
+                  or <A 
+                  href="http://threads.borland.com/threads/threads.exe/thread?&amp;sysid=1&amp;contentid=31863&amp;title=Practical UML™: A Hands-On Introduction for Developers">View</A> 
+                  comments </SPAN></TD></TR></TBODY></TABLE></TD>
+          <TD rowSpan=4><!-- Vignette StoryServer 4 Wed Feb 01 03:05:16 2006 --><IMG 
+            height=1 alt="" src="UML_files/spacer.gif" width=80 border=0></TD></TR>
+        <TR vAlign=bottom align=middle>
+          <TD align=right>&nbsp;</TD>
+          <TD align=right><!-- Vignette StoryServer 4 Wed Feb 01 03:05:16 2006 --><IMG 
+            height=20 alt="" src="UML_files/spacer.gif" width=10 border=0></TD>
+          <TD align=middle width=20><IMG height=1 alt="9 rated this 1" 
+            src="UML_files/bar_blue.gif" width=20></TD>
+          <TD align=middle width=20><IMG height=1 alt="7 rated this 2" 
+            src="UML_files/bar_blue.gif" width=20></TD>
+          <TD align=middle width=20><IMG height=2 alt="15 rated this  3" 
+            src="UML_files/bar_blue.gif" width=20></TD>
+          <TD align=middle width=20><IMG height=14 alt="88 rated this 4" 
+            src="UML_files/bar_blue.gif" width=20></TD>
+          <TD align=middle width=20><IMG height=69 alt="428 rated this 5" 
+            src="UML_files/bar_blue.gif" width=20></TD>
+          <TD align=right><!-- Vignette StoryServer 4 Wed Feb 01 03:05:16 2006 --><IMG 
+            height=20 alt="" src="UML_files/spacer.gif" width=10 border=0></TD>
+          <TD align=right>&nbsp;</TD>
+          <TD align=right>&nbsp;</TD></TR>
+        <TR align=middle>
+          <TD align=right>Rating</TD>
+          <TD>&nbsp;</TD>
+          <TD align=middle>1</TD>
+          <TD align=middle>2</TD>
+          <TD align=middle>3</TD>
+          <TD align=middle>4</TD>
+          <TD align=middle>5</TD>
+          <TD align=right>&nbsp;</TD>
+          <TD align=right>&nbsp;</TD></TR>
+        <TR height=1>
+          <TD vAlign=top align=left colSpan=11><!-- Vignette StoryServer 4 Wed Feb 01 03:05:17 2006 --><IMG 
+            height=1 alt="Blue Bar" src="UML_files/bar_blue.gif" width=700 
+            border=0></TD></TR></TBODY></TABLE>
+      <TABLE width="100%" align=center>
+        <TBODY>
+        <TR>
+          <TD><IMG height=100 alt="" src="UML_files/transparent.gif" width=2 
+            border=0></TD></TR></TBODY></TABLE><BR></FORM><A name=rating>&nbsp;</A> <!-- end of rating component--></P></DIV><!--end content channel--><!-- END: Content Area --><!--end content td--><!-- END: Page Body --><!-- Vignette StoryServer 4 Tue Jan 31 12:45:53 2006 --><BR 
+      style="CLEAR: both">
+      <DIV id=footer-wrap>
+      <DIV id=footer>Borland® Copyright© 1994 - 2005 Borland Software 
+      Corporation. All rights reserved<BR><A 
+      href="http://www.borland.com/us/piracy/">Report Piracy</A> | <A 
+      href="http://www.borland.com/us/website/legal.html">Legal Notices</A> <!-- | <a href="http://www.borland.com/us/resources/site_map.html">Site-> Map</a>-->| 
+      <A href="http://www.borland.com/us/website/privacy.html">Privacy 
+      Policy</A></DIV></DIV></TD></TR></TBODY></TABLE><!-- Vignette StoryServer 4 Wed May 15 11:28:33 2002 --></BODY></HTML>

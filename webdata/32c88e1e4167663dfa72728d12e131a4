@@ -1,0 +1,507 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <meta name="Generator" content="Microsoft Word 11 (filtered)">
+  <title>CS 0007 - Introduction to Computer Programming</title>
+  <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;}
+ /* Page Definitions */
+ @page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+  </style>
+</head>
+<body lang="EN-US" link="blue" vlink="purple">
+<div class="Section1">
+<p class="MsoNormal" style="text-align: center;" align="center"><b><span
+ style="font-size: 16pt;">CS 0007 - Introduction to Computer Programming</span></b></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-size: 16pt;">Fall 2008</span></p>
+<p class="MsoNormal" style="text-align: center;" align="center"><span
+ style="font-size: 16pt;">&nbsp;</span></p>
+<div align="center">
+<table class="MsoTableGrid"
+ style="border: medium none ; border-collapse: collapse; width: 544px; height: 125px;"
+ border="1" cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr style="height: 12.4pt;">
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 73.4pt; height: 12.4pt;"
+ valign="top" width="98">
+      <p class="MsoNormal" style="text-align: right;" align="right"><b>&nbsp;</b></p>
+      </td>
+      <td
+ style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(217, 217, 217) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 127.15pt; height: 12.4pt;"
+ valign="top" width="170">
+      <p class="MsoNormal" style="text-align: center;" align="center"><b>Class</b></p>
+      </td>
+      <td
+ style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(217, 217, 217) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 127.15pt; height: 12.4pt;"
+ valign="top" width="170">
+      <p class="MsoNormal" style="text-align: center;" align="center"><b>Recitations</b></p>
+      </td>
+    </tr>
+    <tr style="height: 12.4pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(217, 217, 217) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 73.4pt; height: 12.4pt;"
+ valign="top" width="98">
+      <p class="MsoNormal" style="text-align: right;" align="right"><b>Time:</b></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 127.15pt; height: 12.4pt;"
+ valign="top" width="170">
+      <p class="MsoNormal" style="text-align: center;" align="center">11:00-12:15&nbsp;</p>
+      </td>
+      <td colspan="1" rowspan="3"
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 127.15pt; height: 12.4pt;"
+ valign="top" width="170">
+      <p class="MsoNormal" style="text-align: center;" align="center">&nbsp;</p>
+      <p class="MsoNormal" style="text-align: center;" align="center">Wed
+11am Sennott Sq 5502 Friday 10am Sennott Sq 5505&nbsp;</p>
+      </td>
+    </tr>
+    <tr style="height: 12.4pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(217, 217, 217) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 73.4pt; height: 12.4pt;"
+ valign="top" width="98">
+      <p class="MsoNormal" style="text-align: right;" align="right"><b>Days:</b></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 127.15pt; height: 12.4pt;"
+ valign="top" width="170">
+      <p class="MsoNormal" style="text-align: center;" align="center">TH</p>
+      </td>
+    </tr>
+    <tr style="height: 13.05pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(217, 217, 217) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 73.4pt; height: 13.05pt;"
+ valign="top" width="98">
+      <p class="MsoNormal" style="text-align: right;" align="right"><b>Room:</b></p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 127.15pt; height: 13.05pt;"
+ valign="top" width="170">
+      <p class="MsoNormal" style="text-align: center;" align="center">&nbsp;Sennott
+Square 5502<br>
+      </p>
+      </td>
+    </tr>
+    <tr style="height: 13.05pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(217, 217, 217) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 73.4pt; height: 13.05pt;"
+ valign="top" width="98">
+      <p class="MsoNormal" style="text-align: right;" align="right"><b>Webpage:</b></p>
+      </td>
+      <td colspan="2"
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 254.3pt; height: 13.05pt;"
+ valign="top" width="339">
+      <p class="MsoNormal" style="text-align: center;" align="center"><a
+ href="http://www.cs.pitt.edu/%7Ejmisurda/teaching/cs0007.htm">http://www.cs.pitt.edu/~mosse/courses/cs0007.html</a>
+      </p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" style="text-align: center;" align="center"><b>Note:</b>
+&nbsp;You <i style="font-weight: bold;">must</i><span
+ style="font-weight: bold;">
+</span>sign up for the recitation.</p>
+<p class="MsoNormal">&nbsp;
+</p>
+<p class="MsoNormal"><b><span style="font-size: 14pt;">Contact
+Information</span></b></p>
+<table style="text-align: left; width: 594px; height: 144px;" border="1"
+ cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top; text-align: right;"><br>
+      </td>
+      <td style="vertical-align: top;">Daniel Mosse<br>
+      </td>
+      <td style="vertical-align: top;">Asim Jamshed<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: right;"><b>Office:</b></td>
+      <td style="vertical-align: top;">6324 Sennot Square</td>
+      <td style="vertical-align: top; color: rgb(0, 0, 0);"><font
+ face="Garamond, serif">5324 Sennott Square<br>
+      </font></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: right;"><b>Phone:</b></td>
+      <td style="vertical-align: top;">(412) 624-8923</td>
+      <td style="vertical-align: top; color: rgb(0, 0, 0);"><font
+ style="color: rgb(0, 0, 0);" face="Garamond, serif"></font><font
+ face="Garamond, serif">(412) 624-8455</font></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: right;"><b>Email:</b></td>
+      <td style="vertical-align: top;"><a
+ href="mailto:mosse@cs.pitt.edu">mosse@cs.pitt.edu</a></td>
+      <td style="vertical-align: top;"><a
+ href="mailto:ajamshed@cs.pitt.edu">ajamshed@cs.pitt.edu</a></td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; text-align: right;">
+      <p class="MsoNormal"><b>Office Hours</b><b>:</b></p>
+      </td>
+      <td style="vertical-align: top;">TH 10:00-11:00, 2:00-3:00</td>
+      <td style="vertical-align: top;">M 3:30-4:30; T 12:30-1:30, W 3:30-4:30, H 12:30-1:30, F 11-12:45<br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<div align="center"><br>
+</div>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b><span style="font-size: 14pt;">Description</span></b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">This class is meant as a first class in computer
+programming.&nbsp;
+Anyone is welcome to take it, anyone can succeed as a computer
+programmer, which can be useful in a variety of
+fields.&nbsp; It is also good as an introduction to computer science
+for those
+students who (might) wish to pursue the field further, but lack prior
+exposure to the
+material.&nbsp; We will use Alice, which allows students to visualize
+their programs and create animated movies, joining fun and programming.<br>
+</p>
+<p class="MsoNormal"><b>&nbsp;</b></p>
+<p class="MsoNormal"><b><span style="font-size: 14pt;">Prerequisites</span></b></p>
+<p class="MsoNormal"><b>&nbsp;</b></p>
+<p class="MsoNormal">There are no prerequisites. Passing familiarity
+with the operation of a computer and some math (geometry, algebra) is
+helpful.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">(If you are already proficient - had 1 or 2
+courses prior - in
+computer programming this is not the course for you.)</p>
+<b><span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"><br
+ style="page-break-before: always;" clear="all">
+</span></b>
+<p class="MsoNormal"><b><span style="font-size: 14pt;">Course Purposes
+and Goals</span></b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Introduction to Computer Programming is meant as a
+course to
+expose interested students how computer software is written and
+tested.&nbsp; It
+seeks to illuminate the creative process that is computer programming
+from the
+ground up, with an emphasis on logic, algorithm development, and
+animations.<br>
+</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">In this course we will be writing procedural
+programs with Alice.&nbsp; Not only will you learn what that means,
+but you will also, at the end of the term:</p>
+<p class="MsoNormal">&nbsp;</p>
+<ul style="margin-top: 0in;" type="disc">
+  <li class="MsoNormal">Be able to write computer programs that can
+perform a variety of tasks.</li>
+  <li class="MsoNormal">Participate in the various stages of the
+life-cycle of a computer program, including planning, implementation,
+and debugging</li>
+  <li class="MsoNormal">Recognize and practice some programming with
+the Java programming languages.<br>
+  </li>
+</ul>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b><span style="font-size: 14pt;">Textbook</span></b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">The text is:</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Starting Out wth Alice, A visual Introduction to Programming,
+by Tony Gaddis,
+Pearson Addison-Wesley
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; ISBN-13:
+978-0-321-47515-2
+<br>
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+ISBN-10:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 0-321-47515-2
+<br>
+</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b><span style="font-size: 14pt;">Class Policies</span></b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Exams: </b>There will be a midterm and a
+final, based on the computer programs we develop during the
+course.&nbsp; The scheduled final exam is on December 12, 4:00 p.m. -
+5:50 p.m.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Labs and Quizzes: </b>Attending recitation is
+a very
+important part of this course.&nbsp; In recitation you will be able to
+work in a
+structured setting while completing small tasks (Labs). Concepts from
+class
+will be expanded upon and tested with unannounced quizzes.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Projects: </b>There will be six out-of-class
+assignments (small computer programs).&nbsp; These are to be completed
+in the given time (10% per day penalty for late work).&nbsp; Unless
+otherwise noted, these are meant to be your own work; anyone
+found to be collaborating will be given a zero for the
+assignment.&nbsp;
+Collaborating also means using code from previous terms, other
+universities,
+your friends, or finding it on the internet.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><b>Participation:&nbsp; </b>Attendance will not
+be taken.&nbsp; But class is fun, and so is the material, so it'd be
+your loss.&nbsp; Also, class attendance is officially mandatory.
+Homeworks, assignments, and important
+dates will be posted on the class web page, but this is provided as a
+courtesy
+and is not always complete. <i>[ominous warning] It is your fault if
+you miss something important
+because you skipped class.</i>
+</p>
+<p>Recitation attendance is also required. You will miss important
+material
+on the programming assignments if you do not attend.
+</p>
+<p>Office hours are optional. They are your chance to ask the professor
+and the TAs questions about the material being covered, the programming
+assignments, etc.
+</p>
+<p class="MsoNormal"><br>
+<br>
+</p>
+<span style="font-size: 12pt; font-family: &quot;Times New Roman&quot;;"></span><span
+ style="font-weight: bold;">Cheating </span>will not be
+tolerated.&nbsp; Anyone caught
+cheating will be given a zero for the portion of the course and
+reported to the department
+following University procedures.&nbsp; See more at the bottom.<br>
+<br>
+<br style="page-break-before: always;" clear="all">
+<p class="MsoNormal"><b><span style="font-size: 14pt;">Grading</span></b></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Your grade will be based upon 2 exams, 6 projects,
+weekly
+labs and quizzes (the lowest one of which will be dropped), and
+participation:</p>
+<p class="MsoNormal">&nbsp;</p>
+<div align="center">
+<table class="MsoTableGrid"
+ style="border: medium none ; border-collapse: collapse;" border="1"
+ cellpadding="0" cellspacing="0">
+  <tbody>
+    <tr style="height: 15.15pt;">
+      <td
+ style="border: 1pt solid windowtext; padding: 0in 5.4pt; width: 1.5in; height: 15.15pt;"
+ valign="top" width="144">
+      <p class="MsoNormal">2 Exams</p>
+      </td>
+      <td
+ style="border-style: solid solid solid none; border-color: windowtext windowtext windowtext -moz-use-text-color; border-width: 1pt 1pt 1pt medium; padding: 0in 5.4pt; width: 101.9pt; height: 15.15pt;"
+ valign="top" width="136">
+      <p class="MsoNormal" style="text-align: center;" align="center">40%
+(20% each)</p>
+      </td>
+    </tr>
+    <tr style="height: 14.35pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 1.5in; height: 14.35pt;"
+ valign="top" width="144">
+      <p class="MsoNormal">6 Projects</p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 101.9pt; height: 14.35pt;"
+ valign="top" width="136">
+      <p class="MsoNormal" style="text-align: center;" align="center">42%
+(7% each)</p>
+      </td>
+    </tr>
+    <tr style="height: 14.35pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 1.5in; height: 14.35pt;"
+ valign="top" width="144">
+      <p class="MsoNormal">Labs + Quizzes</p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 101.9pt; height: 14.35pt;"
+ valign="top" width="136">
+      <p class="MsoNormal" style="text-align: center;" align="center">18%</p>
+      </td>
+    </tr>
+    <tr style="height: 14.35pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; width: 1.5in; height: 14.35pt;"
+ valign="top" width="144">
+      <p class="MsoNormal">Participation (bonus)<br>
+      </p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; width: 101.9pt; height: 14.35pt;"
+ valign="top" width="136">
+      <p class="MsoNormal" style="text-align: center;" align="center">5%</p>
+      </td>
+    </tr>
+    <tr style="height: 14.35pt;">
+      <td
+ style="border-style: none solid solid; border-color: -moz-use-text-color windowtext windowtext; border-width: medium 1pt 1pt; padding: 0in 5.4pt; background: rgb(217, 217, 217) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 1.5in; height: 14.35pt;"
+ valign="top" width="144">
+      <p class="MsoNormal" style="text-align: right;" align="right">Total</p>
+      </td>
+      <td
+ style="border-style: none solid solid none; border-color: -moz-use-text-color windowtext windowtext -moz-use-text-color; border-width: medium 1pt 1pt medium; padding: 0in 5.4pt; background: rgb(217, 217, 217) none repeat scroll 0% 50%; -moz-background-clip: initial; -moz-background-origin: initial; -moz-background-inline-policy: initial; width: 101.9pt; height: 14.35pt;"
+ valign="top" width="136">
+      <p class="MsoNormal" style="text-align: center;" align="center">105%</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p class="MsoNormal"><br>
+<b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2"><br>
+<small><span style="font-family: times new roman,times,serif;">Mailing
+List Announcement</span></small></font></font></b><small><span
+ style="font-family: times new roman,times,serif;">
+</span><br style="font-family: times new roman,times,serif;">
+</small>A class mailing list will be compiled, and will be used for
+important
+announcements. It is VERY important that you be included in this list.
+It is therefore your responsibility to e-mail the TA and request
+to be included on the CS0007 class mailing list.</p>
+<br>
+<p style="font-family: times new roman,times,serif;"><small><b><font
+ size="+2"><small>Getting
+Answers to your Questions</small></font></b>
+</small></p>
+<li>Attend class<br>
+</li>
+<li>
+Check the class web page frequently - we will post as much information
+as we can</li>
+<li>
+Meet with the professor and TA during office hours</li>
+<li>
+Email the professor and TA</li>
+<p class="MsoNormal"><br>
+<b><span style="font-size: 14pt;">Disability Resources and
+Services:</span></b></p>
+<p class="MsoNormal"><b><span style="font-size: 14pt;">&nbsp;</span></b></p>
+If you have a disability for which you are requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412)
+648-7890 or (412) 383-7335 (TTY), as
+early as possible in the term. DRS will verify your disability and
+determine
+reasonable accommodations for this course.
+<b><span style="font-size: 14pt; font-family: &quot;Times New Roman&quot;;"><br
+ style="page-break-before: always;" clear="all">
+</span></b>
+<p class="MsoNormal"><b><span style="font-size: 14pt;"><br>
+Term Schedule: </span></b>The
+daily topics are subject to change depending on our pace.&nbsp; <a
+ href="topics.html">Here</a> is a list that will be continuously
+updated, to
+assist you in the readings so you can focus on those concepts prior to
+class. &nbsp; <a
+ href="slides.html">Here</a> is a list of slides, mostly done by George Novacky and modified accordingly.</p>
+<p class="MsoNormal">&nbsp;</p>
+<br>
+<p><small><b style="font-family: times new roman,times,serif;"><font
+ size="+2"><small>Academic
+Honesty: Collaboration vs. Cheating</small></font></b><span
+ style="font-family: times new roman,times,serif;"> </span><br
+ style="font-family: times new roman,times,serif;">
+</small><br>
+This really should not be an issue, but to make things as clear as
+possible the following is necessary.
+</p>
+<p>You are encouraged to discuss the course material and concepts with
+other students in the class. However, all work that you submit must be
+your own. Under no circumstances may you look at anyone else's code or
+show anyone else your code. And while you may discuss the concepts used
+in the programming assignments, you may not discuss implementation
+details
+of the assignments themselves.
+</p>
+<p>If you are caught copying or otherwise turning in work that is not <i>solely</i>
+your own, <b>you will fail the course.</b>
+</p>
+<p>The bottom line is that you are expected to conduct yourself as a
+person
+of integrity - you are expected to adhere to the highest standards of
+academic
+integrity. This means that plagiarism<sup>1</sup> in any form is
+completely
+unacceptable. As a (soon to be) computing professional, I encourage you
+to consult the code of ethics appropriate to your discipline<sup>2</sup>.
+</p>
+<p>Plagiarism will be assumed until disproved on work that is
+essentially
+the same as that of other students. This includes identically
+incorrect,
+off-the-wall, and highly unusual duplicate answers where the
+probability
+of a sheer coincidence is extremely unlikely. All parties to this
+unacceptable
+collaboration will receive the same treatment.
+</p>
+<p>You should bring a picture identification with you to all
+examinations
+and be prepared to show it upon request.
+</p>
+<p><i>If you are unsure of what is and is not allowed by this policy,
+talk
+to the instructor.</i>
+</p>
+<p><font size="-1"><sup>1 </sup><b>pla-gia-rize</b> <i>vt.</i> to
+steal and
+pass of as one's own (the ideas or words of another) to present as
+one's
+own an idea or product derived from an existing source - <b>pla-gia-riz-er</b><i>
+n.</i>
+(source: Webster's New World Dictionary).</font>
+<br>
+<font size="-1"><sup>2 </sup>The Association for Computing Machinery
+is http://www.acm.org/, the IEEE is http://www.ieee.org/ and the IEEE
+Computer
+Society is http://www.computer.org/.</font>
+</p>
+<br>
+</div>
+</body>
+</html>

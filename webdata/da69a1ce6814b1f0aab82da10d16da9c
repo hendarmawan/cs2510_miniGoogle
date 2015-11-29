@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<p><a href="pre2.htm"><img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="pre4.htm"><img border="0" src="next.gif" width="26" height="26"></a></p>
+<p><font face="Arial" size="6">&nbsp;&nbsp; Reasons to Build Components</font><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp; 
+</font></p>
+<ul>
+  <li><font face="Arial" size="5">To provide additional functionality</font></li>
+  <li><font face="Arial" size="5">To support reusability</font>
+  <li><font face="Arial" size="5">To increase productivity</font>
+  <li><font face="Arial" size="5">To promote consistency</font></li>
+</ul>
+<p>&nbsp;&nbsp; </p>
+<h2>&nbsp; <font face="Arial" size="6">The Component Software Problem</font></h2>
+<ul type="disc">
+  <li><font face="Arial" size="5">Basic interoperability—How can developers 
+    create their own unique components, yet be assured that these components 
+    will interoperate with other components built by different developers?</font>
+  <li><font face="Arial" size="5">Versioning—How can one system component be 
+    upgraded without requiring all the system components to be upgraded?</font>
+  <li><font face="Arial" size="5">Language independence—How can components 
+    written in different languages communicate?</font>
+  <li><font face="Arial" size="5">Transparent cross-process 
+    interoperability—How can we give developers the flexibility to write 
+    components to run in-process or cross-process (and eventually 
+    cross-network), using one simple programming model?</font></li>
+</ul>
+
+</body>
+
+</html>

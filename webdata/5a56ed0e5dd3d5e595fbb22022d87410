@@ -1,0 +1,27 @@
+<title>Proof of Program Correctness</title>
+<A HREF="../1530syl.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02.htm"><IMG SRC="next.gif" align=right></A>
+
+<center>
+<h1>Proof of Program Correctness</h1>
+</center>
+
+<b>
+<pre>
+EXAMPLE:
+<p>
+The following incorrect program merges
+two sorted arrays of n elements each:
+<p>
+i:=1; j;=1; k:=1;
+while k =< 2*n loop
+  if a(i) < b(j) then
+    c(k):=a(i);
+    i := i+1;
+  else
+    c(k):=b(j);
+    j := j+1;
+  end if;
+  k:=k+1;
+end loop;
+</pre>

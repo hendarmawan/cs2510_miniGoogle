@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="project_pg1.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="project_req1.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Introduction</font></h1> 
+ </center> 
+ 
+<body>
+<p><font size="4" face="Arial, Helvetica, sans-serif"> My project is to develop 
+  a rail traffic notification system for use by emergency personnel. I have reviewed 
+  the Adaptive Hypermedia Application Model (AHAM) which can be used for conceptual 
+  development of an Adaptive Hypermedia Application (AHA). This report will discuss 
+  the background and features of the Adaptive Hypermedia Application Model. The 
+  three phase MSE methodology of Requirements Specification in terms of IC cards, 
+  Relational Graph, and IC Structure learned in class was applied. This report 
+  will go through each of these steps, and will then show the development of the 
+  system using AHAM. The report will also provide an overview of the project, 
+  and will provide some insight to why this project should be supported. Finally, 
+  the report will discuss the design details, application and usage of the project.</font> 
+</p>
+<p> <font size="4" face="Arial, Helvetica, sans-serif">For my project, I proposed 
+  a grade level rail traffic notification system. The idea here is to provide 
+  positioning information to emergency personnel for trains that may be passing 
+  through their town. This information can be used by police, ambulances, fire 
+  trucks, and any other emergency personnel that may need to use grade level railroad 
+  crossings.</font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">This project is important 
+  because small towns all across the country that are located by railroads. However 
+  since they are small, and there often isn't much traffic, many grade level railroad 
+  crossings do not warrant local governments to install (nor do they often have 
+  enough money even if they did want to install) a bridge over railroad track(s). 
+  In many cases towns were settled because of the railroad, but have now spread 
+  to either side of the railroad tracks. This results in cases where an emergency 
+  occurs on one side of the tracks, but the emergency personnel and equipment 
+  are located on the other side. As you may be aware, the length of trains can 
+  be quite large, so finding a passable crossing can be the difference between 
+  life and death. By providing information about blocked crossings due to rail 
+  traffic, emergency personnel can minimize any delay cause by the traffic blockage.</font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The general idea is to provide 
+  the information indicating passable crossings, maybe by map (visual), audio, 
+  or text. The system will request the type of device needing the information 
+  and the system will provide adaptive media to that device. If a dispatch system 
+  is a 8-9 inch display mounted in a police car, it may be able to display a small 
+  map. If it is a dispatcher on a PC a large map, possibly with more detail can 
+  be provided, and finally if it is a cell phone or PDA carried by medical personnel, 
+  they can see text indications of unblocked crossings.</font></p>
+</body>
+</html>

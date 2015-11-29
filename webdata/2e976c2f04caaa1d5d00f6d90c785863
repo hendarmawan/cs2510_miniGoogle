@@ -1,0 +1,42 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>What is a Component</title>
+</head>
+
+<body>
+
+<p><a href="pre1.htm"><img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="pre3.htm"><img border="0" src="next.gif" width="26" height="26"></a></p>
+<ul>
+  <li><font size="6"><font face="Arial">What is a Component?</font><br>
+    </font><font size="4"><br>
+    </font><font size="5" face="Arial">A practical definition is that a 
+    component is any piece of a software that you want to treat as a 
+    standard-issue &quot;black box&quot; chunk of functionality at design-time.</font></li>
+</ul>
+<p>　</p>
+<ul>
+  <li><font size="6" face="Arial">What does a Component do?</font><br>
+    <font face="Arial" size="5"><br>
+    It has various aspects of functionality, including&nbsp; compound documents, 
+    custom controls, inter-application scripting, data transfer, and other 
+    software interactions.</font><font size="5">&nbsp;&nbsp; </font></li>
+</ul>
+<p>　</p>
+<ul>
+  <li><font size="6" face="Arial">What language is a Component written?<br>
+    </font>&nbsp;&nbsp;&nbsp; </li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;&nbsp; <font size="5" face="Arial">Components are written 
+in different languages by different software vendors, <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; in&nbsp; different parts of the&nbsp; world, and 
+at different times.</font></p>
+
+</body>
+
+</html>

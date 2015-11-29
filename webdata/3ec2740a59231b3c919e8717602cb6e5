@@ -1,0 +1,33 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page14.html"><img src="previous.gif" align=left></a>
+<a href="page16.html"><img src="next.gif" align=right></a>
+<center>
+   <br><br>
+   <h1>Why use XML at all when JSP can be used?</h1>
+   <br>
+</center> 
+<font size=4>
+<ul>
+   <li>XML was designed to describe and store data, not to display
+       it.</li>
+   <li>In order to display data, an XSL program must be run on an XML
+       document to transform the data into HTML code (or mostly any other
+       language).</li>
+   <li>So, by using an XML document in accordance with JSP pages, another 
+       level of abstraction is created, leading to a program with a more
+       component-base design. This can make web-based applications
+faster and easier to develop.</li>
+   <ul>
+      <li>XML can represent the data.</li>
+      <li>XSL can represent the presentation logic.</li>
+      <li>JSP can represent the business logic.</li>
+   </ul>
+</ul>
+<center>
+<img src="pic.jpg" width=450 height=500>
+</center>
+</font>
+</html>

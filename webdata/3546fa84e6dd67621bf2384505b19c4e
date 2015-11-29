@@ -1,0 +1,28 @@
+<HTML><HEAD><TITLE>CS2310 Project -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="02.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="04.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>    Design Petri Net    Model</H1>
+<H1><FONT color=mediumblue>    Factors to Consider</FONT></H1>
+</CENTER>
+
+<UL><UL><UL> <UL><UL>
+  <LI><FONT size=5>traffic flows in each 
+          way/direction;</FONT>
+          <LI><FONT size=5>the percentage of the traffic going through, left 
+          turn, or right left;</FONT>
+          <LI><FONT size=5>speed limit;</FONT>
+          <LI><FONT size=5>average starting time for the cars;</FONT>
+          <LI><FONT size=5>average stopping time for the cars;</FONT>
+          <LI><FONT size=5>the weather/seasons; the possibility of the drivers 
+          violating the rules;</FONT>
+          <LI><FONT size=5>have pedestrian lights or 
+not.</FONT></LI></UL></UL></UL></UL></UL>
+
+</BODY></HTML>
+

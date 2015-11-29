@@ -1,0 +1,36 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Starting the Virtual Classroom</title>
+</head>
+
+<body>
+
+<p><a href="page_3.htm">
+<img src="previous.gif" align="left" width="26" height="26"></a>
+<a href="page_5.htm">
+<img src="next.gif" align="right" width="26" height="26"></a>
+</p>
+<p align="center"><font size="7">Configuring the Student Tool</font></p>
+<p align="left"><font size="6">If you know the default location and port number 
+of the Image Server for your classroom you can configure the student tool before 
+you start by editing the Face Alive configuration file.</font></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">1. Open the file &quot;config_facealive.ini&quot; (it is 
+located in the Student Tool directory )</font></p>
+<p align="left"><img border="0" src="page_44.jpg" width="481" height="178"></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">2. The information must be in the format shown 
+above. The first line indicates the location of the image server, and the second 
+line indicates what port the Image Server is listening on.</font></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">3. It is important to note that you can change 
+the location and port settings of the Image Server while in the Student Tool. 
+However, the changes will not remain permanent.</font></p>
+
+</body>
+
+</html>

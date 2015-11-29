@@ -1,0 +1,194 @@
+<h3>
+<a h ref="papers/alarms.pdf">Intelligent Alarm Management</a>
+Carlos Agudelo et al.
+(<a href="papers/alarmDap/1.html">Mykolas Dapkus</a>, Oct 25 Tu)
+(<a href="papers/alarmWil/alarm.html">David Wilkinson</a> - Alarm management and related topics such as data mining for critical events alerts, Nov 1 Tu)
+</h3>
+An ergonomic problem for the plant operators has
+appeared in the modern electronic control systems, in which
+configure an alarm is very easy. We present a methodology and
+an intelligent software tool to manage alarms and make early
+fault detection and diagnosis in industrial processes, integrating
+three techniques to detect and diagnose faults. The three
+techniques use available information in industrial environments:
+The alarms of the electronic control system; the fault
+knowledgebase of the process, formulated in terms of rules; and a
+simplified model used to detect disturbances in the process. A
+prototype in a Fluid Catalytic Cracking process is shown.
+(single seminar)
+
+<p>
+<font color="purple">
+<h3>
+<a h ref="papers/homeservice.pdf">
+An Architecture for Home Service Retrieval Based on Function
+Concept Ontology</a>
+Wei Moji, Xu Jianliang, Yun Hongyan, Xu Linlin
+(<a href="papers/homeserviceOu.pptx">Jiannan Ouyang</a>, Oct 27 Th), (<a href="papers/homecare.pdf">home care reference</a>, <a href="papers/homecareSun.pptx">BoYun Sun</a> - Home HealthCare system, Nov 3 Th)
+</h3>
+Abstract: This paper constructs ontologies for smart home to automate home service retrieval
+according to the functional properties. By analyzing the context of home service, firstly we
+differentiate seven key concepts in the domain and analyze the relations among them, and as a
+result, a domain upper ontology as a fixed viewpoint for further more detailed conceptualization is
+achieved. Then guiding with the upper ontology, function concept ontology is proposed with
+deeply categorization and systematization of functions. Finally a scenario of audible alarm of gas
+detective is given to present the architecture for service registry, retrieval and invocation based on
+the function concept ontology.
+(single seminar.  However, students can look at
+related topics of architecture and system for home health care
+and give multiple seminars.)
+</font>
+<p>
+
+<h3>
+<a h ref="papers/sqlKB.pdf">
+SQL based Knowledge Representation and Knowledge Editor</a>
+Umair Abdullah et al.
+(<a href="papers/sqlKBjiang.pptx">Lei Jiang</a>, Nov 8 Tu)
+</h3>
+Most of the research work in the area of knowledge representation does not focus on implementation
+environment of the knowledge base. Hypothesis of this paper is that implementation environment/
+language/ tool, is also critical along with proper representation technique for success of a knowledge
+based system. It is based on the premise that .usability. is basic difference between data and
+knowledge. .Production rules. is a useful knowledge representation technique, suitable for task
+specific knowledge. This paper describes a successful research and development work carried out in
+medical billing domain, resulting in a unique and useful system. A rule based expert system has been
+developed with .production rules., defined as part of data (not code), has been developed for
+identifying errors in medical claims. Structured Query Language (SQL) has been used for the
+implementation of production rules. SQL is widely 'used' in almost every system that is related to
+database. Success of the system is primarily because of implementation methodology/ environment,
+adopted for development of the system. Besides rule engine, a rule editor has also been developed to
+facilitate domain experts to feed their knowledge in the system. Although current system has been
+developed for medical billing/ medical claim processing domain, but it can be easily applied to any
+real life problem domain.
+(single seminar)
+<p>
+
+<h3>
+<a h ref="papers/graphtrans.pdf">
+Graph Transformations and Software Engineering:
+Success Stories and Lost Chances</a>
+Giovanni Toffetti and Mauro Pezze
+(<a href="papers/graphtransMeng.pptx">Mengmeng Li</a>, Nov 10 Th)
+</h3>
+
+Textual as well as visual and diagrammatic notations are essential in software engineering, and are used in many different contexts. Chomsky grammars are the key tool to handle textual notations, and many applications for textual languages. Visual and diagrammatic languages add spatial dimensions that reduce the applicability of textual grammars and call for new tools. Graph transformation systems have been studied for over forty years and are a powerful tool to deal with syntax, semantics and transformation of diagrammatic notations. The enormous importance of visual and diagrammatic languages and the strong support that graph transformation provide to the manipulation of diagrammatic notations would suggest a big success of graph transformation in software engineering. In this paper we discuss the main features of graph transformation and how they can help software engineers. We look back to the many attempts to use graph transformations in software engineering in the last fifteen years, identify some success stories, and discuss to what extent graph transformation succeeded, when they have not succeeded yet, what are the main causes of failures, and how they can help software engineering in the next fifteen years. 
+(multiple seminars on related aspects)
+
+<p>
+<font color="orange">
+<h3>
+Use of Petri nets together with UML to model
+software systems:
+<a h ref="papers/PetriNetAndUML1.pdf">
+On the integration of UML and Petri nets in
+software development</a>
+Javier Campos and Jose Merseguer
+and another <a h ref="papers/PetriNetAndUML2.pdf">
+related paper</a>
+(<a href="papers/PetriNetUMLsteve.ppt">Stephen Rojcewicz</a>, Nov 15 Tu)
+</h3>
+Software performance engineering deals with the consideration
+of quantitative analysis of the behaviour of software systems from
+the early development phases in the life cycle. This paper summarizes
+in a semiformal and illustrative way our proposal for a suitable software
+performance engineering process.  We try to integrate in a very pragmatic
+approach the usual object oriented methodology (supported with UML
+language and widespread CASE tools) with a performance modelling
+formalism, namely stochastic Petri nets. A simple case study is used to
+describe the whole process. More technical details should be looked up
+in the cited bibliography.
+</font>
+
+<p>
+<font color="red">
+<h3><a href="papers/SMsensor">Social Media as Sensors</a> (<a href="papers/SocialSensorKelli.pdf">Kelli Ireland</a> Nov 17 Th, <a href="papers/SMsensorRuh.ppt">Ruhsary Rexit</a>, Nov 22 Tu) </h3>
+IEEE Multimedia just announced a new call-for-papers
+for a special issue on SOCIAL MEDIA AS SENSORS.
+The idea is interesting and fits the general direction
+of CS2310.  Students can search for relevant papers along
+this direction and give a seminar.
+(This topic would allow for multiple students to
+give several seminars from different angles).
+
+<p>
+<h4>
+<a h ref="papers/earthquake.pdf">
+Earthquake shakes Twitter users:
+real-time event detection by social sensors</a>
+Sakaki T., Okazaki M.,  Matsuo Y.
+(Proceedings of WWW 2010,
+this paper
+<a h ref="http://ymatsuo.com/papers/www2010.pdf">
+http://ymatsuo.com/papers/www2010.pdf</a>
+and also related paper
+<a h ref="http://www.springerlink.com/content/r40045k20743206j/">
+http://www.springerlink.com/content/r40045k20743206j/</a>)
+
+(<a href="papers/earthquakeYingZe.pdf">YingZe Wang</a>, Nov 29)
+</h4>
+Twitter, a popular microblogging service, has received much
+attention recently. An important characteristic of Twitter
+is its real-time nature. For example, when an earthquake
+occurs, people make many Twitter posts (tweets) related
+to the earthquake, which enables detection of earthquake
+occurrence promptly, simply by observing the tweets. As
+described in this paper, we investigate the real-time interaction
+of events such as earthquakes, in Twitter, and propose
+an algorithm to monitor tweets and to detect a target
+event. To detect a target event, we devise a classifier of
+tweets based on features such as the keywords in a tweet,
+the number of words, and their context. Subsequently, we
+produce a probabilistic spatiotemporal model for the target
+event that can find the center and the trajectory of the
+event location. We consider each Twitter user as a sensor
+and apply Kalman filtering and particle filtering, which are
+widely used for location estimation in ubiquitous/pervasive
+computing. The particle filter works better than other compared
+methods in estimating the centers of earthquakes and
+the trajectories of typhoons. As an application, we construct
+an earthquake reporting system in Japan. Because
+of the numerous earthquakes and the large number of Twitter
+users throughout the country, we can detect an earthquake
+by monitoring tweets with high probability (96% of
+earthquakes of Japan Meteorological Agency (JMA) seismic
+intensity scale 3 or more are detected). Our system
+detects earthquakes promptly and sends e-mails to registered
+users. Notification is delivered much faster than the
+announcements that are broadcast by the JMA.
+</font>
+
+
+<p>
+<h3>
+<a h ref="papers/restructureSQL.pdf">
+Restructuring PL/SQL using Game Theory
+</a>
+Nehemieh et al.
+(<a h ref="papers/restructureSQLrich.pptx">Rich Anderson</a>, Dec 1 Th)
+</h3>
+Quality of information systems is very essential for the success of any organization. Software can be
+given as an example for a live entity, as it undergoes many alterations during its life cycle. Database plays a
+major role in any information system and it is the one that gets affected due to the alterations. Relational model
+is the popularly used data model in any organization. Any change that alters the relational schema also modifies
+the queries that access the relations. In the case of large information system, it is difficult to identify the set of
+queries that access the same relation. Our proposed system takes the PL/SQL code as input and suggests how
+the procedures can be restructured into package based on the concept of similarity measures, which is one of the
+techniques that is used in object oriented programming for refactoring. Our system groups those
+queries/procedures that access the same relations into a single package. The objective of our research is to
+determine whether the proposed methodology can be used as a mechanism to improve the maintainability of
+PL/SQL. This process of packaging is done by applying game theory so as to increase understandability and
+maintainability of the system.
+(one seminar)
+
+<p>
+<h3>
+<a h ref="http://ieeexplore.ieee.org/xpl/mostRecentIssue.jsp?punumber=6003377">
+Adaptive Visual Symbols for Personal Health Records</a>, Muller, H.  Maurer, H.
+Reihs, R.  Sauer, S.  Zatloukal, K.
+Med. Univ. of Graz, Graz, Austria,
+in Information Visualisation (IV), 2011,
+15th International Conference.
+(<a href="papers/HealthRecVisHeather.pdf">Heather Friedberg</a>, Dec 1 Th)
+</h3>
+As a hub of information controlled by the patient, personal health records (PHR) collect information from the patient medical history including a wide variety of data sources as patient's observations, lab results, clinical findings and in the future maybe even personal genetic data and automatic recordings from monitoring devices. This development will on the one hand make health care more personalized and user controlled but on the other hand also overloads consumers with a huge amount of data. To address this issue we developed a framework for adaptive visual symbols (AVS). An AVS can adapt its appearance and level of detail during the communication process. Finally we demonstrate the AVS principle for the visualization of personal health records.

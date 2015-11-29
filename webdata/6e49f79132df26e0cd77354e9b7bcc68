@@ -1,0 +1,179 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>About Assignment 4 - System Call</title>
+</head>
+
+<body>
+
+<h1>Assignment 4 (Multiprogramming) FAQ</h1>
+<p>&nbsp;</p>
+<p><i>Here are some suggestions and hints to help you with this project.</i></p>
+<p>&nbsp;</p>
+<h2><font color="#800000">Sections</font></h2>
+<ol>
+  <li><a href="#syscalls">System Calls</a></li>
+  <li><a href="#multi">Multiprogramming</a></li>
+</ol>
+<hr>
+<h2><font color="#800000"><a name="syscalls">System Calls</a></font></h2>
+<p><b>1. Our expectations for this whole multiprogramming environment project:</b></p>
+<p>Suppose there are two nachos USER programs named fileSysCalla and
+fileSysCallb (C source code: <a href="fileSysCalla.c">fileSysCalla.c</a>,
+<a href="fileSysCallb.c">fileSysCallb.c</a>), and three files <a href="myfile">myfile</a>,
+<a href="myfile_a">myfile_a</a>, <a href="myfile_b">myfile_b</a>.</p>
+<p><font face="Courier New"><code>$ cd userprog<br>
+$ ./nachos -x fileSysCalla<br>
+$ more myfile_a<br>
+09$87$65$-----------------------------</code></font></p>
+<p>For multiprogramming:&nbsp;</p>
+<p><font face="Courier New"><code>$ ./nachos -x fileSysCalla -x
+fileSysCallb<br>
+$ more myfile_a<br>
+09$87$65$-----------------------------<br>
+$ more myfile_b<br>
+09$87$65$-----------------------------</code></font></p>
+<p>Both files should be changed. Of course, the output should be together with the statistics information.</p>
+<p><b>2. Where to start?</b></p>
+<p>Part 1, Implement system calls.</p>
+<p>Read the file <code>userprog/syscall.h</code>, you will see the declarations for all the
+system class that you need to implement. They are the ONLY interface where the
+user program can ask nachos to do something.</p>
+<p>For example,&nbsp;the declaration for opening a file and reading is:</p>
+<p><font face="Courier New"><code>OpenFileId Open(char *name);<br>
+int Read(char *buffer, int size, OpenFileId id);<br>
+void Write(char *buffer, int size, OpenFileId id);</code><br>
+</font><br>
+So the Nachos user should be using <code>OpenFileId </code>(which is int in fact) to open a file and pass
+it as the argument to<code> Read(...).</code> He or she should not use the low level <font face="Courier New">
+<code>OpenFile()</code></font>
+available in <code>filesys/openfile.cc</code>.</p>
+<p><b>3. Modification?</b></p>
+<p>Now, in <code>userprog/exception.cc</code>.</p>
+<p><font face="Courier New">    <code>if ((which == SyscallException) &amp;&amp; (type == SC_Halt)) {
+... }</code></font></p>
+<p>Add the code for exit (implicitly required!), open, read, write.</p>
+<p>Arguments can be got by <font face="Courier New"><code>machine->ReadRegister(int)</code></font>.
+The return value is a integer (int), fortunately, all the arguments of system
+calls are integer in fact! Recall the concept of pointers in C/C++.</p>
+<p>Be careful with these pointers. For example, for <code>Write(...) </code>system call, the first argument (value is stored in register 4) is of
+type char*, which is a pointer pointing to the buffer where contains the
+data user wants to write to the file. Recall the pointer is actually the
+address of some data structure in the memory. Here, the pointer is the
+address of buffer for nachos user, which is the address in <b> NACHOS' MEMORY</b>,
+not the UNIX memory. But for your program, your code is running in Unix. If you
+directly pass the value, which is of the argument from register, to some <code>fputs/fprintf</code>
+Unix system calls, you are using address for Nachos memory to the Unix memory,
+which will definitely cause the core dump error. To access the Nachos
+memory, you may like to have a look at <font face="Courier New"> <code>Machine::ReadMem(...)</code>
+</font> function.</p>
+<p>To implement your code, you can use the underlying Unix system calls, or you can use some code already
+implemented in Nachos, such as <font face="Courier New"><code>fileSystem-&gt;Open()</code></font> 
+and <font face="Courier New"><code>OpenFile</code></font>
+ class.</p>
+<p><b>4. Any correct solution is welcome. :-)</b></p>
+<hr>
+<h2><font color="#800000"><a name="multi">Multiprogramming</a></font></h2>
+<p><b>1. What is the next step?</b></p>
+<p>Look at the current Nachos more closely. In <code>main()</code>, a lot of work is done in
+<code>Initialize(...)</code> and <code>StartProcess(...)</code>.</p>
+<p>Initialize(...) setup the whole environment (interrupt, scheduler, main
+thread) for Nachos system, together with statistics information (stats).
+Currently, if the randomYield is set (using option &quot;-rs&quot;), we will create
+a Timer object here, which will cause the time interrupts occur at random
+intervals.</p>
+<p>StartProcess(...) mainly open the executable file (file name is following by
+&quot;-x&quot; option), construct and initialize a space for it, prepare the
+execution of the program, and run it. When constructing the space (new
+AddrSpace(executable)), it load the program from disk to Nachos memory, and
+setup the pageTable. Because we do not have virtual memory <b>and we have only
+one user program at this time</b>, virtual page number is always equal to
+physical page number.</p>
+<p>Why not have a look at the time slicing now? Recall that if we run nachos in
+threads/ directory, we call ThreadTest() and we will have two threads run
+concurrently. This concurrent execution is handled by the cooperation of Initialize(...)
+(system.cc), Timer::Timer() (timer.cc), TimeHandler(...) (timer.cc), Timer::TimerExpired()
+(timer.cc), and TimerInterruptHandler(...) (system.cc). Their relation is as the
+follwoing:</p>
+<p>The &quot;<font face="Courier New">-&gt;</font>&quot; designates caller-callee
+relations.</p>
+<p>(1) At the beginning:</p>
+<p><font face="Courier New">Initialize(...)<br>
+&nbsp;&nbsp;&nbsp; |<br>
+&nbsp;&nbsp;&nbsp; v<br>
+&nbsp;Timer(...)&nbsp; // schedule the FIRST time interrupt</font></p>
+<p>(2) When a time interrupt (scheduled at sometime ago) happens, which is
+achieved by the work of Interrupt class:</p>
+<p><font face="Courier New">TimerHandler(...)<br>
+&nbsp;&nbsp;&nbsp; |<br>
+&nbsp;&nbsp;&nbsp; v<br>
+Timer::TimerExpired()&nbsp;&nbsp; // schedule NEXT time interrupt<br>
+&nbsp;&nbsp;&nbsp; |<br>
+&nbsp;&nbsp;&nbsp; v<br>
+TimerInterruptHandler(...)</font></p>
+<p>To understand the time interrupt better, just add some print out sentence at
+the beginning of the five functions, together some other info to trace the
+execution, such as stats->totalTicks. Run &quot;threads/nachos -rs -x
+test/halt&quot; and see the behavior. This can even be done before you finish
+the system calls!</p>
+<p><b>2. Multiprogramming</b></p>
+<p>Create different address space for different user programs. Now, the physical
+page number is not always the same as the virtual page number. To allocate
+memory, in Initialize(...), you need to create a bitmap representing the
+physical memory, so any time when you want to assign a physical page, you check
+the bitmap to find a free page in physical memory.</p>
+<p>Create different Thread object for different user programs, assign the
+address space to the thread. Append the thread into the scheduler's ready queue
+(Scheduler::ReadyToRun(Thread *thread)).</p>
+<p><b>3. Time Slicing</b></p>
+<p>Create Timer object regardless of whether or not randomYield is set. Write a
+function (named myHandler(...) for example) to switch in and out threads. Call
+myHandler(...) in TimerInterruptHandler(...).</p>
+<p><b>4. Read and Understand (minimum):</b></p>
+<p>Classes:<br>
+AddrSpace, Thread, Timer , Scheduler ...</p>
+<p>Functions:<br>
+main, Initialize, StartProcess ...</p>
+<p><b>5. AddrSpace::AddrSpace(...)</b></p>
+<p>For multiprogramming, the physical
+page number is not always the same as the virtual page number. To allocate
+memory, in Initialize(...), you need to create a bitmap or an offset to track
+what pages you have allocated, so any time when you want to assign a physical page, you
+can find one by the bitmap/offset.</p>
+<p><code>bzero(...)</code> is a Unix system call (check &quot;<code>man bzero</code>&quot;), and you need
+to modify this function call to zero out the address space<b> only for the
+current thread</b>. Be careful, do not erase any user programs that have been
+loaded in.</p>
+<p><code>executable-&gt;ReadAt(...)</code> is to load the user program from file to Nachos
+main memory. You need to modify the two calls so that you can <b>load different
+user programs to different places</b>. Otherwise, you will keep loading programs
+to the same memory locations and the previous ones will be overwritten. Be
+careful that you need to load the thread's program (data and code segments) to
+the exactly same address where its page table points to.</p>
+<p><b>6. StartProcess(...)</b></p>
+<p>Create different Thread object for different user programs, assign the
+address space to the thread. Set the thread's own copy of registers (<code>userRegisters[]</code>)
+to the initial user state (the expected values can be found at <code>AddrSpace::InitRegisters()</code>).</p>
+<p>Restore the register status (<code>Thread::RestoreUserState()</code>) and page table (<code>AddrSpace::RestoreState()</code>)
+to machine's hardware. Start a parallel execution of this thread, using <code>Thread::Fork(...)</code> to invoke
+<code>machine-&gt;Run()</code>.</p>
+<p><b>7. Context Switch</b></p>
+<p><code>Thread::SaveUserState()<br>
+Thread::RestoreUserState()</code></p>
+<p>Basically, once there is a Timer object, the time slicing and context switch
+has been done in the original Nachos. Good news? :-) But you may need to add
+some code for the part 3 (instrument).</p>
+<hr>
+<p><i>Courtesy of <a href="http://www.cs.pitt.edu/~zhou/">Shukang Zhou</a></i></p>
+<p>&nbsp;</p>
+<p><br>
+<br>
+</p>
+
+</body>
+
+</html>

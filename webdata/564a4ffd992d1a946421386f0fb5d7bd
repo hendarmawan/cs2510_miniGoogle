@@ -1,0 +1,104 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=big5">
+<title>E</title>
+<meta name="GENERATOR" content="Microsoft FrontPage 3.0">
+</head>
+
+<body bgcolor="#000080" text="#FFFFFF" link="#800080">
+
+<p>&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="5132.htm"><img
+src="../Banking%20Demo/previous.gif" width="26" height="26" alt="previous.gif (632 bytes)"></a> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;<font
+color="#FFFF00"><big>&nbsp;&nbsp; <big><big>Knowledge Systems Institute </big></big></big></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="51322.htm"><img
+src="../Banking%20Demo/next.gif" width="26" height="26" alt="next.gif (623 bytes)"></a>&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp; <font color="#FFFF80"><em>&nbsp; &nbsp;BA513 Multi-media Information Systems</em></font>&nbsp;&nbsp;&nbsp;&nbsp; 
+</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp; &nbsp;<strong>&nbsp;<big><font color="#FFFF00"> Wireless bank and WML</font></big></strong>&nbsp;&nbsp;</p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<font color="#C0C0C0">Prof : Dr. S.K Chang</font></p>
+
+<p><font color="#C0C0C0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Student 
+: Jin Lung Chen<big>&nbsp;&nbsp;</big></font></p>
+
+<p><font color="#FF8040"><big>How does a WAP device connect to the internet?</big></font></p>
+
+<p>The normal implementation of a WAP scenario looks pretty much like this: </p>
+
+<p><br>
+<img src="wapp1.jpg" width="379" height="219" alt="wapp1.jpg (32252 bytes)"><br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; In the figure above, starting from the left, 
+you'll find the mobile WAP device attached to the mobile network (GSM, CDDA, etc) which 
+dials the modem attached to a dial-in server (RAS, or Remote Access Service). This server 
+gives the WAP device access to the protocols it needs. These are the same lower level 
+protocols as a normal Internet Service Provider will give you. This is known as PPP or 
+Point-to-Point Protocol. <br>
+<br>
+These protocols are used to access the next step in the chain, the WAP gateway, in this 
+figure hosted by the mobile operator. The WAP gateway is the link between the wireless and 
+the &quot;web&quot; world, basically giving the WAP device access to the common internet. </p>
+
+<p><font color="#FF8040">(1) Wireless application <br>
+</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+IntegrationWireless develops applications that support WAP/WML, the standard for wireless 
+data access. This means that anyone with a WAP-phone or handheld computer with wireless 
+data access can use our applications. The devices support by the applications, which&nbsp; 
+run on phones from Nokia, Ericsson, Motorola, and almost any other wireless device. </p>
+
+<p><font color="#FF8040">(2) WAP gateway</font><br>
+<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A WAP gateway is a piece of software that has several 
+functions in the &quot;chain&quot; between the WAP device and the web server. These 
+functions are in general: </p>
+
+<p>*Converting the markup language (WML) from textual format to tokenized 
+(binary/compressed) format which is&nbsp;&nbsp;&nbsp; readable by the WAP device. <br>
+*Translating the requests from the WAP device to HTTP requests for the &quot;web&quot; 
+world. <br>
+*Convert between the SSL encryption used in the &quot;web&quot; world and the WTLS 
+encryption used in the WAP world. <br>
+*Convert between the &quot;transport&quot; protocol of the &quot;web&quot;, TCP, and that 
+of the WAP world, WDP. </p>
+
+<p>The reason for the conversion from texual WML to tokenized WML is to reduce bandwidth 
+usage. A WAP device's WML browser can only read tokenized WML. <br>
+</p>
+
+<p><font color="#FF8040">(3) Web sever</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; On the internet, there is a normal 
+&quot;web&quot; server which in this case holds both WAP and &quot;web&quot; contents, 
+which now receives the request to send out the contents located at the 
+http://wap.colorline.no/ URL. Also note the normal &quot;web&quot; browser at the lower 
+part of the figure. The web server, depending on which type of browser it is talking to 
+(WAP or &quot;web&quot;), sends out WAP, represented by the blue line, or &quot;web&quot; 
+content represented by the green line.</p>
+
+<p><font color="#FF8040">(4) URL</font></p>
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; The URL, the WML browser, when 
+receiving the tokenized WML code renders the contents on the WAP device's display to 
+present a card for the user. </p>
+
+<p>　</p>
+
+<p><br>
+<br>
+<br>
+</p>
+
+<p>　</p>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Times"> 
+	
+			<A href="./Page5.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./Page7.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		<br>
+		<br>
+		<br>
+			<center> 
+				<h1>Examples of connectivity</h1>
+				<h2>REST</h2>
+			</center>
+			
+		</font>
+		
+		
+		<font size = 2 face="Arial"> 
+		
+        <ul class="star">
+            <li>
+                ActiveMQ implements a REST-ful API to messaging which allows any web capable device to publish or consume messages using a regular HTTP POST or GET.
+                
+            </li>
+            <li>
+                Mapping of REST to JMS
+                <ul>
+                    <li>
+                    ActiveMQ has a Servlet that takes care of the integration between HTTP and the ActiveMQ dispatcher
+                    </li>
+                    <li>
+                    You can map a URI to the servlet and then&nbsp; HTTP POST to: <b>
+http://www.acme.com/queue/orders/input</b>
+                    </li>
+                    <li>
+                        You can perform a HTTP GET on the same URL to read the same queue
+                    </li>
+                </ul>
+            </li>
+            
+        </ul>
+			<br>
+			
+		</font>
+	</BODY>
+</html>

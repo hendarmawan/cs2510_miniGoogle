@@ -1,0 +1,31 @@
+<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="14.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left></A> 
+<A href="16.htm"><IMG height=26 src="images/next.gif" width=26 align=right></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>Weighted Petri Nets</H1>
+</CENTER>
+
+<UL><UL><UL> <UL><UL><UL>
+  <LI><FONT size=5>Generalized the original Petri net to allow 
+            <FONT color=mediumblue>multiple tokens</FONT>         to be
+added/removed when a transition fires</FONT>
+  <LI><FONT size=5>The edges 
+            are labeled with the <FONT color=mediumblue>weight</FONT>       (i.e., number of tokens)</FONT>
+  <LI><FONT size=5>If there 
+            is no label, then the <FONT color=mediumblue>default value is 
+            1</FONT>          </FONT></LI>
+</UL></UL></UL></UL></UL></UL>
+
+<CENTER>
+<H3>Before Firing<BR>
+<IMG src="images/weight1.jpg">
+<BR><BR>After Firing<BR>
+<IMG src="images/weight2.jpg"></H3>
+</CENTER>
+
+</BODY></HTML>

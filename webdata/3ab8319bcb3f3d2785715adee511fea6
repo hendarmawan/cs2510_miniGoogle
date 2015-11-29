@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta name="generator" content="hypermail 2.1.8, see http://www.hypermail.org/" />
+<title>cfps.txt: ICST - SecureComm 2009 - Call for Papers</title>
+<meta name="Author" content="info@icstconferences.org (info@icstconferences.org)" />
+<meta name="Subject" content="ICST - SecureComm 2009 - Call for Papers" />
+<meta name="Date" content="2008-11-26" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>ICST - SecureComm 2009 - Call for Papers</h1>
+<!-- received="Wed Nov 26 00:22:16 2008" -->
+<!-- isoreceived="20081126052216" -->
+<!-- sent="Wed, 26 Nov 2008 00:22:05 -0500" -->
+<!-- isosent="20081126052205" -->
+<!-- name="info@icstconferences.org" -->
+<!-- email="info@icstconferences.org" -->
+<!-- subject="ICST - SecureComm 2009 - Call for Papers" -->
+<!-- id="E1L5Cqj-0000Oh-KL@vps.icstconferences.org" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ <a href="#options2">More options</a> ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="0016.html" title="info@icstconferences.org: &quot;ICST - AdHocNets 2009 - Call for Workshops&quot;">Next message</a> ]
+[ <a href="0014.html" title="Thomas Nolte: &quot;CFP: FeBID 2009, in conjunction with RTAS 2009&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: &lt;<a href="mailto:info&#64;icstconferences.org?Subject=Re:%20ICST%20-%20SecureComm%202009%20-%20Call%20for%20Papers">info@icstconferences.org</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed Nov 26 2008 - 00:22:05 EST</span><br />
+</address>
+<p>
+&nbsp;=====================================================================    
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CALL FOR PAPERS
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SECURECOMM 2009
+<br />
+<p>&nbsp;&nbsp;&nbsp;Fifth International ICST Conference on Security and Privacy for
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Communication Networks
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Athens, Greece, September 14-18, 2009
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL: <a href="http://www.securecomm.org">http://www.securecomm.org</a>
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sponsored by:
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ICST (www.icst.org)
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Co-Sponsored By:
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Create-Net (www.create-net.it)
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PAPER SUBMISSION DEADLINE is March 31, 2009 (11:59 PM CDT)
+<br />
+<p>&nbsp;=====================================================================
+<br />
+SecureComm seeks high-quality research contributions in the form of
+<br />
+well developed papers. Topics of interest encompass research advances
+<br />
+in ALL areas of secure communications and networking. However, topics
+<br />
+in other areas (e.g., formal methods, database security, secure
+<br />
+software, foundations of cryptography) will be considered only if a
+<br />
+clear connection to private or secure communications/networking is
+<br />
+demonstrated. The aim of SecureComm is to bring together security and
+<br />
+privacy experts in academia, industry and government as well as
+<br />
+practitioners, standards developers and policy makers, in order to
+<br />
+engage in a discussion about common goals and explore important
+<br />
+research directions in the field. SecureComm also serves as a venue
+<br />
+for learning about state-of-the-art in security and privacy research,
+<br />
+giving attendees the opportunity to network with experts in the field.
+<br />
+Presentations reporting on cutting-edge research results are
+<br />
+supplemented by panels on controversial issues and invited talks on
+<br />
+timely and important topics.
+<br />
+<p>PAPERS: Technical papers describing original research contributions are
+<br />
+solicited. Submissions must not be concurrently under review by a
+<br />
+conference, journal or any other venue that has proceedings.
+<br />
+<p>SUBMISSION INSTRUCTIONS: Only PDF formats are accepted for all
+<br />
+submissions.  Paper submissions must not exceed 10 pages in IEEE
+<br />
+conference style, two-column format, not including the
+<br />
+bibliography. Well-marked appendices of up to 2 pages are allowed but
+<br />
+will be read only at the discretion of reviewers.  All submitted
+<br />
+papers will be judged based on their quality through *double-blind*
+<br />
+reviewing, where the identities of the authors are withheld from the
+<br />
+reviewers. Authors' names must not appear in the paper.  Complete
+<br />
+paper submission instructions are available at the conference website.
+<br />
+<p>TOPICS of interest include, but are not limited to, the following:
+<br />
+<p>* Security &amp; Privacy in Wired, Wireless, Mobile, Hybrid, Sensor, Ad
+<br />
+&nbsp;&nbsp;Hoc networks 
+<br />
+* Network Intrusion Detection and Prevention, Firewalls, Packet Filters
+<br />
+* Malware and botnets
+<br />
+* Communication Privacy and Anonymity
+<br />
+* Distributed denial of service
+<br />
+* Public Key Infrastructures, key management, credentials
+<br />
+* Web security
+<br />
+* Secure Routing, Naming/Addressing, Network Management
+<br />
+* Security &amp; Privacy in Pervasive and Ubiquitous Computing, e.g., RFIDs
+<br />
+* Security &amp; Privacy for emerging technologies: VoIP, peer-to-peer and
+<br />
+&nbsp;&nbsp;&nbsp;overlay network systems, Web 2.0
+<br />
+<p>WORKSHOPS: Proposals for one-day workshops to be held in conjunction
+<br />
+with the conference are solicited. A maximum of 2 pages should be
+<br />
+submitted which include the workshop name, its scope and a list of
+<br />
+topic of interests.  Proposals should be submitted to the General
+<br />
+Chair by April 1, 2009.
+<br />
+<p>DEMOS: Proposals for research and industrial demos are solicited. A
+<br />
+maximum of 2 pages should be submitted which include a description of
+<br />
+the demo and needed resources from the conference
+<br />
+organizers. Proposals should be submitted to the General Chair by June
+<br />
+1, 2009.
+<br />
+<p>IMPORTANT DATES
+<br />
+--------------------
+<br />
+Paper Submission: March 31, 2009
+<br />
+Notification of Acceptance: June 12, 2009
+<br />
+Camera-ready Version: July 9, 2009
+<br />
+<p>======================================================
+<br />
+CONFERENCE ORGANIZING COMMITTEE
+<br />
+<p>General Chair
+<br />
+-------------
+<br />
+Peng Liu, Penn State University, USA
+<br />
+<p>TPC Chairs
+<br />
+----------
+<br />
+Yan Chen, Northwestern University, USA
+<br />
+Tassos Dimitriou, Athens Information Technology, Greece
+<br />
+<p>Steering Committee
+<br />
+--------------------
+<br />
+Imrich Chlamtac (Chair), Create-Net, Italy
+<br />
+Krishna Sivalingam (Co-chair), University of Maryland Baltimore
+<br />
+County, USA / Indian Institute of Technology Madras
+<br />
+<p><p><p>--------------------------------------------------
+<br />
+You are reading ICST conference newsletter. To report any kind of abuse, please contact admin at icst.org.
+<br />
+To unsubscribe, please visit the following page: <a href="http://icstconferences.org/unsubscribe.php?p=nmyxnaplvi">http://icstconferences.org/unsubscribe.php?p=nmyxnaplvi</a> and enter your email address.
+<br />
+<span id="received"><dfn>Received on</dfn> Wed Nov 26 00:22:16 2008</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="0016.html" title="Next message in the list">info@icstconferences.org: "ICST - AdHocNets 2009 - Call for Workshops"</a></li>
+<li><dfn>Previous message</dfn>: <a href="0014.html" title="Previous message in the list">Thomas Nolte: "CFP: FeBID 2009, in conjunction with RTAS 2009"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#15" title="Contemporary messages by date">By Date</a> ] [ <a href="index.html#15" title="Contemporary discussion threads">By Thread</a> ] [ <a href="subject.html#15" title="Contemporary messages by subject">By Subject</a> ] [ <a href="author.html#15" title="Contemporary messages by author">By Author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">By messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail.org/">hypermail 2.1.8</a> 
+: Mon Dec 08 2008 - 11:59:50 EST
+</em></small></p>
+</body>
+</html>

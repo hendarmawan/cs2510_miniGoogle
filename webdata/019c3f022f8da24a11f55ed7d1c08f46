@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>CS2750 / ISSP2170</title>
+<link rel="stylesheet" href="http://www.cs.pitt.edu/~hwa/cs2750/styles-site.css" type="text/css" />
+</head>
+
+<body>
+<div id="banner">
+<h1><a href="http://www.cs.pitt.edu/~hwa/cs2750/" accesskey="1">CS2750 / ISSP2170</a></h1>
+<span class="description">Machine Learning</span>
+</div>
+
+<div id="content">
+<div class="blog">
+<div class="blogbody">
+
+<h3 class="title">Course Information</h3><br/>
+
+Time and place: &nbsp; TTh 1:00-2:15pm (Term 2134), SENSQ 5313<br/> 
+Prerequisite:&nbsp; Math 0280, STAT 1151, STAT 1000, CS1501, or by
+the instructor's permission.<br/><br/>
+
+<h3 class="title">Suggested Reference Textbooks</h3><br/>
+<p>The following books will be on reserve at the Hillman Library.
+
+<ul>
+<li>Tom Mitchell. 1997. <a
+href="http://www.amazon.com/exec/obidos/ASIN/0070428077/qid=1102634730/sr=2-1/ref=pd_ka_b_2_1/103-8062631-9951031">Machine
+Learning</a>. McGraw-Hill.<br/>
+<img align=top src="http://images.amazon.com/images/P/0070428077.01.THUMBZZZ.jpg">
+
+<li>Christopher Bishop. 2006. 
+<a href="http://www.amazon.com/Pattern-Recognition-Learning-Information-Statistics/dp/0387310738/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1199566052&sr=8-1">
+Pattern Recognition and Machine Learning</a>. Springer.<br/>
+<img align=top src="http://ecx.images-amazon.com/images/I/612j5Uo43eL._SL500_PIsitb-sticker-arrow-big,TopRight,35,-73_OU01_SS75_.jpg">
+
+<li>Stuart Russell and Peter Norvig. 2010 <a href="http://www.amazon.com/Artificial-Intelligence-Modern-Approach-ebook/dp/B004O4BZ16">Artificial Intelligence: A Modern Approach</a>. Prentice Hall. <br/>
+<img align=top
+src="http://ecx.images-amazon.com/images/I/51bi4EnYE1L._SL500_PIsitb-sticker-arrow-big,TopRight,35,-73_OU01_SS75_.jpg">
+
+<li>Trevor Hastie, Robert Tibshirani, Jerome Friedman.  2009. <a
+href="http://www.amazon.com/Elements-Statistical-Learning-Prediction-Statistics/dp/0387848576">The
+Elements of Statistical Learning (Second Ed.)</a>.  Springer-Verlag.<br/>
+<img align=top src="http://ecx.images-amazon.com/images/I/412l0OvYqwL._SL500_PIsitb-sticker-arrow-big,TopRight,35,-73_OU01_SS75_.jpg">
+
+<li>Richard O. Duda, Peter E. Hart, David G. Stork. 2000. 
+<ahref="http://www.amazon.com/exec/obidos/tg/detail/-/0471056693/qid=1102635194/sr=1-1/ref=sr_1_1/103-8062631-9951031?v=glance&s=books">Pattern
+Classification.</a>  2nd ed.  Wiley-Interscience.<br/>
+<img align=top src="http://images.amazon.com/images/P/0471056693.01.THUMBZZZ.jpg">
+
+<li>S. Marsland. 2009. <a href="http://www.amazon.com/Machine-Learning-Algorithmic-Perspective-Recognition/dp/1420067184/ref=pd_bxgy_b_img_c">Machine Learning: An Algorithmic Perspective</a>. Chapman and Hall.<br/>
+<img align=top src="http://ecx.images-amazon.com/images/I/41o11gP3WpL._SL500_PIsitb-sticker-arrow-big,TopRight,35,-73_OU01_SS75_.jpg">
+
+</ul> 
+
+<br/><br/>
+
+<h3 class="title">Instructor</h3><br/>
+
+<a href="http://www.cs.pitt.edu/~hwa/">Rebecca Hwa</a>, SENSQ 5103<br/>
+Email: &nbsp; hwa at cs<br/>
+Office Hours: &nbsp; TTh 12-1 or by appointment<br/><br/>
+
+<h3 class="title">Teaching Assistant (Grading)</h3><br/> 
+Yoonjung Choi<br/>
+Email: yjchoi at cs<br/>
+
+</div>
+</div>
+<div class="blog">
+<h3 class="title">Class Announcements</h3><br/>
+
+        <h2 class="date">January 08, 2013</h2>
+	<div class="blogbody">
+	<h3 class="title">Introduction</h3>
+	
+	<p>Welcome to machine learning. Please read through the course policy.
+	
+	</div>
+</div>
+	
+<hr>
+
+<h3 class="title">Acknowledgements</h3></br>
+
+<p>Some of the materials used in this course are based on the courses
+of Lise Getoor, Milos Hauskrecht, Vasant Honavar, Thorsten Joachims,
+Michael Littman, Andrew Moore, Andrew Ng, Ray Mooney, Ron Rivest, Lawrence Saul, Rocco Servedio and the CMU courses 10-701 and 15-781.
+
+</div>
+
+<div id="links">
+<div class="side">
+<a href="index.html">Home</a><br/>
+<a href="policy.htm">Course Policies</a><br/>
+<a href="syl.htm">Syllabus</a><br/>
+<a href="links.htm">Links</a><br/>
+</div>
+
+<br clear="all" />
+
+</body>
+</html>

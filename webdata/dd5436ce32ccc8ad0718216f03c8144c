@@ -1,0 +1,479 @@
+<HTML>
+<HEAD>
+<TITLE>GDB Primer</TITLE>
+</HEAD>
+<body bgcolor="#ffffff" text="#444444" LINK="#ee6622" VLINK="#cf0022"
+ALINK="#000000">
+
+<BODY>
+<BR>
+
+<FONT SIZE="9" FACE="Verdana"><B>GDB Primer</B></FONT>
+<FONT SIZE="6" FACE="Verdana">for CS1550 Project</FONT><P>
+<FONT SIZE="3" FACE="Verdana">(prepared by Takashi Okumura, aka taka)</FONT><P>
+
+<HR>
+<H1>What is it?</H1>
+
+<B>gdb</B> is an utility for debugging and executing programs. 
+
+<H1>Why <B>gdb</B>, even though we have printf()?</H1>
+
+So-called <I>printf debugging</I> may be useful for chasing the
+macroscopic flow of a program. This is typically done by coding
+Debug() function into the program. However, debugging requires
+<I>microscopic</I> tracing of program and inspection of variables,
+though printf() needs to be explicitly embeded into program before
+compile time. Thus, it is not practical for debugging.<P>
+
+Professional programmers use <I>debuggers</I>, instead, for debugging.
+It is extremely useful, once becomes familiar, and provides way to
+<B>trace</B> flows, <B>inspect</B> variables, and <B>locate</B> points
+of failure at runtime.
+
+
+<H1>How about <B>ddd</B>, or <B>xgdb</B>?</H1>
+
+Yes, you may use these packages as well. They are basically just an
+interface to <B>gdb</B>, which provides the same functionality.<P>
+
+However, the heart of debugging is the <I>interactive inspection of
+flows and variables</I>. Since they need mouse operations everytime,
+you may have frustration.<P>
+
+For those of you who have experience with graphical debuggers, you may
+continue using them. The same idea in the lecture applies to most of
+them.
+
+
+<H1>Scenario</H1>
+
+<H2><I>segmentation fault</I></H2>
+
+Most of the serious bugs result in this error, and in termination of
+program. Formally speaking, they are caused by accessing addresses
+outside of the assigned address space. However, practically speaking,
+99% of the segmentation fault bugs we have is caused by <I>the memory
+reference with a null pointer</I>. (A <I>null pointer</I> is a pointer
+with null value.) The rest is by using <I>out of range index</I>.<BR>
+
+Anyhow, it is difficult to detect which pointer is the cause and where
+it occurs with <I>printf debugging</I>.
+
+<H2><I>bus error</I></H2>
+
+You may have not seen this one. But, it is one of the common runtime
+error, which causes the termination of process. This happens basically
+when a CPU uses a pointer with misaligned address. Most CPUs accesses
+memory in a chunk for performance reason nowadays.  Thus, they cannot
+execute instructions with badly aligned address and terminates. This
+is mostly caused by bugs in pointer handling routine. It is also
+difficult to find with printf.<P>
+
+
+<H2><I>silent bug</I></H2>
+
+You may have had a bug in which a program goes astray, without
+crashing, or printing any useful information. Without such clue, you
+cannot track the cause down. You might have embedded a number of
+printfs into the code, but it is clearly inefficient.<P>
+
+If you run the program on <B>gdb</B>, you can stop and locate the
+point of execution by just sending a break signal any time.  Then you
+can trace or inspect. It's much more efficient.<P>
+
+Now you should have been enlightened enough.
+
+<HR>
+
+<H1>How to use?</H1>
+
+To be debugged with <B>gdb</B>, target program written in C or C++
+needs to be compiled with the <B>-g</B> option. Note that you should
+not use optimization option such as -01 and -02.<P>
+
+<PRE>
+%cc -g -o filename filename.c ...
+%gcc -g filename.c
+</PRE>
+
+If you use makefile, put the <B>-g</B> option into appropriate line of
+your Makefile.<P>
+
+Now, to start off <B>gdb</B>, type <I>gdb filename</I> at the command
+line. A few messages are printed, and then you are left at the
+<B>(gdb)</B> prompt:<P>
+
+<PRE>
+%gdb filename
+%gdb
+GNU gdb 4.18
+Copyright 1998 Free Software Foundation, Inc.
+GDB is free software, covered by the GNU General Public License, and you are
+welcome to change it and/or distribute copies of it under certain conditions.
+Type "show copying" to see the conditions.
+There is absolutely no warranty for GDB.  Type "show warranty" for details.
+This GDB was configured as "i386-unknown-freebsd".
+(gdb) _
+</PRE>
+
+Or, you may use <I>file</I>command to read an executable at prompt:<P>
+
+<PRE>
+%gdb filename
+[messages]
+(gdb) file filename
+(gdb) _
+</PRE>
+
+
+<HR>
+<H1>Important Command list</H1>
+
+Some of the important and most often used commands are listed and
+briefly explained below. Actually, these are all you need to debug
+with <B>gdb</B>:<P>
+
+<H2> Execution control</H2>
+
+<UL>
+<LI><B>break</B> <I>line</I>
+<LI><B>break</B> <I>file_name:line</I>
+<LI><B>break</B> <I>function_name</I>
+<LI><B>b</B><P>
+
+Used to set a breakpoint at the line or function. In the case of the
+<I>line</I>, execution is stopped before any code on the line is
+executed. In the case of <I>function_name</I>, execution stops when
+the function is called.<P>
+
+<LI><B>run</B>
+<LI><B>run</B> <I>args</I>
+<LI><B>r</B><P>
+
+Start execution of the program. If breakpoints are set, execution stops
+when the breakpoint is reached. Otherwise, the program runs to
+completion. <B>gdb</B> prints a message stating the status of the
+program on termination.<P>
+
+<LI><B>continue</B>
+<LI><B>c</B><P>
+
+Continue execution from where it stopped.<P>
+
+<LI><B>step</B>
+<LI><B>step</B> <I>[n]</I><P>
+
+Execute the next or next n source line(s). This command steps
+<I>into</I> functions. Argument N means do this N times.<P>
+
+<LI><B>next</B><P>
+<LI><B>next</B> <I>[n]</I><P>
+
+Same as <B>step</B>, but the command <I>passes</I> functions, treating
+them as if they were single statements.
+Argument N means do this N times.<P>
+
+<LI><B>until</B><P>
+
+Execute until the program reaches a source line greater than
+the current. If your program enters a <I>for</I> loop
+and you grow weary of typing next, you can use the command
+to exit the loop.<P>
+
+
+<LI><B>finish</B><P>
+Execute until current function return.<P>
+</UL>
+
+<H2>Breakpoint management</H2>
+
+<UL>
+<LI><B>delete</B><P>
+
+Deletes all breakpoints.<P>
+
+<LI><B>clear</B> <I>function</I>
+<LI><B>clear</B> <I>line</I><P>
+
+Deletes any breakpoints set on the line or at the entry of function.<P>
+</UL>
+
+<H2>Listing of program</H2>
+
+<UL>
+<LI><B>list</B> <I>sourceline</I>
+<LI><B>list</B> <I>function</I>
+<LI><B>list</B> <I>[+|-]</I>
+<LI><B>list</B>
+<LI><B>l</B><P>
+
+Print 10 lines centered at sourceline, or starting from the beginning
+of function. <B>list</B> print 10 more lines, whereas <B>list -</B>
+prints 10 lines before the last printing.<P>
+</UL>
+
+<H2>Examination of data</H2>
+
+<UL>
+<LI><B>print</B> <I>expression</I><P>
+
+Print the value of <I>expression</I>. The contents of variables in the
+program can be viewed through this command.<P>
+
+<UL>
+<LI><B>print</B> <I>i</I><P>
+
+Print the value of variable <I>i</I>.<P>
+
+<LI><B>print</B> <I>*p</I><P>
+
+Print the contents of memory pointed by <I>p</I>,
+where <I>p</I> is a pointer variable.<P>
+
+<LI><B>print</B> <I>x</I><P>
+
+Check all the members of a structure, assuming <I>x</I> is
+a structure.<P>
+
+<LI><B>print</B> <I>x.field</I><P>
+
+Check the members of a structure.<P>
+
+<LI><B>print</B> <I>p->field</I><P>
+
+Check a member of a structure, assuming <I>p</I> is
+a pointer to a structure.<P>
+
+<LI><B>print</B> <I>array[i]</I><P>
+
+Print the i'th element of array.<P>
+
+<LI><B>print</B> <I>array</I><P>
+
+Print all the element of array, assuming <I>array</I> is
+an array.<P>
+</UL>
+
+<LI><B>display</B> <I>expression</I><P>
+
+Print value of <I>expression</I> each time the program stops.<P>
+
+<LI><B>delete display</B><P>
+
+Cancel some expressions to be displayed when program stops.<P>
+</UL>
+
+<H2>Examination of Stack</H2>
+
+<UL>
+<LI><B>bt</B>
+<LI><B>where</B><P>
+
+Print a backtrace of all the active functions on the execution stack.
+This is very useful in determining the location of execution, and
+order in which functions call each other.<P>
+
+<LI><B>frame</B> <I>number</I><P>
+
+Select and print a stack frame.<P>
+
+<LI><B>up</B><P>
+
+Select and print a stack frame (function) that called this one.<P>
+
+<LI><B>down</B><P>
+
+Select and print a stack frame called by this one.<P>
+</UL>
+
+<H2>Others</H2>
+
+<UL>
+<LI><B>help</B>
+<LI><B>help</B> <I>category</I>
+<LI><B>help</B> <I>command</I><P>
+
+Display the set of commands available in <B>gdb</B>. The last two
+display the usage, and information about command categories, and
+commands.<P>
+
+<LI><B>kill</B>
+<LI><B>k</B><P>
+
+Kill execution of the program being run. Typically used to prepare to
+re-start the program from the beginning.<P>
+
+<LI><B>quite</B><P>
+
+Exit <B>gdb</B>.<P>
+
+<LI><I>return</I><P>
+
+Typing of <I>return</I> will repeat the previous command.
+You can use this method to quickly step through the program
+with <B>next</B> or <B>step</B>. Or, you may want to use
+this to quickly browse your program with <B>list</B> command.<P>
+</UL>
+
+<HR>
+
+<H1>Debugging sequence</H1>
+
+Here is a sample debugging sequence.
+
+<H3>Got a segmentation fault</H3>
+
+<PRE>
+%nachos ... 
+segmentation fault
+%
+</PRE>
+
+<H3>Run on <B>gdb</B></H3>
+
+<PRE>
+%gdb nachos
+<startup messages>
+(gdb) run ...
+segmentation fault at line xxx of yyy.cc.
+(gdb)
+</PRE>
+
+<B>gdb</B> will show you the location of the error.
+(It stops execution automatically, and prints error messages)
+
+<H3>Check the program</H3>
+
+<PRE>
+(gdb) list
+       19 {
+       20     int sum = 0;
+       21     int i;
+       22
+       23     for(i = 0;;i++)
+       24        sum += *ptrs[i];
+       25 }
+       26
+       27
+       28 void PrintArray()
+(gdb) print i
+       $1 = 23424592334
+</PRE>
+
+Use <B>list</B> command, and check the lines around the
+point of failure. You may use <B>print</B> command to
+check the value of variables.<P>
+
+If you could find the cause, just fix it, compile the source code, and
+run it again. Otherwise, proceed to next step.
+
+<H3>Set a breakpoint at the beginning of the code segment</H3>
+
+You may set a breakpoint at the beginning of the function of interest.
+Just run the program, and trace the lines with <B>next</B> command,
+checking the variables. Iterate the procedure, until you find the cause.
+
+<BR>
+<HR>
+
+<h1>Nachos thread switching</h1>
+
+<p> Set breakpoints at the beginning of <samp>P()</samp> and
+<samp>V()</samp> and use the <samp>C-x </samp><em>space</em> command
+to set breakpoint before and after the call to <samp>SWITCH()</samp>
+in <samp>Scheduler::Run()</samp>.
+
+<p> Now run the program using <samp>run</samp>.  Let it continue until
+it gets top the first call to <samp>P()</samp>.  Use <samp>where</samp>
+to observe the stack.  We are in <samp>foo()</samp>:
+
+<pre>
+(gdb) where
+#0  Semaphore::P (this=0x29768) at ../threads/synch.cc:67
+#1  0x154c0 in foo (unused=0) at ../threads/threadtest.cc:11
+</pre>
+
+Continue execution until you reach the <samp>SWITCH()</samp> call.  We
+are still in <samp>foo()</samp>:
+
+<pre>
+(gdb) where
+#0  Scheduler::Run (this=0x29250, nextThread=0x29700)
+    at ../threads/scheduler.cc:116
+#1  0x14d7c in Thread::Sleep (this=0x296a0) at ../threads/thread.cc:225
+#2  0x134cc in Semaphore::P (this=0x29768) at ../threads/synch.cc:71
+#3  0x154c0 in foo (unused=0) at ../threads/threadtest.cc:11
+</pre>
+
+Now let execution continue.  It stops at a call to <samp>V()</samp>.
+Now we are in the <samp>bar()</samp> thread, as the stack shows:
+
+<pre>(gdb) where
+#0  Semaphore::V (this=0x29768) at ../threads/synch.cc:91
+#1  0x15520 in bar (unused=0) at ../threads/threadtest.cc:20
+</pre>
+
+Continue again and we stop at <samp>P()</samp>, still in the
+<samp>bar()</samp> thread.  Continue one more time and
+<samp>bar()</samp> is about to switch back to <samp>foo()</samp>.
+
+<pre>(gdb) where
+#0  Scheduler::Run (this=0x29250, nextThread=0x296a0)
+    at ../threads/scheduler.cc:116
+#1  0x14d7c in Thread::Sleep (this=0x29700) at ../threads/thread.cc:225
+#2  0x134cc in Semaphore::P (this=0x29780) at ../threads/synch.cc:71
+#3  0x15530 in bar (unused=0) at ../threads/threadtest.cc:21
+</pre>
+
+Continue one more time and observe that we stop right after the
+switch.  It appears as though <samp>SWITCH()</samp> has returned
+normally.  But observe the stack:
+
+<pre>(gdb) where
+#0  Scheduler::Run (this=0x29250, nextThread=0x29700)
+    at ../threads/scheduler.cc:118
+#1  0x14d7c in Thread::Sleep (this=0x296a0) at ../threads/thread.cc:225
+#2  0x134cc in Semaphore::P (this=0x29768) at ../threads/synch.cc:71
+#3  0x154c0 in foo (unused=0) at ../threads/threadtest.cc:11
+</pre>
+
+We are now back in the <samp>foo()</samp> thread!
+
+<HR>
+
+<H1>Reference</H1>
+<UL>
+
+<LI><A HREF="http://ace.cs.ohiou.edu/morton/docs/gdb_manual/gdb.html">
+http://ace.cs.ohiou.edu/morton/docs/gdb_manual/gdb.html</A><P>
+
+The gdb manual. You can find this everywhere on the net.<P>
+
+<LI><A HREF="http://www.cs.hmc.edu/tech_docs/qref/c++/gdb.html">
+http://www.cs.hmc.edu/tech_docs/qref/c++/gdb.html</A><P>
+
+A practical guide.<P>
+
+<LI><A HREF="http://www.cs.rochester.edu/u/vallino/swguides/gdb.html">
+http://www.cs.rochester.edu/u/vallino/swguides/gdb.html</A><P>
+
+Illustrates the major commands.<P>
+
+
+<LI><A HREF="http://www.math.luc.edu/~ziff/courses/os/cs410/lec0218.html">
+http://www.math.luc.edu/~ziff/courses/os/cs410/lec0218.html</A><P>
+
+The nachos example above is taken from the document.<P>
+
+<LI><A HREF="http://www.gnu.org/manual/ddd/html_mono/ddd.html">
+http://www.gnu.org/manual/ddd/html_mono/ddd.html</A><P>
+
+DDD (GUI interface to gdb) manual page at gnu.org.<P>
+</UL>
+
+
+<HR>
+<I>Last changed: 6 Apr 2000; taka@cs.pitt.edu</I>
+</BODY>
+</HTML>

@@ -1,0 +1,31 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="page3.html"><img src="previous.gif" align=left></a>
+<a href="page5.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>What They Currently Do</h1>
+   <br></br>
+Currently, image search engines do not have these six idealistic features
+incorporated with them. But what they do have are the following:
+<ul>
+   <li>Search by keywords and fomal attributes</li>
+   <li>Display the image as part of your search results</li>
+</ul>
+<br>
+Searching internal databases to a site are currently off-limits to search
+engines, leaving this feature's implementation in doubt.
+<br><br>
+Finding the rights-holder to an image can be easily found using Google,
+but some problems may arise. For example, Google returns the URL to the
+page where the image was found. This can make finding the rights-holder to
+the image quite trivial. However, problems arise when an image found in a
+given domain resides in a different domain. This can make the task of
+tracking the true owner of the image a time-consuming and sometimes
+difficult task, but usually can be done.
+</font>
+</html>
+

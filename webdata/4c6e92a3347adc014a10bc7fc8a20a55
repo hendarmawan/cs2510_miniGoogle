@@ -1,0 +1,147 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<link rel="File-List" href="p14filelist.xml">
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]--><!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+
+
+
+
+<body>
+
+<p><a href="p13.htm"><img border="0" src="previous.gif" width="26" height="26"></a><font face="Verdana" size="6" color="#0000FF">Where does COM+ 
+stand in the big picture?</font>
+<a href="p15.htm"><img border="0" src="next.gif" width="26" height="26"></a></p>
+<p></p>
+<p><!--[if gte vml 1]><v:rect id="_x0000_s1028"
+ style='position:absolute;left:537pt;top:243pt;width:228pt;height:306pt;
+ z-index:0' fillcolor="#ffc66d" strokecolor="white" strokeweight="1pt">
+ <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+  endarrowlength="short"/>
+ <v:shadow color="black"/>
+ <v:textbox>
+<dir>
+  <b><font FACE="Tahoma">
+  <p ALIGN="CENTER">COM+ Applications</p>
+  </font><font FACE="Tahoma" SIZE="6">
+  <p ALIGN="CENTER"></p>
+  </font><font FACE="Tahoma">
+  <p>Component-based</p>
+  <p>Flexible and dynamic</p>
+  <p>Built-in scalability</p>
+  <p>Preserve current investments</p>
+  <p>Extensible services</p>
+</dir>
+</font></b></v:textbox>
+</v:rect><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:0;left:715px;top:323px;width:310px;height:414px'><img
+width=310 height=414 src="p14image001.gif"
+alt="Text Box: COM+ Applications&#13;&#10;&#13;&#10;Component-based&#13;&#10;Flexible and dynamic&#13;&#10;Built-in scalability&#13;&#10;Preserve current investments&#13;&#10;Extensible services&#13;&#10;"
+v:shapes="_x0000_s1028"></span><![endif]><!--[if gte vml 1]><v:shapetype id="_x0000_t15"
+ coordsize="21600,21600" o:spt="15" adj="16200" path="m@0,l,,,21600@0,21600,21600,10800xe">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="val #0"/>
+  <v:f eqn="prod #0 1 2"/>
+ </v:formulas>
+ <v:path gradientshapeok="t" o:connecttype="custom" o:connectlocs="@1,0;0,10800;@1,21600;21600,10800"
+  o:connectangles="270,180,90,0" textboxrect="0,0,10800,21600;0,0,16200,21600;0,0,21600,21600"/>
+ <v:handles>
+  <v:h position="#0,topLeft" xrange="0,21600"/>
+ </v:handles>
+</v:shapetype><v:shape id="_x0000_s1027" type="#_x0000_t15" style='position:absolute;
+ left:313.5pt;top:235.5pt;width:3in;height:330pt;z-index:0;v-text-anchor:middle'
+ adj="14450" fillcolor="#a964dc" strokecolor="white" strokeweight="1pt">
+ <v:fill color2="#35217f"/>
+ <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+  endarrowlength="short"/>
+ <v:shadow color="black"/>
+ <v:textbox>
+<dir>
+  <font FACE="Tahoma" COLOR="#ffffff"><b>
+  <p>Windows DNA</p>
+  </b>
+  <p>Integrates client/server and the web</p>
+  <p>Services that work together</p>
+  <p>Open protocols and published interfaces</p>
+  </font><font FACE="Tahoma" SIZE="6" COLOR="#ffffff">
+  <p ALIGN="CENTER"></p>
+</dir>
+</font></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:0;left:417px;top:313px;width:295px;height:446px'><img
+width=295 height=446 src="p14image002.gif"
+alt="Pentagon: Windows DNA&#13;&#10;Integrates client/server and the web&#13;&#10;Services that work together&#13;&#10;Open protocols and published interfaces&#13;&#10;&#13;&#10;"
+v:shapes="_x0000_s1027"></span><![endif]><!--[if gte vml 1]><v:shapetype id="_x0000_t13"
+ coordsize="21600,21600" o:spt="13" adj="16200,5400" path="m@0,l@0@1,0@1,0@2@0@2@0,21600,21600,10800xe">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="val #0"/>
+  <v:f eqn="val #1"/>
+  <v:f eqn="sum height 0 #1"/>
+  <v:f eqn="sum 10800 0 #1"/>
+  <v:f eqn="sum width 0 #0"/>
+  <v:f eqn="prod @4 @3 10800"/>
+  <v:f eqn="sum width 0 @5"/>
+ </v:formulas>
+ <v:path o:connecttype="custom" o:connectlocs="@0,0;0,10800;@0,21600;21600,10800"
+  o:connectangles="270,180,90,0" textboxrect="0,@1,@6,@2"/>
+ <v:handles>
+  <v:h position="#0,#1" xrange="0,21600" yrange="0,10800"/>
+ </v:handles>
+</v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t13" style='position:absolute;
+ left:0;text-align:left;top:0;margin-left:6pt;margin-top:306pt;width:294pt;
+ height:198pt;z-index:0' adj="19800,1945" fillcolor="#a964dc" strokecolor="white"
+ strokeweight="1pt">
+ <v:fill color2="#35217f"/>
+ <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+  endarrowlength="short"/>
+ <v:shadow color="black"/>
+ <v:textbox>
+<dir>
+  <dir>
+    <font FACE="Tahoma" COLOR="#ffffff"><b>
+    <p>The Windows PC</p>
+    <p>Rich application services</p>
+    <p>Familiar UI for users</p>
+    <p>Consistent management</p>
+  </dir>
+</dir>
+</b></font></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:0;left:18px;top:518px;width:399px;height:282px'><img
+width=399 height=282 src="p14image003.gif"
+alt="Right Arrow: The Windows PC&#13;&#10;Rich application services&#13;&#10;Familiar UI for users&#13;&#10;Consistent management&#13;&#10;"
+v:shapes="_x0000_s1026"></span><![endif]><!--[if gte vml 1]><v:shape id="_x0000_s1025"
+ type="#_x0000_t13" style='position:absolute;left:0;text-align:left;top:0;
+ margin-left:0;margin-top:150pt;width:300pt;height:162pt;z-index:0' adj="19485,2933"
+ fillcolor="#a964dc" strokecolor="white" strokeweight="1pt">
+ <v:fill color2="#35217f"/>
+ <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+  endarrowlength="short"/>
+ <v:shadow color="black"/>
+ <v:textbox>
+<dir>
+  <dir>
+    <font FACE="Tahoma" COLOR="#ffffff"><b>
+    <p>The Web</p>
+    <p>Easy to Deploy</p>
+    <p>Graphical UI</p>
+    <p>Dynamic</p>
+  </dir>
+</dir>
+</b></font></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:0;left:10px;top:310px;width:407px;height:230px'><img
+width=407 height=230 src="p14image004.gif"
+alt="Right Arrow: The Web&#13;&#10;Easy to Deploy&#13;&#10;Graphical UI&#13;&#10;Dynamic&#13;&#10;"
+v:shapes="_x0000_s1025"></span><![endif]></p>
+
+</body>

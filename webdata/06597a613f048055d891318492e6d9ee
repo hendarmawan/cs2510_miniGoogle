@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0045)http://www.cs.pitt.edu/~chang/163/c01/c01.htm -->
+<HTML><HEAD><TITLE>Component-Based Software Engineering</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR></HEAD>
+<BODY><a href="03.htm">
+<IMG 
+src="previous.gif" align=left width="26" height="26"></a>
+<a href="05.htm">
+<IMG 
+src="next.gif" align=right width="26" height="26"></a> 
+<H1>&nbsp;A Simple Security Example (continued)</H1>
+<p>&nbsp;</p>
+
+
+<H1><font size="3">Msdn Library Calls:</font></H1>
+<p>(2) VB</p>
+
+<p><b>GetSecurityCallContext( )</b></p>
+
+<p><font face="Courier New" color="#0000FF"><i><br>
+// Checking if security is enabled or not.<br>
+</i><br>
+&nbsp;&nbsp;&nbsp; VARIANT_BOOL bIsSecurityEnabled ;<br>
+&nbsp;&nbsp;&nbsp; pCallCtx-&gt;IsSecurityEnabled (&amp;bIsSecurityEnabled) ;</font></p>
+
+<p><font face="Courier New" color="#0000FF">&nbsp;&nbsp;&nbsp; if (bIsSecurityEnabled) 
+Display(&quot;Security is Enabled&quot;);</font></p>
+
+<p><font face="Courier New" color="#0000FF">&nbsp;&nbsp;&nbsp; else&nbsp;&nbsp; 
+Display(&quot;Security is Disabled&quot;);</font></p>
+
+<p><font face="Courier New" color="#0000FF">&nbsp;&nbsp;&nbsp; </font></p>
+
+<p><font face="Courier New" color="#0000FF"><i><br>
+// Checking role membership<br>
+</i><br>
+&nbsp;&nbsp;&nbsp; VARIANT_BOOL bIsInRole ;</font></p>
+
+<p><font face="Courier New" color="#0000FF">&nbsp;&nbsp;&nbsp; pCallCtx -&gt;IsCallerInRole(&quot;Manager&quot;, 
+&amp;bIsInRole);</font></p>
+
+<p><font face="Courier New" color="#0000FF">&nbsp;&nbsp;&nbsp; if(bIsInRole)</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<font color="#0000FF">&nbsp; <font face="Courier New">Go ahead and perform the 
+transaction</font></font></p>
+
+<p><font face="Courier New" color="#0000FF">&nbsp;&nbsp;&nbsp; else 
+output(&quot;Security is Disabled&quot;);</font></p>
+
+<p>&nbsp;</p>
+
+<p><font face="Courier New">Code Explain:</font></p>
+
+<p><font face="Courier New" size="3"><b>HRESULT IsSecurityEnabled(<br>
+&nbsp; VARIANT_BOOL </b>*<b> </b><i><a class="synParam" onclick="showTip(this)" href>pbIsEnabled</a></i><br>
+<b>);</b></font></p>
+
+<p> <b>ISecurityCallContext::IsCallerInRole</b> is used to ensure that action 
+are performed only by members of a Managers role. </p>
+

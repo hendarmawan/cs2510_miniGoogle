@@ -1,0 +1,38 @@
+<title>MICE Application Development Steps</title>
+<H1>MICE Application Development Steps</H1>
+
+<b>Step 1</b>. Download IC_Builder to PC and use it to create *.in, *.gra and ic.dat files.<br>
+<br>
+<b>Step 2</b>:
+Upload *.in and ic.dat to your working directory.  Create two sub-directories
+called "source" and "TAOML".
+Leave *.in in this directory, and move ic.dat to "source" directory.<br>
+<br>
+<b>Step 3</b>. Change to source directory and do the following:<br>
+<ul>
+   <b>Step 3.1</b>. Copy all the files from the three
+           directories IC_Compiler, IC_Manager and IC_Taoml.
+           to this "source" directory.<br>
+   <b>Step 3.2</b>. Move ic.dat and action*.c files into the source directory.<br>
+   <b>Step 3.3</b>. Invoke IC Compiler by typing:<br>
+              icc ic.dat<br>
+   <b>Step 3.4</b>. Use the makefiles to make main.cgi and inter.cgi:<br>
+              make makefile.maincgi<br>
+              make makefile.intercgi<br>
+   <b>Step 3.5</b>. Move main.cgi and inter.cgi programs to parent directory.<br>
+   <b>Step 3.6</b>. Remove all the files from the "source" directory<br>
+   <b>Step 3.7</b>. Change to parent directory.<br>
+</ul>
+<b>Step 4</b>. Create index.html which is the home page of your application.
+        It should invoke inter.cgi to go to another taoml page.<br>
+<br>
+<b>Step 5</b>. Change to TAOML directory and do the following.<br>
+<ul>
+   <b>Step 5.1</b>. create *.taoml pages which should invoke main.cgi to activate ic's.<br>
+   <b>Step 5.2</b>. create *.tpl pages which should invoke inter.cgi to access another
+           taoml page, or invoke customized cgi to do special processing.<br>
+   <b>Step 5.3</b>. change to parent directory.<br>
+</ul>
+<b>Step 6</b>. You are now ready to test the application.  Use a web browser
+        to access your application's home page index.html.<br>
+<p><b>Note</b>: For more information read <a href="http://www.cs.pitt.edu/~jung/README.IC.html">MICE Developer's Guide</a>.

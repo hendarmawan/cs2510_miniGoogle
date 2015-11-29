@@ -1,0 +1,43 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Arial"> 
+	
+			<A href="./ex1.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./ex3.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		
+			<center> 
+				<h1>Running the Message Server Example on your PC</h1>
+			</center>
+			
+		</font>
+		
+		
+		<font size = 5 face="Arial"> 
+			<br>
+			1. Downlaod Sun J2SE v1.4.2_07 SDK  <a href="http://java.sun.com/j2se/1.4.2/download.html" target="_blank">here</a>
+			<br>
+			<br>
+			2. Downlaod Java Web Servers Developer Pack (JWSDP) v1.5  <a href="http://java.sun.com/webservices/downloads/webservicespack.html" target="_blank">here</a>
+			<br>
+			<br>
+			3. Downlaod Eclipse 3.01 SDK  <a href="http://www.eclipse.org/downloads/index.php" target="_blank">here</a>
+			<br>
+			<br>
+			4. Install J2SE and JWSDP
+			<br>
+			<br>
+			5. Unzip Eclipse
+			<br>
+			<br>
+			6. Open Eclipse (eclipse.exe in the unzipped folder)
+			<br>
+			<br>
+			* For now just use the default workspace directory
+		</font>
+	</BODY>
+</html>

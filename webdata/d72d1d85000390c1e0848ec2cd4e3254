@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Using Oracle 8 on Unix</title>
+</head>
+
+<body>
+<h2 align = center>How to use the Oracle 8 on Unix</h2>
+<pre>
+
+	The first thing that you need to do is to notify either the TA or the professor
+that you wish to use the Unix version of Oracle.  You also need to give that person
+your University CIS user account name (ie. jmdst999).  The information will be forwarded
+to the CS tech service who will create an account for you to use.
+	Next, you should recieve an E-mail at that account informing you what your login
+name and password are.  Log onto any CIS unix sun station as normal.  You can then do 1 of 
+2 things:
+
+	edit you bash profile to include the following:
+
+		. /afs/pitt.edu/public/dept/cs/oracle/orasetup.sh    (for sh users)
+	    or
+		source /afs/pitt.edu/public/dept/cs/oracle/orasetup.csh (for csh users)
+
+This will automatically change your path to include that directory.  If you don't want to
+edit your profile you can simply type one of those lines in each time you logon to use
+Oracle.  Then to access the server type in:
+	sqlplus
+
+You will be prompted to enter a login name and password.  The commands you will need to use
+for this Oracle version will be in the SQL or PL/SQL languages.  Here is a list of the 
+commands you will most likely need to use:
+
+	CREATE (table/view/function/procedure) name AS...
+		TABLE table_name (column_name column_type(size), ...);
+		VIEW AS SELECT table_att FROM table_name WHERE cond;
+		FUNCTION RETURN TYPE type AS ... (see functions)
+		PROCEDURE AS ... (see functions)
+
+	DROP (table/view/function/procedure) name;
+	
+	ALTER (table) table_name ...
+
+	SPOOL file_name[.suffix]  (default suffix usually .lis or .lst)
+
+	EXIT drops you back to the unix prompt
+
+</pre>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="GENERATOR" CONTENT="Notepad/Robert Hofmann">
+<BASE TARGET="1502main">
+<TITLE>Unit 1f : Completing the ALU Block Diagram</TITLE>
+</HEAD>
+
+<BODY BACKGROUND="../Unitbkg.jpg">
+
+<H2><CENTER>Unit 1f</H2></CENTER>
+<H2><CENTER>Completing the ALU Block Diagram</CENTER>
+</H2>
+<P>
+  All that remains to do to complete the <I>ALU</I> block
+  diagram is to specify the <I>Mux4B64</I> sub-block.  In
+  the <I>Logical</I> sub-block, we accomplished this by
+  placing an embedded block with a VHDL statement to 
+  multiplex the signals.  For this sub-block, we will use
+  a similar VHDL statement, only we will enter it directly
+  as a text VHDL Architecture description.
+</P>
+
+<P>
+  Open the <I>ALU</I> block diagram and right-click over
+  the <I>Mux4B64</I> sub-block.  From the menu which appears
+  select <I>Open/New View</I> as you have before to create
+  a default view for this sub-block.  From the <I>Create New
+  View</I> window which appears, select <I>VHDL Combined</I> and click Next.
+  Enter <I>behav</I> as the name
+  of the view and click Finish.  This will bring up a <B>VHDL Editor</B> with the
+  skeleton VHDL Architecture declaration seen in Figure 1.
+</P>
+
+<P>
+  <CENTER>
+    <table><tr>
+    <td><IMG SRC="./MuxBlock1a.jpg"></td>
+    <td><IMG SRC="./MuxBlock1b.jpg"></td>
+    </tr></table>
+    <H4>Figure 1a</H4>
+  </CENTER>
+</P>
+
+<P>
+  <CENTER>
+    <IMG SRC="./MuxBlock1c.jpg">
+    <H4>Figure 1</H4>
+  </CENTER>
+</P>
+
+<P>
+  Now, just as in the embedded block, we will be using a 
+  conditional assignment statement to infer the multiplexor.
+  The conditional assignment statment has the syntax: <I>
+  TargetSignal <B><=</B> SourceSignalA <B>when</B> (ConditionA)
+  <B>else</B> SourceSignalB <B>when</B> (ConditionB) ... <B>else</B>
+  SourceSignalZ;</I>.  In this case, the target signal is
+  <I>R</I> and there are four source signals: <I>LogicalR</I>
+  when <I>ALUOp(3 DOWNTO 2)</I> is "00"; <I>ArithmeticR</I> when
+  <I>ALUOp(3 DOWNTO 2)</I> is "01"; <I>ComparisonR</I> when 
+  <I>ALUOp(3 DOWNTO 2)</I> is "10"; and <I>ShifterR</I> otherwise
+  (when <I>ALUOp(3 DOWNTO 2)</I> is "11").
+</P>
+
+<P>
+  The conditional signal assigment statement can be a 
+  concurrent statement, meaning it can be at the top level 
+  of an architecture outside of any processes.  Since this
+  is the only statement necessary to describe the funcionality
+  of the <I>Mux4B64</I> sub-block, the VHDL Architecture
+  should look something like Figure 2.  Note that if you are
+  assigning the value of one std_logic_vector to another of
+  the same size (<I>R</I> and <I>LogicalR</I> for example)
+  then you can omit the slice information.
+</P>
+
+<P>
+  <CENTER>
+    <IMG SRC="./MuxBlock1d.jpg">
+    <H4>Figure 2</H4>
+  </CENTER>
+</P>
+
+<P>
+  Once you have entered the text properly, save the file
+  and exit the <B>VHDL Editor</B>.  You can now proceed to 
+  <A HREF="../ALUTest/ALU_TestBench.html">Creating a Test
+  Bench to Verify Your Completed ALU</A>.
+</P>
+</BODY></HTML>

@@ -1,0 +1,61 @@
+<html>
+<body bgcolor="#abcdef" text="#vishnu">
+<a href ="p5.html"><img src="previous.gif" align=left
+width="26" height="26"></a>
+<a href="p13.html"><img src="next.gif" align=right
+width="26" height="26"></a>
+<pre>
+<font face="Arial">
+<center><h1> Situation Metaphor (Contd) </h1>
+
+<h2><u> Development Schema </u> </h2></center>
+
+
+<h2> The deveopment Schema consists of three phases </h2>
+<h2>
+
+<ol>
+<li>Design</li>
+<li>Framework </li>
+<li>Tools Development</li>
+</ol>
+
+
+1.<u> Design </u>
+ 
+         This stage describes the theoritical devlopment of the situation
+         metaphor.It involves situated interaction, situation space and
+         functional features etc.
+
+
+
+2.<u>Framework</u>
+
+         This stage acts as the middleware to centralise the processing
+         and management of the user'situational information.It is a basis
+         to include the situated intearction in the prototype application
+         tools.
+
+
+
+3.<u>Tools devlopment </u>
+
+         The tools would be able to utilize the fuctional features and
+         described in framework to provide more situated interaction.
+
+
+
+
+<center>Development Schema </center>
+<center><img src="Third.jpg"></center>
+ 
+</h2>
+
+
+
+
+
+
+</pre>
+</body>
+</html>

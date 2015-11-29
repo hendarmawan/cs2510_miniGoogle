@@ -1,0 +1,28 @@
+<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="05.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="07.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>How to Insert Time Specification?</H1>
+<H1><FONT color=mediumblue>Time may be associated with Transitions (TTPN)</FONT></H1>
+</CENTER>
+
+<UL><UL><UL> <UL><UL><UL>
+<FONT size=5><STRONG>Transitions represent activities:</STRONG></FONT>
+  
+  <LI><FONT size=5>Activity 
+            <FONT color=crimson>Start</FONT> corresponds to <FONT 
+            color=mediumblue>Transition Enabling</FONT></FONT>
+  <LI><FONT size=5>Activity 
+            <FONT color=crimson>End</FONT> corresponds to <FONT 
+            color=mediumblue>Transition Firing</FONT></FONT></LI>
+</UL></UL></UL></UL></UL></UL>
+
+<CENTER><IMG src="images/ttpn.jpg"></CENTER>
+
+</BODY></HTML>
+

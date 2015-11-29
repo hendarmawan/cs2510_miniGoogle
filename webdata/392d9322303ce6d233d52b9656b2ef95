@@ -1,0 +1,63 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Generator" content="Microsoft Word 97">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <title>CS2310 - TeamCenter contd.</title>
+</head>
+<body link="#0000FF" vlink="#800080">
+<A HREF="p6.html">  <IMG SRC="previous.gif" align=left>  </A>
+<A HREF="p8.html">  <IMG SRC="next.gif" align=right>  </A>
+<br>&nbsp;
+<center><b><font color="#3333FF"><font size=+2>TeamCenter contd.</font></font></b></center>
+
+<blockquote>Some of the facilities provided by TeamCenter are as follows</blockquote>
+
+<ul>
+<ul>
+<li>
+The TeamCenter JDOT Server stores its data in a SQL database specified
+by the user.</li>
+
+<br>&nbsp;
+<li>
+It supports the import and export of the widely used MPX file format. User
+can easily move existing Microsoft Project plans into TeamCenter by using
+TeamCenter's MPX Template import function. One can use TeamCenter's MPX
+Template export function to export TeamCenter project plan into Microsoft
+Project or any other project management tool supporting the MPX format.</li>
+
+<br>&nbsp;
+<li>
+TeamCenter uses a combination of TCP ports. The first is a standard TCP
+port for HTTP network traffic, specified by the user. This port is 8000
+by default, but can changed to any port, including port 80, the standard
+HTTP port. Through this port, the browser has access to the TeamCenter
+views, 'Documents', 'Enterprise Reports' and 'Timesheet/Timesheet Approval'.
+The 'Projects' view creates connections on 3 additional TCP ports. TeamCenter
+Projects can be viewed through a firewall by allowing TCP traffic on the
+3 consecutive ports. Database backup is only available in the JDOT Workgroup
+Edition Server with the Cloudscape SQL database option.</li>
+
+<br>&nbsp;
+<li>
+Technical support is available through email <a href="mailto:--    support@inovie.com">support@inovie.com</a>.</li>
+
+<br>&nbsp;
+<li>
+TeamNative behavior supports enhanced collaboration by enabling any number
+of people to work simultaneously on the same screen, supporting editing
+at the finest grain possible. All changes immediately update, so anyone
+who has the same project open will see the changes as they are submitted.
+There is never "user lock-out". This simultaneous access is very important?
+One common scenario occurs when a manager wants to distribute schedule
+maintenance responsibility among his or her team leaders. If the system
+does not allow the team leaders to work on their respective areas of the
+schedule simultaneously, productivity will suffer, as user lock out will
+be a common occurrence.</li>
+</ul>
+</ul>
+
+</body>
+</html>

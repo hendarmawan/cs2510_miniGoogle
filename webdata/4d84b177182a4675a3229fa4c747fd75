@@ -1,0 +1,35 @@
+<html>
+<head>
+<title>PHP</title>
+</head>
+<body bgcolor="#99CCFF">
+<a href="page2.html"><img src="previous.gif" align="left" /></a>
+<a href="page4.php"><img src="next.gif" align="right" /></a>
+<center>
+   <br></br>
+	<h1><font color="#FF0000">A first look</font></h1>
+   <br></br>   
+</center>
+
+<TABLE BORDER="0" BGCOLOR="#CBFF98" CELLPADDING="5" width="100%">
+<TR><TD>
+<PRE CLASS="php">&#60;html&#62;
+    &#60;head&#62;
+        &#60;title&#62;Example&#60;/title&#62;
+    &#60;/head&#62;
+    &#60;body&#62;
+
+        &#60;?php 
+        echo "&#60;p&#62;Hello&#60;/p&#62;"; 
+        ?&#62;
+
+    &#60;/body&#62;
+&#60;/html&#62;</PRE>
+</table>
+<ul>
+<li>PHP code is embedded in special start and end tags. 
+<li>PHP code is executed on the server.
+</ul>
+</body>
+</html>
+

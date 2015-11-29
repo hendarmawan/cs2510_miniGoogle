@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0044)http://www.cs.pitt.edu/~chang/163/c17/01.htm -->
+  <title>Structure of an Enterprise Bean (Contd)...</title>
+  <meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+  <meta content="FrontPage.Editor.Document" name="ProgId">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <meta name="author" content="Chirag Vaidya">
+</head>
+<body>
+<a href="c10.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;"
+ src="previous.gif" align="left" title="" alt="" width="26" height="26"></a> <a href="c12.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;" src="next.gif"
+ align="right" title="" alt="" width="26" height="26"></a>
+<h2 align="center" style="color: rgb(51, 51, 255);"><big>Structure of an
+Enterprise Bean (Contd)...<br>
+</big></h2>
+<h3 style="margin-top: 6px; margin-bottom: 0pt" align="justify"><big><big><font color="#FF00FF">The
+Enterprise Bean Class</font></big></big> </h3>
+<ul>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Consists
+    of business logic and code - modeling processes and entities.</font></p>
+  </li>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Resides
+    in container and implements either <i>javax.ejb.EntityBean </i>or<i>
+    javax.ejbSessionBean</i>.</font></p>
+  </li>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Supports
+    container notification by methods in the interfaces (callback methods) when
+    entering or exiting new stages of lifecycle - e.g., <i>ejbLoad</i> and <i>ejbStore<b>
+    </b></i>methods.</font></p>
+  </li>
+</ul>
+<p style="margin-top: 6px; margin-bottom: 0pt" align="center"><img border="0" src="figure3.JPG" width="743" height="329"></p>
+<h3 style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="6" color="#FF00FF">EJB
+Object and EJB Home Objects</font></h3>
+<ul>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Form
+    the bean's remote and home interfaces and have auto-generated stubs and
+    skeletons.</font></p>
+  </li>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Serve
+    as adapters to integrate the bean's class with EJB server and container.</font></p>
+  </li>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Expose
+    the methods of bean class to clients and manage instances of the bean at
+    runtime.</font></p>
+  </li>
+</ul>
+</body>
+</html>

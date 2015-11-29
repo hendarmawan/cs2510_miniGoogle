@@ -1,0 +1,46 @@
+<HTML>
+<TITLE>Class Diagram & Object Diagram</TITLE>
+<FORM>
+<BODY><font color=blue>
+<a href="uml_3.html"><img align="left" src="larrow.gif" border=0></a>
+<a href="class1.html"><img align="right" src="rarrow.gif" border=0></a>
+<p><br><br><br>
+<font size=+2><b>Class Diagram and Object Diagram</b><br><br>
+<LI><u>Class</u> is a category or group of things that have similar attributes and common behaviors<br>
+<LI><u>Object</u> is an instance of a class; specific thing that has specific values of the attributes and behavior<br>
+<hr><br>
+Example of the UML Class Diagram<br>
+<TABLE align=left border=1 cellspacing=0>
+<TR><TD>Washing Machine</TD></TR>
+<TR><TD>
+brandName<br>
+modelName<br>
+serialNumber<br>
+capacity<br>
+</TD></TR>
+<TR><TD>
+addClothes()<br>
+addDetergent()<br>
+removeClothes()<br>
+turnOn()<br>
+</TD></TR></TABLE>
+<font size=-1>
+<--class name<br><br>
+<--attribute<br><br><br>
+<font color=black>{capacity=16 or 18 or 20lbs}</font><br><br>
+<--operations<br>
+</font><p><br><br>
+Example of the UML Object Diagram<br>
+<TABLE align=left border=1 cellspacing=0>
+<TR><TD>My Washer:Washing Machine</TD></TR>
+<font size=-1><--name of instance on left, name of the class on the right
+<TR><TD>Maytag:BrandName<br>Ultima:ModelName<br>a1054:SerialNumber<br>20lbs:Capacity</TD></TR>
+<TR><TD>
+addClothes()<br>
+addDetergent()<br>
+removeClothes()<br>
+turnOn()<br>
+</TD></TR>
+</TABLE>
+</font><br><br><br>
+</font></FORM></BODY></HTML>

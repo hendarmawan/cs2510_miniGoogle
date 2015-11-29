@@ -1,0 +1,850 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_cycle_sequence</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_cycle_sequence
+</h1>    
+<a name="wp3697068"> </a><p class="pBody" >
+Ensures that if a specified necessary condition occurs, it is followed by a specified sequence of events.  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3697063"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkers74.gif" height="107" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3697065"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3771635"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3771636"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">num_cks </em>
+</div>    
+<a name="wp3771637"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">necessary_condition </em>
+</div>    
+<a name="wp3771638"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3771639"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3771640"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3697067"> </a><div class="pCellBodyLeft" >
+<span style="font-weight: bold" class="cStrong">Class: </span>
+</div>    
+<a name="wp3771641"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">n</em>-cycle assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3697069"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3697070"> </a><pre class="pCode1" >assert_cycle_sequence 
+</pre>    <a name="wp3771642"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level</em>, <em class="cEmphasis">num_cks, necessary_condition, property_type</em>,<em class="cEmphasis"> msg</em>,<em class="cEmphasis"> coverage_level </em>)] 
+</pre>    <a name="wp3771643"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, event_sequence </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3697108"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3697073"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697075"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3697077"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3697079"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697081"> </a><div class="pCellBodyLeft" >
+num_cks
+</div>    
+</td>
+    <td><a name="wp3697083"> </a><div class="pCellBodyLeft" >
+Width of the <em class="cEmphasis">event_sequence</em> argument. This parameter must not be less than 2. Default: 2. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3697459"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697461"> </a><div class="pCellBodyLeft" >
+necessary_condition
+</div>    
+</td>
+    <td><a name="wp3697463"> </a><div class="pCellBodyLeft" >
+Method for determining the necessary condition that initiates the sequence check and whether or not to pipeline checking. Values are: &#8216;OVL_TRIGGER_ON_MOST_PIPE, &#8216;OVL_TRIGGER_ON_FIRST_PIPE and &#8216;OVL_TRIGGER_ON_FIRST_NOPIPE. Default: &#8216;OVL_TRIGGER_ON_MOST_PIPE.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3697091"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697093"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3697095"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3697097"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697099"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3697101"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3697103"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697105"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3697107"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3697134"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3697111"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697113"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3697115"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697117"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3697119"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697121"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3697123"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697125"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3697127"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3703380"> </a><div class="pCellBodyLeft" >
+<em style="font-style: oblique" class="cEmphasis">event_sequence </em>[ <em class="cEmphasis">num_cks</em> - 1: 0 ]
+</div>    
+<a name="wp3697129"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697133"> </a><div class="pCellBodyLeft" >
+Expression that is a concatenation where each bit represents an event.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3697135"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3703441"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_cycle_sequence</code> assertion checker checks the expression <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence </span>at the rising edges of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> to identify whether or not the bits in <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span> assert sequentially on successive rising edges of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>. For example, the following series of 4-bit values (where <span style="font-style: oblique" class="cCodeBodyEmphasis">b</span> is any bit value) is a valid sequence:
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3704715"> </a><pre class="pCode3" >	1<em class="cEmphasis">bbb</em> &#8212;&#8212;&gt; <em class="cEmphasis">b</em>1<em class="cEmphasis">bb</em> &#8212;&#8212;&gt; <em class="cEmphasis">bb</em>1<em class="cEmphasis">b</em> &#8212;&#8212;&gt; <em class="cEmphasis">bbb</em>1
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3704710"> </a><p class="pBody" >
+This series corresponds to the following series of events on successive rising edges of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>:  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3705995"> </a><div class="pCellBodyLeft" >
+cycle 1
+</div>    
+</td>
+    <td><a name="wp3705997"> </a><div class="pCellBodyLeft" >
+event_sequence[3] == 1
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3705999"> </a><div class="pCellBodyLeft" >
+cycle 2
+</div>    
+</td>
+    <td><a name="wp3706001"> </a><div class="pCellBodyLeft" >
+event_sequence[2] == 1
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3706003"> </a><div class="pCellBodyLeft" >
+cycle 3
+</div>    
+</td>
+    <td><a name="wp3706005"> </a><div class="pCellBodyLeft" >
+event_sequence[1] == 1
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3706007"> </a><div class="pCellBodyLeft" >
+cycle 4
+</div>    
+</td>
+    <td><a name="wp3706009"> </a><div class="pCellBodyLeft" >
+event_sequence[0] == 1
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3705871"> </a><p class="pBody" >
+The checker also has the ability to pipeline its analysis. Here, one or more new sequences can be initiated and recognized while a sequence is in progress. For example, the following series of 4-bit values (where <span style="font-style: oblique" class="cCodeBodyEmphasis">b</span> is any bit value) constitutes two overlapping valid sequences:
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3705872"> </a><pre class="pCode3" >	1bbb &#8212;&#8212;&gt; b1bb &#8212;&#8212;&gt; 1b1b &#8212;&#8212;&gt; b1b1 &#8212;&#8212;&gt; bb1b &#8212;&#8212;&gt; bbb1 
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3705873"> </a><p class="pBody" >
+This series corresponds to the following sequences of events on successive rising edges of clk:  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3705944"> </a><div class="pCellBodyLeft" >
+cycle 1
+</div>    
+</td>
+    <td><a name="wp3705946"> </a><div class="pCellBodyLeft" >
+event_sequence[3] == 1
+</div>    
+</td>
+    <td><a name="wp3705948"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3705950"> </a><div class="pCellBodyLeft" >
+cycle 2
+</div>    
+</td>
+    <td><a name="wp3705952"> </a><div class="pCellBodyLeft" >
+event_sequence[2] == 1
+</div>    
+</td>
+    <td><a name="wp3705954"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3705956"> </a><div class="pCellBodyLeft" >
+cycle 3
+</div>    
+</td>
+    <td><a name="wp3705958"> </a><div class="pCellBodyLeft" >
+event_sequence[1] == 1
+</div>    
+</td>
+    <td><a name="wp3706013"> </a><div class="pCellBodyLeft" >
+event_sequence[3] == 1
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3705962"> </a><div class="pCellBodyLeft" >
+cycle 4
+</div>    
+</td>
+    <td><a name="wp3705964"> </a><div class="pCellBodyLeft" >
+event_sequence[0] == 1
+</div>    
+</td>
+    <td><a name="wp3706015"> </a><div class="pCellBodyLeft" >
+event_sequence[2] == 1
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3705968"> </a><div class="pCellBodyLeft" >
+cycle 5
+</div>    
+</td>
+    <td><a name="wp3705970"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3706017"> </a><div class="pCellBodyLeft" >
+event_sequence[1] == 1
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3705974"> </a><div class="pCellBodyLeft" >
+cycle 6
+</div>    
+</td>
+    <td><a name="wp3705976"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3706019"> </a><div class="pCellBodyLeft" >
+event_sequence[0] == 1
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3705869"> </a><p class="pBody" >
+When the checker determines that a specified necessary condition has occurred, it subsequently verifies that a specified event or event sequence occurs and if not, the assertion fails.
+</p>    
+<a name="wp3699629"> </a><p class="pBody" >
+The method used to determine what constitutes the necessary condition and the resulting trigger event or event sequence is controlled by the <span style="font-style: oblique" class="cCodeBodyEmphasis">necessary_condition</span> parameter. The checker has the following actions:
+</p>    
+<a name="wp3699635"> </a><p class="pBullet1" >
+<img src="images/bullet1.gif" align="top" />&#8216;OVL_TRIGGER_ON_MOST_PIPE
+</p>    
+<a name="wp3699678"> </a><p class="pIndent1" >
+The necessary condition is that the bits: 
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3704663"> </a><pre class="pCode3" >		<em class="cEmphasis">event_sequence</em> [<em class="cEmphasis">num_cks</em> -1], . . . ,<em class="cEmphasis">event_sequence </em>[1]
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3704680"> </a><p class="pIndent1" >
+are sampled equal to 1 sequentially on successive rising edges of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>. When this condition occurs, the checker verifies that the value of <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span>[0] is 1 at the next rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>. If not, the assertion fails.
+</p>    
+<a name="wp3706872"> </a><p class="pIndent1" >
+The checking is pipelined, which means that if <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span>[<span style="font-style: oblique" class="cCodeBodyEmphasis">num_cks</span> -1] is sampled equal to 1 while a sequence (including <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span>[0]) is in progress and subsequently the necessary condition is satisfied, the check of <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span>[0] is performed (unless the first sequence resulted in a fatal assertion violation).
+</p>    
+<a name="wp3699637"> </a><p class="pBullet1" >
+<img src="images/bullet1.gif" align="top" />&#8216;OVL_TRIGGER_ON_FIRST_PIPE
+</p>    
+<a name="wp3707067"> </a><p class="pIndent1" >
+The necessary condition is that the <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span> [<span style="font-style: oblique" class="cCodeBodyEmphasis">num_cks</span> -1] bit is sampled equal to 1 on a rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>. When this condition occurs, the checker verifies that the bits:
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3707102"> </a><pre class="pCode3" >		<em class="cEmphasis">event_sequence</em> [<em class="cEmphasis">num_cks</em> -2], . . . ,<em class="cEmphasis">event_sequence </em>[0]
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3707091"> </a><p class="pIndent1" >
+are sampled equal to 1 sequentially on successive rising edges of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>. If not, the assertion fails.
+</p>    
+<a name="wp3707070"> </a><p class="pIndent1" >
+The checking is pipelined, which means that if <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span>[<span style="font-style: oblique" class="cCodeBodyEmphasis">num_cks</span> -1] is sampled equal to 1 while a check is in progress, an additional check is initiated.
+</p>    
+<a name="wp3701905"> </a><p class="pBullet1" >
+<img src="images/bullet1.gif" align="top" />&#8216;OVL_TRIGGER_ON_FIRST_NOPIPE
+</p>    
+<a name="wp3707157"> </a><p class="pIndent1" >
+The necessary condition is that the <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span> [<span style="font-style: oblique" class="cCodeBodyEmphasis">num_cks</span> -1] bit is sampled equal to 1 on a rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>. When this condition occurs, the checker verifies that the bits:
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3707158"> </a><pre class="pCode3" >		<em class="cEmphasis">event_sequence</em> [<em class="cEmphasis">num_cks</em> -2], . . . ,<em class="cEmphasis">event_sequence </em>[0]
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3707159"> </a><p class="pIndent1" >
+are sampled equal to 1 sequentially on successive rising edges of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>. If not, the assertion fails.
+</p>    
+<a name="wp3707160"> </a><p class="pIndent1" >
+The checking is not pipelined, which means that if <span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span>[<span style="font-style: oblique" class="cCodeBodyEmphasis">num_cks</span> -1] is sampled equal to 1 while a check is in progress, it is ignored, even if the check is verifying the last bit of the sequence (<span style="font-style: oblique" class="cCodeBodyEmphasis">event_sequence</span> [0]).
+</p>    
+<a name="wp3697146"> </a><h4 class="pHead4" >
+Assertion Check  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3697141"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3697143"> </a><div class="pCellBodyLeft" >
+ASSERT_CYCLE_SEQUENCE
+</div>    
+</td>
+    <td><a name="wp3697145"> </a><div class="pCellBodyLeft" >
+The necessary condition occurred, but it was not followed by the event or event sequence. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3699790"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3699792"> </a><div class="pCellBodyLeft" >
+illegal num_cks parameter
+</div>    
+</td>
+    <td><a name="wp3699794"> </a><div class="pCellBodyLeft" >
+The <em class="cEmphasis">num_cks</em> parameter is less than 2.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3697154"> </a><h4 class="pHead4" >
+Cover Point  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3699811"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3699813"> </a><div class="pCellBodyLeft" >
+sequence_trigger
+</div>    
+</td>
+    <td><a name="wp3699815"> </a><div class="pCellBodyLeft" >
+The trigger sequence occurred.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3697157"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3697158"> </a><pre class="pCode2" >assert_change, assert_unchange
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3697159"> </a><h3 class="pHead3" >
+Examples
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3700808"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3700769"> </a><div class="pCellBodyLeft" >
+   assert_cycle_sequence #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3700777"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3700779"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771644"> </a><div class="pCellBodyLeft" >
+3, 
+</div>    
+<a name="wp3771645"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_TRIGGER_ON_MOST_PIPE, 
+</div>    
+<a name="wp3771646"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771647"> </a><div class="pCellBodyLeft" >
+&#8220;Error: invalid WR sequence&#8221;, 
+</div>    
+<a name="wp3771648"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3700783"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771649"> </a><div class="pCellBodyLeft" >
+// num_cks 
+</div>    
+<a name="wp3771650"> </a><div class="pCellBodyLeft" >
+// necessary_condition 
+</div>    
+<a name="wp3771651"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771652"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771653"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3700785"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3700787"> </a><div class="pCellBodyLeft" >
+valid_write_sequence (
+</div>    
+</td>
+    <td><a name="wp3700791"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3700793"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3700795"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3700797"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771654"> </a><div class="pCellBodyLeft" >
+reset_n, 
+</div>    
+<a name="wp3771655"> </a><div class="pCellBodyLeft" >
+{ r_opcode == &#8216;WR, 
+</div>    
+<a name="wp3771656"> </a><div class="pCellBodyLeft" >
+r_opcode == &#8216;WAIT, 
+</div>    
+<a name="wp3771657"> </a><div class="pCellBodyLeft" >
+(r_opcode == &#8216;WR) ||  (r_opcode == &#8216;DONE)}  );
+</div>    
+</td>
+    <td><a name="wp3700799"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771658"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771659"> </a><div class="pCellBodyLeft" >
+// event_sequence
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >  
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3700809"> </a><p class="pBody" >
+Ensures that a &#8216;WR, &#8216;WAIT sequence in consecutive cycles is followed by a &#8216;DONE or &#8216;WR. The sequence checking is pipelined.  </p>    <div align="left"><img src="images/ovl_checkers72.gif" height="83" width="443" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3759054"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3759023"> </a><div class="pCellBodyLeft" >
+   assert_cycle_sequence #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3759031"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3759033"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771660"> </a><div class="pCellBodyLeft" >
+3, 
+</div>    
+<a name="wp3771661"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_TRIGGER_ON_FIRST_PIPE, 
+</div>    
+<a name="wp3771662"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771663"> </a><div class="pCellBodyLeft" >
+&#8220;Error: invalid WR sequence&#8221;, 
+</div>    
+<a name="wp3771664"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3759037"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771665"> </a><div class="pCellBodyLeft" >
+// num_cks 
+</div>    
+<a name="wp3771666"> </a><div class="pCellBodyLeft" >
+// necessary_condition 
+</div>    
+<a name="wp3771667"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771668"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771669"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3759039"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3759041"> </a><div class="pCellBodyLeft" >
+valid_write_sequence (
+</div>    
+</td>
+    <td><a name="wp3759045"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3759047"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3759049"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3759051"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771670"> </a><div class="pCellBodyLeft" >
+reset_n, 
+</div>    
+<a name="wp3771671"> </a><div class="pCellBodyLeft" >
+{ r_opcode == &#8216;WR, 
+</div>    
+<a name="wp3771672"> </a><div class="pCellBodyLeft" >
+(r_opcode == &#8216;WAIT) || (r_opcode == &#8216;WR), 
+</div>    
+<a name="wp3771673"> </a><div class="pCellBodyLeft" >
+(r_opcode == &#8216;WAIT) || (r_opcode == &#8216;DONE)}  );
+</div>    
+</td>
+    <td><a name="wp3759053"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771674"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771675"> </a><div class="pCellBodyLeft" >
+// event_sequence
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >  
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3759055"> </a><p class="pBody" >
+Ensures that a &#8216;WR is followed by a &#8216;WAIT or another &#8216;WR, which is then followed by a &#8216;WAIT or a &#8216;DONE (in consecutive cycles). The sequence checking is pipelined: a new &#8216;WR during a sequence check initiates an additional check.  </p>    <div align="left"><img src="images/ovl_checkers83.gif" height="79" width="443" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3759347"> </a><p class="pBody" >
+
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3758836"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3758805"> </a><div class="pCellBodyLeft" >
+   assert_cycle_sequence #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3758813"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3758815"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771676"> </a><div class="pCellBodyLeft" >
+3, 
+</div>    
+<a name="wp3771677"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_TRIGGER_ON_FIRST_NOPIPE, 
+</div>    
+<a name="wp3771678"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771679"> </a><div class="pCellBodyLeft" >
+&#8220;Error: invalid WR sequence&#8221;, 
+</div>    
+<a name="wp3771680"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3758819"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771681"> </a><div class="pCellBodyLeft" >
+// num_cks 
+</div>    
+<a name="wp3771682"> </a><div class="pCellBodyLeft" >
+// necessary_condition 
+</div>    
+<a name="wp3771683"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771684"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771685"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3758821"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3758823"> </a><div class="pCellBodyLeft" >
+valid_write_sequence (
+</div>    
+</td>
+    <td><a name="wp3758827"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3758829"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3758831"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3758833"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771686"> </a><div class="pCellBodyLeft" >
+reset_n, 
+</div>    
+<a name="wp3771687"> </a><div class="pCellBodyLeft" >
+{ r_opcode == &#8216;WR, 
+</div>    
+<a name="wp3771688"> </a><div class="pCellBodyLeft" >
+(r_opcode == &#8216;WAIT) || (r_opcode == &#8216;WR), 
+</div>    
+<a name="wp3771689"> </a><div class="pCellBodyLeft" >
+(r_opcode == &#8216;DONE)}  );
+</div>    
+</td>
+    <td><a name="wp3758835"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771690"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771691"> </a><div class="pCellBodyLeft" >
+// event_sequence
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >  
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3758837"> </a><p class="pBody" >
+Ensures that a &#8216;WR is followed by a &#8216;WAIT or another &#8216;WR, which is then followed by a &#8216;DONE (in consecutive cycles). The sequence checking is not pipelined: a new &#8216;WR during a sequence check does not initiate an additional check.  </p>    <div align="left"><img src="images/ovl_checkers81.gif" height="88" width="443" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3697248"> </a><p class="pBody" >
+
+</p>    
+<a name="wp3677506"> </a><p class="pBody" >
+
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

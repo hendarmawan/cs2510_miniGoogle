@@ -1,0 +1,58 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><HEAD><TITLE>UML, Petri-Net in Software Engineering?</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=unicode">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY> 
+ <A href="10.htm" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+ <A href="12.htm">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+<center> 
+ <h1> 
+      Golden Triangle of System Modeling
+ </h1>
+</center>
+<H3>&nbsp;</H3>
+<H3><CENTER><IMG src="12.jpg" align=center ></CENTER></H3>
+<H3>Approach1: Using Petri-Net to validate UML. We can find some software 
+engineering tools to do this job.</H3>
+<H3>Approach2: Generate Code in programming Language based 
+on UML.&nbsp;</H3>
+<UL>
+  <LI>
+  <H3>&nbsp;<FONT color=black>Rational Rose</FONT></H3></LI></UL>
+<H3>
+<CENTER><IMG src="13.jpg" align=center ></CENTER></H3>
+<H3 align=center><FONT color=#ff0000><A 
+href="http://www.rational.com">http://www.rational.com</A></FONT></H3>
+<UL>
+  <LI>
+  <DIV align=left>Modelmaker, <A 
+  href="http://www.modelmakertools.com/">www.modelmakertools.com</A>, the UML 
+  case tool for Delphi </DIV></LI></UL>
+<P align=left><FONT size=4><STRONG>Approach3</STRONG>: Some 
+Software Testing tools work through this way</FONT></P>
+<UL dir=ltr>
+  <LI>
+  <DIV align=left>JUnit is a simple framework for writing and running automated 
+  tests. As a political gesture, it celebrates programmers testing their own 
+  software</DIV></LI></UL>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+  <P align=left><A 
+  href="http://junit.org/index.htm">http://junit.org/index.htm</A></P></BLOCKQUOTE>
+<UL dir=ltr>
+  <LI>
+  <DIV align=left><SPAN class=green><FONT color=#008000>D</FONT></SPAN><SPAN 
+  class=u><FONT color=#ff00ff>U</FONT></SPAN>nit:An Xtreme testing framework for 
+  Borland Delphi programs </DIV></LI></UL>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+  <P align=left><A 
+  href="http://dunit.sourceforge.net/">http://dunit.sourceforge.net/</A></P></BLOCKQUOTE>
+<P dir=ltr align=left><FONT size=4><STRONG>Approach4:</STRONG> UML 
+auto-generation system. It's hard but people are still tring.</FONT></P>
+<UL dir=ltr>
+  <LI>
+  <DIV align=left><FONT size=4>Delphi's Code Insight Tools--Diagram 
+  auto-generation system</FONT></DIV></LI></UL>
+<H3><CENTER><IMG src="14.jpg" align=center ></CENTER></H3>
+<P align=left><FONT size=4></FONT>&nbsp;</P>
+<BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+  <P align=left>&nbsp;</P></BLOCKQUOTE></BODY>
+ </html>

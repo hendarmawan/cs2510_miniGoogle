@@ -1,0 +1,38 @@
+<h2>A Simple Example to test your IC Manager Environment</h2>
+
+The example included in the icm.zip package contains six files:
+
+<pre>
+ic.dat test.in sclick.c dclick.c index.html ic_mng.exe
+</pre>
+
+The IC <a href="icmic.in">test.in</a> has two state: 0 and 1.
+In 0, it receives an input msg SINGLECLICK, goes to
+state 1 and performs action singleclick().
+In 1, it receives an input msg DOUBLECLICK, returns to
+state 0 and performs action doubleclick().
+
+<p>
+The files <a href="icmic.dat">ic.dat</a> and test.ic should be copied into the directory where the
+icm .c and .h files are stored.
+The two c programs: sclick.c and dclick.c, should be created by the user, in which two
+actions are defined.
+
+<p>
+Run "icc ic.dat" in dos prompt.
+Finally open VC++, make a new project and add the following files into
+the project:
+
+<pre>
+actions.c  app.h  cgienv.c db_def.h
+do_predicate.c event_mesg.h fuzzy.c
+fuzzy.h  ic.h  ic_func2.c  ic_func3.c
+ic_functions.c   ic_state.c  icm.c
+util.c mm.h  prototype.h
+
+</pre>
+The project is then compiled.
+
+<p>
+After setting up the virtual directory in the personal web server,
+you can test the example by browsing index.html.

@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://www.cs.pitt.edu/~chang/365/2petri/p1.htm -->
+<HTML><HEAD><TITLE>HIPR - Educational uses</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2920.0" name=GENERATOR></HEAD>
+<BODY>
+<A href="HIPRindex.htm" target="_parent"><IMG align=left 
+src="../previous.gif" border="0"></A> <A 
+href="HIPRindex.htm"><IMG align=right 
+src="../next.gif" border="0"></A> 
+<CENTER>
+  <H1>HIPR2 - Educational uses</H1>
+</CENTER>
+<P>
+<h4>Why use HIPR2?</H4>
+<h4>According to the authors of HIPR2, the Image Library is one of the biggest 
+  reasons for using HIPR2 rather than other sources is the image library:</H4>
+<h4><font color="#FF0000">&quot;One of the major reasons for using HIPR is the 
+  fact that every image processing operation described in the package is extensively 
+  illustrated using good quality on-line digitized images. Viewing these images 
+  on a computer screen gives a much more realistic impression of what real image 
+  processing is like than is provided by looking at typical pictures in image 
+  processing textbooks.&quot;</font> </H4>
+<p></p>
+<ul>
+  <li> 
+    <h4><a href="http://www.dai.ed.ac.uk/HIPR2/images.htm">Image library</a></H4>
+  </li>
+</ul>
+<h4>Another reason is the <font color="#FF0000">balanced overview</font> of the 
+  field that the authors give. Although all these processes could be found by 
+  using a search engine, and processed with Adobe Photoshop, the novice or intermediate 
+  student would have an uneven education: some fields would be covered extensively, 
+  while others would have been omitted. Although Photoshop could do most of these 
+  image processing tasks, the well-organized approach (in order of difficulty, 
+  with major fields categorized, and common names aligned with the proper processes) 
+  is highly favorable to an overall understanding of the field. Showing the processing 
+  of <font color="#FF0000">images over time</font> also adds an ability usually 
+  not found in image processing software: easily preserving before and after imagery, 
+  with labels automatically attached. &quot;Students can compare the output of 
+  their own image processing package's operators with the example output images 
+  included with HIPR to see how different implementations differ slightly in functionality.&quot; 
+</h4>
+<h4>Besides their major contributions of organization and imagery, <font color="#FF0000">interactive 
+  queries </font>(later) are perhaps the most striking and valuable part of this 
+  package. If they ever become available for personal use, its recommended to 
+  look into acquiring them.</h4>
+<h4><font color="#FF0000">Clear explanations</font>, and previously <font color="#FF0000">written 
+  instructional materials</font> will help the <font color="#0080FF">teacher</font>, 
+  while the ability to play with different processing techniques in a variety 
+  of compositions and order should speed the <font color="#0080FF">student</font>'s 
+  <font color="#FF0000">progress and engagement in this subject</font>. &quot;...experiment 
+  with the effect of changing parameters to operators to see how this changes 
+  the output. Suggestions of interesting things to try are given in the student 
+  exercises section of many of the worksheets.&quot; Added extras round out the 
+  field, with <font color="#FF0000">glossary, bibliography, <font color="#000000">and 
+  </font>links.</font></h4>
+<h4><font color="#000000">Disadvantage: this could have been done another way 
+  using HTML and your own image processing software/ knowledge. Still, it saves 
+  time. </font></h4>
+<h4>&nbsp;</h4>
+</BODY></HTML>

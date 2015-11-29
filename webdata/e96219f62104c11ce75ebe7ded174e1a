@@ -1,0 +1,447 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Linux Page</title>
+<meta name="Microsoft Theme" content="nature 011, default">
+<meta name="Microsoft Border" content="l, default">
+</head>
+
+<body background="../images/nabkgnd.jpg" bgcolor="#FFFFFF" text="#000000" link="#993333" vlink="#333399" alink="#006633"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+
+<div align="left">
+<!--mstheme--></font><table border="0" cellpadding="0" cellspacing="0" width="709" height="750">
+    <tr>
+      <td align="right" valign="top" width="87" height="31"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p align="center">&nbsp;</p>
+        <!--mstheme--></font></td>
+      <td width="10" height="31"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p align="center"><!--mstheme--></font></td>
+      <td valign="bottom" width="574" height="31"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p align="center"><font size="6">Chirag's Linux Page (Redhat 9.0) !!!</font></p>
+        <p align="center">&nbsp;</p>
+        <!--mstheme--></font></td>
+    </tr>
+    <tr>
+      <td valign="top" width="87" height="703"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p style="word-spacing: 0; line-height: 150%; margin-top: 0; margin-bottom: 0" align="center">
+<a href="http://www.cs.pitt.edu/~cvaidya/"><img src="../images/home.gif" title="" alt="Home Page"
+ style="border: 0px solid ; width: 92px; height: 57px;" width="92" height="57"></a>
+        <p style="word-spacing: 0; line-height: 150%; margin-top: 0; margin-bottom: 0" align="center"><a href="http://www.cs.pitt.edu/~cvaidya/aboutme.htm"><img src="../images/aboutme.gif" title="" alt="About Me"
+ style="border: 0px solid ; width: 92px; height: 57px;" width="92" height="57"></a></p>
+        <p style="word-spacing: 0; line-height: 150%; margin-top: 0; margin-bottom: 0" align="center"><a href="http://www.cs.pitt.edu/~cvaidya/family.htm"><img src="../images/family.gif" title="" alt="My Family"
+ style="border: 0px solid ; width: 92px; height: 57px;" width="92" height="57"></a></p>
+        <p style="word-spacing: 0; line-height: 150%; margin-top: 0; margin-bottom: 0" align="center"><a href="http://www.cs.pitt.edu/~cvaidya/research/index.htm"><img src="../images/research.gif" title=""
+ alt="Research Interests"
+ style="border: 0px solid ; width: 92px; height: 57px;" width="92" height="57"></a></p>
+        <p style="word-spacing: 0; line-height: 150%; margin-top: 0; margin-bottom: 0" align="center"><a href="http://www.cs.pitt.edu/~cvaidya/resume.htm"><img src="../images/resume.gif" title="" alt="My Resume"
+ style="border: 0px solid ; width: 92px; height: 57px;" width="92" height="57"></a></p>
+        <p style="word-spacing: 0; line-height: 150%; margin-top: 0; margin-bottom: 0" align="center"><a href="http://www.cs.pitt.edu/%7Ecvaidya/photoalbum"
+ ><img src="../images/pictures.gif" title=""
+ alt="My Picture page"
+ style="border: 0px solid ; width: 92px; height: 57px;" width="92" height="57"></a></p>
+        <p style="word-spacing: 0; line-height: 150%; margin-top: 0; margin-bottom: 0" align="center"><a href="http://www.cs.pitt.edu/~cvaidya/links.htm"><img src="../images/links.gif" title="" alt="Cool Links"
+ style="border: 0px solid ; width: 92px; height: 57px;" width="92" height="57"></a></p>
+        <p align="center"><font size="3"><br>
+        </font><!--mstheme--></font></td>
+      <td width="10" height="703"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p align="center"><!--mstheme--></font></td>
+      <td valign="top" width="574" height="703"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+        <!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+          <!--msthemelist--><tr>
+            <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull1.gif" width="15" height="15" hspace="13"></td>
+            <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+    <h2 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">CD/DVD Burning</font><!--mstheme--></font></h2>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font><!--msthemelist--></td>
+          </tr>
+          <!--msthemelist--><tr>
+            <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull1.gif" width="15" height="15" hspace="13"></td>
+            <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+    <h2 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">Compiling Kernel</font><!--mstheme--></font></h2>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+              <!--msthemelist--><table style="text-align: Justify; line-height: 100%; margin-top: 0; margin-bottom: 0" border="0" cellpadding="0" cellspacing="0" width="100%">
+                <!--msthemelist--><tr>
+                  <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull2.gif" width="12" height="12" hspace="15"></td>
+                  <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+        <h3 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">Kernel 2.6.xx</font><!--mstheme--></font></h3>
+                    <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p align="left" style="word-spacing: 0; margin-top: 0; margin-bottom: 0"><font face="Comic Sans MS">The detailed steps on
+        installing 2.6 kernel for Redhat can be found <a href="http://kerneltrap.org/node/view/2465" target="_blank">here</a>.</font></p>
+        <p align="left" style="word-spacing: 0; line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;<!--mstheme--></font><!--msthemelist--></td>
+                </tr>
+                <!--msthemelist--><tr>
+                  <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull2.gif" width="12" height="12" hspace="15"></td>
+                  <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+        <h3 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">Kernel 2.4.xx</font><!--mstheme--></font></h3>
+                    <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p align="justify" style="margin-top: 0; margin-bottom: 12">The current
+        config file can be found in /boot directory. To compile the kernel with
+        default configuration (your system's present configuration):
+        <ol>
+          <li>
+            <p align="justify" style="margin-top: 0; margin-bottom: 12">Copy
+            the config file (config-2.4.20-8) to /usr/src/linux-2.4.xx/
+            directory and save it as &quot;.config&quot;.&nbsp;</li>
+          <li>
+            <p align="justify" style="margin-top: 0; margin-bottom: 12">Clean
+            the previous compilations if any:</li>
+        </ol>
+        <p align="justify" style="margin-top: 0; margin-bottom: 0"><font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        # make distclean</font></p>
+        <p align="justify" style="margin-top: 0; margin-bottom: 12"><font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        # make clean</font>
+        <ol start="3">
+          <li>
+            <p align="justify" style="margin-top: 0; margin-bottom: 12">Configure
+            the new kernel:</li>
+        </ol>
+        <p align="justify" style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font color="#FF0000"># make oldconfig&nbsp;</font></p>
+        <p align="justify" style="margin-top: 0; margin-bottom: 12"><font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        # make dep</font>
+        <ol start="4">
+          <li>
+            <p align="justify" style="margin-top: 0; margin-bottom: 12">Make the
+            loadable image, modules and install them:</li>
+        </ol>
+        <blockquote>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0"><font color="#FF0000">#
+          make bzImage</font></p>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0"><font color="#FF0000">#
+          make modules</font></p>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0"><font color="#FF0000">#
+          make modules_install</font></p>
+          <p align="justify" style="margin-top: 0; margin-bottom: 0"><font color="#FF0000">#
+          make install&nbsp;</font></p>
+        </blockquote>
+        <ol start="5">
+          <li>
+            <p align="justify" style="margin-top: 0; margin-bottom: 12">If you
+            are using grub, you will see it in /boot/grub/grub.conf file that an
+            entry for linux-2.4.xxCustom has been made and that's your built
+            kernel. On second line instead of root=LABEL=/, change it to
+            root=/dev/hdaX; where hdaX is the drive where your root (/)
+            filesystem is mounted. Also remove the line &quot;initrd
+            ......&quot;. Make linux-2.4.xxcustom as default and do a
+            &quot;sync&quot; 2-3 times before rebooting the machine or you can
+            also choose this kernel from grub screen during boot-up.</li>
+        </ol>
+                    <!--mstheme--></font><!--msthemelist--></td>
+                </tr>
+              <!--msthemelist--></table>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font><!--msthemelist--></td>
+          </tr>
+          <!--msthemelist--><tr>
+            <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull1.gif" width="15" height="15" hspace="13"></td>
+            <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+    <h2 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">File Types/System</font><!--mstheme--></font></h2>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+              <!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <!--msthemelist--><tr>
+                  <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull2.gif" width="12" height="12" hspace="15"></td>
+                  <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+        <h3 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">NTFS Read/Write</font><!--mstheme--></font></h3>
+                    <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p align="justify" style="line-height: 100%; margin-top: 0">Download
+        the latest driver from <a href="http://linux-ntfs.sourceforge.net/downloads.html" target="_blank">here</a>.
+        If you are using your custom kernel, you need to download the source
+        code rpm or else you can download one of the kernel RPMs.&nbsp;
+        <ol>
+          <li>
+            <p align="left" style="line-height: 100%; margin-bottom: 0">For
+            binary rpm, just install the rpm using the command:</li>
+        </ol>
+        <p align="left" style="line-height: 100%">&nbsp;&nbsp;&nbsp;<font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;
+        # rpm -ivh kernel-ntfs-2.4.20-8.i686.rpm</font></p>
+        <ol start="2">
+          <li>
+            <p align="left" style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0">For
+            source RPMs, check the path where the rpm put the source code:</li>
+        </ol>
+        <p align="left" style="line-height: 100%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font color="#FF0000"># rpm -qpl kernel-ntfs-2.4.20-8.src.rpm </font></p>
+        <ol start="3">
+          <li>
+            <p align="left" style="line-height: 100%">Make
+            and install the NTFS rpm.</li>
+        </ol>
+        <ol start="4">
+          <li>
+            <p align="left" style="line-height: 100%; margin-bottom: 0">Next
+            load the kernel module (NOTE that there should be no output):</li>
+        </ol>
+        <p align="left" style="line-height: 100%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font color="#FF0000">#</font> <font color="#FF0000">/sbin/modprobe ntfs</font></p>
+        <ol start="5">
+          <li>
+            <p align="left" style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0">Check
+            if the NTFS driver has been loaded:</li>
+        </ol>
+        <p align="left" style="line-height: 100%; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font color="#FF0000"># dmesg | grep NTFS</font></p>
+        <p align="left" style="line-height: 100%; margin-top: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        It should display: NTFS driver v1.1.22 [Flags: R/O MODULE]</p>
+        <ol start="6">
+          <li>
+            <p align="left" style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0">We
+            can now check that the kernel <b>really</b> understands NTFS. The
+            output may vary slightly, but you are looking for the entry <q>ntfs</q>.</li>
+        </ol>
+        <p align="left" style="line-height: 100%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font color="#FF0000"># cat /proc/filesystems</font></p>
+        <ol start="7">
+          <li>
+            <p align="left" style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0">Check
+            if the NTFS partitions can be mounted:</li>
+        </ol>
+        <p align="left" style="line-height: 100%; margin-bottom: 0">&nbsp;&nbsp;&nbsp;<font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;
+        # mkdir /mnt/windows</font></p>
+        <p align="left" style="line-height: 100%; margin-top: 0">&nbsp;&nbsp;&nbsp;<font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;
+        # mount /dev/hda1 /mnt/windows -t ntfs -r -o umask=0222</font></p>
+        <ol start="8">
+          <li>
+            <p align="left" style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0">To
+            Auto mount the partitions at boot time, follow these steps:</li>
+        </ol>
+        <p align="left" style="line-height: 100%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <font color="#FF0000"># vi /etc/fstab</font></p>
+        <p align="left" style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        Add the following line:</p>
+        <p align="left" style="line-height: 100%">&nbsp;&nbsp;&nbsp;<font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;
+        /dev/hda1&nbsp;&nbsp;&nbsp;&nbsp; /mnt/windows&nbsp;&nbsp;&nbsp;&nbsp;
+        ntfs&nbsp;&nbsp;&nbsp;&nbsp; ro&nbsp;&nbsp;&nbsp;&nbsp; 0 0</font></p>
+        <p align="left" style="line-height: 100%">For
+        more details visit the official site (no longer maintained) at <a href="http://linux-ntfs.sourceforge.net/" target="_blank">sourceforge.net</a>.</p>
+        <p align="left" style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+                    <!--mstheme--></font><!--msthemelist--></td>
+                </tr>
+                <!--msthemelist--><tr>
+                  <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull2.gif" width="12" height="12" hspace="15"></td>
+                  <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+        <h3 align="left" style="line-height: 100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">ISO mounting</font><!--mstheme--></font></h3>
+                    <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p align="left" style="word-spacing: 0; line-height: 100%; margin-top: 0; margin-bottom: 0">Compile
+        the kernel with the default configuration as explained above. Do a make
+        menuconfig and under block devices select the &quot;Loopback device
+        support&quot;. This should be inbuilt in the kernel rather than as a
+        module, so there should be a star in front on it. Save the config after
+        changing this and rebuild the kernel and install it.</p>
+        <p align="left" style="word-spacing: 0; line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;</p>
+        <p align="left" style="word-spacing: 0; line-height: 100%; margin-top: 0; margin-bottom: 0">After
+        rebooting the machine, to mount an iso image, say /tmp/linux90.iso, use
+        the following commands:</p>
+        <p align="left" style="word-spacing: 0; line-height: 100%; margin-bottom: 0"><font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        # mkdir /mnt/iso</font></p>
+        <p align="left" style="word-spacing: 0; line-height: 100%; margin-top: 0; margin-bottom: 0"><font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        # mount -o loop /tmp/linux90.iso /mnt/iso</font></p>
+        <p align="left" style="line-height: 100%; margin-top: 0"><font color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        # ls /mnt/iso</font></p>
+        <p align="left" style="word-spacing: 0; line-height: 100%; margin-top: 0; margin-bottom: 0">&nbsp;<!--mstheme--></font><!--msthemelist--></td>
+                </tr>
+              <!--msthemelist--></table>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+              <!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <!--msthemelist--><tr>
+                  <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull2.gif" width="12" height="12" hspace="15"></td>
+                  <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+    <h3 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">NFS mount</font><!--mstheme--></font></h3>
+                    <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font><!--msthemelist--></td>
+                </tr>
+              <!--msthemelist--></table>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font><!--msthemelist--></td>
+          </tr>
+          <!--msthemelist--><tr>
+            <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull1.gif" width="15" height="15" hspace="13"></td>
+            <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+    <h2 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">Networking</font><!--mstheme--></font></h2>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+              <!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <!--msthemelist--><tr>
+                  <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull2.gif" width="12" height="12" hspace="15"></td>
+                  <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+        <h3 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">Ethernet</font><!--mstheme--></font></h3>
+                    <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font><!--msthemelist--></td>
+                </tr>
+                <!--msthemelist--><tr>
+                  <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull2.gif" width="12" height="12" hspace="15"></td>
+                  <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+        <h3 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">Wireless</font><!--mstheme--></font></h3>
+                    <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font><!--msthemelist--></td>
+                </tr>
+              <!--msthemelist--></table>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font><!--msthemelist--></td>
+          </tr>
+          <!--msthemelist--><tr>
+            <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull1.gif" width="15" height="15" hspace="13"></td>
+            <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+    <h2 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">Video Card</font><!--mstheme--></font></h2>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+              <!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <!--msthemelist--><tr>
+                  <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull2.gif" width="12" height="12" hspace="15"></td>
+                  <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+        <h3 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">ATI Radeon 9200</font><!--mstheme--></font></h3>
+                    <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+        <p style="line-height: 100%"><font face="Comic Sans MS">To get ATI Radeon 9200 card to work under Redhat
+        Linux, follow these instructions (courtesy <a href="http://users.actrix.co.nz/michael/index.html" target="_blank">http://users.actrix.co.nz/michael/index.html</a>):</font>
+        <ol>
+          <li>
+            <p style="line-height: 100%">Shutdown X-Windows graphical login daemon, log in on a console as
+            root and use telinit:<!--mstheme--></font>
+            <pre><font color="#FF0000"># telinit 3</font>    </pre>
+          <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+          <li>I'd been using the Radeon binary driver, so I had to restore my
+            XFree86 and Mesa OpenGL libraries and modules. If you haven't
+            touched these, then this step isn't necessary:
+            <div align="justify">
+            <!--mstheme--></font>
+            <pre style="word-spacing: 0; line-height: 100%; margin-bottom: 0"><font color="#FF0000">rpm --install --force /mnt/cdrom/RedHat/RPMS/</font></pre>
+            <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+            </div>
+            <div align="justify">
+            <!--mstheme--></font>
+            <pre style="word-spacing: 0; line-height: 100%; margin-top: 0; margin-bottom: 0"><font color="#FF0000">	XFree86-4.3.0-2.i386.rpm
+rpm --install --force /mnt/cdrom/RedHat/RPMS/</font></pre>
+            <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+            </div>
+            <div align="justify">
+            <!--mstheme--></font>
+            <pre style="word-spacing: 0; line-height: 100%; margin-top: 0"><font color="#FF0000">	XFree86-Mesa-libGL-4.3.0-2.i386.rpm</font></pre>
+            <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+            </div>
+          <li>Back up your existing setup.
+            <div align="justify">
+            <!--mstheme--></font>
+            <pre style="word-spacing: 0; line-height: 100%; margin-top: 6; margin-bottom: 0"><font color="#FF0000"># cp /etc/X11/XF86Config /etc/X11/</font></pre>
+            <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+            </div>
+            <div align="justify">
+            <!--mstheme--></font>
+            <pre style="line-height: 100%; word-spacing: 0; margin-top: 0"><font color="#FF0000">	XF86Config.before-radeon-9200</font></pre>
+            <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+            </div>
+          <li>Run redhat-config-xfree86 and setup the card as a Radeon 9000.
+            Under advanced option, use the configure button to choose the video
+            card - I picked the <em>ATI Radeon 9000</em>. Tick the checkbox to <em>Enable
+            Hardware 3D Acceleration.</em> Don't probe, we just want the config
+            program to create a valid XFree86 config - we have to change the
+            ChipId before we can try it.<!--mstheme--></font>
+            <pre><font color="#FF0000"># redhat-config-xfree86</font>      </pre>
+          <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+          <li>Edit the config file and set the ChipId<!--mstheme--></font>
+            <pre><font color="#FF0000"># vi /etc/X11/XF86Config</font>          </pre>
+          <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+            Find the device setion and add the ChipId:<!--mstheme--></font>
+            <pre><font color="#FF0000">Section &quot;Device&quot;
+        Identifier  &quot;Videocard0&quot;
+        Driver      &quot;radeon&quot;
+        VendorName  &quot;Videocard vendor&quot;
+        BoardName   &quot;ATI Radeon 9000&quot;
+        ChipId      0x514D
+EndSection</font></pre>
+          <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+          <li>Test the new configuration for both 2D and 3D. Do a few syncs
+            before hand in case your system locks up.<!--mstheme--></font>
+            <pre><font color="#FF0000"># sync; sync; sync; 
+# startx</font></pre>
+          <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+            You can try glxinfo and confirm DRI for 3D is enabled:<!--mstheme--></font>
+            <pre><font color="#FF0000"># glxinfo
+display: :0.0  screen:0
+direct rendering: Yes</font></pre>
+          <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+          <li>Restart the graphical login daemon<!--mstheme--></font>
+            <pre><font color="#FF0000"># telinit 5</font>   </pre>
+          <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+          </li>
+        </ol>
+                    <!--mstheme--></font><!--msthemelist--></td>
+                </tr>
+              <!--msthemelist--></table>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font><!--msthemelist--></td>
+          </tr>
+          <!--msthemelist--><tr>
+            <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull1.gif" width="15" height="15" hspace="13"></td>
+            <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+    <h2 align="left"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">Web server stuff</font><!--mstheme--></font></h2>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+              <!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+                <!--msthemelist--><tr>
+                  <!--msthemelist--><td valign="baseline" width="42"><img src="../images/anabull2.gif" width="12" height="12" hspace="15"></td>
+                  <td valign="top" width="100%"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font>
+        <h3 align="left" style="line-height: 100%; word-spacing: 0; margin-top: 0; margin-bottom: 0"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica" color="#336633"><font color="#0000FF">PHP v 4.3.x</font><!--mstheme--></font></h3>
+                    <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font><!--msthemelist--></td>
+                </tr>
+              <!--msthemelist--></table>
+              <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+<blockquote>
+  <blockquote>
+    <p style="word-spacing: 0; line-height: 100%; margin-top: 0" align="justify">To compile PHP v 4.3.x under Redhat 9.0,
+    download the PHP source code
+    from <a href="http://www.php.net/releases.php" target="_blank">here</a>. (Note that for
+    Apache 2.0.40 which comes with Redhat 9.0 or its updated kernel version
+    2.4.31, you need PHP 4.3.0. The other version will require you to install
+    newer version of apache. </p>
+    <ol>
+      <li>
+        <p style="margin-bottom: 0">Untar the source code:</li>
+    </ol>
+    <p>&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000"># tar
+    xvfz php-4.3.x.tar.gz</font></p>
+    <ol start="2">
+      <li>
+        <p style="margin-top: 0; margin-bottom: 0">Configure the system</li>
+    </ol>
+    <blockquote>
+      <p style="margin-bottom: 0"><font color="#FF0000">#
+      ./configure --with-apxs2=/usr/sbin/apxs --with-gd --with-jpeg-dir=/usr
+      --with-mysql=/usr --with-zlib-dir=/usr --enable-sigchild</font></p>
+    </blockquote>
+	or for the way rehat installs php use the following command:
+    <blockquote>
+      <p style="margin-bottom: 0"><font color="#FF0000">#
+      ./configure --host=i386-redhat-linux --build=i386-redhat-linux --target=i386-redhat-linux-gnu --program-prefix= --prefix=/usr --exec-prefix=/usr --bindir=/usr/bin --sbindir=/usr/sbin --sysconfdir=/etc --datadir=/usr/share --includedir=/usr/include --libdir=/usr/lib --libexecdir=/usr/libexec --localstatedir=/var --sharedstatedir=/usr/com --mandir=/usr/share/man --infodir=/usr/share/info --cache-file=../config.cache --with-config-file-path=/etc --with-config-file-scan-dir=/etc/php.d --enable-force-cgi-redirect --disable-debug --enable-pic --disable-rpath --enable-inline-optimization --with-bz2 --with-db3 --with-curl --with-dom=/usr --with-exec-dir=/usr/bin --with-freetype-dir=/usr --with-png-dir=/usr --with-gd --enable-gd-native-ttf --with-ttf --with-gdbm --with-gettext --with-ncurses --with-gmp --with-iconv --with-jpeg-dir=/usr --with-png --with-pspell --with-regex=system --with-xml --with-expat-dir=/usr --with-zlib --with-layout=GNU --enable-bcmath --enable-exif --enable-ftp --enable-magic-quotes --enable-safe-mode --enable-sockets --enable-sysvsem --enable-sysvshm --enable-discard-path --enable-track-vars --enable-trans-sid --enable-yp --enable-wddx --without-oci8 --with-pear=/usr/share/pear --with-imap=shared --with-imap-ssl --with-kerberos=/usr/kerberos --with-ldap=shared --with-mysql=shared,/usr --with-pgsql=shared --with-snmp=shared,/usr --with-snmp=shared --enable-ucd-snmp-hack --with-unixODBC=shared --enable-memory-limit --enable-bcmath --enable-shmop --enable-versioning --enable-calendar --enable-dbx --enable-dio --enable-mcal --enable-force-cgi-redirect --with-apxs2=/usr/sbin/apxs --with-zlib-dir=/usr --enable-sigchild </font></p>
+    </blockquote>
+    <ol>
+      <li value="3">
+        <p style="margin-top: 0; margin-bottom: 0">Make and install PHP. After
+        installing do a restart on httpd:</li>
+    </ol>
+    <p style="margin-bottom: 0">&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000"># make &amp;&amp; make
+    install</font></p>
+    <p style="margin-top: 0; margin-bottom: 0">&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp; <font color="#FF0000"># service httpd restart</font></p>
+  </blockquote>
+</blockquote>
+
+              <!--mstheme--></font><!--msthemelist--></td>
+          </tr>
+        <!--msthemelist--></table>
+        <!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font></td>
+    </tr>
+  </table><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+</div>
+
+<!--mstheme--></font><TABLE cellSpacing=0 cellPadding=0 width="550" border=0>
+ <TR><TD width="530"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+    <!--msthemeseparator--><p align="center"><img src="../images/anarule.gif"></p>
+<p align="left" style="word-spacing: 0; line-height: 100%; margin-top: 0; margin-bottom: 0">
+Last Updated on June 3, 2004</p>
+    <!--mstheme--></font></TD>
+
+<TD width="20"><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica">
+<!-- Begin Nedstat Basic code -->
+<script language="JavaScript" type="text/javascript" src="http://m1.nedstatbasic.net/basic.js"> </script><a target="_blank" 
+  href="http://www.nedstatbasic.net/stats?ACsu9g4Q7D8sNaw7znQdbpi8ARFA"><img
+  src="http://m1.nedstatbasic.net/n?id=ACsu9g4Q7D8sNaw7znQdbpi8ARFA"
+  border="0" width="18" height="18"
+  alt="Web Page Counter"></a> <!-- End Nedstat Basic code -->
+  <!--mstheme--></font></TD></TR>
+</table><!--mstheme--><font face="Trebuchet MS, Arial, Helvetica"><!--mstheme--></font></body>
+
+</html>

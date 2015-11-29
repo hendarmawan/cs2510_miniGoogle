@@ -1,0 +1,19 @@
+<pre>
+Test Cases
+<font color=blue>
+Your tests should look like the following:
+======================================================================================
+| test no | description | input | expected output | date tested | problem | solution |
+|____________________________________________________________________________________|
+| test 2  | unit test   | dates | error message   |             |         |          |
+| WhiteBox| user login  | in WD | displayed       |             |         |          |
+|____________________________________________________________________________________|
+| test 15 | func test   | event | new calendar is |             |         |          |
+| BlackBox|  new event  | in ED | displayed       |             |         |          |
+|____________________________________________________________________________________|
+| test304 | system test | power |  initial window |             |         |          |
+| BlackBox|             | up    |  appears        |             |         |          |
+======================================================================================
+
+Notes: WD is the equivalence class for Wrong Dates
+       ED is the equivalence class for Event Data

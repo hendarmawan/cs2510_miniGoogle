@@ -1,0 +1,23 @@
+<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="03.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="05.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>How to Insert Time Specification?</H1>
+<H1><FONT color=mediumblue>Time may be associated with Tokens (TKPN)</FONT></H1>
+</CENTER>
+
+<UL><UL><UL> <UL><UL><UL>
+  <LI><FONT size=5>Tokens carry a time stamp that indicates 
+  when they are available to fire a transition</FONT>
+  </LI>
+</UL></UL></UL></UL></UL></UL>
+
+<CENTER><IMG src="images/tkpn.jpg"></CENTER>
+
+</BODY></HTML>
+

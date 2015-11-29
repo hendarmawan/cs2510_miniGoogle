@@ -1,0 +1,516 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Marian Kamal Iskander HomePage..Have fun..</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+
+
+
+
+
+
+//-->
+</script>
+        <style type="text/css">
+            .style1
+            {
+                font-weight: bold;
+                color: #FFE7BE;
+                font-size: large;
+                background-color: #BF0000;
+            }
+            .style2
+            {
+                color: #2C1F1E;
+                font-size: 10px;
+                height: 285px;
+                width: 764px;
+            }
+            .style3
+            {
+                font-size: medium;
+                background-color: #BF0000;
+            }
+            .style4
+            {
+                height: 31px;
+                background-color: #BF0000;
+            }
+            .style5
+            {
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            .style7
+            {
+                font-size: large;
+            }
+            .style8
+            {
+                color: #090969;
+                background-color: #BF0000;
+            }
+            .style9
+            {
+                color: #808080;
+                font-weight: bold;
+            }
+            .style10
+            {
+                color: #333333;
+                font-weight: bold;
+            }
+            .style12
+            {
+                font-size: medium;
+                color: #090969;
+                background-color: #BF0000;
+            }
+            .style13
+            {
+                color: #333366;
+                background-color: #BF0000;
+            }
+            .style14
+            {
+                background-color: #BF0000;
+            }
+            .style15
+            {
+                font-family: Arial, Helvetica, sans-serif;
+                color: #FFFFC6;
+            }
+            .style16
+            {
+                color: #F42648;
+            }
+            .style17
+            {
+                color: #F72648;
+            }
+            .style20
+            {
+                color: #FFFFFF;
+            }
+            .style21
+            {
+                color: #FFFFCC;
+                font-size: small;
+            }
+            .style22
+            {
+                font-size: small;
+                font-style: italic;
+                color: #FFFFCC;
+            }
+            .style23
+            {
+                font-size: small;
+            }
+            .style24
+            {
+                color: #FFFFCC;
+            }
+            .style25
+            {
+                width: 972px;
+            }
+            .style26
+            {
+                width: 764px;
+                height: 540px;
+            }
+            .style27
+            {
+                width: 254px;
+            }
+            .style28
+            {
+                text-align: justify;
+            }
+            .style29
+            {
+                color: #FFFFC6;
+            }
+            .style30
+            {
+                color: #D9215D;
+            }
+            .style31
+            {
+                width: 143px;
+                height: 247px;
+            }
+            .style32
+            {
+                background: url('images/1_p2.gif') no-repeat right bottom;
+                width: 256px;
+                height: 247px;
+            }
+        </style>
+</head>
+<body onLoad="MM_preloadImages('images/m1-1.gif','images/m2-2.gif','images/m3-3.gif','images/m4-4.gif','images/m5-5.gif')">
+
+<table id="page1" class="bg" align="center" onclick="return page1_onclick()"> 
+	<tr>
+		<td class="style2" style="border: medium inset red;">
+            &nbsp;<br />
+            &nbsp;<img src="images/pitt_logo.gif" style="background-color: transparent; width: 100px; height: 92px;" /><img src="images/University.jpg" style="left: 97px;
+                top: 21px; background-color: transparent; height: 75px; width: 368px;" /><br />
+            <br />
+            <img src="images/Egypt_Pitt.jpg" style="width: 779px; height: 168px;" /><span 
+                class="style1"><br />
+            </td>
+            </tr>
+            <tr>
+            <td class="style4">
+                <span class="style5"><span class="style6"><span class="style7">
+                <span class="style13">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+&nbsp;&nbsp;&nbsp; 
+                <a href = "file:///C:/template_17234_73PKk3oXM0VLdSh3IzJa/site%20-%20Copy/index.html" 
+                    class="style15"> Home</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span></span>
+                <span class="style14"><span class="style7">
+                <span class="style6">
+                <span class="style15"> <a href="Research.html"><span class="style29">Research</span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="teaching.html" class="style15">Teaching</a></span></span></span></span><span class="style5"><span class="style7"><span class="style6"><span class="style15">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <a href="Marian Iskander CV.pdf" class="style15"> CV </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                <a href="file:///C:/template_17234_73PKk3oXM0VLdSh3IzJa/site%20-%20Copy/myalbum.html" 
+                    class="style15">Photo Album</a></span><br />
+                <span 
+                    class="style8">&nbsp;&nbsp; </span></span></span><span class="style12">&nbsp;</span></span><span 
+                    clas&nbsp;</span></span><span 
+                    class="style3"><span class="style8"></span><br />
+                </span></span>&nbsp;</td>
+	</tr>
+	<tr style="font-size: 11px">
+		<td style="border: medium inset red;" class="style26">
+        	<table id="content">
+                <tr>
+                    <td style="text-align: justify" class="style27">
+                    	<table class="col1" style="color: midnightblue; height: 458px">
+                            <tr>
+                              <td class="row1" style="height: 110px; width: 268px;">
+                                	<img alt="" src="images/new_events.gif" class="title"><br>
+                                    <div style="margin:9px 15px 0 21px " class="style28">
+                                    	<b>
+                                        09.1.12 :: <span class="style10">&nbsp;Fellowship</span><br />
+                                        <span class="style9">Starting my 4th year of the PhD with the prestigious Mellon Fellowship awarded from the University of Pittsburgh</span><br />                                    
+					<b>
+                                        
+                                        <br style="line-height:9px">
+                                        09.1.12 :: Progress</span><b><br />
+                                        </b><span class="style9">Starting my 4th academic year as a PhD student. 
+                                        Finished my comprehensive exam and all my course work .. heading to the PhD proposal now <br />
+                                        <br />
+                                    	<b>03.20.12 :: &nbsp;<strong><span 
+                                            class="style10">Awards</span>
+                                        <br />
+                                        </strong><span class="style9">Received &quot;<i>Runner up Graduate Poster Award</i>&quot; on 
+                                        the 12th Annual Computer Science Day, University of Pittsburgh. <br />
+                                        </b>
+                                        </span>
+                                        <b>
+                                            
+                                        <br style="line-height:9px">
+                                        <img alt="" src="file:///R:/public/html/images/1_line.gif"><br>
+                                        <br style="line-height:11px">
+                                    </div>
+                                  <img alt="" src="images/BibleVerse.gif" class="title" style="width: 223px; height: 41px"></td>
+                            </tr>
+                             <tr>
+                                <td class="row2" 
+                                     
+                                     style="height: 86px; text-align: center; width: 268px; font-family: Calibri;">
+                                	<form action="" id="form" style="margin:0; padding:0 ">
+                                        <strong>
+                                        <span style="color: #003333">
+                                            <i><span style="font-family: Century Schoolbook" class="style21">&quot;Declare 
+                                        His glory among the</span><span 
+                                            style="font-size: 10pt; font-family: Century Schoolbook" class="style24"><br 
+                                            class="style23" />
+                                        </span></i><span style="font-size: 10pt; font-family: Century Schoolbook" 
+                                            class="style24">&nbsp;</span></span><span 
+                                            style="font-size: 10pt; font-family: Century Schoolbook"><br 
+                                            class="style22" />
+                                            </span>
+                                        <span style="color: #003333">
+                                            <i><span style="font-family: Century Schoolbook" class="style21">heathen, 
+                                        His wonders among all </span>
+                                        <span style="font-size: 10pt; font-family: Century Schoolbook">
+                                        <span class="style24">
+                                                    <br class="style23" />
+                                                    <br class="style23" />
+                                                    </span>
+									    </span><span style="font-size: 10pt; font-family: Century Schoolbook" 
+                                            class="style20"><span style="font-family: Century Schoolbook" 
+                                            class="style21">people. For the LORD is great, and </span></span>
+                                        <span style="font-size: 10pt; font-family: Century Schoolbook">
+                                        <span class="style24">
+                                                    <br class="style23" />
+                                                    <br class="style23" />
+                                                    </span>
+									    </span><span style="font-size: 10pt; font-family: Century Schoolbook" 
+                                            class="style20"><span style="font-family: Century Schoolbook" 
+                                            class="style21">greatly to be praised.&quot;</span><span 
+                                            style="font-size: 10pt; font-family: Century Schoolbook"><span 
+                                            class="style24"><br class="style23" />
+                                                    <br class="style23" />
+                                                    </span>
+									    </span><span style="font-family: Century Schoolbook" class="style21">Psalm 96 </span></span>
+                                        </i></span>
+                                            </strong>
+									</form>
+                                </td>
+                            </tr>
+                        </table>
+                        <span style="color: #333333"><span style="font-size: 9pt"><strong><span style="color: #000033">
+                            <span style="color: #333333; font-style: italic; font-family: Bookman Old Style">
+                        <br />
+                        President of the ISF (since 2009)<br />
+                        <br />
+                        </span>
+                        </span></strong></span></span>If you are an International student and seeking a 
+                        true Christian fellowship among warm loving friends check this website for the 
+                        International Students Fellowship Oraganization. Contact me if you have any 
+                        questions.<br />
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <a href="http://www.isfonline.org" target="_blank">www.isfonline.org</a><br />
+                        <br />
+                    </td>
+                    <td style="font-family: Tahoma">
+                    	&nbsp;</td>
+                    <td style="width: 526px; font-family: Tahoma;">
+                    	<table class="col3">
+                            <tr>
+                                <td class="row4" style="width: 493px">
+                                	<img alt="" src="images/Welcome.jpg" class="title" id="IMG1" onclick="return IMG1_onclick()"><br>
+                                    <div style="margin:5px 5px 0 21px ; text-align: justify;">
+                                    	<b> </b><span style="font-size: 11pt"><strong><span style="color: #f32648">I am 
+                                        Marian Kamal Yousef Iskander<br />
+                                        </span></strong>
+                                            <br>
+                                        </span>I am a graduate student at Computer Science Department. I joined Pitt&#39;s 
+                                        University on August 2009. It&#39;s an honor of mine to be able to pursue my PhD 
+                                        degree from such an amazing Unviversity. I was born and lived most of life time 
+                                        in Egypt, Cairo. I am married and have a wonderful husband and a little 4 years 
+                                        old daugher ....<br />
+                                        <br />
+                                        &nbsp;<a href="#" class="more">read more</a><br>
+                                     </div>
+                                </td>
+                            </tr>
+                             <tr style="font-size: 11px">
+                                <td class="row5" style="width: 493px"><div class="px"><img alt="" src="images/spacer.gif" width="1" height="1"></div></td>
+                            </tr>
+                             <tr style="font-size: 11px">
+                                <td class="row6" style="height: 14px; width: 493px;"></td>
+                            </tr>
+                             <tr style="font-size: 11px">
+                                <td style="width: 493px">
+                                	<table class="row7" id="TABLE1" onclick="return TABLE1_onclick()">
+                                        <tr>
+                                            <td class="style31">
+                                            	<table style="width:252px">
+                                                    <tr>
+                                                        <td style="width: 208px; height: 82px;">
+                                                        	<img alt="" src="images/Courses.gif" class="title"><br>
+                                                            <div style="margin:7px 15px 0 21px; text-align: justify; width: 186px;">
+                                                               None, yayyy I am done with my course work .. finally !</div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td style="width: 208px">
+                                                        	<table style="height:122px " frame="box">
+                                                                <tr>
+                                                                    <td style="width: 4px">
+                    	<table class="col2">
+                            <tr>
+                                <td class="row3" style="width: 13px"></td>
+                            </tr>
+                            <tr>
+                                <td height="100" style="width: 13px"><img alt="" src="images/spacer.gif" width="1" height="100"></td>
+                            </tr>
+                        </table>
+                                                                    </td>                                                                    
+                                                                    <td style="width: 91px">
+                                                                        <img alt="" src="images/Marian.gif" style="width: 132px; height: 160px" 
+                                                                            id="IMG4" onclick="return IMG4_onclick()"><br style="line-height:5px">
+                                                                        <a href="#"></a></td>
+                                                                    <td align="center" colspan="3" rowspan="3" valign="middle" class="style25">
+                                                                    	<ul>
+                                                                             <li style="text-align: left">CS3520                               
+                                                                        </ul>
+                                                                        <p>
+                                                                            &nbsp;</p>
+                                                                        <p>
+                                                &nbsp;</p>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td><b>&nbsp;&nbsp;&nbsp; Courses that I have taken:</b></td>
+                                                    <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Computer Architecture (CS2410)</li>
+                                                            <li>Computer Operating Systems (CS2510)</li>
+                                                        </ul>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Research Topics in Computer Science (CS2001)</li>
+                                                        </ul>
+                                                        </td>
+                                                    <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Design &amp; Analysis of Algorithms (CS2150)</li>
+                                                        </ul>
+                                                        </td>
+                                                    <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Wide Area Networks (CS2520)</li>
+                                                        </ul>
+                                                        </td>
+                                                    <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Principles of Database Systems (CS2550)</li>
+                                                        </ul>
+                                                        </td>
+                                                    <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Research Experience/Computer Science(CS2002)</li>
+                                                                </ul>
+                                                            </td>
+                                                    <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Computer and Network Security (CS2530)</li>
+                                                                </ul>
+                                                            </td>
+                                                    <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Advanced Topics in Parallel Computing (CS3580)</li>
+                                                        </ul>
+                                                        </td>
+                                                    <tr>
+                                                    <td>
+                                                        <ul>
+                                                            <li>Advanced Topics in Distributed IS (CS3551)</li>
+                                                        </ul>
+                                                        </td>
+                                                    </table>
+                                            </td>
+                                           
+                                            <td class="row3" style="height: 247px"></td>
+                                            <td class="style32">
+                                            	<img alt="" src="images/Contact_info.jpg" class="title"><br>
+                                                <div style="margin:9px 15px 0 21px ; text-align: left; width: 189px;">
+                                                	<img alt="" src="images/1_z3.gif" style="margin-left:-16px; margin-right:6px; height: 7px;"><span>Address:</span><br style="line-height:5px">
+                                                    <strong><span style="color: #333366">210 South Bouquet St.<br />
+                                                        Department of Computer Science<br />
+                                                        University of Pittsburgh<br />
+                                                        Pittsburgh, PA 15260<br />
+                                                    <br />
+                                                    </span></strong>
+                                                  	<span class="style16">Office #</span><span class="style17"> : 6503</span><span style="color: #333366"><strong><br />
+                                                    </strong>
+                                                    </span><span class="style17">MailBox # :</span><span style="color: #333366"><strong>
+                                                    </strong>
+                                                    </span>
+                                                  	<span class="style30">371</span><strong><span style="color: #333366"><br />
+                                                    <br />
+                                                    </span>
+                                                    </strong>
+                                                  	<br style="line-height:15px">
+                                                  	<span>
+                                                  	<img alt="" src="images/1_z4.gif" 
+                                                        style="margin-left:-16px; margin-right:6px; width: 12px; height: 8px;">Phone 
+                                                    and mail:</span><br style="line-height:4px">
+                                                    <strong>Tel.: (412)290-7674  <br /> E-mail:<span style="color: #cc0000"> marianky @&nbsp; cs . pitt . edu
+                                                        &nbsp;<br />
+                                                    </span>
+                                                     </strong></div>
+                                          </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                             <tr style="font-size: 11px">
+                                <td class="row8" style="width: 493px"><b>
+                                    <br />
+                                    &nbsp;&nbsp;
+                                    Note:</b> The&nbsp; webpage is still uder construction, 
+                                    so some links may not be activated yet...<br />
+                                    &nbsp;&nbsp;
+                                    You can find me on facebook here :<a href="http://www.facebook.com/marianky">www.facebook.com/marianky</a> </td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col4" style="font-size: 11px; font-family: Tahoma"></td>
+                </tr>
+            </table>
+     	 </td>
+	</tr>
+	<tr style="font-size: 11px; font-family: Tahoma;">
+		<td style="border-right: red inset; border-top: red inset; border-left: red inset; width: 764px; border-bottom: red inset">
+       	  <br style="line-height:5px">
+          <table id="footer">
+                <tr>
+                  <td class="col1" style="height: 91px">
+                                            Unviersity of Pittsburgh © 2011<br>
+                      By: Marian Kamal Iskander</td>
+                    <td class="col2" style="height: 91px">
+                   	  <a href="index.html"><span style="color: #ffffff">main page</span></a> &nbsp;· &nbsp; &nbsp;<span style="font-size: 11px"><span style="color: #ffffff">RESEARCH</span>
+                        </span>&nbsp;· &nbsp; <a href="index-2.html">presentations</a> &nbsp;· &nbsp; <a href="index-3.html">
+                        students</a> &nbsp;· &nbsp; <a href="#index-4.html">contacts</a><br>
+                  </td>
+                </tr>
+          </table>
+        </td>
+	</tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

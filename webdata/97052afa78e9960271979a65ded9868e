@@ -1,0 +1,551 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+
+
+<title>CS 2530: Computer and Network Security (Fall 2010)</title>
+<link rel="stylesheet" href="./style.css" type="text/css">
+<style type="text/css">
+  table { border-collapse: collapse; }
+</style>
+
+</head><body bgcolor="#ffffcc">
+
+<h1 align="center"><font color="#660000">Lectures</font></h1>
+
+<hr>
+<center>
+  <a href="./index.html"><b>[ Home ]</b></a> &nbsp;&nbsp;
+  <a href="./policies.html"><b>[ Policies ]</b></a> &nbsp;&nbsp;
+  <a href="./lectures.html"><b>[ Lectures ]</b></a> &nbsp;&nbsp;
+  <a href="./homework.html"><b>[ Homework ]</b></a> &nbsp;&nbsp;
+  <a href="./project.html"><b>[ Project ]</b></a> &nbsp&nbsp
+</center>
+<hr>
+
+<br>
+
+<center>
+<h2>Lecture Schedule (Subject to Change)</h2>
+
+<table border="0" cols="1">
+<tr><td align="center" width="600">
+  <b><font color="red">Notice:</font></b> Students are responsible for
+  reading assigned materials prior to the lecture in which they will
+  be discussed.  Lecture slides are available via AFS in
+  the <tt>/afs/cs.pitt.edu/usr0/adamlee/public/cs2530/lectures/</tt> directory.
+  As per the <a href="./policies.html">course policies</a>, lecture
+  slides are for your use only.
+</td></tr>
+</table>
+
+<br><br>
+
+<table border="1" cols="4">
+<tbody><tr>
+  <td bgcolor="#e6ffcc" width="100" align="center"><b><u>Lecture #</u></b></td>
+  <td bgcolor="#e6ffcc" width="100"><b><u>Date</u></b></td>
+  <td bgcolor="#e6ffcc" width="450"><b><u>Topics</u></b></td>
+  <td align="center" bgcolor="#e6ffcc" width="200"><b><u>Readings</u></b></td>
+  <td align="center" bgcolor="#e6ffcc" width="200"><b><u>Other</u></b></td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">1</td>
+  <td valign="top" width="100">1/8 (Tue)</td>
+  <td valign="top" width="450">Administrivia and introduction</td>
+  <td align="center" valign="top" width="200"> B 1 </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">2</td>
+  <td valign="top" width="100">1/10 (Thu)</td>
+  <td valign="top" width="450"> Introduction, cont. </td>
+  <td align="center" valign="top" width="200"> B 13; <a href="#SS75">[SS75]</a>; <a href="#L04">[L04]</a>; <a href="#BLR+04">[BLR+04]</a> </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center"> 3 </td>
+  <td valign="top" width="100">1/15 (Tue)</td>
+  <td valign="top" width="450"> Why is security hard? </td>
+  <td align="center" valign="top" width="200"> B 2-3.2; <a href="#HRU76">[HRU76]</a> </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">4</td>
+  <td valign="top" width="100">1/17 (Thu)</td>
+  <td valign="top" width="450"> The Take/Grant protection model </td>
+  <td align="center" valign="top" width="200"> B 3.3 </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">5</td>
+  <td valign="top" width="100">1/22 (Tue)</td>
+  <td valign="top" width="450"> Policy Models I </td>
+  <td align="center" valign="top" width="200">  B 4-5; <a href="#M85">[M85]</a> </td>
+  <td align="center" valign="center" width="200"> HW 1 due </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">6</td>
+  <td valign="top" width="100">1/24 (Thu)</td>
+  <td valign="top" width="450"> Policy Models II </td>
+  <td align="center" valign="top" width="200"> B 6-7 </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">7</td>
+  <td valign="top" width="100">1/29 (Tue)</td>
+  <td valign="top" width="450"> Access controls </td>
+  <td align="center" valign="top" width="200"> B 15 </td>
+  <td align="center" valign="center" width="200"> HW 2 due </td>
+</tr>
+
+<tr >
+  <td valign="top" width="100" align="center">8</td>
+  <td valign="top" width="100">1/31 (Thu)</td>
+  <td valign="top" width="450"> Advanced authorization </td>
+  <td align="center" valign="top" width="200"> <a href="#BFL96">[BFL96]</a>; <a href="#LMW02">[LMW02]</a> </td>
+  <td align="center" valign="center" width="200"> Project proposal due </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">9</td>
+  <td valign="top" width="100">2/5 (Tue)</td>
+  <td valign="top" width="450"> RBAC (Guest lecture by <a href="http://www.sis.pitt.edu/~jjoshi/">Professor James Joshi</a>) </td>
+  <td align="center" valign="top" width="200"> <a href="#OSM00">[OSM00]</a> </td>
+  <td align="center" valign="center" width="200"> -</td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center"> 10 </td>
+  <td valign="top" width="100">2/7 (Thu)</td>
+  <td valign="top" width="450"> Formal analysis of access control schemes I </td>
+  <td align="center" valign="top" width="200"> <a href="#CMD01">[CMD01]</a> </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">11</td>
+  <td valign="top" width="100">2/12 (Tue)</td>
+  <td valign="top" width="450"> Formal analysis of access control schemes II </td>
+  <td align="center" valign="top" width="200">  <a href="#TL07">[TL07]</a> </td>
+  <td align="center" valign="center" width="200"> HW 3 due </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">12</td>
+  <td valign="top" width="100">2/14 (Thu)</td>
+  <td valign="top" width="450"> Symmetric key cryptography </td> 
+  <td align="center" valign="top" width="200">  B 9.1-9.2, 9.4, 11.1-11.2; PP 2.1-2.6 </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center"> - </td>
+  <td valign="top" width="100">2/19 (Tue)</td>
+  <td valign="top" width="450"> <i>No Class</i> </td>
+  <td align="center" valign="top" width="200"> - </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">13</td>
+  <td valign="top" width="100">2/21 (Thu)</td>
+  <td valign="top" width="450"> Public key cryptography and IBE </td>
+  <td align="center" valign="top" width="200"> B 9.3; PP 2.7; <a href="#RSA78">[RSA78]</a>; <a href="#S85">[S85]</a>; <a href="#K07">[K07]</a> </td> 
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">14</td>
+  <td valign="top" width="100">2/26 (Tue)</td>
+  <td valign="top" width="450"> Public key cryptography and IBE  </td>
+  <td align="center" valign="top" width="200"> </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+
+
+<tr>
+  <td valign="top" width="100" align="center">15</td>
+  <td valign="top" width="100">2/28 (Thu)</td>
+  <td valign="top" width="450"> Threshold cryptography and secret sharing </td>
+  <td align="center" valign="top" width="200">  <a href="#SZ05">[SZ05]</a>; <a href="#S79">[S79]</a>; <a href="#HJ+95">[HJ+95]</a> </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">16</td>
+  <td valign="top" width="100">3/05 (Tue)</td>
+  <td valign="top" width="450"> Midterm (in class) </td>
+  <td align="center" valign="top" width="200"> - </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">17</td>
+  <td valign="top" width="100">3/7 (Thu)</td>
+  <td valign="top" width="450"> Authentication and identity </td>
+  <td align="center" valign="top" width="200">  B 12, 14; <a href="#L81">[L81]</a> </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">-</td>
+  <td valign="top" width="100">3/12 (Tue)</td>
+  <td valign="top" width="450">Spring break.  No class.</td>
+  <td align="center" valign="top" width="200"> - </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">-</td>
+  <td valign="top" width="100">3/14 (Thu)</td>
+  <td valign="top" width="450">Spring break.  No class.</td>
+  <td align="center" valign="top" width="200"> - </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">18</td>
+  <td valign="top" width="100">3/19 (Tue)</td>
+  <td valign="top" width="450"> Authentication and key exchange protocols </td>
+  <td align="center" valign="top" width="200"> B 10; <a href="#DH76">[DH76]</a> </td>
+  <td align="center" valign="center" width="200"> Annotated reference list due </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">19</td>
+  <td valign="top" width="100">3/21(Thu)</td>
+  <td valign="top" width="450"> Operating system security  </td>
+  <td align="center" valign="top" width="200"> PP 4-5; <a href="#AO96">[AO96]</a> </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">20</td>
+  <td valign="top" width="100">3/26 (Tue)</td>
+  <td valign="top" width="450"> Network security </td>
+  <td align="center" valign="top" width="200">  PP 7; B 26  </td> 
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">21</td>
+  <td valign="top" width="100">3/28 (Thu)</td>
+  <td valign="top" width="450"> Viruses and worms </td> 
+  <td align="center" valign="top" width="200"> B 22; <a href="#S89">[S89]</a>; <a href="#SM+04">[SM+04]</a> </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">22</td>
+  <td valign="top" width="100">4/02 (Tue)</td>
+  <td valign="top" width="450"> Data privacy I: Syntactic protections </td>
+  <td align="center" valign="top" width="200"> <a href="#S02">[S02]</a>; <a href="#MG+06">[MG+06]</a> </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">23</td>
+  <td valign="top" width="100">4/04 (Thu)</td>
+  <td valign="top" width="450"> Data privacy II: Querier privacy </td>
+  <td align="center" valign="top" width="200"> <a href="#CG+95">[CG+95]</a>; <a href="#FL+11">[FL+11]</a> </td>
+  <td align="center" valign="center" width="200"> HW 4 due </td>
+</tr>
+
+
+<tr bgcolor="orange">
+
+  <td colspan="5" align="center">
+
+    <br><b>Note:</b> All readings beyond this point are required!
+    Prior to class, you are expected to read each paper.  Then fill
+    out a copy of the <a href="./review.txt">review form</a>
+    for <b>one</b> of the papers and submit it to the instructor
+    before class.  The presentation schedule and instructions
+    are <a href="schedule.txt">here</a>.<br><br>
+  </td>
+
+</tr>
+
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">24</td>
+  <td valign="top" width="100">4/09 (Tue)</td>
+  <td valign="top" width="450"> <b>Advanced topics:</b> Anonymity </td>
+  <td align="center" valign="top" width="200"> <a href="#DMS04">[DMS04]</a>: Joe, Ryan <br>
+                                               <a href="#HBS13">[HBS13]</a>: Becca, Ben </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">25</td>
+  <td valign="top" width="100">4/11 (Thu)</td>
+  <td valign="top" width="450"> <b>Advanced topics:</b> Cloud Security </td>
+  <td align="center" valign="top" width="200"> <a href="#RT+09">[RT+09]</a>: Ha, Yechen<br>
+                                               <a href="#BLS+12">[BLS+12]</a>: Stephen </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">26</td>
+  <td valign="top" width="100">4/16 (Tue)</td>
+  <td valign="top" width="450"> <b>Advanced topics:</b> Location and Mobile Security/Privacy </td>
+  <td align="center" valign="top" width="200"> <a href="#HRS+12">[HRS+12]</a>: Tim, Ruhsary<br>
+                                               <a href="#THS12">[THS12]</a>: Zhipeng, Mykolas </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">27</td>
+  <td valign="top" width="100">4/18 (Thu)</td>
+  <td valign="top" width="450"> <b>Advanced topics:</b> Data(base) Security </td>
+  <td align="center" valign="top" width="200"> <a href="#BDJ+11">[BDJ+11]</a>: Dan, Di<br>
+                                               <a href="#PRZ+11">[PRZ+11]</a>: Cory, Duncan </td>
+  <td align="center" valign="center" width="200"> HW 5 due </td>
+</tr>
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">28</td>
+  <td valign="top" width="100">4/23 (Tue)</td>
+  <td valign="top" width="450"> Project presentations </td>
+  <td align="center" valign="top" width="200"> - </td>
+  <td align="center" valign="center" width="200"> Project reports due </td>
+</tr>
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">29</td>
+  <td valign="top" width="100">4/25 (Thu)</td>
+  <td valign="top" width="450"> Project presentations </td>
+  <td align="center" valign="top" width="200"> - </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+</table>
+
+<br><br>
+</center>
+
+
+<h2 align="center">Readings</h2>
+
+<a name="note"><b>NOTE:</b></a> In the reading assignments listed
+above, "B" refers to the Bishop book, "PP" refers to the Pfleeger and
+Pfleeger book, and other references refer to the papers below.  For
+instance, "B 2-3.2" means to read all of chapter 2 and sections 3.1
+and 3.2 of Bishop.<br><br>
+
+
+<b>Other Readings:</b>
+<ul>
+  <li><b><a name="AO96">[AO96]</a></b> Aleph
+  One, <a href="http://insecure.org/stf/smashstack.html">Smashing the
+  Stack for Fun and Profit</a>, Phrack Issue 49, Nov. 1996.<br><br></li>
+
+  <li><b><a name="BDJ+11">[BDJ+11]</a></b> Keven D. Bowers, Marten van
+  Dijk, Ari Juels, Alina Oprea, Ronald L. Rivest: <a href="http://dl.acm.org/citation.cfm?doid=2046707.2046766">How to
+  tell if your cloud files are vulnerable to drive crashes</a>, CCS
+  2011.<br><br></li>
+  
+  <li><b><a name="BL76">[BL76]</a></b> D.E. Bell and L.J. La Padula,
+  <a
+  href="http://csrc.nist.gov/publications/history/bell76.pdf">Secure
+  Computer System: Unified Exposition and Multics Interpretation</a>,
+  MITRE Technical Report ESD-TR-75-306, March 1976.<br><br></li>
+
+  <li><b><a name="BLR+04">[BLR+04]</a></b> Bharat Bhargava, Leszek
+  Lilien, Arnon Rosenthal, Marianne Winslett, Morris Sloman, Tharam
+  S. Dillon, Elizabeth Chang, Farookh Khadeer Hussain, Wolfgang Nejdl,
+  Daniel Olmedilla, and Vipul
+  Kashyap, <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1347072&isnumber=29660">The
+  Pudding of Trust</a>, IEEE Intelligent Systems 19(5): 74-88,
+  Sep.-Oct. 2004.<br><br></li>
+
+  <li><b><a name="BLS+12">[BLS+12]</a></b> Shakeel Butt, H. Andres
+  Lagar-Cavilla, Abhinav Srivastava, Vinod Ganapathy, <a
+   href="http://www.cs.rutgers.edu/~vinodg/papers/ccs2012a/ccs2012a.pdf">Self-service
+  Cloud Computing</a>, CCS 2012.<br><br></li>
+  
+  <li><b><a name="BFL96">[BFL96]</a></b> Matt Blaze, Joan Feigenbaum,
+  and Jack Lacy, <a
+  href="http://www.crypto.com/papers/policymaker.pdf">
+  Decentralized Trust Management</a>, IEEE
+  Symposium on Security and Privacy, May 1996.<br><br></li>
+
+  <li><b><a name="CG+95">[CG+95]</a></b> B. Chor, O. Goldreich,
+  E. Kushilevitz, M. Sudan, <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=492461">Private information
+  retrieval</a>, FOCS 1995.<br><br></li>
+
+  <li><b><a name="CMD01">[CMD01]</a></b> Ajay Chander, John
+  C. Mitchell, Drew
+  Dean: <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=930134">A
+  State-Transition Model of Trust Management and Access
+  Control</a>. CSFW 2001: 27-43.<br><br></li>
+
+  <li><b><a name="DH76">[DH76]</a></b> Whitfield Diffie and Martin
+  E. Hellman, <a href="http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1055638">New
+  Directions in Cryptography</a>, IEEE Transactions on Information
+  Theory 22(6): 644-654, Nov. 1976.<br><br></li>
+
+  <li><b><a name="DMS04">[DMS04]</a></b> R. Dingledine, N. Mathewson,
+  and P. Syverson, <a
+  href="http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.144.2492&rep=rep1&type=pdf">Tor: The
+  Second-Generation Onion Router</a>, USENIX Security, August 2004.<br><br></li>
+
+  <li><b><a name="FL+11">[FL+11]</a></b> Nicholas L. Farnan, Adam
+  J. Lee, Panos K. Chrysanthis, and Ting Yu, <a href="http://people.cs.pitt.edu/~adamlee/pubs/2011/farnan11esorics.pdf">Don't Reveal My
+  Intension: Protecting User Privacy using Declarative Preferences
+  during Distributed Query Processing,</a> in Proceedings of the 16th
+  European Symposium on Research in Computer Security (ESORICS),
+  September 2011.<br><br></li>
+
+  <li><b><a name="HBS13">[HBS13]</a></b> Amir Houmansadr, Chad
+  Brubaker, and Vitaly Shmatikov, <a
+   href="http://www.cs.utexas.edu/~amir/papers/parrot.pdf">The Parrot
+  is Dead: Observing Unobservable Network Communications</>, The 34th
+  IEEE Symposium on Security & Privacy (Oakland), May
+  2013.<br><br></li>
+  
+  <li><b><a name="HJ+95">[HJ+95]</a></b> Amir Herzberg, Stanislaw
+  Jarecki, Hugo Krawczyk, and Moti
+  Yung, <a href="http://www.research.ibm.com/security/pss.ps">Proactive
+  Secret Sharing or: How to Cope with Perpetual Leakage</a>,
+  Proceedings of CRYPTO 1995.<br><br></li>
+
+  <li><b><a name="HRS+12">[HRS+12]</a></b> Eiji Hayashi, Oriana Riva,
+  Karin Strauss, A.J. Bernheim Brush, Stuart Schechter, <a
+   href="http://cups.cs.cmu.edu/soups/2012/proceedings/a2_Hayashi.pdf">Goldilocks and the Two Mobile Devices: Going Beyond
+  All-Or-Nothing Access to a Device's Applications</a>, SOUPS
+  2012.<br><br></li>
+
+  
+  <li><b><a name="HRU76">[HRU76]</a></b> Michael A. Harrison, Walter
+  L. Ruzzo, and Jeffrey D. Ullman, <a
+  href="http://portal.acm.org/citation.cfm?id=360303.360333">Protection
+  in Operating Systems</a>, Communications of the ACM 19(8): 461-471,
+  August 1976.<br><br></li>
+
+   <li><b><a name="K07">[K07]</a></b> Neal
+  Koblitz, <a href="http://www.ams.org/notices/200708/tx070800972p.pdf">The
+  Uneasy Relationship Between Mathematics and Cryptography</a>,
+  Notices of the AMS 54(8): 972-979, Sep. 2007.<br><br></li>
+
+<!--
+  <li><b><a name="KC05">[KC05]</a></b> Samuel T. King and Peter
+  M. Chen, <a
+  href="http://portal.acm.org/citation.cfm?id=1047918">Backtracking
+  intrusions</a>, ACM Transactions on Computer Systems 23(1): 51-76,
+  Feb. 2005.<br><br></li> 
+-->
+
+  <li><b><a name="L04">[L04]</a></b> Butler
+  Lampson, <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=01306384">Computer
+  Security in the Real World</a>, IEEE Computer 37(6): 37-46, June
+  2004.<br><br></li>
+
+  <li><b><a name="L81">[L81]</a></b> Leslie
+  Lamport, <a href="http://portal.acm.org/citation.cfm?id=358797">Password
+  Authentication with Insecure Communication</a>, Communications of
+  the ACM 24(11): 770-772, Nov. 1981.<br><br></li>
+
+  <li><b><a name="LMW02">[LMW02]</a></b> Ninghui Li, John C. Mitchell,
+  and William H. Winsborough, <a
+  href="http://www.cs.purdue.edu/homes/ninghui/papers/rt_oakland02.pdf">
+  Design of a Role-based Trust-Management Framework</a>, IEEE Symposium on Security and
+  Privacy, May 2002.<br><br></li>
+
+  <li><b><a name="M85">[M85]</a></b> John
+  McLean, <a href="http://www.dtic.mil/cgi-bin/GetTRDoc?AD=ADA462369">A
+  Comment on the 'Basic Security Theorem' of Bell and LaPadula</a>,
+  Information Processing Letters 20(2): 67-70, Feb. 1985.<br><br></li>
+
+  <li><b><a name="MG+06">[MG+06]</a></b> Ashwin Machanavajjhala, Johannes
+  Gehrke, Daniel Kifer, Muthuramakrishnan
+  Venkitasubramaniam, <a href="http://doi.ieeecomputersociety.org/10.1109/ICDE.2007.367858">l-Diversity: Privacy Beyond
+  k-Anonymity</a>, ICDE 2006.<br><br></li>
+
+  <li><b><a name="OSM00">[OSM00]</a></b> Sylvia Osborn, Ravi Sandhu,
+  and Qamar Munawer, <a
+  href="http://portal.acm.org/citation.cfm?doid=354876.354878">Configuring
+  Role-Based Access Control to Enforce Mandatory and Discretionary
+  Access Control Policies</a>, ACM TISSEC 3(2): 85-106, 2000.<br><br></li>
+
+  <li><b><a name="PRZ+11">[PRZ+11]</a></b> Raluca Ada Popa, Catherine
+  M. S. Redfield, Nickolai Zeldovich, and Hari Balakrishnan: <a
+   href="http://www.mit.edu/~ralucap/CryptDB-sosp11.pdf">CryptDB:
+  Protecting Confidentiality with Encrypted Query Processing</a>, SOSP
+  2011.<br><br></li>
+  
+  <li><b><a name="RSA78">[RSA78]</a></b> R.L. Rivest, A. Shamir, and
+  L. Adleman, <a href="http://people.csail.mit.edu/rivest/Rsapaper.pdf">A
+  Method for Obtaining Digital Signatures and Public-Key
+  Cryptosystems</a>, Communications of the ACM 21(2): 120-126,
+  Feb. 1978.<br><br></li>
+
+  <li><b><a name="RT+09">[RT+09]</a></b> Thomas Ristenpart, Eran
+  Tromer, Hovav Shacham, Stefan
+  Savage, <a href="http://doi.acm.org/10.1145/1653662.1653687">Hey,
+  you, get off of my cloud: exploring information leakage in
+  third-party compute clouds</a>, ACM Conference on Computer and
+  Communications Security 2009: 199-212<br><br></li>
+  
+  <li><b><a name="S02">[S02]</a></b> Latanya
+  Sweeney, <a href="http://epic.org/privacy/reidentification/Sweeney_Article.pdf">k-Anonymity:
+  A Model for Protecting Privacy</a>, International Journal on
+  Uncertainty, Fuzziness, and Knowledge-based Systems, 10(5):557-570,
+  2002.<br><br></li>
+
+  <li><b><a name="S79">[S79]</a></b> Adi
+  Shamir, <a href="http://portal.acm.org/citation.cfm?id=359168.359176">How
+  to Share a Secret</a>, Communications of the ACM 22(11): 612-613,
+  Nov. 1979.<br><br></li>
+
+  <li><b><a name="S85">[S85]</a></b> Adi
+  Shamir, <a href="http://islab.iecs.fcu.edu.tw/GroupMeeting/PowerPoint/g20050422_1.pdf">Identity-Based
+  Cryptosystems and Signature Schemes</a>, Proceedings of CRYPTO 1984,
+  pp. 47-53.<br><br></li>
+
+  <li><b><a name="S89">[S89]</a></b> Eugene
+  Spafford, <a href="http://doi.acm.org/10.1145/63526.63527">The
+  Internet Worm: Crisis and Aftermath</a>, Communications of the ACM
+  32(6): 678-687, June 1989.<br><br></li>
+
+  <li><b><a name="SM+04">[SM+04]</a></b> Stuart Staniford, David
+  Moore, Vern Paxson, and Nicholas
+  Weaver, <a href="http://www.caida.org/outreach/papers/2004/topspeedworms/topspeed-worm04.pdf">The
+  Top Speed of Flash Worms</a>, Proceedings of the ACM Workshop on
+  Rapid Malcode (WORM), Oct. 2004.<br><br></li>
+
+  <li><b><a name="SS75">[SS75]</a></b> Jerome H. Saltzer and Michael
+  D. Schroeder, <a href="http://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=1451869&isnumber=31196">The
+  Protection of Information in Computer Systems</a>, Proceedings of
+  the IEEE 63(9): 1278-1308, Sep. 1975.<br><br></li>
+
+  <li><b><a name="SZ05">[SZ05]</a></b> Fred B. Scheider and Lidong
+  Zhou, <a href="http://www.cs.cornell.edu/fbs/publications/TrustSurvey.pdf">Implementing
+  Trustworthy Services Using Replicated State Machines</a>, IEEE
+  Security and Privacy 3(5): 34-43, Sep.-Oct. 2005.<br><br></li>
+
+  <li><b><a name="THS12">[THS12]</a></b> Karen Tang, Jason Hong, and
+  Dan Siewiorek. 2012. <a href="http://dx.doi.org/10.1145/2207676.2207730">The implications of offering more
+  disclosure choices for social location sharing</a>, Proceedings of
+  the SIGCHI Conference on Human Factors in Computing Systems (CHI
+  '12).<br><br></li>
+  
+  <li><b><a name="TL07">[TL07]</a></b> Mahesh V. Tripunitara, Ninghui
+  Li: <a href="http://ece.uwaterloo.ca/~tripunit/papers/simac-j-07.pdf">A
+  theory for comparing the expressive power of access control
+  models.</a> Journal of Computer Security 15(2): 231-272
+  (2007).<br><br></li>
+
+</ul>
+
+
+<!-- end page -->
+</body></html>

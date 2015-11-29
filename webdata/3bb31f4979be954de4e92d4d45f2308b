@@ -1,0 +1,32 @@
+<title>Multimedia Software Engineering</title>
+<a href="specs.html">  
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+</A> 
+<a href="features.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+</head>
+<h1 align="center"> 
+Web Matrix IDE</h1> 
+
+
+<body>
+
+
+<p align="center">
+<img alt="ASP.NET Web Matrix IDE" src="GS_ToolIDE.jpg" align="middle" vspace="10" border="0" width="686" height="497"></p>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <p align="left">1. Menu Bar<br>
+      2. Standard Tool Bar<br>
+      3. Tool Bar<br>
+      4. Document Window<br>
+      5. Workspace Window<br>
+      6. Properties Window</p>
+    </blockquote>
+  </blockquote>
+</blockquote>
+
+
+</body>
+
+</html>

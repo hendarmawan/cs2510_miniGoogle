@@ -1,0 +1,38 @@
+<title>I-card and C-card</title>
+
+<a href="sisic11.htm"><img src="prev.gif" align=left></a>
+<a href="sisic1.htm"><img src="next.gif" align=right></a>
+
+<center>
+<h1>Incremental Specification</h1>
+</center>
+
+<h3>
+(b) Two I-cards are consisitent if the super-components
+in the overlapped sub-nets of the corresponding C-cards are identical.
+
+<p>
+(c) Two C-cards are connected if they have overlapped
+sub-nets.
+The C-cards can be integrated if there exists
+a path between any two C-cards, i.e., they are all connected.
+
+<p>
+A collection of cards can be integrated if 
+conditions (a), (b) and (c) hold for any two cards.
+
+<p>
+<font color=purple>
+Term Project Topic:
+The above definitions can be
+refined so that they are mathematically precise.
+You can then implement a consistency checker based
+upon these precise definitions,
+and apply your consistency checker on an
+example such as the Product & Servicer Customization
+System presented in previous slides.
+This topic is for those who are mathematically inclined.
+<p>
+The following are
+<a href="C-Cards.htm">four examples</a> of
+C-Cards specified as pnml documents.

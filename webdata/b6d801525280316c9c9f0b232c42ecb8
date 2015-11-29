@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<title>CS2310 XML Based Servers</title>
+<!--mstheme--><link rel="stylesheet" href="ice1011.css">
+<meta name="Microsoft Theme" content="ice 1011">
+</head>
+<a href="pg2.htm"> <img src="previous.gif" align=left></a><a href="index.html" > </a>
+<a href="pg4.htm"> <img src="next.gif" align=right ></a><a href="pg1.html" > </a>
+ 
+<center> <h1> &nbsp;Why XML Based Messaging ?</h1> </center> 
+<body>
+
+<p><b>Non-XML Messages:</b></p>
+<ul>
+	<li>The client and the server must agree on the size of the header section 
+	and the size of the fields it contains. </li>
+</ul>
+<p><b>XML Messages:</b></p>
+<ul>
+	<li>An XML parser can be used to extract the content of message fields 
+	without regard to the size of the content. </li>
+	<li>No programming changes required if a data field must be lengthened. </li>
+	<li>New fields can easily be added to the header without impacting messages 
+	already stored in the queue.</li>
+	<li>
+	<p align="left"><font face="verdana, arial, helvetica" size="3">No 
+	additional work is required to come up with a message format. </font></li>
+	<li>
+	<p align="left"><font face="verdana, arial, helvetica">Payload 
+	transformations can be easily supported using XSL.</font></li>
+</ul>
+<p align="left"><b>XML Message Example</b></p>
+<div style="border-style: double; border-width: 3px">
+	<p align="left"><code><font size="4">&lt;message&gt;<br>
+&nbsp;&nbsp; &lt;<font color="#FF0000">header</font>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;status&gt;OK&lt;/status&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;command&gt;<font color="#800080">GET</font>&lt;/command&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;queueName&gt;inbound&lt;/queueName&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;processingRule&gt;sortinvoice&lt;/processingRule&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;messageId&gt;0000001&lt;/messageId&gt;<br>
+&nbsp;&nbsp; &lt;/<font color="#FF0000">header</font>&gt;<br>
+&nbsp;&nbsp; &lt;<font color="#FF0000">payload</font>&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;orders&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;order&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;itemNumber&gt;83726&lt;/itemNumber&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	&lt;quantity&gt;2&lt;/quantity&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	&lt;price&gt;10.00&lt;/price&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/order&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;order&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;itemNumber&gt;83432&lt;/itemNumber&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	&lt;quantity&gt;2&lt;/quantity&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	&lt;price&gt;10.00&lt;/price&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/order&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/orders&gt;<br>
+&nbsp;&nbsp; &lt;/<font color="#FF0000">payload</font>&gt;<br>
+	&lt;/message&gt;</font><br>
+&nbsp;</code></div>
+<p align="left">&nbsp;</p>
+<p align="left"><b>XSL Stylesheet Example:</b></p>
+<div style="border-style: double; border-width: 3px">
+	<p align="left"><code><font size="4">&lt;xsl:stylesheet xmlns:xsl=&quot;http://www.w3.org/1999/XSL/Transform&quot; 
+	version=&quot;1.0&quot;&gt;<br>
+&nbsp;&nbsp; &lt;xsl:output omit-xml-declaration=&quot;yes&quot;/&gt;<br>
+&nbsp;&nbsp; &lt;xsl:template match=&quot;*&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;xsl:copy&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;xsl:apply-templates&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;xsl:sort 
+	order=&quot;ascending&quot; select=&quot;itemNumber&quot;/&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/xsl:apply-templates&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/xsl:copy&gt;<br>
+&nbsp;&nbsp; &lt;/xsl:template&gt;<br>
+	&lt;/xsl:stylesheet&gt;</font><br>
+	</code><b><br>
+&nbsp;</b></div>
+<p>&nbsp;</p>
+<p><b>&nbsp;&nbsp;&nbsp; </b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

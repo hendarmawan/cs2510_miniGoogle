@@ -1,0 +1,59 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>J2ME Configurations</title>
+</head>
+
+<body>
+
+<a href="java5.htm"><img src="previous.gif" align="left" /></a><a href="previous.html">
+</a><a href="java7.htm"><img src="next.gif" align="right" /></a><a href="next.html"> </a><center>
+<h1>J2ME Configurations</h1>
+<hr /></center>
+<ul>
+	<li>
+	<h2 align="left"><font size="5">Connected Devices Configuration</font></h2>
+	<ul>
+		<li>
+		<p align="left"><font size="5">CDC</font></p>
+		</li>
+		<li>
+		<p align="left"><font size="5">Network-connected personal mobile devices</font></p>
+		<ul>
+			<li>
+			<p align="left"><font size="5">32-bit microprocessor/controller</font></p>
+			</li>
+			<li>
+			<p align="left"><font size="5">2 MB of RAM </font></p>
+			</li>
+			<li>
+			<p align="left"><font size="5">2.5 MB of ROM<br>
+&nbsp;</font></p>
+			</li>
+		</ul>
+		</li>
+	</ul>
+	</li>
+	<li>
+	<p align="left"><font size="5">Full Java 2 virtual machine specification</font><ul>
+	<li>
+	<p align="left"><font size="5">floating point support</font></li>
+	<li>
+	<p align="left"><font size="5">core library features </font></li>
+	<li>
+	<p align="left"><font size="5">full class loading</font></li>
+	<li>
+	<p align="left"><font size="5">thread support</font></li>
+	<li>
+	<p align="left"><font size="5">security<br>
+&nbsp;</font></li>
+</ul></li>
+	<li>
+	<p align="left"><font size="5">Class libraries: optimized for small memory 
+	environments</font></li>
+</ul>
+
+</body>
+
+</html>

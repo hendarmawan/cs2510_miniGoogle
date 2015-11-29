@@ -1,0 +1,168 @@
+<html>
+
+<head>
+<link href="../2074%20notes/2074-style.css" type="text/css" rel="stylesheet"/>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Week One Class Notes</title>
+</head>
+
+<body>
+
+<p><b><font size="4">Class Notes:&nbsp; week 1 </font></b></p>
+<p>In the book chapter two.</p>
+<p><b><font size="4">First lets check out this web thing</font></b><br>
+<br>
+&nbsp;&nbsp;&nbsp; Can we do something like this??</p>
+<ul>
+  <li><a target="_blank" href="http://www.usatoday.com">USATODAY.COM</a></li>
+  <li><a target="_blank" href="http://www.cnn.com">CNN.COM</a></li>
+</ul>
+<p>&nbsp;&nbsp;&nbsp;</p>
+<p><b><font size="4">What is HTML? What is XHTML?</font></b></p>
+<ul>
+  <li>HTML is used to create electronic documents that can be read on many 
+  different systems using software called a browser. </li>
+  <li>The browser translates the html codes into a presentation on the screen.</li>
+  <li>HTML is NOT a true programming language</li>
+  <li>HTML is not a WYSIWYG processor or publisher.<br>
+  -carriage returns creates only &quot;white space&quot; and that browsers usually 
+  compress this white space into a SINGLE space.</li>
+  <li>HTML or Hyper Text Markup Language</li>
+	<li>XHTML is a simple, more standardized version of HTML. </li>
+	<li>XHTML standard is based the rules and philosophy of XML and NOT html 4.x</li>
+	<li>E<b>X</b>tensible <b>H</b>yper<b>T</b>ext <b>M</b>arkup <b>L</b>anguage </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;&nbsp; <b><font size="4">&nbsp;Do you need help or are you just 
+browsing?</font></b></p>
+<p><b><font size="4">Browsers</font></b></p>
+<p>(IE vs <a target="_blank" href="http://www.mozilla.org/">Firefox</a> 
+on a PC ) vs (Firefox vs IE vs Safari on a Mac)<br>
+&nbsp;</p>
+<p>&nbsp;&nbsp;&nbsp; <b><font size="4">Lets get started!!</font></b></p>
+<p><b><font size="4">Tag you're it! </font></b></p>
+<p><b><br>
+</b>-Throughout the semester with almost every new concept I introduce I will be 
+introducing a new set of tags and attributes to go with it.</p>
+<p>A <b>tag (or element) </b>is an html code that is enclosed in angel brackets &lt;&gt;. They are 
+used to lay out the web page. The&nbsp; <b>&lt;br/&gt; (empty tag) </b>for example will add a line 
+break.</p>
+<p>Most tags however are of the <b>container</b> type. These tags have both a 
+starting tag and an end tag. For example, if I wanted to bold a word I would 
+surround that word with the starting and ending &lt;b&gt; &lt;/b&gt; tag. Notice that the 
+end tag is the same as the starting tag but with a &quot;/&quot; placed in front. <br>
+<br>
+&nbsp;&nbsp; &lt;b&gt; HI WORLD &lt;/b&gt; would produce <b>HI WORLD</b> as output on the 
+screen.</p>
+<p>An <b>attribute</b> is a special code that can enhance or modify a tag. They 
+are generally located in the starting tag after the tag name. <br>
+<br>
+&nbsp;&lt;p align=&quot;center&quot;&gt; jkfahljkghadfjhgaouhoaruehgihraeg &lt;/p&gt; would display 
+this horrible paragraph to the center of the browser window.</p>
+<p>To be compliant with the new html standard (xhtml), all tags and attributes 
+must be in lower case. In addition, all values of attributes need to surrounded 
+by quotes. Here is the basic syntax for xhtml tags and attributes</p>
+<p><b>&lt;tag attribute=&quot;value&quot;&gt;&nbsp;&nbsp; &lt;/tag&gt;</b></p>
+<p><b>ALL</b> tags need to be closed!&nbsp; <br>
+<br>
+examples &lt;h1&gt; Hello World &lt;/h1&gt; &lt;br/&gt;</p>
+<p>&nbsp;</p>
+<p><b><font size="4">OK Now how do I make one of these web pages??</font></b></p>
+<p>First you need to pick an application to produce your web page.</p>
+<p><b><font size="4">Please, make a &quot;note&quot; of this.....</font></b></p>
+<p>&nbsp;&nbsp;&nbsp; HTML(text) editor vs. Web editor</p>
+<ul>
+  <li>Text editor is a plain application that allows you to create, save and 
+  modify text. It has some editing features but may not have the full 
+  functionality of most word processors. It also doesn't bring some of the 
+  problems that comes with a word processor when creating an html page. </li>
+  <li>The text editor that we will use it <b>NOTEPAD</b>, yes that NOTEPAD.</li>
+  <li>Please do not mistakenly open WORDPAD and confuse this application with 
+  NOTEPAD. WordPad is a word processor and will cause problems when creating and 
+  html page.</li>
+  <li>a <b>WEB editor</b> is a WYSIWYG type of application that we will use 
+  later in the semester.</li>
+</ul>
+<p>&nbsp;</p>
+<p><b><font size="4">Basic HTML template.</font></b></p>
+<p><font size="4"><b>&lt;html&gt;</b></font></p>
+<p><font size="4"><b>&lt;head&gt;</b></font></p>
+<p><font size="4"><b>&lt;title&gt;&nbsp; &lt;/title&gt;</b></font></p>
+<p><font size="4"><b>&lt;/head&gt;</b></font></p>
+<p><font size="4"><b>&lt;body&gt;</b></font></p>
+<p><font size="4"><b>&lt;/body&gt;<br>
+<br>
+&lt;/html&gt;</b></font></p>
+<p>&nbsp;</p>
+<ul>
+  <li><font size="4">HTML - Alerts the browser of the presence an html file</font></li>
+  <li><font size="4">HEAD<b> - </b>provides description about the document</font></li>
+  <li><font size="4">TITLE - Always located in the HEAD. Provides a description 
+  about the document for display above the window.</font></li>
+  <li><font size="4">BODY - Identifies the contents of the Web page.</font></li>
+</ul>
+<p><b><font size="4">Creating an XHTML Source Document.</font></b></p>
+<p>How do we go from html to xhtml?</p>
+<p>Since XHTML is based on XML and NOT HTML, it inherits the syntax rules of 
+XML.<br>
+One of the primary syntax rules concerning us the case sensitivity.&nbsp; HTML 
+is NOT case sensitive, however, XHTML is.&nbsp; ALL XHTML TAGS NEED TO BE IN 
+LOWER CASE. </p>
+<p><font size="4"><b>Basic XHTML Template.</b></font></p>
+<p>Two steps to go from HTML to XHTML</p>
+<ol>
+	<li>Add the following two cryptic lines BEFORE the &lt;html&gt; tag<br>
+<ul> <li>&lt;?xml version=&quot;1.0&quot;?&gt; <br> &lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 
+        Transitional//EN&quot; &quot;http://www/w3/org/TR/xhtml/11/DTD/xhtml1-transitional.dtd&quot;&gt;</li></ul> </li>
+<li>Add the following attribute to the &lt;html&gt; tag<br>
+<ul><li> &lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</li></ul></li>
+</ol>
+	<p>Other XHTML syntax issues:</p>
+<p>All attributes need to be in lower case. Values that these attributes hold 
+will be placed AFTER an &quot;=&quot; sign and contained in quotes. </p>
+<p>This leaves us with: (page 29-32 in book)</p>
+<p><font size="4"><b>&lt;?xml version=&quot;1.0&quot;?&gt; </b></font></p>
+<p><font size="4"><b>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 
+	Transitional//EN&quot; &quot;http://www/w3/org/TR/xhtml/11/DTD/xhtml1-transitional.dtd&quot;&gt;</b></font></p>
+<p><font size="4"><b>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</b></font></p>
+<p><font size="4"><b>&lt;head&gt;</b></font></p>
+<p><font size="4"><b>&lt;title&gt;&nbsp; &lt;/title&gt;</b></font></p>
+<p><font size="4"><b>&lt;/head&gt;</b></font></p>
+<p><font size="4"><b>&lt;body&gt;</b></font></p>
+<p><font size="4"><b>&lt;/body&gt;<br>
+<br>
+&lt;/html&gt;</b></font></p>
+<p><font size="4"><b>To the tags!</b></font></p>
+<p><font size="4"><b>&lt;meta/&gt;</b></font> The meta tag is used to specify Keywords 
+that describe a documents contents as well as a short description.</p>
+<p>Two necessary attributes. &quot;name&quot; &amp; &quot;content&quot;</p>
+<p>&lt;meta name=&quot;keywords&quot; content=&quot;baseball, soccer, tennis&quot;/&gt;<br>
+&lt;meta name=&quot;&quot;description&quot; content=&quot;Sports information page&quot;/&gt;</p>
+<p><b>&lt;p&gt;&lt;/p&gt;</b> The paragraph tag. Used so separate text within a web page. 
+Container type. Will provide line breaks.</p>
+<p>Key attribute : align.</p>
+<p>&lt;p align=&quot;center&quot;&gt;</p>
+<p><font size="4"><b>&lt;br/&gt;</b></font> used for line break</p>
+<p><font size="4"><b>Headings</b></font></p>
+<p><font size="4"><b>&lt;h1&gt;</b></font> Header one<font size="4"><b> &lt;/h1&gt;</b></font><br>
+<font size="4"><b>&lt;h2&gt;</b></font> Header two <font size="4"><b>&lt;/h2&gt;</b></font><br>
+<font size="4"><b>&lt;h3&gt;</b></font> Header three <font size="4"><b>&lt;/h3&gt;</b></font><br>
+<font size="4"><b>&lt;h4&gt; </b></font>Header four <font size="4"><b>&lt;/h4&gt;</b></font><br>
+<font size="4"><b>&lt;h5&gt;</b></font> Header five <font size="4"><b>&lt;/h5&gt;</b></font><br>
+<font size="4"><b>&lt;h6&gt;</b></font> Header six <font size="4"><b>&lt;/h6&gt;</b></font></p>
+<p><b>&lt;em&gt;<i> </i></b><i>italics</i><b> &lt;/em&gt;</b></p>
+<p><b>&lt;strong&gt; bold&nbsp; &lt;/strong&gt;</b></p>
+<p><b>&lt;font&gt; &lt;/font&gt; </b>(not supported in XHTML Strict) </p>
+<p>Key attributes: size, face, color.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+	<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

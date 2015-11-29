@@ -1,0 +1,21 @@
+<title>I-card and C-card</title>
+
+<a href="sisic5.htm"><img src="prev.gif" align=left></a>
+<a href="sisic5b.htm"><img src="next.gif" align=right></a>
+
+<center>
+<h1>I-card and C-card</h1>
+</center>
+<h3>Since the super-component enumerates the
+different solutions by executing different algorithms,
+the expansion into parallel/serial Petri nets
+can take on different forms.
+<p>
+<center>
+<img src="sisicFig2-5.jpg" align=center width=300>
+</center>
+In the above realization we can proceed
+if one solution is found.
+We can also insist that all solutions must
+be found before we proceed further, resulting
+in a different Petri net realization.

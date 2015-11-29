@@ -1,0 +1,47 @@
+<HTML>
+<HEAD><TITLE>CS2310 Seminar -- By Suresh Rangan</TITLE></HEAD>
+
+<BODY>
+
+<A href="06.html" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="08.html"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1><FONT color="mediumblue">Weighting - Contd </FONT> </H1>
+
+<table border="1" cellspacing="1" style="border-collapse: collapse" width="50%" id="table1">
+	<tr>
+		<td width="200"><font size="4">WORD</font></td>
+		<td width="200"><font size="4">COUNT</font></td>
+		<td width="200"><font size="4">Global Weight</font></td>
+	</tr>
+	<tr>
+		<td width="200"><font size="3" color="green">Project</font></td>
+		<td width="200"><font size="3">169</font></td>
+		<td width="200"><font size="3">3.03</font></td>
+	</tr>
+	<tr>
+		<td width="200"><font size="3" color="blue">J2EE</font></td>
+		<td width="200"><font size="3">40</font></td>
+		<td width="200"><font size="3">4.47</font></td>
+	</tr>
+	<tr>
+		<td width="200"><font size="3" color="red">chronobot</font></td>
+		<td width="200"><font size="3">7</font></td>
+		<td width="200"><font size="3">6.22</font></td>
+	</tr>
+</table>
+</CENTER>
+
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><FONT size=5>You can see that a word like <FONT color="red"> chronobot</FONT>, which appears 
+			in only seven transcripts, is considered twice as significant as a word like 
+			<FONT color="green">project</FONT>, which appears in over a hundred.</FONT></LI>
+       <BR><BR>
+</UL></UL></UL></UL></UL></UL></UL>
+
+</BODY>
+</HTML>
+

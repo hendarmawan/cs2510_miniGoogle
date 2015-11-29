@@ -1,0 +1,219 @@
+<title>Answers to FAQs</title>
+<h1>Answers to FAQs</h1>
+<pre>
+> What is the relationship with CS1631, software design methodology?
+> I took CS1631 before, and it seems to be the same as this course.
+> Can I take this course again?   am confused.
+
+Answer: In previous years, due to lack of faculty we combined
+1530 and 1631 into a single course.  Now that we have more
+faculty, we will re-establish 1530 and 1631 into a sequence.
+I am designing a new 1631 with major emphasis on component
+based software engineering and visual software engineering.
+Therefore, if you took 1631 before, it is identical to
+the current 1530 so you need not take this course again.
+In case you really need to take this course for some reason,
+let me know.  I will put people with similar background
+of 1631 into one group, and assign more advanced topics/projects
+to this group only.
+
+
+> i am in the midst of doing the user's manual and my particular job is the
+> product overview.  i have a couple of questions as to what kind of format
+> it should take.
+> 
+> 	1. first, i was wondering if the product overview could be called
+> 	introduction because i was reviewing a couple other users manual
+> 	(including the one i wrote for cs1530) and it only makes sense
+> 	at least from my point of view.  however, i don't mind adhering 
+> 	to guidelines you have set.
+
+Answer: Yes, it should be called "introduction".  "Product overview" refers
+to its contents.
+
+
+> 	2. i was also wondering if the user's manual is geared towards
+> 	promotion or if it's gered towards clients with a fairly
+> 	comprehensive knowledge of the product.  in it's preliminary
+> 	stages, i don't know where i stand from a developer's perspective.
+
+Answer: Of course, a user's manual should be for the client.  But whether
+the client has a comprehensive knowledge of the product is debatable.
+A good user's manual should be for both the novice and the expert.  In
+other words, if I am a novice I should be able to use the user's manual
+to get started and read only the first 14 pages of the manual (14 is
+just an example, could be more or less).  For an expert, he will skip the
+first 14 pages and start from page 15.
+
+The user's manual is NOT for promotion.  The presentation IS for promotion.
+No executive in his/her right mind will read the user's manual.  S/he will just
+listen to the presentation.
+
+
+
+> From: Allan Wind <wind@cs.pitt.edu>
+> 
+> Do we need to use a database? Can we restrict the product to a single
+> user application running on a single computer?  If not, what about single
+> concurrent user?
+
+ANS: Knowledge Tables are shared by many decision makers.  And they
+interact to accomplish the objectives of the organization.  But it
+is conceivable to have a single user application running on a single
+computer.  In this case, each decision maker will sit down before this
+computer, inspect his(her) KT, and make some updates, and send messages
+to other users.  Other users, who are not on-line, will log in later to
+do similar things.  Thus, there is no concurrent update problem for this
+single user system.  Otherwise, everything is the same for a multiple
+user system.
+
+However, no matter what it is - a single user system or a multiple user
+system - using a database will considerably simplify the problem. But
+it is possible not to use a database.
+
+The design implication, actually, is whether to use a Web server or not.
+See below.
+
+> Do we need to use a web server? E.g. can we make the application
+> client-server or will we need to deploy a 3-tier architecture?
+
+ANS: Again, for a system where the uesr must sit down before this computer
+to interact with KTS, the KTS is a stand alone system and does not need
+use a Web server.  This stand alone system has its advantage.  The decision
+maker can load it into his(her) notebook and take it with him(her).
+On the other hand, for a multiple user system, if they can interact via
+the Web, it is definitely very attractive.  In which case, the design
+can rely on WebBase or a similar product.
+
+> Am I correct in saying that a knowledge table (kt) consist of a ordered
+> set of knowledge slices (ks).  And that the term kt and plan is
+> interchangable? 
+
+ANS: KT consists of a collection of knowledge slices.  A KT can be a plan,
+or a sub-plan or part of a plan.  A plan consists of a single KT or a
+collection of KTs.
+
+> 
+> Are there any relation between slices in a particular plan (except in your
+> example a slice that is a kt in itself occupy muliply slices)? 
+
+ANS: Yes, although this is beyond the scope of your project.  Knowledge slices
+can be facts, graphs or inference rules.  So they are definitely related.
+
+> What does the term "active index" mean?
+
+ANS: Again this refers to the visual software engineering approach
+I am developing and is beyond the scope of this project.  I will talk about
+it in class to give you an idea.
+
+> 
+> Does a "owner" have exclusive right to modify a particular table or does
+> this need to be sync'ed?
+
+ANS: The 'owner' and 'super-owner' have the right to modify a KT.  The
+'super-owner' can override anything.  This is for security reasons.  Otherwise
+what if a low-level manager rebels?
+
+
+> Can you please provide us with more information about Section 3.2 -
+> Processing Narrative?  We are not sure what this is.
+
+
+The processing narrative is basically a description of what a functionality
+will do.  For example, if the functionality is UPDATE.  The processing
+narrative will describe the details of the update operation: what is
+the input, what database and/or internal data structures are affected,
+what is the output, and so on.
+
+
+
+
+> Where can we obtain a copy and license for WebBase?
+
+ANS: WebBase will grant you a temporary licnse good for one month.
+All information about WebBase can be found at: www.webbase.com
+Peter Thorsen, Sales Representative
+WebBase, ExperTelligence
+1-800-888-8670
+($599.95 - 25% = $449.95)
+E-mail: peter@expertelligence.com
+E-mail: Peter.Thorsen@expertelligence.com
+
+For a concise intro to WebBase and CGI concepts, please download my
+class notes for CS1565.  It is available from my web page.  Look
+for module on WebBase.
+
+
+> How detailed should be our design?
+
+
+ANS: The design document is not a big document.  For an example
+please refer to textbook's Appendix G.  Notice this example has exactly
+20 pages.  Your document will be roughly the same size.
+
+Looking ahead, the source codes for the fifth milestone are like Appendix I.
+
+Finally, the 6th milestone is for test cases and ACTUAL RESULTS
+of the test.  You should show me your test cases when you deliver
+the 5th milestone, and the actual results at the 6th milestone.
+
+
+> How would you grade the term project?
+
+
+ANS: The final evaluation can be considered "Acceptance Testing".  I would
+use the following form:
+
+<hr>
+<title>Acceptance Testing</title>
+<h1>Acceptance Testing</h1>
+<pre>
+
+Acceptance Testing
+
+Please use the following checklist in preparation for your final demo.
+
+The following is 1 point:
+(   ) Software configuration is complete.  Document includes requirements,
+      design, test plan, test results, source codes, user manual,
+      installation procedure (which may be included in user manual),
+      software maintenance procedure (may also be included in user manual).
+
+The following is 0.5 point each:
+(   ) a plastic jacket containing the diskettes containing the source.
+(   ) sections in the document are separated by labelled dividers.
+
+The following is 0.5 point each:
+(   ) Install KTS software.
+(   ) Open an existing knowledge table KT.
+(   ) Insert a new knowledge slice KS.
+(   ) Modify an existing KS.
+(   ) Delete an existing KS.
+(   ) Save KT.  Re-open to verify save is correct.
+(   ) Create a new KT.
+(   ) Insert a few KSs.
+(   ) Save KT.  Re-open to verify save is correct.
+(   ) Search for a KS in a KT.
+(   ) Search for a KS in all KTs.
+(   ) Traverse a link from one KT to open another KT.
+(   ) Back to original KT.
+(   ) Print out KT (either on printer or as a disk file).
+(   ) Save one KT or all KTs on diskette.  Reload to verify save is correct.
+(   ) Show how you can maintain the software: find source code, make a simple
+      modification and recompile.  Time may not permit you to go through the
+      entire sequence, so you should include this also in the user manual
+      as a separate section on software maintenance.
+
+Bonus points: (filled in by instructor)
+(   )
+
+(   )
+
+(   )
+
+(   )
+
+TOTAL: (         )
+
+REMEMBER, ENTIRE DEMO SHOULD BE NO LONGER THAN 25 MINUTES!
+</pre>

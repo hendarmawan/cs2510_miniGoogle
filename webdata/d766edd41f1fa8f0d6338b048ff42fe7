@@ -1,0 +1,681 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_one_cold</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_one_cold
+</h1>    
+<a name="wp3693758"> </a><p class="pBody" >
+Ensures that the value of a specified expression is one-cold (or equals an inactive state value, if specified).  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3693771"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkers57.gif" height="106" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3693773"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3772219"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3772220"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">width </em>
+</div>    
+<a name="wp3772221"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">inactive </em>
+</div>    
+<a name="wp3772222"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3772223"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3772224"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3693775"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Class: </span>
+</div>    
+<a name="wp3772225"> </a><div class="pCellBodyLeft" >
+single-cycle assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3693776"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3693777"> </a><pre class="pCode1" >assert_one_cold 
+</pre>    <a name="wp3772226"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level, width, inactive, property_type, msg, coverage_level </em>)] 
+</pre>    <a name="wp3772227"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, test_expr </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3693815"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3693780"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693782"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3693784"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693786"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693788"> </a><div class="pCellBodyLeft" >
+width
+</div>    
+</td>
+    <td><a name="wp3693790"> </a><div class="pCellBodyLeft" >
+Width of the <em class="cEmphasis">test_expr</em> argument. Default: 32. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693792"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693794"> </a><div class="pCellBodyLeft" >
+inactive
+</div>    
+</td>
+    <td><a name="wp3693796"> </a><div class="pCellBodyLeft" >
+Inactive state of <em class="cEmphasis">test_expr</em>: &#8216;OVL_ALL_ZEROS, &#8216;OVL_ALL_ONES or &#8216;OVL_ONE_COLD. Default: &#8216;OVL_ONE_COLD.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693798"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693800"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3693802"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693804"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693806"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3693808"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693810"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693812"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3693814"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3693841"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3693818"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693820"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3693822"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693824"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693826"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693828"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3693830"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693832"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693834"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693836"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">test_expr</em>
+</div>    
+</td>
+    <td><a name="wp3693838"> </a><div class="pCellBodyLeft" >
+[ <em class="cEmphasis">width</em> - 1: 0 ]
+</div>    
+</td>
+    <td><a name="wp3693840"> </a><div class="pCellBodyLeft" >
+Expression that should evaluate to a one-cold or inactive value on the rising clock edge.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3693842"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3693843"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_one_cold</code> assertion checker checks the expression <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> at each rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> to verify the expression evaluates to a one-cold or inactive state value. A one-cold value has exactly one bit set to 0. The inactive state value for the checker is set by the <span style="font-style: oblique" class="cCodeBodyEmphasis">inactive</span> parameter. Choices are: &#8216;OVL	_ALL_ZEROS (e.g., 4&#8216;b0000), &#8216;OVL_ALL_ONES (e.g.,4&#8216;b1111) or &#8216;OVL_ONE_COLD. The default <span style="font-style: oblique" class="cCodeBodyEmphasis">inactive</span> parameter value is &#8216;OVL_ONE_COLD, which indicates <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> has no inactive state (so only a one-cold value is valid for each check).
+</p>    
+<a name="wp3693845"> </a><p class="pBody" >
+The checker is useful for verifying control circuits, for example, it can ensure that a finite-state machine with one-cold encoding operates properly and has exactly one bit asserted low. In a datapath circuit the checker can ensure that the enabling conditions for a bus do not result in bus contention.
+</p>    
+<a name="wp3693859"> </a><h4 class="pHead4" >
+Assertion Checks  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3693848"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693850"> </a><div class="pCellBodyLeft" >
+ASSERT_ONE_COLD
+</div>    
+</td>
+    <td><a name="wp3693852"> </a><div class="pCellBodyLeft" >
+Expression assumed an active state with multiple bits set to 0.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693854"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693856"> </a><div class="pCellBodyLeft" >
+test_expr contains X/Z value
+</div>    
+</td>
+    <td><a name="wp3693858"> </a><div class="pCellBodyLeft" >
+Expression evaluated to a value with an X or Z bit, and &#8216;OVL_XCHECK_OFF is not set.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3693879"> </a><h4 class="pHead4" >
+Cover Points  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3693862"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693864"> </a><div class="pCellBodyLeft" >
+all_one_colds_checked
+</div>    
+</td>
+    <td><a name="wp3693866"> </a><div class="pCellBodyLeft" >
+Expression evaluated to all possible combinations of one-cold values.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693868"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693870"> </a><div class="pCellBodyLeft" >
+test_expr_all_zeros
+</div>    
+</td>
+    <td><a name="wp3693872"> </a><div class="pCellBodyLeft" >
+Expression evaluated to the inactive state and the <em class="cEmphasis">inactive</em> parameter was set to &#8216;OVL_ALL_ZEROS.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3693874"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3693876"> </a><div class="pCellBodyLeft" >
+test_expr_all_ones
+</div>    
+</td>
+    <td><a name="wp3693878"> </a><div class="pCellBodyLeft" >
+Expression evaluated to the inactive state and the <em class="cEmphasis">inactive</em> parameter was set to &#8216;OVL_ALL_ONES.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3696920"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3696922"> </a><div class="pCellBodyLeft" >
+test_expr_change
+</div>    
+</td>
+    <td><a name="wp3696924"> </a><div class="pCellBodyLeft" >
+Expression has changed value.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3693880"> </a><h3 class="pHead3" >
+Notes
+</h3>    
+
+<a name="wp3693881"> </a><p class="pNumber" >
+ 1.	By default, the <code class="cCodeBody">assert_one_cold</code> assertion is pessimistic and the assertion fails if <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> is active and multiple bits are not 1 (i.e.equals 0, X, Z, etc.). However, if &#8216;OVL_XCHECK_OFF is set, the assertion fails if and only if <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> is active and multiple bits are 0.
+</p>    
+<a name="wp3693882"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3693883"> </a><pre class="pCode2" >assert_one_hot, assert_zero_one_hot
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3693884"> </a><h3 class="pHead3" >
+Examples
+</h3>    
+
+<a name="wp3765932"> </a><p class="pBody" >
+  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3765901"> </a><div class="pCellBodyLeft" >
+assert_one_cold #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3765909"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3765911"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772228"> </a><div class="pCellBodyLeft" >
+4, 
+</div>    
+<a name="wp3772229"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ONE_COLD, 
+</div>    
+<a name="wp3772230"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772231"> </a><div class="pCellBodyLeft" >
+&#8220;Error: sel_n not one-cold&#8221;, 
+</div>    
+<a name="wp3772232"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3765915"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772233"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772234"> </a><div class="pCellBodyLeft" >
+// inactive (no inactive state) 
+</div>    
+<a name="wp3772235"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772236"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772237"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3765917"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3765919"> </a><div class="pCellBodyLeft" >
+valid_sel_n_one_cold (
+</div>    
+</td>
+    <td><a name="wp3765923"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3765925"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3765927"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3765929"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772238"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772239"> </a><div class="pCellBodyLeft" >
+sel_n );
+</div>    
+</td>
+    <td><a name="wp3765931"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772240"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772241"> </a><div class="pCellBodyLeft" >
+// test_expr
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3765975"> </a><p class="pBody" >
+Ensures that <code class="cCodeBody">sel_n</code> is one-cold at each rising edge of <code class="cCodeBody">clk.</code>  </p>    <div align="left"><img src="images/ovl_checkers80.gif" height="92" width="451" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3764219"> </a><p class="pBody" >
+  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3764188"> </a><div class="pCellBodyLeft" >
+assert_one_cold #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3764196"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3764198"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772242"> </a><div class="pCellBodyLeft" >
+4, 
+</div>    
+<a name="wp3772243"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ALL_ONES, 
+</div>    
+<a name="wp3772244"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772245"> </a><div class="pCellBodyLeft" >
+&#8220;Error: sel_n not one-cold or inactive&#8221;, 
+</div>    
+<a name="wp3772246"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3764202"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772247"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772248"> </a><div class="pCellBodyLeft" >
+// inactive 
+</div>    
+<a name="wp3772249"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772250"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772251"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3764204"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3764206"> </a><div class="pCellBodyLeft" >
+valid_sel_n_one_cold (
+</div>    
+</td>
+    <td><a name="wp3764210"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3764212"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3764214"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3764216"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772252"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772253"> </a><div class="pCellBodyLeft" >
+sel_n );
+</div>    
+</td>
+    <td><a name="wp3764218"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772254"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772255"> </a><div class="pCellBodyLeft" >
+// test_expr
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3764656"> </a><p class="pBody" >
+Ensures that <code class="cCodeBody">sel_n</code> is one-cold or inactive (4&#8217;b1111) at each rising edge of <code class="cCodeBody">clk.</code>  </p>    <div align="left"><img src="images/ovl_checkers58.gif" height="81" width="451" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3765250"> </a><p class="pBody" >
+  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3765219"> </a><div class="pCellBodyLeft" >
+assert_one_cold #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3765227"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3765229"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772256"> </a><div class="pCellBodyLeft" >
+4, 
+</div>    
+<a name="wp3772257"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ALL_ZEROS, 
+</div>    
+<a name="wp3772258"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772259"> </a><div class="pCellBodyLeft" >
+&#8220;Error: sel_n not one-cold&#8221;, 
+</div>    
+<a name="wp3772260"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3765233"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772261"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772262"> </a><div class="pCellBodyLeft" >
+// inactive 
+</div>    
+<a name="wp3772263"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772264"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772265"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3765235"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3765237"> </a><div class="pCellBodyLeft" >
+valid_sel_n_one_cold (
+</div>    
+</td>
+    <td><a name="wp3765241"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3765243"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3765245"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3765247"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772266"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772267"> </a><div class="pCellBodyLeft" >
+sel_n );
+</div>    
+</td>
+    <td><a name="wp3765249"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772268"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772269"> </a><div class="pCellBodyLeft" >
+// test_expr
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3765295"> </a><p class="pBody" >
+Ensures that <code class="cCodeBody">sel_n</code> is one-cold or inactive (4&#8217;b0000) at each rising edge of <code class="cCodeBody">clk.</code>  </p>    <div align="left"><img src="images/ovl_checkers69.gif" height="85" width="451" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

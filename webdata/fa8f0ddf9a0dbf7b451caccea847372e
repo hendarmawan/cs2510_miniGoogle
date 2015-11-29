@@ -1,0 +1,35 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Arial"> 
+	
+			<A href="./maven2.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./cc2.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		
+			<center> 
+				<h1>CruiseControl</h1>
+				<br>
+				<img src="./cc.png" border="0">
+				<br>
+				<br>
+				<br>
+				<h1>What is it?</h1>
+			</center>
+			
+		</font>
+		
+		
+		<font size = 5 face="Arial"> 
+		
+			<br>
+			CruiseControl is a framework for a continuous build process. It includes,
+			but is not limited to, plugins for email notification, Ant, and various
+			source control tools. A web interface is provided to view the details of
+			the current and previous builds.
+		</font>
+	</BODY>
+</html>

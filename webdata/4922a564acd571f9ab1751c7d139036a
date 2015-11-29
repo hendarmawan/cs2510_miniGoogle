@@ -1,0 +1,30 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Zubeyir Unlu">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="proj03.html"><img SRC="Previous.gif" BORDER=0 height=26 width=26 align=LEFT></a><a href="proj05.html"><img SRC="Next.gif" BORDER=0 height=26 width=26 align=RIGHT></a>
+<br>&nbsp;
+<p><br>
+<center>
+<p><b><font size=+2>Example</font></b>
+<hr WIDTH="100%"></center>
+<font size=+1>In this study, following example was considered as an implementation
+of active index structure.</font>
+<p><font size=+1>-A travel agency has a web site. They serve online reservation
+and selling service for airline tickets. They work with three different
+airline companies which are X, Y and Z airways. A customer browse the main
+web page and he enters the desired destination and departure date to travel
+with airplane. This knowledge is sent to three airline companies, which
+respond if they serve for desired destination on this date and the price.
+After responding, the comparison is made to determine the airline company,
+which gives the cheapest price. After comparison OK message is sent to
+that company to reserve the ticket.</font>
+<center><img SRC="03.jpg" height=263 width=615></center>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+
+
+
+
+<title>Multimedia Software Engineering</title>
+
+
+
+
+
+
+
+
+<body>
+
+<p align="center"><a href="p2.htm">
+<img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;<font face="Verdana" size="4" color="#0000FF">Negotiation 
+issues in the context of CVC system</font>&nbsp; <a href="p4.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></p>
+
+<p>&nbsp;</p>
+<div v:shape="_x0000_s1026" class="O">
+  <div style="mso-line-spacing:&quot;100 20 0&quot;;mso-margin-left-alt:216">
+<ul>
+  <li><font face="Verdana" size="5">&nbsp;</font><span style="font-family: Verdana"><font size="5">&nbsp;&nbsp; 
+  One policy per chronobot, or reconfigurable policies</font></span></li>
+</ul>
+    <p>&nbsp;</p>
+<ul>
+  <li><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp; T</span></font><span style="font-family: Verdana"><font size="5">rade-offs 
+  in terms of time vs cost</font></span></li>
+</ul>
+    <p>&nbsp;</p>
+<ul>
+  <li><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp;
+  </span></font><span style="font-family: Verdana"><font size="5">Policy 
+  specific trade-offs (e.g. accumulation of constraints before relaxation or 
+  partial </font></span>
+  <p><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp; 
+  solution </span></font><span style="font-family: Verdana"><font size="5">of 
+  constraints)</font></span></p>
+  <p><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp; </span>
+  </font></li>
+  <li><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp; 
+  Continual monitoring of progress and period of updation</span></font></li>
+</ul>
+    <p>&nbsp;</p>
+<ul>
+  <li><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp; 
+  Approach to handling uncertainty</span></font></li>
+</ul>
+  </div>
+</div>
+</body>

@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 6</title>
+</head>
+<body text="#198A8A" bgcolor="#BED2A3" link="#0000CC" vlink="#000080" alink="#0000CC">
+<center>
+<a href="text0.html">First page</a> <a href="text4.html">Back</a> <a href="text6.html">Continue</a> <a href="text50.html">Last page</a> <a href="finalReport.html">Overview</a> <a href="img5.html">Graphics</a></center><br>
+<h1><font color="#5C8526">Till Now  and Current Problem Being Investigated</font></h1>
+<ul><li><h2>So far, Scott Ambler and Pramod Sadagale have come up with a best practices technique to handle changes in a database design</h2></li>
+<li><h2>So there are some techniques that describe the algorithms for implementing these changes</h2></li>
+<li><h2>However, there are limitation</h2></li>
+<li><h2>     No automation</h2></li>
+<li><h2>     DBA must be involved</h2></li>
+<li><h2>     There is no notion of dependency between structure and query</h2></li>
+<li><h2>  Thus, the current problem being investigated and solved is that once the normal forms and functional dependency changes have been made in a DBMS, we need to change the schema which will trigger changes in queries also, all automatically.  We need to, first, establish the dependency structure and query and implement (using IntelliJ Idea IDE) them to create a tool for management of SQL queries. </h2></li>
+</ul></body>
+</html>

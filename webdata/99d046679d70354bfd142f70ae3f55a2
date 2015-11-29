@@ -1,0 +1,87 @@
+<title>Multimedia Software Engineering</title>
+<a href="mobile.html">  
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+</A> 
+<a href="opinions.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+</head>
+<h1 align="center"> 
+Industry Use of Web Matrix</h1> 
+<blockquote>
+<p align="left"> 
+<br>
+<b>Prototyping Tool</b></p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"> 
+Used by network and infrastructure people and program, product, and project 
+managers</p> 
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"> 
+Build a prototype and then send it to the developers</p> 
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"> 
+Great for building enterprise applications</p> 
+
+
+    </li>
+  </ul>
+<p align="left"> 
+<b>Why only a prototype?</b></p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"> 
+Built only for single-developer Web application development</p> 
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"> 
+Doesn't support team-based development</p> 
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"> 
+Doesn't support IntelliSense</p> 
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"> 
+Doesn't support debugging</p> 
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"> 
+Quick start to building applications that you can later upgrade to Visual 
+Studios.NET</p> 
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-top: 0; margin-bottom: 0"> 
+Upgrade wizard</p> 
+
+
+    </li>
+  </ul>
+</blockquote>
+
+
+<body>
+
+
+</body>
+
+</html>

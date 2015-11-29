@@ -1,0 +1,58 @@
+
+<HTML>
+
+<HEAD>
+
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Introduction</TITLE> 
+</HEAD>
+
+<BODY     >
+<center>
+<a href="http://www.cs.pitt.edu/~chang/265/C2/tsld002.htm"><img
+src="../previous.gif" align=left></a>
+<a href="http://www.cs.pitt.edu/~chang/265/C2/tsld004.htm"><img
+src="../next.gif" align=right></a>
+
+<h1>Chapter 2
+<br>Document Model Issues for Hypermedia</h1>
+<p>
+<hr width="80%">
+</center>
+
+ <H1>Introduction</H1> 
+ <P><UL>
+<LI><H2>hypermedia- is a way to create explicit relations among pieces of
+information. These relations already exist and they are emplicit. For
+example audio should be synchronous with the video.
+</H2>
+</UL><UL>
+<LI><H2>hypermedia model- represents the interactive aspects of familiar
+communication media. Examples are a news story and a book.<p></h2><ul>
+News story:  user see a news caster, then a news clip, more dynamic, yet
+no user interactions. User cannot make choices. For example, when to
+see the news clip.<p>
+Book: reader can take notes. Sections of the text can be marked as
+relevant, reader's opinion can be attached as notes. Future readers can
+see the notes later. This is more static and highly interactive with the
+user(reader).</ul>
+</UL><UL>
+<LI><H2>We need to preserve these relations in a on-line, interactive
+presentation. In addition, we want to be able to express the relations and
+to
+enable info to be captured for later use.
+</H2>
+</UL><UL>
+<LI><H2>For that an information model is needed that
+</H2>
+<UL>
+<LI>formally define the structure of information
+<LI>efficiently map the structure to storage
+<LI>support information and retrieval and 
+<LI>transport presentation from one platform to another</UL></UL></P>
+<P></P> 
+
+
+
+</Body>
+</HTML>

@@ -1,0 +1,112 @@
+<title>Multimedia Software Engineering</title>
+
+<a href="index.html">  
+
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+
+</A> 
+
+<a href="description.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+
+</head>
+
+<h1 align="center"><font color="#FF0000"><br>
+Outline of Project Report</font></h1>
+
+
+
+
+
+<body>
+
+
+
+
+
+<blockquote>
+  <blockquote>
+    <ul>
+      <li>
+      <p align="left"><font color="#0000FF">Project</font> Description
+      <ul>
+        <li>
+        <p align="left">Project <font color="#0000FF">Motivation</font></li>
+        <li>
+        <p align="left">Opinion before starting the project </li>
+      </ul>
+      </li>
+      <li>
+      <p align="left"><font color="#0000FF">Background</font> of the Tool Used<ul>
+        <li>
+        <p align="left">More about Web <font color="#0000FF">Matrix</font></li>
+      </ul>
+      </li>
+      <li>
+      <p align="left">Description of<font color="#0000FF"> 
+      Sapana'sHoroscopeIt.com </font>Web application<ul>
+        <li>
+        <p align="left">Its capabilities</li>
+        <li>
+        <p align="left">Location of application available on
+        <font color="#0000FF">web host</font></li>
+      </ul>
+      </li>
+      <li>
+      <p align="left"><font color="#0000FF">Phase I: </font>Specifications using
+      <font color="#0000FF">IC Cards</font></li>
+      <li>
+      <p align="left"><font color="#0000FF">Phase II</font>: How Does It <font color="#0000FF">Work</font>?<ul>
+        <li>
+        <p align="left">Basic <font color="#0000FF">functionality</font> of the 
+        application</li>
+      </ul>
+      </li>
+      <li>
+        <p align="left"><font color="#0000FF">Phase III</font>: Transforming to 
+        Structures<ul>
+      <li>
+        <p align="left">Diagram of message <font color="#0000FF">passing</font></li>
+      <li>
+        <p align="left"><font color="#0000FF">Table </font>with messages passed</li>
+    </ul>
+      </li>
+      <li>
+      <p align="left">Guided<font color="#0000FF"> Tour</font><ul>
+        <li>
+        <p align="left">Logging in</li>
+        <li>
+        <p align="left"><font color="#0000FF">Registering</font> a username</li>
+        <li>
+        <p align="left">Personalized Page</li>
+        <li>
+        <p align="left">Sending <font color="#0000FF">Emails</font></li>
+        <li>
+        <p align="left">Updating Information</li>
+      </ul>
+      </li>
+      <li>
+      <p align="left"><font color="#0000FF">Problems </font>With Using WebMatrix</li>
+      <li>
+      <p align="left"><font color="#0000FF">Conclusion</font>
+      <ul>
+        <li>
+        <p align="left">Opinion after completing the project</li>
+      </ul>
+      </li>
+      <li>
+      <p align="left"><font color="#0000FF">Sources</font> </li>
+    </ul>
+  </blockquote>
+</blockquote>
+<p align="left"><br>
+&nbsp;</p>
+
+
+
+
+
+</body>
+
+
+
+</html>

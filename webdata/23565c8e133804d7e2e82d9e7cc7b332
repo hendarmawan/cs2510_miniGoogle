@@ -1,0 +1,47 @@
+<html>
+<title>CS2310 Multimedia Software Engineering</title>
+<center>
+<h1>CS2310 Multimedia Software Engineering</h1>
+</center>
+
+<h2>Survey Topics 2003</h2>
+
+
+<a href="8pattern/CONCEPT/index.html">Concept of Patterns (Brotman)</a>
+<br><br>
+<a href="8pattern/LANGUAGE/index.html">A Pattern Language (Swati Gupta)</a>
+<br><br>
+<a href="8pattern/PBE/index.html">Pattern by Example (Tseytlin)</a>
+<br><br>
+<a href="5spec/CRCcard/01.html">CRC Cards for Specification (Shi)</a>
+<br><br>
+<a href="5spec/Context/index.html">The Problem of Context (Kapoor)</a>
+<br><br>
+<a href="UML/UseCase/index.html">Use Case Diagrams (Chang)</a>
+<br><br>
+<a href="UML/page1.html">UML Collaboration Diagrams and Graph Transformations (Ma)</a>
+<br><br>
+<a href="1life/Extreme/01intro.html">Light-weight Software Engineering (McDonald)</a>
+<br><br>
+<a href="Adapt/AdaptHyper/231p-1.html">Adaptive Hypermedia (Shao)</a>
+<br><br>
+<a href="Adapt/AHAM/seminar_pg1.html">Adaptive Hypermedia Application Model (Goldsworthy)</a>
+<br><br>
+<a href="Adapt/SCORM/index.htm">Sharable Content Object Reference Model SCORM (Girdhar)</a>
+<br><br>
+<a href="Java/EnterpriseBean/present01.htm">Tools: Enterprise Java Beans (Xu)</a>
+<br><br>
+<a href="5ootool/Matrix/index.html">Tools: Web Matrix (Sapana Chandra)</a>
+<br><br>
+<a href="5ootool/PHP/page1.html">Tools: PHP (Gould)</a>
+<br><br>
+<a href="5ootool/WX/Slide1.html">Tools: WX Windows (Hemanta)</a>
+<br><br>
+<a href="Time/TimeModel/1.htm">Representing Time in Multimedia Systems (Ling)</a>
+<br><br>
+<a href="Time/TimeTool/index.htm">Tools for Representing Time (Anupam Bhadravat)</a>
+<br><br>
+<a href="Time/PetriNet/1.htm">Petri Nets (Li)</a>
+<br><br>
+<a href="Time/ExPetriNet/index.htm">Extended Petri Nets (Huang)</a>
+<br><br>

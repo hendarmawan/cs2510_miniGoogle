@@ -1,0 +1,521 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<base target=1502main>
+<link rel=File-List href="./ALU_LogicalSim_files/filelist.xml">
+<link rel=Edit-Time-Data href="./ALU_LogicalSim_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Unit1b : Simulating the Logical Sub-Block</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Optical Computing Labratory</o:Author>
+  <o:LastAuthor>Optical Computing Labratory</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2006-08-30T16:50:00Z</o:Created>
+  <o:LastSaved>2006-08-30T16:52:00Z</o:LastSaved>
+  <o:Pages>12</o:Pages>
+  <o:Words>2306</o:Words>
+  <o:Characters>13149</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>109</o:Lines>
+  <o:Paragraphs>26</o:Paragraphs>
+  <o:CharactersWithSpaces>16147</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Courier New";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:817502247;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1348454244 45278824 -640021306 1889553956 1160132576 -454782894 1184647134 1657585938 1997308574 -1857787402;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white background="..\Unitbkg.jpg" lang=EN-US link=blue
+vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center'>Unit 1b</h2>
+
+<h2 align=center style='text-align:center'>Introduction to ModelSim tool:</h2>
+
+<h2 align=center style='text-align:center'>Simulating the Logical Sub-Block</h2>
+
+<h3 align=center style='text-align:center'>The ModelSim Simulator</h3>
+
+<p class=MsoNormal>Now that we have created a design unit which has a clearly
+defined behavior, we need to verify that we have correctly specified that
+behavior in the VHDL code. We will do this using <b>FPGA Advantage</b>'s
+simulation tool, <b>ModelSim</b>. </p>
+
+<p><b>ModelSim</b> is a very powerful and versatile HDL simulation tool which
+has been tightly integrated with <b>FPGA Advantage</b>. As a result, there are
+several methods by which we could go about verifying our design ranging from
+loading the bare design unit into the simulator and watching the outputs as we
+force the input signals into different states to creating a VHDL <i>Test Bench</i>
+which will automate this process for us. For our introduction to <b>ModelSim</b>,
+we will be using the first approach to get a feel for some of what the
+simulator can do. </p>
+
+<p class=MsoNormal style='margin-left:.5in'>The <b>ModelSim</b> simulator
+cannot directly load and simulate your <b>FPGA Advantage</b> design unit source
+files. In order to prepare a design for simulation, two steps must be taken:
+generation and compilation. </p>
+
+<p style='margin-left:.5in'>Once the VHDL for the <i>Logical</i> sub-block has
+been generated, it needs to be compiled into a <b>ModelSim</b> simulation file.
+This can be done in one step by highlighting the Logical block in the Design
+Manager and using the ModelSim design flow button: <img width=444 height=212
+id="_x0000_i1025" src=modelsimflow.jpg>. If there is a problem, check the
+design unit block diagram for errors and call the TA or instructor. </p>
+
+<p style='margin-left:.5in'>Once the design has been compiled, the simulator
+should start automatically. This will bring up the options window seen in
+Figure 1. Leave all of the default options as they are and click <i>OK</i>. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=448
+height=585 id="_x0000_i1026" src=sim1.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 1</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>After a few seconds, the <i>ModelSim</i>
+main window pictured in Figure 2a will appear. You will also notice that the
+bottom of the <b>FPGA Advantage</b> design window with the <i>Logical</i>
+sub-block diagram has a new simulation toolbar pictured in Figure 2b. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=857
+height=566 id="_x0000_i1027" src=sim2a.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 2b</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>In addition to the <b>ModelSim</b>
+main window, where all text commands to the simulator are entered, there are
+several other graphical interface windows available. In this section of the
+tutorial we will be using the <i>Signals</i> and <i>Waves</i> windows. </p>
+
+<p style='margin-left:.5in'>When we first attempt to &quot;power up&quot; the
+Logical unit it <b>ModelSim</b>, it must first be placed into a starting state.
+In a real circuit this state will be completely random; <b>ModelSim</b> will
+treats everything as unknown. To prevent <b>ModelSim</b> from throwing warnings
+about every unknown output, go to the <i>Simulate</i> menu in <b>ModelSim</b>,
+select <i>Runtime Options</i>, click the <i>Assertions</i> tab and place a
+check next to <b>warning</b> in the <i>Ignore Assertions For:</i> list. </p>
+
+<p style='margin-left:.5in'>To display the <i>Signals</i> window, go to the <i>View</i>
+menu in the main <b>ModelSim</b> window and select <i>Debug Windows | Objects</i>
+from the list (note: this window may already be displayed by default). Notice
+that in the main window (Figure 3a), the command <i>view signals</i> was
+automatically issued and this resulted in the appearance of the signals window
+on the right as seen in Figure 3b. </p>
+
+<p style='margin-left:.5in'>You will find that most current digital simulators
+consist of graphical shells which issue text commands to the actual simulator.
+This is a remnant of the fact that until recently most serious digital
+simulation was done on high-end UNIX workstations where a text interface is the
+norm. </p>
+
+<p style='margin-left:.5in'>Looking at the <i>Objects</i> window, you can see
+that all of the ports and internal signals for the <i>Logical</i> sub-block are
+present. Since the simulator has not yet un forward in time, they are all
+currently in an undefined state. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=177
+height=648 id="_x0000_i1028" src=sim3a.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 3a</h4>
+
+<p style='margin-left:.5in'>Next open the <i>Waves</i> window from the <i>View
+| Debug Windows</i> menu. The window in Figure 4a will appear. Click the
+&quot;undock&quot; button to undock the waves window from the main Modelsim
+window. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=853
+height=563 id="_x0000_i1029" src=sim4a.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 4a</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>This is the waveform viewer for <b>ModelSim</b>.
+By default, it appears without any signals in the viewing area, they must be
+added by hand. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=830
+height=426 id="_x0000_i1030" src=sim4b.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 4b</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Now that we have the <i>Signals</i>
+and <i>Waves</i> windows open, we will start adding signals to the waveform
+viewer. There are several different ways to do this. We will do it by dragging
+them from the <i>Objects</i> window and dropping them into the left hand frame
+of the <i>Waves</i> window. </p>
+
+<p style='margin-left:.5in'>Begin by selecting the ALUOp signal in the <i>Signals</i>
+window by left-clicking over it. Once you have selected it, left-click again
+and this time hold the mouse button down. While the mouse button remains
+depressed, drag the pointer over to the <i>Waves</i> window and release. Once
+the ALUOp signal has been added to the Waves window, you will need to resize
+the dividers in the waves window to allow for enough room to display the name
+of the signal and the current value. The <i>Waves</i> window should now look
+like Figure 5. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=946
+height=426 id="_x0000_i1031" src=sim5.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 5</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Now drag the <i>A</i> and <i>B</i>
+signals respectively into the <i>Waves</i> window so that it looks like Figure
+6. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=946
+height=426 id="_x0000_i1032" src=sim6.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 6</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>We can also drag multiple signals
+at once. Left-click on the <i>LogicalR</i> signal in the <i>Signals</i> window
+to select it, but this time hold the SHIFT button down to select the bottom
+five signals. Now left-click and hold again and drag this group of signals onto
+the <i>Waves</i> window, which should now resemble Figure 7. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=946
+height=426 id="_x0000_i1033" src=sim7.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 7</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Finally, within the <i>Waves</i>
+window we can rearrange the display order to our liking. It is often convenient
+to place the output or outputs of the design unit at the bottom of the waveform
+display. Currently, however, the <i>LogicalR</i> signal is sitting in the
+middle of the display. Select this signal in the left-hand frame of the <i>Waves</i>
+window by left-clicking. Now left-click and hold and drag it down to the bottom
+of the list. Your waveform display should now look something like Figure 8. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=946
+height=426 id="_x0000_i1034" src=sim8.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 8</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Now that we have our display set up
+to our liking, lets look at how we can make this simulation do something. The
+most direct way to do this is to stimulate the input signals by forcing them to
+particular values. Remember, forcing a signal to a value does not actually take
+effect until you advance the simulator time. </p>
+
+<p style='margin-left:.5in'>The command in <b>ModelSim</b> to stimulate a
+signal is called <i>force</i>. For our first timestep, we wish to set the ALUOp
+to &quot;00&quot;, so we type <i>force ALUOp 00</i> at the <b>VSIM</b> prompt
+and hit return. The main window will now look like Figure 9. Constant strings
+of bits can simply be represented by a sequence of ones and zeros. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=857
+height=566 id="_x0000_i1035" src=sim9.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 9</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>For the inputs, <i>A</i> and <i>B</i>,
+we also wish to assign values. However, for signals with so many bits, it is
+tedious to type out the constant assignment values bit by bit. Instead, it is
+possible to represent constant values in other bases like hexadecimal or
+decimal which will be converted to actual bit strings by the simulator. There
+are two equivalent syntaxes to do this. One is to type a decimal number
+representing the base, followed by the # sign, followed by the value in the
+appropriate base. The other is to use the VHDL standard method of the base
+identifier (hexadecimal is X) followed by the value in double-quotes. </p>
+
+<p style='margin-left:.5in'>We will be assigning <i>A</i> to a value of all
+zeros and <i>B</i> to a value of all ones. In hexadecimal assignment, this would
+be done by typing: </p>
+
+<pre style='margin-left:.5in'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; force A 16#0000000000000000</pre><pre
+style='margin-left:.5in'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; force B X&quot;FFFFFFFFFFFFFFFF&quot;</pre>
+
+<p class=MsoNormal style='margin-left:.5in'>into the main window as seen in
+Figure 10. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=857
+height=566 id="_x0000_i1036" src=sim10.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 10</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Finally, we need to step the
+simulator forward in time. Since we do not have any timing delay information in
+our design, leading to all transitions occurring instantaneously, the amount of
+time we step by means little, so for starters we will move forward 10ns. We run
+the simulator for a specified amount of time by typing <i>run xxx</i> where xxx
+is a time in nanoseconds. So type <i>run 10</i> at the prompt as seen in Figure
+11a. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=857
+height=566 id="_x0000_i1037" src=sim11a.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 11a</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Now that we have moved forward with
+stimulus on the inputs, there should be well defined values at the outputs and
+the waveform window should hold history of the specified signals for zero to
+ten nanoseconds. Your <i>Signals</i> and <i>Waves</i> windows should look like
+Figure 11b and 11c respectively. </p>
+
+<div align=center>
+
+<table border=0 cellpadding=0 style='mso-cellspacing:1.5pt;margin-left:.5in'>
+ <tr>
+  <td width="50%" style='width:50.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><img width=531
+  height=262 id="_x0000_i1038" src=sim11b.jpg></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <h4 align=center style='text-align:center'>Figure 11b</h4>
+  </td>
+ </tr>
+ <tr>
+  <td width="50%" style='width:50.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal align=center style='text-align:center'><img width=946
+  height=426 id="_x0000_i1039" src=sim11c.jpg></p>
+  </td>
+ </tr>
+ <tr>
+  <td style='padding:.75pt .75pt .75pt .75pt'>
+  <h4 align=center style='text-align:center'>Figure 11c</h4>
+  </td>
+ </tr>
+</table>
+
+</div>
+
+<p style='margin-left:.5in'>Unfortunately, in the default configuration, the
+data in the <i>Waves</i> window is impossible to read. This can be fixed in
+several ways. First resize the window, if you haven't already done so, so that
+it takes up most of the width of the screen. </p>
+
+<p style='margin-left:.5in'>Next, highlight all seven of the 64 bit signals and
+go to the <i>Prop</i> menu on the <i>Waves</i> window. About midway down there
+will be a listing of different radix values: select hexadecimal to change the
+display radix to hex format. </p>
+
+<p style='margin-left:.5in'>Now position the pointer over the divider between
+the two viewing frames. Left-click over it and drag to the right until all of
+the signal values in the left frame are visible. The left frame contains the
+name of the signals and the value of each signal at the point in the waveform
+window that the cursor is located. </p>
+
+<p style='margin-left:.5in'>Finally, click the right-most magnifying glass on
+the toolbar (the one with the dark-blue center) to maximally zoom in on the
+displayed waveform. </p>
+
+<p style='margin-left:.5in'>Your <i>Waves</i> window should now look like
+Figure 12. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=946
+height=426 id="_x0000_i1040" src=sim12.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 12</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Now to show a transition on the
+output, lets change up the values of the inputs. Set <i>ALUOp</i> to
+&quot;10&quot;, <i>A</i> to X&quot;00000000&quot;, and <i>B</i> to
+X&quot;FEDCBA98&quot; and then run the simulator for 20ns. </p>
+
+<p style='margin-left:.5in'>The waveform display should now show the update
+values for ALUOp and B transitioning at 10ns as well as new values for NORR =
+X&quot;01234567&quot;; ORR= X&quot;FEDCBA98&quot;; XORR= X&quot;FEDCBA98&quot;;
+and LogicalR = X&quot;FEDCBA98&quot; also transitioning at 10ns. Check to make
+sure that your waveform window looks like Figure 13: if not then you have an
+error in your design. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=946
+height=426 id="_x0000_i1041" src=sim13.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 13</h4>
+
+<ul type=disc>
+ <li class=MsoNormal style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto;
+     mso-list:l0 level1 lfo1;tab-stops:list .5in'>In addition to viewing the
+     simulator output in the various <b>ModelSim</b> windows, data is annotated
+     to the original <b>FPGA Advantage</b> design. Go to your opened <i>Logical</i>
+     block diagram. If you have no signals selected, at the bottom of the
+     window on the simulation toolbar, there will be a grayed out button
+     labelled <i>Add Probe</i>,&nbsp;<img width=27 height=25 id="_x0000_i1042"
+     src="Sim_AddProbeGrey.jpg">. By selecting a signal or bus in the design,
+     this button will change color and allow you to activate the tool:&nbsp;<img
+     width=31 height=28 id="_x0000_i1043" src="Sim_AddProbe.jpg">. Activate
+     this tool, move the mouse pointer over the <i>ALUOp</i> bus, and
+     left-click. This will add a probe to the net, meaning that the current
+     simulator value of that signal will be displayed in a red box near the
+     net. The design area should now look like Figure 14.</li>
+</ul>
+
+<p align=center style='margin-left:.5in;text-align:center'><br>
+<img width=837 height=678 id="_x0000_i1044" src=sim14.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 14</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Now add probes to all of the
+signals on the diagram so that it looks like Figure 15. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=1024
+height=669 id="_x0000_i1045" src=sim15.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 15</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Now we have seen several ways to
+look at the values in the simulator. However, it is still a tedious process to
+individually type all of the stimulus commands for a complete design test. To
+this end, we can use something called a <i>Macro File</i>. A macro file is
+simply a text file which can be created by a program such as notepad containing
+a sequence of <b>ModelSim</b> commands. In <b>ModelSim</b> these are usually saved
+with the extension <i>.do</i> since they are also known as <i>do</i> files and
+are executed via the <i>do</i> command. </p>
+
+<p style='margin-left:.5in'>To test the <i>Logical</i> sub-block a little bit
+more fully, I have created a small sequence of simulator commands and commented
+it. Enter this sequence of commands in a Notepad or other text editor and save
+it as <i>H:\<b>..</b>\ALU\LogicalTest.do</i>. (You may leave out the comments
+or cut and paste) </p>
+
+<pre style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></pre><pre
+style='margin-left:.5in'>-- Restart the simulator</pre><pre style='margin-left:
+.5in'>restart -f</pre><pre style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></pre><pre
+style='margin-left:.5in'>-- First set A and B to zero and the ALUOp to NOR (11).</pre><pre
+style='margin-left:.5in'>-- Check that NORR and LogicalR are both &quot;FFFFFFFFFFFFFFFF&quot; and</pre><pre
+style='margin-left:.5in'>-- that ANDR, ORR, and XORR are all &quot;0000000000000000&quot;.&nbsp; This&nbsp;</pre><pre
+style='margin-left:.5in'>-- will verify one test case for each individual logic</pre><pre
+style='margin-left:.5in'>-- operation and will verify that the &quot;11&quot; select of the</pre><pre
+style='margin-left:.5in'>-- multiplexor is working.</pre><pre style='margin-left:
+.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></pre><pre
+style='margin-left:.5in'>force ALUOp 11</pre><pre style='margin-left:.5in'>force A X&quot;0000000000000000&quot;</pre><pre
+style='margin-left:.5in'>force B X&quot;0000000000000000&quot;</pre><pre
+style='margin-left:.5in'>run 10</pre><pre style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></pre><pre
+style='margin-left:.5in'>-- Now leave A as zero, set B to &quot;FFFF0000FFFF0000&quot; and set the</pre><pre
+style='margin-left:.5in'>-- ALUOp to 00.&nbsp; Check that ANDR and LogicalR are&nbsp;</pre><pre
+style='margin-left:.5in'>-- both &quot;0000000000000000&quot;.&nbsp; Since ANDR is the only intermediate</pre><pre
+style='margin-left:.5in'>-- result that should be zero, if LogicalR is also</pre><pre
+style='margin-left:.5in'>-- zero, then the multiplexor should be working for &quot;00&quot;</pre><pre
+style='margin-left:.5in'>-- on the select.&nbsp; ORR and XORR should be &quot;FFFF0000FFFF0000&quot; and</pre><pre
+style='margin-left:.5in'>-- NORR should be &quot;0000FFFF0000FFFF&quot;.</pre><pre
+style='margin-left:.5in'>&nbsp;</pre><pre style='margin-left:.5in'>force ALUOP 00</pre><pre
+style='margin-left:.5in'>force A X&quot;0000000000000000&quot;</pre><pre
+style='margin-left:.5in'>force B X&quot;FFFF0000FFFF0000&quot;</pre><pre
+style='margin-left:.5in'>run 10</pre><pre style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></pre><pre
+style='margin-left:.5in'>-- Now we will set A to &quot;FFFFFFFFFFFFFFFF&quot; and B to &quot;F0F0F0F0F0F0F0F0&quot;.</pre><pre
+style='margin-left:.5in'>-- This will give a unique answer for ORR of &quot;FFFFFFFFFFFFFFFF&quot;</pre><pre
+style='margin-left:.5in'>-- so we will set ALUOp to &quot;01&quot;.&nbsp; Check that ORR and</pre><pre
+style='margin-left:.5in'>-- LogicalR are &quot;FFFFFFFFFFFFFFFF&quot;.&nbsp; ANDR should be &quot;F0F0F0F0F0F0F0F0&quot;,</pre><pre
+style='margin-left:.5in'>-- NORR should be &quot;0000000000000000&quot; and XORR should be &quot;0F0F0F0F0F0F0F0F&quot;.</pre><pre
+style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></pre><pre
+style='margin-left:.5in'>force ALUOp 01</pre><pre style='margin-left:.5in'>force A X&quot;FFFFFFFFFFFFFFFF&quot;</pre><pre
+style='margin-left:.5in'>force B X&quot;F0F0F0F0F0F0F0F0&quot;</pre><pre
+style='margin-left:.5in'>run 10</pre><pre style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></pre><pre
+style='margin-left:.5in'>-- Since there is a unique value for the only ALUOp which&nbsp;</pre><pre
+style='margin-left:.5in'>-- we haven't tested on the multiplexor with the&nbsp;</pre><pre
+style='margin-left:.5in'>-- current values of A and B, we can leave them alone</pre><pre
+style='margin-left:.5in'>-- and set the ALUOp to XOR or &quot;10&quot;.&nbsp; This time all that</pre><pre
+style='margin-left:.5in'>-- we need to check is that LogicalR is now equal to</pre><pre
+style='margin-left:.5in'>-- the value of XORR, or &quot;0F0F0F0F0F0F0F0F&quot;.</pre><pre
+style='margin-left:.5in'><![if !supportEmptyParas]>&nbsp;<![endif]><o:p></o:p></pre><pre
+style='margin-left:.5in'>force ALUOp 10</pre><pre style='margin-left:.5in'>run 10</pre>
+
+<p class=MsoNormal style='margin-left:.5in'>Once you have entered and saved
+this text we are ready to run the macro file. First, however, we will want to
+reset the simulator so that we are starting from time zero. This is done by
+entering <i>restart</i> at the main <b>ModelSim</b> window prompt. Now run the
+command file by entering <i>do H:/<b>..</b>/ALU/LogicalTest.do</i> at the
+prompt in the main <b>ModelSim</b> window. Be careful to use forward slashes
+instead of normal NT backslashes in the directory name and make sure that the
+file does not have a hidden .txt extension. </p>
+
+<p style='margin-left:.5in'>Confirm that your design is functioning properly by
+checking the actual values in the <i>Waves</i> window with the expected
+results. The final output should look something like Figure 16. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><img width=946
+height=426 id="_x0000_i1046" src=sim16.jpg></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 16</h4>
+
+<p class=MsoNormal style='margin-left:.5in'>Now that you have verified the
+functionality of your first design unit, we can go on to create the next one in
+<a href="..\ShifterBlock\ALU_Shifter.html">Creating the Shifter</a>. <br>
+&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

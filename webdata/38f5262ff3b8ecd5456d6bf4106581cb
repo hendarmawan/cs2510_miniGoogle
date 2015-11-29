@@ -1,0 +1,39 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="CSSD">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="p12.html"><img SRC="previous.gif"  align=LEFT></a><a href="p14.html"><img SRC="next.gif"  align=RIGHT></a>
+<p><br>
+<p><br>
+<center><b><font size=+3>5.1 Component Integration</font></b></center>
+
+<ol><b><font size=+1>Integrating Legacy Systems into Component-Based Systems</font></b>
+<br>&nbsp;
+<ul>
+<li>
+<font size=+1>No time and justification to replace existing legacy systems.</font></li>
+</ul>
+
+<ul>
+<li>
+<font size=+1>New functionality must be integrated with other components,
+existing applications and data sources.</font></li>
+</ul>
+
+<ul>
+<li>
+<font size=+1>Does not allow time for total replacement.</font></li>
+</ul>
+
+<p><br><font size=+1>Component-Based software engineering aims at building
+applications that are adaptable to business and technology chagnes, while
+retaining legacy applications and legacy tecynology as far as possible
+and reasonable.</font></ol>
+
+</body>
+</html>

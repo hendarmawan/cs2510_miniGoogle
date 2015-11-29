@@ -1,0 +1,20 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 4</title>
+</head>
+<body text="#198A8A" bgcolor="#BED2A3" link="#0000CC" vlink="#000080" alink="#0000CC">
+<center>
+<a href="text0.html">First page</a> <a href="text2.html">Back</a> <a href="text4.html">Continue</a> <a href="text50.html">Last page</a> <a href="finalReport.html">Overview</a> <a href="img3.html">Graphics</a></center><br>
+<h1><font color="#5C8526">Normal Forms</font></h1>
+<ul><li><h2>A functional dependency, denoted by X -&gt; Y  between two sets of attributes X and Y that are subsets of R specifies a constraint on the possible tuples that can form a relation state r of R.The constraint is that, for any two tuples t1 and t2 in r that have t1[X] = t2[Y], we must also have t1[Y] = t2[Y].</h2></li>
+<li><h2>There are 6-7 normal forms considered in database theory.  </h2></li>
+<li><h2>However, in practice, only the first three are generally taken into account</h2></li>
+<li><h2>1st Normal Form :   The only attribute values permitted by 1NF are single atomic (or indivisible ) values</h2></li>
+<li><h2>2nd Normal Form :   A relation schema R is in 2NF if every nonprime attribute  A in R is fully functionally dependent on the primary key of R.</h2></li>
+<li><h2>3rd Normal Form :   A realtion schem R is in 3NF if it satisfies 2NF and no nonprime attribute of R is transitively dependent on the primary key.</h2></li>
+<li><h2>These normal forms are useful in maintaining the semantics of schemas and help in avoiding incorrect updates.  However, these may cause splitting of tables.  Also, the addition of functional dependencies may cause more changes to be made.</h2></li>
+</ul></body>
+</html>

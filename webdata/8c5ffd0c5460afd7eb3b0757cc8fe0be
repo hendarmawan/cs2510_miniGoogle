@@ -1,0 +1,161 @@
+<html>
+
+<head>
+<link href="../2074%20notes/2074-style.css" type="text/css" rel="stylesheet"/>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Week 2</title>
+</head>
+
+<body>
+
+<p><b><font size="4">Class Notes:&nbsp;</font></b></p>
+<p>In the book chapter  two and parts of five.</p>
+<p>Recall the basic XHTML template.</p>
+<p><font size="4"><b>&lt;?xml version=&quot;1.0&quot;?&gt; </b></font></p>
+<p><font size="4"><b>&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD XHTML 1.0 
+	Transitional//EN&quot; &quot;http://www/w3/org/TR/xhtml/11/DTD/xhtml1-transitional.dtd&quot;&gt;</b></font></p>
+<p><font size="4"><b>&lt;html xmlns=&quot;http://www.w3.org/1999/xhtml&quot;&gt;</b></font></p>
+<p><font size="4"><b>&lt;head&gt;</b></font></p>
+<p><font size="4"><b>&lt;title&gt;&nbsp; &lt;/title&gt;</b></font></p>
+<p><font size="4"><b>&lt;/head&gt;</b></font></p>
+<p><font size="4"><b>&lt;body&gt;</b></font></p>
+<p><font size="4"><b>&lt;/body&gt;<br>
+<br>
+&lt;/html&gt;</b></font></p>
+<p>&nbsp;</p>
+<p>Now lets build.</p>
+<p><b>Where do we build them?</b></p>
+<ul>
+  <li><b>Notepad or another TEXT editor</b></li>
+</ul>
+<p><b>How do we build them?</b></p>
+<ul>
+  <li><b>Start with the basic xhtml template and grow from there</b></li>
+  <li><b>One paragraph at a time<br>
+  The &lt;p&gt; tag and some of it's attributes.</b></li>
+  <li><b>Divide and concur<br>
+  The &lt;div&gt; tag, how and why.</b></li>
+  <li><b>Lets get ahead of the game<br>
+  The heading tags and who decides.<br>
+  &lt;h1&gt;.....&lt;h6&gt;</b></li>
+  <li><b>Use the formatting tags and attributes.<br>
+  Do it with style!<br>
+  Body tag formatting attributes<br>
+  link, vlink, bgcolor, background, style.<br>
+  Style attribute can override your formatting concerns.<br>
+  &lt;h1 style=&quot;color: red; font-style: italic&quot;&gt;</b></li>
+  <li><b>  &quot;NO COMMENT! NO COMMENT&quot;<br>
+  &lt;!-- Please make it a habit, to comment your pages--&gt;<br>
+  Why?</b></li>
+  <li><b>If you don't break up this text there is going to be a rule created!<br>
+  line break &lt;br/&gt;<br>
+  Horizontal Rule &lt;hr/&gt;<br>
+  &lt;hr/&gt; attributes: align, size, style, width. <br>
+&nbsp;</b></li>
+</ul>
+<p><b>Where do we save them?</b></p>
+<ul>
+  <li><b>Save to the desktop</b></li>
+  <li><b><a href="publish.htm">Publish your page</a></b></li>
+  (This document describes how to publish your page by
+   first uploading your page using WinSCD.  If you are
+   using other tools the procedure is similar.  The key point
+   is you must upload your file under the public/html directory.
+   So you need to first find the public directory and
+   change to this directory.  Under the public directory
+   there should be the html directory.  If the html directory
+   does not exist you need to make a directory called
+   "html".  Then you can change to html directory.  Now
+   you can upload your page under public/html directory.)
+  <li><b>URL - http://www.pitt.edu/~username/cs134/pagename.html</b></li>
+</ul>
+<p><b>How do we save them?</b></p>
+<ul>
+  <li><b>Don't forget the file extension!</b></li>
+  <li><b>html vs htm </b></li>
+</ul>
+<p><b>Why is hypertext hyper?</b></p>
+<p>A hypertext document is one that contains the elements called links that 
+allow users to activate a particular part of the screen to perform some action. 
+The actions that we will look at include</p>
+<ol>
+  <li>Navigating to another part of the document</li>
+  <li>Navigating to another document on the same web site.<br>
+  * We will also look at navigating to another part of ANOTHER document of the 
+  same web site AND potentially navigating to another part of an external 
+  document.</li>
+  <li>Navigating to an external web site.</li>
+</ol>
+<p><b>Let's drop anchor here and get started!</b></p>
+<p>Like most new concepts introduced this semester we will start by introducing 
+a new tag called the &quot;anchor&quot; tag.</p>
+<p>&lt;a&gt;&nbsp;&nbsp; click me&nbsp;&nbsp; &lt;/a&gt;</p>
+<p><b>source</b> anchor vs <b>target</b> anchor</p>
+<p>Two important attributes for the anchor tag.</p>
+<ul>
+  <li>href - hypertext reference- identifies the target of the link</li>
+  <li> id - used to identify a location within an html document. used 
+  with the &lt;a&gt; tag to set the target.<br>
+&nbsp;</li>
+</ul>
+<p><b>Intrapage links. </b></p>
+<ul>
+  <li>Link to spot in the current html document.</li>
+  <li>Uses both the source and target anchor</li>
+  <li>ID'ed in the target anchor and identified with href=&quot;#fdjglkjflkg&quot; in the 
+  source anchor.</li>
+</ul>
+<p>&lt;a href=&quot;#area1&quot;&gt; area1 &lt;/a&gt;</p>
+<p>&lt;a id=&quot;area1&quot;&gt; adfgfdagakjdfghf &lt;/a&gt; </p>
+<p>&lt;a href=&quot;file1.html#area1&quot;&gt; area 1 on file one page &lt;/a&gt;</p>
+<p><b>Intrasystem links.</b></p>
+<ul>
+  <li>Links to a different html document within your web site.</li>
+  <li>Uses source anchor with href</li>
+  <li>may need path identified</li>
+</ul>
+<p>&lt;a href=&quot;page3.html&quot;&gt; click me for page 3 
+&lt;/a&gt;</p>
+<p><b>Intersystem links.</b></p>
+<ul>
+  <li>Links to an external html document</li>
+  <li>Uses source anchor with href</li>
+  <li>Need to supply URL</li>
+</ul>
+<p>&lt;a href=&quot;http://www.cs.pitt.edu&quot;&gt; take me to the
+CS web site! &lt;/a&gt;</p>
+<p><b>This is absolutely the path to a successful link, relatively speaking..</b></p>
+<p>In most Intrasystem links you will find it necessary to provide the path to 
+the html document you want to link to. This can be done by use of the <b>
+absolute</b> or <b>relative paths</b>. We will primarily be using the relative 
+path.( See page 113 in your book.)</p>
+<p>&nbsp;</p>
+<p>
+<pre>
+                       |-- folderz --- file1.html
+folderx  --- foldery --
+                       |-- folderq --- file2.html
+</pre>
+<p><br>
+&lt;a href=&quot;../../folderq/file2.html&gt; in file1.html will get me from file1.html in folderz to 
+file2.html in folderq</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+
+<h3>Final thought: A begin quote always requires a
+matching end quote.  For instance an attribute
+value should be entered as "page1.htm", and
+so on.  If you enter "page1.htm without the matching
+end quote the attribute value will be misinterpreted!</h3>
+<h3>This concept of pairing is also central to the concept
+of tags.  Every tag is really a pair consisting of
+an opening tag and a closing tag.  We call this pair
+a <font color=red>container tag</font>.</h3>
+</body>
+
+</html>

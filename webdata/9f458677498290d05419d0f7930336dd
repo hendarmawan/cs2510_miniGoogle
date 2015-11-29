@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+  <title>cs1675</title>
+  <link rel="stylesheet" href="styles-site.css" type="text/css">
+</head>
+
+<body>
+<div id="banner">
+<h1><a href="http://www.cs.pitt.edu/%7Ehwa/cs1675/"
+accesskey="1">CS1675</a></h1>
+<span class="description">Introduction to Machine Learning</span>
+</div>
+
+<div id="content">
+<div class="blog">
+<div class="blogbody">
+
+<p>Here is a tentative list of topics. Depending on how fast we go, the topics
+may not appear exactly as planned. 
+<ul>
+  <li>week 1: Introduction; the Machine Learning Design Cycle 
+  <li>week 2: Concept Learning; Decision Trees
+  <li>week 3: Evaluation Methodology 
+  <li>week 4: Linear Models: Regression
+  <li>week 5: Linear Models: Classification
+  <li>week 6: Neural Network 
+  <li>week 7: Support Vector Machine 
+  <li>week 8: Bayesian Learning
+  <li>week 9: Midterm
+  <li>week 10: Spring Break
+  <li>week 11: Clustering 
+  <li>week 12: Expectation Maximization
+  <li>week 13: Dimensionality Reduction
+  <li>week 14: Semi-Supervised Learning
+  <li>week 15: Project Presentations
+  <li>week 16: Final Exam Period
+</ul>
+</div>
+</div>
+</div>
+<div id="links">
+<div class="side"><a href="index.html">Home</a><br>
+<a href="policy.htm">Course Policies</a><br>
+<a href="syl.htm">Syllabus</a><br>
+<a href="links.htm">Links</a><br>
+</div>
+</div>
+<br clear="all">
+</body>
+</html>

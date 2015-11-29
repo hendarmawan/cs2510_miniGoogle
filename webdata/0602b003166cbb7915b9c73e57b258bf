@@ -1,0 +1,28 @@
+<HTML><HEAD><TITLE>CS2310 Project -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="04.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="06.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>    Design Petri Net    Model</H1>
+<H1><FONT color=mediumblue>      Node 
+      Decomposing</FONT></H1>
+</CENTER>
+
+<UL><UL><UL> <UL>
+  <LI><FONT size=5>The red light is decomposed in 
+          to four parts in order to synchronize two ways' lights. Red light are 
+          decomposed into four parts: two VR corresponds to the case some 
+          drivers drive through Red lights (in both ways); R1 corresponds to the 
+          other way’s Green Light; R2 corresponds to the other way’s Yellows&nbsp;Light.</FONT>&nbsp; 
+</LI></UL></UL></UL></UL>
+
+<CENTER>
+<IMG src="images/decomposing.jpg"> </CENTER>
+<CENTER></CENTER>
+
+</BODY></HTML>
+

@@ -1,0 +1,333 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+  
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+  
+  <meta name="GENERATOR" content="Mozilla/4.73 [en] (Win98; U) [Netscape]">
+  <title>Research Topics in Computer Science</title>
+
+  
+  
+  <script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_displayStatusMsg(msgStr) { //v1.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+//-->
+  </script>
+</head><body onload="MM_preloadImages('images/CMPS111NavBar_r1_c1_f3.gif','images/CMPS111NavBar_r1_c1_f2.gif','images/CMPS111NavBar_r1_c2_f3.gif','images/CMPS111NavBar_r1_c2_f2.gif','images/CMPS111NavBar_r1_c3_f3.gif','images/CMPS111NavBar_r1_c3_f2.gif','images/CMPS111NavBar_r1_c4_f3.gif','images/CMPS111NavBar_r1_c4_f2.gif','images/CMPS111NavBar_r1_c5_f3.gif','images/CMPS111NavBar_r1_c5_f2.gif')" style="background-color: WHITE;">
+<hr>
+<center>
+<table border="0" cellpadding="0" cellspacing="0" width="749">
+<!-- fwtable fwsrc="CMPS111NavBar.png" fwbase="CMPS111NavBar.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+  <tbody>
+    <tr>
+      <td><img src="images/spacer.gif" name="undefined_3" border="0" height="1" width="150"></td>
+      <td><img src="images/spacer.gif" name="undefined_3" border="0" height="1" width="150"></td>
+      <td><img src="images/spacer.gif" name="undefined_3" border="0" height="1" width="149"></td>
+      <td><img src="images/spacer.gif" name="undefined_3" border="0" height="1" width="150"></td>
+      <td><img src="images/spacer.gif" name="undefined_3" border="0" height="1" width="150"></td>
+      <td><img src="images/spacer.gif" name="undefined_3" border="0" height="1" width="1"></td>
+    </tr>
+    <tr>
+      <td><a href="index.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_displayStatusMsg('Home Page');MM_nbGroup('over','CMPS111NavBar_r1_c1_2','images/CMPS111NavBar_r1_c1_f2.gif','images/CMPS111NavBar_r1_c1_f3.gif',1);return document.MM_returnValue" onclick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c1_2','images/CMPS111NavBar_r1_c1_f3.gif',1);"><img name="CMPS111NavBar_r1_c1_2" src="images/CMPS111NavBar_r1_c1.gif" border="0" height="37" width="150"></a></td>
+      <td><a href="homework.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_displayStatusMsg('Homework');MM_nbGroup('over','CMPS111NavBar_r1_c2_2','images/CMPS111NavBar_r1_c2_f2.gif','images/CMPS111NavBar_r1_c2_f3.gif',1);return document.MM_returnValue" onclick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c2_2','images/CMPS111NavBar_r1_c2_f3.gif',1);"><img name="CMPS111NavBar_r1_c2_2" src="images/CMPS111NavBar_r1_c2.gif" border="0" height="37" width="150"></a></td>
+      <td><a href="assignments.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_displayStatusMsg('Assignments');MM_nbGroup('over','CMPS111NavBar_r1_c3_2','images/CMPS111NavBar_r1_c3_f2.gif','images/CMPS111NavBar_r1_c3_f3.gif',1);return document.MM_returnValue" onclick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c3_2','images/CMPS111NavBar_r1_c3_f3.gif',1);"><img name="CMPS111NavBar_r1_c3_2" src="images/CMPS111NavBar_r1_c3.gif" border="0" height="37" width="149"></a></td>
+      <td><a href="exams.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_displayStatusMsg('Exams');MM_nbGroup('over','CMPS111NavBar_r1_c4_2','images/CMPS111NavBar_r1_c4_f2.gif','images/CMPS111NavBar_r1_c4_f3.gif',1);return document.MM_returnValue" onclick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c4_2','images/CMPS111NavBar_r1_c4_f3.gif',1);"><img name="CMPS111NavBar_r1_c4_2" src="images/CMPS111NavBar_r1_c4.gif" border="0" height="37" width="150"></a></td>
+      <td><a href="slides.html" onmouseout="MM_nbGroup('out');" onmouseover="MM_displayStatusMsg('Slides');MM_nbGroup('over','CMPS111NavBar_r1_c5','images/CMPS111NavBar_r1_c5_f2.gif','images/CMPS111NavBar_r1_c5_f3.gif',1);return document.MM_returnValue" onclick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c5','images/CMPS111NavBar_r1_c5_f3.gif',1);"><img name="CMPS111NavBar_r1_c5" src="images/CMPS111NavBar_r1_c5.gif" border="0" height="37" width="150"></a></td>
+      <td><img src="images/spacer.gif" name="undefined_3" border="0" height="37" width="1"></td>
+    </tr>
+  </tbody>
+</table>
+</center>
+
+<hr>
+
+<center>
+<h1>CS 2001: Research Topics in Computer Science<br>
+Fall 2015<br>
+</h1>
+</center>
+
+<center>
+<h2>Daniel Mosse</h2>
+</center>
+
+<center>
+<h3>Computer Science Department<br>
+University of Pittsburgh</h3>
+</center>
+
+<hr>
+<center>
+<table cellpad="10" cellspace="10" border="1" width="90%">
+  <tbody>
+    <tr>
+      <td height="30">
+      <center>
+      <p><font color="#ff0000">NEWS:</font></p>
+      </center>
+      <center>
+      <ul>
+        <li><br.>No news is a sign of good news...<br>
+          </br.></li>
+      </ul>
+      </center>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+
+<hr>
+<p><big><a href="http://www.cs.pitt.edu/%7Emosse/cs2001/schedule.html"><strong>Tentative</strong>
+Course Schedule</a> </big></p>
+
+<table>
+
+  <tbody>
+    <tr>
+      <td height="21">
+      <p><b>Class:</b></p>
+      </td>
+      <td>MW 1:00 - 2:15 PM, 6516 SENSQ</td>
+    </tr>
+    <tr>
+      <td><b>Instructor:</b></td>
+      <td>Prof. Daniel Mosse (<a href="mailto:mosse@cs.pitt.edu">mosse@cs.pitt.edu</a>)
+      </td>
+    </tr>
+    <tr>
+      <td><b>Office Hours:</b></td>
+      <td>6423 SENSQ, MWF 2:15-3:-00pm, H (that's Thursday 3:30-5:30pm)</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<br>
+
+<table>
+
+  <tbody>
+    <tr>
+      <td><b>No Required Text:</b></td>
+    </tr>
+  </tbody>
+</table>
+
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Mailing
+List Announcement</font></font></b>
+<br>
+Class communications will be done via the official mailing list (from
+registration) and will be used for important
+announcements. It is VERY important that you verify you are included in
+this list.
+</p>
+
+
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2"><br>
+</font></font></b></p>
+
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Course
+Objectives</font></font></b>
+<br>
+The purpose of this course is to introduces first year graduate
+students to research in general and research being conducted in Pitt's
+CS Department. All first year Ph.D. students are required to take this
+course. Masters Students are welcome, since the course is open to all
+Computer Science graduate students, but it does not count towards the
+MS degree.&nbsp; Students will be given overview and use the basic
+concepts
+of reading, reviewing, and writing papers, creating and delivering
+presentations as well as creating good statistically significants
+experiments, analysis and plots.
+</p>
+
+<p>&nbsp;
+</p>
+
+
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Grading</font></font></b>
+</p>
+
+<li><b>25%</b> paper reviews<br>
+</li>
+
+<li>
+  <b>20%</b> mini project (including report, statistical analysis, etc)<br>
+</li>
+
+<li><b>5%</b> assignemnts and pop quizzes throughout the term.<br>
+</li>
+
+<li><b>10%</b> presentation</li>
+
+<li><b>&nbsp;40%</b> class participation (at most 3 absenses are
+allowed)<br>
+&nbsp;</li>
+
+<p>
+</p>
+
+<hr><br>
+
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Attendance</font></font></b>
+<br>
+<br>
+Class attendance is mandatory. Homeworks, assignments, and important
+dates will be posted on the class web page, but this is provided as a
+courtesy
+and is not always complete. <i>It is your responsibility to find out
+if something important was assigned in class.</i>
+</p>
+
+<p>Office hours are optional. They are your chance to ask the professor
+questions about the material being covered, the programming
+assignments, the PhD life, etc.</p>
+
+<p><br>
+</p>
+
+
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Academic
+Honesty: Collaboration vs. Cheating</font></font></b> <br>
+<br>
+This really should not be an issue, specially for PhD students, but to
+make things as clear as
+possible the following is necessary.
+</p>
+
+<p>You are encouraged to discuss the course material and concepts with
+other students in the class. However, all work that you submit must be
+your own. Unless, the assignments are explicitly a group assignment,
+under no circumstances may you look at anyone else's code or
+show anyone else your code. And while you may discuss the concepts used
+in the programming assignments, you may not discuss implementation
+details
+of the assignments themselves.
+</p>
+
+<p>If you are caught copying or otherwise turning in work that is not <i>solely</i>
+your own, <b>you will fail the course.</b>
+</p>
+
+<p>The bottom line is that you are expected to conduct yourself as a
+person
+of integrity, that is, you are expected to adhere to the highest
+standards of academic
+integrity. This means that plagiarism<sup>1</sup> in any form is
+completely
+unacceptable. As a computing professional, I encourage you
+to consult the code of ethics appropriate to your discipline<sup>2</sup>.
+</p>
+
+<p>Plagiarism will be assumed until disproved on work that is
+essentially
+the same as that of other students. This includes identically
+incorrect,
+off-the-wall, and highly unusual duplicate answers where the
+probability
+of a sheer coincidence is extremely unlikely. All colluding parties to
+this unacceptable
+collaboration will receive the same treatment.
+</p>
+
+<p><i>If you are unsure of what is and is not allowed by this policy,
+talk
+to the instructor.</i>
+</p>
+
+<p><font size="-1"><sup>1 </sup><b>pla-gia-rize</b> <i>vt.</i> to
+steal and
+pass of as one's own (the ideas or words of another) to present as
+one's
+own an idea or product derived from an existing source - <b>pla-gia-riz-er</b><i>n.</i>
+(source: Webster's New World Dictionary).</font>
+<br>
+<font size="-1"><sup>2 </sup>The Association for Computing Machinery
+is http://www.acm.org/, the IEEE is http://www.ieee.org/ and the IEEE
+Computer
+Society is http://www.computer.org/.</font>
+</p>
+
+
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Getting
+Answers to your Questions</font></font></b>
+</p>
+
+<li>Attend class and recitations</li>
+
+<li>
+Check the class web page frequently: we will post as much information
+as we can</li>
+
+<li>
+Meet with the professor during office hours</li>
+
+<li>
+Email the professor</li>
+
+<br>
+
+<hr>
+<center><i>These web pages were built using material kindly provided by
+Prof. Scott A. Brandt and content by Prof. Adam Lee<br>
+</i></center>
+
+</body></html>

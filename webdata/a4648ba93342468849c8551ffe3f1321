@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="eng" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <title>Huy V. Nguyen</title>
+    <style type="text/css">@import url(laboostili.css);</style>
+  </head>
+  <body>
+    <div id="mainframe">
+      <div id="headframe">
+        <!-- <div id="headtitle">:: LABOO Business Style :: </div> -->
+      </div>
+      <div id="headline">Resources</div>
+      <div id="leftmenu">
+        <p><a style="text-decoration: none;" href="index.html">/About me/</a></p>
+        <p><a href="academics.html">ACDEMICS</a></p>
+        <p><a href="publications.html">PUBLICATIONS</a></p>
+        <p><a href="resources.html">RESOURCES</a></p>
+        <p><a style="text-decoration: none;" href="contact.html">[<bold>con</bold>&middot;tact]</a></p>
+      </div>
+      <div id="rightcolumn">
+        <p>E-mail: hvn3{at)pitt|dot]edu</p>
+        <p>Office: 5420 Sennott Square</p>
+        <p>Tel: (412) 624-8462</p>
+      </div>
+      <div id="centercolumn">
+          <h1>Presentations and Talks</h1>
+          <h3>2014</h3>
+          <p><a href="talks/instant_feedback.pdf">ITS 2014 talk</a>: Classroom Evaluation of a Scaffolding Intervention for Improving Peer Review Localization.</p>
+          <p><a href="talks/discourse.pdf">CS 3730 presentation</a>: Discourse-beyond the sentence boundary: From Modeling of Discourse to Modeling with Discourse and the First Visit to Argument Mining.</p>
+          <h3>2013</h3>
+          <p><a href="talks/localization.pdf">AIED 2013 talk</a>: Identifying Localization in Peer Reviews of Argument Diagrams.</p>
+          <p><a href="talks/off-topic.pdf">CS 3730 final project</a>: Off-topic Sentences for Review Sentiment Analysis.</p>
+          <h3>2012</h3>
+          <p><a href="talks/entrainment.pdf">CS 3710 final project</a>: The Effects of Entrainment in a Tutoring Dialogue System.</p>
+          <p><a href="talks/Amazon.pdf">CS 2610 final project</a>: Amazon product reviews visualization.</p>
+          <p><a href="talks/tutor_tutee.pdf">LTI 11-719 final project</a>: Peer Tutor &amp; Tutee Behaviors in an Online Chat Environment.</p>
+          <p><a href="talks/online_shopping.pdf">CS 3525 presentation</a>: Security analysis of cashier-as-a-service based web stores.</p>
+          <h3>2011</h3>
+          <p><a href="talks/LDA_SWoRD.pdf">CS 3750 final project</a>: Exploring Applications of Topic Model to SWoRD.</p>
+          <p><a href="talks/Dirichlet.pdf">CS 3750 presentation</a>: Nonparametric Bayesian Models and Dirichlet Process.</p>
+          <p><a href="talks/keystrokes.pdf">CS 2750 final project</a>: Keyboard Acoustic for Predicting Keystrokes.</p>
+          <div style="height:20px; border-bottom:1px dotted #FFCC00;"></div>
+          <h1>Software and Tools</h1>
+          <p>I created a <a href="research/rm2014fattaneh_coding-assistant.docm">macro-enabled Microsoft Word document</a> which allows user to highlight text span with one-click. The document is being used for annotation tasks in our group. My document is compatiable with Microsft Word 2010 or newer. The file has ribbon menu customized using Microsoft Office 2007 Custom UI Editor.</p>
+          <p>I programmed this <a href="research/weka_classifier.zip">plug-in classifier</a> for <a href="http://www.cs.waikato.ac.nz/ml/weka/">Weka</a>, which simply calculates inter-rater agreement, e.g. accuracy, kappa. The input (.CSV format) has two columns representing labels annotated by two raters.</p>
+          <p>I find <a href="http://lightsidelabs.com/what/research/">LightSide</a> an useful software for text classification experiments. The software helps extract n-grams, production rules, dependency relations, and more. User can also add column features which are extracted indepdently.</p>
+          <p>For a lightweight and fast LDA implementation, I use <a href="http://gibbslda.sourceforge.net/">GibbsLDA++</a>.</p>
+          <p><a href="http://pydev.org/">pyDev</a> is a must-have IDE for Python programmers who use Eclipse.</p>
+          <p>You may find these <a href="http://www.rpi.edu/dept/arc/training/latex/resumes/">LaTeX CV-templates</a> helpful.</p>
+      </div>
+      <div id="bottomline">
+          Designed by me. Inspired by <a href="http://www.laboo.it">laboo.it</a>.
+          Valid <a href="http://validator.w3.org/check?uri=referer">XHTML</a> and
+          <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.laboo.it/www.laboo.it/">CSS</a>.
+      </div>
+    </div>
+  </body>
+</html>

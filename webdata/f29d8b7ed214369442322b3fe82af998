@@ -1,0 +1,31 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Times"> 
+	
+			<A href="./Page1.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./Page3.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		<br>
+		<br>
+		<br>
+			<center> 
+				<h1>ActiveMQ</h1>
+				<br/>
+				<br />
+				<h2>Definition from <a href="http://activemq.codehaus.org">http://activemq.codehaus.org</a></h2>
+			</center>
+			
+			ActiveMQ is an open source, Apache 2.0 licensed, high performance Messaging Fabric consisting of a scalable cluster of Message Brokers and a complete JMS 1.1 provider which integrates seamlessly into J2EE containers, light weight containers and any Java application.
+		</font>
+		
+		
+		<font size = 5 face="Arial"> 
+			<br>
+			
+		</font>
+	</BODY>
+</html>

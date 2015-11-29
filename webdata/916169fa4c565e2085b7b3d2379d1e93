@@ -1,0 +1,39 @@
+<html>
+<head> 
+<title> CS 2510: Assignment 1 Clarifications </title>
+</head>
+<body bgcolor="#ffffff" text="#000000">
+<div align=center>
+Assignment 1 Clarifications
+</div>
+<br>
+<ul>
+<li> <p> You can assume that the name server is always up.  That is, if the name
+server dies, you don't have to handle errors that arise due to it;
+just restart the whole thing. </p>
+
+<li> <p> The servers have to concurrent.  That is, it should be possible for the
+server to accept and process 2 client requests at the same time and
+not sequentially (this will need something like forking a process or
+using threads. </p>
+
+<li> <p> The servers offer only one type of service: simply sleep
+for 2-5 seconds (may be constant, larger than 2) before sending the
+reply.  This is to test concurrency.  This voids the "file reading"
+requirement from the original project description.</p>
+
+<li> <p> The client has to be robust. If a server dies and the client tries
+to send a request to that server, the client should handle that error 
+gracefully without crashing.  Also, if the client connects to the server,
+sends a request, and the server crashes after that, the client should not
+wait forever for the server to reply.  The client should look for the
+service elsewhere. </p>
+
+<li> <p> The server should de-register with the name server if it exits 
+normally.  A normal exit is one that is triggered by the user. </p>
+
+<li> <p> A simple "expect" script will be provided.  You should try to 
+modify this script and try to automate the bringing up of 
+servers/clients/name server and running tests. </p>
+</ul>
+</body>

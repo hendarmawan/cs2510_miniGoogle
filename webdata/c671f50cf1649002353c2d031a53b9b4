@@ -1,0 +1,58 @@
+<html>
+<head>
+<title>Create a Function</title>
+</head>
+<body>
+You want to go to your current project folder.  Then select NEW FUNCTION<br>
+from the drop down menu.<br><br>
+
+<image src="createfunction.gif"><br><br>
+
+Enter a Name and a user for the function.<br><br>
+
+<image src="namefunction.gif"><br><br>
+
+Next you want to type in the function.<br>
+Here is an example: <a href="exmplfunc.html">NUM_PETS</a><br><br>
+
+<image src="typefunction.gif"><br><br>
+
+To use a function in a view or table you will need to connect to the<br>
+database using Plus80w.exe, which can be found in the "ToolBox" folder<br>
+in the Projects folder.<br><br>
+
+<image src="plus80w.gif"><br><br>
+
+You will be prompted to Logon to the system.  Just use the User Profile<br>
+and Password that you created.  <br><br>
+
+<img src="logon.gif"><br><br>
+
+This will log you onto the system.  Next you want to type in your PL/SQL<br>
+code for creating a new view that uses your function.<br><br>
+
+<img src="plsql.gif"><br><br>
+
+I have placed an example of this statement here: 
+<a href="exmplplsql.html">PL/SQL</a><br><br>
+Once you have correctly entered the CREATE statement it will notify<br>
+you with a "View created" and a new prompt.  You can now exit by typing"Exit."<br>
+Now go back to Navigator and close the INNER Navigator window.  Reopen<br>
+it by going to WINDOW-->Navigator, and this will refresh the Navigator for you.<br><br>
+
+You can now locate the new view in the VIEW folder under the LOCAL DATABASE.<br>
+
+<img src="locatesqlview.gif"><br><br>
+
+To move it into your Project just Click and Drag it into your Project folder.<br><br>
+
+<img src="dragsqlview.gif"><br><br>
+
+Now you can access the view as you would any other.<br><br>
+
+<img src="sqlview.gif"><br>
+
+<br><br><a href="gendirpo8.html" align=center>Return to General Directions</a><br>
+<a href="cs1555.html" align=center>Return to Cs 1555</a>
+</body>
+</html>

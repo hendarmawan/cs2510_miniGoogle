@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html>
+<head>
+  <title>How to Review Papers</title>
+</head>
+<body background="grey_dots.gif" link="#0000ff" text="#000022"
+ vlink="#0055cc">
+<div align="center"><big><big>How to Review Papers</big></big>&nbsp;
+<center></center>
+<br>
+<div align="left">Loosely adapted from the Interaction Lab page
+(obsolete page was <a
+ href="http://www-robotics.usc.edu/%7Eagents/reviewing.html">here)</a>
+at
+USC<br>
+</div>
+</div>
+<p> </p>
+<ul>
+  <li> A review should always be polite, respectful to the author(s),
+and
+helpful for improving the paper, regardless of whether you recommend
+accepta&nbsp;</li>
+  <li>Make sure that your comments give the reasons for your
+recommendation.nce
+or rejection.</li>
+  <li>Try to give, in terms of quality, the kind of review you would
+like
+to receive for your own work.<br>
+  </li>
+  <li>Keep the original paper you reviewed for a few months (3 in case
+of
+conferences, up to 9 in case of journal papers) so that you can discuss
+your
+review in case any controversy arises.</li>
+  <li>Do not distribute submitted papers, they are meant to be
+confidential<br>
+    <br>
+  </li>
+  <li>Start the review with one or two sentences summarizing the paper.
+  </li>
+  <li> Communicate clearly the strengths and weaknesses of the paper. </li>
+  <ul>
+    <li> If you feel the author(s) should be aware of related work,
+provide
+specific references.</li>
+    <li>Are the abstract and title accurate?</li>
+    <li>Is the paper easy to read? &nbsp;In conferences, it should be
+easy
+to read for someone in the specific area; for journals it should be
+easy
+to read for anyone in a wider audience.</li>
+    <li>How innovative are the ideas (remember that journals are
+usually
+archival, that is, shorter versions of the paper could have previously
+appeared
+in a conference)</li>
+  </ul>
+  <li>Give an overall assessment of the paper</li>
+</ul>
+Here are some (transcribed) tips for paper reviewing from Allan Newell:
+<blockquote>
+  <p> When we get a paper to review, at the beginning we should always
+have as the default that we accept the paper. While reading the paper,
+we may
+start raising specific objections along the issues in the review form,
+namely
+the goals are not stated, the system is not well described, the
+approach
+is not novel or not validated, etc. etc. </p>
+  <p> Each objection weighs a little against our initial default
+acceptance. Rejecting a paper is to see if these objections weigh more
+than our threshold,
+based on our experience with other other conferences, papers, and
+advice
+from the specific conference. (Of course, the review can also raise the
+initial
+default acceptance, and then it's even a clearer accept.) </p>
+  <p> One word of care that I recall: It may happen that we raise
+either unjustified objections or support to a paper. In particular in
+AI <b>[dm:
+actually in any field]</b>, it may be rather common that we completely
+"disagree"
+or "agree" with the paper's approach/results. We have to be very
+careful,
+as much as possible, not to include objections or support that
+corresponds
+to subjective, or sometimes dogmatic, opinions about the work. </p>
+</blockquote>
+<br>
+<br>
+</body>
+</html>

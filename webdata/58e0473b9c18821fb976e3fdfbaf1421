@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0044)http://www.cs.pitt.edu/~chang/163/c17/01.htm -->
+  <title>Distributed Objects</title>
+  <meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+  <meta content="FrontPage.Editor.Document" name="ProgId">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <meta name="author" content="Chirag Vaidya">
+</head>
+<body>
+<a href="c08.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;"
+ src="previous.gif" align="left" title="" alt="" width="26" height="26"></a> <a href="c10.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;" src="next.gif"
+ align="right" title="" alt=""></a>
+<h2 align="center" style="color: rgb(51, 51, 255);"><big>Component Types --
+Distributed Objects<br>
+</big></h2>
+<ul>
+  <li>
+    <p style="margin-top: 12px; margin-bottom: 0pt;"><big><big>Enterprise beans
+    are distributable and accessible by clients running remotely or on the same
+    computer.</big></big> </p>
+  </li>
+  <li>
+    <p style="margin-top: 12px; margin-bottom: 0pt;"><big><big>Bean never leaves
+    the container, hence need to find a way for clients to access and execute
+    bean's methods remotely.</big></big> </p>
+  </li>
+  <li>
+    <p style="margin-top: 12px; margin-bottom: 0pt;"><big><big>Exact technology
+    not defined by EJB specification but is typically a distributed technology
+    such as CORBA or Remote Method Invocation (RMI) - they provide stub and
+    skeleton.</big></big> </p>
+  </li>
+  <li>
+    <p style="margin-top: 12px; margin-bottom: 0pt;"><big><big><font color="#FF0000">STUB:</font>
+    Network-aware object at client location which accepts method calls on behalf
+    of the component. Clients are unaware of this STUB and this distributed
+    technology to access the bean.</big></big> </p>
+  </li>
+  <li>
+    <p style="margin-top: 12px; margin-bottom: 0pt;"><big><big><font color="#FF0000">SKELETON:</font>
+    Object at server location which listens for requests from its stub.</big></big> </p>
+  </li>
+</ul>
+<p style="margin-top: 12px; margin-bottom: 0pt;" align="center"><img border="0" src="figure1.JPG" width="709" height="326"> </p>
+</body>
+</html>

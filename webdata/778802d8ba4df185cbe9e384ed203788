@@ -1,0 +1,61 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<!--Converted with LaTeX2HTML 96.1 (Feb 5, 1996) by Nikos Drakos (nikos@cbl.leeds.ac.uk), CBLU, University of Leeds -->
+<HTML>
+<HEAD>
+<TITLE>Transformation and Exchange of Multimedia Objects in Distributed Multimedia Systems</TITLE>
+<META NAME="description" CONTENT="No Title">
+<META NAME="keywords" CONTENT="skacm">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+</HEAD>
+<BODY LANG="EN">
+ <A NAME="tex2html22" HREF="node1.html"><IMG WIDTH=37 HEIGHT=24 ALIGN=BOTTOM ALT="next" SRC="http://www.cs.pitt.edu/icons/next_motif.gif"></A> <IMG WIDTH=26 HEIGHT=24 ALIGN=BOTTOM ALT="up" SRC="http://www.cs.pitt.edu/icons/up_motif_gr.gif"> <IMG WIDTH=63 HEIGHT=24 ALIGN=BOTTOM ALT="previous" SRC="http://www.cs.pitt.edu/icons/previous_motif_gr.gif">   <BR>
+<B> Next:</B> <A NAME="tex2html23" HREF="node1.html">Introduction</A>
+<BR> 
+<P><h2><B>
+Transformation and Exchange of Multimedia Objects in Distributed Multimedia Systems</B></h2><BR> 
+Chi-Cheng Lin, Jiangxu Xiang<A NAME="tex2html1" HREF="footnode.html#27"><IMG  ALIGN=BOTTOM ALT="gif" SRC="next.gif"></A>, and Shi-Kuo Chang<BR>  <BR> 
+Department of Computer Science, University of Pittsburgh<BR> 
+Pittsburgh, Pennsylvania 15260, U. S. A.<BR> 
+{clin, xiang, chang}@cs.pitt.edu<BR>  <BR>
+<P>
+<H3 CLASS=ABSTRACT>Abstract:</H3>
+<P CLASS=ABSTRACT>One of the challenges in the design of a distributed multimedia system
+is to devise suitable specification models for various schemas in
+different levels of the system.  
+Another important research issue is 
+the integration and synchronization of heterogeneous multimedia
+objects.  In this paper, we present our models for different multimedia schemas
+and transformation algorithms that transform high-level 
+multimedia objects into schemas that can be used to
+support the presentation and communication of the multimedia objects.
+A key module in the system is the Object Exchange Manager (OEM).  In this paper,
+we present the design and implementation of the OEM module,
+and discuss in detail the interaction 
+between the Object Exchange Manager and other modules in a distributed 
+multimedia system.  <BR>  <BR> 
+<B>Keywords:</B> 
+Distributed Multimedia Systems, Multimedia Schemas, 
+Object Exchange Format, Quality of Service, G-Net Model
+</P><P>
+<BR> <HR>
+<UL> 
+<LI> <A NAME="tex2html24" HREF="node1.html#SECTION00010000000000000000">Introduction</A>
+<LI> <A NAME="tex2html25" HREF="node2.html#SECTION00020000000000000000">The Architecture and The Transformation Approach</A>
+<LI> <A NAME="tex2html26" HREF="node3.html#SECTION00030000000000000000">Multimedia Schema Models and Transformation Algorithms</A>
+<LI> <A NAME="tex2html27" HREF="node4.html#SECTION00040000000000000000">An Example of the Transformations</A>
+<LI> <A NAME="tex2html28" HREF="node5.html#SECTION00050000000000000000">The Transformation from MCS to Network Primitives</A>
+<LI> <A NAME="tex2html29" HREF="node6.html#SECTION00060000000000000000">Multimedia Object Exchange Manager</A>
+<LI> <A NAME="tex2html30" HREF="node7.html#SECTION00070000000000000000">Implementation of the Experimental System</A>
+<LI> <A NAME="tex2html31" HREF="node8.html#SECTION00080000000000000000">Conclusion and Future Work</A>
+<LI> <A NAME="tex2html32" HREF="node9.html#SECTION00090000000000000000">Acknowledgement</A>
+<LI> <A NAME="tex2html33" HREF="node10.html#SECTION000100000000000000000">References</A>
+<LI> <A NAME="tex2html34" HREF="node11.html#SECTION000110000000000000000">  About this document ... </A>
+</UL>
+<BR> <HR>
+<P><ADDRESS>
+<I>Latex2html<BR>
+Thu Mar 27 17:33:45 EST 1997</I>
+</ADDRESS>
+</BODY>
+</HTML>

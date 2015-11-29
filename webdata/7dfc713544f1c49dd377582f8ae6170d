@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>The Traditional CORBA Object Model and Its Limitations</title>
+</head>
+
+<body>
+
+<p align="center"><a href="page0.htm">
+<img border="0" src="previous.gif" align="left" width="26" height="26"></a><a href="page2.htm"><img border="0" src="next.gif" align="right" width="26" height="26"></a></p>
+
+<p align="center"><u><font size="6">The Traditional CORBA Object Model</font></u></p>
+<p align="center">
+<img border="0" src="CORBAWorkings.gif" width="664" height="492"></p>
+<p align="center">&nbsp;</p>
+<ul>
+  <li>
+  <p class="MsoNormal"><font size="5">Objects and services are specified by 
+  implementing an IDL (Interface Definition Language).  IDL is a formal language 
+  used to define object interfaces independent of the programming language used 
+  to implement  those methods. This is important because CORBA supports a 
+  variety of programming languages, and either the client, or server could be 
+  implemented in a wide variety of languages and running on different computer 
+  architectures.</font></li>
+</ul>
+<p class="MsoNormal">&nbsp;</p>
+<ul>
+  <li>
+  <p class="MsoNormal"><font size="5">From the IDL specification, the compiler 
+  then creates a client side code stub, and a server side code skeleton. The 
+  client stub provides the client with an interface to the remote object (a 
+  proxy), and 
+  provides marshalling instructions for client object resource broker (ORB). The 
+  server's skeleton is basically a method interface for the servers ORB so that 
+  the ORB knows which methods are available. The server skeleton also provides unmarshalling 
+  instructions to the server ORB so that the server can unravel the clients 
+  method parameters. The process is reversed when returning a value from the 
+  remote object to the client. </font></li>
+  <li>
+<p class="MsoNormal"><i><font size="4">&nbsp;Proxy: A server between a client 
+application, such as a Web browser, and a real server. It intercepts all 
+requests to the real server to see if it can fulfil the requests itself. If not, 
+it forwards the request to the real server. Proxy servers have two main 
+purposes: improve performance and filter requests.</font></i></p>
+  </li>
+</ul>
+<p class="MsoNormal">&nbsp;</p>
+<ul>
+  <li>
+  <p class="MsoNormal"><font size="5">The core of CORBA is the object resource 
+  broker (ORB). The ORB is the principal component for the transmission of 
+  information between the client and the server of the CORBA application. The 
+  ORB manages marshalling requests via the code stubs provided by the IDL, 
+  establishes a connection to the server, sends the data, and executes the 
+  requests on the server side. The same process occurs when the server wants to 
+  return the results of the operation. </font></p>
+  <p class="MsoNormal">&nbsp;</li>
+  <li>
+  <p class="MsoNormal"><span style="font-family: Times New Roman">
+  <font size="5">In order for the client ORB to be able to locate the server 
+  with the appropriate resource, CORBA implements a naming service. The naming 
+  service is an application that runs as a background process on a remote server 
+  at a well known endpoint. This service is responsible for maintaining a lookup 
+  table for all of the services running in the distributed computer. </font></span></li>
+</ul>
+<p class="MsoNormal">&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

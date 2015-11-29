@@ -1,0 +1,22 @@
+<html> 
+<title> Selective Data Mining </title> 
+
+<center> 
+<h1> 
+Data Mining Recommender
+</h1> 
+<br>
+</center> 
+<h2>
+<li> <font color=0000FF>Description:</font><p>
+&nbsp;&nbsp;&nbsp;The Knowledge Discovery in Databases (KDD) is concerned with the development of methods and techniques for making sense of data. Among KDD process, one of the important steps is data mining that consists of applying data analysis and discovery algorithms that produce patterns or models over the data. However, the most difficult step is also data mining because there are many kinds of methods and algorithms. Thus, the system which recommends the proper data mining method for the given data set is necessary.<br>
+&nbsp;&nbsp;&nbsp;<font color=FF0000>In this project, I will model and simulate the data mining recommender using SIS approach.</font>
+<br><br>
+<li> <font color=0000FF>Deliverables:</font><p>
+&nbsp;&nbsp;&nbsp;The application will be run under the Developer's SIS testbed to select and fine-tune its algorithm.<br><br>
+&nbsp;&nbsp;&nbsp;- MS2: I'll define all components and draw the diagram. <br>
+&nbsp;&nbsp;&nbsp;- Final: I'll run the proposed one under SIS testbed. <br>
+</h2>
+</html> 
+
+

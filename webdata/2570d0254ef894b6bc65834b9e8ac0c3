@@ -1,0 +1,43 @@
+<title>I-card and C-card</title>
+
+<a href="sisic5a.htm"><img src="prev.gif" align=left></a>
+<a href="sisic6a.htm"><img src="next.gif" align=right></a>
+
+<center>
+<h1>I-card and C-card</h1>
+</center>
+<h3>
+<font color=purple>
+(As an alternate exercise for Exercise 4)
+<br>
+(a) Explore different Petri net realizations
+for the super-components.
+We can make the execution of the algorithms all
+serial, all parallel, probabilistic, and so on.
+There are many different sub-types of Petri nets that
+can be explored.
+You should at least try serial and parallel nets.
+There will be bonus if you try other nets such as
+probabilistic nets.
+<br>
+<br>
+(b) Develop on paper the algorithm for a transformer to transform
+original Petri net specification
+(in <a href="http://people.cs.pitt.edu/~chang/231/sisic/C-Card1.xml">pnml</a> format)
+into the expanded Petri net specification (in pnml format).
+Demonstrate on paper how your algorithm works by going
+through the critical steps and illustarting with
+an example such as the one described in Exercise 3(c).
+<br>
+<br>
+*(c) (optional bonus part/term project) If you can come up with Java implementation to transform
+original Petri net (in pnml format) to expanded
+Petri net (also in pnml format) you will get bonus.
+Or this option work can be part of your
+term project.
+<br>
+<p>
+This topic is for those who are already familiar
+with Petri net and those who are interested in
+implementation type of projects.
+</font>

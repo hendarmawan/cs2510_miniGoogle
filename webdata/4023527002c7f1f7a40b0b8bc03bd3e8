@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html><head><title>mosse's teaching</title></head><body bgcolor="#ffffff">
+<center>
+<pre><big><br><font color="#a4a4ff"><br> m o s s e ' s <br> w e b p a g e <br>...............<br>t e a c h i n g<br><br></font></big><br></pre>
+<table bgcolor="black" cellpadding="4">
+  <tbody>
+    <tr>
+      <td>
+      <pre><font color="white"><b> courses </b></font></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<!--NEW COURSE-->
+<small><a style="font-family: courier new,courier,monospace;" href="courses/cs0007/index.html">introduction to computer programming (cs0007)</a><span style="font-family: courier new,courier,monospace;">
+</span></small><font style="font-family: courier new,courier,monospace;"><font color="#ffffcc"></font></font>
+<br>
+<a style="font-family: courier new,courier,monospace;" href="Teaching/syllabi/rt-sem.html"><small></small></a><small><a style="font-family: courier new,courier,monospace;" href="Teaching/syllabi/rt-sem.html">distributed and real-time systems
+seminar (cs3530)</a><a href="courses/cs2001"><br>
+<br>
+</a><a style="font-family: courier new,courier,monospace;" href="courses/cs1567/index.html">programming and system design using a
+mobile robot (cs1567)</a><span style="font-family: courier new,courier,monospace;">
+</span></small><font style="font-family: courier new,courier,monospace;"><font color="#ffffcc"></font></font>
+<br>
+<small><a style="font-family: courier new,courier,monospace;" href="cs2001">Research Topics in Computer Science (cs2001)</a><span style="font-family: courier new,courier,monospace;">
+</span><a style="font-family: courier new,courier,monospace;" href="http://www.cs.pitt.edu/%7Emosse/courses/cs1550"><br>
+<br>
+undergrad intro to os (cs1550)</a><span style="font-family: courier new,courier,monospace;">
+</span><br style="font-family: courier new,courier,monospace;">
+<a style="font-family: courier new,courier,monospace;" href="http://www.cs.pitt.edu/%7Emosse/Teaching/syllabi/3510-spring03.html">advance
+topics in operating systems seminar (cs3510)</a><span style="font-family: courier new,courier,monospace;">
+</span><a style="font-family: courier new,courier,monospace;" href="cs2510/class-notes/index.html"><br>
+graduate os (cs2510)</a><span style="font-family: courier new,courier,monospace;">
+</span><a style="font-family: courier new,courier,monospace;" href="http://www.cs.pitt.edu/%7Emosse/cs1651"><br>
+senior-level os course (cs1651)</a><span style="font-family: courier new,courier,monospace;">
+</span><a style="font-family: courier new,courier,monospace;" href="cs1590/index.html"><br>
+social implications of computing technology (cs1590)</a></small><br style="font-family: courier new,courier,monospace;">
+<br style="font-family: courier new,courier,monospace;">
+<br style="font-family: courier new,courier,monospace;">
+<br style="font-family: courier new,courier,monospace;">
+<table style="font-family: courier new,courier,monospace;" bgcolor="black" cellpadding="4">
+  <tbody>
+    <tr>
+      <td>
+      <pre><font color="white"><b>   resources  </b></font></pre>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<small><a style="font-family: courier new,courier,monospace;" href="http://www.cs.pitt.edu/%7Ensoltesz/fellowship.html">Fellowships
+and Scholarships</a></small>
+<pre><table bgcolor="black" cellpadding="4"><tbody><tr><td><pre><font color="white"><b>PhD students (current) </b></font></pre></td></tr></tbody></table>
+
+<a href="http://www.cs.pitt.edu/%7Enevine">Nevine AbouGhazaleh(predicted 07):</a> Multi-layer Interactions for Power Management<br><a href="http://www.cs.pitt.edu/%7Eapf75">Alexandre Ferreira (predicted 09):</a> Thermal Management and Memory Systems<br>&nbsp;<a href="http://www.cs.pitt.edu/%7Esameh">Sameh Gobriel(predicted 07):</a> Power Management in Wireless Networks<br><a href="http://www.cs.pitt.edu/%7Eskhattab">Sherif Khattab(predicted 08):</a> Mitigating Denial of Service Attacks<br>&nbsp;<br><table bgcolor="black" cellpadding="4"><tbody><tr><td><pre><font color="white"><b>PhD students (past) </b></font></pre></td></tr></tbody></table>
+<a href="http://www.cs.pitt.edu/%7Ezdk"><br><br></a><a href="http://www.cs.pitt.edu/%7Etaka/">Takashi Okumura (07):</a> Virtualization of Network I/O<br><a href="http://www.cs.pitt.edu/%7Erusu">Cosmin Rusu (06):</a> Reward and Power Management in Real-time Systems<br><a href="http://www.cs.pitt.edu/%7Ezdk">Dakai Zhu(05):</a> Multiprocessor Slack Management<br><a href="http://www.cs.gmu.edu/%7Eaydin">Hakan Aydin (01):</a> Reward-Based Real-Time Scheduling  <br><a href="http://www.cs.pitt.edu/%7Elauzac">Sylvain Lauzac (00):</a> Multiprocessor Fault-Tolerant Real-Time<br><a href="http://www.cs.pitt.edu/%7Edong">Libin Dong (00):</a> Scheduling with Distance Constraints<br><a href="http://www.cs.pitt.edu/%7Ekomandur">Sridhar Komandur (99):</a> ATM Multicasting<br><a href="http://www.cs.pitt.edu/%7Efahad">Fahad Hoymany (97):</a> ATM and Connectionless Servers<br><a href="http://www.cs.pitt.edu/%7Emosse/former-students/yjchen.html">Yeong-Jia Chen (96):</a> Specification of FT RT using Petri-Nets<br><a href="http://www.cs.pitt.edu/%7Emosse/former-students/ghosh.html">Sunondo Ghosh (96):</a> Primary/Backup Fault-tolerant Real-Time Systems<a href="http://www.cs.pitt.edu/%7Ensoltesz/fellowship.html"></a>
+
+</pre>
+</center>
+<br>
+
+</body></html>

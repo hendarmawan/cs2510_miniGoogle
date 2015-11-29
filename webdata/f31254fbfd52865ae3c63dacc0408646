@@ -1,0 +1,64 @@
+<center><h1>Final Review</h1></center>
+<b>
+You should carefully study the book and my classnotes.  The following
+are some, but not all, of the important topics.  Always study my classnotes
+first, then the following important topics, then the whole book.
+</b>
+
+<br><br>
+Before the midterm we covered the <a href="rev-mid-pa4.htm">following five chapters</a>.  They will
+still be included in the scope of the final exam, but only about 30%
+of the questions will be on the first five chapters.
+<br><br>
+<font color=red>
+After the midterm we covered the following four chapters.  Chapters 6 and 8
+are well written and require your careful study.
+<br><br>
+
+<b>Chapter 6: Designing the Modules</b><br>
+C6.3 OO Design.
+C6.4 Representing OO using UML.
+(Fig. 6.16 explains how UML supports the development process)
+C6.4 Use cases (Figures 6.17).
+(Figures 6.18, 6.19 and 6.20 explain three iterations
+in coming up with class diagram.)
+Fig. 6.25 - 6.26 state diagrams, Fig. 6.27 - 6.28 activity diagrams)
+C6.9 information system example (Fig. 6.46 class diagram)
+<br><br>
+<b>Chapter 8: Testing the Programs</b>
+C8.1 Software faults and failures
+(Fig. 8.3 explains the testing steps)
+C8.3 Unit testing
+(Proving program correct, formal proof techniques pp. 416-419)
+Fig. 8.6 and pp. 423 explains relative strengths of test strategies:
+what are statement testing, branch testing, path testing etc.?
+C8.4 Integration testing
+(top down, bottom up, mixed, comparison)
+C8.6 Test Planning
+(Purpose pp. 436-437, content pp. 437)
+
+<br><br>
+<b>Chapter 9: Testing the System</b>
+C9.1 Principles of system testing
+(what are function testing, performance testing, acceptance testing,
+installation testing?  See pp. 455-457)
+What is configuration management? Versions and releases.  What is regression testing? (see pp. 459-462)
+How is a test team organized? (pp. 465-466)
+C9.2 function testing
+C9.3 performance testing
+C9.5 Acceptance testing
+C9.6 Installation testing
+C9.8 Test documentation 
+(test plan pp. 488, Fig. 9.10 documents produced during testing pp. 489)
+
+<br><br>
+<b>Chapter 11: Maintaining the System</b>
+Laws of software evolution (see pp. 541)
+What are the five laws of software evolution?
+C11.2 Nature of maintenance
+(what are corrective maintenance, adaptive maintenance, perfective maintenance
+and preventive maintenance?  pp. 543-546)
+Figure 11.4 shows distribution of maintenance effort:
+Perfective Maintenance 50%, Adaptive Maintenance 25%, corrective Maintenance 21%, preventive Maintenance 4%
+
+

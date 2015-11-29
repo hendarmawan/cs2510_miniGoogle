@@ -1,0 +1,206 @@
+<title>CS1635 Interface Design Methodology</title>
+<h1>CS1635 Interface Design Methodology</h1>
+
+
+<h2>Exercises, Milestones and Term Projects:</h2>
+
+<b>Exercise 1:</b> (5 points)
+Use ArgoUML as a tool to draw the UML <a href="c07PATTERN01/umlpal-class.gif">class diagram</a> and use-case diagrams for the following software system.
+(You will need to download ArgoUML (Open Source Software) whose official website is: http://argouml.tigris.org/
+and there is also a well-written extensive
+<a href="ArgoUMLman.pdf">Argo UML user manual</a>).
+(Grading: 2 points for each type of diagram, and 1 point for providng argoUML zargo file.)
+<!--
+For CS3650 students the diagrams should be zipped and e-mailed to the instructor (chang@cs.pitt.edu).
+-->
+For CS1635 students the diagrams should be zipped and e-mailed to the TA.
+<p>
+Consider the following set of requirements for an <i>Actors-StageSet Interaction System</i>
+that is used to support interactions between actors and stageSet.
+These requirements specify the database entities
+and relationships.
+<br><br>
+a.  The <b>troupe</b> consists of <b>actors</b> and <b>administrators</b>, each with a first-name, last-name, 
+    numeric id, password, status, address, birthdate and gender.
+    The attribute <i>status</i> specifies whether that
+    person is an 'actor', an 'admin' or 'actor-admin'.
+<br><br>
+b.  A <b>play</b> consists of <b>acts</b>, each with a numeric act-id and an act-description.
+<br><br>
+c.  An <b>act</b> consists of <b>scenes</b>, each with a numeric scene-id and a scene-description.
+<br><br>
+d.  The <b>state-set</b> consists of <b>stage-objects</b>, each with a numeric object-id, a name, a description and a location.
+All objects are assumed to be rectangular blocks (or contained in
+rectangular blocks) so that a location is specified by
+two points p1(x1,y1,z1) and p2(x2,y2,z2) where
+p1 is one corner of the lower rectangle of the block, and
+p2 is the diagonally opposite corner of the upper rectangle of the block.
+<img src="images/block1.jpg" align="right">
+<br><br>
+e.  An actor 'participates' (or 'acts') in a number of scenes.
+<br><br>
+f.  A stage-object 'is assigned to' (or 'is used in') a number of scenes.
+<br><br>
+The applications are:
+(1) An administrator can assign an actor to a scene.
+(2) An administrator can assign a stage-object to a scene.
+
+<br><br>
+<font color=purple><b>Solution to Exercise 1: There can be different solutions.
+Basic diagrams 4.0.
+<a href="exercise/ex1class1.jpg">Class diagram</a> with labelled associations such as teacher teaches class 0.5. Unlabeled associations 0.3.
+<a href="exercise/ex1usecase1.jpg">Use case diagram</a> with some "include" relations for commonly used cases 0.5.</b></font>
+
+<br><br><br>
+<b>Exercise 2:</b> (5 points)
+Continue with Exercise 1 and draw the state and activity diagrams,
+and the sequence and collaboration diagrams,
+for the two applications.
+<!--
+For CS3650 students the diagrams should be zipped and e-mailed to the instructor (chang@cs.pitt.edu).
+-->
+For CS1635 students the diagrams should be zipped and e-mailed to the TA.
+<br><br>
+The additional requirements about database entities and relationships to be added:
+<br><br>
+g.  A <b>stage</b> is also a rectangular block with
+location attributes specified by two points.
+<br><br>
+h. A scene can be 'assigned to' (or 'put on') the stage.
+<br><br>
+i. A <b>gesture</b> can assume one of the following
+values: up, down, left, right, inward, outward.
+<br><br>
+j. An actor can apply a gesture to a stage-object.
+<br><br>
+The additional applications to be considered:
+(3) An administrator can assign a scene to the stage.
+(4) An actor can move a stage-object from one location to another location on the stage subject to certain constraints.
+
+<br><br>
+<font color=purple><b>Solution to Exercise 2: There can be different solutions.
+A solution should include at least the <a h ref="exercise/ex2USE.jpg">use case diagram</a>, the <a h ref="exercise/ex2CLASS.jpg">class diagram</a>,
+one or more <a h ref="exercise/ex2COL.jpg">collaboration (or sequence) diagram</a>, and
+one or more <a h ref="exercise/ex2ACT.jpg">activity (or state) diagram</a>.
+The four types of diagrams should form a complete specification
+of the application described above.  The degree of completeness is 1 point.
+A solution using only
+a single ArgoUML zargo file containing all the diagrams is the most elegant solution, but a hybrid solution consisting of multiple zargo file(s) and WORD file(s) is equally acceptable.</b>
+
+<br>
+<b>
+<br>1st Solution for Exercise 2:<br>
+<a href="exercise/ex2activity1app3.JPG">ex2activity1app3.JPG</a><br>
+<a href="exercise/ex2activity1app4.JPG">ex2activity1app4.JPG</a><br>
+<a href="exercise/ex2colla1app3.JPG">ex2colla1app3.JPG</a><br>
+<a href="exercise/ex2colla1app4.JPG">ex2colla1app4.JPG</a><br>
+<a href="exercise/ex2sequ1app3.JPG">ex2sequ1app3.JPG</a><br>
+<a href="exercise/ex2sequ1app4.JPG">ex2sequ1app4.JPG</a><br>
+<a href="exercise/ex2state1app3.JPG">ex2state1app3.JPG</a><br>
+<a href="exercise/ex2state1app4.JPG">ex2state1app4.JPG</a><br>
+
+<br>2nd Solution for Exercise 2:<br>
+<a href="exercise/ex2activity2app3.JPG">ex2activity2app3.JPG</a><br>
+<a href="exercise/ex2activity2app4.JPG">ex2activity2app4.JPG</a><br>
+<a href="exercise/ex2colla2app3.JPG">ex2colla2app3.JPG</a><br>
+<a href="exercise/ex2colla2app4.JPG">ex2colla2app4.JPG</a><br>
+<a href="exercise/ex2sequ2app3.JPG">ex2sequ2app3.JPG</a><br>
+<a href="exercise/ex2sequ2app4.JPG">ex2sequ2app4.JPG</a><br>
+<a href="exercise/ex2state2app3.JPG">ex2state2app3.JPG</a><br>
+<a href="exercise/ex2state2app4.JPG">ex2state2app4.JPG</a><br>
+</font>
+</b>
+
+
+<p>
+(In subsequent exercises and the term project, we will
+elaborate on how to generate the specification of blocks, how to
+manipulate blocks using gestures, whether
+a stage-object can be physical, virtual or hybrid,
+and how to move/transform a stage-object from physical to
+hybrid to a virtual stage-object and vice versa.
+The recognition of gestures from Kinect interface
+will be another interesting problem to tackle.)
+</b>
+
+<br><br><br>
+<b>Exercise 3</b>:
+This exercise is an application of
+<b>patterns</b>, which has three parts:
+problem, context and solution.
+The problem is to reliably count how many
+people are present in a crowded room.
+The context is a very noisy environment,
+where everyone is drinking, laughing and
+shouting because the Steelers just won the Superbowl.
+What is the solution?
+<br>
+Describe your solution, and construct (a) conceptual pattern and (b) design pattern catalog, and illustrate how this
+pattern can be applied to at least one more
+problem.
+This exercise does not require programming.  You
+only need to describe the solution and construct the conceptual pattern and design pattern, and explain why
+you believe it is a useful pattern.
+
+<br><br>
+<font color=purple><a href="exercise/ex3sol.htm"><b>Solution to Exercise 3</b></a></font>
+<br><br><br>
+<b>Exercise 4:</b>
+Write a component to send a request message 406 to the
+Kinect Server to request a stored Kinect action
+sequence.  Your component should receive a response message 408
+containing the URL of the stored file.  Your
+component can then directly access and download
+the stored file.
+<p>
+The messages can be found at:
+<a href="Testbed/Kinect/xml/DataXML/406(KinectServerRequest).XML">
+Testbed/Kinect/xml/DataXML/406(KinectServerRequest).XML</a>, and
+<a href="Testbed/Kinect/xml/DataXML/408(KinectServerResponse).XML">
+Testbed/Kinect/xml/DataXML/408(KinectServerResponse).XML</a>.
+
+<p>
+The SIS test bed can be downloaded as <a href="SISv3.zip">SISv3.zip</a>.
+The package SISv3 includes the SISserver and KinectServer.
+You should be able
+to start SISserver and KinectServer on your PC/notebook to do the
+testing of your component.
+
+<p>
+Before testing the KinectServer, a CreateKinectServer
+message (message type 20) should be sent to the
+SISserver. Please see
+<a href="Testbed/Kinect/xml/InitXML/CreateKinectServer.XML">
+Testbed/Kinect/xml/InitXML/CreateKinectServer.XML</a>.
+
+<br><br>
+<br><br>
+<b>Milestone 1:</b>
+(a) Statement of Work (SOW): Describe the project in
+one short paragraph (see <a href="calendar">calendar</a>
+for due date).
+<br>
+(b) Describe the project as a Conceptual Pattern:
+the problem, the context (including forces and
+constraints) and the solution.
+<br>
+(c) Describe the Design Pattern using a class diagram.
+
+<br><br>
+<br><br>
+
+<b>Milestone 2:</b>
+The whole class will review the design patterns
+to ensure that the design patterns (a) can represent the
+problems to be solved, and (b) are mutually consistent. 
+Your component will retrieve actors and objects from the
+Theatre database, and access the Kinect action sequences
+stored in the Kinect database.
+<br><img src="proj11/theatreDB.jpg"><br>
+
+
+<br><br>
+<br><br>
+<b>
+<a href="proj11/">Projects</a> and
+<a href="../fallencity/scenarios.html">Project Scenarios</a>

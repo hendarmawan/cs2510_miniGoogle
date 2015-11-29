@@ -1,0 +1,39 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Microsoft .NET Presentation</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="100%">
+    <tr>
+        <td valign="top"><a href="slide-24.htm"><img
+        src="previous.gif" border="0" width="26" height="26"></a></td>
+        <td align="center" valign="top"><h1>&nbsp; Security</h1>
+        </td>
+        <td align="right" valign="top"><a href="slide-26.htm"><img
+        src="next.gif" border="0" width="26" height="26"></a></td>
+    </tr>
+</table>
+
+<p><font color="#000000" size="4">Since components can be
+downloaded, .NET has to provide a secure runtime environment.
+Assembly manifests can specify permissions they require,
+permissions they would like to have, and permissions they will
+never ask for. Thus, .NET can make intelligent decisions (based
+on where the assembly came from, digital signatures, the
+permissions its manifest claims and those it actually asks for)
+as to how much security clearance to grant it, if any. And the
+assembly is capable, based on how much .NET is willing to grant
+it, to decide whether it should attempt to run or not. Its
+security model is fine-grained and evidence-based, not just on/off.</font></p>
+
+<hr>
+
+<p><a href="references.htm"><em>References</em></a><em>: E</em></p>
+</body>
+</html>

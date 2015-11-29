@@ -1,0 +1,81 @@
+<HTML>
+<HEAD>
+<title>c7-3.html</title>
+
+<a href="c7-2.html"><IMG SRC="../previous.gif" align=left></a>
+<a href="c7-4.html"><IMG SRC="../next.gif" align=right></a>
+
+<center><h1>MULTIMEDIA INTERFACES--<BR>MULTIMEDIA CONTENT INDICATION</h1></center>
+<hr>
+</HEAD>
+
+<BODY>
+<H1>IV. Multimedia Content Indication</H1>
+<H3>
+<U>Content Indication:</U> the process of explicitly presenting some part of the content for its better comprehension by the user.
+<BR>
+<UL>
+<LI>Requirements<BR>
+<a href="c7fig/7-5.jpg">fig. 7-5</a>: Interfacing multimedia contents.<BR>
+<UL>
+Human's Observation Modes:
+<UL>
+<LI>Glancing</LI>
+<LI>Grazing</LI>
+<LI>Browsing</LI>
+<LI>Watching</LI>
+</UL>
+</UL>
+
+<UL>
+<LI>Smooth Stage Transition
+<br>-transition should correspond to the continuous human thinking process
+</LI>
+</UL>
+
+<UL>
+<LI>Sense of Overview
+<br>-cover a wide range of the related contents
+</LI>
+</UL>
+
+<UL>
+<LI>Sense of Positioning
+</LI>
+</UL>
+
+<UL>
+<LI>Effective Representation
+<br>-not easy when content has temporal material
+</LI>
+</UL>
+
+<UL>
+<LI>Responsiveness
+</LI>
+</UL>
+
+<UL>
+<LI>Attractiveness
+</LI>
+</UL>
+
+</LI>
+
+<BR>
+<LI>Content Indication Basics
+<BR>-description of multimedia content should be separated into the content and attribute information
+<BR>-The <U>core part</U> contains the actual media information.
+<BR>-The <U>attribute information part</U> can contain coding information, content structure information, content profile information.
+<BR>
+<UL>
+<LI>Indication Granularity</LI>
+<UL>
+<LI>Poster</LI>
+<LI>Browser</LI>
+<LI>Viewer</LI>
+<LI>Magnifier</LI>
+</UL>
+
+</H3>
+</BODY>

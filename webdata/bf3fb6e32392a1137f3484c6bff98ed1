@@ -1,0 +1,107 @@
+<html>
+<head><title>Acceptable delay </title></head>
+<body>
+
+<center>
+<h2>Acceptable delay for various applications
+
+<p>
+
+<table border=5 cellpadding=10>
+<tr>
+<td align=center colspan=2><b>Object</b>
+<td align=center><b>Mode,Application</b>
+<td align=center><b>Delay</b>
+</tr>
+
+<tr align=center>
+<td rowspan=6 align=middle><b>video</b>
+<td><b><i>animation</i></b>
+<td>correlated
+<td>+-120 ms
+</tr>
+
+<tr align=center>
+<td><b><i>audio</i></b>
+<td>lip synchronization
+<td>+-80ms
+</tr>
+
+<tr align=center>
+<td rowspan=2 align=middle><b><i>image</i></b>
+<td>overlay
+<td>+-240 ms
+</tr>
+
+<tr align=center>
+<td>non-overlay
+<td>+-500 ms
+</tr>
+
+<tr align=center>
+<td rowspan=2 align=middle><b><i>text</i></b>
+<td>overlay
+<td>+-240 ms
+</tr>
+
+<tr align=center>
+<td>non-overlay
+<td>+-500 ms
+</tr>
+
+<tr align=center>
+<td rowspan=9 align=middle><b>audio</b>
+<td><b><i>animation</i></b>
+<td>event correlation
+<td>+-80ms
+</tr>
+
+<tr align=center>
+<td rowspan=3 align=middle><b><i>audio</i></b>
+<td>lightly coupled (stereo)
+<td>+-11 ms
+</tr>
+
+<tr align=center>
+<td>loosely coupled(dialog)
+<td>+-120ms
+</tr>
+
+<tr align=center>
+<td>loosely coupled (background)
+<td>+-500ms
+</tr>
+
+<tr align=center>
+<td rowspan=2 align=middle><b><i>image</i></b>
+<td>tightly coupled (music with notes)
+<td>+-5ms
+</tr>
+
+<tr align=center>
+<td> loosely coupled (slide show)
+<td> +-500ms
+</tr>
+
+<tr align=center>
+<td><b><i>text</i></b>
+<td>text annotation
+<td>+-240 ms
+</tr>
+
+<tr align=center>
+<td rowspan=2><b><i>pointer</i></b>
+<td rowspan=2> related audio
+<td>-500 ms
+</tr>
+
+<tr align=center>
+<td>+750ms
+</tr>
+
+
+</table>
+
+</h2>
+</body>
+</html>

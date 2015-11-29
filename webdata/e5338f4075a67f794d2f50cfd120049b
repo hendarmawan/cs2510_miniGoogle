@@ -1,0 +1,24 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="page14.html"><img src="previous.gif" align=left></a>
+<a href="page16.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>Conclusions</h1>
+   <br></br>
+<p>Image search engines are a relatively new idea that can be used in many
+areas in the world. They can help in searching for general categories
+of a topic, as well as patterns or specific ideas.</p>
+<p>Text-bases image searches are the most common type that have been
+implemented, but content-based image searches will surely be available for
+public use in the foreseeable future.</p>
+<p>Both Google and SIMPLIcity are strong steps in the right direction of
+where image search engines should be headed. Google is both reliable and
+fast, and SIMPLIcity's functionality of matching image content is much
+more precise and reliable of an idea than searching for surrounding
+text.</p>
+</font>
+</html>

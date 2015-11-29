@@ -1,0 +1,24 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page3.html"><img src="previous.gif" align=left></a>
+<a href="page5.html"><img src="next.gif" align=right></a>
+<center>
+   <br></br>
+   <h1>Syntax</h1>
+   <br>
+</center>
+<font size=4>
+<p>There are five basic types of tags used in JSP (six counting
+comments).</p>
+<ul>
+   <li><a href="page5.html">Scriptlets</a></li>
+   <li><a href="page6.html">Expressions</a></li>
+   <li><a href="page7.html">Declarations</a></li>
+   <li><a href="page8.html">Actions</a></li>
+   <li><a href="page9.html">Directives</a></li>
+</ul>
+</font>
+</html>
+

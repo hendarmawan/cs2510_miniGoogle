@@ -1,0 +1,143 @@
+<html>
+<head>
+<title>CS1699: Homework 1</title>
+</head>
+<body>
+<h2>CS1699: Homework 1</h2>
+<b>Due:</b> 9/22/2015, 11:59pm</b> 
+<br><br>
+<b>Instructions: </b> Please provide your code and image results (for parts I, III and IV) and your written answers (for parts I, II and IV). Your written answers should be in the form of a PDF or Word document (.doc or .docx). Your code should be written in Matlab. Zip or tar your written answers, image results and .m files and upload the .zip or .tar file on CourseWeb -> CS1699 -> Assignments -> Homework 1. Name the file  YourFirstName_YourLastName.zip or YourFirstName_YourLastName.tar. 
+<br><br>
+<b>Note:</b> It's ok to look up what Matlab functions accomplish a given task, but you are only allowed to use built-in Matlab functions. For part III, you have to write your own code and, other than basic and image display functions, can only use Matlab's <font face="Courier New">imfilter</font> and <font face="Courier New">fspecial</font> functions and the linked <font face="Courier New">tight_subplot</font> function.</b> If you have questions about what you can use, ask the instructor.
+<br><br>
+
+
+<u>Part I: Matlab Basics</u> (15 points)
+<br>
+<ol>
+<li>Generate a 1000000x1 (one million by one) vector of random numbers from a Gaussian distribution with mean approximately 0 and standard deviation approximately 5. Use Matlab's <font face="Courier New">randn</font> function. </li>
+<li>Add 1 to every value in this list, by using a loop. To get the number of loops you need to run, use Matlab's <font face="Courier New">size</font> function. Time this operation, print the number, and write the total time taken to add 1 to every number in your answer sheet. </li>
+<li>Now add 1 to every value in the list, without using a loop. Time this operation, print the time and write it down. Use a different function to print the number than you did above.</li>
+<li>Read in <a href="Downtown_Pittsburgh_from_the_North_Shore.png">this image</a> into Matlab as a matrix, and write down its dimensions.</li>
+<li>Convert the image into grayscale.</li>
+<li>Find the darkest pixel in the image, and write its value in your answer sheet. Hint: Convert to a vector first, and use Matlab's <font face="Courier New">ind2sub</font> function.</li>
+<li>Consider a 31x31 square (a square with size 31 pixels) that is centered on the darkest pixel. Replace all pixels in that square with white pixels. </li>
+<li>Make a new figure, display the modified image and save it as a file. Use <font face="courier new">saveas(gcf, '[filename].png')</font> to save your image.</li>
+</ol>
+
+
+<u>Part II: Short Answer Problems</u> (15 points)
+<br>
+<ol>
+<li>Give an example of how one can exploit the associative property of convolution to more efficiently filter an image.</li>
+<li>This is the input image: [0 0 1 1 0 0 1 1]. What is the result of dilation with a structuring element [1 1 1]?</li>
+<li>Name two specific ways in which one could reduce the amount of fine, detailed edges that are detected with the Canny edge detector.</li>
+</ol>
+
+
+<u>Part III: Image Pyramids</u> (15 points)
+<br>
+<ol>
+<li>Choose an image that has an interesting variety of texture (from Flickr or your own images). The image should be at least 640x480 pixels and converted to grayscale. Use the Matlab function <font face="courier new" color="red">rgb2gray</font>.</li>
+<li>Write code for a Gaussian and Laplacian pyramid of level N (use for loops). In each level, the resolution should be reduced by a factor of 2. Use the Matlab function <font face="courier new">imfilter</font>.</li>
+<li>Show a Gaussian and Laplacian pyramid of level 5 for your chosen image using your code. 
+<!--Use the Matlab functions <font face="courier new">figure</font> and <font face="courier new">imagesc(im,[minval maxval])</font>.-->
+You can (but don't have to) use the <a href="tight_subplot.m"><font face="Courier New">tight_subplot</font></a> function to format your plot. Your displayed images for the Gaussian and Laplacian pyramids should look something like the image below. Note that the image at the bottom-right can be skipped. </li>
+<li>Include your code (one function to generate the pyramids, and another to display them), the original image you chose, and an image that shows the image pyramids, in your submission.</li>
+<br>
+<img src="lake_pyramids.png"/>
+</ol>
+
+
+<u>Part IV: Seam Carving</u> (55 points)
+<br><br>
+
+For this exercise, you will implement one part of the content-aware image resizing technique
+described in Shai Avidan and Ariel Shamir's SIGGRAPH 2007 paper, "Seam Carving for Content-Aware Image Resizing", available <a href="avidan.pdf">here</a>. The goal is to implement
+the method, and then examine and explain its performance on different kinds of input images.
+<br>
+First read through the paper, with emphasis on sections 3, 4.1, and 4.3. Note: choosing the next
+pixel to add one at a time in a greedy manner will give sub-optimal seams; the dynamic
+programming solution ensures the best seam (constrained by 8-connectedness) is computed.
+Use the dynamic programming solution as given in the paper and <i>explained in class</i>.
+<br><br>
+Write Matlab functions as below. Save each of the below functions in a separate file called [function-name].m and
+submit all of them.
+<ul>
+<li>[5 points] <font face="courier new">energyImage = energy_image(im)</font> - to compute the energy at each pixel using the magnitude of the
+x and y gradients (equation 1 in the paper; sqrt(dx^2+dy^2)). There are at least two ways to compute the gradient in each direction (including with a filter), but don't use Matlab's imgradient function. 
+The input <font face="courier new">im</font> should be a nrows-x-ncols-x-3 matrix of datatype uint8, e.g. the output of <font face="courier new">imread</font> on a color image. However, you need to convert it to grayscale before computing the gradients, using <font face="courier new">rgb2gray</font>.
+The output should be a 2D matrix of datatype double.</li>
+<li>[5 points] <font face="courier new">M = cumulative_minimum_energy_map(energyImage,seamDirection)</font> - to compute minimum cumulative energy. The input <font face="courier new">energyImage</font> should be a 2D matrix of datatype double.
+(It should be the output of the <font face="courier new">energy_image</font> function defined above.). The input <font face="courier new">seamDirection</font> should be
+the strings 'HORIZONTAL' or 'VERTICAL'. The output must be a 2D matrix of datatype double.</li>
+<li>[5 points] <font face="courier new">verticalSeam = find_optimal_vertical_seam(M)</font> and <font face="courier new">horizontalSeam = find_optimal_horizontal_seam(M)</font> - to compute the optimal
+vertical and horizontal seams. The input should be a 2D matrix of datatype double. (It can be taken from the
+output of the <font face="courier new">cumulative_minimum_energy_map</font> function defined above). The output must be a
+vector containing the column indices (row indices, respectively) of the pixels which form the seam for each row (each column, respectively).</li>
+<li>[5 points] <font face="courier new">displaySeam(im, seam, seamDirection)</font> - to display the selected type of seam on top of an image. The input
+<font face="courier new">im</font> should be the result of an <font face="courier new">imread</font>. <font face="courier new">seamDirection</font> should be the strings 'HORIZONTAL' or 'VERTICAL'. <font face="courier new">seam</font> should be
+the output of <font face="courier new">find_optimal_vertical_seam</font> or <font face="courier new">find_optimal_horizontal_seam</font>. The output should
+display the input image and plot the seam on top of it. To plot points on top of a displayed image, use <font face="courier new">imshow(im);</font> followed by <font face="courier new">hold on;</font>
+followed by <font face="courier new">plot(...)</font>. The origin of the plot will be the top
+left corner of the image. Note that for the plot, rows are the y axis and columns are the x axis.</li>
+<li>[5 points] Functions with the following interface:<br>
+<font face="courier new">[reducedColorImage,reducedEnergyImage] = reduceWidth(im, energyImage)<br>
+[reducedColorImage,reducedEnergyImage] = reduceHeight(im, energyImage)</font><br>
+These functions should take as inputs a) a 2D matrix <font face="courier new">energyImage</font> of datatype double and b) a nrows-x-ncols-x-3
+matrix <font face="courier new">im</font> of datatype uint8. The input <font face="courier new">energyImage</font> should be the output of the <font face="courier new">energy_image</font> function.
+The output must return 2 variables: a) a 3D matrix <font face="courier new">reducedColorImage</font> same as the input image, of datatype <font face="courier new">uint8</font>, but with its width or
+height reduced by one pixel; b) a 2D matrix  <font face="courier new">reducedEnergyImage</font>, of datatype <font face="courier new">double</font>, the same as <font face="courier new">energyImage</font>, but
+with its width or height reduced by one pixel.</li>
+</ul>
+
+Matlab hints:
+<ul>
+<li>Useful functions: <font face="courier new">imfilter, im2double, fspecial, imread, imresize, rgb2gray,
+imagesc, imshow, subplot;</font></li>
+<li>Use <font face="courier new">saveas(gcf, '[filename].png')</font> to save your images.</li>
+<li>Be careful with double and uint8 conversions as you go between computations with
+the images and displaying them -- filtering should be done with doubles.</li>
+</ul>
+
+Answer each of the following, and include image displays where appropriate. Save your code for each of the parts below as a separate .m script. Name the scripts <font face="courier new">part4_a.m</font>, <font face="courier new">part4_b.m</font>, <font face="courier new">part4_c.m</font>, and <font face="courier new">part4_d.m</font>. Submit the scripts along with the functions above. Also submit the image results, as indicated below. <i>Your grader should be able to run your scripts and get the image results you submitted.</i>
+<ol type="a">
+<li>[5 points] Run your <font face="courier new">reduceHeight</font> function on the provided <font face="courier new"><a href="prague.jpg">prague.jpg</a></font> and shrink the height by 100 pixels. Then run your
+<font face="courier new">reduceWidth</font> function on the provided <font face="courier new"><a href="mall.jpg">mall.jpg</a></font> and shrink the width by 100 pixels. Also show what standard image resizing would do (use <font face="courier new">B = imresize(A, [numrows numcols])</font>). Display the outputs, save them, and submit them.</li>
+<li>[5 points] Display, save and submit (i) the energy function output (total gradient magnitudes e1(I)) for the
+provided images <font face="courier new">prague.jpg</font> and <font face="courier new">mall.jpg</font>, and (ii) the two corresponding cumulative minimum
+energy maps (M) for the seams in each direction (use the <font face="courier new">imagesc</font> function). Explain
+why these outputs look the way they do given the original image's content.</li>
+<li>[5 points] For the same two images, display, save and submit the original image overlaid with (a)
+the first selected horizontal seam and (b) the first selected vertical seam. Explain why
+these are the optimal seams for these two image.</li>
+<li>[15 points] Use your system with different kinds of images and
+seam combinations, and see what kind of interesting results it can produce. The goal is
+to form some perceptually pleasing outputs where the resizing better preserves content
+than a blind resizing would, as well as some examples where the output looks unrealistic
+or has artifacts ("failure cases"). Include results for at least three images of your own
+choosing. Include an example or two of a "bad" outcome. Be creative in the images you
+choose, and in the amount of combined vertical and horizontal carvings you apply. Try to
+predict types of images where you might see something interesting happen. It's ok to
+fiddle with the parameters (seam sequence, number of seams, etc) to look for interesting
+and explainable outcomes.
+For each result, include the following things, clearly labeled (see <font face="courier new">title</font> function):<br>
+<ul>
+<li>the original input image,</li>
+<li>your system's resized image,</li>
+<li>the result one would get if instead a simple resampling were used (via
+Matlab's <font face="courier new">imresize</font>),</li>
+<li>the input and output image dimensions,</li>
+<li>the sequence of enlargements and removals that were used, and</li>
+<li>a qualitative explanation of what we're seeing in the output.</li>
+</ul>
+</li>
+
+</ol>
+
+<b>Acknowledgement:</b> The author of Part II and Part IV is Kristen Grauman, and of Part III is Derek Hoiem. Devi Parikh and Yong Jae Lee added further specifications to Part IV, which are also used.
+
+<br><br>
+
+</body>
+</html>

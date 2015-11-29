@@ -1,0 +1,36 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Arial"> 
+	
+			<A href="./bug4.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./ex1.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		
+			<center> 
+				<h1>Bugzilla</h1>
+				<br>
+				<img src="./buggie.png" border="0">
+				<br>
+				<br>
+				<br>
+				<h1>Searching for Bugs and Viewing Reports</h1>
+			</center>
+			
+		</font>
+		
+		
+		<font size = 5 face="Arial"> 
+		
+			<br>
+			<li><a href="http://130.49.222.93/bugzilla/query.cgi" target="blank">Search</a> for bugs
+			<br>
+			<br>
+			<li>View a <a href="http://130.49.222.93/bugzilla/report.cgi" target="blank">report</a> of bugs
+
+		</font>
+	</BODY>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.75 [en] (Win98; U) [Netscape]">
+  <title>CS2510 Midterm Exam Study Guide, Spring 2002</title>
+</head>
+<body>
+<h1>
+CS2510 Midterm <i>Study Guide</i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Spring
+2002</h1>
+this study guide is <b>just a guide</b>, the subjects, and other
+sections
+are not intended to be comprehensive;
+<p><font size="+2"><b>DATE</b>&nbsp;&nbsp; </font><b>Tuesday, Mar 19,
+2002</b>
+</p>
+<h2>FORMAT</h2>
+<ul>
+  <li>
+Answer questions with short answers, definitions, solve problems by
+applying
+algorithms, think and make inferences based on material seen in class
+or
+in the textbook.</li>
+  <li>
+Closed notes, closed book</li>
+</ul>
+<h2>
+<a name="prep"></a>PREPARATION</h2>
+<ul>
+  <li>
+Study lecture notes</li>
+  <li>
+Study handouts and review your own notes taken in class</li>
+  <li>
+Study textbook, sections 2.3-2.4, 3.1-3.3, 4.3, 4.5 (but no
+formalisms), 6.3<br>
+  </li>
+</ul>
+<h2>
+SUBJECTS</h2>
+<ul>
+  <li>
+Principles of distributed computing, scalability, transparency, etc.</li>
+  <li>
+Client-server schemes, RPC schemes, communication schemes</li>
+  <li>Migration of processes, distribution of servers and clients,
+naming and
+location of servers and clients</li>
+  <li>
+Logical clocks, clock synchronization and distributed mutual exclusion
+schemes</li>
+  <li>
+Global states, consistent and inconsistent</li>
+  <li>Strong consistency<br>
+  </li>
+</ul>
+<h2>
+KNOW WHAT THE FOLLOWING MEAN, WHY THEY ARE USEFUL OR IMPORTANT, and
+UNDERSTAND
+THE TRADEOFFS</h2>
+<ul>
+  <li>
+Centralized vs. distributed algorithms</li>
+  <li>
+Distributed vs. networked systems</li>
+  <li>
+Caching of data, results, services (location, amount, etc)</li>
+  <li>Different types of service location (different approaches for
+name services)</li>
+  <li>Different types of consistency models<br>
+  </li>
+</ul>
+<h2>
+ABLE TO USE OR DO OR RECOGNIZE THE FOLLOWING</h2>
+<ul>
+  <li>
+Different caching algorithms</li>
+  <li>
+Different distributed mutual exclusion algorithms</li>
+</ul>
+<hr>
+<address><a href="http://www.cs.pitt.edu/%7Emosse">Daniel Mosse </a>, <a
+ href="mailto:mosse@cs.pitt.edu">mosse@cs.pitt.edu</a></address>
+<br>
+<i>last modified 24-Feb-2006</i>
+</body>
+</html>

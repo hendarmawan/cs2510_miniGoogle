@@ -1,0 +1,317 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgID" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Slow Intelligence System Messages</title>
+</head>
+
+<body>
+<p><a href="../index.htm">Home</a>&gt;<a href="../VirtualClassroom.htm">Virtual 
+      Classroom</a>&gt;Messages</p>
+<div id="reg">
+  <h2>Register messages</h2>
+  <p>Examples: <a href="xml/InitXML/CreateGUI.xml">CreateGUI</a>
+    <a href="xml/InitXML/CreateInputProcessor.xml">CreateInputProcessor</a>
+  <a href="xml/InitXML/CreateBloodPressure.xml">CreateBloodPressure</a>
+<a href="xml/InitXML/CreateSPO2.xml">CreateSPO2</a>
+<a href="xml/InitXML/CreateEKG.xml">CreateEKG</a>
+<a href="xml/InitXML/CreateUploader.xml">CreateUploader</a></p>
+  <p>Examples (Super component): <a href="xml/InitXML/CreateTempBloodPressure.xml">CreateTempBloodPressure</a></p>
+  <table style="
+    width: 550px;
+">
+  <tbody><tr>
+    <td>Scope</td>
+    <td>The operating level of this message</td> 
+    
+  </tr>
+  <tr>
+    <td>MessageType</td>
+    <td>"Register"</td> 
+    
+  </tr>
+<tr>
+    <td>Role</td>
+    <td>Basic / Super / Monitor / Advertiser / Debugger / YOUR_OWN_ROLE<br><br>* Unless behaviors added to SISServer otherwise using your own customized role here won't do anything.</td> 
+    
+  </tr><tr>
+    <td>Name</td>
+    <td>Name of the component, no duplicates allowed for one Scope</td> 
+    
+  </tr><tr>
+    <td>[InputPath]</td>
+    <td>Optional, for super components only, provide the location of all required sources to build a super component, leave blank to use default /SuperComponents folder</td> 
+    
+  </tr><tr>
+    <td>[OutputPath]</td>
+    <td>Optional, for super components only, provide the location to put the generated super component, leave blank to use default /Components folder</td> 
+    
+  </tr></tbody><colgroup><col width="250">
+  <col width="300">
+  </colgroup></table>
+</div>
+
+<div id="reading">
+  <h2>Reading messages</h2>
+  <p>Examples: <a href="xml/DataXML/BloodPressureReading.xml">BloodPressureReading</a>
+    <a href="xml/DataXML/EKGReading.xml">EKGReading</a>
+  <a href="xml/DataXML/SPO2Reading.xml">SPO2Reading</a>
+<a href="xml/DataXML/TempReading.xml">TempReading</a>
+<a href="xml/DataXML/KinectMonitorReading.xml">KinectMonitorReading</a>
+<a href="xml/DataXML/KinectMonitorReading2.xml">KinectMonitorReading2</a>
+<a href="xml/DataXML/KinectMonitorReading3.xml">KinectMonitorReading3</a></p>
+  <table style="
+    width: 550px;
+">
+  <colgroup><col width="250">
+  <col width="300">
+  </colgroup><tbody><tr>
+    <td>Scope</td>
+    <td>The operating level of this message</td> 
+    
+  </tr>
+  <tr>
+    <td>MessageType</td>
+    <td>"Reading"</td> 
+    
+  </tr>
+<tr>
+    <td>Sender</td>
+    <td>Which component sends this</td> 
+    
+  </tr><tr>
+    <td>[Receiver]</td>
+    <td>Optional, which component receives this</td> 
+    
+  </tr><tr>
+    <td>YOUR_OWN_ITEM_1</td>
+    <td></td> 
+    
+  </tr><tr>
+    <td>...</td>
+    <td></td> 
+    
+  </tr><tr>
+    <td>YOUR_OWN_ITEM_N</td>
+    <td></td> 
+    
+  </tr><tr>
+    <td>Date</td>
+    <td>Date when this message is sent</td> 
+    
+  </tr></tbody></table>
+</div>
+
+<div id="alert">
+  <h2>Alert messages</h2>
+  <p>Examples: <a href="xml/DataXML/BloodPressureAlert.xml">BloodPressureAlert</a>
+    <a href="xml/DataXML/EKGAlert.xml">EKGAlert</a>
+  <a href="xml/DataXML/SPO2Alert.xml">SPO2Alert</a>
+<a href="xml/DataXML/TempAlert.xml">TempAlert</a>
+<a href="xml/DataXML/KinectMonitorAlert.xml">KinectMonitorAlert</a></p>
+<table style="
+    width: 550px;">
+  <tbody><tr>
+    <td>Scope</td>
+    <td>The operating level of this message</td> 
+    
+  </tr>
+  <tr>
+    <td>MessageType</td>
+    <td>"Alert"</td> 
+    
+  </tr>
+<tr>
+    <td>Sender</td>
+    <td>Which component sends this</td> 
+    
+  </tr><tr>
+    <td>[Receiver]</td>
+    <td>Optional, which component receives this</td> 
+    
+  </tr><tr>
+    <td>YOUR_OWN_ITEM_1</td>
+    <td></td> 
+    
+  </tr><tr>
+    <td>...</td>
+    <td></td> 
+    
+  </tr><tr>
+    <td>YOUR_OWN_ITEM_N</td>
+    <td></td> 
+    
+  </tr><tr>
+    <td>Date</td>
+    <td>Date when this message is sent</td> 
+    
+  </tr></tbody><colgroup><col width="250">
+  <col width="300">
+  </colgroup></table>
+</div>
+
+<div id="setting">
+  <h2>Setting messages</h2>
+  <p>Examples: <a href="xml/DataXML/Kill.xml">KillBloodPressure</a>
+    <a href="xml/DataXML/ActivateBloodPressure.xml">ActivateBloodPressure</a>
+  <a href="xml/DataXML/DeactivateBloodPressure.xml">DeactivateBloodPressure</a>
+  <a href="xml/DataXML/InputProcessorBloodPressureSetting.xml">InputProcessorBloodPressureSetting</a>
+<a href="xml/DataXML/InputProcessorEKGSetting.xml">InputProcessorEKGSetting</a>
+<a href="xml/DataXML/InputProcessorSPO2Setting.xml">InputProcessorSPO2Setting</a>
+<table style="
+    width: 550px;
+">
+  <tbody><tr>
+    <td>Scope</td>
+    <td>The operating level of this message</td> 
+    
+  </tr>
+  <tr>
+    <td>MessageType</td>
+    <td>"Setting"</td> 
+    
+  </tr>
+<tr>
+    <td>Sender</td>
+    <td>Which component sends this</td> 
+    
+  </tr><tr>
+    <td>[Receiver]</td>
+    <td>Optional, which component receives this</td> 
+    
+  </tr><tr>
+    <td>Purpose</td>
+    <td>The purpose of this setting action, preferably no spaces, used for differentiate settings for a component</td> 
+    
+  </tr><tr>
+    <td>YOUR_OWN_ITEM_1</td>
+    <td></td> 
+    
+  </tr><tr>
+    <td>...</td>
+    <td></td> 
+    
+  </tr><tr>
+    <td>YOUR_OWN_ITEM_N</td>
+    <td></td> 
+    
+  </tr></tbody><colgroup><col width="250">
+  <col width="300">
+  </colgroup></table>
+</div>
+
+<div id="confirm">
+  <h2>Confirm messages</h2>
+  <p>Examples: <a href="xml/DataXML/BloodPressureConfirm.xml">BloodPressureConfirm</a>
+   <a href="xml/DataXML/EKGConfirm.xml">EKGConfirm</a>
+ <a href="xml/DataXML/InputProcessorConfirm.xml">InputProcessorConfirm</a>
+<a href="xml/DataXML/KinectMonitorConfirm.xml">KinectMonitorConfirm</a>
+<a href="xml/DataXML/SPO2Confirm.xml">SPO2Confirm</a>
+<a href="xml/DataXML/TempConfirm.xml">TempConfirm</a></p>
+
+<table style="
+    width: 550px;
+">
+  <tbody><tr>
+    <td>Scope</td>
+    <td>The operating level of this message</td> 
+    
+  </tr>
+  <tr>
+    <td>MessageType</td>
+    <td>"Confirm"</td> 
+    
+  </tr>
+<tr>
+    <td>Sender</td>
+    <td>Which component sends this</td> 
+    
+  </tr><tr>
+    <td>Receiver</td>
+    <td>which component receives this</td> 
+    
+  </tr></tbody><colgroup><col width="250">
+  <col width="300">
+  </colgroup></table>
+</div>
+
+<div id="conn">
+  <h2>Connect messages</h2>
+  <p>Examples: <a href="xml/DataXML/BloodPressureConnect.xml">BloodPressureConnect</a>
+    <a href="xml/DataXML/EKGConnect.xml">EKGConnect</a>
+<a href="xml/DataXML/SPO2Connect.xml">SPO2Connect</a>
+<a href="xml/DataXML/TempConnect.xml">TempConnect</a>
+<a href="xml/DataXML/KinectMonitorConnect.xml">KinectMonitorConnect</a></p>
+<table style="
+    width: 550px;
+">
+  <tbody><tr>
+    <td>Scope</td>
+    <td>The operating level of this message</td> 
+    
+  </tr>
+  <tr>
+    <td>MessageType</td>
+    <td>"Connect"</td> 
+    
+  </tr>
+<tr>
+    <td>Role</td>
+     
+    
+  <td>Basic / Super / Monitor / Advertiser / Debugger / YOUR_OWN_ROLE<br><br>* Unless behaviors added to SISServer otherwise using your own customized role here won't do anything.</td></tr><tr>
+    <td>Name</td>
+     
+    
+  <td>Name of the component, no duplicates allowed for one Scope</td></tr></tbody><colgroup><col width="250">
+  <col width="300">
+  </colgroup></table>
+</div>
+
+<div id="em">
+  <h2>Emergency messages</h2>
+  <p>Examples: <a href="xml/DataXML/TempBloodPressureEmergency.xml">TempBloodPressureEmergency</a></p>
+<table style="
+    width: 550px;
+">
+  <tbody><tr>
+    <td>Scope</td>
+    <td>The operating level of this message</td> 
+    
+  </tr>
+  <tr>
+    <td>MessageType</td>
+    <td>"Emergency"</td> 
+    
+  </tr>
+<tr>
+    <td>Sender</td>
+    <td>Which component sends this</td> 
+    
+  </tr><tr>
+    <td>MainComponent</td>
+    <td>The Basic component initiates the emergency</td> 
+    
+  </tr><tr>
+    <td>HelperComponents</td>
+    <td>All other Basic components which provide useful information</td> 
+    
+  </tr><tr>
+    <td>Note</td>
+    <td>Additional Note</td> 
+    
+  </tr><tr>
+    <td>Date</td>
+    <td>Date when this message is sent</td> 
+    
+  </tr></tbody><colgroup><col width="250">
+  <col width="300">
+  </colgroup></table>
+</div>
+        
+</body>
+
+</html>

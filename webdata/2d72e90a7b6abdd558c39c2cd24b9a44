@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0047)http://www.cs.pitt.edu/~chang/365/2petri/p1.htm -->
+<HTML><HEAD><TITLE>HIPR - Create Index</TITLE>
+<META content="text/html; charset=windows-1252" http-equiv=Content-Type>
+<META content="MSHTML 5.00.2920.0" name=GENERATOR></HEAD>
+<BODY>
+<A href="HIPRindex.htm" target="_parent"><IMG align=left 
+src="../previous.gif" border="0"></A> <A 
+href="HIPRindex.htm"><IMG align=right 
+src="../next.gif" border="0"></A> 
+<CENTER>
+  <H1>HIPR2 - Index and Scripting</H1>
+</CENTER>
+<P>
+<h4>Since HIPR2 is NOTimmediately available, it is very similar to HTML and other 
+  languages, and there is a good reference manual:</H4>
+<ul>
+  <li> 
+    <h4><a href="http://www.dai.ed.ac.uk/HIPR2/chngehip.htm#'The">HIPR Reference Manual</a></H4>
+  </li>
+</ul>
+<h4>the details will be left to descriptions of future versions. </H4>
+<h4>However, it should be mentioned that indexes can be created with HIPR2. This 
+  can be done by running the HIPRscript files that create both the HTML and LaTeX 
+  versions of the webpage being created: <a href="http://www.dai.ed.ac.uk/HIPR2/chngehip.htm#'Making'">Index</a></H4>
+<h4>The index tags look like this:</H4>
+<h4> \index {ENTRY 1} {ENTRY 2}...{TEXT}</H4>
+<h4>Each ENTRY creates the names of topic entries in the index. There may be up 
+  to three levels of nesting. For example, the subtopic Canny, under Edge Detectors, 
+  would look like this:</H4>
+<h4>{Edge detectors|Canny} </H4>
+<h4>with the | pipe symbols showing where subdirectories are. More than one ENTRY 
+  symbol may point to the same text, but must always be a unique name.</H4>
+<h4>Whenever a HIPRscript file is processed, all the index entry information in 
+  that file is written into an IDX file in an index sub-directory. To generate 
+  an index, one must scan this sub-directory, collate all the information in all 
+  the IDX files there, and then use this information to produce the index pages. 
+  The index becomes another HIPRscript file. The scanning and analysis of the 
+  IDX files are performed by a Perl program. Finally, the index file itself is 
+  processed by HIPRscript, creating HTML and LaTeX index pages.</H4>
+<h4>&nbsp;</H4>
+</BODY></HTML>

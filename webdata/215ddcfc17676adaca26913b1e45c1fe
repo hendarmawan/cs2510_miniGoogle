@@ -1,0 +1,66 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>New Page 1</title>
+<style>
+<!--
+ li.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+-->
+</style>
+</head>
+
+<body>
+
+<p><a href="05.htm"><img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="07.htm"><img border="0" src="next.gif" width="26" height="26"></a></p>
+<p class="MsoNormal"><u><b><font size="5">Produce</font></b></u></p>
+<p class="MsoNormal"><font size="5">1. Publish undocumented or informally 
+designed components</font></p>
+<p class="MsoNormal" style="text-indent:21.0pt"><font size="4">- Refers to 
+components coming into CBSE system from external sources:</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: 39.0pt">
+<span style="font-family: Symbol"><font size="4">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></span></span><font size="4">Component producers</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: 39.0pt">
+<span style="font-family: Symbol"><font size="4">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></span></span><font size="4">Other teams</font></p>
+<p class="MsoNormal" style="text-indent: -.25in; margin-left: 39.0pt">
+<span style="font-family: Symbol"><font size="4">·</font><span style="font-style: normal; font-variant: normal; font-weight: normal; font-family: Times New Roman"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font></span></span><font size="4">Legacy renewal (includes mining for 
+components in existing solutions.)&nbsp; </font></p>
+<p class="MsoNormal" style="margin-left:21.0pt"><font size="4">- 
+Non-component-based solutions can be “wrapped” to provide a component-like 
+solution.&nbsp;</font></p>
+<p class="MsoNormal" style="margin-left:21.0pt"><font size="4">- Undocumented 
+components should provide enough information for potential users to determine 
+trustworthiness of the components. This will make them available for reuse. &nbsp;</font></p>
+<p class="MsoNormal" style="margin-left:21.0pt"><font size="4">- If sufficient 
+documentation not available for satisfactory quality assurance audit, then 
+suitability of the component’s use becomes questionable.</font></p>
+
+<p class="MsoNormal"><font size="5">2. Use component specification as starting 
+point for design</font></p>
+<p class="MsoNormal" style="margin-left:.25in"><font size="4">- “Design start 
+point” occurs when component producer acts as subcontractor to a solution 
+builder or consumer.</font></p>
+<p class="MsoNormal" style="margin-left:.25in"><font size="4">- Consumer’s 
+component librarian should transfer component specification to the producer.</font></p>
+<p class="MsoNormal" style="margin-left:.25in"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - 
+Specification textual or, ideally, UML diagrams.</font></p>
+<p class="MsoNormal" style="margin-left:.25in"><font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; - Good 
+starting point - class diagram with interfaces, services and operations.</font></p>
+<p class="MsoNormal" style="margin-left:.25in"><font size="4">- Component 
+producer should develop components to the criteria detailed in the 
+specification.</font></p>
+
+</body>
+
+</html>

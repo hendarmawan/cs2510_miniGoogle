@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+
+<HTML>
+  <HEAD>
+    <META http-equiv="Content-Type" content=
+    "text/html; charset=iso-8859-1">
+    <META name="generator" content="HTML Tidy, see www.w3.org">
+    <META name="Author" content="Michael Ringenberg">
+
+    <TITLE>Question Answering</TITLE>
+<STYLE type="text/css">
+ body {
+  background-color: #FFFFFF;
+ }
+ div.c1 {text-align: center}
+</STYLE>
+  </HEAD>
+
+  <BODY>
+    <DIV class="c1">
+      <H1>Question Answering</H1>
+
+    </DIV>
+
+    <TABLE border="0" cellspacing="10" cellpadding="10" width=
+    "100%">
+      <TR>
+        <TD valign="TOP" bgcolor="#EEEEEE">
+
+
+
+          <H3><A href="#pubs">Publications</A></H3>
+
+
+          <H3><A href="#sponsors">Sponsors</A></H3>
+
+        </TD>
+
+<TD>
+
+
+
+
+
+<P>
+
+<HR>
+
+<H3><A name="pubs"></A>Publications:</H3>
+<UL>
+
+
+<li>
+Mihai Rotaru and Diane J. Litman.
+<a href="http://www.cs.pitt.edu/~litman/aaai05workshop-final.pdf">Improving Question Answering for Reading Comprehension Tests by Combining Multiple Systems.</a>
+<i> Proceedings of the AAAI 2005 Workshop on Question Answering in
+Restricted Domains</i>,
+Pittsburgh, PA, 2005.
+</LI>
+
+<li>Veselin Stoyanov, Claire Cardie, Diane Litman, and Janyce Wiebe. 
+Evaluating an Opinion Annotation Scheme Using a New Multi-Perspective Question and Answer Corpus</a>. In
+<i>Computing Attitude and Affect in Text</i>,
+James G. Shanahan, Yan Qu, and Janyce Wiebe (eds.), 
+Springer, Dordrecht, The Netherlands, 2005.
+
+<li>Claire Cardie, Janyce Wiebe, Theresa Wilson, and Diane Litman. Low Level
+Annotations and Summary Representations of Opinions for Multi-Perspective Question Answering. In <i>New Directions in Question Answering</i>, Mark Maybury (ed.), MIT Press, 2004.
+
+<li>Veselin Stoyanov, Claire Cardie, Diane Litman, and Janyce Wiebe. 
+<a href="http://www.cs.pitt.edu/%7Ewiebe/pubs/papers/spsym04.pdf">Evaluating an Opinion Annotation Scheme Using a New Multi-Perspective Question and Answer Corpus</a>. 
+<i>Working Notes - Exploring Attitude and Affect in Text:
+Theories and Applications (AAAI Spring Symposium Series)</i>,
+Stanford, CA, 2004. </li>
+
+  <LI>C. Cardie, J. Wiebe, T. Wilson and D. Litman. 
+<a href=http://www.cs.pitt.edu/~litman/summary-rep.doc>
+Combining Low-Level and Summary Representations of Opinions for
+Multi-Perspective Question Answering,</a> <i> 
+Working Notes - New Directions in Question Answering (AAAI Spring
+Symposium Series)</i>, Stanford, CA, March 2003.</li>
+
+  <LI>J. Wiebe, E. Breck, C. Buckley, C. Cardie, P. Davis, B. Fraser,
+  D. Litman, D. Pierce, E. Riloff, T. Wilson, D. Day, and M. Maybury. 
+<a href=http://www.cs.pitt.edu/~litman/mpqa1-sss03.doc>
+Recognizing and Organizing Opinions Expressed in the World Press</a>, <i> 
+Working Notes - New Directions in Question Answering (AAAI Spring
+Symposium Series)</i>, Stanford, CA, March 2003.</li>
+
+ <LI><a href=http://www.cs.pitt.edu/~wiebe/mpqa/final.ppt>Multiple
+ Perspective Question Answering</a>, ARDA NRRC Summer Workshop Final
+ Presentation, 2002</LI> 
+</UL>
+
+Also see a subsequent
+<a href="http://www.cs.pitt.edu/~wiebe/projects.html">project</a> on
+opinions and question answering by Wiebe, Cardie, and Riloff.
+
+<HR>
+
+
+<H3><A name="sponsors"></A>Sponsors:</H3>
+<UL>
+  <LI>Advanced Research and Development Activity Northeast Regional Research Center (ARDA NRRC), Janyce Wiebe PI.</LI>
+</UL>
+
+<HR>
+
+    </TABLE>
+  </BODY>
+</HTML>
+

@@ -1,0 +1,29 @@
+<HTML>
+<HEAD><TITLE>CS2310 Seminar -- By Suresh Rangan</TITLE></HEAD>
+
+<BODY>
+
+<A href="10.html" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="12.html"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1><FONT color="mediumblue">Singular Value Decomposition  <FONT size=4>summary</FONT></FONT></H1>
+</CENTER>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><FONT size=5>Singular value decomposition breaks our matrix down into a set of smaller 
+	    components.</FONT></LI>
+       <BR><BR>
+       <LI><FONT size=5>The algorithm alters these components to reduce the number of dimensions.</FONT></LI>
+       <BR><BR>
+       <LI><FONT size=5>Recombines them into a matrix of the same shape as our original, so we can 
+		again use it as a lookup grid.</FONT></LI>
+       <BR><BR>
+       <LI><FONT size=5>The matrix we get back is an approximation of the content-word-transcript matrix 
+		we provided as input, and looks much different from the original.</FONT></LI>
+</UL></UL></UL></UL></UL></UL></UL>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,48 @@
+<html>
+<head><title>Chapter 11 : Network Resource Control </title>
+</head>
+
+<body>
+<a href="c11_10.html"><IMG SRC="previous.gif" align=left></a>
+<a href="c11_atm1.html"><IMG SRC="next.gif" align=right></a>
+
+<center>
+<h3><font color="blue">Chapter 11</font></h3>
+<h1>Land-Based Broadband Networks
+</center>
+<hr size=5>
+
+<h2>
+<image src="red.gif"><a href="dismult.jpg"> Figure 1</a> is an example of distributed multimedia communication architecture <br>
+<image src="red.gif"> <a href="c11_atm1.html">ATM</a> is a good candidate for distributed multimedia network <br>
+<image src="red.gif"> Resource Assignment scheme <p>
+<center>
+<h3>
+<table border=5 cellpadding=5>
+<tr>
+<td align=center> <b>Type</b>
+<td align=center> <b>Advantage</b> 
+<td align=center> <b>Disadvantage</b>
+</tr>
+<tr>
+<td> <b>Static</b>
+<td> Simple to implement
+<td> Inefficient and wasteful
+</tr>
+<tr>
+<td> <b>Dynamic</b>
+<td> Optimum utilization
+<td> More complex
+</table>
+</h3>
+</center>
+
+<h2><image src="red.gif"> Dynamic Resource Allocation Scheme example
+<ul>
+<image src="blue.gif"> ReSerVation Protocol (RSVP) <br>
+<image src="blue.gif"> Session Reservation Protocol (SRP) <br>
+</ul>
+
+</body>
+</html>
+

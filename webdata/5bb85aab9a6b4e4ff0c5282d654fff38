@@ -1,0 +1,108 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Adriana Kovashka</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header"><center>
+<table border="0">
+<tr>
+<td width="200"><img width="180" src="adriana_kovashka.jpg"></td>
+<td>
+
+<table border="0">
+<tr height="250"><td>
+<font size="6">Adriana Kovashka</font>
+<br>
+Assistant Professor
+<br>
+<a href="http://cs.pitt.edu/">Department of Computer Science</a>
+<br>
+<a href="http://pitt.edu/">University of Pittsburgh</a>
+</td></tr>
+</table>
+
+</td></tr></table>
+</div>
+
+<div id="navigation">
+<center>
+<a class="nav" href="index.htm">home</a>
+<a class="nav" href="cv.htm">CV</a>
+<a class="nav" href="publications.htm"><i>publications</i></a>
+<a class="nav" href="teaching.htm">teaching</a>
+<a class="nav" href="contact.htm">contact</a>
+</center>
+</div>
+
+<br>
+
+<div id="content">
+
+<p><b>2015</b></p>
+<br>
+<li><b>Adapting Attributes by Selecting Features Similar across Domains.</b> Siqi Liu and Adriana Kovashka. To appear, <i>IEEE Winter Conference on Applications of Computer Vision</i> (WACV), March 2016. &nbsp;&nbsp;&nbsp; [pdf] </li>
+<br>
+<li><b>WhittleSearch: Interactive Image Search with Relative Attribute
+Feedback.</b>  Adriana Kovashka, Devi Parikh and Kristen
+Grauman. <i>International Journal of
+Computer Vision</i> (IJCV), April 2015. &nbsp;&nbsp;&nbsp; <a
+href="http://link.springer.com/article/10.1007/s11263-015-0814-0">[link]</a> </li>
+<br>
+<li><b>Discovering Attribute Shades of Meaning with the Crowd.</b>
+Adriana Kovashka and Kristen Grauman. <i>International Journal of
+Computer Vision</i> (IJCV), January 2015. &nbsp;&nbsp;&nbsp; <a
+href="http://link.springer.com/article/10.1007/s11263-014-0798-1">[link]</a> </li>
+<br>
+<p><b>2014</b></p>
+<br>
+<li><b>Interactive Image Search with Attributes.</b> Adriana
+Kovashka. PhD Thesis, 2014. <a
+href="PHD-AdrianaKovashka.pdf">[pdf]</a> </li>
+<br>
+<li><b>Discovering Shades of Attribute Meaning with the Crowd.</b> Adriana Kovashka and Kristen Grauman. To appear, <i>Third International Workshop on Parts and Attributes</i>, held in conjunction with the <i>European Conference on Computer Vision</i> (ECCV), September 2014. &nbsp;&nbsp;&nbsp; <a href="http://www.cs.utexas.edu/~adriana/kovashka_grauman_attribute_shades_final_pna14.pdf">[pdf]</a> </li>
+<br>
+<li><b>Discovering Shades of Attribute Meaning with the Crowd.</b> Adriana Kovashka and Kristen Grauman. Technical Report AI13-02, The University of Texas at Austin, November 5, 2013. &nbsp;&nbsp;&nbsp; <a href="http://www.cs.utexas.edu/~adriana/kovashka_grauman_attribute_shades_TR.pdf">[pdf]</a> </li>
+<br>
+<li><b>Interactive Image Search with Attribute-based Guidance and Personalization.</b> Adriana Kovashka and Kristen Grauman. <i>Workshop on Computer Vision and Human Computation</i>, held in conjunction with the <i>IEEE Conference on Computer Vision and Pattern Recognition</i> (CVPR), June 2014. &nbsp;&nbsp;&nbsp; <a href="http://ttic.uchicago.edu/~smaji/cvhc2014/kovashkainteractive2014.pdf">[pdf]</a> </li>
+<br> 
+<p><b>2013</b></p>
+<br>
+<li><b>Attribute Adaptation for Personalized Image Search.</b> Adriana Kovashka and Kristen Grauman. <i>Proceedings of the International Conference on Computer Vision</i> (ICCV), December 2013. &nbsp;&nbsp;&nbsp; <a href="http://www.cs.utexas.edu/~adriana/attribute-adapt-kovashka-iccv2013.pdf">[pdf]</a> &nbsp;&nbsp;&nbsp; <a href="http://www.cs.utexas.edu/~adriana/719-Kovashka-sup.pdf">[supplementary]</a> &nbsp;&nbsp;&nbsp; <a href="http://www.cs.utexas.edu/~adriana/kovashka_adapted_attributes_poster.pdf">[poster]</a> &nbsp;&nbsp;&nbsp; <a href="http://vision.cs.utexas.edu/projects/adapted_attributes/">[project page]</a> </li>
+<br>
+<li><b>Attribute Pivots for Guiding Relevance Feedback in Image Search.</b> Adriana Kovashka and Kristen Grauman. <i>Proceedings of the International Conference on Computer Vision</i> (ICCV), December 2013. &nbsp;&nbsp;&nbsp; <a href="http://www.cs.utexas.edu/~adriana/pivots-kovashka-iccv2013.pdf">[pdf]</a> &nbsp;&nbsp;&nbsp; <a href="http://www.cs.utexas.edu/~adriana/723-Kovashka-sup.pdf">[supplementary]</a> &nbsp;&nbsp;&nbsp; <a href="http://www.cs.utexas.edu/~adriana/kovashka_pivots_poster.pdf">[poster]</a> &nbsp;&nbsp;&nbsp; <a href="http://vision.cs.utexas.edu/projects/pivots/">[project page]</a> </li>
+<br>
+<p><b>2012</b></p>
+<br>
+<li><b>WhittleSearch: Image Search with Relative Attribute Feedback.</b> Adriana Kovashka, Devi Parikh and Kristen Grauman. <i>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</i> (CVPR), June 2012. &nbsp;&nbsp;&nbsp;<a href="http://www.cs.utexas.edu/%7Egrauman/papers/whittle-search-cvpr2012.pdf">[pdf]</a> &nbsp;&nbsp;&nbsp;<a href="http://www.cs.utexas.edu/%7Egrauman/papers/whittle-search-supp-cvpr2012.pdf">[supplementary]</a> &nbsp;&nbsp;&nbsp;<a href="http://www.cs.utexas.edu/%7Egrauman/papers/whittlesearch-poster-cvpr2012.pdf">[poster]</a> &nbsp;&nbsp;&nbsp;<a href="http://vision.cs.utexas.edu/whittlesearch/">[project page]</a>
+&nbsp;&nbsp;&nbsp; <a href="http://filebox.ece.vt.edu/~parikh/demos.htm#whittle_demo">[demo]</a> </li>
+<br>
+<li><b>Relative Attributes for Enhanced Human-Machine Communication (Invited paper).</b> Devi Parikh, Adriana Kovashka, Amar Parkash and Kristen Grauman. <i>AAAI Conference on Artificial Intelligence</i> (AAAI), July 2012. &nbsp;&nbsp;&nbsp;<a href="http://ttic.uchicago.edu/~dparikh/Publications/ParikhKovashkaParkashGrauman_AAAI_2012_relative_attributes.pdf">[pdf]</a> </li>
+<br>
+<p><b>2011</b></p>
+<br>
+<li><b>Actively Selecting Annotations Among Objects and Attributes.</b> Adriana Kovashka, Sudheendra Vijayanarasimhan and Kristen Grauman. <i>Proceedings of the International Conference on Computer Vision</i> (ICCV), November 2011. &nbsp;&nbsp;&nbsp;<a href="http://www.cs.utexas.edu/~grauman/papers/kovashka_iccv2011.pdf">[pdf]</a> &nbsp;&nbsp;&nbsp; <a href="http://vision.cs.utexas.edu/attributes_active/adriana_iccv11_poster.pdf">[poster]</a> &nbsp;&nbsp;&nbsp; <a href="http://vision.cs.utexas.edu/attributes_active/kovashka_1-46_video.wmv">[video]</a> &nbsp;&nbsp;&nbsp; <a href="http://vision.cs.utexas.edu/attributes_active">[project page]</a> </li>
+<br>
+<p><b>2010</b></p>
+<br>
+<li><b>Learning a Hierarchy of Discriminative Space-Time Neighborhood Features for Human Action Recognition.</b> Adriana Kovashka and Kristen Grauman. <i>Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition</i> (CVPR), June 2010.&nbsp;&nbsp;&nbsp;<a href="http://www.cs.utexas.edu/~adriana/kovashka_cvpr2010.pdf">[pdf]</a>&nbsp;&nbsp;&nbsp;<a href="http://www.cs.utexas.edu/~adriana/cvpr2010">[project page]</a>&nbsp;&nbsp;&nbsp;<a href="http://www.cs.utexas.edu/~adriana/kovashka_cvpr2010_poster.pdf">[poster]</a></li>
+<br>
+<li><b>Authorship Attribution Using Probabilistic Context-Free Grammars.</b> Sindhu Raghavan, Adriana Kovashka and Raymond Mooney. <i>Proceedings of the 48th Annual Meeting of the Association for Computational Linguistics</i> (ACL), Short Papers, July 2010.&nbsp;&nbsp;&nbsp;<a href="http://www.cs.utexas.edu/users/ml/papers/raghavan.acl10.pdf">[pdf]</a></li>
+<br>
+<li><b>Human and Machine Detection of Stylistic Similarity in Art.</b> Adriana Kovashka and Matthew Lease. <i>CrowdConf 2010</i>, October 2010.&nbsp;&nbsp;&nbsp;<a href="http://www.cs.utexas.edu/~adriana/kovashka-crowdconf10.pdf">[pdf]</a></li>
+
+<br><br>
+
+</div>
+
+<div id="footer">
+&nbsp;
+</div>
+
+</div>
+
+</body></html>

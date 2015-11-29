@@ -1,0 +1,196 @@
+<title>Architecture of DBMS</title>
+<h1>AN ARCHITECTURE FOR DATABASE SYSTEM</h1>
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/02">Click here for audio-text lecture and feed it to the speech agent</a></xs></center>
+<br>
+EXTERNAL LEVEL<br>
+  How data is viewed by an individual
+  user<br>
+<br>
+CONCEPTUAL LEVEL<br>
+  How data is viewed by a community
+  of users<br>
+<br>
+INTERNAL LEVEL<br>
+  How data is physically stored
+<br><IMG SRC="images/fig21.gif"><br>
+<hr>
+<h1>DATA MODELS AND SCHEMAS</h1>
+<br>
+<li> DATA MODEL<br>
+<br>
+     A data model is a set of concepts that
+     can be used to describe the structure
+     of the database: data types, relationships,
+     and constraints that should hold on the
+     data.<br>
+<br>
+     Most data models also include a set of
+     operations for specifying retrievals
+     and updates on the database.
+<br>
+<br>
+<li> DATABASE SCHEMA<br>
+<br>
+     A database schema is the description
+     of a database.<br>
+<br><IMG SRC="images/fig22.gif"><br>
+<hr>
+<h1>THE EXTERNAL LEVEL</h1>
+<li> Application programmer uses a
+     HOST LANGUAGE: COBOL, PL/1, C
+<br>
+<li> Embedded in the host language
+     is a DATA SUBLANGUAGE DSL<br>
+<br>
+     Example: SQL, dBASE<br>
+<br>
+<li> Data Sublanguage consists of:<br>
+      Data Definition Language DDL<br>
+      Data Manipulation Language DML<br>
+<br>
+<li> Data Definition Language
+     declares database objects<br>
+<br>
+<li> Data Manipulation Language
+     manipulates database objects<br>
+     e.g. retrievals and updates<br>
+<hr>
+<h1>THE CONCEPTUAL LEVEL</h1>
+<br>
+A representation of the entire information
+content of the database<br>
+<br>
+<li> The conceptual schema is a definition
+     of the view of the total database
+     content<br>
+<br>
+<li> Conceptual schema, in most cases, is
+     the union of external schemas<br>
+<br>
+<li> One can add: security and integrity
+     checks, semantic models and
+     data dictionary (see later)<br>
+<hr>
+<h1>THE INTERNAL LEVEL</h1>
+<li> The internal view is a low-level
+     representation of the entire
+     database<br>
+<br>
+<li> Internal record, or stored
+     record, is built upon
+     physical records, or
+     pages and blocks<br>
+<br>
+<br><IMG SRC="images/fig23.gif"><br>
+<br>
+<br>
+MAPPINGS<br>
+<br>
+<li> External/Conceptual<br>
+<br>
+<li> Conceptual/Internal<br>
+<hr>
+<h1>THE DATABASE ADMINISTRATOR</h1>
+<li> Defines conceptual schema<br>
+<br>
+<li> Defines internal schema<br>
+<br>
+<li> Communicates with users<br>
+<br>
+<li> Defines security and integrity
+     checks<br>
+<br>
+<li> Defines backup and
+     recovery procedures<br>
+<br>
+<li> Monitors performance and
+     decide when to reorganize
+     the database<br>
+<hr>
+<h1>THE DATABASE MANAGEMENT SYSTEM</h1>
+1. A user issues an access request<br>
+<br>
+2. DBMS interpretes the request<br>
+<br>
+3. DBMS performs external/conceptual
+   and conceptual/interal mappings<br>
+<br>
+4. DBMS executes the necessary
+   operations on stored database<br>
+<br>
+<br>
+THUS DBMS MUST SUPPORT<br>
+<br>
+<li> data definition<br>
+<br>
+<li> data manipulation<br>
+<br>
+<li> routine and unplanned requests<br>
+<br>
+<li> data security and integrity<br>
+<br>
+<li> data recovery and concurrency<br>
+<br>
+<li> data dictionary<br>
+<br>
+<li> performance tuning<br>
+<hr>
+<h1>DISTRIBUTED DATABASE SYSTEMS</h1>
+<li> Databases and Data Communications
+     (DB/DC) are coming together<br>
+<br>
+<li> Frontend vs. Backend<br>
+<br><IMG SRC="images/fig24.gif"><br>
+<li> Frontend vs. Backend running on different machines<br>
+<br><IMG SRC="images/fig25.gif"><br>
+<li> One backend with multiple frontends<br>
+<br><IMG SRC="images/fig26.gif"><br>
+<li> Each machine is both backend and frontend<br>
+<br><IMG SRC="images/fig27.gif"><br>
+<br>
+<li> Client vs. Server<br>
+<br>
+<li> Distributed systems<br>
+      Homogeneous<br>
+      Heterogeneous<br>
+<br>
+<li> Distributed Database System
+     has homogeneous DBMSs<br>
+<br>
+<li> Distributed Multiple Database
+     System has heterogeneous DBMSs<br>
+<br>
+<li> Federated System is another
+     name for distributed multiple
+     database system<br>
+<br>
+<li> INTEROPERABILITY<br>
+     A user can issue access request
+     and obtain consistent answer on
+     any of the federated machines<br>
+<hr>
+<h1>DATA DICTIONARY</h1>
+<li> Data dictionary is a software utility
+     that catalogs an organization's
+     data resources: what data exist, where
+     they originate, who uses them, their
+     format, etc.<br>
+<br>
+<li> Data dictionary not only tells
+     where the data are located in
+     the database, but also which
+     application programs process
+     the data, and closely coordinates
+     with the DBMS in controlling
+     access to the database.<br>
+<br>
+<li> Data dictionary contains:<br>
+     all descriptive information needed
+     in the database environment, AND
+     cross-references:<br>
+       program <-> item<br>
+       program <-> record<br>
+       program <-> file<br>
+       organization <-> system<br>
+       file <-> system<br>
+       system <-> schedule<br>

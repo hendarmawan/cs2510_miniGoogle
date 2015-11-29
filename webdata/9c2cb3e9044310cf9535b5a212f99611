@@ -1,0 +1,9 @@
+
+<html>
+<head>
+<title>HIPR Save Screen</title>
+</head>
+<body>
+//Automatically generated save file.<BR>//<BR>//<BR>//. . . . . . . . .<BLINK><FONT COLOR=ff0000>SAVE AS PLAIN TEXT</FONT></BLINK>. . . . . . . . .<BR>//<BR>//<BR>Resize 500 500 END<BR>ImageLoad_4 199.0 4.0 trk1.gif END<BR>ImageDisplay_6 271.0 264.0 1.0 0.0 END<BR>ImageDisplay_9 114.0 203.0 1.0 0.0 END<BR>RobertsCross_2 105.0 94.0  END<BR>ImageDisplay_10 63.0 4.0 1.0 0.0 END<BR>Thresholding_3 263.0 177.0 221 60 16952 END<BR>Link ImageLoad_4 OUT1 RobertsCross_2 IN1 END<BR>Link RobertsCross_2 OUT1 ImageDisplay_9 IN1 END<BR>Link ImageLoad_4 OUT1 ImageDisplay_10 IN1 END<BR>Link RobertsCross_2 OUT1 Thresholding_3 IN1 END<BR>Link Thresholding_3 OUT1 ImageDisplay_6 IN1 END<BR>EOF<BR>
+</body>
+</html>

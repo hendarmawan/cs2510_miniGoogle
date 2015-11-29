@@ -1,0 +1,719 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_fifo_index</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_fifo_index
+</h1>    
+<a name="wp3677515"> </a><p class="pBody" >
+Ensures that a FIFO-type structure never overflows or underflows. This checker can be configured to support multiple pushes (FIFO writes) and pops (FIFO reads) during the same clock cycle.  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3677530"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkersa.gif" height="106" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3677532"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3771761"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3771762"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">depth </em>
+</div>    
+<a name="wp3771763"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">push_width </em>
+</div>    
+<a name="wp3771764"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">pop_width </em>
+</div>    
+<a name="wp3771765"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3771766"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3771767"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level </em>
+</div>    
+<a name="wp3771768"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">simultaneous_push_pop</em>
+</div>    
+</td>
+    <td><a name="wp3678230"> </a><div class="pCellBodyLeft" >
+<span style="font-weight: bold" class="cStrong">Class: </span>
+</div>    
+<a name="wp3771769"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">n</em>-cycle assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3677533"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3677534"> </a><pre class="pCode1" >assert_fifo_index  
+</pre>    <a name="wp3771770"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level</em>, <em class="cEmphasis">depth</em>, <em class="cEmphasis">push_width</em>, <em class="cEmphasis">pop_width</em>, <em class="cEmphasis">property_type</em>,<em class="cEmphasis">  
+</em></pre>    <a name="wp3771771"> </a><pre class="pCode1" ><em class="cEmphasis">		msg</em>,<em class="cEmphasis"> coverage_level</em>,<em class="cEmphasis"> simultaneous_push_pop </em>)] 
+</pre>    <a name="wp3771772"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, push, pop </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3677584"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3677537"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677539"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3677541"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677543"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677545"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">depth</em>
+</div>    
+</td>
+    <td><a name="wp3677547"> </a><div class="pCellBodyLeft" >
+Maximum number of elements in the FIFO or queue structure. This parameter must be &gt; 0. Default: 1.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677549"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677551"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">push_width</em>
+</div>    
+</td>
+    <td><a name="wp3677553"> </a><div class="pCellBodyLeft" >
+Width of the <em class="cEmphasis">push</em> argument. Default: 1. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677555"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677557"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">pop_width</em>
+</div>    
+</td>
+    <td><a name="wp3677559"> </a><div class="pCellBodyLeft" >
+Width of the <em class="cEmphasis">pop</em> argument. Default: 1. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677561"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677563"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3677565"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677567"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677569"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3677571"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677573"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677575"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3677577"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677579"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677581"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">simultaneous_push_pop</em>
+</div>    
+</td>
+    <td><a name="wp3677583"> </a><div class="pCellBodyLeft" >
+Whether or not to allow simultaneous push/pop operations in the same clock cycle. When set to 0, if push and pop operations occur in the same cycle, the assertion fails. Default: 1 (simultaneous push/pop operations are allowed).
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3677618"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3677587"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677589"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3677591"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677593"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677595"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677597"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3677599"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677601"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677603"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677605"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">push</em>
+</div>    
+</td>
+    <td><a name="wp3677607"> </a><div class="pCellBodyLeft" >
+[<em class="cEmphasis">push_width</em> - 1: 0]
+</div>    
+</td>
+    <td><a name="wp3677609"> </a><div class="pCellBodyLeft" >
+Expression that indicates the number of push operations that will occur during the current cycle.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677611"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677613"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">pop</em>
+</div>    
+</td>
+    <td><a name="wp3677615"> </a><div class="pCellBodyLeft" >
+[<em class="cEmphasis">pop_width</em> - 1: 0]
+</div>    
+</td>
+    <td><a name="wp3677617"> </a><div class="pCellBodyLeft" >
+Expression that indicates the number of pop operations that will occur during the current cycle.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3677619"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3677620"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_fifo_index</code> assertion checker tracks the numbers of pushes (writes) and pops (reads) that occur for a FIFO or queue memory structure. This checker does permit simultaneous pushes/pops on the queue within the same clock cycle. It ensures the FIFO never overflows (i.e., too many pushes occur without enough pops) and never underflows (i.e., too many pops occur without enough pushes). This checker is more complex than the <code class="cCodeBody">assert_no_overflow</code> and <code class="cCodeBody">assert_no_underflow</code> checkers, which check only the boundary conditions (overflow and underflow respectively).
+</p>    
+<a name="wp3677640"> </a><h4 class="pHead4" >
+Assertion Checks  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3677623"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677625"> </a><div class="pCellBodyLeft" >
+OVERLOW
+</div>    
+</td>
+    <td><a name="wp3677627"> </a><div class="pCellBodyLeft" >
+Push operation overflowed the FIFO.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677629"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677631"> </a><div class="pCellBodyLeft" >
+UNDERFLOW
+</div>    
+</td>
+    <td><a name="wp3677633"> </a><div class="pCellBodyLeft" >
+Pop operation underflowed the FIFO.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677635"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677637"> </a><div class="pCellBodyLeft" >
+ILLEGAL PUSH AND POP
+</div>    
+</td>
+    <td><a name="wp3677639"> </a><div class="pCellBodyLeft" >
+Push and pop operations performed in the same clock cycle, but the simultaneous_push_pop parameter is set to 0.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3677672"> </a><h4 class="pHead4" >
+Cover Points  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3677643"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677645"> </a><div class="pCellBodyLeft" >
+fifo_push
+</div>    
+</td>
+    <td><a name="wp3677647"> </a><div class="pCellBodyLeft" >
+Push operation.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677649"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677651"> </a><div class="pCellBodyLeft" >
+fifo_pop
+</div>    
+</td>
+    <td><a name="wp3677653"> </a><div class="pCellBodyLeft" >
+Pop operation.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677655"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677657"> </a><div class="pCellBodyLeft" >
+fifo_full
+</div>    
+</td>
+    <td><a name="wp3677659"> </a><div class="pCellBodyLeft" >
+FIFO full.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677661"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677663"> </a><div class="pCellBodyLeft" >
+fifo_empty
+</div>    
+</td>
+    <td><a name="wp3677665"> </a><div class="pCellBodyLeft" >
+FIFO empty.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677667"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677669"> </a><div class="pCellBodyLeft" >
+fifo_simultaneous_push_pop
+</div>    
+</td>
+    <td><a name="wp3677671"> </a><div class="pCellBodyLeft" >
+Push and pop operations in the same clock cycle.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3677680"> </a><h4 class="pHead4" >
+Errors  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3677675"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677677"> </a><div class="pCellBodyLeft" >
+Depth parameter value must be &gt; 0
+</div>    
+</td>
+    <td><a name="wp3677679"> </a><div class="pCellBodyLeft" >
+Depth parameter is set to 0.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3677683"> </a><h3 class="pHead3" >
+Notes
+</h3>    
+
+<a name="wp3677684"> </a><p class="pNumber" >
+ 1.	The checker checks the values of the <span style="font-style: oblique" class="cCodeBodyEmphasis">push</span> and <span style="font-style: oblique" class="cCodeBodyEmphasis">pop</span> expressions. By default, (i.e., <code class="cCodeBody">simultaneous_push_pop</code> is 1), &#8220;simultaneous&#8221; push/pop operations are allowed. In this case, the checker assumes the design properly handles simultaneous push/pop operations, so it only ensures that the FIFO buffer index at the <em class="cEmphasis">end of the cycle</em> has not overflowed or underflowed. The assertion cannot ensure the FIFO buffer index does not overflow between a push and pop performed in the same cycle.  Similarly, the assertion cannot ensure the FIFO buffer index does not underflow between a pop and push performed in the same cycle.
+</p>    
+<a name="wp3677685"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3677686"> </a><pre class="pCode2" >assert_no_overflow, assert_no_underflow
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3760598"> </a><h3 class="pHead3" >
+Examples
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3760632"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3760601"> </a><div class="pCellBodyLeft" >
+assert_fifo_index #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3760609"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3760611"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771773"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3771774"> </a><div class="pCellBodyLeft" >
+1, 
+</div>    
+<a name="wp3771775"> </a><div class="pCellBodyLeft" >
+1, 
+</div>    
+<a name="wp3771776"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771777"> </a><div class="pCellBodyLeft" >
+&#8220;Error&#8221;, 
+</div>    
+<a name="wp3771778"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL, 
+</div>    
+<a name="wp3771779"> </a><div class="pCellBodyLeft" >
+1)
+</div>    
+</td>
+    <td><a name="wp3760615"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771780"> </a><div class="pCellBodyLeft" >
+// depth 
+</div>    
+<a name="wp3771781"> </a><div class="pCellBodyLeft" >
+// push_width 
+</div>    
+<a name="wp3771782"> </a><div class="pCellBodyLeft" >
+// pop_width 
+</div>    
+<a name="wp3771783"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771784"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771785"> </a><div class="pCellBodyLeft" >
+// coverage_level 
+</div>    
+<a name="wp3771786"> </a><div class="pCellBodyLeft" >
+// simultaneous_push_pop
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3760617"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3760619"> </a><div class="pCellBodyLeft" >
+no_over_underflow (
+</div>    
+</td>
+    <td><a name="wp3760623"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3760625"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3760627"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3760629"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771787"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3771788"> </a><div class="pCellBodyLeft" >
+push,  
+</div>    
+<a name="wp3771789"> </a><div class="pCellBodyLeft" >
+pop);
+</div>    
+</td>
+    <td><a name="wp3760631"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771790"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771791"> </a><div class="pCellBodyLeft" >
+// push 
+</div>    
+<a name="wp3771792"> </a><div class="pCellBodyLeft" >
+// pop
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3760667"> </a><p class="pBody" >
+Ensures that an 8-element FIFO never overflows or underflows. Only single pushes and pops can occur in a clock cycle (<span style="font-style: oblique" class="cCodeBodyEmphasis">push_width</span> and <span style="font-style: oblique" class="cCodeBodyEmphasis">pop_width </span>values are 1). A push and pop operation in the same clock cycle is allowed (value of <span style="font-style: oblique" class="cCodeBodyEmphasis">simultaneous_push_pop</span> is 1).
+</p>    
+<a name="wp3764163"> </a><p class="pBody" >
+
+</p>    
+<a name="wp3764164"> </a><p class="pBody" >
+  </p>    <div align="left"><img src="images/ovl_checkersa3.gif" height="109" width="403" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3677804"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3677773"> </a><div class="pCellBodyLeft" >
+assert_fifo_index #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677781"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3677783"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771793"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3771794"> </a><div class="pCellBodyLeft" >
+1, 
+</div>    
+<a name="wp3771795"> </a><div class="pCellBodyLeft" >
+1, 
+</div>    
+<a name="wp3771796"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771797"> </a><div class="pCellBodyLeft" >
+&#8220;violation&#8221;, 
+</div>    
+<a name="wp3771798"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL 
+</div>    
+<a name="wp3771799"> </a><div class="pCellBodyLeft" >
+0)
+</div>    
+</td>
+    <td><a name="wp3677787"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771800"> </a><div class="pCellBodyLeft" >
+// depth 
+</div>    
+<a name="wp3771801"> </a><div class="pCellBodyLeft" >
+// push_width 
+</div>    
+<a name="wp3771802"> </a><div class="pCellBodyLeft" >
+// pop_width 
+</div>    
+<a name="wp3771803"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771804"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771805"> </a><div class="pCellBodyLeft" >
+// coverage_level 
+</div>    
+<a name="wp3771806"> </a><div class="pCellBodyLeft" >
+// simultaneous_push_pop
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677789"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3677791"> </a><div class="pCellBodyLeft" >
+no_over_underflow (
+</div>    
+</td>
+    <td><a name="wp3677795"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3677797"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677799"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3677801"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771807"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3771808"> </a><div class="pCellBodyLeft" >
+push,  
+</div>    
+<a name="wp3771809"> </a><div class="pCellBodyLeft" >
+pop);
+</div>    
+</td>
+    <td><a name="wp3677803"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771810"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771811"> </a><div class="pCellBodyLeft" >
+// push 
+</div>    
+<a name="wp3771812"> </a><div class="pCellBodyLeft" >
+// pop
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3677805"> </a><p class="pBody" >
+Ensures that an 8-element FIFO never overflows or underflows and that in no cycle do both push and pop operations occur.  </p>    <div align="left"><img src="images/ovl_checkersa4.gif" height="110" width="451" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3677508"> </a><p class="pBody" >
+
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

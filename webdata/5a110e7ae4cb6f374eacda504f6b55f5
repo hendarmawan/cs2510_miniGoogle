@@ -1,0 +1,62 @@
+<title>Multimedia Software Engineering</title>
+<a href="features.html">  
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+</A> 
+<a href="server.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+</head>
+<h1 align="center"> 
+What's so great about Web Matrix?</h1> 
+<p align="left"> 
+&nbsp;</p> 
+<blockquote>
+<ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">It is a free, 
+  lightweight, easy-to-use tool for developing ASP.NET Web applications.</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Makes building ASP 
+  applications significantly easier than other tools available</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">If you've never 
+  tried ASP.NET, then Web Matrix is a good place to start</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">It generates HTML 
+  for you<ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">A couple of 
+  drag-and-drop operations can create a simple but functional Web application</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">You can either 
+  directly edit the HTML code or make changes in the Design view</li>
+</ul>
+  </li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Contains various 
+  &quot;views&quot; of an ASP.NET Web page 
+<ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">both the source 
+  code and HTML</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">just the HTML 
+  </li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">just the source 
+  code</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">WYSIWYG Designer<br>
+  <span style="font-size: 10.0pt; font-family: Arial"><![if !supportLineBreakNewLine]>
+  <br>
+&nbsp;<![endif]></span></li>
+</ul>
+  </li>
+</ul>
+</blockquote>
+
+
+<body>
+
+
+</body>
+
+</html>

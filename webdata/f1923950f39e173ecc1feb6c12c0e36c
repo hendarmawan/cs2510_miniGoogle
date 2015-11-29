@@ -1,0 +1,80 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><HEAD><TITLE>Querying Multiple Data</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<meta name="ProgId" content="FrontPage.Editor.Document">
+</HEAD>
+<BODY> 
+ <font face="Arial Unicode MS"> 
+ <A href="10.htm" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+ <A href="12.htm">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+ </font> 
+<center>
+<p style="line-height: 150%"><b><font face="Arial"><font size="5">An Example: An 
+Authentication Component</font> </font>
+</b></p>
+</center>
+ <p style="line-height: 150%"><font color="#0000FF" face="Arial">
+ componentMy.java: downloadable at the last page.</font></p>
+
+ <p style="line-height: 150%"><font face="Arial"><font color="#0000FF">/*<br>
+ A Simple Example--Authentication Component.<br>
+ To Create a Component which works with the InterfaceServer,<br>
+ the interface ComponentBase is required to be implemented.<br>
+ <br>
+ interface ComponentBase is described in InterfaceServer.java.<br>
+ <br>
+ */<br>
+ </font><br>
+ import java.io.*;<br>
+ <br>
+ public class componentMy implements ComponentBase{<br>
+ <br>
+ private final int init=0;<br>
+ private final int success=1;<br>
+ private final int failure=2;<br>
+ <br>
+ <br>
+ private int state;<br>
+ <br>
+ public componentMy(){<br>
+&nbsp;&nbsp;&nbsp; state=init;<br>
+ }<br>
+ <br>
+ /* just a trivial example */<br>
+ <br>
+ private void doAuthentication(String first,String last,String passwd){<br>
+ <br>
+ if (first.equals(&quot;xin&quot;)&amp;&amp;last.equals(&quot;li&quot;)&amp;&amp;passwd.equals(&quot;xl123&quot;))<br>
+&nbsp;&nbsp;&nbsp; state=success;<br>
+ else <br>
+&nbsp;&nbsp;&nbsp; state=failure;<br>
+ }<br>
+ <br>
+ <b>/* function in interface ComponentBase */<br>
+ <br>
+ public KeyValueList processMsg(KeyValueList kvList){<br>
+&nbsp;&nbsp;&nbsp; int MsgID=Integer.parseInt(kvList.getValue(&quot;MsgID&quot;));<br>
+&nbsp;&nbsp;&nbsp; if (MsgID!=0) return null;<br>
+&nbsp;&nbsp;&nbsp; 
+ doAuthentication(kvList.getValue(&quot;FirstName&quot;),kvList.getValue(&quot;LastName&quot;),kvList.getValue(&quot;passwd&quot;));<br>
+&nbsp;&nbsp;&nbsp; KeyValueList kvResult = new KeyValueList();<br>
+&nbsp;&nbsp;&nbsp; kvResult.addPair(&quot;MsgID&quot;,&quot;1&quot;);<br>
+&nbsp;&nbsp;&nbsp; kvResult.addPair(&quot;Description&quot;,&quot;Authentication Result&quot;);<br>
+ <br>
+&nbsp;&nbsp; switch (state) {<br>
+&nbsp;&nbsp; case success: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kvResult.addPair(&quot;Authentication&quot;,&quot;success&quot;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; break;<br>
+&nbsp;&nbsp; }<br>
+&nbsp; case failure: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp; kvResult.addPair(&quot;Authentication&quot;,&quot;failure&quot;); <br>
+&nbsp;&nbsp;&nbsp;&nbsp; break;<br>
+&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; } <br>
+&nbsp; return kvResult; <br>
+ }</b></font></p>
+
+ <p style="line-height: 150%"><font face="Arial">}</font></p>
+
+</BODY>
+ </html>

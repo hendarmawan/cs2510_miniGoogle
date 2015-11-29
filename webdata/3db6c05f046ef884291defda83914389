@@ -1,0 +1,331 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<HTML>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<base target="_self">
+<link rel=File-List href="Creating_TB_files/filelist.xml">
+<link rel=Edit-Time-Data href="Creating_TB_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Unit1g : Testing the ALU</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>don</o:Author>
+  <o:LastAuthor>Sam Dickerson</o:LastAuthor>
+  <o:Revision>12</o:Revision>
+  <o:TotalTime>414</o:TotalTime>
+  <o:Created>2005-09-15T20:34:00Z</o:Created>
+  <o:LastSaved>2005-09-16T19:12:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>310</o:Words>
+  <o:Characters>1772</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>14</o:Lines>
+  <o:Paragraphs>4</o:Paragraphs>
+  <o:CharactersWithSpaces>2078</o:CharactersWithSpaces>
+  <o:Version>11.6408</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1189293948;
+	mso-list-template-ids:-521388532;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="9218"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white background="Generator_files/Unitbkg.jpg" lang=EN-US link=blue
+vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h3 align=center style='text-align:center'>Creating the ALU Test Bench</h3>
+
+<h3><span style='font-size:12.0pt'>Here is an easy way to understand what we
+mean when we say to create a test bench. Think about a new design with two
+components, one component is the design that you want to test. The second component
+is a mirror image to the test component in which all of the input ports have
+changed to output ports and all of the outputs have changed to inputs.<span
+style='mso-spacerun:yes'>  </span>The two components are connected through
+these mirrored ports. Your task in designing the test bench is to make the
+mirrored component generate and verify as many test cases as you can simulate,
+until you are confident that you have verified that the design is working
+according to the specifications.<span style='mso-spacerun:yes'>  </span><o:p></o:p></span></h3>
+
+<p>In <b>HDL Designer</b>, you can use the <b>Design Manager</b> to
+automatically generate a skeleton for your test-bench. This will create a new <i>Block
+Diagram</i> with an instance of the design unit to be tested and a sub-block
+with ports defined to drive and examine the design units inputs and outputs. </p>
+
+<p style='margin-left:.5in;text-indent:-.25in;mso-list:l0 level1 lfo2;
+tab-stops:list .5in'><![if !supportLists]><span style='font-size:10.0pt;
+mso-bidi-font-size:12.0pt;font-family:Symbol;mso-fareast-font-family:Symbol;
+mso-bidi-font-family:Symbol'><span style='mso-list:Ignore'>·<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span></span><![endif]>To create our ALU Test Bench, first open the <b>Design
+Manager</b> window and select the <i>ALU</i> component from the <i>ALU</i>
+library. When you have highlighted this component, go to the <i>File/New</i>
+menu and <span class=GramE>select <i><span
+style='mso-spacerun:yes'> </span>Test</i></span><i> Bench</i>. </p>
+
+<p align=center style='margin-left:.25in;text-align:center'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:208.5pt;
+ height:196.5pt'>
+ <v:imagedata src="Creating_TB_files/image001.jpg" o:title="testbench1"/>
+</v:shape><![endif]--><![if !vml]><img width=278 height=262
+src="Creating_TB_files/image007.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p align=center style='margin-left:.25in;text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p align=center style='margin-left:.25in;text-align:center'>The <i>Create Test
+Bench</i> <span class=GramE>window<span style='mso-spacerun:yes'>  </span>will</span>
+appear:</p>
+
+<p align=center style='margin-left:.25in;text-align:center'><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:207.75pt;height:224.25pt'>
+ <v:imagedata src="Creating_TB_files/image003.jpg" o:title="testbench2"/>
+</v:shape><![endif]--><![if !vml]><img width=277 height=299
+src="Creating_TB_files/image003.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:.5in;text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p style='margin-left:.5in'>After clicking <i>OK</i>, the <b>Design Browser</b>
+window will contain a new component called <i>ALU_tb</i> with a Block Diagram
+view alread created. Open <i>ALU_tb</i> to see a design similar to Figure 2. </p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:.5in;text-align:center'><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:667.5pt;height:444pt'>
+ <v:imagedata src="Creating_TB_files/image005.gif" o:title="image005"/>
+</v:shape><![endif]--><![if !vml]><img width=890 height=592
+src="Creating_TB_files/image005.gif" v:shapes="_x0000_i1027"><![endif]></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 2</h4>
+
+<p style='margin-left:.5in'>Resize and rearrange the two blocks so that it is
+more readable, as in Figure 3. </p>
+
+<p class=MsoNormal align=center style='mso-margin-top-alt:auto;mso-margin-bottom-alt:
+auto;margin-left:.5in;text-align:center'><!--[if gte vml 1]><v:shape id="_x0000_i1028"
+ type="#_x0000_t75" style='width:593.25pt;height:360.75pt'>
+ <v:imagedata src="Creating_TB_files/image006.gif" o:title="image007"/>
+</v:shape><![endif]--><![if !vml]><img width=791 height=481
+src="Creating_TB_files/image006.gif" v:shapes="_x0000_i1028"><![endif]></p>
+
+<h4 align=center style='margin-left:.5in;text-align:center'>Figure 3</h4>
+
+<p style='margin-left:.5in'>Notice that the signals that are output from your
+design component (in green) have the same name as those which are input into
+the sub-block called <i>ALU_tester</i> and vice-versa. We have not seen this
+before, but another feature of the <i>Block Diagram Editor</i> is that signals
+of the same name are the same signal, even if they are not visually connected
+together.</p>
+
+<p style='margin-left:.5in'>Now, let’s being to design the ALU_tester block,
+descend into this block by clicking on it and selecting a block diagram view
+from <span class=GramE>the create</span> new view panel. </p>
+
+<p align=center style='margin-left:.5in;text-align:center'><a
+href="ALU_Tester.html">Click here to proceed.</a></p>
+
+</div>
+
+</body>
+
+</html>

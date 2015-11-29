@@ -1,0 +1,39 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="index.htm"><img src="previous.gif" align="left" alt="Overview of Presentation"></a>
+<a href="overview.htm"><img src="next.gif" align="right" alt="Query-by-Example in Relational Database Management System"></a>
+
+<br><br>
+<center>
+<table>
+	<tr>
+		<td align="center">
+			<h1 align="center">Comparison of Google Hits with Previous Two Topics</h1>
+			<hr>			
+		
+			<h3><u>Goole Hits for Image Tagging</u></h3>
+			<img border="0" src="images/google-hits-01.JPG">
+			
+			<hr>
+			
+			<h3><u>Google Hits for Social Network</u></h3>
+			<img border="0" src="images/google-hits-02.JPG">
+			
+			<hr>
+			
+			<h3><u>Google Hits for Query-by-Example</u></h3>
+			<img src="images/google-hits-03.JPG">
+			
+			<hr>
+			What does this mean? Topic isn't as popular? or I'm just not searching it right?
+		</td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

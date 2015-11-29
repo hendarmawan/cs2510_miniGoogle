@@ -1,0 +1,44 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Microsoft .NET Presentation</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="100%">
+    <tr>
+        <td valign="top"><a href="slide-22.htm"><img
+        src="previous.gif" border="0" width="26" height="26"></a></td>
+        <td align="center" valign="top"><h1>&nbsp; New Business
+        Opportunities</h1>
+        </td>
+        <td align="right" valign="top"><a href="slide-24.htm"><img
+        src="next.gif" border="0" width="26" height="26"></a></td>
+    </tr>
+</table>
+
+<h2>Assembly versioning</h2>
+
+<p><font size="4">The strides taken by .NET against DLL Hell can
+not be underestimated. By providing a means to ensure version
+compatibility between shared libraries and even within one's own
+upgrades, businesses have more freedom to upgrade their products
+and provide them to users for immediate download without having
+to spend the same degree of worry regarding dependencies that
+they do now.</font></p>
+
+<p><font size="4">Will .NET finally shut the gates to DLL Hell
+once and for all? Versioning is a complex problem - only time and
+experience will answer that. But the moves it has made help, in
+addition to its web service concept, to make possible the
+following software model: &quot;software as a service&quot;.</font></p>
+
+<hr>
+
+<p><font color="#000000"><em>More musings on the aforementioned</em></font></p>
+</body>
+</html>

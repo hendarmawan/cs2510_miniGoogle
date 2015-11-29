@@ -1,0 +1,256 @@
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="GENERATOR" CONTENT="Notepad/Robert Hofmann">
+<BASE TARGET="1502main">
+<TITLE>Unit1b : Creating the Logical Sub-Block</TITLE>
+
+<BODY BACKGROUND="../Unitbkg.jpg">
+<H2><CENTER>Unit1b</CENTER></H2>
+<H2><CENTER>Creating the Logical Sub-Block</CENTER></H2>
+
+<UL>
+<LI>
+  <P>
+    The first step in defining the <I>Logical</I> sub-block is
+    to create a new view for it.  This will create a new hierarchichal
+    level of design files and allow you to define the behavior of
+    this sub-block with one of the standard <B>FPGA Advantage</B> view:
+    block-diagram, flowchart, state machine, truth table, or
+    VHDL architecture.  
+  </P>
+  <P>
+    For the <I>Logical</I> sub-block we will be creating a new 
+    block-diagram view.  This is done by positioning the pointer 
+    over the blue rectangle representing the block and right-clicking 
+    to bring up the pop-up menu.  From this menu, at the top, 
+    highlight the <I>Open View</I> item and from the sub-menu 
+    select <I>New View</I>.  A window will appear asking you what 
+    type of view you want to create.  Select block diagram view 
+    from the list and hit <I>OK</I>.
+  </P>
+  <P>
+    A new design window should appear resembling Figure 1.  Notice
+    that there are already input and output ports and busses placed
+    on the design.  This is because the design unit symbol, the blue
+    rectangle on the parent design, already has signals connected to
+    it.  These signals connected to the outside of the symbol are 
+    automatically reflected by ports inside the design unit.
+  </P>
+</LI>
+
+<P>
+  <CENTER>
+    <IMG SRC="./Logical1.jpg">
+    <H4>Figure 1</H4>
+  </CENTER>
+</P>
+
+<LI>
+  <P>
+    The logical unit will perform one of four operations:
+    <I>AND</I>, <I>OR</I>, <I>XOR</I>, or <I>NOR</I>.  Each of 
+    these operations will be performed in parallel on the inputs
+    and the output will be selected by a 64-bit wide 4-1 mux 
+    controlled by the ALUOp(1 downto 0) signals.  The encodings
+    for the operations are in this table:
+  </P>
+</LI>
+
+<CENTER>
+<TABLE BORDER=1>
+  <TR>
+    <TD>
+      <CENTER><B>Operation<B></CENTER>
+    </TD>
+    <TD>
+      <CENTER><B>ALUOp(1)<B></CENTER>
+    </TD>
+    <TD>
+      <CENTER><B>ALUOp(0)</CENTER>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <CENTER>AND</CENTER>
+    </TD>
+    <TD>
+      <CENTER>0</CENTER>
+    </TD>
+    <TD>
+      <CENTER>0</CENTER>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <CENTER>OR</CENTER>
+    </TD>
+    <TD>
+      <CENTER>0</CENTER>
+    </TD>
+    <TD>
+      <CENTER>1</CENTER>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <CENTER>XOR</CENTER>
+    </TD>
+    <TD>
+      <CENTER>1</CENTER>
+    </TD>
+    <TD>
+      <CENTER>0</CENTER>
+    </TD>
+  </TR>
+  <TR>
+    <TD>
+      <CENTER>NOR</CENTER>
+    </TD>
+    <TD>
+      <CENTER>1</CENTER>
+    </TD>
+    <TD>
+      <CENTER>1</CENTER>
+    </TD>
+  </TR>
+</TABLE>
+</CENTER>
+
+<LI>
+  <P>
+    There are many different ways in which this functionality could
+    be implemented.  What we will be doing is using <I>embedded 
+    blocks</I> to place fragments of VHDL code into the block diagram
+    which will perform the important logical operations.  
+  </P>
+  <P>
+    First, select the <I>embedded block</I> tool from the toolbar
+    by pressing the <IMG SRC="./EmbeddedButton.jpg"> button.  Then
+    position the pointer over the block diagram between the input and
+    output ports and left-click to place an <I>embedded block</I>.  
+    The <I>embedded block</I> appears as a yellow rectangle.  Place
+    five embedded blocks on the diagram in the same manner that you
+    placed the sub-blocks in the top level block diagram.  Label
+    the four columned blocks, from top to bottom: <I>ANDBlock</I>,
+    <I>ORBlock</I>, <I>XORBlock</I>, and <I>NORBlock</I> and the 
+    other embedded block <I>Mux4Bus64</I>.  Your design area should now
+    look like Figure 2.
+  </P>
+</LI>
+
+<P>
+  <CENTER>
+    <IMG SRC="./Logical2.jpg">
+    <H4>Figure 2</H4>
+  </CENTER>
+</P>
+
+<LI>
+  <P>
+    For cosmetic purposes, it would be nice to have our ANDBlock represented
+    by a symbol which resembles an AND gate.  <B>FPGA Advantage</B> has a small number of 
+    alternative shapes for blocks.  To change the shape, right-click over the
+    <I>ANDBlock</I> block.  At the bottom of the pop-up menu will be an option
+    called <I>Object Properties</I>.  Select this option.  From the window which appears,
+    clock the <I>Change Shape</I> button and select the desired shape from the menu
+    that appears.  Your block diagram should now look like
+    Figure 3.
+  </P>
+</LI>
+
+<P>
+  <CENTER>
+    <IMG SRC="./Logical3.jpg">
+    <H4>Figure 3</H4>
+  </CENTER>
+</P>
+
+<LI>
+  <P>
+    Embedded blocks will place fragments of VHDL code at the top level of the
+    architecture description for the current block.  Generally we will be using
+    them to place what are called <I>Concurrent Commands</I> which will perform
+    simple operations on data.  Since the embedded block VHDL code will be at the
+    top level architecture for the view, all of the signals in that view are 
+    automatically visible to the embedded block and it is not necessary to
+    actually connect signals to them.  
+  </P>
+  <P>
+    For ease of reading, we will connect the input and output signals
+    to the blocks.  So, connect the A and B busses to the left side of 
+    our <I>ANDBlock</I>.  You may also wish to resize the block to make
+    it a little bit smaller.  Then create a new bus from the output (right) 
+    side of the <I>ANDBlock</I> called <I>ANDR</I> and connect it to the 
+    input side of the <I>Mux4Bus32</I> block.
+  </P>
+  <P>
+    Finally, we must tell the embedded block what to do.  The VHDL code which
+    will Bitwise-AND two std_logic_vectors of the same size together is:
+    "ANDR <= A AND B;".  To enter this code for the block, right-click over
+    the embedded block and open a new view.  The new view will be restricted to 
+    a type called <I>Text</I>.  An outlined box will appear anchored to the 
+    <I>ANDBlock</I> embedded block.  Highlight the text in this box and 
+    replace it with the VHDL code <I>ANDR <= A AND B;</I>.  You can resize 
+    and reposition the text as you like.  Your block diagram should now resemble
+    Figure 4.
+  </P>
+</LI>
+
+<P>
+  <CENTER>
+    <IMG SRC="./Logical4.jpg">
+    <H4>Figure 4</H4>
+  </CENTER>
+</P>
+    
+<LI>
+  <P>
+    Now finish the block diagram by changing the shapes of the OR, XOR, and MUX
+    blocks (there is no NOR symbol, so leave that alone for now.) and giving them 
+    the following embedded text:
+  </P>
+  <UL>
+  <LI>
+    ORBlock: <PRE>ORR <= A OR B;</PRE>
+  </LI>
+  <LI>
+    XORBlock: <PRE>XORR <= A XOR B;</PRE>
+  </LI>
+  <LI>
+    NORBlock: <PRE>NORR <= A NOR B;</PRE>
+  </LI>
+  <LI><P>
+    Mux4B32: <PRE>LogicalR <= ANDR when ALUOp = "00" else
+                ORR when ALUOp = "01" else
+                XORR when ALUOp = "10" else
+                NORR;</PRE>
+  </LI>
+  </UL>
+
+  <P>
+    Your final block diagram should appear as in Figure 5.  Save this
+    block and generate and examine the VHDL code for it.
+  </P>
+</LI>
+
+<P>
+  <CENTER>
+    <IMG SRC="./Logical5.jpg">
+    <H4>Figure 5</H4>
+  </CENTER>
+</P>
+
+<LI>
+  <P>
+    You have now completely specified the behavior of the <I>Logical</I>
+    sub-block of the <I>ALU</I>.  However, we do not yet know if it works
+    correctly.  In order to determine this, we will start with an introduction
+    to the <B>ModelSim</B> simulator in <A HREF="ALU_LogicalSim.html">
+    Simulating the Logical Sub-Block</A>.
+  </P>
+</LI>
+
+</UL>
+</HTML>

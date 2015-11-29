@@ -1,0 +1,84 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>COM Fundamentals&nbsp; 1</title>
+</head>
+
+<body>
+
+<p><a href="pre8.htm"><img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="pre10.htm"><img border="0" src="next.gif" width="26" height="26"></a><br>
+</p>
+<p><font color="#000080"><font size="6" face="Arial">COM Fundamentals<br>   
+</font><br>   
+<font size="5" face="Arial">3. Gloabally Unique Identifiers (GUIDs)</font></font></p>  
+<p><font color="#000080" size="4" face="Times New Roman">COM uses globally   
+unique identifiers—</font><font color="#800000" size="4" face="Times New Roman">128-bit integers</font><font color="#000080" size="4" face="Times New Roman"> that are guaranteed to be unique in the   
+world across space and time—to identify every interface and every component   
+object class. These globally unique identifiers are </font><font color="#800000" size="4" face="Times New Roman"> UUIDs</font><font color="#000080" size="4" face="Times New Roman"> (universally unique   
+IDs) as defined by the Open Software Foundation's Distributed Computing   
+Environment. Human-readable names are assigned only for convenience and are   
+locally scoped. This helps ensure that COM components do not accidentally   
+connect to &quot;the wrong&quot; component, interface, or method, even in   
+networks with millions of component objects. </font><font color="#800000" size="4" face="Times New Roman"> CLSIDs</font><font color="#000080" size="4" face="Times New Roman"> are GUIDs that refer to   
+component object classes, and </font><font color="#800000" size="4" face="Times New Roman"> IID</font><font color="#000080" size="4" face="Times New Roman"> are GUIDs that refer to interfaces. Microsoft   
+supplies a tool (uuidgen) that automatically generates GUIDs. Additionally, the </font><font color="#800000" size="4" face="Times New Roman">  
+CoCreateGuid </font><font color="#000080" size="4" face="Times New Roman"> function is part of the COM API. Thus, developers create their own   
+GUIDs when they develop component objects and custom interfaces. Through the use   
+of defines, developers don't need to be exposed to the actual 128-bit GUID. For   
+those who want to see real GUIDs in all their glory, the example below shows two   
+GUIDs. </font><font color="#800000" size="4" face="Times New Roman"> CLSID_PHONEBOOK</font><font color="#000080" size="4" face="Times New Roman"> is a component object class that gives users lookup   
+access to a phone book. </font><font color="#800000" size="4" face="Times New Roman"> IID_ILOOKUP</font><font color="#000080" size="4" face="Times New Roman"> is a custom interface implemented by the   
+PhoneBook class that accesses the phonebook's database:</font></p>  
+<p><font color="#000080" size="4" face="Times New Roman">DEFINE_GUID(CLSID_PHONEBOOK,   
+0xc4910d70, 0xba7d, 0x11cd, 0x94, 0xe8, 0x08, 0x00, 0x17, 0x01, 0xa8, 0xa3);</font></p>  
+<p><font color="#000080" size="4" face="Times New Roman">DEFINE_GUID(IID_ILOOKUP,   
+0xc4910d71, 0xba7d, 0x11cd, 0x94, 0xe8, 0x08, 0x00, 0x17, 0x01, 0xa8, 0xa3);</font></p>  
+<p><font color="#000080" size="4" face="Times New Roman">The GUIDs are embedded   
+in the component binary itself and are used by the COM system dynamically at   
+bind time to ensure that no false connections are made between components.</font></p>  
+<h3><font size="4" face="Arial" color="#000080">IUnknown</font></h3>  
+<p><font face="Times New Roman" size="4" color="#000080">COM defines one special   
+interface, </font><font face="Times New Roman" size="4" color="#800000">IUnknown</font><font face="Times New Roman" size="4" color="#000080">,   
+to implement some essential functionality. All component objects are required to   
+implement the IUnknown interface, and conveniently, all other COM and OLE   
+interfaces derive from IUnknown. IUnknown has three methods: </font><font face="Times New Roman" size="4" color="#800000">QueryInterface,   
+AddRef,</font><font face="Times New Roman" size="4" color="#000080"> and </font><font face="Times New Roman" size="4" color="#800000">Release.</font><font face="Times New Roman" size="4" color="#000080">   
+In C++ syntax, IUnknown looks like this:</font></p>  
+<pre><code><font face="Times New Roman" size="4" color="#000080">interface IUnknown {
+   virtual   HRESULT   QueryInterface(IID&amp; iid, void** ppvObj) = 0;
+   virtual   ULONG   AddRef() = 0;
+   virtual   ULONG   Release() = 0;
+   }
+</font></code></pre>  
+<p><font size="4" face="Arial" color="#800000">AddRef<i> </i></font><font face="Times New Roman" size="4" color="#000080">and   
+</font><font size="4" face="Arial" color="#800000">Release</font><font size="4" color="#000080" face="Arial">   
+</font><font face="Times New Roman" size="4" color="#000080">are simple   
+reference counting methods. A component object's AddRef method is called when   
+another component object is using the interface; the component object's Release   
+method is called when the other component no longer requires use of that   
+interface. While the component object's reference count is nonzero, it must   
+remain in memory; when the reference count becomes zero, the component object   
+can safely unload itself because no other components hold references to it.</font></p>  
+<p><font face="Arial"><font size="4" color="#800000">QueryInterface</font><font size="4" color="#000080">   
+</font></font><font face="Times New Roman" size="4" color="#000080">is the   
+mechanism that allows clients to dynamically discover (at run time) whether or   
+not an interface is supported by a component object; at the same time, it is the   
+mechanism that a client uses to get an interface pointer from a component   
+object. When an application wants to use some function of a component object, it   
+calls that object's QueryInterface, requesting a pointer to the interface that   
+implements the desired function. If the component object supports that   
+interface, it will return the appropriate interface pointer and a success code.   
+If the component object doesn't support the requested interface, then it will   
+return an error value. The application will then examine the return code; if   
+successful, it will use the interface pointer to access the desired method. If   
+the QueryInterface failed, the application will take some other action, letting   
+the user know that the desired method is not available.</font></p>  
+  
+</body>  
+  
+</html>  

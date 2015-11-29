@@ -1,0 +1,38 @@
+<HTML>
+<HEAD><TITLE>CS2310 Seminar -- By Suresh Rangan</TITLE></HEAD>
+
+<BODY>
+
+<A href="11.html" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="13.html"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1><FONT color="mediumblue">APPLICATIONS </FONT> </H1>
+</CENTER>
+
+<UL><UL><UL><UL><UL><UL><UL>
+<H2>What Can LSI Do For Me Today? </H2>
+       <LI><FONT size=5>Relevance Feedback.</FONT></LI>
+       <BR><BR>
+       <LI><FONT size=5>Textual Coherence.</FONT></LI>
+ 	  <UL>
+		<LI><FONT size=4>LSI can look at the semantic relationships within a text to 
+		calculate the degree of topical coherence between its constituent parts</FONT></LI>
+	  </UL>
+       <BR><BR>
+       <LI><FONT size=5>Automated Writing Assessment.</FONT></LI>
+ 	  <UL>
+		<LI><FONT size=4>can be used as a kind of automated grading system</FONT></LI>
+	  </UL>
+       <BR><BR>
+       <LI><FONT size=5>Information Filtering.</FONT></LI>
+ 	  <UL>
+		<LI><FONT size=4>LSI is potentially a powerful customizable technology for filtering spam</FONT></LI>
+	  </UL>
+       <BR><BR>
+</UL></UL></UL></UL></UL></UL></UL>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,246 @@
+<html>
+<head><title>Outline of Distributed Multimedia Systems</title></head>
+<body>
+
+<center><h1>Outline of CS2650: Distributed Multimedia Systems</h1></center><br><hr>
+<br>
+
+
+<h1>Part I: Elements of Distributed Multimedia Systems</h1>
+
+<h2>Multimedia Data Modeling</h2>
+
+<font color=green>(REQ)
+<a href="1intro.html">Introduction</a>
+</font>
+
+<br><br>
+<font color=green>(REQ)
+1. <a href="http://www.cs.pitt.edu/~chang/265/C1/c1.html">Modeling Time-Based Media</a>
+</font>
+<br><br>
+
+<font color=green>(REQ)
+<a href="../365/2petri/p1.htm">Introduction to Petri Nets</a>
+</font>
+<br><br>
+
+2. <a href="http://www.cs.pitt.edu/~chang/265/C2/c2.html">Document Model Issues for Hypermedia</a>
+<br><br>
+
+<a href="../365/GB/t0.htm">S. K. Chang, "The Growing Book"</a>
+<br><br>
+
+<font color=green>(REQ)
+<a href="265ex.html">Exercise 1</a>
+</font>
+<br><br>
+
+<font color=green>(REQ)
+<a href="http://www.cs.pitt.edu/~chang/231/vl01/t1.htm">Introduction to Multimedia Software Engineering</a>
+</font>
+<br><br>
+
+<font color=green>(REQ)
+<a href="ic/c00.htm">Active Index</a>
+(<a href="../365/ic.html"> S. K. Chang, "Towards a Theory of Active Index" </a>, Journal of Visual Languages and Computing, Vol. 6, No. 1, March 1995, 101-118.)
+</font>
+<br><br>
+
+<font color=green>(REQ)
+<a href="../163/slowintel/si01.htm">Slow Intelligence Systems </a>
+</font>
+<br><br>
+
+<font color=green>(REQ)
+<a href="../163/interface/SequenceSIS.htm">Slow Intelligence Systems Testbed</a>
+</font>
+<br><br>
+
+<a href="../365/tao.acm/ACM_AMS.fmk.html"> H. Chang, S. K. Chang, T. Hou and A. Hsu, "The Management and Applications of Tele-Action Objects" </a>, ACM Journal of Multimedia Systems, Springer Verlag, Volume 3, Issue 5-6, 1995, 204-216.
+<br><br>
+
+<font color=green>(REQ)
+<a href="265ex.html">Exercise 2</a>
+</font>
+
+
+<h2>Multimedia Information Retrieval</h2>
+
+<a href="mccfig/s1.htm">Introduction</a>
+(Image search engines <a href="Google/index.html">Google and Simplicity</a>,
+video search engines <a href="Virage/index.htm">Virage</a>, and
+voice seach engines <a href="http://www.phoneticsystems.com">Phonetic systems</a>
+and <a href="http://www.wildfire.com/">voice-activated personal assistant</a>)
+<br><br>
+
+<font color=green>(REQ)
+<a href="sql/s28.htm">Sigma Query Language</a>
+and
+<a href="sql/g01.htm">Sigma Operator for Information Fusion</a>
+</font>
+<br><br>
+
+<a href="sqlrefin.pdf">Multi-Information Fusion by Query Refinement</a>
+<br><br>
+
+3. <a href="http://www.cs.pitt.edu/~chang/265/C3/c3.html">Content-Based Indexing and Retrieval</a>
+
+<br><br>
+4. <a href="http://www.cs.pitt.edu/~chang/265/C4/c4.html">Video and Image Content Representation</a>
+
+<br><br>
+5. <a href="http://www.cs.pitt.edu/~chang/265/C5/c5.html">Video Segmentation for Video Data Management</a>
+(try segmentation using <a href="HIPR/HIPRtitle.htm">Hypermedia Image Processing Toolkit</a>)
+<br><br>
+
+<a href="mmds/s01.htm"> Shenoda Girguis, Rohit Kulkarni and S. K. Chang, "A Multimedia Data Streams Model for Content-based Information Retrieval"</a>
+<br><br>
+
+(<a href="cbam7.html"> S. K. Chang, "Review: Media Enhanced Input/Output Metaphors for Content-Based Access to Multimedia Documents"</a>)
+<br><br>
+(<a href="../365/wagseke.html"> T. Catarci, S. K. Chang, L. B. Dong and G. Santucci, "A Prototype Web-at-A-Glance System for Intelligent Information Retrieval" </a>,  Proc. of 1997 Conf. on Software Eng. and Knowledge Eng., Madrid, Spain, June 18-20, 1997)
+(see the <a href="http://www.cs.pitt.edu/~jung/WAG/index.html"> experimental WAG system</a>).
+<br><br>
+
+<a href="265ex.html">Exercise 3</a>
+
+<!--
+<br><a href="../365/vis99.pdf">Querying Multimedia Data Sources and Databases</a><br>
+-->
+
+
+<!--
+<br>References on Mobile Computing for Fieldwork:
+<a href="http://www.cs.ukc.ac.uk/research/infosys/mobicomp/Fieldwork/index.html">  Mobile Computing in a Fieldwork Environment</a>;
+<a href="http://www.cs.ukc.ac.uk/research/infosys/mobicomp/Fieldwork/papers/CAA97/ERFldwk.html">  Enhanced Reality Fieldwork</a>;
+<a href="http://www.cs.ukc.ac.uk/research/infosys/mobicomp/Fieldwork/Conference97/bovey.html">  A general purpose, location aware retrieval system</a>;
+<a href="http://www.cs.ukc.ac.uk/research/infosys/mobicomp/Fieldwork/meta/mcfemeta.html">  MCFE Metadata Elements</a>;
+<a href="http://www.cs.ukc.ac.uk/research/infosys/mobicomp/Fieldwork/Conference97/">  Fieldwork Conference, September 1997</a>.
+-->
+
+<h2>Multimedia Interfaces</h2>
+
+<a href="../365/vpl.html"> S. K. Chang, "Visual Languages and Programming"</a>, Encyclopedia of Electrical and Electronics Engineering, John Wiley and Sons, 1998.
+(<a href="../365/iconlan/Slide3.html">an iconic language example</a>)
+
+<br><br>
+6. <a href="../365/real.html">Visual Interfaces to Multimedia Databases</a>
+(<a href="../365/PHP/index.html">Presentation methodologies and tools</a>,
+<a href="../365/ISPQ/slide01.htm">Teleconferencing tools</a>)
+
+<br><br>
+7. <a href="http://www.cs.pitt.edu/~chang/265/C7/c7.html">Multimedia Interfaces - Multimedia Content Indication</a>
+
+<br><br>
+8. <a href="http://www.cs.pitt.edu/~chang/365/XML/xml.html">Extensible Markup Language XML</a>,
+<a href="../365/XML/XSMIL/page1.html">X-SMILES</a> and
+<a href="../365/XML/SMIL/index.html">SMIL</a>.
+<br><br>
+
+<a href="265ex.html">Exercise 4</a>
+
+
+<br><br>
+
+<h2>Memory and Database Management</h2>
+
+Introduction: <a href="../231/mfd/fd1.htm">Dependency relations for Multimedia Databases</a>
+<br>
+(<a href="../231/peppe06.doc">S. K. Chang, V. Defeumia, G. Polese, "A Normalization Framework for Multimedia Databases"</a>)
+<br>
+(<a href="../231/projects/P06mish/img0.html">Application to Database Refractoring</a>)
+<br><br>
+
+9. <a href="http://www.cs.pitt.edu/~chang/265/C9/c9.html">Memory and Database Management: Codecs</a>
+
+<br><br>
+10. <a href="http://www.cs.pitt.edu/~chang/265/C10/c10.html">Design of Large-Scale Multimedia-on-Demand Storage Servers and Storage Hierarchies</a>
+
+<h2>Multimedia Communications</h2>
+
+<a href="../365/adletfig/s1.html">Introduction</a>
+<br><br>
+
+Introduction to <a href="http://www.cs.pitt.edu/~chang/365/MPEG/mpeg.html">MPEG</a>
+
+<br><br>
+11. <a href="http://www.cs.pitt.edu/~chang/265/C11/c11.html">Multmedia Communications - Synchronization</a>
+
+<br><br>
+<a href="../365/adlet.html"> S. K. Chang and T. Znati, "Adlet: Active Document for Adaptive Information Integration"</a>, Technical Report, Dept. of Computer Science, University of Pittsburgh, February 1998.
+
+<br><br>
+<a href="../365/ams.acm96/skacm.html"> C. C. Lin, S. K. Chang and J. X. Xiang, "Transformation and Exchange of Multimedia Objects in Distributed Multimedia Systems" </a>, ACM Journal of Multimedia Systems, Springer Verlag, Volume 4, Issue 1, 1996, 12-29.
+<br><br>
+
+
+<h2>Prototype Systems</h2>
+
+12. <a href="http://www.cs.pitt.edu/~chang/265/C12/c12.html">Image Database Prototypes</a>
+
+<br><br>
+13. <a href="http://www.cs.pitt.edu/~chang/265/C13/c13.html">Video Database Systems - Recent Trends</a>
+
+<br><br>
+14. <a href="http://www.cs.pitt.edu/~chang/265/C14/c14.html">Third-Generation Distributed Hypermedia Systems</a>
+<br><br>
+
+<a href="../365/fuss.html"> S. K. Chang, D. Graupe, K. Hasegawa and H. Kordylewski, "An Active Medical Information System for Information Retrieval, Discovery and Fusion"</a>, to appear in International Journal of Software Engineering and Knowledge Engineering, Vol. 8, No. 1, March 1998.
+(see the <a href="http://www.cs.pitt.edu/~jung/AMIS2/index.html"> experimental AMIS system</a>).<br>
+
+<br>
+<b>Multimedia Information Custom Engineering (MICE):</b>
+
+<a href="http://www.cs.pitt.edu/~jung/README.IC.html">MICE Developer's Guide</a>
+and
+<a href="http://www.cs.pitt.edu/~jung/IC_Work/README.ICW.html">MICE Application Development Steps</a>.
+
+<a href="265ex.html"><h2>Midterm Exam</h2></a>
+
+<h1>Part II: Advanced Topics in Multimedia Information Management</h1>
+
+<h2>Data Modeling</h2>
+
+<h3><a href="seminar06/lin.ppt">Life Models and Time Scheduling (Andrew Lin)</a></h3>
+
+<h2>Information Retrieval Techniques</h2>
+
+<h3><a href="seminar06/raj.ppt">Image Tagging (Perry Rajnovic)</a> (<a href="seminar06/raj.htm">Click here to try the various image tagging tools.  You must have an account for some Flickr capabilities and Facebook</a>)</h3>
+
+
+<h2>Multimedia Interfaces</h2>
+
+<h3><a href="seminar06/tsai/index.htm">Query By Example and Content-based Retrieval (Ming-Chi Tsai)</a></h3>
+
+<h3><a href="seminar06/jiang.ppt">Visualization of Retrieval Results (Ting-Ting Jiang)</a></h3>
+
+<h2>Memory and Database Management</h2>
+
+<h3><a href="seminar06/klein.ppt">Multimedia Data Stream Management System (David Kleinman)</a></h3>
+
+<h3><a href="seminar06/huo.ppt">Multimedia Database Refractoring (Jiang Luo)</a></h3>
+
+<h2>Multimedia Communications</h2>
+
+<h3><a href="seminar06/dillon.ppt">Social Networking (Paul Dillon)</a></h3>
+
+<h2>Prototype Systems</h2>
+
+<h3><a href="seminar06/zalar.ppt">Portable Media Devices and Implications on Database Design and Queries (Mark Zalar)</a></h3>
+
+<h1>Part III: Term Projects</h1>
+
+<h3>
+<a href="vcreadme.htm">VC projects</a>
+</h3>
+
+<h3>
+<a href="proj10/proj.htm">Slow Intelligence projects</a>
+</h3>
+<img src="../365/images/smile.gif" align=left><br>
+<b>THIS IS IT!</b>
+
+<br>
+</body>
+</html>

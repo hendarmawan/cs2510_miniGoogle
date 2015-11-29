@@ -1,0 +1,3007 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html xmlns="http://www.w3.org/TR/REC-html40"
+ xmlns:css="http://macVmlSchemaUri"
+ xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+ xmlns:w="urn:schemas-microsoft-com:office:word"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+  <meta http-equiv="Context-Type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <title></title>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+<body style="background-color: rgb(0, 51, 0); color: rgb(0, 0, 0);"
+ alink="yellow" lang="EN-US" link="yellow" vlink="yellow">
+<h3 style="font-family: Comic Sans MS; color: rgb(255, 255, 255);"><br>
+CS 3150
+Topics in Algorithms </h3>
+<h3 style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">The
+topic
+for Spring 2010 is Science of Power Management<br>
+</h3>
+<h3 style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">&nbsp;</h3>
+<h3 style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">Instructor</h3>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<p
+ style="margin: 0.1pt 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);"><a
+ href="http://www.cs.pitt.edu/%7Ekirk">Kirk
+Pruhs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+<p
+ style="margin: 0.1pt 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);">Email:
+<a href="mailto:kirk@cs.pitt.edu">kirk@cs.pitt.edu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br>
+Phone : 412-624-8844 <br>
+</p>
+<p
+ style="margin: 0.1pt 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);"><br>
+The course
+will meet MWF 2:20-3:50 when I am not traveling to academic
+conferences. The first class will be Wednesday January 6. In total we
+will meet between 25 and 30 times.<br>
+</p>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul
+ style="margin-top: 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);"
+ type="disc">
+</ul>
+<h3
+ style="margin: 0.1pt 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);">Course
+Description</h3>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<span style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">This
+will
+be
+a
+reading
+course
+covering
+recent
+literature
+on
+power
+management.
+The
+first
+1/2
+of
+the
+course
+will
+consist
+of
+the
+instructor
+presenting
+recent
+papers
+from
+the
+algorithmic
+and
+computer
+science
+theory&nbsp;
+literature.
+The
+second
+half
+of
+the
+course,
+the
+students
+will
+present&nbsp;
+papers
+from
+the
+computer
+systems
+literature.
+One
+of
+the
+goals of
+these presentations is to get a broad picture of the state of current
+research on power management. Another goal of the presenations, and
+class discussions, is to identify algorithmically interesting problems
+that arise in different areas of application.&nbsp; </span><br
+ style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<table
+ style="text-align: left; width: 100%; font-family: Comic Sans MS; color: rgb(255, 255, 255);"
+ border="1" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;">Date<br>
+      </td>
+      <td style="vertical-align: top;">Topic or Guest Speaker<br>
+      </td>
+      <td style="vertical-align: top;">Reading<br>
+      </td>
+      <td style="vertical-align: top;">Notes <br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wednesday
+January
+6<br>
+      </td>
+      <td style="vertical-align: top;">Organizational
+Meeting<br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Monday
+January
+11<br>
+      </td>
+      <td style="vertical-align: top;">Introduction
+to
+speed
+scaling<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/scipm_ieee_computer.pdf">Overview</a>
+of
+the
+final report for the NSF <a href="http://scipm.cs.vt.edu/">Workshop
+on
+the Science of Power Management</a></li>
+        <li><span class="headNavBlueXLarge2"><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/yds.pdf">A
+scheduling model for reduced CPU energy</a> by Francis Yao, Demers and
+Shenker, FOCS 1995.</span></li>
+        <li><span class="headNavBlueXLarge2"><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/p191-butts.pdf">A
+Static
+Power
+Model
+for
+Architects</a> by J. Adam Butts and Gurindar S.
+Sohi, </span> <span class="mediumb-text">ACM/IEEE international
+symposium on
+Microarchitecture 2000. (<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/micro00-staticpower.pdf">Slides</a>,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/ButtsSohiNotes.txt">notes</a>)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <br>
+          </span></li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/YDSnotes.txt">Notes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </a>on
+YDS paper<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wednesday
+Janaury
+13<br>
+      </td>
+      <td style="vertical-align: top;">Amortized
+local
+competitiveness
+analysis
+using
+OA
+as
+an
+example<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><strong><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/BKP.pdf">Speed
+scaling to manage energy and
+temperature </a><span style="font-weight: normal;">by Nikhil Bansal,
+Tracy Kimbrel and Kirk Pruhs, FOCS
+2004 and JACM 2007. (<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Nikhilfocspower.ppt">slides</a>
+for all
+but online thermal management)<br>
+          </span></strong></li>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/icalp2009.pdf">Improved
+Bounds
+for
+Speed
+Scaling
+in
+Devices
+Obeying
+the
+Cube-Root
+Rule</a> by Nikhil Bansal, Ho-Leung Chan,
+Dmitriy Katz and Kirk Pruhs, ICALP 2009. </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/OAnotes.txt">Notes</a>
+on OA analysis in the qOA paper<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wednesday
+January
+20<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li>Temperature </li>
+        <li>The algorithm design of BKP and the analysis of BKP for
+temperature</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;">
+      <table style="text-align: left; width: 100%;" border="1"
+ cellpadding="2" cellspacing="2">
+        <tbody>
+        </tbody>
+      </table>
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/BKP.pdf">Speed
+scaling to manage energy and
+temperature</a> by Nikhil Bansal, Tracy Kimbrel and Kirk Pruhs, FOCS
+2004 and JACM 2007. <strong><span style="font-weight: normal;">(<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/stacs2005.ppt">slides</a>
+for energy management)</span></strong></li>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Chroback.pdf">Algorithms
+for
+Temperature-Aware
+Task
+Scheduling
+in
+Microprocessor
+Systems</a> by Marek Chrobak, Christoph
+Durr, Mathilde Hurand, and Julien Robert, AAIM
+2008.</li>
+      </ul>
+      <table style="text-align: left; width: 100%;" border="1"
+ cellpadding="2" cellspacing="2">
+      </table>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/TemperatureNotes.txt">Notes</a>
+on thermal management<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Monday
+January
+25<br>
+      </td>
+      <td style="vertical-align: top;">Speed
+scaling
+for
+flow
+time
+and
+energy<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li>&nbsp;<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/SWAT2004.pdf">Getting
+the
+best
+response
+for
+your
+erg</a>, by Kirk Pruhs, Patchrawat Uthaisombut and Gerhard
+Woeginger, SWAT 2004 and TALG 2008.</li>
+        <ul>
+          <li><a href="http://www.columbia.edu/%7Eyz2198/erg/erg.jnlp">Animation</a>
+by <a href="http://www.columbia.edu/%7Eyz2198/">Yori Zwols</a><br>
+          </li>
+        </ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/SODA2009.pdf">Speed
+scaling
+with
+an
+arbitrary
+power
+function</a> by Nikhil Bansal, Ho-Leung Chan and Kirk Pruhs, SODA 2009.
+        </li>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/SPAA2009.pdf">Speed
+scaling
+of
+processes
+with
+arbitrary
+speedup
+curves
+on
+a
+multiprocessor</a> by Ho-Leung Chan, Jeff Edmonds
+and Kirk Pruhs, SPAA 2009.</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="CS3150SpeedScalingFlow.ppt">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wednesday
+January
+27<br>
+      </td>
+      <td style="vertical-align: top;">Experimental Experience with
+Speed Scaling by Google researchers<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/power_provisioning.pdf">Power
+Provisioning
+for
+a
+Warehouse-sized
+Computer</a> by Xiaobo Fan Wolf-Dietrich Weber Luiz
+André Barroso, ISCA 2007.</li>
+        <li>How to schedule when you have to buy your energy by Pruhs
+and
+Stein</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a href="FanWeberBarroso.pptx">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Monday
+February
+1<br>
+      </td>
+      <td style="vertical-align: top;">Introduction to Power/Shut
+Down<br>
+      <ul>
+        <li>2 state (ski rental)</li>
+        <ul>
+          <li>deterministic</li>
+          <li>randomize</li>
+        </ul>
+        <li>multistate lower envelope algorithm</li>
+        <ul>
+          <li>determinist</li>
+          <li>randomized<br>
+          </li>
+        </ul>
+      </ul>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/p325-irani-1.pdf">Online
+Strategies
+for
+Dynamic
+Power
+Management
+in
+Systems
+with
+Multiple
+Power
+Saving
+States</a> by
+Sandy Irani, Sandeep Shukla and Rajesh Gupta, ACM Transactions on
+Embedded Computing Systems 2003. </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="SandyPowerStrategies-1.ppt">Slides </a>from Sandy Irani<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wedneday
+February
+3<br>
+      </td>
+      <td style="vertical-align: top;">Guest Speaker: <a
+ href="http://www.cs.cmu.edu/%7Eanshulg/">Anshul Gandhi</a><blink></blink><blink><br>
+      </blink></td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Sigmetrics09power.pdf">Optimal
+Power
+Allocation
+in
+Server
+Farms</a> by Anshul Gandhi, Mor Harchol-Balter, Rajarshi Das,
+and Charles Lefurgy, SIGMETRICS 2009. </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Monday
+February
+8<br>
+      </td>
+      <td style="vertical-align: top;">Power/Shut
+Down<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Augustine.pdf">Optimal
+Power-Down
+Strategies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </a>by
+John Augustine, Sandy Irani and Chaitanya Swamy, FOCS 2004 and SICOMP
+2008. </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/dpmslides-short.ppt">slides</a>
+from Chaitanya Swamy </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wednesday
+February
+10<br>
+      </td>
+      <td style="vertical-align: top;">Power down and speed scaling
+combined<br>
+Paper selections due<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/power_soda-1.pdf">Algorithms
+for
+Power
+Savings</a> by
+Sandy Irani, Sandeep Shukla and Rajesh Gupta, SODA 2003 and TALG 2007.</li>
+        <li><a href="icalp09.pdf">Sleep with Guilt and Work Faster to
+Minimize Flow Plus Energy</a> byTak-Wah Lam, Lap-Kei Lee, Hing-Fung
+Ting, Isaac K. To, Prudence W. Wong in ICALP 2009.</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="SandyPowerStrategies-1.ppt">Slides </a>from Sandy Irani </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wednesday
+February
+24<br>
+      </td>
+      <td style="vertical-align: top;">Guest Speaker: <a
+ href="http://www.pittsburgh.intel-research.net/%7Echensm/">Shimin Chen</a>,
+Intel<br>
+      </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li>Power Management in Intel Processors (<a
+ href="ShiminChen.pptx">slides</a>)</li>
+        <ul>
+          <li><a href="30117401.pdf">White Paper</a>: Enhanced Intel®
+SpeedStep® Technology for the Intel® Pentium® M Processor<br>
+          </li>
+          <li><a href="248966.pdf">Intel® 64 and IA-32 Architectures
+Optimization Reference Manual</a>, Chapter 11</li>
+          <li><a href="253668.pdf">Intel® 64 and IA-32 Architectures
+Software Developer’s Manual</a>, Chapter 14<br>
+          </li>
+        </ul>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a href="ShiminChen.pptx">Slides</a>
+From Shimin Chen<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Friday
+February
+26<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Guest
+speaker:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <a
+ href="http://www.engr.pitt.edu/ELECTRICAL/faculty-staff/junyang/myweb/index.html">Jun
+Yang</a><br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/3Dthermal.pdf">Thermal
+Management
+for
+3D
+Processors
+via
+Task
+Scheduling</a> by Xiuyi Zhou, Jun Yang, Yi Xu, Youtao Zhang,
+Jianhua Zhao</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Monday
+March
+1<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Scheduling
+for
+idleness/gaps<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"> <br>
+      <ul>
+        <li> <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Baptiste.pdf">Polynomial
+Time
+Algorithms
+for
+Minimum
+Energy
+Scheduling</a> by Philippe Baptiste, Marek Chroback and Christoph Durr,
+ESA 2007.</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><a
+ href="10071.ChrobakMarek.Slides.pdf">Slides</a> from Marek Chrobak<br>
+      <br>
+      <a href="http://www.lix.polytechnique.fr/%7Edurr/MinBlocks/">Animation</a>
+by Christoph Durr<br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Wednesday
+March
+3<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Peak
+Shaving<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/BarNoy1.pdf">When
+to
+Reap
+and
+When
+to
+Sow:
+Lowering
+Peak
+Usage
+With
+Realistic
+Batteries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </a>by Amotz Barnoy, Yi Feng,
+Matthew P. Johnson, and Ou Liu, WEA 2008. (<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/wea08_slides.pdf">slides</a>)<br>
+        </li>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/waoa08.pdf">Peak
+shaving through resource buffering</a>
+by Amotz Bar-Noy, Matthew P. Johnson and Ou Liu, WAOA 2008. (<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/waoa08_slides.pdf">slides</a>)</li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/waoa08_slides.pdf">Slides</a>
+by Matt Johnson </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Monday
+March
+15<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Daniel
+Cole<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li>&nbsp;<a
+ href="http://portal.acm.org/citation.cfm?doid=1375457.1375496">Software
+thermal
+management
+of
+dram
+memory
+for
+multicore
+systems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </a>(SIGMETRICS 2008)<a
+ href="http://portal.acm.org/citation.cfm?doid=1375457.1375496">&nbsp; </a>(<a
+ href="Software%20Thermal%20Management%20of%20DRAM%20Memory%20for%20Multicore.pptx">Slides</a>)<a
+ href="http://portal.acm.org/citation.cfm?doid=1375457.1375496"><br>
+          </a></li>
+        <li> <a
+ href="http://portal.acm.org/citation.cfm?doid=1555349.1555369">Evaluating
+the
+impact
+of
+job
+scheduling
+and
+power
+management
+on
+processor
+lifetime
+for
+chip
+multiprocessors</a> (SIGMETRICS 2009)<a
+ href="http://portal.acm.org/citation.cfm?doid=1555349.1555369">&nbsp;</a>
+(<a
+ href="Evaluating%20the%20Impact%20of%20Power%20Management%20on%20failure%20rate.pptx">Slides</a>)<a
+ href="http://portal.acm.org/citation.cfm?doid=1555349.1555369"><br>
+          </a></li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Wednesday
+March
+17<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Brian
+Wongchaowart<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li><a href="http://www.cs.pitt.edu/cast/papers/cho-micro09.pdf">Flip-N-Write:
+A
+Simple
+Deterministic
+Technique
+to
+Improve
+PRAM
+Write
+Performance,
+Energy
+and
+Endurance</a> by Sangyeun Cho and Hyunjin Lee, MICRO 2009. (<a
+ href="flip-n-write_slides.pdf">Slides</a>)<br>
+        </li>
+        <li>A Content-Aware Block Placement Algorithm for Reducing PRAM
+Storage Bit Writes<br>
+by Brian Wongchaowart, Marian K. Iskander, and Sangyeun Cho (<a
+ href="block_placement_slides.pdf">Slides</a>)<br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Friday
+March
+19<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Michael
+Moeng<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li><a href="http://doi.acm.org/10.1145/1669112.1669170">Multiple
+Clock
+and
+Voltage
+Domains
+for
+Chip
+Multi
+Processors</a> (<a
+ href="Multiple_Clock_and_Voltage_Domains_for_Chip_Mu.pdf">Slides</a>)<a
+ href="http://doi.acm.org/10.1145/1669112.1669170"><br>
+          </a></li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Monday
+March
+22<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Patrick
+McClory<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li><a
+ href="http://www.usenix.org/events/nsdi08/tech/full_papers/nedevschi/nedevschi.pdf">Reducing
+Network
+Energy
+Consumption
+via
+Sleeping
+and
+Rate-Adaptation</a> (<a href="Pat_3150_pres1.pptx">Slides</a>)<a
+ href="http://www.usenix.org/events/nsdi08/tech/full_papers/nedevschi/nedevschi.pdf"><br>
+          </a></li>
+        <li><a
+ href="http://www.usenix.org/events/nsdi09/tech/full_papers/nedevschi/nedevschi.pdf">Skilled
+in
+the
+Art
+of
+Being
+Idle:
+Reducing
+Energy
+Waste
+in
+Networked
+Systems</a> (<a href="Pat_3150_pres2.pptx">Slides</a>)<br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Wednesday
+March
+24<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">James
+Larkby-Lahet<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/tolia/tolia.pdf">Delivering
+Energy
+Proportionality
+with
+Non
+Energy-Proportional
+Systems
+Optimizing
+the
+Ensemble</a></li>
+        <li><a
+ href="http://www.sigops.org/sosp/sosp09/papers/hotstorage_7_guerra.pdf">Energy
+Proportionality
+for
+Storage:
+Impact
+and
+Feasibility</a><br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><a
+ href="james-present1.pdf">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Monday
+March
+29<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Daniel
+Cole<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li><a
+ href="http://www.eecs.umich.edu/%7Espelley/Publications/Pelley-ASPLOS2010-PowerRouting.pdf">Power
+Routing:
+Dynamic
+Power
+Provisioning
+in
+the
+Data
+Center</a></li>
+        <li><a
+ href="http://www.ee.columbia.edu/%7Ezussman/pub_files/EnHANTs_MOBICOM09.pdf">Challenge:
+Ultra-Low-Power
+Energy-Harvesting
+Active
+Networked
+Tags
+(EnHANTs)&nbsp;</a></li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><a
+ href="Cole_Power%20Routing.pptx">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Wednesday
+March
+31<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Sangyeun
+Cho
+
+
+
+
+
+
+
+
+
+
+
+      <br>
+Rami Melhem<br>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li>Professor Cho's <a href="cho.pptx">presentation</a></li>
+        <li>Professor Melhem's <a href="Melhem_2010.pptx">presentation</a><br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Monday April 5<br>
+      </td>
+      <td style="vertical-align: top;">Brian
+Wongchaowart </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.usenix.org/events/nsdi09/tech/full_papers/agarwal/agarwal.pdf">Somniloquy:
+Augmenting
+Network
+Interfaces
+to
+Reduce
+PC
+Energy
+Usage</a></li>
+        <li><a
+ href="http://www.ece.cmu.edu/%7Ebgold/papers/meisner-asplos09.pdf">PowerNap:
+Eliminating
+Server
+Idle
+Power</a></li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Friday
+April
+9
+
+
+
+
+
+
+
+
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">Michael
+Moeng
+
+
+
+
+
+
+
+
+
+
+
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;">
+      <ul>
+        <li><a
+ href="http://www.cs.wisc.edu/multifacet/papers/ieeecomputer08_amdahl_multicore.pdf">Amdahl’s
+Law
+in
+the
+Multicore
+Era</a><br>
+        </li>
+        <li><a href="cho-mpr08.pdf">Energy Corollaries to Amdahl's Law</a></li>
+      </ul>
+      </td>
+      <td style="vertical-align: top; font-family: Comic Sans MS;"><a
+ href="Michael_Energy%20Corollaries%20to%20Amdahls%20Law%20-%20presentation.pdf">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Monday April 12 </td>
+      <td style="vertical-align: top;">Patrick
+McClory </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.hpl.hp.com/personal/Priya_Mahadevan/pubs/nsdi10-elastictree.pdf">ElasticTree:
+Saving
+Energy
+in
+Data
+Center
+Networks</a><br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="elasticTree_mcclory.pptx">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Friday April 16 </td>
+      <td style="vertical-align: top;">James Larkby-Lahet </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.usenix.org/events/fast10/tech/full_papers/verma.pdf">SRCMap:
+Energy
+Proportional
+Storage
+using
+Dynamic
+Consolidation</a><br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a href="jll-srcmap.pdf">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Monday April 19 </td>
+      <td style="vertical-align: top;">Daniel
+Cole </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li>&nbsp;<a href="WeirmanInfoCom2009.pdf">Power-aware speed
+scaling in processor sharing systems</a></li>
+        <li><a href="speedscaling-sigmetrics.pdf">Optimality, fairness,
+and robustness in speed scaling designs</a><br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="Power%20Aware%20Speed%20Scaling.pptx">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wednesday&nbsp; April 21 </td>
+      <td style="vertical-align: top;">Brian
+Wongchaowart </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="ec2-pp12.pdf">An Energy Aware Model of Computation</a></li>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/JouleSort.pdf">JouleSort:
+A
+Balanced
+Energy-Efficiency
+Benchmark</a><br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="energy-aware_computation_slides.pdf">slides</a><br>
+      <a href="joulesort_slides.pdf">slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Friday April 23 </td>
+      <td style="vertical-align: top;">Michael Moeng </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/PowerTrade-Final.pdf">Joint
+Optimization
+of
+Idle
+and
+Cooling
+Power
+in
+Data
+Centers
+While
+Maintaining
+Response Time</a><br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a
+ href="Joint%20Optimization%20of%20Idle%20and%20Cooling%20Power%20in.pptx">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">
+      <table
+ style="text-align: left; width: 100%; font-family: Comic Sans MS; color: rgb(255, 255, 255);"
+ border="1" cellpadding="2" cellspacing="2">
+        <tbody>
+          <tr>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;">Monday April 26<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </td>
+      <td style="vertical-align: top;">Patrick
+McClory </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/SIGCOMM2009.pdf">Cutting
+the
+Electric
+Bill
+for
+Internet-Scale
+Systems</a> </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a href="mcclory_pres3.pptx">Slides</a><br>
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top;">Wednesday
+April
+28 </td>
+      <td style="vertical-align: top;">James Larkby-Lahet </td>
+      <td style="vertical-align: top;">
+      <ul>
+        <li><a href="isca03.pdf">DRPM: Dynamic Speed Control for Power
+Management in Server Class Disks</a><br>
+        </li>
+      </ul>
+      </td>
+      <td style="vertical-align: top;"><a href="jll-drpm.pdf">Slides</a><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<h3
+ style="margin: 0.1pt 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);">Tentative
+Reading
+List:</h3>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<small style="font-family: Comic Sans MS; color: rgb(255, 255, 255);"><small><br>
+</small></small>
+<h3
+ style="margin: 0.1pt 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);"><small>This
+will
+surely
+evolve
+significantly.
+The
+following
+papers
+are
+from
+the
+theoretical
+CS
+and
+algorithms
+literature,
+or
+papers
+recommended
+by
+colleagues.</small></h3>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Introductory Readings</li>
+  <ul>
+    <li>Required: <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/scipm_ieee_computer.pdf">Overview</a>
+of
+the
+final report for the NSF <a href="http://scipm.cs.vt.edu/">Workshop
+on
+the Science of Power Management</a>. <br>
+    </li>
+    <li>Optional:
+The <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/SciPM-ReportToNSF-Web.pdf">final
+report</a> <br>
+    </li>
+  </ul>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Surveys on Algorithmic Power Management</li>
+  <ul>
+    <li>Very early survey: <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/sigactreview.pdf">Algorithmic
+Problems
+in
+Power
+Management
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </a>by Irani and Pruhs, 2005.<br>
+    </li>
+    <li>Relatively recent survey: <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/AlbersSurvey.pdf">Algorithms
+for
+Energy
+Saving
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </a>by Susanne Albers, 2009.</li>
+    <li><a
+ href="http://cacm.acm.org/magazines/2010/5/87271-energy-efficient-algorithms/fulltext">Energy
+Efficient
+Algorithms,</a> Briefer version of the above survey written
+for a general audience in May CACM 2010 by Susanne Albers.<br>
+    </li>
+  </ul>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Competitiveness Results on Speed Scaling</li>
+  <ul>
+    <li>
+      <p><span class="headNavBlueXLarge2"> Modeling</span></p>
+    </li>
+    <ul>
+      <li><span class="headNavBlueXLarge2"><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/p191-butts.pdf">A
+Static
+Power
+Model
+for
+Architects</a> by J. Adam Butts and Gurindar S.
+Sohi, </span> <span class="mediumb-text">ACM/IEEE international
+symposium on
+Microarchitecture 2000. (<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/micro00-staticpower.pdf">Slides</a>,
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/ButtsSohiNotes.txt">notes</a>)
+This
+explains
+how
+to
+model
+power.</span></li>
+    </ul>
+    <li>
+      <p><span class="headNavBlueXLarge2">Deadline Scheduling</span></p>
+    </li>
+    <ul>
+      <li>
+        <p><span class="headNavBlueXLarge2"><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/yds.pdf">A
+scheduling model for reduced CPU energy</a> by Francis Yao, Demers and
+Shenker, FOCS 1995. The first speed scaling paper in the algorithmic
+community.</span></p>
+      </li>
+      <li> <strong><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/BKP.pdf">Speed
+scaling to manage energy
+and
+temperature </a><span style="font-weight: normal;">by Nikhil Bansal,
+Tracy Kimbrel and Kirk Pruhs, FOCS
+2004 and JACM 2007. This continues the story started in Yao, Demers and
+Shenker. Introduced amortized local competitivess and temperature using
+Newton's law of cooling.<br>
+        </span></strong></li>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/latin2008.pdf">Average
+Rate
+Speed
+Scaling</a> by
+Nikhil Bansal, David P. Bunde, Ho-Leung Chan, Kirk Pruhs, LATIN 2008.
+Tight analysis of the AVR algorithm using amortized local
+competitiveness.<br>
+      </li>
+      <li> <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/icalp2009.pdf">Improved
+Bounds
+for
+Speed
+Scaling
+in
+Devices
+Obeying
+the
+Cube-Root
+Rule</a> by Nikhil Bansal, Ho-Leung Chan,
+Dmitriy Katz and Kirk Pruhs, ICALP 2009.
+This gives the best known upper and lower bounds on the competitive
+ratio for the original Yao et al
+problem.</li>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/jos-ahmed.pdf">An
+experimental
+comparison
+of
+speed
+scaling
+algorithms
+with
+a
+deadline
+feasibility
+constraint</a> by
+Abousamra, Bunde and Pruhs. Shows that competitive analysis agrees with
+experimental evaluation for classic deadline feasibility problem<br>
+      </li>
+      <li> <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/solarcell.pdf">Speed
+Scaling
+with
+a
+Solar
+Cell
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </a>by
+Nikhil
+Bansal,
+Ho-Leung
+Chan,
+Kirk
+Pruhs,&nbsp;
+AAIM
+2008.
+Extends
+YDS
+style
+results
+to
+the
+setting
+that
+the
+energy
+comes
+from
+a
+rejuvinative
+source
+such
+as
+a
+solar
+cell</li>
+      <li> <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/icalp2009boundedspeed.pdf">Scheduling
+for
+Speed
+Bounded
+Processors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </a>by Nikhil Bansal,
+Ho-Leung Chan,
+Tak Wah Lam,
+Lap-Kei Lee, ICALP 2008. Considers bounding the speed and then
+optimizing throughput</li>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Chroback.pdf">Algorithms
+for
+Temperature-Aware
+Task
+Scheduling
+in
+Microprocessor
+Systems</a> by Marek Chrobak, Christoph
+Durr, Mathilde Hurand, and Julien Robert, AAIM
+2008. Assume the speed scaling is controlled by hardware that throttles
+the speed when the chip gets too hot.</li>
+    </ul>
+    <li> Flow and energy</li>
+    <ul>
+      <li>&nbsp;<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/SWAT2004.pdf">Getting
+the
+best
+response
+for
+your
+erg</a>, by Kirk Pruhs, Patchrawat Uthaisombut and Gerhard
+Woeginger, SWAT 2004 and TALG 2008. Introduces optimizing flow subject
+to an energy constraint and gives offline algorithm.</li>
+      <ul>
+        <li><a href="erg.jnlp">Animation</a>
+(<a href="erg-src.zip">source code</a>) by <a
+ href="http://www.cs.mcgill.ca/%7Eyzwols/">Yori Zwols</a><br>
+        </li>
+      </ul>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/a49-albers.pdf">&nbsp;Efficient
+algorithms
+for
+flow
+time
+minimization</a> by Susanne Albers and Hiroshi
+Fujiwara, STACS 2006 and TALG 2007. Introduces flow plus energy and
+gives competitive algorithm for the case of unit work jobs using global
+analysis.<br>
+      </li>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/BPS.pdf">Speed
+scaling for weighted flow time</a> by
+Nikhil Bansal, Kirk Pruhs and Cliff Stein, SODA 2007. Gives first
+compeitive algorithm for general jobs.<br>
+      </li>
+    </ul>
+    <ul>
+      <li> <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/SODA2009.pdf">Speed
+scaling
+with
+an
+arbitrary
+power
+function</a> by Nikhil Bansal, Ho-Leung Chan and Kirk Pruhs, SODA 2009.
+This paper introduces general power functions and shows how to extend
+flow+energy results to general power functions.<br>
+      </li>
+      <ul>
+        <li>&nbsp;<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/mama09.pdf">Optimal
+speed
+scaling
+under
+arbitrary
+power
+functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          </a>by Lachlan L. H. Andrew, Adam Wierman
+and Ao Tang. Improves competitive ratio from 3 to 2.<br>
+        </li>
+      </ul>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/stacs2009.pdf">Nonclairvoyant
+Speed
+Scaling
+for
+Flow
+and
+Energy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </a>by Ho-Leung Chan, Jeff Edmonds, Tak Wah Lam, Lap-Kei
+Lee, Alberto Marchetti-Spaccamela, Kirk Pruhs. STACS 2009. First paper
+to consider nonclairvoyant algorithms.<br>
+      </li>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/SPAA2009.pdf">Speed
+scaling
+of
+processes
+with
+arbitrary
+speedup
+curves
+on
+a
+multiprocessor</a> by Ho-Leung Chan, Jeff Edmonds
+and Kirk Pruhs, SPAA 2009. Considers nonclairvoyant scheduling of jobs
+with varying degrees of parallelizability on a multiprocessor</li>
+      <li><a href="spaa2008.pdf">Competitive Non-migratory Scheduling
+for Flow Time and Energy </a>by Tak-Wah Lam, Lap-Kei Lee, Isaac K. K.
+To and Prudence W. H. Wong &nbsp; in SPAA 2008. Gives an assignment
+algorithm for multiprocessors.</li>
+      <li>Sleep with Guilt and Work Faster to Minimize Flow Plus Energy<br>
+      </li>
+    </ul>
+    <li>Profit Maximization</li>
+    <ul>
+      <li>How to schedule when you have to buy your energy by Pruhs and
+Stein<br>
+      </li>
+    </ul>
+    <li>There are more algorithmic speed scaling papers, but these
+papers should include all the most important ones and a reasonable
+sampling of the rest. <br>
+    </li>
+  </ul>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Theoretical Results on Power/Shut down</li>
+  <ul>
+    <li>Transition to power saving states</li>
+    <ul>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/p325-irani-1.pdf">Online
+Strategies
+for
+Dynamic
+Power
+Management
+in
+Systems
+with
+Multiple
+Power
+Saving
+States</a> by
+Sandy Irani, Sandeep Shukla and Rajesh Gupta, ACM Transactions on
+Embedded Computing Systems 2003.<br>
+      </li>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Augustine.pdf">Optimal
+Power-Down
+Strategies
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </a>by
+John Augustine, Sandy Irani and Chaitanya Swamy, FOCS 2004 and SICOMP
+2008. (<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/dpmslides-short.ppt">slides</a>
+from Chaitanya Swamy)</li>
+      <li><a href="VitterSpindown.pdf">Adaptive disk spindown via
+optimal rent-to-buy in probabilistic environments</a> by Krishnan, Long
+and Vitter, Algorithmica.</li>
+    </ul>
+    <li>Speed scaling and shutdown</li>
+    <ul>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/power_soda-1.pdf">Algorithms
+for
+Power
+Savings</a> by
+Sandy Irani, Sandeep Shukla and Rajesh Gupta, SODA 2003 and TALG 2007. </li>
+      <li><a href="icalp09.pdf">Sleep with Guilt and Work Faster to
+Minimize Flow Plus Energy</a> byTak-Wah Lam, Lap-Kei Lee, Hing-Fung
+Ting, Isaac K. To, Prudence W. Wong in ICALP 2009.<br>
+      </li>
+    </ul>
+    <li>Scheduling for gaps/idleness<br>
+    </li>
+    <ul>
+      <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/p46-demaine.pdf">Scheduling
+to
+Minimize
+Gaps
+and
+Power
+Consumption
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </a>by Erik D. Demaine, Mohammad Ghodsi, Mohammad Taghi
+Hajiaghayi,&nbsp; Amin S. Sayedi-Roshkhar, Morteza Zadimoghaddam, SPAA
+2007.<br>
+      </li>
+      <li> <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Baptiste.pdf">Polynomial
+Time
+Algorithms
+for
+Minimum
+Energy
+Scheduling</a> by Philippe, Marek Chroback and Christoph Durr,
+ESA 2007.<br>
+      </li>
+    </ul>
+    <li> <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/soda10.pdf">Energy
+Efficient
+Scheduling
+for
+Data
+Centers
+via
+Partial
+Shutdown
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </a>by
+Samir Khuller, Jian Li, and Barna Saha, SODA 2010.
+      <div class="fx1">&nbsp;</div>
+    </li>
+  </ul>
+  <li> Theoretical Results on Peak Shaving<br>
+  </li>
+  <ul>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/BarNoy1.pdf">When
+to
+Reap
+and
+When
+to
+Sow:
+Lowering
+Peak
+Usage
+With
+Realistic
+Batteries
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </a>by Amotz Barnoy, Yi Feng,
+Matthew P. Johnson, and Ou Liu, WEA 2008. (<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/wea08_slides.pdf">slides</a>)<br>
+    </li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/waoa08.pdf">Peak
+shaving through resource buffering</a>
+by Amotz Bar-Noy, Matthew P. Johnson and Ou Liu, WAOA 2008. (<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/waoa08_slides.pdf">slides</a>)</li>
+  </ul>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Energy Models of computation</li>
+  <ul>
+    <li><a href="http://en.wikipedia.org/wiki/Reversible_computing">Reversible
+computing</a>, <a
+ href="http://en.wikipedia.org/wiki/Billiard-ball_computer">Billiard
+ball computer</a>, <a href="http://en.wikipedia.org/wiki/Toffoli_gate">Toffoli
+gate</a> </li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Bingham.pdf">An
+energy aware model of computation </a>by
+Bingham
+and
+Greenstreet.<br>
+    </li>
+  </ul>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Architecture</li>
+  <ul>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/3Dthermal.pdf">Thermal
+Management
+for
+3D
+Processors
+via
+Task
+Scheduling</a> by Xiuyi Zhou, Jun Yang, Yi Xu, Youtao Zhang,
+Jianhua Zhao</li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/s1-ln37731421753718076-1939656818Hwf-701262274IdV9005957183773142PDF_HI0001-1.pdf">The
+Impact
+of
+Dynamically
+Heterogeneous
+Multicore
+Processors
+on
+Thread
+Scheduling</a> by Fred A. Bower, Daniel J. Sorin, and Landon P. Cox,
+IEEE Micro 2008. (Kirk)<br>
+    </li>
+    <li> <strong></strong> <a
+ href="http://ieeexplore.ieee.org/search/wrapper.jsp?arnumber=4712496"><strong>Extending
+Amdahl's
+Law
+for
+Energy-Efficient
+Computing
+in
+the
+Many-Core
+Era</strong></a></li>
+    <li><a href="therm_sched_ispass08.pdf">Dynamic Thermal Management
+through Task Scheduling</a> by Jun Yang, Xiuyi Zhou, Marek Chrobak,
+Youtao Zhang and Lingling Jin</li>
+    <li><a href="cho-mpr08.pdf">Energy Corollaries to Amdahl's Law</a>
+by by Sangyeun Cho, Michael Moeng, and Rami Melhem (Michael)<br>
+    </li>
+  </ul>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Queing Theory Analysis of Speed Scaling</li>
+  <ul>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/wierman-speedscaling.pdf">Power-Aware
+Speed
+Scaling
+in
+Processor
+Sharing
+Systems</a> by Adam Wierman, Lachlan L.H. Andrew, Ao
+Tang <br>
+    </li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Sigmetrics09power.pdf">Optimal
+Power
+Allocation
+in
+Server
+Farms</a> by Anshul Gandhi, Mor Harchol-Balter, Rajarshi Das,
+and Charles Lefurgy, SIGMETRICS 2009. (Anshul Gandhi will present)<br>
+      <br>
+    </li>
+  </ul>
+  <li>Data Centers</li>
+  <ul>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/power_provisioning.pdf">Power
+Provisioning
+for
+a
+Warehouse-sized
+Computer</a> by Xiaobo Fan Wolf-Dietrich Weber Luiz
+André Barroso, ISCA 2007. (Kirk picked this paper)<br>
+    </li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/2008_asplos_nopowerstruggles.pdf">No
+“Power”
+Struggles:
+Coordinated
+Multi-level
+Power
+Management
+for
+the
+Data
+Center</a>
+by Ramya Raghavendra, Parthasarathy Ranganathan, Vanish Talwar, Zhikui
+Wang†, and Xiaoyun Zhu, APLOS 2008.</li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/sosp111-nathuji.pdf">VirtualPower:
+Coordinated
+Power
+Management
+in
+Virtualized
+Enterprise
+Systems</a> by Ripal Nathuji and
+Karsten Schwan, SOSP 2007.</li>
+    <li>Mercury and freon: temperature emulation and management for
+server systems<br>
+      <br>
+    </li>
+  </ul>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Networking<br>
+  </li>
+  <ul>
+    <li> <a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/SIGCOMM2009.pdf">Cutting
+the
+Electric
+Bill
+for
+Internet-Scale
+Systems</a> by Asfandyar Qureshi, Rick Weber, Hari
+Balakrishnan, John Guttag, Bruce Maggs</li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/nedevschi.pdf">Reducing
+Network
+Energy
+Consumption
+via
+Sleeping
+and
+Rate-Adaptation</a> by Sergiu Nedevschi, Lucian
+Popa,&nbsp; Gianluca Iannaccone, Sylvia Ratnasamy, David Wetherall,
+NSDI 2008.</li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/chen.pdf">Energy-Aware
+Server
+Provisioning
+and
+Load
+Dispatching
+for
+Connection-Intensive
+Internet
+Services
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      </a>by Gong
+Chen,&nbsp; Wenbo He,&nbsp; Jie Liu, Suman Nath, Leonidas Rigas,&nbsp;
+Lin Xiao and Feng Zhao, NSDI 2008.</li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/infocom08a_final.pdf">Power
+Awareness
+in
+Network
+Design
+and
+Routing</a> by Joseph Chabarek, Joel Sommers, Paul Barford,
+Cristian Estan, David Tsiang, and Steve Wright, INFOCOM 2008. (Pat)<br>
+    </li>
+  </ul>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Physicals</li>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li>Storage</li>
+  <ul>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/freitas-storage_class_memory.pdf">Storage-class
+memory:
+The
+next
+storage
+system
+technology</a> by R. F. Freitas W. W.
+Wilcke&nbsp;<br>
+      <br>
+    </li>
+  </ul>
+  <li>Database<br>
+  </li>
+  <ul>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/Paper_112.pdf">Energy
+Efficiency:
+The
+New
+Holy
+Grail
+of
+Data
+Management
+Systems
+Research</a> by Stavros Harizopoulos, Mehul
+Shah, Justin Meza, and Parthasarathy
+Ranganathan,&nbsp; Conference on Innovative Data Systems Research 2009.
+(Roxanna, Thao) </li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/JouleSort.pdf">JouleSort:
+a
+balanced
+energy-efficiency
+benchmark</a> by Suzanne Rivoire, Mehul A. Shah, Parthasarathy
+Ranganathan&nbsp; and Christos Kozyrakis, SIGMOD 2007. (<a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/2007.jsort.sigmod.slides-2.pdf">Slides</a>)</li>
+    <li><a
+ href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring2010/poess.pdf">Energy
+cost,
+the
+key
+challenge
+of
+today's
+data
+centers:
+a
+power
+consumption
+analysis
+of
+TPC-C
+results</a> by
+Meikel Poess&nbsp; and Raghunath Othayoth Nambiar, VLDB 2008
+&nbsp;&nbsp; (Roxanna, Thao) </li>
+  </ul>
+</ul>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<h3
+ style="margin: 0.1pt 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);"><small>The
+following
+papers
+were
+obtain
+by
+searching
+the
+following
+conferences
+from
+2007
+-
+2010:<br>
+</small></h3>
+<h3
+ style="margin: 0.1pt 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);"><small>Architecture:
+ASPLOS,
+ISCA,
+MICRO
+<br>
+Database: SIGMOD, ICDE, VLDB<br>
+Networks: SIGCOMM, INFOCOM, MOBICOM, NSDI</small></h3>
+<h3
+ style="margin: 0.1pt 0in; font-family: Comic Sans MS; color: rgb(255, 255, 255);"><small>Systems:
+SIGMETRICS,
+SOSP,
+OSDI</small></h3>
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<br style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">ISCA
+2007:</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a href="http://www.cs.rutgers.edu/%7Ericardob/papers/isca07.pdf">Limiting
+the
+Power
+Consumption
+of
+Main
+Memory</a>(Michael)</li>
+  <li><a href="http://masc.soe.ucsc.edu/docs/isca07.pdf">Power Model
+Validation Through
+Thermal Measurements</a></li>
+  <li><a
+ href="http://portal.acm.org/ft_gateway.cfm?id=1250701&amp;type=pdf&amp;coll=GUIDE&amp;dl=GUIDE&amp;CFID=70852864&amp;CFTOKEN=46438184">Thermal
+Modeling
+and
+Management
+of
+DRAM
+Memory
+Systems</a></li>
+  <ul>
+  </ul>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">ISCA
+2008</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://pages.cs.wisc.edu/%7Ealaa/papers/isca08_vccmin.pdf">Trading
+Off
+Cache
+Capacity
+for
+Reliability
+to
+Enable
+Low
+Voltage
+Operation</a></li>
+  <li><a
+ href="http://www.google.com/url?sa=t&amp;source=web&amp;ct=res&amp;cd=1&amp;ved=0CA4QFjAA&amp;url=http%3A%2F%2Fciteseerx.ist.psu.edu%2Fviewdoc%2Fdownload%3Fdoi%3D10.1.1.131.3300%26rep%3Drep1%26type%3Dpdf&amp;ei=kKVMS4mqFdSM8AbdyNyPDg&amp;usg=AFQjCNG43smunab3Y4M64jQW-lsdOSW7jQ&amp;sig2=a4RNUQl7jD8DngSVt9YLhg">Variation-Aware
+Application
+Scheduling
+and
+Power
+Management
+for
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a></li>
+  <li><a
+ href="http://www.eecs.northwestern.edu/%7Ememik/papers/isca08.pdf">Learning
+and
+Leveraging
+the
+Relationship
+between
+Architecture-Level
+Measurements
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">ISCA
+2009</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://www.multicoreinfo.com/research/papers/2009/isca09-02-zhou-durable.pdf">A
+Durable
+and
+Energy
+Efficient
+Main
+Memory
+Using
+Phase
+Change
+Memory</a> (Brian)<a
+ href="http://www.multicoreinfo.com/research/papers/2009/isca09-02-zhou-durable.pdf"><br>
+    </a></li>
+  <li><a href="http://www.ece.cmu.edu/%7Eomutlu/pub/bless_isca09.pdf">A
+Case for Bufferless Routing in On-Chip Networks</a></li>
+  <li><a
+ href="http://www.princeton.edu/%7Eabhattac/bhattacharjeeISCA09.pdf">Thread
+Criticality
+Predictors
+for
+Dynamic
+Performance,
+Power,
+and
+Resource
+Management
+in
+Chip
+Multiprocessors</a></li>
+  <li><a href="http://www.eecs.harvard.edu/%7Edbrooks/isca09_rangan.pdf">Thread
+Motion:
+Fine-Grained
+Power
+Management
+for
+Multi-Core
+Systems</a> </li>
+  <li><a href="http://www.ece.utk.edu/%7Exwang/papers/isca09.pdf">Temperature-Constrained
+Power
+Control
+for
+Chip
+Multiprocessors
+with
+Online
+Model
+Estimation</a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">ASPLOS
+2006</li>
+<li
+ style="font-family: Comic Sans MS; color: rgb(255, 255, 255); margin-left: 40px;"><a
+ href="p106-heath.pdf">Mercury and freon: temperature emulation and
+management for server systems</a></li>
+<br style="color: rgb(255, 255, 255);">
+<br style="color: rgb(255, 255, 255);">
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">ASPLOS
+2008</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a href="http://doi.acm.org/10.1145/1346281.1346288">Efficiency
+Trends
+and
+Limits
+from
+Comprehensive
+Microarchitectural
+Adaptivity</a></li>
+  <li><a href="http://doi.acm.org/10.1145/1346281.1346290">Exploiting
+Access
+Semantics
+and
+Program
+Behavior
+to
+Reduce Snoop Power in Chip
+Multiprocessors</a></li>
+  <li><a href="http://doi.acm.org/10.1145/1346281.1346291">PICSEL:
+Measuring User-Perceived Performance to Control Dynamic Frequency
+Scaling</a></li>
+  <li><a href="http://doi.acm.org/10.1145/1346281.1346317">Feedback-Driven
+Threading:
+Power-Efficient
+and
+High-Performance
+Execution
+of
+Multi-threaded
+Workloads
+on
+CMPs</a></li>
+</ul>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <ul>
+  </ul>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">ASPLOS
+2009</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://www.ece.cmu.edu/%7Ebgold/papers/meisner-asplos09.pdf">PowerNap:
+Eliminating
+Server
+Idle
+Power</a> (Brian)<a
+ href="http://www.ece.cmu.edu/%7Ebgold/papers/meisner-asplos09.pdf"><br>
+    </a></li>
+  <li><a href="http://nvsl.ucsd.edu/papers/Asplos2009Gordon.pdf">Gordon:
+Using
+Flash
+Memory
+to
+Build
+Fast,
+Power-efficient
+Clusters
+for
+Data-intensive
+Applications</a><!--=
+li--> </li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">APLOS
+2010
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <br>
+</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a href="http://users.soe.ucsc.edu/%7Erenau/docs/asplos10.pdf">Characterizing
+Processor
+Thermal
+Behavior</a></li>
+  <li><a href="asplos079-kirman.pdf">A Power-efficient All-optical
+On-chip Interconnect Using
+Wavelength-based Oblivious Routing</a></li>
+  <li><a
+ href="http://www.eecs.umich.edu/%7Espelley/Publications/Pelley-ASPLOS2010-PowerRouting.pdf">Power
+Routing:
+Dynamic
+Power
+Provisioning
+in
+the
+Data
+Center</a> (Daniel)<a
+ href="http://www.eecs.umich.edu/%7Espelley/Publications/Pelley-ASPLOS2010-PowerRouting.pdf"><br>
+    </a></li>
+  <li> <a href="PowerTrade-Final.pdf">Joint Optimization of Idle and
+Cooling Power in Data Centers While Maintaining Response Time</a>
+(Michael) </li>
+</ul>
+<br style="color: rgb(255, 255, 255);">
+<span style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">MICRO
+2007
+</span>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a href="http://dx.doi.org/10.1109/MICRO.2007.13">Smart
+Refresh: An Enhanced Memory Controller Design for Reducing Energy in
+Conventional and 3D Die-Stacked DRAMs</a></li>
+</ul>
+<br style="color: rgb(255, 255, 255);">
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+MICRO 2008
+  <ul>
+    <li><a href="http://dx.doi.org/10.1109/MICRO.2008.4771792">Mini-Rank:
+Adaptive
+DRAM
+Architecture
+for
+Improving
+Memory
+Power
+Efficiency</a></li>
+    <li><a href="http://dx.doi.org/10.1109/MICRO.2008.4771804">Adaptive
+Data
+Compression
+for
+High-Performance
+Low-Power
+On-Chip
+Networks</a></li>
+    <li><a href="http://dx.doi.org/10.1109/MICRO.2008.4771806">Power
+Reduction of CMP Communication Networks via RF-Interconnects</a></li>
+    <li><a href="http://dx.doi.org/10.1109/MICRO.2008.4771812">Low-Power,
+High-Performance
+Analog
+Neural
+Branch
+Prediction</a></li>
+    <li><a href="http://dx.doi.org/10.1109/MICRO.2008.4771813">Reconfigurable
+Energy
+Efficient
+Near
+Threshold
+Cache
+Architectures</a></li>
+  </ul>
+  <br>
+</li>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+MICRO 2009
+  <ul>
+    <li><a href="http://doi.acm.org/10.1145/1669112.1669135">Into the
+Wild: Studying Real User Activity Patterns to Guide Power Optimizations
+for Mobile Architectures</a></li>
+    <li><a href="http://doi.acm.org/10.1145/1669112.1669137">Reducing
+Peak Power with a Table-Driven Adaptive Processor Core</a></li>
+    <li><a href="http://doi.acm.org/10.1145/1669112.1669151">A Case
+for Dynamic Frequency Tuning in On-Chip Networks</a></li>
+    <li><a href="http://doi.acm.org/10.1145/1669112.1669156">ESKIMO -
+Energy Savings using Semantic Knowledge of Inconsequential Memory
+Occupancy for DRAM Subsystem</a> (Michael)</li>
+    <li><a href="http://doi.acm.org/10.1145/1669112.1669157">Flip-N-Write:
+A
+Simple
+Deterministic
+Technique
+to
+Improve
+PRAM
+Write
+Performance,
+Energy
+and
+Endurance</a> (Brian)<a
+ href="http://doi.acm.org/10.1145/1669112.1669157"><br>
+      </a></li>
+    <li><a href="http://doi.acm.org/10.1145/1669112.1669170">Multiple
+Clock and Voltage Domains for Chip Multi Processors</a>(Michael)</li>
+  </ul>
+</li>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+NSDI 2008 <br>
+</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://www.usenix.org/events/nsdi08/tech/full_papers/nedevschi/nedevschi.pdf">Reducing
+Network
+Energy
+Consumption
+via
+Sleeping
+and
+Rate-Adaptation
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a>(Pat)<a
+ href="http://www.usenix.org/events/nsdi08/tech/full_papers/nedevschi/nedevschi.pdf"><br>
+    </a></li>
+  <li><a
+ href="http://www.usenix.org/events/nsdi08/tech/full_papers/chen/chen.pdf">Energy-Aware
+Server
+Provisioning
+and
+Load
+Dispatching
+for
+Connection-Intensive
+Internet
+Services</a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+NSDI 2009 <br>
+</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://www.usenix.org/events/nsdi09/tech/full_papers/agarwal/agarwal.pdf">Somniloquy:
+Augmenting
+Network
+Interfaces
+to
+Reduce
+PC
+Energy
+Usage</a> (Brian)<a
+ href="http://www.usenix.org/events/nsdi09/tech/full_papers/agarwal/agarwal.pdf"><br>
+    </a></li>
+  <li><a
+ href="http://www.usenix.org/events/nsdi09/tech/full_papers/nedevschi/nedevschi.pdf">Skilled
+in
+the
+Art
+of
+Being
+Idle:
+Reducing
+Energy
+Waste
+in
+Networked
+Systems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a>(Pat)<a
+ href="http://www.usenix.org/events/nsdi09/tech/full_papers/nedevschi/nedevschi.pdf"><br>
+    </a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+NSDI 2010 <br>
+</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://www.openflowswitch.org/wk/images/2/2c/ElasticTree-TechReport2009.pdf">ElasticTree:
+Saving
+Energy
+in
+Data
+Center
+Networks
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a>(Pat)<a
+ href="http://www.openflowswitch.org/wk/images/2/2c/ElasticTree-TechReport2009.pdf"><br>
+    </a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+MOBICOM 2009 <br>
+</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://www.ee.columbia.edu/%7Ezussman/pub_files/EnHANTs_MOBICOM09.pdf">Challenge:
+Ultra-Low-Power
+Energy-Harvesting
+Active
+Networked
+Tags
+(EnHANTs)&nbsp;</a> (Daniel)<a
+ href="http://www.ee.columbia.edu/%7Ezussman/pub_files/EnHANTs_MOBICOM09.pdf"><br>
+    </a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">SIGMETRICS
+2007:</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a href="http://portal.acm.org/citation.cfm?doid=1254882.1254902">Managing
+energy-performance
+tradeoffs
+for
+multithreaded
+applications
+on
+multiprocessor
+architectures</a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">SIGMETRICS
+2008:</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a href="http://portal.acm.org/citation.cfm?doid=1375457.1375496">Software
+thermal
+management
+of
+dram
+memory
+for
+multicore
+systems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a>(Daniel)<a
+ href="http://portal.acm.org/citation.cfm?doid=1375457.1375496"><br>
+    </a></li>
+  <li><a href="http://portal.acm.org/citation.cfm?doid=1375457.1375497">Noncooperative
+power
+control
+and
+transmission
+scheduling
+in
+wireless
+collision
+channels
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a></li>
+  <li><a href="http://portal.acm.org/citation.cfm?doid=1375457.1375498">Software-directed
+combined
+cpu/link
+voltage
+scaling
+fornoc-based
+cmps</a></li>
+  <li><a href="http://doi.acm.org/10.1145/1346281.1346289">No
+"Power" Struggles: Coordinated Multi-level Power Management for the
+Data Center</a></li>
+  <li> <a
+ href="http://portal.acm.org/citation.cfm?doid=1375457.1375499">Interaction-aware
+energy
+management
+for
+wireless
+network
+cards</a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">SIGMETRICS
+2009:</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a href="http://portal.acm.org/citation.cfm?doid=1555349.1555367">Dynamic
+data
+compression
+in
+multi-hop
+wireless
+networks</a></li>
+  <li><a href="http://portal.acm.org/citation.cfm?doid=1555349.1555368">Optimal
+power
+allocation
+in
+server
+farms</a></li>
+  <li><a href="http://portal.acm.org/citation.cfm?doid=1555349.1555369">Evaluating
+the
+impact
+of
+job
+scheduling
+and
+power
+management
+on
+processor
+lifetime
+for
+chip
+multiprocessors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a>(Daniel)<a
+ href="http://portal.acm.org/citation.cfm?doid=1555349.1555369"><br>
+    </a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">INFOCOM
+2007:</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://www-rcf.usc.edu/%7Emjneely/pdf_papers/delay_infocom07.pdf">Energy
+Efficient
+Scheduling
+with
+Individual
+Packet
+Delay
+Constraints:
+Offline
+and
+Online
+Results</a></li>
+  <li><a
+ href="http://prisms.cs.umass.edu/brian/pubs/banerjee.infocom07.pdf">An
+Energy-Efficient Architecture for DTN Throwboxes</a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">INFOCOM
+2008:</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a href="http://pages.cs.wisc.edu/%7Epb/infocom08a_final.pdf">Power
+Awareness
+in
+Network
+Design
+and
+Routing</a> <a
+ href="http://pages.cs.wisc.edu/%7Epb/infocom08a_final.pdf"><br>
+    </a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">INFOCOM
+2009:</li>
+<li
+ style="font-family: Comic Sans MS; color: rgb(255, 255, 255); margin-left: 40px;"><a
+ href="http://www.cs.caltech.edu/%7Eadamw/papers/power-2.pdf">Power-Aware
+Speed
+Scaling
+In
+Processor
+Sharing
+Systems</a></li>
+<br style="color: rgb(255, 255, 255);">
+<br style="color: rgb(255, 255, 255);">
+<span style="font-family: Comic Sans MS; color: rgb(255, 255, 255);"><br>
+</span>
+<br style="color: rgb(255, 255, 255);">
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">SOSP
+2009:</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://www.sigops.org/sosp/sosp09/papers/andersen-sosp09.pdf">FAWN:
+A
+Fast
+Array
+of
+Wimpy
+Nodes</a> Best Paper</li>
+  <li><a
+ href="http://www.sigops.org/sosp/sosp09/papers/hotstorage_7_guerra.pdf">Energy
+Proportionality
+for
+Storage:
+Impact
+and
+Feasibility</a><br>
+  </li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">SOSP
+2007:</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a href="http://www.sosp2007.org/papers/sosp186-klues.pdf">Integrating
+Concurrency
+Control
+and
+Energy
+Management
+in
+Device
+Drivers</a></li>
+  <li><a href="http://www.sosp2007.org/papers/sosp111-nathuji.pdf">VirtualPower:
+Coordinated
+Power
+Management
+in
+Virtualized
+Enterprise
+Systems</a></li>
+</ul>
+<li style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">HotPower
+2008
+(co-located
+with
+OSDI'08):</li>
+<ul style="font-family: Comic Sans MS; color: rgb(255, 255, 255);">
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/merkel/merkel.pdf">Memory-aware
+Scheduling
+for
+Energy
+Efficiency
+on
+Multicore
+Processors
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a>(Daniel)<a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/merkel/merkel.pdf"><br>
+    </a></li>
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/tolia/tolia.pdf">Delivering
+Energy
+Proportionality
+with
+Non
+Energy-Proportional
+Systems
+Optimizing
+the
+Ensemble</a></li>
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/rivoire/rivoire.pdf">A
+Comparison
+of
+High-Level
+Full-System
+Power
+Models</a></li>
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/lewis/lewis.pdf">Run-time
+Energy
+Consumption
+Estimation
+Based
+on
+Workload
+in
+Server
+Systems
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a></li>
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/ransford/ransford.pdf">Getting
+Things
+Done
+on
+Computational
+RFIDs
+with
+Energy-Aware
+Checkpointing
+and
+Voltage-Aware
+Schedulingâ€¨</a></li>
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/schmid/schmid.pdf">The
+True
+Cost
+of
+Accurate
+Time</a></li>
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/ananthanarayanan/ananthanarayanan.pdf">Greening
+the
+Switch</a></li>
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/nedevschi/nedevschi.pdf">Hot
+Data
+Centers
+vs.
+Cool
+Peers
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </a>(Daniel)<a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/nedevschi/nedevschi.pdf"><br>
+    </a></li>
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/wang/wang.pdf">On
+the
+Impact
+of
+Disk
+Scrubbing
+on
+Energy
+Savings</a></li>
+  <li><a
+ href="http://www.usenix.org/events/hotpower08/tech/full_papers/seo/seo.pdf">Empirical
+Analysis
+on
+Energy
+Efficiency
+of
+Flash-based
+SSDs</a></li>
+</ul>
+<span style="font-family: Comic Sans MS; color: rgb(255, 255, 255);"><span
+ style="text-decoration: underline;"><br>
+<br>
+<li style="font-family: Comic Sans MS;">Interesting
+Web
+Resource<br>
+</li>
+<ul style="font-family: Comic Sans MS;">
+  <li><a href="http://it.anandtech.com/IT/showdoc.aspx?i=3722">Dynamic
+Power Management: A Quantitative Approach</a></li>
+  <li><a href="http://www.google.com/corporate/green/datacenters/">Efficient
+computing
+at
+Google</a><br>
+  </li>
+</ul>
+</span></span>
+</body>
+</html>

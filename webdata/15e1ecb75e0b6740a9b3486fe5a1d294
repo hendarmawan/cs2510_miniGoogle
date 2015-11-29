@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=iso-8859-1"
+ http-equiv="Content-Type">
+  <title>cs1675</title>
+  <link type="text/css" href="styles-site.css" rel="stylesheet">
+</head>
+<body>
+<div id="banner">
+<h1><a accesskey="1"
+href="http://www.cs.pitt.edu/~hwa/cs1675/">CS1675</a></h1>
+<span class="description">Introduction to Machine Learning</span>
+</div>
+<div id="content">
+<div class="blog">
+<div class="blogbody">
+
+
+<h3 class="title">Academic Honesty</h3>
+
+<p>All individually submitted work <b>must be your own</b>. In terms
+of programming assignments, this means that you must not have any code
+relevant to the assignment <i>communicated to you in any form</i>, and that you are responsible for <i>protecting your work from exploitation by someone else</i>. In the event of suspected plagiarism, both parties will be
+investigated. <b>Plagiarizers will receive disciplinary actions
+according to university policies</b>. </p>
+
+<p>You may discuss the assignments with each other <i>in general
+terms</i>; you may also refer to printed literature and web resources
+for background research. <b>However</b> you must provide proper
+citations to any resources to which you referred, including people
+with whom you have communicated.  Failure to do so is considered
+plagiarism.
+
+<h3 class="title">Absences</h3>
+
+<p> If an absence is unavoidable, you are responsible for making
+arrangements <b>to ensure that your assignments are turned in on
+time</b>.  You are also responsible for obtaining the materials passed
+out and the information announced during the missed class. In case of
+extraordinary circumstances (hospitalization, family emergency) you
+should contact me as soon as possible so that we may arrange an
+extension for an assignment <i>prior to the due date</i>.  Late
+assignments <b>will not</b> be accepted. 
+
+<h3 class="title">Textbooks</h3>
+<p> This course does not require you to purchase any particular textbook, but
+there are several suggested reference textbooks; a copy should be on reserve at the Hillman Library. 
+
+<h3 class="title">Lectures</h3>
+<p>Lectures will primarily be presented using the "traditional" method of 
+writing on whiteboards. While a skeletal outline and review questions will be posted online after each lecture, in general, students are responsible for attending classes and taking notes. 
+
+<h3 class="title">Class Participation</h3>
+
+<p> Class participation is an important component of this course. Students are expected to actively participate in discussions during class and to ask questionsabout the course material. Note: regular attendances only partially counts toward class participation.
+
+<p><b>Post-Lecture Reviews</b> For each lecture (starting from week 4), two volunteer lecture reviewers are solicited. If you are interested in being a reviewer for a lecture, you should let me know by the end of the day of the lecture (first come first serve).
+The lecture reviewers will have one week to prepare a more detailed summary for the lecture than the official outlines I post.  During that week, you should either send me a draft of your summary or see me during office hours. You may also discuss the lecture with other students. The reviews <b>should not be a transcript</b> of what is said during class. A post-lecture review will work out some of the class examples or review questions in greater details. It may provide references to additional sources (either online or from the textbooks in reserve); and they will provide some synthesis of and insights to the major ideas discussed during the lecture.
+
+<p>You may volunteer for up to three lectures, and you are encouraged to volunteer for at least one. These contribute to the class participation portion of your grade. It's a good option for people who don't like to speak up during class. 
+
+<h3 class="title">Team project</h3>
+
+<p>There will be a team project component to this course. Each team
+should have three people. There will be short oral presentations on
+the progress of your team project throughout the semester. There will
+also be a longer presentation of your results at the end of the
+term. Every member of the team is expected to contribute equally. You
+should let me know as soon as possible if any problem arises. At the
+end of the semester, every student should email me a short description
+of your team experience. Your grade for this component will be based
+on both the quality of the team project <i>and</i> feedbacks from your
+teammates.
+
+<h3 class="title">Course Grade</h3>
+
+<p>The overall grade will be decided based on the following factors:</p>
+<ul>
+  <li> Class participation (10%) 
+  <li> Assignments (20%)
+  <li> Midterm exam (20%)
+  <li> Team project (25%)
+  <li> Final exam (25%)
+</ul>
+
+<h3 class="title">Office Hours</h3>
+<p>Aside from my regular office hours, you may request for additional
+appointments, but they must be made at least a day in advance.</p>
+
+<!--Please mute your
+<h3 class="title">Class Conduct</h3>
+<p>Professional behavior is expected from everyone. 
+cell phone during class.&nbsp; Phone rings are disruptive to lectures
+because they interrupt everyone's train of thought.</p>
+-->
+<h3 class="title">Students With Disabilities</h3>
+<p>If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412)
+648-7890/(412) 383-7355 (TTY), as early as possible in the term. DRS
+will verify your disability and determine reasonable accomodations for
+this course. </p>
+</div>
+</div>
+</div>
+<div id="links">
+<div class="side"><a href="index.html">Home</a><br>
+<a href="policy.htm">Course Policies</a><br>
+<a href="syl.htm">Syllabus</a><br>
+<a href="links.htm">Links</a><br>
+</div>
+</div>
+<br clear="all">
+<br>
+</body>
+</html>

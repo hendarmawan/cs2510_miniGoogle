@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>J2ME Configurations</title>
+</head>
+
+<body>
+
+<a href="java6.htm"><img src="previous.gif" align="left" /></a><a href="previous.html">
+</a><a href="java8.htm"><img src="next.gif" align="right" /></a><a href="next.html"> </a><center>
+<h1>J2ME Configurations</h1>
+<hr /></center>
+<ul>
+	<li>
+	<h2 align="left"><font size="5">Connected Limited Devices Configuration</font></h2>
+	<ul>
+		<li>
+		<p align="left"><font size="5">CLDC</font></p></li>
+		<li>
+		<p align="left"><font size="5">Processor: 16 bit/16 MHz or higher </font>
+		</p></li>
+		<li>
+		<p align="left"><font size="5">Memory: 160-512 KB of total memory available</font></p>
+		</li>
+		<li>
+		<p align="left"><font size="5">Power: Limited power, often battery powered 
+		operation </font></p></li>
+		<li>
+		<p align="left"><font size="5">Networking: Connectivity to some kind of 
+		network, usually with limited bandwidth<br>
+&nbsp;</font></p></li>
+	</ul></li>
+	<li>
+	<p align="left"><font size="5">CLDC virtual machines omitted certain virtual 
+	machine features like floating point numbers<br>
+&nbsp;</font></li>
+	<li>
+	<p align="left"><font size="5">CLDC class libraries not directly related in 
+	interface or design to the J2SE class libraries<br>
+&nbsp;</font></li>
+	<li>
+	<p align="left"><font size="5">Certain items of J2SE core library support 
+	not present:</font><ul>
+		<li>
+		<p align="left"><font size="5">class reflection</font></li>
+		<li>
+		<p align="left"><font size="5">thread groups</font></li>
+		<li>
+		<p align="left"><font size="5">application-defined class loading</font></li>
+	</ul></li>
+</ul>
+
+</body>
+
+</html>

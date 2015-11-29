@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Microsoft .NET Presentation</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="100%">
+    <tr>
+        <td valign="top"><a href="slide-16.htm"><img
+        src="previous.gif" border="0" width="26" height="26"></a></td>
+        <td align="center" valign="top"><h1>Assemblies</h1>
+        </td>
+        <td align="right" valign="top"><a href="slide-18.htm"><img
+        src="next.gif" border="0" width="26" height="26"></a></td>
+    </tr>
+</table>
+
+<h2>What is an assembly?</h2>
+
+<p><font size="4">An assembly is the basic .NET deployment unit.
+It is, more or less, a &quot;logical&quot; DLL (although more
+than one physical DLL may comprise it).</font></p>
+
+<p align="center"><font size="3">Assembly structure</font></p>
+<div align="center"><center>
+
+<table border="1" width="80%">
+    <tr>
+        <td width="25%">Manifest</td>
+        <td width="25%">Metadata (type)</td>
+        <td width="25%">IL code</td>
+        <td width="25%">Resources</td>
+    </tr>
+</table>
+</center></div>
+
+<p><font size="4">Assemblies are self-describing. They do so
+through a metadata structure called a manifest. This metadata is
+distinct from the metadata used to describe any type and
+functionality exposed by the assembly.</font></p>
+
+<p><font size="4">A manifest includes:</font></p>
+
+<ul>
+    <li><font size="4">The &quot;identity&quot; - assembly name,
+        version number, and &quot;culture&quot;</font></li>
+    <li><font size="4">File list</font></li>
+    <li><font size="4">Referenced assemblies</font></li>
+    <li><font size="4">Exported types and resources, divided
+        between internally and externally visible</font></li>
+    <li><font size="4">Permission (security) requests: required,
+        optional, and never categories</font></li>
+</ul>
+
+<p><font size="4">Assembly versioning is handled on the identity
+level.</font></p>
+
+<hr>
+
+<p><a href="references.htm"><em>References</em></a><em>: D</em></p>
+</body>
+</html>

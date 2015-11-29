@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><HEAD><TITLE>Querying Multiple Data</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<meta name="ProgId" content="FrontPage.Editor.Document">
+</HEAD>
+<BODY> 
+
+ <A href="7.htm" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+ <A href="9.htm">  <IMG height=26 src="next.gif" width=26 align=right >  </A>
+<CENTER>
+<H1><font face="Arial">An Interface and Remote Control (1)</font></H1></CENTER>
+<CENTER>
+<H1 align=center><font face="Arial">
+<IMG alt="" src="6.jpg" width="544" height="298" ></font></H1></CENTER>
+<P align=left><FONT size=4 face="Arial"><STRONG>What I will provide to 
+you:</STRONG></FONT></P>
+<P align=left><FONT size=4 face="Arial"><STRONG>1. Remote Control</STRONG></FONT></P>
+<P align=left><FONT size=4 face="Arial"><STRONG>2. Message Format(in XML) and reserved 
+Messages( Message ID 0--999)</STRONG></FONT></P>
+<P align=left><FONT size=4 face="Arial"><STRONG>3. An interface to get Message to Test your 
+program</STRONG></FONT></P>
+<P align=left><font face="Arial">&nbsp;</font></P>
+<P align=left><FONT size=4 face="Arial"><STRONG>What you are required to do( only 
+one!)</STRONG></FONT></P>
+<P align=left><FONT size=4 face="Arial"><STRONG>1. Implement a interface in you component to 
+get incomming messages and send outgoing messages</STRONG></FONT></P>
+</BODY>
+ </html>

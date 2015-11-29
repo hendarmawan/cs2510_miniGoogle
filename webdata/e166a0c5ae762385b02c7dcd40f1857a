@@ -1,0 +1,111 @@
+<html>
+
+<head>
+<title>CS 2410 </title>
+</head>
+
+<body bgcolor=#FFFFFE text=#000000 >
+
+<body>
+
+<p>
+<img align=left src ="http://www.cs.pitt.edu/Gifs/pittlogo.gif"> 
+<h1><center>CS 2410: 
+COMPUTER ARCHITECTURE </center></h1>
+
+<h3><center>Fall 2015
+<br>
+Mondays and Wednesdays
+from 11:00AM to 12:15PM
+<br>
+(may meet on a Friday if needed)
+<br>
+5313 Sennott Square</center>
+</h3>
+
+<center><img src="http://www.cs.pitt.edu/Gifs/rainbow.gif" width="70%"></center>
+
+<br>
+<h3>Instructor</h3>
+<ul>
+<a href = "http://www.cs.pitt.edu/~melhem">
+Rami Melhem </a> (melhem@cs.pitt.edu)<br>
+6429 Sennott Square,<br>
+phone: 412-624-8426 <br>
+Office Hours:
+<ul>
+Mondays and Wednesdays from 12:30PM to 2:00PM
+<br>
+and by appointment
+</ul>
+</ul>
+
+<h3>Teaching assistants</h3>
+<ul>
+<a href = "http://people.cs.pitt.edu/~leizhao">
+Lei Zhao </a> (lez21@pitt.edu) <br>
+6803 Sennott Square,<br>
+Office Hours: 
+Tuesdays from 10:00AM to 12:00PM and Thursdays from 5:30PM to 7:00PM
+</ul>
+
+<h3>Description</h3>
+<ul>
+This course focuses on basic (and some advanced) concepts in modern computer
+architecture and the major component subsystems of high performance computers.
+Particular emphasis will be given to the exploration of parallelism at the instruction, data and thread levels.
+</ul>
+
+<h3>Textbooks </h3>
+<ul>
+Computer Architecture: A Quantitative Approach,
+<br>
+John Hennessy and David Patterson.
+<br>
+Fifth Edition -  Morgan & Kaufmann.
+</ul>
+
+<h3>Requirements and grading:</h3>
+<ul>
+Mid term exam (25%), Final exam (35%), homeworks and project(s) (35%),
+class participation (5%).
+</ul>
+
+<h3>Policy on cheating and late homeworks</h3>
+<ul>
+Cheating on exams or homeworks will results in a grade of "0" for the first
+time (for all involved students) and an "F" in the course for the second time.
+<br>
+Late homeworks will not be accepted and
+Exams will not be rescheduled except under extraordinary circumstances.
+</ul>
+
+<h3>Note for students with special needs</h3>
+If you have a disability for which you are or may be requesting an
+accomodation, you are encouraged to contact the Office of Disability Resources
+and Services, 216 William Pitt Union (412-648-7890), as soon as possible in
+the term. They will verify your disability and determine reasonable
+accomodations for this course.
+
+
+<h3>Course
+<a href = "progress.html">
+Outlines and Schedule:
+</a>
+</h3>
+<ul>
+We will cover Chapters 1-5 and Appendices A, B and C of the textbook.
+Some sections will be skipped and
+some supplementary material will be introduced as we progress.
+</ul>
+
+<img src = "http://www.cs.pitt.edu/Gifs/rainbow.gif" width="100%">
+
+<h4>
+<IMG src = "http://www.cs.pitt.edu/Gifs/whiteball.gif"><a href = "http://www.cs.pitt.edu">Department of Computer Science</a>
+<IMG src = "http://www.cs.pitt.edu/Gifs/whiteball.gif"><a href = "http://www.pitt.edu">University of Pittsburgh</a></h4>
+<img alt="*" src="http://www.cs.pitt.edu/Gifs/rainbow.gif" width="100%">
+
+</body>
+
+</html>

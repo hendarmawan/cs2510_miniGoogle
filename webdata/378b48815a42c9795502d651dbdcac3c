@@ -1,0 +1,580 @@
+<title>Extending Visual Languages for Multimedia</title>
+<h1>EXTENDING VISUAL LANGUAGES FOR MULTIMEDIA</h1>
+<h2><a href="http://www.cs.pitt.edu/~chang">Shi-Kuo Chang</a></h2>
+<h2>University of Pittsburgh and Knowledge Systems Institute</h2>
+
+Visual languages, which let users customize iconic sentences, can be extended to 
+accommodate multimedia objects, letting users access media dynamically. Teleaction 
+objects, or multimedia objects with knowledge structures, can be designed using visual 
+languages to automatically respond to events and perform tasks like <b>find related books</b>
+in virtual library Bookman.<br>
+
+
+<p>
+Languages that let users create custom icons and iconic sentences are receiving increased 
+attention as multimedia applications become more prevalent. Visual language systems let 
+the user introduce new icons, and create iconic sentences with different meanings and the  
+ability to exhibit dynamic behavior. With a graphical user interface, the user must 
+generally compose commands with predefined icons, which limits the range of 
+commands and makes dynamic composition rather difficult. It is also awkward to 
+customize such commands without cluttering the screen. These limitations are significant 
+in multimedia applications because the user must often access multimedia information 
+dynamically with very few icons.<br>
+
+At the University of Pittsburgh and Knowledge Systems Institute, we have developed a 
+formal framework for visual language semantics that is based on the notion of icon 
+algebra and have designed several visual languages for the speech impaired. The <a href="#apndx"> appendix</a> 
+describes more about the underlying semantics and grammar.  We have since 
+extended the framework to include the design of multidimensional languages - visual 
+languages that capture the dynamic nature of multimedia objects through icons, earcons 
+(sound), micons (motion icons), and vicons (video icons). The user can create a 
+multimedia message by combining these icons and have direct access to multimedia 
+information, including animation. <br>
+
+We have successfully implemented this framework in developing <a href="http://www.ksi.edu/vrlib/vrlib.html"> Bookman </a>, an interface 
+to a virtual library used by the students and faculty of the Knowledge Systems Institute. 
+As part of this work, we extended the visual language concepts to develop teleaction 
+objects, objects that automatically respond to some events or messages to perform certain 
+tasks [CHHC95]. We are continuing work on extensions to the visual interface in the 
+context of emergency management, where the information system must react to flood 
+warnings, fire warnings, and so on, to present multimedia information and to take actions 
+[KHALIFA96].<br>
+
+Figure 1 shows the search and query flexibility possible with the Bookman interface. In 
+addition, users can perform a range of tasks, including finding related books,  finding 
+books containing documents similar to documents contained in the current book,   
+receiving alert messages when related books or books containing similar documents have 
+been prefetched by BookMan, finding other users with similar interests or receiving alert 
+messages about such users (the last function requires mutual consent among the users) 
+etc.  In developing the interface, our goal was to give users the same range of freedom 
+they might experience in a real library. Much of this power stems from the use of TAOs.<br>
+
+<h2>WHAT TELEACTION OBJECTS DO</h2>
+To create a TAO, we attached knowledge about events to the structure of each 
+multimedia obobject - a complex object that comprises some combination of text, image, 
+graphics, video, and audio objects. TAOs are extremely valuable because they greatly 
+improve the selective access and presentation of relevant multimedia information. In 
+BookMan, for example, each book or multimedia document is a TAO because the user 
+can not only access the book, browse its table of contents, read its abstract, and decide 
+whether to check it out, but also be informed about related books, or find out who has a 
+similar interest in this subject. The user can indicate an intention by incrementally 
+modifying the physical appearance of the book, usually with just a few clicks of the 
+mouse.<br>
+
+TAOs can accommodate an almost limitless range of functions. For example, when the 
+user clicks on a particular book, it can automatically access information about related 
+books and create a multimedia presentation from all the books.
+
+The drawback of TAOs is that they are complex objects and  therefore the end user can 
+not easily manipulate them with traditional define, insert, delete, modify, and update 
+commands. Instead, TAOs require direct manipulation, which we provided through a 
+multidimensional language. <br>
+
+<h2>ELEMENTS OF A TELEACTION OBJECT</h2>
+The physical appearance of a TAO is described by a multidimensional sentence. The 
+syntactic structure derived from this multidimensional sentence controls its dynamic 
+multimedia presentation. The TAO also has a knowledge structure called the active index 
+that controls its event-driven or message-driven behavior. The multidimensional sentence 
+may be location-sensitive, time-sensitive or content-sensitive. Thus, an incremental 
+change in the TAO’s external appearance is an event that causes the active index to react. 
+As I describe later, the active index itself can be designed using a visual-language 
+approach.<br>
+
+<h3>Multidimensional language</h3>
+The multidimensional language consists of generalized icons and operators, and each 
+sentence has a syntactic structure that controls the dynamics of a multimedia 
+presentation.<br>
+
+<h3>Generalized icons and operators</h3>
+The <a href="#apndx"> appendix</a> <b>Elements of a visual language</b> describes the icons and operators in a visual 
+(not multidimensional) language. In a multidimensional language, we want not only 
+icons that represent objects by images, but also icons that represent the different types of 
+media. We call such primitives generalized icons and define them as  x = (x<font size=-2>m</font>, x<font size=-2>p</font>) where 
+x<font size=-2>m</font> is the meaning and x<font size=-2>p</font> is the physical appearance. To represent TAOs, we replace the x<font size=-2>p</font> 
+with other expressions that depend on the media type:<br>
+<br>
+o	Icon: (x<font size=-2>m</font>, x<font size=-2>i</font>) where x<font size=-2>i</font> is an image <br>
+o	Earcon: (x<font size=-2>m</font>, x<font size=-2>e</font>) where x<font size=-2>e</font> is sound<br>
+o	Micon: (x<font size=-2>m</font>, x<font size=-2>s</font>) where x<font size=-2>s</font> is a sequence of icon images
+              (motion icon)<br>
+o	Ticon: (x<font size=-2>m</font>, x<font size=-2>t</font>) where x<font size=-2>t</font> is text (ticon can be regarded as a
+               subtype of icon)<br>
+o	Vicon: (x<font size=-2>m</font>, x<font size=-2>v</font>) where x<font size=-2>v</font> is a video clip (video icon)<br>
+
+<br>
+The combination of an icon and an earcon/micon/ticon/vicon is a multidimensional 
+sentence. <br>
+
+For multimedia TAOs, we define operators as <br>
+o	Icon operator op = (op<font size=-2>m</font>, op<font size=-2>i</font>), such as ver (vertical composition), hor
+             (horizontal composition), ovl (overlay), con (connect), surround, edge_to_edge,
+             etc. <br>
+o	Earcon operator op = (op<font size=-2>m</font>, op<font size=-2>e</font>), such as fade_in, fade_out, etc.  <br>
+o	Micon operator op = (op<font size=-2>m</font>, op<font size=-2>s</font>), such as zoom_in, zoom_out, etc.  <br>
+o	Ticon operator op = (op<font size=-2>m</font>, op<font size=-2>t</font>), such as text_merge, text_collate, 
+              etc. <br>
+o	Vicon operator op = (op<font size=-2>m</font>, op<font size=-2>v</font>), such as montage, cut, etc.<br>
+
+Two classes of operators are possible in constructing a multimedia object.  As the <a href="#apndx"> appendix</a> 
+<b>Elements of a visual language</b> describes, spatial operators are operators that involve 
+spatial relations among image, text or other spatial objects. A multimedia object can also  
+be constructed using operators that consider the passage of time. Temporal operators, 
+which apply to earcons, micons, and vicons, make it possible to define the temporal 
+relation [ALLEN83] among generalized icons. For example, if you want to watch a 
+video clip and at the same time listen to the audio, you can request that the video co_start 
+with the audio. Temporal operators for earcons, micons, ticons and vicons include 
+co_start, co_end, overlap, equal, before, mee]t, and during and are usually treated as 
+invisible operators because they are not visible in the multidimensional sentence.<br>
+
+When you use temporal operators to combine generalized icons, their types may change. 
+For example, a micon followed in time by another icon is still a micon, but the temporal 
+composition of micon and earcon yields a vicon.  Media type changes are useful in 
+adaptive multimedia so that one type of media may be replaced/combined/augmented by 
+another type of media (or a mixture of media) for people with different sensory 
+capabilities.<br>
+
+We can add still more restrictions to create subsets of rules for icons, earcons, micons 
+<br>and vicons that involve special operators: 
+<br>o	For earcons, special operators include fade_in, fade_out,
+<br>o	For micons, special operators include zoom_in, zoom_out,
+<br>o	For ticons, special operators include text_collate, text_merge,
+<br>o	For vicons, special operators include montage, cut.
+
+These special operators support the combination of various types of generalized icons, 
+which means the multidimensional language can fully reflect all multimedia types.<br>
+
+<h3>Grammar</h3>
+Multidimensional languages can handle temporal as well as spatial operators. A visual 
+language has a relational grammar, G, which a compiler uses to generate sentences:<br>
+		G = (N, X, OP, s, R)<br>
+where N is the set of nonterminals,  X is the set of terminals (icons), OP is the set of 
+spatial relational operators, s is the start symbol, and R is the set of production rules 
+whose right side must be an expression involving relational operators.<br>
+
+To describe multidimensional languages, we extended the X and OP elements of G: X is 
+still the set of terminals but now includes earcons, micons, ticons, and vicons as well as 
+icons, and the OP set now includes temporal as well as spatial relational operators.<br>
+
+<h3>Syntax</h3>
+Informally, a multidimensional language is a set of multidimensional sentences, each of 
+which is the spatial/temporal composition of generalized icons. Figure 2 without the 
+dialog box illustrates a simple visual sentence, which describes the physical appearance 
+of a multimedia object retrieved by BookMan. With the dialogue box, the figure becomes 
+a multidimensional sentence used by BookMan to generate <b>The children drive to school 
+in the morning</b>. in synthesized speech. The multidimensional sentence has the syntactic 
+structure<br>
+
+  (DIALOG_BOX co_start SPEECH) ver (((CHILDREN hor CAR) hor       
+   SCHOOL_HOUSE) hor SUNRISE)<br>
+
+Figure 3 is a hypergraph of the syntactic structure. The syntactic structure is essentially a  
+tree, but it has additional temporal operators (such as co_start) and spatial operators 
+(such as hor and ver) indicated by dotted lines. Some operators may have more than two 
+operands (for example, the co_start of audio, image, and text), which is why the structure 
+is called a hypergraph. The syntactic structure controls the multimedia presentation of the 
+TAO.<br>
+
+Multidimensional languages must also account for multimedia dynamics because many 
+media types vary with time. This means that a dynamic multidimensional sentence 
+changes over time.<br>
+
+We defined rules for spatial and temporal operators that let us transform the hypergraph 
+in Figure 3 to a Petri net that controls the multimedia presentation. Figure 4 represents 
+the Petri net of the sentence in Figure 2. As such, it also a representation of the dynamics 
+of the multidimensional sentence in Figure 2. The multimedia presentation manager can 
+execute this Petri net dynamically to create a multimedia presentation [LIN96]. For 
+example, the presentation manager will produce the visual sentence in Figure 2 as well as 
+the synthesized speech.<br>
+
+<h3>Knowledge structure</h3>
+An index cell is the fundamental building block of the active index, which is the key 
+element of a TAO [CHANG95a].  Without the active index, a TAO would not be able to 
+react to events or messages, and the dynamic visual language would lose its power.<br>
+
+<h3>Cell communication</h3>
+An index cell accepts input messages, performs some action, and posts an output message 
+to a group of output index cells. Depending on its internal state and the input messages, 
+the index cell can post different messages to different groups of output index cells. 
+Therefore the connection between an index cell and its output cells is dynamic. For 
+example, if a Bookman user wants to know about new books on nuclear winter, he 
+modifies the visual sentence, causing TAO to send a message to activate a new index cell 
+that will collect information on nuclear winter.<br>
+
+An index cell can be either live or dead, depending on its internal state. The cell is live if 
+the internal state is anything but the dead state. If the internal state is the dead state, the 
+cell is dead. The entire collection of index cells, either live or dead, forms the index cell 
+base. The set of live cells in the index cell base forms the active index.<br>
+
+Each cell has a built-in timer that tells it to wait a certain time before deactivating (dead 
+internal state). The timer is reinitialized each time the cell receives a new message and 
+once again becomes active (live). When an index cell posts an output message to a group 
+of output index cells, the output index cells become active. If an output index cell is in a 
+dead state, the posting of the message will change it to the initial state, making it a live 
+cell, and will initialize its timer. On the other hand, if the output index cell is already a 
+live cell, the posting of the message will not affect its current state but will only 
+reinitialize its timer.<br>
+
+Active output index cells may or may not accept the posted message. The first output 
+index cell that accepts the output message will remove this message from the output list 
+of the current cell. (In a race, the outcome is nondeterministic.) If no output index cell 
+accepts the posted output message, the message will stay indefinitely in the output list of 
+the current cell. For example, if no index cells can provide the BookMan user with 
+information about nuclear winter, the requesting message from the nuclear winter index 
+cell will still be with this cell indefinitely. <br>
+
+After its computation, the index cell may remain active (live) or deactivate (die). An 
+index cell may also die if no other index cells (including itself) post messages to it. Thus 
+the nuclear winter index cell in BookMan will die if not used for a long time, but will be 
+reinitialized if someone actually wants such information and sends a message to it.<br>
+
+Occasionally many index cells may be similar. For example, a user may want to attach an 
+index cell to a document that upon detecting a certain feature sends a message to another 
+index cell to prefetch other documents. If there are 10,000 such documents, there can be 
+ten thousand similar index cells. The user can group these cells into an index cell type, 
+with the individual cells as instances of that type. Therefore, although many index cells 
+may be created, only a few index cell types need to be designed for a given application, 
+thus simplifying the application designer’s task.<br>
+
+<h3>Cell construction</h3>
+To aid multimedia application designers in constructing index cells, we developed a 
+visual-language-based tool, IC Builder, and used it to construct the index cells for the 
+BookMan interface. Figure 5 shows a prefetch index cell being built. Prefetch is used 
+with two other index cell types to retrieve documents [CHANG95a]. If the user selects 
+the prefetch mode of the BookMan interface, the active index will activate the links to 
+access information about related books. Prefetch is responsible for scheduling 
+prefetching, initiating (issuing) a prefetching process to prefetch multimedia objects, and 
+killing the prefetching process when necessary. <br>
+
+Figure 5a shows the construction of the state-transition diagram. The prefetch index cell 
+has two states: state 0, the initial and live state, and state -1, the dead state. The designer 
+draws the state-transition diagram by clicking on the appropriate icons. In this example, 
+the designer has clicked on the fourth vertical icon (zigzag line) to draw a transition from 
+state 0 to state 0. Although the figure shows only two transition lines, the designer can 
+specify as many transitions as necessary from state 0 to state 0.  Each transition could 
+generate a different output message and invoke different actions. For example, the 
+designer can represent different prefetching priority levels in BookMan by drawing 
+different transitions.<br>
+
+The designer wants to specify details about transition2 and so has highlighted it. Figure 
+5b shows the result of clicking on the input message icon (top icon to the right of the 
+State Transition Specification Dialog box.) IC Builder brings up the Input Message 
+Specification Dialog box so that the designer can specify the input messages. The 
+designer specifies message 1 (start_prefetch) input message. The designer could also 
+specify a predicate, and the input message is accepted only if this predicate is evaluated 
+true. Here there is no predicate, so the input message is always accepted.<br>
+
+Figure 5c shows what happens if the designer clicks on the output message icon in Figure 
+5a (bottom icon to the right of the State Transition Specification Dialog box). IC Builder 
+brings up the Output Message Specification Dialog box so that the designer can specify 
+actions, output messages, and output index cells. In this example, the designer has 
+specified three actions: compute_schedule (determine the priority of prefetching 
+information), issue_prefetch_proc (initiate a prefetch process), and store_pid  (Once a 
+prefetch process is issued, its process id or pid is saved so that the process can be killed 
+later if necessary).<br>
+
+In the figure, there is no output message, but both input and output messages can have 
+parameters. The index cell derives the output parameters from the input parameters.
+
+
+
+<h2>DYNAMIC VISUAL LANGUAGE FOR QUERYING</h2>
+When the user makes incremental changes to a multidimensional sentence, certain events 
+occur and messages are sent to the active index. For example, suppose the user clicks on 
+a book TAO to change the color attribute of the book. This is a select event, and the 
+message select is sent to the active index. If the user creates a new related_info operation 
+icon, this is a related_info event, and a message prefetch_related_info is sent to the active 
+index. The incremental changes to a multidimensional sentence can be either:<br>
+<br>
+o	Location-sensitive. The location attribute of a generalized icon is changed.<br>
+o	Time-sensitive. The time attribute of a generalized icon is changed.<br>
+o	Content-sensitive. An attribute of a generalized icon other than a location or time 
+attribute is changed or a generalized icon is added or deleted, or an operator is added or 
+deleted.<br>
+
+A visual sentence or multidimensional sentence can also be either location-sensitive, 
+time-sensitive, or content-sensitive. The <a href="#apndx"> appendix</a> gives examples of different types of 
+visual sentences. The resulting language is a dynamic visual language or dynamic 
+multidimensional language.<br>
+
+A dynamic visual language for virtual reality serves as a new paradigm in a querying 
+system with multiple paradigms (form-based queries, diagram-based queries and so on) 
+because it lets the user freely switch paradigms [CHANG94a]. When the user initially 
+browses the virtual library, the VR query may be more natural; but when the user wants 
+to find out more details, the form-based query may be more suitable. This freedom to 
+switch back and forth among query paradigms gives the user the best of all worlds, and 
+dynamic querying can be accomplished with greater flexibility. <br>
+
+From the viewpoint of dynamic languages, a VR query is a location-sensitive 
+multidimensional  sentence. As Figure 1b shows, BookMan indicates the physical 
+locations of books by marked icons in a graphical presentation of the books stacks of the 
+library. What users see is the same (with some simplification) as what they would 
+experience in a real library. That is, the user selects a book by picking it from the shelf, 
+inspects its contents and browses adjacent books on the shelf.<br>
+
+In Figure 1a, initially the user is given the choice of query paradigms: search by title, 
+author, ISBN, or keyword(s). If the user selects the virtual library search, he can then 
+navigate in the virtual library, and as shown in Figure 1b, the result is a marked object. If 
+the user switches to a form-based representation by clicking the <b>DetailedRecord</b> button, 
+the result is an item in the form of Figure 1c. The user can now use the form to find 
+books of interest, and switch back to the VR query paradigm by clicking the <b>VL 
+location</b> button in Figure 1c. <br>
+
+Essentially, the figure illustrates how the user can switch between a VR paradigm (such 
+as the virtual library) and a logical paradigm (such as the form). <br>
+
+There are certain admissability conditions for this switch. For a query in the logical 
+paradigm to be admissable to the VR paradigm, the retrieval target object should also be 
+an object in VR. For example, the virtual reality in the Bookman library is stacks of 
+books, and an admissable query would be a query about books, because the result of that 
+query can be indicated by marked book icons in the virtual library.<br>
+
+Conversely, for a query in the VR paradigm to be admissable to the logical paradigm, 
+there should be a single marked VR object that is also a database object, and the marking 
+is achieved by an operation icon such as similar_to (find objects similar to this object), 
+near (find objects near this object), above (find objects above this object), below (find 
+objects below this object), and other spatial operators. For example, in the VR for the 
+virtual library, a book marked by the operation icon similar_to is admissable and can be 
+translated into the logical query <b>find all books similar to this book.</b><br>
+
+
+<h2>CONCLUSION</h2>
+Visual query systems for multimedia databases, like Bookman, are under active 
+investigation at many universities as well as industrial laboratories. These systems are 
+extremely flexible. For example, a user can easily and quickly ask for any engineering 
+drawing that contains a part that looks like the part in another drawing and that has a 
+signature in the lower right corner that looks like John Doe’s signature. In fact, in our 
+work on Bookman, we plan to build a mechanism that will let users create similarity 
+retrieval requests that prompt Bookman to look for books similar to the book being 
+selected.<br>
+
+We are currently implementing the active index for BookMan to support optional modes 
+like prefetching. We plan to extend BookMan to perform searches on the World Wide 
+Web using a Web browser enhanced with an active index.[CHANG95a]. <br>
+
+We have also used our multidimensional language framework to design user interfaces 
+for personal digital assistants. The <a href="#apndx"> appendix</a> <b>Elements of a visual language</b> describes 
+TimeMan, a personal assistant that performs time-management functions. Just as books 
+in BookMan are teleaction objects, so are calendars in TimeMan. We used a 
+multidimensional language to describe the external appearance of a TAO calendar, and 
+provided an active index to manage to-do items. <br>
+
+In summary, visual languages and multidimensional languages are useful in specifying 
+the syntactic structure,  knowledge structure, and dynamic behavior  of complex 
+multimedia objects such as TAO.  As multimedia applications become widespread, we 
+expect to see more visual query systems in which multidimensional languages will play 
+an important role, both as a theoretical foundation and as a means to explore new 
+applications.<br>
+
+
+
+
+<h3>Acknowledgments:</h3>
+This research was supported in part by the National Science Foundation under grant IRI-
+9224563 and by the Industry Technologies Research Institute of Taiwan. Those 
+interested in experiencing the initial version of BookMan can access an on-line tutorial at 
+Web site http://www.ksi.edu by clicking on <a href="http://www.ksi.edu/vrlib/vrlib.html"> <b>Virtual Library</b> </a>.  An initial version of 
+TimeMan is available at the same Web site by clicking on <a href="http://www.ksi.edu/01.96.html"> <b>Calendar</b></a>.<br>
+
+
+<h3>Figures:</h3>
+
+Figure 1.  The BookMan interface to a virtual library lets the user (a) select different 
+search modes, (b) browse the virtual library  and select desired book for further 
+inspection, and (c) switch to a traditional form-based query mode.
+<br>Figure 1(a)<br>
+<img src="vltaommfig/fig1a.gif">
+<br>Figure 1(b)
+<img src="vltaommfig/fig1b.gif">
+<br>Figure 1(c)
+<img src="vltaommfig/fig1c.gif">
+<br>
+
+Figure 2.  A multidimensional sentence whose meaning changes when the icons change 
+their positions and is therefore a location-sensitive sentence. This sentence has the 
+meaning <b>The children drive to school in the morning.</b><br>
+<img src="vltaommfig/fig2.gif">
+<br>
+
+Figure 3. The syntactic structure of  the multidimensional sentence shown in Figure 2.  
+This structure is a hypergraph because some relational operators may correspond to lines 
+with more than two end points.<br>
+<img src="vltaommfig/fig3.gif">
+<br>
+
+Figure 4. A time-sensitive visual sentence for the Petri net controlling the presentation of 
+the multidimensional sentence shown in Figure 2.<br>
+<img src="vltaommfig/fig4.gif">
+<br>
+
+Figure 5.  The visual specification for an active index cell of the virtual library's uer 
+interface BookMan: (a) the state transitions, (b) input message, (c) output message and 
+actions. 
+<br>Figure 5(a)<br>
+<img src="vltaommfig/fig5a.gif">
+<br>Figure 5(b)<br>
+<img src="vltaommfig/fig5b.gif">
+<br>Figure 5(c)<br>
+<img src="vltaommfig/fig5c.gif">
+<br>
+
+
+<a name="apndx"><h2> APPENDIX: ELEMENTS OF A VISUAL LANGUAGE</h2></a>
+A visual language is a pictorial representation of conceptual entities and operations and is 
+essentially a tool through which users compose iconic, or visual, sentences 
+[CHANG95b]. The icons generally refer to the physical image of an object. Compilers 
+for visual languages must interpret visual sentences and translate them into a form that 
+leads to the execution of the intended task [CHANG90]. This process is not 
+straightforward. The compiler cannot determine the meaning of  the visual sentence 
+simply by looking at the icons. It must also consider the context of the sentence, how the 
+objects relate to one another. Keeping the user’s intent and the machine's interpretation 
+the same is one of the most important tasks of a visual language [CRIMI90].<br>
+
+<h3>Icons</h3>
+A visual sentence is a spatial arrangement of object icons and/or operation icons that 
+usually describes a complex conceptual entity or a sequence of operations. Object icons 
+represent conceptual entities or groups of object icons that are arranged in a particular 
+way. Operation icons, also called process icons, denote operations and are usually 
+context-dependent. Figure A illustrates a visual sentence that consists of horizontally 
+arranged icons, with a dialog box overlaid on it. This particular location-sensitive visual 
+sentence  changes meaning when the locations of icons change, and can be used to 
+specify to-do items for TimeMan, a time-management personal digital assistant. Figure B 
+illustrates a content-sensitive visual sentence for TimeMan. The fish in the tank are 
+object icons, each of which represents a to-do item, and the cat is an operation icon that 
+appears when there are too many fish in the tank (the to-do list is too long). Figure 4 in 
+the main text illustrates a time-sensitive visual sentence that changes its meaning with 
+thme.<br>
+
+<h3>Operators</h3>
+Icons are combined using operators. The general form of binary operations is expressed 
+as x<font size =-2>1 </font>op x<font size=-2>2</font>= x<font size=-2>3</font>, where the two icons x<font size=-2>1</font> and x<font size=-2>2</font> are
+combined into x<font size=-2>3</font> using operator op. The operator op = (op<font size=-2>m</font>, op<font size=-2>p</font>), 
+where op<font size=-2>m</font> is the logical operator, and op<font size=-2>p</font> is the physical operator. Using 
+this expanded notation, we can write (x<font size=-2>m1</font>, x<font size=-2>p1</font>) op (x<font size=-2>m2</font>, x<font size=-2>
+p2</font>) = ((x<font size=-2>m1</font> op<font size=-2>m</font> x<font size=-2>m2</font>), (x<font size=-2>p1</font> op<font size=-2>p</font> x<font size=-2>p2</font>)). In 
+other words, the meaning part x<font size=-2>m1</font> and x<font size=-2>m2</font> are combined using the 
+logical operator op<font size=-2>m</font>, and the physical part x<font size=-2>p1</font> and x<font size=-2>p2</font> are 
+combined using the physical operator op<font size=-2>p</font>.<br>
+
+Operators can be visible or invisible. Most system-defined spatial/temporal operators are 
+invisible, whileas all user-defined operators are visible for the convenience of the user. 
+For example, excluding the dialog box, the visual sentence in Figure A is the horizontal 
+combination of three icons. Therefore, it can be expressed as:<br>
+
+  (  CHILDREN hor SCHOOL_HOUSE ) hor SUNRISE<br>
+
+where hor is an invisible operator denoting a horizontal combination. But if we look at 
+Figure B, the cat is a visible operator denoting a process to be applied to the fish in the 
+fish tank. An operation icon can be regarded as a visible operator.<br>
+
+The four most useful domain-independent icon operators are ver, for vertical 
+composition; hor, for horizontal composition; ov, for overlay; and con, for connect. ver, 
+hor and ovl are usually invisible, and con is usually visible as a connecting line.<br>
+
+The invisible icon operators are spatial operators and apply only to icons or ticons. The 
+spatial composition of two icons or ticons is a complex icon. <br>
+
+<h3>Representing meaning </h3>
+To represent the meaning of an icon, we use either a frame or a conceptual graph, 
+depending on the underlying semantic model of the application system being developed. 
+Both are appropriate representations of meaning, and can be transformed into one 
+another. For example, the SCHOOL_HOUSE icon in Figure A can be represented by the 
+following frame: <br>
+
+   Icon SCHOOL_HOUSE<br>
+   WHO:            nil<br>
+   DO:                study<br>
+   WHERE:        school<br>
+   WHEN:          nil<br>
+
+In other words, the SCHOOL_HOUSE icon has the meaning <b>study</b> if it is in the DO 
+location, or the meaning <b>school</b> in the WHERE location. Its meaning is "nil" if it is in 
+the WHO or WHEN location. An equivalent linearized conceptual graph is as follows:<br>
+
+   [Icon = SCHOOL_HOUSE]<br>
+     --(sub)-->     [WHO = nil]<br>
+     --(verb)->     [DO = study]<br>
+     --(loc)-->     [WHERE = school]<br>
+     --(time)->     [WHEN = nil]<br>
+
+The meaning of a composite icon can be derived from the constituent icons, if we have 
+the appropriate inference rules to combine the meanings of the constituent icons.  We 
+have applied conceptual dependency theory to develop inference rules to combine frames 
+[CHANG94b]. We have also adopted conceptual operators to combine conceptual graphs 
+[CHANG89]. As a simple example, the merging of the frames for the icons in the visual 
+sentence shown in Figure A will yield the frame:<br>
+
+   Visual_Sentence vs1 <br>
+   WHO:              children<br>
+   DO:                 study<br>
+   WHERE:         nil<br>
+   WHEN:           morning<br>
+
+We can derive this frame by merging the frames of the four icons using the following 
+rule: <br>
+
+      The ith slot gets the value of the corresponding slot of the ith icon.<br>
+
+Thus the first slot with slot_name WHO gets the value <b>children</b> from the corresponding
+slot of the first icon CHILDREN, the second slot with slot_name DO gets the value
+"study" from the corresponding slot of the second icon SCHOOL_HOUSE, etc.<br>
+
+<h3>Figures for the Appendix:</h3>
+
+Figure A. This figure is a location-sensitive visual sentence that, when compared with the 
+sentence in Figure 2 in the main text, shows how the placement of the <b>school</b> icon 
+changes its meaning. Here the meaning is <b>The children study in the morning</b>. In Figure 
+2, the meaning is <b>The children drive to school in the morning</b>. Such visual sentences 
+can be used to specify to-do items for the time management personal digital assistant 
+TimeMan. <br>
+<img src="vltaommfig/figa.gif">
+<p>
+
+Figure B.  Content-Sensitive visual sentences (a) and (b) show the fish tank and cat 
+metaphor for the time management personal digital assistant TimeMan. Each fish 
+represents a to-do item. When the to-do list grows too long, the fish tank is 
+overpopulated and the cat appears. The fish tank icon and cat operation icon have 
+corresponding index cells receiving messages from these icons when they are changed by 
+the user.
+<br>Figure B(a)<br>
+<img src="vltaommfig/figba.gif">
+<br>Figure B(b)<br>
+<img src="vltaommfig/figbb.gif">
+
+
+<p>
+<h2>BIBLIOGRAPHY</h2>
+<br>
+[ALLEN83] Allen, J. F., "Maintaining Knowledge about Temporal Intervals," 
+Communications of the ACM, vol. 26, no. 11, pp. 832-843, November 1983.<br>
+[CHHC95] Chang, H., T. Hou, A. Hsu, and S. K. Chang, "Management and Applications 
+of Tele-Action Objects," ACM Multimedia Systems Journal, vol. 3, no. 5-6, pp. 204-216,  
+Springer Verlag, 1995.<br>
+[CHANG87] Chang, S. K., "Icon Semantics - A Formal Approach to Icon System 
+Design,"  International Journal of Pattern Recognition and Artificial Intelligence, vol. 1, 
+no. 1, pp. 103-120, 1987.<br>
+[CHANG89] Chang, S. K., M.J. Tauber, B. Yu, and J.S. Yu, "A Visual Language 
+Compiler," IEEE Transactions on Software Engineering, vol. 5, no. 5, pp. 506-525, 
+1989.<br>
+[CHANG90] Chang, S. K., "A Visual Language Compiler for Information Retrieval by 
+Visual Reasoning," IEEE Transactions on Software Engineering, pp. 1136-1149, 1990.<br>
+[CHANG94a] Chang, S. K., M. F. Costabile, and S. Levialdi, "Reality Bites - 
+Progressive Querying and Result Visualization in Logical and VR Spaces," Proc. of 
+IEEE Symposium on Visual Languages, pp. 100-109, St. Louis, October 1994.<br>
+[CHANG94b] Chang, S. K., S. Orefice, M. Tucci, and G. Polese, "A Methodology and 
+Interactive Environment for Iconic Language Design," International Journal of Human-
+Computer Studies, vol. 41, pp. 683-716, 1994.<br>
+[CHANG95a] Chang, S. K., "Towards a Theory of Active Index," Journal of Visual 
+Languages and Computing, vol. 6, no. 1, pp. 101-118, 1995.<br>
+[CHANG95b] Chang, S. K., G. Costagliola, G Pacini, M. Tucci, G. Tortora, B. Yu, and 
+J. S. Yu, "Visual Language System for User  Interfaces," IEEE Software, pp. 33-44, 
+March 1995.<br>
+[CRIMI90] Crimi, C., A. Guercio, G. Pacini, G. Tortora, and M. Tucci, "Automating 
+Visual Language Generation," IEEE Transactions on Software Engineering, vol. 16, no. 
+10, pp. 1122-1135, October 1990.<br>
+[KHALIFA96] Khalifa, Y., S. K. Chang, and L. Comfort, "A Prototype Spatial-
+Temporal Reasoning System for Emergency Management," Proc. of International 
+Conference on Visual Information Systems VISUAL96, pp. 469-478, Melbourne, 
+Australia, February 5-7, 1996.<br>
+[LIN96] Lin, C. C., J. X. Xiang, and S. K. Chang, "Transformation and Exchange of 
+Multimedia Objects in Distributed Multimedia Systems," ACM Multimedia Systems 
+Journal, vol. 4, no. 1, pp. 2-29, Springer Verlag, 1996.<br>

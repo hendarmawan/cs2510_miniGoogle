@@ -1,0 +1,60 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>SHRIMP - Video</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="plain.css">
+<link rel="icon" type="image/png" href="shrimp.ico">
+</head>
+
+<body>
+
+<div class="page">
+<div class="body">
+
+<div class="sidebar">
+<!-- site navigation -->
+<img src="shrimplogo.png" width="140" height="48">
+<p></p>
+<p></p>
+  <a class="navlink" href="index.html" title="">Home</a>
+
+  <a class="navlink" href="download.html" title="Download the latest SHRMIP source code">Download</a>
+
+  <a class="navlink" href="papers.html" title="Publications for this project">Papers</a>
+
+  <a class="navlink" href="video.html" title="Demonstration videos">Video</a>
+
+  <a class="navlink" href="support.html" title="Support Information">Support</a>
+
+<br clear="all">
+&nbsp;
+
+<!-- end sidebar -->
+</div>
+
+<div class="content"> 
+            <h1>SHRIMP - Demostration Video</h1>
+	<h3>Available Formats</h3>
+    <ul>
+      <li><a  class="download" href="http://lbs.cs.berkeley.edu/shrimp/SHRIMP_UIST_RAW.wmv">Windows Media</a> <small> <i>(Download
+        <a  class="download" href="http://www.microsoft.com/windows/windowsmedia/mp10/default.aspx">Windows Media Player 10</a>)</i> </small><i>(5 Minutes, 96 <small>MB</small>)</i>
+      </li>
+
+
+    </ul>
+
+                         
+</div>  <!-- end of content div -->
+
+<br clear="all">
+
+<div class="copyright">
+Copyright (c) 2009 by the Regents of the University of California Last Updated on 12/18/2009
+</div>  <!-- end of copyright div -->
+
+</div> <!-- end of body div -->
+</div> <!-- end of page div -->
+</body>
+
+</html>

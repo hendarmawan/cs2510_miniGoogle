@@ -1,0 +1,179 @@
+<title>RELATIONAL DATABASE THEORY ON NORMAL FORMS</title>
+<h1>RELATIONAL DATABASE THEORY ON NORMAL FORMS</h1>
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/10-11">Click here for audio-text lecture (for both this unit and the previous one) and feed it to the speech agent</a></xs></center>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/11.rm">Click here for an audio lecture that can be played using RealPlayer</a></center>
+<h2>FUNCTIONAL DEPENDENCY</h2>
+X -> Y, or X functionally determines Y
+if and only if whenever two tuples of
+a relational instance r(R) of R
+agree on their X-value, they
+must also agree on the Y-value.
+<br>
+<br>
+Example:  SSN -> NAME
+<br>
+<br>
+We say X determines Y, or
+Y is dependent on X
+<br>
+<br>
+Example: {S#,P#} -> QTY
+<br>
+<br>
+Since QTY depends on BOTH attributes
+S# and P#, this is called a
+FULL functional dependency.
+<br>
+<br>
+Example: {SSN, NAME} -> ADDRESS
+<br>
+<br>
+Since SSN -> ADDRESS, this is called
+a partial functional dependency.
+<br>
+<br>
+We also write:
+<br>
+<br>
+S# P# -> QTY
+<br>
+SSN NAME -> ADDRESS
+<hr>
+<h1>NORMALIZATION</h1>
+The relation on the left-hand side is unnormalized and
+contains <b>nested relations</b>.  The relation on the
+right-hand side is normalized.
+This is the <b>first normal form</b>.
+<br><IMG SRC="images/fig111.gif"><br>
+<hr>
+<h1>NORMAL FORMS</h1>
+<li> A relation is in a "normal form" if it
+     satisfies a certain set of constraints.
+<br><br>
+<li> First Normal Form (1NF): A relation's
+     underlying domains contain atomic
+     values only.
+<br><br>
+<li> Second Normal Form (2NF): A relation's
+     every nonkey attribute is fully
+     dependent on the primary key.
+<br><br>
+<li> Third Normal Form (3NF): A relation's
+     nonkey attributes are:
+     (a) mutually independent, and
+     (b) fully dependent on the
+         primary key.
+<br><br>
+<li> EVERY RELATION MUST BE IN 1NF.  This is
+     one of the basic properties of a relation.
+     Not all 1NF relation is in 2NF.
+     Not all 2NF relation is in 3NF.
+<hr>
+<h1>EXAMPLE OF NORMALIZATION</h1>
+The following relation FIRST is in first normal form.
+
+<pre>
+S#       STATUS     CITY      P#    QTY
+---      ------   --------   ---   ----
+ S1          20   London      P1   300
+ S1          20   London      P2   200
+ S1          20   London      P3   400
+ S1          20   London      P4   200
+ S1          20   London      P5   100
+ S1          20   London      P6   100
+ S2          10    Paris      P1   300
+ S2          10    Paris      P2   400
+ S3          10    Paris      P2   200
+ S4          20   London      P2   200
+ S4          20   London      P4   300
+ S4          20   London      P5   400
+</pre>
+
+<br><br>
+The FIRST relation has the following functional dependencies:
+<br><IMG SRC="images/fig112.gif"><br>
+<br><br>
+The functional dependencies in relations S, P and SP:
+<br><IMG SRC="images/fig113.gif"><br>
+<hr>
+<h1>UPDATE ANOMALIES</h1>
+<li> Relation FIRST(S#,STATUS,CITY,P#,QTY)
+<br><br>
+<li> INSERT anomaly
+<br><br>
+We cannot insert (S5,20,London)
+into the relation FIRST.
+<br><br>
+<li> DELETE anomaly
+<br><br>
+If we delete (S3,10,Paris,P2,200),
+we lose the information that
+S3 is in Paris.
+<br><br>
+SOLUTION
+<br><br>
+<li> Decompose FIRST into two relations:
+     SECOND(S#,STATUS,CITY) and SP(S#,P#,QTY)
+<br><br>
+<li> Decompose SECOND into two relations:
+     SC(S#, CITY) and CS(CITY, STATUS)
+<br><br>
+<li> We end up with three 3NF relations
+     SP, SC and CS.
+<hr>
+Functional dependencies in the relations SECOND and SP.
+<br><IMG SRC="images/fig114.gif"><br>
+<hr>
+<h1>KINDS OF NORMAL FORMS</h1>
+The following diagram illustrates the various kinds of normal forms.
+<br><IMG SRC="images/fig115.gif"><br>
+<hr>
+<h1>KINDS OF RELATIONS</h1>
+(duplicated page)
+<br><br>
+<li> Base relations: The real relations.
+     Called "base table" in SQL.
+<br><br>
+<li> Views: The virtual relations.  A view
+     is a named, derived relation.
+<br><br>
+<li> Snapshots: A snapshot is a real, not
+     virtual, named derived relation.
+<br><br>
+<li> Query results: The final output
+     relation from a specified query.
+     It may not be named and has no
+     permanent existence.
+<br><br>
+<li> Temporary relations: A nonpermanent
+     named derived relation.
+<hr>
+<h1>INFERENCE RULES FOR FUNCTIONAL DEPENDENCIES</h1>
+<br>
+IR1 (Reflective rule)
+  IF X contains Y, then X -> Y
+<br>
+IR2 (Augmentation rule)
+  {X->Y} implies XZ -> YZ
+<br>
+IR3 (Transitive rule)
+  {X->Y,Y->Z} imples X->Z
+<br>
+IR4 (Projection rule)
+  {X->YZ} implies X->Y
+<br>
+IR5 (Union rule)
+  {X->Y,X->Z} implies X->YZ
+<br>
+IR6 (Pseudotransitive rule)
+  {X->Y,WY->Z} implies WX->Z
+<br>
+<br>
+Inference rules IR1 to IR3 (Armstrong)
+are SOUND and COMPLETE
+<br>
+SOUND (inferred dependencies hold if
+the original set of dependencies hold
+for r(R))
+<br>
+COMPLETE (don't need more rules)

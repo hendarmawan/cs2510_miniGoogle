@@ -1,0 +1,13 @@
+GUIDE FOR USING VPE FOR CHRONOBOT
+
+HOW TO COMPILE AND EXECUTE?
+
+In command, line use "javac VLInterface.java" to compile the program, and use "java VLInterface" to execute the program.
+
+You can also run VLInterface.jar to execute the program.
+
+WHERE TO FIND THE GENERATED CODE?
+
+Go to the "result" directory under the directory which contains the source code. The generated files will be written into there.
+
+NOTE: Before you generate code for another application, please move away or delete the files in the "result" directory, or else newly generated files might be written into the files already generated if they have same name.

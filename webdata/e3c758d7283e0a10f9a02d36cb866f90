@@ -1,0 +1,234 @@
+<title>RELATIONAL CALCULUS</title>
+<h1>RELATIONAL CALCULUS</h1>
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/10-11">Click here for audio-text lecture (for both this unit and the next) and feed it to the speech agent</a></xs></center>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/10.rm">Click here for an audio lecture that can be played using RealPlayer</a></center>
+<br>
+<li> Relational calculus is nonprocedural
+<br>
+<li> It has the same expressive power as
+     relational algebra, i.e. it is
+     relationally complete
+<br>
+<li> It is a formal language based upon
+     a branch of mathematical logic called
+     "predicate calculus"
+<br>
+<li> There are two approaches: 
+     tuple relational calculus and 
+     domain relational calculus
+<br>
+    (We will discuss only tuple relational
+     calculus)
+<h2>WHY IS RELATIONAL CALCULUS IMPORTANT?</h2>
+<br>
+<li> It lays the formal foundation for
+     many query languages, such as QUEL,
+     QBE, SQL, etc.
+<hr>
+<h1>TUPLE RELATIONAL CALCULUS</h1>
+<br>
+<br>
+{ t | COND(t) }
+<br>
+<br>
+{ t | EMPLOYEE(t) and t.SALARY > 50000 }
+<br><br>
+The RANGE RELATION is EMPLOYEE
+<br>
+The TUPLE VARIABLE is t
+<br>
+The ATTRIBUTE of a TUPLE VARIABLE is
+    t.SALARY
+<br>
+(This is similar to SQL's  T.SALARY
+ In relational algebra, we will write
+ T[SALARY] )
+<br>
+<br>
+{t.FNAME,t.LNAME | EMPLOYEE(t) and 
+   t.SALARY > 50000 }
+<br>
+  is equivalent to
+<br>
+SELECT T.FNAME, T.LNAME<br>
+FROM EMPLOYEE T<br>
+WHERE T.SALARY > 50000<br>
+<hr>
+<H1>FORMAL SPECIFICATION OF TUPLE RELATIONAL CALCULUS</h1>
+<br>
+<br>
+{t1.A1, t2.A2, ..., tn.An |
+ COND(t1,..., tn, .... , tm}
+<br>
+The condition COND is a formula in
+relational calculus.
+<br>
+Existential Quantifer E
+<br>
+(E t)(F) is true, if for some tuple t
+the formula F is true
+<br>
+<br>
+Universal Quantifier A
+<br>
+(A t)(F) is true, if for all tuple t
+the formula F is true
+<br>
+<br>
+A variable is BOUND in F, if it
+is of the form,
+<br>
+(E t) (F)   or  (A t) (F)
+<br>
+<br>
+Otherwise it is FREE in F, for example
+<br>
+d.DNAME = 'Research'
+<br>
+<hr>
+<h1>EXAMPLES</h1>
+<br>
+Q1: Retrieve the name and address of all
+employees who work for 'X' department.
+<br><br>
+Q1: {t.FNAME, t.LNAME, t.ADDRESS |
+     EMPLOYEE(t) and
+     ((E d) (DEPARTMENT(d) and
+            d.DNAME = 'X' and
+            d.DNUMBER = t.DNO))  }
+<br>
+<br>
+Note: The only FREE tuple varaibles should
+be those appearing to the left of the bar |
+<br><br>
+Q2: For every project located in 'Y', retrieve
+the project number, the controlling department
+number, and the last name, birthdate, and
+address of the manager of the department.
+<br><br>
+Q2: {p.PNUMBER, p.DNUM, m.LNAME,
+     m.BDATE, m.ADDRESS |
+     PROJECT(p) and EMPLOYEE(m) and
+     p.PLOCATION = 'Y' and
+     ((E d) (DEPARTMENT(d) and
+            p.DNUM = d.DNUMBER and
+            d.MGRSSN = m.SSN))   }
+<hr>
+<h1>MORE EXAMPLES</h1>
+<br>
+Q3: Retrieve the employee's first and last
+name and the first and last name of his or
+her immediate supervisor.
+<br><br>
+Q3: {e.FNAME, e.LNAME, s.FNAME, s.LNAME |
+     EMPLOYEE(e) and
+     EMPLOYEE(s) and
+     e.SUPERSSN = S.SSN }
+<br><br>
+Q4: Make a list of all projects that involve
+an employee whose last name is 'Smith' as
+a worker or as manager of the controlling
+department of the project.
+<br><br>
+Q4: {p.PNUMBER | PROJECT(p) and
+    ((E e)(E w)(EMPLOYEE(e) and
+        WORKS_ON(w) and w.PNO=p.PNUMBER
+        and e.LNAME='Smith' and
+        e.SSN = w.ESSN))
+<br><br>or<br><br>
+    ((E m)(E d)(EMPLOYEE(m) and
+     DEPARTMENT(d) and p.DNUM=d.DNUMBER
+     and d.MGRSSN=m.SSN and
+      m.LNAME='Smith')) }
+<hr>
+<h1>TRANSFORMATION RULES</h1>
+<br>
+(A x)(P(x)) = (not E x) (not(P(x))
+<br>
+(E x)(P(x)) = not (A x) (not (P(x))
+<br>
+(A x)(P(x) and Q(x)) = (not E x) (not(P(x)) or not(Q(x)))
+<br>
+(A x)(P(x) or Q(x)) = (not E x) (not(P(x)) and not(Q(x)))
+<br>
+(E x)(P(x) or Q(x)) = (not A x)(not(P(x)) and not(Q(x)))
+<br>
+(E x)(P(x) and Q(x)) = (not A x)(not(P(x)) or not(Q(x)))
+<br>
+(A x)(P(x)) => (E x)(P(x))
+<br>
+(not E x)(P(x)) => not (A x) (P(x))
+<hr>
+<h1>QUANTIFIERS IN SQL</h1>
+<br>
+In SQL, we have the EXISTS function
+<br><br>
+<pre>
+SELECT
+FROM
+WHERE EXISTS (SELECT *
+              FROM R X
+              WHERE P(X))
+</pre>
+<br>
+SQL does not have universal quantifier.
+We can use the transformation to convert
+(A x)(P(x)) into (not E x)(not(P(x))
+<br>
+<pre>
+SELECT
+FROM
+WHERE NOT EXISTS (SELECT *
+                  FROM R X
+                  WHERE NOT P(X))
+</pre>
+<hr>
+<h1>SAFE EXPRESSIONS</h1>
+<br>
+A SAFE EXPRESSION is one that is
+guaranteed to yield a finite number
+of tuples as its results.
+Otherwise, it is called UNSAFE.
+<br>
+<br>
+{ t | not(EMPLOYEE) }
+<br>
+is UNSAFE!
+<br>
+<br>
+Technique to guarantee SAFENESS
+can be applied to transform a query.
+<br><br>
+Q6: Find the names of employees
+without dependents.
+<br><br>
+Q6: {e.FNAME, e.LNAME | EMPLOYEE(e)
+    and (not(E d) (DEPENDENT(d) and
+               e.SSN = d.ESSN) }
+<br><br>
+Q6A: {e.FNAME, e.LNAME | EMPLOYEE(e)
+      ((A d)(not(DEPENDENT(d)) or
+       ((E d)(DEPENDENT(d) and
+         not(e.SSN=d.ESSN))) ) ) }
+<hr>
+<h1>APPLYING TRANSFORMATION RULES TO MAKE QUERY PROCESSING EFFICIENT</h1>
+<br>
+Query: Find the names of employees who work on all
+projecs controlled by department number 5.
+<br><br>
+Q: { e.SSN | EMPLOYEE(e) and F' }
+<br>
+F' = (A x)(not(PROJECT(x)) or F1)
+<br>
+F1 = (E x) (PROJECT(x) and (not(x.DNUM=5) or F2)))
+<br>
+F2 = (E x) (WORKS_ON(w) and
+            w.ESSN=e.SSN and x.PNUMBER=w.PNO)
+<br>
+<br>
+Note: A universally quantified tuple variable must
+evalue to TRUE for every possible tuple assigned
+to it!
+<br>
+Trick: Try to exclude the tuples we are not
+interested in, from further consideration.

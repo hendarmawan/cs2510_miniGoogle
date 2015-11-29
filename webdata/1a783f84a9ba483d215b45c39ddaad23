@@ -1,0 +1,52 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="page6.html"><img src="previous.gif" align=left></a>
+<a href="page8.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>Using Google Image Search</h1>
+   <br></br>
+<p>The Google Image Search can be found at <a
+href="http://images.google.com">images.google.com</a></p>
+<p>There are two ways to use the google image search engine:<br>
+Normal Search by Keyword<br>
+Advanced Search</p>
+<b><p>Advanced Search Features:</p></b>
+<b><p>More advanced search by keyword capabilities - you can find
+results that are:</p></b>
+<ul>
+   <li>Related to <b>all</b> of the words</li>
+   <li>Related to the <b>exact phrase</b></li>
+   <li>Related to <b>any</b> of the words</li>
+   <li><b>Not related</b> to the words</li>
+</ul>
+<b><p>Search by specific filetypes</p></b>
+<ul>
+   <li>*.jpg files</li>
+   <li>*.gif files</li>
+   <li>Any filetypes</li>
+</ul>
+<b><p>Search for certain image sizes</p></b>
+<ul>
+   <li>Icon-sized</li>
+   <li>Small</li>
+   <li>Medium</li>
+   <li>Large</li>
+   <li>Very Large</li>
+   <li>Wallpaper-sized</li>
+   <li>Any size</li>
+</ul>
+<b><p>Search for certain coloration of images</p></b>
+<ul>
+   <li>Black and white</li>
+   <li>Grayscale</li>
+   <li>Full color</li>
+   <li>Any color</li>
+</ul>
+<b><p>Search for images from specific domain</p></b>
+<b><p>Toggle mature content filter on/off</p></b>
+</font>
+</html>

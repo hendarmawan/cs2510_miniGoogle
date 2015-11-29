@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Virtual Classroom for Windows CE based Mobile Devices using J# &amp; JavaScript </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body leftmargin="0" marginheight="0">
+<table width="100%"  border="0">
+  <tr>
+    <td><table width="100%"  border="0">
+        <tr>
+          <td align="left" valign="top"><a href="page6.htm"><img src="previous.gif" width="26" height="26" border="0"></a></td>
+          <td width="100%" align="center"><h2>The Server  Side</h2></td>
+          <td align="right" valign="top"><a href="index.htm"><img src="next.gif" width="26" height="26" border="0"></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="735" border="0" align="center">
+      <tr>
+        <td align="left" valign="top"><p><strong>Source Code </strong></p>
+          <p>You can download it from <a href="src/VCRMobile.VSNET2003.zip">here</a></p>
+          <p>The following structure is present:</p>
+          <ul>
+            <li><strong>IVCRRemote</strong>: The project to create a class library that is need for both, the Remote Object and the ASP.NET web site</li>
+            <li><strong>NameServerConnector</strong>: The J# Connector which interacts with both the Name Server and the actual Virtual Classroom. The name is misleading becuase at the beginning I was planning to create to separate objects: one for connecting to the name server and the other for connecting to the VC</li>
+            <li><strong>NameSvrTestClient</strong>: A console application that connects directly to the Remote Object. It was developed to facilitate the debugging (the name is also misleading) </li>
+            <li><strong>VCRMobile</strong>: The J# ASP.NET application </li>
+            </ul>          
+          <p><strong>Installation</strong></p>
+          <p>Copy the VCRMobile folder to &lt;x&gt;:\inetpub\wwwroot and then create an application using Internet Information Services MMC (microsoft management console). &lt;X:&gt; is usually the drive C: </p>
+          <p>Build and run the NameServerConnector project in Visual Studio. A reference must be made to include the IVCRemote interface in both the the Connector and the web site </p>          <p><strong>Bonus!</strong></p>
+          <p>A reduced version of the Java version of the Virtual Classroom is available. Download it from <a href="src/VJConsole.zip">here</a>. It is made in J# and does not need any JDK. Although it's labeled as a &quot;Console&quot; application, you can change the type of the project to Windows Application in Visual Studio .NET 2003. The Console target was choosen to see the debugging messages in a console but it is not required </p>
+          <p><strong>Requirements</strong></p>
+          <ul>
+            <li>Microsoft .NET 1.1 SDK or Visual Studio .NET 2003</li>
+            <li>Internet Information Server </li>
+          </ul></td>
+      </tr>
+    </table>      
+    <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

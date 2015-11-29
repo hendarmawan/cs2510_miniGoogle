@@ -1,0 +1,456 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_no_transition</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_no_transition
+</h1>    
+<a name="wp3691424"> </a><p class="pBody" >
+Ensures that the value of a specified expression does not transition from a start state to the specified next state.  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3691441"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkers48.gif" height="107" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3691443"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3772149"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3772150"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">width </em>
+</div>    
+<a name="wp3772151"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3772152"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3772153"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3691445"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Class: </span>
+</div>    
+<a name="wp3772154"> </a><div class="pCellBodyLeft" >
+2-cycle assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3691446"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3691447"> </a><pre class="pCode1" >assert_no_transition 
+</pre>    <a name="wp3772155"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level</em>, <em class="cEmphasis">width, property_type</em>,<em class="cEmphasis"> msg</em>,<em class="cEmphasis"> coverage_level </em>)] 
+</pre>    <a name="wp3772156"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, test_expr, start_state, next_state </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3691479"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3691450"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691452"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3691454"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3691456"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691458"> </a><div class="pCellBodyLeft" >
+width
+</div>    
+</td>
+    <td><a name="wp3691460"> </a><div class="pCellBodyLeft" >
+Width of the <em class="cEmphasis">test_expr</em> argument. Default: 1. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3691462"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691464"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3691466"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3691468"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691470"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3691472"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3691474"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691476"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3691478"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3691521"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3691482"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691484"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3691486"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691488"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3691490"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691492"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3691494"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691496"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3691498"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691500"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">test_expr</em>
+</div>    
+</td>
+    <td><a name="wp3691502"> </a><div class="pCellBodyLeft" >
+[ <em class="cEmphasis">width</em> - 1: 0 ]
+</div>    
+</td>
+    <td><a name="wp3691504"> </a><div class="pCellBodyLeft" >
+Expression that should not transition to <em class="cEmphasis">next_state</em> on the rising edge of <em class="cEmphasis">clk</em> if its value at the previous rising edge of <em class="cEmphasis">clk</em> is the same as the current value of <em class="cEmphasis">start_state</em>.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3691506"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691508"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">start_state</em>
+</div>    
+</td>
+    <td><a name="wp3691510"> </a><div class="pCellBodyLeft" >
+[ <em class="cEmphasis">width</em> - 1: 0 ]
+</div>    
+</td>
+    <td><a name="wp3691512"> </a><div class="pCellBodyLeft" >
+Expression that indicates the start state for the assertion check. If the start state matches the value of <em class="cEmphasis">test_expr</em> on the previous rising edge of <em class="cEmphasis">clk</em>, the check is performed.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3691514"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691516"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">next_state</em>
+</div>    
+</td>
+    <td><a name="wp3691518"> </a><div class="pCellBodyLeft" >
+[ <em class="cEmphasis">width</em> - 1: 0 ]
+</div>    
+</td>
+    <td><a name="wp3691520"> </a><div class="pCellBodyLeft" >
+Expression that indicates the invalid next state for the assertion check. If the value of <em class="cEmphasis">test_expr</em> was <em class="cEmphasis">start_state</em> at the previous rising edge of <em class="cEmphasis">clk</em>, then the value of <em class="cEmphasis">test_expr</em> should not equal <em class="cEmphasis">next_state</em> on the current rising edge of <em class="cEmphasis">clk</em>.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3691522"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3775093"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_no_transition</code> assertion checker checks the expression <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> and <span style="font-style: oblique" class="cCodeBodyEmphasis">start_state</span> at each rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> to see if they are the same. If so, the checker evaluates and stores the current value of <span style="font-style: oblique" class="cCodeBodyEmphasis">next_state</span>. At the next rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>, the checker re-evaluates <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> to see if its value equals the stored value of <span style="font-style: oblique" class="cCodeBodyEmphasis">next_state</span>. If so, the assertion fails. The checker returns to checking <span style="font-style: oblique" class="cCodeBodyEmphasis">start_state</span> in the current cycle (unless a fatal failure occurred)
+</p>    
+<a name="wp3691524"> </a><p class="pBody" >
+The <span style="font-style: oblique" class="cCodeBodyEmphasis">start_state</span> and <span style="font-style: oblique" class="cCodeBodyEmphasis">next_state</span> expressions are verification events that can change. In particular, the same assertion checker can be coded to verify multiple types of transitions of <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span>.
+</p>    
+<a name="wp3691525"> </a><p class="pBody" >
+The checker is useful for ensuring certain control structure values (such as counters and finite-state machine values) do not transition to invalid values.
+</p>    
+<a name="wp3691533"> </a><h4 class="pHead4" >
+Assertion Check  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3691528"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691530"> </a><div class="pCellBodyLeft" >
+ASSERT_no_transition
+</div>    
+</td>
+    <td><a name="wp3691532"> </a><div class="pCellBodyLeft" >
+Expression transitioned from <em class="cEmphasis">start_state</em> to a value equal to <em class="cEmphasis">next_state</em>.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3691541"> </a><h4 class="pHead4" >
+Cover Point  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3691536"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3691538"> </a><div class="pCellBodyLeft" >
+start_state
+</div>    
+</td>
+    <td><a name="wp3691540"> </a><div class="pCellBodyLeft" >
+Expression assumed a start state value.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3691542"> </a><h3 class="pHead3" >
+Notes
+</h3>    
+
+<a name="wp3691543"> </a><p class="pNumber" >
+ 1.	The assertion check compares the current value of <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> with its previous value. Therefore, checking does not start until the second rising clock edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> after <span style="font-style: oblique" class="cCodeBodyEmphasis">reset_n</span> deasserts.
+</p>    
+<a name="wp3691544"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3691545"> </a><pre class="pCode2" >assert_transition
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3691546"> </a><h3 class="pHead3" >
+Example
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3744462"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3744423"> </a><div class="pCellBodyLeft" >
+assert_no_transition #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3744431"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3744433"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772157"> </a><div class="pCellBodyLeft" >
+3, 
+</div>    
+<a name="wp3772158"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772159"> </a><div class="pCellBodyLeft" >
+&#8220;Error: bad state transition&#8221;, 
+</div>    
+<a name="wp3772160"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3744437"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772161"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772162"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772163"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772164"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3744439"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3744441"> </a><div class="pCellBodyLeft" >
+valid_transition (
+</div>    
+</td>
+    <td><a name="wp3744445"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3744447"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3744449"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3744451"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772165"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772166"> </a><div class="pCellBodyLeft" >
+current_state, 
+</div>    
+<a name="wp3772167"> </a><div class="pCellBodyLeft" >
+requests &gt; 2 ? &#8216;FULL : &#8216;ONE_IN_Q, 
+</div>    
+<a name="wp3772168"> </a><div class="pCellBodyLeft" >
+&#8216;EMPTY;
+</div>    
+</td>
+    <td><a name="wp3744453"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772169"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772170"> </a><div class="pCellBodyLeft" >
+// test_expr 
+</div>    
+<a name="wp3772171"> </a><div class="pCellBodyLeft" >
+// start_state 
+</div>    
+<a name="wp3772172"> </a><div class="pCellBodyLeft" >
+// next_state
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3744463"> </a><p class="pBody" >
+Ensures that <code class="cCodeBody">current_state</code> does not transition to &#8216;EMPTY improperly. If <code class="cCodeBody">requests</code> is greater than 2 and the current_state is &#8216;FULL, <code class="cCodeBody">current_state</code> should not transition to &#8216;EMPTY in the next cycle. If <code class="cCodeBody">requests</code> is not greater than 2 and <code class="cCodeBody">current_state</code> is &#8216;ONE_IN_Q, <code class="cCodeBody">current_state</code> should not transition to &#8216;EMPTY in the next cycle.  </p>    <div align="left"><img src="images/ovl_checkers56.gif" height="90" width="459" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3744844"> </a><p class="pBody" >
+
+</p>    
+<a name="wp3691592"> </a><p class="pBody" >
+
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

@@ -1,0 +1,139 @@
+<html>
+
+<head>
+<title>CS 2530: Computer and Network Security</title>
+<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+
+<body bgcolor="#FFFFCC">
+
+<h1 align="center"><font color="#660000">CS 2530: Computer and Network Security</font></h1>
+<h2 align="center">Spring 2013</h2>
+
+<hr>
+<center>
+  <a href="./index.html"><b>[ Home ]</b></a> &nbsp&nbsp
+  <a href="./policies.html"><b>[ Policies ]</b></a> &nbsp&nbsp
+  <a href="./lectures.html"><b>[ Lectures ]</b></a> &nbsp&nbsp
+  <a href="./homework.html"><b>[ Homework ]</b></a> &nbsp&nbsp
+  <a href="./project.html"><b>[ Project ]</b></a> &nbsp&nbsp
+</center>
+<hr>
+
+
+<!-- general information -->
+<h2>General Information</h2>
+
+<table cols="2" border="0">
+<tr>
+  <td valign="top" width="300"> 
+    <p><b>Instructor:</b><br>
+      &nbsp&nbsp&nbsp Prof. <a href="http://www.cs.pitt.edu/~adamlee">Adam J. Lee</a><br>
+      &nbsp&nbsp&nbsp <i>Office</i>: 6111 Sennott Square<br>
+      &nbsp&nbsp&nbsp <i>Email</i>: adamlee -at- cs.pitt.edu<br>
+      &nbsp&nbsp&nbsp <i>Phone</i>: 412-624-8416<br>
+      &nbsp&nbsp&nbsp <i>Office hours</i>: TH 10:45-12:00<br>
+    </p>
+
+    <p><b>TA:</b><br>
+      &nbsp&nbsp&nbsp <i>Mike Nugent </i><br>
+      &nbsp&nbsp&nbsp <i>Office</i>: 6505 SENSQ <br>
+      &nbsp&nbsp&nbsp <i>Email</i>: mpn1 -at- pitt.edu <br>
+      &nbsp&nbsp&nbsp <i>Office hours</i>: M 10:00 - 1:00, W 10:00 - 11:00, F 11:00 - 1:00 <br>
+    </p><br>
+
+  </td>
+
+  <td valign="top" width="350">
+    <p><b>Lecture:</b></p> 
+    <ul>
+      <li>TH 4:00 - 5:15 PM, 6516 SENSQ</li>
+    </ul>
+
+    <p><b>Textbook:</b><br>
+      &nbsp&nbsp&nbsp Matt Bishop<br>
+      &nbsp&nbsp&nbsp <a href="http://nob.cs.ucdavis.edu/book/book-aands/">Computer Security: Art and Science</a><br>
+      &nbsp&nbsp&nbsp Addison-Wesley<br>
+    </p>
+
+  </td>
+</tr>
+
+<tr>
+  <td colspan="2">
+    <b>Optional references:</b>
+    <ul>
+      <li>Ross Anderson, <a href="http://www.cl.cam.ac.uk/~rja14/book.html">Security Engineering</a>, Wiley</li>
+      <li>Charles Pfleeger and Shari Lawrence Pfleeger, <a href="http://www.informit.com/store/product.aspx?isbn=0132390779">Security in Computing</a>, Prentice Hall</li>
+      <li>Bruce Schneier, <a href="http://www.schneier.com/book-applied-toc.html">Applied Cryptography</a>,  Wiley</li>
+    </ul>
+  </td>
+</tr>
+
+</table>
+
+
+<!-- Announcements -->
+<hr>
+
+<h2>Announcements</h2>
+
+<ul>
+  <li><b>[1/1]</b> Welcome to CS 2530!  Please check this web page at least 2-3 times per week for important announcements.</li>
+
+  <li><b>[1/15]</b> HW #1 is posted.</li>
+
+  <li><b>[1/22]</b> HW #2 is posted.</li>
+
+  <li><b>[1/29]</b> The lecture schedule has been adjusted to accommodate a guest speaker (Prof. James Joshi) next week.</li>
+
+  <li><b>[1/31]</b> HW #3 is posted.</li>
+
+  <li><b>[3/19]</b> HW #4 is posted.</li>
+  
+</ul>
+
+
+<!-- Course description -->
+<hr>
+
+<h2>Course Description</h2>
+
+<p>The goal of the proposed course is to provide our graduate students
+the necessary background and hands on experience to do well in systems
+research or advanced development with an emphasis on security.</p>
+
+<p><b>Prerequisites:</b> CS 1550 or consent of instructor</p>
+
+<p><b>Grading:</b></p>
+<ul>
+  <li>25% Midterm</li>
+  <li>15% Final exam</li>
+  <li>25% Homework</li>
+  <li>25% Project</li>
+  <li>10% Participation, etc.</li>
+</ul>
+
+
+<!-- Tentative syllabus -->
+<hr>
+
+<h2>Tentative Syllabus</h2>
+
+<ul>
+  <li> <b>Introduction:</b> CIA properties; vulnerabilities, threats, and attacks; design principles
+  <li> <b>Policy Models:</b> MAC/DAC; Bell-LaPadula, Biba, Clark/Wilson, Chinese Wall, etc.
+  <li> <b>Cryptography:</b> Symmetric key algorithms, public key cryptography, secret sharing and threshold cryptography
+  <li> <b>Authentication:</b> Protocols and mechanisms
+  <li> <b>Authorization:</b> Identity based, attribute based, etc.
+  <li> <b>OS and Application Security:</b> Integrity of mechanism, malicious logic
+  <li> <b>Network Security:</b> Attacking protocols, denial of service, intrusion detection
+  <li> <b>Advanced Topics:</b> Decided based upon student interest
+</ul>
+
+
+<!-- end page -->
+</body>
+
+</html>

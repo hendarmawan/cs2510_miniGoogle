@@ -1,0 +1,23 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en"> <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Mozilla/4.78 [en] (Windows NT 5.0; U) [Netscape]">
+<title>wxWindows - A Cross Platform GUI Framework</title>
+</head>
+<body>
+<a href="Slide4.html"><img SRC="previous.gif" height=26 width=26 align=LEFT></a>
+<a href="Slide6.html"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+<br>
+<font size="6" color="red"><center>HISTORY</center></font><br><br>
+<font size="5">
+* wxWindows was started in 1992 at the Artificial Intelligence Applications Institute <http://www.aiai.ed.ac.uk>, University of Edinburgh, by Julian Smart <http://www.anthemion.co.uk>. <br><br>
+* Julian was designing a kind of meta-CASE tool called Hardy which needed to run on Windows as well as X-based Unix workstations. 
+The existing commercial cross-platform tools were deemed too expensive for an in-house experimental project, so the only alternative was to build one. 
+wxWindows (w for Windows, x for X) started off with support for XView and MFC 1.0, and AIAI allowed it to be released to the Internet. <br><br>
+* Over time, a small but enthusiastic community of wxWindows users was established and a mailing list set up.
+ Contributions and fixes were sent in, it gradually picked up more and more 
+users from all over the world: commercial, government, and - most gratifying of all - company users who found that wxWindows offered a better product, 
+and better support, than the commercial products they had looked at or used. <br><br>
+* Towards the end of 1997, Julian Smart started distributing a CD-ROM <cdrom2.htm> of wxWindows. <br><br>
+</font>
+ </body> </html> 

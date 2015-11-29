@@ -1,0 +1,85 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Microsoft .NET Presentation</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="100%">
+    <tr>
+        <td valign="top"><a href="slide-14.htm"><img
+        src="previous.gif" border="0" width="26" height="26"></a></td>
+        <td align="center" valign="top"><h1>&nbsp; The Versioning
+        Problem</h1>
+        </td>
+        <td align="right" valign="top"><a href="slide-16.htm"><img
+        src="next.gif" border="0" width="26" height="26"></a></td>
+    </tr>
+</table>
+
+<h2>Backward compatibility</h2>
+
+<ul>
+    <li><font size="4">Applications installing new shared library
+        must maintain complete backward compatibility - even at
+        the expense of fixing bugs.</font><ul>
+            <li><font size="4">DirectSetup</font></li>
+            <li><font size="4">X Windows</font></li>
+        </ul>
+    </li>
+</ul>
+
+<h2>Delayed breakage detection</h2>
+
+<ul>
+    <li><font size="4">A compatibility error caused by a new
+        version of a shared library may go undetected for a long
+        time.</font></li>
+    <li><font size="4">Compatibility errors are hard to trace
+        back to the application that originally caused it.</font><ul>
+            <li><font size="4">Personal experience: Microsoft
+                Sidewinder control panel software and MFC42</font></li>
+        </ul>
+    </li>
+    <li><font size="4">Particularly vulnerable are ActiveX
+        controls on Windows</font></li>
+</ul>
+
+<h2>Lack of isolation</h2>
+
+<ul>
+    <li><font size="4">Hard to keep applications in isolated,
+        even when sharing a library is desired</font></li>
+    <li><font size="4">Version requirements of an application are
+        not known</font></li>
+    <li><font size="4">Library versioning not recorded or
+        enforced</font></li>
+    <li><font size="4">At most one version of the library is
+        available to the system at a time, so all applications
+        must deal with what they find, and likely fail</font></li>
+</ul>
+
+<h2>Deployment</h2>
+
+<ul>
+    <li><font size="4">Installs typically have to copy files and
+        then register components in a central system database</font></li>
+    <li><font size="4">Difficult to replicate the install, and
+        uninstall correctly</font><ul>
+        <li><font size="4">Uninstalling IE 5 breaks Office 2000</font></li>
+        </ul>
+    <li><font size="4">All clients need to have the registry
+        footprint of the application to work with it</font></li>
+    <li><font size="4">Difficult to upgrade the application while
+        it is running</font></li>
+</ul>
+
+<hr>
+
+<p><a href="references.htm"><em>References</em></a><em>: D</em></p>
+</body>
+</html>

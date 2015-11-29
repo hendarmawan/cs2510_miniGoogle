@@ -1,0 +1,69 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>Adriana Kovashka</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header"><center>
+<table border="0">
+<tr>
+<td width="200"><img width="180" src="adriana_kovashka.jpg"></td>
+<td>
+
+<table border="0">
+<tr height="250"><td>
+<font size="6">Adriana Kovashka</font>
+<br>
+Assistant Professor
+<br>
+<a href="http://cs.pitt.edu/">Department of Computer Science</a>
+<br>
+<a href="http://pitt.edu/">University of Pittsburgh</a>
+</td></tr>
+</table>
+
+</td></tr></table>
+</div>
+
+<div id="navigation">
+<center>
+<a class="nav" href="index.htm">home</a>
+<a class="nav" href="cv.htm">CV</a>
+<a class="nav" href="publications.htm">publications</a>
+<a class="nav" href="teaching.htm">teaching</a>
+<a class="nav" href="contact.htm"><i>contact</i></a>
+</center>
+</div>
+
+<br>
+
+<div id="content">
+
+<table border=0>
+<tr><td width="200">Email:</td><td>kovashka AT cs DOT pitt DOT edu</td></tr>
+<tr><td width="200">Office:</td><td>Sennott Square 5325</td></tr>
+<tr><td width="200">Phone:</td><td>412-624-8852</td></tr>
+<tr><td width="200" valign="top">Mailing address: </td><td>
+5325 Sennott Square<br>
+210 South Bouquet Street<br>
+University of Pittsburgh<br>
+Pittsburgh, PA 15260<br>
+USA<br>
+</td></tr>
+</table>
+
+<br>
+
+</div>
+
+<div id="footer">
+&nbsp;
+</div>
+
+</div>
+
+</body></html>

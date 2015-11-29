@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CS 0007 - Alarm</title>
+    <link href='deck.core.css' rel='stylesheet' type='text/css'>
+    <link href='deck.goto.css' rel='stylesheet' type='text/css'>
+    <link href='deck.status.css' rel='stylesheet' type='text/css'>
+    <link href='deck.navigation.css' rel='stylesheet' type='text/css'>
+    <link href='deck.hash.css' rel='stylesheet' type='text/css'>
+    <link href='deck.menu.css' rel='stylesheet' type='text/css'>
+    <!-- Deck Style -->
+    <link href='web-2.0.css' rel='stylesheet' type='text/css'>
+    <!-- Deck Transition -->
+    <link href='horizontal-slide.css' rel='stylesheet' type='text/css'>
+    <link href='main.css' rel='stylesheet' type='text/css'>
+    <link href='deck.print.css' media='print' rel='stylesheet' type='text/css'>
+    <script src='modernizr.custom.js'></script>
+  </head>
+  <body>
+    <div class='deck-container'>
+      <!-- Content Begins Below -->
+      <div class='slide' id='0'><h1>Agent-Based Alarm Management in a Palliative Care Unit</h1>
+      
+      </div><div class='slide' id='1'><h2>Intelligent Agent Alarm Systems</h2>
+      
+      <p>Sensors attached to an intelligent mechanism that decides whether or not some condition has been met.</p>
+      
+      <p>This agent alerts other agents in the system such that they may respond to this event.</p>
+      
+      <p>This has many applications within emergency management.</p>
+      
+      <p>A lot of this has to do with mechanical sensors and exact measurements (parachuting forest fire sensors, earthquake monitors, floating tsunami sensors, nuclear reactor agents)</p>
+      
+      <p>However, there are many cases where such measurements are inexact and relative...</p>
+      
+      </div><div class='slide' id='2'><h2>Health Care Application</h2>
+      
+      <p>Nealon and Moreno (2003) suggest that agents are useful in health care.</p>
+      
+      <p>Agents in this field should use AI techniques and be...</p>
+      
+      <ul>
+      <li><p>Proactive</p></li>
+      <li><p>Sociable</p></li>
+      <li><p>Reactive</p></li>
+      <li><p>Autonomous</p></li>
+      </ul>
+      
+      
+      </div><div class='slide' id='3'><h2>Palliative Care Unit</h2>
+      
+      <p>Palliative Care is for terminally ill patients who require...</p>
+      
+      <ul>
+      <li><p>Constant Care</p></li>
+      <li><p>Easing of Pain</p></li>
+      <li><p>Immediate, yet Unexpected Emergency Responses</p></li>
+      </ul>
+      
+      
+      <p>Much of this is done manually and through paper evaluations</p>
+      
+      <p>The use of agents and alarms can improve the process</p>
+      
+      </div><div class='slide' id='4'><h2>Issues with Health Care Agents</h2>
+      
+      <p>Agents and sensors in healthcare systems have different concerns than mechanical sensors</p>
+      
+      <ul>
+      <li><p>Lives are at stake</p></li>
+      <li><p>Legal liability (and its variability across governments)</p></li>
+      <li><p>Moral concerns about information propagation</p></li>
+      </ul>
+      
+      
+      </div><div class='slide' id='5'><h2>PalliaSys</h2>
+      
+      <p>Moreno, et al (2005) introduce PalliaSys</p>
+      
+      <ul>
+      <li><p>A multi-agent system</p></li>
+      <li><p>Digitizes patient evaluations</p></li>
+      <li><p>Sophisticated alarm mechanisms to alert doctors</p></li>
+      <li><p>Secure information retrival for patients and families</p></li>
+      <li><p>Develop prediction models through machine learning</p></li>
+      </ul>
+      
+      
+      </div><div class='slide' id='6'><h2>Agents</h2>
+      
+      <ul>
+      <li><p>Database Wrapper</p>
+      
+      <ul>
+      <li>Agent securely controls access to the centralized database</li>
+      </ul>
+      </li>
+      <li><p>Doctor Agent</p>
+      
+      <ul>
+      <li>Manages alerts and patient visit schedules</li>
+      </ul>
+      </li>
+      <li><p>Patient Agent</p>
+      
+      <ul>
+      <li>Monitors patients and manages evaluation reports</li>
+      </ul>
+      </li>
+      <li><p>Data Analyzer</p>
+      
+      <ul>
+      <li>Data-miner that provides insight with statistics and machine learning</li>
+      </ul>
+      </li>
+      </ul>
+      
+      
+      </div><div class='slide' id='7'><h2>Design</h2>
+      
+      <p><img alt="PalliaSys Design" src="PalliaSys.PNG" style="height: 450px" /></p>
+      
+      </div><div class='slide' id='8'><h2>Alarms</h2>
+      
+      <p>Two types of alarms:</p>
+      
+      <ul>
+      <li><p>General</p>
+      
+      <ul>
+      <li><p>Apply to all patients</p></li>
+      <li><p>Designated by PCU head</p></li>
+      </ul>
+      </li>
+      <li><p>Doctor-Specific</p>
+      
+      <ul>
+      <li><p>Apply to a subset of patients</p></li>
+      <li><p>Designated by assigned doctor</p></li>
+      </ul>
+      </li>
+      </ul>
+      
+      
+      </div><div class='slide' id='9'><h2>Alarm Evaluations</h2>
+      
+      <p>There is an interface in the Doctor Agent to create Alarms</p>
+      
+      <p>They are based upon (0-10 scale) patient evaluations (from the Patient Agent) on certain criteria:</p>
+      
+      <table>
+      
+      <tr>
+      
+      <td><ul><li>Pain</li></td>
+      
+      <td><ul><li>Weakness</li></td>
+      
+      </tr>
+      
+      <tr>
+      
+      <td><ul><li>Depression</li></td>
+      
+      <td><ul><li>Anxiety</li></td>
+      
+      </tr>
+      
+      <tr>
+      
+      <td><ul><li>Nausea</li></td>
+      
+      <td><ul><li>Sleepiness</li></td>
+      
+      </tr>
+      
+      <tr>
+      
+      <td><ul><li>Hunger</li></td>
+      
+      <td><ul><li>Well-Being</li></td>
+      
+      </tr>
+      
+      <tr>
+      
+      <td><ul><li>Breathing Problems</li></td>
+      
+      <td><ul><li>Dry Mouth</li></td>
+      
+      </tr>
+      
+      </table>
+      
+      
+      </div><div class='slide' id='10'><h2>Specifying an Alarm</h2>
+      
+      <p>Doctors can create simple rules to trigger alarms per patient:</p>
+      
+      <pre><code>Extreme Weakness: (Weakness &gt; 7) and (Pain &gt; 8)&#x000A;</code></pre>
+      
+      <p>This may describe an abnormal condition for a particular patient.</p>
+      
+      <p>When a patient evaluation is filed, it may trigger this alert.</p>
+      
+      <p>The doctor will be notified via the user interface on the Doctor Agent.</p>
+      
+      </div><div class='slide' id='11'><h2>Rules can Stack</h2>
+      
+      <p>Doctors are free to write more complex rules.</p>
+      
+      <pre><code>Dangerous Weakness: (Hunger &lt; 3) and Extreme Weakness&#x000A;</code></pre>
+      
+      <p>In this case, it specifies a more severe rule based upon another one.</p>
+      
+      <p>Some patients may need certain rules, but other patients may require more severe alerts to be monitored.</p>
+      
+      </div><div class='slide' id='12'><h2>Evolution Alarms</h2>
+      
+      <p><em>Evolution Alarms</em> are monitors for events that occur over time.</p>
+      
+      <p>Alarm rules, since human evaluated, are relative.</p>
+      
+      <p>Therefore, set alarms for changes over time.</p>
+      
+      <pre><code>Fast Weakness Increase: d(Weakness) &gt; 2&#x000A;</code></pre>
+      
+      <p>Alarm fires when a evaluation has increased by 2 from the previous evaluation.</p>
+      
+      </div><div class='slide' id='13'><h2>Over time</h2>
+      
+      <p>Perhaps, a condition changes slightly over a period of time.</p>
+      
+      <p>However, a doctor may still want to be alerted when evaluations show this trend.</p>
+      
+      <pre><code>Extreme Pain Increase: d(Pain, 28 days) &gt; 4&#x000A;</code></pre>
+      
+      <p>Now, it is across all evaluations from the last 4 weeks.</p>
+      
+      </div><div class='slide' id='14'><h2>Alarm Definition</h2>
+      
+      <p>To handle certain security and moral implications, the alarm is strictly defined.</p>
+      
+      <ul>
+      <li><p><em>Doctor Agent</em> has a GUI to define alarms.</p></li>
+      <li><p>Alarms can be stored with the Patient Agent and secured locally.</p></li>
+      <li><p>All evaluations are <em>only</em> stored in the centralized database and encrypted.</p></li>
+      <li><p>Raised alarms are passed and stored in the Doctor Agent.</p></li>
+      <li><p>All reporting and checking is done automatically.</p></li>
+      <li><p>Patients can view their information from doctors securely (SSL, RSA)</p></li>
+      </ul>
+      
+      
+      </div><div class='slide' id='15'><h2>Benefits</h2>
+      
+      <ul>
+      <li><p>Proactive healthcare approach</p></li>
+      <li><p>Information better exposed to patients</p></li>
+      <li><p>Intelligent agents can suggest doctor visits</p></li>
+      <li><p>More complete treatments</p></li>
+      <li><p>Processes are automated and faster</p></li>
+      </ul>
+      
+      
+      </div><div class='slide' id='16'><h2>References</h2>
+      
+      <p>J. Nealon and A. Moreno. <em><a href="http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.90.5458">Agent-based Health care systems</a></em>. Pages 1-18. Whitestein series on Agent Technology. Birkhauser, 2003.</p>
+      
+      <p>A. Moreno and D. Ria&ntilde;o and A. Valls. <em><a href="http://deim.urv.cat/~itaka/Publicacions/wsijcai05.pdf">Agent-based alarm management in a Palliative Care Unit</a></em>. Pages 60-66. III Workshop on Agents Applied in Health Care en IJCAI2005 Edinburgh Actas del workshop, 2005.</p>
+      </div>
+      <!-- Content Ended -->
+      <!-- Deck -->
+      <a class='deck-prev-link' href='#' title='Previous'>&#8592;</a>
+      <a class='deck-next-link' href='#' title='Next'>&#8594;</a>
+      <p class='deck-status'>
+        <span class='deck-status-current'></span>
+        /
+        <span class='deck-status-total'></span>
+      </p>
+      <form class='goto-form'>
+        <label for='goto-slide'>Go to slide:</label>
+        <input id='goto-slide' name='slidenum' type='number'>
+        <input type='submit' value='Go'>
+      </form>
+      <a class='deck-permalink' href='.' title='Permalink to this slide'>#</a>
+    </div>
+    <!-- %script{:src => "//ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"} -->
+    <!-- %script -->
+    <!-- ="window.jQuery || document.write('<script src=\"#{@path}js/jquery-1.6.4.min.js\">')" -->
+    <script src='jquery-1.6.4.min.js'></script>
+    <script src='deck.core.js'></script>
+    <script src='deck.goto.js'></script>
+    <script src='deck.menu.js'></script>
+    <script src='deck.status.js'></script>
+    <script src='deck.navigation.js'></script>
+    <script src='deck.hash.js'></script>
+    <script src='deck-init.js'></script>
+    <div class='shortcuts'>
+      <img src='computer_key_M.png' title='Press M'>
+      bring up a menu
+      <img src='computer_key_G.png' title='Press G'>
+      skip to a particular slide
+    </div>
+  </body>
+</html>

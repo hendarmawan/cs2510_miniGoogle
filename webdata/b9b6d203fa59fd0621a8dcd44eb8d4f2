@@ -1,0 +1,319 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<link rel="File-List" href="p3_files/filelist.xml">
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]-->
+<title>Multimedia Software Engineering</title>
+
+
+
+
+<!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+
+
+
+
+
+
+<body>
+
+<p align="center"><b>
+<span style="text-transform: uppercase">
+<font size="4" face="Verdana"><a href="p2.htm">
+<img border="0" src="previous.gif" width="26" height="26"></a> </font></span><font size="4" face="Verdana"><font color="#0000FF">Concrete 
+Example on ANTs</font><span style="text-transform: uppercase">
+<a href="p4.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></span></font></b></p>
+    <ul>
+  <li><span style="font-family: Verdana"><font size="5">Typical Scenario</font></span></li>
+</ul>
+<p>&nbsp;</p>
+    <ul>
+  <li><span style="font-family: Verdana"><font size="5">Government of country X 
+  threatened, and at request of govt of country X, 5000 troops may need to be 
+  deployed in the capital Y of country X</font></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><span style="font-family: Verdana"><font size="5">Initiation: </font>
+  <span style="mso-special-format:
+bullet;position:absolute;left:-3.46%"><font size="5">–</font></span><font size="5">General 
+  Y’s ant posts order looking for 5000 units to Y for a period of 90 days</font></span></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><font size="5"><span style="font-family: Verdana">Various units bid for 
+  jobs, begin making option deals on equipment, transportation</span></font></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li>
+  <div v:shape="_x0000_s1026">
+    <div class="O1" style="mso-line-spacing:&quot;100 20 0&quot;;mso-margin-left-alt:468">
+      <span style="font-family: Verdana">
+      <span style="mso-special-format:
+bullet;position:absolute;left:-4.1%"><font size="5">•</font></span><font size="5">Transport 
+      and equipment suppliers begin bidding for support roles </font></span>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+      <p>&nbsp;</div>
+  </div>
+  </li>
+</ul>
+<p><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:shapetype id="_x0000_t202"
+ coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+ <v:stroke joinstyle="miter"/>
+ <v:path gradientshapeok="t" o:connecttype="rect"/>
+</v:shapetype><v:shape id="_x0000_s1099" type="#_x0000_t202" style='position:absolute;
+ left:12.75pt;top:407.25pt;width:105.75pt;height:103.5pt;z-index:0' filled="f"
+ fillcolor="#0c9" strokeweight="1pt">
+ <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+  endarrowlength="short"/>
+ <v:shadow color="#969696"/>
+ <v:textbox style='mso-fit-shape-to-text:t' inset="1.60019mm,.80011mm,1.60019mm,.80011mm">
+<font SIZE="1">
+<p ALIGN="LEFT">Mission statement bid for forces:</p>
+<ul>
+  <li>goal, </li>
+  <li>requirements, </li>
+  <li>priority ($)</li>
+</ul>
+</font></v:textbox>
+</v:shape><![endif]--><![if !vml]><span style='mso-ignore:vglayout;position:
+absolute;z-index:0;left:16px;top:542px;width:147px;height:144px'><img
+width=147 height=144 src="p3_files/image001.gif"
+alt="Text Box: Mission statement bid for forces:&#13;&#10;goal, &#13;&#10;requirements, &#13;&#10;priority ($)&#13;&#10;"
+v:shapes="_x0000_s1099"></span><![endif]><!--[if gte vml 1]><v:group id="_x0000_s1080"
+ editas="canvas" style='width:6in;height:259.5pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="2743,1680" coordsize="11500,7097">
+ <o:lock v:ext="edit" aspectratio="t"/>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s1081" type="#_x0000_t75" style='position:absolute;
+  left:2743;top:1680;width:11500;height:7097' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path o:extrusionok="t" o:connecttype="none"/>
+  <o:lock v:ext="edit" text="t"/>
+ </v:shape><v:rect id="_x0000_s1082" style='position:absolute;left:10443;top:7543;
+  width:3800;height:925;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" strokeweight="1pt">
+  <v:shadow color="#969696"/>
+  <v:textbox inset="1.61131mm,.80567mm,1.61131mm,.80567mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none">
+      <span style="font-size: 7.5pt; mso-bidi-font-size: 12.0pt; color: black">
+      Force ants plan, execute deployment (bottom up deployment of forces, com, 
+      s/r)<o:p></o:p></span></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect><v:rect id="_x0000_s1083" style='position:absolute;left:5139;top:3405;
+  width:2499;height:1136;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+   endarrowlength="short"/>
+  <v:shadow color="#969696"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="1.60019mm,.80011mm,1.60019mm,.80011mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none">
+      <span style="font-size: 7.5pt; mso-bidi-font-size: 12.0pt; color: black">
+      Force ants negotiate site, adversary intel (Mobile Ants go to intel sites, 
+      secure planning sites<o:p></o:p></span></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect><v:rect id="_x0000_s1084" style='position:absolute;left:5543;top:5074;
+  width:3279;height:397;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+   endarrowlength="short"/>
+  <v:shadow color="#969696"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="1.60019mm,.80011mm,1.60019mm,.80011mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none">
+      <span style="font-size: 7.5pt; mso-bidi-font-size: 12.0pt; color: black">
+      Individual ants state equipment needs<o:p></o:p></span></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect><v:rect id="_x0000_s1085" style='position:absolute;left:6916;top:5577;
+  width:3773;height:1662;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+   endarrowlength="short"/>
+  <v:shadow color="#969696"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="1.60019mm,.80011mm,1.60019mm,.80011mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none">
+      <span style="font-size: 7.5pt; mso-bidi-font-size: 12.0pt; color: black">
+      Force ants bid for equipment, transport<o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -8.85pt; mso-list: l0 level1 lfo1; mso-layout-grid-align: none; text-autospace: none; margin-left: 22.75pt">
+      <![if !supportLists]><span style="mso-list: Ignore; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 7.5pt; mso-bidi-font-size: 12.0pt; color: black">
+      Ants negotiate authorizations, prices, conditions<o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -8.85pt; mso-list: l0 level1 lfo1; mso-layout-grid-align: none; text-autospace: none; margin-left: 22.75pt">
+      <![if !supportLists]><span style="mso-list: Ignore; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 7.5pt; mso-bidi-font-size: 12.0pt; color: black">
+      Ants go to large data sources<o:p></o:p></span></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect><v:shape id="_x0000_s1086" type="#_x0000_t75" style='position:absolute;
+  left:2743;top:2914;width:2200;height:1646;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute'>
+  <v:imagedata src="p3_files/image002.wmz" o:title="anthill1"/>
+  <o:lock v:ext="edit" aspectratio="f"/>
+ </v:shape><v:shape id="_x0000_s1087" type="#_x0000_t75" style='position:absolute;
+  left:8143;top:7131;width:2200;height:1646;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute'>
+  <v:imagedata src="p3_files/image002.wmz" o:title="anthill1"/>
+  <o:lock v:ext="edit" aspectratio="f"/>
+ </v:shape><v:shape id="_x0000_s1088" type="#_x0000_t75" style='position:absolute;
+  left:4843;top:6617;width:2200;height:1646;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute'>
+  <v:imagedata src="p3_files/image002.wmz" o:title="anthill1"/>
+  <o:lock v:ext="edit" aspectratio="f"/>
+ </v:shape><v:rect id="_x0000_s1089" style='position:absolute;left:10044;top:3018;
+  width:2499;height:889;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+   endarrowlength="short"/>
+  <v:shadow color="#969696"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="1.60019mm,.80011mm,1.60019mm,.80011mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none">
+      <span style="font-size: 7.5pt; mso-bidi-font-size: 12.0pt; color: black">
+      Equipment vendors ants and transport ants bid for support of operation<o:p></o:p></span></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect><v:shape id="_x0000_s1090" type="#_x0000_t75" style='position:absolute;
+  left:11943;top:4457;width:2200;height:1646;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute'>
+  <v:imagedata src="p3_files/image002.wmz" o:title="anthill1"/>
+  <o:lock v:ext="edit" aspectratio="f"/>
+ </v:shape><v:line id="_x0000_s1091" style='position:absolute;mso-wrap-style:none;
+  mso-position-horizontal:absolute;mso-position-vertical:absolute;
+  v-text-anchor:middle' from="6143,1680" to="12243,7440" strokecolor="red"
+  strokeweight="4.5pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrow="block"
+   endarrowwidth="narrow" endarrowlength="short"/>
+  <v:shadow color="#969696"/>
+ </v:line><v:shape id="_x0000_s1092" type="#_x0000_t202" style='position:absolute;
+  left:7994;top:2808;width:1996;height:513;rotation:2825613fd;
+  mso-position-horizontal:absolute;mso-position-vertical:absolute' filled="f"
+  fillcolor="#0c9" stroked="f" strokeweight="1pt">
+  <v:stroke startarrowwidth="narrow" startarrowlength="short" endarrowwidth="narrow"
+   endarrowlength="short"/>
+  <v:shadow color="#969696"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="1.60019mm,.80011mm,1.60019mm,.80011mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]></span><span style="font-size: 12.0pt; font-weight: 700">
+    <div>
+      <p class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none">
+      <span style="font-family: Arial; font-size: 12.5pt">T</span></span><span style="font-size: 12.0pt; font-family: Times New Roman"><b><span style="font-size: 12.5pt; mso-bidi-font-size: 20.0pt; font-family: Arial; color: black">imeline<o:p></o:p></span></b></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:shape><v:shape id="_x0000_s1093" type="#_x0000_t75" style='position:absolute;
+  left:4143;top:5383;width:1453;height:812;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute'>
+  <v:imagedata src="p3_files/image003.wmz" o:title="redant2"/>
+ </v:shape><v:line id="_x0000_s1094" style='position:absolute;mso-wrap-style:none;
+  mso-position-horizontal:absolute;mso-position-vertical:absolute;
+  v-text-anchor:middle' from="4899,4637" to="11843,5281" strokeweight="1pt">
+  <v:stroke startarrow="oval" endarrow="oval"/>
+  <v:shadow color="#969696"/>
+ </v:line><v:rect id="_x0000_s1095" style='position:absolute;left:12043;top:6206;
+  width:2100;height:925;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" strokeweight="1pt">
+  <v:shadow color="#969696"/>
+  <v:textbox inset="1.61131mm,.80567mm,1.61131mm,.80567mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" style="mso-layout-grid-align: none; text-autospace: none">
+      <span style="font-size: 7.5pt; mso-bidi-font-size: 12.0pt; color: black">
+      Vendor ants plan, execute supply and transport of equipment<o:p></o:p></span></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect><v:line id="_x0000_s1096" style='position:absolute;mso-wrap-style:none;
+  mso-position-horizontal:absolute;mso-position-vertical:absolute;
+  v-text-anchor:middle' from="3443,4663" to="4243,5177" strokeweight="1pt">
+  <v:stroke startarrow="oval" endarrow="oval"/>
+  <v:shadow color="#969696"/>
+ </v:line><v:line id="_x0000_s1097" style='position:absolute;mso-wrap-style:none;
+  mso-position-horizontal:absolute;mso-position-vertical:absolute;
+  v-text-anchor:middle' from="5143,6103" to="5743,6823" strokeweight="1pt">
+  <v:stroke startarrow="oval" endarrow="oval"/>
+  <v:shadow color="#969696"/>
+ </v:line><v:line id="_x0000_s1098" style='position:absolute;flip:y;
+  mso-wrap-style:none;mso-position-horizontal:absolute;mso-position-vertical:absolute;
+  v-text-anchor:middle' from="10343,5486" to="11843,7440" strokeweight="1pt">
+  <v:stroke startarrow="oval" endarrow="oval"/>
+  <v:shadow color="#969696"/>
+ </v:line></v:group><![endif]--><![if !vml]><img width=579 height=349
+src="p3_files/image004.gif" v:shapes="_x0000_s1080 _x0000_s1081 _x0000_s1082 _x0000_s1083 _x0000_s1084 _x0000_s1085 _x0000_s1086 _x0000_s1087 _x0000_s1088 _x0000_s1089 _x0000_s1090 _x0000_s1091 _x0000_s1092 _x0000_s1093 _x0000_s1094 _x0000_s1095 _x0000_s1096 _x0000_s1097 _x0000_s1098"><![endif]></span></p>
+
+<p><font size="1">Source: ANT Overview: http://www.dsic-web.net/ito/programs/ant/overview.html</font></p>
+
+</body>

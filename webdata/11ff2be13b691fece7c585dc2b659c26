@@ -1,0 +1,45 @@
+<html> 
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="1.htm">  <IMG SRC="previous.gif" align=left></a><A HREF="previous.html">  </A> 
+ <a href="3.htm">  <IMG SRC="next.gif" align=right></a><A HREF="next.html">  </A> 
+ <center> 
+ <h1>INTERFACE DEFINITION DESCRIPTION</h1>
+ </center>
+	<p align="justify"><font size="4">The Interface between RemoteControl and 
+	ActiveMQ Message Server is provided by the class MessageServerInterface.
+	</font></p>
+	<p align="justify"><font size="4">It provides the following methods</font></p>
+	<ol>
+		<li>
+		<p align="justify"><font size="4"><b>MessageServerInterface (String 
+		hostname, String path, String queue)<br>
+		</b>Creates the MessageServerInterface to interface to the Message Server 
+		running on host &quot;hostname&quot;, at a path specified by &quot;path&quot;, and 
+		specifying the queue from which this client will read from and write to.<br>
+&nbsp;</font></li>
+	<li>
+	<p align="justify"><font size="4"><b>String httpPost (KeyValueList)<br>
+	</b>A public method to send a message to the Message Server. The XML Message 
+	from Remote Control is encoded as part of the HTTP POST message.<br>
+&nbsp;</font></li>
+	<li>
+	<p align="justify"><font size="4"><b>String httpGet ()<br>
+	</b>A public method to retrieve a message from the Message Server. The HTTP GET 
+	command retrieves the message from the queue as a String. This can then be 
+	converted in to KeyValueList to be sent to the Remote Control.<br>
+&nbsp;</font></li>
+<li>
+<p align="justify"><font size="4"><b>String getString(KeyValueList)<br>
+</b>Convert a KeyValueList to a String. This is a private utility method.<br>
+&nbsp;</font></li>
+<li>
+<p align="justify"><font size="4"><b>KeyValueList getKVList(String) <br>
+</b>Convert a String to a KeyValueList. This is a public utility method.</font></li>
+</ol>
+ 
+ <p align="justify"><font size="4">Zipped source code for the Interface and 
+	setup code to test the interface is <a href="src.zip">here (src.zip).</a></font></p>
+
+ 
+ </html> 

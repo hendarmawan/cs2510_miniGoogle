@@ -1,0 +1,26 @@
+Group 5 Kinect Control Robot
+Team: Yang Hu, Qizhang Dai
+We want to develop a system that using Kinect as an input device to recognize human body movements then sends specific command to remote device.
+
+Gestures:
+
+-Raise both hands up and then put both hand down
+ Means turn on/off the robot
+
+-Push both hands forward
+ Means go forward.
+
+-Left hand to the left
+ Means move left.
+
+-Right hand to the right
+ Means move right.
+
+-Two hands hold a wheel in front of chest turn left/right
+ Means turn left/right
+
+Youtube link: http://www.youtube.com/watch?v=V-1ODgGSw4M
+Oni File link: http://www.cs.pitt.edu/~huyang/kinect/demo.oni
+Source code link: http://code.google.com/p/kinect/source/browse/#
+
+

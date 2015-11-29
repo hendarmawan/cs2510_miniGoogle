@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Transcript XML support for the VC - Page 1</title>
+	<style>
+		body {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		dl {
+			margin: 0;
+			padding: 0;
+		}
+		dd {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="index.html">
+    <img src = "previous.gif" align = "left" width="26" height="26"></a>
+	<a href="page3.html">
+    <img src = "next.gif" align = "right" width="26" height="26"></a>
+	<center>
+		<h1>Introduction</h1>
+		<hr>
+	</center>
+        <p>I worked on expanding transcript support for the VC by implementing the following features:</p>
+	<ul>
+            <li>A transcript parser</li>
+            <li>A transcript converter</li>
+            <li>XML-formatted transcript import</li>
+            <li>XML-formatted transcript export</li>
+            <li>Indexing support for imported transcripts</li>
+	</ul>
+        <p>We have integrated Jim's indexing support and Beatriz's yellow pages database into the VC with Chris's FaceAlive implementation.</p>
+</body>
+</html>

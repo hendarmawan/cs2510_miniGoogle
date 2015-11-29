@@ -1,0 +1,25 @@
+<title>Abstract Machine for SIS</title>
+
+<a href="sisam3.htm"><img src="prev.gif" align=left></a>
+<a href="sisam5.htm"><img src="next.gif" align=right></a>
+
+<center>
+<h1>Simple Computation Cycles without Guard</h1>
+</center>
+<h2>
+<font color=red>
+cycle1: Po -enum< P1 >elim- P2
+</font>
+
+<p>
+First, from the initial problem set Po we enumerate the potential solution elements to generate the problem set P1. Then we eliminate those that are not solution elements to generate another problem set P2 containing only the solution elements.
+
+<p>
+<p>
+<font color=red>
+cycle2: Po -enum< P3 -enum< P4 -enum< P5 >elim- P6
+</font>
+
+<p>
+In this computation cycle, three enumeration operators are used in sequence to enumerate potential solution elements, thus generating a much larger problem set P5.  Then we apply the elimination operator to derive the final solution set P6.
+

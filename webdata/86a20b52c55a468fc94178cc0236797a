@@ -1,0 +1,63 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Conclusions &amp; Recommendations</title>
+</head>
+
+<body>
+
+<div align="center">
+  <center>
+  <table border="0" width="80%" height="258">
+    <tr>
+      <td align="center" height="29" width="43"><a href="wallet-sec3-1.htm"><img border="0" src="previous.gif" width="26" height="26"></a></td>
+      <td align="center" height="29" width="499">
+        <p align="right"></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2" height="29"><font size="5">4. Recommendations</font></td>
+    </tr>
+    <tr>
+      <td colspan="2" height="21"></td>
+    </tr>
+    <tr>
+      <td colspan="2" height="21"><font size="4">4.2 Recommendations</font></td>
+    </tr>
+    <tr>
+      <td width="5%" height="21"></td>
+      <td width="60%" height="21"><font size="4">1.&nbsp; The destination of a
+        message must be dynamic--and does not fall into the specific categories
+        of Broadcast, Contend, Send to Specific IC, etc.&nbsp; The difficulty
+        here is that in some instances, it is not sufficient for example,&nbsp;
+        to allow <b>any</b> Visa Instrument to receive a payment message.&nbsp;
+        Such a message must be sent to a specific IC, but one that is determined
+        during execution, not as part of the model.</font>
+        <p><font size="4">2.&nbsp; Caller/Recipient Model.&nbsp; Difficulty
+        arises when an IC must respond to a specific message from another
+        IC.&nbsp; Although this can be accomplished (as shown) by adding states
+        which cause an IC to await a response message, this is still a tenuous
+        relationship.&nbsp; </font></p>
+        <p><font size="4">3. Extending the design might also include the ability
+        to &quot;reuse&quot; transitions.&nbsp; This could merely be a function
+        of the IC Builder.&nbsp; As described in the model of the G-Net, there
+        may be a hierarchical nature to the IC design, where a particular
+        &quot;subroutine&quot; should be reused.&nbsp; </font></p>
+        <p><font size="4">4. The final recommendation is that of code reuse and
+        compatibility.&nbsp; As stated earlier, the e-wallet is best coded in
+        Java due to the platform independent nature. Using Java ensure that all
+        wallets are compatible and provide equal functionality.&nbsp;
+        Additionally, if the system is implemented in Java, an additional
+        recommendation would be to create a conformance to the JavaBean model.</font></p>
+        <p>&nbsp;</td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

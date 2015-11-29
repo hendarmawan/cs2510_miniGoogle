@@ -1,0 +1,1179 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns:css="http://macVmlSchemaUri" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta name=Title content="&nbsp;CS 3150 Spring 2008">
+<meta name=Keywords content="">
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 2008">
+<meta name=Originator content="Microsoft Word 2008">
+<link rel=File-List href="index_files/filelist.xml">
+<link rel=Edit-Time-Data href="index_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>&nbsp;CS 3150 Spring 2008</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Template>Normal.dotm</o:Template>
+  <o:LastAuthor>Kirk Pruhs</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>1</o:TotalTime>
+  <o:Created>2008-05-07T17:48:00Z</o:Created>
+  <o:LastSaved>2008-05-07T17:49:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>1330</o:Words>
+  <o:Characters>7585</o:Characters>
+  <o:Company>Computer Science Dept</o:Company>
+  <o:Lines>63</o:Lines>
+  <o:Paragraphs>15</o:Paragraphs>
+  <o:CharactersWithSpaces>9314</o:CharactersWithSpaces>
+  <o:Version>12.1</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:Compatibility>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="276">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--table.PRODUCTIMAGEGRID
+	{float:left;}
+
+ /* Font Definitions */
+@font-face
+	{font-family:"Courier New";
+	panose-1:2 7 3 9 2 2 5 2 4 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Times;
+	panose-1:2 0 5 0 0 0 0 0 0 0;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:Wingdings;
+	panose-1:5 2 1 2 1 8 4 8 7 8;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 65536 0 -2147483648 0;}
+@font-face
+	{font-family:Cambria;
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Comic Sans MS";
+	panose-1:3 15 7 2 3 3 2 2 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:white;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:white;
+	font-weight:bold;
+	mso-bidi-font-weight:normal;}
+a:link, span.MsoHyperlink
+	{color:yellow;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:yellow;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Times;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:Times;
+	mso-bidi-font-family:"Times New Roman";
+	color:white;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:Calibri;
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	font-weight:bold;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+@list l0
+	{mso-list-id:16011436;
+	mso-list-template-ids:1242463980;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:704908833;
+	mso-list-template-ids:-886700988;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l2
+	{mso-list-id:1361315881;
+	mso-list-template-ids:-1999486442;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3
+	{mso-list-id:1396199019;
+	mso-list-template-ids:976899598;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4
+	{mso-list-id:2004430158;
+	mso-list-template-ids:1984360512;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:10.0pt;
+	mso-para-margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:minor-latin;}
+</style>
+<![endif]-->
+<meta name=author content="Kirk Pruhs">
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<meta name=author content="Kirk Pruhs">
+</head>
+
+<body bgcolor="#003300" lang=EN-US link=yellow vlink=yellow style='tab-interval:
+.5in' alink="#FF0000">
+
+<div class=Section1>
+
+<p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:13.5pt;font-family:"Comic Sans MS"'>&nbsp;</span></b></p>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><span style='font-family:"Comic Sans MS"'><br>
+</span><span style='font-size:24.0pt;font-family:"Comic Sans MS"'>CS 3150
+Topics in Algorithms </span></h3>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><span style='font-size:24.0pt;font-family:"Comic Sans MS"'>Spring 2008
+topic is Algorithmic Game Theory</span></h3>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'>&nbsp;</h3>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><span style='font-size:24.0pt;font-family:"Comic Sans MS"'>Instructors</span></h3>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:13.5pt;font-family:
+"Comic Sans MS"'><a href="http://www.cs.pitt.edu/~kirk"><span style='text-decoration:
+none;text-underline:none'><img border=0 width=176 height=225 id="_x0000_i1025"
+src="kirkhalf.jpg"></span></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<!--[if gte vml 1]><v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+ o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1026" type="#_x0000_t75" alt="" style='width:136pt;
+ height:221pt'>
+ <v:imagedata src="index.1.jpg"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=138 height=223
+src="index_files/image001.png" v:shapes="_x0000_i1026"><![endif]></span></b></p>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:13.5pt;font-family:
+"Comic Sans MS"'><a href="http://www.cs.pitt.edu/~kirk">Kirk Pruhs</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://www.cs.pitt.edu/~chung">Christine Chung</a></span></b></p>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:13.5pt;font-family:
+"Comic Sans MS"'>Email: <a href="mailto:kirk@cs.pitt.edu">kirk@cs.pitt.edu</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+chung@cs.pitt.edu<br>
+Phone : 412-624-8844&nbsp;</span></b></p>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><span style='font-family:"Comic Sans MS"'>Announcements</span></h3>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l1 level1 lfo1;
+     tab-stops:list .5in'>&nbsp;</li>
+ <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l1 level1 lfo1;
+     tab-stops:list .5in'>Class is canceled for Wednesday January 23.</li>
+</ul>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><span style='font-size:24.0pt;font-family:"Comic Sans MS"'>Course
+Description </span></h3>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><span style='font-family:"Comic Sans MS"'>We will cover most of the very
+recent text (Fall 2007) on <a
+href="http://www.amazon.com/Algorithmic-Game-Theory-Noam-Nisan/dp/0521872820">Algorithmic
+Game Theory</a> by Nisan, Roughgarden, Tardos and Vazirani. After using the
+text, <a href="AGTReview.txt">here</a> is a review that I wrote at the request
+of <a
+href="http://www.econ.kuleuven.be/eng/fetew/medewerker/userpage.aspx?PID=918">Frits
+Spieksma</a>.</span></h3>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'>&nbsp;</p>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><!--[if gte vml 1]><v:shape id="_x0000_i1027" type="#_x0000_t75" alt=""
+ style='width:180pt;height:270pt'>
+ <v:imagedata src="bookcover.jpg"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=182 height=272
+src="index_files/image002.png" v:shapes="_x0000_i1027"><![endif]></h3>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'>&nbsp;</h3>
+
+<h3 style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+0in'><span style='font-family:"Comic Sans MS"'>The Amazon <a
+href="http://www.amazon.com/Algorithmic-Game-Theory-Noam-Nisan/dp/0521872820">page</a>
+contains a table of contents and an except. A rather nice <a
+href="AGTbookForeword.pdf">forward</a> was written by Christos Papadimitriou.
+This course is intended to be a broad introduction to algorithmic game theory
+that should be accessible to a wide range of students. </span></h3>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+"Comic Sans MS"'>Course Format</span></b></p>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:13.5pt;font-family:
+"Comic Sans MS"'>The instructors will present the initial lectures. Each
+student will be expected to lead some lectures/discussions later in the
+semester covering some portion of the text.&nbsp; One or two exercises may be
+assigned from each chapter to provide some practice using the concepts from the
+chapter.</span></b></p>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+"Comic Sans MS"'>Class Time and Location</span></b></p>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:13.5pt;font-family:
+"Comic Sans MS"'>Mondays and Wednesdays&nbsp; (and maybe a rare Friday to make
+up for classes missed due to instructors' travels to academic conferences) from
+1:00 to 2:15 in room 5313 of the Sennott Square building.</span></b></p>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:24.0pt;font-family:
+"Comic Sans MS"'>Tentative Schedule</span></b></p>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'>&nbsp;<o:p></o:p></p>
+
+<table class=MsoNormalTable border=1 cellspacing=0 cellpadding=0 width="100%"
+ style='width:100.0%;border-collapse:collapse;mso-padding-alt:0in 0in 0in 0in'
+ id=AutoNumber1>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Date</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Topic</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Reference</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Homework due at the start
+  of next class. Occasionally I will ask someone to present the homework</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1;height:80.0pt'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in;height:80.0pt'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Monday Jan 7</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in;height:80.0pt'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Definition: Strategic game,
+  dominance, Pareto efficiency/optimality, pure Nash equilibrium, mixed Nash
+  equilibrium</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in;height:80.0pt'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Chapter 1 </span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in;height:80.0pt'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Wednesday Jan 9</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Lemke-Howson algorithm for
+  general 2-person games</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal style='margin-bottom:10.0pt'><b style='mso-bidi-font-weight:
+  normal'><span style='font-family:"Comic Sans MS"'>Chapter 3 is tough sledding</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Insteead
+  try good <a href="LemkeHowson.ppt">slides</a> from class taught by Michael
+  Lewiki</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Homework: Consider the game in Lewiki's
+  notes. Find a mixed Nash equilibrium for the game. Apply the Lemke-Howson
+  algorithm to this Nash Equilibrium until you get to a new Nash Equilibrium.
+  Your first step will be arbitrary. Show the path on the 3-D and 2-D spaces
+  shown in the notes.</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday Jan 14</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Complexity of Nash Equilbrim:</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Reduction
+  to linear programming for zero-sum 2-person games</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Sperner's
+  lemma -&gt; Brower Fixed point -&gt; Existence of Nash</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Chapter 2</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Good
+  <a href="NashExistence.ps">notes</a> from a class taught by Christos
+  Papadimitriou</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday Jan 16</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>NP-hardness of deciding if &gt; 1 mixed
+  Nash Equilibrium in a 2-person game</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'><a href="conitzer02complexity.pdf">Paper</a>
+  by Conitzer and Sandholm</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'><a
+  href="NashNPHard.ppt">Slides </a>for the paper</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'><a
+  href="Homework2-reduction.ppt">Slides</a> revised by the students</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Group Homework: Elaborate/Improve on the
+  first page of these <a href="NashNPHard.ppt">Slides</a> to make the proof
+  more complete/convincing/illuminating. In particular explain why:</span></b></p>
+  <ul style='margin-top:0in' type=disc>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l0 level1 lfo2;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>A player won't play both a literal
+       an its negation</span></b></li>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l0 level1 lfo2;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>Why a player won't play any literal
+       with probability greater than 1/n where n is the number of variables</span></b></li>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l0 level1 lfo2;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>Why a player won't play a variable
+       move/strategy</span></b></li>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l0 level1 lfo2;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>Why a player won't play a clause
+       move/strategy if the formula is satisfiable</span></b></li>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l0 level1 lfo2;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>Why you need the default move</span></b></li>
+  </ul>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>You
+  may also change the instance constructed game (say by adding -infinity
+  payoffs) if you think that that helps. Email me the slides, and I will post
+  your revision. Don't get carried away, I am thinking that this should take 1
+  or at most 2 hours.</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday Jan 21&nbsp; No class MLK day</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday Jan 23 </span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS";
+  color:red'>Class cancelled </span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>L</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday Jan 28</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS";
+  color:red'>Guest Lecture <a href="http://www.cs.cmu.edu/~katrina">Katrina
+  Ligett</a></span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Learning, Regret Minimization, and
+  Equilibria</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Chapter 4</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday Jan 30</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>KKT-conditions</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Resource
+  Allocation Markets</span></b></p>
+  <ul style='margin-top:0in' type=disc>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l2 level1 lfo3;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>s-t paths</span></b></li>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l2 level1 lfo3;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>s-t<sub>i</sub> paths</span></b></li>
+  </ul>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Section 5.13</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'><a
+  href="2802c.ppt">Slides </a>and <a href="Harvard.ppt">Slides</a> by <a
+  href="http://www.cc.gatech.edu/~vazirani">Vijay Vazirani</a></span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday Feb 4</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Fischer's Linear Market</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Section 5.2 - 5.11</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'><a
+  href="Amin_talk.pptx">Slides</a> by Amin Saberi</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Group homework: Consider a market of
+  goods and buyers where the utility only increases as the square root of the
+  quantity of good received. That is, a buyer i gets utility u_{i,j}
+  (x_{i,j})^{1/2} from x_{i,j} units of good j. It is probably more realistic
+  to assume that utility is a concave function of quantity.</span></b></p>
+  <ul style='margin-top:0in' type=disc>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l3 level1 lfo4;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>Write Eisenberg-Gale program for the
+       market clearing problem for this market</span></b></li>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l3 level1 lfo4;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>apply the KKT conditions </span></b></li>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l3 level1 lfo4;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>Determine from the KKT conditions
+       which conditions in Theorem 5.1 hold for this market</span></b></li>
+  </ul>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>What,
+  if anything, goes wrong if one tries to apply the algorithm in section 5.8
+  for Fischer's linear case to this market? Don't worry about running time,
+  concentrate on correctness of the algorithm. If what goes wrong is minor, can
+  it be easily fixed?</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'>&nbsp;</p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday Feb 6 </span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'>&nbsp;</p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Social Choice: Arrow's Impossibility
+  Lemma and Gibbard-Satterthwaite</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Section 9.2</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'><a
+  href="ln4.ps">Notes</a> from class by Christos Papadimitriou</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Group Homework: In the proof of Arrow's
+  Impossibility Lemma that I did in class (basically the same proof as in the
+  book) we consider the sequence F(pi_0) ... F(pi_n). Recall that F satisfied
+  the conditions of unanimity and independence of irrelevant alternatives. It
+  is easy to see that there must exist a k such that b &gt; a if F(pi_j) for j
+  &lt; k and a &gt; b in F(pi_k). That is the preference flips at k.&nbsp; In
+  my argument I assumed that it was then also the case that a &gt; b in F(pi_j)
+  for j &gt; k. That is, once the preference flips, it has to stay flipped.
+  Shenoda pointed out that it at least wasted obvious that this is true, that
+  is, it is possible that the preference between a and b could flip several
+  times. Your goal is to determine which of the following is true:</span></b></p>
+  <ul style='margin-top:0in' type=disc>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l4 level1 lfo5;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>The preference can only flip once.</span></b></li>
+   <li class=MsoNormal style='margin-top:.1pt;margin-bottom:.1pt;mso-list:l4 level1 lfo5;
+       tab-stops:list .5in'><b style='mso-bidi-font-weight:normal'><span
+       style='font-family:"Comic Sans MS"'>The preference can flip more than
+       once, but the proof can still go through with at most minor
+       modification.</span></b></li>
+  </ul>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday Feb 11</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS";
+  color:red'>Christine will be speaking</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Intro to Inefficiency of Equilibria</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Sections 17.1-17.2.3</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday Feb 13</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS";
+  color:red'>Christine will be speaking</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Routing Games</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Sections 18.1-18.4</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday Feb 18</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS";
+  color:red'>Christine will be speaking</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Network Formation Games: a local
+  connection game</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Sections 19-1-19.2</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday Feb 20</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS";
+  color:red'>Christine will be speaking</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Network Formation Games: A global
+  connection game and the Potential Function Method</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Section 19.3</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Group Homework: Problem 19.14</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday Feb 25</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Mechanisms with Money: VCG, Clark Pivot
+  Rule</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Sections 9.3-9.4</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Group Homework: Consider the auction
+  problem of selling k identical items to k different bidders. Is have the i^th
+  highest bidder pay the bid of the (i+1)st highest bid truthful?</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday Feb 27</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>House Allocation and Stable Marriage</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Sections 10.3-10.4</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday March 3</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Combinatorial Auctions: The greedy
+  algorithm for single minded bidders</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Section 11.2</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday March 5</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Combinatorial Auctions:</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Walrasian
+  Equilibrium and the LP relaxation</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Communication
+  Complexity</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Section
+  11.3</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Section
+  11.6</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Group Homework: Prove Lemma 11.13 using
+  the KKT conditions (or LP duality)</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'>Group
+  Homework: Problem 11.9 from the text</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS";color:red'>Spring Break</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday March 17</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>BGP Routing</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Section&nbsp; 14.3</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Group Homework: Can you come up with a precise
+  formulation of Theorem 14.7 that is both interesting and (at least plausibly)
+  true. The main issue in the proof that follows is &quot;What is the domain of
+  quantification when it is claimed that each AS gets their most valued
+  route?&quot;</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday March 19</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Cost Sharing</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Chapter 15</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday March 24</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Cost Sharing</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Chapter 15</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Group Homework: Problem 15.2</span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday March 26</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Cascading Behaviour in Networks</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Chapter 24</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday March 31</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'>&nbsp;</p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Lory's Presentation on Sponsored Search</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Chapter 28</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'><a
+  href="sponsored_search.ppt">Talk Slides</a></span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday April 2</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Shenoda's Presentation on Selfish Load
+  Balancing</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Chapter 20</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'><a
+  href="SelfishLoadBalancing.ppt">Talk Slides</a></span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:26'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday April 7</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS";
+  color:red'>No Class</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:27'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday April 9</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS";
+  color:red'>No Class</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:28'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday April 14</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Josh's Presentation on Reputation Systems</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Chapter 27<o:p></o:p></span></b></p>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'><a href="Reputation.ppt">Slides</a></span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:29'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday April 16</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Rich's Presentation on Biological
+  Applications of Games</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'><a href="ComputationalBiology.ppt">Slides</a></span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:30'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Monday April 21</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Tomas' Presentation on Bayesian
+  Approaches</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'><a
+  href="6.2.PerfectBayesSenderReceiver.1.0.pdf">Paper </a>by Jim Ratliff</span></b></p>
+  <p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:
+  0in'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Comic Sans MS"'><a
+  href="Tomias.pdf">Talk Slides</a></span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:31;mso-yfti-lastrow:yes'>
+  <td width="27%" style='width:27.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Wednesday April 23</span></b></p>
+  </td>
+  <td width="28%" style='width:28.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Panickos' Presentation on Peer to Peer
+  Applications of Games</span></b></p>
+  </td>
+  <td width="20%" style='width:20.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Comic Sans MS"'>Chapter 23</span></b></p>
+  </td>
+  <td width="25%" style='width:25.0%;padding:0in 0in 0in 0in'>
+  <p class=MsoNormal>&nbsp;</p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:13.5pt;font-family:
+"Comic Sans MS"'><br>
+&nbsp;</span></b></p>
+
+<p style='margin-top:.1pt;margin-right:0in;margin-bottom:.1pt;margin-left:0in'>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>

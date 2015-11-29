@@ -1,0 +1,37 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Arial"> 
+	
+		<A href="./index.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+		<A href="./cvs1.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		
+		<center> 
+			<h1>Message Server Tools - A Tutorial</h1>
+		</center>
+		
+		</font>
+		
+		<font size = 5 face="Arial"> 
+	
+		<br>
+		<br>
+		<li>CVS - <a href="http://www.cvshome.org/docs/manual/" target="_blank">www.cvshome.org/docs/manual/</a>
+		<br>
+		<br>
+		<li>Maven - <a href="http://maven.apache.org/" target="_blank">maven.apache.org/</a>
+		<br>
+		<br>
+		<li>CruiseControl - <a href="http://cruisecontrol.sourceforge.net/" target="_blank">cruisecontrol.sourceforge.net/</a>
+		<br>
+		<br>
+		<li>Bugzilla - <a href="http://www.bugzilla.org/" target="_blank">www.bugzilla.org</a>
+		
+		</font>
+		
+	</BODY>
+</html>

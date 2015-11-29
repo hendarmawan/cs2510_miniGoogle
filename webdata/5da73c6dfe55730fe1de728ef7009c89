@@ -1,0 +1,36 @@
+<center><h1>Midterm Review</h1></center>
+<b>
+<b>
+You should carefully study the book and my classnotes.  The following
+are some, but not all, of the important topics.  Always study my classnotes
+first, then the following important topics, then the whole book.
+(The following are based upon 3rd Edition)
+</b>
+<br><br>
+<b>Chapter 1: Why Software Engineering</b><br>
+C1.6 An Engineering approach, C1.7 Development team, C1.8 How has software engineering changed?
+<br><br>
+<b>Chapter 2: Modeling the Process and Life Cycle</b><br>
+C2.2 Software Process models (Fig 2.1 waterfall, 2.3 waterfall with prototyping, 2.5 prototyping model, 2.7 transformational model, 2.9 incremental model, 2.10 spiral model)
+You must know all software lifecycle models,
+why do we use a particular model,
+the pros and cons.
+Extreme Programming (task, pair programming,client representative, agile methods)
+<br><br>
+<b>Chapter 3: Planning and Managing the Project</b><br>
+C3.1 Tracking progress (schedule, milestone, activity graph Fig 3.1)
+C3.2 Personnel (Fig. 3.9 communication paths on a project, project organization)
+C3.3 Effort estimation (COCOMO constructive cost model)
+C3.4 Risk managemnet (what is risk? How to deal with it?)
+C3.5 Project plan (what is it? why do we need it?)
+<br><br>
+<b>Chapter 4: Capturing the requirements</b><br>
+C4.5 Modeling notations (this is the heart of this chapter)
+ER diagrams, UML diagrams (class/object diagrams and use case diagrams only), Petri nets (Petri nets are for graduate students only), Data flow diagrams, Use cases, Decision tables
+<br><br>
+<b>Chapter 5: Designing the system</b><br>
+5.1 What is design?
+5.2 Decomposition and modularity
+5.5 Characteristics of good design
+(this section is important.  Notions of coupling, Fig. 5.13 range of coupling, Fig. 5.14 content coupling, Fig 5.15 common coupling.  Notion of cohesion, Fig 5.16 types of cohesion)
+<br><br>

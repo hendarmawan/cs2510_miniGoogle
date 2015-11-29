@@ -1,0 +1,421 @@
+                 <h1> Do Software Engineers like Multimedia ?</h1>
+<br>
+[Masahito Hirakawa:Faculty of Engineering,
+Hiroshima University, Japan]
+<br>
+Multimedia is here to stay as a very integral
+part of our personal, education, and business
+ventures.
+<br>
+Considerable research is being conducted: 
+     * Development Multimedia Tools
+     * Development Multimedia Systems
+     * Development Multimedia Products
+<br>
+Definition:
+     "Multimedia is computers using multiple
+     media to let people deal with information
+     naturally".  
+<br>
+     "Fable of 6 blind men & elephant... each
+     blind man perceived something completely
+     different - nose as snake, leg is tree
+     trunk, tail as a rope, but none comprehend
+     the whole" [Ramesh Jain; Editor in Chief;
+     IEEE MMI Magazine; 1994].
+<h2>Survey:</h2>
+     Given 10 experts in Multimedia would result
+     in 10 different options  [Sorel Reisman;
+     IEEE MM Magazine; 1998]
+<br>
+In the scientific community, we know
+Multimedia is recognized as one of the most
+important topics. However, Multimedia is not
+widely understood by engineers. 
+<br>
+Other fields such as User-Interface, Database,
+Operating Systems are intrigued with
+Multimedia. Network engineers are busy
+developing systems using Multimedia, but to
+what end?
+<br>
+What is the opinion of Software Engineers? 
+The assumption is that Multimedia is not the
+mainstream for software engineers:
+<h2></h2>
+<br>
+     * What is the perception of Multimedia?
+<br>
+<br>
+     * What are the activities in Software
+     Engineering?
+<br>
+<br>
+     * What is Multimedia doing to bridge the
+     Software Engineering gap?
+<br>
+<br>
+     * What is the anticipated future of
+     Multimedia Software.
+<br>
+<br>
+     * Where is Software Engineering Headed?
+<br>
+<br>
+     * Is Software Engineering Independent from
+     Multimedia?
+<br>
+<h2>Traditional vs Multimedia Views:</h2>
+<br>
+Figure 1 demonstrates one perceived
+relationship between traditional applications
+and Multimedia applications:
+<br>
+One perception Software Engineers have of
+Multimedia applications is that they are
+smaller than traditional applications.
+<br>
+Therefore, multimedia must have little value?
+(Fig 1-a).
+<br>
+However, the actual difference between
+multimedia and traditional applications is not
+size but the user base (Fig 1-b).
+<br>
+Systems should be simple & uniform and enable
+users to efficiently perform intended tasks.
+<br>
+<h2>Traditional Applications (key features):</h2>
+(Fig 2)
+<br>
+     * Simplicity - the system should be
+     intuitive and simple to use.
+<br>
+     * Uniformity - the system implementation
+     should be consistent.
+<br>
+     * Efficiency - the system should adequately
+     perform the specified task.
+<br>
+Multimedia applications(key features):
+(Fig 2)
+<br>
+     * Identity - yields clear and concise
+     recognition of system to users.
+<br>
+     * Creativity - system should help users
+     create new ideas.
+<br>
+     * Respect - software developers respect
+     users & users respect those who developed
+     the system.
+<br>
+<h2>Software Development Changes from Multimedia:</h2>
+<br>
+     * Cannot simply change user interface.
+<br>
+     * Cannot simply change look & feel.
+<br>
+     * Instead, consider the model for
+     developing software.
+<br>
+     * User's goal often different from
+     anticipated.
+<br>
+An accountant's goal:
+<br>
+     * View of company:
+          > Process Invoices Efficiently.
+<br>
+     * View of accountant:
+          > not look stupid.
+          > not make mistakes.
+          > have fun.
+<br>
+The misconception made by software engineers
+traditional applications is that we don't
+always understand the end user's point of
+view.  Our goals are often distorted in favor
+of the company's interests.
+<br>
+<h2>Multimedia principles:</h2>
+<br>
+     * Explore the power for multimedia for
+     better software engineering.
+<br>
+     * Explore software engineering issues in
+     the development of systems involving
+     multimedia.
+<br>
+The potential of multimedia is found through
+the software development tools using
+multimedia.  Examples are found in the
+following products:
+(Fig 3, Slides from BX and IDS)
+     * Visual Programming.
+     * Software Visualization.
+     * Algorithm animation.
+     * Benefits of Reverse Engineering.
+     * Tools for creating platform independent
+     multimedia systems.
+<br>
+Java - good general purpose programming
+language tool, because it offers platform
+independence.
+<br>
+Using visual programming software engineers
+can easily develop multimedia by arranging
+objects on the screen.
+<br>
+<h2>Software as a Product:</h2>
+(Fig 6)
+     
+The idea of uniting producers, consumers and
+designers came from the work of an Arts and
+Crafts Movement initiated by William Morris in
+the 19th century.  
+<br>
+     * Goal was to make products more user
+     friendly.
+<br>
+     * User Interface includes every interaction
+     that a user has with a product.
+<br>
+     * Importance of integrating user interface
+     design and industrial design.
+<br>
+New types of user interfaces:
+<br>
+     * Should software engineers learn graphics
+     design, or should graphics designers learn
+     how to write software?
+<br>
+     * Aim of industry is quality of product.
+<br>
+     * Wait, tools will evolve where detailed
+     programming skills are not needed.
+<h2>Multimedia Products: (Voice Applications)</h2>
+<br>
+Motorola - VoxML for voice applications
+<br>
+Existing technology attempts to read words and
+links from existing HTML pages in order to
+encode voice access into web content.  This is
+not an efficient means for voice presentation. 
+<br>
+Web pages not well suited for voice interface. 
+VoxML language allows web developers to use
+familiar programming skills for easier
+development.
+<br>
+Developers having basic web skills can build
+effective speech interfaces in sites w/o
+having to become experts.
+<br>
+Features:
+     * A common approach using markup language
+<br>
+     * Allows developers to add speech to Web
+<br>
+     * Input produced via recognition of end-
+     users voice and output is produced via
+     text-to-speech technology
+<br>
+     * User accesses applications via microphone
+<br>
+     * Reduces the time it takes to develop
+     voice applications from weeks to days.<h2>Multimedia Products: (Embedded Systems)</h2>
+[EETimes; March 1, 99; Developers embrace net
+opportunities; Bernard Cole]
+<br>
+Developers of embedded systems discover
+network opportunities.
+<br>
+A new type of embedded hardware where the 
+processor and operating system provide network
+oriented services.
+<br>
+A variety of functions can be adapted to
+embedded systems:
+     * Browsers
+     * Servlets
+     * Remote Monitoring
+     * Send-Email
+     * Dynamic Downloading
+<br>
+Servlets are software programs that reside on
+an embedded device, allowing anyone to access
+it from standard browser. 
+<br>
+The benefits are in updates, monitoring,
+repair, and upgrading software from a remote
+site.  
+<br>
+Remote monitoring enable software developers
+to diagnose and monitor the behavior of a
+system without having to travel beyond the
+office.
+<br>
+<h2>Multimedia Products: (Embedded Systems-cont)</h2>
+<br>
+Send-email is another feature of embedded
+technology. This eliminates the need for a
+browser to access the device for information.
+<br>
+As an example, a printer could automatically
+send status reports for service on such things
+as low toner, paper jams, and over temperature
+conditions.
+<br>
+Java enabled servlet's provide additional
+download features for testing and source code
+updates.  This feature shortens development
+time because it is simple to generate HTML
+pages through the servlet API.
+<h2>Multimedia Products: (Graphic Bridges)</h2>
+[EETimes; 2/1/99; Graphics framework bridges
+systems; Shawn Hopwood]
+<br>
+Software Engineers have recognized that
+superior hardware acceleration yield
+opportunities in advanced 3-D Graphics.
+<br>
+Problems:
+     * Graphics programming is difficult
+<br>
+     * Users want more realism and interactivity
+<br>
+Fahrenheit is a new standard developed by
+Microsoft and Silicon Graphics.
+<br>
+     * Provides simplified means for development
+     of graphics based applications through
+     convenient API's.
+<br>
+     * Full portability across unix and windows
+     platforms
+<br>
+     * Offers a tree-like data structure in
+     which a scenes can be described in terms of
+     geometry, textures, and lighting.
+<br>
+     * Frees the programmer from intricate
+     graphics windows design.
+<br>
+     * Delivers optimization for interactive 3D
+     graphics.
+<h2>Multimedia Direction (Inprise Products):</h2>
+[C++ Builder 4 merges Corba, COM, ; PC Week,
+2/8/99; Martin Heller]
+<br>
+Inprise anticipates needs of software
+engineers with the market of Corba and COM
+development tools.
+<br>
+          (COM =3D Component Object Model)
+          (ATL =3D Active Template Library)
+<br>
+C++ Builder 4 highly productive environment
+for software engineers.
+<br>
+Inprise (Borland) Corp's C++ Builder merges
+Corba & COM development.  C++ Builder from a
+windows platform enable development of
+distributed CORBA Applications.
+<br>
+Drag & Drop features provide two way visual
+programming.
+<br>
+Facilitates Visual C++ toolset using Active
+Template Libraries for COM development.
+<br>
+Improves manual code writing w/ code
+completion tools:
+     compiles code in background as developer
+     generates symbol tables, headers, etc.
+<h2>Multimedia Direction (Rational Products):</h2>
+[PC Week, 1/25/99; Rational Restructures
+Wares; Antone Gonsalves]
+<br>
+Rational anticipates the needs of software
+engineers with the market of Studio Suite
+development tools.
+<br>
+Rational recognizes the importance for
+software engineers to share data throughout a
+project(requirements->development->testing).
+<br>
+Rational restructured developer suites:
+     Suite AnalystStudio
+     Suite TestStudio
+     Suite DevelopmentStudio
+<br>
+Realizes the significance of software change.
+For example, tools found in TestStudio enables
+project engineers to efficiently plan testing
+scripts based on requirements.
+<br>
+     * Plan test scripts for each requirement
+<br>
+     * Notify the user if a requirement changes
+<br>
+     * Measures the percent of code coverage
+     during functional and regression test.
+<br>
+Rational Rose offers modeling.  Includes
+seemless integration w/ Visual Studio which
+enables software project teams to share
+analysis and design information over the
+internet. <h2>Multimedia Direction (Micro Focus Products):</h2>
+[PC Week, 1/18/99; Micro Focus, Elemental
+retool their wares for distributed enterprise;
+Antone Gonsalves]
+<br>
+Micro Focus's latest version of NetExpress, a
+development tool used for distributed
+computing platforms has been enhanced w/
+remote debugging and graphical editor for
+building GUI's.
+<br>
+Remote debugging tool is considered a very big
+feature with software developers, because
+customers are spread throughout the country.
+<br>
+"We can send executable code out to the client
+in any state and can observe it executing via
+the telephone line and do any debugging we
+need to do".
+<h2>Conclusion:</h2>
+The industrial era gave birth to a Machine
+Age.  It was during the World Wars when
+machines played a dominant role in our lives. 
+This new era enabled people to use motor power
+at home.  Today, Multimedia presents a new
+type of Machine Age called the World Wide Web.
+<br>
+The World Wide Web is quickly becoming the
+worlds repository for data.  Engineers of all
+disciplines have come to appreciate its
+potential and together are seeking new and
+innovative means to grasp its power.
+<br>
+Interactivity is expected to be the next great
+bonanza in multimedia.  It introduces new
+possibilities of interacting with people in
+formerly unknown, yet direct ways making this
+industry even more exciting.
+<br>
+The prediction for Computer Science is a shift
+from the algorithm to interaction.  But, in
+order to make this happen, we must establish
+methodical, architectural, and efficient
+toolsets that support software engineers.
+<br>
+Software engineers and Media Developers must
+join in a unified approach.  For the creation
+of multimedia applications is more complicated
+than traditional applications.  Human Computer
+Interaction (HCI) must not be considered just
+an add-on but a key part of the application.
+Software and Media Engineers should share in
+the research and rewards of multimedia.

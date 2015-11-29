@@ -1,0 +1,4 @@
+<hr>
+<h1>Statement of Work</h1>
+The primary objective of the project will be to try and implement human motions that will control Google TV over the Kinect.  We shall implement recognition of a set of simple gestures for this control.  The gestures will activate and deactivate Kinect control as the user desires along with controlling television operation.   Furthermore, we will use depth perception via the Kinect to determine the interactions, possibly using a reference point/area on the user.s body.  We plan to start with power and channel surfing control, possibly expanding to other areas if time allows.  
+

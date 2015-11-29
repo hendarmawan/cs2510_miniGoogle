@@ -1,0 +1,48 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="cbir-06.htm"><img src="previous.gif" align="left" alt="CANDID"></a>
+<a href="cbir-08.htm"><img src="next.gif" align="right" alt="ImageRover"></a>
+
+<br><br>
+<center>
+<table width="600">
+	<tr>
+		<td>
+			<h1 align="center">DrawSearch</h1>
+			<hr>			
+		
+			<p><b>Developed by:</b><br> Technical University of Bari, Italy </p>
+			
+			<p>
+			<b>Features:</b><br> 
+			- <u>Color</u>: Divide into 4x4 grid to form 48-length color vector<br>
+			- <u>Shape</u>: Represented by Fourier descriptors.
+			</p>
+			
+			<p>
+			<b>Matching:</b><br>
+			- Use cosine metric on feature vector (color, shape) between query image and database image<br>
+			- Distance calculated based on weighted sum between color vectors and shape descriptors.
+			</p>
+			
+			<p>
+			<b>Querying:</b><br>
+			- User draws sketch on a canvas and choose color.
+			</p>
+			
+			<p align="center">
+			<i>Fig 1. Query window of DrawSearch.</i><br>
+			<img border="0" src="images/drawsearch/drawsearch.jpg" width="713" height="416"><i><br>
+			&nbsp;</i></p>
+			
+		</td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

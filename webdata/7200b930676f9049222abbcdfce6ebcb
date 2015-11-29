@@ -1,0 +1,54 @@
+<title>Content Based Retrieval</title>
+
+<a href="c3-1.html"><IMG
+SRC="../previous.gif" align=left></a>
+
+<a href="c3-3.html"><IMG SRC="../next.gif" align=right></a>
+
+<center><h1>Content Based Retrieval:</center>
+<center><h1>Two Phase Search </h1></center>
+<h3>
+<br>
+<ul>
+<li> Background Information
+    <ul>
+    <li> Relational Database Idea
+    <li> Multi-Attribute Selection with Single Attribute Indices
+        <ul>
+        <li> We can guarantee not missing out on any object 
+        </ul> 
+    </ul>
+<p>
+<li> Example of Spatial Join: Map of countries and rivers
+<p>
+<li> Shape Matching Example
+    <ul>
+    <li> General Rectangular Shape Covers
+    <li> Additive Rectangular Shape Covers
+    <li> Sequential Descriptions
+        <ul>
+        <li> The first rectangles added are the ones that best
+              show most important features
+        <li> Uniqueness of each description
+        </ul>
+    <li> How do we store these rectangles in the database?
+        <ul>
+        <li> The position (x,y) of the rectangle is the center
+             of it
+        <li> Subsequent height and length
+        </ul>
+     <li> From here we can implement any type of indexing system
+     <li> Examples of Matching Algorithms
+         <ul>
+         <li> Full Match
+         <br> -has the correct shape and position
+         <li> Match With Shift
+         <br> -doesn't matter if the shape is shifted or not
+         <li> Match With Uniform Scaling
+         <br> -The actual size of the object doesn't matter
+         <li> Match With Independant Scaling
+         <br> -the axes can possibly have non-uniform scaling
+         <br> -used when picture is taken at angle instaed of straight on
+</ul>
+</h3>
+  

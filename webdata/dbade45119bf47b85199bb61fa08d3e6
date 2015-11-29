@@ -1,0 +1,239 @@
+<title>HYPERTEXT, HTML and XML</title>
+
+<h1>HYPERTEXT, HTML and XML</h1>
+
+<b>Hypertext</b> is based on the concept of 
+"Expanding Information". 
+<br><br>
+Blocks of information (text or graphics)
+can be linked to other blocks of
+information.
+<br><br>
+Once two blocks of information have been
+linked together, they provide an instant
+"gateway" to the other.
+<br><br>
+A single block of information can lead to
+another and so on.  Information can literally
+expand at the user's request.  
+<br><br>
+A hypertext document is a NONLINEAR
+document with many links.
+<h3>FATHER OF HYPERTEXT</h3>
+
+Vannevar Bush, "As We May Think" (1933),
+described the Memex Machine:
+<br><br>
+"One might have the contents of a thousand
+volumes located in a couple of cubic feet
+in a desk, so that by depressing a few
+keys one could have a given page instantly
+projected before him."
+
+<hr>
+<h1>HYPERTEXT CONCEPTS </h1>
+
+<b>Link Originator</b> - The starting point
+to the link.  It is surrounded by the
+symbols to indicate that it is a  hypertext
+link. Link originator is an <b>anchor</b>.
+<br><br>
+<b>Link End</b> - The other side to a Link
+originator, where reader is taken after a link
+is traversed. Link end is also an <b>anchor</b>.
+<br><br>
+<b>Traverse</b> - The act of traveling from
+a Link originator to its associated
+Link End.
+
+<hr>
+<h1>INTERNET</h1>
+The growth of the Internet and the World Wide Web is truly phenomenal.
+<br><IMG SRC="images/fig151.gif"><br>
+<h2>Internet Concepts</h2>
+
+The following are commonly used application layer protocols:
+
+<li> HTTP Hypertext Transfer Protocol<br>
+<li> FTP File Transfer Protocol<br>
+
+<br>
+TCP Transmission Control Protocol is at Transport Layer<br>
+<br>
+IP Internet Protocol is at Internetwork Layer<br>
+<br>
+For modem connection there are two commonly used protocols:
+
+<li> SLIP Serial Line Internet Procotol<br>
+<li> PPP Point-to-Point Protocol<br>
+<br>
+
+IP address: contains sufficient information to uniquely
+identify a network and a specific computer on the network.
+<br><br>
+
+IP address contains Class ID, Net ID and Host ID<br>
+For example, nova.ksi.edu has IP address 192.217.188.1
+<pre>
+ 11000000.11011001.1011110.00000001
+ ^^^----- -------- ------- ********
+  First 3 bits 110 indicates Class C
+  Next 21 bits is Net ID
+  Last 8 bits is Host ID
+</pre>
+<hr>
+<h1>HTML CONCEPTS</h1>
+<b>Hyptertext</b>: Test with links to other texts
+<br><br>
+<b>Home Page</b>: The root of a hypertext structure
+<br><br>
+<b>Web Browser</b>: A tool to retrieve a document using URL
+from the Web server, interpret its HTML and present it to the user
+<br><br>
+<b>URL</b>: Universal Resource Locator, the "address" of a Web page
+<br><br>
+<b>HTML</b>: Hypertext Markup Language is the language to design the Web page
+<br><br>
+<b>Tag</b>: HTML essentially is made up out of tags, which are strings
+enclosed in angular brackets.
+<pre>
+&lt HTML&gt
+&lt HEAD&gt
+&lt TITLE&gtSample HTML document&lt /TITLE&gt
+&lt /HEAD&gt
+&lt BODY&gt
+&lt H3&gtSample HTML document&lt /H3&gt
+&lt A HREF="http://www.ksi.edu/"&gt KSI Graduate School of Computer Science&lt /A&gt
+&lt FORM METHOD="get" ACTION="http://www.webbase.com/docs/webbase/examples/getname.htf"&gt
+Please enter the name to search for: &lt INPUT NAME="name" SIZE=15 VALUE="Denny"&gt
+&lt INPUT TYPE=SUBMIT value="Enter"&gt&lt /FORM&gt
+&lt /BODY&gt
+&lt /HTML&gt
+</pre>
+
+
+
+The above HTML form as seen by the user looks like this:
+
+<hr noshade width="75%">
+<h3>Sample HTML document</h3>
+<a href="http://www.ksi.edu/"> KSI Graduate School of Computer Science</a>
+<FORM METHOD="get" ACTION="http://www.webbase.com/docs/webbase/examples/getname.htf">
+Please enter the name to search for: <INPUT NAME="name" SIZE=15 VALUE="Denny">
+<INPUT TYPE=SUBMIT value="Enter"></FORM> 
+<hr noshade width="75%">
+<P>
+If you click the <b>ENTER</b> button,
+this will send a "GET" request to the server that looks like:
+<P><UL>
+<TT><B>    http://www.WebBase.com/docs/webbase/examples/getname.htf?name=Denny</B></TT>
+<P></UL>
+
+The server passes the information, which is a long string called
+the Query_String containing the (name,value) pairs, to:
+ http://www.WebBase.com/docs/webbase/examples/getname.htf.
+<br><br>
+This form 'getname.htf' takes the Query_String as input and returns another
+form  which is then presented to the user.
+<br><br>
+This technique of passing information to the server is used by the
+<a href="16cgi.html">common gateway interface</a> CGI to perform tasks using CGI scripts (programs).
+It is also used by <a href="17webase.html">WebBase</a> to pass information to the WebBase form (<b>htf</b>)
+to perform database retrieval/update operations.
+<p>
+For more information, consult <a href="http://www.ncsa.uiuc.edu/General/Internet/WWW/HTMLPrimer.html"><b>A Beginner's Guide to HTML (1995)</b></a>
+
+<hr>
+<h1>COMPARISON OF DATABASE AND HYPERBASE</h1>
+
+Hyperbase supports:
+<br><br>
+* Non-linear text<br>
+* Information expansion<br>
+* Information navigation
+<br><br>
+The Difference between Database and Hyperbase:
+<pre>
+HYPERBASE            DATABASE
+---------            --------
+arbitory link        predefined index
+
+irregularity         regularity (all the record
+                     has same attributes)
+
+good for navigation  good for data processing &
+& exploration        information processing
+
+easy to handle       more difficult to handle
+exceptions           exceptions
+
+User may get lost    User must formulate queries
+in hyperspace        to retrieve information and
+(disorientation)     may not find what he does not
+                     know
+</pre>
+<hr>
+<h1>A GRAPH-THEORETIC MODEL FOR HYPERBASE</h1>
+
+A hyperbase Hg is an ordered triple (N,A,L)
+where
+<br><br>
+N = {N1,...,Nm} is a set of information
+    nodes
+<br><br>
+A = {Al1,...,Amn} is a set of anchors, or
+    subregions within nodes, such that
+    each node Ni has one or more
+    anchors {Ai1, ..., Ain}
+<br><br>
+L = &lt Aij, Akl&gt is a set of links or
+    ordered pair of anchors.
+<br><br>
+<h3>Browsing Operator:</h3>
+A function mapping a link's first anchor
+(link originator) to a link's second
+anchor (link end0
+<br><br>
+<h3>Authoring Operator:</h3>
+defines a link by identifying its two
+anchors.
+
+<hr>
+<h1>LOST IN HYPERSPACE</h1>
+
+A hyperbase becomes very complex because
+it has many nodes and links
+<br><br>
+To solve the problem, we can try to
+cluster the nodes and/or links to
+form more abstract structures
+<br><br>
+Aggregate: A set of distinct concepts
+that taken together form a more abstract
+concept.
+<br><br>
+<br><br>
+Aggregate Clustering with Exceptions ACE:
+<br><br>
+From the input hypertext graph, construct
+an aggregated E-R diagram (regularity)
+and an exception graph (irregularity)
+<br><IMG SRC="images/fig152.gif"><br>
+<br><br>
+<b>Reference</b>:<br><br>
+
+Y. Hara, A. M. Keller, G. Wiederhold, "Implementing Hypertext Database Relationships through Aggregations and Exceptions", Proc. of 3rd ACM Conference on Hypertext, San Antonio, Texas, Dec 15-18, 1991, 75-90.
+
+<hr>
+<h1>XML, WML AND VRML</h1>
+
+In addition to HTML, we now have
+<a href="http://www.cs.pitt.edu/~chang/231/XML/p0.html"> eXtensible Markup Language XML</a>,
+<a href="http://www.cs.pitt.edu/~chang/231/projects/WML/5131.htm"> Wireless Markup Languages WML</a>, and
+<a href="http://www.cs.pitt.edu/~chang/231/projects/VRML/vrml-1.html"> Virtual Reality Markup Language VRML</a>.
+These are for standardization of vraious markup languages for
+semantic information, wireless applications and virtual
+reality applications.
+<br><br>
+<hr>
+

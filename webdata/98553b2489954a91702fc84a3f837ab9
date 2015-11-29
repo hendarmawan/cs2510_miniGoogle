@@ -1,0 +1,99 @@
+Dear CS2310 Student working on T1 or T2:
+
+1. Please send me ppt file of your seminar presentation
+before your presentation so I can upload it.
+
+2. Regarding your project on T1 or T2,
+the details are for you to specify and design.
+I will describe the common elements here:
+
+2.1. You are supposed to design and test the
+Temperature monitor works correctly
+in the SIS framework. So the component will collect data
+from sensors, check certain conditions and send alert
+messages to SIS, who will forward it to Uploader.
+
+You will do program development and testing using your
+own PC that runs the SIS you have installed.  Whenever
+you find that you lack certain input, use PrjRemote.exe
+to generate the needed messages.
+
+2.2. The starting point is always the following document:
+  http://people.cs.pitt.edu/~chang/163/interface/SequenceSIS.htm
+
+Please read the above document carefully, and make
+sure you understand it.
+
+Please note all system messages are specified at:
+  http://people.cs.pitt.edu/~chang/163/interface/MessageSIS.htm
+
+2.3. You need to add a message 20 to create the Temperature
+monitor component.  This is to enable SIS
+server to know that Temperature monitor
+component exist.  If Temperature monitor already
+exists, check whether such message 20 exists and
+works properly.  
+
+2.4. When system gets started, a message 23 is used
+to connect a component to the SIS server.
+The existing script may already be doing that.
+Check it out.
+
+2.5. The Temperature component should
+input from the Temperature file, and when
+condition is satisfied, send message 38
+to SIS.
+
+2.6. If you are working on T2, you will add
+more to the above basic scenario.  For example,
+if the Temperature monitor receives a warning
+message from the Kinect monitor, indicating
+it detects that the patient has a fall, then
+the Temperature monitor may dynamically
+change the settings for alert temperatures,
+to make sure the patient will not suffer from
+freezing temperature.  This is for you to
+specify.  Typically it involves multiple
+warning messages from other sensor monitors.
+
+
+=============
+
+This is a checklist for the testing of the
+Thermometer monitor component.
+
+
+( ) The GUI/InputProcessor is an SIS component
+
+( ) The submenu to select options for thermometer
+    is part of the GUI component
+
+( ) After options for thermometer have been selected,
+    a message containing the parameters is sent
+    by GUI compoment to the thermometer monitor
+
+( ) The thermometer monitor is an SIS component
+
+( ) The thermometer monitor contains the codes
+    to manage the various options, for example,
+    the detection of temperature value over a
+    threshold or under another threshold, and so on.
+
+( ) If a special condition is detected, the thermometer
+    monitor sends a warning message 38 to SIS,
+    which should forward it to the Uploader component.
+
+( ) The Uploader component receives the warning message
+    38 from the thermometer monitor and then sends
+    e-mail to the end-user.
+
+( ) The Uploader component also stores the temperature
+    information in the online PatientHealth database.
+
+In addition to the above basic checklist, for T2
+there will be additional checks:
+
+(  ) If the Thermometer monitor receives multiple
+warnings, it performs the correct sequence of 
+actions.
+

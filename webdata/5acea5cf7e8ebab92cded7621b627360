@@ -1,0 +1,56 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Microsoft .NET Presentation</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="100%">
+    <tr>
+        <td valign="top"><a href="slide-08.htm"><img
+        src="previous.gif" border="0" width="26" height="26"></a></td>
+        <td align="center" valign="top"><h1>SOAP</h1>
+        </td>
+        <td align="right" valign="top"><a href="slide-10.htm"><img
+        src="next.gif" border="0" width="26" height="26"></a></td>
+    </tr>
+</table>
+
+<h2>SOAP = RPC + XML + HTTP</h2>
+
+<p><font size="4">The above equation summarizes what SOAP is. The
+acronym itself stands for &quot;<u>S</u>imple <u>O</u>bject <u>A</u>ccess
+<u>P</u>rotocol&quot;.</font></p>
+
+<p><font size="4">It's purpose is to provide a platform
+independant way in which for objects to call methods on each
+other and thus access each other's functionality.</font></p>
+
+<h2><font size="4">Example of SOAP data packet</font></h2>
+
+<blockquote>
+    <pre><font size="4">POST /StockPrice HTTP/1.1
+Host: www.stockpriceserver.com
+Content-Type: text/xml
+Content-Length: <em>nnnn</em>
+
+&lt;StockPriceServerCall&gt;
+	&lt;GetStockPrice&gt;
+		&lt;Symbol&gt;MSFT&lt;/Symbol&gt;
+	&lt;/GetStockPrice&gt;
+&lt;/StockPriceServerCall&gt;</font></pre>
+</blockquote>
+
+<p><font size="4">As can be inferred from the above example, SOAP
+uses HTTP to transmit XML data packets that describe a method
+call and any parameters associated with it.</font></p>
+
+<hr>
+
+<p><a href="references.htm"><em>References</em></a><em>: A</em></p>
+</body>
+</html>

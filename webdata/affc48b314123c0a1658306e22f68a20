@@ -1,0 +1,9 @@
+<HTML>
+<TITLE>State & Activity Diagram</TITLE>
+<FORM><font color=blue>
+<a href="state.html"><img align="left" src="larrow.gif" border=0></a>
+<a href="state2.html"><img align="right" src="rarrow.gif" border=0></a>
+<p><br><br><br>
+<font size=+2><b>State and Activity Diagram</b><br><br>
+<img src="uml-state.gif">
+</font></BODY></FORM></HTML>

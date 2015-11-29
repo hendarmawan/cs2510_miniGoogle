@@ -1,0 +1,340 @@
+<title>CS2650 Exercises</title>
+
+<h1>CS2650 Exercises</h1>
+
+<h2>CS2650 Exercise 1 (In the interest of time)</h2>
+(a)
+Given two events A and B, there are thirteen possible temporal
+relations between them.  The 13 temporal relations, as first
+described by James Allen, are:
+
+<pre>
+  AAA  BBB
+
+  BBB  AAA
+
+  AAABBB
+
+  BBBAAA
+
+  AAAA
+  BBB
+
+  AAA
+  BBBB
+
+  AAAA
+   BBB
+
+   AAA
+  BBBB
+
+  AAAA
+    BBBB
+
+    AAAA
+  BBBB
+
+  AAAAA
+   BBB
+
+  BBBBB
+   AAA
+
+  AAAA
+  BBBB
+</pre>
+
+Use Petri net to model each temporal relations.  (Hint: The events
+A and B, are modelled by transition t<sub>A</sub> and t<sub>B</sub>,
+respectively.  Other transitions t<sub>D</sub> can be introduced
+to represent a time delay D.)
+<!--
+<br><br>
+<font color=red>
+(Solution can be found in
+<a href="http://www.cs.pitt.edu/~chang/365/ams.acm96/node3.html#SECTION00030000000000000000">paper by Lin et al.</a>.
+We can also add time delay after the completion of a task.)
+</font>
+-->
+
+
+<br><br>
+(b) A Slow Intelligence System (SIS) has the following
+phases: ENumeration, PRopagation, ELimination, ADaptation and COncentration.
+For the slow decision cycle, all five phases are included.
+For the fast decision cycle, only two phases are included:
+ENumeration and ELimination.
+For the slow decision cycle, the time allocated for each
+phase is T<sub>EN</sub>, T<sub>PR</sub>, T<sub>EL</sub>,
+T<sub>AD</sub> and T<sub>CO</sub>, respectively.
+For the fast decision cycle, the time allocated for each
+phase is t<sub>EN</sub> and t<sub>EL</sub>, respectively.
+<br>
+Use Petri net to model an SIS with a slow decision
+cycle and a fast decision cycle.
+Draw the time lines for a slow decision cycle followed by a fast decision cycle.
+
+
+<!--
+<br><br>
+Solution to Exercise 1:<br>
+<a href="http://www.cs.pitt.edu/~chang/265/265ex1/265ex1a.doc">Solution to Exercise 1(a)</a>.
+<br>
+<a href="http://www.cs.pitt.edu/~chang/265/265ex1/265ex1b.htm">Solution to Exercise 1(b)</a>.
+<br><br>
+-->
+
+<h2>CS2650 Exercise 2 (Specify a Slow Intelligence System)</h2>
+(a) Describe the
+<a href="http://www.cs.pitt.edu/~chang/163/interface/SequenceSIS.htm">
+personal health care</a> (or your own favorite) SIS application with a slow decision
+cycle and one (or more) fast decision cycle, where the
+decision cycles can include some of the SIS phases
+in some preferred order.
+Use active index, which is an extended Petri net model, to model such an SIS application.
+Draw the time lines for the SIS application.
+(Hint: There may be several decision cycles and they
+may be running concurrently.)
+<br><br>
+(b) Use the <a href="http://www.cs.pitt.edu/~ezegarra/sismc/">
+Slow Intelligence System Management Console</a>
+to specify the SIS described in part (a).  The end results
+should be a collection of XML documents.
+To avoid name collision,  the components should be prefixed
+by the designer's last name.  For example, a
+component designed by "Doe" for blood sugar monitoring
+should be named "DoeBPmonitor".
+
+<!--
+<br><br>
+Solution to Exercise 2:<br>
+<a href="http://www.cs.pitt.edu/~chang/265/265ex2/265ex2.doc">Solution to Exercise 2 by Yao Sun</a>.
+<br>
+<a href="http://www.cs.pitt.edu/~chang/265/265ex2/265hw2.doc">Solution to Exercise 2 bu YingZe Wang</a>.
+<br><br>
+-->
+
+
+
+<h2>CS2650 Exercise 3 (Test a Slow Intelligence System)</h2>
+Use the Slow Intelligence Systems Testbed to test run the
+SIS specified in Exercise 2(b).
+The predesigned Universal Interface and SIS Server
+<!-- InputProcessor and Uploader --> can be downloaded from
+<a href="../163/interface/SISv2a.zip">the SISv2a.zip file</a>.
+Once downloaded, just following the following
+<a href="../163/interface/SISServer/SISsetup01">Complete Setup Procedure</a>
+to install them.
+The messages (XML documents) created in Exercise 2(b)
+can be loaded to the Universal Interface and
+sent to the SIS Server.
+You should follow a pre-described scenario to test run the SIS messages.
+
+
+<h2>CS2650 Exercise 4 (Design a Slow Intelligence System)</h2>
+This exercise is to use the experiences gained in the previous
+exercises to design a slow intelligence system consisting
+of some of the following components:
+<a href="http://www.cs.pitt.edu/~chang/231/vl01/t21.htm">Enumerator,</a>
+<a href="http://www.cs.pitt.edu/~chang/231/vl01/t22.htm">Propagator,</a>
+<a href="http://www.cs.pitt.edu/~chang/231/vl01/t23.htm">Eliminator,</a>
+<a href="http://www.cs.pitt.edu/~chang/231/vl01/t24.htm">Adaptor,</a>
+<a href="http://www.cs.pitt.edu/~chang/231/vl01/t25.htm">Concentrator,</a>
+and <a href="http://www.cs.pitt.edu/~chang/231/vl01/t26.htm">Time Controller.</a>
+The test bed has the KnowledgeBase component and Eliminator component for blood sugar monitoring.
+Only the Enumerator component, the parametrized blood sugar monitoring components and the Time Controller are to be implemented.
+The Enumerator is the first component to be activated, and it should in turn create a large number (such as 10) of blood sugar
+monitoring components, which can be variations of a
+generic, parametrized blood sugar monitoring component.
+When the Enumerator sends a message to create a blood sugar
+monitoring component, it sends a parameter to customize
+this component.  For example, it may send the threshold for
+determining whether the blood sugar level is normal.
+The Eliminator component is provided by the testbed, which will
+select only those blood sugar monitoring components that
+perform well.
+The Time Controller component decides when to invoke the Eliminator.
+For this exercise the Propagator, Adaptor and Concentrator are not used.
+They will be useful for the data mining project to be defined
+for students as a possible term project.
+Your job is to implement the Enumerator,
+the parametrized blood sugar monitor and the Time Controller,
+and to test a feasible scenario with these components.
+Note: To initialize the knowledge base, send Msg201 to the
+KB component. For other message exchanges see the following SIS system diagram.
+<img src="proj10/SISsystem.jpg">
+
+
+
+<h2>CS2650 Exercise 5 (Planning a Picnic)</h2>
+(a) Use the IC cards to specify the activities involved in
+planning a picnic.  You can specify the color of an activity using words such as
+red, yellow, green, etc. (b) How do you handle timing constraints?
+(c) Do you have any purple activities?  If so, how do you
+decompose or transform them into activities that are not purple?
+(d) Specify the TAOs and the hypergraph structure.
+<br>
+(A tool you may use to construct the IC cards is the icms
+system:
+<a href="../icms2/">http://cs.pitt.edu/~chang/icms2"</a>.)
+
+<!--
+<br><br>
+Solution to Exercise 5:
+<br>
+<font color=black>(Solution for <a href="265ex5/">planning a picnic<a>)</font>
+<br><br>
+-->
+
+
+<h2>CS2650 Exercise 6 (Distance Learning System)</h2>
+The purpose of this exercise is to gain familiarity of the active index
+approach for active information system modeling.  As discussed in class, the
+hypermedia model and the active index together can be used to model
+active distributed multimedia information systems.  In this exercise we will
+first concentrate on the active index component.
+<p>
+Let us consider a (simplified) distance learning system.
+The distance learning materials are organized into a hypermedia structure.
+A student user can browse through these multimedia documents and
+follow the links to access related multimedia documents.  As such, the
+hypermedia structure is <i>passive</i>, waiting to be accessed by the user.
+<p>
+We can make the hypermedia structure active by associating index cells
+with selected multimedia documents.
+The following index cell types are specified:
+<p>
+<b>Prefetch</b>: The prefetch index cell would prefetch related multimedia
+documents into the local store so that when the user accesses them they
+are readily available.
+The way <b>prefetch</b> works is that it will send messages
+to the <b>watchers</b> to find out what documents (pages) the user has
+already accessed.  From this information, <b>prefetch</b> estimates
+what documents will be accessed next, and starts to load them into
+the local store.
+<p>
+<b>Watcher</b>: The watcher monitors individual documents or collection
+of documents to record in its local memory which user has accessed
+this (collection of) documents.  It interacts with the <b>prefetch</b>
+index cell so that <b>prefetch</b> can determine what to prefetch into
+the local store.
+
+<p>
+The above are two index cell <i>types</i>.  The <i>instances</i>
+can be associated with individual multimedia documents (such as WWW pages).
+<p><p>
+
+(a) Draw state-transition diagrams to define graphically the two index
+cell types.
+
+<p>
+(b) Specify the two index cell types formally using mathematical notations
+ic = (X, Y, S, s<sub>o</sub>, A, t<sub>max</sub>, f, g).
+
+<p>
+(c) Draw a diagram showing a few multimedia documents enhanced with the index
+cells to illustrate how these index cells work together to form
+an active index system.
+
+<p>
+(d) Use the <b>IC Builder</b> to construct the two index cell types
+as prefetch.gra and watcher.gra.  The output from IC Builder, together
+with the appropriate actions (C functions) and specification of input
+message space, output message space, will become input to the
+<b>IC Compiler</b> to generate the <b>IC Manager</b>.
+
+<p>
+<b>Comments</b>: (a) If we consider how the active index system passes
+messages and reaches equilibrium state (if one exists), this
+leads to a formal study using, for instance, the Petri net model.
+(b) Notice this is the beginning of a systematica approach to
+build prototypes for active distributed multimedia systems. Can
+we create a nwe systematic approach, i.e., a new software process
+model, for distributed multimedia systems design?
+(c) The index cells could span several nodes.  Therefore, the active index
+system is a distributed index.  The IC Managers must also be distributed
+to the nodes in the networks.
+
+<p>
+<b>How to download the IC Builder</b>:
+There are four files in the directory http://www.cs.pitt.edu/~jung/IC_Builder:
+  <a href="http://www.cs.pitt.edu/~jung/IC_Builder/README.ICB.html">README</a>,
+  <a href="http://www.cs.pitt.edu/~jung/IC_Builder/icb_manual.html">IC Builder Manual</a>,
+  <a href="http://www.cs.pitt.edu/~jung/IC_Builder/ictapp.zip"> ictapp.zip</a> and
+  <a href="http://www.cs.pitt.edu/~jung/IC_Builder/ictype.zip"> ictype.zip</a>.
+  Use pkunzip to unzip and install under Windows.
+
+<p>
+<b>Additional Explanation for Exercise 6:</b>
+For this exercise there is NO NEED to write any C functions.
+The assignment can be handed in either as a hard copy or via the
+Internet.  For the part where you use IC_Builder to construct IC
+types, you can turn in the output file(s) generated by the IC_Builder,
+which are ascii files X.in.  You can also provide screen dumps captured during
+the construction process.  If you use Internet, it will be the best
+if you can give me URL so that I can browse the web pages containing
+the solutions.  In other words, please prepare a set of web pages and
+figures can be embedded as gif/jpg files.  This will be the easiest
+for other people to read.  It will also be useful when you later
+develop a presentation based upon such materials.
+
+<p>
+<b>Additional Exercise</b>
+Add MAWC tags to this document to make it a model-enhanced document
+in HTML or XML format.
+Continue to work on an MAWC algorithm for
+customized presentation of information from a
+collection of documents, or a sensor network,
+or a hybrid of documents and sensor network.
+
+<!--
+<br><br>
+Solution to Exercise 6:
+<br>
+<a href="265ex6/ex6.html">Solution to Exercise 6(a),(b) and (c)</a>.
+<br>
+<a href="265ex6/265ex6.html">Solution to Exercise 6(d)</a>.
+<br><br>
+-->
+
+<h2>CS2650 Exercise 7 (The car accident)</h2>
+The multimedia database consists of a relational database and
+a video database, which in turn consists of a time sequence
+of frames.  If we open a frame we can see (i.e. recognize) the objects
+in that frame, such as cars, buildings, roads, etc.
+The relational database has a single table whose
+entries have detailed description of each car instance,
+such as (type="car", make="BMW", color="red", license-no=123, owner="Smith", state="Pennsylvania"),
+and so on.
+<p>
+(a) Construct a data model for this multimedia database.
+<p>
+Construct SigmaQL queries for the following:
+
+<p>
+(b) Get the two cars that collided with each other.
+(This query may be ambiguoous, so please explain what you want
+to retrieve, i.e., your interpretation of the query.)
+<p>
+(c) Get the sequence of frames that show this accident, for
+example, the 120 frames (4 seconds) before the collision, the frames
+containing the collision, and the 90 frames (3 seconds) after the collision.
+<p>
+(d) Get the licence numbers of the cars involved
+in the accident, whose color is white and whose registration
+is out-of-state (i.e., not Pennsylvania).  Please note there could
+be multiple answers to this query.
+
+<h2>CS2650 Exercise 8 (The inferno)</h2>
+(a) Continuing the scenario described in Exercise 7, suppose the
+collision leads to a fire that can be easily detected from a video frame by applying
+a pattern recognition algorithm, please reformulate the query
+in explain how you can efficiently process the query using
+<a href="sqlrefin.pdf">query refinement techniques</a>.
+<br><br>
+(b) Using the <a href="../365/vpl.html">visual language</a> approach to
+design the syntax and semantics of a visual interface to answer
+user's queries involving car accidents from the multimedia
+database described in Exercise 7.
+

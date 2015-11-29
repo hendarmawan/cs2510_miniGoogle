@@ -1,0 +1,21 @@
+<title>Ontological knowledge base
+</title>
+<A HREF="../1631topic.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="onto02.htm"><IMG SRC="next.gif" align=right></A>
+<center>
+<h1>Definition of an Ontology</h1>
+</center>
+<h2>
+In Computer Science, an Ontology is a
+formal representation of a set of
+concepts within a domain, and the
+relationship between these concepts.
+<p>
+It is used to reason about the properties
+of the domain, and may be used to
+define that domain.
+<p>
+An ontology provides a shared vocabulary,
+which may be used to model the domain -
+the type of objects and their properties
+and relations.

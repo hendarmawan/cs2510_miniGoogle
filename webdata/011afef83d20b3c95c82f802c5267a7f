@@ -1,0 +1,22 @@
+<title>Component-Based Software Engineering</title>
+<A HREF="../1631topic.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02.htm"><IMG SRC="next.gif" align=right></A>
+
+<h1>Software Agents</h1>
+
+<h3>
+Agents are specialized kinds of components, offering
+greater flexibility than traditional components.
+<p>
+Agents use dynamically adaptable rich message-based interaction,
+and flexible knowledge-based techniques to make it easier
+to build and evolve systems as requirements and technologies change.
+<p>
+<font color=purple>Example: Knowbot</font>
+<p>
+Agents can dynamically discover and compose e-services and media interactions.
+<p>
+For more information about software agents, please go to:
+
+<br><br>
+<a href="http://www.cs.pitt.edu/~chang/231/8pattern/AGENT01/slide1.html">Agent Oriented Software Engineering</a>

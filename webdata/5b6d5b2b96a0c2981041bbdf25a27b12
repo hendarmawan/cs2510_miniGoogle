@@ -1,0 +1,47 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>State of the art through two classes of approaches</title>
+</head>
+
+<body>
+
+<p>&nbsp;</p>
+
+<p><a href="8.htm">
+<img border="0" src="previous.gif" width="26" height="26"></a></p>
+
+<p><u><font size="4" face="Trebuchet MS">Approaches</font></u></p>
+<p ALIGN="JUSTIFY"><font face="Trebuchet MS">Authoring Techniques can be grouped 
+into two categories as well:</font></p>
+<ul>
+  <li>
+<p ALIGN="JUSTIFY"><font face="Trebuchet MS"><i><a href="10.htm">Operational approaches</a></i> are based 
+on the direct specification of the state machine, which defines the temporal 
+scenario of the document (see <a href="6.htm">Figure 1</a>). </font>
+</p>
+    </font></li>
+  <li>
+<p ALIGN="JUSTIFY"><font face="Trebuchet MS"><i><a href="16.htm">Constraint-based 
+approaches</a></i>  are based on constraint programming and are characterized by a formatting 
+phase that computes starting times and durations, as required by the scenario. 
+This formatting phase can be seen as a compilation of a declarative 
+specification into an operational structure, which can be interpreted by the 
+presentation phase. Thus, the author specifies what scenario he needs without 
+involvement of how to get the result in terms of operational actions, in a 
+declarative way.</font></p>
+    </li>
+</ul>
+<p ALIGN="JUSTIFY"><font face="Trebuchet MS">
+<img border="0" src="9.htm1.gif" width="482" height="409"></font></p>
+
+<p ALIGN="JUSTIFY"><a href="10.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></p>
+
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+
+
+
+
+<title>Multimedia Software Engineering</title>
+
+
+
+
+
+
+
+
+<body>
+
+<p align="center"><a href="p3.htm">
+<img border="0" src="previous.gif" width="26" height="26"></a>
+<font face="Verdana" size="4" color="#0000FF">Automata based formulation: 
+Definitions</font> <a href="p5.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></p>
+
+<div v:shape="_x0000_s1026">
+  <div class="O" style="mso-line-spacing:&quot;90 30 0&quot;;mso-margin-left-alt:348">
+    <p>
+    &nbsp;</div>
+</div>
+<p>&nbsp;</p>
+<p><span style="font-family: Verdana"><font size="5" color="#FF0000">&nbsp;A 
+Chronobot</font></span><font size="5" color="#FF0000"> is a 8-tuple (M, S, f, k, s<sub>0</sub>, 
+F, DB, <font face="Times New Roman">&#934;</font>)</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">Where</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">&nbsp;</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5"><i>M</i> is a non-empty set of 
+messages (the message space)</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">&nbsp;</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5"><i>S</i> is a non-empty set of 
+states (the state space), <i>S = S<sub>c</sub> * D<sub>s</sub> * D<sub>a</sub></i></font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5"><i><sub>&nbsp;</sub></i></font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">Where</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">&nbsp;</font></p>
+<p class="MsoNormal" style="margin-left:1.0in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5"><i>S<sub>c </sub></i>is a 
+nonempty set &nbsp;of states of the Chronobot</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font>
+</p>
+<p class="MsoNormal" style="margin-left:1.0in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">D<i><sub>s </sub></i>is a 
+nonempty set of self-models of the Chronobot, and</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">&nbsp;</font></p>
+<p class="MsoNormal" style="margin-left:1.0in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5"><i>D<sub>a </sub></i>is a 
+nonempty set of alien-models of the Chronobot</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">&nbsp;</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5"><i>f : </i>&nbsp;<i>S<sub>c</sub></i> 
+* (<i>M * M</i>)<sup>*</sup> <i>-&gt; S<sub>c</sub> </i>is the state transition 
+function. Given the current state of the Chronobot and the history of messages 
+exchanged between the Chronobot initiating the bid and the Chronobots 
+participating in the bidding process, <i>f </i>specifies the next state</font></p>
+<p class="MsoNormal" style="text-align:justify;text-justify:inter-ideograph">
+<font face="Verdana" size="5">&nbsp;</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><i><font face="Verdana" size="5">k</font></i><font face="Verdana" size="5"><i> : </i>&nbsp;D<i><sub>s 
+* </sub>&nbsp;</i>D<i><sub>a </sub>-&gt; </i>N<sub><i> </i> </sub>is the knowledge 
+distance 
+function. Given the self-model of the Chronobot </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">and the set of all other alien 
+models of Chronobots 
+participating in the bidding process, <i>k</i></font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">specifies the knowledge distance 
+between the negotiating entities</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Times New Roman" size="5">&#934; </font><font face="Verdana" size="5">: &nbsp;D<i><sub>s 
+* </sub>&nbsp;</i>D<i><sub>a </sub>-&gt; </i>D<sub><i>s </i> </sub>is the knowledge 
+plane 
+function. Given the self-model of the Chronobot </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">and the set of all other alien 
+models of Chronobots 
+participating in the bidding process, </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">when <i>k, </i>the knowledge 
+distance between the negotiating entities exceeds threshold <i>t, </i></font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">the knowledge plane function is 
+responsible for transferring to the higher plane of</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">knowledge</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph">&nbsp;</p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5"><i>s<sub>0</sub></i> in S is the 
+initial state of the&nbsp;Chronobot</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </b></font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">F, a subset of S, is the nonempty 
+set of final states</font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify;text-justify:
+inter-ideograph"><font face="Verdana" size="5">DB is the Database that stores 
+the history of all the Chronobots involved in the Time/Knowledge Exchange</font></p>
+
+</body>

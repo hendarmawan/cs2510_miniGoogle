@@ -1,0 +1,36 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Arial"> 
+	
+			<A href="./cvs1.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./cvs3.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		
+			<center> 
+				<h1>CVS (Concurrent Versions System)</h1>
+				<br>
+				<img src="./cvs_logo.gif" border="0">
+				<br>
+				<br>
+				<br>
+				<h1>Why do we need it?</h1>
+			</center>
+			
+		</font>
+		
+		
+		<font size = 5 face="Arial"> 
+		
+			<br>
+			<li>To manage the modifications made to source files during development.  If a bug should appear in the software, CVS makes it easy to determine what modification caused the bug to appear.
+			<br>
+			<br>
+			<li>To manage source files in group projects.  CVS manages the source code files in such a way that group member's work does not get overwritten.  Each user works in his/her own directory and then CVS merges the work when each user has finished.
+
+		</font>
+	</BODY>
+</html>

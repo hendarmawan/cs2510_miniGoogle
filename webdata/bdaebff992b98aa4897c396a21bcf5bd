@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Metrics for CBSE</title>
+</head>
+
+<body>
+
+<p><a href="8.htm">
+<img src="previous.gif" align="left" width="26" height="26"></a> <a href="10.htm">
+<img src="next.gif" align="right" width="26" height="26"></a> </p>
+<h1 align="center">&nbsp;<font size="7" face="Arial">Metrics for CBSE</font></h1>
+<p class="MsoNormal">　</p>
+<p><font size="6" face="Arial">2. Quality</font></p>
+<blockquote>
+  <blockquote>
+    <ul>
+      <li><font face="Arial" size="6">density - <font color="red">defects / SLOC</font></font></li>
+    </ul>
+    <p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    normalizing the quality thereby not penalize large component for having more 
+    defects</font></p>
+    <ul>
+      <li><font face="Arial" size="6">10* higher quality in reused component</font></li>
+    </ul>
+  </blockquote>
+</blockquote>
+<p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp; </font></p>
+
+<p><img border="0" src="defects.jpg" width="738" height="355"></p>
+
+<p>　</p>
+
+<p>　</p>
+
+<p><img border="0" src="defects_fix.jpg" width="690" height="512"></p>
+
+</body>
+
+</html>

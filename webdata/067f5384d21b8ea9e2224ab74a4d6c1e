@@ -1,0 +1,68 @@
+Brandon A. Spires (bas76@pitt.edu), for Group 4
+CS1635 Term Project
+Spring 2011
+README.txt
+
+Project Demo Video URL:
+http://www.youtube.com/watch?v=u_S65XL55pk
+What is Included:
+The following is a list of the main components needed in order to rebuild the project. 
+- Cursor.java 		(the crosshairs that is used as a target)
+- DancingTurtle.java
+- DigitalPicture.class
+- g3dll.dll
+- HandTracker.java
+- HandTracker.dll
+- HeroGesture.java 	(our modification on Group 3’s component)
+- HeroHand.java		(our modification on Group 3’s component)
+- HeroHandTracker.java  	(not utilized)
+- Jni
+- Jni_md
+- LeadTurtle.java
+- ModelDisplay.java	
+- PathSegment.java
+- Pen.java
+- Picture.java
+- PictureFrame.java
+- Pixel.java
+- SimplePicture.java
+- SimpleTurtle.java	(the base class from which the SnakmanHead object inherits )
+- SMG6switch.java
+- Snakeman.c		(The reusable component)
+- SnakemanHead.java  	(where the Snakeman’s head object is located)
+- SnakemanTrainingGrounds.java  (the main method for the scenario)
+- Turtle.java
+- World.java		(where the graphics are animated)
+- Head.jpg		(the images used to construct a snakeman)
+- Tail.jpg
+- Body.jpg
+- Legs.jpg
+How to Compile: 
+- The best method to use when rebuilding is to compile all folders within the same folder.
+How to Run:
+- Kinect Input (must have all necessary Kinect drivers installed)
+o This project’s default setting is to run with Kinect input
+o You must pass “mouse” as a command line argument to  SnakemanTrainingGrounds.java
+1. You must run the main function within SnakemanTrainingGrounds.java in order to run the scenario.  Alternatively, you may also execute Snakeman.exe (my reusable component) in order to run the scenario.
+a. If you choose to run the scenario directly through SnakemanTrainingGrounds.java, you will see a graphic display show up shortly.  
+b. If you choose to run the scenario through the Snakeman.c reusable component, then you must enter group ID ‘G4’ when prompted.  
+2. You must then continuously make the wave gesture to the Kinect sensor in order for your hand to be registered with the system.  Once your hand is registered, you will begin to see kinect coordinate output, and a crosshair cursor will appear within the display.
+3. The cursor will follow your hand movements, and once your cursor overlaps the Snakeman’s head the motion will register as a ‘slash’, and he will be damaged
+4. You will need one successful slash in order to beat the Snakeman, and once he is defeated, the animation screen will close
+a. If you chose to run the scenario through Snakeman.c, then you will return to the shell and may execute it again, if you wish.
+- Mouse input
+o This project may also run with mouse input.
+o You must pass “mouse” as a command line argument to  SnakemanTrainingGrounds.java
+o This was provided in lieu of a .oni file due to the fact that our scenario is an interactive one, and a .oni file would not be able to capture that dynamic nature of the project.
+Known bugs/issues:
+- Whenever you run the scenario, it is expected that you will receive many error messages before you see Kinect output.  
+- The scenario take a LONG time to recognize your initialization gesture (a wave), therefore you must wave for a decent amount of time before you can combat the Snakeman
+- The scenario seems to perform best when you are running it on a machine with high-performance power.   Battery operated or energy efficient settings yielded undesirable results.
+Additional Information:
+- Feel free to contact Brandon A. Spires at bas76@pitt.edu with any questions regarding this project.
+Best,
+
+Brandon A. Spires
+Senior, University of Pittsburgh
+Spring 2011
+

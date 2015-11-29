@@ -1,0 +1,47 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="seminar_pg11.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="seminar_pg13.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Adaptation Rules Example</font></h1> 
+ </center> 
+ 
+<p><br>
+  <font size="4" face="Arial, Helvetica, sans-serif">Let's see an example of how 
+  these rules can be used</font></p>
+<p><font face="Courier New, Courier, mono">C: <strong>select</strong> P.access<br>
+  <strong>&nbsp;&nbsp; where </strong>P.access =<strong> true</strong><br>
+  A: <strong>update</strong> F.pres := "show"<br>
+  &nbsp;&nbsp; <strong>where</strong> part-of(F,P) <strong>and</strong> F.relevant 
+  = <strong>true</strong></font></p>
+<p><br>
+  <font size="4" face="Arial, Helvetica, sans-serif">Another example</font></p>
+<p><font face="Courier New, Courier, mono">C: <strong>select</strong> P.access<br>
+  <strong>&nbsp;&nbsp; where </strong>P.access =<strong> true and </strong>P.ready_to_read 
+  = <strong>true</strong><br>
+  A: <strong>update</strong> F.pres := "show"<br>
+  &nbsp;&nbsp; <strong>where</strong> part-of(F,P) <strong>and</strong> F.relevant 
+  = <strong>true</strong></font></p>
+<p><br>
+  <font size="4" face="Arial, Helvetica, sans-serif">A slightly more complex 
+  example</font></p>
+<p><font face="Courier New, Courier, mono">C: <strong>select</strong> C1.knowledge<br>
+  <strong>&nbsp;&nbsp; where </strong>C1.knowledge &gt;=<strong> </strong>&quot;known&quot;<br>
+  A: <strong>update</strong> C2.read_to_read := <strong>true</strong><br>
+  &nbsp;&nbsp; <strong>where</strong> prerequisite(C1, C2) <strong>and</strong><br>
+  </font><font face="Courier New, Courier, mono">&nbsp;&nbsp;&nbsp;&nbsp; <strong>not 
+  exists</strong>( select C3<br>
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  <strong>where </strong>prequisite(C3,C2) <strong>and</strong> C3.knowledge &lt; 
+  &quot;known&quot;</font></p>
+<p><br>
+  <font size="4" face="Arial, Helvetica, sans-serif">One final example</font></p>
+<p><font face="Courier New, Courier, mono">C: <strong>select</strong> C1.knowledge<br>
+  <strong>&nbsp;&nbsp; where </strong>C1.knowledge =<strong> </strong>&quot;well 
+  known&quot;<br>
+  A: <strong>update</strong> C2.ready_to_read := <strong>false</strong><br>
+  &nbsp;&nbsp; <strong>where</strong> inhibit(C1,C2)</font></p>
+</html> 

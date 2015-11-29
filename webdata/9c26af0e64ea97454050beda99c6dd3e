@@ -1,0 +1,48 @@
+/**************************************************************************
+        Temperature sensor in SIS Healthcare system
+        Zichuan "Jerry" Ye
+        2014/11/3
+**************************************************************************/
+
+The temperature sensor is a key component in SIS Healthcare system. By design, 
+it provides the functionalities that can be applied to measure, store and report 
+temperatures to SIS server and thereafter other components in SIS Healthcare 
+system. The implementation of Temperature functionalities includes three aspects: 
+stand-alone Temperature Component, temperature setting menu in GUI and 
+SIS messages that involves Temperature Component and other components in 
+SIS Healthcare system.
+
+This "readme" file descriptions of how to run the Temperature Component is given. 
+A user can follow the instructions to start the component and have it report 
+temperature measurements to GUI, schedule a start and/or end time of 
+measurement, send out alert if a certain temperature threshold is reached and 
+select what content is included in the alert.
+
+User Menu:
+
+(1) Before start any program execution, please make sure that there is no running 
+"TEMPerV21.exe" in your processes, and unplugging and re-plugging the physical 
+temperature sensor to PC.
+
+(2) Go to "\PersonalHealthcare2014_v5\PersonalHealthcare2014\Components", you 
+can find a "init.bat". 
+
+(3) Double click it then wait for all windows popping out and components initiated.
+
+(4) To have temperature component working, go to the window of GUI and click the 
+check-box of "TEMP". 
+
+(5) Select/type-in the parameters for the temperature component before clicking 
+"OK". If you have any problem in getting to this point, please contact Jerry at 
+zichuan@pitt.edu.
+
+(6) Now everything should be set up and ready to go. Click "View" in the GUI. Real-
+time temperature readings will appear on your GUI panel at the given rate that you 
+set up earlier in the "temperature set-up" window. If you have a preferred start/end 
+time for running the component, it will start and end at your given time accordingly.
+
+(7) If a certain temperature threshold is reached (high or low bound), an email is sent 
+out to the address as of your input in GUI panel. The default email address for testing 
+is "zichuan@pitt.edu". You may use your own email instead. If you have any problem 
+sending email to your own email address, please contact Jerry at zichuan@pitt.edu.
+

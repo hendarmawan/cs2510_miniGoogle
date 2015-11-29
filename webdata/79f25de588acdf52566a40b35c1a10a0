@@ -1,0 +1,49 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.78 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>A Pattern language for Pattern Writing</title>
+</head>
+<body BGCOLOR="#c0c0c0">
+<a href="s2.html"><img SRC="previous.gif" height=26 width=26 align=LEFT></a>
+<center><h1><b><u><font color="blue">WHAT IS A ALEXANDRIAN FORM OF A PATTERN?</font></u> </b></h1></center>
+<P>
+<center><b><font size="6"></font></b></center>
+<br>
+<font size="5">
+<UL TYPE = square>
+There are variants on <b>Alexandrian form</b>, but most look this:<br><br>
+<LI> <i><b><u>The pattern name :</i></b></u> A name by which the pattern is called. For example, we might create a pattern called `C++ Type 
+Promotion,' just so 
+we can refer to it conveniently. <br><br>
+<LI> <i><u><b>The problem the pattern is trying to solve : </i></u></b>If people know what problem the pattern solves, they'll know when 
+to apply it. For example, Type Promotion solves the problem of promotion between objects of different C++ types, zero or one 
+of which is a built-in type, or a type exported by a library for which the programmer does not have source. <br><br> 
+<LI> <i><u><b> Context : </i></u></b> A pattern solves a problem in a given context, and it may not make sense elsewhere. For example, C++ 
+type promotion applies to C++, and potentially to other object-oriented languages with strong compile-time type systems; the decision of 
+which promotion to apply is made at compile time; and the context is inadequate to apply built-in translation rules (e.g., from a derived 
+class to one of its public base classes). <br><br> 
+<LI> <i><u><b> Forces, or tradeoffs : </i></u></b> Not all problems are clear-cut. Forces make clear the intricacies of a problem. For 
+example, in Type Promotion , we need to point out the tension between using constructors and using conversion operators. We must also 
+point out that we can redefine some properties for class types that we cannot redefine for built-in types. A good pattern resolves one or 
+more forces. <br><br> 
+<LI> <i><u><b> Solution : </i></u></b> This describes the structure, behavior, etc., of the solution, which is often tantamount to telling 
+how to build the solution. For Type Promotion , a program should promote class objects to built-ins using a member conversion operator, 
+and should use constructors for all other promotions.<br><br> 
+<LI> <i><u><b> Examples :</i></u></b> are present in all good patterns. Visual analogies are also powerful and frequent adornments for a 
+pattern: you can draw a picture for most (but not all) good software patterns. <br><br> 
+<LI> <i><u><b> Force resolution, or resulting context : </i></u></b> Few patterns are perfect or stand on their own. A good pattern tells 
+what forces it leaves unresolved, or what other patterns must be applied, and how the context is changed by the pattern.<br><br> 
+<LI> <i><u><b> Design rationale : </i></u></b> This tells where the pattern came from, why it works, and why experts use it. Good 
+designers are most effective when they apply patterns insightfully, and that means being able to understand how the patterns work. <br><br> 
+</BLOCKQUOTE> </UL> </UL>
+</font>
+
+<a href="s3.html"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+
+
+
+</body>
+</html>
+

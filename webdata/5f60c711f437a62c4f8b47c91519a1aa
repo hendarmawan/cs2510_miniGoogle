@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Multimedia Software Engineering - Page 8</title>
+	<style>
+		body {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		dl {
+			margin: 0;
+			padding: 0;
+		}
+		dd {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="page7.html"><img src = "previous.gif" align = "left"></a>
+	<a href="page9.html"><img src = "next.gif" align = "right"></a>
+	<center>
+		<h1>Invoking a Search and Displaying Results</h1>
+		<hr>
+	</center>
+	<p>
+		Two basic types of search result:
+		<ul>
+			<li><strong>Inclusion or exclusion</strong>: includes only those documents determined by the system as satisfying the query. The documents won't be in any particular order.</li>
+			<li><strong>Relevance-based</strong>: Inclusion or exclusion search results but includes documents with a range of relevance.  Most releveant results are presented first.</li>
+		</ul>
+	</p>
+	<p>
+		The best sort of result presentation will put the most satisfying
+		matches at the top. It should also present matches in a
+		way that helps a user refine a search if necessary - perhaps by providing
+		context for each result or by providing associated information
+		such as modification date or user-entered comments.
+	</p>
+</body>
+</html>

@@ -1,0 +1,80 @@
+<h1>
+How to connect to the local database using Oracle8i
+</h1>
+
+
+In the tutorial on <i>How to use Excel 
+with an oracle Database</i>, the method that is used to connect to a local 
+database is implemented in Oracle8, not Oracle8i. Here it is explained how to 
+connect to the local database in Oracle8i. It is more complex than in Oracle8.
+
+<h2>
+1. Set Host Name for your computer
+</h2>
+
+If you don’t set the host name for your computer, you should do it now as 
+following:
+<p>
+Go to control-panel => network => TCP/IP properties => DNS configuration => 
+enable DNS => set your host name
+
+<h2>
+2. Configuring Naming Methods and the Listener
+</h2>
+
+Net8 can resolve net service names using the following methods:
+Host naming, Local naming, Oracle Names method and External names 
+methods. (See the exact usage in Oracle Document.)
+
+<p>
+We will use Host naming method here. Four steps are here:
+<h3>
+Step 1: Configure the Listener with the Global Database Name 
+</h3>
+Start Net8 Assistant => Listeners => LISTENER (this is the default one)
+<br>
+=> Choose Listening location from the drop-down list box: add address using 
+TCP/IP protocol and your own Host name and port 1521;
+<br>
+=> Choose database services from the drop-down list box: set Global database 
+name to LOCAL (Whatever, just a local database. But this is a very 
+important parameter and will be used later.), Oracle home directory (where 
+you want to put your database), and SID to ORCL
+
+<h3>
+Step2: Configure HOSTNAME as the First Naming Method
+</h3>
+(You are still in Net8 Assistant) => profile => Choose Naming from drop-
+down list box => set HOSTNAME and TNSNAMES to be in the selected 
+methods and make HOSTNAME as the first.
+Save network configuration and exit from Net8 Assistant.
+
+<h3>
+Step3: Start your listener
+</h3>
+Use LSNRCTL utility to start your listener.
+Find the location of lsnrctl.exe in your computer and run it. 
+<br>
+LSNRCTL > start : will start your listener. 
+<br>
+LSNRCTL > help : List all the commands for LSNRCTL
+
+<h3>
+Step4: create a new local net service Name
+</h3>
+Start net8 easy config => Add new Service => set New Net Service Name to 
+whatever => use TCP/IP protocol => set service name to LOCAL (same as 
+Global Database Name.) => then test it (user name: 'scott' and password: 
+'tiger') => successfully
+<p>
+You can also use Net8 Configuration Assistant to do the step4.
+Now you have a connection to the local database. You can use it afterwards 
+in Excel.
+In short, we can have a lot of net service names, based on the same net 
+service (Global Database). If the service is used TCP/IP protocol, it must 
+have a running listener.
+<p>
+To understand how Oracle 8i works, Oracle 8i Document is very helpful.
+An online version of Oracle 8i documentation may be at
+<a href="/usr/local/share/oracle/product/8.1.5/doc/index.htm">
+/usr/local/share/oracle/product/8.1.5/doc/index.htm</a>.

@@ -1,0 +1,286 @@
+<title>Fusion of Geospatial Multimedia Information</title>
+<center>
+<h2>FUSION OF GEOSPATIAL MULTIMEDIA INFORMATION</h2>
+</center>
+<p>
+<center><h3>
+Technical Report, 
+May 1, 1997</center></h3>
+<p>
+<center><h4>
+Shi-Kuo Chang, Department of Computer Science
+<br>
+University of Pittsburgh, Pittsburgh, PA 15260 
+<br>
+E-mail: chang@cs.pitt.edu  Tel: 412-624-8423  Fax: 412-624-8465
+</center></h4>
+<p>
+<p>
+<b>1. Objectives</b>
+<p>
+The fusion of geospatial multimedia information from diversified sources
+in a heterogeneous information system
+is a challenging research topic of great practical
+significance.  With the rapid expansion of the wired and wireless networks, a large
+number of soft real-time, hard real-time and non-real-time sources of information need to be quickly processed,
+checked for consistency, structured and distributed to the various agencies and people involved in
+geospatial information handling.
+In addition to geospatial multimedia databases, it is also anticipated that numerous web sites on the World Wide Web will become rich sources of geospatial multimedia information.
+<p>
+However, since too much information is available, geospatial multimedia information related to an important event could be missed because people
+are unable to track the manifestations of an unfolding event across multimedia sources over time.
+What is needed, from the information technology viewpoint, is
+an <i>active multimedia information system</i> capable of
+processing and filtering geospatial multimedia information, checking for
+semantic consistency, discovering important events, and structuring the relevant geospatial multimedia information for distribution.
+<p>
+We describe a framework for the human- and
+system-directed discovery, fusion and retrieval of geospatial multimedia information
+so that important events can be discovered and relevant geospatial multimedia information retrieved.
+This approach is based upon the observation that a significant
+event often manifests itself in different media over time.
+Therefore, if we can index such manifestations and dynamically
+link them to one another, then we can check for consistency.
+This dynamic indexing technique is based upon
+the theory of active indexing [1],
+which was developed as a result of <a href="http://www.cs.pitt.edu/~chang"> Dr. S. K. Chang's</a> prior
+research supported by NSF.
+Dr. Chang is an experienced researcher with many grants and contracts
+from NSF, DOD and other funding agencies.  He is a leader in visual information systems and visual languages with over two hundred publications.
+<p>
+<b>
+2. Proposed Approach for Human- and System-Directed Information Fusion
+</b>
+<p>
+Information sources such as camera, sensors, computers or human beings
+usually provide continuous streams of information, which are
+collected and stored as data in multimedia databases.  Such data need
+to be abstracted into various forms of abstractions, so that the processing,
+consistency analysis and combination of abstracted information becomes possible.
+Finally, the abstracted information needs to be integrated and transformed
+into fused knowledge.
+These three levels of information form a hierarchy, but
+at any given moment there is the continuous transformation of data
+into abstracted information and then into fused knowledge.
+<p>
+In our approach, this transformation is effected by the coordinated efforts of the <b>user</b>,
+the <b>query processor</b>, the <b>reasoners</b>, and the <b>active index system</b>.
+The user is capable of controlling the sources to
+influence the type of data being collected.  For example, the user may turn
+on or turn off the video camera
+or manually control the positioning of the camera.
+Data are then transformed into abstracted information through the use of the
+active indices which also serve as filters to weed out unwanted data.
+The active index system is a message-based system.  It
+receives input data as messages, processes them, and sends abstracted
+information as its output to storage.  At the same time, it also sends
+messages to the reasoners, so that the reasoners can
+perform spatial/temporal
+reasoning based upon the abstracted information to generate fused
+knowledge or updated abstracted information in the form of assertions.
+The query processor then uses data, abstracted information and fused knowledge,
+to answer user's queries.
+<p>
+<b>
+2.1. Formal Definition and Example of Semantic Consistency
+</b>
+<p>
+In order to address the problem of information fusion, a clear definition
+of semantic consistency is necessary. 
+Our definition is different from the usual definitions of semantic consistency in database theory or in AI theory,
+because we believe the problem of consistency for information fusion must be first addressed at the
+level of characteristic patterns detected in media objects.
+This is where the active multimedia information system can make the most
+impact in drastically reducing the amount of information that ultimately must
+be handled by human operators.
+<p>
+We define consistency functions to check the consistency
+among media objects of the <i>same</i> media type, by concentrating on their characteristic patterns.  For example, two assertions
+"there is a tank in the target area" and "there is no tank in the target area"
+can be checked for consistency, and two images of the same target area can
+also be checked for consistency.
+These consistency functions are media-specific and domain-specific.
+For example, to check whether two aerial photographic images are consistent, the consistency
+function will verify whether the two images
+contain similar <i>characteristic patterns</i> such as tanks.
+For different application domains, different consistency functions are needed.
+<p>
+To check whether media objects of <i>different</i> media types are consistent,
+they need to be transformed into media objects of the same media type so
+that the media-specific, domain-specific consistency function can be applied.
+Our viewpoint is that each object is characterized by some characteristic
+patterns that can be transformed into characteristic patterns in different
+media type.  For example, the characteristic pattern is a tank pattern
+in the image media, which is transformed into the word "tank"  in
+the keyword media.  The consistency function can then be applied to
+the characteristic patterns of objects of the same media type.
+<p>
+Let o<sup>i</sup><sub>j</sub> be the j<sup>th</sup> object of media type M<sup>i</sup>.  Let c<sup>i</sup><sub>k</sub> be the k<sup>th</sup>
+characteristic pattern detected in an object o<sup>i</sup><sub>j</sub> of media type M<sup>i</sup>.
+Let C<sup>i</sup> denote the set of all such characteristic patterns of media type M<sup>i</sup>.
+Let <b>T</b><sub>1,2</sub> be the transformation that maps characteristic patterns
+detected in objects of media type M<sup>1</sup> to characteristic patterns of media
+type M<sup>2</sup>.
+<p>
+For each media type M<sup>i</sup> there is a consistency function K<sub>i</sub> which is
+a mapping from 2<sup>C<sup>i</sup></sup> (the space of all subsets of characteristic patterns in media type M<sup>i</sup>)
+to {<i>T, F</i>}.  In other words it verifies that a set of characteristic patterns
+of media type M<sup>i</sup> are consistent.
+<p>
+A characteristic pattern c<sup>1</sup><sub>k</sub> of media type M<sup>1</sup> is consistent with respect
+to media type M<sup>2</sup> if the transformed characteristic pattern
+<b>T</b><sub>1,2</sub> (c<sup>1</sup><sub>k</sub>) is consistent with the set C<sup>2</sup> of all characteristic
+patterns of media type M<sup>2</sup>, i.e. K<sub>2</sub>( <b>T</b><sub>1,2</sub>(c<sup>1</sup><sub>k</sub>) union C<sup>2</sup>) = <i>T</i>.
+A characteristic pattern c<sup>i</sup><sub>k</sub> is consistent if it is consistent with
+respect to all media types M<sup>j</sup>.
+<p>
+As an example, an aerial photographic image of media type M<sup>1</sup> is examined and a possible tank
+is detected.  This is a characteristic pattern c<sup>1</sup><sub>1</sub>.  The keywords describing
+findings of the intelligence officer is of media type M<sup>2</sup>.  The transformation <b>T</b><sub>1,2</sub>
+maps characteristic pattern c<sup>1</sup><sub>1</sub> to <b>T</b><sub>1,2</sub>(c<sup>1</sup><sub>1</sub>), which could be the
+keyword "tank".  If the consistency function K<sub>2</sub> verifies that the finding
+"tank" is consistent with other findings, then the characteristic pattern
+c<sup>1</sup><sub>1</sub> is consistent with respect to media type M<sup>2</sup>.  If we can also verify
+that c<sup>1</sup><sub>1</sub> is consistent with other patterns detected in media M<sup>1</sup>, and suppose
+the information space contains only objects of these two media types, then
+we have verified that c<sup>1</sup><sub>1</sub> is consistent.
+<p>
+In this example the transformation function is simply the labeling of characteristic patterns.
+The "tank" characteristic pattern is the pattern detected by a pattern recognizer.
+There are image processing algorithms which will produce characteristic patterns.
+We can use similarity functions as consistency functions to determine
+whether the inputs are all within a certain distance. 
+<p>
+<b>
+2.2. Active Index for Dynamic Information Linking
+</b>
+<p>
+In our approach of human- and system-directed information fusion,
+the human can define index cells for the
+detection of significant events.
+The system can generate additional index cells
+to monitor significant events.
+We now describe the concept of the index cell, which is the fundamental building
+block of an active index.
+<p>
+An <i>index cell</i> (ic) accepts input messages and performs some 
+actions.  It then
+posts an output message to a group of output index cells.  Depending
+upon the internal state of the index cell and the input messages, the
+index cell can post different messages to different groups of
+output index cells.  Therefore the connection between an index cell
+and its output cells is not static, but dynamic.
+<p>
+An index cell can be either <i>live</i> or <i>dead</i>.  If the cell is in a special
+internal state called the <i>dead state</i>, it is considered dead.  If the cell is
+in any other state, it is considered live.  The entire collection of
+index cells, either live or dead, forms the <i>index cell base</i> (ICB).
+This index cell base ICB may consist of infinitely many cells,
+but the set of live cells is finite and forms the <i>active index</i> (IX).
+<p>
+When an index cell posts an output message to a group of output
+index cells, these output index cells are activated.
+If an output index cell is in a dead state,
+it will transit to the initial state and become a live cell,
+and its timer will be initialized (see below).
+On the other hand, if the output index cell is already a live
+cell, its current state will not be affected, but its timer will be
+re-initialized.
+The output index cells, once activated, may or may not accept the posted output message.
+The first output index cell that accepts the
+output message will remove this message from the output list of the current cell.
+(In case of a race, the outcome is nondeterministic.)  If no output
+index cell accepts the posted output message, this message will stay
+indefinitely in the output list of the current cell.
+<p>
+After its computation, the index cell may remain active (live)
+or de-activate itself (dead).  An index cell may also become dead, if
+no other index cells (including
+itself) post messages to it.
+There is a built-in timer, and the cell will de-activate itself
+if the remaining time is used up before any message is received.  This parameter - the time
+for the cell to remain live- is re-initialized each time it receives a new
+message and thus is once more activated.
+Thus a cell may become dead if it does not receive any message after a prespecified time.
+<p>
+Although there can be many index cells, these cells may be all similar.
+For example, we may want to attach an index cell to an image,
+so that when a certain feature is detected, a message is
+sent to the index cell which will perform predetermined actions such as prefetching other images.  If there
+are ten such images, then there can be ten such index
+cells, but they are all similar.  These similar index cells
+can be specified by an <i>index cell type</i>, and the individual
+cells are the instances of the index cell type.
+<p>
+We developed a tool called the
+<i>IC_Builder</i>, which helps the designer construct index cell types
+using a graphical user interface.
+The index system is managed by the <i>IC_Manager</i> which can run on a Unix workstation or on any PC with Windows.
+An active index is a dynamically changing net.  As shown in [1]
+the active index
+can be used to realize Petri nets, generalized Petri nets (G-nets), B-trees, etc.  But its
+primary purpose is to serve as a dynamic index. 
+One important result is that we can now deal with systems of over ten
+thousand index cells.  In other words,
+<b>the active index approach can really scale up for realistic applications</b>.
+An application of this model is to improve the efficiency of
+on-line information retrieval in hyperspace by <i>prefetching</i>.
+The active index technique is used to describe the associated
+knowledge and to support automatic knowledge-based information retrieval.
+A prototype of an intelligent WWW client system
+has been developed.  Experiment results show that a 
+greater retrieval and navigation efficiency can be obtained.
+<p>
+The dynamic information linking proceeds as follows.
+The input data can be regarded as input messages to the active index
+and processed by the actions (such as pattern recognition routines) associated with the first-level index cells.  If no
+significant characteristic patterns are detected, the processed abstracted
+information will be stored.  If, on the other hand, some significant characteristic patterns
+are detected, the second-level index cells will be activated to perform
+horizontal reasoning to combine abstracted information from different sources.  If the horizontal reasoner
+reports that the new finding is consistent with other findings,
+these consistent findings can be fused into knowledge by activating
+the third-level index cells.  The simplest form of fusion is the
+generation of a report listing all the consistent findings, which may be
+quite adequate for such media as keywords or assertions.  For multisensory
+images, data fusion techniques can be applied.
+Since three levels of index cells are now activated and dynamically linked together, they constitute
+a vertical reasoner to efficiently process future findings of a similar nature.
+Another viewpoint is to regard the dynamically linked active index cells as
+an <i>active filter</i> to report on similar findings efficiently.
+<p>
+<b>
+3. Deliverables and Expected Outcomes
+</b>
+<p>
+We are building an experimental active multimedia information system which
+can be customized for geospatial information fusion and management
+for use by federal agencies involved with spatial and multidimensional data
+management.
+During this three-year effort, we intend to
+experiment with both general applications and web-specific applications,
+and evaluate the prototype system using applications provided by agencies such as the Defense Mapping Agency.
+The AMIS prototype is WWW-savvy and works on the Internet.
+When the user poses  <i>latent queries</i> beforehand, the user is defining
+significant events for the active information system to detect and to monitor.
+By the application of vertical/horizontal reasoning using active index,
+the AMIS system can detect significant events and
+create information links dynamically.
+<p>
+This research will lead to better understanding on the problem of fusion of
+geospatial information.
+The expected outcomes include new techniques to design active indexes,  horizontal reasoners,
+vertical reasoners and query processor so that they can be coordinated
+to detect significant events that are emerging in time, and
+to create consistently fused knowledge to answer user's queries.
+<p>
+<b>
+Reference:
+</b>
+<p>
+[1] S. K. Chang, <a href="http://www.cs.pitt.edu/~chang/365/ic.html"> "Towards a Theory of Active Index"</a>, Journal of Visual Languages and Computing, Vol. 6, No. 1, March 1995, 101-118.
+(<font size = -3>Figures 1-3. <a href="http://www.cs.pitt.edu/~chang/365/icfig/ic.f123.gif"> click here </a>.
+Figure 4. <a href="http://www.cs.pitt.edu/~chang/365/icfig/ic.f4.gif"> click here </a>.
+Figure 5. <a href="http://www.cs.pitt.edu/~chang/365/icfig/ic.f5.gif"> click here </a>.
+Figure 6. <a href="http://www.cs.pitt.edu/~chang/365/vltaommfig/fig5a.gif"> click here </a>.
+Figure 7. <a href="http://www.cs.pitt.edu/~chang/365/icfig/ic.f7.gif"> click here </a>.</font>)<br>

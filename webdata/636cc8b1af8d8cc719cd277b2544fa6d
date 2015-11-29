@@ -1,0 +1,32 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page21.html"><img src="previous.gif" align=left></a>
+<center>
+   <br><br>
+   <h1>References</h1>
+   <br>
+</center>
+<font size=4>
+<p>Hougland, Damon and Tavistock, Aaron. <em>Core JSP.</em> Prentice Hall
+PTR:
+<br>Upper Saddle River, NJ, 2001.</p>
+<br>
+<p><em>JSP Insider</em>
+<br><a href="http://www.jspinsider.com/articles/jsp/intrototags.html">
+     http://www.jspinsider.com/articles/jsp/intortotags.html</a></p>
+<br>
+<p><em>java.sun.com</em>
+<br><a href="http://java.sun.com/products/jsp/">
+http://java.sun.com/products/jsp/</a>
+<br><a href="http://java.sun.com/products/jsp/faq.html">
+http://java.sun.com/products/jsp/faq.html</a>
+<br><a
+href="http://java.sun.com/products/javabeans/faq/faq.general.html#Q1">
+http://java.sun.com/products/javabeans/faq/faq.general.html#Q1</a>
+<br><a
+href="http://java.sun.com/products/javabeans/faq/faq.enterprise.html#Q52">
+http://java.sun.com/products/javabeans/faq/faq.enterprise.html#Q52</a></p>
+</font>
+</html>

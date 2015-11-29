@@ -1,0 +1,49 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.78 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>A Pattern language for Pattern Writing</title>
+</head>
+<body BGCOLOR="#c0c0c0">
+<a href="A.html"><img SRC="previous.gif" height=26 width=26 align=LEFT></a>
+<center><h1><b><u><font color="blue">Pattern : PATTERN</font></u> </b></h1></center>
+<P>
+<center><b><font size="6"></font></b></center>
+<br>
+<font size="5">
+<UL TYPE = square>
+<LI><u>CONTEXT :</u>  You are an experienced practitioner in your field. You have noticed that you keep using a certain <b>solution</b> to a commonly 
+occurring <b>problem</b>. You would like to share your experience with others. <br><br>
+<LI><u> PROBLEM </u>:  How do you share a recurring <b>solution</b> to a <b>problem</b> with others so that it may be reused? <br><br>
+<LI> <u> FORCES :</u>
+<BLOCKQUOTE> <UL TYPE = circle> <LI>Keeping the <b>solution</b> to yourself doesn't require any effort <br><br></BLOCKQUOTE> 
+<BLOCKQUOTE> <UL TYPE = circle> <LI> Sharing the <b>solution</b> verbally helps a few others but won't make a big impact in your field. 
+<br><br></BLOCKQUOTE>
+<BLOCKQUOTE> <UL TYPE = circle> <LI> Writing down your understanding of the <b>solution</b> is hard work and requires much reflection on how you solve 
+the problem. <br><br></BLOCKQUOTE>
+<BLOCKQUOTE> <UL TYPE = circle> <LI> Transforming your specific <b>solution</b> into a more widely applicable solution is difficult. 
+<br><br></BLOCKQUOTE>
+<BLOCKQUOTE> <UL TYPE = circle> <LI> People are unlikely to use a <b>solution</b> if you don't explain the reasons for using it. <br><br></BLOCKQUOTE>
+<BLOCKQUOTE> <UL TYPE = circle> <LI> Writing down the <b>solution</b> may compromise your competitive advantage (either personal or corporate.) 
+<br><br></BLOCKQUOTE>
+
+<LI> <u> SOLUTION :</u> 
+<BLOCKQUOTE> <UL TYPE = circle> <LI> Write down the <b>solution</b> using the pattern form.<br><br></BLOCKQUOTE>
+<BLOCKQUOTE> <UL TYPE = circle> <LI> Distribute the resulting pattern to the largest audience you
+feel it could help that does not compromise your competitive advantage. Often, this means publishing your patterns 
+exclusively within your company via Intranets or company journals.<br><br></BLOCKQUOTE>
+<LI> <u> EXAMPLE :</u><br><br> Entering Sennott Square after 9 p.m. could 
+be an example 
+of a common problem.
+</font> </UL>
+</UL>
+</font>
+<a href="A2.html"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+
+
+
+
+</body>
+</html>
+

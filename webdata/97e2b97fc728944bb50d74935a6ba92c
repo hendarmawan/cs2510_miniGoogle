@@ -1,0 +1,55 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="background-02.htm"><img src="previous.gif" align="left" alt="Query-by-Example in Multimedia"></a>
+<a href="visual-interface.htm"><img src="next.gif" align="right" alt="Common Visual Interface in QBE"></a>
+
+<br><br>
+<center>
+<table width="600">
+	<tr>
+		<td>
+			<h1 align="center">Motivation of Query-by-Example Systems</h1>
+			<hr>			
+			
+			<p><b>Initial intention (from DBMS):</b></p>
+			<ul>
+				<li>Shields user from learning complicated query language (easier to use compared to SQL or other query language)</li>
+				<li>Achieve independence (Changes in underlying implementation does not influence users, not unique in QBE)</li>
+			</ul>
+			
+			<p><b>Additional motivation (from Multimedia):</b></p>
+			<ul>
+				<li>Increase expressiveness of the multimedia query that text alone cannot describe.</li>
+				<li><b>Analogy</b>:<br>MasterCard - <i>&quot;There’s something money can’t buy.&nbsp; For everything else, there’s MasterCard</i>.&quot;<br>
+				QBE - <i>&quot;There’s something in pictures that word can’t describe.  For everything else, there’s text-based search engine.&quot;</i></li>
+			</ul>
+			
+			<p><b>Issues with tags and annotation:</b></p>
+			<ul>
+				<li>Cost - Tagging and annotation is expensive because it 
+				requires human to interpret the semantics to each multimedia 
+				objects (images, video, audio).</li>
+				<li>Coverage - Description of the multimedia objects are 
+				typically incomplete.<br>
+				<img border="0" src="images/cousin.JPG" width="287" height="216"><br>
+				(baby, toy, camera, ear, table, etc.)</li>
+				<li>Inconsistency - Humans are inconsistent.&nbsp; Tagging the 
+				same picture may not give you the same set of tags every time 
+				you ask them. (not always a bad thing though)<br>
+				<img border="0" src="images/cousin.JPG" width="287" height="216"><br>
+				(chair, hair, infants, dinosaur, etc.)</li>
+			</ul>
+			<p><b>Because of the above issues, people use computers (such as a 
+			QBE system) to extract features from multimedia objects.&nbsp; In 
+			general, these system does fairly good job when the size of search 
+			space is large.</b></td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

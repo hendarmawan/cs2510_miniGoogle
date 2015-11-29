@@ -1,0 +1,22 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page2.html"><img src="previous.gif" align=left></a>
+<center>
+   <br></br>
+   <h1>What are JavaBeans?</h1>
+   <br></br>
+</center>
+<font size=4>
+<ul>
+   <li>"JavaBeans are a portable, platform-independent component model
+written in the Java programming language, developed in collaboration with
+industry leaders. They enable developers to write reusable components
+once and run them anywhere -- benefitting from the platform-independent
+power of Java technology." 
+<a href="http://java.sun.com">[java.sun.com]</a></li>
+</ul>
+</font>
+</html>
+

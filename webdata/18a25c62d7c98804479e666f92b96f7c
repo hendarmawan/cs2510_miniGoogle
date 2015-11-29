@@ -1,0 +1,84 @@
+<title>Software Requirements Spec</title>
+<h1>Software Requirements Spec</h1>
+
+<pre>
+1. Product Overview and Summary
+     (From Section 1.0 - Scope - of the <a href="1plan.html">software plan</a>, but more detailed)
+
+2. Information Description
+ 2.1. User interface (<a href="3user.html">A Preliminary User manual</a>)
+ 2.2. High level data flow diagram
+      <img src="images/dfd01.gif"><br>
+      An example of a high level data flow diagram
+     (usually only one DFD for the entire system)
+ 2.3. Data structure (or object) representation
+     (what <a href="2reqdata.html">data elements</a> are in the databases or objects?)
+ 2.4. Data elements (or objects) dictionary
+     (compile all data elements into a dictionary)
+
+3. Functional Description
+     (each function has IC card, functional narrative, design constraints and DFD)
+ 3.1. Functions (you should specify functions using <font color=red><a href="http://www.cs.pitt.edu/~chang/231/vl01/t4.htm">IC cards</a></font>)
+    (You can access the  <a href="http://www.cs.pitt.edu/~chang/icms2"> IC Card Management System</a> to create your IC cards.
+    A <a href="http://www.cs.pitt.edu/~ezegarra/icms2/ICCMSUserManualV2.doc"> User Manual</a> explains how to use the ICMS.)
+
+ 3.2. Processing narrative
+     (The processing narrative describes in words what the
+      functions do.  For each function, there is a paragraph
+      (or several paragraphs if necessary) describing this
+      function. For example, the take-test function of a
+      distance learning system allows a student to take a
+      test, by first logging in, then entering course information,
+     and finally taking an online test.  The test scores
+     are stored in the student record.)
+ 3.3. Design constraints
+    (The design constraints specify what the functions cannot
+     do.  For example, the take-test function of a distance
+     learning system supports only multiple-choice type of
+     tests, and other type of tests are not supported.)
+ 3.4. Diagrams
+     (There should be a detailed data flow diagrm for each function)
+      <img src="images/dfd02.gif"><br>
+      Example of a detailed data flow diagram<br>
+
+4. Performance requirements
+(As an example, the system should handle at least two hundred
+concurrent users, five hundred thousand user profiles and
+be able to process a job placement inquiry in less than one second.)
+
+5. Exception conditions/exception handling
+(For example, if a company has a crash job and suddenly needs to
+hire five hundred temp workers, how to deal with it?)
+
+6. Implementation Priorities
+(As an example, due to resource (time and personnel) limitation
+we will first implement the core system supporting
+the following basic functions: (list).
+If there are additional resources (time and personnel)
+we will implement the following functions: (list).
+For the final product we will implement all the functions.)
+
+7. Foreseeable modifications and enhancements
+
+8. Acceptance criteria
+     Functional and performance tests
+     Documentation standards
+     (what tests will you do to accept this product? What documents will you deliver?)
+
+9. Sources of information
+     (This section includes documents from software vendors,
+     outsourcing companies, and most importantly customers.
+     For example the customer's company has a human resource
+     document and our system is designed in compliance to
+     that document.  For the class project, you can cite
+     the first kind of documents.)
+
+10. Revision history
+    (Each entry shows the date, short description and responsible person for each revision)
+</pre>
+
+Note: For the second milestone only items 1, 2.1, 2.2, 3.1, 3.2 and 3.3 are required.
+
+<br>
+<br>
+<a href="2reqq.html">requirements questionnaire</a>

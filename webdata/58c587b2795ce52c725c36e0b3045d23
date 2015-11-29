@@ -1,0 +1,62 @@
+<h1>Stepwise Integration Plan</h2>
+
+<h3>
+One team, G3, will be the first team to produce
+the integrated version v0.1.  This integrated
+version v0.1 is essentially what they have implemented
+so far, with a skeleton main() program for
+further integration.  The main() program looks
+like this:
+
+<pre>
+main()
+ {  ask the user whether he wants to accept input
+    directly from the Kinect device, or read input
+    from a pre-stored Kinect file.
+
+    If the user wants to read input from a pre-stored
+    Kinect file, ask him to enter the URL
+    /*Here we really should be using SIS to send message
+      to Kinect server, which will return URL to us.
+      But lets do it the easy way "/
+
+    ask the user to select an option from the eight
+    groups g1 through g8.  This is a switch to invoke
+    one of the eight programs
+  }
+</pre>
+
+In v0.1, team G3 will of course only have g3() to test,
+and the other seven are just stubs.  Once they get
+v0.1 working, the other groups can take v0.1 and
+expand it to produce other integrated versions.
+I will organize the groups into a logical sequence, so
+that the final v0.8 will become the truly integrated
+version.  If any group g(i+1) fails, the next group
+g(i+2) can start version version v0.i and side-step
+the non-working version to produce version v0.(i+2).
+
+<p>
+Thus once G3 succeeds, G3 can put all source codes
+of v0.1 in one place at their website, for next group
+to take over, and G3 is done.
+
+<p>
+The other groups will follow the same procedure,
+until all are done.
+
+<hr>
+Group 3 completed the main skeleton for the class project.
+Instead of using the file url Group 3 decided to use the actual SIS component.
+
+<p>
+The main component is implemented in Java, so groups that are using Java
+can just call their components directly, and groups that use C++ can
+implement simple JNI stubs. Group 3 included a simple example (grouptest) for
+groups using C++, and since their component uses C++, it can also be used as
+an example.
+
+<p>
+
+The source code can be found online here:
+<a href="http://code.google.com/p/kinect/source/browse/#svn%2Ftrunk%2Fproject">http://code.google.com/p/kinect/source/browse/#svn%2Ftrunk%2Fproject</a>.

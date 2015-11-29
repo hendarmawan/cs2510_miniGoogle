@@ -1,0 +1,14 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 45</title>
+</head>
+<body text="#198A8A" bgcolor="#BED2A3" link="#0000CC" vlink="#000080" alink="#0000CC">
+<center>
+<a href="text0.html">First page</a> <a href="text43.html">Back</a> <a href="text45.html">Continue</a> <a href="text50.html">Last page</a> <a href="finalReport.html">Overview</a> <a href="img44.html">Graphics</a></center><br>
+<h1><font color="#5C8526">Milestone : Formal Statement of Problem 2</font></h1>
+<ul><li><h2>With the addition of new functional dependencies D is recomputed to give D'. However, the query set Q = {Q1, Q2, ... , Qn}has remained the same and is based on D.  For example if in D, there exists a relation R1 = {A1, A2, ..., An} and after the further decomposition we obtain D',R1 decomposes to a relation R1' = {A1', A2',..., Aj'} and relation R1'' = {A1'', A2'', ... , Ak''} such that R1 = R1' U R1'' where j ≠n and k ≠ n , this  implies that in D which had a query Q1 which included attributes from the set {R1, R2, ..., Rn}, will replace it with {R1', R1'', ..., Rn', Rn''}.</h2></li>
+</ul></body>
+</html>

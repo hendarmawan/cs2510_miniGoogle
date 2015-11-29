@@ -1,0 +1,53 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <meta name="ProgId" content="FrontPage.Editor.Document">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="page12.htm"><img SRC="previous.gif" height=26 width=26 align=LEFT></a><a href="page14.htm"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+<center>
+<h1>
+The Cookie Technology</h1></center>
+
+<center><img SRC="tbullet.gif" height=19 width=24><b>retrieve cookies with
+<font face="Lucida Handwriting"><font color="#993366">Perl</font></font></b></center>
+
+<p><b>#! /usr/bin/perl -w</b>
+<p><b>use CGI;</b>
+<br><b>use CGI::Cookie;</b>
+<p><b>my %cookies = fetch CGI::Cookie;</b>
+<br><b>my $cookie = $cookies{ "username" };</b>
+<p><b>if ( $cookie eq "" )</b>
+<br><b>{</b>
+<br><b>&nbsp;&nbsp;&nbsp; $cookie = "There was no cookie named username!";</b>
+<br><b>}</b>
+<br><b>else</b>
+<br><b>{</b>
+<br><b>&nbsp;&nbsp;&nbsp; $cookie = "Found a cookie name username with
+a value of " . $cookie;</b>
+<br><b>}</b>
+<p><b>print $q->header( -cookie=>$cookie ),</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $q->start_html(
+'Perl Cookie Example II' ),</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $q->p, $cookie,
+$q->p,</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; $q->end_html;</b>
+<br>&nbsp;
+<p><b><u>Notes</u></b>
+<ul>
+<li>
+<b>As in creation, you may retrieve cookies without using the CGI library.&nbsp;
+But then, you have to access cookies via the enviornment variable HTTPD_COOKIE.&nbsp;
+The variable is a string that contains all the cookies, separated by semicolons.&nbsp;
+To access a specific cookie, you will have to either search through the
+string or split the string into separate cookies before accessing them.</b></li>
+
+<li>
+<b>The above example lets the CGI library do all the dirty work.</b></li>
+</ul>
+
+</body>
+</html>

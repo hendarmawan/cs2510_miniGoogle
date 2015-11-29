@@ -1,0 +1,37 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="cbdr-03.htm"><img src="previous.gif" align="left"></a>
+<a href="index.htm"><img src="next.gif" align="right" alt="Home :)"></a>
+
+<br><br>
+<center>
+<table width="600">
+	<tr>
+		<td>
+			<h1 align="center">My Project</h1>
+			<hr>			
+			
+			<p><b>Objectives</b> <br>
+			- Build a Query-by-Example system to retrieve research papers.</p>
+			<p><b>System<br></b>
+			– Web-based or application based (depends on whether  I can find a server to demonstrate). </p>
+			<p><b>Datasets</b> <br>
+			– American Medical Informatics Association (AMIA) conference paper.</p>
+			<p><b>Methods</b></p>
+			<ul>
+				<li>User will be able to submit their research paper to the application.</li>
+				<li>Text are extracted from the paper.  For now, I will use only paper that can be converted to text format.</li>
+				<li>Data will be pre-processed.</li>
+				<li>Probabilistic approach to determine relevance to user.</li>
+			</ul>
+			<p>&nbsp;</td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

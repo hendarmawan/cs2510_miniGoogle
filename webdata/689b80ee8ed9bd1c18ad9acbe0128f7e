@@ -1,0 +1,178 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="Author" CONTENT="Jong Chih Chien">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (X11; I; SunOS 5.5.1 sun4u) [Netscape]">
+</HEAD>
+<BODY>
+
+<CENTER><B><FONT SIZE=+2>Chapter 9:&nbsp; Memory Management:Codecs</FONT></B></CENTER>
+
+<CENTER>by</CENTER>
+
+<CENTER><I>Bhaskaran Vasudev</I> and <I>Wei Li</I></CENTER>
+
+<CENTER>presented by</CENTER>
+
+<CENTER><I>Jong Chih Chien</I></CENTER>
+
+<HR WIDTH="100%">
+<BR><A HREF="http://www.cs.pitt.edu/~chang/365/265syl.html"><IMG SRC="../previous.gif" HEIGHT=26 WIDTH=26></A> <B>I.
+Introduction&nbsp;</B>
+
+<P>&nbsp;&nbsp;&nbsp; Advanced in recent years in memory management areas
+include robust algorithms for reducing size of image, video, or audio data
+and vlsi architectures for relatively low-cost but sophisticated compression
+processes, thus spurring developments of codecs. [ref: <I><A HREF="http://www.stoneridgetech.com/recent-mtn.html" TARGET="new">Multimedia
+Telecommunication News</A></I>]&nbsp; A codec is a system that will encode
+and decode multimedia information; generally as compressor and decompressor.
+<BR>&nbsp;
+<BR>&nbsp; This implies that we may be able to treat multimedia information
+as just another data type that can be manipulated, transformed, stored,
+and transmitted as complete information; not as individual types cobbled
+together.&nbsp; This presents the possibility of standardization across
+different platforms and applications.&nbsp; Different standards for compression
+methodologies will be presented from algorithmic and architectural viewpoints
+for image and video data will be presented.
+<BR>&nbsp;
+<BR><B>II. Background</B>
+
+<P>&nbsp;&nbsp; The basic task of a codec is to compact a given signal
+for efficient representation.&nbsp; Table 1 presents a list for applications
+that can benefit for a standardized codec.
+<BR>&nbsp;
+<BR>&nbsp;
+<CENTER><TABLE BORDER=3 CELLSPACING=2 NOSAVE >
+<TR NOSAVE>
+<TD NOSAVE><U>Application</U></TD>
+
+<TD>
+<DIV ALIGN=right><U>Data</U></DIV>
+<FONT SIZE=-1>Uncompressed</FONT></TD>
+
+<TD><U>Rate</U>&nbsp;
+<BR><FONT SIZE=-1>Compressed</FONT></TD>
+</TR>
+
+<TR NOSAVE>
+<TD><FONT SIZE=-1>Voice</FONT>&nbsp;
+<BR><FONT SIZE=-1>8k samples/s, 8 bits/sample</FONT></TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>64 kbps</FONT></CENTER>
+</TD>
+
+<TD NOSAVE>
+<CENTER><FONT SIZE=-1>2-4 kbps</FONT></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT SIZE=-1>Slow-motion video (10 fps)</FONT>&nbsp;
+<BR><FONT SIZE=-1>framesize 176x120, 8 bits/pixel</FONT></TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>5.07 Mbps</FONT></CENTER>
+</TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>8-16 kbps</FONT></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT SIZE=-1>Audio conference</FONT>&nbsp;
+<BR><FONT SIZE=-1>8k samples/s, 8 bits/sample</FONT></TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>64 kbps</FONT></CENTER>
+</TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>16-64 kbps</FONT></CENTER>
+</TD>
+</TR>
+
+<TR NOSAVE>
+<TD><FONT SIZE=-1>Video conference (15 fps)</FONT>&nbsp;
+<BR><FONT SIZE=-1>framesize 352x240, 8 bits/pixel</FONT></TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>30.41 Mbps</FONT></CENTER>
+</TD>
+
+<TD NOSAVE>
+<CENTER><FONT SIZE=-1>64-768 kbps</FONT></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT SIZE=-1>Digital audio (stereo)</FONT>&nbsp;
+<BR><FONT SIZE=-1>44.1k samples/s, 16bits/sample</FONT></TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>1.5 Mbps</FONT></CENTER>
+</TD>
+
+<TD><FONT SIZE=-1>0.128-1.5 Mbps</FONT></TD>
+</TR>
+
+<TR>
+<TD><FONT SIZE=-1>Video file transfer (15 fps)</FONT>&nbsp;
+<BR><FONT SIZE=-1>framesize 352x240, 8 bits/pixel</FONT></TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>30.41 Mbps</FONT></CENTER>
+</TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>384 kbps</FONT></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT SIZE=-1>Digital video on CD-ROM (30 fps)</FONT>&nbsp;
+<BR><FONT SIZE=-1>framesize 352x240, 8 bits/pixel</FONT></TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>60.83 Mbps</FONT></CENTER>
+</TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>1.5-4 Mbps</FONT></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT SIZE=-1>Broadcast video (30 fps)</FONT>&nbsp;
+<BR><FONT SIZE=-1>framesize 720x480, 8 bits/pixel</FONT></TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>248.83 Mbps</FONT></CENTER>
+</TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>3-8 Mbps</FONT></CENTER>
+</TD>
+</TR>
+
+<TR>
+<TD><FONT SIZE=-1>HDTV (59.94 fps)</FONT>&nbsp;
+<BR><FONT SIZE=-1>framesize 1280 x 720, 8 bits/pixel</FONT></TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>1.33 Gbps</FONT></CENTER>
+</TD>
+
+<TD>
+<CENTER><FONT SIZE=-1>20 Mbps</FONT></CENTER>
+</TD>
+</TR>
+</TABLE></CENTER>
+
+<CENTER><B>Table 1</B>&nbsp; Applications for image, video and audio compression.</CENTER>
+
+<DIV ALIGN=right><A HREF="background.html"><IMG SRC="../next.gif" HEIGHT=26 WIDTH=26></A></DIV>
+
+</BODY>
+</HTML>

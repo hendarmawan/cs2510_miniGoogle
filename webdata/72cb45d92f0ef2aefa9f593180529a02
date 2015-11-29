@@ -1,0 +1,96 @@
+<title>Data Mining</title>
+<h1>DATABASE MINING CONCEPTS</h1>
+<br><br>
+<b>Data Mining</b> is the mining, or discovery, of new
+information in terms of patterns or rules from vast
+amounts of data.  To be useful, data mining must
+be carried out efficiently on large files and databases.
+<br><br>
+
+<h1>Goals of Data Mining</h1>
+
+<li>Prediction: Determine how certain attributes will behave
+in the future.  For example, how much sales volume a store
+will generate in a given period.
+
+<br><br>
+
+<li>Identification: Identify patterns in data.  For example,
+newly wed couples tend to spend more money buying furnitures.
+
+<br><br>
+
+<li>Classification: Partition data into classes.  For example,
+customers can be classified into different categories with
+different behavior in shopping.
+
+<br><br>
+
+<li>Optimization: Optimize the use of limited resources such
+as time, space, money or materials.  For example, how to best
+use advertising to maximize profits (sales).
+
+<h1>Types of Knowledge Discovered during Data Mining</h1>
+
+<li>Association rules: For example, when a male shopper buys
+a new car, he is likely to buy a car CD.
+
+<br><br>
+
+<li>Classification hierarchies: For example, mutual funds may be
+classified into three categories: growth, income and stable.
+
+<br><br>
+
+<li>Sequence patterns: Sequence patterns are temporal associations.
+For example, if mortgage interest rate drops, within six months
+period the sales of houses will increase by certain  percentage.
+
+<br><br>
+
+<li>Patterns within time series: such as stock price data
+behavior in time.
+
+<br><br>
+
+<li>Detection of Similarity, or segmentation: For example, health
+data may indicate similarity among subgroups of people.
+
+<h1>Techniques of Data Mining</h1>
+
+Data mining is closely related to Knowledge Discovery in Databases
+(KDD).  The techniques of KDD includes: pattern recognition,
+clustering, classification tree, case-based reasoning,
+
+AI techniques, statistics, neural networks and others.
+
+<h1>Applications of Data Mining</h1>
+
+<li>Marketing
+<p>
+
+<li>Finance
+<p>
+
+<li>Manufacturing
+<p>
+
+<li>Health Care
+<p>
+
+<h1>Commercial Data Mining Tools</h1>
+
+Intelligent Miner from IBM applies classification and
+association rules to detect rules and patterns and
+make predictions.
+
+<p>
+
+Enterprise Miner from SAS applies decision trees, neural
+nets, clustering techniques, statistics, association rules.
+
+<p>
+
+Many new tools are coming out on the market in recent
+years, making data mining a very active research and
+development area.

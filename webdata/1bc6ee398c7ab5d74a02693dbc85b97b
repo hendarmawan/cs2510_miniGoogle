@@ -1,0 +1,131 @@
+<IMG SRC="owl.gif"> 
+<h2>Spring Term 1997</h2>
+
+<hr>
+<center> <h3>CS0132: Programming in C and Introduction to UNIX Operating System</h3> </center>
+<center><h3>Instructor: <a href="http://www.cs.pitt.edu/~chang"> Prof. S. K. Chang</a></h3></center>
+
+<ul>
+<br>
+<li> <a href = "132syl.html"> <b> Syllabus </b> </a>
+<br><p>
+<li> <b> C Slides (postscript): </b>
+<ul>
+<br>
+    <li> <a href = "c_01_03.ps">Slides 1 to 3 (Intro to C).</a>
+    <li> <a href = "c_04_07.ps">Slides 4 to 7 (CC Utility). </a>
+    <li> <a href = "c_08_21.ps">Slides 8 to 21 (Basic Data Types in C). </a>
+    <li> <a href = "c_22_30.ps">Slides 22 to 30 (Formatted I/O). </a>
+    <li> <a href = "c_31_47.ps">Slides 31 to 47 (Arithmetic Expressions). </a>
+    <li> <a href = "c_48_65.ps">Slides 48 to 65 (Control Flow Statements). </a>
+    <li> <a href = "c_66_83.ps">Slides 66 to 83 (C Preprocessor). </a>
+    <li> <a href = "c_84_98.ps">Slides 84 to 98 (Functions). </a>
+    <li> <a href = "c_99_106.ps">Slides 99 to 106 (Pointers). </a>
+
+    <li> <a href = "c_107_112.ps">Slides 107 to 112 (File I/O). </a>
+    <li> <a href = "c_113_122.ps">Slides 113 to 122 (Program Units). </a>
+    <li> <a href = "c_123_133.ps">Slides 123 to 133 (Enumeration, Arrays and Pointers). </a>
+    <li> <a href = "c_134_138.ps">Slides 134 to 138 (Multi-dim. Arrays and Strings). </a>
+    <li> <a href = "c_139_144.ps">Slides 139 to 144 (Struct and Union). </a>
+    <li> <a href = "c_145_147.ps">Slides 145 to 147 (Advanced C Topics). </a>
+</ul>
+<br>
+<li> <b> Unix Slides (postscript): </b>
+<ul>
+<br>
+<li>     <a href = "unix_01_18.ps">Slides  01 to 18 (Unix File System).</a>
+<li>     <a href = "unix_19_23.ps">Slides 19 to 23 (AFS). </a>
+<li>     <a href = "unix_24_42.ps">Slides 24 to 42 (C Shell).</a>
+</ul>
+<br>
+<br>Acknowledgement: The above class notes were prepared by Prof. Panos Chrysanthis<br>
+<p>
+<li> <b> Assignments (postscript): </b><br><br>
+<center><table border><center>
+<tr><th>Hw #</th>
+<th>Start No Later Than</th>
+<th>Due Date</th>
+<th>Due Time</th>
+<th> Handout</th></tr>
+
+<tr><td><center> 1</center></td>
+<td><center>Jan 9 </center></td>
+<td><center>Jan 21</center></td>
+<td><center>2:30pm</center></td>
+<td><center> <a href = "hw1-96.ps">hw1</a></center></td></tr>
+
+<tr><td><center> 2</center></td>
+<td><center>Jan 21 </center></td>
+<td><center>Jan 28</center></td>
+<td><center>2:30pm</center></td>
+<td><center> <a href = "hw2-96.ps">hw2</a></center></td></tr>
+
+<tr><td><center> 3</center></td>
+<td><center>Feb 11 </center></td>
+<td><center>Feb 18</center></td>
+<td><center>2:30pm</center></td>
+<td><center> <a href = "hw3-96.ps">hw3</a></center></td></tr>
+
+<tr><td><center> 4</center></td>
+<td><center>Feb 25 </center></td>
+<td><center>March 4</center></td>
+<td><center>2:30pm</center></td>
+<td><center> <a href = "hw4-96.ps">hw4</a></center></td></tr>
+
+<tr><td><center> 5</center></td>
+<td><center>March 11 </center></td>
+<td><center>March 18</center></td>
+<td><center>2:30pm</center></td>
+<td><center> <a href = "hw5-96.ps">hw5</a></center></td></tr>
+
+<tr><td><center> 6</center></td>
+<td><center>April 1 </center></td>
+<td><center>April 8</center></td>
+<td><center>2:30pm</center></td>
+<td><center> <a href = "hw6-96.ps">hw6</a></center></td></tr>
+
+</center></table>
+</center>
+
+<br>Hw2 data files: <a href="calendarA">calendarA</a>, <a href="calendarB">calendarB</a> and <a href="NewMeetings">NewMeetings</a>.  They
+can be found in /afs/cs.pitt.edu/usr0/chang/public/html/132.
+<p>
+Hw6 data files: <a href = "data1.hw6">data1.hw6 </a>,
+ <a href = "data2.hw6">data2.hw6</a>. They
+can be found in /afs/cs.pitt.edu/usr0/chang/public/html/132.
+
+<br><p>
+<li> <b> Exams: </b><br><br>
+<center><table border><center>
+<tr><th>Exam #</th>
+<th>Date</th>
+<th>Due Time</th>
+<th>Place</th>
+
+<tr><td><center>Midterm</center></td>
+<td><center>Feb 20 </center></td>
+<td><center>2:30</center></td>
+<td><center>AL332</center></td>
+
+<tr><td><center> Final</center></td>
+<td><center>April 8</center></td>
+<td><center>2:30</center></td>
+<td><center>AL332</center></td>
+
+</center></table>
+</center>
+
+<br>    
+</ul>
+
+<hr>
+
+
+<br><br>
+<b>Note:</b>
+If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412) 648-7890/(412)
+383-7355 (TTY), as early as possible in the term. DRS will verify your
+disability
+and determine reasonable accommodations for this course.  

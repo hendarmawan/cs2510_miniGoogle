@@ -1,0 +1,23 @@
+<title>Data Flow Diagram</title>
+<A HREF="c01.htm"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02a.htm"><IMG SRC="next.gif" align=right></A>
+
+
+<font color=red>
+<center>
+<h1>Data Flow Diagram</h1>
+</center>
+
+
+<h2>Dual Views of Information</h2>
+
+<h3>Information Flow</h3>
+<li>What goes in?<br>
+<li>How is it changed?<br>
+<li>What comes out?<br>
+
+<h3>Information Structure</h3> 
+<li>What are the individual elements?<br>
+<li>How are they put together?<br>
+<li>Can groups of elements be classified together?<br>
+<li>Is there a relationship between groups of elements?<br>

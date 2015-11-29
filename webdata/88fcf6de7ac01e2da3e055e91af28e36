@@ -1,0 +1,54 @@
+<title>Interface for Smarter Healthcare Systems</title>
+<h1>Interface for Smarter Healthcare Systems</h1>
+
+<h2>Cognos Environment</h2>
+
+After experimenting with visualization using
+IBM Many Eyes Tool,
+the next level of sophistication involves setting up a Cognos
+Environment.  These of course would involve setting up all the
+required software and then configuring the Cognos Server to allow for
+users to create visualization widgets. 
+
+<p>
+The following PDF contains four references where the IBM Cognos product was
+used to help Healthcare customers.
+
+<p>
+<a href="http://public.dhe.ibm.com/software/data/sw-library/cognos/pdfs/casestudies/cs_customer_success_in_healthcare.pdf">http://public.dhe.ibm.com/software/data/sw-library/cognos/pdfs/casestudies/cs_customer_success_in_healthcare.pdf</a>.
+
+<p>
+Mercury Medical is a healthcare manufacturer that improves reporting and
+analysis with IBM Cognos Express:
+
+<p>
+<a href="http://public.dhe.ibm.com/common/ssi/ecm/en/ytc03190caen/YTC03190CAEN.PDF">http://public.dhe.ibm.com/common/ssi/ecm/en/ytc03190caen/YTC03190CAEN.PDF</a>
+
+<p>
+This link does a lengthy description of why one should use Dashboards
+to display healthcare data.  The PDF is mostly text but it has some
+small screen shots on page 9:
+
+<p>
+<a href="http://public.dhe.ibm.com/software/data/sw-library/cognos/pdfs/whitepapers/wp_picturing_performance_ibm_cognos_dahboards_and_scorecards_for_healthcare.pdf">http://public.dhe.ibm.com/software/data/sw-library/cognos/pdfs/whitepapers/wp_picturing_performance_ibm_cognos_dahboards_and_scorecards_for_healthcare.pdf</a>.
+
+<p>
+Finally, this is a generic Marketing flyer that describes the value
+proposition of Cognos applied to Healthcare as well as the Smarter Planet initiative:
+
+<p>
+<a href="http://chriscarroll.com/Industry_files/IBM%20Healthcare%20Solutions%20Brief.pdf">http://chriscarroll.com/Industry_files/IBM%20Healthcare%20Solutions%20Brief.pdf</a>.
+
+
+<h2>Case Studies</h2>
+
+Case studies can be found at:
+<a href="http://www.ibm.com/industries/healthcare">www.ibm.com/industries/healthcare<a>.
+
+<p>
+The following link has more descriptions
+about case studies on using business intelligence in healthcare.
+
+<p>
+<a href="http://www-01.ibm.com/software/success/cssdb.nsf/industrytsL2VW?OpenView&Count=3D30=RestrictToCategory=3Dcognos_Healthcare=cty=3Den_us">http://www-01.ibm.com/software/success/cssdb.nsf/industrytsL2VW?OpenView&Count=3D30=RestrictToCategory=3Dcognos_Healthcare=cty=3Den_us</a>.
+

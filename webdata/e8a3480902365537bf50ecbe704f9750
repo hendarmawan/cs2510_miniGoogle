@@ -1,0 +1,65 @@
+<title>Multimedia Software Engineering</title>
+<a href="history.html">  
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+</A> 
+<a href="tour.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+</head>
+<h1 align="center"> 
+Specifications &amp; Requirements</h1> 
+<blockquote>
+  <p align="left" style="line-height: 150%; margin-bottom: 0"><br>
+  <b>Requirements:</b><ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Size in its 
+  compressed downloadable form: 1.2MB&nbsp;&nbsp;
+  <i>&nbsp;(fits on a floppy!)</i></li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Consumes only 
+  2.5MB of drive space</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Requires the .NET 
+  Framework</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Operating System: 
+  Supported on Windows2000 and Windows XP </li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Requires Microsoft 
+  Internet Explorer--5.5 or later</li>
+</ul>
+  <p align="left" style="line-height: 150%; margin-bottom: 0"><b>What can and do 
+  you get?</b><ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Downloadable at 
+  http://www.asp.net/webmatrix/default.aspx?tabindex=4&amp;tabid=46</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">MSDE (Microsoft 
+  Data Engine) -- free runtime version of Microsoft SQL Server<ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Will allow you to 
+  build dynamic, data-driven applications</li>
+</ul>
+  </li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">&nbsp;Microsoft 
+  Mobile Internet Toolkit</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">WYSIWYG 
+  Web form designer</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Set of tutorials</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">.NET Framework 
+  ClassBrowser designed specifically for Web Matrix</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Links to the active ASP.NET 
+  community</li>
+</ul>
+</blockquote>
+
+
+<body>
+
+
+</body>
+
+</html>

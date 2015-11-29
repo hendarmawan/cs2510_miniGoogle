@@ -1,0 +1,43 @@
+<html>
+
+<head>
+<title>XML - INTRODUCTION</title>
+</head>
+
+<body background="Background.gif">
+
+<p align="center"><a href="p6.html"><img SRC="previous.gif" align="left" width="26"
+height="26"></a> <a href="p8.html"><img SRC="next.gif" align="right" width="26"
+height="26"></a> </p>
+
+<h1 align="center"><font size="7" color="#FF00FF"><b>&quot;Language&quot;</b></font></h1>
+<div align="center"><center>
+
+<table border="0" width="80%" cellpadding="0" height="386">
+  <tr>
+    <td align="left" height="38"><h4 align="left"><font size="6" color="#0000FF"><u>Language</u></font></h4>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" height="88"><ul>
+      <li><font size="6" color="#0000FF">you follow a set of rules and syntax to markup your
+        document.</font></li>
+    </ul>
+    <h2>Rule #1: Remember the XML declaration</h2>
+    <p class="code">&lt;?xml version=&quot;1.0&quot; standalone=&quot;yes/no&quot;
+    encoding=&quot;UTF-8&quot;?&gt;</p>
+    <h2>Rule #2: Do what the DTD instructs</h2>
+    <p class="copy">&nbsp;The XML document will validate against the specified DTD.</p>
+    <h2>Rule #3: Watch your capitalization</h2>
+    <p class="copy">&lt;YANWANG&gt; is not&nbsp; &lt;YanWang&gt;.</p>
+    <h2>Rule #4: Quote attribute values</h2>
+    <p class="code">&lt;NAME dateofbirth=&quot;1974&quot;&gt;Nan Chen&lt;/NAME&gt;</p>
+    <h2>Rule #5: Close all tags</h2>
+    <p class="copy">&lt;P&gt;...&lt;/P&gt;</p>
+    <h2>Rule #6: Close Empty tags, too</h2>
+    <p class="copy">&lt;br/&gt; </td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

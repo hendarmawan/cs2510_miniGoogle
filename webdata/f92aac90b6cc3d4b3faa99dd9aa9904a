@@ -1,0 +1,106 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../2074 notes/2074-style.css">
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>page layout notes</title>
+</head>
+
+<body>
+
+<h2>Please read Chapter Six about Frames</h2>
+
+<p><strong>Web Page Design and Layout</strong></p>
+<p align="center">&nbsp;</p>
+
+The third technique for layout is to use
+frames.  Frames can be used to divide a webpage
+into different regions, each displaying the
+content of a <em>different</em> source document.
+
+<br><br>
+Frames are best used to display a table of content
+at all times.
+
+<br><br>
+The layout document uses two new elements: frameset
+and frame.  The document must have the right
+Document Type Declarations (DTD) preceding
+the &LThtml&GT tag.  The frameset is used to
+specify how to divide a page into frames.
+
+<pre>
+&LT!DOCTYPE html PUBLIC
+ "-//W3C//DTD XHTML 1.0 Frameset//EN"
+ "http://www/w3/org/TR/xhtml/11/DTD/xhtml1-frameset.dtd"&GT
+&LThtml&GT
+&LThead&GT
+&LT/head&GT
+&LTframeset rows="25%, 45%, 30%"&GT
+&LT/frameset&GT
+&LT/html&GT
+</pre>
+
+The above frameset element divides the window into
+three rows, the first having the height of 25% of
+the window, the second having a height of 45%, and
+the third having a height of 30%.
+We can also specify pixels instead of percentages,
+for example:
+
+<p>
+&LTframeset cols="80, *, 80"&GT
+<p>
+
+where the first column is 80 pixels wide, the
+third column also 80 pixels wide, and the
+second column having a width of whatever is
+left of the overall window width after 160
+pixels have been subtracted.
+
+The &LTframe&GT element is used to specify the content
+to be filled into the frame structure.
+
+<pre>
+&LTframeset cols="40%, 60%"&GT
+&LTframe id="leftframe" src="WelcomePage.htm"/&GT
+&LTframe id="rightframe" src="ContentList.htm"/&GT
+&LT/frameset&GT
+</pre>
+
+The above frameset defines two columns.  The two
+frame elements specify the content of the two columns.
+The id attribute gives a name to a frame.  We
+can then link to this frame using this id as
+follows:
+
+<p>
+&LTa href="Doc1.htm" target="rightframe"&GT
+ click here to view document &LT/a&GT
+<p>
+
+The target attribute tells the browser to
+display the document Doc1.htm inside the
+frame named rightframe.
+
+<p>
+Here is a real example.
+<a href="http://www.ksi.edu/seke/seke13.html">This is the main web page of a conference"</a>, which shows the title of the conference on the top, the menu on the left, and a window area on the lower right.
+We divide the page into two rows - the top row of 200
+pixels tall, and the bottom row taking up the remaining
+space.  The bottom row is again divied into two columns -
+the left column taking up 20% of the width, and the
+right column taking up 80% of the width.
+The <a href="http://www.ksi.edu/seke/seke13left.html">web page for the left column</a> defines the menu items.  Each time the user
+clicks on a menu item, the corresponding page will
+be displaced in the window area for the right column.
+<p>
+<font color="red">
+Note: For some browser you need to use 'name'
+rather than 'id' to display a document inside
+a named frame.  Otherwise a new window is
+opened to display the document.
+</font>
+</body>
+</html>

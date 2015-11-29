@@ -1,0 +1,17 @@
+<body>
+<table width="600" border="0">
+<tr>
+<td colspan="2" align="center" height="60">
+This text will be in the top row
+</td>
+</tr>
+<tr>
+<td width="300" height="440">
+This text will appear in the bottom left cell
+</td>
+<td width="300" height="440">
+This text will appear in the bottom right cell
+</td>
+</tr>
+</table>
+</body>

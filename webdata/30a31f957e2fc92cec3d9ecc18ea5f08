@@ -1,0 +1,28 @@
+<title>User's Manual</title>
+<h1>User's Manual</h1>
+
+<pre>
+1. Product overview
+   (what this product is for and its main functions)
+
+2. Getting started
+   (How can a user log in the system? What online help or
+   other kind of help are provided?  Sample runs.)
+ 2.1. Log in
+ 2.2. Help mode
+ 2.3. <a href="3samplerun">Sample runs</a> and <a href="3samplerun.doc">example</a>
+
+3. Modes of operation
+  (How does a user operate the system?  Does the user
+   enter different type of comands?  What are the commands?
+   Does the user enter into a dialogue with the system?
+   THe sample dialogue can be incorporated into the
+   sample runs discussed above in Section 2.)
+ Commands/dialogues/reports
+
+4. Advanced features
+
+5. Glossary of commands and system options
+</pre>
+
+Note: The preliminary user's manual contains items 1, 2 and 3.

@@ -1,0 +1,119 @@
+ <html>
+ <title> Transcript XML support for the VC - Page 2 </title> 
+
+ <body>
+
+ <A HREF="page1.html">  
+ <IMG SRC="previous.gif" align=left width="26" height="26">  </A> 
+ <A HREF="page3.html">  
+ <IMG SRC="next.gif" align=right width="26" height="26">  </A> 
+ <center> 
+ <h1> 
+	Installation Instructions </h1> 
+<hr>
+ </center>
+ 
+  <p>&nbsp;</p>
+ <h2>Installation Details</h2>
+ <blockquote>
+ <p><font size="4">Download the following files and unzip them.</font></p>
+ <p style="margin-top: 0; margin-bottom: 0"><a href="dist.zip">Download Executable File here</a></p>
+<h3>Installation requirements</h3>
+<font size="4">
+ To run the Java version of the Student Tool, you need:<br>
+ * Sun Microsystems Java version 1.5.0 or better (download from java.sun.com)<br>
+ * An audio card and speakers for audio<br>
+ * A connection to the internet is required<br>
+ * Microsoft Access 2000 is required</font></p>
+<h3>Sun Java SDK Installation</h3>
+ <p><font size="4">
+ * Please make sure a Java SDK, or JRE are installed before running<br>
+&nbsp; the Student Tool.<br>
+ * Follow the directions at Sun's website for installing the Java software.<br>
+ * Make sure to set your path correctly!</font></p>
+ </blockquote>
+ <h2 style="margin-top: 0; margin-bottom: 0">How to install the Database</h2>
+ <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+ <blockquote>
+ <p style="margin-top: 0; margin-bottom: 0"><font size="4">Download the database 
+ and locate it somewhere in your PC.</font></p>
+ <p style="margin-top: 0; margin-bottom: 0">&nbsp;</p>
+ <p style="margin-top: 0; margin-bottom: 0"><a href="vcdb.zip">Download Database here</a></p>
+<h3>Setting up the Database</h3>
+ <p><font size="4">
+ * Go to Start -&gt; Control Panel -&gt; User and Group Accounts<br>
+ * Select Administrative Tools<br>
+ * Select Data Sources (ODBC).<br>
+ * Click on Add<br>
+ * Select Driver of Microsoft Access (mdb)<br>
+ * Click on Finish<br>
+ * In DataSource Name, type the name of the Database, in this case, type<br>
+&nbsp; vcdb.mdb<br>
+ * In Description, type &quot;DB for Virtual Classroom&quot;<br>
+ * Click Select Database, and select the vcdb.mdb database.<br>
+ * Click OK and close all windows.	<br>
+ </font></p>
+<h3>Changing the password of the Database</h3>
+ <p><font size="4">* Go to the directory database.<br>
+ * Double click in the database<br>
+ * Select the option of the menu Tools -&gt; Security -&gt; User and Group Accounts<br>
+ * Type the name of the user in Name.<br>
+ * Go to the Change Logon Password tab.<br>
+ * In old password, type the old password.<br>
+ * In new password, type the new password.<br>
+ * In Verify, type the new password.</font></p>
+ <p><font size="4">* Go to Start -&gt; Run , and type &quot;cmd&quot;.<br>
+ * In the command line, type <br>
+ 	java Encripta &lt;user&gt;<br>
+&nbsp; where string is either the user name of the Database.<br>
+ * Open the file system.itp and replace the current user with the output of the 
+ program in the <br>
+&nbsp; line &quot;USER=&quot;.<br>
+ * In the command line, type <br>
+ 	java Encripta &lt;password&gt;<br>
+&nbsp; where string is either the password of the Database.<br>
+ * Open the file system.itp and replace the current user with the output of the 
+ program in the <br>
+&nbsp; line &quot;PASSWORD=&quot;.<br>
+ </font></p>
+ </blockquote>
+ 
+<h2>How to run the Student Tool</h2>
+ <blockquote>
+<p><font size="4">To run the executable, unzip the executable and support archive somewhere, and run <code>java -jar VirtualClassroom-1.0.jar</code>. The jar should contain everything it needs to know about the classpath 
+and such. In order to use the yellow pages support, you must first correctly 
+setup the Access database as indicated above.</font></p>
+   <ul>
+     <li><font size="4">
+     Make sure to run the Java Student from the directory that contains the images directory, library directory, and the system.itp, 
+ config_student.ini.</font></li>
+     <li><font size="4">
+     The file sytem.itp contains the url, user and password of the Database. The user and passwords are encrypted.&nbsp; You can find the encrypted 
+ string of your new password by using the tool: Encripta.java in database.</font></li>
+   </ul>
+ <h3>Note</h3>
+ <p><font size="4">Note that as of now you need to use a Windows environment and 
+ MS Access for Beatriz's database.&nbsp; In the future, once the local MS. 
+ Access database is migrated to the centralized MS SQL server database, this 
+ won't be a requirement.</font></p>
+ </blockquote>
+ <h2 style="margin-top: 0; margin-bottom: 0">Source Code</h2>
+ <blockquote>
+ <p style="margin-top: 0; margin-bottom: 0">
+ <a href="../../source.zip"><font size="4">The full source archive</font></a><font size="4">. The source archive includes an <a href="http://ant.apache.org">ant</a> build file that simplifies the build process down to just running <code>ant</code> in the top-level directory. More build options are available by examining the <code>build.xml</code> 
+ file. We recommend ant for ease of use and reliability, but if you do not have ant you can compile
+		the virutal classroom from the source directory by typing: </font>
+  </p>
+ 
+ <p style="margin-top: 0; margin-bottom: 0">
+ <font size="4"> <br/>
+		<code>javac -classpath lucene-1.5-rc1-dev.jar:cmuawb.jar:cmukal16.jar:cmukal8.jar:cmulex.jar:cmutimelex.jar:freetts.jar:jsapi.jar:.  *.java</code>
+  </p>
+ 
+  <p style="margin-top: 0; margin-bottom: 0">
+ &nbsp;</p>
+ </blockquote>
+ 
+  </body>
+
+ </html>

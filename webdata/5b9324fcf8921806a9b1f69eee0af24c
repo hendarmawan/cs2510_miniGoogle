@@ -1,0 +1,80 @@
+ <html>
+ <title> Automatic Helper Finder and Yellow Pages </title> 
+
+ <body>
+
+ <A HREF="../../Jim/Presentation/page15.html">  
+ <IMG SRC="image/previous.gif" align=left width="26" height="26">  </A> 
+ <A HREF="2.html">  
+ <IMG SRC="image/next.gif" align=right width="26" height="26">  </A> 
+ <center> 
+ <h1> 
+	AUTOMATIC HELPER FINDER AND YELLOW PAGES</h1> 
+ <h1> 
+	by&nbsp; Beatriz Maeireizo</h1> 
+ <h1> 
+	<font size="4"><a href="mailto:beamt@cs.pitt.edu">beamt@cs.pitt.edu</a></font>
+ </h1> 
+ <h1>&nbsp;<img border="0" src="image/helpKey.jpg" width="139" height="98"> 
+ <img border="0" src="image/image018.gif" width="171" height="119"> 
+ </h1>
+ <h1><b>INTRODUCTION</b></h1>
+ </center>
+
+ <p><font size="4">One of the goals of Knowledge Management is to &quot;Know what you 
+ know, and take advantage of what you know.&quot; (Larry Prusak).</font></p>
+ <p><font size="4">The Virtual Classroom relies on the concept of network and 
+ virtual community to improve learning and knowledge acquisition and exchange.</font></p>
+ <hr>
+ <p>&nbsp;</p>
+ <h2 align="center"><img border="0" src="image/goal.jpg" width="106" height="113">&nbsp; Goal 
+ of the Project</h2>
+ <p><font size="4">To provide a search tool to search for agents proficient in 
+ certain subject given a certain profile.&nbsp; </font></p>
+
+ <hr>
+ <h2 align="center"><img border="0" src="image/tasks.jpg" width="107" height="107">&nbsp; Functionalities</h2>
+ <p><font size="4">I have developed two tools to enhance knowledge exchange in 
+ the Virtual Classroom:</font></p>
+ <ol>
+   <li>
+ <img border="0" src="image/helpKey.jpg" width="65" height="45"><font size="4">&nbsp;&nbsp; Automatic Helper Finder&nbsp; </font></li>
+   <li> 
+ <img border="0" src="image/image018.gif" width="66" height="42"><font size="4">&nbsp; Yellow Pages&nbsp; </font></li>
+ </ol>
+
+ <p>&nbsp;</p>
+
+ <h2 align="center">
+ <img border="0" src="image/helpKey.jpg" width="139" height="98">&nbsp; 
+ Automatic Helper Finder</h2>
+
+ <p><font size="4">This tool is part of the menu of the Virtual Classroom Help.&nbsp; 
+ When selected, the system will automatically look for courses in which the 
+ student is weak and look for other peers who are likely to be more 
+ knowledgeable about the topics of those courses, and who may be capable to help 
+ and exchange knowledge.&nbsp; </font></p>
+
+ <p><font size="4">The &quot;helper search&quot; is performed by using the &quot;Search&quot; system 
+ in transcripts (by Jim Clause), that searches for keywords in the current 
+ transcripts of the user in Virtual Classroom.</font></p>
+
+ <p><font size="4">The Automatic Helper Finder will display the courses, names 
+ and e-mail addresses of the &quot;helpers&quot;.</font></p>
+
+ <p>&nbsp;</p>
+
+ <h2 align="center"> 
+ <img border="0" src="image/image018.gif" width="171" height="119">&nbsp; Yellow Pages&nbsp;
+ </h2>
+
+ <p><font size="4">This tool is a new tab in the Virtual Classroom Interface.&nbsp;
+ </font></p>
+
+ <p><font size="4">The user will have the facility to search for agents 
+ according to certain user profiles.</font></p>
+ <p><font size="4">This search is done in the Virtual Classroom Database.</font></p>
+
+ </body>
+
+ </html>

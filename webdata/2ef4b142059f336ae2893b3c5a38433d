@@ -1,0 +1,138 @@
+<html>
+<head><title>CS2650: Distributed Multimedia Systems</title></head>
+<body>
+
+<center><h1>CS2650: Distributed Multimedia Systems</h1></center><br><hr>
+
+<h3>Instructor: <a href="http://www.cs.pitt.edu/~chang/"> Prof. S. K. Chang</a></h3>
+<b>Office:</b> 6101 SQ<br>
+<b>Office Hours:</b> 3pm to 4pm TuTh<br>
+<b>E-Mail:</b> chang@cs.pitt.edu<br>
+<b>Tel:</b> +1-412-624-8423<br>
+<b>Fax:</b> +1-412-624-8465<br>
+
+<p>
+<b>Teaching Assistant:</b> Tae Cheol OH<br>
+<b>Office Hours:</b> 3:00 - 4:30 pm Wed<br>
+<b>Office, E-mail, Telephone</b>: 6505SQ ybln@cs.pitt.edu<br>
+
+<br>
+<b>Time and Classroom:</b> TuTh 5:30pm to 6:45pm 5313 Sennott Building
+<br><br>
+<font color=red><a href="calendar">Calendar</a></font>
+<br><br>
+
+
+<p>
+<b>Course Description:</b>
+This course is one of the <a href="../SEtrack.htm">graduate courses in software engineering</a>.
+The emphasis of this course is on
+modeling and design of distributed multimedia systems.
+A framework is presented for data management,
+multimedia information management,
+knowledge management,
+communications management,
+activities management,
+interface management and
+applications to distributed systems, real-time systems, multi-media systems and
+information retrieval systems design.
+Based upon this framework various research topics of distributed
+multimedia systems will be explored.
+
+
+<p>
+<b>Prerequisites:</b> The student is expected to be familiar with
+programming languages, formal languages theory, database theory, data structures and computer networks.
+The following courses are required: CS110 (formal structures), CS155 (database) or consent of instructor.
+
+<p>
+<b>Textbook:</b>
+
+
+No textbook is required.  
+<br>
+In lieu of the textbook, students will be asked to read selected papers in
+<a href="http://www.ksi.edu/seke/dmsproc.html">the proceedings</a>
+of <a href="http://www.ksi.edu/seke/dms10pgm.html">2010 Int'l Conference on Distribued Multimedia Systems</a>.
+The emphasis will be on <a href="proj10/">papers related to slow intelligence systems</a>.
+<font color=green>
+(REQ)
+As an introduction, students are required to
+read an <a href="whatit11.ppt">Introduction to Slow Intelligence Systems</a>.
+</font>
+
+<p>
+<b>Class Notes:</b>
+<a href="265syl.html">Class notes</a> and selected papers will be provided to the class.
+The notes will be available on the Web.
+
+<p>
+<b>Reference Books and Journals:</b>
+
+
+<p>
+The Handbook of Multimedia Information Management, edited by
+W. Grosky, R. Jain and R. Mehrotra, Prentice-Hall PTR,
+1997, ISBN 0-13-207325-0.
+<p>
+S. K. Chang and E. Jungert, Symbolic Projection for Image Information
+Retrieval and Visual Reasoning, Academic Press, 1996 (ISBN 0-12-168030-4).<br>
+
+<p>
+<b>Course structure:</b>
+
+<p>
+The first part of the course consists of the instructor's lectures to
+present the elements of distributed multimedia systems, mainly based
+upon the textbook and the instructor's own research.  Lecture notes will be provided on the Web
+for this part of the course.  This will set the stage for the second
+part of the course.  Several exercises will be assigned to motivate
+the term projects.  There will be a (take-home) midterm examination.
+
+<p>
+In the second part of the course the students will study the textbook
+and each student will present a paper related to a chapter of the text book.
+At the same time the students will start to work on term projects
+based upon the theory presented in the first part of the course.
+
+<p>
+There is no final examination.  The students will present their
+term projects and turn in the term project reports.
+
+<p>
+<b>Grading:</b>
+The student is expected to do four or five exercises (20%), take one midterm (30%),
+give one seminar presentation related to a chapter in the textbook (10%),
+make a project presentation/demonstration (10%) and turn in
+the project report (30%).
+The project report should be made available to the instructor and the discussant, one week prior to presentation.
+
+<p>
+
+<p>
+<b><a href="seminar08/index.htm">Seminars</b></a>
+<p>
+<b>Term Project:</b>
+Project ideas will be presented during the first part of the course.
+Then a topic can be chosen based upon the student's interest.
+
+<p>
+<b>Unique Features of this course:</b>
+We will use the Web extensively for this course.  The class notes for the first part of the course will be
+available on the Web.  The exercises and (take-home) mid-term examination
+will also be available on the Web.
+Students are encouraged to turn in exercises, mid-term examination by
+e-mail, make presentations by developing a Web-based visual/multimedia
+presentation and give the project demo/presentation the same way.
+
+
+<br><br>
+<b>Note:</b>
+If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412) 648-7890/(412)
+383-7355 (TTY), as early as possible in the term. DRS will verify your
+disability
+and determine reasonable accommodations for this course.
+</body>
+</html>

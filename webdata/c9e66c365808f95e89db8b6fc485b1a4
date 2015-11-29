@@ -1,0 +1,34 @@
+<title>Testing Principles</title>
+<A HREF="../1530syl.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c01.htm"><IMG SRC="next.gif" align=right></A>
+
+<center>
+<h1>Myths about Testing</h1>
+<!--
+<img src="../images/lastsupper.jpg" width=300 align=center>
+-->
+<h3>
+<a href="obamacare1.htm">What is wrong with Obamacare Website?</a>
+</h3>
+</center>
+
+
+<b>
+Myth: Testing is not important.  Anyone can do it!
+<p>
+Reality: Testing is very important.  Only well trained
+software engineer can do it.
+<p><p>
+Myth: I can learn more by being a programmer!
+<p>
+Reality: Tester must also write programs.  Tester must
+at least write the drivers and stubs so that testing
+can be done.
+
+<p><p>
+Myth: We must wait until programming is done, before
+testing can begin.
+<p>
+Reality: That will be too late.  Non-execution-based
+testing can begin even before programs are written.
+Unit testing can proceed before other units are written.

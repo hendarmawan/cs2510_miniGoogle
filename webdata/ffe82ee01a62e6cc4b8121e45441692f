@@ -1,0 +1,24 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title> Page 2</title>
+<A HREF="AK01.htm"><IMG SRC="previous.gif" align=left width="26" height="26"></A>
+<A HREF="AK02a.htm"><IMG SRC="next.gif" align=right width="26" height="26"></A>
+
+</head>
+
+<body>
+<body BGCOLOR="#c0c0c0"> <br> <br>
+ <h2>What is  a Software Component??</h2>
+
+<h2>In software-speak, a <font color=blue>"component"</font> is a discreet 
+package of computer code that  performs services. In essence, components enable the software developer to build 
+software that is made up of replaceable parts. Changes to the software can be 
+made with less worry of implications to the overall code base -- you can change 
+the code in the component, or completely replace the component without affecting 
+the rest of the code base. The software developer may also purchase pre-built 
+components from an external source and 'plug' them into their program.
+<br><br>

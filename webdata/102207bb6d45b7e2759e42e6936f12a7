@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Virtual Classroom for Windows CE based Mobile Devices using J# &amp; JavaScript </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body>
+<table width="100%"  border="0">
+  <tr>
+    <td><table width="100%"  border="0">
+        <tr>
+          <td align="left" valign="top"><a href="page4.htm"><img src="previous.gif" width="26" height="26" border="0"></a></td>
+          <td width="100%" align="center"><h2> J# applications </h2></td>
+          <td align="right" valign="top"><a href="page6.htm"><img src="next.gif" width="26" height="26" border="0"></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="735" border="0" align="center">
+      <tr>
+        <td align="left" valign="top"><ul>
+          <li> Windows Forms Applications </li>
+          <li>Class libraries and Windows Control Libraries </li>
+          <li>ASP.NET:
+              <ul>
+                  <li>WebForms</li>
+                  <li>Mobile Forms for Mobile Devices</li>
+                  <li>WebServices</li>
+                  <li>WebControl libraries </li>
+              </ul>
+          </li>
+          <li>Console applications</li>
+          <li>Windows Services</li>
+          <li>J# 2005: New Features:
+            <ul>
+              <li> Passing method parameters by reference</li>
+              <li> Consuming .NET Generics</li>
+              <li> Support for Java-Beans style properties.</li>
+              <li>Capabilities of other MS languages (Value types, Custom attributes, Enumerations)</li>
+              <li>Others</li>
+            </ul>
+          </li>
+            </ul>          </td>
+      </tr>
+    </table>      <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

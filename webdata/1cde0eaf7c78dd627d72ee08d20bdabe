@@ -1,0 +1,103 @@
+<HTML>
+<BODY>
+***************************************************************************
+<H2>	program information ( directory: IC_Manager) </H2>
+***************************************************************************
+
+<B>
+<OL>
+<LI>Purpose <br>
+<pre>
+    This directory contains programs to use fuzzy IC manager.
+</pre>
+
+<br>
+<LI>Files and Functions<br>
+<pre>
+README Files
+   README.ICM.html:
+	this file
+   README.reversibleIC:
+        readme file of reversible IC
+
+Make File
+   The follwoing make files contains paths that need to be changed, if necessary.
+   Makefile.maincgi: generate main.cgi which will trigger ICs.
+   Makefile.showcgi: generate show.cgi which will display all ICs.
+   Makefile.clearcgi: generate clear.cgi which will clear all ICs.
+
+Header Files
+  I. Core Part: modules in this part should not be modified 
+   ic.h:
+	header file (constants and data structures) of the ic manager
+  II. Application Dependent Part: constants and data structures in the header
+      files in this part should be customized according to the application.  
+   app.h:
+	constants and data structures of your application
+   fuzzy.h:
+	the header file for message codes and thresholds of ic types
+        It is included in fuzzy.c.
+   mm.h:
+	structures for internal memory of ic's
+        If you define mm.h, define the including of mm.h in ic.dat so that
+	app.h will include mm.h.  
+
+C Files
+  I. Core Part: modules in this part should not be modified 
+   main.c:
+	the web-based driver functions.
+   ic_manager.c:
+	ic manager
+   ic_functions.c
+	functions called by ic manager
+   util.c:
+	functions to create C structures for f, g functions and messages
+	to dump the content of various structures.
+   fuzzy.c:
+	functions to implement fuzzy computation.
+   clear.c:
+        a function to clear all ICs.
+   show.c:
+        a function to display all current ICs.
+
+  II. Application Dependent Part: modules in this part should be customized 
+      according to the application.  Examples and/or templates are provided
+      for functions in each module.
+   driver.c:
+	the text-based driver program 
+   ic_func2.c
+	application dependent, but necessary functions
+   ic_func3.c
+	application dependent decoding functions
+   ic_state.c:
+        functions to save and restore states of ic's.
+   actions.c
+	action functions
+
+Input Files
+   *.in:
+        f, g functions of index cell
+   fuzzy.dat: (not to be modified)
+        fuzzy computation table.
+   ic.dat:
+        IC specification for IC Compiler
+    *.tpl:
+        template input file to IC Compiler (user can modify it)
+
+Manuals
+   <a href="fg.format">f.g format</a>:
+        f, g function format
+   <a href="output_ic_msg">output_ic_msg</a>:
+        the usage of "output ic" and "output msg" in fg function format
+   <a href="ic_prog.html">ic_prog</a>:
+        manual for ic programming
+   <a href="msg.format">msg.format</a>:
+        FAKE external message format for the testing of your active
+        index system
+
+</pre>
+
+</OL>
+</B>
+</BODY>
+</HTML>

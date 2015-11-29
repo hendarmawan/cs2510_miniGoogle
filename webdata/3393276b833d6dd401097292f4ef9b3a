@@ -1,0 +1,200 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+<title>Activities</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="banner">
+<h1>Rebecca Hwa</h1>
+<span class="description">
+Associate Professor<br/>
+Department of Computer Science, University of Pittsburgh
+</span>
+</div>
+
+<div id="content"> <!---content--->
+<div class="sec">
+<h3>Selected invited talks</h3>
+<div class="secbody">
+<ul>
+<li>Information Visualization and Its Applications for Machine Translation</li>
+  <ul>
+  <li> University of Illinois Urbana-Champagne, IL, Oct. 2010.
+  <li> Carnegie Mellon University, PA, April 2010. 
+  </ul>
+<li>Learning Evaluation Metrics for Sentence-Level Machine Translation</li>
+  <ul> 
+  <li> University of Texas Austin, TX, Oct. 2008.
+  <li> Cornell University, NY, April 2008.
+  <li> Carnegie Mellon University, PA, September 2007. 
+  </ul>
+<li>Semi-supervised Learning for Information Management</li>
+<ul>
+<li>University of Maryland, College Park, MD.  February, 2005.</li>
+</ul>
+<li>Breaking the Resource Bottleneck for Multilingual Processing [<a
+href="presentations/igk04.pdf">PDF</a>]</li>
+<ul>
+<li>IGK Summer School.  University of Edinburgh, UK.  September, 2004.</li>
+</ul>
+<li>A Comparison of Bootstrapping Methods for Parsing Natural
+Languages [<a href="presentations/rochester.pdf">PDF</a>]</li>
+<ul>
+<li> University of Rochester, NY, December, 2003.</li>
+</ul>
+<li>Semi-Supervised Approaches for Learning to Parse Natural Languages
+[<a href="presentations/talk03.pdf">PDF</a>]</li>
+<ul>
+<li> University of Michigan, MI, April 2003.</li>
+<li> Information Sciences Institute, CA, April 2003.</li>
+<li> University of Pittsburgh, PA, March 2003.</li>
+</ul>
+<li>
+Sample Selection for Parser Induction [<a href="presentations/penn02.pdf">PDF</a>]</li>
+<ul><li>University of Pennsylvania, Philadelphia, PA, January 2002.</li></ul>
+<li>
+Learning Probabilistic Lexicalized Grammars for Natural Language Processing
+[<a href="presentations/talk_cond00.pdf">PDF</a>]</li>
+
+<ul>
+<li> Johns Hopkins University, Baltimore, MD, March 2001.</li>
+<li> IBM, Yorktown Heights, NY, June 2000.</li>
+<li> University of Chicago, Illinois, April 2000.</li>
+</ul>
+</ul>
+</div>
+<h3>Invited participation</h3>
+<div class="secbody">
+<ul>
+<li> National Science Foundation Panel: Scientific Community Onsite
+Assessment Workshop (2008).
+<li> National Science Foundation Workshop Panel: Developing Linguistic
+Resources with the American National Corpus (2006).
+<li>Johns Hopkins University 2005 Workshop on Language Engineering (<a href="http://www.clsp.jhu.edu/ws2005">WS
+05</a>)</li>
+<li>CRA-W <a href="http://www.cra.org/Activities/craw/dmp/index.php">Distributed Mentor Project</a>, 2004.</li>
+<li>NSF review panel (multiple years).</li>
+<li>Johns Hopkins University 2002 Workshop on Language Engineering (<a href="http://www.clsp.jhu.edu/ws2002">WS
+02</a>)</li>
+</ul>
+</div>
+
+<h3>Editorial board</h3>
+<div class="secbody">
+<ul>
+<li><i>Computational Linguistics</i> (2003-2005).</li>
+</ul>
+</div>
+<h3>Office</h3>
+<div class="secbody">
+<ul>
+<li> North American Chapter of the Association for Computational
+Linguistics - Chair of the Executive Board (2010-2012).
+<li> North American Chapter of the Association for Computational
+Linguistics - Executive Board Member (2008-2010).
+</ul>
+</div>
+<h3>Area chair</h3>
+<div class="secbody">
+<ul>
+<li> Area Co-Chair, 2008. The Conference on Empirical Methods in
+Natural Language Processing (parsing track).
+
+<li> Co-chair of Practice Session Planning, 2007. North American
+Computational Linguistics Olympiad (for high school students).
+
+<li> Area Co-Chair, 2007. Joint Conferences on Human Language
+Technologies and North American Chapter of the Association for
+Computational Linguistics (machine translation track).
+
+<li> Student Research Workshops Faculty Advisor, 2006. Joint
+Conference of the International Committee on Computational Linguistics
+and the Association of Computational Linguistics.
+
+<li> Area Chair, 2005. Joint Conferences on Human Language
+Technologies and Empirical Methods in Natural Language Processing
+(parsing track).
+</ul>
+</div>
+<h3>Journal review</h3>
+<div class="secbody">
+<ul>
+<li><i>Journal of Selected Topics in Signal Processing</i> (2009).
+<li><i>Journal of Artificial Intelligence</i> (2008).
+<li><i>Journal of Information Technology and Politics</i> (2007). 
+<li><i>Natural Language Engineering</i> (2005).</li>
+<li><i>Computational Linguistics</i> (2000, 2002, 2006, 2007).</li>
+<li><i>Machine Learning</i> (2002).</li>
+</ul>
+</div>
+<h3>Selected conference review panels and program committees</h3>
+<div class="secbody">
+<ul>
+<li>International Joint Conference on Artificial Intelligence (IJCAI 2007).
+<li>American Association of Artificial Intelligence (AAAI 2005).
+<li>Annual Meetings of the Association for Computational Linguistics (2001,
+2002, 2003, 2005).</li>
+<li>
+Conference on Empirical Methods in Natural Language Processing (2001,
+2002, 2003, 2004, 2006, 2007,2009,2010).</li>
+<li> Human Language Technologies/North American Chapter of the ACL
+(HLT-NAACL 2003, 2004, 2006, 2009, 2010).</li>
+<li> European Chapter of the ACL (EACL 2003), Research Notes and Demo
+session.</li>
+<li> Neural Information Processing Systems (NIPS*2003), Application Track.</li>
+</ul>
+
+</div>
+</div>
+</div> <!-- content-->
+
+<div id="links">
+
+
+<div class="sidetitle">
+Links
+</div>
+
+<div class="side">
+<a href="http://www.cs.pitt.edu/~hwa">Home</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/cv.pdf">CV</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/pubs.htm">Publications</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/activities.htm">Professional
+Activities</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/pat.htm">Patents</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/courses.htm">Teaching</a><br/>
+</div>
+
+<div class="sidetitle">
+Affiliated Groups and Programs
+</div>
+
+<div class="side">
+<a href="http://nlp.cs.pitt.edu">NLP@Pitt</a><br/>
+<a href="http://www.isp.pitt.edu">Intelligent Systems Program</a><br/>
+</div>
+
+<div class="sidetitle">
+Contact Information
+</div>
+
+<div class="side">
+<div class="secbody">
+Sennott Square Building, Room 5421<br/>
+210 S. Bouquet St.<br/>
+Pittsburgh, PA 15260, U.S.A.<br/>
+<i>phone:</i> +1 (412) 624-7953<br/>
+<i>fax:</i> +1 (412) 624-8854<br/>
+<i>email:</i> my last name at cs dot pitt dot edu<br/>
+</div>
+</div>
+
+<div class="sidetitle">
+Last updated on Feb. 17, 2011.
+</div> 
+
+</div> <!-- links-->
+</body>
+</html>
+

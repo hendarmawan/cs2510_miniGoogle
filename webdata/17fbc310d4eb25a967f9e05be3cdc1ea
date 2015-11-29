@@ -1,0 +1,77 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Generator" content="Microsoft Word 97">
+   <meta name="GENERATOR" content="Mozilla/4.5 [en] (Win95; I) [Netscape]">
+   <title>PlanView</title>
+</head>
+<body link="#0000FF" vlink="#800080">
+<A HREF="p3.html">  <IMG SRC="previous.gif" align=left>  </A>
+<A HREF="p5.html">  <IMG SRC="next.gif" align=right>  </A>
+<br>&nbsp;
+<center><b><font face="Arial"><font color="#3333FF"><font size=+1>PlanView</font></font></font></b></center>
+
+<blockquote>Managers, employees, and business partners sign onto PlanView
+through a dynamically built web page called HomeView. Everyone's HomeView
+portal reflects their rights to the information in the central repository,
+and the unique needs of their role in the enterprise. When the user signs
+on to the system, his or her profile is recalled, and a unique set of features
+is placed on the menu for their use.</blockquote>
+
+<center>
+<p><br><img SRC="Image3.gif" height=373 width=523></center>
+
+<blockquote>Some of the facilities provided by PlanView:</blockquote>
+
+<ul>
+<ul>
+<li>
+PlanView server applications can be managed from anywhere on the network
+from one interface with the PlanView Management Console, which is based
+on the Microsoft Management Console/MMC.<br>
+<BR></li>
+
+<li>
+PlanView now provides a CPM engine as part of its planning engines to create
+project schedules. PlanView is partnered with Microsoft Project to provide
+CPM schedules on the desktop that could then be imported into the PlanView
+central repository for enterprise-level resource management.<br>
+<BR></li>
+
+<li>
+PlanView does not provide ‘Gantt Charts’ or ‘Networks’ by itself, but provides
+through Microsoft project.<br>
+<BR></li>
+
+<li>
+PlanView gives you the tools to answer questions like:</li>
+</ul>
+</ul>
+
+<dir>
+<dir>
+<dir>
+<dir>Who is available with the right skills for my project?
+<br>When can I schedule this project?
+<br>What would be the impact of this high-priority project on other work?
+<br>Can we adjust scheduled work for another department to free up this
+key person?</dir>
+</dir>
+</dir>
+</dir>
+
+<ul>
+<ul>
+<li>
+HomeView also displays system-generated alerts such as work out of tolerance,
+staff not reporting time, work that needs to be closed and more.<br>
+<BR></li>
+
+<li>
+Provides Industry-standard SQL database (Oracle, Sybase or SQLServer).</li>
+</ul>
+</ul>
+
+</body>
+</html>

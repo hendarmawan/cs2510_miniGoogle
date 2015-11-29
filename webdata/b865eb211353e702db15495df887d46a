@@ -1,0 +1,104 @@
+<html>
+
+<head>
+<title>CS 3530: Advanced Topics in Distributed and Real-time Systems </title>
+</head>
+
+<body bgcolor=#FFFFFE text=#000000 >
+
+<body>
+
+<p>
+<img align=left src ="http://www.cs.pitt.edu/Gifs/pittlogo.gif"> 
+<center><h1>CS 3530</h1>
+<h2> Advanced Topics in Distributed and Real-time 
+</h2></center>
+<h3><center>Spring 2002
+<br>
+Tuesdays and Thursdays from 5:45 to 7:05 PM
+<br>
+234 Eberly Hall</center></h3>
+
+
+<center><img src="http://www.cs.pitt.edu/Gifs/rainbow.gif" width="80%"></center>
+
+<br>
+<h3>Instructor</h3>
+<ul>
+Rami Melhem (melhem@cs.pitt.edu)<br>
+323 Eberly <br>
+phone: 624-8426 <br>
+Office Hours:
+<ul>
+Tuesdays and Thursdays from 1:00 to 3:00
+</ul>
+</ul>
+
+<h3>Course Description</h3>
+<ul>
+This seminar course will introduce the students to the foundations of
+real-time systems and power management in computer systems.
+The emphasis is on understanding predictability and
+resource management, investigating power management techniques
+and exploring fault tolerance issues in real-time systems.
+Specific
+real-time fault-tolerant and power management schemes will be discussed.
+</ul>
+
+<h3>Requirements and grading:</h3>
+<ul>
+<li>
+Homeworks and one exam in February (25%). 
+<li>
+Paper presentations and class participation (25%).
+<li>
+Class project and report (50%).
+</ul>
+
+<h3>Course Outlines
+<a href = "progress.html">
+and Schedule:
+</a>
+</h3>
+The course consists of
+<ul>
+<li> 
+Presentations by the instructor
+<ul>
+Scheduling in Real-time systems
+<br>
+Reward-based systems
+<br>
+Types of redundancy (hardware, software and time redundancies).
+<br>
+Performance and reliability evaluation techniques.
+<br>
+Fault tolerance in distributed systems.
+<br>
+Power management techniques
+<br>
+Fault tolerance and power management in real-time systems.
+</ul>
+<li>
+Presentations by students. 
+<ul>
+Each student will have to read, understand and discuss one paper per week.
+</ul>
+
+<li>
+Presentations and Demonstrations of Class Projects
+<ul>
+Each student will present a proposal and a final demonstration of a project
+</ul>
+</ul>
+
+<img src = "http://www.cs.pitt.edu/Gifs/rainbow.gif" width="100%">
+
+<h4><IMG src = "http://www.cs.pitt.edu/Gifs/whiteball.gif"><a href = "http://www.cs.pitt.edu/UgEdu/course-offerings.html">Course Index</a>
+<IMG src = "http://www.cs.pitt.edu/Gifs/whiteball.gif"><a href = "http://www.cs.pitt.edu">Department of Computer Science</a>
+<IMG src = "http://www.cs.pitt.edu/Gifs/whiteball.gif"><a href = "http://www.pitt.edu">University of Pittsburgh</a></h4>
+<img alt="*" src="http://www.cs.pitt.edu/Gifs/rainbow.gif" width="100%">
+
+</body>
+
+</html>

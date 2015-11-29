@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Chapter 35. Choosing between COM+, EJB, ad CCM</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR></HEAD>
+<BODY><a href="p10.htm">
+<IMG 
+src="previous.gif" align=left width="26" height="26"></a>
+<a href="p12.htm">
+<IMG 
+src="next.gif" align=right width="26" height="26"></a> 
+<H1>&nbsp;&nbsp;&nbsp; </H1>
+<H1>(Review) EJB Sample</H1>
+<ul>
+
+<blockquote>
+  <p style="margin-top: 0px; margin-bottom: 0px"><b><font size="5">EJB&nbsp; 
+  = EJBObject</font></b></p>
+  <p style="margin-top: 0px; margin-bottom: 0px">&nbsp;</p>
+  <p style="margin-top: 0px; margin-bottom: 0px">
+  <img border="0" src="image/ejb1.jpg" width="992" height="244"></p>
+  <p style="margin-top: 0px; margin-bottom: 0px">&nbsp;</p>
+  <p style="margin-top: 0px; margin-bottom: 0px"><b><font size="5">+ EJBHome</font></b></p>
+  <p style="margin-top: 0px; margin-bottom: 0px">&nbsp;</p>
+  <p style="margin-top: 0px; margin-bottom: 0px"><i><font size="4">public 
+  interface ShoppingCartHome extends javax.ejb.EJBHome {</font></i></p>
+  <blockquote>
+    <p style="margin-top: 0px; margin-bottom: 0px"><i><font size="4">public 
+    ShoppingCart&nbsp;&nbsp;&nbsp; create ( String name );</font></i></p>
+    <p style="margin-top: 0px; margin-bottom: 0px"><i><font size="4">public 
+    ShoppingCart&nbsp;&nbsp;&nbsp; create ( String name, int a );</font></i></p>
+    <p style="margin-top: 0px; margin-bottom: 0px"><i><font size="4">public 
+    void&nbsp;&nbsp;&nbsp; remove ( String name );</font></i></p>
+  </blockquote>
+  <p style="margin-top: 0px; margin-bottom: 0px"><i><font size="4">}</font></i></p>
+  <p style="margin-top: 0px; margin-bottom: 0px"><b><font size="4">//Sample Home 
+  Interface</font></b></p>
+</blockquote>
+<p style="margin-top: 0px; margin-bottom: 0px"><b><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
++ Enterprise Bean Class</font></b></p>
+<p style="margin-top: 0px; margin-bottom: 0px">&nbsp;</p>
+<p style="margin-top: 0px; margin-bottom: 0px">
+<img border="0" src="image/EJB.jpg" width="1024" height="453"></p>
+<p style="margin-top: 0px; margin-bottom: 0px">&nbsp;</p>
+<p style="margin-top: 0px; margin-bottom: 0px"><b><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
++ Deployment Descriptor</font></b></p>
+<p style="margin-top: 0px; margin-bottom: 0px">&nbsp;</p>
+<p style="margin-top: 0px; margin-bottom: 0px">
+<img border="0" src="image/ejb2.jpg" width="778" height="472"></p>
+
+</ul>
+
+</BODY></HTML>

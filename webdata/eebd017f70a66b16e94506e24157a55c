@@ -1,0 +1,70 @@
+<html>
+<body bgcolor="#abcdef" text="#vishnu">
+<a href ="p8.html"><img src="previous.gif" align=left
+width="26" height="26"></a>
+<a href="p10.html"><img src="next.gif" align=right
+width="26" height="26"></a>
+<pre>
+<font face="Arial">
+<center><h1> Situation Metaphor (Contd) </h1>
+
+<h2><u> Situation Space</u> </h2></center>
+<h2>
+The Organisation of Situation space is hierarchical.
+It  consists of following 3 categories from Top to Bottom levels. 
+
+<ul>
+<li>Abstract Situation </li>
+<li>Instance Situation </li>
+<li>Basic Situation </li>
+</ul>
+
+<u>Abstract Situation </u>
+
+       This situation describes a particular category of User's goals and
+       is not necessary to refer to a particular location or timeinterval.
+
+       <u>Ex:</u> Sales of Product A 
+
+
+
+<u>Instance situation </u>
+
+       This situation describes the occurences of the Abstract situations
+       with actual attribute values.
+
+       <u>Ex:</u> Sale of Product A to Lawson shops
+
+
+
+<u> Basic Situation </u>
+
+        This  situation describes the actual occurances of instances
+        situations in the real world. They have actual values of location,
+        time and activities
+
+        <u>Ex:</u> The product A is delivered to Lawson shop on Hirodaimae
+        street at 9:21 on December 1, 1999.
+
+
+
+
+
+
+<center> Levels in Situation Space </center>
+<center><img src="second.gif"></center>
+
+   
+    
+
+ 
+</h2>
+
+
+
+
+
+
+</pre>
+</body>
+</html>

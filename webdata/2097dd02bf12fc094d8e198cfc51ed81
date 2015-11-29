@@ -1,0 +1,281 @@
+<title>Database Design</title>
+<h1>RELATIONAL DATABASE DESIGN CONCEPTS</h1>
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/20a">Click here for Part I of audio-text lecture and feed it to the speech agent</a></xs></center>
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/20b">Click here for Part II of audio-text lecture and feed it to the speech agent</a></xs></center>
+1. Semantic Modeling: The "meaning" of the
+   data can be expressed by, for example,
+   the entity/relationship model.
+<br><br>
+2. The ER (entity/relationship) Diagram
+   can be drawn.  The many-to-many,
+   many-to-one relationships are shown.
+<br><br>
+3. Dependency Graph: From the ER Diagram,
+   the Dependency Graph can be derived.
+<br><br>
+4. Decomposition: The Dependency Graph is
+   decomposed based upon certain normalization
+   considerations (3NF, 4NF, etc.)
+<br><br>
+5. Relations: Each decomposed graph corresponds
+   to one relation.
+<hr>
+<h1>RELATIONAL DATABASE DESIGN EXAMPLE</h1>
+(This is a very much simplified example to
+illustrate concepts only.)
+<br><br>
+1. Semantic Modeling: Employee has ID, salary and
+   reports to a manager who is also an employee.
+<br><br>
+   The conceptual graph (CG) is
+<pre>
+    Employee --has--> ID
+             --has--> Salary
+             --report-to-> Manager
+    Manager  --is-a-> Employee
+</pre>
+<br><br>
+2. ER Diagram<br>
+    ID, Salary and Manager are attributes of
+    the entity Employee.
+<br><br>
+3. Dependency graph<br>
+     ID -> Salary, ID -> Manager
+<br><br>
+4. Database schema<br>
+     EMP (ID, SALARY, MANAGER)
+<br><br>
+   Note: MANAGER is a foreign key of EMP and
+   its domain is subset of the domain of ID.
+<hr>
+<h1>DESIGN OF OTHER DATABASE MODELS</h1>
+After the ER diagram is obtained, instead of the relational
+database model, we can also map the ER diagram into the
+network model, the hierarchical model or the object-oriented
+database model.
+<br><br>
+Given a conceptual model such as the
+ER diagram, we want to MAP the
+conceptual design to:<br>
+   Relational<br>
+   Hierarchical<br>
+   Network<br>
+   Object-Oriented
+<br><br>
+Can we do this for any ER diagram?
+<br><br>
+Suppose this can be done, what are
+the implications?
+<hr>
+<br><br>ER schema diagram for the COMPANY database:
+<br><IMG SRC="images/fig3b.gif"><br>
+<hr>
+<h1>ER-TO-RELATIONAL MAPPING</h1>
+STEP 1: For regular entity type E in ER schema,
+create a relation R that includes all the simple
+attributes, and component attributes of composite
+attributes. Select the primary key.
+<br><br>
+STEP 2: For weak entity type W in ER
+schema, with owner entity type E, create a
+relation R, include all simple attributes
+(or component attributes of composite attributes)
+of W as attributes of R.  In addition, include
+the primary key attributes of the relation Q for
+the owner entity type E.  Primary key is the
+combination of primary key of Q and partial
+key of R.
+<br><br>
+STEP 3: For 1:1 relationship X, suppose S and
+T are the relations for the entity types
+participating in it.  Include primary key
+of T as foreign key of S.  Include other
+attributes of the relationship X as
+attributes of S.
+<hr>
+<h1>ER-TO-RELATIONAL MAPPING (continued)</h1>
+STEP 4: For 1:N relationship Y, suppose S
+relation corresponds to the entity type at the
+N-side, and T relation corresponds to the
+entity type at the other side.  Include
+primary key of T as foreign key of S.
+<br><br>
+STEP 5:  For M:N relationship Z, create a
+new relation R to represent Z. Include
+simple attributes of Z in R.  Include
+the primary keys of S and T as foreign
+keys of R, their combination forms the
+primary key of R.
+<br><br>
+STEP 6: For multivalued attribute A,
+create a new relation R that includes
+an attribute corresponding to A.
+Include primary key of the relation
+of the entity type having A as an
+attribute.  Primary key is their combination.
+<hr>
+<h1>ER-TO-RELATIONAL MAPPING (continued)</h1>
+STEP 7: For n-ary relationship type X,
+and n>2, create a new relation R.
+Include primary key of each participating
+entity type's relation as foreign key
+of R.  Include attributes of X as
+simple attributes of R.
+<br><br>
+<h2>SUMMARY</h2>
+
+Entity Type -> Relations
+<br><br>
+Relationship Type<br>
+  1:1 or 1:N -> absorbed in relations
+                for entity types<br>
+ M:N or N-ary -> Relations
+<br><br>
+<h2>TRADEOFF</h2>
+
+The relationship types may not be
+mapped explicitly as relations.
+They can be materialized using
+joins.
+<hr>
+The relational database schema corresponding to the COMPANY ER diagram.
+<br><IMG SRC="images/fig211.gif"><br>
+<hr>
+<h1>ER-TO-NETWORK MAPPING</h1>
+STEP 1: For each regular entity type E,
+create a record type R.  All simple
+(or composite) attributes of E are
+included as fields of R.  A multi-valued
+attribute of E is included as a
+vector field or repeating group of R.
+<br><br>
+STEP 2: For each weak entity type WE,
+with owner entity type IE, make a
+repeating group in the record type
+representing IE, to represent the
+attributes of WE.
+<br><IMG SRC="images/fig212.gif"><br>
+<br><br>
+STEP 3: For 1:1 or 1:N relationship
+type X, create a set type relating
+the record types S1 and S2 representing
+the participating entity types.
+<hr>
+<h1>ER-TO-NETWORK MAPPING (continued)</h1>
+STEP 4: For each M:N relationship type
+X between entity types E1 and E2,
+with corresponding record types S1 and
+S2, create a link record L, and
+make it the member record type of
+the two set types E1 and E2.
+<br><br>
+
+<h2>SUMMARY</h2>
+Entity Type -> Record types
+<br><br>
+Relationship Type<br>
+  1:1 or 1:N -> one set type
+<br><br>
+  M:N -> two set types for
+         a link record type
+<br><br>
+  N-nary: multiple set types
+          for a link record
+          type
+<hr>
+The network database schema corresponding to the COMPANY ER diagram.
+<br><IMG SRC="images/fig213.gif"><br>
+<hr>
+<h1>ER-TO-HIERARCHICAL MAPPING</h1>
+STEP 1: Entity types can be represented by
+ record types (segment types).
+<br><br>
+STEP 2: 1:N relationship types can be
+represented by parent-child
+relationship (PCR) types.
+<br><br>
+STEP 3: M:N relationship type can
+be represented as though it were a
+1:N relationship type.  Record
+instances at the N-side are duplicated
+because each record may be related
+to several parents.  The advantage
+is to keep everything in a single
+hierarchy.
+<br><br>
+(Alternately, create another
+hierarchy having virtual parent-child
+relationship type (VPCR) to
+represent the M:N relationship type)
+<hr>
+The hierarchical database schema corresponding to the COMPANY ER diagram
+is shown in (a), and another schema for the same database with two
+hierarchies and four VPCRs is shown in (b).
+<br><IMG SRC="images/fig214.gif"><br>
+<hr>
+<h1>DEALING WITH N-ARY RELATIONSHIP TYPES</h1>
+The n-ary relationship type SUPPLY with n=3 as shown in (a)
+is mapped into the relational schema shown in (b).
+<br><IMG SRC="images/fig215.gif"><br>
+<br><br><br><br>
+The SUPPLY relationship type is mapped into the network model.
+<br><IMG SRC="images/fig216.gif"><br>
+<br><br><br><br>
+The SUPPLY relationship type is mapped into the hierarchical model.
+<br><IMG SRC="images/fig217.gif"><br>
+<hr>
+<h1>ER-TO-OO MAPPING</h1>
+<br>
+We need to start from an Extended ER (EER) model.
+<br><br>
+STEP 1: Create an OO class for each EER class.
+<br><br>
+STEP 2: Add reference attributs for each
+binary relationship into the OO classes
+that participate in that relationship.
+<br><br>
+STEP 3: Include appropriate methods for
+each class (not available from EER).
+
+<br><br>
+STEP 4: An OO class that corresponds to
+a subclass in the EER schema inherits
+the types and methods of the superclass
+in the OO schema.
+<br><br>
+STEP 5: Weak entity types can be absorbed
+into composite multivalued attributes
+of the owner entity type.
+<br><br>
+STEP 6: N-ary relationships with N > 2
+can be mapped into a separate
+object type.
+<hr>
+<h1>SUMMARY OF MAPPING ER TO FOUR MODELS</h1>
+To represent a link:
+<br><br>
+In the relational model, include same
+attribute in two relations.
+<br><br>
+In the network model, use set-type
+to represent link.
+<br><br>
+In the hierarchical model, use the
+parent-child relationship to
+represent link.
+<br><br>
+In the object-oriented model, use the
+reference attributes to represent link.
+<br><br>
+Advantage of relational model:<br>
+Simplicity. Use only one concept.
+Formal query language.
+<br><br>
+Advantage of network model:<br>
+Can represent 1:N and 1:1 directly.
+Efficiency in navigation and data
+manipulations.
+<br><br>
+Advantange of object-oriented model:<br>
+Comprehensive and integrated approach.
+Most 'natural' for some applications.

@@ -1,0 +1,17 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 48</title>
+</head>
+<body text="#198A8A" bgcolor="#BED2A3" link="#0000CC" vlink="#000080" alink="#0000CC">
+<center>
+<a href="text0.html">First page</a> <a href="text46.html">Back</a> <a href="text48.html">Continue</a> <a href="text50.html">Last page</a> <a href="finalReport.html">Overview</a> <a href="img47.html">Graphics</a></center><br>
+<h1><font color="#5C8526">Milestone : Algorithm for Problem 2</font></h1>
+<ul><li><h2>Before any changes are made to the queries, fully qualify each attribute of the query with the current location.</h2></li>
+<li><h2>Perform the relational synthesis using the algorithm for Problem 1 while keeping the original set of location information</h2></li>
+<li><h2>After successful decomposition of unversal relation R and set of functional dependencies F to produce D, trickle the changes of location down to the queries </h2></li>
+<li><h2>The attributes in the SELECT clause are pointed to the correct location</h2></li>
+</ul></body>
+</html>

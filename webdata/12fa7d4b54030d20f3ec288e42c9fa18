@@ -1,0 +1,538 @@
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="GENERATOR" CONTENT="Notepad/Robert Hofmann">
+<BASE TARGET="1502main">
+<TITLE>Creating the Arithmetic Sub-Block</TITLE>
+</HEAD>
+
+<BODY BACKGROUND="../Unitbkg.jpg">
+<H2><CENTER>Unit 1d</CENTER></H2>
+<H2><CENTER>Creating the Arithmetic Sub-Block</CENTER></H2>
+
+<CENTER><H3>MIPS Integer ALU Arithmetic</H3></CENTER>
+
+<P>
+  Our ALU is required to support four integer arithmetic
+  operations: Signed Addition (ADD), Unsigned Addition(ADDU),
+  Signed Subtraction (SUB), and Unsigned Subtraction (SUBU).\
+  For signed operations, the inputs and output will be 
+  treated as 64-bit signed twos-complement integers.
+</P>
+<P>
+  We can make use of several properties of signed twos-complement
+  numbers to significantly reduce the hardware requirements of
+  our <I>Aritmetic</I> sub-block without significantly decreasing
+  its speed.  In fact, we can implement all four of the 
+  necessary operations using a single 64-bit adder!
+</P>
+<P>
+  Let's start by examining the signed vs. unsigned issue.
+  MIPS unsigned addition/subtraction is also referred to
+  as addition/subtraction without overflow.  The hardware
+  for adding or subtracting twos-complement signed integers
+  and magnitude representation unsigned integers is actually
+  exactly the same.  The only difference comes in determining
+  whether or not <I>Overflow</I> occurs.  <I>Overflow</I> is
+  the condition where the result of the operations is either
+  too large or too small to be represented in the alotted
+  number of bits (64).  For signed numbers, overflow can
+  only occur when adding two numbers of the same sign or 
+  subtracting two numbers of opposite signs.  It is indicated
+  for addition by the result having the opposite sign of
+  the inputs and in subtraction by the result having the 
+  opposite sign of the first input.  In unsigned numbers, 
+  and overflow would be indicated by a carry-out from the
+  most significant bit.  However, since overflow would
+  be ignored anyway in the situations where unsigned 
+  arithmetic is used (such as address computations),
+  the MIPS instruction set indicates that overflow is
+  never reported for unsigned arithmetic.
+</P>
+<P>
+  A trickier issue is how we can perform both addition and
+  subtraction with just a single 64-bit adder.  The answer
+  comes by restating the operation: <I>A - B = A + (-B)</I>.
+  We can negate a twos-complement number by inverting the
+  bits and adding one: <I>(-B) = NOT(B) + 1</I>.  So, 
+  <I>A - B = A + (-B) = A + NOT(B) + 1</I>.  By adding
+  and inverter and a multiplexor (to select B or NOT(B))
+  in front of the B input we can implement <I>A + B</I>
+  or <I>A + NOT(B)</I> easily.  To add one, we take 
+  advantage of the fact that our adder has a carry-in.
+  By carrying in a '1', we are effectively adding one
+  to the result.  Take it on faith for now that this
+  trick also works out for unsigned (no overflow)
+  subtraction.
+</P>
+<P>
+  To get a more detailed explanation of the ins and outs
+  of binary arithmetic with twos-complement or magnitude
+  unsigned numbers, refer to the beginning of Chapter 4
+  of Hennessy and Patterson's <I>Computer Organization &
+  Design</I>.
+</P>
+
+<H3><CENTER>Building the Arithmetic Sub-Block</CENTER></H3>
+<UL>
+<LI>
+  <P>
+    To create the <I>Arithmetic</I> sub-block we will need to
+    have a 64-bit adder with carry-in, carry-out, and overflow
+    computation.  Instead of going through the process of 
+    building this from scratch, we will be using an adder which
+    has already been designed and instantiating it as a 
+    <I>Component</I> in our design.  
+  </P>
+  <P>
+    You have already seen that the blue colored sub-blocks which 
+    you have placed in the <I>ALU</I> block diagram generate entity 
+    declarations with corresponding architectures created from 
+    their views which are then instantiated in the <I>ALU</I> 
+    architecture as components.  In <B>FPGA Advantage</B>, however, 
+    these sub-blocks are not referred to as components because 
+    you cannot instantiate them in another design as they are; 
+    they are tied to one instance in one design.  A sub-block 
+    can, however, be converted into a <B>FPGA Advantage</B> component, 
+    represented by a green colored box.  They are essentially 
+    the same except for the fact that a component can be accessed
+    from other design units to be instantiated.
+  </P>
+  <P>
+    Components allow for the creation of design libraries of
+    commonly used objects which can be instantiated in new designs.
+    I have created a 64-bit adder component and placed it in the
+    COELib library, which holds public design components that we
+    will be using.  
+  </P>
+
+  <P>
+    It is not necessary for a library to be open in the <B>Design
+    Manager</B> in order to instantiate a component from it.  In
+    order to see what is in the library, though, go to the <I>Open
+    Library</I> window from the <I>File</I> menu and open the 
+    <I>COELib</I> library.  Expand the design tree in the source
+    window to see a single design unit, in green, called <I>add64</I>
+    with a symbol and single <I>VHDL Architecture</I> view called
+    <I>behav.vhd</I>.  The <B>Design Manager</B> window will look 
+    like Figure 2.
+  </P>
+
+  <CENTER>
+  <P>
+    <IMG SRC="./Arith2.jpg">
+    <H4>Figure 2</H4>
+  </P>
+  </CENTER>
+</LI>
+
+<LI>
+  <P>
+    Now that we have mapped the <I>COELib</I> library, we can
+    get started designing the <I>Arithmetic</I> unit.  Open the
+    <I>ALU</I> design from the <B>Design Manager</B>.  Once you
+    have done this, create a new block diagram view for the 
+    <I>Arithmetic</I> sub-block by right-clicking on the sub-block
+    and selecting <I>New View</I> from the <I>Open</I> item on the
+    pop-up menu.  This will bring up the block diagram with 
+    ports seen in Figure 3.
+  </P>
+
+  <CENTER>
+  <P>
+    <IMG SRC="./Arith3.jpg">
+    <H4>Figure 3</H4>
+  </P>
+  </CENTER>
+</LI>
+
+<LI>
+  <P>
+    Now we wish to instantiate an add64 component.  Activate the 
+    <I>Add Component</I> tool by selecting the button, 
+    <IMG SRC="./ComponentButton.jpg">, from the toolbar.  This
+    will bring up the <I>Add Component</I> window in Figure 4 which
+    will allow you to select which component to instantiate.  Click the <b>Add Library</b> button (<img src="add_library.jpg">),then
+    select the <I>COELib</I> library and click OK.  You will then see a list of the components in this
+    library.  Drag and drop the ADD64 component into your design.
+  </P>
+
+  <CENTER>
+  <P>
+  <table><tr>
+    <td><IMG SRC="./compbrow1.jpg"></td>
+    <td><IMG SRC="./compbrow2.jpg"></td>
+    <td><IMG SRC="./compbrow3.jpg"></td>
+    </tr></table>
+    <H4>Figure 4</H4>
+  </P>
+  </CENTER>
+</LI>
+
+<LI>
+  <P>
+    You will now see the message box in Figure 5 pop up asking whether
+    you wish to add packages to your design.  This is a VHDL package
+    which is used in the adder.  Respond yes to move on.
+  </P>
+
+  <CENTER>
+  <P>
+    <IMG SRC="./Arith5.jpg">
+    <H4>Figure 5</H4>
+  </P>
+  </CENTER>
+</LI>
+
+<LI>
+  <P>
+    In addition to the <I>ADD64</I> component, there are several
+    other tasks which need to be accomplished: selecting <I>B</I>
+    or <I>NOT(B)</I> and deciding whether to carry-in a '1' to 
+    configure for addition or subtraction; deciding whether or 
+    not to compute overflow; and calculating <I>Zero</I> which is 
+    high whenever the result is equal to zero and low otherwise.  
+  </P>
+  <P>
+    These tasks will be implemented using <I>Embedded Blocks</I> 
+    just like in the <I>Logical</I> sub-block.  We need to place
+    three <I>Embedded Blocks</I>:
+  </P>
+  <UL>
+    <LI>
+      <P>
+        One we will call <I>TOBORNOT</I> and will place to the left of
+        the ADD64 component.  This will perform two functions, one is to
+        create an inverted version of <I>B</I> and the other is to 
+        assign <I>B</I> to the internal signal <I>BTEMP</I> when we
+        are adding (when ALUOp(1) = '0') and assign the inverted
+        version of <I>B</I> when we are subtracting (when ALUOp(1) = '1').
+      </P>
+    </LI>
+    <LI>
+      <P>
+        The second embedded block will pass the <I>OFL</I> output of
+        the adder to the <I>Overflow</I> output when we are performing 
+        the <I>ADD</I> or <I>SUB</I> operations (ALUOp(0) = '0') and '0' 
+        otherwise.  Place this block to the right of and below the 
+        <I>ADD64</I> component and call it <I>OVERFLOW</I>.  
+      </P>
+    </LI>
+    <LI>
+      <P>
+        The last embedded block will be placed to the right of the
+        <I>ADD64</I> component and will be called <I>CALCZERO</I>.
+        Its primary function is to set the <I>Zero</I> output high
+        when the adder result is equal to zero and set it low
+        otherwise.  This requires the block to "read" the result
+        coming out of the <I>ADD64</I> component.  Since it is 
+        not possible to "read" values from output only ports, we
+        cannot directly connect the result <I>ArithmeticR</I> to
+        the output of the adder.  We must instead create an internal
+        signal which can be "read" to determine zero.  Thus, as a
+        second function, this embedded block will assign the 
+        value of the internal signal <I>S</I> to the output
+        <I>ArithmeticR</I>.
+      </P>
+    </LI>
+  </UL>
+  </P>
+  <P>
+    After adding these blocks your block diagram should look like 
+    Figure 6.
+  </P>
+
+  <CENTER>
+  <P>
+    <IMG SRC="./Arith6.jpg">
+    <H4>Figure 6</H4>
+  </P>
+  </CENTER>
+</LI>
+
+<LI>
+  <P>
+    Now that the embedded blocks and the <I>ADD64</I> component 
+    have been placed on the block diagram, connect the input and
+    output ports and create the necessary internal signals so that
+    the block diagram resembles Figure 7.
+  </P>  
+
+  <CENTER>
+  <P>
+    <IMG SRC="./Arith7.jpg">
+    <H4>Figure 7</H4>
+  </P>
+  </CENTER>
+</LI>
+
+<LI>
+  <P>
+    The final step, after all signals are connected properly
+    is to define the behavior of the embedded blocks.  The
+    embedded VHDL text should be as follows:
+  </P>
+  <UL>
+  <LI>
+    <P>
+      <B>TOBORBNOT : </B>
+    </P>
+    <PRE>
+		BTEMP <= B WHEN ALUOp(1) = '0' ELSE
+		         NOT(B);
+    </PRE>
+    <P>
+      This embedded block implements a multiplexor with <I>B</I> as
+      the input when the select, ALUOp(1), equals zero to implement
+      and add and <I>NOT(B)</I> when the select equals one to 
+      implement a subtract.  The other step necessary to implementing
+      subtraction, carrying in a one, is taken care of by 
+      connecting ALUOp(1) to the carry-in of the adder.  This
+      way, when adding the carry-in is zero and when subtracting
+      the carry-in is one.
+    </P>
+  </LI>
+  <LI>
+    <P>
+      <B>OVERFLOW : </B>
+    </P>
+    <PRE>
+		Overflow <= OFL AND NOT(ALUOp(0));
+    </PRE>
+    <P>
+      When ALUOp(0) = '0' we want to perform arithmetic with
+      overflow.  When ALUOp(0) = '1', we want to perform 
+      arithmetic without overflow.  Thus, by ANDing the 
+      overflow output of the adder, OFL, with the inverse of 
+      ALUOp(0), which is '1' if we want overflow output and
+      '0' if we do not, we achieve the desired results.
+    </P>
+  </LI>
+  <LI>
+    <P>
+      <B>CALCZERO : </B>
+    </P>
+    <PRE>       
+		ArithmeticR <= S;
+		Zero <= NOT(S(63) OR S(62) OR S(61) OR S(60) OR S(59) OR S(58) OR S(57)
+		OR S(56) OR S(55) OR S(54) OR S(53) OR S(52) OR S(51) OR S(50) OR S(49)
+		OR S(48) OR S(47) OR S(46) OR S(45) OR S(44) OR S(43) OR S(42) OR S(41)
+		OR S(40) OR S(39) OR S(38) OR S(37) OR S(36) OR S(35) OR S(34) OR S(33)
+		OR S(32) OR S(31) OR S(30) OR S(29) OR S(28) OR S(27) OR S(26) OR S(25)
+		OR S(24) OR S(23) OR S(22) OR S(21) OR S(20) OR S(19) OR S(18) OR S(17)
+		OR S(16) OR S(15) OR S(14) OR S(13) OR S(12) OR S(11) OR S(10) OR S(9)
+		OR S(8) OR S(7) OR S(6) OR S(5) OR S(4) OR S(3) OR S(2) OR S(1)
+		OR S(0));
+    </PRE>
+    <P>
+      This block contains two VHDL statements, necessary because
+      we cannot simultaneously assign the output of the adder directly
+      to <I>ArithmeticR</I> and at the same time use that value to
+      determine the <I>Zero</I> output.  The first statement takes the
+      internal value of the adder output, <I>S</I>, and assigns it
+      to the result, <I>ArithmeticR</I>.  The second statement
+      determines whether the adder output is equal to zero by
+      ORing the individual bits together.  If the result of the
+      OR is '0', meaning the result is zero, we want to output a
+      '1' and if the result of the OR is a '1', meaning the result
+      is non-zero, we want to output a '0'.  Thus we invert the
+      result of the OR to obtain our <I>Zero</I> output.
+    <P>
+  </LI>
+  </UL>
+  
+  <CENTER>
+  <P>
+    <IMG SRC="./Arith8.jpg">
+    <H4>Figure 8</H4>
+  </P>
+  </CENTER>
+</LI>
+</UL>
+
+<H3><CENTER>Simulating the Arithmetic Sub-Block</CENTER></H3>
+<P>
+  Before we attempt to compile and simulate the Arithmetic Sub-Block
+  we must make a change to <b>FPGA Advantage</b>.  Currently the downstream, 
+  or temporary working directory that <b>FPGA Advantage</b> and <b>ModelSim</b>
+  use to place compiled files, is set to the default directory
+  in the <i>COElib</i> library mapping <i>I:\1502\COElib\work</i>.  However, 
+  since students do not have write access to this directory
+  <b>FPGA Advantage</b> will not be able to compile the add64 component.
+  To change the downstream mapping, go to the <i>Design Manager</i>
+  window and select the <i>Project</i> tab the bottom.  Your window
+  will look something similar to Figure 9.
+</P>
+
+ <CENTER>
+  <P>
+    <IMG SRC="./Arith9.jpg">
+    <H4>Figure 9</H4>
+  </P>
+  </CENTER>
+
+<P>
+  You may have to select the plus symbol next to <i>COElib</i> to expand the
+  tree of library mappings and then select the plus symbol next to
+  <i>Downstream</i> to show the current Downstream mapping for ModelSim.
+  Right-click on Downstream and select "Add Downstream mapping...".  You
+  may see the following window.  If so, click "Yes".
+</p>
+  
+  <CENTER>
+  <P>
+    <IMG SRC="./Arith9a.jpg">
+  </P>
+  </CENTER>
+  
+<p>You will then see the following window.  Select "Modelsim", then use the
+  path as shown, but substitute "alpha" for your group name:
+</p>
+
+  <CENTER>
+  <P>
+    <IMG SRC="./Arith9b.jpg">
+  </P>
+  </CENTER>
+
+<p>Your Design Manager should now look like this:
+</p>
+
+ <CENTER>
+  <P>
+    <IMG SRC="./Arith10.jpg">
+    <H4>Figure 10</H4>
+  </P>
+  </CENTER>
+
+<P>
+  Now that we have designed the <I>Arithmetic</I> sub-block, we 
+  must of course verify that it is functioning correctly.  Since
+  we are once again dealing with a fairly small design unit, we
+  will test it by directly stimulating the signals in the simulator
+  and observing the results in the <I>Waves</I> window.
+</P>
+<P>
+  You will need to create a simulation macro file which will run 
+  at least one set of vectors to test each possible outcome of
+  each operation:
+</P>
+<UL>
+  <LI>
+    <B>ADD :</B> Signed Addition or Addition with Overflow
+    <UL>
+    <LI>
+      <I>A</I> is positive, <I>B</I> is positive, and the result
+      is less than or equal to +2^63-1 (no overflow).
+    </LI>
+    <LI>
+      <I>A</I> is positive, <I>B</I> is positive, and the result
+      is greater than +2^63-1 (overflow).
+    </LI>
+    <LI>
+      <I>A</I> is positive, <I>B</I> is negative, the result 
+      is <B>not equal</B> to zero, there should never be overflow.
+    </LI>
+    <LI>
+      <I>A</I> is positive, <I>B</I> is negative, the result 
+      is <B>equal</B> to zero, there should never be overflow.
+    </LI>
+    <LI>
+      <I>A</I> is negative, <I>B</I> is positive, the result 
+      is <B>not equal</B> to zero, there should never be overflow.
+    </LI>
+    <LI>
+      <I>A</I> is negative, <I>B</I> is positive, the result 
+      is <B>equal</B> to zero, there should never be overflow.
+    </LI>
+    <LI>
+      <I>A</I> is negative, <I>B</I> is negative, and the result
+      is greater than or equal to -2^63 (no overflow).
+    </LI>
+    <LI>
+      <I>A</I> is negative, <I>B</I> is negative, and the result
+	is less than -2^63 (overflow).
+    </LI>
+    </UL>
+  </LI>
+  <LI>
+      <B>ADDU :</B> Unsigned Addition or Addition without Overflow
+    <UL>
+      <LI>
+        Repeat the test cases from the ADD simulation and make sure
+        that overflow is never reported.
+      </LI>
+    </UL>
+  </LI>
+  <LI>
+    <B>SUB :</B> Signed Subtraction or Subtraction with Overflow
+    <UL>
+    <LI>
+      <I>A</I> is positive, <I>B</I> is positive, the result 
+      is <B>not equal</B> to zero, there should never be overflow.
+    </LI>
+    <LI>
+      <I>A</I> is positive, <I>B</I> is positive, the result 
+      is <B>equal</B> to zero, there should never be overflow.
+    </LI>
+    <LI>
+      <I>A</I> is positive, <I>B</I> is negative, and the result
+      is less than or equal to +2^63 (no overflow).
+    </LI>
+    <LI>
+      <I>A</I> is positive, <I>B</I> is negative, and the result
+      is greater than +2^63 (overflow).
+    </LI>
+    <LI>
+      <I>A</I> is negative, <I>B</I> is positive, and the result
+      is greater than or equal to -2^63 (no overflow).
+    </LI>
+    <LI>
+      <I>A</I> is negative, <I>B</I> is positive, and the result
+	is less than -2^63 (overflow).
+    </LI>
+    <LI>
+      <I>A</I> is negative, <I>B</I> is negative, the result 
+      is <B>not equal</B> to zero, there should never be overflow.
+    </LI>
+    <LI>
+      <I>A</I> is negative, <I>B</I> is negative, the result 
+      is <B>equal</B> to zero, there should never be overflow.
+    </LI>
+    </UL>
+  </LI>
+  <LI>
+      <B>SUBU :</B> Unsigned Subtraction or Subtraction without Overflow
+      <UL>
+      <LI>
+        Repeat the test cases from the SUB simulation and make sure
+        that overflow is never reported.
+      </LI>
+      </UL>
+  </LI>
+</UL>
+
+<P>
+  You may find it helpful when trying to create your test vectors
+  to use the Windows Calculator utility which should be on the
+  Accessories menu.  This program allows you to convert between 
+  decimal and signed twos-complement binary representations of
+  numbers.
+</P>
+<P>
+  Create and run your test macro to confirm the function of your
+  <I>Arithmetic</I> unit.  Comment your macro file to indicate
+  the decimal equivalents of the test vectors as well as
+  the expected values of <I>ArithmeticR</I>, <I>Zero</I>, and
+  <I>Overflow</I>.
+</P>
+<P>
+  When you have finished, you are ready to go on to 
+  <A HREF="../CompBlock/ALU_Comp.html">Implementing
+  the Comparison Sub-Block</A>.
+</P>
+</BODY>
+</HTML>
+
+

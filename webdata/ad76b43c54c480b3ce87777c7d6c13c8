@@ -1,0 +1,19 @@
+
+Project:
+I found that one of the deficiencies in the existing SIS testbed
+provided to us was the lack of introspection into the way that the
+components interact with one another through message passing.  As it
+is now, one can only see the messages as they pass through the server
+and only for a very brief period of time with no way to examine which
+components these messages would be sent to nor to investigate past
+messages.  I plan to solve both of these issues by incorporating a
+graphical way to visualize the messages flowing through the testbed as
+well as allowing the user to traverse back and forth through the
+history of messages.  I will do this by incorporating an open source
+visualization framework called Prefuse that will allow me to build a
+visualization of the testbed structure and to show message flow
+through the system in an easy to view manner.  Time permitting I will
+also investigate ways to save this information to be viewed later.
+
+Prefuse: http://prefuse.org/
+

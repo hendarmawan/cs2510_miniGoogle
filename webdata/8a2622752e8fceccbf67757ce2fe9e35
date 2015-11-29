@@ -1,0 +1,35 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="seminar_pg15.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="project/project_pg1.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">References</font></h1> 
+ </center> 
+ 
+<p><br>
+  <font face="Arial, Helvetica, sans-serif">De Bra, P., Houben, G.J., Wu, H. (1999). 
+  <a href="http://citeseer.nj.nec.com/debra99aham.html" target="_blank">AHAM: 
+  A Dexter-based Reference Model for Adaptive Hypermedia</a>, Proceedings of ACM 
+  Hypertext'99 Conference, pp. 147-156, Darmstadt, Germany, 1999</font></p>
+<p><font face="Arial, Helvetica, sans-serif">Frank Halasz and Mayer Schwartz. 
+  <a href="http://citeseer.nj.nec.com/halasz94dexter.html" target="_blank">The 
+  Dexter hypertext reference model</a>. Communications of the ACM, 37(2):30--39, 
+  February 1994. ISSN 0001-0782, 10 pages.</font></p>
+<p><font face="Arial, Helvetica, sans-serif">Wu, H., De Kort, E., De Bra, P., 
+  &quot;<a href="http://citeseer.nj.nec.com/wu01design.html" target="_blank">Design 
+  Issues for General Purpose Adaptive Hypermedia Systems</a>&quot;. Proceedings 
+  of the 12 th ACM Conference on Hypertext and Hypermedia, Arhus, Denmark, 2001 
+  (to appear). [WDD01] </font></p>
+<p><font face="Arial, Helvetica, sans-serif">Wu, H., De Bra, P., Aerts, A., Houben, 
+  G.J., &quot;<a href="http://citeseer.nj.nec.com/wu00adaptation.html" target="_blank">Adaptation 
+  Control in Adaptive Hypermedia Systems</a>&quot;, Proceedings of the International 
+  Conference on Adaptive Hypermedia and Adaptive Web-Based Systems, Trento, Italy, 
+  LNCS 1892, pp. 250-259, Springer Verlag, 2000</font></p>
+<p><font face="Arial, Helvetica, sans-serif">De Bra, P., Aerts, A., Houben, G.J., 
+  Wu, H., &quot;<a href="http://citeseer.nj.nec.com/debra00making.html" target="_blank">Making 
+  GeneralPurpose Adaptive Hypermedia Work</a>&quot;, Proceedings of the WebNet 
+  Conference, pp. 117-123, 2000.</font></p>
+</html> 

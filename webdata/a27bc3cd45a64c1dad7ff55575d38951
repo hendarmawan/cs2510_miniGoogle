@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Multimedia Software Engineering</title>
+<style type="text/css">
+<!--
+body {
+	background-color: #FFFFFF;
+}
+.style3 {font-size: 36px; font-weight: bold; }
+.style4 {
+	font-size: x-large;
+	color: #CC0000;
+	font-weight: bold;
+}
+.style7 {font-size: x-large}
+-->
+</style></head>
+
+<body>
+<p><a href="Pg7.htm"><img height="26" src="Previous.gif" width="26" align="left" border="0"></a><a href="Pg9.htm"><img height="26" src="Next.gif" width="26" align="right" border="0"></a></p>
+<p>&nbsp;</p>
+<h1 class="style3" align="center">Demo #1 - Simple I/O (cont.) </h1>
+<ul type="disc">
+  <li class="style7">After entering the keywords...&nbsp; 
+  <ul>
+    <li>Set the "Write Results To File?" switch to NO </li></ul>
+  <p align="center"><img height="124" hspace="0" src="Use Demo (Simple IO) - Write File Switch.gif" width="200" border="0"> &nbsp; </p>
+  <ul>
+    <li>Click the "Create RI" button and select a directory containing the VC 
+    transcripts from which to create the&nbsp;relational index&nbsp; </li></ul>
+  <p align="center"><img height="551" hspace="0" src="Use Demo (Simple IO) - Transcript selection.gif" width="640" border="0">&nbsp; 
+  </p></li></ul>
+<p align="center"></p>
+<p class="style4">&nbsp;</p>
+</body>
+</html>

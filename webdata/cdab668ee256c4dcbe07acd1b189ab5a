@@ -1,0 +1,422 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.73 [en] (Win98; U) [Netscape]">
+   <title>Introduction to Operating Systems</title>
+
+<script language="JavaScript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v3.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : args[i+1];
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    if ((nbArr = document[grpName]) != null)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = args[i+1];
+      nbArr[nbArr.length] = img;
+  } }
+}
+
+function MM_displayStatusMsg(msgStr) { //v1.0
+  status=msgStr;
+  document.MM_returnValue = true;
+}
+//-->
+</script>
+</HEAD>
+
+<BODY bgcolor=WHITE onLoad="MM_preloadImages('images/CMPS111NavBar_r1_c1_f3.gif','images/CMPS111NavBar_r1_c1_f2.gif','images/CMPS111NavBar_r1_c2_f3.gif','images/CMPS111NavBar_r1_c2_f2.gif','images/CMPS111NavBar_r1_c3_f3.gif','images/CMPS111NavBar_r1_c3_f2.gif','images/CMPS111NavBar_r1_c4_f3.gif','images/CMPS111NavBar_r1_c4_f2.gif','images/CMPS111NavBar_r1_c5_f3.gif','images/CMPS111NavBar_r1_c5_f2.gif')">
+<hr>
+<center>
+  <table border="0" cellpadding="0" cellspacing="0" width="749">
+    <!-- fwtable fwsrc="CMPS111NavBar.png" fwbase="CMPS111NavBar.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td><img src="images/spacer.gif" width="150" height="1" border="0" name="undefined_3"></td>
+      <td><img src="images/spacer.gif" width="150" height="1" border="0" name="undefined_3"></td>
+      <td><img src="images/spacer.gif" width="149" height="1" border="0" name="undefined_3"></td>
+      <td><img src="images/spacer.gif" width="150" height="1" border="0" name="undefined_3"></td>
+      <td><img src="images/spacer.gif" width="150" height="1" border="0" name="undefined_3"></td>
+      <td><img src="images/spacer.gif" width="1" height="1" border="0" name="undefined_3"></td>
+    </tr>
+    <tr> 
+      <td><a href="index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Home Page');MM_nbGroup('over','CMPS111NavBar_r1_c1_2','images/CMPS111NavBar_r1_c1_f2.gif','images/CMPS111NavBar_r1_c1_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c1_2','images/CMPS111NavBar_r1_c1_f3.gif',1);" ><img name="CMPS111NavBar_r1_c1_2" src="images/CMPS111NavBar_r1_c1.gif" width="150" height="37" border="0"></a></td>
+      <td><a href="homework.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Homework');MM_nbGroup('over','CMPS111NavBar_r1_c2_2','images/CMPS111NavBar_r1_c2_f2.gif','images/CMPS111NavBar_r1_c2_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c2_2','images/CMPS111NavBar_r1_c2_f3.gif',1);" ><img name="CMPS111NavBar_r1_c2_2" src="images/CMPS111NavBar_r1_c2.gif" width="150" height="37" border="0"></a></td>
+      <td><a href="assignments.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Assignments');MM_nbGroup('over','CMPS111NavBar_r1_c3_2','images/CMPS111NavBar_r1_c3_f2.gif','images/CMPS111NavBar_r1_c3_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c3_2','images/CMPS111NavBar_r1_c3_f3.gif',1);" ><img name="CMPS111NavBar_r1_c3_2" src="images/CMPS111NavBar_r1_c3.gif" width="149" height="37" border="0"></a></td>
+      <td><a href="exams.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Exams');MM_nbGroup('over','CMPS111NavBar_r1_c4_2','images/CMPS111NavBar_r1_c4_f2.gif','images/CMPS111NavBar_r1_c4_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c4_2','images/CMPS111NavBar_r1_c4_f3.gif',1);" ><img name="CMPS111NavBar_r1_c4_2" src="images/CMPS111NavBar_r1_c4.gif" width="150" height="37" border="0"></a></td>
+      <td><a href="slides.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Slides');MM_nbGroup('over','CMPS111NavBar_r1_c5','images/CMPS111NavBar_r1_c5_f2.gif','images/CMPS111NavBar_r1_c5_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c5','images/CMPS111NavBar_r1_c5_f3.gif',1);" ><img name="CMPS111NavBar_r1_c5" src="images/CMPS111NavBar_r1_c5.gif" width="150" height="37" border="0"></a></td>
+      <td><img src="images/spacer.gif" width="1" height="37" border="0" name="undefined_3"></td>
+    </tr>
+  </table>
+</center>
+<hr>
+<p>
+
+
+<center>
+<h1>
+CS 1550: Introduction to Operating Systems<br> 
+Spring 2006
+</h1>
+</center>
+
+<center>
+<h2>
+Daniel Mosse</h2>
+</center>
+
+<center>
+<h3>
+Computer Science Department<br>
+University of Pittsburgh</h3></center>
+
+<hr>
+<center><table BORDER WIDTH="90%" cellpad="10" cellspace="10" >
+<tr>
+<td HEIGHT="30"><center>
+  <p><font color="#FF0000">NEWS: </font></p>
+  <!--#include file="news.txt" -->
+</center>
+  <ul>
+
+<li> <a href="1550-final-S06-with-sols.doc">Final Exam, with solutions</a>
+</ul>  
+  <ul>
+    <li>As I am currently helping a friend with fire recovery, Thursday
+      office hours are cancelled.  Instead I will hold a help session on
+      Saturday from 12-4.  As mentioned previously, tomorrow's office hours
+      will be from 10-1:30.  Come to my office (6512). If I can get a bigger
+      room, I'll hang a sign on my door letting you all know where we are.
+        <p>
+        
+  <li> office hours friday will be shifted forward (and longer) so that
+      we might all attend the SWIC luau (2-4).  My office hours will be
+      10:00 am - 1:30 pm.<p>
+    
+  <li>        <div align="left"><a href="midterm1-with-sols.doc">Midterm, with solutions 
+              <!--<li>If you have not emailed james regarding your homework submission, as
+outlined in the <a
+href="http://www.cs.pitt.edu/~mosse/cs1550/handin.html">submission
+instructions</a>, please do so immediately.
+<ul>
+<p>
+<li> SWIC is holding a UNIX seminar Today, Tuesday the 17th, at 6pm in SENSQ
+room 5317.  A great chance to broaden your UNIX skillz, all are
+welcome.
+</p>
+<p>
+<li>Students registered for the Monday recitation should attend on
+Wednesday due to the MLK Day holiday.
+</p>-->
+            </a>
+          </div>
+      </li>
+  </ul>
+  <center>
+    <ul>
+      <li>
+        <center>    
+          a preview of Assignment 5, the NachOS Filesystem, is posted
+          under the assignments page.  Soon we will finalize the extended
+          requirements for group work and announce this.  You should start
+          thinking about how to accomplish the 3 basic requirements, however, as
+          these will apply to everyone. <br> 
+          <br>
+        </center>
+      <li> the old SALSA tutorial link is broken.  A new link, <a
+href="http://www.mcs.vuw.ac.nz/courses/COMP305/2006T1/Nachos/Salsa/">http://www.mcs.vuw.ac.nz/courses/COMP305/2006T1/Nachos/Salsa/</a>
+      works for the time being.<br.>
+      
+<!--<li> Monday's class will be a project help session held in 6110, the
+recitation classroom. <br><br>
+
+<li> Assignment 4 second extension: until Tuesday, the 21st, at 9am.  <br> 10%
+bonus to all those who stick to the original deadline.
+<br><br>
+<li> get a copy of progtest.cc that will fork threads so you get
+around the whole 'machine->
+      run() doesn't return' isssue from here:<br> 
+      ~jalst114/public/1550/assign4/progtest.cc
+      <br>
+      <br>
+      -->
+      
+<!--<li> the mutex and barrier synchronization example I did in recitation
+last week may be found at '~jalst114/public/1550/synch-example/'
+<br><br>
+<li>the due date/time for assignment 3 is now Feb. 16, 9am.  Late
+penalties will be assessed in 24 increments from this time.-->
+      </li>
+    </ul>
+  </center></td>
+</tr>
+</table></center>
+
+<hr>
+<p><a href="http://www.cs.pitt.edu/~mosse/cs1550/schedule.html"><strong>Tentative</strong> Course Schedule</a> </p>
+<table>
+<tr>
+<td height="21"><p><b>Class:</b></p>  </td>
+
+<td>MW 4:30-5:45pm, SENSQ 5129</td>
+</tr>
+
+<tr>
+<td><b>Instructor:</b></td>
+
+<td>Prof. Daniel Mosse 
+(<a href="mailto:mosse@cs.pitt.edu">mosse@cs.pitt.edu</a>)
+</td>
+</tr>
+
+<tr>
+<td><b>Office Hours:</b></td>
+
+<td>6423 SENSQ, MW from 11:00-12:00 and 3:00-4:30pm (or by appointment)</td>
+</tr>
+
+<tr>
+<td><b>Recitation:</b></td>
+
+<td>M or W 6:00pm-6:50pm, SENSQ 6110 </td>
+</tr>
+</table>
+
+<br>
+<table>
+<tr>
+<td><b>TA:</b></td>
+
+<td>James Larkby-Lahet  (<a href="mailto:jamesLL@cs.pitt.edu">jamesLL@cs.pitt.edu</a>), 
+</td>
+</tr>
+
+<tr>
+<td><b>Office Hours:</b></td>
+<td> T 12:00-2:00pm, H 5:30-6:30pm, F 2:00-4:00pm </td>
+</tr>
+
+<tr>
+<td><b>Office:</b></td>
+<td>6512 SENSQ </td>
+</table>
+
+<br>
+<table>
+<tr>
+<td><b>Required Text:</b></td>
+
+<td>Modern Operating Systems, Tanenbaum, 2nd edition, ISBN: 0130313580</td>
+</tr>
+</table>
+
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size=+2>Mailing
+List Announcement</font></font></b>
+<br>A class mailing list will be compiled, and will be used for important
+announcements. It is VERY important that you be included in this list.
+It is therefore your responsibility to e-mail the TA and request
+to be included on the CS1550 class mailing list.
+<p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size=+2>Course
+Objectives</font></font></b>
+<br>The purpose of this course is to understand and use the basic concepts
+of operating systems, common to most computer systems, which interfaces
+the machine with the programmer. In particular, this class is meant to
+introduce processes such as the processing unit, process management, synchronization,
+memory management and I/O management.
+<p>The successful student will be able to understand the basic components
+of a computer operating system, and the interactions among the various
+components. The course will cover an introduction on the policies for scheduling,
+deadlocks, memory management, synchronization, and file systems. The students
+will implement solutions via C/C++ programs, and through <a href="http://http.cs.berkeley.edu/~tea/nachos">NACHOS</a>
+(Check out the <a href="http://www.mcs.vuw.ac.nz/courses/COMP305/2004T1/Nachos/Salsa/">SALSA</a> tutorial).
+<p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size=+2>Grading</font></font></b>
+<li>
+<b>30%</b> Midterm exam</li>
+
+<li>
+<b>30%</b> 2nd Midterm exam </li>
+
+<li>
+<b>30%</b> Programming projects. The projects have an estimated 10 hours
+per week for a good programmer.</li>
+
+<li>
+There will be assignemnts and pop quizzes throughout the term. These will be worth <b>10%</b>
+of your final grade.</li>
+
+<li>
+An additional <b>5%</b> bonus is possible based on class participation.<br>
+&nbsp;</li>
+
+<p><i>Note: You must average above 50% on the programming assignments and
+on the exams in order to pass the class. Lower than 50% on either portion
+of the class will result in a failing grade regardless of the overall score.</i>
+<p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size=+2>Programming
+Assignments</font></font></b>
+  <br>
+  <br>The programming assignments are an important component of the course.
+If all goes as planned, you will be implementing several components of
+an operating system kernel running atop a simulated DLX processor. While
+it would be ideal to work on an actual operating system, circumstances
+make that impractical (and an operating system, unlike a compiler, really
+is too complex to write our own from scratch).
+<p>We will be using <a href="http://http.cs.berkeley.edu/~tea/nachos">NachOS</a>,
+and C/C++. Check out the <a href="http://www.mcs.vuw.ac.nz/courses/COMP305/2004T1/Nachos/Salsa/">SALSA</a>
+tutorial.
+<dl>
+<dt>
+The programming assignments will be evaluated on several factors:</dt>
+
+<li>
+<b>Documentation:</b> your code must be well-commented and must include
+a design document describing your solution.</li>
+
+<li>
+<b>Correctness:</b> your code must do what it is supposed to do.</li>
+
+<li>
+<b>Structure:</b> your code should be broken into natural functions and
+modules.</li>
+
+<li>
+<b>Style:</b> your code should be easy to read, well indented, well commented,
+and use clear, self-explanatory variable and function names.</li>
+</dl>
+Your grade for each assignment will be based on your design (40%) and your
+code (60%). Good design and documentation are absolutely crucial for this
+class because of the difficulty of the concepts.
+<p><b>Due dates and lateness:</b>
+<li>
+<!--Late work will not be accepted except when due to true documented emergencies.</li>-->
+Late work will be accepted up to a week late, at a penalty of 10% per
+day.<li>
+<li>
+Graded work will be returned as soon as possible, usually within one week.<br>
+&nbsp;
+</li>
+<p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size=+2>Attendance</font></font></b>
+  <br>
+  <br>Class attendance is mandatory. Homeworks, assignments, and important
+dates will be posted on the class web page, but this is provided as a courtesy
+and is not always complete. <i>It is your fault if you miss something important
+because you skipped class.</i>
+<p>Recitation attendance is also required. You will miss important material
+on the programming assignments if you do not attend.
+<p>Office hours are optional. They are your chance to ask the professor
+and the TAs questions about the material being covered, the programming
+assignments, etc.
+<p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size=+2>Academic
+Honesty: Collaboration vs. Cheating</font></font></b>
+  <br>
+  <br>This really should not be an issue, but to make things as clear as
+possible the following is necessary.
+<p>You are encouraged to discuss the course material and concepts with
+other students in the class. However, all work that you submit must be
+your own. Under no circumstances may you look at anyone else's code or
+show anyone else your code. And while you may discuss the concepts used
+in the programming assignments, you may not discuss implementation details
+of the assignments themselves.
+<p>If you are caught copying or otherwise turning in work that is not <i>solely</i>
+your own, <b>you will fail the course.</b>
+<p>The bottom line is that you are expected to conduct yourself as a person
+of integrity - you are expected to adhere to the highest standards of academic
+integrity. This means that plagiarism<sup>1</sup> in any form is completely
+unacceptable. As a (soon to be) computing professional, I encourage you
+to consult the code of ethics appropriate to your discipline<sup>2</sup>.
+<p>Plagiarism will be assumed until disproved on work that is essentially
+the same as that of other students. This includes identically incorrect,
+off-the-wall, and highly unusual duplicate answers where the probability
+of a sheer coincidence is extremely unlikely. All parties to this unacceptable
+collaboration will receive the same treatment.
+<p>You should bring a picture identification with you to all examinations
+and be prepared to show it upon request.
+<p><i>If you are unsure of what is and is not allowed by this policy, talk
+to the instructor.</i>
+<p><font size=-1><sup>1 </sup><b>pla-gia-rize</b> <i>vt.</i> to steal and
+pass of as one's own (the ideas or words of another) to present as one's
+own an idea or product derived from an existing source - <b>pla-gia-riz-er</b><i>n.</i>
+(source: Webster's New World Dictionary).</font>
+<br><font size=-1><sup>2 </sup>The Association for Computing Machinery
+is http://www.acm.org/, the IEEE is http://www.ieee.org/ and the IEEE Computer
+Society is http://www.computer.org/.</font>
+<p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size=+2>Getting
+Answers to your Questions</font></font></b>
+<li>
+Attend class and recitations</li>
+
+<li>
+Check the class web page frequently - we will post as much information
+as we can</li>
+
+<li>
+Meet with the professor and TAs during office hours</li>
+
+<li>
+Email the professor and TAs</li>
+
+<p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size=+2>
+Class Schedule</font></font></b>
+<li>The class schedule is put up <a href="schedule.html">here</a>.</li>
+<li>The schedule is likely to change, so keep checking regularly.<br>
+</li>
+<hr>
+
+<td>
+<center><i>These web pages were built using material kindly provided by
+Prof. Scott A. Brandt&nbsp;</i></center>
+</td>
+
+
+</body>
+</html>

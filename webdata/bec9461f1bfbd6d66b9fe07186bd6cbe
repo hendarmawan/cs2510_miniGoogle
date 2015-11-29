@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Transcript XML support for the VC</title>
+	<style>
+		body {
+			width: 800px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		dl {
+			margin: 0;
+			padding: 0;
+		}
+		dd {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="../../Beatriz/Presentation/20.html">
+    <img src = "previous.gif" align = "left" width="26" height="26"></a>
+	<a href="page1.html">
+    <img src = "next.gif" align = "right" width="26" height="26"></a>
+
+	<center>
+		<h1>Transcript XML support for the VC</h1>
+		<hr>
+		<dl>
+                    <dd><a href="mailto:bps@cs.pitt.edu">Brian Smyth</a></dd>
+			<dd>Multimedia Software Engineering</dd>
+			<dd>University of Pittsburgh</dd>
+			<dd>&nbsp;</dd>
+                        <dd>19 April 2005</dd>
+		</dl>
+	</center > 
+</body>
+</html>

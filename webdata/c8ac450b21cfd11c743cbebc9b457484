@@ -1,0 +1,24 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en"> <html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Mozilla/4.78 [en] (Windows NT 5.0; U) [Netscape]">
+<title>wxWindows - A Cross Platform GUI Framework</title>
+</head>
+<body>
+<a href="Slide8.html"><img SRC="previous.gif" height=26 width=26 align=LEFT></a>
+<a href="Slide9b.html"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+<br>
+<font size="6" color="red"><center>BENEFITS OF WXWINDOWS (Contd.)</center></font><br><br>
+<font size = "5">
+* <b>POWERFUL EVENT SYSTEM:</b> It allows events to be associated with member functions. <br><br>
+<blockquote>BEGIN_EVENT_TABLE(MyFrame, wxFrame)</blockquote>
+<blockquote>EVT_MENU(ID_Quit, MyFrame::OnQuit)</blockquote>
+<blockquote>EVT_MENU(ID_About, MyFrame::OnAbout)</blockquote>
+<blockquote>END_EVENT_TABLE()</blockquote>
+<br>
+* <b>DEBUGGING FACILITIES:</b> wxWindows has a memory-checking facility that can detect memory leaks, reporting them at the end of the program run in debug mode. 
+<br><br>
+* <b>DATABASE FUNCTIONALITY:</b> wxWindows has two separate sets of ODBC classes, depending on how complex your needs are. Both work on Windows and Unix 
+<br><br>
+</font>
+ </body> </html> 

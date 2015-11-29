@@ -1,0 +1,303 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="./style.css" type="text/css">
+<style type="text/css">
+  table { border-collapse: collapse; }
+  a:link { text-decoration: none;  color: blue; }
+  a:visited { text-decoration: none;  color: blue; }
+</style>
+
+<title>CS 3525: Advanced Topics in Security and Privacy (Spring 2014)</title>
+</head>
+
+<body bgcolor="#FFFCCF">
+
+<h1 align="center"><font color="#660000">Discussion Schedule (Subject to Change)</font></h1>
+
+<hr>
+<center>
+  <a href="./index.html"><b>[ Home ]</b></a> &nbsp;&nbsp;
+  <a href="./policies.html"><b>[ Policies ]</b></a> &nbsp;&nbsp;
+  <a href="./lectures.html"><b>[ Lectures ]</b></a> &nbsp;&nbsp;
+  <a href="./project.html"><b>[ Project ]</b></a> &nbsp&nbsp
+</center>
+<hr>
+
+<br>
+
+<center>
+
+<table border="0" cols="1">
+<tr><td width="500">
+  <b><font color="red">Notice:</font></b> Students are responsible for
+  reading all papers listed below prior to the lecture in which they
+  will be discussed.  Paper
+  <a href="./review.txt">reviews</a> are due at the start of lecture
+  and will not be accepted late without prior approval.
+</td></tr>
+</table>
+
+<br><br>
+
+<table border="1" cols="4">
+<tbody><tr>
+  <td bgcolor="#e6ffcc" width="100" align="center"><b><u>Lecture #</u></b></td>
+  <td bgcolor="#e6ffcc" width="100"><b><u>Date</u></b></td>
+  <td bgcolor="#e6ffcc" width="450"><b><u>Topics</u></b></td>
+  <td align="center" bgcolor="#e6ffcc" width="200"><b><u>Presenter</u></b></td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">1</td>
+  <td valign="top" width="100">1/7 (Tue)</td>
+  <td valign="top" width="450">Administrivia and course introduction</td>
+  <td align="center" valign="top" width="200"> Prof. Lee </td>
+</tr>
+
+<tr>
+  <td valign="top" rowspan="2" width="100" align="center">2</td>
+  <td valign="top" rowspan="2" width="100">1/9 (Thu)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Cloud and OS Security</b></td>
+</tr>
+<tr>
+  <td valign="top" width="450">Kaan Onarlioglu, Collin Mulliner, William K. Robertson, Engin Kirda: PrivExec: Private Execution as an Operating System Service. IEEE Symposium on Security and Privacy 2013: 206-220 <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6547111">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Nick, Bill, Adam </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center"> 3 </td>
+  <td valign="top" width="100">1/14 (Tue)</td>
+  <td valign="top" width="450">Amit Vasudevan, Sagar Chaki, Limin Jia, Jonathan M. McCune, James Newsome, Anupam Datta: Design, Implementation and Verification of an eXtensible and Modular Hypervisor Framework. IEEE Symposium on Security and Privacy 2013: 430-444 <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6547125">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Yechen </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">4</td>
+  <td valign="top" width="100">1/16 (Thu)</td>
+  <td valign="top" width="450">Chiachih Wu, Zhi Wang, Xuxian Jiang: Taming Hosted Hypervisors with (Mostly) Deprivileged Execution. NDSS 2013 <a href="http://www.internetsociety.org/doc/taming-hosted-hypervisors-mostly-deprivileged-execution">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Bill </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">5</td>
+  <td valign="top" width="100">1/21 (Tue)</td>
+  <td valign="top" width="450"><font color="red">Student Choice:</font> Benjamin S. Lerner, Liam Elberty, Neal Poole, Shriram Krishnamurthi: Verifying Web Browser Extensions' Compliance with Private-Browsing Mode. ESORICS 2013: 57-74 <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-40203-6_4">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Brian </td>
+</tr>
+
+<tr>
+  <td valign="top" rowspan="2" width="100" align="center">6</td>
+  <td valign="top" rowspan="2" width="100">1/23 (Thu)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Database Security and/or Privacy</b></td>
+</tr>
+<tr>
+  <td valign="top" width="450">Rimma V. Nehme, Hyo-Sang Lim, Elisa Bertino: FENCE: continuous access control enforcement in dynamic data stream environments.CODASPY 2013: 243-254 <a href="http://dl.acm.org/citation.cfm?doid=2435349.2435383">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Jacob </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">7</td>
+  <td valign="top" width="100">1/28 (Tue)</td>
+  <td valign="top" width="450">Sumeet Bajaj, Radu Sion: CorrectDB: SQL Engine with Practical Query Authentication. VLDB 2013: 529-540 <a href="http://www.vldb.org/pvldb/vol6/p529-bajaj.pdf">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Cory </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">8</td>
+  <td valign="top" width="100">1/30 (Thu)</td>
+  <td valign="top" width="450">Stephen Tu, M. Frans Kaashoek, Samuel Madden, Nickolai Zeldovich: Processing Analytical Queries over Encrypted Data. VLDB 2013: 289-300 <a href="http://www.vldb.org/pvldb/vol6/p289-tu.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Mario </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">9</td>
+  <td valign="top" width="100">2/4 (Tue)</td>
+  <td valign="top" width="450">Nicholas L. Farnan, Adam J. Lee, Panos K. Chrysanthis, and Ting Yu: PAQO: Preference-Aware Query Optimization for Decentralized Database Systems. ICDE 2014. <a href="http://people.cs.pitt.edu/~adamlee/pubs/2014/farnan2014icde.pdf">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Nick </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center"> 10 </td>
+  <td valign="top" width="100">2/6 (Thu)</td>
+  <td valign="top" width="450"><font color="red">Student Choice:</font> TBD </td>
+  <td align="center" valign="top" width="200"> Cory </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" rowspan="2" width="100" align="center">11</td>
+  <td valign="top" rowspan="2" width="100">2/11 (Tue)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Pervasive Sensing</b></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">Suman Jana, Arvind Narayanan, Vitaly Shmatikov: A Scanner Darkly: Protecting User Privacy from Perceptual Applications. IEEE Symposium on Security and Privacy 2013: 349-363 <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6547120">[PDF]</a>
+ </td>
+  <td align="center" valign="top" width="200"> Brandon </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">12</td>
+  <td valign="top" width="100">2/13 (Thu)</td>
+  <td valign="top" width="450">Robert Templeman, Zahid Rahman, David J. Crandall, Apu Kapadia: PlaceRaider: Virtual Theft in Physical Spaces with Smartphones. NDSS 2013 <a href="http://internetsociety.org/doc/placeraider-virtual-theft-physical-spaces-smartphones">[PDF]</a>
+ </td> 
+  <td align="center" valign="top" width="200"> Jacob </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">13</td>
+  <td valign="top" width="100">2/18 (Tue)</td>
+  <td valign="top" width="450">Sameer Patil, Roman Schlegel, Apu Kapadia, and Adam J. Lee: Reflection or Action?: How Feedback and Control Affect Location Sharing Decisions.  CHI 2014 <a href="http://people.cs.pitt.edu/~adamlee/pubs/2014/patil2014chi.pdf">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Brian </td>
+</tr>
+
+
+
+<tr>
+  <td valign="top" width="100" align="center">14</td>
+  <td valign="top" width="100">2/20 (Thu)</td>
+  <td valign="top" width="450"><font color="red">Student Choice:</font> Jun Han, Emmanuel Owusu, Le T. Nguyen, Adrian Perrig, Joy Zhang: ACComplice: Location inference using accelerometers on smartphones. COMSNETS 2012: 1-9.  <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6151305">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Yechen </td>
+</tr>
+
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" rowspan="2" width="100" align="center">15</td>
+  <td valign="top" rowspan="2" width="100">2/25 (Tue)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Storage</b></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">Bo Chen, Reza Curtmola: Towards self-repairing replication-based storage systems using untrusted clouds. CODASPY 2013: 377-388 <a href="http://dl.acm.org/citation.cfm?doid=2435349.2435402">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Bill </td>
+</tr>
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">16</td>
+  <td valign="top" width="100">2/27 (Thu)</td>
+  <td valign="top" width="450"> Project proposal mini-presentations </td>
+  <td align="center" valign="top" width="200"> - </td> 
+</tr>
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">17</td>
+  <td valign="top" width="100">3/04 (Tue)</td>
+  <td valign="top" width="450"> No class: Prof. Lee is at CODASPY</td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">18</td>
+  <td valign="top" width="100">3/06 (Thu)</td>
+  <td valign="top" width="450"> Christian Cachin, Kristiyan Haralambiev, Hsu-Chun Hsiao, Alessandro Sorniotti: Policy-based secure deletion. ACM Conference on Computer and Communications Security 2013: 259-270 <a href="http://dl.acm.org/citation.cfm?doid=2508859.2516690">[PDF]</a>  </td>
+  <td align="center" valign="top" width="200"> Mario </td>
+</tr>
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">-</td>
+  <td valign="top" width="100">3/11 (Tues)</td>
+  <td valign="top" colspan="2" width="450">Spring break.  No class.</td>
+</tr>
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">-</td>
+  <td valign="top" width="100">3/13 (Thu)</td>
+  <td valign="top" colspan="2" width="450">Spring break.  No class.</td>
+</tr>
+
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" rowspan="2" width="100" align="center">19</td>
+  <td valign="top" rowspan="2" width="100">3/18 (Tue)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Access Control</b></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">Vivek Krishnan, Mahesh V. Tripunitara, Kinson Chik, Tony Bergstrom: Relating declarative semantics and usability in access control. SOUPS 2012 <a href="http://dl.acm.org/citation.cfm?doid=2335356.2335375">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Brandon </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">20</td>
+  <td valign="top" width="100">3/20 (Thu)</td>
+  <td valign="top" width="450">Anna Lisa Ferrara, Georg Fuchsbauer, Bogdan Warinschi: Cryptographically Enforced RBAC. CSF 2013: 115-129 <a href="http://ieeexplore.ieee.org/xpl/articleDetails.jsp?arnumber=6595824">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">21</td>
+  <td valign="top" width="100">3/25 (Tue)</td>
+  <td valign="top" width="450">Michael Carl Tschantz, Anupam Datta, Jeannette M. Wing: Purpose Restrictions on Information Use. ESORICS 2013: 610-627 <a href="http://link.springer.com/chapter/10.1007%2F978-3-642-40203-6_34">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Briand </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">22</td>
+  <td valign="top" width="100">3/27 (Thu)</td>
+  <td valign="top" width="450">William C. Garrison III, Yechen Qiao, and Adam J. Lee: On the Suitability of Dissemination-centric Access Control Systems for Group-centric Sharing.  CODASPY 2014. <a href="http://people.cs.pitt.edu/~adamlee/pubs/2014/garrison2014codaspy.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Bill </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">23</td>
+  <td valign="top" width="100">4/1 (Tue)</td>
+  <td valign="top" width="450"><font color="red">Student Choice:</font> Alireza Sharifi, Mahesh V. Tripunitara: Least-restrictive enforcement of the Chinese wall security policy. SACMAT 2013: 61-72 <a href="http://dl.acm.org/citation.cfm?id=2462425">[PDF]</a> </td>
+  <td align="center" valign="top" width="200">	- </td>
+</tr>
+
+<tr>
+  <td valign="top" rowspan="2" width="100" align="center">24</td>
+  <td valign="top" rowspan="2" width="100">4/03 (Thu)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Potpourri</b></td>
+</tr>
+<tr>
+  <td valign="top" width="450">Michelle L. Mazurek, Saranga Komanduri, Timothy Vidas, Lujo Bauer, Nicolas Christin, Lorrie Faith Cranor, Patrick Gage Kelley, Richard Shay,Blase Ur: Measuring password guessability for an entire university. ACM Conference on Computer and Communications Security 2013: 173-186 <a href="http://dl.acm.org/citation.cfm?doid=2508859.2516726">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">25</td>
+  <td valign="top" width="100">4/08 (Tue)</td>
+  <td valign="top" width="450">Lei Wu, Michael C. Grace, Yajin Zhou, Chiachih Wu, Xuxian Jiang: The impact of vendor customizations on android security. ACM Conference on Computer and Communications Security 2013: 623-634 <a href="http://dl.acm.org/citation.cfm?doid=2508859.2516728">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">26</td>
+  <td valign="top" width="100">4/10 (Thu)</td>
+  <td valign="top" width="450">Ninghui Li, Wahbeh H. Qardaji, Dong Su, Yi Wu, Weining Yang: Membership privacy: a unifying framework for privacy definitions. ACM Conference on Computer and Communications Security 2013: 889-900 <a href="http://dl.acm.org/citation.cfm?doid=2508859.2516686">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">27</td>
+  <td valign="top" width="100">4/15 (Tue)</td>
+  <td valign="top" width="450">Vera D. Khovanskaya, Eric P. S. Baumer, Dan Cosley, Stephen Voida, Geri Gay: "Everybody knows what you're doing": a critical design approach to personal informatics. CHI 2013: 3403-3412 <a href="http://dl.acm.org/citation.cfm?doid=2470654.2466467">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">28</td>
+  <td valign="top" width="100">4/17 (Thu)</td>
+  <td valign="top" width="450"><font color="red">Student Choice:</font> Hamed Soroush, Keen Sung, Erik G. Learned-Miller, Brian Neil Levine, Marc Liberatore: Turning Off GPS Is Not Enough: Cellular Location Leaks over the Internet. Privacy Enhancing Technologies 2013: 103-122 <a href="http://freehaven.net/anonbib/papers/pets2013/paper_56.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">29</td>
+  <td valign="top" width="100">4/22 (Tue)</td>
+  <td valign="top" width="450"> Final Project Presentations </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">30</td>
+  <td valign="top" width="100">4/24 (Thu)</td>
+  <td valign="top" width="450"> Final Project Presentations </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+</table>
+<br><br>
+
+
+
+<!-- end page -->
+</body></html>

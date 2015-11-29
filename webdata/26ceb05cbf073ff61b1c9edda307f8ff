@@ -1,0 +1,32 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="page12.html"><img src="previous.gif" align=left></a>
+<a href="page14.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>Uses of Content-Based Image Queries</h1>
+   <br></br> 
+<p>There are many applications that benefit from content-based image
+queries. Listed are some of them:<br><br>
+<ul>
+   <li><b>Biomedicine</b></li>
+      <p>X-ray diagnosis, MRI's</p><br>
+   <li><b>Crime Prevention</b></li>
+      <p>Fingerprinting, Face Recognition</p><br>
+   <li><b>Military</b></li>
+      <p>Radar, Aerial, Satellite Target Recognition</p><br>
+   <li><b>NASA</b></li>
+      <p>Satellite Observations</p><br>
+   <li><b>Commercial</b></li>
+      <p>Fashion</p><br>
+   <li><b>Cultural</b></li>
+      <p>Museums, Art Galleries</p><br>
+   <li><b>Filtering</b></li>
+      <p>Inappropriate Images and Websites</p><br>
+</ul>
+</p>
+</font>
+</html>

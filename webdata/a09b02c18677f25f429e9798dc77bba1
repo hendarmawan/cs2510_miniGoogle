@@ -1,0 +1,164 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40"> 
+ 
+	<head>
+	<link rel="File-List" href="2_files/filelist.xml">
+ <title> Multimedia Software Engineering </title> 
+
+ 	<!--[if !mso]>
+	<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+	<![endif]--><!--[if gte mso 9]>
+	<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+	</xml><![endif]-->
+	</head>
+
+	<body>
+
+	<a href="1.htm">  <IMG SRC="previous.gif" align=left></a><A HREF="previous.html">  </A> 
+ 	<a href="3.htm">  <IMG SRC="next.gif" align=right></a><A HREF="next.html">  </A> 
+ <center> 
+ <h1>ARCHITECTURE</h1>
+&nbsp;</center> 
+ 	<h1><a name="_Toc101336648">2. Architecture of the Prototype</a></h1>
+	<p class="MsoNormal">This section describes the architecture to interface 
+	the message server with other servers like the VC server and Chronobot 
+	server as shown in the following figure: </p>
+	<div style="mso-element:para-border-div;border:solid windowtext 1.0pt;
+mso-border-alt:solid windowtext .5pt;padding:1.0pt 4.0pt 1.0pt 4.0pt">
+		<h1 style="border: medium none; padding: 0in"><a name="_Toc101336435"><!--[if gte vml 1]><v:group id="_x0000_s1025"
+ editas="canvas" style='width:437.25pt;height:297pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="1695,7220" coordsize="8745,5940">
+ <o:lock v:ext="edit" aspectratio="t"/>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+  left:1695;top:7220;width:8745;height:5940' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path o:extrusionok="t" o:connecttype="none"/>
+  <o:lock v:ext="edit" text="t"/>
+ </v:shape><v:group id="_x0000_s1027" style='position:absolute;left:2835;top:7580;
+  width:6300;height:5250' coordorigin="1800,7580" coordsize="4680,3600">
+  <v:group id="_x0000_s1028" style='position:absolute;left:1800;top:7580;
+   width:4680;height:3600' coordorigin="3780,7400" coordsize="4680,3600">
+   <v:rect id="_x0000_s1029" style='position:absolute;left:4140;top:7400;
+    width:3240;height:1981' fillcolor="#ddd">
+    <v:textbox style='mso-next-textbox:#_x0000_s1029'>
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%" id="table3">
+	<tr>
+		<td><![endif]>
+		<div>
+			<p class="MsoNormal" align="center" style="text-align:center">
+			Message Server</p>
+			<p class="MsoNormal" align="center" style="text-align:center">(ActiveMQ 
+			Message Broker)</p>
+			<p class="MsoNormal" align="center" style="text-align:center">Queue1<span style="mso-spacerun:yes">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			</span>Queue2</div>
+		<![if !mso]></td>
+	</tr>
+</table>
+<![endif]></v:textbox>
+   </v:rect><v:rect id="_x0000_s1030" style='position:absolute;left:3780;top:10100;
+    width:1800;height:900' fillcolor="#ddd">
+    <v:textbox style='mso-next-textbox:#_x0000_s1030'>
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%" id="table2">
+	<tr>
+		<td><![endif]>
+		<div>
+			<p class="MsoNormal" align="center" style="text-align:center">Client 
+			1</p>
+			<p class="MsoNormal" align="center" style="text-align:center">(VC 
+			Server)</div>
+		<![if !mso]></td>
+	</tr>
+</table>
+<![endif]></v:textbox>
+   </v:rect><v:rect id="_x0000_s1031" style='position:absolute;left:6660;top:10100;
+    width:1800;height:900' fillcolor="#ddd">
+    <v:textbox style='mso-next-textbox:#_x0000_s1031'>
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%" id="table1">
+	<tr>
+		<td><![endif]>
+		<div>
+			<p class="MsoNormal" align="center" style="text-align:center">Client 
+			2</p>
+			<p class="MsoNormal">(Chronobot Server)</div>
+		<![if !mso]></td>
+	</tr>
+</table>
+<![endif]></v:textbox>
+   </v:rect><v:line id="_x0000_s1032" style='position:absolute;flip:y' from="4860,9200"
+    to="6300,10100">
+    <v:stroke endarrow="block"/>
+   </v:line><v:line id="_x0000_s1033" style='position:absolute;flip:x y'
+    from="5220,9200" to="7200,10100">
+    <v:stroke endarrow="block"/>
+   </v:line><v:line id="_x0000_s1034" style='position:absolute;flip:x' from="3960,9200"
+    to="5220,10100">
+    <v:stroke endarrow="block"/>
+   </v:line><v:line id="_x0000_s1035" style='position:absolute' from="6300,9200"
+    to="7920,10100">
+    <v:stroke endarrow="block"/>
+   </v:line></v:group><v:group id="_x0000_s1036" style='position:absolute;
+   left:3059;top:8660;width:1441;height:720' coordorigin="5040,8480"
+   coordsize="1441,720">
+   <v:group id="_x0000_s1037" style='position:absolute;left:5040;top:8480;
+    width:361;height:720' coordorigin="2520,10100" coordsize="361,720">
+    <v:line id="_x0000_s1038" style='position:absolute' from="2520,10101" to="2521,10820"/>
+    <v:line id="_x0000_s1039" style='position:absolute' from="2880,10100" to="2881,10819"/>
+    <v:line id="_x0000_s1040" style='position:absolute' from="2520,10100" to="2880,10100"/>
+    <v:line id="_x0000_s1041" style='position:absolute' from="2520,10280" to="2880,10281"/>
+    <v:line id="_x0000_s1042" style='position:absolute' from="2520,10459" to="2880,10460"/>
+   </v:group><v:group id="_x0000_s1043" style='position:absolute;left:6120;
+    top:8480;width:361;height:720' coordorigin="2520,10100" coordsize="361,720">
+    <v:line id="_x0000_s1044" style='position:absolute' from="2520,10101" to="2521,10820"/>
+    <v:line id="_x0000_s1045" style='position:absolute' from="2880,10100" to="2881,10819"/>
+    <v:line id="_x0000_s1046" style='position:absolute' from="2520,10100" to="2880,10100"/>
+    <v:line id="_x0000_s1047" style='position:absolute' from="2520,10280" to="2880,10281"/>
+    <v:line id="_x0000_s1048" style='position:absolute' from="2520,10459" to="2880,10460"/>
+   </v:group></v:group></v:group></v:group><![endif]--><![if !vml]><img
+width=583 height=396 src="2_files/image001.gif" v:shapes="_x0000_s1025 _x0000_s1026 _x0000_s1027 _x0000_s1028 _x0000_s1029 _x0000_s1030 _x0000_s1031 _x0000_s1032 _x0000_s1033 _x0000_s1034 _x0000_s1035 _x0000_s1036 _x0000_s1037 _x0000_s1038 _x0000_s1039 _x0000_s1040 _x0000_s1041 _x0000_s1042 _x0000_s1043 _x0000_s1044 _x0000_s1045 _x0000_s1046 _x0000_s1047 _x0000_s1048"><![endif]></a></h1>
+		<h1 align="center" style="text-align: center; border: medium none; padding: 0in">
+		<a name="_Toc101336436"><i>
+		<span style="font-size: 12.0pt; font-family: Times New Roman; font-weight: normal">
+		Figure1: Architecture of Prototype message server example</span></i></a></h1>
+	</div>
+	<p class="MsoNormal" style="text-align:justify">&nbsp;</p>
+	<p class="MsoNormal" style="text-align:justify">The message server maintains 
+	two queues Queue1 and Queue2. In other words, it maintains one queue per 
+	client it services. The messages destined to a particular client are 
+	deposited to the queue associated with the client. For example, if Client1 
+	wants to send a message to Client2, it specifies Queue 2 to be the 
+	destination queue. On the other hand, when a client needs to retrieve a 
+	message from the message server, it reads from the queue associated with it. 
+	So, when Client2 retrieves a message, it has to be from Queue2. </p>
+	<p class="MsoNormal" style="text-align:justify">If we consider Client1 to be 
+	the VC server and Client2 to be Chronobot Server, we can interface them 
+	through the message server.</p>
+	<p align="justify">&nbsp;</p>
+
+	</body>
+ </html> 

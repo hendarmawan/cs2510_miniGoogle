@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>PHP</title>
+</head>
+<body bgcolor="#99CCFF">
+<a href="page1.html"><img src="previous.gif" align="left" /></a>
+<a href="page3.html"><img src="next.gif" align="right" /></a>
+<center>
+   <br></br>
+   <h1><font color="#FF0000">History</font></h1>
+   <br></br>   
+</center>
+<ul>
+<li>PHP succeeded PHP/FI
+<li>PHP/FI was created by Rasmus Lerdorf in 1995
+<li>PHP 3.0 1st version of PHP that resembles PHP today. Completely rewritten by Andi Gutmans and Zeev Suraski in 1997 because they found that PHP/FI was not powerful enough for their eCommerce applications.
+<li>20% of web sites have PHP installed today.
+

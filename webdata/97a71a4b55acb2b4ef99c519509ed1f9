@@ -1,0 +1,26 @@
+<b>
+<h1>Test Automation</h1>
+The bonus mini-project report is only one page -
+one paragraph for each item below and one screen shot for third item.
+Then you will give a demo on your implementation.
+<h2>1. What feature/function you want to add to your
+baseline system?
+</h2>
+Please select some feature that is an improvement
+of an existing function.
+<h2>2. What tests do you want to perform?
+</h2>
+Please come up with a short checklist of the tests
+you want to perform.  
+<h2>
+3. How do you plan to implement it?
+</h2>
+Either you implement a test driver yourself
+or you rely on Selenium.  A screen shot
+of either approach should be included here.
+
+<h2><font color=red>
+After the final exam, please come to my office
+to give the demo.
+</font>
+</h2>

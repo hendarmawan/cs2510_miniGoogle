@@ -1,0 +1,31 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="page2.html"><img src="previous.gif" align=left></a>
+<a href="page4.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>What They Should Do</h1>
+   <br></br> 
+   Different image search engines behave in different ways, but all have a
+common theme when searching for images.
+<br><br>
+Ideally, an image search engine would have the following features
+<font color="red">*</font>
+<ul>
+   <li>Allow keyword searching of image content, date, and creator</li>
+   <li>Let you search by color, shape, and other formal attributes</li>
+   <li>Search databases internal to a site</li>
+   <li>Display the image as part of your search results</li>
+   <li>Allow you to find the rights-holder</li>
+   <li>Furnish the rights status and terms for licensing</li>
+</ul>
+<br><br>
+<font color="red">* <a
+href="http://www.onlineinc.com/onlinemag/OL1998/berinstein5.html">Berinstein,
+Paula. <u>Turning Visual: Image Search
+Engines on the Web</u></a></font>
+</font>
+</html>

@@ -1,0 +1,366 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<HTML>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<base target=1502main>
+<link rel=File-List href="ALU_TestBench_files/filelist.xml">
+<link rel=Edit-Time-Data href="ALU_TestBench_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Unit1g : Testing the ALU</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>don</o:Author>
+  <o:LastAuthor>Sam Dickerson</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>394</o:TotalTime>
+  <o:Created>2005-09-15T20:34:00Z</o:Created>
+  <o:LastSaved>2005-09-16T18:42:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>730</o:Words>
+  <o:Characters>4161</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>34</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4882</o:CharactersWithSpaces>
+  <o:Version>11.6408</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:1189293948;
+	mso-list-template-ids:-521388532;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l0:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l0:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="6146"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white background="Generator_files/Unitbkg.jpg" lang=EN-US link=blue
+vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center'>Unit 1g</h2>
+
+<h2 align=center style='text-align:center'>Testing the ALU</h2>
+
+<h3>Creating a Test Bench</h3>
+
+<p>Given the complexity of large scale digital designs, it is estimated that
+more the 50% of the total design time for a new device is spent on testing and
+validation. Just think a little about the way you have tested your designs so
+far. You created a script file with a set of cases representing each function
+that you wanted to test, you ran the script and then looked at the output data
+to manually verify that the actual output was what you expected. Some of those
+script files were fairly long, yet they typically tested only one case for each
+of the functions that you wanted to test. What if you wanted to test every
+possible case?<span style='mso-spacerun:yes'>  </span>For addition, this would
+mean testing 2**128 input combinations, a seriously long script file. If each
+of these cases took 1 microsecond of simulation time, the adder test would run
+for approximately 10**29 years? (by comparison the age of the sun is about 4.5
+x 10**9 years). Obviously we need a different approach.</p>
+
+<p>Instead of thinking of testing on a case-by-case basis let’s think about
+testing as validating<span style='mso-spacerun:yes'>  </span>the behavior of
+the circuit. For example instead of testing if the addition function works by
+asking if 2+2=4, let’s make an assertion about the relationship between the
+inputs and the outputs. For example as ASSERTION about an adder would test the
+PROPERTY,<span style='mso-spacerun:yes'>  </span>A+B = R.<span
+style='mso-spacerun:yes'>  </span>In the context of testing, an <i
+style='mso-bidi-font-style:normal'>ASSERTION</i> is a statement about the
+expected behavior (called a <i style='mso-bidi-font-style:normal'>PROPERTY</i>)
+of the circuit. </p>
+
+<p>Assertions can take many forms. They can test properties that must always
+hold, or never hold. For example</p>
+
+<p style='text-indent:.5in'><b style='mso-bidi-font-weight:normal'>Assert<span
+style='mso-spacerun:yes'>  </span></b>NEVER, <b style='mso-bidi-font-weight:
+normal'>Property </b>ALUop = “1000”<span style='mso-spacerun:yes'>       
+</span>----<span style='mso-spacerun:yes'>  </span>Since 1000 is an unassigned
+operation code.</p>
+
+<p>Assertions can test relationships between multiple inputs and outputs</p>
+
+<p style='text-indent:.5in'><b style='mso-bidi-font-weight:normal'>Assert </b>IMPLICATION
+<b style='mso-bidi-font-weight:normal'>Property </b><span
+style='mso-spacerun:yes'> </span>WHEN ALUop = 0011 THEN R = A+B. </p>
+
+<p>Assertions are most powerful for test timing and sequence relationships
+(although these will not be useful for testing your ALU, we will see this in
+detail in the memory bus unit)</p>
+
+<p><span style='mso-tab-count:1'>            </span><b style='mso-bidi-font-weight:
+normal'>Assert</b> SEQUENCE <b style='mso-bidi-font-weight:normal'>Property</b>
+A,B,C</p>
+
+<p>There are several languages and commercial tools for generating, writing,
+and testing assertions. Most of these are beyond the scope of this class. To
+implement assertions in HDL designer, you will use a special library called the
+OPEN VERIFICATION LIBRARY, the implements a set of VHDL block that can test a
+set of standard properties defined for the electronics design automation
+industry. We have implemented this library as HLD designer blocks and stored
+then in a library call COE1502_OVL.<span style='mso-spacerun:yes'>  </span>You
+should map this library into your project at I:\1502\COE1502_OVL. If you don’t
+remember how to do this refer to the earlier unit where you mapped the COElib.
+Once mapped, open the library by clicking on the library name in the project
+manager. If the library is properly mapped you should see the following.</p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p align=center style='text-align:center'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:373.5pt;
+ height:8in'>
+ <v:imagedata src="ALU_TestBench_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=498 height=768
+src="ALU_TestBench_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal style='mso-line-height-alt:.75pt'>Each of the components in
+this library is designed to test the validity of a particular property in
+either a spatial (one or more signals at the same time) or temporal (one or
+more signals in time sequence) context. To find out how each one works, go to
+the course web page under the reference heading and click on <span
+style='color:black'><a href="../../../Reference/OVL.html">Open Verification
+Library Documentation</a><o:p></o:p></span></p>
+
+<p>If<span style='mso-spacerun:yes'>  </span>you’re confused, don’t worry. You
+will only use two or three types of assertion blocks for this unit.<span
+style='mso-spacerun:yes'>  </span>Take a quick look at the documentation for <i
+style='mso-bidi-font-style:normal'>assert_always, assert_never,</i> and <i
+style='mso-bidi-font-style:normal'>assert_implication</i>. Notice that each of
+these has inputs for <i style='mso-bidi-font-style:normal'>clock, reset</i>,
+and (one or more) <i style='mso-bidi-font-style:normal'>test_expr. </i>You can
+ignore clock and reset for now. These are std_logic signal inputs that define
+the timing of each test case. The <i style='mso-bidi-font-style:normal'>text_expr</i>
+input is of type boolean and thus may only take on the value TRUE or FALSE. To
+built and assertion that tests a particular property that describes your ALU,
+you will need to write out a VHDL concurrent assignment statement (in an
+embedded block) that represents the property to be tested. As an example, here
+is a statement that tests the addition property and sets test_expr to a
+Boolean, test_expr based on where the result, R, is the sum of A and B.. </p>
+
+<p><i style='mso-bidi-font-style:normal'>test_expr &lt;=<span
+style='mso-spacerun:yes'>  </span>R=(A+B);<o:p></o:p></i></p>
+
+<p>With the property coded this way,<span style='mso-spacerun:yes'> 
+</span>test_expr is now the input of the assertion block. Notice that the
+addition operation in the property statement uses the internal addition function
+built into VHDL. This is a behavioral model and has no particular mapping to
+hardware, <i style='mso-bidi-font-style:normal'>which is exactly what we want</i>.
+Putting all of this together in a block diagram view, our example looks like
+figure 1 below. In modelsim, this design will print a user defined message any
+time the clock is rising and A+B does not equal R.</p>
+
+<p align=center style='text-align:center'><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:513.75pt;height:300pt'>
+ <v:imagedata src="ALU_TestBench_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=685 height=400
+src="ALU_TestBench_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p align=center style='text-align:center'><b style='mso-bidi-font-weight:normal'>Figure
+1<o:p></o:p></b></p>
+
+<p>Don’t try to implement this right now. First, we will learn a structured way
+of defining your property assertions and putting them all together called a
+test bench.</p>
+
+<p style='margin-left:.5in'><o:p>&nbsp;</o:p></p>
+
+<p align=center style='margin-left:.5in;text-align:center'><a
+href="Creating_TB.html" target="_self">Click here to proceed.</a></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=windows-1257">
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (WinNT; U) [Netscape]">
+</head>
+<body text="#000000" bgcolor="#CCCCCC" link="#0000EE" vlink="#551A8B" alink="#FF0000">
+
+<center>
+<h3>
+<font size=+1>CoE1502: Using Logic Analyzer</font></h3></center>
+In order to test a real hardware design one need to be able to measure
+the actual values of bus and signal lines. Logic analyzer is a great aid
+for this purpose. With it one can collect output signals and view wave
+forms.
+<p>In our class we are using HP 1600 series logic analyzer.
+<p>Our design will be synthesized and uploaded to the FPGA device on the
+"Wild-One" board. The board is connected to the logic analyzer. Thus we
+can run tests on our design and observe the results with the logic analyzer.
+<h3>
+How to use the Logic Analyzer (LA):</h3>
+The LA has several sets of buttons on its front pannel:
+<ul>
+<li>
+quick menu keys -- allow you to go to a particular menu of the system</li>
+
+<li>
+navigation keys -- allow you to move cursor in 4 directions and select
+or confirm actions.</li>
+
+<ul>
+<li>
+Arrows -- move cursor</li>
+
+<li>
+Select -- selects an option or performs the highlited function</li>
+
+<li>
+Done -- saves assignments and closes popup menus</li>
+
+<li>
+Knob -- by rotating the knob you can change values in some fields or scroll
+the display, or move cursor</li>
+</ul>
+
+<li>
+data entry keys -- for entering signal names and other data</li>
+
+<li>
+run and stop keys -- starts/stops measurement</li>
+</ul>
+The LA also has a 3" disk drive where one can save current setup or waweforms.
+<p>When you want to make measurements with the LA, you have to go through
+the following steps:
+<ol>
+<li>
+Map to target (CONFIG. key)</li>
+
+<li>
+Set up analyzers (FORMAT key)</li>
+
+<li>
+Set up trigger (TRIGGER key)</li>
+
+<li>
+Run measurement (RUN key)</li>
+
+<li>
+View data (LIST / WAVEFORM keys)</li>
+</ol>
+
+<h3>
+Map to Target (CONFIG. key)</h3>
+This step configures the LA. Normally you do not need to make any changes
+here and can skip to the next step.
+<ul>
+<li>
+<i>Connect probes </i>-- this is already done and the LA is connected to
+the Wild-One board with the FPGA on it.</li>
+
+<li>
+<i>Set type </i>-- selects operating mode of the LA</li>
+
+<li>
+<i>Assign pods </i>-- defines connections between the LA and the tested
+device.</li>
+</ul>
+
+<h3>
+Set Up Analyzers (FORMAT key)</h3>
+
+<ul>
+<li>
+<i>Set modes and clocks --</i> The data can be gathered at certain time
+intervals (using clocks) or at specific events (triggers). Here we make
+a choice, how we would like to collect data.</li>
+
+<li>
+<i>Group bits under labels</i> -- For our convenience we can create logical
+busses by collecting incoming signals in a bus and giving the bus a name.
+Later in the waweform the collection of these signals will be labeled by
+the bus name.</li>
+</ul>
+
+<h3>
+Set Up Trigger (TRIGGER key)</h3>
+
+<ul>
+<li>
+<i>Define terms </i>-- define trigger variables to match certain events
+(patterns, ranges, edges) in your target system</li>
+
+<li>
+<i>Configure arming control </i>-- if you want the LA to trigger an external
+instrument or vica verse</li>
+
+<li>
+<i>Set up trigger sequence </i>-- set up when the LA starts and stops collecting
+data, and which data is to be gathered.</li>
+</ul>
+
+<h3>
+Run Measurement (RUN key)</h3>
+
+<ul>
+<li>
+<i>Select single or repetive </i>-- a single run will run until the memory
+is full. a repetitive will run until you press STOP ot until a stop condition
+(defined before) is fullfilled</li>
+
+<li>
+<i>If nothing happens</i>, press Stop and find out why (incorrect triggers,
+...?)</li>
+
+<li>
+<i>Gather data </i>-- press RUN and hold your breath...</li>
+</ul>
+
+<h3>
+View Data (LIST / WAVEFORM keys)</h3>
+Here we can view the results of our test run and see if we get what we
+expected.
+<ul>
+<li>
+<i>Search for patterns</i></li>
+
+<li>
+<i>Correlate data</i></li>
+
+<li>
+<i>Make measurements</i></li>
+</ul>
+After this step you can go back to trigger setup, or make changes in your
+design, synthesize, upload and run the measurement again.
+<p>For more information you can check out <a href="LogicAn1502.html">CoE0501/CoE1502
+slides on logic analyzer</a>.
+<p>Good Luck!
+<br>&nbsp;
+</body>
+</html>

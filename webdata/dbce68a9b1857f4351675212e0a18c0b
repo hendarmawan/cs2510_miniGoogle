@@ -1,0 +1,24 @@
+<title>Content Based Retrieval</title>
+
+<a href="c3-5.html"><IMG
+SRC="../previous.gif" align=left></a>
+
+<a href="http://www.cs.pitt.edu/~chang/265/265syl.html"><IMG
+SRC="../next.gif" align=right></a>
+
+<center><h1>Content Based Retrieval</h1></center>
+<br>
+<h3>References</h3>
+<br>
+
+Stefan Berchtold, Daniel A. Keim, Hans-Peter Kriegel:
+<a href =
+"http://www.informatik.uni-trier.de/~ley/db/conf/vldb/BerchtoldKK96.html">
+The X-tree : An Index Structure for High-Dimensional Data. </A> 
+VLDB 1996: 28-39 .
+<p>
+Jagadish, H.V. "A retrieval technique for similar shapes," in Proc.
+ACM-SIGMOD International Conference on the Management of Data, Denver,CO,
+May 1991.
+<p> 
+Jagadish, H.V. "Content-Based Indexing and retrieval"

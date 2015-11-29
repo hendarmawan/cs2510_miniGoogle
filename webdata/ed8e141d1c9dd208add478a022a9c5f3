@@ -1,0 +1,49 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="cbir-07.htm"><img src="previous.gif" align="left" alt="DrawSearch"></a>
+<a href="cbir-09.htm"><img src="next.gif" align="right" alt="ImageScape"></a>
+
+<br><br>
+<center>
+<table width="600">
+	<tr>
+		<td>
+			<h1 align="center">ImageRover</h1>
+			<hr>			
+		
+			<p><b>Developed by:</b><br> Boston University, MA</p>
+			
+			<p>
+			<b>Features:</b><br> 
+			- Extracts color and texture orientation features.<br>
+			- System computes over 6 subregions (whole, central, and 4 corners) to form 2 x 6 sub-vectors
+			</p>
+			
+			<p>
+			<b>Matching:</b><br>
+			- Normalized Minkowski metric is used to compute distance between two sets of vectors.
+			</p>
+			
+			<p>
+			<b>Querying:</b><br>
+			1) User starts with sets of keyword.<br>
+			2) Then, after the system returns results back, user can mark images for relevance.
+			</p>
+			
+			<p align="center">
+			<i>Fig 1. Result window of ImageRover.</i><br>
+			<i>
+			<img border="0" src="images/imagerover/imagerover.jpg" width="692" height="626"><br>
+			&nbsp;</i></p>
+			
+		</td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

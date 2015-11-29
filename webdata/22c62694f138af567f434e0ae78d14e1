@@ -1,0 +1,58 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>State of the art through two classes of approaches</title>
+<meta name="Microsoft Theme" content="inmotion 011">
+</head>
+
+<body background="inmtextb.gif" bgcolor="#FFFFFF" text="#663300" link="#990066" vlink="#CC6633" alink="#FFCC00">
+
+<!--mstheme--><font face="Arial, Helvetica">
+
+<p>&nbsp;</p>
+
+<p><a href="8.htm"><img border="0" src="previous.gif" width="26" height="26"></a></p>
+
+<p><u><font size="7" face="Times New Roman">Approaches</font></u></p>
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="5">Depending on how close the document description is to the 
+presentation level, we distinguish two classes of authoring approaches:</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="5"><i><a href="10.htm">Operational approaches</a></i> are based 
+on the direct specification of the state machine, which defines the temporal 
+scenario of the document (see <a href="6.htm">Figure 1</a>). </font>
+</p>
+    </font><!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="5"><i><a href="16.htm">Constraint-based 
+approaches</a></i>  are based on constraint programming and are characterized by a formatting 
+phase that computes starting times and durations, as required by the scenario. 
+This formatting phase can be seen as a compilation of a declarative 
+specification into an operational structure, which can be interpreted by the 
+presentation phase. Thus, the author specifies what scenario he needs without 
+involvement of how to get the result in terms of operational actions, in a 
+declarative way.</font></p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB"><img border="0" src="9.htm1.gif" width="482" height="409"></font></p>
+
+<p ALIGN="JUSTIFY"><a href="10.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></p>
+<!--mstheme--></font>
+
+</body>
+
+</html>

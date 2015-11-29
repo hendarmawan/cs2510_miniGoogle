@@ -1,0 +1,70 @@
+<html>
+
+<head>
+<title>clases </title>
+</head>
+
+<body bgcolor=#FFFFFE text=#000000 >
+
+<body>
+
+<p>
+<img align=left src ="http://www.cs.pitt.edu/Gifs/pittlogo.gif">
+<br><br> <br><br><br><br>
+<br><br>
+<h3>
+Listed below are some of the classes I have taught: </h3>
+
+<ul>
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/1502p/index.html">
+CoE1502</a>
+: Advanced Digital Design
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/3410p/index.html">
+CS3410</a>
+: Advanced Topics in Computer Architectures
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/xx45p/index.html">
+CS1645/2045</a>
+: Introduction to High Performance Computing Systems
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/1541p/index.html">
+CS1541</a>
+Introduction to Computer Architecture
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/2410p/index.html">
+CS2410</a>
+: Computer Architectures
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/2450p/index.html">
+CS2450</a>
+: Parallel Computing
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/447/index.html">
+CS0447</a>
+: Computer Organization and Assembly Language Programming
+<li>
+CS0445
+: Introduction to Information Structures
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/1550/cs1550.html">
+CS1550 </a>
+: Introduction to Operating Systems
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/cs3420.html">
+CS3420</a>
+: Fault Tolerant Parallel and Distributed Systems
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/3530/index.html">
+CS3530</a>
+: Advanced Topics in Distributed and Real-Time Systems
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/3580p/index.html">
+CS3580</a>
+: Advanced Topics in Parallel Computing
+<li>
+<a href="http://www.cs.pitt.edu/~melhem/courses/2001/index.html">
+CS2001</a>
+: Research Topics in Computer Science
+</ul>

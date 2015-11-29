@@ -1,0 +1,37 @@
+<title>Final Review</title>
+<h2>Review of Remaining Chapters</h2>
+(Note: This review is based on the Third Edition of Elmasri/Navathe.
+Click <a href="22review2.html">here</a> for a review based on the Second Edition of Elmasri/Navathe.)
+<br><br>
+<br><br>
+Chapter 9: Tuple relational calculus (9.3)
+<br><br>
+Appendix C: Network model (C.1, C.4), ER-to-network mapping
+(notes), concept of currency and UWA and query examples (notes)
+<br><br>
+Appendix D.2: Hierarchical model (D.2.2), virtual parent-child (notes),
+ER-to-Hierarchical mapping (notes), query examples for the
+GET command (D.3).
+<br><br>
+Chapter 14: Design guidelines (14.1), update anomalies (14.1.2),
+different types of null values (14.1.3), funtional dependencies (14.2),
+definitonal of funtional dependency (14.2.1), normal forms (14.3),
+1NF (14.3.2), 2NF (12.3.3), 3NF (12.3.4).
+<br><br>
+Chapter 16: The database design process (16.2), requirements analysis
+(16.2.1), conceptual design (16.2.2), choice of DBMS (16.2.3),
+logical database design (16.2.4), physical database design (16.2.5),
+implementation (16.2.6).
+<br><br>
+Chapter 11: Object-oriented database (11.1), object identity (11.2.1),
+structure (11.2.2), type constructors (11.2.3),
+encapsulation (11.3), type and class hierarchies and inheritance (11.4).
+<br><br>
+Supplements:
+<br><br>
+ODBC concepts.
+<br><br>
+CGI Common Gateway Interface concepts.
+<br><br>
+Data mining concepts, what are the goals, type of knowledge
+discovered, and techniques of data mining.

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Multimedia Software Engineering - Page 9</title>
+	<style>
+		body {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		dl {
+			margin: 0;
+			padding: 0;
+		}
+		dd {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="page8.html"><img src = "previous.gif" align = "left"></a>
+	<a href="page10.html"><img src = "next.gif" align = "right"></a>
+	<center>
+		<h1>Search Results</h1>
+		<hr>
+		<img src="SearchResults.jpg" />
+	</center>
+	<p>
+		A search for the term "database" returns the name of everyone who spoke
+		about it in a saved transcript.  These results are also ordered based on the
+		number of times the term was spoken by the person.  James Bond said
+		"database" twice so he is ranked higher than Jim Clause who only said it once.
+	</p>
+</body>
+</html>

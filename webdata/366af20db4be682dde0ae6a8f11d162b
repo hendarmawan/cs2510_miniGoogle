@@ -1,0 +1,10 @@
+The steps to run IC Builder under Windows XP or Vista are as follows:
+
+1. Right click the ICTAPP.EXE, click the "property".
+2. In the prompted dialog box, click the tab of "Compatibility"
+3. Make sure that the "Run this program in compatibility mode for"
+4. Choose the Window98/Windows Me.
+5. Click OK.
+
+And the IC Builder could run smoothly.
+

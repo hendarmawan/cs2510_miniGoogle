@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<title>CDC Personal Profile</title>
+</head>
+
+<body>
+
+<a href="java7.htm"><font size="5"><img src="previous.gif" align="left" /></font></a><font size="5"><a href="previous.html">
+</a><a href="java9.htm"><img src="next.gif" align="right" /></a></font><a href="next.html"><font size="5">
+</font> </a><center>
+<h1>CDC Profiles</h1>
+<hr /></center>
+<h3><font size="5">Foundation Profile</font></h3>
+<ul>
+	<li><font size="5">Most basic CDC profile</font></li>
+	<li><font size="5">In combination with the class library provided by CDC:</font><ul>
+		<li><font size="5">network support</font></li>
+		<li><font size="5">I/O support</font></li>
+	</ul>
+	</li>
+	<li><font size="5">In particular, it does not include any support for 
+	graphics or GUI services.</font></li>
+</ul>
+<p><a href="http://java.sun.com/products/foundation"><font size="5">
+http://java.sun.com/products/foundation</font></a><font size="5"> <br>
+&nbsp;</font></p>
+<h3><font size="5">Personal Basis Profile</font></h3>
+<ul>
+	<li><font size="5">Provides a structure for building lightweight component 
+	toolkits and support for the Xlet application programming model</font></li>
+	<li><font size="5">Personal Basis Profile includes all of the Foundation 
+	Profile APIs.</font></li>
+</ul>
+<p><a href="http://java.sun.com/products/personalbasis"><font size="5">
+http://java.sun.com/products/personalbasis</font></a><font size="5"> </font></p>
+<h3><font size="5"><br>
+Personal Profile</font></h3>
+<ul>
+	<li><font size="5">Full AWT support</font></li>
+	<li><font size="5">Applet support </font></li>
+	<li><font size="5">Limited bean support.</font></li>
+	<li><font size="5">Includes all of the Personal Basis Profile APIs </font>
+	</li>
+	<li><font size="5">Migration path for PersonalJava technology.</font></li>
+</ul>
+<p><a href="http://java.sun.com/products/personalprofile"><font size="5">
+http://java.sun.com/products/personalprofile</font></a><font size="5"> </font>
+</p>
+
+</body>
+
+</html>

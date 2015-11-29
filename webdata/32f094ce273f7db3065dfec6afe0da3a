@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Scorm</title>
+<meta name="Microsoft Theme" content="blocks 011, default">
+</head>
+
+<body background="_themes/blocks/blobkgde.gif" bgcolor="#FFFFFF" text="#000000" link="#CC0000" vlink="#999999" alink="#FFCC00"><!--mstheme--><font face="Arial, Arial, Helvetica">
+
+<p align="left"><a href="slide4.html"><img border="0" src="images/next.gif" align="right" width="26" height="26"></a><a href="slide2.html"><img border="0" src="images/previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p align="center"><font size="6" color="#000080">SCORM Background (2)</font></p>
+
+<p align="left" style="line-height: 150%"><font size="4" color="#000080"><b>Problem:</b><br>
+Many of the first web-based "Learning Management System" (LMS) products used proprietary "middle ware" and data models to track learner performance.&nbsp;</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">Learning content couldn't be moved from one LMS environment to
+    another</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">LMS products often couldn't integrate learning content created for other
+    systems</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">Couldn't create searchable content or content repositories</font><!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Arial, Arial, Helvetica">
+<p align="center"><img border="1" src="images/Web_HTML_DB.jpg" width="387" height="284"></p>
+<p align="left"><font size="4" color="#000080"><br>
+</font></p>
+<p align="left"><font size="4" color="#000080"><b>New Vision:<br>
+</b><br>
+The ADL team envisioned a new approach for Internet delivered learning:</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">Learning objects can be
+    reusable, searchable, durable, and accessible</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">Customized learning experiences that match a learner's
+    needs, assembled &quot;on the fly&quot;&nbsp;</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">Learning
+    experiences adapt intelligently to the learner</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">Learning objects could include assessments, simulations, performance support,
+    and directed learning experiences<br>
+    </font><!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Arial, Arial, Helvetica">
+<p align="center"><font size="4" color="#000080"><img border="1" src="images/Web_HTML_Object.jpg" width="386" height="284"><br>
+<br>
+</font></p>
+
+<p align="left" style="line-height: 150%"><font size="4" color="#000080">In early 1999,
+the first version of the Sharable Content Object Reference Model was drafted as a way to integrate and "connect" work from other organizations.</font></p>
+<p align="left">&nbsp;</p>
+
+<!--mstheme--></font></body>
+
+</html>

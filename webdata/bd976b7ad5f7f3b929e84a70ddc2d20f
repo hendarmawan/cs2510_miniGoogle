@@ -1,0 +1,56 @@
+<title>2013 Seminars, Milestones and Projects</title>
+<h3>2013 Seminars, Milestones and Projects</h3>
+
+<a href="proj13.htm"><img src="prev.gif" align=left></a>
+<a href="proj13.htm"><img src="next.gif" align=right></a>
+
+
+Cloud Computing
+<br><br><a href="../y11/papers/cloudSE.pdf">SE with Cloud Computing</a> <a href="seminar/cui.pptx">(Xiaolong Cui)</a> <a href="ms1/cui.pdf">MS1</a>, <a href="ms2/cui.pdf">MS2</a>, <a href="demo/cui.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+<br><br><a href="papers/SensorCloud.pdf">SensorCloud</a> <a href="seminar/li.pdf">(MaoLin Li)</a>
+(Related paper: <a href="http://research.ijais.org/volume2/number3/ijais12-450292.pdf">
+Formal Modeling for Multi-Level Authentication in
+Sensor-Cloud Integration System</a>)
+<a href="ms1/li.pdf">MS1</a>, <a href="ms2/li.pdf">MS2</a>, <a href="demo/li.pdf">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+<br><br>
+<a href="papers/benchmarkcloud.pdf">
+Benchmarking cloud database</a> <a href="seminar/yung.pptx">(Yung, Ka Wai)</a>  <a href="ms1/yung.pdf">MS1</a>, <a href="ms2/yung.pdf">MS2</a>, <a href="demo/yung.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+
+<br><br>Time
+<br><br><a href="papers/timeautomaton.pdf">Time Automaton</a> <a href="seminar/zhuang.pptx">(Zhong Zhuang)</a> <a href="ms1/zhuang.docx">MS1</a>, <a href="ms2/zhuang.pdf">MS2</a>, <a href="demo/zhuang.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+
+<br><br>Content Management
+<br><br><a href="papers/contentmanage.pdf">Contentmanagement approaches</a> <a href="seminar/gao.pptx">(Wen Gao)</a> <a href="papers/a14-spedalieri.pdf">(multimedia content management support)</a> <a href="ms1/gao.doc">MS1</a>, <a href="ms2/gao.pdf">MS2</a>, <a href="demo/gao.pdf">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+
+<br><br>Sensors and Context Awareness
+<br><br><a href="papers/ContextAwareSystem.pdf">Survey of ContextAwareSystems</a> (Related paper: <a href="papers/WebBasedService.pdf">Survey of WebBased Service Systems</a>) <a href="seminar/xu.pptx">(Haifeng Xu)</a> <a href="ms1/xu1.pdf">MS1</a>, <a href="ms2/xu.pdf">MS2</a>, <a href="demo/xu.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+
+<br><br>Data Mining
+<br><br><a href="../y11/papers/crawler.pdf">Focussed Crawler</a> (<a href="seminar/nilspaper2.pdf">Related paper</a>)  <a href="seminar/nils.pptx">(Nils Murrugarra Llerena)</a> <a href="ms1/nils.pdf">MS1</a>, <a href="ms2/nils.pdf">MS2</a>, <a href="demo/nils.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+<br><br><a href="../y11/papers/chooseClassfy.pdf">Selective Classification</a> <a href="seminar/liu.pptx">(Zheng Liu)</a> <a href="ms1/liu.pdf">MS1</a>, <a href="ms2/liu.pdf">MS2</a>, <a href="demo/liu.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+<br><br><a href="../y11/papers/chooseDataMining.pdf">Selective Data Mining</a> <a href="seminar/choi/s1.html">(Yoonjung Choi)</a> <a href="ms1/choi.htm">MS1</a>, <a href="ms2/choi.pdf">MS2</a>, <a href="demo/choi.pptx">DEMO</a>, <a href="demo/choi.mov">DEMO MOVIE</a>, <a href="report/reportxxx.doc">REPORT</a>
+<br><br><a href="papers/datamineroughset.pdf">Datamineroughset</a> <a href="seminar/fan.ppt">(Yiwen Fan)</a> <a href="ms1/fan.pdf">MS1</a>, <a href="ms2/fan.pdf">MS2</a>, <a href="demo/fan.pdf">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+
+<br><br>Ontology
+<br><br><a href="papers/OntologyTools.pdf">OntologyTools</a> (this is a starting point) <a href="seminar/guy.pptx">(Guy Gadola III)</a> (Related paper:  <a href="papers/swoop.pdf"> SWOOP)</a> <a href="ms1/gadola.docx">MS1</a>, <a href="ms2/guy.pdf">MS2</a>, <a href="demo/gadola.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+
+<br><br>Software Engineering and Knowledge Engineering
+<br><br><a href="../y11/papers/sekesurvey.pdf">SEKE survey</a> <a href="seminar/ge.pptx">(Xiaoyu Ge)</a> <a href="ms1/ge.docx">MS1</a>, <a href="ms2/ge.pdf">MS2</a>, <a href="demo/ge.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+
+<br><br>Testing
+<br><br><a href="papers/AutoTestCase.pdf">AutoTestCase generation</a> <a href="seminar/wu.ppt">(Wu, Junxiang)</a>  <a href="ms1/wu.pdf">MS1</a>, <a href="ms2/wu.docx">MS2</a>, <a href="demo/wuyao.ppt">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+<br> <br> <a h ref="">Regressiontest</a> <a href="seminar/ye.pptx">(Zichuan Ye) </a> <a href="ms1/ye.pdf"> MS1</a>, <a href="ms2/ye.pdf">MS2</a>, <a href="demo/ye.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+
+<br><br>
+Other Topics
+<br><br><a href="papers/loadbalance.pdf">Hypergraph-based Dynamic Load Balancing for Adaptive
+Scientific Computations</a> <a href="seminar/zheng.pptx">(Angen Zheng)</a> <a href="ms1/zheng.pdf">MS1</a>, <a href="ms2/zheng.pdf">MS2</a>, <a href="demo/zheng.pdf">DEMO</a>, <a href="report/zheng.pdf">REPORT</a>
+<br><br>
+<a href="papers/navibigdata.pdf">Navigating Big Data with High-Throughput, Energy-Efficient Data Partitioning</a> <a href="seminar/mao.pdf">(Mengjie Mao)</a>
+<br>(Related paper: <a href="papers/bigdatalittleC.pdf"> Big data little clients</a>)
+<a href="ms1/mao.pdf">MS1</a>, <a href="ms2/mao.pdf">MS2</a>, <a href="demo/mao.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+<br><br>
+Social Media as Sensors <a href="seminar/yao.pptx">(Yao Yao)</a> <a href="ms1/yao.pdf">MS1</a>, <a href="ms2/yao.pptx">MS2</a>, <a href="demo/wuyao.ppt">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>
+<br><br>
+<a href="papers/ubihealth.pdf">
+Implementation of Ubiquitous Health Care System for Active Measure of Emergencies</a> <a href="seminar/lang.pptx">(Ping Lang)</a> <a href="ms1/lang.pptx">MS1</a>, <a href="ms2/lang.docx">MS2</a>, <a href="demo/lang.pptx">DEMO</a>, <a href="report/reportxxx.doc">REPORT</a>

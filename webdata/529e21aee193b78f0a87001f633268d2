@@ -1,0 +1,1161 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<!---TODO: EXTERNAL FACULTY COLLABORATORS --->
+<HTML>
+  <HEAD>
+    <META http-equiv="Content-Type" content=
+    "text/html; charset=iso-8859-1">
+    <META name="generator" content="HTML Tidy, see www.w3.org">
+    <META name="Author" content="Michael Ringenberg">
+
+<!---    <TITLE>ITSPOKE: An Intelligent Tutoring Spoken Dialogue System</TITLE>--->
+    <TITLE>Litman Lab</TITLE>
+<STYLE type="text/css">
+ body {
+  background-color: #FFFFFF;
+ }
+ div.c1 {text-align: center}
+</STYLE>
+  </HEAD>
+
+  <BODY>
+    <DIV class="c1">
+
+     <H1><FONT COLOR="purple">
+<!---ITSPOKE</FONT>: An <FONT COLOR="purple">I</FONT>ntelligent <FONT COLOR="purple">T</FONT>utoring <FONT COLOR="purple">Spoke</FONT>n
+      Dialogue System--->
+Litman Lab
+</H1>
+
+    </DIV>
+
+    <TABLE border="0" cellspacing="10" cellpadding="10" width=
+    "100%">
+      <TR>
+        <TD valign="TOP" bgcolor="#EEEEEE">
+<!---          <H3><A href="#about">About</A></H3>--->
+
+          <H3><A href="#people">People</A></H3>
+
+          <H3><A href="#papers">Publications</A></H3>
+
+          <H3><A href="#news">News</A></H3>
+
+
+          <H3><A href="#projects">Projects</A></H3>
+
+          <H3><A href="#sponsors">Sponsors</A></H3>
+
+        </TD>
+
+        <TD>
+<!---          <H3><A name="about"></A>About:</H3>
+Spoken dialogue is a natural and highly desirable form of student-computer interaction, which
+provides both opportunities and challenges to both dialogue-based tutoring systems, and to spoken language systems. The goal of this research is to
+wed spoken language technology with instructional technology, in order to promote learning gains by enhancing communication richness. For further
+details, see the project descriptions and papers below, as well as information on the tutoring back-end (<a href=http://www.pitt.edu/~vanlehn/why2000.html>Why2</a>,
+a text-based tutoring system in the domain of qualitative physics).-->
+
+          <P>
+          </P>
+          <HR>
+<!--
+<h3 class="sectitle">Prospective PhD Students:</h3>
+
+
+Artificial Intelligence is a specialty of the
+Computer Science Department.
+To apply, <A HREF="http://www.cs.pitt.edu/"> click here </A> and then
+look at the drop-down menu under "Graduate".
+<p>
+The <A HREF="http://www.isp.pitt.edu">Intelligent Systems Program
+</A>, a PhD graduate program in Artificial
+Intelligence, is also accepting applications.  To apply, <A
+HREF="https://app.applyyourself.com/?id=up-as"> click here </A>.  For
+admissions requirements, please <A
+HREF="http://www.isp.pitt.edu/admission/admit.html">
+click here </A>.
+
+          <HR>
+
+-->
+          <H3><A name="people"></A>People:</H3>
+
+          <UL>
+
+            <LI><A href="http://www.cs.pitt.edu/~litman/">Diane
+            Litman</A>, Professor of
+            Computer Science, Senior Scientist at LRDC, Co-Director of
+            Graduate Program in Intelligent Systems</LI>
+
+<!---          <H4>Research Associates</H4>
+            <LI><A href="http://www.cs.pitt.edu/~forbesk/">Dr. Kate Forbes-Riley</A>,
+            LRDC</LI> --->
+
+          <H4>PhD Students</H4>
+   <LI><a href="http://www.cs.pitt.edu/~wencan">Wencan Luo</a>, Computer Science </LI>
+   <LI><a href="http://www.cs.pitt.edu/~huynv">Huy Nguyen</a>, Computer Science </LI>
+   <LI><a href="http://www.cs.pitt.edu/~zar10">Zahra Rahimi</a>, Intelligent Systems </LI>
+
+   <LI><a href="http://www.cs.pitt.edu/~zhangfan">Fan Zhang</a>, Computer Science</LI>
+
+<!---          <H4>Masters Students</H4>---->
+
+
+<!---          <H4>Undergraduate Students</H4>
+
+   <LI>Robert Wei, Computer Science </LI>
+--->
+          <H4>Research Staff</H4>
+
+   <LI><a href=http://www.lrdc.pitt.edu/people/staff-detail.asp?Dir_ID=670 >Stefani Allegretti</a>, LRDC </LI>
+
+      <LI><a href=http://www.lrdc.pitt.edu/people/person-detail.asp?Dir_ID=644>Caitlin Rice</a>, LRDC and Psychology</LI>
+
+
+          <H4>Faculty Collaborators</H4>
+<li><a href=http://www.lrdc.pitt.edu/ashley/>Prof. Kevin Ashley</a></l>,
+Law, Intelligent Systems, LRDC</li>
+<li><a href=http://www.lrdc.pitt.edu/people/person-detail.asp?Dir_ID=94>Prof. Richard Correnti</a></l>,
+School of Education, LRDC</li>
+<!---<li><a
+href=http://www.education.pitt.edu/people/profile.aspx?f=MichaelFord>Prof.
+Michael
+Ford</a>, School of Education</l>--->
+<li><a
+href=http://www.education.pitt.edu/people/profile.aspx?f=AmandaGodley>Prof.
+Amanda
+Godley</a>, School of Education</l>
+<li><a href=http://www.cs.pitt.edu/~hwa>Prof. Rebecca Hwa,</a> Computer
+    Science, Intelligent Systems
+<li><a
+href=http://www.lrdc.pitt.edu/people/person-detail.asp?Dir_ID=24>Dr. Pamela Jordan</a>, LRDC<l/>
+<li><a
+href=http://www.lrdc.pitt.edu/people/person-detail.asp?Dir_ID=25>Dr. Sandra Katz</a>, LRDC<l/>
+<li><a href=http://www.education.pitt.edu/people/profile.aspx?f=LindsayClareMatsumura>Prof. Lindsay Clare Matsumura</a>, School of Education, LRDC</l>
+<li><a href=http://www.muhsin.me/>Dr. Muhsin Menekse</a>, LRDC <l/>
+<li><a href=http://www.casl.umd.edu/spaletz>Dr. Susannah
+Paletz</a>. University of Maryland</l>
+<li><a href=http://www.lrdc.pitt.edu/schunn/>Prof. Christian Schunn</a>,
+Psychology, Learning Sciences, Intelligent Systems, LRDC<l/>
+<li><a href=http://www.cs.pitt.edu/~jingtaow/>Prof. Jingtao Wang</a>,
+Computer Science, Intelligent Systems, LRDC<l/>
+
+          <H4>Alumni: Research Associates</H4>
+
+            <LI><A href="http://www.cs.pitt.edu/~forbesk/">Dr. Kate
+            Forbes-Riley</A>, LRDC</LI>
+            <LI><A href="http://labs.yahoo.com/author/tetreaul/">	    Dr. Joel Tetreault</A>,
+            LRDC (now at Yahoo! Labs, previously at <a href="http://www.ets.org">ETS</a> and Nuance )</LI>
+ 
+          <H4>Alumni: PhD Students</H4>
+
+   <LI><A href=https://www.linkedin.com/profile/view?id=17487346&authType=NAME_SEARCH&authToken=yIde&locale=en_US&srchid=3552952841418495512479&srchindex=3&srchtotal=14&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A3552952841418495512479%2CVSRPtargetId%3A17487346%2CVSRPcmpt%3Aprimary>	    Hua Ai</a>, Intelligent
+   Systems, PhD 2009: <a
+   href=http://etd.library.pitt.edu/ETD/available/etd-12032009-115538/>Dissertation</a>
+	    (now Analytics Consultant, 360i </LI><!---, previously at Georgia
+   Tech - School of Interactive Computing) -->
+
+   <LI><A
+	    href=http://people.engr.ncsu.edu/mchi/>	    Min Chi</a>,
+   Intelligent Systems, PhD 2009: <a href=http://etd.library.pitt.edu/ETD/available/etd-12092009-144719/>Dissertation</a> (now Assistant Professor, North Carolina State University)</LI>
+
+   <LI><A href="http://www.cs.pitt.edu/~lipschultz">Michael Lipschultz</a>, Computer Science, PhD 2015
+</LI>
+
+
+   <LI><A href=http://nl.linkedin.com/in/mrotaru>Mihai
+   Rotaru</a>, Computer Science, PhD 2008: <a href=http://etd.library.pitt.edu/ETD/available/etd-12102008-151922/>Dissertation</a> (now at <a href=http://www.textkernel.com/>Textkernel</a>)</LI>
+
+   <LI><a href="http://www.cs.pitt.edu/~artward">Arthur Ward</a>, Intelligent Systems, PhD 2010: <a href=http://etd.library.pitt.edu/ETD/available/etd-06082010-143656/>Dissertation</a> (now Postdoctoral Research Associate, Department of Biomedical Informatics, University of Pittsburgh)</LI> 
+
+   <LI><a href=https://www.linkedin.com/pub/wenting-wendy-xiong/9/497/853>
+   Wenting Xiong</a>,
+   Computer Science, PhD 2014 (now  Research Staff Member - Watson Innovations)</LI>
+
+   <H4>Alumni: Masters Students</H4>
+
+   <LI><a href=https://www.linkedin.com/pub/heather-wade/68/6a9/6a2>
+   Heather
+   Friedberg</a>, Computer Science (MS Project: Lexical Entrainment
+   and Success in Student Engineering Groups), 2012 (now at Google)
+</LI> 
+   <!----<a href=http://www.aptima.com/>Aptima</a>)--->
+
+
+   <LI>Beatriz Maeireizo-Tokeshi,
+Computer Science (MS Project: Applying Co-training for Predicting
+   Student Emotions with Spoken Dialogue Data), 2005 </LI>
+
+   <LI>Amruta Purandare, Intelligent Systems</LI>
+
+          <H4>Alumni: Computer Science Undergraduate Students <br>(NSF Research Experience for Undergraduate Program)</H4>
+
+   <LI><a href=https://www.hcii.cmu.edu/masters-educational-technology-and-applied-learning-science-program-overview%20/current-students>Alexandra Brusilovsky</a>, now graduate student, CMU </LI>
+   <LI>Samantha Corcoran, became graduate student, University of Pittsburgh </LI>
+   <LI><a href=http://www.cs.toronto.edu/~jdrummond/>Joanna Drummond</a>, now graduate student, University of Toronto </LI>
+   <LI><a href=https://www.linkedin.com/pub/heather-wade/68/6a9/6a2>
+Heather Friedberg</a>, MS 2012, University of Pittsburgh (see above)</LI>
+<LI>Gregory Nicholas,
+  became graduate student, Brown University </li>
+   <LI><a href=http://www.linkedin.com/pub/nathan-ong/79/499/a27>Nathan Ong</a>, now graduate student, University of Pittsburgh </LI>
+
+   <LI><a href=http://people.cs.pitt.edu/~chris/>Chris Thomas</a>, now graduate student, University of Pittsburgh </LI>
+   <LI><a href=http://jdt.nmtechgroup.com/>Jesse Thomason</a>, now graduate student, University of Texas at Austin</LI>
+<LI>Robert Wei</LI>
+
+
+   <H4>Other Alumni</H4>
+
+   <LI>Alison Huettner,           consultant </LI> 
+
+            <LI>Scott Silliman,  programmer,           LRDC</LI>
+
+
+<H4>Past Visitors</H4>
+
+<LI>Matthew Frampton, PhD Student, University of Edinburgh </LI> <!---(then at Stanford) --->
+            <LI><A href="http://faculty.cs.niu.edu/~freedman/">Reva Freedman</A>, Professor,
+            Northern Illinois University</LI>
+<LI>Ryoko Tokuhisa, Toyota Central R&D Labs (also <a
+href=http://cl.aist-nara.ac.jp/en/index.php?People>PhD Student</a> at
+Nara Institute of Science and Technology)</LI>
+
+</UL>
+          <P>
+          </P>
+          <HR>
+
+          <H3><A name="papers"></A>Publications:</H3>
+<UL> <a href=http://www.cs.pitt.edu/~litman/pubs.html>2003-present</a>          </UL>
+
+          <HR>
+
+
+          <H3><A name="news"></A>News:</H3> 
+<ul>
+<p>
+
+<li><i>August 2015</i>: Elected to 3 year term as  <a href=http://www.aaai.org/Organization/officers.php>Councilor</a>, Association for the
+Advancement of Artificial Intelligence
+
+<li><i>August 2015</i>: Summarizing Student Reflection Corpus is now available
+  for scientific purposes <a href=http://www.coursemirror.com/download/dataset/>(download)</a>
+
+<li><i>January-April 2015</i>:  <a href=http://www.emma.cam.ac.uk/contact/fellows/visiting/>Derek Brewer Visiting
+    Fellow</a>, Emmanuel College, Cambridge University
+<p>
+<li><i>December 2014</i>:  <a
+  href=http://www.cs.pitt.edu/~lipschultz>Michael Lipschultz</a> defends his dissertation! (<a href=images/mikeDefense.JPG>The Defense</a>)
+
+  
+<li><i>September 2014:</i> <a href=http://www.isca-speech.org/iscaweb/index.php/honors/awards>ISCA Best Paper</a> Published in <i>Speech Communication</i> (2011-2013) for
+"Benefits and challenges of real-time uncertainty detection and
+adaptation in a spoken dialogue computer tutor"
+<li><i>September 2014:</i> Keynote Speaker, <a href=http://comma2014.arg.dundee.ac.uk/>Fifth International
+Conference on Computational Models of Argument</a>
+<li><i>August 2014</i>:  <a
+  href=http://www.cs.pitt.edu/~wex12>Wenting Xiong<a> defends her
+  dissertation! (<a href=images/wentingDefense.JPG>The Defense</a>)
+  <li><i>May 2014:</i> <a
+href=http://www.raeng.org.uk/research/researcher/dvfs/>Royal Academy
+of Engineering Distinguished Visiting Fellowship Award</a>
+<li><i>May 2014:</i> Invited Speaker, <a href=SafeSeaWshop.pdf>
+Computational Linguistics and Educational Technology</a>
+<li><i>Winter 2014:</i> 
+<a
+href=http://googleresearch.blogspot.com/2014/02/google-research-awards-winter-2014.html>
+Google Faculty Research Award</a> (<a
+href=http://services.google.com/fh/files/blogs/research-awards-winter2014.pdf>Natural
+Language Processing</a>) (Pitt Chronicle
+<a href=http://www.chronicle.pitt.edu/story/awards-more-55>listing</a>)
+
+
+<p>
+<li><i>September 2013:</i> CS Department Teaching Award, graduate
+seminar category 
+<li><i>September 2013:</i> Invited Speaker, <a href=http://events.cambridgeenglish.org/cambridge-english-centenary-symposium/>Cambridge English Centenary Symposium on Speaking Assessment</a> 
+<li><i>August 2013:</i> Keynote Speaker, <a href=http://www.slate2013.org/program.html>
+SLaTe Workshop (Speech & Language Technology in Education)</a> 
+</li>
+<li><i>May 2013:</i> <a href=http://www.utimes.pitt.edu/?p=25934>
+LRDC turns 50</a> (see Today section)</li>
+<li><i>May 2013:</i> Jesse Thomason was selected for Honorable Mention
+in the <a
+href=http://www.cra.org/awards/>Computing
+Research Association's</a> Outstanding Undergraduate Researcher Award
+(male) for
+2013</li>
+<li><i>April 2013:</i> Jesse's goodbye <a href=images/jesselunch.JPG>lunch</a>
+
+
+
+<p>
+
+<li><i>July 2012:</i> Keynote Speaker, <a href=http://www.sigdial.org/workshops/conference13/>
+13th Annual SIGdial Meeting on Discourse and Dialogue (<a href=http://www.superlectures.com/sigdial2012>video</a>) 
+</a> 
+</li>
+
+<li><i>April 2012:</i> Heather's goodbye <a href=images/heatherlunch2.JPG>lunch</a>
+
+<li><i>January 2012:</i> Alum Joanna Drummond is one of 10 receipients of Microsoft's <a href=http://research.microsoft.com/en-us/collaboration/awards/fellows-women.aspx>Graduate Women's Scholarship Program</a>
+<p>
+<li><i>Summer 2011:</i> <a
+href=http://www.zinio.com/pages/PittMagazine/Summer-11/416185377/pg-30>Pitt
+Magazine</a> features NLP faculty!</li>
+<li><i>August 2011:</i> 
+Awarded 
+Senior
+Member status by the Association for the Advancement of Artificial
+Intelligence (<a href=aaaiSenior.txt>AAAI</a> and <a href=http://www.news.pitt.edu/news/news-pitt-news-note-pitt-news-awards-and-developments-university-pittsburgh-0>Pitt</a> announcements)</li> 
+
+<li><i>May 2011</i>: Joanna's goodbye <a href=http://www.cs.pitt.edu/~litman/images/joannalunch.JPG>lunch</a>
+<li><i>April 2011: </i>Congratulations to <a href=http://www.pitt.edu/~jmd73>Joanna Drummond</a>, who was selected to receive a 2011 National Science Foundation (NSF) Graduate
+Research Fellowship Program (GRFP) Fellowship. Her selection was based on "outstanding abilities and accomplishments, as well as
+... potential to contribute to strengthening the vitality of the US science and engineering enterprise."
+
+
+<li><i>March 2011:</i> U. of Pittsburgh <a href=http://www.chronicle.pitt.edu/?p=8062>participant</a> in IBM Watson comes to Pitt and CMU</a>; 
+<a href=http://www.chronicle.pitt.edu/?p=8167>Pitt Panel</a>;
+
+<a href=http://www.livestream.com/ibmwatson/video?clipId=pla_23b4bc2f-004f-4614-aa4a-9afdc60f9cec&utm_source=lslibrary&utm_medium=ui-thumb>IBM Interview</a>
+
+and <a
+href=http://www.livestream.com/IBMWatson/video?clipId=pla_ec5cd129-218d-41b6-8804-fc695168db71&utm_source=lslibrary&utm_medium=ui-thumb>CMU Q/A</a>;
+<a
+href=http://www.convergemag.com/college-career/University-Researchers-Find-Business-Applications-for-Watson.html>Converge</a> article
+
+<li><i>March 2011:</i> Congratulations to <a
+href=http://www.cs.pitt.edu/~friedberg>Heather Friedberg</a> and 
+<a href=http://www.cs.pitt.edu/~lipschultz>Mike Lipschultz</a> for their awards
+(Outstanding CS Student, and Digital Media, respectively)
+at the 11th Annual
+<a href=http://www.cs.pitt.edu/events/CSDay/2011/awards11.php>
+Computer Science Day</a>
+
+
+<li><i>March 2011:</i> Congratulations to <a
+href=http://www.cs.pitt.edu/~wex12>Wenting Xiong</a> for
+being awarded a Mellon Fellowship for the
+2011-2012 academic year. Andrew Mellon Predoctoral Fellowships are awarded to students of
+exceptional ability and promise who are enrolled or wish to enroll at
+the
+University of Pittsburgh in programs leading to the Ph.D. in various
+fields of the humanities, the natural sciences and the social
+sciences.
+<p>
+<dt>
+
+<li><i>November 2010:</i> Heather Friedberg was selected for Honorable Mention
+in the <a
+href=http://www.cra.org/awards/>Computing
+Research Association's</a> Outstanding Undergraduate Research Award for
+2011</li>
+<li><i>September 2010</i>:  Heather Friedberg was awarded the 2010
+Google Engineering Intern Scholarship. The recipients are selected from
+Google
+Summer 2010 Engineering interns in North America and evaluated on
+their
+academic achievements, community involvement, and leadership
+accomplishments. Also, congratulations to Mike Lipschultz for receiving the
+runner-up 2010 Taulbee Award for Excellence in Computer Science. The
+award recognizes teaching excellence and academic progress towards a PhD.
+
+
+
+<li><i>June 2010</i>:  <a href=http://www.cs.pitt.edu/~artward>Art Ward</a> 
+(6/23/10) defends his dissertation!  
+<a href=http://www.cs.pitt.edu/~litman/images/defense.JPG>The defense.</a>  
+<a href=http://www.cs.pitt.edu/~litman/images/committee.JPG>The committee/toast.</a>   
+<a href=http://www.cs.pitt.edu/~litman/images/door.JPG>The door.</a>  
+
+<li><i>June 2010</i>: <a href=http://sites.google.com/site/its2010home/awards>Best Paper Award</a> at 
+the 10th International Conference
+on Intelligent Tutoring Systems for
+<a href=http://www.cs.pitt.edu/~litman/60940224.pdf>
+Do Micro-Level Tutorial Decisions Matter: Applying Reinforcement
+Learning to Induce Pedagogical Tutorial Tactics</a> (by
+Chi, VanLehn and Litman)
+
+<li><i>June 2010</i>: <a href=http://www.um.org>The James Chen Award
+for for the best student paper </a> 
+at the 13th International Conference on User Modelling, Adaptation and
+Personalization for
+<a href=http://www.cs.pitt.edu/~litman/paper_153.pdf>
+Inducing Effective Pedagogical Strategies Using Learning Context
+Features</a> (by
+Chi, VanLehn, Litman and Jordan)
+
+
+<li><i>May 2010</i>: <a href=http://www.cs.pitt.edu/~litman/grad10.jpg>Hua and Min</a> after the hooding, Commencement 2010 
+
+
+<li><i>March 2010</i>: Congratulations to Joanna Drummond, for winning the 10th Annual CS Day Award for Best Undergraduate Student Poster.  Link to the <a href=http://www.cs.pitt.edu/events/CSDay/2010/awards-poster.php>poster</a>, and to a related <a href=photo.jpg>photo</a>.  Congratulations also to Heather Friedberg for making the <a href=http://www.cs.pitt.edu/events/CSDay/2010/awards10.php>Undergraduate Honor Roll.</a>
+<p>
+<li><i>December 2009</i>: Congratulations to <a
+href=http://www.cs.pitt.edu/~lipschultz>Mike</a>, 
+<a href=http://www.cs.pitt.edu/~wex12>Wenting</a>, and 
+<a href=http://www.pitt.edu/~jmd73>Joanna</a>
+on their First Place <a href=2009_door_award.jpg>Door</a> award at the
+CS Department's Holiday Door Decorating Contest.  Details on the door
+and the prizes can be found <a href=http://www.cs.pitt.edu/~lipschultz/other/awards/2009_door.php>here</a>.
+
+
+<li><i>November 2009</i>: <a
+href=http://www.cs.pitt.edu/~mic31>Min 
+Chi</a> defends her dissertation! 
+<a href=images/advisors.JPG>Min and committee chairs</a>.
+<a href=images/Champagne.JPG>Preparing the toast</a>.
+<a href=images/MDP.JPG>MDP power</a>.
+
+<li><i>November 2009</i>: <a
+href=http://www.utimes.pitt.edu/?p=10325>University Times 
+</a> and <a href=http://www.as.pitt.edu/news/articles/computer_science_faculty_recognized_with_nsf_grants.html>School of Arts and Sciences</a> on latest NSF award
+
+<li><i>October 2009</i>: <a
+href=http://www.cs.pitt.edu/~lipschultz>Michael 
+Lipschultz</a> was awarded the CS Department's 2009 Taulbee Award for Excellence
+in Computer Science. The award recognizes teaching
+excellence
+and academic progress towards a PhD.
+(In 1966, Orrin Taulbee founded Pitt's Department of Computer Science
+and
+served as its chair until 1984. In October 1989, the four sons of Dr.
+Taulbee initiated this award in memory and honor of their parents.)
+
+<li><i>September 2009</i>: <a href=http://www.cs.pitt.edu/~hua>Hua
+Ai</a> defends her dissertation</a>!
+<a href=http://www.cs.pitt.edu/~litman/hua.JPG>The Defense</a>.
+<a href=http://www.cs.pitt.edu/~litman/hua_toast.JPG>Committee Toast</a>.
+<li><i>September 2009</i>: Best Student Paper award nominee at <a href=http://www.sigdial.org/workshops/workshop10/>Sigdial 2009</a> for <a href=http://www.cs.pitt.edu/~litman/DiscStrPerffinal.pdf>
+Discourse Structure and Performance Analysis: Beyond the Correlation</a>
+by Rotaru and Litman.
+
+<p>
+<li><i>September 2008</i>: <a href=http://www.cs.pitt.edu/~mrotaru>Mihai
+Rotaru</a> defends his dissertation</a>! 
+<a href=http://www.cs.pitt.edu/~litman/mihai08.JPG>The Defense</a>.
+<a href=http://www.cs.pitt.edu/~litman/mihai09.jpg>Commencement</a>.
+<a href=http://www.cs.pitt.edu/~litman/nlp09.jpg>With NLP faculty</a>.
+<li><i>June 2008</i>: <a href=136_Paper.pdf>Uncertainty Corpus</a> 
+
+is now publically available for scientific purposes (by request) through the Pittsburgh Science of Learning Center's <a href=https://learnlab.web.cmu.edu/datashop/index.jsp>Datashop</a>.
+<li><i>August 2007 - July 2008</i>: <a href=http://www.leverhulme.ac.uk>Leverhulme</a>
+Visiting Professor, University of
+Edinburgh 
+<a href=http://www.inf.ed.ac.uk>(Informatics)</a>.  <a href=http://www.inf.ed.ac.uk/people/staff/Diane_Litman.html>Contact details</a>. 
+Here is my <a
+href=http://www.cs.pitt.edu/~litman/leverhulmeLectures.html>Lecture Series</a>.
+<li>
+<i>April 2008</i>: Invited Speaker, <a href=http://www.csd.abdn.ac.uk/~cmellish/aisb08/>Affective Language in Human and Machine Symposium of the AISB Convention</a>
+
+<li>
+<i>February 2008</i>: Distinguished Lecturer,  <a href=http://www.inf.ed.ac.uk/events/lectures/>School of Informatics</a>, University of Edinburgh.
+
+<p>
+<li><i>June 2007</i>: ITSPOKE part of U. of Pittsburgh Exhibition, <a href=http://www.cnsfweb.org/>Coalition for
+National Science Funding</a>, Capitol Hill.
+<li>
+<i>May 2007</i>: Ryoko Tokuhisa (Toyota Central R&D Labs) visits our
+group for three weeks.  Group <a href=itspoke0507.JPG>photo</a>,
+<a href=burgers.JPG>burger</a> initiation.
+<li>
+<i>April 2007</i>: Best Paper Award (Late-Breaking News) at <a
+href=http://www.cs.rochester.edu/meetings/hlt-naacl07/summary-schedule.shtml>HLT-NAACL
+2007</a> for <a href=frtl-naacl07-final.pdf>Exploring
+Affect-Context Dependencies for Adaptive System Development</a>
+by Forbes-Riley, Rotaru, Litman, and Tetreault</a>.
+Here are the
+<a href=naacl07-award.jpg>awards</a>, <a
+href=naacl07-Mihai.jpg>Mihai</a> getting his award, and <a href=naacl07-kate.jpg>Kate</a> giving the presentation.
+<li><i>February 2007:</i> Congratulations to Greg Nicholas for winning the 2007 CS Day Undergraduate Student Poster Competition (both the Judged and People's Choice Awards).  Here is the winning <a href=http://www.cs.pitt.edu/~litman/gdn2.ppt>poster</a>.
+
+<p>
+<li><i>November 2006:</i> Greg Nicholas was selected for Honorable Mention
+in the <a href=http://www.cra.org/Activities/awards/undergrad/2007.html>Computing Research Association's</a> Outstanding Undergraduate Award for 2007</li>
+<li><i>September 2006:</i> 
+People's Choice Best Paper Award for <a href=http://www.cs.pitt.edu/~litman/Interspeech06-final.pdf>Discourse Structure and Speech Recognition Problems</a> (by Mihai Rotaru and Diane Litman), Ninth International Conference on Spoken Language Processing (<a href=http://www.interspeech2006.org>Interspeech/ICSLP</a>),  2006
+</li>
+<li><i>July 2006:</i> Invited Speaker, <a href=http://sigdial06.dfki.de/>7th SIGdial Workshop on Discourse and Dialogue </a> 
+</li>
+<li><i>June 2006:</i> Keynote Speaker, <a href=http://nlp.cs.nyu.edu/hlt-naacl06/keynotes.html>Human Language Technology Conference/North American chapter of the Association for Computational Linguistics Annual Meeting</a> (<a href=http://www.cs.pitt.edu/~litman/keynote06_noav.ppt>ppt</a>)
+</li>
+<li><i>March 2006:</i> Congratulations to <a href=http://www.cs.pitt.edu/~artward>Art</a> for
+being awarded a Mellon Fellowship for the
+2006-2007 academic year. Andrew Mellon Predoctoral Fellowships are awarded to students of
+exceptional ability and promise who are enrolled or wish to enroll at
+the
+University of Pittsburgh in programs leading to the Ph.D. in various
+fields of the humanities, the natural sciences and the social
+sciences.
+
+</li>
+<li><i>February 2006:</i> Congratulations to <a href=amruta.jpg>Amruta</a> for winning the 2006 CS Day Graduate Student Poster Competition, People's Choice Award!
+	  Here is the winning <a href=http://www.cs.pitt.edu/~litman/AmrutaCSDayPostersubmitted.ppt>poster</a>.</li>
+
+<p>
+<li><i>February 2005:</i> Congratulations to <a href=http://www.cs.pitt.edu/~mrotaru>Mihai</a> for <a
+          href=CSDay4.jpg> winning</a> the 2005 CS Graduate Student Research Competition!
+	  Here is the group (minus one) <a href=Picture2.jpg> toast</a>.</li>
+<p>
+<li><i>June 2004:</i> <a
+href=http://www.discover.pitt.edu/media/pcc040607/comps_like_humans.html>Teaching
+Computers to Teach Like Humans</a>, Pitt Chronicle, June 7 2004</li>
+<!---<a href=ITRpitt.htm>Press Release</a>, June 3 2004--->
+</ul>
+
+          <P>
+          </P>
+          <HR>
+
+
+          <H3><A name="projects"></A>Currently Funded Projects:</H3>
+
+
+
+
+<ul>
+<h4><FONT color=purple>
+Teaching Writing and Argumentation with AI-Supported Diagramming and Peer Review 
+</FONT> 
+(<a href="https://sites.google.com/site/swordlrdc/">project homepage</a>) 
+(Sep. 2011 - Aug. 2016)</h4>
+<p>
+The PIs are investigating the design of intelligent tutoring systems (ITSs) that are aimed at learning in unstructured domains. Such systems are not able to do as much automatically as ITSs working in traditionally narrow and well-structured domains, but rather they need to share responsibilities for scaffolding learning with a teacher and/or peers. In the work proposed, the three PIs, who share expertise in automated natural language understanding, intelligent tutoring systems, machine learning, argumentation (especially in law), complex problem solving, and engineering education, are integrating intelligent tutoring, data mining, machine learning, and language processing to design a socio-technical system (people and machines working together) that helps undergraduates and law students write better argumentative essays. The work of helping learners derive an argument is shared by the computer and peers, as is the work of helping peer reviewers review the writing of others and the work of learners to turn their argument diagrams into well-written documents. Research questions address the roles computers might take on in promoting writing and the technology that enables that, how to distribute scaffolding between an intelligent machine and human agents, how to promote better writing (especially the relationship between diagramming and writing), and how to promote learning through peer review of the writing of others.
+<p>
+This project is bringing together outstanding researchers from a variety of different disciplines -- artificial intelligence, law education, engineering and science education, and cognitive psychology -- to address an education issue of national concern -- writing, especially writing that makes and substantiates a point -- and to explore ways of extending intelligent tutoring systems beyond fact-based domains. It fulfills all aims of the Cyberlearning program -- to imagine, design, and learn how to best design and use the next generation of learning technologies, to address learning issues of national importance, and to contribute to understanding of how people learn. 
+ This NSF grant is in collaboration with 
+<a href=http://www.lrdc.pitt.edu/ashley/>Kevin Ashley</a> and <a href=http://www.lrdc.pitt.edu/schunn/>Christian Schunn</a>.
+</ul>
+
+<ul>
+<h4><FONT color=purple>
+Intelligent Scaffolding for Peer Reviews of Writing
+(<a href="https://sites.google.com/site/swordlrdc/">project homepage</a>) </FONT> 
+(Sep. 2012 - Aug. 2015)</h4>
+<p>
+This study will adapt and apply existing Artificial Intelligence
+techniques from Natural Language Processing and Machine Learning to
+automatically scaffold the peer reviewing and
+revising-from-peer-review process. Utilizing an iterative development
+plan more complex and refined versions of the system will be used with
+heavy testing in October and March each year.  Researchers will
+undertake three different but partially integrated interventions:
+automatic detection of effective review comment features, automatic
+detection of thesis statements and related comments, and facilitating
+author revision by organizing review comments and author response
+planning.  The pilot experiment will take place in a high school
+setting the last 6 months of the grant.
+<p>
+Iterative development will be conducted in four classroom environments:
+      high school science, high school English/social studies, a
+      university physics lab, and a university psychology class. The
+      comparison group will include students using the same web-based
+      peer review system as the treatment group, but with all the
+      intelligent scaffolding interventions disabled.
+This IES grant is in collaboration with 
+<a href=http://www.lrdc.pitt.edu/ashley/>Kevin Ashley</a>, 
+<a      href=http://www.education.pitt.edu/people/profile.aspx?f=AmandaGodley>Amanda Godley</a> and 
+<a href=http://www.lrdc.pitt.edu/schunn/>Christian Schunn</a>.
+</ul>
+
+<ul>
+<h4><FONT color=purple>
+Response-to-Text Prompts to Assess Students' Writing Ability:  Using Natural Language Processing for Scoring Writing at Scale
+</FONT>
+(July 2013 - June 2015)</h4>
+<p>
+Assessing analytic writing in response to text (RTA) is a means for
+understanding students’ analytic writing
+ability and understanding
+measures of effective teaching.
+Current writing assessments typically examine “content-free” writing (i.e.,
+writing in response to open-ended prompts divorced from text), although
+prior work demonstrates that it is also possible to administer and rate student
+writing in response-to-text.
+However, there is a significant barrier to scoring writing at scale,
+as scoring is labor intensive and requires extensive
+training and expertise on the part of raters to obtain reliable
+scores.
+<p>
+Recent advances in artificial intelligence
+offer a promising way forward for scoring students’ analytic writing
+at scale. Natural language processing (NLP) experts have been working
+for decades on producing ways to reliably score student writing
+holistically. 
+The state-of-the-art of
+automated essay systems (AES) indicates that AES can produce
+scores as reliable as human ratings in the sense that they can be
+trained to score similarly to humans on holistic measures of writing,
+especially for short, timed student responses.
+To move the field forward, however, there is a need for writing
+assessments that are aligned with authentic writing tasks.
+Second, there is a need to explore whether AES algorithms can
+reliably score across multiple dimensions of student
+writing. Our assessement includes five dimensions (analysis,
+evidence, organization, style/vocabulary and
+mechanics/usage/grammar/syntax) and it will be important to see if AES
+designs can rate substantive dimensions such as analysis and evidence
+as well as they can rate more surface and structural dimensions of
+writing. 
+This LRDC internal grant is in collaboration with
+<a href=http://www.lrdc.pitt.edu/people/person-detail.asp?Dir_ID=94>Rip Correnti</a> and
+<a href=http://www.education.pitt.edu/people/profile.aspx?f=LindsayClareMatsumura> Lindsay Clare Matsumura</a>.
+</ul>
+
+<ul>
+<h4><FONT color=purple>
+Peer Review Search & Analytics in MOOCs via Natural Language Processing</FONT>
+(February 2014)</h4>
+<p>
+Peer assessments provided by students are widely used in
+massively open-access online courses (MOOCs) due to the difficulty of
+fully-automating assessment for many types of assignments.  However,
+the
+use of student assessment provides an overwhelming amount of textual
+information for instructors to process.  The proposed research will
+develop Natural Language Processing methods to support search and
+large
+scale analytics of student assessment comments in MOOCs.
+My liason for this Google Faculty Research Award is <a
+<a href=https://sites.google.com/site/dmrussell/>
+Daniel Russell</a>.</ul>
+
+<ul>
+<h4><FONT color=purple>
+Improving Undergraduate STEM Education by Integrating Natural Language Processing with Mobile Technologies
+</FONT>
+(July 2014 - June 2016)</h4>
+<p>
+The degree and quality of interaction between students and instructors
+are critical factors for students' engagement, retention, and learning
+outcomes across domains.  This is especially true for the introductory
+STEM courses at the undergraduate level since these courses are
+generally taught in lecture halls due to a large number of students
+enrolled.  Recent developments in educational technology such as MOOCs
+and financial troubles in universities make it safe to predict that
+the class size problem will only get worse both in traditional
+face-to-face and online classes.  So, how can we modify the passive
+nature of lectures and increase the interaction while actively
+involving both students and instructors in the learning process in
+these circumstances?
+<p>
+In order to address this problem, we propose integrating Natural
+Language Processing (NLP) with a mobile application that prompts
+students to reflect as well as provide immediate and continuous
+feedback to instructors about the difficulties that their students
+encounter.  By enhancing the student reflection and instructor
+feedback cycle with technological tools, this project will
+incorporate three lines of research: 1) role of students' reflection
+and instructor's feedback on students' retention and learning
+outcomes, 2) effectiveness and reliability of NLP to summarize written
+responses in a meaningful way, and 3) value and design of mobile
+technologies to improve retention and learning in STEM domains.  This
+LRDC internal grant is in collaboration with <a
+href=http://www.muhsin.me/>Muhsin Menekse</a> and <a
+href=http://www.cs.pitt.edu/~jingtaow/>Jingtao Wang</a>.  </ul>
+
+<ul><h4><FONT color=purple>Entrainment and Task Success in Team Conversations</FONT>
+(August 2014 - July 2017)</h4>
+<p>
+Teams, rather than individuals, are now the usual generators of scientific knowledge. How to optimize team interactions is a passionately pursued topic across several disciplines. This research hypothesizes that linguistic entrainment, or the convergence of linguistic properties of spoken conversation, may serve as a valid and relatively easy-to-collect measure that is predictive of team success. From the perspective of developing interventions for team innovation, organizations could unobtrusively measure team effectiveness using entrainment, and intervene with training to aid teams with low entrainment. Similar interventions would be useful for conversational agents that monitor and facilitate group interactions. The work could also support the development of browsers or data mining applications for corpora such as team meetings or classroom discussions.
+<p>
+To date, most studies of entrainment have focused on conversational dyads rather than the multi-party conversations typical of teams. The technical objective of this research is to develop, validate and evaluate new measures of linguistic entrainment tailored to multi-party conversations. In particular, the first research goal is to develop multi-party entrainment measures that are computable using language technologies, and that are both motivated and validated by the literature on teams. The second goal is to demonstrate the utility of these measures in being associated with team processes and predicting team success. The supporting activities include 1) collection of an experimentally-obtained corpus where teams collaborate on a task where they converse, and where a team process intervention manipulates likely entrainment, 2) development of a set of entrainment measures for multi-party dialogue, 3) use of standard psychological teamwork measures for convergent validity and random conversations for divergent validity, 4) exploration of how the team factors of gender composition and participation equality impact group entrainment, and 5) evaluation of the utility of measuring entrainment for predicting team and dialogue success. 
+This NSF grant is in collaboration with 
+<a href=http://www.casl.umd.edu/spaletz>Susannah Paletz</a>.
+</ul>
+
+<ul><h4><FONT color=purple> An Intelligent Ecosystem for Science Writing Instruction</FONT>
+(September 2014 - August 2017)</h4>
+<p>The ability to express scientific ideas in both written and oral form is an important 21st century skill. Teachers, employers, and college faculty lament the inability of many high school graduates to write clearly. This deficit in writing is due in part because teachers do not have the time to provide appropriate, timely feedback to students on their writing. This project would help teachers help students achieve these skills through automating an effective feedback process, in ways that are customized to particular disciplines and local classroom needs, particularly in high needs districts. The project will contribute to knowledge about how students learn to write and how computer assisted systems can support this learning.
+<p>
+This project will develop and test three tools: 1) Teaching resources organized as developmental trajectories for teachers to use (e.g. from more simple to more complex; with diagnostics and strategies for addressing particular challenges); 2) A teacher dashboard that uses Artificial Intelligence tools to provide timely formative assessment to teachers by highlighting problem areas in their students' writing and peer reviews; and 3) An online teacher resource exchange to rapidly grow the set of appropriate assignments that can be used with this approach, critically filtered by student performance metrics. The project builds on a current system called SWoRD, which supports student peer reviewing in many disciplines within and beyond science. Working with six lead teachers and larger set of pilot teachers, the project will develop a trajectory of effective writing assignments in Biology, Chemistry, and Physics. In year three, there will be a summative evaluation with 90 teachers. 
+This NSF grant is in collaboration with 
+<a      href=http://www.education.pitt.edu/people/profile.aspx?f=AmandaGodley>Amanda Godley</a> and 
+<a href=http://www.lrdc.pitt.edu/schunn/>Christian Schunn</a>.
+</ul>
+
+<ul><h4><FONT color=purple> Computational Models of Essay Rewritings
+</FONT>
+(September 2015 - August 2017)</h4>
+<p>
+This project evaluates the viability of revision as a pedagogical
+technique by determining whether student interactions with an NLP-based
+revision assistant enables them to learn to write better -- that is, whether certain forms of the 
+feedback (in terms of the perceived
+purposes and scopes of changes) 
+encourage students to learn to make more effective revisions. More 
+specifically, the project works toward three objectives:
+(1) Define a schema for characterizing the types of changes that occur
+at different levels of the rewriting. For example, the writer might
+add one or more sentences to provide evidence to support a thesis; or
+the writer might add just one or two words to make a phrase more
+precise.
+(2) Based on the schema, design a computational model for recognizing
+the purpose and scope of each change within a revision. One
+application of such a model is a revision assistant that serves as a
+sounding board for students as they experiment with different revision
+alternatives.
+(3) Conduct experiments to study the interactions between students and
+the revision writing environment in which variations of idealized
+computational models are simulated. The findings of the experiments
+pave the way for developing better technologies to support for student
+learning. This NSF grant is in collaboration with
+<a href=http://www.cs.pitt.edu/~hwa>Rebecca Hwa</a>.
+
+</ul>
+
+          <H3><A name="projects"></A>Completed Projects:</H3>
+ <UL>
+<h4><FONT color=purple>Adding Spoken Language to a Text-Based Dialogue
+Tutor</FONT> (Nov. 2003 - Sep. 2006)</h4>
+<p>
+The goal of this research is to generate an
+empirically-based understanding of the ramifications of adding spoken
+language capabilities to text-based dialogue tutors, and to understand
+how these implications might differ in human-human and human-computer
+spoken interactions.  This research will explore the relative effectiveness
+of speech versus text-based tutoring in the context of ITSPOKE, a
+speech-based dialogue system that uses a text-based system for
+tutoring conceptual physics (VanLehn et al, 2002) as its
+``back-end.''  The results of this work will demonstrate whether
+spoken dialogues yield increased performance compared to text with
+respect to a variety of evaluation measures, whether the same or
+different student and tutor behaviors correlate with learning gains in
+speech and text, and how such findings generalize both across and
+within human and computer tutoring conditions.  These results will
+impact the development of future dialogue tutoring systems
+incorporating speech, by highlighting the performance gains that can
+be expected, and the requirements for achieving such gains.
+
+<h4><FONT color=purple><a href="http://www.learnlab.org/technologies/tutalk/index.php">TuTalk:</a> Infrastructure for authoring and
+experimenting with natural language dialogue in tutoring systems and
+learning research </FONT> (project <a
+href="http://andes3.lrdc.pitt.edu/TuTalk">homepage</a>) (Dec. 2004-
+Nov. 2006) </h4> 
+The focus of our proposed work
+is to provide an infrastructure that will allow learning researchers
+to study dialogue in new ways and for educational technology
+researchers to quickly build dialogue based help systems for their
+tutoring systems. Most tutorial dialogue systems that to date have
+undergone successful evaluations (CIRCSIM, AutoTutor, WHY-Atlas, the
+Geometry Explanation Tutor) represent development efforts of many
+man-years. These systems were instrumental in pushing the technology
+forward and in proving that tutorial dialogue systems are feasible and
+useful in realistic educational contexts, although not always provably
+better on a pedagogical level than the more challenging alternatives
+to which they have been compared. We are now entering a new phase in
+which we as a research community must not only continue to improve the
+effectiveness of basic tutorial dialogue technology but also provide
+tools that support investigating the effective use of dialogue as a
+learning intervention as well as application of tutorial dialogue
+systems by those who are not dialogue system researchers. We propose
+to develop a community resource to address all three of these problems
+on a grand scale, building upon our prior work developing both basic
+dialogue technology and tools for rapid development of running
+dialogue systems. This grant is led by 
+<a href=http://www.pitt.edu/~pjordan>Pamela Jordan</a> at the 
+University of Pittsburgh 
+and <a href="http://www.cs.cmu.edu/~cprose">Carolyn Rose </a>
+at Carnegie Mellon University.
+</ul> 
+ <UL>
+<h4><FONT color=purple>Does Treating Student Uncertainty as a Learning
+Impass Improve Learning in Spoken Dialogue Tutoring</FONT> (Oct. 2006 - May 2007)</h4>
+
+<p>
+Most existing tutoring systems respond based only on the correctness
+of student answers. Although the tutoring community has shown that
+incorrectness and uncertainty both represent learning impasses (and
+thus opportunities to learn), and has also shown correlations between
+uncertainty and learning, to date there have been very few controlled
+experiments investigating whether system responses to student
+uncertainty improve learning. We thus propose a small controlled study
+to test whether this hypothesis holds true, under "ideal" system
+conditions. The study uses a Wizard of Oz (WOZ) version of a
+qualitative physics spoken dialogue tutoring system, where the human
+Wizard performs speech recognition, natural language understanding,
+and recognition of uncertainty, for each student answer. In the
+experimental condition, the Wizard then tells the system that correct
+but uncertain answers are incorrect, causing the system to respond to
+both uncertain and incorrect student answers in the same way, namely
+with further dialogue, thereby reinforcing the student's
+understanding of the principle(s) under discussion. In the first
+control condition, the system responds only to incorrect student
+answers in this way. In the second control condition, the
+system responds to a percentage of correct answers in this way, to
+control for the additional tutoring in the experimental
+condition. 
+   <H4><FONT color=purple>
+Monitoring Student State in Tutorial Spoken Dialogue</FONT> (Sep. 2003
+ - Aug. 2007)</H4>
+<p>
+This research investigates the feasibility and utility of monitoring
+student emotions in spoken dialogue tutorial systems. While human
+tutors respond to both the content of student utterances and
+underlying perceived emotions, most tutorial dialogue systems cannot
+detect student emotions, and furthermore are text-based, which may
+limit their success at emotion prediction. While there has been
+increasing interest in identifying problematic emotions
+(e.g. frustration, anger) in spoken dialogue applications such as call
+centers, little work has addressed the tutorial domain.  The PIs are
+investigating the use of lexical, syntactic, dialogue, prosodic and
+acoustic cues to enable a computer tutor to automatically predict and
+respond to student emotions. The research is being performed in the
+context of ITSPOKE, a speech-based tutoring dialogue system for
+conceptual physics. The PIs are recording students interacting with
+ITSPOKE, manually annotating student emotions in these as well as in
+human-human dialogues, identifying linguistic and paralinguistic cues
+to the annotations, and using machine learning to predict emotions
+from potential cues. The PIs are then deriving strategies for adapting
+the system's tutoring based upon emotion identification.
+The major scientific contribution will be an understanding of whether
+cues available to spoken dialogue systems can be used to predict
+emotion, and ultimately to improve tutoring performance. The results
+will be of value to other applications that can benefit from
+monitoring emotional speech. Progress towards closing the performance
+gap between human tutors and current machine tutors will also expand
+the usefulness of current computer tutors.  This grant is in
+collaboration with <a href=http://www.cs.columbia.edu/~julia>Julia
+Hirschberg</a> and her group at Columbia University.
+
+</ul>
+<ul>
+<h4><FONT color=purple>Tutoring Scientific Explanations via Natural
+Language Dialogue</FONT> (project <a
+href="http://andes3.lrdc.pitt.edu/ITR/tsed.html">homepage</a>)
+(Jan. 2004 - Dec. 2007)
+</h4>
+<p>
+It is widely acknowledged, both in academic studies and the
+marketplace, that the most effective form of education is the
+professional human tutor. A major difference between human tutors and
+computer tutors is that only human tutors understand unconstrained
+natural language input. Recently, a few tutoring systems have been
+developed that carry on a natural language (NL) dialogue with
+students. Our research problem is to find ways to make NL-based
+tutoring systems more effective. Our basic approach is to derive new
+dialogue strategies from studies of human tutorial dialogues,
+incorporate them in an NL-based tutoring system, and determine if they
+make the tutoring system more effective. For instance, some studies
+are determining if learning increases when human tutors are
+constrained to follow certain strategies. In order to incorporate the
+new dialogue strategies into our existing text and spoken NL-based
+tutoring systems, two completely new modules are being developed. One
+new module will interpret student utterances using a large directed
+graph of propositions called an explanation network, which is halfway
+between the shallow and deep representations of knowledge that are
+currently used. The second new module uses machine learning to improve
+the selection of dialogue management strategies. The research is thus
+a multidisciplinary effort whose intellectual merit lies in new
+results in the cognitive psychology of human tutoring, in the
+technology of NL processing, and in the design of effective tutoring
+systems. Improved NL-based tutoring systems could have a broad impact
+on education and society.  This grant is in
+collaboration with <a href=http://www.pitt.edu/~vanlehn>Kurt VanLehn</a>, 
+<a href=http://www.pitt.edu/~chi>Micheline Chi</a>, and
+<a href=http://www.pitt.edu/~pjordan>Pamela Jordan</a> at the 
+Learning Research and Development Center, University of Pittsburgh,
+and with 
+<a href="http://www.cs.cmu.edu/~cprose">Carolyn Rose </a>
+(now at CMU).
+</ul>
+
+ <UL>
+<h4><FONT color=purple>Cohesion in Tutorial Dialogue and its Impact on
+Learning</FONT> (Oct. 2006 - June 2009)</h4>
+<p>
+Research on the factors that make one-on-one tutoring a very effective
+mode of instruction has converged on an important finding: that the
+critical term in "tutorial interaction" is "interaction." That is,
+what the tutor says or does during tutoring, and what the student says
+or does are less important than the dynamic, coordinated interplay
+between their dialogue turns.  It is now important to identify the
+discourse mechanisms that drive highly interactive human tutoring, so
+that these mechanisms can be simulated by natural-language dialogue
+engines in intelligent tutoring systems (ITSs).  In the first stage of
+this project, we will analyze a corpus of naturalistic tutorial
+dialogues to accomplish this goal.  Specifically, we will identify the
+mechanisms that achieve cohesion in tutorial dialogues, since highly
+interactive tutorial dialogue is intrinsically highly cohesive.  In
+the second stage, we will run a series of controlled studies to test
+the hypothesis that more highly cohesive tutorial dialogue is more
+effective for promoting learning than less cohesive dialogue, and to
+assess the effectiveness of a few selected mechanisms of cohesion.
+Finally, in the third stage of the project, we will explore the extent
+to which database tools developed by the computational linguistics
+community (e.g., WordNet and FrameNet) can automatically tag cohesion
+in tutorial dialogue.  We will also extend these tools and develop
+algorithms that will allow them to be used to automatically generate
+cohesive tutor turns for a small sample of student turns, as a first
+step towards developing a natural-language dialogue engine that can
+use these tools to generate highly cohesive tutorial dialogue.
+This grant is in collaboration with 
+<a href=http://www.lrdc.pitt.edu/people/person-detail.php?id=25>Sandra Katz</a>.
+
+
+</ul>
+
+ <UL>
+<h4><FONT color=purple>Improving Learning from Peer Review with NLP and ITS Techniques</FONT> (July 2009 - June 2011)</h4>
+<p>
+
+SWoRD is a web-based system to support peer reviewing in a wide variety of
+disciplinary classroom settings. One result of prior research with SWoRD
+is an enormous database of written materials that are ripe for analysis
+and exploitation in support of research on natural language processing
+(NLP), intelligent tutoring systems (ITS), cognitive science, educational
+data mining, and improving learning from peer review.  In this project we
+will both analyze existing SWoRD-generated data, and develop an improved
+version of SWoRD for use in further experimentation.  In particular, we
+will explore using SWoRD to teach substantive skills in domains involving
+ill-defined problems, and will explore techniques for automatically
+identifying key concepts and flagging issue understanding. Second, given a
+SWoRD toolkit of what can be accomplished robustly with peer interactions,
+we will explore the use of natural language processing to automatically
+support and improve those interactions.  Finally, we will develop a new
+version of the SWoRD program that incorporates improved features and
+control facilities, and that incorporates Artificial Intelligence
+techniques to improve learning in a variety of ways.  This is an internal LRDC grant, and is in collaboration with 
+<a href=http://www.lrdc.pitt.edu/schunn/>Christian Schunn</a> and <a href=http://www.lrdc.pitt.edu/ashley/>Kevin Ashley</a>.
+</ul>
+
+<ul>
+<h4><FONT color=purple>Adapting to Student Uncertainty over and above Correctness in A Spoken Tutoring Dialogue System
+</FONT> (Sep. 2006 - Aug. 2011)</h4>
+<p>
+This research investigates whether responding to student uncertainty
+over and above correctness improves learning during computer
+tutoring. The investigation is performed in the context of a spoken
+dialogue tutoring system, where student speech provides many
+linguistic cues (e.g. intonation, pausing, word usage) that
+computational linguistics research suggests can be used to detect
+uncertainty. Intelligent tutoring systems research suggests that
+uncertainty is part of the learning process, and has hypothesized that
+to increase system effectiveness, it is critical to respond to more
+than correctness. However, most existing tutoring systems respond only
+to student correctness, and few controlled experiments have yet
+investigated whether also responding to uncertainty can improve
+learning.
+This research designs and implements two different enhancements to the
+spoken dialogue tutoring system, to test two hypotheses in the
+tutoring literature concerning how tutors can effectively respond to
+uncertainty over and above correctness. The first hypothesis is that
+student uncertainty and incorrectness both represent learning
+impasses, i.e., opportunities to improve understanding. This
+hypothesis is addressed with an enhanced system version that treats
+uncertainty in the same way that incorrectness is currently treated
+(i.e., with additional subdialogue to increase understanding). The
+second hypothesis is that more optimal responses can be developed by
+modeling how human tutor responses to correctness change when the
+student is uncertain. This hypothesis is addressed by analyzing human
+tutor dialogue act responses (i.e. content and presentation) to
+student uncertainty over and above correctness in an existing tutoring
+corpus, then implementing these responses in a second enhanced system
+version. Two controlled experiments are then performed. The first
+tests the relative impact of the two adaptations on learning using a
+Wizard of Oz version of the system, with a human (Wizard) detecting
+uncertainty and performing speech recognition and language
+understanding. The second experiment tests the impact of the
+best-performing adaptation from the first experiment in the context of
+the real system, with the system processing the speech and language
+and detecting uncertainty in a fully automated manner.
+The major intellectual contribution of the research is to demonstrate
+whether significant improvements in learning are achieved by adapting
+to student uncertainty over and above correctness during tutoring, to
+advance the state of the art by fully automating and evaluating user
+uncertainty detection and adaptation in a working spoken dialogue
+system, and to investigate any different effects of this adaptation
+under ideal versus actual system conditions.
+This NSF grant is in collaboration with <A href="http://www.cs.pitt.edu/~forbesk/">Kate Forbes-Riley</A>.
+ </ul>
+
+ <UL>
+<h4><FONT color=purple> Improving a Natural-language Tutoring System
+That Engages Students in Deep Reasoning Dialogues About Physics</FONT>
+(<a href="http://www.pitt.edu/~rimac">project homepage</a>) (June 2010-May 2013)
+
+</h4>
+<p>
+Recent studies show that U.S. students lag behind students in other developed countries in math and science. Because one-on-one tutoring has been shown to be a highly effective form of instruction, many educators and education policy makers have looked to intelligent tutoring systems (ITSs) as a means of providing cost-effective, individualized instruction to students that can improve their conceptual understanding of, and problem-solving skills in, math and science. However, even though many ITSs have been shown to be effective, they are still not as effective as human tutors. 
+<p>The goal of this Cognition and Student Learning development project is to take a step towards meeting President Obama's challenge to produce "learning software as effective as a personal tutor." We will do this by building an enhanced version of a natural-language dialogue system that engages students in deep-reasoning, reflective dialogues after they solve quantitative problems in Andes, an intelligent tutoring system for physics. Improvements to this system will focus on addressing a key limitation of natural-language (NL) tutoring systems: although these systems are "interactive" in the sense that they try to elicit explanations from students instead of lecturing to them, automated tutors do not align their dialogue turns with those of the student to the same degree, and in the same ways, that human tutors do. In particular, automated tutors often fail to reuse parts of the student's dialogue turns in their own turns, to adjust the level of abstraction that the student is working from when the student is over-generalizing or missing important distinctions between concepts, and to abstract or specialize correct student input when doing so might enhance the student's understanding. Empirical research shows that these forms of lexical and semantic alignment in human tutoring predict learning. The main outcome of this development effort will be a fully working, prototype reflective dialogue version of Andes that can carry out these functions and serve as a research platform for a future study that compares the effectiveness of the enhanced NL tutoring system with the current system, which lacks these alignment capabilities--thereby allowing us to test the hypothesis that it is not interaction per se that explains the effectiveness of human tutoring, but how it is carried out.
+<p> The enhanced version of this reflective dialogue system will be developed through an iterative process of preparing a prototype for experienced physics teachers and students to try out using the "Wizard of Oz" paradigm, identifying cases in which the system does not work as intended (e.g., the tutor prompts the student to generalize or make distinctions when this is not warranted by the discourse context), refining the software to correct these problems, and testing the revised software in a subsequent field trial. The subject pool for these trials will be students enrolled in a first-year physics course at the University of Pittsburgh and high school students taking physics in Pittsburgh urban and suburban schools. During the third (final) year of the project, we will collect pilot data that addresses the feasibility of implementing the system in authentic high school physics classes, and the promise of the system to increase students' conceptual understanding of physics and ability to solve physics problems. The latter will be determined by comparing students' pre- and post-test performance on measures of conceptual understanding and problem-solving ability in physics, and by comparing the performance of students who use the current and enhanced version of the system on these measures.
+This IES grant is in collaboration with 
+<a href=http://www.lrdc.pitt.edu/people/person-detail.php?id=25>Sandra Katz</a>, 
+<A href="http://www.pitt.edu/~pjordan/">Pamela Jordan</A>, and 
+<a href=http://www.education.pitt.edu/people/MichaelFord/>Michael Ford</a>.
+
+
+</ul>
+
+
+ <UL>
+<h4><FONT color=purple> Keeping Instructors Well-Informed in Computer-Supported Peer Review 
+</FONT>
+(<a href="https://sites.google.com/site/swordlrdc/">project homepage</a>) 
+(June 2011-June 2013)
+
+</h4><p>
+From the instructor's viewpoint, a class writing assignment is a black box. Until instructors actually read the first or final drafts, they do not have much information about how well the assignment has succeeded as a pedagogical activity, and even then, it is hard to get a complete picture. Computer-supported peer review systems such as SWoRD, a scaffolded peer review system can help students to write higher quality compositions in classroom assignments, can help in this regard. The goal of this project is to develop and evaluate methods to provide instructors with a comprehensive overview of the progress of a class writing assignment in terms of how well students understand the issues based on structured reviewing rubrics, feedback students provide and receive in the peer review process, and machine learning computational lingustics analysis of the resulting texts. The SWoRD-based peer-review system will present the instructor's overview via a kind of "Teacher-side Dashboard" that will summarize salient information for the class as a whole, cluster students based on common features of their texts, and enable instructors to delve into particular student's writings more effectively in a guided manner. 
+ This is an internal LRDC grant, and is in collaboration with 
+<a href=http://www.lrdc.pitt.edu/ashley/>Kevin Ashley</a>, <a href=http://www.lrdc.pitt.edu/schunn/>Christian Schunn</a> and <a href=http://www.cs.pitt.edu/~jingtaow/>Jingtao Wang</a>.
+
+
+</ul>
+
+
+ <UL>
+<h4><FONT color=purple>
+RI: Small: An Affect-Adaptive Spoken Dialogue System that Responds Based on User Model and Multiple Affective States 
+</FONT> (September 2009 - August 2013)</h4>
+<p>
+
+There has been increasing interest in affective dialogue systems, motivated by the belief that in human-human dialogues, participants seem to be (at least to some degree) detecting and responding to the emotions, attitudes and metacognitive states of other participants. The goal of the proposed research is to improve the state of the art in affective spoken dialogue systems along three dimensions, by drawing on the results of prior research in the wider spoken dialogue and affective system communities. First, prior research has
+
+shown that not all users interact with a system in the same way; the proposed research hypothesizes that employing different affect adaptations for users with different domain aptitude levels will yield further performance improvement in affective spoken dialogue systems. Second, prior research has shown that users display a range of affective states and attitudes while interacting with a system; the proposed research hypothesizes that adapting to multiple user states will yield further performance improvement in affective spoken dialogue systems. Third, while prior research has shown preliminary performance gains for affect adaptation in semi-automated dialogue systems, similar gains have not yet been realized in fully automated systems. The proposed research will use state of the art empirical methods to build fully automated affect detectors. It is hypothesized that both fully and semi-automated versions of a dialogue systemthat either adapts to affect differently depending on user class, or that adapts to multiple user affective states, can improve performance compared to non-adaptive counterparts, with semi-automation generating the most improvement. The three hypotheses will be investigated in the context of an existing spoken dialogue tutoring system that adapts to the user state of uncertainty. The task domain is conceptual physics typically covered in a first-year physics course (e.g., Newtons Laws, gravity, etc.). To investigate the first hypothesis, a first enhanced system version will be developed; it will use the existing uncertainty adaptation for lower aptitude users with respect to domain knowledge, and a new uncertainty adaptation will be developed and implemented to be employed for higher aptitude users. To investigate the second hypothesis, a second enhanced systemversion will be developed; it will use the existing uncertainty adaptation for all turns displaying uncertainty, and a new disengagement adaptation will be developed and implemented to be employed for all student turns displaying a second state of disengagement. A controlled experiment with the two enhanced systems will then be conducted in a Wizard-of-Oz (WOZ) setup, with a human Wizard detecting affect and performing speech recognition and language understanding. To investigate the third hypothesis, a second controlled experiment will be conducted, which replaces the WOZ system versions with fully-automated systems.
+<p>
+The major intellectual contribution of this research will be to demonstrate whether significant performance gains can be achieved in both partially and fully-automated affective spoken dialogue tutoring systems 1) by adapting to user uncertainty based on user aptitude levels, and 2) by adapting to multiple user states hypothesized to be of primary importance within the tutoring domain, namely uncertainty and disengagement. The research project will thus advance the state of the art in both spoken dialogue and computer tutoring technologies, while at the same time demonstrating any differing effects of affect-adaptive systems under ideal versus realistic conditions. More broadly, the research and resulting technology will lead to more natural and effective spoken dialogue-based systems, both for tutoring as well as for more traditional information-seeking domains. In addition, improving the performance of computer tutors will expand their usefulness and thus have substantial benefits for education and society. 
+This NSF grant is in collaboration with <A href="http://www.cs.pitt.edu/~forbesk/">Kate Forbes-Riley</A>.
+</h4> 
+
+</ul>
+
+
+
+          <P>
+          </P>
+          <HR>
+
+
+
+
+          <H3><A name="sponsors"></A>Current and Past Sponsors:</H3>
+
+          <UL>
+            <LI>The National Science Foundation through a grant to
+            the Center for Interdisciplinary Research on
+            Constructive Learning Environments (<A href=
+            "http://www.pitt.edu/~circle/">CIRCLE</A>) at the
+            University of Pittsburgh and Carnegie Mellon
+            University. (<a
+  href=https://www.fastlane.nsf.gov/servlet/showaward?award=9720359>NSF Award Abstract #9720359)</a></LI>
+          </UL><UL>
+  <LI>The National Science Foundation through a grant to Diane
+  J. Litman <a
+  href=https://www.fastlane.nsf.gov/servlet/showaward?award=0328431>(NSF Award Abstract #0328431)</a> at the University of Pittsburgh and Julia Hirschberg 
+<a
+  href=https://www.fastlane.nsf.gov/servlet/showaward?award=0328295>(NSF Award Abstract #0328295)</a> at
+  Columbia University 
+</LI>
+          </UL>
+          <UL>
+  <LI>The National Science Foundation through a grant to Kurt A. VanLehn, Carolyn P. Rose, Diane J. Litman, Michelene Chi, and Pamela W. Jordan
+<a
+  href=https://www.fastlane.nsf.gov/servlet/showaward?award=0325054>
+(NSF Award Abstract #0325054)</a> at the University of Pittsburgh
+</LI>
+          </UL>
+          <UL>
+  <LI>The Office of Naval Research through a grant to Diane J. Litman
+(Adding Spoken Language to a Text-Based Dialogue Tutor)         </li>  </UL>
+          <UL>
+            <LI>The National Science Foundation through a grant to
+            the <A href="http://www.learnlab.org">Pittsburgh Science
+            of Learning Center</a> at the
+            University of Pittsburgh and Carnegie Mellon
+            University.
+<a
+            href=http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0354420>(NSF
+            Award Abstract #0354420)</a?)
+</LI>
+          </UL>
+          <UL>
+            <LI>The National Science Foundation through a grant to
+	     Dan Roth, Diane Litman, James Pellegrino, Sandra
+            Rodriguez-Zas, and ChengXiang Zhai <a
+            href="http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0428472">
+            (NSF
+            Award Abstract #0428472)</a>
+            at the University of Illinois at Urbana-Champaign
+            (subcontract to the University of Pittsburgh)
+</LI>
+          </UL>
+<UL>
+  <LI>The National Science Foundation through a grant to Diane
+  J. Litman and Katherine Forbes-Riley<a   href=http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0631930>
+(NSF Award Abstract #0631930)</a>
+</li> </ul>
+          <UL>
+  <LI>The Office of Naval Research through a grant to Sandra Katz and Diane Litman
+(Cohesion in Tutorial Dialogue and its Impact on Learning)           </UL>
+          <UL>
+  <LI>The Learning Research and Development Center, University of Pittsburgh, through a grant to Diane Litman, Christian Schunn, and Kevin Ashley (Improving Learning from Peer Review with NLP and ITS Techniques)
+</UL>
+
+<UL>
+  <LI>The National Science Foundation through a grant to Diane
+  J. Litman and Katherine Forbes-Riley<a   href=http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=0914615>
+(NSF Award Abstract #0914615)</a>
+</li> </ul>
+
+<UL><li>United States Department of Education Institute of Education
+Sciences through a grant  to S. Katz (PI), P. Jordan (Co-PI),
+D. Litman (Co-PI) and M. Ford (Co-PI)
+(<a
+href=http://ies.ed.gov/ncer/projects/grant.asp?ProgID=5&grantid=904&NameID=43>Cognition
+and Student Learning Award</a>) </li> </ul>  
+<ul>
+  <LI>The Learning Research and Development Center, University of Pittsburgh, through a grant to Kevin Ashley, Diane Litman, Chris Schunn, and Jingtao Wang (Keeping Instructors Well-Informed in Computer-Supported Peer Review)
+</UL>
+
+<UL>
+  <LI>The National Science Foundation through a grant to Kevin Ashley, Diane Litman, and Christian Schunn <a   href=http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1122504>
+(NSF Award Abstract #1122504)</a>
+</li> </ul>
+
+<UL>
+  <LI>United States Department of Education Institute of Education
+  Sciences through a grant to Diane Litman (PI), Kevin Ashley, Amanda
+  Godley and Christian Schunn (Co-PIs) (<a href=http://ies.ed.gov/funding/grantsearch/details.asp?ID=1297>Educational Technology Award</a>)
+</li> </ul>
+
+
+          <UL>
+  <LI>The Learning Research and Development Center, University of
+  Pittsburgh, The Learning Research and Development Center, University of Pittsburgh, through a grant to Richard Correnti, Diane Litman, and Lindsay Clare Matsumara (Response-to-Text Prompts to Assess students' Writing Ability:  Using Natural Language Processing for Scoring Writing At-Scale)
+</UL>
+
+<ul>
+<li>Google through a 
+<a href=http://googleresearch.blogspot.com/2014/02/google-research-awards-winter-2014.html>
+Faculty Research Award</a> (<a href=http://services.google.com/fh/files/blogs/research-awards-winter-2014.pdf>
+Peer Review Search & Analytics in MOOCs via Natural Language Processing</a>)
+</ul>
+
+
+<ul>
+<li>The Learning Research and Development Center, University of
+Pittsburgh, through a grant to Muhsin Menekse, Diane Litman, and Jingtao Wang
+(Improving Undergraduate STEM Education by Integrating Natural Language Processing with Mobile Technologies)
+</ul>
+
+<UL>
+  <LI>The National Science Foundation through a grant to  Diane Litman <a   href=http://www.nsf.gov/awardsearch/showAward?AWD_ID=1420784&HistoricalAwards=false>(NSF Award Abstract #1420784)</a>
+</li> </ul>
+
+<UL>
+  <LI>The National Science Foundation through a grant to Christian Schunn, Amanda Godley, and Diane Litman <a   href=http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1416980>
+(NSF Award Abstract #1416980)</a>
+</li> </ul>
+
+<UL>
+  <LI>The National Science Foundation through a grant to Rebecca Hwa and Diane Litman <a   href=http://www.nsf.gov/awardsearch/showAward.do?AwardNumber=1550635>
+(NSF Award Abstract #1550635)</a>
+</li> </ul>
+
+          <HR>
+
+    </TABLE>
+  </BODY>
+</HTML>
+

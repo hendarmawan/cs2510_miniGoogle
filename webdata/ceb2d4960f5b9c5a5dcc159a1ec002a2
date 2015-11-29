@@ -1,0 +1,55 @@
+GUI Components: 
+Build component cost = $50 x 300 + $50 x 300 = $30,000
+Purchase cost = $30 x 300 + $30 x 300 +$40 x 50 = $20,000
+So we should purchase GUI components
+Application reuse savings = 0.4 x $20,000 x(N-1)
+where N is number of applications that can reuse the components.
+(N could be 50, but in reality N may be much less, due to the
+ fact that not all applications can reuse the components.
+ A realistic assumption could be N = 25.  The savings
+ will be $192,000.)
+Cost per user = $20,000 / 10,000 = $2 per GUI component
+
+Service components:
+Build component cost = $50 x 500 + $50 x 500 = $50,000
+Purchase cost = $30 x 500 + $30 x 500 = $30,000
+(No end-user testing. With end-user testing it may be $32,000)
+So we should purchase service components
+Complexity cost = $20,000
+Reuse savings = 1.5x $30,000 x (N-1) - $20,000x (N-1)
+(If N = 50 savings can be $1,225,000.  If N = 21 savings can be $500,000)
+Cost per user = ($30,000 + $20,000)/10,000 = $5 per service component
+
+Domain components:
+Build component cost = $50 x 800 +50 x 800 = $80,000
+Purchase cost = $30 x 800 + $30 x 800 = $48,000
+According to the cost analysis, we should again outsource.
+However for strategic reasons perhaps all domain components
+should be built in house regardless of cost advantage to farm out.
+Reuse savings = 10 x $80,000 x (N-1) - $20,000 x (N-1) 
+(If N is 50 savings is $3,822,000. If N is 11 savings is $780,000)
+Cost per user = ($80,000 + $20,000)/10,000 = $10 per domain component
+
+Grading: Points will be subtracted if computation is wrong.
+As long as there is a reasonable justification, the decisions
+to develop inhouse or outsource are equally acceptable.
+Grading: (a) If student uses N instead of (N-1), the number will
+be 50 instead of 49 or a smaller number. Wrong computation subtract 1 point,
+unless there is a logical explanation.
+(b) For GUI recommendation should be "outsource". Wrong computation subtract 1 point,
+unless there is a logical explanation.
+(c) For Service recommendation should be "outsource". Wrong computation subtract 1 point.
+(d) For Domain recommendation could be either way. Wrong computation subtract 1 point.
+
+Note: A hybrid approach is to outsource GUI and service components,
+and develop service components.  Some students consider outsourcing
+some GUI components while developing others inhouse.  There is no
+special advantage of using this fine-grained hybrid approach, but
+on the contray makes the lead software engineer's life very
+difficult.  It is certainly not recommended. 0.5 point
+will be subtracted if answer to GUI or service component
+selection is "hybrid", and no deduction for domain component.
+
+Some students did a good job in preparing the business
+case report.  At the grader's discretion, 0.5 bonus points
+can be awarded.

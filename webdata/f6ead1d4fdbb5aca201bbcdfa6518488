@@ -1,0 +1,18 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="page5.html"><img src="previous.gif" align=left></a>
+<a href="page6.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>Google Search Engine</h1>
+   <br></br>
+<p>The Google Search Engine was developed by Sergey Bin and Larry Page 
+at Stanford University in the spring of 1995</p>
+<p>Uses <a href="pagerank.html">PageRank</a> technology to return search
+results - most other search
+engines return results based on how often keywords appear in a website</p>
+<p>Results in a fast search engine that encompasses hundreds of millions
+of URL's</p>

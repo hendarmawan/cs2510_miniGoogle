@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><HEAD><TITLE>Querying Multiple Data</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR>
+<meta name="ProgId" content="FrontPage.Editor.Document">
+</HEAD>
+<BODY> 
+ <A href="9.htm" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+ <A href="11.htm">  <IMG height=26 src="next.gif" width=26 align=right >  </A>
+<CENTER> 
+ <h1 style="line-height: 150%"> 
+    
+    <font face="Arial">Communication Interface</font></h1></CENTER>
+ <p style="line-height: 150%"><font face="Arial">InterfaceServer.java: 
+ Downloadable at the last page.</font></p>
+ <p style="line-height: 150%"><font face="Arial"><font color="#0000FF">/*<br>
+ <br>
+ Communication Interface for Virtual Classroom Components.<br>
+ Complied in JDK 1.4.2<br>
+ Usage:<br>
+ <br>
+ Step1: Create your component which implemnts Interface <br>
+ ComponentBase.<br>
+ <br>
+ Step2: Replace the ComponentMy with your class name in <br>
+ InterfaceServer::main().<br>
+ <br>
+ Step3: start up Interface Server by<br>
+ java InterfaceServer<br>
+ <br>
+ Step4: Use Virtual remote which is also provided on the <br>
+ web to send message and get the feedback message.<br>
+ <br>
+ */ </font><br>
+ <br>
+ <br>
+ import java.io.*;<br>
+ import java.net.*;<br>
+ import java.util.*;<br>
+ <br>
+ <font color="#0000FF">/* <br>
+ Class KeyValueList:<br>
+ List of (Key, Value) pair--the basic format of message<br>
+ Keys: MsgID and Description are required for any messages<br>
+ MsgID 0-999 is reserved for system use.<br>
+ You MsgID could start from 1000. <br>
+ */<br>
+ </font><br>
+ class KeyValueList{<br>
+ private Vector Keys;<br>
+ private Vector Values;<br>
+ <br>
+ <font color="#0000FF">/* Constructor */</font><br>
+ public KeyValueList(){<br>
+ Keys=new Vector();<br>
+ Values=new Vector();<br>
+ }<br>
+ <br>
+ <font color="#0000FF">/* Look up the value given key, used in getValue() */</font><br>
+ <br>
+ private int lookupKey(String strKey){<br>
+ for(int i=0;i&lt;Keys.size();i++){<br>
+ String k=(String) Keys.elementAt(i);<br>
+ if (strKey.equals(k)) return i;<br>
+ } <br>
+ return -1;<br>
+ }<br>
+ <br>
+ <font color="#0000FF">/* add new (key,value) pair to list */</font><br>
+ <br>
+ public boolean addPair(String strKey,String strValue){<br>
+ return (Keys.add(strKey)&amp;&amp; Values.add(strValue));<br>
+ }<br>
+ <br>
+ <font color="#0000FF">/* get the value given key */<br>
+ </font><br>
+ public String getValue(String strKey){<br>
+ int index=lookupKey(strKey);<br>
+ if (index==-1) return null;<br>
+ return (String) Values.elementAt(index);<br>
+ } <br>
+ <br>
+ <font color="#0000FF">/* Show whole list */</font><br>
+ public String toString(){<br>
+ String result = new String();<br>
+ for(int i=0;i&lt;Keys.size();i++){<br>
+ result+=(String) Keys.elementAt(i)+&quot;:&quot;+(String) Values.elementAt(i)+&quot;\n&quot;;<br>
+ } <br>
+ return result;<br>
+ }<br>
+ <br>
+ public int size(){ return Keys.size(); }<br>
+ <br>
+ <font color="#0000FF">/* get Key or Value by index */</font><br>
+ public String keyAt(int index){ return (String) Keys.elementAt(index);}<br>
+ public String valueAt(int index){ return (String) Values.elementAt(index);}<br>
+ }<br>
+ <br>
+ <font color="#0000FF">/*<br>
+ Class MsgEncoder:<br>
+ Serialize the KeyValue List and Send it out to a Stream.<br>
+ */</font><br>
+ class MsgEncoder{<br>
+ private PrintStream printOut;<br>
+ /* Default of delimiter in system is $$$ */<br>
+ private final String delimiter=&quot;$$$&quot;;<br>
+ <br>
+ public MsgEncoder(){<br>
+ }<br>
+ <br>
+ <font color="#0000FF">/* Encode the Key Value List into a string and Send it 
+ out */</font><br>
+ <br>
+ public void sendMsg(KeyValueList kvList, OutputStream out) throws IOException{<br>
+ PrintStream printOut= new PrintStream(out);<br>
+ if (kvList==null) return;<br>
+ String outMsg= new String();<br>
+ for(int i=0; i&lt;kvList.size();i++){<br>
+ if (outMsg.equals(&quot;&quot;))<br>
+ outMsg=kvList.keyAt(i)+delimiter + kvList.valueAt(i);<br>
+ else<br>
+ outMsg+=delimiter+kvList.keyAt(i)+delimiter + kvList.valueAt(i);<br>
+ }<br>
+ //System.out.println(outMsg);<br>
+ printOut.println(outMsg);<br>
+ }<br>
+ }<br>
+ <br>
+ <font color="#0000FF">/*<br>
+ Class MsgDecoder:<br>
+ Get String from input Stream and reconstruct it to <br>
+ a Key Value List.<br>
+ */<br>
+ </font><br>
+ class MsgDecoder {<br>
+ <br>
+ private BufferedReader bufferIn;<br>
+ private final String delimiter=&quot;$$$&quot;;<br>
+ <br>
+ public MsgDecoder(InputStream in){<br>
+ bufferIn = new BufferedReader(new InputStreamReader(in)); <br>
+ }<br>
+ <br>
+ <font color="#0000FF">/*<br>
+ get String and output KeyValueList<br>
+ */<br>
+ </font><br>
+ public KeyValueList getMsg() throws IOException{<br>
+ String strMsg= bufferIn.readLine();<br>
+ <br>
+ if (strMsg==null) return null;<br>
+ <br>
+ KeyValueList kvList = new KeyValueList(); <br>
+ StringTokenizer st = new StringTokenizer(strMsg,delimiter);<br>
+ while (st.hasMoreTokens()) {<br>
+ kvList.addPair(st.nextToken(),st.nextToken());<br>
+ }<br>
+ return kvList;<br>
+ }<br>
+ <br>
+ }<br>
+ <br>
+ <font color="#0000FF">/* <br>
+ interface ComponentBase:<br>
+ The interface you have to implement in your component<br>
+ */</font><br>
+ <b><font size="4">interface ComponentBase{<br>
+&nbsp;&nbsp; public KeyValueList processMsg(KeyValueList kvList);<br>
+ }</font></b><br>
+ <br>
+ <font color="#0000FF">/*<br>
+ Class InterfaceServer <br>
+ Set up a socket server waiting for the remote to connect.<br>
+ */</font><br>
+ <br>
+ <b><font size="4">public class InterfaceServer<br>
+ {<br>
+ <br>
+&nbsp;&nbsp; public static final int port=7999;<br>
+ <br>
+&nbsp;&nbsp; public static void main(String[] args) throws Exception <br>
+&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp; ServerSocket server = new ServerSocket(port);<br>
+ <br>
+&nbsp;&nbsp;&nbsp; <font color="#0000FF">/*<br>
+&nbsp;&nbsp;&nbsp; You need to create your component here<br>
+&nbsp;&nbsp;&nbsp; */<br>
+ </font><br>
+&nbsp;&nbsp;&nbsp; ComponentBase compMy= new componentMy();<br>
+&nbsp;&nbsp;&nbsp; Socket client = server.accept();<br>
+&nbsp;&nbsp;&nbsp; try{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgDecoder mDecoder= new 
+ MsgDecoder(client.getInputStream());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MsgEncoder mEncoder= new MsgEncoder();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KeyValueList kvInput,kvOutput;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; do<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; kvInput=mDecoder.getMsg();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (kvInput!=null) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(&quot;Incomming 
+ Message:\n&quot;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(kvInput);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; KeyValueList kvResult=compMy.processMsg(kvInput);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(&quot;Outgoing 
+ Message:\n&quot;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(kvResult);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+ mEncoder.sendMsg(kvResult,client.getOutputStream());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; while (kvInput!=null);<br>
+&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; catch (SocketException e){<br>
+&nbsp;&nbsp; System.out.println(&quot;Connection was Closed by Client&quot;);<br>
+&nbsp; } <br>
+&nbsp;}<br>
+ }</font></b></font></p>
+ </BODY>
+ </html>

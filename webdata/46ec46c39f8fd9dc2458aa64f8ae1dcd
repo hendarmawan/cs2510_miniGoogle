@@ -1,0 +1,50 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <meta name="ProgId" content="FrontPage.Editor.Document">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="page7.htm"><img SRC="previous.gif" height=26 width=26 align=LEFT></a><a href="page8a.htm"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+<center>
+<h1>
+The Cookie Technology</h1></center>
+
+<center><img SRC="tbullet.gif" height=19 width=24><b>cookie ingredients</b></center>
+
+<p><b>Five different attributes make up a cookie.&nbsp; They tell the client
+how the cookie is to be used and stored.&nbsp;<font color="#990000"> None</font>of
+the attribute names are case sensitive.&nbsp; To separate the different
+attributes from each other in the cookie string, insert a <font color="#990000">semi-colon</font>
+between them.&nbsp; Apart from the name/value pair, all the other attributes
+are <font color="#990000">optional</font> and, if they aren't present,
+they are assigned default values.</b>
+<p><b>Available Cookie Attributes</b>
+<br>______________________________________________________________________________________________
+<br><b>Attribute&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Function</b>
+<br>_____________________________________________________________________________________________
+<br><b><font color="#990000">NAME=VALUE</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+The name and value of the cookie.&nbsp; They are plain-text strings.</b>
+<p><b><font color="#990000">Expires=DATE&nbsp;</font><font color="#660000">&nbsp;&nbsp;</font><font color="#990000">&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Marks how long a cookie is valid.&nbsp; Default value is the current session.</b>
+<p><b><font color="#990000">Path=PATH&nbsp;</font><font color="#660000">&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Restricts which URLs a cookie is sent to.&nbsp; Default is the document
+that created</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+the cookie.</b>
+<p><b><font color="#990000">Domain=DOMAIN_NAME</font>&nbsp;&nbsp; Restricts
+what hosts a cookie is sent to.&nbsp; Default is the host-name that created</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+the cookie.</b>
+<p><b><font color="#990000">Secure&nbsp;&nbsp;&nbsp;</font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Indicates that the cookie should be sent only if the current connection
+is done</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+over a secure protocol.&nbsp; Default means all types of transfers are
+ok.</b>
+<br>______________________________________________________________________________________________
+</body>
+</html>

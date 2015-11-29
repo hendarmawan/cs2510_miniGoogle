@@ -1,0 +1,24 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="seminar_pg10.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="seminar_pg12.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Adaptation Rules</font></h1> 
+ </center> 
+ 
+<p><br>
+  <font size="4" face="Arial, Helvetica, sans-serif">An Adaptation Rule Language</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">The author has decided to use 
+    the database rule formalism &quot;Condition Action&quot; rules</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Condition Action simply means 
+    that the the action is done when the condition has been made true</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Additionally, the author has used 
+    SQL syntax in order to create easily readable rules</font></li>
+</ul>
+<p><font size="4" face="Arial, Helvetica, sans-serif">A Partial Language Grammar:</font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif"><img src="images/aham_grammar.JPG" width="543" height="485"></font></p>
+</html> 

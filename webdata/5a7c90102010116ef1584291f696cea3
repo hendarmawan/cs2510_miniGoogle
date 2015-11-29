@@ -1,0 +1,23 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Component-Based Software Engineering</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR></HEAD>
+<BODY><A href="http://www.cs.pitt.edu/~chang/163/1631topic.html">
+<IMG 
+src="previous.gif" align=left width="26" height="26"></A>
+<a href="p2.htm">
+<IMG 
+src="next.gif" align=right width="26" height="26"></a> 
+<H1>&nbsp;&nbsp;&nbsp; </H1>
+<H1>Chapter 35. Choosing between COM+, EJB, and CCM</H1>
+<h2>This chapter compares the three main component model contenders:</h2>
+<p><font size="5">
+<img border="0" src="image/technol.gif" width="230" height="59">Microsoft's latest Component Object Model (<a href="http://www.microsoft.com/com/tech/COMPlus.asp">COM+</a>)</font></p>
+<p><font size="5">
+<img border="0" src="image/logo_java.gif" width="103" height="53">Sun's Enterprise JavaBeans (<a href="http://java.sun.com/products/ejb/index.jsp">EJB</a>)
+<img border="0" src="image/duke_swinging.gif" width="46" height="46"></font></p>
+<p><font size="5">
+<img border="0" src="image/logo-corba_vertical.gif" width="92" height="80">CORBA Component Model (<a href="http://www.omg.org/technology/documents/formal/components.htm">CCM</a>) 
+(<a href="http://www-106.ibm.com/developerworks/webservices/library/co-cjct6/">more</a>)</font></p>
+
+</BODY></HTML>

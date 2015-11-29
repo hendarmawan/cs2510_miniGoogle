@@ -1,0 +1,477 @@
+<title>Entity-Relationship Model</title>
+<h1>DATA MODELING USING THE
+ENTITY-RELATIONSHIP MODEL</h1>
+
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/03">Click here for audio-text lecture and feed it to the speech agent</a></xs></center>
+
+<br>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/03a.rm">Click here for part A of an audio lecture that can be played using RealPlayer</a></center>
+<br>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/03b.rm">Click here for part B of an audio lecture that can be played using RealPlayer</a></center>
+<br>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/03c.rm">Click here for part C of an audio lecture that can be played using RealPlayer</a></center>
+
+<br>
+<li> E-R model is a high-level conceptual
+     model for database design
+<br>
+<li> Example
+<br>
+  1. COMPANY has departments<br>
+  2. Department has name, number, manager<br>
+     Manager is an employee<br>
+     Manager has starting date<br>
+     Department has several locations<br>
+  3. Department controls projects<br>
+     Project has name, number, location<br>
+  4. Employee has name, social security,
+     number, address, salary, sex, birthdate.<br>
+  5. Employee is in one department but may
+     work on several projects<br>
+  6. Hours each employee works on each project<br>
+  7. Employee has supervisor<br>
+  8. Employee has dependents with name, sex,
+     birthdate, and relationship to employee.
+<hr>Phases of database design (simplified):
+<br><IMG SRC="images/fig31.gif"><br>
+<hr>
+<h1>ENTITIES AND ATTRIBUTES</h1>
+<br>
+<li> An entity is an object in the real world.
+<br>
+<li> Each entity has properties, called
+     attributes.
+<br>
+<li> A particular entity has values
+     for the attributes.
+<br>
+<li> Attributes may be:<br>
+     simple (atomic) (ZIP)<br>
+     composite (ADDRESS)<br>
+     single-valued (AGE)<br>
+     multivalued (DEGREES)
+<br>
+<li> Derived attribute:<br>
+     AGE from BIRTHDATE
+<br>
+<li> Attributes may have NULL values<br>
+     unknown<br>
+     not applicable
+<br><IMG SRC="images/fig32.gif"><br>
+<br><IMG SRC="images/fig33.gif"><br>
+<hr>
+<h1>ENTITY TYPES</h1>
+<br>
+<li> An entity type is the set of entities having
+     the same attributes
+<br>
+<li> We can describe an entity type by an
+     entity type schema
+<br>
+<li> The real entities in the entity type are
+     entity instances
+<br>
+entity type	<->	entity instances
+<br>
+object type	<->	object instances
+<br>
+relation		<->	tuples (relation instances)
+<br>
+intension	<->	extension
+<br><br>Two entity types and some of the member entities:
+<br><IMG SRC="images/fig34.gif"><br>
+<hr>
+<h1>KEY ATTRIBUTE OF AN ENTITY TYPE</h1>
+<br>
+<li> A key attribute uniquely identifies an entity
+<br>
+The entity type is
+<br>
+(v1, v2)
+<br>
+Suppose the entities are:
+<br>
+(1, A)<br>
+(4, A)<br>
+(5, B)
+<br>
+The key attribute is the first attribute v1.
+<br>
+<br>
+DOMAIN OF AN ATTRIBUTE
+<br>
+The domain of v1 is {1,4,5}
+<br>
+The domain of v2 is {A,B}
+<br>
+CARTESIAN PRODUCT 
+<br>
+{1,4,5} X {A,B} 
+<br>
+{1,A},{1,B},{4,A},{4,B},{5,A},{5,B}
+<br><br>The CAR entity type.  Multivalued attributes are shown
+between braces {}.  Components of a composite attribute are shown between ():
+<br><IMG SRC="images/fig35.gif"><br>
+<hr>
+<h1>INITIAL CONCEPTUAL DESIGN OF THE COMPANY DATABASE</h1>
+<br>
+<li> First we identify the entity types
+<br>
+DEPARTMENT<br>
+PROJECT<br>
+EMPLOYEE<br>
+DEPENDENT
+<br>
+<li> Then we identify the attributes for
+     each entity type
+<br>
+<li> Multivalued attributes, composite
+     attributes, derived attributes,
+     attributes with possible nulls
+<br>
+<li> Key attributes are identified
+     or assumed.
+<br>
+     For example, we assume each project
+     has a unique project_number
+<br>
+<li> Question: Why do we need key attributes?
+<br>
+<li> Are there real life objects without
+     key attributes?
+<hr>
+<h1>RELATIONS, ROLES AND STRUCTURAL CONSTRAINTS</h1>
+<br>
+<br>
+<li> An entity type PARTICIPATES in a relationship type
+<br>
+eg.  EMPLOYEE and DEPARTMENT participate in
+     the relationship WORKS_FOR
+<br>
+<li> DEGREE: the number of participating
+     entity types
+<br>
+eg.  WORKS_FOR has degree 2
+<br>
+<li> ROLE_NAME: the role each participating
+     entity plays in a relationship.
+<br>
+eg. EMPLOYEE plays the role "employee" in
+    WORKS_FOR relationship
+<br>
+<li> RECURSIVE ROLES: EMPLOYEE can play the
+     role of both "employee" and "supervisor"
+<br>
+<li> CONSTRAINTS: We use CARDINALITY RATIO
+     to express a constraint on a relationship
+     type, such as<br>
+     
+     1:1<br>
+     1:N<br>
+     M:N
+<br>
+<li> PARTICIPATION CONSTRAINTS: partial or total
+PARTICIPATION CONSTRAINT
+<br>
+An employee MUST work for a department
+<br>
+An employee entity can exist only if it
+participates in a WORKS_FOR relationship
+instance
+<br>
+Thus its participation is TOTAL
+<br>
+<br>
+<br>
+Only some employees manage departments
+<br>
+The participation is PARTIAL
+<br>
+<br>
+<br>
+A formal constraint: (m, n) where
+<br>
+m, n are number of times
+<hr>
+<h1>PARTICIPATION CONSTRAINT</h1>
+<br>
+An employee MUST work for a department
+<br>
+An employee entity can exist only if it
+participates in a WORKS_FOR relationship
+instance
+<br>
+Thus its participation is TOTAL
+<br>
+<br>
+<br>
+Only some employees manage departments
+<br>
+The participation is PARTIAL
+<br>
+<br>
+<br>
+A formal constraint: (min,max) where
+m, n are min and max number of times an entity
+participates in a relationship instance.
+For example, (0,10) means partial participation,
+and (1,max) means total participation.
+<hr>
+Some instances of the WORK_FOR relationship:
+<br><IMG SRC="images/fig36.gif"><br>
+<br>The ternary relationship SUPPLY:
+<br><IMG SRC="images/fig37.gif"><br>
+<br>The recursive relationship SUPERVISION -
+EMPLOYEE plays two roles of "supervisor" and "supervisee":
+<br><IMG SRC="images/fig38.gif"><br>
+<br>The 1:1 relationship MANAGES, with partical participation
+of EMPLOYEE and total participation of DEPARTMENT:
+<br><IMG SRC="images/fig39.gif"><br>
+<br>The M:N relationship WORKS_ON:
+<br><IMG SRC="images/fig3a.gif"><br>
+<hr>
+<h1>ATTRIBUTES OF RELATIONSHIP TYPES</h1>
+<br>
+An employee entity WORKS_ON a project
+<br>
+The relationship is M:N
+<br>
+If we want to keep track of the number of
+hours an employee works for a project,
+it is difficult to keep it as an attribute
+of the employee entity
+<br>
+We can keep HOURS as an attribute of the
+WORKS_ON relationship type
+<br>
+<br>
+An employee WORKS_FOR a department
+<br>
+The relationship is N:1
+<br>
+If we want to keep track of the starting
+date of an employee working for a department,
+where do we keep it?
+<br>
+IN SCHEMA DESIGN, THE DESIGNER MUST DECIDE
+WHERE TO KEEP ATTRIBUTES.
+<hr>
+<h1>WEAK ENTITY TYPES</h1>
+<br>
+<br>
+John Doe is an employee.  He has a dependent
+Cindy Doe.
+<br>
+Mary Doe is an employee. She has a dependent
+Cindy Doe.
+<br>
+The two DEPENDENT entities are IDENTICAL!
+<br>
+Such entity types are called WEAK ENTITY
+TYPES, where entities may not be distinct.
+<br>
+(They still correspond to same real-life
+object)
+<br>
+Weak entity type must be OWNED by some
+owner entity type.  For example, the
+EMPYLOEE entity type owns the DEPENDENT
+entity type.
+<br>
+How can you eliminate weak entity types?
+<hr>
+<h1>INITIAL DESIGN OF COMPANY DATABASE</h1>
+<br>
+DEPARTMENT<br>
+Name, Number, {Locations}, Manager, 
+ManagerStartDate
+<br>
+<br>
+PROJECT<br>
+Name, Number, Location, 
+ControllingDepartment
+<br>
+<br>
+EMPLOYEE<br>
+Name, SSN, Sex, Address, Salary, 
+BirthData, Department, 
+Supervisor, {WorksOn(Project, Hours)}
+<br>
+<br>
+DEPENDENT<br>
+Employee, DependentName, Sex, 
+BirthDate, Relationship
+<br>
+<br>
+<br>
+<br>
+Note: {} indicates multivalued attributes,
+and () indicates component attributes of
+a composite attribute
+<hr>
+<h1>ADD RELATIONSHIP TYPES TO DATABASE SCHEMA</h1>
+<br>
+MANAGES (1:1)<br>
+EMPLOYEE partial<br>
+DEPARTMENT total<br>
+Attribute: StartDate
+<br>
+<br>
+WORKS_FOR (1:N)<br>
+DEPARTMENT total<br>
+EMPLOYEE total
+<br>
+<br>
+CONTROLS (1:N)<br>
+PROJECT total<br>
+DEPARTMENT partial
+<br>
+<br>
+SUPERVISION (1:N)
+EMPLOYEE partial<br>
+EMPLOYEE partial
+<br>
+<br>
+WORKS_ON (M:N)<br>
+EMPLOYEE total<br>
+PROJECT total<br>
+Attribute: Hours
+<br>
+<br>
+DEPENDENTS_OF (1:N)<br>
+EMPLOYEE partial<br>
+DEPENDENT total<br>
+(Weak Entity Type)
+<hr>
+<h1>The ER Diagram</h1>
+ER diagram is a graphical design tool<br>
+<br><br>ER schema diagram for the COMPANY database:
+<br><IMG SRC="images/fig3b.gif"><br>
+<br>ER diaram for the COMPANY schema with all role names included and with
+structural constraints on relationships specified using the (min,max) notation:
+<br><IMG SRC="images/fig3c.gif"><br>
+<br>Summary of ER diagram notation:
+<br><IMG SRC="images/fig3d.gif"><br>
+<br>An example of ER diagram for the library is shown below,
+where a key icon indicates the relationship is linked to
+the key attribute, and a ring icon indicates the relationship
+is linked to an attribute (which could be part of the key).
+<br><IMG SRC="images/fig3g.jpg" width=600><br>
+<hr>
+<h1>A TERNARY RELATIONSHIP TYPE IS NOT
+EQUIVALENT TO THREE BINARY RELATIONS</h1>
+<br>
+<br>
+<li> CAN_TEACH: relates a course to the
+     instructors who can teach that course<br>
+     (i,c)
+<br>
+<li> TAUGHT_DURING: relates a semester to
+     the instructors who taught some
+     course during that semester<br>
+     (i,s)
+<br>
+<li> OFFERED_DURING: relates a semester
+     to the courses offered during that
+     semester by ANY instructor<br>
+     (s,c)
+<br>
+<li> OFFERS: relates an instrcutor who
+     offers a course during a semester<br>
+     (i,c,s)
+<br>
+Constraint: (i,c,s) cannot exist unless
+(i,c),(i,s),(s,c) exist, but converse
+is not true.
+<br><br>The following figures illustrate
+(a) ternary relationship type SUPPLY; (b) three binary relationship types
+are not equivalent to one ternary relationship type SUPPLY;
+(c) another example of ternary versus binary relationship type:
+<br><IMG SRC="images/fig3e.gif"><br>
+<br><br>A weak entitye type INTERVIEW with a ternary identifying
+relationship type:
+<br><IMG SRC="images/fig3f.gif"><br>
+<hr>
+<h1>THE UML MODEL</h1>
+
+The Unified Modeling Language(UML) is an object-oriented
+analysis and design that evolved as a result of the combined
+work of James Rumbaugh, Grady Booch, and Ivar Jacobson.
+In 1997, a UML consortium(which include Microsoft,
+Hewlett-Packard, Oracle, MCI Systemhouse, IBM, IntelliCorp
+and more) submitted the 1.1 version of the UML to the Object
+Management Group(OMG). Since then, UML has become a de
+facto standard in the software industry, and it continues to
+evolve. 
+<p>
+
+For database modeling, the most useful part of UML is the
+<a href="http://www.cs.pitt.edu/~chang/163/UML/class.html">
+Class Diagram and Object Diagram</a>.
+We can use these diagrams for object-oriented
+database design.
+
+
+<h2>An example of the conceptual design of a library information system</h2>
+
+A library is planning to develop a library information system. This
+library will serve only registered students. Each book has title,
+author, publisher, date-of-publication, ISBN number and a set of keywords.
+Each student has SSN, first name, last name, address, telephone number.
+A student can borrow a book for up to two weeks, so it is necessary
+to keep track of the date-of-borrow.  He can then renew the
+book for another two weeks.  Two renewals are allowed. After
+two renews, the student must return a borrowed book.
+If a book is overdue, the student must pay a fine of $0.5 a day.
+
+
+<h3>ER Model for library information system</h3>
+
+
+  Entity type BOOK(ISBN,title,author,publisher,date-of-pub,{keywords})  
+  Notice {keywords} is a multi-valued attribute.
+  The key is ISBN.
+  <p>
+  Entity type STUDENT(SSN,fname,lname,address,telephone)  
+  The key is SSN.  
+  <p>
+  Relation type BORROW(SSN,ISBN,date-of-borrow,no-of-renewal,fine)  
+  <p>
+  The BORROW relation type is one-to-many.  
+  Participation of BOOK is partial   
+  Participation of STUDENT is partial   
+
+<h3>The UML Class Diagram</h3>
+<pre>
+                        ---------------
+                        |  Borrow     |
+      ------------------|-------------|-------------------------
+   1  |             N   |  SSN, ISBN  |   1               1    |
+--------------          | data-borrow |                  ---------------
+|   Student  |          | no-renewal  |                  |    Book     |
+|------------|          |  telephone  |                  |-------------|
+| SSN        |          |     fine    |                  |    ISBN     |
+| fanme      |          |-------------|                  |   author    |
+| lname      |          | borrow()    |                  |    title    |
+| address    |          | renewal()   |                  | publisher   |
+| telephone  |          | cal-fine9)  |                  | date-pub    |
+|------------|          ---------------                  |  keywords   |
+| add()      |                                           |-------------|
+| delete()   |                                           |    add()    |
+--------------                                           |  delete()   |
+                                                         ---------------
+
+</pre>
+<h3>The UML Object Diagram</h3>
+<pre>
+                  -------------------
+    --------------|Doe,book1: Borrow|-------------------------------
+    |             -------------------                              |
+    |                 -------------------                   -------------
+    |    -------------|Doe,book2: Borrow|-----------        |book1: Book|
+    |    |            -------------------          |        -------------
+--------------                                     |
+|Doe: Student|                              -------------
+--------------                              |book2: Book|
+                                            -------------
+</pre>

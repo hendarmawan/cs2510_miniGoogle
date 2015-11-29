@@ -1,0 +1,27 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0045)http://www.cs.pitt.edu/~chang/163/c01/c01.htm -->
+<HTML><HEAD><TITLE>Component-Based Software Engineering</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR></HEAD>
+<BODY><a href="05.htm">
+<IMG 
+src="previous.gif" align=left width="26" height="26"></a>
+<a href="06.htm">
+<IMG 
+src="next.gif" align=right width="26" height="26"></a> 
+<font color="red">
+<p><font size="6">&nbsp;&nbsp;&nbsp; Middleware</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp; A technology that facilitates seamless integration of 
+components across platforms and multiple deployments, allowing an enterprise to 
+construct solutions by composition of existing software assets irrespective of 
+their implementation technology.</font></p>
+<p><font size="5">&nbsp;&nbsp;&nbsp; It is a &quot;glue&quot;, rather than a design.&nbsp;&nbsp;&nbsp;
+<p><p>
+Middleware can be used to glue the layers together.
+</font></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</BODY></HTML>

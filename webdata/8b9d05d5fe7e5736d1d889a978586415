@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.04 [en] (Win95; U) [Netscape]">
+   <META NAME="ProgId" CONTENT="FrontPage.Editor.Document">
+   <TITLE>Multimedia Software Engineering</TITLE>
+</HEAD>
+<BODY>
+<A HREF="page13.htm"><IMG SRC="previous.gif" HEIGHT=26 WIDTH=26 ALIGN=LEFT></A><A HREF="page15.htm"><IMG SRC="next.gif" HEIGHT=26 WIDTH=26 ALIGN=RIGHT></A>
+<CENTER>
+<H1>
+The Cookie Technology</H1></CENTER>
+
+<CENTER><IMG SRC="tbullet.gif" HEIGHT=19 WIDTH=24><B>create &amp; retrieve
+cookies with <FONT FACE="Lucida Handwriting"><FONT COLOR="#3333FF">Other
+</FONT></FONT>languages</B></CENTER>
+
+<CENTER>&nbsp;</CENTER>
+
+<UL>
+<LI>
+<B>HTML</B></LI>
+
+<BR><B>use the HTTP-EQUIV meta tag</B>
+<BR>&nbsp;
+<LI>
+<B>VBScript</B></LI>
+
+<BR><B>almost identical to JavaScript</B>
+
+<P>&nbsp;
+<BR>&nbsp;</UL>
+
+</BODY>
+</HTML>

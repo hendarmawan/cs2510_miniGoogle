@@ -1,0 +1,25 @@
+<title>Patterns and Index Cells</title>
+<a href="pic4.htm"><img src="previous.gif" align=left></a>
+<a href="pic6.htm"><img src="next.gif" align=right></a>
+<h1>Patterns and Index Cells</h1>
+<p>
+<h3>
+Comments:
+(i) We can start from Step 1 to specify the IC cards.
+
+<p>
+(ii) If the IC cards are already specified, we can start
+from Step 2 to specify the interactions between IC cards.
+
+<p>
+(iii) If the interactions are already
+specified, we can start from Step 3 to specify
+the IC system.
+
+<p>
+
+(iii) Specification of context. Some can be absorbed within the IC (i.e.
+in terms of f and g).  But some may be explict, i.e. time,
+weather,etc.
+
+<p>

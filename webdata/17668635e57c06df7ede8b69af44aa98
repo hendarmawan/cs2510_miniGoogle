@@ -1,0 +1,93 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="CSSD">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="p5.html"><img SRC="previous.gif"  align=LEFT></a><a href="p7.html"><img SRC="next.gif"  align=RIGHT></a>
+<p><br>
+<p><br>
+<center>
+<p><b><font size=+3>3. Object-Oriented Development</font></b>
+<br><b><font size=+3>and Component-Based software</font></b></center>
+
+<ul>
+<li>
+<b><font size=+1>Object-Oriented Development</font></b></li>
+</ul>
+
+<ul>
+<ul>
+<li>
+System consists a set of interacting objects.</li>
+
+<li>
+Class describes the sturcture and behavior of objects.</li>
+
+<li>
+Analysis -- application domain and identifying requirements.</li>
+
+<li>
+Designe and implementation</li>
+</ul>
+
+<li>
+<b><font size=+1>Object-Oriented Development as a Basis for Components</font></b></li>
+</ul>
+
+<ul>
+<ul>
+<li>
+<font size=+1>Objects are good candidates for components, provided their
+granularity is sufficient.</font></li>
+</ul>
+</ul>
+
+<ul>
+<li>
+<b><font size=+1>Comparision</font></b></li>
+</ul>
+
+<center><table BORDER COLS=2 WIDTH="75%" >
+<tr>
+<td>
+<center>Objects</center>
+</td>
+
+<td>
+<center>Components</center>
+</td>
+</tr>
+
+<tr>
+<td>An object is a unit of instantiation; it has a unique identity</td>
+
+<td>A component is a unit of independt deployment</td>
+</tr>
+
+<tr>
+<td>An object has state; this state can be persistent state.</td>
+
+<td>A component has no persistent state.</td>
+</tr>
+
+<tr>
+<td>An object encapsulates its state and behaviour</td>
+
+<td>A component is a unit of third-party composition</td>
+</tr>
+
+<tr>
+<td>Inheritance</td>
+
+<td>Low coupling is desired</td>
+</tr>
+</table></center>
+
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

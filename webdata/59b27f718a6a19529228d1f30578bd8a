@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0044)http://www.cs.pitt.edu/~chang/163/c17/01.htm -->
+  <title>Structure of an Enterprise Bean (Contd)...</title>
+  <meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+  <meta content="FrontPage.Editor.Document" name="ProgId">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <meta name="author" content="Chirag Vaidya">
+</head>
+<body>
+<a href="c12.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;"
+ src="previous.gif" align="left" title="" alt="" width="26" height="26"></a> <a href="c14.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;" src="next.gif"
+ align="right" title="" alt="" width="26" height="26"></a>
+<h2 align="center" style="color: rgb(51, 51, 255);"><big>Structure of an
+Enterprise Bean (Contd)...<br>
+</big></h2>
+<h3 style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font color="#FF00FF"><big><big>EJBHome</big></big></font> </h3>
+<ul>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Serves
+    as a factory for creating, finding or removing EJB Objects.</font></p>
+  </li>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Used
+    by clients to create and remove references to beans in a container.</font></p>
+  </li>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Consists
+    of home interface and distributable object that implements the home
+    interface.</font></p>
+  </li>
+</ul>
+<p align="center"><img border="0" src="figure6.JPG" width="412" height="240"></p>
+<ul>
+  <li><font size="5">Home Interface consists of methods that create and remove
+    beans and extends <i>java.ejb.EJBHome</i>. Sample home interface:</font></li>
+</ul>
+<blockquote>
+  <p style="margin-top: 0; margin-bottom: 0"><i><font size="4">public interface
+  ShoppingCartHome extends javax.ejb.EJBHome {</font></i></p>
+  <blockquote>
+    <p style="margin-top: 0; margin-bottom: 0"><i><font size="4">public
+    ShoppingCart&nbsp;&nbsp;&nbsp; create ( String name );</font></i></p>
+    <p style="margin-top: 0; margin-bottom: 0"><i><font size="4">public
+    ShoppingCart&nbsp;&nbsp;&nbsp; create ( String name, int a );</font></i></p>
+    <p style="margin-top: 0; margin-bottom: 0"><i><font size="4">public
+    void&nbsp;&nbsp;&nbsp; remove ( String name );</font></i></p>
+  </blockquote>
+  <p style="margin-top: 0; margin-bottom: 0"><i><font size="4">}</font></i></p>
+</blockquote>
+<ul>
+  <li>
+    <p style="margin-top: 6; margin-bottom: 0" align="justify"><font size="5">Home
+    Interface maps its <i>create</i> method to an equivalent method <i>ejbCreate</i>
+    in bean class with same parameters and similarly <i>remove</i> to <i>ejbRemove</i>.</font></li>
+  <li>
+    <p style="margin-top: 6; margin-bottom: 0" align="justify"><font size="5">When
+    a client calls <i>create</i>, the container will call <i>ejbCreate</i> to
+    service this request. A new EJBObject is then created by the container and
+    sent back to the client.</font></li>
+</ul>
+<p style="margin-top: 6; margin-bottom: 0" align="center"><img border="0" src="c13.ht1.jpg" width="601" height="368"></p>
+</body>
+</html>

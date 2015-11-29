@@ -1,0 +1,399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_implication</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_implication
+</h1>    
+<a name="wp3680245"> </a><p class="pBody" >
+Ensures that a specified consequent expression is TRUE if the specified antecedent expression is TRUE.  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3680240"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkersa14.gif" height="107" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3680242"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3771975"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3771976"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3771977"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3771978"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3680244"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Class: </span>
+</div>    
+<a name="wp3771979"> </a><div class="pCellBodyLeft" >
+single-cycle assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3680246"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3680247"> </a><pre class="pCode1" >assert_implication 
+</pre>    <a name="wp3771980"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level</em>, <em class="cEmphasis">property_type</em>,<em class="cEmphasis"> msg</em>,<em class="cEmphasis"> coverage_level </em>)] 
+</pre>    <a name="wp3771981"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, antecedent_expr, consequent_expr </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3680273"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3680250"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680252"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3680254"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3680256"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680258"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3680260"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3680262"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680264"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3680266"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3680268"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680270"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3680272"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3680299"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3680276"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680278"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3680280"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680282"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3680284"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680286"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3680288"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680290"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3680292"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3680627"> </a><div class="pCellBodyLeft" >
+antecedent_expr
+</div>    
+</td>
+    <td><a name="wp3680298"> </a><div class="pCellBodyLeft" >
+Antecedent expression that is tested at the clock event.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3681111"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3681113"> </a><div class="pCellBodyLeft" >
+consequent_expr
+</div>    
+</td>
+    <td><a name="wp3681117"> </a><div class="pCellBodyLeft" >
+Consequent expression that should evaluate to TRUE if <em class="cEmphasis">antecedent_expr</em> evaluates to TRUE when tested.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3680300"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3680301"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_implication</code> assertion checker checks the single-bit expression <span style="font-style: oblique" class="cCodeBodyEmphasis">antecedent_expr</span> at each rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>.  If <span style="font-style: oblique" class="cCodeBodyEmphasis">antecedent_expr</span> is TRUE, then the checker verifies that the value of <span style="font-style: oblique" class="cCodeBodyEmphasis">consequent_expr</span> is also TRUE. If <span style="font-style: oblique" class="cCodeBodyEmphasis">antecedent_expr</span> is not TRUE, then the assertion is valid regardless of the value of <span style="font-style: oblique" class="cCodeBodyEmphasis">consequent_expr</span>.
+</p>    
+<a name="wp3680310"> </a><h4 class="pHead4" >
+Assertion Check  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3680305"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680307"> </a><div class="pCellBodyLeft" >
+ASSERT_IMPLICATION
+</div>    
+</td>
+    <td><a name="wp3680309"> </a><div class="pCellBodyLeft" >
+Expression evaluated to FALSE.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3680311"> </a><h4 class="pHead4" >
+Cover Point  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3681328"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3681330"> </a><div class="pCellBodyLeft" >
+cover_antecedent
+</div>    
+</td>
+    <td><a name="wp3681332"> </a><div class="pCellBodyLeft" >
+The <em class="cEmphasis">antecedent_expr</em>  evaluated to TRUE.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3681246"> </a><h3 class="pHead3" >
+Notes
+</h3>    
+
+<a name="wp3681247"> </a><p class="pNumber" >
+ 1.	This assertion checker is equivalent to:
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3681278"> </a><pre class="pCode3" >	assert_always 
+</pre>    <a name="wp3771982"> </a><pre class="pCode3" >		[#(<em class="cEmphasis">severity_level</em>, <em class="cEmphasis">property_type</em>,<em class="cEmphasis"> msg</em>,<em class="cEmphasis"> coverage_level </em>)] 
+</pre>    <a name="wp3771983"> </a><pre class="pCode3" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n,  </em>(<em class="cEmphasis">antecedent_expr</em>  ? <em class="cEmphasis">consequent_expr </em> : 1&#8217;b1 ));
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3680313"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3680314"> </a><pre class="pCode2" >assert_always, assert_always_on_edge, assert_never, assert_proposition
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3680315"> </a><h3 class="pHead3" >
+Example
+</h3>    
+
+<a name="wp3680402"> </a><p class="pBody" >
+  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3680363"> </a><div class="pCellBodyLeft" >
+assert_implication #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3680371"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3680373"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3771984"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3771985"> </a><div class="pCellBodyLeft" >
+&#8220;Error: q valid but q full&#8221;, 
+</div>    
+<a name="wp3771986"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3680377"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3771987"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3771988"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3771989"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3680379"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3680381"> </a><div class="pCellBodyLeft" >
+not_full (
+</div>    
+</td>
+    <td><a name="wp3680385"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3680387"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680389"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3680391"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3771990"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3771991"> </a><div class="pCellBodyLeft" >
+q_valid, 
+</div>    
+<a name="wp3771992"> </a><div class="pCellBodyLeft" >
+q_not_full );
+</div>    
+</td>
+    <td><a name="wp3680393"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3771993"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3771994"> </a><div class="pCellBodyLeft" >
+// antecedent_expr 
+</div>    
+<a name="wp3771995"> </a><div class="pCellBodyLeft" >
+// consequent_expr
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3680420"> </a><p class="pBody" >
+Ensures that <code class="cCodeBody">q_not_full</code> is TRUE at each rising edge of <code class="cCodeBody">clk</code> for which <code class="cCodeBody">q_valid</code> is TRUE.  </p>    <div align="left"><img src="images/ovl_checkersa22.gif" height="86" width="300" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3680421"> </a><p class="pBody" >
+
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

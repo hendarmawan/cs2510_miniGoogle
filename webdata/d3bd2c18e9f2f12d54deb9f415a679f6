@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0044)http://www.cs.pitt.edu/~chang/163/c17/01.htm -->
+  <title>Enterprise JavaBeans -- Introduction</title>
+  <meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+  <meta content="FrontPage.Editor.Document" name="ProgId">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <meta name="author" content="Chirag Vaidya">
+</head>
+<body>
+<a href="c01.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;"
+ src="previous.gif" align="left" title="" alt="" width="26" height="26"></a> <a href="c03.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;" src="next.gif"
+ align="right" title="" alt=""></a>
+<h2 align="center" style="color: rgb(51, 51, 255);"><big>INTRODUCTION</big></h2>
+<p>&nbsp;<big><big><big style="font-weight: bold;"><span
+ style="font-weight: bold;">What is an </span>Enterprise Java
+Bean</big><span style="font-weight: bold;"> <big>(EJB)</big> ?</span></big></big>
+</p>
+<ul>
+  <big> </big><li><big><big>Open Specification for developing and
+deploying
+enterprise-wide
+applications</big></big></li>
+  <li><big><big>Uses EJB Servers, Containers and Components.</big></big></li>
+  <big><big> </big></big><li><big><big>Can be deployed in any EJB
+compliant system</big></big></li>
+  <big><big> </big></big><li><big><big>Defines a simple contract among
+the components
+- enterprise
+beans; and the component model implementation, the container and server.</big></big></li>
+  <li><big><big>Supports distribution of components across the network.</big></big></li>
+  <li><big><big>Makes EJB applications portable and interoperable across
+    J2EE-compliant application servers.</big></big></li>
+  <big><big> </big></big><li><big><big>Clearly defines the life cycle
+for each
+component type.</big></big></li>
+  <big></big>
+</ul>
+<br>
+<big><span style="font-weight: bold;"><big><big>Why use EJB?</big></big><br>
+<br>
+</span><span style="font-weight: bold;"><big>EJB provides developers
+with</big></span><big>:</big></big>
+<ul>
+  <li><big><big><font color="#0000FF">Robust distributed environment</font></big></big></li>
+  <li><big><big><span style="color: rgb(0, 153, 0);">Transaction
+Management&nbsp; &lt;---&nbsp; Major reason of popularity</span>
+    </big></big></li>
+  <li><big><big><font color="#0000FF">State Management</font></big></big></li>
+  <li><big><big><font color="#0000FF">Multi-threading</font></big></big><br>
+  </li>
+</ul>
+<br>
+<span style="font-weight: bold; color: rgb(204, 51, 204);">
+<big><big>EJB </big></big><big><big>vs.</big></big>
+<big><big> CORBA -- Why EJB is
+better?</big></big></span>
+<ul>
+  <li><big><big>CORBA contains language and OS
+interoperability features<br>
+    </big></big></li>
+  <big> </big><li><big><big>EJB uses Java language which is
+platform-independent and
+contains standard APIs</big></big></li>
+  <big></big>
+</ul>
+<b>There are additional <a href="ejbeans.ppt">program examples (powerpoint presentation)</a> of Enterprise Java Beans for your self-study.
+</ul>
+</body>
+</html>

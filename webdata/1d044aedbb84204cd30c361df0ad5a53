@@ -1,0 +1,73 @@
+<html>
+
+
+
+<head>
+
+<title>XML - INTRODUCTION</title>
+
+</head>
+
+
+
+<body background="Background.gif">
+
+
+
+<p align="center">
+<a href="p5.html"><img SRC="previous.gif" align="left" width="26" height="26"></a>
+<a href="p7.html"><img SRC="next.gif" align="right" width="26" height="26"></a>
+</p>
+
+
+
+<h1 align="center"><font size="7" color="#FF00FF"><b>&quot;Markup&quot;</b></font></h1>
+
+<center>
+
+
+
+<table border="0" width="80%" cellpadding="0" height="386">
+
+  <tr>
+
+    <td align="left" height="38"><h4 align="left"><font size="6" color="#0000FF"><u>Markup</u></font></h4>
+
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td align="left" height="88"><ul>
+
+      <li><font size="6" color="#0000FF">You identify, or markup, elements
+        within your document.</font></li>
+
+    </ul>
+
+      <p><font size="5">&quot;&lt;&quot;,&quot;c&quot;,&quot;o&quot;,&quot;u&quot;,&quot;n&quot;,&quot;t&quot;,&quot;r&quot;,&quot;y&quot;,&quot;L&quot;,&quot;i&quot;,&quot;s&quot;,&quot;t&quot;,&quot;&gt;&quot;,&quot;&lt;&quot;,&quot;c&quot;,&quot;o&quot;...</font>
+
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td align="left" height="92">
+      <ul>
+        <li><font size="6" color="#0000FF">But by itself markup does nothing.</font></li>
+      </ul>
+
+    </td>
+
+  </tr>
+
+</table>
+
+</center>
+
+</body>
+
+</html>
+

@@ -1,0 +1,70 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <meta name="ProgId" content="FrontPage.Editor.Document">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="page10.htm"><img SRC="previous.gif" height=26 width=26 align=LEFT></a><a href="page12.htm"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+<center>
+<h1>
+The Cookie Technology</h1></center>
+
+<center><img SRC="tbullet.gif" height=19 width=24><b>retrieve cookies with
+<font face="Lucida Handwriting"><font color="#990000">Java</font></font></b></center>
+
+<p><b><font color="#000000">import javax.servlet.*;</font></b>
+<br><b><font color="#000000">import javax.servlet.http.*;</font></b>
+<br><b><font color="#000000">import java.io.*;</font></b>
+<p><b><font color="#000000">public class CookieExample2 extends HttpServlet</font></b>
+<br><b><font color="#000000">{</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp; public void doGet( HttpServletRequest
+request, HttpServletResponse response )</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+throws ServletException, IOException</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp; {</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+PrintWriter output;</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+String cookie;</font></b>
+<p><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+</font><font color="#990000">Cookie
+cookies[ ];</font></b>
+<br><b><font color="#990000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+cookies = request.getCookies( );</font></b>
+<p><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+response = setContentType( "text/html" );</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+output = response.getWriter( );</font></b>
+<p><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+output.println( "&lt;HTML>&lt;HEAD>&lt;TITLE>Java Cookie Example II&lt;/TITLE>&lt;/HEAD>"
+);</font></b>
+<p><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+cookie = "There was no cookie named username!";</font></b>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>if( cookies != null )</b>
+<br><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; {</b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+for( int i = 0; i &lt; cookies.length; i++ )</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+{</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+if( </font><font color="#990000">cookies[i].getName</font><font color="#000000">
+== "username" )</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+cookie = " Found a cookie named username with a value of " +</font><font color="#990000">
+cookies[i].getValue( )</font><font color="#000000">;</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}</font></b>
+<p><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+output.println( "&lt;BODY>cookie&lt;/BODY>&lt;/HTML>" );</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+output.close( );</font></b>
+<br><b><font color="#000000">&nbsp;&nbsp;&nbsp; }</font></b>
+<br><b><font color="#000000">}</font></b>
+<br>&nbsp;
+</body>
+</html>

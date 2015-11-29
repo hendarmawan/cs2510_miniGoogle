@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" media="screen" href="silde1_files/silde1.css" />
+  </head>
+  <body style="margin: 72pt 72pt 72pt 72pt;">
+<a href = "./slide1.html"><img src ="./previous.gif"></a>   <a href = "./slide2.html"><img src ="./next.gif" align="right"></a>
+    <div style="margin : 0pt 0pt 0pt 0pt; ">
+      <p style="margin-bottom: 0.000000pt; margin-top: 0.000000pt; padding-top: 0pt; text-align: center; " class="Free_Form ">
+        <a href="http://www.cs.pitt.edu/~anti/slide1" style="color: #11009d; font-family: 'Papyrus', 'Papyrus'; font-size: 38.00pt; line-height: 1.55; text-decoration: underline; ">&lt;-</a>
+        <span style="color: #341811; font-family: 'Papyrus', 'Papyrus'; font-size: 38.00pt; line-height: 1.55; "> &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; &#xA0; </span>
+        <a href="http://www.cs.pitt.edu/~anti/CS2310/slide2" style="color: #11009d; font-family: 'Papyrus', 'Papyrus'; font-size: 38.00pt; line-height: 1.55; text-decoration: underline; ">-&gt;</a>
+        <span style="color: #341811; font-family: 'Papyrus', 'Papyrus'; font-size: 38.00pt; line-height: 1.55; "></span>
+      </p>
+      <p style="margin-bottom: 0.000000pt; margin-top: 0.000000pt; text-align: center; color: #341811; font-family: 'Papyrus', 'Papyrus'; font-size: 38.00pt; line-height: 1.55; " class="Free_Form ">VISUAL PROGRAMMING</p>
+      <p style="line-height: 1.00; margin-bottom: 0.000000pt; margin-left: 0.00pt; margin-right: 0.00pt; margin-top: 0.000000pt; padding-bottom: 0.000000pt; padding-top: 0.000000pt; text-align: center; text-indent: 0.00pt; color: #341811; font-family: 'Papyrus', 'Papyrus'; font-size: 18.00pt; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 0; line-height: 1.56; text-decoration: none; text-transform: none; vertical-align: 0.000000em; " class="Free_Form ">(Margaret M. Burnett, &#xA0;Oregon State University)</p>
+      <p style="line-height: 1.00; margin-bottom: 0.000000pt; margin-left: 0.00pt; margin-right: 0.00pt; margin-top: 0.000000pt; padding-bottom: 0.000000pt; padding-top: 0.000000pt; text-align: center; text-indent: 0.00pt; color: #341811; font-family: 'Papyrus', 'Papyrus'; font-size: 28.00pt; font-style: normal; font-variant: normal; font-weight: normal; letter-spacing: 0; line-height: 1.54; text-decoration: none; text-transform: none; vertical-align: 0.000000em; " class="Free_Form ">Yaw Anti Gyamfi</p>
+      <p style="line-height: 1.00; margin-bottom: 0.000000pt; margin-left: 0.00pt; margin-right: 0.00pt; margin-top: 0.000000pt; padding-bottom: 0pt; padding-top: 0.000000pt; text-align: center; text-indent: 0.00pt; " class="Free_Form "></p>
+    </div>
+  </body>
+</html>

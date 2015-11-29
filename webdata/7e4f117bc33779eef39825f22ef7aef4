@@ -1,0 +1,323 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Home page of Xin Li</title>
+</head>
+
+<body>
+
+<div align="center">
+  <center>
+
+<TABLE width=600 height="1" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+  <TBODY>
+  <TR>
+    <TD height="44" width="594">
+      <font face="Arial"><a href="../../../index.htm">Home</a>&gt;<a href="../../index.htm">CVC</a>&gt;User 
+      Manual for Student</font></TD>
+        </TR>
+  <TR>
+    <TD height="44" width="594">
+<P align=center><STRONG style="font-weight: 400"><FONT size=4 face="Arial"> User 
+Guide&nbsp;:&nbsp;Virtual Classroom Version</FONT></STRONG></P>
+<P align=center><STRONG style="font-weight: 400"><FONT size=4 face="Arial">For Student User</FONT></STRONG></P>
+    </TD>
+        </TR>
+  <TR>
+    <TD height="194" width="594">
+
+<P align=left><STRONG style="font-weight: 400"><FONT size=4 face="Arial">[Introduction]</FONT></STRONG></P>
+  <P align=justify><span style="FONT-FAMILY: Arial">Virtual Classroom is a simulated 
+  classroom via Internet, which provides a convenient&nbsp; communication environment 
+  for distance learners just&nbsp; like&nbsp; traditional face-to-face style 
+  classroom.</span><FONT face="Arial"> </FONT></P>
+  <P align=justify><FONT face="Arial">Using Student tool, students could enter the virtual classroom which they&nbsp;already enrolled. Once 
+  a user registers a virtual classroom, user name (usually&nbsp;is&nbsp;First Name and Last 
+  Name shown on official roster) and password will be provided.  </FONT></P>
+  <P align=justify><font face="Arial">After registration, following functions are&nbsp;ready 
+  to go with student toolkit:</font></P>
+      <ol>
+        <li>
+    <DIV align=justify><font face="Arial">Online Communicating with Teacher and 
+      other students in classroom using Text or Audio Messages.</font></DIV>
+        </li>
+        <li>
+    <DIV align=justify><font face="Arial"><STRONG style="font-weight: 400">Browsing 
+      webpage, Video and Audio clips pushed by teacher and classmates.</STRONG>&nbsp; </font></DIV>
+        </li>
+        <li>
+    <DIV align=justify><strong style="font-weight: 400"><font face="Arial">Seeing
+      </font></strong><FONT face="Arial"><STRONG style="font-weight: 400">graphs drawn by 
+    teacher on the whiteboard.</STRONG> <STRONG style="font-weight: 400">&nbsp;&nbsp;</STRONG></FONT></DIV>
+        </li>
+        <li>
+    <DIV align=justify><FONT face="Arial"><STRONG style="font-weight: 400">   Pushing the web 
+    page/Video/Audio to&nbsp;all others, leading a discussion or making a 
+      presentation with push permission authorized by teacher.</STRONG></FONT></DIV>
+        </li>
+      </ol>
+<P dir=ltr align=left><STRONG style="font-weight: 400">
+<FONT size=4 face="Arial">[Minimum System 
+Requirement]</FONT></STRONG></P>
+      <ul>
+        <li>
+  <DIV align=left><FONT face="Arial">Intel Pentium processor </FONT></DIV>
+        </li>
+        <li>
+  <DIV align=left><FONT face="Arial">Microsoft Windows 98 Second Edition, Windows 
+  Millennium Edition, Windows NT 4.0, Windows 2000, Windows XP</FONT></DIV>
+        </li>
+        <li>
+  <DIV align=left><FONT face="Arial">32MB of RAM (64MB recommended) </FONT></DIV>
+        </li>
+        <li>
+  <DIV align=left><FONT face="Arial">5MB of available hard-disk space </FONT></DIV>
+        </li>
+        <li>
+  <DIV align=left><FONT face="Arial">Internet Explorer 6.01 or 
+  Higher&nbsp;</FONT></DIV></li>
+      </ul>
+      <p><font face="Arial" size="4">[Installation]</font></p>
+  <P dir=ltr align=left><FONT face="Arial">  There are two options&nbsp;for installing 
+  the Student Tool, depending on which version is offered.</FONT></P>
+  <OL>
+    <LI>
+    <DIV align=left><FONT face="Arial"><STRONG>Stand-alone Executable file, for 
+      example: StudentTool.exe.</STRONG>&nbsp;  No Installation required. 
+    Just download/copy it to your disk and click to run. Make a shortcut 
+    on&nbsp;the desktop if you like.</FONT></DIV>
+    <LI>
+    <DIV align=left><FONT face="Arial"><STRONG>Installation package, for example: 
+    StudentInstall.exe.</STRONG> Download/Copy the package and click to run.&nbsp;Follow 
+    the instructions&nbsp;step by step. Once finished, a 
+    new&nbsp;group&nbsp;named "Virtual Classroom Student Toolkit" will be added into your program 
+    group(Figure1). Click&nbsp;<b>Start--&gt;&nbsp;Program--&gt;Virtual 
+      Classroom Student Toolkit--&gt;Communication Tool</b> to&nbsp;Start the 
+tool.</FONT></DIV></LI></OL>
+  <P align=center><img border="0" src="s01.jpg" width="426" height="96"></P>
+  <P align=center><FONT size=4 face="Arial">Figure1.Installation Option 2</FONT></P>
+<P dir=ltr align=left><STRONG style="font-weight: 400">
+<FONT size=4 face="Arial">[Configuration]</FONT></STRONG></P>
+  <P dir=ltr align=justify><font face="Arial">In most cases, there is no need&nbsp;to 
+  configure your student tool unless required&nbsp;by provider.&nbsp;A configure tool is provided&nbsp;<b>ONLY</b> if using 
+  Installation Option2. </font></P>
+  <P dir=ltr align=justify><font face="Arial">Click&nbsp;<b>Start--&gt;&nbsp;Program--&gt;Virtual 
+  Classroom Student Toolkit--&gt;Configuration Tool</b>&nbsp; to&nbsp;activate the configuration 
+  Tool.</font></P>
+  <P dir=ltr align=center>
+  <img border="0" src="s02.jpg" width="470" height="208"></P>
+  <P dir=ltr align=center><FONT size=4 face="Arial">Figure2. Configuration Tool</FONT></P>
+  <P align=justify><FONT face="Arial">The&nbsp;IP address and Port Number of Name Server 
+  usually&nbsp;are given by your software provider. If you 
+  don't know, please ask the provider.</FONT></P>
+<P dir=ltr align=left><FONT size=4 face="Arial">
+<STRONG style="font-weight: 400">[Getting 
+Start]</STRONG></FONT></P>
+  <P dir=ltr align=justify><font face="Arial">For Option 1, Double Click the 
+  StudentTool.exe</font></P>
+  <P dir=ltr align=justify><FONT face="Arial">For Option 2, Click&nbsp;<b>Start--&gt;&nbsp;Program--&gt;Virtual 
+  Classroom Student Toolkit--&gt;Communication Tool</b>.</FONT></P>
+  <P dir=ltr align=justify><font face="Arial">You will be asked 
+  for <STRONG>First name, Last Name and password</STRONG> . Make 
+  sure&nbsp;to remember&nbsp;all 
+  these&nbsp;information&nbsp;while registration<STRONG>.</STRONG></font></P>
+  <P dir=ltr align=center><FONT size=4 face="Arial">
+  <IMG alt="" 
+  src="s03.jpg" width="486" height="223"></FONT></P>
+  <P dir=ltr align=center><FONT size=4 face="Arial">Figure3. Login Window</FONT></P>
+  <P dir=ltr align=left><FONT face="Arial">Next Window is asking you to choose the 
+  classroom you want to enter.</FONT></P>
+  <P dir=ltr align=justify><FONT size=4 face="Arial"><FONT color=maroon>
+  <img border="0" src="Info.jpg" width="41" height="41">Note: One student&nbsp;could 
+  register multiple classes, so more than one choices may be offered.</FONT>&nbsp; </FONT></P>
+  <P dir=ltr align=center><FONT size=4 face="Arial">
+  <IMG alt="" 
+  src="s04.jpg" width="301" height="159"></FONT></P>
+  <P dir=ltr align=center><FONT size=4 face="Arial">Figure4. Choose the classroom</FONT></P>
+  <P dir=ltr align=justify><FONT color=maroon size=4 face="Arial">
+  <img border="0" src="troubleshooting.jpg" width="40" height="40">Trouble Shooting: If you get 
+  message "Can't find Name Server", please use configure tool mentioned in 
+  [Configuration] to set the name server's information. If the problem persists, 
+  check to see if you are using any firewall software. In some cases, system 
+  fails because communication port is blocked by a firewall. Opening the port or 
+  disabling firewall could solve the problem.</FONT></P>
+<P dir=ltr align=left><FONT color=black size=4 face="Arial">
+<STRONG style="font-weight: 400">[Basic 
+Functions]</STRONG></FONT></P>
+  <P dir=ltr align=justify><FONT face="Arial">After entering classroom successfully, 
+  you&nbsp;could&nbsp;use all following functions to communicate with teacher 
+  and other students:</FONT></P>
+  <OL dir=ltr>
+    <LI>
+    <DIV align=justify><FONT face="Arial">Browsing Webpage, Watching Video, Listening 
+    audio, which are pushed by teacher. (Video and Audio will&nbsp;pop up in new 
+    windows). See the&nbsp;Fiugre5.&nbsp;There is a embedded web browser in main 
+      interface:</FONT></DIV></LI></OL>
+  <P align=center><FONT size=4 face="Arial">
+  <IMG alt="" 
+  src="s05.jpg" width="580" height="442">&nbsp;</FONT></P>
+  <P align=center><font face="Arial"><FONT size=4>Figure5 The main interface of Student Tool</FONT>
+  </font> 
+  </P>
+  <P align=justify><FONT face="Arial">2.&nbsp; Chatting with teacher and other 
+  students (Figure5) by text or audio messages. There are text input area 
+  located on the&nbsp;right bottom of main interface, where users can input the text/audio message. </FONT></P>
+  <UL>
+    <LI>
+    <DIV align=justify><FONT face="Arial">Click <FONT color=maroon>SEND (Ctrl+X)</FONT>&nbsp;button to 
+    send message to teacher and other students. </FONT></DIV>
+    <LI>
+    <DIV align=justify><FONT face="Arial">Click<FONT color=maroon> CLEAR</FONT> button to 
+    clear the input area. </FONT></DIV>
+    <LI>
+    <DIV align=justify><FONT face="Arial">Click <FONT color=maroon>SAVE</FONT> button to 
+    save the all the chatting history.</FONT></DIV>
+    <LI>
+    <DIV align=justify><FONT face="Arial">Click <FONT color=maroon>Color Bar</FONT> to 
+    choose the color of your message.</FONT></DIV></LI></UL>
+    <DIV align=left>&nbsp;</DIV>
+    <DIV align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41">Note: The audio messages are allowed by 
+      checking the audio box above text input field. Student could 
+      NOT send audio message unless they have pushing permission from teacher. 
+      The indicator of Push permission is&nbsp;located on the status bar which is 
+      at&nbsp;right bottom of the main window.</FONT></DIV>
+  <P align=justify><FONT face="Arial">3.&nbsp;Seeing graph drawn by teacher (Figure 
+  5)</FONT></P>
+  <BLOCKQUOTE dir=ltr style="MARGIN-RIGHT: 0px">
+    <P dir=ltr style="MARGIN-RIGHT: 0px" align=justify><FONT face="Arial">User could see 
+    a diagram drawn by teacher in the White Board on the right top of the main 
+    interface.</FONT></P></BLOCKQUOTE>
+  <P align=justify><FONT face="Arial">4. Browsing a visual Classroom</FONT></P>
+  <P align=center><FONT face="Arial">
+  <IMG alt="" 
+  src="s06.jpg" width="580" height="442"></FONT></P>
+  <P align=center><FONT size=4 face="Arial">Figure6. The main interface of Student 
+  Tool--Visual Classroom</FONT></P>
+      <P align=justify><font face="Arial">Click the page button <FONT 
+      color=maroon>CLASSROOM</FONT>. A visual classroom will show up. Everyone&nbsp; (Teacher and Students) will have a avatar&nbsp;in this room( Figure 6).
+      <b>Highlight means 
+      online.</b></font></P>
+      <P align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41"> Note: The images 
+      for avatars in your system may be different from figure 6. It depends on which version 
+      you are using. Some versions provide an option to change icon.&nbsp; </FONT></P>
+  <P dir=ltr align=left><FONT face="Arial">5. Pushing&nbsp;(Webpage/Video/Audio) to 
+  teacher and other students</FONT></P>
+  <P dir=ltr align=center><font face="Arial">
+  <IMG src="s07.jpg" width="580" height="442"></font></P>
+  <P dir=ltr align=center><font face="Arial">Figure7 The main interface of 
+  Student Tool--Publish Information</font></P>
+      <P dir=ltr align=left><FONT face="Arial">Click the page button <FONT 
+      color=#800000>Publish Information</FONT><FONT color=black>. There will be 
+      a form (Figure 7)&nbsp;which could let you push </FONT>Webpage/Video/Audio<FONT color=black> 
+      to teacher and other students by filling URLs into 
+      the appropriate text fields.&nbsp;</FONT></FONT></P>
+      <UL dir=ltr>
+        <LI>
+        <DIV align=left><FONT color=black face="Arial">Click&nbsp;<FONT 
+        color=maroon>PUSH</FONT> button to push the information to teacher and 
+        students.</FONT></DIV>
+        <LI>
+        <DIV align=left><FONT face="Arial">Click <FONT color=maroon>CLEAR</FONT> 
+        button to clear what you filled in the text fields.</FONT></DIV></LI></UL>
+        <DIV align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41">N</FONT><FONT color=#800000 size="4" face="Arial">ote: 
+          by this mean, student could become &quot;teacher&quot; -- lead a group discussion 
+          or make a presentation.</FONT></DIV>
+      <P align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41"></FONT><FONT face="Arial" size="4"><FONT color=maroon>Note: 
+      Students are&nbsp;NOT able to push information&nbsp;unless they have push permission. The indicator of Push 
+      permission is&nbsp;located on the status bar which is at&nbsp;right bottom 
+      of the main 
+window</FONT>.&nbsp;</FONT></P>
+<P dir=ltr align=left><FONT size=4 face="Arial">[Un-Installation]</FONT></P>
+  <P dir=ltr align=justify><FONT face="Arial">You may need to remove the student tool 
+  from you computer. Here is some tips for Un-installation:</FONT></P>
+  <UL dir=ltr>
+    <LI>
+    <DIV align=justify><FONT face="Arial">If you use <A 
+    href="http://www.cs.pitt.edu/~flying/vchelp/student.htm#Installation">[Installation] 
+    Option1 for installing</A>, just delete the file and shortcuts (if 
+    applicable).</FONT></DIV>
+    <LI>
+    <DIV align=justify><FONT face="Arial">If you use <A 
+    href="http://www.cs.pitt.edu/~flying/vchelp/student.htm#Installation">[Installation] 
+    Option2 for installing</A>, Click&nbsp;Start--&gt;&nbsp;Program--&gt;Virtual Classroom 
+      Student Toolkit--&gt;Uninstall. Follow the instructions.</FONT></DIV></LI></UL>
+  <P align=center><img border="0" src="s01.jpg" width="426" height="96"></P>
+  <P align=center><FONT size=4 face="Arial">Figure 8.Uninstalling for Option 2</FONT></P>
+  <P align=left><font face="Arial" size="4">[Live Update]</font></P>
+  <P align=justify><font face="Arial">For option 2, a live update tool is provided 
+  to download the latest version without re-install the whole system.&nbsp; 
+  Click <b>Start--&gt;&nbsp;Program--&gt;Virtual Classroom Student Toolkit--&gt;Live Update</b>, 
+  a window will be shown as Figure 9.</font></P>
+  <P align=center><img border="0" src="s09.JPG" width="350" height="250"></P>
+  <P align=center><font face="Arial" size="4">Figure 9 Live Update Tool</font></P>
+  <P align=justify><font face="Arial">By clicking&nbsp; &quot;update&quot; button, system 
+  will automatically check&nbsp; availability of new version. If yes, it will&nbsp; 
+  overwrite the current version by new one. </font></P>
+  <P align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41">Note: 
+  The live update tool is ONLY available for installation Option 2. Using it 
+  ONLY while system is connected with internet.</FONT></P>
+  <P align=justify><font face="Arial" size="4">[FAQ]</font></P>
+  <P align=justify><font face="Arial" size="4" color="#800000">Q1: Is this tool 
+  free? Could I use this tool to attend lectures?</font></P>
+  <P align=justify><font face="Arial" size="4">A1: This tool is free for all the 
+  students enrolled in our courses. Such as Pitt students who registered CS1631 
+  and CS3650 in Spring '04. The tool is not for public use. You could not use it 
+  unless you register related courses.</font></P>
+  <P align=justify><font face="Arial" size="4" color="#800000">Q2: Why I could not 
+  hear audio messages?</font></P>
+  <P align=justify><font face="Arial" size="4">A2: The audio messages are supported 
+  by Text to Speech synthesis by Microsoft, which is equipped in Windows XP. If 
+  you are using other windows OS version such as 2000 or 9X, please go to 
+  following web to install the API package. (It's free) </font></P>
+  <P align=justify><font face="Arial" size="4">&nbsp;<a href="http://www.microsoft.com/speech/download/sdk51/">http://www.microsoft.com/speech/download/sdk51/</a></font></P>
+  <P align=justify><font face="Arial" size="4">After installation, RESTART the tool 
+  to hear audio messages.</font></P>
+  <P align=justify><font face="Arial" size="4" color="#800000">Q3: Do you have a 
+  tool for Linux?</font></P>
+  <P align=justify><font face="Arial" size="4">A3: The version for Linux is under 
+  construction currently. Hopefully the Linux version will be coming soon.</font></P>
+  <P align=justify><font face="Arial">Questions and Comments, send them to 
+  flying@cs.pitt.edu</font></P>
+  <P align=left><font face="Arial" size="4">--End--</font></P>
+      <HR color="#808080">
+
+      <TABLE cellSpacing=0 cellPadding=0 width="600" border=0>
+        <TBODY>
+        <TR>
+          <TD width="573"><font face="Arial"><SPAN class=negl>
+          Updated:
+          <!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%Y" startspan -->04/12/2005<!--webbot bot="Timestamp" endspan i-checksum="12534" --></SPAN></font></TD>
+         
+          <TD width="20">
+            
+          <SPAN class=negl>
+          <script language="JavaScript" type="text/javascript" src="http://m1.nedstatbasic.net/basic.js"></script>
+          <a target="_blank" href="http://www.nedstatbasic.net/stats?ACr87g1ajNTqzWDBUCeAQEwlWIsw">
+          <font face="Arial">
+          <IMG height=18 alt="Web page Counter" 
+            src="http://m1.nedstatbasic.net/n?id=ACr87g1ajNTqzWDBUCeAQEwlWIsw" 
+            width=18 border=0></font></SPAN></TD>
+         
+        </TR>
+        
+        </TBODY>
+        </TABLE></TD>
+        </TR>
+        </TBODY>
+        </TABLE>
+        
+        </center>
+</div>
+        
+        </body>
+
+</html>

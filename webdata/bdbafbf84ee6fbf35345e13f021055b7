@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>AK04</title>
+</head>
+
+
+<body BGCOLOR="#C0C0C0">
+
+<A HREF="AK03.htm"><IMG SRC="previous.gif" align=left width="26" height="26"> </A>
+<A HREF="AK05.htm"><IMG SRC="next.gif" align=right width="26" height="26"> </A>
+<br> <br>
+
+<center><h2><font color =blue> The Hello Client-Server Example </font></h2> </center>
+<center>(from
+http://java.sun.com/docs/books/tutorial/idl/)
+</center>
+<P>
+Despite its simple design, the Hello World program lets you learn and
+experiment with all the tasks required to develop almost any CORBA
+program that uses static invocation.</p>
+
+
+The steps in the process of communication between the client and server are:
+
+<p><center><IMG SRC="IDL-1.gif" WIDTH="241" HEIGHT="114" ALIGN="BOTTOM" NATURALSIZEFLAG="3" ALT=""></center></p>
+<center>
+Communication between the client and server.
+</center>
+
+<OL>
+<LI> The client (applet or application) invokes the
+     <CODE CLASS="Code">sayHello</CODE> operation of the HelloServer.
+<LI> The ORB transfers that invocation to the servant object registered
+     for that IDL interface.
+<LI> The servant's <CODE CLASS="Code">sayHello</CODE> method runs,
+     returning a Java <CODE CLASS="Code">String</CODE>.
+<LI> The ORB transfers that <CODE CLASS="Code">String</CODE>
+     back to the client.
+<LI> The client prints the value of the <CODE CLASS="Code">String</CODE>.
+</OL>
+
+
+
+
+</body>
+
+</html>

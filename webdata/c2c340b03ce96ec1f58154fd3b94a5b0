@@ -1,0 +1,232 @@
+<title>CS1565 Exercises</title>
+<h1>Exercises</h1>
+Exercises:  In the following set of exercises, reference to chapters
+and figures are made to:
+<i>Fundamentals of Database Systems</i>, Elmasri and Navathe,
+Benjamin Cummings, 3rd edition (reference to 2nd edition in parentheses).
+<hr>
+<h2>Exercise 1: (5 points)</h2>
+Consider the following set of requirements for a university database
+that is used to keep track of students transcripts. 
+<br><br>
+a.  The university keeps track of each student's name, student number,
+    social security number, current address and phone, permanent address and
+    phone, birthdate, sex, class (freshman, sophomore, ..., graduate), major
+    department, minor department (if any), and degree program (B.A., B.S.,
+    ..., Ph.D.).  Some user applications need to refer to the city, state,  
+    and zip of the student's permanent address, and to the students' last
+    name.  Both social security number and student number have unique values
+    for each student.
+<br><br>
+b.  Each department is described by a name, department code, office number,
+    office phone and college. Both name and code have unique values for
+    each department.
+<br><br>
+c.  Each course has a course name, description, code number, number of 
+    semester hours, level, and offering department.  The value of code number
+    is unique for each course.
+<br><br>
+d.  Each section has an instructor, semester, year, course, and section 
+    number.  The section number distinguishes different sections of the same
+    course that are taught during the same semester/year; its values are 
+    1, 2, 3, ...; up to the number of sections taught during each semester.
+<br><br>
+e.  A grade report has a student, section, and grade.
+<br><br>
+Design an ER schema for this application, and draw an ER diagram for
+that schema.  Specify key attributes of each entity type and structural 
+constraints on each relationship type.  Note any specified requirements,
+and make appropriate assumptions to make the specification complete.
+<hr>
+<h2>Exercise 2: (5 points) (Programming Required)</h2>
+The purpose of this exercise is to introduce the concepts of
+relational database.
+You will use Oracle to do the following:
+<br>
+<br>
+(a) Define a relation called STUDENT, with the following attributes:
+<br>
+student-name  social-security-number  course-module  completion-date grade
+<br><br>
+(b) Input data into this relation STUDENT:
+<br>
+<pre>
+NAME		SSN		MOD	DATE		GRADE
+John Doe	111223333	A1	11/2/90		85
+John Doe	111223333	A2	11/10/90	90
+John Doe	111223333	B1	10/5/90		70
+Terry Smith	666778888	B1	7/6/90		60
+Terry Smith	666778888	B2	9/10/90		55
+Terry SMith	666778888	C2	3/6/90		80
+Judy Smith	555667777	A1	5/1/90		85
+Judy Smith	555667777	A3	9/1/90		60
+</pre>
+<br>
+(c) Formulate and answer the following queries.
+Can you formulate and answer every query in SQL?  If not,
+sketch an approach to process the query.
+<br>
+Q1: List the name of students who have completed any course module.
+<br>
+Q2: List the name of students who have completed course module A1.
+<br>
+Q3: List the name of students who have completed at least two course modules.
+<br>
+Q4: List the name of students who have completed any course module
+during the period 1/1/90 to 6/30/90.
+<br>
+Q5: List the name of students who have skipped any course module.
+(For example, Judy Smith has skipped course module A2,
+ and Terry Smith has skipped course module C1.)
+<hr>
+<h2>Exercise 3: (5 points)</h2>
+(i) Specify the following queries on the database schema shown in Figure 7.5 (Fig 6.5 in 2nd ed.)
+using (a) relational algebra and (b) SQL.  Show the result of each query
+if applied to the database of Figure 7.6 (Fig. 6.6 in 2nd ed.).
+(There are six subproblems, each worth 0.5 points)
+<br>
+<ul>
+(a) Retrieve the names of employees in department 5 who work more than 10 hours
+per week on the "ProductX" project.
+<br>
+(b) List the names of employees who have a dependent with the same
+first name as themselves.
+<br>
+(c) Find the names of employees that are directly supervised by
+"Franklin Wong".
+<br>
+(d) For each project, list the project name and the total hours per
+week (by all employees) spend on that project.
+<br>
+(e) Retrieve the names of employees who work on every project.
+<br>
+(f) Retrieve the names of employees who do not work on any project.
+</ul>
+<br>
+(ii) (2 points) Draw a flowchart and write in pseudo-code a program to translate
+simple SQL statements of the form:
+<br><ul>
+SELECT attribute-list
+<br>
+FROM relation-list
+<br>
+WHERE conditions
+</ul>
+<br>
+into relational algebra. 
+Document and explain your algorithm carefully. 
+Test your program (or algorithm) on the following
+examples:
+<br><ul>
+SELECT S#<br>
+FROM S<br>
+WHERE S# = 'S1'
+<br><br>
+SELECT S#,  CITY<br>
+FROM S, SP<br>
+WHERE P# = 'P2' AND S.S# = SP.S#
+</ul>
+<hr>
+<h2>Exercise 4: (5 points)</h2>
+(a) A PARTS file with Part# as hash key includes records with the
+following Part# values: 2369, 3760, 4692, 4871, 5659, 1821, 1074,
+7115, 1620, 2428, 3943, 4750, 6975.  The file uses 8 buckets, numbered
+0 to 7.  Each budget is one disk block and holds two records.  Load these
+records into the file in the given order, using the hash function
+h(K) = K mod 8.  Calculate the average number of block accesses for a
+random retrieval on Part#.
+<br><br>
+(b) Load the records of part (a) into expandable hash files based on extendible
+hashing.  Show the structure of the directory and global and local depths at 
+each step.
+<br><br>
+(c) A PARTS file with Part# as key field includes records with the
+following Part# values: 23, 65, 37, 60, 46, 92, 48, 71, 56, 59, 18, 21, 10.
+Suppose the search field values are inserted in the given order in a
+B+ tree of order p=4; show how the tree will expand and what the
+final tree looks like.
+<hr>
+<h2>Exercise 5: (5 points) (Programming Required)</h2>
+(i) (2 points) Do Exercise 3, subproblems (i)(a) to (i)(d) using Relational Calculus.
+<br><ul>
+(a) Retrieve the names of employees in department 5 who work more than 10 hours
+per week on the "ProductX" project.
+<br>
+(b) List the names of employees who have a dependent with the same
+first name as themselves.
+<br>
+(c) Find the names of employees that are directly supervised by
+"Franklin Wong".
+<br>
+(d) For each project, list the project name and the total hours per
+week (by all employees) spend on that project.
+(You may assume a SUM function that can compute, from a set of pairs
+(project-name,hours), the results (project-name, total-hours).)
+</ul><br>
+(ii) (3 points) Using Oracle, design a menu-driven user interface
+for a STUDENT INFORMATION SYSTEM
+supporting the processing of queries Q1-Q4 of Exercise 2.
+The relation is the same as the one you used in Exercise 2.
+The menu looks something like the following (you can design
+it better):
+<br>
+<center><h2>STUDENT INFORMATION SYSTEM</h2></center>
+
+Please select an option A-D:
+<br>
+A. List the name of students who have completed any course module.
+<br>
+B. List the name of students who have completed a course module.
+<br>
+C. List the name of students who have completed at least two course modules.
+<br>
+D. List the name of students who have completed a course module during a specified period.
+<br>
+<br>
+Note that after option B is selected, the user should be
+prompted to enter module name.  Similarly, after option D
+is selected, the user should be prompted to enter
+nodule name, starting date and ending date.
+<br>
+(You may find the following <a href="ex5hint.htm">hints</a> helpful.)
+<hr>
+<h2>Exercise 6: (5 points)</h2>
+(i) (2 points) Define the 3NF relations from the following set
+of functional dependencies describing a university administrative database.
+Design a relational database by defining the schema for each
+3NF relation.
+<ul><pre>
+SSN -> SNAME, SSN -> ADDRESS, SSN -> SEX, SSN -> BIRTHDATE, SSN -> CLASS
+{SSN, DEPT-CODE} -> SSN, {SSN, DEPT-CODE} -> DEPT-CODE
+DEPT-CODE -> DEPT-NAME, DEPT-CODE -> DEPT-PHONE, DEPT-CODE -> COLLEGE
+COURSE-CODE -> DEPT-CODE, COURSE-CODE -> COURSE-TITLE
+{COURSE-CODE, SEC-NUM} -> COURSE-CODE
+{COURSE-CODE, SEC-NUM} -> SEC-NUM
+{COURSE-CODE, SEC-NUM} -> INSTRUCTOR
+{SSN, COURSE-CODE, SEC-NUM} -> GRADE
+{SSN, COURSE-CODE, SEC-NUM} -> SSN
+{SSN, COURSE-CODE, SEC-NUM} -> GOURSE-CODE
+{SSN, COURSE-CODE, SEC-NUM} -> SEC-NUM
+</pre></ul><br>
+(ii) (2 points) Design a hierarchical database schema
+for the university administrative database described in part (i),
+by drawing a schema diagram similar to the schema diagram for the COMPANY database shown in Figure D.4 (Fig 11.10 in 2nd ed.).
+<br><br>
+(iii) (1 point) Refer again to Figure D.4 (Fig 11.10 in 2nd ed.).
+The following is a PASCAL program to retrieve information
+from the COMPANY database.  Describe the intended query.
+<br>
+<pre>
+ $GET FIRST EMPLOYEE;
+ while DB_STATUS = 0 do
+  begin
+  $GET NEXT DEPENDENT WITHIN PARENT EMPLOYEE;
+  while DB_STATUS = 0 do
+     begin
+     if P_DEPENDENT.DEPNAME = P_EMPLOYEE.FNAME
+      then writeln(P_EMPLOYEE.FNAME,P_EMPLOYEE.LNAME);
+     $GET NEXT DEPENDENT WITHIN PARENT EMPLOYEE
+     end;
+  $GET NEXT EMPLOYEE
+  end;
+</pre>

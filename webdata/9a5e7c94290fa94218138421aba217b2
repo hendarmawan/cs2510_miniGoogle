@@ -1,0 +1,87 @@
+<html>
+<head>
+<title>WebBase Example</title>
+</head>
+<body>
+<h3 align = center>Here is an example of the code and some example forms.</h3>
+<table align = center>
+<form action = "http://bach.cs.pitt.edu:8081/Example/name.htf" method = "post">
+<tr>
+<td>Please enter the Name to search under(John Doe)</td>
+<td><input type = "textbox" size = 20 name = "thename"></td>
+<td><input type = "submit" value = "Submit"></td>
+</tr>
+</form>
+
+<form action = "http://bach.cs.pitt.edu:8081/Example/module.htf" method = "post">
+<tr>
+<td>Please enter the Mod to search under(A1)</td>
+<td><input type = "textbox" size = 20 name = "themod"></td>
+<td><input type = "submit" value = "Submit"></td>
+</tr>
+</form>
+
+<form action = "http://bach.cs.pitt.edu:8081/Example/dates.htf" method = "post">
+<tr>
+<td>Please enter the Date to search under(02-NOV-90)</td>
+<td><input type = "textbox" size = 20 name = "thedate"></td>
+<td><input type = "submit" value = "Submit"></td>
+</tr>
+</form>
+
+</table>
+
+<pre>
+The forms above each call an .htf form located on bach.  The form layout for this page
+looks like the following:
+
+<code>
+&lt;table align = center&gt;
+&lt;form action = "http://bach.cs.pitt.edu:8081/Example/name.htf" method = "post"&gt;
+&lt;tr&gt;
+&lt;td&gt;Please enter the Name to search under&lt;/td&gt;
+&lt;td&gt;&lt;input type = "textbox" size = 20 name = "thename"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type = "submit" value = "Submit"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/form&gt;
+
+&lt;form action = "http://bach.cs.pitt.edu:8081/Example/module.htf" method = "post"&gt;
+&lt;tr&gt;
+&lt;td&gt;Please enter the Mod to search under&lt;/td&gt;
+&lt;td&gt;&lt;input type = "textbox" size = 20 name = "themod"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type = "submit" value = "Submit"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/form&gt;
+
+&lt;form action = "http://bach.cs.pitt.edu:8081/Example/dates.htf" method = "post"&gt;
+&lt;tr&gt;
+&lt;td&gt;Please enter the Date to search under&lt;/td&gt;
+&lt;td&gt;&lt;input type = "textbox" size = 20 name = "thedate"&gt;&lt;/td&gt;
+&lt;td&gt;&lt;input type = "submit" value = "Submit"&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/form&gt;
+
+&lt;/table&gt;
+</code>
+	Please note that in your forms' action clause you will want to use relative 
+addressing for your files, so that they might look like: <i>action = "name.htf"</i>.
+
+	Below I have listed three links.  Each link will display the code for the 
+equivalent WebBase page listed above.
+<table align = center>
+<tr>
+<td><a href = "nameexmpl.html">name.htf</a></td>
+</tr>
+<tr>
+<td><a href = "modexmpl.html">module.htf</a></td>
+</tr>
+<tr>
+<td><a href = "dateexmpl.html">date.htf</a></td>
+</tr>
+<tr>
+<td><a href = "explaination.html">An Explaination of the .htf Forms</a></td>
+</tr>
+</table>
+
+</body>
+</html>

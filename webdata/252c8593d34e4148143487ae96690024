@@ -1,0 +1,94 @@
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="../2074 notes/2074-style.css">
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>forms notes</title>
+</head>
+
+<body>
+
+<p><strong>FORMS (Chapter 10 and Chapter 12)</strong></p>
+<p align="center">&nbsp;</p>
+<p>Forms &amp; Form Processing.</p>
+<p><b>Form - a tool for collecting and delivering data from the user.</b></p>
+<p><b>Forms and form types are what we will cover.</b>   Form processing and&nbsp; 
+CGI scripts we will not. </p>
+<!--
+<p>I will have a simple CGI script demo after the midterm</p>
+-->
+<p><b>Tags</b></p>
+<p>&lt;form&gt; &lt;/form&gt;</p>
+<p>Two NECESSARY attributes&nbsp; <b>action &amp; method</b></p>
+<p><b>action=&quot;mailto:bonidie@pitt.edu&quot;</b></p>
+<p>- action points to the application that will process the data captured by the 
+form.</p>
+<p><b>method=&quot;post&quot;</b></p>
+<p>-can equal &quot;get&quot; or &quot;post&quot;</p>
+<p>
+<in>
+<font color="grey">
+get: With the HTTP "get" method, the form data set is appended to the URI specified by the action attribute (with a question-mark ("?") as separator) and this new URI is sent to the processing agent. 
+<p>
+post: With the HTTP "post" method, the form data set is included in the body of the form and sent to the processing agent. 
+<p>
+The "get" method should be used when the form causes no side-effects. Many database searches have no visible side-effects and make ideal applications for the "get" method.
+<p>
+If the service associated with the processing of a form causes side effects (for example, if the form modifies a database or subscription to a service), the "post" method should be used.
+</font>
+</in>
+<p>
+<p>- method tells the browser how to send the data to the server. </p>
+<p>- &quot;mailto:&quot; always requires &quot;post&quot;</p>
+<p><b>input tag - creates an input element (control) within a form</b></p>
+<p><b>&lt;input /&gt;</b></p>
+<p>important attributes:&nbsp; name, value, type</p>
+<p><b><font color="purple">name</font> </b>- required by most input controls</p>
+<p><b><font color="purple">type</font> </b>- defines which input control you will provide to the user.</p>
+<p><a target="_blank" href="../chapter_11/fig1110.htm"><b>value</b> </a>- assign a 
+default value to the field.</p>
+<p><a target="_blank" href="../chapter_11/fig1101.htm">simple form</a></p>
+<p>&nbsp;</p>
+<p><b>control types - </b></p>
+<p><b>button - </b>control that has no predefined funtion</p>
+<p><b><a target="_blank" href="../chapter_11/fig1107.htm">text </a></b>- allows the 
+user to submit typed text.</p>
+<p><b>checkbox - </b>allows for multiple selections in a series. </p>
+<p><b><a target="_blank" href="../chapter_11/fig1112.html">file</a> - </b>sending 
+an entire file</p>
+<p><b><a target="_blank" href="../chapter_11/fig1104.htm">radio</a> - </b>button 
+that ensures only one selection is made</p>
+<p><b><a target="_blank" href="../chapter_11/fig1116.htm">submit</a> - </b>
+activates the coding as submission process of the browser or invokes the 
+associated a-mail application.</p>
+<p><b><a target="_blank" href="../chapter_11/fig1118.htm">reset </a>- </b>clear 
+selections</p>
+<p><b>Drop Down list boxes</b> </p>
+<p><a target="_blank" href="../chapter_11/fig1122.htm">Select tag </a>- creates a 
+list box made up of enclosed elements.</p>
+
+Note: If you want to have multiple selections use
+the keywords "select multiple" such as in the following
+example:
+<br><br>
+&ltselect multiple id=Topics[] name=Topics[] size=20&gt
+<br>
+&ltoption value="Visual Languages;"&gtVisual Languages&lt/option&gt
+<br>
+<br><br>
+<p>attributes: name, <a target="_blank" href="../chapter_11/fig1124.html">size</a>, 
+style, multiple</p>
+<p>*must contain at least one &lt;option&gt; &lt;/option&gt; tag (element).</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+<p>
+<a href="http://www.w3.org/TR/html401/interact/forms.html">Further reading about forms</a>
+</body>
+
+</html>

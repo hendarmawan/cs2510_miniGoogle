@@ -1,0 +1,434 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Homepage of Xin Li</title>
+</head>
+
+<body>
+
+<div align="center">
+  <center>
+
+<TABLE width=198 height="1" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+  <TBODY>
+  <TR>
+    <TD height="44" width="805">
+      <font face="Arial"><a href="../../../index.htm">Home</a>&gt;<a href="../../index.htm">CVC</a>&gt;User 
+      Manual for Teacher</font></TD>
+        </TR>
+  <TR>
+    <TD height="44" width="827">
+<P align=center><STRONG style="font-weight: 400"><FONT size=4 face="Arial"> User Guide&nbsp;:&nbsp;Virtual 
+Classroom</FONT></STRONG></P>
+<P align=center><STRONG style="font-weight: 400"><FONT size=4 face="Arial">For 
+Teacher User</FONT></STRONG></P>
+    </TD>
+        </TR>
+  <TR>
+    <TD height="194" width="827">
+
+<P align=left><STRONG style="font-weight: 400"><FONT 
+size=4 face="Arial">[Introduction]</FONT></STRONG></P>
+<P align=justify><span style="FONT-FAMILY: Arial">Virtual Classroom is a simulated 
+  classroom via Internet, which provides a convenient&nbsp; communication environment 
+  for distance learners just&nbsp; like&nbsp; traditional face-to-face style 
+  classroom.</span><FONT face="Arial"> </FONT></P>
+<P align=justify><font face="Arial">As well as traditional classroom, virtual 
+classroom is teacher-dominated. Students could not change webpage/video/audio 
+shown in classroom unless they get the permission from teacher.&nbsp; </font></P>
+  <P align=justify><font face="Arial">Before using teacher toolkit, a user name (usually&nbsp;First Name and Last Name) 
+  and password will be given by tool provider. </font></P>
+  <P align=justify><font face="Arial">Briefly,&nbsp;following functions are&nbsp;ready to go 
+  with teacher toolkit:</font></P>
+<ol>
+  <li>
+  <P align=justify><font face="Arial">Online Communicating with students in classroom using Text or Audio Messages.</font></P>
+  </li>
+  <li>
+  <P align=justify><font face="Arial">Pushing Webpage/Video/Audio to students.</font></P>
+  </li>
+  <li>
+  <P align=justify><font face="Arial">Drawing diagrams on white board and showing 
+  them to students. </font></P>
+  </li>
+  <li>
+  <P align=justify><font face="Arial">Managing (Granting / Revoking) pushing 
+  permission of students, which could let students&nbsp; lead a discussion or 
+  make a presentation. </font></P>
+  </li>
+  <li>
+  <P align=justify><font face="Arial">Managing information of students in class and 
+  sending group Emails (may include personal Grade 
+  Vector) to each student.</font></P>
+  </li>
+</ol>
+<P dir=ltr align=justify><STRONG style="font-weight: 400"><FONT size=4 face="Arial">[Minimum System 
+Requirement]</FONT></STRONG></P>
+<ul>
+  <li>
+  <DIV align=justify><FONT face="Arial">Intel Pentium processor </FONT></DIV>
+  </li>
+  <li>
+  <DIV align=justify><FONT face="Arial">Microsoft Windows 98 Second Edition, Windows 
+  Millennium Edition, Windows NT 4.0, Windows 2000, Windows XP</FONT></DIV>
+  </li>
+  <li>
+  <DIV align=justify><FONT face="Arial">32MB of RAM (64MB recommended) </FONT></DIV>
+  </li>
+  <li>
+  <DIV align=justify><FONT face="Arial">10MB of available hard-disk space </FONT></DIV>
+  </li>
+  <li>
+  <DIV align=justify><FONT face="Arial">Internet Explorer 6.01 or 
+  Higher&nbsp;</FONT></DIV>
+  </li>
+  <li>
+  <DIV align=justify><FONT face="Arial">Microsoft Office 2000/XP 
+    Installed. (For exporting grade sheet to Excel) </FONT></DIV></li>
+</ul>
+  <DIV align=justify><font face="Arial" size="4">[Installation]</font></DIV>
+  <P align=justify><FONT face="Arial">Step1. Download/Copy Installation package 
+  from provider, for example, <b>teacherinstall.exe.</b></FONT></P>
+  <P align=justify><FONT face="Arial" 
+  >Step2. Double click to run it.&nbsp;Follow installing instruction step by step.</FONT></P>
+  <P align=justify><FONT face="Arial">Step3.&nbsp;Once finished Step2, a 
+  new&nbsp;program named "Virtual Classroom Teacher Toolkit" will be added into 
+  programs group, which includes five tools shown as Figure1.</FONT></P>
+  <P align=center><img border="0" src="t001.JPG" width="434" height="118"></P>
+  <P align=center><font face="Arial" size="4">Figure 1. Installation</font></P>
+<P dir=ltr align=justify><STRONG style="font-weight: 400"><FONT 
+size=4 face="Arial">[Configuration]</FONT></STRONG></P>
+<P dir=ltr align=justify><font face="Arial"><strong>Before first time using</strong><strong style="font-weight: 400">, 
+please Click </strong><b>Start--&gt;&nbsp;Program--&gt;Virtual 
+Classroom Teacher Toolkit--&gt;Configuration Tool </b>to set your 
+information correctly. The interface for configuration is shown in Figure 2.</font></P>
+<P dir=ltr align=center><img border="0" src="t002.JPG" width="400" height="228"></P>
+<P dir=ltr align=center><font size="4" face="Arial">Figure 2. Configuration</font></P>
+<P dir=ltr align=justify><FONT color=maroon size="4" face="Arial">
+  <img border="0" src="Info.jpg" width="41" height="41">Note: 
+In most cases, there is no need to change Name Server's address and Port unless 
+provider requires. SMTP Server is for Email sending service,&nbsp; Sever and 
+Port are common configurations as same as any universal Email clients such as 
+Microsoft Outlook. Name and Email are for sender's information shown on outgoing 
+messages to students. To avoid confusion of receivers, MAKE SURE to set them as your name and Email address 
+before using group email service.</FONT></P>
+<P dir=ltr align=justify><FONT color=maroon size="4" face="Arial">
+  <img border="0" src="Info.jpg" width="41" height="41">Note: Once press the 
+&quot;update&quot; button, all configuration will be saved.</FONT></P>
+<P dir=ltr align=justify><STRONG style="font-weight: 400"><FONT size=4 face="Arial">[Getting Start]</FONT></STRONG></P>
+<ul>
+  <li dir="ltr">
+<P dir=ltr align=justify><strong style="font-weight: 400">
+<font face="Arial" size="4">Online Communication</font></strong></P>
+  </li>
+</ul>
+<blockquote>
+  <P dir=ltr align=left><FONT face="Arial">Click&nbsp;<b>Start--&gt;&nbsp;Program--&gt;Virtual 
+  Classroom Teacher Toolkit--&gt;Communication Tool </b>(Figure 3)</FONT></P>
+</blockquote>
+  <P dir=ltr align=center>
+  <img border="0" src="t003.JPG" width="400" height="185"></P>
+<blockquote>
+  <P dir=ltr align=center><FONT size=4 face="Arial">Figure 3 Login To 
+  Communication Tool</FONT></P>
+  <P dir=ltr align=justify><FONT face="Arial">Next Window is asking you to choose 
+  the classroom you want to enter (Figure 4).</FONT></P>
+  <P dir=ltr align=justify><FONT size=4 face="Arial"><FONT color=maroon>
+  <img border="0" src="Info.jpg" width="41" height="41">Note: One teacher&nbsp;could 
+  teach multiple classes, so more than one choices may be offered.</FONT>&nbsp; </FONT></P>
+</blockquote>
+  <P dir=ltr align=center>
+  <img border="0" src="t004.jpg" width="301" height="159"></P>
+<blockquote>
+  <P dir=ltr align=center><font face="Arial"><FONT size=4>Figure 4 Choose Courses</FONT> </font>   </P>
+  <P dir=ltr align=justify><FONT color=maroon size=4 face="Arial">
+  <img border="0" src="troubleshooting.jpg" width="40" height="40">Trouble Shooting: If you get 
+  message "Can't find Name Server", please use configure tool mentioned in 
+  [Configuration] to set the name server's information. If the problem persists, 
+  check to see if you are using any firewall software. In some cases, system 
+  fails because communication port is blocked by a firewall. Opening the port or 
+  disabling firewall could solve the problem.</FONT></P>
+</blockquote>
+<ul>
+  <li dir="ltr">
+  <P dir=ltr align=justify><font face="Arial" size="4">Student Information 
+  Management </font></P>
+  </li>
+</ul>
+<blockquote>
+  <P dir=ltr align=justify><FONT face="Arial">Click&nbsp;<b>Start--&gt;&nbsp;Program--&gt;Virtual 
+  Classroom Teacher Toolkit--&gt;Information Center:</b></FONT></P>
+</blockquote>
+  <P dir=ltr align=center>
+  <img border="0" src="t005.JPG" width="400" height="194"></P>
+<blockquote>
+  <P dir=ltr align=center><font face="Arial" size="4">Figure 5. Login to 
+  Information Center</font></P>
+  <P dir=ltr align=justify><FONT face="Arial">Next Window is asking 
+  you to choose the classroom you want to enter, exactly as same as Communication 
+  tool (Figure 4).</FONT></P>
+</blockquote>
+<P dir=ltr align=justify><FONT color=black size=4 face="Arial">
+<STRONG style="font-weight: 400">[Basic 
+Functions]</STRONG></FONT></P>
+<ul>
+  <li dir="ltr">
+<P dir=ltr align=justify><strong style="font-weight: 400">
+<font face="Arial" size="4">Communication tool</font></strong></P>
+  </li>
+</ul>
+<blockquote>
+  <ol>
+    <li dir="ltr">
+<P dir=ltr align=justify><font face="Arial" size="4">Online Communicating with students in classroom using Text or Audio Messages.</font></P>
+    </li>
+  </ol>
+<P dir=ltr align=justify><img border="0" src="t006.JPG" width="560" height="418"></P>
+<P dir=ltr align=center><font face="Arial" size="4">Figure 6 Chatting Room</font></P>
+<P dir=ltr align=justify><FONT face="Arial">There are text input areas located on 
+the&nbsp;left bottom of chatting room where user can input the text/audio message. 
+(Figure 6)</FONT></P>
+  <UL>
+    <LI>
+    <DIV align=justify><FONT face="Arial">Click <FONT color=maroon>SEND (Ctrl+X)</FONT>&nbsp;button to 
+    send message to teacher and other students. </FONT></DIV>
+    <LI>
+    <DIV align=justify><FONT face="Arial">Click<FONT color=maroon> CLEAR</FONT> button to 
+    clear the input area. </FONT></DIV>
+    <LI>
+    <DIV align=justify><FONT face="Arial">Click <FONT color=maroon>SAVE</FONT> button to 
+    save the all the chatting history.</FONT></DIV>
+    <LI>
+    <DIV align=justify><FONT face="Arial">Click <FONT color=maroon>Color Bar</FONT> to 
+    choose the color of your message.</FONT></DIV></LI></UL>
+    <DIV align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41">Note: by changing drop list &quot;TO&quot;, 
+      private talking is allowed between teacher and any student in classroom. 
+      (Other students will not see the messages).&nbsp; </FONT>
+      </DIV>
+    <DIV align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41">Note: The audio messages are allowed 
+      by checking the audio box above text input field.</FONT></DIV>
+    <DIV align=justify>&nbsp;</DIV>
+</blockquote>
+    <DIV align=left>
+      <blockquote>
+        <ol start="2">
+          <li>
+          <p align="justify"><font face="Arial" size="4">Pushing Webpage/Video/Audio to students.</font></li>
+        </ol>
+        <p align="justify"><FONT color=black face="Arial">There is a form on upper part of the 
+        chatting room (Figure 6)&nbsp;which could let users push </FONT><font face="Arial">
+        Webpage/Video/Audio to </font><FONT color=black face="Arial">students by 
+        filling URLs into the appropriate text fields.&nbsp;</FONT></p>
+      <UL dir=ltr>
+        <LI>
+        <DIV align=justify><FONT color=black face="Arial">Click&nbsp;<FONT 
+        color=maroon>PUSH</FONT> button to push the information to  students.</FONT></DIV>
+        <LI>
+        <DIV align=justify><FONT face="Arial">Click <FONT color=maroon>CLEAR</FONT> 
+        button to clear what you filled in the text fields.</FONT></DIV></LI></UL>
+        <DIV align=left>
+          <ol start="3">
+            <li>
+            <p align="justify"><font face="Arial" size="4">Drawing diagrams on white board and 
+            showing them to students.</font></li>
+          </ol>
+        </DIV>
+    <P align="justify"><font face="Arial">White board tool 
+    on the right bottom of Chatting room (Figure 6). Choose the drawing tools on 
+    the right side to draw a picture. (similar as Microsoft&nbsp; &quot;Paint&quot; Drawing 
+    Tool).&nbsp; Different shapes and colors are available to choose.</font></P>
+    <UL>
+    <LI>
+    <DIV align=justify><font color="black" face="Arial">Click </font>
+      <font color="maroon" face="Arial">SEND</font><font color="black" face="Arial"> 
+      button to send diagram drawn to students. </font></DIV>
+    <LI>
+    <DIV align=justify><font color="black" face="Arial">Click </font>
+      <font color="maroon" face="Arial">CLEAR</font><font color="black" face="Arial"> button 
+    to clear the&nbsp;drawing area. </font></DIV>
+    <LI>
+    <DIV align=justify><font color="black" face="Arial">Click </font>
+      <font color="maroon" face="Arial">BACK</font><font color="black" face="Arial">   
+    button to undo the current operation.</font></DIV></LI></UL>
+    <DIV align=justify><img border="0" src="t007.JPG" width="560" height="418"></DIV>
+    <DIV align=justify>&nbsp;</DIV>
+    <DIV align=center><font size="4">Figure 7 Embedded Web Browser </font></DIV>
+    <DIV align=justify>&nbsp;</DIV>
+        <p align="justify"><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41">Note: As same as 
+        student communication tool, a web browser is provided in teacher 
+        communication tool as shown in&nbsp; Figure 7.</FONT></p>
+    <DIV align=justify><img border="0" src="t008.JPG" width="560" height="418"></DIV>
+    <DIV align=justify>&nbsp;</DIV>
+    <DIV align=center><font size="4">Figure 8 Visual Classroom </font></DIV>
+      <P align=justify><font face="Arial">Click the page button <FONT 
+      color=maroon>CLASSROOM</FONT>. A visual classroom will show up. Everyone&nbsp; (Teacher and Students) will have a avatar&nbsp;in this room ( Figure 
+      8).
+      <b>Highlight means 
+      online.</b></font></P>
+      <P align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41"> Note: The images 
+      for avatars in your system may be different from Figure 8. It depends on which version 
+      you are using. Some versions provide an option to change icon.&nbsp; </FONT></P>
+        <ol start="4">
+          <li>
+          <p align="justify"><font face="Arial" size="4">Managing (Granting / Revoking) pushing 
+  permission of students, which could let students&nbsp; lead a discussion or 
+  make a presentation. </font></li>
+        </ol>
+      </blockquote>
+</DIV>
+<blockquote>
+    <DIV align=justify><img border="0" src="t009.JPG" width="560" height="418"></DIV>
+    <DIV align=center><font size="4" face="Arial">Figure 9 Pushing Permission 
+      Management</font></DIV>
+    <DIV align=justify>&nbsp;</DIV>
+    <DIV align=justify><font face="Arial">As shown in Figure 9, t</font><FONT color=black face="Arial">he 
+      left list is all the students online. The right list is the students who 
+      have push permission. Once students get the push permission, they could 
+      push Webpage/Video/Audio to teacher and other students. Meanwhile they 
+      could send Audio message as well.&nbsp; </FONT></DIV>
+    <DIV align=justify>&nbsp;</DIV>
+    <DIV align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41"> Note: 
+      Teacher can revoke students' permission at any time. Teacher 
+    may give multiple students push permission. ONLY online&nbsp;students can get push permission.</FONT></DIV>
+</blockquote>
+    <DIV align=left>
+      <ul>
+        <li>
+        <p align="justify"><font face="Arial" size="4">Information Center Tool</font></li>
+      </ul>
+</DIV>
+<blockquote>
+    <ol>
+      <li dir="ltr">
+<P dir=ltr align=justify><font face="Arial" size="4">Managing information of 
+students in class (Figure 10)</font></P>
+      </li>
+    </ol>
+<P dir=ltr align=justify><img border="0" src="t010.JPG" width="560" height="418"></P>
+<P dir=ltr align=center><font size="4" face="Arial">Figure 10 Student 
+Information Management</font></P>
+<P dir=ltr align=justify><font face="Arial">Grades could be inputted into a 
+spreadsheet-style grid shown in Figure 10. </font></P>
+    <UL>
+    <LI>
+    <DIV align=justify><font color="black" face="Arial">Click </font>
+      <font color="#800000" face="Arial">Export</font><font color="black" face="Arial"> 
+      button to export all data into Microsoft Excel, in which user could easily 
+      print, do some statistic and other advanced functions.&nbsp; </font></DIV>
+    <LI>
+    <DIV align=justify><font color="black" face="Arial">Click </font>
+      <font color="#800000" face="Arial">Save</font><font color="black" face="Arial"> 
+      button to save the data.</font></DIV>
+    </UL>
+<P dir=ltr align=justify><FONT color=maroon size="4" face="Arial">
+      <img border="0" src="Info.jpg" width="41" height="41"> Note: 
+Teacher may have different needs for student information. System provides maximum flexibility. 
+For the information of students, only following fields are required:</FONT></P>
+    <UL dir=ltr>
+      <LI>
+  <DIV align=left >
+    <p dir="ltr" align="justify"><font color="maroon" size="4" face="Arial">First Name</font></DIV>
+      <LI>
+  <DIV align=left >
+    <p dir="ltr" align="justify"><font color="maroon" size="4" face="Arial">Last Name</font></DIV>
+      <LI>
+  <DIV align=left >
+    <p dir="ltr" align="justify"><font color="maroon" size="4" face="Arial">Email</font></DIV></LI></UL>
+  <P align=justify dir="ltr" ><font color="maroon" size="4" face="Arial">Beside these, 
+    teacher may customize other fields, for example 
+    {ex1,ex2,project1, project2} , {quiz1,quiz2,midterm,final} and so on. Please 
+  send the format which you want to the software provider . They will set grade vector for your 
+  class. The &quot;information Center tool&quot; will AUTOMATICALLY FIT the format.</font></P>
+    <ol start="2">
+      <li dir="ltr">
+  <P align=justify dir="ltr" ><font face="Arial" size="4">Sending group Emails (may 
+  include personal Grade Vector) to each student.</font></P>
+      </li>
+    </ol>
+  <P align=justify dir="ltr" >
+  <img border="0" src="t011.JPG" width="560" height="418"></P>
+  <P align=center dir="ltr" ><font face="Arial">Figure 11 Sending Group Email</font></P>
+  <P align=justify ><font face="Arial">U</font><FONT color=black face="Arial">se 
+  check box list at the top left to select who you are going to send email.</FONT></P>
+  <P align=justify ><font face="Arial">All items listed in interface (Figure 11) 
+  are similar as what you see in any universal Email clients such as&nbsp; 
+  Microsoft Outlook. Furthermore,&nbsp;a personal grade vector could be inserted into 
+       
+      email by checking the box &quot;Including the grades in the message&quot;. Once you finished, press <STRONG><FONT 
+      color=maroon>SEND </FONT></STRONG>button. A preview email window will show 
+      up (Figure 12):</font></P>
+  <P align=justify ><img border="0" src="t012.JPG" width="560" height="385"></P>
+  <P align=center ><font face="Arial" size="4">Figure 12. Email Preview</font></P>
+  <P align=justify ><FONT face="Arial">You still have a chance to cancel the sending action by click "<FONT 
+      color=maroon>Opps...something wrong</FONT>" button.</FONT></P>
+  <P align=justify ><FONT color=maroon size=4 face="Arial">
+  <img border="0" src="troubleshooting.jpg" width="40" height="40">Trouble 
+  Shooting: In case sending email address is rejected by SMTP server, an 
+  exception message will list all invalid email addresses. All emails will be 
+  cancelled even for correct emails in group. The reason for this 
+  &quot;all-or-nothing&quot; policy is that at any time users could correct invalid emails 
+  and try sending again, no worrying about duplicated emails for others. </FONT></P>
+</blockquote>
+<P dir=ltr align=justify><FONT size=4 face="Arial">[Un-Installation]</FONT></P>
+  <P dir=ltr align=justify><FONT face="Arial">You may need to remove the teacher toolkit 
+  from you computer. Here is some tips for Un-installation:</FONT></P>
+  <P dir=ltr align=justify><FONT face="Arial">Click&nbsp;<b>Start--&gt;&nbsp;Program--&gt;Virtual 
+  Classroom Teacher Toolkit--&gt;Uninstall</b>. Follow the instructions.</FONT></P>
+  <P dir=ltr align=center>
+  <img border="0" src="t013.JPG" width="434" height="118"></P>
+  <P dir=ltr align=center><font face="Arial" size="4">Figure 13 Uninstallation</font></P>
+  <P align=justify><font face="Arial" size="4">[Live Update]</font></P>
+  <P align=justify><font face="Arial">A live update tool is provided 
+  to download the latest version without re-install the whole system.&nbsp; 
+  Click <b>Start--&gt;&nbsp;Program--&gt;Virtual Classroom Student Toolkit--&gt;Live Update</b>, 
+  a window will be shown as Figure 14.</font></P>
+  <P align=center><img border="0" src="t014.JPG" width="350" height="250"></P>
+  <P align=center><font face="Arial" size="4">Figure 14 Live Update Tool</font></P>
+  <P align=justify><font face="Arial">By clicking&nbsp; &quot;update&quot; button, system 
+  will automatically check&nbsp; availability of new version. If yes, it will&nbsp; 
+  overwrite the current version by new one. </font></P>
+  <P dir=ltr align=justify><font face="Arial">Questions and Comments, send them to 
+  flying@cs.pitt.edu.</font></P>
+  <P dir=ltr align=justify><font face="Arial" size="4">--End--</font></P>
+      <HR color="#808080">
+
+      <TABLE cellSpacing=0 cellPadding=0 width="640" border=0>
+        <TBODY>
+        <TR>
+          <TD width="593"><font face="Arial"><SPAN class=negl>
+          Updated:
+          <!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%Y" startspan -->04/12/2005<!--webbot bot="Timestamp" endspan i-checksum="12534" --></SPAN></font></TD>
+         
+          <TD width="47">
+            
+          <SPAN class=negl>
+          <script language="JavaScript" type="text/javascript" src="http://m1.nedstatbasic.net/basic.js"></script>
+          <a target="_blank" href="http://www.nedstatbasic.net/stats?ACr87g1ajNTqzWDBUCeAQEwlWIsw">
+          <font face="Arial">
+          <IMG height=18 alt="Web page Counter" 
+            src="http://m1.nedstatbasic.net/n?id=ACr87g1ajNTqzWDBUCeAQEwlWIsw" 
+            width=18 border=0 align="right"></font></SPAN></TD>
+         
+        </TR>
+        
+        </TBODY>
+        </TABLE></TD>
+        </TR>
+        </TBODY>
+        </TABLE>
+        
+        </center>
+</div>
+        
+        </body>
+
+</html>

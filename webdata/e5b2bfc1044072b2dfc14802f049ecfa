@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Wallet Instruments</title>
+</head>
+
+<body>
+
+<div align="center">
+  <center>
+  <table border="0" width="606">
+    <tr>
+      <td align="center" height="29" width="43"><a href="wallet-sec2.htm"><img border="0" src="previous.gif" width="26" height="26"></a></td>
+      <td align="center" height="29" width="499">
+        <p align="right"><a href="wallet-sec4.htm"><img border="0" src="next.gif" width="26" height="26"></a></td>
+    </tr>
+    <tr>
+      <td align="center" colspan="2" width="558"><font size="5">3.1 Instrument
+        Example</font></td>
+    </tr>
+    <tr>
+      <td colspan="2" width="558"></td>
+    </tr>
+    <tr>
+      <td width="558" colspan="2"><font size="4">3.1.2 The Instrument Manager</font></td>
+    </tr>
+    <tr>
+      <td width="39"></td>
+      <td width="554"><font size="2">Prototype Specification:</font>
+        <p><img border="1" src="Imng_ic.gif" width="401" height="288"></p>
+        <p><font size="4">Figure 5 shows a simplified index cell for the
+        instrument manager.&nbsp; The states shown are identified as follows:</font></p>
+        <ul>
+          <li><font size="4">State 0: Active State.&nbsp; This state is the
+            initial state of the Instrument Manager instance.&nbsp; From this
+            state, this manager is awaiting requests to be processed through to
+            the instruments.</font></li>
+          <li><font size="4">State 2: Verify Signature State. If a request for a
+            signature verification has been processed, the manager will enter
+            this state awaiting a return of signature information from the
+            appropriate instrument instance.</font></li>
+          <li><font size="4">State 3: Process Card Info State.&nbsp; When a
+            request for card information (or e-cash transaction, or cybercheck
+            processing, etc.) is made, the manager will send the request to the
+            instrument instance and await a response in this state.</font></li>
+          <li><font size="4">State 4: Protocol Preference State. The instrument
+            manager will enter this state to await a return of protocol
+            preferences which will be processed as required by the caller,
+            normally the operations manager, which is requiring a protocol to
+            process some operation.</font></li>
+          <li><font size="4">State 5: Available Instruments State. If a request
+            is made to determine instruments that are available, this state will
+            be entered to compile the list of instruments, which will be
+            returned as a result of the trasition to the Active state.&nbsp; An
+            occasion for this would be similar to entering a store and having
+            the clerk inform the customer that they accept VISA and personal
+            checks--then the customer must open their wallet&nbsp; and determine
+            which of these they currently have available.&nbsp; This process may
+            also include verification of purchase limits or expiration dates.</font></li>
+          <li><font size="4">State 6: Balance Return State.&nbsp; State used to
+            await an instrument's reply to a balance inquiry.</font></li>
+        </ul>
+      </td>
+    </tr>
+  </table>
+  </center>
+</div>
+
+</body>
+
+</html>

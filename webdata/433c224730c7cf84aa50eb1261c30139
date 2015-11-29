@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="eng" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=iso-8859-1" />
+    <title>Huy V. Nguyen</title>
+    <style type="text/css">@import url(laboostili.css);</style>
+  </head>
+  <body>
+    <div id="mainframe">
+      <div id="headframe">
+        <!-- <div id="headtitle">:: LABOO Business Style :: </div> -->
+      </div>
+      <div id="headline">[<bold>con</bold>&middot;tact]</div>
+      <div id="leftmenu">
+        <p><a style="text-decoration: none;" href="index.html">/About me/</a></p>
+        <p><a href="academics.html">ACDEMICS</a></p>
+        <p><a href="publications.html">PUBLICATIONS</a></p>
+        <p><a href="resources.html">RESOURCES</a></p>
+        <p><a style="text-decoration: none;" href="contact.html">[<bold>con</bold>&middot;tact]</a></p>
+      </div>
+      <div id="rightcolumn"> <img src="images/me2.png" alt="me"/>
+        <p>E-mail: hvn3{at)pitt|dot]edu</p>
+        <p>Office: 5420 Sennott Square</p>
+        <p>Tel: (412) 624-8462</p>
+      </div>
+      <div id="centercolumn">
+        <div class="hdiv">
+            <div class="ldiv">
+                <h3><img src="icons/house.png" alt="Office address"/></h3>
+                <p>5420 Sennott Square<br />University of Pittsburgh<br />Pittsburgh, PA, 15260</p>
+            </div>
+            <div class="rdiv">
+                <h3><img src="icons/telephone.png" alt="Telephone"/></h3>
+                <p>(412) 624 - 8462</p>
+            </div>
+        </div>
+        <div class="hdiv">
+            <div class="ldiv">
+                <h3><img src="icons/home.png" alt="Mailing address"/></h3>
+                <p>2128 Murray Ave.<br />Apt. 3<br />Pittsburgh, PA, 15217</p>
+            </div>
+            <div class="rdiv">
+                <h3><img src="icons/windowsphone.png" alt="Mobile"/></h3>
+                <p>(412) 799 - 3636</p>
+            </div>
+        </div>
+        <div class="hdiv">
+            <h2>E-mail me:</h2>
+            <p>
+                <a href="mailto:hvn3@pitt.edu"><img src="icons/mail.png" alt="Work email"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="mailto:huynv84@gmail.com"><img src="icons/gmail.png" alt="Work email"/></a>&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="mailto:huynv@hotmail.com"><img src="icons/hotmail.png" alt="Work email"/></a>
+            </p>
+            <h2>Connect me:</h2>
+            <p><img src="icons/skype.png" alt="Skype"/>&nbsp;&nbsp;&nbsp;&nbsp;hyudemon</p>
+            <p><img src="icons/linkedin.png" alt="Linkedin"/>&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.linkedin.com/in/huynv/">www.linkedin.com/in/huynv</a></p>
+        </div>
+      </div>
+      <div id="bottomline">
+          Designed by me. Inspired by <a href="http://www.laboo.it">laboo.it</a>.
+          Valid <a href="http://validator.w3.org/check?uri=referer">XHTML</a> and
+          <a href="http://jigsaw.w3.org/css-validator/validator?uri=http://www.laboo.it/www.laboo.it/">CSS</a>.
+      </div>
+    </div>
+  </body>
+</html>

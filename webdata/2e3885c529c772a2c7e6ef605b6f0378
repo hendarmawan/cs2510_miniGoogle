@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>SETUP</title>
+<style>
+<!--
+h2
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic}
+ p.MsoNormal
+	{mso-style-parent:"";
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	margin-left:0in; margin-right:0in; margin-top:0in}
+h3
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:13.0pt;
+	font-family:Arial}
+h4
+	{margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	page-break-after:avoid;
+	font-size:14.0pt;
+	font-family:"Times New Roman"}
+-->
+</style>
+</head>
+
+<body>
+
+<a href="2.htm">  <IMG SRC="previous.gif" align=left></a><A HREF="previous.html">  </A> 
+ <a href="4.htm">  <IMG SRC="next.gif" align=right></a><A HREF="next.html">  </A> 
+ <center> 
+ <h1>SETUP</h1>
+ </center> 
+ <h1><a name="_Toc101336651">3. </a>Setup</h1>
+<h2><a name="_Toc101336652">3.1 Message Server Module</a></h2>
+<p class="MsoNormal" style="text-align: justify">To implement this prototype, we 
+used ActiveMQ, an open source, Apache 2.0 licensed, high performance Messaging 
+Fabric consisting of a scalable cluster of Message Brokers. It also contains a 
+complete JMS 1.1 provider which integrates seamlessly into J2EE containers, 
+light weight containers and any Java application.</p>
+<h3><a name="_Toc101336653">3.1.1 Required Installations</a></h3>
+<h4><a name="_Toc101587477">3.1.1.1 Java</a></h4>
+<p class="MsoNormal">Download and Install J2SE v1.4.2_07 SDK from
+<a style="color: blue; text-decoration: underline; text-underline: single" href="http://java.sun.com/j2se/1.4.2/download.html">
+http://java.sun.com/j2se/1.4.2/download.html</a></p>
+<p class="MsoNormal">Set JAVA_HOME so that %JAVA_HOME%\bin contains java.exe.</p>
+<p class="MsoNormal">Add %JAVA_HOME%\bin to PATH.</p>
+<h4><a name="_Toc101587478">3.1.1.2 Apache </a>Jakarta Tomcat</h4>
+<p class="MsoNormal">Tomcat is the servlet container that is used in the 
+official Reference Implementation for the
+<a style="color: blue; text-decoration: underline; text-underline: single" href="http://java.sun.com/products/servlets">
+Java Servlet</a> and
+<a style="color: blue; text-decoration: underline; text-underline: single" href="http://java.sun.com/products/jsp">
+JavaServer Pages</a> technologies. A Servlet running in Tomcat can use ActiveMQ 
+message broker. Messages sent to and from the server are as HTTP POST/GET 
+Messages.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal">Download Tomcat 5.0 from
+<a style="color: blue; text-decoration: underline; text-underline: single" href="http://jakarta.apache.org/site/downloads/downloads_tomcat-5.cgi">
+http://jakarta.apache.org/site/downloads/downloads_tomcat-5.cgi</a>.</p>
+<p class="MsoNormal">Set CATALINA_HOME so that %CATALINA_HOME%\bin contains the 
+binaries to startup and shutdown the Tomcat Server. </p>
+&nbsp;</body></html>

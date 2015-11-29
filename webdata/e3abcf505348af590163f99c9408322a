@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link href="images/main.css" rel="stylesheet" type="text/css" />
+    <title>Fan Zhang</title>
+</head>
+<body>
+<div id ="container">
+    <div id = "navdiv">
+                    <ul class = "mainlinks">
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan" ><b><font face='Helvetica' size = '3'>Home</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/misc.html"><b><font face='Helvetica' size = '3'>Misc</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/research.html"><b><font face='Helvetica' size = '3'>Research</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/experiences.html" class="selected"><b><font face='Helvetica' size = '3'>Experiences</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/about.html" ><b><font face='Helvetica' size = '3'>About</font></b></a></li>
+                </ul>
+    </div>
+	<div id="content">
+		<h2> Intern
+	</h2>
+	<ul>
+	<li>
+	 Bosch RTC, Research Engineer Intern
+	 05/2013 - 08/2013</li>
+	 <li>
+	 Bosch RTC, Research Engineer Intern
+	 01/2015 - 04/2015</li>
+	 </ul>
+	 On the right is a photo of Sai, one of my colleagues at Bosch, he is holding the proof that I agree "lo mein" can be categorized as Chinese food (which I still don't want to, but that's the price of losing a bet to him :-P ). 
+	<h2> Research assistant
+	</h2>
+	<ul> 
+	 <li>University of Pittsburgh, 05/2014–present
+	 </li>
+	</ul>
+	<h2> Teaching assistant
+	</h2>    
+	<ul>
+	<li>Programming Language for Web Applications</li>
+	<li> Intermediate Programming Using JAVA</li>
+	<li> Computer Organization and Assembly Language</li>
+	<li> Discrete Mathematics</li>
+	</ul>
+
+		<div id="contentsidebar">
+<img src="./photos/saicerti(small).png">
+	</div>
+	</div>
+</div>
+</body>
+</html>

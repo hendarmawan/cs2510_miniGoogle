@@ -1,0 +1,16 @@
+ <html> 
+ <title> Visual Languages and Visual Programming </title> 
+
+ <A HREF="../1631topic.html">  <IMG SRC="previous.gif" align=left>  </A> 
+ <A HREF="02.htm">  <IMG SRC="next.gif" align=right>  </A> 
+ <center> 
+ <h1> 
+<p><br>An Example Specification for<p> 
+Implementing a Car Lock Component
+ </h1 > 
+ </center> 
+<h2>
+Draw the UML diagrams for a remote car-key system allowing the user to click 'lock' button once to lock door, click twice to enable alarm, and click 'unlock' button once to disable alarm, click twice to unlock door.
+</h2>
+In the specification using UML, we will draw the following four different types of UML diagrams - the class diagram, the state diagram, the sequence diagram and the collaboration diagram - to describe a remote car-lock system allowing the user to click 'lock' button once to lock door, click again to enable alarm, and click 'unlock' button once to disable alarm, click again to unlock door.
+ </html> 

@@ -1,0 +1,20 @@
+<title>Software Architecture Design Principles</title>
+<A HREF="../1631topic.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02.htm"><IMG SRC="next.gif" align=right></A>
+
+<font color=red>
+<h1>Software Architecture Design Principles</h1>
+
+<h2>
+A software component infrastructure is a designed set of shared components
+that supports a set of applications in a particular domain or domains,
+and these applications must function within the constraints imposed by the infrastructure.
+<p>
+When designing the software component infrastructure, you must have a
+<i>base set</i> of applications in mind.  The final application
+is constructed around the software component infrastructure.
+</h2>
+<!--
+<b>CMU Website on <a href="www.sei.cmu.edu/architecture/bibliography.html">
+software architecture</a></b>
+-->

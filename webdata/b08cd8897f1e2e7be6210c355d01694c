@@ -1,0 +1,20 @@
+<h1>Visualization and Visual Analytics</h1>
+
+<h2>IBM Many Eyes Tool</h2>
+
+<a href="http://www-958.ibm.com/software/data/cognos/manyeyes/">IBM Many Eyes Tool</a>
+is an online tool that makes use of the Cognos Application without having to setup a Cognos environment to do so.
+
+<h2>Google Public Data Explorer</h2>
+
+IBM Many Eyes Tool relies on the availability of data sets.  There is a project
+from Google that provides different data sets which can be used for
+building demos:
+<a href="http://www.google.com/publicdata/directory">Google Public Data Explorer</a>.
+To keep the demos to a manageable environment, It is suggested to make use of the above two links.
+
+<br><br>
+<h2>Examples of Visualization and Visual Analytics</h2>
+There is a <a href="c13health/cognos_screenshots.htm">screen shots page</a> showing different screen shots of
+Cognos Dashboards, which can be helpful to illustrate visualization and visual analytics.
+You can click on each image to expand.

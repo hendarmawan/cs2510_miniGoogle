@@ -1,0 +1,48 @@
+<html>
+<head><title>Chapter 11 : Quality Requirement</title></head>
+<body>
+
+<a href="c11_4.html"><IMG SRC="previous.gif" align=left></a>
+<a href="c11_6.html"><IMG SRC="next.gif" align=right></a>
+
+<center><h3><font color="blue">Chapter 11</font></h3>
+<h1>Presentation Rate and Resolution </h1>
+</center>
+<hr size=3>
+
+<h3>
+
+<img src="blue.gif"> <i>Problem</i> :  Network has restricted capacity and limited buffering<p>
+<img src="blue.gif"> <i>Solution</i> : Prefetching , deliver object partially<p>
+<img src="blue.gif"> User can specify the following parameters <p>
+<ol>
+<li><i> Maximum allowable percentage data loss</i> : acceptable data loss for each object 
+<li><i> Presentation rate ratio</i> : ratio of the required rate of presentation to the nominal one 
+</ol>
+<img src="blue.gif"><i> Example</i>  : every third frame can be dropped in NTSC quality video
+
+<p>
+The following table shows reliability of multimedia information type <p>
+<center>
+<table cellpadding=10 border=5>
+<tr>
+<td rowspan=2 align=center> <b>Reliability</b>
+<td align=center><b> Voice </b>
+<td align=center><b> Video </b>
+<td align=center><b> Image </b>
+<td align=center><b> Text </b>
+</tr>
+<tr>
+<td align=center> 0.98 
+<td align=center> 0.90
+<td align=center> 1.0
+<td align=center> 1.0
+</tr>
+</table>
+
+
+</h3>
+
+</body>
+</html>
+

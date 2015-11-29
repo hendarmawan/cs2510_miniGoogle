@@ -1,0 +1,32 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="CSSD">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="p14.html"><img SRC="previous.gif"  align=LEFT></a><a href="p16.html"><img SRC="next.gif"  align=RIGHT></a>
+<p><br>
+<p><br>
+<center>
+<p><b><font size=+3>5.3 Component Integration</font></b></center>
+
+<ol><b><font size=+1>Office Application Integration</font></b>
+<ol>&nbsp;
+<br><font size=+1>--Integrate software systems on the personal desktop
+computer.</font>
+<br><font size=+1>--Ex:</font>
+<ol><font size=+1>Integrates Visio drawing application, Microsoft Word,
+and Microsoft's Internet Explorer into one user interface.</font></ol>
+</ol>
+
+<p><br><font size=+1>Limitation:</font>
+<ol><font size=+1>1. Limited to the integration on personal computers.
+Heterogeneours environments are not supported.</font>
+<br><font size=+1>2. Limited to a small number of components.</font></ol>
+</ol>
+
+</body>
+</html>

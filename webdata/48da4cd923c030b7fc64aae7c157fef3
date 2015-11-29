@@ -1,0 +1,21 @@
+<html>
+<head><title>Chapter 11 : Synchronization Model</title></head>
+<body>
+
+<a href="c11_5.html"><IMG SRC="previous.gif" align=left></a>
+
+<a href="c11_7.html"><IMG SRC="next.gif" align=right></a>
+
+<center><h3><font color="blue">Chapter 11</font> </h3>
+<h1>Synchronization Models</h1></center>
+<hr size=5>
+<center>
+<h2><i><image src="purcube.gif"> What is temporal synchronization ? 
+<image src="purcube.gif"></i> <p>
+Coordinating the real-time presentation of information and maintaining the temporal relationship among component media <br>
+
+</h2>
+</center>
+</body>
+</html>
+

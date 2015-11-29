@@ -1,0 +1,20 @@
+<title>Component-Based Software Engineering</title>
+<A HREF="../1631topic.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02.htm"><IMG SRC="next.gif" align=right></A>
+
+<h1>Component-Based Software Engineering</h1>
+
+<h2>Component Models and Component Services</h2>
+
+<h2>A compoment model has standards for:
+<br>
+<font color=red>
+<li>Interface
+<li>Naming
+</font>
+<li>Meta data
+<li>Interoperability
+<li>Customization
+<li>Composition
+<li>Evolution support
+<li>Packaging and deployment

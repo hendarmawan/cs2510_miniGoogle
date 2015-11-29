@@ -1,0 +1,22 @@
+<a href="page9.html"><img src="previous.gif" align=left width="26" height="26"></a>
+<a href="page11.html"><img src="next.gif" align=right width="26" height="26"></a>
+
+<p>&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="text-align: center">&nbsp;</p>
+
+<p class="MsoNormal" align="center" style="text-align: center">
+<font face="Tahoma" size="5"><b>Sharing 
+content through XML</b></font></p>
+<p class="MsoNormal">&nbsp;</p>
+<ul>
+  <li>
+<p class="MsoNormal">These portals allow an XML representation of the stories to 
+be served out.&nbsp; This allows for a truly distributed system.&nbsp; For example 
+we can pull headlines in from other sites to display on ours.&nbsp; The content 
+is updated dynamically.&nbsp; The schema is a defined web standard, the RDF 
+format.&nbsp; My website uses a feed from the Slashdot news site.&nbsp; The XML 
+file can be viewed here:&nbsp;&nbsp;&nbsp;
+<a href="http://slashdot.org/slashdot.rdf">rdf file for Slashdot</a></p>
+  </li>
+</ul>

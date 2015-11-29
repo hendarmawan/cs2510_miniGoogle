@@ -1,0 +1,54 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Microsoft .NET Presentation</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="100%">
+    <tr>
+        <td valign="top"><a href="slide-03.htm"><img
+        src="previous.gif" border="0" width="26" height="26"></a></td>
+        <td align="center" valign="top"><h1>.NET Platform Device
+        Capabilities</h1>
+        </td>
+        <td align="right" valign="top"><a href="slide-05.htm"><img
+        src="next.gif" border="0" width="26" height="26"></a></td>
+    </tr>
+</table>
+
+<p><font size="4">All this is useless without devices that use .NET.
+So what are .NET's goals for such devices?</font></p>
+
+<ul>
+    <li><font size="4">Smart about you. Devices use your .NET
+        identity, profile and data to simplify their use. They
+        also respond differently whether you are present or not,
+        and tailor notifications accordingly.</font></li>
+    <li><font size="4">Smart about the network. Devices respond
+        and adjust to bandwidth constraints, online/offline
+        applications, and understand available services provided
+        over a network.</font></li>
+    <li><font size="4">Smart about information. Permit access,
+        analysis, and acting upon user data anytime and anywhere.</font></li>
+    <li><font size="4">Smart about &quot;devices&quot;. Discover
+        and announce PC, smart devices, servers, the Internet,
+        and provide its own services to these. Also permit smart
+        PC data access.</font></li>
+    <li><font size="4">Smart about software. Applications
+        optimally presented for form factor. Input methods and
+        connectivity are appropriate for end-user interaction.
+        Acts as a comsumer of &quot;web services&quot; via
+        protocols and standards like XML, SOAP, and UDDI. Allow
+        programmability and extensibility by other developers.</font></li>
+</ul>
+
+<hr>
+
+<p><a href="references.htm"><em>References</em></a><em>: G</em></p>
+</body>
+</html>

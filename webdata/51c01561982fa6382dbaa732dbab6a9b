@@ -1,0 +1,36 @@
+Project:
+
+For my term project I will build a java program which is capable of
+executing Petri Nets, represented in extended PNML, while interacting with
+the class's Slow Intelligence System testbed.  Specifically, the extensions
+to PNML will give the executor program information about dispatching and
+receiving messages to and from the SIS server.  The outgoing messages will
+be sent by defining a trigger on one of the Petri Net's transitions, which
+will specify the message type to send when that transition fires.  A single
+incoming message type, PlaceTokenMsg, will be defined to allow external
+components to put a new token on a particular Place in the Net.  For
+example, one could define a Place named p_printer_ready, that must be filled
+for any print transition to fire.  A theoretical PrintMonitorComponent could
+then, upon seeing the printer's status change from "in use" to "ready",
+sends a PlaceTokenMsg with PlaceName="p_printer_ready".
+
+Through the methods above, I will create a Petri Net executor that can
+control many conceivable aspects of the SIS testbed.  Petri Net design can
+be handled by any program which understands the standardized PNML language,
+including TINA.  Thus I expect users to create a visually-attractive Petri
+Net, in their tool of choice, before integrating the Net with the SIS.  When
+loading the PNML into the executor (which will be a graphical JFrame-based
+program), its visual layout will be mandated by the PNML file, and not
+editable.  However, by clicking on transitions the user can specify a
+message to be sent when it fires.  Also, the user can monitor the current
+state of the Petri Net in real-time, as well as through log files.
+
+These tools and my Executor will create a rich environment for Petri Nets
+within the SIS.  The workload should be relatively low, given the large body
+of work I am building from - including the PNML standard, SIS testbed, and
+TINA's Petri Net designer.
+
+
+Comments: Please talk to Ms. Xu when she comes back
+from interview.  Other students may also use the
+PNML format as well.

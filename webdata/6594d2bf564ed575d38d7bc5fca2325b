@@ -1,0 +1,973 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html class="dj_gecko dj_ff3 dj_contentbox" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+<script type="text/javascript">
+        var bidiSupport = new Object();
+        bidiSupport.bidiAlignRight = "right";
+        bidiSupport.bidiAlignLeft = "left"; 
+        bidiSupport.bidiDirAttr = ""; 
+        bidiSupport.bidiImageRTL = null;
+        bidiSupport.isRTL = false;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+
+
+
+
+<title>Software Sellers Workplace  | Cognos Screenshots</title>
+
+
+
+
+  
+  	<link rel="bookmark" href="http://w3-103.ibm.com/software/xl/poc/%21ut/p/digest%21kYHBw7hKF9TF0xv0xdkMKA/nm/oid:6_20GEJVBJE7PLD0ISHLPV9V3011" title="Content (hidden)" hreflang="en">
+  
+  	<script type="text/javascript" src="cognos_screenshots_files/semanticTagService.js"></script>
+  
+        
+
+<link href="http://w3-103.ibm.com/software/xl/XLThemes/themes/html/xl4Theme/images/favicon.ico" rel="shortcut icon">
+
+
+  
+	
+	
+		
+	
+  
+
+
+
+  
+  
+
+
+
+
+
+
+<link id="portalStyles" href="cognos_screenshots_files/styles_002.css" rel="styleSheet" type="text/css">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+             
+
+<!-- script type="text/javascript" src='/software/xl/CacheProxyServlet/colorPalette/default/browserVendor/Netscape/browserName/Navigator/browserVersion/unknown/locale/en/forwardurl/software/xl/XLThemes/themes/html/xl4Theme/./js.jsp'></script -->
+<script type="text/javascript" src="cognos_screenshots_files/js.xhtml"></script>
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+	var javascriptEventController = new ElementJavascriptEventController();
+
+
+
+
+
+
+
+(function(){
+	var pageMenuURL = '/software/xl/portal/!ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L0lKQSEvUUt3RS9ZUHchL3BhZ2VDb250ZXh0TWVudQ!!/';
+	wptheme_ContextMenuUtils.moreMenu.init( "/software/xl/portal/!ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L0lKQSEvUUt3RS9ZUHchL21vcmVNZW51/", false, "No actions currently available.", "/software/xl/XLThemes/themes/html/xl4Theme/images/more_menu_loading.gif", null, true );
+
+	var topNavAffordance = new wptheme_AsyncMenuAffordance( "wptheme_selected_page_menu", "wptheme_selected_page_menu_img", "/software/xl/XLThemes/themes/html/xl4Theme/colors/default/menu_selected.gif", "/software/xl/XLThemes/themes/html/xl4Theme/colors/default/menu_selected_disabled.gif" ); 
+	var sideNavAffordance = new wptheme_AsyncMenuAffordance( "wptheme_selected_page_menu", "wptheme_selected_page_menu_img", "/software/xl/XLThemes/themes/html/xl4Theme/colors/default/menu_selected_black.gif", "/software/xl/XLThemes/themes/html/xl4Theme/colors/default/menu_selected_disabled.gif" );
+
+	wptheme_ContextMenuUtils.topNavPageMenu.init( pageMenuURL, false, "No actions currently available.", "/software/xl/XLThemes/themes/html/xl4Theme/colors/default/context_loading.gif", topNavAffordance );
+	wptheme_ContextMenuUtils.sideNavPageMenu.init( pageMenuURL, false, "No actions currently available.", "/software/xl/XLThemes/themes/html/xl4Theme/colors/default/context_loading_side.gif", sideNavAffordance ); 
+})();
+
+wptheme_QuickLinksShelf.cookieName = "nullQLS";
+
+</script>
+
+
+
+	<meta name="Description" content="Xtreme Leverage Portal">
+	<meta name="Keywords" content="software sales, software, information, DB2, Lotus, Tivoli, Rational, Websphere, Industry, Specialty">
+	<meta name="Owner" content="xl@us.ibm.com">
+	<meta name="Feedback" content="xl@us.ibm.com">
+	<meta name="Robots" content="index,follow">
+	<meta name="Security" content="IBM internal use only">
+	<meta name="Source" content="v8 template generator">
+	<meta name="IBM.Country" content="US">
+	<meta name="DC.Date" scheme="iso8601" content="2004-02-05">
+	<meta name="DC.Language" scheme="rfc1766" content="en">
+	<meta name="DC.Rights" content="Copyright (c) 2001,2004 by IBM Corporation">
+	<meta name="DC.Type" scheme="IBM_ContentClassTaxonomy" content="ZZ999">
+	<meta name="DC.Subject" scheme="IBM_SubjectTaxonomy" content="taxonomy">
+	<meta name="DC.Publisher" content="IBM Corporation">
+	<meta name="IBM.Effective" scheme="W3CDTF" content="2004-03-06">
+	<meta name="IBM.Industry" scheme="IBM_IndustryTaxonomy" content="ZZ">
+
+	<script language="javascript" type="text/javaScript" src="cognos_screenshots_files/salesPlayFunctions.js"></script>
+	<script language="JavaScript" type="text/JavaScript" src="cognos_screenshots_files/urlhandler.js"></script>
+
+	<!-- Dojo Part 1 -->
+	<link rel="stylesheet" type="text/css" href="cognos_screenshots_files/tundra.css">
+
+	<style type="text/css" media="all">
+	<!--
+	@import url("/software/xl/images/sswtheme/w3/css/screen.css");
+	@import url("/software/xl/images/sswtheme/w3/css/portal.css"); 
+	@import url("/software/xl/images/sswtheme/w3/css/interior-1-col.css");
+	@import url("/software/xl/images/sswtheme/w3/css/tables.css");
+	@import url("/software/xl/images/sswtheme/w3/css/icons.css");
+	@import url("/software/xl/images/sswtheme/w3/css/portlets.css");
+	@import url("/software/xl/images/sswtheme/w3/css/edit.css");
+	@import url("/software/xl/images/sswtheme/w3/css/essential-links.css");
+	@import url("/software/xl/images/sswtheme/w3/css/search.css");
+	@import url("/software/xl/images/sswtheme/w3/css/market-report.css");
+	@import url("/software/xl/images/sswtheme/w3/css/news.css");
+	@import url("/software/xl/images/sswtheme/w3/css/youandibm.css");
+	-->
+	</style>
+
+	<!-- Dojo Part 2 -->
+	<script type="text/javascript">
+	var djConfig = {parseOnLoad: false, locale: 'en'.replace(/_/, '-').replace(/iw/, 'he').toLowerCase(), baseUrl: "/software/xl/widgets/js/dojo/"};		 
+	</script>
+
+	<script type="text/javascript" src="cognos_screenshots_files/dojo.js"></script>
+	<script type="text/javascript" src="cognos_screenshots_files/dijit.js"></script>
+
+	<script type="text/javascript" src="cognos_screenshots_files/ssw-metrics.js"></script>
+
+	<style type="text/css">
+		@import "/software/xl/images/sswtheme/xl_w3v8css_override.css";
+	</style>
+
+
+<style type="text/css">
+#tabs {
+left:5px;
+margin-bottom:7px;
+position:relative;
+top:7px;
+}
+
+#tabs span.on span.inner {
+border-color:#BBBBBB #BBBBBB #FFFFFF;
+border-style:solid;
+border-width:2px 2px 3px;
+}
+
+#tabs span span.inner {
+padding:4px 5px 7px 6px;
+}
+
+#tabs span.on a {
+background:transparent none repeat scroll 0 0;
+border:medium none;
+}
+
+#tabs span a {
+padding:0;
+}
+
+#tabs span.off {
+padding:4px 2px 7px 1px;
+}
+
+#tabs span.off span.inner {
+background:transparent url(http://w3.ibm.com/ui/v8/images/bg-tab-off.gif) repeat-x scroll 0 0;
+}
+
+#tabs span.off a {
+background:transparent none repeat scroll 0 0;
+}
+
+.wptheme-tabMenuLink {
+margin-left:auto;
+}
+
+.wpsPortletTitleBar {
+font-weight:normal;
+border-bottom:none;
+}
+</style>
+
+<link type="text/css" href="cognos_screenshots_files/styles.css" rel="stylesheet"></head><body onload="if (javascriptEventController) { javascriptEventController.enableAll(); }if(typeof(getSection)=='function')getSection();" class="wptheme-mainbody tundra">
+<!-- start accessibility prolog -->
+<div class="skip"><a href="#page-index" accesskey="2">Skip to index of portlets on this page</a></div>
+<div id="access-info">
+	<p class="access">The access keys for this page are:</p>
+	<ul class="access">
+		<li>ALT plus 0 links to this site's <a href="http://w3.ibm.com/w3/access-stmt.html" accesskey="0">Accessibility Statement.</a></li>
+		<li>ALT plus 1 links to the w3.ibm.com home page.</li>
+		<li>ALT plus 2 skips to index of portlets on this page.</li>
+		<li>ALT plus 4 skips to the search form.</li>
+		<li>ALT plus 9 links to the feedback page.</li>
+	</ul>
+	<p class="access">Additional accessibility information for w3.ibm.com can be found <a href="http://w3.ibm.com/w3/access-stmt.html">on the w3 Accessibility Statement page.</a></p>
+</div>
+<!-- end accessibility prolog -->
+
+<!-- start masthead //////////////////////////////////////////// -->
+<div id="masthead" style="position: relative;">
+	<h2 class="access">Start of masthead</h2>
+	<div id="prt-w3-sitemark"><img src="cognos_screenshots_files/id-w3-sitemark-simple.gif" alt="w3 sitemark" height="33" width="54"></div>
+	<div id="prt-ibm-logo"><img src="cognos_screenshots_files/id-ibm-logo-black.gif" alt="IBM Logo" height="15" width="44"></div>
+	<div id="w3-sitemark"><img src="cognos_screenshots_files/id-w3-sitemark-large.gif" alt="w3 sitemark" usemap="#sitemark_map" height="70" width="266">
+		<map id="sitemark_map" name="sitemark_map">
+			<area shape="rect" alt="Link to W3 Home Page" coords="0,0,130,70" href="http://w3.ibm.com/" accesskey="1">
+		</map>
+	</div>
+		<div id="personalization-links">
+	
+		<a href="http://w3-103.ibm.com/software/xl/myportal">Sign in</a>
+	
+	
+	</div>
+
+	<div id="site-title-only" translate="0">Software Sellers Workplace</div>
+	<div id="ibm-logo"><img src="cognos_screenshots_files/id-ibm-logo.gif" alt="IBM Logo" height="15" width="44"></div>
+	<div id="persistent-nav">
+		<a id="w3home" href="http://w3.ibm.com/"> w3 Home </a>
+		<a id="bluepages" href="http://w3.ibm.com/bluepages/"> BluePages </a>
+		<a id="helpnow" href="http://w3.ibm.com/help/"> HelpNow </a>
+		<a id="feedback" href="http://w3.ibm.com/feedback/" accesskey="9" style="border-right: 1px solid rgb(136, 170, 238);"> Feedback </a>
+		
+	</div>
+	<div id="header-search">
+		<table border="0" cellpadding="0" cellspacing="0">
+		<tbody><tr valign="top">
+		<td>
+		<form action="http://w3.ibm.com/search/do/search" method="get" id="search">
+		<table class="header-search" cellpadding="0" cellspacing="0">
+		<tbody><tr><td class="label" style="padding: 0pt 0pt 2px; text-align: left;"><label for="header-search-field">Search w3</label></td><td></td></tr>
+		<tr><td class="field" style="padding-left: 0pt;"><input id="header-search-field" name="qt" accesskey="4" type="text"></td><td class="submit"><label class="access" for="header-search-btn">Go button</label><input id="header-search-btn" alt="Go" src="cognos_screenshots_files/btn-go-dark.gif" type="image"></td></tr>
+		</tbody></table>
+		</form>
+		</td>
+		<td width="20">&nbsp;</td>
+		<td>
+			<div id="trans-widget" style="font-weight: bold; position: static;">
+			<div style="margin-bottom: 2px; color: rgb(255, 255, 255);">Translate this page</div>
+			<script type="text/javascript" src="cognos_screenshots_files/tw.js"></script><select id="ietran_ui_langselect" onchange="translate()" style="font-family: verdana; font-size: 8pt;"><option value="" selected="selected">Select Language</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=ar_ar">Arabic</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=de_de">German</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=es_es">Spanish</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=fr_fr">French</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=it_it">Italian</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=pt_br">Portuguese</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=zh_cn">Chinese Simplified</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=zh_tw">Chinese Traditional</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=ko_kr">Korean</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=ja_jp">Japanese</option><option value="a=trqt&amp;app=ibmswg.SSW&amp;sl=en_us&amp;tl=ru_ru">Russian</option></select>
+			</div>
+		</td>
+		</tr>
+		</tbody></table>
+	</div>
+	<!-- start error -->
+	<div id="browser-warning"><img src="cognos_screenshots_files/icon-system-status-alert.gif" alt="Error" height="10" width="12">
+ This Web page is best used in a modern browser. Since your browser is 
+no longer supported by IBM, please upgrade your web browser at the <a href="http://w3.ibm.com/download/standardsoftware/">ISSI site</a>.</div>
+	<!-- stop error -->
+</div>
+<!-- stop masthead //////////////////////////////////////////// -->
+
+
+  <table id="wptheme-pageWrapper" class="wptheme-pageWrapper" border="0" cellpadding="0" cellspacing="0" width="100%">
+    <tbody><tr><td>
+      <div class="wptheme-access"><a href="#wpsMainContent">Skip to main content</a></div>
+	  <div id="content" style="margin-top: 0px;">
+      <div style="position: relative;">
+        
+          
+		    
+			
+			
+            
+
+
+
+
+
+
+<div id="tabs">
+<h2 class="access">Start portal tabs</h2>
+
+
+   
+   
+   
+   <div id="rule">
+   
+      
+      
+      
+      
+         <span id="tab_1" class="outer off"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFN1BMRDBJU0hMUFY5VjMwQTU%21/">News</a>
+         </span></span>
+      
+   
+      
+      
+      
+      
+         <span id="tab_2" class="outer off"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFRlQ1MDBJUzlKM1RETDAwRzI%21/">Products</a>
+         </span></span>
+      
+   
+      
+      
+      
+      
+         <span id="tab_3" class="outer off"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFRlQ1MDBJUzlKM1RETDAwSzI%21/">Industries</a>
+         </span></span>
+      
+   
+      
+      
+      
+      
+         <span id="tab_4" class="outer off"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFRlQ1MDBJUzlKM1RETDAwSTc%21/">Technical</a>
+         </span></span>
+      
+   
+      
+      
+      
+      
+         <span id="tab_5" class="outer off"><span class="inner"><a href="http://swglearning.raleigh.ibm.com/">Learn</a>
+         </span></span>
+      
+   
+      
+      
+      
+      
+         <span id="tab_6" class="outer off"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFRlQ1MDBJUzlKM1RETDAwMTE%21/">SWAN</a>
+         </span></span>
+      
+   
+      
+      
+      
+      
+         <span id="tab_7" class="outer off"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFRlQ1MDBJUzlKM1RETDAwUDM%21/">Search</a>
+         </span></span>
+      
+   
+      
+      
+      
+         
+         <span style="display: none;" id="tab_8" class="outer on" onmouseover="wptheme_ContextMenuUtils.topNavPageMenu.showAffordance(); return false;" onmouseout="wptheme_ContextMenuUtils.topNavPageMenu.hideAffordance(); return false;"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFN1BMRDBJU0hMUFY5VjMwMTE%21/" onfocus="wptheme_ContextMenuUtils.topNavPageMenu.showAffordance();">
+            Content (hidden)
+         </a>
+         
+         	  
+            <a id="wptheme_selected_page_menu" class="wptheme-tabMenuLink" href="javascript:void(0);" onclick="javascript:wptheme_ContextMenuUtils.topNavPageMenu.show(); return false;" onkeypress="javascript:wptheme_ContextMenuUtils.topNavPageMenu.show(event); return true;" style="cursor: default;">
+             <img id="wptheme_selected_page_menu_img" class="wptheme-tabMenuLink" src="cognos_screenshots_files/menu_selected_disabled.gif" alt="Page Menu" title="Page Menu">
+            </a>
+            <script type="text/javascript">
+			   //Register the context menu so that the menu can easily be enabled/disabled.
+			   javascriptEventController.register( "wptheme_selected_page_menu" );
+			   javascriptEventController.register( "portalSelectedNode" );
+           </script>			
+
+            
+               
+         
+         	  
+         </span></span>
+      
+      
+   
+      
+      
+      
+      
+         <span id="tab_9" class="outer off"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFVlYzQjBJQU40R1FSTTM0NjQ%21/">My SSW</a>
+         </span></span>
+      
+   
+      
+      
+      
+      
+         <span id="tab_10" class="outer off"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFN1BMRDBJU0hMUFY5VjMwOTY%21/">About</a>
+         </span></span>
+      
+   
+      
+      
+      
+      
+         <span style="display: none;" id="tab_11" class="outer off"><span class="inner"><a href="http://w3-103.ibm.com/software/xl/portal/%21ut/p/c5/04_SB8K8xLLM9MSSzPy8xBz9CP0os3gjA3dXrzAnL1fzAB8XA89gD5-AMMswYwNDQ6B8pFm8s7ujh4m5j4GBhaeziYGniZN_kJGrv4GBpzEB3eEg-_DrB8kb4ACOBvp-Hvm5qfoFuREGWSaOigC8cPIk/dl3/d3/L2dJQSEvUUt3QS9ZQnZ3LzZfMjBHRUpWQkpFVkZLNjBJNklBSlNMODNPMDQ%21/">Competitive (hidden)</a>
+         </span></span>
+      
+   
+   </div>
+
+<script type="text/javascript">
+function handleHiddenTabs(max) {
+	for (var i = 1; i <= max; i++) {
+		var tab = document.getElementById("tab_" + i);
+		if (tab && tab.firstChild.firstChild.innerHTML.search(/\(hidden\)/i) >= 0) {
+			tab.style.display = "none";
+		}
+	}
+}
+handleHiddenTabs(11);
+</script>
+
+   
+   
+
+
+
+
+<div style="position: absolute; top: 5px; right: 13px; color: rgb(187, 221, 255); font-size: 0.9em;"><a style="padding-right: 0.25em; padding-left: 0.5em;" href="http://w3-103.ibm.com/software/xl/portal/help">Help</a></div>
+
+</div>
+
+
+  
+ 
+
+
+          
+        
+        <div class="wptheme-clearing"><!-- --></div>
+      </div>
+      <div id="pageArea" class="wptheme-pageArea">
+
+        <table id="wptheme_pageArea" cellpadding="0" cellspacing="0" height="100%" width="100%">
+          <tbody><tr>
+            <td valign="top" width="100%">
+              <a name="wpsMainContent"></a>
+              
+              <div id="contentMain" class="wptheme-mainContent">
+				 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<table class="layoutRow" cellpadding="0" cellspacing="0"><tbody><tr><td valign="top" width="10"><script type="text/javascript" src="cognos_screenshots_files/DND.js"></script><script type="text/javascript">document._DNDBroker.isBidi=false;</script><div id="wp_dt0" style="display: block;"><table><tbody><tr valign="top"><td></td></tr><tr style="height: 100%;"><td>&nbsp;</td></tr><tr valign="bottom"><td>&nbsp;</td></tr></tbody></table></div><script type="text/javascript">document._DNDB.pART("<dndTgt id='wp_dt0'></dndTgt>");</script></td><td valign="top"><table class="layoutColumn" cellpadding="0" cellspacing="0"><tbody><tr><td><div id="wp_dt1" style="display: block;">&nbsp;
+</div><script type="text/javascript">document._DNDB.pART("<dndTgt id='wp_dt1'></dndTgt>");</script></td></tr><tr><td style="width: 100%;" valign="top"> 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+<a name="7_20GEJVBJE7PLD0ISHLPV9V30H3"></a><div class="wpsPortletBody">
+                
+  
+	<style type="text/css">
+		@import "/software/xl/widgets/js/dijit/themes/w3dojo/w3dojo.css";
+	</style>
+<script type="text/javascript">
+       //updated 6/11/10 9:14 AM CDT
+		dojo.registerModulePath("xl", "/software/xl/widgets/js/xl/");
+
+		dojo.require("dojo.parser");	
+		dojo.require("xl.util._WiringWidget");
+		dojo.require("xl.widget.Bluepages");
+		dojo.require("xl.widget.Document");
+		dojo.require("xl.widget.DocumentList");
+		dojo.require("xl.widget.FeedList");
+		dojo.require("xl.widget.Navigation");
+		dojo.require("xl.widget.PageTitle");
+		dojo.require("xl.widget.PubLink");
+		dojo.require("xl.widget.SalesKit");
+		dojo.require("xl.widget.SwanLinkage");
+		dojo.require("xl.widget.WmcDocument");
+
+		dojo.require("xl.search.SearchInput");
+		dojo.require("xl.search.SearchResults");
+		dojo.require("xl.search.FacetListContainer");
+		dojo.require("xl.search.SimpleSearch");
+	
+		if(typeof(xlWire) == 'undefined'){
+			var xlWire = new xl.util._WiringWidget();
+			dojo.addOnLoad(function(){
+				xlWire.onPageLoad();
+				dojo.parser.parse();
+			});
+		}
+		
+		dojo.back.init();
+
+	</script><iframe style="border: 0pt none; width: 1px; height: 1px; position: absolute; visibility: hidden; bottom: 0pt; right: 0pt;" name="dj_history" id="dj_history" src="cognos_screenshots_files/iframe_history.htm"></iframe>
+      
+<div>
+	<p id="breadcrumbs"><a href="javascript:history.go(-1)">Return to the previous page</a> &gt;</p>
+	<div class="article" xmlns="http://www.w3.org/1999/xhtml">&nbsp;<style type="text/css">
+#content-body-with-sidebar		 { 
+		 float:left !important;
+		 width:66.3% !important; 
+		 border-right:1px solid #ccc !important; 
+		 background:#fff !important; 
+}
+
+* html #content-body-with-sidebar		 {
+		 width:55.3% !important; 
+		 wid\th:66.6% !important; 
+}
+
+#content-sidebar		 { 
+		 float:left !important;
+		 width:28% !important;
+		 margin-left:1.5em !important; 
+		 padding-right:10px !important; display: inline;
+}
+
+* html #content-sidebar		 { 
+		 width:20% !important;
+		 wid\th:28% !important;
+		 height:1% !important; /*guarantee visibility in IE*/
+} 
+
+</style>&nbsp;<script language="JavaScript" type="text/javascript">
+	  if ( document.forms['wpsPageGroupSelectionForm'] != null ){
+	     document.forms['wpsPageGroupSelectionForm'].reset();
+	 }
+        if(typeof(getSection)=='function') getSection();
+
+
+        updateTitle('Cognos Screenshots');
+
+	</script>
+   <div>
+      <script src="cognos_screenshots_files/playScripts.js" type="text/javascript"> </script>
+      <a name="top"> </a>
+      <div id="page_title_and_date">
+         <p>
+            <strong>This content can be shared with the public. </strong> </p>
+         <h1>Cognos Screenshots </h1>
+         <p>
+            <strong>Updated on:  </strong>25 Oct 2010 </p> </div>
+      <table align="center">
+         <tbody><tr>
+            <td align="center">
+               <center>
+                  <img src="cognos_screenshots_files/ban_ibm_cognos_demos.jpg" alt="Cognos Demos Homepage"> </center> </td> </tr> </tbody></table>
+      <br>
+      <div id="fourth-level">
+         <table class="page-tabs" cellpadding="0" cellspacing="0">
+            <tbody>
+               <tr valign="top">
+                  <td class="off">
+                     <div class="tab">
+                        <a href="http://w3.ibm.com/software/xl/portal/content?synKey=A937556E74011X50">Cognos Demos Homepage </a> </div> </td>
+                  <td class="off">
+                     <div class="tab">
+                        <a href="http://w3.ibm.com/software/xl/portal/content?synKey=W947752O20865U39">All Demos </a> </div> </td>
+                  <td class="off">
+                     <div class="tab">
+                        <a href="http://w3.ibm.com/software/xl/portal/content?synKey=P588143V09603F42">Demo Platforms </a> </div> </td>
+                  <td class="off">
+                     <div class="tab">
+                        <a href="http://w3.ibm.com/software/xl/portal/content?synKey=W126462F20469T63">Industry Demos </a> </div> </td>
+                  <td class="off">
+                     <div class="tab">
+                        <a href="http://w3.ibm.com/software/xl/portal/content?synKey=A420208O53421O43">Product Demos </a> </div> </td>
+                  <td class="off">
+                     <div class="tab">
+                        <a href="http://w3.ibm.com/software/xl/portal/content?synKey=K254634R66763P83">Synergy Demos </a> </div> </td>
+                  <td class="on">
+                     <div class="tab">
+                        <a href="http://w3.ibm.com/software/xl/portal/content?synKey=O721209O75227H62">Cognos Screenshots </a> </div> </td>
+                  <td class="off">
+                     <div class="tab">
+                        <a href="http://w3.ibm.com/software/xl/portal/content?synKey=G345482Z54109Y70">Related Websites </a> </div> </td>
+                  <td class="empty"> </td> </tr> </tbody> </table> </div>
+      <br>
+      <p>This page contains screenshots of Cognos software that are 
+intended for public use such as inside a Powerpoint presentation or in 
+an RFP response or an email to a customer/partner, for example. </p>
+      <p>
+         <b>Click the screenshot </b> to download the full quality version. </p>
+      <p>If you have a request, please let us know. Also, if you have 
+screenshots that you feel would be valuable on this page, please contact
+ us and we will post them here. Screenshots should be taken at 1024x768 
+or 1280x1024 resolution. </p>
+      <p>When emailing us your screenshot, please Winzip the pictures. Contact information is at the bottom of this page. </p>
+      <p>
+         <a href="#BI">Click here for BI Screenshots </a> </p>
+      <p>
+         <a href="#FPM">Click here for FPM Screenshots </a> </p>
+      <table class="basic-table" summary="layout" border="1" cellpadding="0" cellspacing="1" width="100%">
+         <tbody>
+            <tr class="blue-med-dark">
+               <th>Title </th>
+               <th>Picture (Click picture for larger size) </th> </tr>
+            <tr>
+               <td width="30%">
+                  <a name="BI">Airline Baggage </a> </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17519.jpg/Airline_Baggage.jpg">
+                     <img alt="Airline Baggage" src="cognos_screenshots_files/Airline_Baggage.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Campaign Performance </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17520.jpg/Campaign_Performance.jpg">
+                     <img alt="Campaign Performance" src="cognos_screenshots_files/Campaign_Performance.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Campaigns </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17521.jpg/Campaigns.jpg">
+                     <img alt="Campaigns" src="cognos_screenshots_files/Campaigns.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Clynical Cycle Times </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17522.jpg/Clinical_Cycle_Times.jpg">
+                     <img alt="Clynical Cycle Times" src="cognos_screenshots_files/Clinical_Cycle_Times.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Distribution </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17523.jpg/Distribution.jpg">
+                     <img alt="Distribution" src="cognos_screenshots_files/Distribution.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Education Assessment </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17524.jpg/Education_Assesment.jpg">
+                     <img alt="Education Assessment" src="cognos_screenshots_files/Education_Assesment.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Employee Survey </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17525.jpg/Employee_Survey.jpg">
+                     <img alt="Employee Survey" src="cognos_screenshots_files/Employee_Survey.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Executive Dashboard </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17526.jpg/Executive_Dashboard.jpg">
+                     <img alt="Executive Dashboard" src="cognos_screenshots_files/Executive_Dashboard.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30">Executive Divisions </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17527.jpg/Executive_Divisions.jpg">
+                     <img alt="Executive Divisions" src="cognos_screenshots_files/Executive_Divisions.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Fill Rate </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17528.jpg/Fill_Rate.jpg">
+                     <img alt="Fill Rate" src="cognos_screenshots_files/Fill_Rate.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Health Care </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17530.jpg/Healthcare.jpg">
+                     <img alt="Health Care" src="cognos_screenshots_files/Healthcare.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Health Care #2 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17529.jpg/Healthcare2.jpg">
+                     <img alt="Health Care #2" src="cognos_screenshots_files/Healthcare2.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Human Resources - Aging Workforce </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/21337.jpg/Aging_Workforce.jpg">
+                     <img alt="Human Resources - Aging Workforce" src="cognos_screenshots_files/Aging_Workforce.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Human Resources - Dashboard Diversity </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/21334.jpg/Dashboard_Diversity.jpg">
+                     <img alt="Human Resources - Dashboard Diversity" src="cognos_screenshots_files/Dashboard_Diversity.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Human Resources - Dashboard Executive </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/21335.jpg/Dashboard_Executive.jpg">
+                     <img alt="Human Resources - Dashboard Executive" src="cognos_screenshots_files/Dashboard_Executive.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Human Resources - Dashboard Turnover </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/21336.jpg/Dashboard_Turnover.jpg">
+                     <img alt="Human Resources - Dashboard Turnover" src="cognos_screenshots_files/Dashboard_Turnover.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Human Resources - Performance Dashboard </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/21338.jpg/HR_Performance_Dashboard.jpg">
+                     <img alt="Human Resources - Performance Dashboard" src="cognos_screenshots_files/HR_Performance_Dashboard.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Human Resources - HR Portal Page </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/21339.jpg/HR_Portal_Page.jpg">
+                     <img alt="Human Resources - HR Portal Page" src="cognos_screenshots_files/HR_Portal_Page.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Human Resources - Workforce Planning Dashboard </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/21340.jpg/Workforce_Planning_Dashboard.jpg">
+                     <img alt="Human Resources - Workforce Planning Dashboard" src="cognos_screenshots_files/Workforce_Planning_Dashboard.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Insurance </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17531.jpg/Insurance.jpg">
+                     <img alt="Insurance" src="cognos_screenshots_files/Insurance.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Insurance #2 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17532.jpg/Insurance2.jpg">
+                     <img alt="Insurance #2" src="cognos_screenshots_files/Insurance2.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Janine </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17533.jpg/Janine.jpg">
+                     <img alt="Janine" src="cognos_screenshots_files/Janine.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Logistics </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17534.jpg/Logistics.jpg">
+                     <img alt="Logistics" src="cognos_screenshots_files/Logistics.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Market Risk Summary Now </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17535.jpg/Market_Risk_Summary_Now_2.jpg">
+                     <img alt="Market Risk Summary Now" src="cognos_screenshots_files/Market_Risk_Summary_Now_2.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Performance Management Portal </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17536.jpg/Performance_Management_Portal.jpg">
+                     <img alt="Performance Management Portal" src="cognos_screenshots_files/Performance_Management_Portal.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Portfolio Management Now </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17537.jpg/Portfolio_Management_Now.jpg">
+                     <img alt="Porfolio Management Now" src="cognos_screenshots_files/Portfolio_Management_Now.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Sales Dashboard With Slider </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17538.jpg/Sales_Dashboard_With_Slider.jpg">
+                     <img alt="Sales Dashboard With Slider" src="cognos_screenshots_files/Sales_Dashboard_With_Slider.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">Store Performance </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/17539.jpg/Store_Performance.jpg">
+                     <img alt="Store Performance" src="cognos_screenshots_files/Store_Performance.jpg" height="50%" width="50%"> </a> </td> </tr> </tbody> </table>
+      <table class="basic-table" summary="layout" border="1" cellpadding="0" cellspacing="1" width="100%">
+         <tbody>
+            <tr class="blue-med-dark">
+               <th>FPM Screenshots </th> </tr> </tbody> </table>
+      <table class="basic-table" summary="layout" border="1" cellpadding="0" cellspacing="1" width="100%">
+         <tbody>
+            <tr class="blue-med-dark">
+               <th>Title </th>
+               <th>Picture (Click picture for larger size) </th> </tr>
+            <tr>
+               <td width="30%">
+                  <a name="FPM">FPM 1 </a> </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25951.jpg/46502/FPM1.jpg">
+                     <img alt="fpm 1" src="cognos_screenshots_files/FPM1.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 2 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25952.jpg/46502/FPM2.jpg">
+                     <img alt="fpm2" src="cognos_screenshots_files/FPM2.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 3 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25953.jpg/46502/FPM3.jpg">
+                     <img alt="fpm3" src="cognos_screenshots_files/FPM3.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 4 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25954.jpg/46502/FPM4.jpg">
+                     <img alt="fpm4" src="cognos_screenshots_files/FPM4.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 5 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25955.jpg/46502/FPM5.jpg">
+                     <img alt="fpm5" src="cognos_screenshots_files/FPM5.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 6 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25956.jpg/46502/FPM6.jpg">
+                     <img alt="fpm6" src="cognos_screenshots_files/FPM6.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 7 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25957.jpg/46502/FPM7.jpg">
+                     <img alt="fpm7" src="cognos_screenshots_files/FPM7.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 8 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25958.jpg/46502/FPM8.jpg">
+                     <img alt="fpm8" src="cognos_screenshots_files/FPM8.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 9 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25959.jpg/46502/FPM9.jpg">
+                     <img alt="fpm9" src="cognos_screenshots_files/FPM9.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 10 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25960.jpg/46502/FPM10.jpg">
+                     <img alt="fpm10" src="cognos_screenshots_files/FPM10.jpg" height="50%" width="50%"> </a> </td> </tr>
+            <tr>
+               <td width="30%">FPM 11 </td>
+               <td width="70%">
+                  <a href="http://w3.tap.ibm.com/data/medialibrary/additional/25961.jpg/46502/FPM11.jpg">
+                     <img alt="fpm11" src="cognos_screenshots_files/FPM11.jpg" height="50%" width="50%"> </a> </td> </tr> </tbody> </table>
+      <br>
+   </div>
+   <div id="content-body-with-sidebar" align="left">
+      <h4>Ask a question</h4><div style="" title="" widgetid="xl_widget_Bluepages_0" id="xl_widget_Bluepages_0" class="xlCollapsible">
+	<div aria-haspopup="true" style="display: none;" role="button" dojoattachevent="onclick:toggle,onkeypress: _onTitleKey,onfocus:_handleFocus,onblur:_handleFocus" tabindex="0" wairole="button" class="xlCollapsibleTitle dijitOpen" dojoattachpoint="focusNode">
+		<div dojoattachpoint="arrowNode" class="dijitInline dijitArrowNode"><span dojoattachpoint="arrowNodeInner" class="dijitArrowNodeInner"></span></div>
+		<div style="-moz-user-select: none;" dojoattachpoint="titleNode" class="xlCollapsibleTextNode"></div>
+	</div>
+	<div class="xlCollapsibleContentOuter" dojoattachpoint="hideNode">
+		<div style="height: auto;" class="dijitReset" dojoattachpoint="wipeNode">
+			<div aria-labelledby="" role="region" class="xlCollapsibleContentInner" dojoattachpoint="containerNode" wairole="region" tabindex="-1">&nbsp;<script language="JavaScript" type="text/javascript">
+			function BluecardOptions(){; }
+			BluecardOptions.AUTO_SCAN=false; 
+			BluecardOptions.ALWAYS_ADD = [["ejuel@us.ibm.com", "bcable"]];
+              Bluecard.rescanDocument();
+		</script>
+<p class="gray-dark">
+			For more information concerning this article, please contact
+			<a href="http://w3.ibm.com/bluepages/simpleSearch.wss?searchBy=Internet+address&amp;location=All+locations&amp;searchFor=ejuel@us.ibm.com" target="_blank" id="bcable">Eric C. Juel</a>
+			(<a href="mailto:ejuel@us.ibm.com">ejuel@us.ibm.com</a>)
+		</p>
+</div>
+		</div>
+	</div>
+</div></div>
+   <script type="text/javascript" src="cognos_screenshots_files/load.js"> </script><script src="cognos_screenshots_files/bluecard.js" type="text/javascript"></script>
+   <script language="JavaScript 1.4" xml:space="preserve" type="text/javascript" src="cognos_screenshots_files/load_002.js"> </script><script src="cognos_screenshots_files/feeder.js" type="text/javascript"></script>
+</div>
+
+</div></div></td></tr><tr><td><div id="wp_dt2" style="display: block;">&nbsp;
+</div><script type="text/javascript">document._DNDB.pART("<dndTgt id='wp_dt2'></dndTgt>");</script></td></tr></tbody></table></td><td style="width: 10px;" valign="top"><div id="wp_dt3" style="display: block;"><table><tbody><tr valign="top"><td></td></tr><tr style="height: 100%;"><td>&nbsp;</td></tr><tr valign="bottom"><td>&nbsp;</td></tr></tbody></table></div><script type="text/javascript">document._DNDB.pART("<dndTgt id='wp_dt3'></dndTgt>");</script></td></tr></tbody></table>
+				<p class="terms"><a href="http://w3.ibm.com/w3/info_terms_of_use.html">Terms of use</a></p>
+			  </div>
+			</td>
+          </tr>
+        </tbody></table>
+        
+      </div>
+      
+	  </div>
+      </td>
+    </tr>
+  </tbody></table>
+  
+
+	
+<!-- accessibility page index -->
+<div>
+	<h2 class="access">A list of all portlets on this page.</h2>
+	<ul id="page-index" class="access">
+<li><a href="#7_20GEJVBJE7PLD0ISHLPV9V30H3">Content widget for SSW 4.4 content page</a></li>
+
+
+	</ul>
+</div>
+
+
+	<script language="JavaScript" type="text/JavaScript">
+	var currentTab = document.getElementById("portalSelectedTab");
+	if (currentTab) {
+		currentTab.href = processUrl(currentTab.href, true);
+	}
+	</script>
+
+<!-- JCP - 2010 Jan 09 - Unica Netinsight integration -->
+<!-- Unica Netinsight - begin -->
+	<script type="text/javascript">
+		var cm_groupID = "XL";
+		var cm_ClientID="90170997";
+	</script>
+	<div id="ibm-metrics">
+	<script src="cognos_screenshots_files/ntpagetag.js" type="text/javascript">//</script>
+	</div>
+<!-- Unica Netinsight - end -->
+
+<!-- JCP - 2010 Mar 30 - SSW Metrics using CMLogger -->
+<!-- SSW Metrics - begin -->
+	<script type="text/javascript">
+		dojo.require("dojo.parser");
+		dojo.require("xl.widget.CMPageLogger");
+		var _cmLogger = new xl.util._CMLogging({cm_groupID:"XL", cm_pageID:"currentTab", cm_clientID:cm_ClientID, loggingEnabled:"true"},null);
+	</script>
+	<div class="w3dojo tundra">
+	<div widgetid="CMLogger" id="CMLogger" jsid="CMLogger" dojotype="xl.widget.CMPageLogger" cm_groupid="XL" cm_pageid="currentTab" cm_clientid="90170997" loggingenabled="true"></div>
+	</div>
+<!-- SSW Metrics - end -->
+
+<!-- last updated: 20101029 -->
+</body></html>

@@ -1,0 +1,34 @@
+<h3>
+Appendix H: Online Shopping Case Study - Deisgn for C++ Implementation
+<p>
+An example of a few modules (method) for an online shopping Application is presented below:
+
+<pre>
+Module Name:  CCustomerReport::getQualifications
+Module Type: Method
+Return Type: void
+Input arguments: None
+Output arguments: None
+Error messages: If the date is entered incorrectly
+Files accessed: None
+Files changed: None
+Modules called: CDate:validDate
+Narrative: Retrieves and validates the order date
+ from the customer
+
+Module Name:  CCustomerReport::print
+Module Type: Method
+Return Type: void
+Input arguments: None
+Output arguments: None
+Error messages: None
+Files accessed: None
+Files changed: None
+Modules called: CReport:print
+Narrative: Extends the base class print method; initializes the
+  array that keeps track of orders, calls the base class
+  print method, and then prints out the array
+</pre>
+
+Each module corresponds to an IC card.  The narrative is the
+function's processing narrative from the requirements specification.

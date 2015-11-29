@@ -1,0 +1,336 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<base target=1502main>
+<link rel=File-List href="LibOpen_files/filelist.xml">
+<link rel=Edit-Time-Data href="LibOpen_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Creating a Library in Mentor Tools</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Sam Dickerson</o:Author>
+  <o:LastAuthor>Sam Dickerson</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>7</o:TotalTime>
+  <o:Created>2006-08-24T21:47:00Z</o:Created>
+  <o:LastSaved>2006-08-24T21:55:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>742</o:Words>
+  <o:Characters>4233</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>35</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4966</o:CharactersWithSpaces>
+  <o:Version>11.8036</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]-->
+<meta name=Author content="Leo Selavo">
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white
+background="http://www.cs.pitt.edu/~don/coe1502/current/Unit1/Unitbkg.jpg"
+lang=EN-US link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center'>Setting up Libraries in Mentor Tools</h2>
+
+<h3 align=center style='text-align:center'>Getting started</h3>
+
+<p>You'll see the following window the first time you open FPGA Advantage.
+Click the <b>Do not show this dialog again</b> checkbox and click OK. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=398
+height=371 id="_x0000_i1028" src=fig1.jpg></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>The project file contains information about the libraries
+that you are using. Let's create your project. Go to File | New | Project. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=309
+height=299 id="_x0000_i1029" src=newproject.jpg></p>
+
+<p>Your project name will be &quot;tutorial&quot;. You can enter a short
+description if you wish. The directory must <span class=GramE>located</span>
+somewhere inside your <b>PERSONAL DIRECTORY</b>, for example:
+&quot;h:\1502_project&quot;. The name of the default working library will be
+&quot;ALU&quot;. Click Next. </p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p align=center style='text-align:center'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:365.25pt;
+ height:279.75pt'>
+ <v:imagedata src="LibOpen_files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=487 height=373
+src="LibOpen_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p>Click <span class=GramE>Next</span> here, too. </p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p align=center style='text-align:center'><!--[if gte vml 1]><v:shape id="_x0000_i1026"
+ type="#_x0000_t75" style='width:365.25pt;height:279.75pt'>
+ <v:imagedata src="LibOpen_files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=487 height=373
+src="LibOpen_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p>Click &quot;Open the Project&quot; and then click Finish. </p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p align=center style='text-align:center'><!--[if gte vml 1]><v:shape id="_x0000_i1027"
+ type="#_x0000_t75" style='width:365.25pt;height:279.75pt'>
+ <v:imagedata src="LibOpen_files/image005.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=487 height=373
+src="LibOpen_files/image006.jpg" v:shapes="_x0000_i1027"><![endif]></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p>This window is the <b>Design Manager</b>. The Design Manager is your tool
+for creating and managing libraries. A library is simply a collection of
+designs, or <i>components</i>, which may be used within other designs (in other
+libraries). </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=820
+height=650 id="_x0000_i1030" src=newproject5.jpg></p>
+
+<p>Click the project tab (<img width=113 height=60 id="_x0000_i1031"
+src=newproject6.jpg>) to see your library mappings. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=820
+height=650 id="_x0000_i1032" src=newproject7.jpg></p>
+
+<p>In creating our project, we have already created a new library called ALU.
+This is the library in which we'll be designing the ALU. After you complete the
+design of the ALU, you will use a component from this library in the design of
+your MIPS processor. We need to create another library, <span class=SpellE><b>COELib</b></span>,
+which will contain pre-made designs that you will use in the design of your
+ALU. When we create a new library in the Design Manager, we're actually only
+creating the path mappings to the design data. Design Manager has already
+created the ALU library for us, so we just need to create the <span
+class=SpellE>COELib</span> library. Let's get started. </p>
+
+<p>Go to File | New | Library. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=303
+height=291 id="_x0000_i1033" src=fig3.jpg></p>
+
+<p>From this dialog box, choose &quot;<b>Regular</b>&quot; and click <span
+class=GramE>Next</span>. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=436
+height=329 id="_x0000_i1034" src=fig4.jpg></p>
+
+<p>The library name is &quot;<span class=SpellE>COELib</span>&quot; and the
+root directory for this library is <b>I:\1502</b>. Click Next. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=436
+height=337 id="_x0000_i1035" src=fig9.jpg></p>
+
+<p><span class=GramE>In the following window, unselect &quot;Make this the
+default library,&quot; since by default your new designs will be saved in the
+ALU library, not the <span class=SpellE>COELib</span> library.</span> Next,
+click Finish. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=436
+height=337 id="_x0000_i1036" src=fig9a.jpg></p>
+
+<p>You now have two libraries. The ALU library is the library where you will be
+storing your designs for this tutorial. The <span class=SpellE>COELib</span> library
+is the library where we have provided you several components that you will need
+later on. Use the tabs (<img width=129 height=43 id="_x0000_i1037"
+src=fig11.jpg>) at the bottom of the Design Manager to switch between the
+Project View and the Library View. Go to the Project View. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=820
+height=650 id="_x0000_i1038" src=fig12.jpg></p>
+
+<p>Here you'll see the new libraries you've added, plus several others that are
+there by default. If you double-click the <span class=SpellE>COELib</span>
+library, a new &quot;Design Explorer&quot; tab will open that will allow you to
+look at the contents of the <span class=SpellE>COELib</span> library. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=820
+height=713 id="_x0000_i1039" src=fig15.jpg></p>
+
+<h4><u>If you are the second member of your group to use this software, do the
+following. Otherwise, skip to the next section.</u></h4>
+
+<p>As the second group member to open FPGA Advantage, you will need to open the
+project file your teammate created. Go to File | Open Project. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=189
+height=291 id="_x0000_i1040" src=openproject.jpg></p>
+
+<p>Browse over to your group directory and select the tutorial project file.
+Click OK on this window. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=439
+height=298 id="_x0000_i1041" src=openproject2.jpg></p>
+
+<p>Your library mappings are now consistent with your partners! </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=820
+height=650 id="_x0000_i1042" src=fig12.jpg></p>
+
+<p>Now let's start building our ALU...<a
+href="http://www.cs.pitt.edu/~don/coe1502/current/Unit1/ALUBlock/ALU_Block.html">Click
+here to continue.</a> </p>
+
+</div>
+
+</body>
+
+</html>

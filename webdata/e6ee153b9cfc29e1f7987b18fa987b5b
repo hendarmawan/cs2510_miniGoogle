@@ -1,0 +1,63 @@
+<title>Standard set of ICs</title>
+<h1>Standard set of ICs</h1>
+
+<pre>
+Messages:
+m0: no message.
+m1: document request from the user.
+m2: document query from the prefetcher to each watcher.
+m3: reply document ID from a watcher to the prefetcher.
+m4: request to turn on prefetching from the system.
+m5: start to prefetch.
+    (this message is from the system when the retrieval latency 
+     from the remote server is too long.)
+m6: time out from the timer.
+
+Actions:
+a0: no action.
+a1: access and save the requested document.
+    (1. access from the local storage or the remote server
+        if not found in the local storage,
+     2. save into the internal memory of the watcher.)
+a2: keep the document ID in the internal memory of the prefetcher.
+a3: estimate what documents to prefetch and then go to access.
+a4: set a timer in the system.
+a5: get the document ID from the internal memory of the prefetcher. 
+
+
+
+Note:
+1. m2 and m3 are internal messages (message among ICs).
+   m1, m4, m5, and m6 are external messages (message from the outside).
+
+2. It is assumed that the prefetcher will start to perform action a3
+   when it has received two repliese or when it has reveiced one reply
+   and then a timeout signal.
+
+3. Prefetcher ignores late m3 and m6 after going back to state S1.
+
+
+
+Mathematical notations:
+
+Watcher (2 transitions):
+T1: f1(m1,s0)=1, g1({},{},{a1},s1)
+T2: f2(m2,s1)=1, g2({m3},{prefetcher ID},{a5},s1)
+</pre>
+<img src="../265fig/1sol1.gif"><br>Figure showing the Watcher IC<br><br>
+
+<pre>
+Prefetcher (8 transitions):
+T1: f1(m4,s0)=1, g1({},{},{},s1)
+T2: f2(m5,s1)=1, g2({m2},{all watcher IDs},{a4},s1)
+T3: f3(m6,s2)=1, g3({},{},{},s1)
+T4: f4(m3,s2)=1, g4({},{},{a2},s3)
+T5: f5(m3,s3)=1, g5({},{},{a2, a3},s1)
+T6: f6(m6,s3)=1, g6({},{},{a3},s1)
+T7: f7(m3,s1)=1, g7({},{},{},s1)
+T8: f8(m6,s1)=1, g8({},{},{},s1)
+</pre>
+
+<img src="../265fig/1sol2.gif"><br>Figure showing the Prefetcher IC<br><br>
+
+<img src="../265fig/1sol3.gif"><br>Figure showing the interaction of ICs<br>

@@ -1,0 +1,78 @@
+<pre>
+Test Plan
+
+1. Purpose: This test plan is to test a computer calendar system for
+   distance learning, DLS.
+
+2. Unit Testing
+
+ 2.1. Calendar module: This module maintains the calendar.
+ 2.1.1. Equivalance classes for calendar module:
+  2.1.1.1. The equivalence classes for item "date":
+   1. mm/dd/yy     acceptable
+   2. anything else   error
+  2.1.1.2. The equivalance classes for item "event-name":
+   1. string of less than 8 alphanumeric characters    acceptable
+   2. string of longer than 7 alphanumeric characters  error
+  .....
+ 2.1.2. Checklist: The following black-box tests will be performed.
+    (   ) Insert a new calendar entry.
+    (   ) Modify an existing calendar entry.
+    (   ) Delete an existing calendar entry.
+    (   ) Create a new DLS.  Insert a few calendar entries.
+    (   ) Save DLS.  Re-open to verify save is correct.
+    ......
+
+ 2.2. Search module: This module searches the calendar.
+ 2.2.1. Equivalence classes: .....
+ 2.2.2. Checklist: The following black-box tests will be performed.
+    (   ) Search for a calendar entry in a DLS.
+    (   ) Search for a calendar entry in all DLSs.
+    (   ) Traverse a link from one calendar page to open another calendar page.
+    ......
+
+ 2.3. .....
+
+ 2.4. Who will perform the tests
+
+3. Integration Testing
+ 3.1. Purpose
+ 3.2. Integration Testing Checklist
+ 3.3. Who will perform the tests
+
+4. System Testing
+ 4.1. Purpose
+ 4.2. System Testing Checklist
+ 4.3. Who will perform the tests
+
+5. Acceptance Testing
+ 5.1. Purpose
+ 5.2. Acceptance Testing Checklist
+ 5.3. Who will perform the tests
+
+
+<font color=blue>
+Your table of tests should look like the following:
+======================================================================================
+| test no | description | input | expected output | date tested | problem | solution |
+|____________________________________________________________________________________|
+| test 2  | unit test   | dates | error message   |             |         |          |
+| WhiteBox| user login  | in WD | displayed       |             |         |          |
+|____________________________________________________________________________________|
+| test 15 | func test   | event | new calendar is |             |         |          |
+| BlackBox|  new event  | in ED | displayed       |             |         |          |
+|____________________________________________________________________________________|
+| test304 | system test | power |  initial window |             |         |          |
+| BlackBox|             | up    |  appears        |             |         |          |
+======================================================================================
+
+Notes: (1) WD is the equivalence class for Wrong Dates.
+       (2) ED is the equivalence class for Event Data.
+       (3) There should be hundreds of tests for unit testing.
+           This table of tests follow the Test Plan.
+       (4)You can add dividing lines in bold face between tests
+       for different modules so that it is easy to see the groups.
+       (5) One group of tests must be using white-box testing technique.
+======================================================================================
+</font>
+</pre>

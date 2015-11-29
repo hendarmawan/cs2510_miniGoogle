@@ -1,0 +1,84 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (X11; U; Linux 2.0.36 i586) [Netscape]">
+</head>
+<body text="#7F4E52" bgcolor="#FFFFCC" link="#006666" vlink="#551A8B" alink="#FF0000">
+<center>
+<h2>
+<font color="#7F4E52">
+CS 2710 / ISSP 2160, Foundations of Artificial
+Intelligence, Fall 2015</font>
+</h2></center>
+<center>
+<h1>
+<font color="#7F4E52">Resources</font></h1>
+<h3> Links will be added as the course proceeds </h3>
+</center>
+<center>
+  <a href="../Fall2015/index.html"> Home </a> &nbsp;&nbsp;
+  <a href="../Fall2015/syllabus.html"> Syllabus </a> &nbsp;&nbsp;
+  <a href="../Fall2015/schedule.shtml"> Schedule </a> &nbsp;&nbsp;
+  <a href="https://people.cs.pitt.edu/~lucalugini/courses/fall2015/CS2710/">
+  TA's course website </a> &nbsp;&nbsp;
+</center>
+
+<hr WIDTH="100%">
+<A HREF="therapist.py.txt"> thereapist.py.txt (remove the .txt to use it).
+A simple ELIZA-like therapist program</A> ...
+<A HREF="therapist.script.txt"> Here is a script showing it in use.</A> 
+
+<hr WIDTH="100%">
+<p>
+<A HREF="http://aima.cs.berkeley.edu/"> Web page for the text </a>
+
+<hr WIDTH="100%">
+<p>
+<A HREF="simpleSearchP2.py.txt"> Simple code for tree and graph search
+(Python 2.*) </a>
+<br>
+<A HREF="simpleSearchP3.py.txt"> Simple code for tree and graph search
+(Python 3.*) </a>
+
+<hr WIDTH="100%">
+<p>
+<A HREF="searchP2.py.txt"> search.py (remove txt to use it):  Extended
+search code in Python 2*</A>
+<br>
+<A HREF="searchP3.py.txt"> search.py (remove txt to use it):  Extended
+search code in Python 3*</A>
+<br>
+Both
+use
+<A HREF="utils.py.txt"> utils.py:  a utilities module </A> 
+<hr WIDTH="100%">
+<p>
+<A HREF="playgame.py.txt"> Adversarial search code </a>
+
+<hr WIDTH="100%">
+<p>
+<A HREF="resolution_P2.py.txt"> resolution_P2.py.txt </a> <br>
+<br>
+<A HREF="resolution_P3.py.txt"> resolution_P3.py.txt </a> <br>
+
+<A HREF="resolution.input1"> sample input file 1 </a> <br>
+<A HREF="resolution.input2"> sample input file 2 </a> <br>
+<A HREF="resolution.input5"> sample input file 5 </a>
+<br>
+<A HREF="resolution.input6"> sample input file 6 </a>
+
+<p>
+<A HREF="unify_P2.py.txt"> unify_P2.py.txt </a>
+<br>
+<A HREF="unify_P3.py.txt"> unify_P3.py.txt </a>
+
+<hr WIDTH="100%">
+<A HREF="entropy.py.txt"> entropy.py.txt - remove "txt" to run the program </a>
+<hr WIDTH="100%">
+<p>
+<A HREF="http://www.python.org"> Python web site. </A>  If you don't know
+Python, then go through the <A HREF="http://docs.python.org/tutorial">
+tutorial. </A>
+</BODY>
+</HTML>

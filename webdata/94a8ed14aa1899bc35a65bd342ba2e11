@@ -1,0 +1,287 @@
+<title>MINIPROJECT</title>
+<br>
+<h1>MINIPROJECT</h1>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/p2.rm">Click here for an audio lecture that can be played using RealPlayer</a></center>
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/p2">Click here for audio-text lecture and feed it to the speech agent</a></xs></center>
+<br>
+The miniproject is 10 points plus 3 extra bonus points for early submission,
+and 3 extra bonus points for completion of optional part.
+<br><br>
+Select one project from the projects described below.  You may not design your own project.
+You may not select more than one project.
+
+<br><br>
+<h2>Project 2: WebBased Library Information System</h2>
+This project is for those who want to learn how to combine Internet
+with database application using a middleware called WebBase.
+<br><br>
+<b>WARNING: DO NOT SELECT THIS PROJECT</b> unless you have a PC with Windows,
+Oracle Personal 8, Personal Web Server PWS (or IIS) already installed
+and enough RAM and disk space to install the free trial version of WebBase
+on your PC.
+<br><br>
+<i>Expertelligence</i>, the company that developed WebBase, allows you to download
+a free trial version of WebBase.  You can use this free trial version to
+develop the WebBase htf forms for the miniproject.
+<br><br>
+<b>Best Way to Turn in Your Project</b>
+is to bring your own notebook or PC.  This way, there will be very few surprises,
+and you can give a live demo on your own computer to the instructor.
+Otherwise you must ftp your WebBase htf forms to a designated guest directory
+at the time of the demo.  To do so, make sure you use the correct database
+source name (libtest), user name (libtest2), password (libtest2),
+and relations names.  Otherwise your htf forms may not work.
+The final solution is to set up your PC as a server with modem at home, and then
+use a PC at the university to dial up and access your PC.
+This is doable, but risky. 
+<br><br>
+In addition to the live demo, you need to turn in a diskette containing the
+following files together with hard copies of these files:
+<ul>
+README<br>
+default.htf (or main.htf)<br>
+search.htf<br>
+circul.htf<br>
+piece1.hti<br>
+piece2.hti<br>
+form1.htm<br>
+form2.htm<br>
+ReadMarc.exe (for optional part)<br>
+ReadMarc.pgm (for optional part)
+</ul>
+<b>If you are a graduate student, you are also required to turn in a
+<a href="../231/guide.html">project report</a> and give a five-minute project
+presentation in addition to the live demo.  If you
+are an undergraduate student, you are only required to give a live demo.</b>
+
+<hr>
+<h2>Library Information System</h2>
+
+The purpose of this miniproject is to implement the query form and update
+form for a Library Information System. The following is the conceptual schema of the
+library information system.
+<img src="lib/libnew.jpg">
+
+The database consists of the following relations:<br><br>
+
+<b>BOOKS</b>: This is the primary relation to store information
+about each title.  The primary key is ISBN.  Call number is X050.
+The field FLAG describes whether data entry is manual (FLAG is 1) or
+from MARC record (FLAG is 2).  If FLAG is 1 (manual), it can be updated
+by the librarian.  If FLAG is 2 (MARC record), those fields from
+MARC record are locked and cannot be updated.
+The field NO_COPY is the number of copies in the library.  It is
+1 if there is a single copy.
+<br><br>
+<b>MARCBOOKS</b>: This relation stores the MARC records.  It is
+for online backup and for librarian's reference.  It should
+<b>not</b> be updated manually by any one.
+<br><br>
+<b>COPY</b>: This relation has a record of every book
+in the library.  Its key is BOOK_ID, which is the unique key assigned
+by the library to a book.  The BOOK_ID is usually scanned in from the
+bar code strip on the cover of each book.  If there are multiple copies,
+there are distinguished by the COPY_ID (1, 2, 3, etc.)
+ONLOAN is 1 if a book is currently on loan to a patron,
+and 0 otherwise.
+<br><br>
+<b>CIRCUL</b>: This relation is for patrons to loan and return books.
+RETURNED is 1 is a book has been returned, and 0 otherwise.  If RETURNED
+is 1, the DATE_BACK records the actual date of return, and FINE is
+calculated as the difference between DATE_BACK and DATE_DUE times the
+daily fine of fifty cents.
+<br><br>
+<b>RESERVATION</b>: This relation is for a patron to put a "hold"
+on a book. The LOG_DATE is the date the hold is placed by the librarian
+on a book.  A patron must rely on the librarian to put a hold on a book.
+A patron cannot update this relation himself or herself. 
+<br><br>
+<b>USER</b>: This relation stores user information. When a new
+patron is added, his or her personal information should be copied from
+the administrative information system to this relation.
+<br><br>
+<b>LOCATION</b>: This relation is for the virtual library
+project, so that we can display books in a virtual library system.
+
+<h2>How to create and load the database</h2>
+A <a href="lib/loadNewLib.sql">PSQL program</a> will be provided.  When you run this PSQL program
+it will create and load a sample database for you to test your WebBase forms.
+The sample database is very small, with only a few records in each
+relation.  You must use this sample database so that the instructor can
+easily check the correctness of the results.
+For any relation that is not loaded by the PSQL program, you can create
+your own PSQL program to populate those relations, for example,
+a <a href="lib/loadCopy.sql">PSQL program to load COPY relation</a>.
+
+<h2>What you need to implement</h2>
+You will implement two WebBase htf forms so that a patron or a librarian
+can use these forms to search for a book, or to update the circulation
+relation.
+<br><br>
+<b>Search Form</b>: A patron can search the library database for a
+title using any one, or a combination, of the following:
+(a) author, (b) title, and (c) ISBN number.
+Each of the above may be
+a wild card.  For example, if the patron enters %database% in the title
+field of the search form, then all books containing the word 'database'
+in the title field should be displayed.  It is also important to display
+how many copies of the book are in the library, and whether any copy
+is currently available. Notice you need to access both the BOOKS relation
+and the COPY relation.
+
+<br><br>
+<b>Circulation Form</b>: This form is <b>not</b> used by a patron.  It is
+actually used by the librarian to update the circulation relation.  
+When a patron checks out a book or returns a book, the circulation
+relation must be updated.  For this miniproject it is not necessary to
+handle the renewal of a book currently on loan, or to put a hold on a
+book.  But if a book is returned late, the fine needs to be calculated.
+Notice you must update both the CIRCUL relation and the COPY relation.
+To check whether a user is a patron, you also need to access the USER relation.
+<a href="proj4a.html">Click here for more details.</a>
+
+<br><br>
+Notice only the BOOKS, COPY, CIRCUL and USER relations are used in the processing
+of the two forms described above.  Other relations are not used.
+
+<p>
+<h2>Optional Bonus Part</h2>
+
+The PSQL program provided by the instructor is used to create and load a
+sample database for your miniproject.  The optional bonus part is to
+write a program to decode the <a href="lib/ksi.dat">MARC record</a>, which is the standard format
+to encode the information about a title in any mdeia, and load the
+MARC records into the database.  The loader will load the selected 
+information <b>only</b> into the BOOKS relation.  If the FLAG is 1
+(manual), it is updated to 2 (MARC).  If the FLAG is 2 (MARC), it
+remains the same, but the database is updated, because the MARC record
+may be updated by its provider, OCLC. 
+<p>
+The MARC record has the following structure:
+<br><br>
+<pre>
+       ------------------------
+       |                       |
+       |         base address  v      MARC record structure
+    ------------------------------------------------------
+    |  Header  |  directory    |    |   |//////|    |    |
+    |          |  |  |  |  |   |    |   |      |    |    |
+    ------------------------------------------------------
+                |       field address   ^
+                |                       |
+                -------------------------
+
+1. The record header is always 24 bytes long.
+2. The first five bytes of the header contain the length of the MARC record, i.e.,
+   the total number of bytes of this record (including this field).
+3. Bytes 13-17 of the header contains the base address.
+4. The record directory starts at byte 25 and contains a variable number
+   of entries, corresponding to the number of fields in this record.
+5. Each entry in the directory is twelve bytes long and contains the following:
+   Bytes 1-3:  three-byte numeric tag identifier from 001 to 999
+   Bytes 4-7:  four-byte numeric field length
+   Bytes 8-12: five-byte numeric starting-position of the first byte of field
+   Examples: Tag   Field Length   Starting position    Field address
+             001   0013           00000                base address + 00000 
+             010   0014           00053                base address + 00053
+Note: all numbers are right-justified with leading zeros.
+</pre>
+Therefore, the program ReadMarc.pgm should read in the MARC record,
+compute the field addresses, extract the fields that are needed, and output
+only these fields.  The output file contains commands that can load selected
+fields of the MARC record into the Oracle database.  For example, the program can
+generate as output the folllowing SQL insert commands:
+<br><br>
+INSERT title (title, author) VALUES
+('The Scarlet Letter', 'Nathaniel Hawthorne')
+<br><br>
+With a file containing such INSERT commands, we can easily
+load the database.
+<br><br>
+All the fields from MARC record that are needed in the BOOKS
+relation are listed below.  Some fields may have substructures, which
+(to simplify your programming) need not be further decoded.  For the
+miniproject, you need only decode and output the fields X001, X010, X020,
+X1XX and X245.
+Please note not all the fields listed below are present in every
+MARC record.  You should use the directory to find out what
+fields are present.
+<br><br>
+1. Tag 001:
+<br>2. Tag 010: Library of Congress Control Number
+<br>3. Tag 01X: Other Control number
+<br>4. Tag 020: International Standard Book Number (ISBN)
+<br>5. Tag 049: Local Holding
+<br>6. Tag 050: Library of Congress Call Number
+<br>7. Tag 082: Dewey Decimal Call Number
+<br>8. Tag 092: Locally Assigned Dewey Call Number
+<br>9. Tag 1XX: {Personal Name}; {Corporate Name}; {Meeting Name}; {Uniform Title} 
+<br>10. Tag 245: Title Statement
+<br>11. Tag 250: Edition Statement
+<br>12. Tag 260: Publication, Distribution, Etc
+<br>13. Tag 300: Physical Description
+<br>14. Tag 500: General Note
+<br>15. Tag 504: Bibliography, Etc. Note
+<br>16. Tag 505: Formatted Contents Note
+<br>17. Tag 520: Summary, Etc. Note
+<br>18. Tag 590: Local Note
+<br>19. Tag 6XX: Subject(s)
+<br>20. Tag 700: Added Entry -- Personal Name
+<br>21. Tag 710: Added Entry -- Corporate Name
+<br>22. Tag 740: Added Entry -- Uncontrolled Related/Analytical Title
+<br>23. Tag 8XX: Series entry
+<br><br>
+
+<hr>
+<h2>Grading</h2>
+5 for successfully setting up the database, the WebBase server with your
+own WebBase program to demonstrate a nicely looking and functional
+search form for the Library Information
+System on the World Wide Web for patrons to enter queries and display
+results (correctness) (Note: If you don't use WebBase, 2 points are subtracted)<br>
+3 for the circulation form to enable the librarian to check out books,
+handle the return of books, and calculate fines (generality)<br>
+1 capability to handle user input errors (error handling)<br>
+1 quality of programming (quality)<br>
+3 bonus points for providing a program to load the BOOKS relation from
+MARC records<br>
+3 bonus points for early submission<br>
+
+<hr>
+<h2>Details and More Details</h2>
+
+<b>Your Main Form</b>:
+Your main form should be called 'default.htf',
+which can be accessed by entering the URL
+http://............/
+but please note the final slash is significant.
+default.htf will then pass information to other forms, as explained
+in the <a href="17webase.html">classnotes</a>.
+You can also use main.htf as the main form, and then access
+it by entering the URL http://............/main.htf.
+<p>
+
+<b>Prevention of User Input Errors</b>:
+A smart way is to use radio buttons instead of user input.  For example,
+if you want the user to choose among "min", "avg", "max", "%", and
+"list", you can use a radio button, and proivde an optional input box
+to allow the user to enter the list of words.
+<p>
+
+<b>The Program Debug Cycle</b>:
+
+In WebBase programming, the program debug cycle is as follows:
+<ul>
+Step 1: use your favorite editor to edit the text files of the
+various htf files and html files.
+<br><br>
+Step 2: copy these files to the WebBase server where WebBase and ODBC have
+been properly installed.  If this WebBase server happens to be the PC where
+you edit and create these files, of course you need not move the
+files to a different computer.  If the WebBase server is a remote computer, you may need
+to ftp your files to that computer. 
+<br><br>
+Step 3: Use the browser to access 
+the WebBase server where you have these htf and html forms set up.  You can
+now test your forms.  If there are bugs, repeat Steps 1 through 3.
+</ul>

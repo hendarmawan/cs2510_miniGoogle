@@ -1,0 +1,57 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.78 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>A Pattern language for Pattern Writing</title>
+</head>
+<body BGCOLOR="#c0c0c0">
+<a href="s2.html"><img SRC="previous.gif" height=26 width=26 align=LEFT></a>
+<center><h1><b><u><font color="blue">WHAT IS A PATTERN LANGUAGE?</font></u> </b></h1></center>
+<P>
+<center><b><font size="6"></font></b></center>
+<br>
+<font size="5">
+<UL TYPE = square>
+<LI> <font color="red">A <b>pattern language</b> defines a collection of patterns 
+and the rules to combine them into an architectural style. Pattern 
+languages describe software frameworks or families of related systems.   
+[Cope]</font><br><br>
+<LI> A <b>pattern language</b> is a structured collection of patterns that build 
+on each other to transform needs and constraints into an architecture. 
+[Cope]<br><br>
+<LI> If a <b>pattern</b> is a recurring solution to a problem in a context given 
+by some forces, then a <b>pattern language</b> is a collective of such solutions 
+which, at every level of scale, work together to resolve a complex problem 
+into an orderly solution according to a pre-defined 
+goal.[community]<br><br>
+<LI> Good <b>pattern languages</b> guide the designer toward useful architectures and away from architectures whose literary analogies 
+are gibberish or 
+unartful writing. Good architectures are durable, functional, and aesthetically pleasing, and a good combination of patterns can balance the 
+forces on a system to strive towards these three goals. A good pattern language gives designers freedom to express themselves and to tailor the 
+solution to the particular needs of the context where the patterns are 
+applied. [Cope]<br><br> 
+<LI> In the case of natural languages, the <b>pattern language</b> is generative. It not only tells us the rules of arrangement, but 
+shows us 
+how to construct arrangements -- as many as we want -- which satisfy the 
+rules [Alexander]<br><br> 
+<LI> A <b>pattern language </b>gives each person who uses it, the power to create an infinite variety of new and unique buildings, just 
+as his ordinary 
+language gives him the power to create an infinite variety of 
+sentences.[Alexander] <br><br>
+<LI> A <b>pattern language </b>forms a gestalt in which each of its patterns 
+collaborate to solve a more fundamental problem that is not explicitly 
+addressed by any individual pattern.[Alexander]<br><br>
+</font>
+</BLOCKQUOTE>
+</UL>
+</UL>
+</font>
+
+
+<a href="s4.html"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+
+
+</body>
+</html>
+

@@ -1,0 +1,73 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+
+<html>
+
+<head>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+   <meta name="GENERATOR" content="Mozilla/4.75 [en] (WinNT; U) [Netscape]">
+
+   <title>Multimedia Software Engineering &gt; Presentation</title>
+
+</head>
+
+<body bgcolor="#FFFFFF">
+<a href="slide1.html"><img SRC="previous.gif" height=26 width=26 align=LEFT border="0"></a><a href="slide3.html"><img SRC="next.gif" height=26 width=26 align=RIGHT border="0"></a> 
+<center>
+
+  <h1></h1>
+  <h1></h1>
+  <h1></h1>
+  <h1></h1>
+  <h1></h1>
+  <h1></h1>
+  <h1> </h1>
+</center>
+
+
+
+<center>
+
+<h1>
+
+</h1></center>
+
+
+
+<center>
+
+<h1>
+
+</h1></center>
+
+
+
+<center>
+
+  <h1>&nbsp; </h1>
+  <h1>What is Microsoft .NET?</h1>
+  </center>
+
+
+
+<ul>
+  <li> 
+    <div align="left"> .<font size="4">NET (dot net) Platform is a new Runtime 
+      Environment for developing and running applications.</font></div>
+  </li>
+  <li><font size="4">.NET is aimed at accelerating the next generation of distributed 
+    computing.</font> </li>
+  <li><font size="4">Prerequisites for distributed computing</font> 
+    <ul>
+      <li><font size="4">Everything needs to be a Web service. </font></li>
+      <li><font size="4">Ability to aggregate and integrate these Web services 
+        easily</font></li>
+      <li><font size="4">Existance of simple end user experience</font> </li>
+    </ul>
+  </li>
+</ul>
+</body>
+
+</html>
+

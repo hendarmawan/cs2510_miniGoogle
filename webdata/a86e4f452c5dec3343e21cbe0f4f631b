@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<title>CS 1653: Applied Cryptography and Network Security (Spring 2013)</title>
+<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+
+<body bgcolor="#FFFFCC">
+
+<h1 align="center"><font color="#660000">Homework</font></h1>
+
+<hr>
+<center>
+  <a href="./index.html"><b>[ Home ]</b></a> &nbsp&nbsp
+  <a href="./policies.html"><b>[ Policies ]</b></a> &nbsp&nbsp
+  <a href="./lectures.html"><b>[ Lectures ]</b></a> &nbsp&nbsp
+  <a href="./homework.html"><b>[ Homework ]</b></a> &nbsp&nbsp
+  <a href="./project.html"><b>[ Project ]</b></a> &nbsp&nbsp
+</center>
+<hr>
+
+<br><br>
+<center>
+<table cols="5" border="1">
+<tr>
+  <td bgcolor="#E6FFCC" width="70" align="center"><b><u>HW#</u></b></td>
+  <td bgcolor="#E6FFCC" width="300"><b><u>Concepts</u></b></td>
+  <td bgcolor="#E6FFCC" width="70" align="center"><b><u>Assigned</u></b></td>
+  <td bgcolor="#E6FFCC" width="70" align="center"><b><u>Due</u></b></td>
+  <td bgcolor="#E6FFCC" width="100" align="center"><b><u>Assignment</u></b></td>
+</tr>
+
+
+<tr>
+  <td width="70" valign="top" align="center"> 1 </td>
+  <td width="300" valign="top"> Java cryptography </td>
+  <td width="70" valign="top" align="center"> 2/6  </td>
+  <td width="70" valign="top" align="center"> 2/20 </td>
+  <td width="100" valign="top" align="center"> <a href="./hw/hw1.pdf">[PDF]</a> </td>
+</tr>
+
+
+</table>
+</center>
+
+
+<!-- end page -->
+</body>
+
+</html>

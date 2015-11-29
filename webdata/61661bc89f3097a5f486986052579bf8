@@ -1,0 +1,1693 @@
+<h1>
+<center>Content-Based Access to Multimedia Information</center>
+</h1>
+<br><br>
+<h3>
+<center>S.K. Chang</center>
+<center>Department of Computer Science</center>
+<center>University of Pittsburgh</center>
+<center>Pittsburgh - PA 15260, USA</center>
+<center>Phone +1-412-624-8423</center>
+<center>E-mail chang@cs.pitt.edu</center>
+</h3>
+<br><br>
+<b>
+<!---
+(The paper was published in the Proceedings of Aizu International Student
+Forum-Contest on Multimedia, (N. Mirenkov and A. Vazhenin. eds.),
+The University of Aizu, Aizu, Japan, Jul 20-24, 1998, pp. 2-41.
+The related presentation is at <a href="mccfig/s1.htm">www.cs.pitt.edu/~chang/365/mccfig/s1.htm</a>)
+--->
+</b>
+<br><br>
+<b>
+<!-- <center>(December 4, 1997 Draft)</center> -->
+</b>
+<br><br>
+<b>Abstract:</b>
+The key to content-based access of multimedia information is
+to discover, encode and maintain the associations among media objects.
+Media enhanced interaction metaphors employ multiple paradigms to
+facilitate the discovery, encoding and maintenance of these associations.
+Although the metaphors themselves may be conceptual, their effective
+incorporation into the user interface for multimedia information access often requires
+the use of visual querying mechanisms.
+To access multimedia information by content,
+various query mechanisms need to be combined, and the user
+interface should be visual as much as possible and also enable
+visual relevance feedback, user-guided navigation and user-controlled discovery of new associations.
+In this paper we first review the technology issues in the visual representation of
+the information space and strategies for visual reasoning.
+We then describe applications in digital library, medical information fusion and intelligent web searcher
+to illustrate different scenarios of multiparadigmatic interaction for accessing
+multimedia information.
+For integrated technology comparison, we give a taxonomy of visual querying paradigms and
+compare various interaction techniques.
+Several open research challenges are then discussed, with emphasis on
+the modeling, integration and evaluation of the <b>Hypermapped Virtual World</b>
+interaction metaphor.
+<br><br>
+<b>Keywords:</b> content-based information retrieval, multimedia information systems, visual querying systems
+<br><br>
+<b>
+1. Introduction
+</b>
+<br><br>
+Recent advances in storage technologies have made the
+creation of multimedia databases both feasible and cost-effective.  Wideband
+communications also greatly facilitate the distribution of
+multimedia information across communication networks.  Parallel computers
+lead to faster voice, image and video processing systems.  High resolution graphics
+and dedicated co-processors enable the presentation of visual information
+with superior image quality.  Multimedia information systems have
+found their way into many application areas, including geographical
+information systems (GIS),
+[LANG92]
+office automation (OA),
+[RAU96]
+distance learning,
+[LITTLE95]
+health care,
+[REIS92]
+computer-aided design (CAD),
+[ANUPAM94]
+computer-aided
+engineering (CAE),
+[KAWATA96]
+and scientific databases (SDB) applications
+[AHMED94].
+<br><br>
+Wider applications also lead to both more numerous and more sophisticated end users.
+Multimedia information systems, like other types of information systems,
+have increasingly become knowledge-based systems, with capabilities
+to perform many sophisticated tasks by accessing and manipulating
+domain knowledge.  The
+above mentioned technological advances dictate a better methodology to
+design knowledge-based, user-specific multimedia information systems.
+The design methodology, taking into consideration the diversified
+application requirements and users' needs,  should
+provide a unified framework for multimedia representation, querying, indexing
+and spatial/temporal reasoning.
+<br><br>
+Multimedia databases, when compared to traditional databases,
+have the following special requirements
+[FALOUTSOUS94],
+[FOX91]:
+<br><br>
+1. The size of the data items may be very large.
+The management of multimedia information therefore requires the accessing
+and manipulation of very large data items.
+<br><br>
+2. Storage and delivery of video data requires guaranteed and synchronized
+delivery of data.
+<br><br>
+3. Various query mechanisms need to be combined, and the user
+interface should be highly visual and should also enable
+visual relevance feedback and user-guided navigation.
+<br><br>
+4. The on-line, real-time processing of large volumes of data may be
+required for some types of multimedia databases.
+<br><br>
+The focus of this paper is on the third requirement
+mentioned above.  For multimedia databases, there are not only different
+media types, but also different ways to query the databases.
+The query mechanisms may include free text search,
+SQL-like querying, icon-based techniques, querying based upon
+the entity-relationship (ER) diagram, content-based querying, sound-based querying, as well as virtual-reality (VR) techniques.
+Some of these query mechanisms are based upon traditional approaches, such
+as free text search ("retrieve all books authored by Einstein") and SQL query language ("SELECT title FROM books WHERE author = Einstein").  Some are
+developed in response to the special needs of multimedia databases
+such as content-based querying for image/video databases
+("find all books containing the picture of Einstein")
+[FALOUTSOUS93],
+and sound-based queries that are spoken rather than written or drawn
+[TABUCHI91].
+Some are dictated by new software/hardware technologies, such as icon-based
+queries that use icons to denote query targets ("a book") and objects ("a sketch of Einstein"),
+and virtual reality queries where the query targets and objects can be directly manipulated in a virtual reality environment (the book shelves in a Virtual  Library).
+Except for the traditional approaches and those relying on sound, the other techniques share
+the common characteristic of being highly visual.
+Therefore, we will concern ourselves mainly with multiparadigmatic visual interface
+to accessing multimedia documents.
+<br><br>
+A visual interface to multimedia databases,
+in general, must support some type of visual querying language.
+Visual query languages (VQLs) are query
+languages based on the use of visual
+representations to depict the domain of interest and express
+the related requests.  Systems implementing a visual query
+language are called Visual Query Systems (VQSs)
+[BATINI91],
+[CATARCI95].
+They include both a language to
+express the queries in a pictorial form and a variety of
+functionalities to facilitate human-computer interaction.  As
+such, they are oriented to a wide spectrum of users, ranging from
+people with limited technical skills to highly sophisticated
+specialists.  In recent years, many
+VQSs have been proposed, adopting a range of
+different visual representations and interaction
+strategies.  These interaction paradigms will be discussed in Section 5.1, but
+most existing VQSs restrict human-computer
+interaction to only one kind of interaction paradigm.
+However, the presence of several paradigms, each one
+with different characteristics and advantages, will help both
+naive and experienced users in interacting with the system.
+For instance, icons may well evoke the objects present in
+the database, while relationships among them may be better
+expressed through the edges of a graph, and collections of
+instances may be easily clustered into a form. Moreover, the
+user is not required to adapt his perception of the reality
+of interest to the different views presented by the various
+data models and interfaces.
+<br><br>
+The way in which the query is expressed depends on the
+visual representations as well. In fact, in the existing VQSs,
+icons are typically combined following a spatial syntax
+[CHANG95b],
+while queries on diagrammatic representations are mainly
+expressed by following links and forms are often filled with
+prototypical values.
+Moreover, the same interface
+can offer to the user different interaction mechanisms for
+expressing a query, depending on both the experience of the
+user and the kind of the query itself
+[CATARCI96].
+<br><br>
+To effectively and efficiently access information from multimedia databases,
+we can identify the following design criteria for the user interface:
+(1) various query mechanisms need to be combined seamlessly, (2) the user
+interface should be visual as much as possible, (3) the user interface should enable
+visual relevance feedback, (4) the user interface should support user-guided navigation, and (5) the user interface should facilitate the user-controlled discovery of new associations among media objects.
+<br><br>
+Addressing these issues,
+this paper explores the design of multiparadigmatic visual interfaces
+to multimedia databases.
+In Section 2, we discuss the visual representation of
+the information space.
+Strategies for visual reasoning are surveyed in Section 3.
+In Section 4 we describe three application examples
+to illustrate the concept of multiparadigmatic visual interface for
+multimedia databases.
+Section 5.1 gives a taxonomy of visual querying paradigms, and
+Section 5.2 deals with multimedia database interaction
+techniques.
+Open research challenges and some concluding remarks are given in Section 6.
+<br><br>
+<br><br>
+<b>
+2. Representation of the Information Space
+</b>
+<br><br>
+In a visual interface for multimedia databases, the information stored
+in the multimedia database needs to be visualized in an information space.
+This visualization can either be carried out by the user in the user's
+mind, in which case it is essentially the user's conceptualization of
+the database; or the visualization could be accomplished by the system,
+in which case the visualization is generated on the display screen.
+In this Section, we describe the different representations of the
+information space.
+<br><br>
+Database objects, in general, are abstracted from real-life objects in the real world.
+Therefore, we can distinguish the <b>logical information space</b> and the
+<b>physical information space</b>.  In the logical space, the abstract
+database objects are represented.  In the physical space, the abstract database objects
+are materialized and represented as
+physical objects such as images, animation, video, voice, etc.
+The physical objects either <b>mimic</b> real-life objects such as
+objects in a virtual reality, or <b>reflect</b> real-life
+objects such as diagrams, icons and sketches.
+<br><br>
+The real world, from which the database objects are abstracted, is
+the environment that the database objects must relate to.
+The real world also is often abstracted in the information space.  Only in
+the virtual reality information space, will the real world be represented
+in a direct way (see later).
+<br><br>
+The <b>logical information space</b> is a multi-dimensional space, where each point
+represents an object (a record, a tuple, etc.) from the
+database.  A database object, e<sub>j</sub>, or an <b>example</b>,
+is a point in this space.
+Conceptually, the entire information space then corresponds to all the database
+objects in a database.
+The logical information space is thus a unified view of the database, i.e. a universal relation.
+<br><br>
+Each attribute of a database object represents one dimension in
+this multi-dimensional space.
+Therefore, in the
+logical information space, different dimensions actually have different
+characteristics: continuous, numerical, discrete, or logical.
+<br><br>
+A <b>query</b> q<sub>i</sub> is an arbitrary region in this information space.  A
+<b>clue</b> x<sub>k</sub> is also an arbitrary region in the logical information space,
+but it may contain additional directional information
+to indicate <b>visual momentum</b>,
+such as the direction of browsing.
+Therefore, an example e<sub>j</sub> is a clue,
+and so is a visual query q<sub>i</sub>.
+A hypermap (section 6) when used as a metaphor is also a clue.
+<br><br>
+The information retrieval problem is to construct the "most desirable" query q<sub>i</sub>
+with respect to the examples e<sub>j</sub> and the clues x<sub>k</sub>
+presented by the user.
+The "most desirable" query is one which will retrieve the largest number
+of relevant database objects and whose "size" in the information space
+is relatively small.
+The process of visual reasoning, which will be discussed in Section 3, may help the user find the most desirable
+query from examples and clues.
+<br><br>
+The logical information space may be further structured into a
+<b>logical information hyperspace</b>,
+where the <b>clue</b> becomes hyperlinks that provides directional
+information, and the information space can be navigated
+the user by following the directional clues.
+Information is "chunked", and each chunk is illustrated by
+an example (the hypernode).
+<br><br>
+The <b>physical information space</b>
+consists of the materialized database objects.
+The simplest example is as follows.  Each object is materialized
+as an icon, and the physical information space consists of
+a collection of icons.  These icons can be arranged spatially, so
+that the spatial locations approximately reflect the relations among database objects.
+More recently, <b>intelligent visualization systems</b> are being
+developed, for task-specific visualization assistance
+[IGNATIUS94].
+Such systems can offer assistance in deriving perceptually effective
+materialization of database objects.
+<br><br>
+In the physical information space,
+the objects reflect real-world objects, but the world is still an
+abstraction of the real world.  One further step is to
+present information in a <b>virtual reality information space</b>.
+Virtual Reality allows the users to be placed in a 3D environment they can
+directly manipulate. What the users see on the screen will be the same as what
+can be experienced in the real world.
+3D features can be used to
+present the results in a virtual reality (VR) setting. For example, the physical
+location of medical records can be indicated in a (simplified) 3D presentation
+of a Virtual Medical Laboratory by blinking icons. If the database refers to the
+books of a library, we can represent a Virtual Library in which the physical
+locations of books are indicated by blinking icons in a 3D presentation of the
+book stacks of the library. What the user sees on the screen will be the same
+(after simplifications) as what can be experienced in the real world. VR such as
+the Virtual Library or the Virtual Medical Laboratory can become a new query
+paradigm. For example, the user can select a book by picking it from the shelf,
+like in the real world.
+<br><br>
+It is worth noting that we are talking about "nonimmersive" VR
+[ROBERTSON93b]
+i.e. the user is placed in a 3D environment he or she can
+directly manipulate without wearing head-mounted stereo displays or special
+gloves, but acting only with mouse, keyboard, and monitor of a conventional
+graphics workstation. This is an alternative form of VR that is being explored
+in  several research laboratories. The use of 3D modeling and rendering is the
+same as in immersive VR, because the scene is displayed with the same depth cues:
+perspective view, hidden-surface elimination, color, texture, lighting, shading.
+Researchers working in nonimmersive VR report that the user is drawn into the 3D
+world, since mental and emotional immersion takes place, in spite of the lack of
+visual or perceptual immersion. Moreover, mouse/keyboard controlled interaction
+techniques are easy to learn and use and are often faster than Dataglove
+interaction techniques. Therefore, significant advantages come from using such familiar
+and inexpensive tools, that lower startup costs. Indeed, immersive VR technology
+has still many limits and problems (producing and synchronizing stereo images,
+handling of immersive input devices, etc.), so that researchers spend much more
+time focusing on the devices rather than on applications and interaction
+techniques. As a further advantage, nonimmersive VR does not force office
+workers to wear special equipment that isolate them from their usual
+environment, minimizing psychological and physical stress that most users
+will not tolerate
+[BEAUDOUIN92].
+On the other hand, new approaches on using the immersive VR, such as
+interactive Worlds-in-Miniature (WIM)
+[STOAKLEY95],
+may pave the way for more applications of the immersive VR.
+<br><br>
+Nonimmersive VR is a valuable interaction paradigm that will be
+fruitful in multimedia database applications, as well as in general business applications.
+When displays and input devices that are easily manageable and not intrusive
+will be available, immersive VR will become acceptable.
+<br><br>
+The above categorization can be summarized by the following table:
+<br><br>
+<br><br>
+<br><br>
+ <img src="mccfig/table1.gif">
+<center>Table 1.  Summary of information spaces.</center>
+*Real objects in the physical information space reflect real-life objects,
+rather than mimic real-life objects.
+<br><br>
+<br><br>
+<b>
+3. Strategies for Visual Reasoning
+</b>
+<br><br>
+<i>Visual reasoning</i>
+is the process of reasoning and making inferences,
+based upon visually presented clues.
+As mentioned in Section 2, visual reasoning may help the user find the most desirable
+query from examples and clues.
+In this Section, we survey strategies for visual reasoning.
+<br><br>
+Visual reasoning is widely used in human-to-human communication.
+For example, the teacher draws a diagram on the blackboard.
+Although the diagram is incomplete and imprecise, the students
+are able to make inferences to fill in the details, and gain
+an understanding of the concepts presented.  Such
+<i>diagram understanding</i>
+relies on visual reasoning so that concepts can be communicated.
+Human also uses
+<i>gestures</i>
+[HANNE92]
+to communicate.  Again, gestures are imprecise visual clues for
+the receiving person to interpret.
+<br><br>
+In human-to-computer communication,
+a recent trend is for the human to communicate to the computer
+using visual expressions.  Typically, the human draws a picture,
+a structured diagram, or a visual example, and the computer
+interprets the visual expression to understand the user's intention.
+This has been called
+<b>visual coaching</b>,
+<b>programming by example</b>
+[MYERS86],
+or
+<b>programming by rehearsal</b>
+[GUOLD84],
+[HUANG90]
+by various researchers.
+<br><br>
+Visual reasoning is related to spatial reasoning, example-based programming, and approximate/vague retrieval.
+<i>Spatial reasoning</i>
+is the process of reasoning and making inferences,
+about problems dealing with objects occupying space
+[DUTTA89].
+These objects can be either <b>physical objects</b> (e.g., books, chairs,
+cars, etc.) or <b>abstract objects</b> visualized in space (e.g. database objects).
+Physical objects are tangible and occupy physical space in some
+measurable sense.  Abstract objects are intangible but nevertheless can
+be associated with a certain space in some coordinate system.
+Therefore, visual reasoning can be defined as spatial reasoning on abstract objects visualized in space.
+<br><br>
+<i>Example-Based Programming</i>
+refers to systems that allow the programmer to use examples
+of input and output data during the programming process
+[MYERS86].
+There are two types of Example-Based Programming:
+<b>Programming by Example</b> and <b>Programming with Example</b>.
+"Programming by Example" refers to systems that try to guess or
+<b>infer</b> the program from examples of input and output or sample traces of
+execution.  This is often called "automated programming" and has been
+an area of AI research.  "Programming with Example" systems require the
+user to specify everything about the program (there is no inferencing involved),
+but the programmer can work out the program on a specific example.  The system
+executes the programmer's commands normally, but remembers them for later re-use.
+Halbert
+[HALBERT84]
+characterizes Programming with Examples as
+"Do What I Did" whereas inferential Programming by Example
+might be called "Do What I Mean".
+Many recently developed visual programming systems utilized
+the example-based programming approach
+[GOULD84],
+[MYERS88],
+[SMITH77].
+The approach described in Section 4.1 combines presentation of visual clues (programming by example)
+with query augmentation techniques (programming with example).
+<br><br>
+We now discuss visual reasoning approaches for databases.
+Most research in database systems is based on the assumptions of
+precision and specificity of both the data stored in the database,
+and the requests to retrieve data.  In reality, however,
+both may be imprecise or vague.
+Motro characterizes three categories of imprecision and/or vagueness:
+(1) the data stored in the database is imprecise;
+(2) the retrieval request is imprecise; and
+(3) the user does not have a precise notion of the contents of the database
+[MOTRO88].
+<br><br>
+Imprecision in stored data can be dealt with
+by applying fuzzy sets theory to provide a linguistic
+description of the stored imprecise data.
+Fuzzy queries also allow the user to give imprecise
+retrieval requests.
+Such techniques are generally applicable when the source of imprecision
+is quantifiable into numbers, for example, "the age of a person is somewhere between
+40 and 45" (imprecision in stored data), "retrieve all
+middle-aged employees" (imprecision in queries).  However, when the 
+source of imprecision is not easily quantifiable, for example, "find persons with
+faces similar to Einstein's face", the above techniques are less well suitable.
+Recent research in content-based retrieval may lead to techniques to
+address such problems.
+<br><br>
+Imprecision in the user's model may be classified as follows
+[MOTRO86]:
+incomplete knowledge of the data model,
+imprecise information on the database schema and/or its instance,
+vagueness of user goals, and
+incomplete knowledge about the interaction tools.
+<br><br>
+To deal with imprecision in user's model, several approaches
+have been investigated:
+(i) <b>browsing</b> techniques to provide different views of the database
+[MOTRO88];
+(ii) <b>heuristic interpretation of user' query</b> to transform the user' query
+by a connective approach
+[D'ATRI89a],
+[WALD84],
+[CHANG79];
+(iii) <b>example-based techniques</b> to generalize from selected examples
+[ZLOOF77],
+or to modify the original query if the answer is not considered satisfactory
+[WILLIAMS84],
+[MOTRO88].
+The modification is done either interactively or automatically.
+<br><br>
+Browsing is generally effective and widely used but may be very wasteful
+on the user's time.  Heuristic interpretation of user's query can lead
+to "false drops" or "false hits".  Example-based techniques work well
+for some applications but are hard to generalize.
+In addition, two common limitations of these approaches
+[D'ATRI89b]
+are worth mentioning here:
+(1) the browsing environment and the querying environment are usually
+distinct, thus separating the learning and the querying activities.
+(2) knowledge about the user must be gathered to build the user profile (user model).
+The approach described in Section 4.1 integrates the querying environment
+(using the visual query) and the browsing environment.
+<br><br>
+<br><br>
+<b>
+4. Applications and Techniques
+</b>
+<br><br>
+<b>
+4.1. Application Example: Digital Library
+</b>
+<br><br>
+In this and the next two sections, we look at three application examples.
+The first example is the digital library.   To support multimedia information access
+we need a multiparadigmatic visual interface that supports
+progressive queries -- The Visual Query and Result Hypercube (<b>VQRH</b>)
+[CHANG94].
+<br><br>
+We have experimented with information retrieval using
+VQRH in two application domains: (a) the medical databases, and
+(b) the library databases. The subjects are students with no previous experience in using
+VQRH. We will not describe VQRH in details here. We just recall its basic features, namely:
+(1) the screen is divided into two main windows, in the left one the user formulates its query,
+and the results are shown in the right window;
+(2) both query and results can be visualized in any of the available paradigms for query and
+data representation;
+(3) the queries formulated during an interaction section are stored, with the corresponding
+results, as successive slices of the Hypercube, so each slice can be easily recalled.
+<br><br>
+The preliminary experiments indicate that the users have little difficulty in learning VQRH,
+and they can formulate queries after half an hour of interaction.
+They generally like the idea of  progressive querying, and find it useful
+to be able to recall any past query-and-result slice. From such experiments, it is already clear
+that
+the visualization of the retrieved result is very important for the success of this approach.
+While in the initial design of VQRH only physical information spaces were used for
+presenting the data, in a second version of the prototype a VR information space was added.
+VR is established as a query paradigm, that is, the user selects with the mouse the
+items of this 3D space he or she is interested in.
+<br><br>
+When performing a query, the admissability conditions to switch between a <b>logical
+paradigm</b> (our previous
+paradigms are all logical paradigms) and a <b>VR paradigm</b> (such as the Virtual Library)
+can be defined as follows.
+For a logical paradigm,
+a <b>VR-admissable query</b> is an admissable query whose retrieval target object is also an
+object in VR. For example, the VR for the Virtual Library contains stacks of books, and a
+VR-admissable
+query could be any admissable query about books,
+because the result of that query can be indicated by blinking book icons
+in the Virtual Library.
+Conversely, for a VR paradigm,
+an <b>LQ-admissable query</b> is a VR where there is a single marked VR object that is also a
+database object, and the marking is achieved by an operation icon such as
+<b>similar_to</b> (find objects similar to this object),
+<b>near</b> (find objects near this object), <b>above</b> (find objects above this object),
+<b>below</b> (find objects below this object), and other spatial operators. For example, in the
+VR for the Virtual Library, a book marked by the operation icon <b>similar_to</b> is LQ-
+admissable and can be
+translated into the following query:  "find all books similar to this book."
+An example of a VR-admissable logical query is illustrated in Figure 1.
+The query is to find books on bicycles. It is performed
+with the iconic paradigm.
+The result is presented as marked objects in a Virtual Library.
+The user can then navigate in this Virtual Library,
+and switch to the VR query paradigm.
+Figure 2 illustrates an LQ-admissable query.
+The query is to find books similar to a specific book about bicycles
+that has been marked by the user.
+The result is again rendered as marked objects in a Virtual Library.
+If we switch to a form-based representation, the result could also be
+rendered as items in a form.
+This example illustrates progressive querying can be accomplished with greater flexibility
+by combining the logical paradigms and the VR paradigms.
+The experimental VQRH system
+supports VR paradigms, but the similarity function must be supplied for the problem domain.
+<br><br>
+ <img src="mccfig/fig1.gif">
+<center>Figure 1.  A VR-admissable logical query.</center>
+<br><br>
+<br><br>
+ <img src="mccfig/fig2.gif">
+<center>Figure 2.  An LQ-admissable query</center>
+<br><br>
+The experiment was useful for understanding the limitations of the screen
+design and their impact on system's usability.
+Some interesting characteristics of the VR paradigm emerged, which led to a revised
+screen design. Indeed, the distinction between query space and result space does not make
+sense in VR, since a query is performed by acting, with either the mouse or another pointer
+device, in the environment the user is in. The result of the query usually determines some
+modification of such an environment, and this new situation is that one on which a successive
+request has to be performed. As a consequence, when working with the VR paradigm, the
+user gets confused by the separation of the query window and the result window. This is
+easily understandable by looking at Figures 1 and 2. The situation depicted in Figure 1 does
+not create any problem for the user, who is formulating a query in the iconic paradigm but
+wants to see the result in VR, since VR actually provides visual indication of where the
+requested books can be found.
+Moreover, showing the results in separate windows, gives the user the possibility of
+viewing them in a different representation, providing the user the full advantage
+of viewing the data in different ways
+[BATINI91].
+For example, while VR gives immediate indication about physical location of a book, in a
+form-based representation more details can be provided at once, such as title of the book,
+authors, exact number of pages, etc. Therefore,
+in a situation involving a change of paradigm between query and result representations, the
+user is perfectly comfortable with the two windows shown on the screen.
+<br><br>
+However, the user gets confused when working in VR, in the situation depicted in Figure 2.
+The two windows both show the book shelf, but the left-side window
+shows the VR query and the right-side window shows the VR result.
+When the user is visualizing the VR result,
+it is unnatural to go to a different window
+to modify the query.  There should be only one window, showing both the
+VR result and the VR query.
+Therefore, in the new version of the VQRH prototype, the computer screen displays
+only one view of the Virtual Library at a time.
+The user first navigates in the Virtual Library and clicks
+on a bookshelf.  The user then proceeds
+to click on individual books, and uses operators such as "near", "similar_to", "above", etc.
+to retrieve other books.
+<br><br>
+Extending the Virtual Library metaphor, we can consider map as a metaphor
+for navigation in an information space.  Hypermaps, short for cartographic
+hyperdocuments, fill the gap between hyperdocuments and spatial information
+so that knowledge pertaining to several kinds of applications can be
+organized in a very elegant and efficient ay by means of anchors linking
+words to spatial zones and vice versa, or by linking literal information
+to coordinates
+[LAURINI90].
+Applications include urban and environmental planning, architecture and
+mechanical designs, building maintenance, archeology, tourism and
+geographic information systems.  Hypermaps can be used advantageously
+as a metaphor for the representation of all the multimedia hyperbase elements
+[CAPORAL97].
+In GeoAnchor, a map can be built dynamically as a view of the multimedia hyperbase
+[CAPORAL97].
+As shown in Figure 3, each displayed geometry is an anchor to either a geographic node or to a
+related node.  Hence, the map on the screen acts both as an index to the
+nodes and as a view to the multimedia hyperbase.
+With this metaphor, <b>semantic filtering</b> can be accomplished as illustrated by the example
+of Figure 4, where user behavior determines the semantic
+weight of both the nodes and the links of the road network.  If the
+access frequency of a secondary road such as 'D751' is much lower than
+that of a major road such as 'A10', the secondary road will not appear on
+the display for readability.
+<br><br>
+In a Virtual Library a hypermap can also be used as a metaphor to
+link the most frequently accessed items such as reading rooms,
+book shelves, etc. to present different views to the end user.
+This combined metaphor of <b>Hypermapped Virtual Library</b>
+(which is a combination of the VR information space and the logical information hyperspace)
+may lead to efficient access of multimedia information from a digital
+library.
+<br><br>
+<br><br>
+ <img src="mccfig/fig3.gif">
+<center>Figure 3.  A hypermap example (from [CAPORAL97]).</center>
+<br><br>
+<br><br>
+ <img src="mccfig/fig4.gif">
+<center>Figure 4.  An example of semantic filtering (from [CAPORAL97]).</center>
+<br><br>
+<br><br>
+<b>
+4.2. Application Example: Medical Information Fusion
+</b>
+<br><br>
+The framework for human- and system-directed medical information retrieval, discovery and
+fusion 
+[JUNGERT97]
+is best illustrated by Figure 5.  As shown in Figure 5, we envision a three-level model for information:
+<b>data</b>, <b>abstracted information</b>, and <b>fused knowledge</b>.
+Information sources such as camera, sensors or computers
+usually provide continuous streams of data, which are
+collected and stored in medical databases.  Such data need
+to be abstracted into various forms of abstractions, so that the retrieval, processing,
+consistency analysis and combination of abstracted information becomes possible.
+Finally, the abstracted information needs to be integrated and transformed
+into fused knowledge.
+These three levels of information form a hierarchy, but
+at any given moment there is the continuous transformation of data
+into abstracted information and then into fused knowledge.
+<br><br>
+Figure 5 illustrates the relationships among data sources, data,
+abstracted information and fused knowledge, with emphasis on diversity
+of data sources and multiplicity of abstracted representations.
+For example, a video camera is a data source that
+generates video data.  Such video data can be transformed into various
+forms of abstracted representations:
+<br><br>
+ o text (video-to-text abstraction by human agent or computer)
+ o keyword (video-to-keyword abstraction by human agent or computer)
+ o assertions (logical representation of abstracted facts)
+ o qualitative spatial description (abstraction such as the symbolic projection
+[CHANG96b])
+ o time sequences of frames (abstraction where both spatial and temporal relations are preserved)
+<br><br>
+In Figure 5,  a potentially viable transformation from data to abstracted
+representation is indicated by a small circle.  Thus, from video it is
+possible to transform into qualitative spatial description or time sequence of frames.
+A supported transformation is indicated by a large circle in Figure 5.
+Thus the image data will be transformed into keywords, assertions (facts) and
+qualitative spatial description.
+It should be emphasized that there are more types of abstracted representations
+than what are shown in Figure 5.  Conversely, certain information systems may only support text, keywords and assertions
+as the three allowable types of abstractions.
+The information sources in Figure 5 may include hard real-time sources (such as
+the signals captured by sensors), soft real-time sources (such as pre-stored
+video), and non-real-time sources (such as text, images and graphics from a medical database or a web site).
+<br><br>
+The transformation from data to information and then knowledge is effected by the coordinated efforts of the <b>User</b>,
+the <b>Active Index System</b> and the <b>Decision Network</b>.
+As shown in Figure 6, the user interacts with the Active Index System and the Decision Network
+to obtain information and create fused knowledge.  The user can request the Active Index System to
+collect information from the sources.
+Since the active index can perform actions in response to the
+user's requests,
+[CHANG95a]
+the user is capable of controlling the sources to
+influence the type of data being collected.  For example, the user may turn
+on or turn off the video camera
+or manually control the positioning of the camera.
+Moreover, the user can also provide missing information and evaluate the diagnosis
+produced by the Decision Network.
+<br><br>
+The Active Index System
+receives input data as messages, processes them and sends abstracted
+information as its output to the user or the Decision Network.
+Data are transformed into abstracted information through the 
+active index cells which also serve as filters to weed out unwanted data.
+Some index cells can also
+perform spatial/temporal
+reasoning 
+[CHANG96a]
+to generate
+spatially/temporally abstracted information in the form of assertions.
+An active index contains index cells that can be attached to <b>sources</b>, while
+a conventional index is for data already stored in the database.
+For example, index cells on sensors, web sites or web pages can be created so that an Active Index System
+can obtain information from selected sources and send it to the user or the Decision Network.
+<br><br>
+The Decision Network is a neural net called LAMSTAR
+[GRAUPE96]
+capable of storing knowledge, fusing
+knowledge and posing requests to the Active Index System to collect
+more information from the sources.
+The Decision Network can send messages to
+the Active Index System to activate index cells which then take
+appropriate actions to generate abstracted information.
+The Decision Network can also interact with the user.  It can, for example,
+solicit the user's evaluation of its diagnosis to reorganize its internal
+knowledge base.
+<br><br>
+ <img src="mccfig/fig5.gif">
+<center>Figure 5.  A framework for information retrieval, discovery and fusion from multiple sources.</center>
+<br><br>
+ <img src="mccfig/fig6.gif">
+<center>Figure 6.  Relationships among the user, the Active Index System, the Decision Network and the sources.</center>
+<br><br>
+<br><br>
+<b>
+4.2.1. A Formal Definition of Semantic Consistency
+</b>
+<br><br>
+A prototype of the experimental system AMIS2
+[CHANG98]
+is at http://www.cs.pitt.edu/~jung/AMIS2.  It
+can be used to check for consistency in information retrieval, discovery and fusion.  To do so, a more formal definition
+of consistency is necessary.   Our definition of consistency
+is based upon the transformational approach illustrated by the framework of Figure 5.
+It is different from the usual definitions of consistency in database theory or in AI theory,
+because we believe the problem of consistency for information discovery and fusion must be first addressed at the
+level of characteristic patterns detected in medical objects.
+This is where the active medical information system can make the most
+impact in drastically reducing the amount of medical information that ultimately must
+be handled by human operators.
+<br><br>
+We define consistency functions to check the consistency
+among media objects of the <b>same</b> media type, by concentrating on their characteristic patterns.  For example, two assertions
+"there is a tumor in the left lung" and "there is no tumor in the left lung"
+can be checked for consistency, and two images of the same left lung can
+also be checked for consistency.
+These consistency functions are media-specific and domain-specific.
+For example, to check whether two medical images are consistent, the consistency
+function will verify whether the two images
+contain similar <b>characteristic patterns</b> such as arteries, bone structures, tissues.
+For different application domains, different consistency functions are needed.
+<br><br>
+To check whether media objects of <b>different</b> media types are consistent,
+they need to be transformed into media objects of the same media type so
+that the media-specific, domain-specific consistency function can be applied.
+Our viewpoint is that each object is characterized by some characteristic
+patterns that can be transformed into characteristic patterns in different
+media type.  For example, the characteristic pattern is a tumor
+in the image media, which is transformed into the word "tumor"  in
+the keyword media.  The consistency function can then be applied to
+the characteristic patterns of objects of the same media type.
+<br><br>
+Let {o<sup>i</sup>}<sub>j</sub> be the j<sup>th</sup> object of media type M<sup>i</sup>.  Let {c<sup>i</sup>}<sub>k</sub> be the k<sup>th</sup>
+characteristic pattern detected in an object {o<sup>i</sup>}<sub>j</sub> of media type M<sup>i</sup>.
+Let C<sup>i</sup> denote the set of all such characteristic patterns of media type M<sup>i</sup>.
+Let phi<sub>1,2</sub> be the transformation that maps characteristic patterns
+detected in objects of media type M<sup>1</sup> to characteristic patterns of media
+type M<sup>2</sup>.
+<br><br>
+For each media type M<sup>i</sup> there is a consistency function K<sub>i</sub> which is
+a mapping from 2<sup>{ C<sup>i</sup> }</sup> (the space of all subsets of characteristic patterns in media type M<sup>i</sup>)
+to {<i>T</i>, <i>F</i>}.  In other words it verifies that a set of characteristic patterns
+of media type M<sup>i</sup> are consistent.
+<br><br>
+A characteristic pattern {c<sup>1</sup>}<sub>k</sub> of media type M<sup>1</sup> is consistent with respect
+to media type M<sup>2</sup> if the transformed characteristic pattern
+phi<sub>1,2</sub>({c<sup>1</sup>}<sub>k</sub>) is consistent with the set C<sup>2</sup> of all characteristic
+patterns of media type M<sup>2</sup>, i.e. K<sub>2( {phi<sub>1,2</sub>({c<sup>1</sup>}<sub>k</sub>)} <i>union</i> C<sup>2</sup>)</sub> = <i>T</i>.
+A characteristic pattern {c<sup>i</sup>}<sub>k</sub> is consistent if it is consistent with
+respect to all media types M<sup>j</sup>.
+<br><br>
+Finally, a multimedia information space is consistent at time t if
+every characteristic pattern of every media type is consistent at time
+t, and a multimedia information space is temporally consistent if it is consistent
+at all times.
+<br><br>
+As an example, an image of media type M<sup>1</sup> is examined and a possible tumor-like object
+is detected.  This is a characteristic pattern {c<sup>1</sup>}<sub>1</sub>.  The keywords describing
+findings by the medical doctor is of media type M<sup>2</sup>.  The transformation phi<sub>1,2</sub>
+maps characteristic pattern {c<sup>1</sup>}<sub>1</sub> to phi<sub>1,2</sub>({c<sup>1</sup>}<sub>1</sub>), which could be the
+keyword "tumor".  If the consistency function K<sub>2</sub> verifies that the finding
+"tumor" is consistent with other findings, then the characteristic pattern
+{c<sup>1</sup>}<sub>1</sub> is consistent with respect to media type M<sup>2</sup>.  If we can also verify
+that {c<sup>1</sup>}<sub>1</sub> is consistent with other patterns detected in media M<sup>1</sup>, and suppose
+the information space contains only objects of these two media types, then
+we have verified that {c<sup>1</sup>}<sub>1</sub> is consistent.
+<br><br>
+The information space is temporally consistent if all such findings are consistent
+at all times.  This  can be verified only after we run the entire
+diagnostic procedure.
+For example, if the "tumor" characteristic pattern is detected at time t<sub>1</sub>
+but absent at time t<sub>2</sub> and again detected at time t<sub>3</sub>,
+and t<sub>1</sub> &lt t<sub>2</sub> &lt t<sub>3</sub>, then there may be temporal inconsistency.
+(This temporal inconsistency may lead to the discovery of an important event.)
+<br><br>
+In this example the transformation function is simply the labeling of characteristic patterns.
+The "tumor" characteristic pattern is the pattern detected by a pattern recognizer.
+There are image processing algorithms which will produce characteristic patterns.
+As for the consistency function,
+we can use similarity functions which
+accept as inputs the characteristic patterns in some media space (the
+simplest being keywords) and produce the output to verify whether the
+inputs are consistent 
+[SANTINI96].
+In other words, we can use similarity functions to determine
+whether the inputs are all within a certain distance.  As will be explained in the next section, we
+can also use the neural network for consistency checking.
+For different media, we need to find the most suitable consistency
+functions.
+<br><br>
+<br><br>
+<b>
+4.2.2. Consistency Checking by Horizontal/Vertical Reasoning
+</b>
+<br><br>
+As illustrated in Figure 5, information fusion is feasible 
+when information from different sources can be converted into similar
+representations, indicated in Figure 5 by several large circles in the same horizontal row.
+For example, the  system may support the transformation
+of image, text and web pages into assertions (facts), so that consistency checking
+among assertions is feasible.  We call such reasoning 
+<b>horizontal reasoning</b> because it combines information abstracted from 
+different media encoded in the same uniform representation.
+<br><br>
+Another type of reasoning is applicable to data from similar media with 
+different abstracted representations so that they can be combined and checked 
+for consistency.  We call such reasoning
+<b>vertical reasoning</b> because it combines information having
+different representations at different levels of abstraction.
+<br><br>
+Horizontal reasoning can be accomplished with the help of 
+an artificial neural network
+due to its ability to combine information abstracted 
+from different media and adequately encoded in the same uniform representation. 
+Once a horizontally uniform representation is obtained, an artificial neural network
+can check for consistency. 
+If the neural network's reliability <b>R</b> is less than a predefined threshold,
+then the inputs are regarded as inconsistent.  In other words, the
+consistency function <i>K</i> is derived from <b>R</b>.
+<br><br>
+The active index can be used in vertical reasoning due to its ability
+to obtain information from different sources and actively connecting them
+by dynamic linking (using index cells).
+For example, we can link an image to a keyword to an assertion (fact), and
+then domain-specific algorithms can be applied to check their consistency.
+Vertical reasoning is associative and combines information in different
+representations.  An artificial neural network with fixed connections is not as
+appropriate as an active index with flexible connections.
+<br><br>
+We now use AMIS2 to illustrate
+information fusion by horizontal/vertical reasoning.  Patient information are
+abstracted from different media sources, including imaging devices, signal 
+generators, instruments, etc. <b>(vertical reasoning)</b>.  Once abstracted and
+uniformly represented, the neural network is invoked to make a  tentative
+diagnosis <b>(horizontal reasoning)</b>.  Using the active index, similar patient
+records are found by the Recursive Searcher <b>(vertical reasoning)</b>.  
+A retrieved patient record is compared with the target patient record <b>(horizontal  
+reasoning)</b>. If similar records lead to similar diagnosis then the results
+are consistent and the patient record (with diagnosis) is accepted
+and integrated into the knowledge base.
+If the diagnosis is different then the results are inconsistent and the 
+negative feedback can also help the decision network learn.
+<br><br>
+In the vertical reasoning phase, in addition to comparing patient data, we
+can also compare images to determine whether we have found similar patient records.  Therefore,
+content-based image similarity retrieval becomes a part of the vertical
+reasoning.  Depending upon the application domain, image similarity can be
+based upon shape, color, volume or other attributes  of an object,
+spatial relationship among objects, and so on.
+<br><br>
+This example illustrates the <b>alternating application of horizontal reasoning
+(using the neural network for making predictions) and vertical 
+reasoning (using dynamically created active index for making associations)</b>. 
+Combined, we have an active information
+system for medical information fusion and consistency checking.
+<br><br>
+The research challenge is to find the appropriate visual querying mechanism
+to express horizontal/vertical reasoning in medical information fusion.
+One possibility is the <b>Hypermapped Virtual Clinics</b> metaphor,
+where virtual clinical laboratories are linked using horizontal reasoners, and
+lab test results are then linked to clinical databases using vertical reasoners.
+<br><br>
+<br><br>
+<b>
+4.3. Application Example: Intelligent Web Searcher
+</b>
+<br><br>
+The issue of providing the user with a powerful and friendly query mechanism for
+accessing information on the Web has been very recently widely investigated. In 
+particular, one of the most critical problems is to find effective ways to build
+models of the information of interest, and to design systems capable of integrating 
+different and heterogeneous information sources into a common domain model. 
+Popular keyword-based search engines can be regarded as first generation of such
+systems, that use feature-based representations (or keyword representations), 
+modeling documents through feature vectors. Such representations make it easy to
+automatically classify documents, but offer limited capabilities for retrieving 
+the information of interest, still burying the user under a heap of 
+nonhomogeneous information. 
+<br><br>
+In order to overcome such limitations, more sophisticated methods for 
+representing information sources have been proposed by both the database and the
+artificial intelligence community.  Such methods can be roughly classified as 
+being based on database or knowledge representation techniques. The differences 
+between the two approaches is mainly in defining either materialized or virtual 
+views of the data extracted from the web sites, and in providing or not 
+automatic (or semi-automatic) mechanisms for individuating such data. 
+<br><br>
+Typically, in a database approach (see, e.g., 
+[ARANEUS96],
+[CHAWATHE94])
+a model of  the 
+information sources has to be explicitly specified by the user and there is no 
+automatic translation from the site information to the data in the corresponding
+database. However, relying on well-established database techniques carries a 
+number of advantages in the ease and effectiveness of access once the data is 
+stored in the database. 
+<br><br>
+On the other hand, in a knowledge based approach the idea is that the system 
+handles an explicit representation of the information sources (which has again 
+to be provided to the system), but the information requested by the user are 
+retrieved at query time, by exploiting planning techniques which introduce a 
+certain degree of flexibility in exploring the information sources and 
+extracting information from them (see, e.g., 
+[ARENS96],
+[LEVY96]),
+and in some 
+cases even deal with incomplete information 
+[ETZIONI94].
+A serious drawback of such 
+approaches is obviously the response time.
+<br><br>
+The problems still existing in both approaches lead us to propose an integrated 
+solution in the WAG system
+[CATARCI97],
+which relies on a conceptual modeling language 
+equipped with a powerful visual environment and on a knowledge representation 
+tool which is meant to provide a simpler representation of the information, but 
+the ability to reason about it. Differing from the other database approaches, 
+WAG attempts to semi-automatically classify the information gathered from 
+various sites based on the conceptual model of the domain of interest (instead 
+of requiring an explicit description of the sources). However, the result of 
+such a classification is  materialized and dealt with by using effective 
+database techniques. 
+To illustrate this approach, we first describe an idealized scenario for intelligent information retrieval from the Web:
+<br><br>
+<ul>
+<b>A user poses a few queries
+to locate information of interest.  The user may also navigate to the
+web site to select some objects of interest.  After this preliminary interaction, when the user is inactive or away,
+an intelligent information retrieval system will search the web sites
+to find all the relevant web pages which constitute a virtual site.  It then
+builds conceptual views containing the information relevant to the specific domains.
+The information, even if originally
+expressed in different formats, will be presented in a unified way. The views will be
+conceptualized and populated in two different phases: a) an </b>on-line phase<b> during browsing sessions of the user; b)
+an </b>off-line phase<b> by the intelligent information retrieval system, which will visit related sites applying the existing search engines to populate the database.
+The user poses precise database queries and develops a deeper understanding of the
+problem domain.  After a careful analysis of the database, the user again
+poses imprecise web queries and navigates the web to locate objects of interest, leading to the
+next cycle of intelligent information retrieval.</b>
+</ul>
+<br><br>
+In the above scenario, the intelligent information retrieval system will structure the information in the web sites and
+present the relevant information to the user or store the relevant information in
+a database whose conceptual view is constructed by the system.
+To accomplish the objective suggested by this scenario, we propose
+the <b>WAG</b> (<b>W</b>eb-<b>A</b>t-a-<b>G</b>lance) system
+which can assist the user in creating a customized database by gleaning the 
+relevant information from a web site containing multimedia data.  WAG performs this task by first 
+interacting with the user to construct a customized conceptual view of the web pages pertinent to the 
+user's interests, and then populating the database with information extracted from the web pages. 
+<br><br>
+The  WAG system can be realized as an active index which contains multiple index cells (ic's) to perform various tasks.
+The most important components (realized as index cells) of WAG are the <b>Searcher ic</b>, the <b>Page Classifier ic</b>
+and the <b>Conceptualizer ic</b>. Each ic will in turn activate other ic's to cooperatively accomplish the objective.
+WAG could be used by different users.  For each of them the active index builds a "personal environment"
+containing the user's profile, the conceptual views of the domains and the corresponding knowledge bases.
+However, a user who just starts interacting with WAG is allowed to import and possibly merge the
+personal environments of previous users (unless marked as reserved) so as to take advantage of the information they
+already discovered.  The new personal environment resulting from the importing operations can
+be modified, extended, or even rejected by its owner. A further possibility could be to ask the web sites
+the permission to be marked as visited by a WAG user, and add to them link(s) to the conceptual base(s) of the
+corresponding WAG user(s) (also in this case the users' authorization is mandatory).
+This leads to the concept of BBCs and LBCs.
+<br><br>
+The prototyping of WAG components as web pages enhanced by
+active index cells has the advantage that the user can easily enter information
+to experiment with the prototype WAG system.
+Moreover, whenever the user accesses an html page, an associated ic can
+be instantiated to collect information to be forwarded to the WAG ic's,
+so that flexible on-line interaction can be supported for the
+Searcher, the Page Classifier and the Conceptualizer.
+In the current version of the light-weight WAG, the Conceptualizer is not included.
+Thus the user will pose an information retrieval request to search the
+web sites, observe the results produced by the Page Classifier, and
+formulate another request to search the web sites, and so on.
+<br><br>
+The experimental light-weight WAG can be accessed by anyone with a browser.
+The home page is at http://www.cs.pitt.edu/~jung/WAG.
+The following scenario describes how to use it:
+<br><br>
+<b>Step 1: Initialize the WAG system</b>
+<br><br>
+If this is the first time the user is using the WAG, the user must initialize it.
+If the user has previously initialized the WAG system, the user need not
+reinitialize it; the user can create more BBCs and LBCs, or move on to perform
+the search without creating more index cells.
+If the user wants to delete all previously created index cells,
+or if the
+system seems to have some problems, the user can reinitialize and create a new WAG index cell.
+<br><br>
+<b>Step 2: Create Big Brothers BBCs</b>
+<br><br>
+Big Brother index cells (BBCs) are search engines to search web sites on a global
+scale.  Generally speaking, these are commercially available search
+engines, which will return URLs as the results of keyword searches.
+The user can create "yahoo" and "lycos" or the user's own BBCs.
+The user can enter the name of a search engine and click the button below to create a 
+new BBC index cell.
+<br><br>
+<b>Step 3: Create Little Brothers LBCs</b>
+<br><br>
+Little Brother index cells (LBCs) monitor individual pages located at any web site.  
+To create a little brother to monitor an individual
+page, the user can input
+the page's URL, followed by a positive integer, as shown in the following example:
+<br><br>
+   http://www.cs.pitt.edu/~chang/index.html    3 
+<br><br>
+where the page's full URL must be given explicitly.  The LBC will
+be created, with three most frequently found keywords
+assigned to it.  The user can also assign the user's own keywords to a page specifically.  
+If the user inputs the URL followed by a list of keywords,
+then the LBC will be assigned these keywords.
+<br><br>
+<b>Step 4: Perform the Search</b>
+<br><br>
+The Searcher accepts the URL of the target page,
+or a keyword, and performs the search by
+sending messages to all the LBCs and BBCs.  For the LBCs that
+monitor individual pages, those similar to the target page or 
+having a matched keyword will
+respond, and the URLs of the corresponding pages are returned.
+For the BBCs that are commercially available search engines such
+as Yahoo and Lycos, the returned page is processed to yield
+a list of URLs, and only those URLs who pages are similar to the target page or
+having a matched keyword will be retained.
+To calculate similarity, the frequencies for keyword occurrence are first computed.
+Then the similarity 
+measures between that page and the target page are calculated.
+Currently we compute three statistical similarity measures:
+Jaccard, Cosine and Dice.
+The similarity measures obtained by these three methods are averaged, and 
+the result value (the average) is used as the similarity between this page 
+and the target page.
+The thresholds for similarity measures can be set by the user.
+If the user does not set the
+various thresholds for similarity retrieval as well as
+the number of keywords to be matched in a page,
+default values will be used in the search.
+<br><br>
+<b>Step 5: Classify Pages for Recursive Search</b>
+<br><br>
+The user can classify the retrieved pages using the Page Classifier to decide whether the user wants to follow
+a page recursively.  First the user displays the results.  Then the user chooses those
+pages to be followed.  The user can give a search width and a search depth.
+The search width is the
+maximum number of pages to be retrieved similar to a target page in one
+search step.  The search depth is the number of search steps.
+The Searcher will then perform the recursive search.
+The recursive search is very powerful and may yield a large number of
+URLs, which can be regarded as the virtual site to be classified by
+the Page Classifier.
+<br><br>
+The ideal user interface for the WAG may allow the user to visualize
+the BBCs and LBCs in a physical information space.  The user interface may also provide
+a hypermap (a logical information hyperspace) so that the BBCs and LBCs
+can be associated with the target documents.
+The combined metaphor is thus a <b>Hypermapped Virtual World of Big Brothers and Little Brothers</b>.
+<br><br>
+<br><br>
+<b>
+5. Integrated Technology Comparison
+</b>
+<br><br>
+<b>
+5.1. Taxonomy of Visual Querying Paradigms
+</b>
+<br><br>
+As discussed in Section 2, the information stored in a multimedia database is
+organized in a logical information space. Such logical information needs to be materialized
+in the physical information space in order to allow the user to view it. We are particularly interested in
+materializations performed by using visual techniques. Therefore, visual query systems, as
+defined in Section 1, are needed. A survey of VQSs proposed in the last years is presented
+in
+[BATINI91].
+In that paper the VQSs are also compared along three taxonomy criteria: 1) the visual
+representation, that is adopted to present the reality of interest and the applicable language
+operators; 2) the expressive power, that indicates what can be done by using the query
+language; 3) the interaction strategies, that are available for performing the queries.
+<br><br>
+The query paradigm, which settles the way the query is performed and represented, is very
+much dependent on the way the data in the database (that are the query operands) are
+visualized. The basic types of visual representations analyzed in
+[BATINI91]
+are form-based, diagrammatic, and iconic, according to the visual formalism primarily
+employed, namely forms, diagrams, and icons. A fourth type is the hybrid representation, that
+uses two or more visual formalisms.
+<br><br>
+A form can be seen as a rectangular grid having components that may be any combination of
+cells of groups of cells (subform). A form is intended to be a generalization of a table. It
+facilitates the users by exploiting the usual tendency of people to use regular structures for
+information processing. Moreover, computer forms are abstracted from conventional paper
+forms familiar to people in their daily activities. Form-based representations have been the
+first attempt to provide users with friendly interfaces for data manipulation, taking advantage
+of the bidimensionality of the computer screen. QBE has been a pioneer form-based query
+language
+[ZLOOF77].
+The queries are formulated by filling appropriate fields of prototypical tables that are
+visualized on the screen.
+<br><br>
+Representations based on diagrams are widely adopted in existing VQSs. We use the word
+diagram with a very broad meaning, referring to any graphics that encodes information using
+position and magnitude of geometrical objects and/or shows the relationships among
+components. Referring to the different types of visual representations analyzed in
+[LOHSE94],
+our broad definition of diagram include graphs (such as bar, pie, histogram, scatterplot, etc.),
+graphic tables, network charts, structure diagrams, process diagrams. An important and useful
+characteristics of a diagram is that, if we modify its expression by following certain rules, its
+content can show new relationships
+[ECO75].
+Often, a diagram uses visual elements that are one to one associated with specific concept
+types. Diagrammatic representations adopt as typical query operators the selection of
+elements, the traversal on adjacent elements and the creation of a bridge among disconnected
+elements.
+<br><br>
+The iconic representation uses sets of icons to denote both the objects of the database and the
+operations to be performed on them. In an icon we distinguish the pictorial part, i.e. the
+image shown on the screen, and the semantic part, i.e. the meaning that such an image
+conveys. The simplest way to associate a meaning to an icon is by exploiting the similarity
+with the referred object. If we have to represent an abstract concept, or an action, that does
+not have a natural visual counterpart, we have to take into account different correlation
+modalities between the pictorial and the semantic part
+[BATINI91],
+In iconic VQSs, a query is expressed primarily by combining icons. For
+example, icons may be vertically combined to denote conjunction (logical AND) and
+horizontally combined to denote disjunction (logical OR).
+<br><br>
+All the above representations present complementary advantages and disadvantages. In
+existing systems, only one type of representation is usually available. This significantly
+restrict the database users that can benefit from the system. An effective database interface
+should supply multiple representations, in order to provide different interaction paradigms,
+each one with different characteristics. Therefore, each user, either novice or expert, can
+choose the most appropriate paradigm to interact with the system. Such a kind of
+multiparadigmatic interface for databases has been proposed in
+[CATARCI96],
+where the selection of the appropriate interaction paradigm is made with reference to a user
+model that describes the user's interest and skills.
+Another interesting query paradigm is introduced in
+[CHANG94].
+It is based on the idea that a Virtual Reality representation of the database application domain
+is available.  An example was presented in Section 4.1.
+<br><br>
+The research on multiparadigmatic visual interfaces is conceptually similar to the research on
+multimodal interfaces for multimedia databases
+[BLATTNER92]
+<b>Multimodal interfaces</b> support multiple input/output channels for
+human-computer interaction.
+The rationale for providing different input and output mechanisms is to accommodate
+user diversity. 
+Humans, by their very nature, have unpredictable behavior, different skills and a wide range
+of interests. Since we cannot obtain a priori information on how each user wishes to interact
+with the computer system, we need to create customizable human-computer interfaces, so that the
+users themselves will choose the best way to interact with the system, possibly by exploiting
+multiple input and output media.
+<br><br>
+Effective user interfaces are difficult to build. Multimodal and multimedia user interfaces are
+even more difficult to build. They have further requirements that need to be fully satisfied.
+The qualities for multimodal and multimedia interfaces have
+been studied in
+[HILL92],
+where the authors identified the following for consideration by the interface designer:
+(1) blended modalities, (2) appropriate resolvable ambiguity and tolerable probabilistic input
+capability such as whole sentence speech and gesture recognition, (3) distributed control of interaction among interface modules using protocols of cooperation, (4)
+real-time as well as after-the-fact access to interaction history, and (5)
+a highly modular architecture.
+In our view, one such quality, "blended modalities", requires special emphasis.
+Blending of modes means that at any point a user can continue input in a new, more
+pragmatically appropriate mode. The requirement "at any point" is not easy to achieve. In
+the multiparadigmatic interface described by
+[CATARCI96],
+conditions for allowing a paradigm switch
+during query formulation are carefully demonstrated.
+The problem needs to be investigated both from the system's and from
+the cognitive viewpoint.
+Besides any model that can
+help predict user behavior, extensive experimentation is needed with users in order to make
+sure that the presence of several modes does not create mental overload.
+<br><br>
+Another issue of great importance to multiparadigmatic interface design is
+that the expressive power achievable in the different modes, i.e. the kind of database operations
+that can be performed, may not be the same.  For the different visual
+paradigms analyzed above, form-based and diagrammatic paradigms often
+provide the same expressive power as the relational algebra
+[BATINI91],
+but VR only allows selection of objects and retrieval of objects for which similarity functions
+have been specified.
+This is even more evident when we consider interaction through different media. A database
+expert will be very comfortable when performing queries with SQL.
+The same expressive power cannot be achieved, with
+the current technology, if we use either speech or stylus-drawn gesture; such modes have the
+further disadvantage of providing ambiguous or probabilistic input.  Until now the design of
+interfaces avoids the use of such kind of inputs, because their ambiguity is
+unmanageable. Next generation interfaces should include such input modes, if appropriate to
+the task the interface is for, and provide means to resolve specific ambiguities. One
+possibility is changing the interaction mode, so that in the new mode a
+certain operation is no longer ambiguous.
+<br><br>
+<br><br>
+<b>
+5.2. Media Interaction Techniques
+</b>
+<br><br>
+The computer technology is providing everybody the possibility of directly exploring
+information resources. One the one side, this is extremely useful and exciting. On the other
+side, the ever growing amount of information at disposal generates cognitive overload and
+even anxiety, especially in novice or occasional users. The current user interfaces are usually
+too difficult for novice users and/or inadequate for experts, who need tools with many
+options, and consequently limiting the actual power of the computer.
+<br><br>
+We recognize three different needs of people exploring information: 1) to understand the
+content of the database, 2) to extract the information of interest, and 3) to browse the
+retrieved information in order to verify that it matches what they wanted. To satisfy such
+needs, the user-interface designers are challenged to invent more powerful search techniques,
+simpler query facilities, and more effective presentation methods. When creating new
+techniques, we have to keep in mind the variability of the user population, ranging from first-
+time or occasional versus frequent users, from task-domain novices versus experts, from
+naive (requesting very basic information) versus sophisticated users (interested in very
+detailed and specific information). Since there is not a technique capable to satisfy the need
+of all such classes of users, the proposed techniques should be conceived as having a basic set
+of features, while additional features can be requested as users gain experience with the
+system.
+<br><br>
+A user interacting the first time with an information system should be allowed to easily
+navigate into the system in order to get a better idea of the kind of data that can be accessed.
+Since the information systems become larger and larger, while each user is generally
+interested in only a small portion of data, one of the primary goal of a designer is to develop
+some kind of filters to reduce the set of data that need to be taken into account. At Xerox in
+recent years a group of researchers has developed several information visualization techniques, with
+the aim of helping the users understand and process the information stored into the system
+[ROBERTSON93a].
+They have created the "information workspaces", i.e. computer environments in which the
+information is moved from the original source, such as networked databases, and where
+several tools are at disposal of users for browsing and manipulating the information. One of
+the main characteristic of such workspaces is that they offer graphical representations of
+information that facilitate rapid perception of the overall patterns. Moreover, they use 3D
+and/or distortion techniques to show some portion of the information at a greater level of
+detail, but keeping it within a larger context. These are usually called fish eye techniques, but
+it is clearer to call them "focus + context", that better gives the idea of showing an area of
+interest (the focus) quite large and with detail, while the other areas are shown successively
+smaller and in less detail. Such an approach is very effective when applied to documents, and
+also to graphs.
+It achieves a smooth integration of local detail and global context. It has more advantages of
+other approaches to filter information, such as zooming or the use of two or more views, one
+of the entire structure and the other of a zoomed portion. The former approach shows local
+details but looses the overall structure, the latter requires extra screen space and forces the
+viewer to mentally integrate the views. In the "focus + context" approach, it is effective to
+provide animated transitions when changing the focus, so that the user remain oriented across
+dynamic changes of the display avoiding unnecessary cognitive load.
+<br><br>
+Shneiderman points out that the perfect search paradigm that retrieves all and only all of the
+desired items is unattainable
+[SHNEIDERMAN92].
+Still, he suggests some ways for achieving flexible search. A first possibility for searches
+within documents is to allow "rainbow search". It is based on the fact that most word
+processors support several features (different fonts, sizes, styles, etc.) and text attributes
+(footnotes, references, etc.), therefore it could be useful to allow a search of all words in italic
+or a search through only footnotes. Another new technique is "search expansion": when
+looking for documents using some term, the system can also suggest more general (or
+specific) terms, synonyms, or related terms from a thesaurus or a data dictionary in order to
+perform a more complete search.
+<br><br>
+Search techniques applicable to multimedia data are very interesting. For instance, sound is
+included among data types of multimedia databases, and it could constitute both an output (as
+a response of the system) or an input (as a query). Some existing electronic dictionaries
+already provide both the meaning of words as well as their pronunciation, so offering full
+information on every requested word. In
+[MADHYASTHA95]
+the authors present "sonification", i.e. the mapping of data to sound parameters, as a rich but
+still unexplored technique for understanding complex data. The current technology has
+favored the development of the graphical dimension of user interfaces while limiting the use
+of the auditory dimension. This is also because the properties of the aural cues are not yet
+well understood as those of visual signals. Moreover, sound alone cannot convey accurate
+information without a visual context. The tool described in
+[MADHYASTHA95]
+uses sound to complement visualization, thus enhancing the presentation of complex
+data.  Sound can be useful in some situations, for instance to set up an
+alarm when working with the computer to remember to do something at a certain time. The
+opposite is also true, i.e. visualization can help in analyzing sound. For example, it is useful
+for an expert performing a detailed analysis of a certain sound to look at the graphics of its
+amplitude in a given time interval.
+<br><br>
+We can think of a sound search in a music database. The user hums  some notes and the
+system provides the list of symphonies that contain that string of notes. This is not difficult to
+achieve provided that the user input the notes in an unambiguous way (for example entering
+the notes on a staff connected to the computer) and the search is performed on the score
+sheets of symphonies stored with the music.
+<br><br>
+A system called Hyperbook uses sounds as an imitation of bird calls (either in the melody or
+in the tone) to retrieve specific bird families within an electronic book on birds
+[TABUCHI91].
+The user can  also retrieve a bird by drawing a silhouette of the bird. The descriptions
+provided by both techniques are incomplete since it is difficult for the user to give an exact
+specification. Hyperbook solves such queries on the basis of a data model, called metric
+spatial object data, which represents objects in the real world as points in a metric space. In
+order to select the candidate objects, distances are evaluated by the system, enabling the user
+to choose those objects (birds) which have a minimal distance from the query in the metric
+space.
+<br><br>
+Interesting and useful techniques can be exploited for searching
+images in a database on the basis of their pictorial contents. Given a sketch of a house,
+the user may want to find all pictures that contain that house.  With the visual query system called
+Pictorial Query-By-Example (PQBE), Papadias and Sellis proposes an
+approach to the problem of content-based querying geographic and image databases
+[PAPADIAS95].
+PQBE makes use of the spatial nature of spatial relations in the formulation of a query. This
+should allow users to formulate queries in a language close to their thinking. As in the case of
+the well-known Query-By-Example, PQBE generalizes from the example given by the user,
+but, instead of having skeleton relational tables, there are skeleton images.
+<br><br>
+Several researchers are proposing interaction environments exploiting different techniques
+than the visual ones. In
+[RICH94]
+an interactive multimedia prototype is shown that allows users seating in front of a terminal
+to experience with a virtual reality environment. The system integrates a number of key
+technologies and the purpose of the prototype is to experiment such new interaction
+possibilities. The users communicate with each other and with artificial agents through
+speech. The prototype also includes audio rendering, hand gesture recognition and body-
+position-sensing technology. The authors admit that their system is limited by the current
+technology, but they are confident that in a couple of years what is today expensive or yet
+impossible will be commonplace.
+<br><br>
+Traditional languages such as SQL allow the user to specify exact queries that indicate matches on
+specific field values.
+Non-expert and/or occasional users of the database are generally not
+able to directly formulate a query whose result fully satisfies their needs, at least in their first
+attempts.
+Therefore, the users may prefer to
+formulate a complex query by a succession of progressive simple queries, i.e. step by step, by
+first asking general questions, obtaining preliminary results, and then revisiting  such
+outcomes to further refine the query in order to extract the result they are interested in. Since
+the results obtained up to a certain point may not converge to the expected data,
+a nonmonotone query progression should be allowed. During this process of progressive querying,
+an appropriate visualization of the preliminary results could give a significant
+feedback to the user. Moreover, it will provide hints about the right way to proceed towards
+the most appropriate final query. Otherwise, the user will immediately backtrack and try a
+different alternative path. Often, even if the user is satisfied with the result, he or she is also
+challenged to further investigate the database, and as a result may acquire more information from it.
+<br><br>
+The above described advantages of performing a progressive query through visual
+interaction, also displaying, in a suitable representation, the obtained partial results, has lead
+to the Visual Querying and Result Hypercube (VQRH), which is a tool that
+provides a multiparadigmatic approach for progressive querying and result visualization in
+database interaction
+[CHANG94].
+Using the VQRH tool, the user interacts with the database by means of a sequence of partial
+queries, each displayed, together with the corresponding result, as one slice of the VQR
+Hypercube. Successive slices on the Hypercube store partial queries performed at successive
+times. Therefore, the query history is presented in a 3D perspective, and a particular partial
+query on a slice may be brought to the front of the Hypercube for further refinement by
+means of a simple mouse click.
+<br><br>
+Another powerful technique for querying a database is "dynamic query", that allows to do
+range search on multi-key data sets. The query is formulated through direct manipulation of
+graphical widgets such as buttons and sliders, one widget being used for every key. The result
+of the query is displayed graphically and quickly on the screen. It is important that the results
+fit on a single screen and that they are displayed quickly, since the users should be able to
+perform tens of queries in a few seconds and immediately see the results. Giving a query, a
+new query is easily formulated by moving with the mouse the position of a slider. This gives
+a sense of power but also fun to the user, that is challenged to try other queries and see how
+the result is modified. As in the case of the progressive query, the user can ask general
+queries and see what the results are, then he or she can better refine the query.  An
+application of dynamic queries is shown in
+[SHNEIDERMAN92]
+and refers to real-estate database. There are sliders for location, number of bedrooms, price
+of homes in the Washington, D. C. area. The user moves these sliders to find appropriate
+homes. Selected homes are indicated by bright points of light on a Washington, D. C. map
+shown on the screen.
+<br><br>
+<br><br>
+<b>
+6. Open Research Challenges
+</b>
+<br><br>
+As mentioned earlier, the key to content-based access of multimedia is
+the efficient and effective creation, encoding and maintenance
+of associations among media objects.
+The interaction metaphors employ multiple paradigms to
+facilitate making these associations.
+Virtual library, hypermap, vertical/horizontal reasoners, big/little brothers,
+etc. are some of the useful interaction metaphors to accomplish this goal.
+Although the metaphors themselves are conceptual, their effective
+incorporation into the user interface for multimedia often dictates
+the use of visual querying mechanisms.
+As discussed in Section 2, the appropriate interaction metaphor may involve a combination
+of several information spaces.  To support visual querying, a challenge is to
+integrate the user's view of the information spaces with the underlying
+semantic model such as the InfoSleuth's ontology model.
+In fact, it seems that the <b>Hypermapped Virtual World</b> metaphor is quite
+compatible with the ontology model, so that an integrated model with four or
+five layers may do the job.
+<br><br>
+The use of visual interfaces combining different query mechanisms represents a step toward a truly effective utilization of
+multimedia information systems by large classes of users.
+The query mechanisms include
+speech, sound, gestures, etc., but the user interface should be
+highly visual to enable
+the user to
+gradually grasp the database contents, the navigation technique, the visual reasoning strategy,
+as well as the querying process.
+As it was pointed out in
+[CATARCI95],
+in the last ten years the research on visual query
+systems passed from conceiving merely hypothetical and vague ideas to building real
+systems. Yet, much more need to be done, both from the
+theoretical and the application-oriented point of view.
+Since the success of a complex application is largely due to the way it matches the users'
+expectations as well as their skills and learning ability, more efforts should be devoted to experimenting
+and validating the proposed interfaces, in order to provide an accurate evaluation of their
+usability, which is a crucial factor to the practical utilization of such interfaces
+for multimedia information systems.
+<br><br>
+Multimedia interface design involves various issues
+[BLATTNER92].
+In determining the criteria for the evaluation of visual and multimedia user interface 
+we should also take into consideration similar criteria for evaluating visual programming languages
+[KIPER97].
+For content-based access of multimedia, we need also ask:
+Can relevant associations be easily discovered?
+Can new an associations be easily created?
+How are the associations encoded and maintained?
+These are some of the critical issues to be evaluated.
+<br><br>
+Although visual interfaces are supposedly "universal", the meanings of
+visual symbols (icons) do shift across cultural boundaries.  There is no
+internationally accepted standard of visual symbols. An approach to solve this problem
+is to provide multilingual interfaces so that the user can shift to the user's
+native language in an interactive session.
+AMIS2, for example, allows the user to switch between English and Chinese
+any time during the interaction.
+This could be further augmented by speech feedback to enhance user's understanding.
+Again, it may be possible to integrate all these multilingual, multimodal,
+multiparadigmatic aspects in the unified information model.
+
+<br><br>
+<h3>References:</h3>
+
+ <b>[AHMED94]</b> Ahmed, Z., L. Wanger, and P. Kochevar, "An Intelligent Visualiza
+      tion System for Earth Science Data Analysis," Journal of
+      Visual Languages and Computing, vol. 5, no. 4, pp. 307-320,
+      December 1994.<br>
+ <b>[ANUPAM94]</b> Anupam, V. and C. L. Bajaj, "Shastra: Multimedia Collaborative
+      Design Environment," IEEE Multimedia, pp. 39-49, 1994.<br>
+ <b>[ARANEUS96]</b> The Araneus Project,
+      http://poincare.inf.uniroma3.it:8080/Araneus/ araneus.html,
+      1996.<br>
+ <b>[ARENS96]</b> Arens, Y., C. A. Knoblock, and W. Shen, "Query reformulation for
+      dynamic information integration," Journal of Intelligent In
+      formation Systems, 1996.<br>
+ <b>[BATINI91]</b> Batini, C., T. Catarci, M. F. Costabile, and S. Levialdi, Visual
+      Query Systems, Technical Report N. 04.91, Dipartimento di
+      Informatica e Sistemistica, Universit` di Roma "La Sapien
+      za", Italy, 1991 (revised in 1993).<br>
+ <b>[BEAUDOUIN92]</b> Beaudouin-Lafon, M., Beyond the Workstation: Mediaspaces and Aug
+      mented Reality, pp. 9-18,
+     in  Blattner, M. M. and R. B. Dannenberg (Eds.), Multimedia Interface
+      Design, Addison-Wesley, 1992.<br>
+ <b>[BLATTNER92]</b> Blattner, M. M. and R. B. Dannenberg (Eds.), Multimedia Interface
+      Design, Addison-Wesley, 1992.<br>
+ <b>[CAPORAL97]</b> Caporal, J. and Y. Viemont, "Maps as a Metaphor in a Geographical
+      Hypermedia System," Journal of Visual Languages and Comput
+      ing, vol. 8, no. 1, pp. 3-25, February 1997.<br>
+ <b>[CATARCI95]</b> Catarci, T. and M. F. Costabile (Eds.), "Special Issue on Visual
+      Query Systems," Journal of Visual Languages and Computing,
+      vol. 6, no. 1, 1995.<br>
+ <b>[CATARCI96]</b> Catarci, T., S. K. Chang, M. F. Costabile, S. Levialdi, and G.
+      Santucci, "A Graph-based Framework for Multiparadigmatic
+      Visual Access to Databases," IEEE Transactions on Knowledge
+      and Data Engineering, vol. 8, No. 3,, 1996, 455-475.<br>
+ <b>[CATARCI97]</b> Catarci, T., S. K. Chang, L. B. Dong, and G. Santucci, "A Proto
+      type Web-At-a-Glance System for Intelligent Information Re
+      trieval," Proc. of SEKE'97, pp. 440-449, Madrid, Spain, June
+      18-20, 1997.<br>
+ <b>[CHANGH95a]</b> Chang, H., T. Hou, A. Hsu, and S. K. Chang, "The Management and
+      Applications of Tele-Action Objects," ACM Journal of Mul
+      timedia Systems, vol. 3, no. 5-6, pp. 204-216, Springer Ver
+      lag, 1995.<br>
+ <b>[CHANGH95b]</b> Chang, H., T. Hou, A. Hsu, and S. K. Chang, "Tele-Action Objects
+      for an Active Multimedia System," Proceedings of Second
+      Int'l IEEE Conf. on Multimedia Computing and Systems, pp.
+      106-113, Wasnington, D.C., May 15-18, 1995.<br>
+ <b>[CHANG79]</b> Chang, S. K. and J. S. Ke, "Translation of Fuzzy Queries for Re
+      lational Database System," IEEE Transactions on Pattern
+      Analysis and Machine Intelligence, vol. PAMI-1, no. 3, pp.
+      281-294, July 1979.<br>
+ <b>[CHANG90]</b> Chang, S. K., "Visual reasoning for information retrieval from
+      very large databases," Journal of Visual Languages and Com
+      puting, vol. 1, no. 1, pp. 41-58, 1990.<br>
+ <b>[CHANG94]</b> Chang, S. K., M. F. Costabile, and S. Levialdi, "Reality Bites 
+      Progressive Querying and Result Visualization in Logical and
+      VR Spaces," Proc. of IEEE Symposium on Visual Languages, pp.
+      100-109, St. Luis, October 1994.<br>
+ <b>[CHANG95a]</b> Chang, S. K., "Toward a Theory of Active Index," Journal of Visu
+      al Languages and Computing, vol. 5, pp. 101-118, 1995.<br>
+ <b>[CHANG95b]</b> Chang, S. K., G. Costagliola, G Pacini, M. Tucci, G. Tortora, B.
+      Yu, and J. S. Yu, "Visual Language System for User Inter
+      faces," IEEE Software, pp. 33-44, March 1995.<br>
+ <b>[CHANG96a]</b> Chang, S. K., "Active Index for Content-Based Medical Image Re
+      trieval," Journal of Computerized Medical Imaging and Graph
+      ics, Special Issue on Medical Image Databases (S. Wong and
+      H. K. Huang, eds.), pp. 219-229, Elsevier Science Ltd.,
+      1996.<br>
+ <b>[CHANG96b]</b> Chang, S. K. and E. Jungert, Symbolic Projection for Image Infor
+      mation Retrieval and Spatial Reasoning, Academic Press, Lon
+      don, 1996.<br>
+ <b>[CHANG96c]</b> Chang, S. K., "Extending Visual Languages for Multimedia," IEEE
+      Multimedia Magazine, vol. 3, no. 3, pp. 18-26, Fall 1996.<br>
+ <b>[CHANG98]</b> Chang, S. K., D. Graupe, K. Hasegawa, and H. Kordylewski, "An Ac
+      tive Multimedia Information System for Information Retrieval,
+      Discovery and Fusion," International Journal of Software En
+      gineering and Knowledge Engineering, vol. 8, no. 1, World
+      Scientific Pub. Co., March 1998.<br>
+ <b>[CHAWATHE94]</b> Chawathe, S. and et al., "The TSIMMIS Project: Integration of
+      Heterogeneous Information Sources," Proc. of IPSJ Confer
+      ence, pp. 7-18, 1994.<br>
+ <b>[CHEN96]</b> Chen, P. W., G. Barry, and S. K. Chang, "A Smart WWW Page Model
+      and its Application to On-Line Information Retrieval in Hy
+      perspace," Proc. of Pacific Workshop on Distributed Mul
+      timedia Systems DMS'96, pp. 220-227, Hong Kong, June 27-28,
+      1996.<br>
+ <b>[D'ATRI89a]</b> D'Atri, A., P. Di Felice, and M. Moscarini, "Dynamic query in
+      terpretation in relational databases," Information Sciences,
+      vol. 14, no. 3, 1989.<br>
+ <b>[D'ATRI89b]</b> D'Atri, A. and L. Tarantino, "From Browsing to Querying," Data
+      Engineering, vol. 12, no. 2, pp. 46-53, June 1989.<br>
+ <b>[DUTTA89]</b> Dutta, S., "Qualitative Spatial Reasoning: A Semi-Quantitative
+      Approach Using Fuzzy Logic," Conference Proceedings on Very
+      Large Spatial Databases, pp. 345-364, Santa Barbara, July
+      17-19, 1989.<br>
+ <b>[ECO75]</b> Eco, U., A Theory of Semiotics, Indiana University Press, 1975.<br>
+ <b>[ETZIONI94]</b> Etzioni, O. and D. Weld, "A Softbot-Based Interfacpto the Inter
+      net," CACM, vol. 37, no. 7, 1994.<br>
+ <b>[FALOUTSOUS93]</b> Faloutsous, C. et al., "Efficient and Effective Querying by
+      Image Content," IBM Research Division Almaden Research
+      Center Technical Report RJ9543 (83074), August 1993.<br>
+ <b>[FALOUTSOUS94]</b> Faloutsous, C., R. Barber, M. Flickner, J. Hafner, W. Niblack, D.
+      Petkovic, and W. Equitz, "Efficient and Effective Querying
+      by Image Content," Journal of Intelligent Information Sys
+      tems, vol. 3, pp. 231-262, 1994.<br>
+ <b>[FOX91]</b> Fox, E. A., "Advances in Interactive Digital Multimedia Systems,"
+      IEEE Computer, vol. 24, no. 10, pp. 9-21, October 1991.<br>
+ <b>[GOULD84]</b> Gould, L. and W. Finzer, "Programming by Rehearsal," Byte, pp.
+      187-210, June 1984.<br>
+ <b>[GRAUPE96]</b> Graupe, D. and H. Kordylewski, "A Large-Memory Storage and Re
+      trieval Neural Network for Browsing and Medical Diagnosis,"
+      Proc. ANNIE Conf., St. Louis, Missouri, 1996.<br>
+ <b>[HALBERT84]</b> Halbert, D. C., "Programming by Example," Xerox Office Systems
+      Division, TR OSD-T8402, Dec 1984.<br>
+ <b>[HANNE92]</b> Hanne, K. and H. Bullinger, "Multimodal Communication: Integrat
+      ing Text and Gestures," Multimedia Interface Design, pp.
+      127-138, Addison-Wesley, 1992.<br>
+ <b>[HILL92]</b> Hill, W., D. Wroblewski, T. McCandiess, and R. Cohen, "Architec
+      tural Qualities and Principles for Multimodal and Multimedia
+      Interfaces," Multimedia Interface Design, pp. 311-318,
+      Addison-Wesley, 1992.<br>
+ <b>[HUANG90]</b> Huang, K. T., "Visual Interface Design Systems," Principles of
+      Visual Programming Systems, Prentice-Hall, 1990.<br>
+ <b>[IGNATIUS94]</b> Ignatius, E., H. Senay, and J. Favre, "An Intelligent System for
+      Task-Specific Visualization Assistance," Journal of Visual
+      Languages and Computing, vol. 5, no. 4, pp. 321-338, De
+      cember 1994.<br>
+ <b>[JUNGERT97]</b> Jungert, E. and S. K. Chang, "Human- and System-Directed Fusion
+      of Multimedia and Multimodal Information using the Sigma
+      Tree Data Model," Prof. of VISual'97: Second International
+      Conference on Visual Information Systems, San Diego, Cali
+      fornia, Dec 15-17, 1997.<br>
+ <b>[KAWATA96]</b> Kawata, Y., A. Kawasaki, W. Udomkitwanit, A. Yabu, H. Kobayashi,
+      P. Wijayarathna, and M. Maekawa, "EVE: A visual specifica
+      tion environment with support for formal descriptions of
+      physical properties," Proc. of First Int'l Conf. on Visual
+      Information Systems, pp. 518-529, Melbourne, Australia,
+      February 5-6, 1996.<br>
+ <b>[KIPER97]</b> Kiper, J. D., E. Howard, and C. Ames, "Criteria for Evaluation of
+      Visual Programming Languages," Journal of Visual Languages
+      and Computing, vol. 8, no. 2, pp. 175-192, 1997.<br>
+ <b>[KOVACEVIC97]</b> Kovacevic, S., "A Compositional Model of Human-Computer Dialogs,"
+      Multimedia Interface Design, pp. 373-404, Addison-Wesley,
+      1992.<br>
+ <b>[LANG92]</b> Lang, L., "GIS Comes to Life," Computer Graphics World, pp. 27
+      36, October 1992.<br>
+ <b>[LAURINI90]</b> Laurini, R. and F. Milleret-Raffort, "Principles of Geomatic Hy
+      permaps," Proceedings of the 4th Internationl Symposium on
+      Spatial Data Handling, pp. 642-651, Zurich, Switzerland,
+      June 23-27, 1990.<br>
+ <b>[LEVY96]</b> Levy, A.Y., A. Rajaraman, and J.J. Ordille, "Querying-Answering
+      Algorithms for Information Agents," Proceedings of the Thir
+      teenth National Conference on Artificial Intelligence
+      (AAAI-96), 1996.<br>
+ <b>[LITTLE95]</b> Little, T. D. C. and D. Venkatesh, "The Use of Multimedia Tech
+      nology in Distance Learning," Proceedings of IEEE Int'l
+      Conference on Multimedia Networking, pp. 3-17, Aizu, Japan,
+      September 1995.<br>
+ <b>[LOHSE94]</b> Lohse, G. L., K. A Biolsi, N. Walker, and H. H. Rueter, "A Clas
+      sification of Visual Representations," Communications of the
+      ACM, vol. 37, no. 12, pp. 36-49, 1994.<br>
+ <b>[MADHYASTHA95]</b> Madhyastha, T. M. and D. A. Reed, "Data Sonification: Do You See
+      What I Hear?," IEEE Software, vol. 12, no. 2, pp. 45-56,
+      March 1995.<br>
+ <b>[MOTRO86]</b> Motro, A., "BAROQUE: An exploratory interface to relational data
+      bases," ACM Trans. on Office Information Systems, vol. 4,
+      no. 2, pp. 164-181, April 1986.<br>
+ <b>[MOTRO88]</b> Motro, A., "VAGUE:A User Interface to Relational Database that
+      Permits Vague Queries," ACM Trans. on Office Information
+      Systems, vol. 6(3), pp. 187-214, July 1988.<br>
+ <b>[MYERS86]</b> Myers, Brad A., "Visual Programming, Programming by Example, and
+      Program Visualization: A Taxonomy," Proceedings of SIG
+      CHI'86, pp. 59-66, Boston, MA, April 13-17, 1986.<br>
+ <b>[MYERS88]</b> Myers, B. A., Creating User Interfaces by Demonstration, Academic
+      Press, Boston, 1988.<br>
+ <b>[NIBLACK93]</b> Niblack, W. and M. Flickner, "Find me the Pictures that look like
+      this: IBM's Image Query Project," Advanced Imaging, April
+      1993.<br>
+ <b>[PAPADIAS95]</b> Papadias, D. and T. Sellis, "Pictorial Query-By-Example," Journal
+      of Visual Languages and Computing, vol. 6, no. 1, pp. 53-72,
+      1995.<br>
+ <b>[RAU96]</b> Rau, H. and S. Skiena, "Dialing for Documents: An Experiment in
+      Information Theory," Journal of Visual Languages and Comput
+      ing, vol. 7, no. 1, March 1996.<br>
+ <b>[REIS92]</b> Reis, H., D. Brenner, and J. Robinson, "Multimedia Communications
+      in Health Care," New York Academy of Sciences Conference on
+      Extended Clinical Consulting by Hospital Computer Networks,
+      March 1992.<br>
+ <b>[RICH94]</b> Rich, C., R. C. Walters, C. Strohecker, Y. Schabes, W. T. Free
+      man, M. C. Torrance, A. R. Golding, and M. Roth, "Demonstra
+      tion of an Interactive Multimedia Environment," IEEE Comput
+      er, vol. 27, no. 12, pp. 15-22, 1994.<br>
+ <b>[ROBERTSON93a]</b> Robertson, G. G., S. K. Card, and J. D. Mackinlay, "Information
+      Visualization using 3D Interactive Animation," Communica
+      tions of the ACM, vol. 36, no. 4, pp. 57-71, 1993.<br>
+ <b>[ROBERTSON93b]</b> Robertson, G. G., S. K. Card, and J. D. Mackinlay, "Nonimmersive
+      Virtual Reality," IEEE Computer, vol. 26, no. 2, pp. 81-83,
+      1993.<br>
+ <b>[SANTINI96]</b> Santini, S. and R. Jain, "The Graphical Specification of Similar
+      ity Queries," Journal of Visual Languages and Computing,
+      vol. 7, no. 4, pp. 403-421, December 1996.<br>
+ <b>[SHNEIDERMAN92]</b> Shneiderman, B., Designing the User Interface, Addison Wesley
+      Publishing Company, 1992.<br>
+ <b>[SMITH77]</b> Smith, D. C., Pygmalion: A Computer Program to Model and Stimu
+      late Creative Thought, Birkhauser, Stuttgart, 1977.<br>
+ <b>[STOAKLEY95]</b> Stoakley, R., M. J. Conway, and R. Pausch, "Virtual Reality on a
+      WIM: Interactive Worlds in Miniature," Proc. of CHI-95, pp.
+      265-272, Denver, Colorado, May 7-11, 1995.<br>
+ <b>[TABUCHI91]</b> Tabuchi,, "Hyperbook," Proc. of International Conference on Mul
+      timedia Information Systems, Singapore, 1991.<br>
+ <b>[WALD84]</b> Wald, J. A. and P. G. Sorenson, "Resolving the query inference
+      problem using Steiner trees," ACM Trans. on Database Sys
+      tems, vol. 9, no. 3, pp. 348-368, 1984.<br>
+ <b>[WILLIAMS84]</b> Williams, M. D., "What makes RUBBIT run?," International Journal
+      on Man-Machine Studies, vol. 21, no. 4, pp. 333-352, October
+      1984.<br>
+ <b>[ZLOOF77]</b> Zloof, M. M., "Query by Example," IBM Systems Journal, vol. 16,
+      no. 4, pp. 324-343, 1977.<br>

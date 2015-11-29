@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Excel example</title>
+</head>
+
+<body>
+<h2 align = center>This is the code I used for my GetName macro</h2>
+<pre>
+Sub GetName()
+
+    Dim OraSession As Object
+    Dim OraDatabase As Object
+    Dim GradeDynaset As Object
+    Dim ColNames As Object
+    Dim PLSQLStmt1 As String
+    Dim inname As String
+  
+    inname = UserForm1.nameBox.Value
+    PLSQLStmt1 = "select NAME from exercise2 where NAME = " & "'" & inname & "'"
+    UserForm1.nameBox.Text = PLSQLStmt1
+    
+    Set OraSession = CreateObject("OracleInProcServer.XOraSession")
+    Set OraDatabase = OraSession.OpenDatabase("beq-local.world", "name/password", 0&)
+    Set GradeDynaset = OraDatabase.DbCreateDynaset(PLSQLStmt1, 0&)
+  
+    Set ColNames = GradeDynaset.Fields
+
+    For icols = 1 To ColNames.Count
+        Worksheets("Sheet1").Cells(1, (icols + 1)).Value = ColNames(icols - 1).Name
+      Next
+ 
+  
+    GradeDynaset.CopyToClipboard -1
+    Sheets("Sheet1").Select
+    Range("B2").Select
+    ActiveSheet.Paste
+
+End Sub
+
+</pre>
+</body>
+</html>

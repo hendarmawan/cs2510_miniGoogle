@@ -1,0 +1,33 @@
+If the application is heavily database oriented, you
+include in 2.3 the data structure.  For example,
+here is a student database:
+
+<p>
+  student(first-name, last-name, SSN, address)
+<p>
+
+The data elements dictionary contains the following
+entries:
+
+<p>
+   address:  student
+<br>
+   first-name:  student
+<br>
+   last-name:  student
+<br>
+   SSN:   student
+<p>
+
+In other words, the dictionary contains all the data
+elements used in the database 
+as well as where it is
+used (in this case, the "student" relation).
+
+<p>
+Note: If your application is not heavily database oriented,
+you may replace the data structure by the information
+structure produced from the data flow diagram.
+The data elements dictionary then contains
+attribute names used in the classes, or variable
+names used in program modules.

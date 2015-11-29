@@ -1,0 +1,101 @@
+<html>
+<a href="page2.html"><img src="previous.gif" align=left width="26" height="26"></a>
+<a href="page4.html"><img src="next.gif" align=right width="26" height="26"></a>
+<br>
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Multimedia presentation refers to the concurrent presentation of 
+multimedia data using monitors for text</title>
+</head>
+
+<body>
+
+<p align="center"><b><font face="Tahoma" size="5">Summary of Research: 
+Automating the Organization of Presentations for Playout Management in 
+Multimedia Databases<br>
+&nbsp;</font></b></p>
+
+<p><span style="font-size: 12.0pt; font-family: Times New Roman">Multimedia 
+presentation refers to the concurrent presentation of multimedia data using 
+monitors for text, video or still images, and speakers for audio. Each 
+presentation contains multimedia segments retrieved from a database, and is 
+constructed and played out by a presentation manager software.&nbsp; A 
+presentation could potentially use multiple resources - say 4 PC screens and a 
+set of speakers.</span></p>
+<p><span style="font-size: 12.0pt; font-family: Times New Roman">Users express a 
+presentation query by specifying</span></p>
+<ul>
+  <li><span style="font-family: Times New Roman">inclusion and exclusion 
+  constraints of </span><span style="font-size: 12.0pt; font-family: Times New Roman">
+  desired multimedia segments for the presentation</span></li>
+  <li><span style="font-family: Times New Roman">presentation organization 
+  constraints for deciding the playout order</span></li>
+  <li><span style="font-family: Times New Roman">playout control constraints to 
+  provide dynamic playout control by the user</span></li>
+  <li><span style="font-family: Times New Roman">physical playout constraints to 
+  insure jitter-free playback of multimedia data</span></li>
+</ul>
+<p>&nbsp;</p>
+<p align="center"><img border="0" src="fig1.jpg" width="476" height="253"></p>
+<p>&nbsp;</p>
+
+<ul>
+  <li><font face="Times New Roman">Inclusion and exclusion constraints are used are 
+utilized for organizing the multimedia segments into a presentation which 
+decides the playout order of the extracted multimedia segments.&nbsp; A 
+  presentation graph is created to represent the presentation satisfying all of 
+  the constraints.</font></li>
+</ul>
+<p>&nbsp;</p>
+<p align="center"><img border="0" src="fig2.jpg" width="871" height="357"></p>
+&nbsp;<ul>
+  <li>The playout order of the segment is represented in a presentation graph.&nbsp; 
+If the requested set of organization requirements are not sufficient to create a 
+unique presentation graph, two heuristic methods in the paper are proposed for 
+  use to create a unique presentation graph.&nbsp; Heuristics are used because 
+  the problem boils down to the &quot;bin packing problem&quot; which is NP-complete.</li>
+</ul>
+<p align="center">&nbsp;</p>
+<p align="center"><b><font size="4">Heuristic 1: Maximize Parallelism</font></b></p>
+<p align="center">Attempt to find the shortest length presentation that 
+satisfies all of the organizational constraints as well as user specified 
+constraints on presentation &quot;width&quot; and &quot;height&quot;.<br>
+&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><b><font size="4">Heuristic 2: Steady Flow</font></b></p>
+<p align="center">Attempt to find the lowest height presentation that satisfies 
+all of the organizational contraints.</p>
+<p align="center">&nbsp;</p>
+<p align="center"><b><font size="4">Presentation Playout</font></b></p>
+<p align="center">After a presentation is assembled that satisfies all of the 
+given constraints, dynamic playout control issues are discussed.</p>
+<p align="center">Characteristics of a Playout Agent - Schedulable (a 
+lightweight thread of execution)</p>
+<ul>
+  <li>
+  <p align="center">Arrival Time</li>
+  <li>
+  <p align="center">Earliest start time</li>
+  <li>
+  <p align="center">Actual Start time</li>
+  <li>
+  <p align="center">Playout Duration</li>
+  <li>
+  <p align="center">Deadline</li>
+  <li>
+  <p align="center">Actual Finish Time</li>
+  <li>
+  <p align="center">Synchronization Primitives</li>
+</ul>
+<p align="center">The Playout Agent allows user controls to be applied during 
+playout - pausing and continuing, closing windows, etc.</p>
+<p align="center">&nbsp;</p>
+<p align="center">Much more in depth - See <a href="references.html">References</a> 
+for more details</p>
+
+</body>
+
+</html>

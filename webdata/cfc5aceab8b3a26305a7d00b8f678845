@@ -1,0 +1,185 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title>Wencan Luo</title>
+<style type="text/css" media="screen">@import url( style.css );</style>
+</head>
+
+<body>
+
+<div id="wrap">
+<div id="container" class="one-column">
+
+<!-- header START -->
+
+<div id="header">
+<div id="caption">
+<h1 id="title" style="color: white;"><a href="index.htm">Wencan Luo</a></h1>
+<div id="tagline">University of Pittsburgh</div>
+</div>
+
+<div class="fixed"></div>
+
+</div>
+
+<!-- header END -->
+
+<!-- navigation START -->
+
+<div id="navigation">
+<ul id="menus">
+
+  <li class="page_item"><a class="home" title="Home" href="index.htm">Home</a></li>
+  <li class="page_item"><a href="project.html" title="">Projects</a></li>
+  <li class="page_item"><a href="publications.html" title="">Publications</a></li>
+  <li class="page_item"><a href="teaching.html" title="">Teaching</a></li>
+
+
+</ul>
+
+<div class="fixed"></div>
+
+</div>
+
+<!-- navigation END -->
+
+
+
+<!-- content START -->
+
+<div id="content">
+
+
+
+	<!-- main START -->
+
+	<div id="main">
+
+
+<!--- START MAIN CONTENT HERE -->
+
+
+<div class="post">
+<h2>About Me</h2>
+
+<div class="content">
+
+<table style="border: 0 none;">
+<tbody><tr>
+<td style="border: 0 none;">
+
+<p>I'm a fourth year PhD student in <a href="http://www.cs.pitt.edu/">Department of Computer Science</a>  at <a href="#">University of Pittsburgh</a>.<br>
+Here is my <a href = "info/CV_WencanLuo.pdf">CV</a>.<br>
+</p>
+
+<p>My research interests: 
+<a href = "http://en.wikipedia.org/wiki/Natural_language_processing">Natural Language Processing</a>, 
+<a href = "http://en.wikipedia.org/wiki/Machine_Learning">Machine Learning</a>,
+<a href = "http://en.wikipedia.org/wiki/Artificial_intelligence">Artificial Intelligence</a>,
+<a href = "http://en.wikipedia.org/wiki/Human%E2%80%93computer_interaction">Human–computer Interaction</a>.
+</p>
+
+</td>
+<td style="border: 0 none; width: 133px"><img src="info/wencan.jpg" alt="head shot of me"></td>
+</tr>
+</tbody></table>
+
+
+<div class="post"><h2>News</h2>
+<div class="content">
+
+
+<table>
+	
+<tbody><tr><td valign="top">06/06/2013</td>
+<td>
+</td><td> Traveled to <a href = "http://naacl2013.naacl.org/">NAACL 2013</a>. </td></tr>
+
+<tbody><tr><td valign="top">05/06/2013</td>
+<td>
+</td><td> NLU (Natural Language Understanding) Research Intern @ Bosch Research and Technology Center, supervised by Lin Zhao. </td></tr>
+
+<tbody><tr><td valign="top">01/12/2012</td>
+<td>
+</td><td>CS2002 Project Advised by 
+<a href = "http://www.cs.pitt.edu/~litman/">Diane Litman</a> on 
+<a href = "http://www.cs.pitt.edu/~litman/itspoke.html">ITSPOKE</a> and 
+<a href = "http://www.cs.pitt.edu/~jingtaow/">Jingtao Wang</a> on 
+CWM project </td></tr>
+
+</tbody></table>
+
+</div>
+</div>
+
+<div class="post"><h2>Calendar</h2>
+<div class="content">
+
+<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showCalendars=0&amp;mode=WEEK&amp;height=400&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=wencanluo.cn%40gmail.com&amp;color=%2388880E&amp;ctz=America%2FNew_York" style=" border-width:0 " width="600" height="400" frameborder="0" scrolling="no"></iframe>
+
+<div class="post">
+<h2>Contact Information</h2>
+
+<div class="content">
+
+<table>
+<tbody><tr>
+<td>
+
+<p><b>Wencan Luo</b><br>
+5420 Sennott Square<br>
+210 South Bouquet Street<br>
+<a href="#">University of Pittsburgh</a><br>
+Pittsburgh, PA 15260<br>
+E-mail: wencan at cs dot pitt dot edu
+
+</td></tr></tbody></table>
+</div></div>
+
+<!--- END MAIN CONTENT HERE -->
+
+	</div>
+
+	<!-- main END -->
+
+
+
+		<div class="fixed"></div>
+
+</div>
+
+<!-- content END -->
+
+
+
+
+<!-- footer START -->
+
+<div id="footer">
+<div id="copyright">
+Wencan Luo
+
+</div>
+
+<div id="themeinfo">
+</div>
+
+</div>
+
+<!-- footer END -->
+
+
+
+</div>
+
+<!-- container END -->
+
+</div>
+
+<!-- wrap END -->
+
+
+
+
+
+</body></html>

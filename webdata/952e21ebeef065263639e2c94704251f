@@ -1,0 +1,30 @@
+<title>I-card and C-card</title>
+
+<a href="sisic5b.htm"><img src="prev.gif" align=left></a>
+<a href="sisic7.htm"><img src="next.gif" align=right></a>
+
+<center>
+<h1>I-card and C-card</h1>
+</center>
+<font color=purple>
+<h3>Term Project Topic:
+Using UML's
+<a href="http://people.cs.pitt.edu/~chang/1635/c03UMLDPL/c01.htm">deployment diagram</a>
+an application system with
+SIS server can be
+specified.
+You can first transform the (I-card, C-card)
+specification (such as the example of
+<a href="sisic7.htm">social influence anslysis system</a>
+in the next slide) into an UML deployment diagram
+(such as the example of
+<a href="http://people.cs.pitt.edu/~chang/163/interface/SequenceSIS.htm">
+personal health care system</a>)
+either manually or semi-automatically
+and then visually present it using a suitable UML tool.
+Then you can use the SIS testbed to implement and
+simulate the SIS application system.
+<p>
+This topic is for those who are already familiar
+with Petri net and those who are interested in
+implementation type of projects.

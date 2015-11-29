@@ -1,0 +1,53 @@
+
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html;charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+</HEAD>
+
+<BODY     >
+
+<a href="tsld003.htm"><img src="previ
+ous.gif" align=left></a>
+<a href="tsld005.htm"><img src="next.
+gif" align=right></a>
+<br>
+<br>
+<br>
+<br> 
+
+ <P><UL>
+<H1> 
+Contemporary Approaches to MSS Effort Measurement</UL></P>
+</H1>  
+<P><UL>
+Due to dominance of text-based (single media) systems in large environments and the relatively recent expansion of multimedia into mainstream systems development</UL></P>
+<P><UL>
+<LI> Effort measurement based on System Size
+</UL><UL>
+	Boehm’s Constructive Cost Model (COCOMO) - lines of code
+</UL><UL>
+	Variation for Computer Aided Learning (CAL) -course delivery time and cost 	drivers 
+</UL><UL>
+Although some aspects are useful wider applicability to other types of multimedia development is unclear
+</UL><UL>
+
+</UL><UL>
+<LI>Effort based on Functionality
+</UL><UL>
+	Function Point Analysis (FPA) - quantifies weighted contribution
+</UL><UL>
+	Gao and Lo suggest ineffective for multimedia - Why?
+</UL><UL>
+	-Large database maintained in transaction oriented system
+</UL><UL>
+	-component reuse infrequent in transaction systems development
+</UL><UL>
+	-extual output of business systems</UL></P>
+<P></P> 
+
+
+
+</Body>
+</HTML>

@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Enterprise JavaBeans</title>
+</head>
+
+<body>
+
+<p align="right"><a href="present051.htm">
+<img border="0" src="previous.gif" align="left" width="26" height="26"></a></p>
+<p align="center"><a href="present06comp.htm">
+<img border="0" src="next.gif" align="right" width="26" height="26"></a><b><font face="Times New Roman" size="6">Enterprise JavaBeans</font></b></p>
+<p align="center"><font face="Times New Roman" size="4">Types of Enterprise 
+  JavaBeans</font></p>
+
+<ul>
+  <li>
+  <p align="left"><font face="sans-serif" size="4" color="#666699">
+  Message-driven Bean</font></li>
+</ul>
+<p align="left"><font size="4" face="Times New Roman">A <i>message-driven bean</i> 
+is an enterprise bean that allows J2EE applications to process messages 
+asynchronously. It acts as a JMS message listener, which is similar to an event 
+listener except that it receives messages instead of events. </font></p>
+<p align="left"><font face="Times New Roman" size="4"><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Features:</b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 1. Asynchronously processing<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 2. No Data, No State<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 3. Shared Access<br>
+　</font></p>
+
+</body>
+
+</html>

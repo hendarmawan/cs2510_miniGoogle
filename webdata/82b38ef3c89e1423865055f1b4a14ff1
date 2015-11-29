@@ -1,0 +1,68 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>An example of multimedia document</title>
+<meta name="Microsoft Theme" content="inmotion 011">
+</head>
+
+<body background="inmtextb.gif" bgcolor="#FFFFFF" text="#663300" link="#990066" vlink="#CC6633" alink="#FFCC00">
+
+<!--mstheme--><font face="Arial, Helvetica">
+
+<p>&nbsp;</p>
+
+<p><a href="3.htm"><img border="0" src="previous.gif" width="26" height="26"></a></p>
+
+<p><u><font size="7" face="Times New Roman">Example of a Multimedia Document:</font></u></p>
+<font FACE="TimesNewRoman" SIZE="2">
+<p ALIGN="JUSTIFY"><img border="0" src="4.htm6.gif" width="663" height="356"></p>
+</font>
+<font FACE="Agency FB" SIZE="5">
+<p ALIGN="JUSTIFY">The scenario is organized in two parts: (1) a presentation of 
+the company (called Company) and (2) a presentation of the mascot proposal 
+(called Mascot). These two parts of the scenario can be read sequentially but 
+hypermedia links allows the reader to jump at any time from one part of the 
+document to the other. </p>
+<p ALIGN="JUSTIFY">The Company part should globally last about 3 minutes. It is 
+composed of a sequence of three objects: an audio clip(History) which gives the 
+history of the company, followed by a textual message displaying the name of the 
+company on the screen (Name) and ends with a graphic listing its main 
+achievements (PressBook). History audio lasts for approximately 1 minute, Name 
+and PressBook must be each one displayed during 45 seconds at least. In addition 
+to this first specification, the author added a 2 minutes movie that gives an 
+overview
+of the company together with its geographical localization 
+(called Geography). This movie must be started so that the mapping of the Name 
+on the screen is synchronized with the period of the Geography movie when the 
+company building appears (approximately 20 seconds from its beginning).
+</font>
+</p>
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="5">The Mascot part is mainly composed of a virtual animation of 
+the proposal (Animated Proposal). This animation ends with a last picture of the 
+mascot (Proposal). This last frame remains displayed on the screen during 30 
+seconds together with a balloon (Balloon) on the right of the mascot mouth, 
+which contains its name. In addition, in order to see the mascot name faster, 
+the reader is asked by an audio message (Message) to click on a button (Button) 
+during the presentation of the Animated Proposal. When the reader clicks on the 
+button, the audio message stops and the balloon appears at the top of the screen 
+and moves until it reaches its final position (near the mouth of the mascot) 
+exactly when the animation ends.</font></p>
+
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="5">Figure1 gives a possible execution of this 
+document in which the reader of the document has interacted twice. At second 
+140, after the beginning of the document, he jumped to the Mascot part (cropping 
+the presentation of the Company Press-book) and, at the 180th second, he 
+activated the button to see the mascot Name faster. As a consequence, the name 
+appears on a balloon at the top on the screen and moves during such a period of 
+time that it stops exactly when the animated proposal ends. </font> </p>
+
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="4"><a href="5.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></font></p>
+<!--mstheme--></font>
+
+</body>
+
+</html>

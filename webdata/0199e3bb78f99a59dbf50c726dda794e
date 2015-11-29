@@ -1,0 +1,109 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Xin Li's Homepage</title>
+</head>
+
+<body>
+
+<div align="center">
+  <center>
+
+<TABLE width=600 height="1" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+  <TR>
+    <TD height="44" width="594">
+      <font face="Arial"><a href="../../../index.htm">Home</a>&gt;<a href="../../index.htm">CVC</a>&gt;Super 
+      Remote</font></TD>
+        </TR>
+  <TR>
+    <TD height="44" width="594">
+      <p align="center"><font face="Arial" size="4">Super Remote</font></TD>
+        </TR>
+  <TR>
+    <TD height="194" width="594">
+
+      <p align="left"><span style="font-family: Arial; ">
+      <font size="4">Introduction:</font></span></p>
+
+      <p align="left"><span style="font-family: Arial">SUPER Remote&nbsp; 
+      actually is a simplified Communication Server in real virtual classroom 
+      system. It could connect with multiple instances of you component and 
+      broadcast received message so components could talk with each other 
+      indeed. </span></p>
+
+      <p align="left"><span style="font-family: Arial"><font size="4">Download:</font></span></p>
+
+      <blockquote>
+
+      <p align="left"><span style="font-family: Arial">
+      <a href="SuperRemote.zip">SuperRemote.zip</a></span></p>
+
+      </blockquote>
+
+      <p><span style="font-family: Arial"><font size="4">How to use it?</font></span></p>
+
+      <p><span style="font-family: Arial">It is a stand alone executable file on 
+      Windows OS, just like normal virtual remote The only difference is that it 
+      could connect up to 5 servers. </span></p>
+
+      <p><span style="font-family: Arial">Click to run, you will see:</span></p>
+
+      <p align="center">
+      <img border="0" src="Figure1.JPG" width="480" height="465"></p>
+
+      <p align="center"><span style="font-family: Arial">Figure 1 Super Remote 
+      Control</span></p>
+
+      <p><span style="font-family: Arial">It will relay all received messages 
+      between all connected servers. For example, the message shown in Figure1 
+      was sent by super remote, the responses of connected servers are shown in 
+      following two figures:</span></p>
+
+      <p align="center">
+      <img border="0" src="Figure2.JPG" width="340" height="403"></p>
+
+      <p align="center">Figure 2 One Server on Local Machine</p>
+
+      <p align="center">
+      <img border="0" src="Figure3.JPG" width="256" height="313"></p>
+
+      <p align="center">Figure 3 One Server on Remote Machine </p>
+
+      <p align="left"><span style="font-family: Arial">Using super remote, 
+      multiple instance of your component could be hooked up together. Finally, 
+      student tool and teacher tool could also join the connection.</span></p>
+
+      <HR color="#808080">
+
+      <TABLE cellSpacing=0 cellPadding=0 width="593" border=0>
+        <TBODY>
+        <TR>
+          <TD width="573"><SPAN class=negl>
+          Updated:<!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%Y" startspan -->04/12/2005<!--webbot bot="Timestamp" endspan i-checksum="12534" --></SPAN></TD>
+         
+          <TD width="20">
+            
+          <SPAN class=negl>
+          <script language="JavaScript" type="text/javascript" src="http://m1.nedstatbasic.net/basic.js"></script>
+          <a target="_blank" href="http://www.nedstatbasic.net/stats?ACr87g1ajNTqzWDBUCeAQEwlWIsw">
+          <IMG height=18 alt="Web page Counter" 
+            src="http://m1.nedstatbasic.net/n?id=ACr87g1ajNTqzWDBUCeAQEwlWIsw" 
+            width=18 border=0></SPAN></TD>
+         
+        </TR>
+        
+        </TBODY>
+        </TABLE></TD>
+        </TR>
+        </TABLE>
+        
+        </center>
+</div>
+        
+        </body>
+
+</html>

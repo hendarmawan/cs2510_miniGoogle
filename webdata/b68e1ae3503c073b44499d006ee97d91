@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="project_req1.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="project_req3.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Requirements (cont.)</font></h1> 
+ 
+</center> 
+
+<body>
+<p><font size="4" face="Arial, Helvetica, sans-serif">A couple users of the system 
+  have been identified. First, emergency dispatch centers are equiped with full 
+  size monitors capable of displaying the most information visually to the user. 
+  The dispatcher will be able to see the current mapped crossings, and color coded 
+  track indications. Additionally, these users will be provided with estimated 
+  delay times and estimated time until block. This type of use will usually be 
+  working autonomously. Additionally, it is more likely that the computer they 
+  are using has access to a high speed network connection, and therefore will 
+  be provided with periodic updates in addition to on-demand updates of the system 
+  state. This type of user will not want to have an audio announcement of the 
+  information as they are often in communication with several individuals at one 
+  time. These users can be expected to simply glance at the screen to get the 
+  latest information and provide their suggested course to emergency vehicles 
+  and personnel that either are not equiped with the hardware to access the system 
+  or are not in a situation to use that hardware.</font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The second type of user 
+  identified is one with hardware mounted in their vehicle, such as the computers 
+  mounted in police cars. The media will need to be adapted to the hardware and 
+  situations that these users may find themselves. The hardware in police cars 
+  would be much smaller than a normal sized computer monitor, so the graphics 
+  need to be adapted for this smaller screen. The visual cues of the map would 
+  be advantageous to a police officer as they could quickly assess if there is 
+  a train approaching a crossing while chasing a suspect. Additionally, they will 
+  be provided with numerical output of estimated delays and estimated time until 
+  blocks on crossings for the situation that they have a partner with them who 
+  then can navigate the driver towards an unblocked crossing. A future enhancement 
+  to the system may include an audio announcement of the delays and block times 
+  for crossings displayed on the map. This would enable the driver, if alone, 
+  to keep his or her eye on the road rather than reading a screen. Firefighters 
+  are another type of user that falls into this category. They could use this 
+  system in the same manner as the police, of course their goal is a bit different. 
+  Again, in this adaptation the system would periodically update in order to keep 
+  the officers up to date on the status of the system.</font></p>
+</body>
+</html>

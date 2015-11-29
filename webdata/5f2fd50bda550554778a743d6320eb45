@@ -1,0 +1,32 @@
+<title>Introduction to Objects</title>
+<A HREF="../1530syl.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02.htm"><IMG SRC="next.gif" align=right></A>
+
+<center>
+<h1>Introduction to Objects</h1>
+</center>
+
+
+<h2>Module</h2>
+
+A strict definition of module is as follows:<p>
+
+<b>A module is a set of one or more contiguous program statements having
+a name by which other parts of the system can invoke it, and preferably
+having its own distinct set of variable names.  In other words,
+<font color=red>
+a module consists of a single block of code that can be invoked
+in the way that a procedure, function, or method is invoked. </b> (Stevens, Myers and Constantine)
+</font>
+
+<p>
+A more general definition of module is as follows:<p>
+
+<b>A module is a lexically contiguous sequence of program statements,
+bounded by boundary elements, having an aggregate identifier."</b>
+
+<p>
+<font color=red>
+Procedures and functions are modules.  An object is a module, and
+so is a method within an object.
+</font>

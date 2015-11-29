@@ -1,0 +1,242 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<link rel=File-List href="Logic_files/filelist.xml">
+<link rel=Edit-Time-Data href="Logic_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Unit1g : Testing the ALU</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>don</o:Author>
+  <o:LastAuthor>Sam Dickerson</o:LastAuthor>
+  <o:Revision>9</o:Revision>
+  <o:TotalTime>483</o:TotalTime>
+  <o:Created>2005-09-16T19:53:00Z</o:Created>
+  <o:LastSaved>2005-09-20T12:23:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>188</o:Words>
+  <o:Characters>1076</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>8</o:Lines>
+  <o:Paragraphs>2</o:Paragraphs>
+  <o:CharactersWithSpaces>1262</o:CharactersWithSpaces>
+  <o:Version>11.6408</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h2
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:18.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h3
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:13.5pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+h4
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+pre
+	{margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	tab-stops:45.8pt 91.6pt 137.4pt 183.2pt 229.0pt 274.8pt 320.6pt 366.4pt 412.2pt 458.0pt 503.8pt 549.6pt 595.4pt 641.2pt 687.0pt 732.8pt;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white background="Generator_files/Unitbkg.jpg" lang=EN-US
+link=blue vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h3 align=center style='text-align:center'>Verification of Logic Operations</h3>
+
+<h3 style='text-align:justify'><span style='font-weight:normal;mso-bidi-font-weight:
+bold'>The first verification unit we will construct will be for the logical
+operations.<span style='mso-spacerun:yes'>  </span>We will only make use of one
+component from the Open Verification Library, assert_implication.<span
+style='mso-spacerun:yes'>  </span>Read its description from the documentation (<a
+href="../../../Reference/ovl_docs/html/assert_implication.html">Assert_Implication</a>).
+<o:p></o:p></span></h3>
+
+<h3 style='text-align:justify'><span style='font-weight:normal;mso-bidi-font-weight:
+bold'>We will use a comparison of ALUop as the antecedent expression; this
+identifies which operation we are verifying. A comparison of the returned
+result ( R ) to the expected result (For the case of ALUop =”0000” we expect a
+result of <i style='mso-bidi-font-style:normal'>A AND B</i> ) is used as the
+consequent expression.<span style='mso-spacerun:yes'>  </span>If the antecedent
+expression is true but the consequent expression evaluates false, an error will
+be reported to the simulator.<span style='mso-spacerun:yes'>  </span>We have
+the option of writing what that error message will be and its severity level
+(Right Click on Component </span><span style='font-family:Wingdings;mso-ascii-font-family:
+"Times New Roman";mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;
+mso-symbol-font-family:Wingdings;font-weight:normal;mso-bidi-font-weight:bold'><span
+style='mso-char-type:symbol;mso-symbol-font-family:Wingdings'>à</span></span><span
+style='font-weight:normal;mso-bidi-font-weight:bold'> Object Properties </span><span
+style='font-family:Wingdings;mso-ascii-font-family:"Times New Roman";
+mso-hansi-font-family:"Times New Roman";mso-char-type:symbol;mso-symbol-font-family:
+Wingdings;font-weight:normal;mso-bidi-font-weight:bold'><span style='mso-char-type:
+symbol;mso-symbol-font-family:Wingdings'>à</span></span><span style='font-weight:
+normal;mso-bidi-font-weight:bold'> Generics).<span style='mso-spacerun:yes'> 
+</span>Use severity_lvl = ERROR, any level higher than this will cause the
+simulator to halt operation when errors are detected.<o:p></o:p></span></h3>
+
+<h3 style='text-align:justify'><span style='font-weight:normal;mso-bidi-font-weight:
+bold'><o:p>&nbsp;</o:p></span></h3>
+
+<h3 align=center style='text-align:center'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:770.25pt;
+ height:519.75pt'>
+ <v:imagedata src="Logic_files/image001.png" o:title="LOGIC"/>
+</v:shape><![endif]--><![if !vml]><img border=0 width=1027 height=693
+src="Logic_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]></h3>
+
+<h3 align=center style='text-align:center'>Figure 6.</h3>
+
+<h3 style='text-align:justify'><span style='font-weight:normal;mso-bidi-font-weight:
+bold'>Shown above are the assertions for the AND and OR operations, you will
+also have to include assertions for the other two logical operators in your
+testbench.<o:p></o:p></span></h3>
+
+<p align=center style='margin-left:.5in;text-align:center'><a
+href="Compare.html" target="_self">Click here to proceed</a></p>
+
+</div>
+
+</body>
+
+</html>

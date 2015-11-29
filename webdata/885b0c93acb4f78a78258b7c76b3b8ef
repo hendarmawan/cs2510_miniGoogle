@@ -1,0 +1,783 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Page7_files/filelist.xml">
+<title>Design Pattern catalog</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Srikanth</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Srikanth</o:LastAuthor>
+  <o:Revision>4</o:Revision>
+  <o:TotalTime>0</o:TotalTime>
+  <o:Created>2005-04-09T00:25:00Z</o:Created>
+  <o:LastSaved>2005-04-09T00:45:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>589</o:Words>
+  <o:Characters>3361</o:Characters>
+  <o:Company> </o:Company>
+  <o:Lines>28</o:Lines>
+  <o:Paragraphs>7</o:Paragraphs>
+  <o:CharactersWithSpaces>3943</o:CharactersWithSpaces>
+  <o:Version>10.2625</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+h1
+	{mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;}
+h2
+	{mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:14.0pt;
+	font-family:Arial;
+	font-style:italic;}
+h3
+	{mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin-top:12.0pt;
+	margin-right:0in;
+	margin-bottom:3.0pt;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:16.0pt;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;
+	font-style:italic;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:Arial;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	mso-ansi-language:EN-US;
+	mso-fareast-language:EN-US;
+	mso-bidi-language:AR-SA;
+	font-weight:bold;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:415639763;
+	mso-list-template-ids:-994936542;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l1
+	{mso-list-id:917784096;
+	mso-list-type:hybrid;
+	mso-list-template-ids:880842544 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.25in;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l1:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2
+	{mso-list-id:1098477520;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-1847699966 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level2
+	{mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l2:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l3
+	{mso-list-id:1308975549;
+	mso-list-template-ids:-1002405076;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l4
+	{mso-list-id:1393582787;
+	mso-list-template-ids:585424356;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l5
+	{mso-list-id:1437599724;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1275913640 67698689 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l5:level3
+	{mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level4
+	{mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level5
+	{mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level6
+	{mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level7
+	{mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level8
+	{mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+@list l5:level9
+	{mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US style='tab-interval:.5in'>
+<A HREF="Page6.htm"><IMG SRC="previous.gif" align=left></A>
+<A HREF="Page8.htm"><IMG SRC="next.gif" align=right></A>
+<div class=Section1>
+
+<h1><span
+style='mso-spacerun:yes'>                                                                                                                                                          
+</span></h1>
+
+<h1>Design Pattern catalog</h1>
+
+<table class=MsoTableGrid border=1 cellspacing=0 cellpadding=0
+ style='border-collapse:collapse;border:none;mso-border-alt:solid windowtext .5pt;
+ mso-yfti-tbllook:480;mso-padding-alt:0in 5.4pt 0in 5.4pt;mso-border-insideh:
+ .5pt solid windowtext;mso-border-insidev:.5pt solid windowtext'>
+ <tr style='mso-yfti-irow:0'>
+  <td width=67 rowspan=4 style='width:.7in;border:solid windowtext 1.0pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Scope</p>
+  </td>
+  <td width=60 rowspan=2 valign=top style='width:45.0pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=463 colspan=3 style='width:347.4pt;border:solid windowtext 1.0pt;
+  border-left:none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Purpose</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Creational<o:p></o:p></b></p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Structural<o:p></o:p></b></p>
+  </td>
+  <td width=199 valign=top style='width:149.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>Behavioral<o:p></o:p></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=60 valign=top style='width:45.0pt;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Class</p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Factory Method</p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Adapter</p>
+  </td>
+  <td width=199 valign=top style='width:149.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt'>
+  <p class=MsoNormal>Interpreter</p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3;mso-yfti-lastrow:yes;height:73.75pt'>
+  <td width=60 style='width:45.0pt;border-top:none;border-left:none;border-bottom:
+  solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;mso-border-top-alt:
+  solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:
+  solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:73.75pt'>
+  <p class=MsoNormal align=center style='text-align:center'>Object</p>
+  </td>
+  <td width=144 valign=top style='width:1.5in;border-top:none;border-left:none;
+  border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:73.75pt'>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list 15.0pt .25in'><![if !supportLists]><span style='font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Abstract Factory</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list 15.0pt .25in'><![if !supportLists]><span style='font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Builder</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list 15.0pt .25in'><![if !supportLists]><span style='font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Prototype</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list 15.0pt .25in'><![if !supportLists]><span style='font-family:
+  Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Singleton</p>
+  </td>
+  <td width=120 valign=top style='width:1.25in;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:73.75pt'>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Adapter</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Bridge</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Composite</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Decorator</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Façade</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Flyweight</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Proxy</p>
+  <p class=MsoNormal><o:p>&nbsp;</o:p></p>
+  </td>
+  <td width=199 valign=top style='width:149.4pt;border-top:none;border-left:
+  none;border-bottom:solid windowtext 1.0pt;border-right:solid windowtext 1.0pt;
+  mso-border-top-alt:solid windowtext .5pt;mso-border-left-alt:solid windowtext .5pt;
+  mso-border-alt:solid windowtext .5pt;padding:0in 5.4pt 0in 5.4pt;height:73.75pt'>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Chain of Responsibility</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Command</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]><span class=SpellE>Iterator</span></p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Mediator</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Observer</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>State</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Strategy</p>
+  <p class=MsoNormal style='margin-left:.25in;text-indent:-.25in;mso-list:l1 level1 lfo2;
+  tab-stops:list .25in'><![if !supportLists]><span style='font-family:Symbol;
+  mso-fareast-font-family:Symbol;mso-bidi-font-family:Symbol'><span
+  style='mso-list:Ignore'>·<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  </span></span></span><![endif]>Visitor</p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>Creational patterns</h2>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo5;tab-stops:list .5in'><span
+     class=Heading3Char><span style='font-size:13.0pt'>Singleton pattern:</span></span>
+     is a class of which there may be no more than one instance. It provides a
+     single global point of access to that instance.</li>
+</ul>
+
+<p class=MsoNormal style='margin-left:.25in'><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l5 level1 lfo5;tab-stops:list .5in'>Any
+     Number of cases in programming in which you need to ensure that there can
+     be one and only one instance of a class are possible, ex:</li>
+ <ul style='margin-top:0in' type=circle>
+  <li class=MsoNormal style='mso-list:l5 level2 lfo5;tab-stops:list 1.0in'>Your
+      system might have only one window manager or print spooler or one point
+      of access to database engine</li>
+ </ul>
+</ul>
+
+<h3>Creating a singleton pattern</h3>
+
+<p class=MsoNormal style='text-indent:.5in'>Public class <span class=SpellE>PrintSpooler</span>
+{</p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='mso-spacerun:yes'>   
+</span>Private static <span class=SpellE>PrintSpooler</span> spooler;</p>
+
+<p class=MsoNormal style='margin-left:.5in'><span style='mso-spacerun:yes'>   
+</span>Private <span class=SpellE><span class=GramE>PrintSpooler</span></span><span
+class=GramE>(</span>) {</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>                </span>}</p>
+
+<p class=MsoNormal style='text-indent:.5in'><span style='mso-spacerun:yes'>  
+</span>Public static synchronized <span class=SpellE>printSpooler</span> get
+Spooler {</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><span
+style='mso-spacerun:yes'>       </span><span class=GramE>if</span> (spooler ==
+null)</p>
+
+<p class=MsoNormal><span style='mso-tab-count:1'>            </span><span
+style='mso-spacerun:yes'>           </span><span class=GramE>spooler</span> =
+new <span class=SpellE>PrintSpooler</span>();</p>
+
+<p class=MsoNormal><span style='mso-spacerun:yes'>   </span><span
+style='mso-tab-count:2'>                     </span><span class=GramE>return</span>
+spooler;</p>
+
+<p class=MsoNormal style='text-indent:.5in'><span
+style='mso-spacerun:yes'>      </span>}</p>
+
+<p class=MsoNormal style='text-indent:.5in'>}</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h2>Factory Method Pattern</h2>
+
+<p class=MsoNormal>Provides a simple decision-making class that returns one of
+several possible subclasses of an abstract base class, depending on the data
+that are provided</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<ul style='margin-top:0in' type=disc>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo9;tab-stops:list .5in'>Class
+     X: <span class=SpellE>do_X</span>()</li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo9;tab-stops:list .5in'>Class
+     XY :<span class=SpellE>do_X</span>()</li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo9;tab-stops:list .5in'>Class
+     XZ: <span class=SpellE>do_X</span>()</li>
+ <li class=MsoNormal style='mso-list:l2 level1 lfo9;tab-stops:list .5in'>Xfactory:
+     <span class=SpellE>getClass</span>(<span class=SpellE>int</span>):X</li>
+</ul>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal>It’s used in Mathematical computations</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Abstract
+Factory Pattern:</span></span> Provides an Interface to create and return one
+of several families of related objects.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Builder
+Pattern:</span></span> separates the construction of a complex object from its
+representation so that several different representations can be created,
+depending on the needs of the program.</p>
+
+<p class=MsoNormal>Example: Address Book containing the group addresses and
+personal addresses</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Prototype
+Pattern:</span></span> starts with an instantiated class, which it copies or
+clones to make a new instance. These instances can then be further tailored
+using their public methods.</p>
+
+<h2>Structural Patterns</h2>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Adapter
+Pattern:</span></span> can be used to make one class interface match another
+for easier programming.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Composite
+Pattern:</span></span> Creates an object (a composition of objects), each of
+which may be a simple or a composite object.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Proxy
+Pattern:</span></span> creates a simple object that takes the place of a more
+complex object which may be invoked later, such as when the program runs in a
+networked environment.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Flyweight
+Pattern:</span></span> for sharing objects, where each instance does not
+contain its own state, but stores it externally. This approach allows efficient
+sharing of objects to save space when there are many instances, but only a few
+different types</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Façade
+Pattern:</span></span> used to make a single class represent an entire
+subsystem.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Bridge
+pattern:</span></span> separates an object interface from its implementation.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Decorator
+pattern:</span></span> lets you add responsibilities to objects dynamically.</p>
+
+<h2>Behavioral Patterns</h2>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Chain
+of Responsibility pattern:</span></span> allows decoupling between objects by
+passing a request from one object to the next in a chain until the request is
+recognized.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Command
+pattern:</span></span> utilizes simple objects to represent the execution of
+software commands and allows you to support logging and undoable operations.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Interpreter
+pattern:</span></span> provides a definition of how to include language
+elements in a program.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=SpellE><span class=Heading3Char><span
+style='font-size:13.0pt'>Iterator</span></span></span><span class=Heading3Char><span
+style='font-size:13.0pt'> Pattern:</span></span> formalizes the way we move
+through a list of data within a class.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Mediator
+Pattern:</span></span> defines how communication between objects can be simplified
+by using a separate object to keep all objects from having to know about each
+other.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Observer
+pattern:</span></span> defines how multiple objects can be notified of a
+change.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>State
+pattern:</span></span> allows an object to modify its behavior when <span
+class=GramE>its</span> internal state changes.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Strategy
+Pattern:</span></span> encapsulates an algorithm inside of a class.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Template
+Method pattern: </span></span>provides an abstract definition of an algorithm.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><span class=Heading3Char><span style='font-size:13.0pt'>Visitor
+pattern:</span></span> adds polymorphic functions to a class <span
+class=SpellE>noninvasively</span>.</p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>CS1699: Homework 4</title>
+</head>
+<body>
+<h2>CS1699: Homework 4</h2>
+<b>Due:</b> <font color="red">11/24/2015</font>, 11:59pm
+<br><br>
+<b>Instructions: </b> Please provide your code and your written answers. Your written answers should be in the form of a single PDF or Word document (.doc or .docx). Your code should be written in Matlab. Zip or tar your written answers and .m files and upload the .zip or .tar file on CourseWeb -> CS1699 -> Assignments -> <b>Homework 4</b>. Name the file YourFirstName_YourLastName.zip or YourFirstName_YourLastName.tar. <font color="red">Include your name in your write-up.</font>
+<br><br>
+<b>Note:</b> This homework includes up to 30 points of extra credit!
+<br><br>
+
+<u>Part I: Scene categorization (60 points)</u> 
+<br><br>
+In this problem, you will develop two variants of a scene categorization system.
+<br>
+<ul>
+<!--<li>Access the <a href="http://vision.princeton.edu/projects/2010/SUN/SUN397.tar.gz">SUN397 dataset</a> on AFS. Please do not download it. The dataset includes 397 scene categories and 108,754 images total. Feature descriptors are provided <a href="http://vision.cs.princeton.edu/projects/2010/SUN/SUN397feature/">here</a>. Please use the denseSIFT features, unless otherwise stated.</li>-->
+<li>Get the scene categorization dataset provided by Svetlana Lazebnik from <a href="http://cs.pitt.edu/~kovashka/cs1699/hw3_files/hw4/">here</a> (<font face="courier new">scene_categorization.zip</font>).</li>
+<li>You will need to extract your own features, using the <a href="http://www.vlfeat.org/">VLFeat package</a>. Use the function <font face="courier new">vl_sift</font>. To set up VLFeat, download <a href="http://www.vlfeat.org/download/vlfeat-0.9.20-bin.tar.gz">this binary</a>, and follow <a href="http://www.vlfeat.org/install-matlab.html">these instructions</a>. Make sure to run both steps of the demo to see a SIFT descriptor show up.</li>
+<li>Divide the dataset into a training and test set. Use roughly half of the images <i>from each category/class</i> for training, and the rest for testing. <i>If this is causing your program to run too slowly, feel free to use a smaller sample of both training and test images, but ensure you have at least 20 images from each class for both training and testing, and document your subsampling in your code.</i></li>
+<li>Compute a spatial pyramid over the features. The <a href="http://web.engr.illinois.edu/~slazebni/publications/cvpr06b.pdf">spatial pyramid representation</a> was proposed in 2006 by Svetlana Lazebnik, Cordelia Schmid and Jean Ponce. The procedure of computing the pyramid is summarized in the following image from the paper, and described below.<br><br>
+<img src="spm.jpg" width=500/><br><br>
+<li>First, you will create a ''bag of words'' representation of the features in the image. To do this, you will run k-means on the SIFT feature descriptors of all <i>training</i> images (or a subset of all training images, if k-means is running too slowly). Use <font face="courier new">kmeansML.m</font> from HW3. For each feature in each <i>test</i> image, you will compute its distance to each cluster representative, and assign it to the closest cluster representative. This will give you the representation shown in the left-hand side of the figure, where the circles, diamonds and crosses denote different ''words'', in this toy example with <i>k</i> = 3. In your implementation, use <i>k</i> = 100. </li>
+<li>You will then create a histogram where you count how many features of each ''word'' are present in the image. This forms your representation of the image, at level <i>L</i> = 0 of the pyramid.</li>
+<li>Then, divide the image into four quadrants as shown below. You need to know the locations of the feature descriptors so that you know in which quadrant they fall; VLFeat provides these (see documentation). Now you will compute histograms as above, but you will compute one histogram vector for each quadrant.<br><br>
+<img src="grid1.png" width=300/><br><br></li>
+<li>In the original paper, there is one more subdivision into sixteen regions as shown below, and computation of one histogram for each cell in the grid. However, you don't have to implement this part. <i>You can implement it if you'd like <b>for up to 10 points of extra credit</b>.</i><br><br>
+<img src="grid2.png" width=300/><br><br>
+</li>
+<li>Finally, you will concatenate the histograms computed in the above steps. Make sure you concatenate all histograms in the same order for all images. This will give you a 1x<i>d</i>-dimensional descriptor.</li>
+<li>Now that you have a representation for each image, it is time to learn a classifier which can predict, for a test image, to which of 15 scene category/class it belongs. (Each folder in the scene category dataset is a different category.) For this, you will use two types of classifiers. </li>
+<li>The first type of classifier will be KNN (<i>k</i> nearest neighbors). Note that this <i>k</i> (and its value) is not the same as the <i>k</i> in k-means. For each test image, compute the Euclidean distance between its descriptor and each training image's descriptor (the descriptors are now the Spatial Pyramids). Then find its <i>k</i> closest neighbors among only training images. Since these are training images, you know their labels. Find the mode (most common value; see Matlab's function <font face="courier new">mode</font>) among the labels, and assign the test image to this label. In other words, the neighbors are "voting" on the label of the test image. The value <i>k</i> you use for KNN will be discussed below.</li>
+<li>The other type of classifier is an SVM. You fill use Matlab's function <font face="courier new">model = fitcecoc(X, Y);</font> where <font face="courier new">X</font> (of size <i>n</i>x<i>d</i>) are your features, and <font face="courier new">Y</font> (of size <i>n</i>x1) are the labels you want to predict. All images from the same scene category will have the same label. The label values should be integers between 1 and 15. To use the <font face="courier new">model</font> you just learned, you will call <font face="courier new">label = predict(model, x);</font> where <font face="courier new">x</font> of size 1x<i>d</i> is the descriptor for a single scene whose label you want to predict.</li>
+<li>Finally, you need to evaluate the accuracy of your classifiers. You need to compute what fraction of the test images was assigned the correct label, i.e., the "ground truth" label that came with the dataset.</li>
+<!--<li>Pick some default value for the <i>C</i> parameter of the SVM, and note that in your write-up.</li>-->
+</ul>
+
+What you need to include in your submission:
+<ol>
+<li>[15 points] <font face="courier new">function [pyramid] = computeSPMHistogram(im, codebook_centers);</font> which computes the Spatial Pyramid Match histogram as discussed above. <font face="courier new">im</font> should be a grayscale image whose SIFT features you should extract, <font face="courier new">codebook_centers</font> should be the cluster centers from the bag-of-visual-words clustering operation, and <font face="courier new">pyramid</font> should be a 1x<i>d</i> feature descriptor for the image. You're allowed to pass in optional extra parameters <i>after</i> the first two.</li>
+<li>[15 points] <font face="courier new">function [labels] =
+findLabelsKNN(pyramids_train, pyramids_test, <font
+color="red">labels_train</font>);</font> which predicts the labels of
+the test images using the KNN classifier. <font face="courier
+new">pyramids_train, pyramids_test</font> should be an <i>M</i>x1 cell
+array and an <i>N</i>x1 cell array, respectively, where <i>M</i> is
+the size of the training image set and <i>N</i> is the size of your
+test image set, and each <font face="courier new">pyramids{i}</font>
+is the 1x<i>d</i> Spatial Pyramid Match representation of the
+corresponding training or test image. <font
+color="red"><font face="courier new">labels_train</font> should be an <i>M</i>x1 vector of
+training labels,</font> and <font face="courier new">labels</font> should be a <i>N</i>x1 vector of <i>predicted</i> labels for the test images.
+<li>[5 points] <font face="courier new">function [labels] =
+findLabelsSVM(pyramids_train, pyramids_test, <font color="red">labels_train</font>);</font> which predicts the labels of the test images using an SVM. This function should include training the SVM. The inputs and outputs are defined as above but now use an SVM.
+<li>[5 pts] <font face="courier new">function [accuracy] = computeAccuracy(trueLabels, predictedLabels);</font> which computes <i>and prints</i> the accuracy of a classifier on the test images, where <font face="courier new">trueLabels</font> is the <i>N</i>x1 vector of ground truth labels that came with the dataset, and <font face="courier new">predictedLabels</font> is the corresponding <i>N</i>x1 vector of labels predicted by the classifier.</li>
+<li>[20 pts] A script which get all images and their labels (feel free to reuse code from HW3 that shows how to get the contents of a directory), extracts the features of training images, runs <font face="courier new">kmeansML</font> to find the codebook centers, then computes SPM representations, and runs the KNN and SVM classifiers, including computing their accuracy. In this script, run the KNN classification with the following values for the <i>k</i> (different from the k-means <i>k = 100</i>): 1, 5, 25, 125. In other words, you have to run KNN 4 times and show 4 accuracy values, plus 1 for SVM. <i>Include your accuracy results in your write-up.</i></li>
+</li>
+<!--<li>[10 points] A figure that shows the accuracy of your two classifiers when you vary the type of feature descriptor between dense and sparse SIFT, and set <i>k1</i> = 100 and <i>k2</i> = 25. You will need to show 2x2 accuracy values.</li>-->
+<!--<li>[10 points] A figure that shows the accuracy of the classifiers when you vary the amount of training data used to be 10%, 20%, 30%, 40%, and 50% of the full dataset. Use dense SIFT, and set <i>k1</i> = 100 and <i>k2</i> = 25. You will need to show 5x2 accuracy values.</li>-->
+</ol>
+
+<br>
+
+<u>Part II: Pedestrian detection (40 points)</u> 
+<br><br>
+In this problem, you will implement a simple pedestrian detection system. This system is somewhat similar to the 2005 paper by Navneet Dalal and Bill Triggs found <a href="http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">here</a>. 
+<br>
+<ul>
+<li>Access the INRIA Person dataset in the same AFS directory as linked above (<a href="http://cs.pitt.edu/~kovashka/cs1699/hw3_files/hw4/">here</a>). At that link, you will find a separate set for training, and one for testing.</li>
+<li>Each positive (= containing a person) image (in the "pos" directory of the training folder, <font face="courier new">pedestrian_detection_training_data</font>) is a crop ready to use. You will have to generate the negative data yourself. Use the uncropped images in the "neg" directory, and generate a set of crops that are of the same size as the positive crops. Generate as many negative crops as you have positive crops. An easy way to generate these crops is to cycle through random locations in some negative image, set these to be your top-left of the crop, check where the bottom-right would end up being using the size of the positive crops, and skip this location if it's outside the bounds of the image. If it is inside, get the corresponding pixels (in a matrix), and use <font face="courier new">imwrite</font> to save the crop as a new image (or skip saving to a new file and directly train with the crop). Make sure you use many different negative images to get your negative crops.</li> 
+<li>Extract HOG features from all positive and negative patches, using VLFeat's <font face="courier new">vl_hog</font> function.</li>
+<li>Now you can use <font face="courier new">fitcecoc</font> as above to train a model that can predict, for a new patch in the image, whether it contains a person (positive) or does not (negative).</li>
+<li>After training your classifier, you will use it to find pedestrians in new test images. Pick 5 images from the test data, <font face="courier new">pedestrian_detection_test_data</font>. You will note that in most test images, the people are not at the same scale as in the positive crops. Normally what you might do is to try looking for a person using an image pyramid (rescaling the image multiple times in the hopes that some rescaling will match the positive patch size). However, even though this is something you would <i>never</i> do in actual computer vision applications or research, for simplicity, manually resize the few test images you chose that do contain people to the visually correct size.</li>
+<li>You now have to perform a sliding window detection. For each test image, you will slide a window of the same size as the positive patches, extract the HOG features for that window, run the SVM on it using <font face="courier new">predict</font> to see if the SVM predicted positive or negative (person detection or not) for that window. Save all windows on which the SVM predicts "positive", and include them in your write-up file. 
+<li>To implement sliding window detection, start your window at the top-left corner of the test image. For your second window, move 5-10 pixels to the right from the first window. When you reach a window that's over the right border of the image, move 5-10 pixels down and all the way to the left-hand side of the image. Continue until you have run your sliding window over the whole image.</li>
+<li>For <i><b>up to 20 points of extra credit</b></i>, you can also compute how correct your detections are. You will have one correctness score for each predicted person detection in each test image. You will look at how well a predicted positive window matches a ground-truth crop (see the folder <font face="courier new">pedestrian_detection_evaluation</font>). If you have a crop in that folder with the same filename as your test image, but with an "a" appended before the file extension, i.e. you know from the dataset that there is a person in that image, then you have to use Matlab's <font face="courier new">intersect(A, B);</font> and <font face="courier new">union(A, B);</font> functions (where <font face="courier new">A, B</font> are your ground truth and predicted crops) to compute the Intersection Over Union metric (see below) between any crop predicted positive and the ground truth crop, then take the best overlap as your final score for that predicted crop. If there is no crop with the same image filename, but you predict a positive window, your score for that box is 0. Finally, you will compute the <i>precision</i> of your system as the fraction of predicted person detections that have at least 0.5 intersection-over-union score with a ground truth crop, and <i>recall</i> as the fraction of ground truth crops that have at least 0.5 intersection-over-union score with some predicted positive window. Include both the precision and recall scores in your write-up.</li>
+<br>
+<img src="detection_iou.png" width=700/><br><br>
+</li>
+</ul>
+
+What you need to include in your submission:
+<ol>
+<li>[20 points] A script <font face="courier new">setup_and_train.m</font> that gets the positive crops and generates the negative crops (feel free to just use a sample for each), extracts their features, and trains an SVM with these.</li>
+<li>[20 points] A script <font face="courier new">test.m</font> that implements sliding window detection for a test image, plus your write-up which includes your test images and the predicted person detections in each.</li> <li>[up to 20 points of extra credit] A script <font face="courier new">evaluate.m</font> which computes Intersection Over Union scores, and from those, precision and recall. Also include the precision and recall scores in your write-up.</li>
+</ol>
+<br>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-7">
+   <META NAME="Author" CONTENT="Emmanouil Vozalis">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (WinNT; I) [Netscape]">
+   <TITLE>Ch10-Storage Server Architectures I</TITLE>
+</HEAD>
+<BODY>
+
+<br>
+   <a href="c10-7.html"><IMG SRC="../previous.gif" align=left></a>
+   <a href="c10-9.html"><IMG SRC="../next.gif" align=right></a>  
+<CENTER><B><FONT SIZE=+2>MULTIMEDIA STORAGE</FONT></B></CENTER>
+
+<CENTER><B><FONT SIZE=+2>SERVER ARCHITECTURES</FONT></B></CENTER>
+
+<CENTER>
+<HR WIDTH="100%"></CENTER>
+
+
+<br>
+<P><B><FONT SIZE=+1>LARGE SCALE SERVERS: WHAT IS THE PROBLEM?</FONT></B>
+<UL>
+<LI>
+<FONT SIZE=+1>network-based storage servers suffer from storage and network
+I/O bottleneck</FONT></LI>
+
+<LI>
+<B><FONT SIZE=+1>storage I/O bottleneck</FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=+1>results from the performance gap between the storage and
+processor-memory systems</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT SIZE=+1>network I/O bottleneck</FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=+1>phenomenon that restricts the throughput at the application
+level to a small fraction of the network bandwidth</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>results from lack of integration of OS, network protocols
+and architecture</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>several ideas proposed to deal with it</FONT></LI>
+</UL>
+<FONT SIZE=+1></FONT>&nbsp;
+<LI>
+<FONT SIZE=+1>finally, most servers are <I>bus-based</I>. But since
+bus-based
+interconnects do not scale well, large scale systems cannot be built easily.</FONT></LI>
+</UL>
+
+</BODY>
+</HTML>

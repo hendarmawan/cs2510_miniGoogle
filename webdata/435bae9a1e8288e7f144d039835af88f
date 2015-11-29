@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Automated Portable Object Adapter</title>
+</head>
+
+<body>
+
+<p align="center"><a href="page6.htm">
+<img border="0" src="previous.gif" align="left" width="26" height="26"></a><a href="page8.htm"><img border="0" src="next.gif" align="right" width="26" height="26"></a></p>
+
+<p align="center"><u><font size="6">Automated Portable Object Adapter</font></u></p>
+<p align="left"><span style="font-family: Times New Roman"><font size="5">
+Component implementations depend upon the standard CORBA Portable Object Adapter 
+(POA) to dispatch incoming client requests to their corresponding servants. 
+However, unlike previous versions of CORBA, the application developer is no 
+longer responsible for creating the POA, the CCM component model 
+implementation uses the component description to create and configure the POA 
+hierarchy automatically and to locate the common services defined by CCM. </font>
+</span></p>
+<p align="left">&nbsp;</p>
+<p align="center">
+<img border="0" src="ccmcontainer.jpg" width="928" height="710"></p>
+<p align="center"><u><font size="6">Often The Container and the ORB must interact</font></u></p>
+<ul>
+  <li>
+  <p class="MsoNormal"><font size="5">Activate or deactivate component 
+  implementations to preserve limited system resources, such as main memory.</font></li>
+  <li>
+  <p class="MsoNormal"><font size="5">Forward client requests to the four 
+  commonly used CORBA Object Services (COS): Transaction, Security, Persistent 
+  State, and Notification services, thereby freeing clients from having to 
+  locate these services.</font></li>
+  <li>
+  <p class="MsoNormal"><font size="5">Provide adaptation layers for callbacks 
+  used by the container and ORB to inform the component about interesting 
+  events, such as messages from the Transaction or the Notification Service.</font></li>
+  <li>
+  <p class="MsoNormal"><font size="5">Manage POA policies to determine how to 
+  create component references.</font></li>
+</ul>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="left">&nbsp;</p>
+
+</body>
+
+</html>

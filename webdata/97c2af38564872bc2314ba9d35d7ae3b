@@ -1,0 +1,52 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="overview.htm"><img src="previous.gif" align="left" alt="Overview of Presentation"></a>
+<a href="background-02.htm"><img src="next.gif" align="right" alt="Query-by-Example in Multimedia"></a>
+
+<br><br>
+<center>
+<table width="600">
+	<tr>
+		<td>
+			<h1 align="center">Query-by-Example in Relational Database Management System</h1>
+			<hr>
+
+			<p>
+			<b>My Definition:</b><br>
+			Give system examples, and the system returns a group of objects similar or equivalent to the examples.
+			</p>
+			
+			<p align="center">
+			<img border="0" src="images/qbe-definition-illustration.jpg" width="412" height="254"><br>
+			<i>Fig 1. Illustration of a QBE System</i>
+			</p>
+			
+			<p><b>Definition in relational database camp:</b>
+			<br>
+			In IBM QBE, Query-by-Example is defined as...<ul>
+				<li>A way of formulating query using example tables.</li>
+				<li>User fills the example tables with values and criteria.</li>
+				<li>Example queries is translated into domain relation calculus 
+				(DRC).</li>
+				<li><a href="background-01a.htm">Example of IBM QMF</a></li>
+				</ul>
+				<p>In other QBE systems (<a href="http://en.wikipedia.org/wiki/Microsoft_QBE">Microsoft 
+				QBE</a>), Query-by-Example is defined as a method of query 
+				creation that allows user to search for documents based on an 
+				example in the form of...</p>
+				<ul>
+					<li>A selected text string.</li>
+					<li>In the form of document name</li>
+					<li>A list of documents</li>
+					</ul>
+					<p>&nbsp;</td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <meta name="ProgId" content="FrontPage.Editor.Document">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="page1.htm"><img SRC="previous.gif" height=26 width=26 align=LEFT></a><a href="page3.htm"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+<center>
+<h1>
+The Cookie Technology</h1></center>
+
+<center><img SRC="tbullet.gif" height=19 width=24><b>Why are cookies useful?</b></center>
+
+<p><b>Some scenarios first:</b>
+<ul>
+<li>
+<b>Alice is shopping at a particular web site that uses a shopping cart
+metaphor.&nbsp; She puts items into a shopping cart by clicking a link
+or an "Add to Shopping Cart" button.&nbsp; Cookies can be used to store
+the contents of Alice's shopping cart so that she can conveniently purchase
+a cart full of items rather than one item at a time.</b></li>
+</ul>
+
+<ul>
+<li>
+<b>Bob fills out a web form with his name, address, and other information.&nbsp;
+Cookies can be used to store this information so that the next time Bob
+visits the site, the information is automatically uploaded and he doesn't
+have to provide it again.&nbsp; If the form contains sensitive information
+such as a credit card number or a mailing address, the cookies can be delivered
+over Security Sockets Layer, which encrypts the information as it travels
+between the client and server.</b></li>
+</ul>
+
+<ul>
+<li>
+<b>Carl clicks around a web site that allows users to specify their interested
+fields.&nbsp; Cookies can be used to store information about which categories
+he has chosen so that the next time Carl visits the site, only those chosen
+categories are displayed.</b></li>
+</ul>
+
+<br>&nbsp;
+</body>
+</html>

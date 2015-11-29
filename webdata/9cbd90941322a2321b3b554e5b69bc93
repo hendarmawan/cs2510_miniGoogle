@@ -1,0 +1,42 @@
+<title>Lecture II on Virtual Spaces</title>
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5"/>
+<A HREF="a-lec11.htm"><IMG SRC="left.gif" align=left width=50></A>
+<A HREF="pattern1.htm"><IMG SRC="right.gif" align=right width=50></A>
+<center><h1><font color=red>Lecture II on Virtual Spaces: From the Past to the Future</font></h1>
+</center>
+<h3>Lecture 2. Spatial Relations and Patterns (空間關係及模式)</h3>
+
+<b>
+First we talk about the concept of space and the decomposition of space
+<a href="http://www.cs.pitt.edu/~chang/art99/art1016">
+(空間的世界)
+</a>.
+
+
+<p>
+Then we talk about Christopher Alexander's <a href="pattern1.htm">pattern language</a> for the architecture of the
+built world, and its relation to software engineering  through James O. Coplien's paper <a href="coplien.htm">
+"Space: the Final Frontier"</a>. 
+
+<p>
+On the computer science side, there is an introduction on 
+<a href="http://www.cs.pitt.edu/~chang/365/elements.html">
+visual languages</a> and
+<a href="http://www.cs.pitt.edu/~chang/365/chap4.htm">
+theoretical work on spatial relations</a>.
+</b>
+<img src="images/wright.jpg" align=right>
+
+<p>
+<b>References:</b> (4) Alexander, Christopher. The Timeless Way of Building. New York: Oxford University Press, �1979.
+(5) Alexander, Christopher, et al. A Pattern Language. New York: Oxford University Press, �1977.
+(6) James O. Coplien, "Space: the Final Frontier", C++ Report 10(3), March 1998, pp. 11 - 17.
+
+<font color=blue>
+<h3>Group Project Part-II: Search for spatial relations and decomposition rules (patterns) in
+a few architectural examples. (Hint: Take the refuge-and-prospect examples from Part I and study the spatial relations and decomposition rules).</h3>
+</font>
+<p>
+
+Play Part II of videotape on American architect Frank Lloyd Wright (105 min)
+(Wright is to American architecture as Gershwin is to American music, or Whitman to American poetry)

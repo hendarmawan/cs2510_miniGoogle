@@ -1,0 +1,35 @@
+<h2>
+Project:
+Topic Detection and Tracking based Power Efficiency Web Server
+</h2>
+What I want to do in this project is to build a Web Server with Hot topic awareness powered by the Topic Detection and Tracking (TDT).
+Below is a list of things that I want to do.
+<p>
+<h3>a)	User request handler</h3>
+A component that responsible for collect the entire user request of the web server and send the collected data to the TDT component.
+<h3>b)	Topic Detection and Tracking </h3>
+It responsible for finding the trend in a stream of user requests, and makes decision in tuning up the server cluster.
+ie.
+Send the reducing the power supply instruction to the group of servers that working on one topic when TDT component detect that this topic is not hot any more.
+<ul>
+<h3>a.	Slow Intelligence System</h3>
+The base framework for TDT who is going to use different methods to predict the trend, with the help of SIS, it can gradually improve performance over time.
+<h3>b.	Knowledge Base</h3>
+It is the core database to help SIS to select the best method over time.
+Generally speaking, it will contain two knowledge bases.
+<ul>
+<h3>1.	Evaluation result knowledge base</h3>
+The result about what method we have choice last time.
+<h3>2.	Sampled historical record knowledge base</h3>
+Record for past predict trend and the actual hot trend at that time.
+So that the Eliminator can pick up the method and compare with these records to see which method has the best result
+</ul>
+</ul>
+<h3>c)	Dispatcher</h3>
+Get the instruction from the TDT server and also the topic (marked with hot or cold), then send the according instruction to the group that dealing with this topic.
+
+
+
+<h2>Comments:</h2>
+See whether you can incorporate the graphic tool
+you did for CS2310 into this project.

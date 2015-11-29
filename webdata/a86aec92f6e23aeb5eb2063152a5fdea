@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+<meta name="generator" content="hypermail 2.1.8, see http://www.hypermail.org/" />
+<title>cfps.txt: [ECRTS-info] CfP: ECRTS 09, Dublin, Irland - 1st EUROM</title>
+<meta name="Author" content="Infos about ECRTS (em-rt-info@wu-wien.ac.at)" />
+<meta name="Subject" content="[ECRTS-info] CfP: ECRTS 09, Dublin, Irland - 1st EUROMICRO CONFERENCE ON REAL-TIME SYSTEMS,	July 1-3, 2009" />
+<meta name="Date" content="2008-10-08" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>[ECRTS-info] CfP: ECRTS 09, Dublin, Irland - 1st EUROMICRO CONFERENCE ON REAL-TIME SYSTEMS,	July 1-3, 2009</h1>
+<!-- received="Wed Oct  8 05:59:11 2008" -->
+<!-- isoreceived="20081008095911" -->
+<!-- sent="Wed, 08 Oct 2008 11:56:09 +0200" -->
+<!-- isosent="20081008095609" -->
+<!-- name="Infos about ECRTS" -->
+<!-- email="em-rt-info@wu-wien.ac.at" -->
+<!-- subject="[ECRTS-info] CfP: ECRTS 09, Dublin, Irland - 1st EUROMICRO CONFERENCE ON REAL-TIME SYSTEMS,	July 1-3, 2009" -->
+<!-- id="B6E62680-285C-4160-89FC-27C585517510@eit.uni-kl.de" -->
+<!-- charset="windows-1252" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ <a href="#options2">More options</a> ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="0011.html" title="SBRC 2008 WTR: &quot;SBRC 2008 WTR: CFP WTR 2008 - DEADLINE EXTENDED&quot;">Next message</a> ]
+[ <a href="0009.html" title="Thomas Nolte: &quot;CFP - RTAS'09 - Submission deadline extended to October 20&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Infos about ECRTS &lt;<a href="mailto:em-rt-info&#64;wu-wien.ac.at?Subject=Re:%20[ECRTS-info]%20CfP:%20ECRTS%2009,%20Dublin,%20Irland%20-%201st%20EUROMICRO%20CONFERENCE%20ON%20REAL-TIME%20SYSTEMS,	July%201-3,%202009">em-rt-info@wu-wien.ac.at</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed Oct 08 2008 - 05:56:09 EDT</span><br />
+</address>
+<p>
+=========================================================
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call for papers
+<br />
+<p>21st EUROMICRO CONFERENCE ON REAL-TIME SYSTEMS
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dublin, Ireland, July 1-3, 2009
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://ecrts09.ecrts.org">http://ecrts09.ecrts.org</a>
+<br />
+<p>=========================================================
+<br />
+<p>THEME AND TOPICS OF INTEREST
+<br />
+----------------------------
+<br />
+<p>The twenty first EUROMICRO Conference on Real-Time Systems (ECRTS’09)
+<br />
+is a forum aimed at covering state-of-the-art research and development
+<br />
+in real-time computing. Papers on all aspects of real-time systems are
+<br />
+welcome. These include, but are not limited to:
+<br />
+<p>- APPLICATIONS: consumer electronics; multimedia and entertainment;
+<br />
+&nbsp;&nbsp;process control; avionics, aerospace; automotive;
+<br />
+&nbsp;&nbsp;telecommunications.
+<br />
+<p>- INFRASTRUCTURE AND HARDWARE: communication networks; embedded
+<br />
+&nbsp;&nbsp;devices; hardware/software co-design; power-aware and other
+<br />
+&nbsp;&nbsp;resource-constrained techniques; systems on chip; time engines and
+<br />
+&nbsp;&nbsp;time synchronization; wireless sensor networks.
+<br />
+<p>- SOFTWARE TECHNOLOGIES: compiler support; component-based approaches;
+<br />
+&nbsp;&nbsp;middleware and distribution technologies; programming languages and
+<br />
+&nbsp;&nbsp;operating systems.
+<br />
+<p>- SYSTEM DESIGN AND ANALYSIS: modelling and formal methods;
+<br />
+&nbsp;&nbsp;probabilistic analysis for RT systems; quality of service support;
+<br />
+&nbsp;&nbsp;reliability, security and survivability in RT systems; scheduling
+<br />
+&nbsp;&nbsp;and schedulability analysis; worst-case execution time analysis;
+<br />
+&nbsp;&nbsp;validation techniques.
+<br />
+<p>SUBMISSION OF PAPERS
+<br />
+--------------------
+<br />
+<p>Full papers must be submitted electronically through our web form in a
+<br />
+pdf format. The material must be unpublished and not under submission
+<br />
+elsewhere. The paper should not exceed 5000 words and 20 pages in
+<br />
+double-line spacing format.
+<br />
+<p>IMPORTANT DATES
+<br />
+---------------
+<br />
+<p>- SUBMISSION DEADLINE: January, 17th 2009
+<br />
+- NOTIFICATION OF ACCEPTANCE: March, 25th, 2009
+<br />
+- WORKSHOPS: June, 30th, 2009
+<br />
+- CONFERENCE: July, 1-3, 2009
+<br />
+<p>CONFERENCE HIGHLIGTHS
+<br />
+---------------------
+<br />
+<p>Pursuing a successful tradition in the ECRTS series, a special Work in
+<br />
+Progress (WiP) session will be organised. This session is mainly
+<br />
+intended for presentation of on-going and recent work. Additionally, a
+<br />
+set of Satellite Workshops focusing on hot topics will be
+<br />
+organised. These include the continuation of the already successful
+<br />
+real-time networks (RTN) and worst-case execution time (WCET)
+<br />
+workshops, the ninth editions). A separate call for papers will be
+<br />
+issued later for both WiP and satellite workshops. Please visit the
+<br />
+website later for further information.
+<br />
+<p>The main conference will include three Keynote Sessions, one per day,
+<br />
+which will be announced well in advance to the event. In this year’s
+<br />
+edition, besides the Best Paper Award, a selection of best papers will
+<br />
+be invited for a Special Issue of an international journal.
+<br />
+<p>COMMITTEES
+<br />
+----------
+<br />
+<p>GENERAL CHAIR: Vinny Cahill, Trinity College Dublin, Ireland
+<br />
+PROGRAM CHAIR: Isabelle Puaut, University of Rennes / IRISA, France
+<br />
+REAL-TIME TECHNICAL COMMITTEE CHAIR: Gerhard Fohler,
+<br />
+&nbsp;&nbsp;University of Kaiserslautern, Germany
+<br />
+<p>PROGRAM COMMITTEE MEMBERS:
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Luis Almeida, Universidade de Aveiro, Portugal
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* James H. Anderson, The University of North Carolina at Chapel  
+<br />
+Hill, USA
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Neil Audsley, University of York, UK
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Karl-Erik Arzen, Lund University, Sweden
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Theodore P. Baker, Florida State University, USA
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Sanjoy Baruah, The University of North Carolina, USA
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Scott Brandt, University of California, Santa Cruz, USA
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Reinder J. Bril, Technische Universiteit Eindhoven, The  
+<br />
+Netherlands
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Alan Burns, University of York, UK
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Giorgio Buttazzo, Scuola Superiore Sant'Anna, Italy
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Samarjit Chakraborty, National University of Singapore, Singapore
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Jean-Dominique Decotignie, CSEM, Switzerland
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Rolf Ernst, TU Braunschweig, Germany
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Gerhard Fohler, Technische Universitaet Kaiserslautern, Germany
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Steve Goddard, University of Nebraska, USA
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Michael Gonzalez Harbour, Universidad de Cantabria, Santander,  
+<br />
+Spain
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Joel Goossens, University of Brussels, Belgium
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Jan Gustafsson, Malardalen University, Sweden
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Zdenek Hanzalek, Czech Technical University in Prague
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Hermann Hartig, TU Dresden, Germany
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Tei-Wei Kuo, National Taiwan University, Taiwan
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* George Lima, Federal University of Bahia (UFBA), Brasil
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Giuseppe Lipari, Scuola Superiore Sant'Anna, Italy
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Lucia Lo Bello, University of Catania, Italy
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Julio Medina, Universidad de Cantabria, Santander, Spain
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Frank Muller, North Carolina State University, USA
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Nicolas Navet, INRIA-Nancy, France
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Stefan Petters, National ICT, Australia
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Peter Puschner, Technische Universitaet Wien, Austria
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Pascal Richard, University of Poitiers, France
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Rodrigo Santos, Universidad Nacional del Sur-CONICET, Argentina
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Jan Staschulat, NXP, The Netherlands
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;* Eduardo Tovar, Polytechnic Institute of Porto, Porto, Portugal
+<br />
+_______________________________________________
+<br />
+Em-rt-info mailing list
+<br />
+Em-rt-info&#64;wu-wien.ac.at
+<br />
+<a href="https://lists.wu-wien.ac.at/mailman/listinfo/em-rt-info">https://lists.wu-wien.ac.at/mailman/listinfo/em-rt-info</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Wed Oct  8 05:59:11 2008</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="0011.html" title="Next message in the list">SBRC 2008 WTR: "SBRC 2008 WTR: CFP WTR 2008 - DEADLINE EXTENDED"</a></li>
+<li><dfn>Previous message</dfn>: <a href="0009.html" title="Previous message in the list">Thomas Nolte: "CFP - RTAS'09 - Submission deadline extended to October 20"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#10" title="Contemporary messages by date">By Date</a> ] [ <a href="index.html#10" title="Contemporary discussion threads">By Thread</a> ] [ <a href="subject.html#10" title="Contemporary messages by subject">By Subject</a> ] [ <a href="author.html#10" title="Contemporary messages by author">By Author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">By messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail.org/">hypermail 2.1.8</a> 
+: Mon Dec 08 2008 - 11:59:50 EST
+</em></small></p>
+</body>
+</html>

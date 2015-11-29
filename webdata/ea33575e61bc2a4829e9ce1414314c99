@@ -1,0 +1,97 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Virtual Classroom for Windows CE based Mobile Devices using J# &amp; JavaScript </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+</head>
+
+<body leftmargin="0" marginheight="0">
+<table width="100%"  border="0">
+  <tr>
+    <td><table width="100%"  border="0">
+        <tr>
+          <td align="left" valign="top"><a href="page5.htm"><img src="previous.gif" width="26" height="26" border="0"></a></td>
+          <td width="100%" align="center"><h2>Virtual Classroom using J# and JavaScript </h2></td>
+          <td align="right" valign="top"><a href="page7.htm"><img src="next.gif" width="26" height="26" border="0"></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="735" border="0" align="center">
+      <tr>
+        <td align="left" valign="top"><ul>
+          <li> The Idea was to access to the VCR from mobile devices running Windows CE &gt;=3.0 (2002)&#13;</li>
+          <li>Microsoft provides the .NET <strong>C</strong>ompact <strong>F</strong>ramework (CF)
+for Mobile Devices
+            <ul>
+                  <li>Unfortunately not available for J# applications due to the overhead of the J# redistributable</li>
+                  <li>Microsoft is considering adding support depending on their customer's demand </li>
+              </ul>
+          </li>
+          <li> Approach:
+            <ul>
+              <li> Develop a &quot;thin&quot; client </li>
+              <li>Use J# ASP.NET Mobile Web Apps at the server side </li>
+              <li> Using JavaScript and Pocket Internet Explorer (PIE) in the client side</li>
+              </ul>
+          </li>
+          <li>Problem:
+            <ul>
+              <li> Current VCR uses Sockets&#13;: Client must be permanently connected</li>
+              <li>Not possible with a thin web client </li>
+            </ul>
+          </li>
+          <li>Solution            </li>
+          <li> Creation of “middle layer”</li>
+          <li> .NET Remoting:
+              <ul>
+                <li>Single Call objects:
+                    <ul>
+                      <li>Stateless : therefore cannot be connected all the time </li>
+                      <li>Ideal for web services</li>
+                    </ul>
+                </li>
+                <li>Singleton:
+                    <ul>
+                      <li>One instance can serve multiple clients</li>
+                      <li>Stateful</li>
+                      <li>Simple to develop</li>
+                    </ul>
+                </li>
+                <li>Client-Activated Objects (CAO)&#13;
+                    <ul>
+                        <li>Each client can have its own instance </li>
+                        <li>Stateful</li>
+                        <li>The best of both worlds</li>
+                        <li>More difficult to develop</li>
+                    </ul>
+                </li>
+              </ul>
+          </li>
+          <li>The architecture:
+            <ul>
+              <li>One singleton object will be permanently running and perform the tasks of connecting to the Name server and the Virtual Classroom and receive its messages</li>
+              <li>Mobile client communicates with a J# ASP .NET application which in turns connects to the remote object </li>
+            </ul>
+          </li>
+          </ul>          
+          <p><img src="images/arch1.jpg" width="709" height="525"></p>
+          <ul>
+            <li>On the client side, in order to allow the communication between the client and the web site, <em><strong>without having to reload the page</strong></em>, the XMLHTTP object available in PIE is used. It can send messages using the POST method to the website and receive messages using the GET method. All the communication is made using XML </li>
+            </ul>          
+          <p align="center"><img src="images/arch2.jpg" width="579" height="359"></p>
+          <ul>
+            <li>After some milliseconds the client automatically requests new messages. The J# connector object accumulates all the messages in an XML message queue. The entire queue is sent to the client under request and then begins accumulating messages again from the Virtual Classroom </li>
+          </ul>
+          <p>&nbsp; </p>
+          <p>&nbsp;</p>          </td>
+      </tr>
+    </table>      <p>&nbsp;</p></td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

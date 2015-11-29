@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Component Dependency Simplified</title>
+</head>
+
+<body>
+
+<p align="center"><a href="page7.htm">
+<img border="0" src="previous.gif" align="left" width="26" height="26"></a><a href="page9.htm"><img border="0" src="next.gif" align="right" width="26" height="26"></a></p>
+
+<p align="center"><u><font size="6">Component Dependency Simplified</font></u></p>
+<ul>
+  <li>
+  <p class="MsoNormal"><font size="5" face="Times New Roman">In large-scale 
+  distributed systems, component implementations may be deployed across multiple 
+  servers, often using different implementation languages, operating systems, 
+  and programming language compilers. In addition, component implementations may 
+  depend on other software component implementations. Thus, the packaging and 
+  deploying of components can become complicated. </font></li>
+</ul>
+  <p class="MsoNormal">&nbsp;<ul>
+  <li>
+  <p class="MsoNormal"><font size="5" face="Times New Roman">To simplify the 
+  effort of developing components, CCM defines standard techniques that 
+  developers can apply to simplify component packaging and deployment. <font color=red>CCM 
+  describes components, and their dependencies using Open Software Description (OSD), 
+  which is an XML Document Type Definition (DTD) defined by the WWW Consortium.
+  </font></font></li>
+</ul>
+  <p class="MsoNormal">&nbsp;<ul>
+  <li>
+  <p class="MsoNormal"><font size="5" face="Times New Roman">Components are 
+  packaged in assembly files and package descriptors are XML documents 
+  conforming to the Open Software Description DTD that describe the contents of 
+  an assembly file and their dependencies. A component may depend on other 
+  components and may require these components to be collocated in a </font>
+  <span style="font-family: Times New Roman"><font size="5">common address 
+  space.</font></span></li>
+</ul>
+<p align="left">&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

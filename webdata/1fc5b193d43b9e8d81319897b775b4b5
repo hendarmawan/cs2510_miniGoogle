@@ -1,0 +1,36 @@
+<title>CASE Tools</title>
+<A HREF="../1530syl.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02.htm"><IMG SRC="next.gif" align=right></A>
+
+<center>
+<h1>CASE Computer-Aided Software Engineering</h1>
+</center>
+
+<font color="red">
+<b>Upper-CASE</b> are front-end tools, such as tools for requirements,
+specification, planning and design.
+
+<p>
+<b>Lower-CASE</b> are back-end tools, such as tools for implementation,
+code generation, integration and maintenance.
+<p>
+<b>Data dictionary</b> can be used for storing information about
+data items.
+
+<p>
+<b>Consistency Checker</b> checks every data item in the spec is
+reflected in the design, and then the code, etc. and vice versa.
+
+<p>
+<b>Report Generator</b> generates codes for reports.
+
+<p>
+<b>Screen Generator</b> generates codes for screens.
+
+<p>
+<b>Workbench</b> supports rapid prototyping by combining the above.
+
+<p>
+<b>Environment</b> supports the complete software process
+(sometimes called <b>SEE</b> or Software Engineering Environment).
+

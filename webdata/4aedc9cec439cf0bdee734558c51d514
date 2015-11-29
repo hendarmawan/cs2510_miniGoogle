@@ -1,0 +1,103 @@
+<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="16.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left></A> 
+<A href="18.htm"><IMG height=26 src="images/next.gif" width=26 align=right></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>Object Oriented Petri Nets</H1>
+</CENTER>
+
+<UL><UL>
+  <LI><FONT size=4><FONT color=mediumblue><STRONG>An Object-Oriented Petri 
+        Net is defined on a collection of elements</STRONG></FONT>
+        comprising constants, variables, net elements (i.e. places and 
+        transitions), class elements (i.e. object nets, method nets, synchronous 
+        ports, and message selectors), classes, object identifiers, and method net 
+        instance identifiers.</FONT>      
+                  
+  <LI><FONT size=4><FONT color=mediumblue><STRONG>Object Nets</STRONG></FONT>
+         consist of places and transitions.</FONT>
+  <LI><FONT size=4><FONT color=mediumblue><STRONG>Method Nets</STRONG></FONT> are 
+         similar to object nets but, additionally, each of them has a 
+         set of parameter places and a return place.
+         Method nets can access places of the appropriate object nets, 
+         which allows running methods to modify the states of the 
+         objects which they are running in.</FONT> 
+
+  <LI><FONT size=4>A<FONT color=mediumblue><STRONG> Class</STRONG></FONT>
+         is given by its object net, its sets of 
+         method nets and synchronous ports, and a set of message 
+         selectors corresponding to its methods and ports.</FONT>
+  </LI>
+</UL></UL>
+
+<CENTER>
+<IMG src="images/oopn.jpg">
+</CENTER>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</BODY></HTML>

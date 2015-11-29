@@ -1,0 +1,11 @@
+Our code is GroupSix.java and Microphone.java
+
+To run our program:
+1. Install required OpenNI/NITE programs
+2. Run the NiUserTracker sample to make sure a user is properly recognized
+3. Compile GroupSix.java
+4. Run GroupSix
+5. Hero makes a wave or click motion, this will trigger getAudio() for the Snakeman
+6. Snakeman has 10 seconds to make a loud enough noise
+
+Also, at step 4, oni files can be used by entering their path as a command line argument

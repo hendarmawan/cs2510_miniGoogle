@@ -1,0 +1,49 @@
+<html>
+
+<head>
+<title>XML - INTRODUCTION</title>
+</head>
+
+<body background="Background.gif">
+
+<p align="center"><a href="p1.html"><img SRC="previous.gif" align="left" width="26"
+height="26"></a> <a href="p3.html"><img SRC="next.gif" align="right" width="26"
+height="26"></a> </p>
+
+<h1 align="center"><font size="7" color="#FF00FF"><b>What's the Fuss About?</b></font></h1>
+<div align="center"><center>
+
+<table border="0" width="737" cellpadding="0" height="349">
+  <tr>
+    <td align="left" height="38" width="665"><h2 align="left"><font size="6" color="#0000FF"><u>Smarter,
+    more portable, and more powerful</u></font></h2>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" height="88" width="727"><ul>
+      <li><font size="6" color="#0000FF">Define your own tags:</font></li>
+    </ul>
+    <p><font size="6" color="#0000FF"> </font><font size="5" color="#000000">&lt;h1
+    align=&quot;center&quot;&gt;&lt;font size=&quot;7&quot;
+    color=&quot;#FF00FF&quot;&gt;&lt;b&gt;What's the Fuss
+    About?&lt;/b&gt;&lt;/font&gt;&lt;/h1&gt;</font></p>
+    <p align="center"><font size="5" color="#0000FF">vs.</font> </p>
+    <p align="left"><span class="sample"><font size="5">&lt;Headline&gt;</font></span> </td>
+  </tr>
+  <tr align="center">
+    <td align="left" height="174" width="665"><ul>
+      <li><font size="6" color="#0000FF">Searching on the web:&nbsp; &quot;Puma&quot;</font> </li>
+    </ul>
+    <p align="center"><font size="6" color="#0000FF"><cite>Animal</cite></font><img
+    src="puma.jpg" width="99" height="79" alt="puma.jpg (1918 bytes)"><font size="6"
+    color="#0000FF"><cite>&nbsp;&nbsp; Shoe<img src="pumashoes.jpg" width="91" height="79"
+    alt="pumashoes.jpg (1975 bytes)">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Knife</cite></font><img
+    src="pumaknives.jpg" width="123" height="76" alt="pumaknives.jpg (2074 bytes)"></p>
+    <p class="example" align="center"><font size="4">&lt;Animal&gt;Puma&lt;/Animal&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;Shoe&gt;Puma&lt;/Shoe&gt;
+    &nbsp;&nbsp;&nbsp;&nbsp; &lt;Knife&gt;Puma&lt;/Knife&gt;</font></td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

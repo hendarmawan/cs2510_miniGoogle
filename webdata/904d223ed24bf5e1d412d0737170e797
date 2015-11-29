@@ -1,0 +1,117 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+<title>NSF project</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="banner">
+<h2> 
+Word Sense and Multilingual Subjectivity Analysis
+</h2>
+<span class="description">
+Joint work with Rada Mihalcea (University of North Texas)
+</span>
+</div>
+
+<div id="content"> <!---content--->
+
+<div class="sec">
+  <h3 class="sectitle">Description</h3>
+  <div class="sec">
+  <div class="secbody">
+Approaches to subjectivity and sentiment analysis often
+rely on manually or automatically constructed lexicons. Most such
+lexicons are compiled as lists of words, rather than word meanings
+("senses").  However, many words have both subjective and objective
+senses as well as senses of different polarities, which is a major
+source of ambiguity in subjectivity and sentiment analysis.  The goal
+of the proposed work is to address this gap, by investigating novel
+methods for subjectivity sense labeling, and exploiting the results in
+sense-aware subjectivity and sentiment analysis.  To achieve this
+goal, we target the following four research objectives. First, we will
+develop new methods for assigning subjectivity labels to word senses
+in a taxonomy. Second, we will develop contextual subjectivity
+disambiguation techniques that will effectively make use of the word
+sense subjectivity annotations. Third, we will explore the application
+of these techniques to multiple languages, including languages with
+fewer resources than English. Finally, we plan to demonstrate the
+usefulness of our research results through an end application for
+crosscultural tracking of opinions and sentiments.
+<p>
+<p>
+This project is funded by the National Science Foundation.
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<p>
+<br>
+<br>
+<br>
+<br>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+  </div></div>
+
+</div> <!-- sec -->
+</div> <!-- content-->
+
+<div id="links">
+
+<div class="sidetitle">
+Links
+</div>
+
+<div class="side">
+<a href="http://www.cs.pitt.edu/~wiebe">Home</a><br/>
+<a
+href="http://www.cs.pitt.edu/~wiebe/pubs/index.html">Publications</a><br/>
+<a
+href="http://www.cs.pitt.edu/~wiebe/courses.html">Teaching</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/projects.html">
+Projects</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/service.html">Professional
+Activities</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/students.html">
+Students</a><br/>
+</div>
+
+<div class="sidetitle">
+Affiliated Programs
+</div>
+
+<div class="side">
+<a href="http://nlp.cs.pitt.edu">NLP@Pitt</a><br/>
+<a href="http://www.cs.pitt.edu">Department of Computer Science</a><br/>
+<a href="http://www.isp.pitt.edu">Intelligent Systems Program</a><br/>
+</div>
+
+
+<div class="sidetitle">
+Contact Information Janyce Wiebe
+</div>
+
+<div class="side">
+<div class="secbody">
+Sennott Square Building, Room 5409 <br/>
+210 S. Bouquet St.<br/>
+Pittsburgh, PA 15260, U.S.A.<br/>
+<i>phone:</i> +1 (412) 624-9590<br/>
+<i>fax:</i> +1 (412) 624-8854<br/>
+<i>email:</i> my last name at cs dot pitt dot edu<br/>
+</div>
+</div>
+
+</div> <!-- links-->
+
+</body>
+</html>
+
+

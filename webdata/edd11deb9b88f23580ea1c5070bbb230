@@ -1,0 +1,52 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.51 [en] (Win98; I) [Netscape]">
+   <title>Outline of contents</title>
+</head>
+<body>
+&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" HEIGHT="14" >
+<tr>
+<td WIDTH="5%" HEIGHT="10"><a href="p3.html"><img SRC="previous.gif" ALT="previous.gif (632 bytes)" height=26 width=26 align=LEFT></a></td>
+
+<td WIDTH="87%" HEIGHT="10"></td>
+
+<td WIDTH="8%" HEIGHT="10"><a href="p5.html"><img SRC="next.gif" ALT="next.gif (623 bytes)" height=26 width=26 align=RIGHT></a></td>
+</tr>
+</table>
+
+<center>
+<p><font face="Arial Black"><font color="#000000"><font size=+3>Conceptual
+Modeling</font></font></font></center>
+
+<p><font face="Times New Roman"><font color="#000000"><font size=+3>• A
+model of the application domain is built</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+3>•
+Using well known object-oriented modeling principles</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+3>•
+Main concern is to capture the domain semantics, with very little concern
+for the types of users and tasks</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+3>•
+The product is a class schema built out of Sub-systems, Classes and Relationships.</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+3>•
+Further depending on application types:</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+2>&nbsp;&nbsp;&nbsp;&nbsp;
+– Read-only application</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font><font size=+1>• Design source for the navigation and interface models</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+3>&nbsp;&nbsp;&nbsp;
+</font><font size=+2>– Dynamic Web-applications</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font><font size=+1>• An object model to be implemented</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+3>&nbsp;&nbsp;&nbsp;
+</font><font size=+2>– The model being data containers</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+• Can also be implemented in a relational database</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+• Usually found in commercial Web applications</font></font></font>
+<br><font face="Times New Roman"><font color="#000000"><font size=+3></font></font></font>&nbsp;
+<br><font face="Times New Roman"><font color="#000000"><font size=+2></font></font></font>&nbsp;
+</body>
+</html>

@@ -1,0 +1,17 @@
+<title>Component-Based Software Engineering</title>
+<A HREF="c01.htm"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c03.htm"><IMG SRC="next.gif" align=right></A>
+<h1>Component-Based Software Engineering</h1>
+
+<h2>Technical Sophistication</h2>
+<p>
+<h2>
+To make a business case for components technology,
+partition the business case by the level of technical
+sophistication of the components you want to use.
+<p>
+<font color="red">
+<li>GUI components
+<li>Service components
+<li>Domain components
+</font>

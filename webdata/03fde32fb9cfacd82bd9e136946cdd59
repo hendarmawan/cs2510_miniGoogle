@@ -1,0 +1,69 @@
+<html>
+<head><title>Chapter 11 : Synchronization Model</title></head>
+<body>
+
+<a href="c11_6.html"><IMG SRC="previous.gif" align=left></a>
+
+<a href="c11_8.html"><IMG SRC="next.gif" align=right></a>
+
+<center><h3><font color="blue">Chapter 11</font></h3>
+<h1>The Temporal Synchronization Problem</h1></center>
+<hr size=3>
+
+<h2>
+<img src="green.gif"><a href="time.jpg">Figure 2</a> shows the concept of temporal synchronization<p>
+<img src="green.gif"><a href="three.jpg">Figure 3</a> shows 3-layer synchronization reference model <p>
+<img src="green.gif"><a href="four.jpg">Figure 4</a> shows 4-layer synchronization reference model<p>
+<img src="green.gif">Data objects can be classified in the following way <p>
+<center>
+
+<table border=5 cellpadding=10>
+<tr>
+<td rowspan=2><b>Time dependent relational</b>
+<td><b><i>Natural</i></b> 
+<td>Simultanous recording of voice and video through VCR
+</tr>
+<tr>
+<td><b><i>Synthetic</i></b> 
+<td>A voice annotated slide show
+</tr>
+
+<tr>
+<td rowspan=4><b>Presentation and application lifetime</b>
+<td><b><i>Persistent object</i></b>
+<td>Exist for the duration of the application
+</tr>
+<tr>
+<td><b><i>Non-persistent object</i></b>
+<td>Created dynamically and discard when obsolete
+</tr>
+<tr>
+<td><b><i>Transient object</i></b>
+<td>Presented for a short duration
+</tr>
+
+<tr>
+<td><b><i>Static object</i></b>
+<td>Presented for the entire duration
+</tr>
+
+<tr>
+<td rowspan= 2><b>Continuous or discrete</b>
+<td><b><i>Continuous</i></b>
+<td>Sequence of discrete data elements
+</tr>
+<tr>
+<td><b><i>Discrete</i></b>
+<td>Each discrete data element
+</tr>
+
+</table>
+</center>
+
+
+</h2> 
+
+</body>
+
+</html>
+

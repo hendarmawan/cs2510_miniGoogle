@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+<meta name="generator" content="hypermail 2.1.8, see http://www.hypermail.org/" />
+<title>cfps.txt: SIGOPS-ANNOUNCE supplemental posting (VEE 2008 CFP)</title>
+<meta name="Author" content="Geoff Voelker (voelker@CS.UCSD.EDU)" />
+<meta name="Subject" content="SIGOPS-ANNOUNCE supplemental posting (VEE 2008 CFP)" />
+<meta name="Date" content="2007-08-07" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>SIGOPS-ANNOUNCE supplemental posting (VEE 2008 CFP)</h1>
+<!-- received="Tue Aug  7 21:38:08 2007" -->
+<!-- isoreceived="20070808013808" -->
+<!-- sent="Tue, 7 Aug 2007 18:38:00 -0700" -->
+<!-- isosent="20070808013800" -->
+<!-- name="Geoff Voelker" -->
+<!-- email="voelker@CS.UCSD.EDU" -->
+<!-- subject="SIGOPS-ANNOUNCE supplemental posting (VEE 2008 CFP)" -->
+<!-- id="18105.7800.609302.238046@csefast.ucsd.edu" -->
+<!-- charset="us-ascii" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ <a href="#options2">More options</a> ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="0013.html" title="Ashvin Goel: &quot;CFP: ICDCS 2009&quot;">Next message</a> ]
+[ <a href="0011.html" title="SBRC 2008 WTR: &quot;SBRC 2008 WTR: CFP WTR 2008 - DEADLINE EXTENDED&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Geoff Voelker &lt;<a href="mailto:voelker&#64;CS.UCSD.EDU?Subject=Re:%20SIGOPS-ANNOUNCE%20supplemental%20posting%20(VEE%202008%20CFP)">voelker@CS.UCSD.EDU</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Tue Aug 07 2007 - 21:38:00 EDT</span><br />
+</address>
+<p>
+Apologies if you receive multiple copies of this message.
+<br />
+<p>----------------------------------------------------------------------
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The 2008 ACM SIGPLAN/SIGOPS International Conference on
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Virtual Execution Environments
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Seattle, USA, March 5-7, 2008
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Co-located with ASPLOS 2008
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://vee08.cs.tcd.ie/">http://vee08.cs.tcd.ie/</a>
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Call For Papers
+<br />
+<p>The VEE conference brings together researchers and practitioners in
+<br />
+the area of virtual execution environments for programs and systems.
+<br />
+The conference seeks original papers on virtualization at all levels
+<br />
+of the hardware and software stack.  The topics of interest including,
+<br />
+but are not limited to:
+<br />
+<p>&nbsp;&nbsp;&nbsp;o    Virtual machines for high-level languages
+<br />
+&nbsp;&nbsp;&nbsp;o    Programming language support for virtualization
+<br />
+&nbsp;&nbsp;&nbsp;o    Compiler support for virtualization including dynamic compilation
+<br />
+&nbsp;&nbsp;&nbsp;o    Binary translation and optimization
+<br />
+&nbsp;&nbsp;&nbsp;o    Novel techniques and applications of interpreters
+<br />
+&nbsp;&nbsp;&nbsp;o    Automatic resource and memory management
+<br />
+&nbsp;&nbsp;&nbsp;o    Virtualization for security and reliability
+<br />
+&nbsp;&nbsp;&nbsp;o    Virtualization technologies for grid computing
+<br />
+&nbsp;&nbsp;&nbsp;o    Virtualization technologies for parallel computing
+<br />
+&nbsp;&nbsp;&nbsp;o    Virtual machine monitors
+<br />
+&nbsp;&nbsp;&nbsp;o    Operating system support for virtualization
+<br />
+&nbsp;&nbsp;&nbsp;o    Management technologies for virtual environments
+<br />
+&nbsp;&nbsp;&nbsp;o    Large-scale virtual environments
+<br />
+&nbsp;&nbsp;&nbsp;o    Virtual Storage
+<br />
+&nbsp;&nbsp;&nbsp;o    Virtualization technologies for desktop applications
+<br />
+&nbsp;&nbsp;&nbsp;o    Applications that use virtualization in novel ways
+<br />
+&nbsp;&nbsp;&nbsp;o    Other experiences with virtual execution environments
+<br />
+&nbsp;&nbsp;&nbsp;o    Performance analysis and debugging for virtual exec. environments
+<br />
+<p><p>IMPORTANT DATES
+<br />
+<p>&nbsp;&nbsp;&nbsp;All times specified below are US Pacific Daylight Savings Time.
+<br />
+&nbsp;&nbsp;&nbsp;These deadlines are strict and *no extensions will be granted*.
+<br />
+&nbsp;&nbsp;&nbsp;To convert these times to other time zones, see
+<br />
+&nbsp;&nbsp;&nbsp;<a href="http://vee08.cs.tcd.ie/cfp">http://vee08.cs.tcd.ie/cfp</a>
+<br />
+<p><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Abstract Submission Deadline:  August 28, 2007 at 11:59pm PDT
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Paper Submission Deadline:  September 4, 2007 at 11:59pm PDT
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Notification of Acceptance:  November 2, 2007
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Final Paper Submission:  January 7, 2008
+<br />
+<p><p>&nbsp;&nbsp;&nbsp;*Note the earlier-than-usual deadline, needed in order to co-locate
+<br />
+&nbsp;&nbsp;&nbsp;VEE 2008 with ASPLOS.*
+<br />
+<p><p>SUBMISSION GUIDELINES
+<br />
+<p>&nbsp;&nbsp;&nbsp;Papers must be formatted according to the SIGPLAN 9-point
+<br />
+&nbsp;&nbsp;&nbsp;proceedings format and should be no longer than 10 pages in this
+<br />
+&nbsp;&nbsp;&nbsp;format. This 10-page limit includes everything (i.e., it is the
+<br />
+&nbsp;&nbsp;&nbsp;total length of the paper).  The formatting rules will be strictly
+<br />
+&nbsp;&nbsp;&nbsp;enforced, and papers that do not conform to them may be
+<br />
+&nbsp;&nbsp;&nbsp;automatically rejected by the program chairs.  Templates for the
+<br />
+&nbsp;&nbsp;&nbsp;SIGPLAN proceedings format can be found at:
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://acm.org/sigplan/authorInformation.htm">http://acm.org/sigplan/authorInformation.htm</a>
+<br />
+<p>&nbsp;&nbsp;&nbsp;Submissions should be in PDF and printable on US Letter-sized paper.
+<br />
+<p>&nbsp;&nbsp;&nbsp;Submitted papers must describe work unpublished in venues with a
+<br />
+&nbsp;&nbsp;&nbsp;formal proceedings, and not currently submitted for publication
+<br />
+&nbsp;&nbsp;&nbsp;elsewhere.  See the SIGPLAN republication policy for more details:
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.acm.org/sigs/sigplan/republicationpolicy.htm">http://www.acm.org/sigs/sigplan/republicationpolicy.htm</a>
+<br />
+<p>&nbsp;&nbsp;&nbsp;Authors of accepted papers will be required to sign ACM copyright
+<br />
+&nbsp;&nbsp;&nbsp;release forms. Proceedings will be published by ACM Press.
+<br />
+<p><p>PAPER EVALUATION
+<br />
+<p>&nbsp;&nbsp;&nbsp;The program committee will evaluate the technical contribution of
+<br />
+&nbsp;&nbsp;&nbsp;each submission as well as its general accessibility to the VEE
+<br />
+&nbsp;&nbsp;&nbsp;audience. Papers will be judged on significance, originality,
+<br />
+&nbsp;&nbsp;&nbsp;relevance, correctness, and clarity. The abstract and introduction
+<br />
+&nbsp;&nbsp;&nbsp;must be written so that they can be understood by an audience with
+<br />
+&nbsp;&nbsp;&nbsp;varied expertise. The paper should clearly identify what has been
+<br />
+&nbsp;&nbsp;&nbsp;accomplished, why it is significant, and how it compares with
+<br />
+&nbsp;&nbsp;&nbsp;previous work.  Papers in new areas or novel approaches to existing
+<br />
+&nbsp;&nbsp;&nbsp;areas are especially encouraged.  It is acceptable for papers in new
+<br />
+&nbsp;&nbsp;&nbsp;areas to contain fewer quantitative evaluations and comparisons than
+<br />
+&nbsp;&nbsp;&nbsp;those in more established areas.  Suggestions on how to prepare a
+<br />
+&nbsp;&nbsp;&nbsp;good submission can be found at the following two web sites:
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.sigops.org/advice.html">http://www.sigops.org/advice.html</a>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.acm.org/sigs/sigplan/conferences/author-info/">http://www.acm.org/sigs/sigplan/conferences/author-info/</a>
+<br />
+<p><p>VEE ORGANIZATION
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;General Chair     :	 David Gregg   (Trinity College Dublin)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Program Co-Chair  :	 Vikram Adve   (University of Illinois)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Program Co-Chair  :	 Brian Bershad (University of Washington)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Registration Chair:	 Rodric Rabbah (IBM Research)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Local Arrangements
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chair	      :  Mark Lewin    (Microsoft Research)
+<br />
+<p><p>PROGRAM COMMITTEE
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Vikram S. Adve, University of Illinois
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Steve Blackburn, Australian National University
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hans Boehm, HP Labs
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Brian Bershad, University of Washington
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Trishul Chilimbi, Microsoft Research
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Robert Cohn, Intel
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Simon Crosby, Xensource
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Steve Gribble, University of Washington
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sam King, University of Illinois
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Monica Lam, Stanford University
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jack Lo, VMWare
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tim Lyons, Morgan Stanley
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Greg Morrissett, Harvard University
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ian Pratt, University of Cambridge
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mendel Rosenblum, Stanford University
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mary Lou Soffa, University of Virginia
+<br />
+<p><p>STEERING COMMITTEE
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CHAIR: Michael Hind, IBM Research
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hans Boehm, HP Labs
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alva Couch, Tufts University
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Michael Franz, UC Irvine
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;David Grove, IBM Research
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Steve Hand, University of Cambridge
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Chandra Krintz, UC Santa Barbara
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sam Midkiff, Purdue University
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;David Tarditi, Microsoft Research
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Jan Vitek, Purdue University
+<br />
+<p>____________________________________________________________
+<br />
+<p>About SIGOPS-ANNOUNCE
+<br />
+<p>The SIGOPS-ANNOUNCE mailing list is intended to provide a low-volume
+<br />
+channel that provides operating systems researchers and practitioners
+<br />
+with information about upcoming events or other important
+<br />
+announcements.  In general, a message containing a group of such
+<br />
+announcements will be sent about once per month with the subject line
+<br />
+&quot;SIGOPS-ANNOUNCE monthly posting&quot;.  On rare occasions, announcements
+<br />
+of particular interest or urgency will be sent out with a different
+<br />
+subject line, starting with &quot;SIGOPS-ANNOUNCE supplemental posting&quot;
+<br />
+(for readers who wish to use mail filtering programs).  Finally, this
+<br />
+mailing list is made available for use by publicity chairs of
+<br />
+SIGOPS-sponsored conferences and the SIGOPS officers.
+<br />
+<p>To subscribe, send mail to LISTSERV&#64;ACM.ORG with the following command
+<br />
+(paste it!) in the body of the message:
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUBSCRIBE SIGOPS-ANNOUNCE
+<br />
+<p>To unsubscribe, send mail to LISTSERV&#64;ACM.ORG with the following
+<br />
+command in the body of the message:
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;UNSUBSCRIBE SIGOPS-ANNOUNCE
+<br />
+<p>To get more information about manipulating your subscription to this
+<br />
+list, go to <a href="http://www.acm.org/infodir/services/listserv/doc.html">http://www.acm.org/infodir/services/listserv/doc.html</a>
+<br />
+<p>To contact the owner of the list or to report a problem with the list,
+<br />
+email SIGOPS-ANNOUNCE-request&#64;ACM.ORG
+<br />
+<p>To request that an announcement be included in monthly mailings, go to
+<br />
+<a href="http://sysnet.ucsd.edu/sigops/acm.html">http://sysnet.ucsd.edu/sigops/acm.html</a>
+<br />
+____________________________________________________________
+<br />
+<p>Geoff Voelker, SIGOPS Information Director
+<br />
+<span id="received"><dfn>Received on</dfn> Tue Aug  7 21:38:08 2007</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="0013.html" title="Next message in the list">Ashvin Goel: "CFP: ICDCS 2009"</a></li>
+<li><dfn>Previous message</dfn>: <a href="0011.html" title="Previous message in the list">SBRC 2008 WTR: "SBRC 2008 WTR: CFP WTR 2008 - DEADLINE EXTENDED"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#12" title="Contemporary messages by date">By Date</a> ] [ <a href="index.html#12" title="Contemporary discussion threads">By Thread</a> ] [ <a href="subject.html#12" title="Contemporary messages by subject">By Subject</a> ] [ <a href="author.html#12" title="Contemporary messages by author">By Author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">By messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail.org/">hypermail 2.1.8</a> 
+: Mon Dec 08 2008 - 11:59:50 EST
+</em></small></p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="01.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="03.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+<CENTER>
+
+<H1>&nbsp;</H1></CENTER>
+<CENTER>
+<H1>Motivation</H1>
+<H1>&nbsp;</H1>
+</CENTER>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><FONT size=5>Petri Nets have wide applications in Commucations,
+       Networks, Software, Hardware, Manufacturing and Scientific Computations.</FONT></LI>
+       <BR>
+       <LI><FONT size=5>Time, Weight, Object Concept, Color and Hierarchy are introduced 
+to give Petri Nets more expressing power.</FONT></LI>
+</UL></UL></UL></UL></UL></UL></UL>
+
+</BODY></HTML>
+

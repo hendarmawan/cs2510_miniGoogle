@@ -1,0 +1,64 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Scorm</title>
+<meta name="Microsoft Theme" content="blocks 011, default">
+</head>
+
+<body background="_themes/blocks/blobkgde.gif" bgcolor="#FFFFFF" text="#000000" link="#CC0000" vlink="#999999" alink="#FFCC00"><!--mstheme--><font face="Arial, Arial, Helvetica">
+
+<p align="left"><a href="slide8.html"><img border="0" src="images/next.gif" align="right" width="26" height="26"></a><a href="slide6.html"><img border="0" src="images/previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p align="center"><font color="#000080" size="6">CAM: Content Model</font></p>
+
+<p align="left"><br>
+<br>
+<font color="#000080" size="4">The SCORM Content Model is made up of the following components:<br>
+<br>
+<b>         Assets</b></font></p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font color="#000080" size="4">Basic
+    blocks of learning content, which are electronic representations of media, text, images, sound, web pages etc.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font color="#000080" size="4">Can be described with Asset Meta-data  to allow for search and discovery within
+    online repositories, thereby enhancing opportunities for reuse.<br>
+    </font><!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Arial, Arial, Helvetica">
+<p align="center" style="line-height: 150%"><br>
+<img border="1" src="images/CAM_Assets.gif" width="435" height="329"></p>
+
+<p align="left"><font color="#000080" size="4"><br>
+<br>
+<b>         Sharable Content Objects (SCO)</b></font></p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">Represents a collection of one or more Assets that include a specific launchable asset that utilizes the SCORM Run-Time Environment to communicate with Learning Management Systems (LMSs).</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">Represents the lowest level of granularity of learning resources that can be tracked by an LMS using the SCORM Run-Time Environment.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">A SCO can be described with SCO Meta-data  to allow for search and discovery within online repositories, thereby enhancing opportunities for reuse.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">A SCO is free from context information.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Arial, Arial, Helvetica">
+
+<p align="left"><font color="#000080" size="4"><br>
+<b> Content Aggregations</b></font></p>
+
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">A Content Aggregation is a map (content structure) that can be used to aggregate learning resources into a cohesive unit of instruction (e.g. course, chapter, module, etc.)</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">The Content Aggregation defines the content structure that provides the mechanisms for defining the sequence that learning resources are to be presented to the user.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+  <!--msthemelist--><tr><td valign="baseline" width="42"><img src="_themes/blocks/blobul1e.gif" width="15" height="15" hspace="13"></td><td valign="top" width="100%"><!--mstheme--><font face="Arial, Arial, Helvetica">
+    <p align="left" style="line-height: 150%"><font size="4" color="#000080">The LMS is responsible for interpreting the intended sequence described in the content structure and controlling the actual sequencing of the learning resources at run-time.</font><!--mstheme--></font><!--msthemelist--></td></tr>
+<!--msthemelist--></table><!--mstheme--><font face="Arial, Arial, Helvetica">
+<!--mstheme--></font></body>
+
+</html>

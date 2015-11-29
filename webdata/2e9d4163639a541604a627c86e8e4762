@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Translations between the frameworks</title>
+</head>
+
+<body>
+
+<h1><a href="6.htm"><img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;  
+Translations between the frameworks&nbsp; <a href="8.htm"><img border="0" src="next.gif" width="26" height="26"></a></h1>
+<p>　</p>
+<p><font size="6"><img border="0" src="BD14580_.GIF" width="12" height="12"> </font><font size="5">Interval 
+can be represented by its beginning and end;</font></p>
+<p><font size="5">&nbsp; So some IRs can be represented by a conjunction of PRs 
+on </font></p>
+<p><font size="5">&nbsp; its margins;</font></p>
+<p><font size="5">&nbsp; <i><font color="#FF0000">Example:</font></i></font></p>
+<p><font size="5">&nbsp; x ---&gt;&nbsp; (Bx, Ex)</font></p>
+<p><font size="5">&nbsp; y ---&gt;&nbsp; (By, Ey)</font></p>
+<p><font size="5">&nbsp; x&lt;y can be represented as : (Bx&lt;Ex&lt;By&lt;Ey)</font></p>
+<p><font size="6"><img border="0" src="BD14580_.GIF" width="12" height="12"> </font><font size="5">Number 
+of indefinite IRs can be represented by a PR </font></p>
+<p><font size="5">&nbsp; set</font></p>
+<p><font size="5"><img border="0" src="7.htm3.gif" width="568" height="201">&nbsp;&nbsp;&nbsp; 
+</font></p>
+<p><font size="5">&nbsp;&nbsp; </font></p>
+
+</body>
+
+</html>

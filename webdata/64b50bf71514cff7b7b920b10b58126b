@@ -1,0 +1,73 @@
+<html>
+
+
+
+<head>
+
+<title>XML - INTRODUCTION</title>
+
+</head>
+
+
+
+<body background="Background.gif">
+
+
+
+<p align="center">
+<a href="p2.html"><img SRC="previous.gif" align="left" width="26" height="26"></a>
+<a href="p4.html"><img SRC="next.gif" align="right" width="26" height="26"></a>
+</p>
+
+
+
+<h1 align="center"><font size="7" color="#FF00FF"><b>What Does XML Look Like?</b></font></h1>
+
+<center>
+
+
+
+<table border="0" width="80%" cellpadding="0" height="386">
+
+  <tr>
+
+    <td align="left" height="38"><h4 align="left"><font size="6" color="#0000FF"><u>XML
+      Example</u></font></h4>
+
+    </td>
+
+  </tr>
+
+  <tr>
+
+    <td align="left" height="88"><font size="4">&lt;?xml version="1.0"?><br>
+      &lt;?xml:stylesheet href=&quot;countryList.css&quot; type=&quot;text/css&quot;?&gt;<br>
+      &lt;!DOCTYPE countryCollection SYSTEM &quot;countryList.dtd&quot;&gt;<br>
+      &lt;countryList&gt;<br>
+      &nbsp;&nbsp; &lt;country><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;officialName&gt;United States of America&lt;/officialName&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label>Common Names:&lt;/label>&nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;commonName&gt;United States&lt;/commonName&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;commonName&gt;U.S.&lt;/commonName&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label>Capital:&lt;/label>&nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;capital>Washington, D.C.&lt;/capital><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;label>Major Cities:&lt;/label>&nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;majorCity&gt; Los Angeles &lt;/majorCity&gt;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;majorCity&gt; New York &lt;/majorCity&gt;&nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;majorCity&gt; Chicago &lt;/majorCity&gt;&nbsp;<br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;majorCity&gt; Dallas &lt;/majorCity&gt;&nbsp;<br>
+      &nbsp; &lt;/country><br>
+      &lt;/countryList></font>
+
+    </td>
+
+  </tr>
+
+</table>
+
+</center>
+
+</body>
+
+</html>
+

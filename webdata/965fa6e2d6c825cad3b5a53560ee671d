@@ -1,0 +1,16 @@
+Project:
+
+I will explore the petri-net tool PIPE2 (Platform Independent Petri net
+Editor 2), designed by a group from Imperial College London, which is
+Java-based, and open source. Since we have access to the source code, I plan
+to modified the PIPE2 to support new function about adding additional
+actions(batch file, source code, or XML messages) to places or transitions.
+Next, I'm going to model all the setup actions in our SIS test bed to a
+petri-net and use PIPE2 to visually control the process. The output of PIPE2
+is also pnml, which introduced by Callen. So it might be possible to combine
+our projects at the end.
+
+The website for PIPE2: http://pipe2.sourceforge.net/about.html
+References: http://pipe2.sourceforge.net/docs.html
+
+Comments: Good. Talk to Callen Shaw.

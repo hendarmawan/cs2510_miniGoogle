@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title> Bugs Bee Wee </title>
+<style type="text/css">
+    form { background:#CCCCCC;
+         border-color: #0000CC;
+         border-style: double;
+         border-width: 4px;
+          }
+</style>
+</head>
+<body>
+<h2>Culinary Bug Data</h2>
+<form
+   action="mailto:scarab@bugsbeewee.com"
+   method="post"
+   enctype="multi-part/form-data">
+Please be so kind as to give us the name of your
+special bug recipe:<br />
+<input
+   type="text"
+   name="dish"
+   size="30"
+   alt="dish name" /><br />
+Next please type in the name of the file containing your recipe:<br />
+ <input
+   type="file"
+   name="recipe"
+   alt="recipe" /><br />
+<input
+   type="submit"
+   value="Send the File"
+   alt="submission" />
+</form>
+</body>
+</html>

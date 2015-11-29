@@ -1,0 +1,268 @@
+<title>THE NETWORK DATA MODEL</title>
+
+<h1>THE NETWORK DATA MODEL</h1>
+
+In the network data model, the database consists of
+a collection of set-type occurrences. 
+<br><br>
+Each set-type
+occurrence has one occurrence of OWNER RECORD,
+with zero or more occurrences of MEMBER RECORDS.
+<br><br>
+The member sets belonging to different owners are
+disjoint.  
+<br><br>
+To define a network database one needs to define:<br>
+(a) the database record types which 
+consist of data items, and<br>
+(b) the set-types.
+<br><IMG SRC="images/fig181.gif"><br>
+<hr>
+<h1>Network Set-Type Occurence</h1>
+<h2>CONCEPT OF CURRENCY</h2>
+For the network approach, since the 
+application programmer must
+navigate through the database, the concept of
+CURRENCY
+is used to determine the current run-unit
+record occurrences, and
+set-type occurrences.
+<br><br>
+suppose the commands are:
+<br><br>
+MOVE 'S4' to SNO IN S<br>
+FIND S RECORD<br>
+FIND FIRST SP RECORD OF S-SP SET<br>
+FIND OWNER IN P-SP OF CURRENT OF S-SP SET
+<br><br>
+At the end of execution of the 
+above commands, we have:
+<br><br>
+Current of run-unit:   P   'P2'<br>
+Current S occurrence:  S   'S4'<br>
+Current P occurrence:  P   'P2'<br>
+Current SP occurrence: SP  'S4, P2, 2'<br>
+Current of set S-SP:   SP  'S4, P2, 2'<br>
+Current of set P-SP:   P   'P2'<br>
+Current S-SP occurrence: owned by S 'S4'<br>
+Current P-SP occurrence: owned by P 'P2'<br>
+Current of Basic-Data-Area: P 'P2'<br>
+Current of Link-Data-Area:  SP 'S4, P2, 2'
+
+<h2>Example Supplier-Parts Database</h2>
+<br><IMG SRC="images/fig182.gif"><br>
+<hr>
+<h1>USER WORK AREA (UWA)</h1>
+A set of program variables, declared in the
+host program, to communicate the contents
+of individual records between the DBMX
+and the host program.
+<br><br>
+For each record type in the database schema,
+a corresponding program variable with the
+same format should be declared in the
+host program.
+<br><IMG SRC="images/fig183.gif"><br>
+<hr>
+<h1>NETWORK DATABASE MANIPULATION LANGUAGE</h1>
+The major commands are: FIND, GET,
+MODIFY, INSERT, REMOVE, DELETE, and STORE.
+<br><br>
+(1) FIND command is used to locate an existing record occurrence, and
+establish it as the current of the run-unit, and also the current of
+the appropriate area, appropriate record type, and all sets in which
+it participates.  The simplest form of the FIND command is as follows.
+<br><br>
+MOVE 'S4' TO SNO IN S.<br>
+FIND S RECORD.
+<br><br>
+The first statement constructs
+a prototype S record in the user's work area, which is then used to
+find the S record in the database.  
+<hr>
+<h1>DML Commands</h1>
+(2) GET command is used to retrieve the current of run-unit.  For
+example, the commands
+<br><br>
+MOVE 'S4' TO SNO IN S.<br>
+FIND S RECORD.<br>
+GET S; SNAME, CITY.
+<br><br>
+retrieve details of supplier 'S4'.  The first two
+commands are the same as in previous example.  The last command retrieves
+the current of the run-unit (the S record for 'S4') into the UWA.
+<hr>
+<h1>DML Commands</h1>
+(3) MODIFY command is used to update the current of run-unit, as
+illustrated in the follow example.
+<br><br>
+MOVE 'S4' TO SNO IN S.<br>
+FIND S RECORD.<br>
+GET S; STATUS.<br>
+ADD 10 TO STATUS IN S.<br>
+MODIFY S; STATUS.
+<br><br>
+<hr>
+<h1>DML Commands</h1>
+(4) INSERT command inserts current of run-unit into one or more
+set occurrences.  For example, the following commands insert
+the EMP record occurrence for employee 'E6' as a member into the
+DEPT-EMP occurrence owned by DEPT occurrence 'D1'.
+<br><br>
+MOVE 'D1' TO DNO IN DEPT.<br>
+FIND DEPT RECORD.<br>
+MOVE 'E6' TO ENO IN EMP.<br>
+FIND EMP RECORD.<br>
+INSERT EMP INTO DEPT-EMP.
+<hr>
+<h1>DML Commands</h1>
+(5) REMOVE command removes current of run-unit from one or more set
+occurrences.
+An example follows.
+<br><br>
+MOVE 'D1' TO DNO IN DEPT.<br>
+FIND DEPT RECORD.<br>
+MOVE 'E6' TO ENO IN EMP.<br>
+FIND EMP RECORD.<br>
+REMOVE EMP FROM DEPT-EMP.
+
+<hr>
+<h1>DML Commands</h1>
+(6) DELETE command deletes the current of run-unit, which may be owner
+records.
+<br><br>
+MOVE 'S4' TO SNO IN S.<br>
+FIND S RECORD.<br>
+DELETE S [ONLY, SELECTIVE, ALL].
+<br><br>
+The keyword after the DELETE S clause specifies the side effects of
+the deletion command.  If no keyword is specified, then S is deleted only
+if S is not owner of any nonempty set occurrences. If "ONLY" is specified,
+then S is deleted together with all MANDATORY member occurrences.
+If "SELECTIVE" is specified, S is deleted together with all MANDATORY
+member occurrences and other member occurrences that are not in any
+other set occurrences.  IF "ALL" is specified, then S is deleted together
+with all of its members.
+<hr>
+<h1>DML Commands</h1>
+
+(7) STORE command creates a new record occurrence which could be
+a link record, and establishes it as the current of the run-unit.
+For example, to crate a new SP record 'S5, P6, 7', the commands are:
+<br><br>
+MOVE 'S5' TO SNO IN SP.<br>
+MOVE 'P6' TO PNO IN SP.<br>
+MOVE '7' TO QTY IN SP.<br>
+MOVE 'S5' TO SNO IN S.<br>
+MOVE 'P6' TO PNO IN P.<br>
+STORE SP.
+<hr>
+<h1>MEMBERSHIP CLASS</h1>
+It specifies the semantics of database
+operations.  
+<br><br>
+MANDATORY:
+Record can only be removed when
+its owner is removed (i.e., the
+REMOVE command may not be used
+the DELETE command must be used).
+<br><br>
+OPTIONAL:
+The record can be removed or deleted.
+<br><br>
+AUTOMATIC:
+It can be added to a set with the correct
+owner using the STORE command.
+<br><br>
+MANUAL:
+It will not be automatically added 
+to the set with the correct owner,
+and the INSERT command is necessary.
+
+<hr>
+<h1>LOCATION MODE</h1>
+
+In defining a network database, one has to define both the record types
+and the set types.  When the record types are defined, one can also
+define the
+location mode,
+which specifies the access strategy for a record (an owner record or a
+member record).  For example, in define the S record, the following
+clause may be added:
+<br><br>
+LOCATION MODE IS DIRECT S-KEY
+<br><br>
+and S-KEY is used as database key for addressing S records.
+The following clause,
+<br><br>
+LOCATION MODE IS CALC HASH-SNO USING SNO IN S
+<br><br>
+will establish SNO as the hash key for the hashing procedure HASH-SNO
+supplied by the application programmer.
+<hr>
+<h1>INDIRECT ACCESS</h1>
+DEPT record is accessed via DIV record and
+DIV-DEPT set-type.
+<br><br>
+The hierarchical relations among DIV, DEPT and
+EMP are as follows:
+<pre>
+DIV ------------------>DEPT------------------->EMP
+    DIV-DEPT set-type       DEPT-EMP set-type
+</pre>
+The location mode for DEPT record can be specified as
+<br><br>
+LOCATION MODE IS VIA DIV-DEPT SET.
+<br><br>
+LOCATION MODE SPECIFIES ACCESS STRATGEY:<br>
+(a) direct<br>
+(b) calculated by hashing or indexing<br>
+(c) indirect via another set
+<hr>
+<h1>RETRIEVAL EXAMPLES</h1>
+(a) Find a record using a key.  
+Suppose for record EMP, in its
+definition, ENO is defined as a key,
+<br><br>
+USAGE IS DATABASE-KEY.
+<br><br>
+Then to find EMP record, we can say
+<br><br>
+FIND EMP USING ENO.
+<br><br>
+<hr>
+<h1>RETRIEVAL EXAMPLES</h1>
+(b) Find a record by a translation 
+algorithm.  Suppose EMP record
+has a LOCATION MODE in its definition,
+<br><br>
+LOCATION MODE IS CALC HASH-ENO<br>
+      USING ENO IN EMP<br>
+DUPLICATES ARE NOT ALLOWED.
+<br><br>
+Then one can access an EMP record by 
+setting up ENO, and issuing a FIND
+command.
+<br><br>
+MOVE 'E2' TO ENO IN EMP.<br>
+FIND EMP RECORD.
+
+<hr>
+<h1>RETRIEVAL EXAMPLES</h1>
+
+(c) Find next (first, last, prior) record for sequential processing.
+Suppose the desired DEPT record is found. To process EMP records, one
+can say,
+<br><br>
+FIND FIRST EMP RECORD OF DEPT-EMP SET.<br>
+FIND NEXT  EMP RECORD OF DEPT-EMP SET.<br>
+FIND PRIOR EMP RECORD OF DEPT-EMP SET.
+<br><br>
+(d) Find owner of a record.  For particular EMP record, one can find its owner
+record.
+<br><br>
+FIND OWNER IN DEPT-EMP OF CURRENT <br>
+   OF DEPT-EMP SET.
+<br><br>
+<br><IMG SRC="images/fig184.gif"><br>
+<br><IMG SRC="images/fig185.gif"><br>

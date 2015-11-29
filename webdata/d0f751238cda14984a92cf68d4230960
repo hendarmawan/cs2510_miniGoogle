@@ -1,0 +1,87 @@
+<html>
+
+<head>
+<title>CS2310 XML Based Servers</title>
+<!--mstheme--><link rel="stylesheet" href="ice1011.css">
+<meta name="Microsoft Theme" content="ice 1011">
+</head>
+<a href="pg4.htm"> <img src="previous.gif" align=left></a><a href="index.html" > </a>
+<a href="pg6.htm"> <img src="next.gif" align=right ></a><a href="pg1.html" > </a>
+ 
+<center> <h1> Message Server </h1> </center> 
+<body>
+
+<div style="border-style: double; border-width: 3px">
+	<p align="justify"><code>public <font color="#800000">MessageServer</font>() 
+	{<br>
+&nbsp;&nbsp; System.out.println(&quot;Message Server starting ...&quot;);<br>
+&nbsp;&nbsp; Config c = null;<br>
+&nbsp; <br>
+&nbsp;&nbsp; try {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; c = new Config(&quot;config.xml&quot;);<br>
+&nbsp;&nbsp; } catch (Exception e) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(&quot;MessageServer:MessageServer:1:&quot; 
+	+ e.toString());<br>
+&nbsp;&nbsp; }<br>
+	<br>
+&nbsp;&nbsp; //set port number<br>
+&nbsp;&nbsp; PORTNUM = c.getPort();<br>
+&nbsp;&nbsp; System.out.println(&quot;Port is &quot; + PORTNUM);<br>
+	<br>
+&nbsp;&nbsp; //set logging switch<br>
+&nbsp;&nbsp; loggingSw = c.getLog();<br>
+&nbsp;&nbsp; System.out.println(&quot;Log switch is &quot; + loggingSw);<br>
+	<br>
+&nbsp;&nbsp; //build queues<br>
+&nbsp;&nbsp; String[] queues = c.getQueues();<br>
+&nbsp;&nbsp; for (int i = 0; i &lt; queues.length; i++) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; queueContainer.put(queues[i], new Hashtable());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(&quot;Queue &quot; + queues[i] + &quot; has 
+	been created&quot;);<br>
+&nbsp;&nbsp; }<br>
+	<br>
+&nbsp;&nbsp; try {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //bind to server socket<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; serverSocket = new ServerSocket(PORTNUM);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(&quot;MomServer: Message Server is 
+	running&quot;);<br>
+&nbsp;&nbsp; } catch (IOException e) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(&quot;MessageServer:MessageServer:2:could 
+	not create server socket&quot;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.exit(1);<br>
+&nbsp;&nbsp; }<br>
+	}</code></p>
+	<p align="justify"><code><br>
+	public void <font color="#800000">run</font>() {<br>
+&nbsp;&nbsp; Socket clientSocket = null;<br>
+&nbsp; <br>
+&nbsp;&nbsp; while (true) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //get out when not bound to server socket<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (serverSocket == null) return;<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; try {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //listen to 
+	sever port. Create socket to client<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; clientSocket 
+	= serverSocket.accept();<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //create an 
+	instance of the Queue Manager to process request from client<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QueueManager 
+	qm = new QueueManager(queueContainer, clientSocket, loggingSw);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; qm.start();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } catch (IOException e) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	System.out.println(&quot;MessageServer:run:1:client socket error&quot;);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	System.exit(1);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; }&nbsp;&nbsp;&nbsp; <br>
+	}<br>
+&nbsp;</code></div>
+
+</body>
+
+</html>

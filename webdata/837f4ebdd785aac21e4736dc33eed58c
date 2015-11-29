@@ -1,0 +1,21 @@
+<html> 
+<title> Multimedia Software Engineering </title>
+<A HREF="page1.html"><IMG SRC="previous.gif" align=left></A> 
+<A HREF="page3.html"><IMG SRC="next.gif" align=right ></A>
+<center>
+<h1>Installation</h1> 
+</center>
+<h3><br>
+To install:</h3>
+<p>Download the Binary Distribution from here: <a href="VC_PDA_tool.zip">
+VC_PDA_tool.zip</a></p>
+<p>Unzip all files to the desired directory.</p>
+<h3>To Run:</h3>
+<p>Execute as appropriate on your device:</p>
+<p>Click the <code>VCCE.class</code> file</p>
+<p>-or-</p>
+<p>Execute it from the command line:</p>
+<p><code>java VCCE</code></p>
+
+</html >
+

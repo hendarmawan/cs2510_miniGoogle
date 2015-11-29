@@ -1,0 +1,33 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>Scorm</title>
+<meta name="Microsoft Theme" content="blocks 011, default">
+</head>
+
+<body background="_themes/blocks/blobkgde.gif" bgcolor="#FFFFFF" text="#000000" link="#CC0000" vlink="#999999" alink="#FFCC00"><!--mstheme--><font face="Arial, Arial, Helvetica">
+
+<p align="left"><a href="slide6.html"><img border="0" src="images/next.gif" align="right" width="26" height="26"></a><a href="slide4.html"><img border="0" src="images/previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</p>
+<p align="center"><font color="#000080" size="6">What's in SCORM?</font></p>
+<p align="left"><font size="4" color="#000080">SCORM is composed of 4 "books":</font></p>
+<blockquote>
+  <p align="left" style="line-height: 150%"><font size="4" color="#000080">1. <b> Overview</b> -
+  high-level conceptual information, the history, current status and future direction of ADL and the SCORM and an introduction to key SCORM concepts.<br>
+  <br>
+  2. <b> Content Aggregation Model (CAM)</b> - how to put learning content together so it can be moved and reused.<br>
+  <br>
+  3. <b> Run Time Environment (RTE)</b> - how content is launched and the learner's progress is tracked and reported back.</font></p>
+  <p align="left" style="line-height: 150%"><font size="4" color="#000080">4. <b>Sequencing and Navigation
+  (SN)</b> - how </font><font size="4" color="#000080">content may be sequenced to the learner through a set of learner-initiated or system-initiated navigation events.&nbsp;<br>
+  The branching and flow of that content may be described by a predefined set of activities, typically defined at design
+  time (</font><font size="4" color="#000080">added in 2004).</font></p>
+</blockquote>
+
+<!--mstheme--></font></body>
+
+</html>

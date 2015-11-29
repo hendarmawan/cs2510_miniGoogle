@@ -1,0 +1,22 @@
+<title>The Sentient Map</title>
+<a href="senmap1.htm"><img src="previous.gif" align=left></a>
+<a href="t13f.htm"><img src="next.gif" align=right ></a>
+<center>
+<h2>Sentient Maps for Distributed Learning</h2>
+</center>
+<h2>
+The Sentient Map is a novel visual user interface
+that combines the strong features of the map, the browser, and the index, based upon the concept of visual languages and active index.
+Each sentient map has a type, a personality, a visual appearance, and a set of
+teleactivities.  
+The sentient map's personality consists of:
+(a) creator's purpose for this map type, and
+(b) viewer's purpose for this map type.
+The external appearance of teleaction objects
+is defined using visual grammars or multidimensional
+grammars. The teleaction objects are overlaid on some background.
+<p>
+A sentient map can be defined recursively, as
+(a) a collection of teleaction objects including a background object,
+or (b) a composition of several sentient maps.
+</h2>

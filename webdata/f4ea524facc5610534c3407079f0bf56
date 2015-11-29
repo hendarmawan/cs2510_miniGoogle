@@ -1,0 +1,46 @@
+Seminar:
+
+For my seminar, I am under the Social Network group. I am examining the
+social network Flickr and showing how it is a slow intelligence system. I
+have about half of my slides done now. I have 3 articles outside of the
+Wang article you sent us. My papers are "Social Network Analysis: An
+Approach and Technique for the Study of Information Exchange", "Structure
+and Evolution of Online Social Networks", Beyond Friendship Graphs: A
+Study of User Interactions in Flickr". The first paper covers
+methodologies for studying social networks. The second focuses on the
+evolution of two social networks, Yahoo! 360 and Flickr, and how their
+user base grew. The final paper focuses primarily on the social network
+Flickr, that I am looking at. The paper shows the interaction between
+users on Flickr. In my powerpoint I show how Flickr is a slow intelligence
+system by giving examples for how it matches each aspect of a slow
+intelligence system.
+
+
+Comments:
+Describe your approach with more detail.
+ You need to model the Flickr social network as
+ a slow intelligence system.  But how?  You need
+ to describe your general approach. How do you
+ isolate the various components of Flickr.  What
+ might be considered as the enumerator, etc.
+
+
+
+-----
+I'm going to model Flickr in two stages of its lifecycle. One is at the
+beginning with the creation of the social network. In this case, the
+enumerator is the users joining the network, propagation is the creation
+of links between these new users (creating the connected network),
+adaptation being the users settling into their roles in the network (after
+a while, not everyone will be contributing as much as they were in the
+beginning), elimination being the users who contribute so little that
+eventually fall off of the graph, and concentration being the focus of
+power users and popular albums. The other stage is the current use of the
+established network. Enumeration is the creation of new photos and photo
+albums, propagation being the sharing of these photos to friends,
+adaptation being the change in who these photos are shared with (open vs
+private), elimination being the photos that no one really views and in
+essence have no bearing on the network, concentration again being the
+focus on popular photos and users. I'm still outlining the second stage,
+so that is not completely finished yet.
+

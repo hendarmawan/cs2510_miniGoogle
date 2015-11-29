@@ -1,0 +1,55 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0044)http://www.cs.pitt.edu/~chang/163/c17/01.htm -->
+  <title>Structure of an Enterprise Bean (Contd)...</title>
+  <meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+  <meta content="FrontPage.Editor.Document" name="ProgId">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <meta name="author" content="Chirag Vaidya">
+</head>
+<body>
+<a href="c13.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;"
+ src="previous.gif" align="left" title="" alt="" width="26" height="26"></a> <a href="c15.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;" src="next.gif"
+ align="right" title="" alt="" width="26" height="26"></a>
+<h2 align="center" style="color: rgb(51, 51, 255);"><big>Structure of an
+Enterprise Bean (Contd)...<br>
+</big></h2>
+<h3 style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font color="#FF00FF"><big><big>XML
+Deployment Descriptor</big></big></font></h3>
+<ul>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">An
+    XML file (<i><a href="http://www.w3c.org/XML">www.w3c.org/XML</a></i>) that
+    contains configuration information and properties of the bean:</font></p>
+    <ul>
+      <li>
+        <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><i><font size="5">Information
+        about the component's classes</font></i></p>
+      </li>
+      <li>
+        <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><i><font size="5">Transactional
+        attributes</font></i></p>
+      </li>
+      <li>
+        <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><i><font size="5">Security
+        Roles</font></i></p>
+      </li>
+      <li>
+        <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><i><font size="5">Settings
+        that dictate the component's behavior</font></i></p>
+      </li>
+    </ul>
+        <p style="margin-top: 6px; margin-bottom: 0pt" align="justify">&nbsp;</p>
+  </li>
+  <li>
+    <p style="margin-top: 6px; margin-bottom: 0pt" align="justify"><font size="5">Two
+    beans with identical EJBHomes, EJBObjects and bean classes but different&nbsp;
+    deployment descriptors are considered as two different beans.</font></p>
+  </li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,116 @@
+<html>
+
+<head>
+<title>CS 1541 </title>
+</head>
+
+<body bgcolor=#FFFFFE text=#000000 >
+
+<body>
+
+<p>
+<img align=left src ="http://www.cs.pitt.edu/Gifs/pittlogo.gif"> 
+<center><h2>CS/COE 1541 </h2>
+<h2> INTRODUCTION TO COMPUTER ARCHITECTURE </h2>
+
+<h3>Spring 2014
+<br>
+Tuesdays and Thursdays from 11:00AM to 12:15AM
+<br>
+5129 Sennott Square
+</h3></center>
+
+<center><img src="http://www.cs.pitt.edu/Gifs/rainbow.gif" width="70%"></center>
+
+<br>
+<h3>Instructor</h3>
+<ul>
+<a href = "http://www.cs.pitt.edu/~melhem">
+Rami Melhem </a> (melhem@cs.pitt.edu)<br>
+6429 Sennott Square,<br>
+phone: 624-8426 <br>
+Office Hours:
+<ul>
+Mondays from 2:30 to 4:00, Thursdays from 9:30 to 11:00 and by appointment.
+</ul>
+</ul>
+
+
+<h3>Teaching assistant</h3>
+<ul>
+<a href = "http://www.cs.pitt.edu/~fisherdu">
+Yu Du
+</a>
+(fisherdu@cs.pitt.edu)
+<br>
+6504 Sennott Square <br>
+Office Hours:
+<ul>
+Tuesdays from 1:00 to 4:00, Thursdays from 1:00 to 2:30 .
+</ul>
+</ul>
+
+<h3>Purpose:</h3>
+<ul>
+Computer architecture and hardware system organization are examined.
+Topics include: CPU organization and control,
+instruction set implementation, memory organizations, input/output structure,
+peripherals and interfacing, and parallel architectures. 
+</ul>
+
+<h3>Textbooks </h3>
+<ul>
+Computer Organization and Design - The Hardware/Software Interface
+<br>
+By David Patterson and John Hennessy 
+<br>
+Fourth Edition (revised printing)-  Morgan & Kaufmann.
+</ul>
+
+<h3>Requirements and grading:</h3>
+<ul>
+Two exams and a comprehensive final exam (20% + 20% + 30%). 
+<br>
+Homeworks and projects (30%)
+</ul>
+
+<h3>Policy on cheating and late homeworks</h3>
+<ul>
+Cheating on exam or projects will results in a grade of "0" for the first
+time (for all involved students) and an "F" in the course for the second time.
+<br>
+Late projects will not be accepted and
+Exams will not be rescheduled except under extraordinary circumstances.
+</ul>
+
+<h3>Note for students with special needs</h3>
+If you have a disability for which you are or may be requesting an
+accomodation, you are encouraged to contact the Office of Disability Resources
+and Services, 216 William Pitt Union (412-648-7890), as soon as possible in
+the term. They will verify your disability and determine reasonable 
+accomodations for this course.
+
+<h3>Note for all students</h3>
+If you are interested in participating in a research group 
+please let me know.
+
+<h3>Course
+<a href = "progress.html">
+Outlines and Schedule:
+</a>
+</h3>
+<ul>
+We will review parts of Chapters 1-2 and Appendix C, and cover
+chapters 4-7 and Appendix A from the textbook.
+</ul>
+
+<img src = "http://www.cs.pitt.edu/Gifs/rainbow.gif" width="100%">
+
+<h4>
+<IMG src = "http://www.cs.pitt.edu/Gifs/whiteball.gif"><a href = "http://www.cs.pitt.edu">Department of Computer Science</a>
+<IMG src = "http://www.cs.pitt.edu/Gifs/whiteball.gif"><a href = "http://www.pitt.edu">University of Pittsburgh</a></h4>
+<img alt="*" src="http://www.cs.pitt.edu/Gifs/rainbow.gif" width="100%">
+
+</body>
+
+</html>

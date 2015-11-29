@@ -1,0 +1,50 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Arial"> 
+	
+			<A href="./cvs2.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./maven1.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		
+			<center> 
+				<h1>CVS (Concurrent Versions System)</h1>
+				<br>
+				<img src="./cvs_logo.gif" border="0">
+				<br>
+				<br>
+				<br>
+				<h1>Using CVS</h1>
+			</center>
+			
+		</font>
+		
+		
+		<font size = 5 face="Arial"> 
+		
+			<br>
+			A CVS repository  has been set up for this project at 130.49.222.93
+			<br>
+			<br>
+			The path is "/var/lib/cvsroot"
+			<br>
+			<br>
+			The CVS can be accessed from the Eclipse program as described in this <a href="./ex2.html"> example</a>
+			<br>
+			<br>
+			<hr>
+			<br>
+			The CVS can also be accessed from a command line:
+			<br>
+			<li>SSH to 130.49.222.93
+			<li>cd to (or create) your working directory
+			<li>cvs -d /var/lib/cvsroot checkout virtualclassroom - to checkout the entire project
+			<br>
+			<br>
+			Download the CVS manual <a href="./cvs_manual.pdf>here</a> for details about all commands
+		</font>
+	</BODY>
+</html>

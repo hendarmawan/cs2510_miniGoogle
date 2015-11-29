@@ -1,0 +1,23 @@
+<title>Maintenance</title>
+<A HREF="../1530syl.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02.htm"><IMG SRC="next.gif" align=right></A>
+
+<center>
+<h1>Maintenance</h1>
+</center>
+<h2>
+Version Control and Configuration Management</h2>
+
+<b>Configuration item</b>: A configuration item is a single software item that is individually identifiable as a logical entity. A configuration item can be atomic, like documents and modules, or composite, like libraries and systems. 
+<p>
+
+<b>Version</b>: A version is one specific instance of a configuration item. It provides a stable referencing mechanism for the management of configuration items. 
+All versions but working versions are frozen, i.e. they cannot be changed without creating a new version.
+<p>
+
+<b>Revision</b>: A revision is the kind of version that is a step in the evolution of a configuration item; it supersedes an earlier version and may contain arbitrary 
+changes compared with its predecessor. Typically, it is created to fix bugs or to support permanent changes.
+<p>
+
+<b>Variant</b>: Variants are alternative versions of a configuration item. They remain valid at a given instant in time and are typically created to handle environmental differences. 
+A collection of variants of configuration items taken from specified revision levels defines the <b>version-set</b>.

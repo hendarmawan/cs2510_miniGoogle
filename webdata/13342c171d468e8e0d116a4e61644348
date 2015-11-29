@@ -1,0 +1,46 @@
+<HTML>
+
+<HEAD> <TITLE>Reinforcement Learning for Optimizing Spoken Dialogue Agents </TITLE> </HEAD>
+
+<BODY>
+<H1>Reinforcement Learning for Optimizing Spoken Dialogue Agents</H1>
+<p>
+Systems in which human users speak to a computer in order to achieve a
+goal are called spoken dialogue systems. Such systems are some of the
+few realized examples of open-ended, real-time, goal-oriented
+interaction between humans and computers, and are therefore an
+important and exciting testbed for AI and machine learning research.
+Spoken dialogue systems communicate with users via automatic speech
+recognition (ASR) and text-to-speech (TTS) interfaces, and mediate the
+user's access to a back-end database. Designers of such systems face a
+number of nontrivial choices in dialogue strategy, including user
+vs. system initiative (the choice between accepting relatively
+open-ended vs. constrained user utterances), and choices in
+confirmation strategy (when to confirm or re-prompt for an ambiguous
+utterance). System design has typically been done in an ad-hoc manner,
+with subsequent improvements to dialogue strategy being fielded
+sequentially.
+<p>
+We have applied the formalism of Markov decision processes
+(MDPs) and the algorithms of reinforcement learning to the problem of
+automated dialogue strategy synthesis. In this approach, an MDP is
+built from training data gathered from an initial "exploratory"
+system. This MDP provides a state-based statistical model of user
+reactions to system actions, and is used to simultaneously evaluate
+many dialogue strategies and choose the apparent optimal among
+them. We have applied this methodology to the NJFun dialogue system
+for accessing a database of information on activities in New Jersey,
+and have run controlled user experiments to evaluate the approach.
+Our results include statistically significant improvements in system
+performance.
+
+<HR>
+
+<ADDRESS>
+August 2000<BR>
+Back to <A HREF="index.html">home page.</a>
+</ADDRESS>
+
+</BODY>
+
+</HTML>

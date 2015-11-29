@@ -1,0 +1,77 @@
+<title>Multimedia Software Engineering</title>
+
+<a href="WMproblems2.html">  
+
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+
+</A> 
+
+<a href="sources.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+
+</head>
+
+<h1 align="center"> 
+
+<font color="#FF0000"><br>
+Conclusion</font></h1> 
+
+
+
+
+
+<body>
+
+
+
+
+
+<blockquote>
+  <blockquote>
+    <p><b><br>
+    Thoughts <font color="#0000FF">After</font> Completing the Project: </b>&nbsp;I 
+    believe ASP.NET Web Matrix is merely an attempt by <font color="#0000FF">
+    Microsoft</font> to people frustrated enough to just <font color="#0000FF">
+    buy Visual Studios .Net </font>to make any Web Applications using ASP.NET.&nbsp; 
+    It was supposed to be an easy to use tool, but as I searched for solutions 
+    to my problems in the <font color="#0000FF">online forums,</font> I realized 
+    that many other users had the same problems.&nbsp; </p>
+    <p>The <font color="#0000FF">solutions?</font>&nbsp; Some little detail 
+    which would probably take weeks to figure out or maybe never if simple 
+    configurations are unknown to the developer.&nbsp; I was able to solve many 
+    problems by <font color="#0000FF">changing some setting</font> which had 
+    nothing to do with the language--rather some minor detail which was left 
+    unspecified.&nbsp; </p>
+    <p>I <font color="#0000FF">don't think</font> this is the how a tool should 
+    be.&nbsp; After using this, I am pretty thankful for the
+    <font color="#0000FF">features Visual Studios .NET</font> has to offer and 
+    would never do another problem using Web Matrix.&nbsp; I am not sure if this 
+    was the purpose of Microsoft when they released this free software--maybe 
+    just to show users an example of very bad <font color="#0000FF">time-wasting 
+    application</font> development tool&nbsp; I <font color="#0000FF">wouldn't 
+    recommend</font> using Web Matrix to anyone after doing this project, 
+    especially after using Visual Studios .NET.&nbsp; Actually, I believe it 
+    would developers to <font color="#0000FF">stay away from ASP.NET completely</font>, 
+    especially if they haven't used a better development tool such as Visual 
+    Studios .NET.</p>
+    <p><b>However</b>, overall, I think it was a good learning experience 
+    everyone should have.&nbsp; Not only did I get to create an application from<font color="#0000FF"> 
+    scratch to finish</font>, but also I used a <font color="#0000FF">beta 
+    version tool </font>to implement such an application.&nbsp; This made me 
+    realize that every software goes through <font color="#0000FF">many phases 
+    of testing and debugging </font>before the final product is considered
+    <font color="#0000FF">&quot;bug-free.&quot; </font>&nbsp;This is a process that not 
+    only I will go through, but also big companies like Microsoft.&nbsp; We 
+    forget that these companies also go though the same process when we use 
+    their tools which work <font color="#0000FF">perfectly</font>.</p>
+  </blockquote>
+</blockquote>
+
+
+
+
+
+</body>
+
+
+
+</html>

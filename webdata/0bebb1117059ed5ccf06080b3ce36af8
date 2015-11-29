@@ -1,0 +1,39 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="page9.html"><img src="previous.gif" align=left></a>
+<a href="page12.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>Why Search for Image Content?</h1>
+   <br></br> 
+<p>A question arises as to why create an image search engine based on
+image content rather than just text. After all, the Google image search
+engine returns valid results quickly by searching for text only. Also, 
+text-based image search engines are easier to implement and design.</p>
+<p>
+<ul>
+   <li><b>Often too expensive</b></li> 
+<p>A small (or even large) image search can
+require searching
+large amounts of irrelevant web pages, resulting in very little hits,
+possible irrelevant hits, and wasted time.</p>
+   <li><b>A picture is worth a thousand words</b></li>
+<p>It may be hard to describe a specific picture that you are looking
+for, such as a picture of Galileo around the age of 35 holding a telescope
+outside around midnight while wearing a white shirt, black pants, and no
+shoes.</p>
+   <li><b>Query word may not appear as a keyword</b></li>
+<p>Suppose you are looking for an image of a unique pattern design, such
+as a specific tie-dye pattern. What would you type in to find it? These
+types of images can be difficult to find, and specific images can be
+almost impossible to pinpoint, using a text-based image search.</p>
+<li><b>Surrounding text may not describe the image</b></li>
+<p>Again, you are searching for the specific picture of Galileo as
+described above. There is a very good chance that the level of detail that
+you want will not be described in the surrounding text of this picture,
+leaving your search empty when it should not be.</p>
+</font>
+</html>

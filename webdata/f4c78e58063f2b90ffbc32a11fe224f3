@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-7">
+   <META NAME="Author" CONTENT="Emmanouil Vozalis">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (WinNT; I) [Netscape]">
+   <TITLE>Ch10-Background I</TITLE>
+</HEAD>
+<BODY>
+<br>
+
+   <a href="c10-2.html"><IMG SRC="../previous.gif" align=left></a>
+   <a href="c10-4.html"><IMG SRC="../next.gif" align=right></a>
+<CENTER><B><FONT SIZE=+2>ESSENTIAL BACKGROUND</FONT></B></CENTER>
+
+<CENTER>
+<HR WIDTH="100%"></CENTER>
+
+<CENTER><FONT SIZE=+1></FONT></CENTER>
+<br>
+<B><FONT SIZE=+1>APPLICATION SCENARIOS</FONT></B><B></B>
+
+<P><FONT SIZE=+1>1. Video-On-Demand (<a href="c10afig/f10-2.JPG">fig. 10-2</a>)
+</FONT>
+<UL>
+<LI>
+<FONT SIZE=+1>The client accesses multimedia data such as entertainment
+programs, news and travel information, using a set-top box connected
+to his TV set and a remote control for control commands</FONT></LI>
+</UL>
+<FONT SIZE=+1>2. World-Wide-Web</FONT>
+<UL>
+<LI>
+<FONT SIZE=+1>Millions of interconnected computers act as information
+servers and/or clients</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>The clients access multimedia information in the form of
+text, images, audio and video from various web servers</FONT></LI>
+</UL>
+<FONT SIZE=+1></FONT>
+
+</BODY>
+</HTML>

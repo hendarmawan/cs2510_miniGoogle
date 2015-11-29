@@ -1,0 +1,32 @@
+<title>Database Systems</title>
+<h1>CS1555/1565: Database Systems</h1>
+<table border>
+<tr><th><a href="announce.htm">Date</a></th><th>Topic</th><th>Chapters Covered</th><th>Exercise Due</th>
+</tr>
+
+<tr><td><b>Week-1-Lec-1</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/01intro.html">Introduction to Basic Concepts</a></i></td><td>C1 (C1)</td><td><tt>-</tt></td></tr>
+<tr><td><b>Week-1-Lec-2</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/02arch.html">Database System Architecture </a></i></td><td>C2 (C2)</td><td><tt>-</tt></td></tr>
+<tr><td><b>Week-2</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/03ERmodel.html">ER model, UML</a></i> and <a href="http://www.cs.pitt.edu/~chang/156/04reldb.html">Relational Model</a></i></td><td>C3 (C3)</td><td><tt> <a href="http://www.cs.pitt.edu/~chang/156/exer.html"> Exercise 1</a> due Week-3-Lec-1</tt></td></tr>
+<!-- dBase
+<tr><td><b>Week-3</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/06dbase.html">dBase</a></i></td><td>Classnotes</td><td><tt>-</tt></td></tr>
+dBase -->
+<tr><td><b>Week-3</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/06oracle/cs1555.html">Oracle Fundamentals</a></i></td><td>Classnotes</td><td><tt><b>(Week-3-Lec-1 Quiz 1)</b></tt></td></tr>
+<tr><td><b>Week-4</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/04reldb.html">Relational Model</a> and <a href="http://www.cs.pitt.edu/~chang/156/05algebra.html"> Relational Algebra</a></i></td><td>C7 (C6)</td><td><tt>-</tt></td></tr>
+<tr><td><b>Week-5</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/07sql.html">Relational language SQL</a></i></td><td>C8 (C7)</td><td><tt><a href="http://www.cs.pitt.edu/~chang/156/exer.html">Exercise 2</a> due Week-5-Lec-1</tt></td></tr>
+<tr><td><b>Week-6</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/08struct.html">Physical structures</a></i></td><td>C5 (C4 and C5)</td><td><tt><a href="http://www.cs.pitt.edu/~chang/156/exer.html">Exercise 3</a> due Week-6-Lec-1</tt></td></tr>
+<tr><td><b>Week-7-Lec-1</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/09review.html">Review of first seven chapters,  B-tree and extendible hashing</a></i></td><td>-</td><td><tt><a href="http://www.cs.pitt.edu/~chang/156/exer.html">Exercise 4</a> due Week-7-Lec-1</tt></td></tr>
+<tr><td><b>Week-7-Lec-2</b></td><td><i>Midterm Exam</i></td><td>C1 to C8 not C4 (C1 to C7)</td><td><tt>-</tt></td></tr>
+<tr><td><b>Week-8</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/10calculus.html">Relational Calculus</a> and <a href="http://www.cs.pitt.edu/~chang/156/11funcdep.html">Normal Forms</a></i></td><td>C9 (C8) and C14 (C12)</td><td><tt>-</tt></td></tr>
+<tr><td><b>Week-9-Lec-1</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/12integrity.html">Database Integrity</a></i></td><td>C8 (C12)</td><td><tt><a href="http://www.cs.pitt.edu/~chang/156/exer.html">Exercise 5</a> due Week-9-Lec-1</tt></td></tr>
+<tr><td><b>Week-9-Lec-2</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/13reldb2.html">Oracle, DB2 and implementation issues</a></i></td><td>C10 (C9)</td><td><tt><a href="http://www.cs.pitt.edu/~chang/156/proj1.html">project #1 discussion</a></tt></td></tr>
+<tr><td><b>Week-10</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/14hier.html">Hierarchical model, IMS and MUMPS concepts</a></i></td><td>Classnotes (C11)</td><td><tt><a href="http://www.cs.pitt.edu/~chang/156/exer.html">Exercise 6</a> due Week-11-Lec-1, <a href="http://www.cs.pitt.edu/~chang/156/proj4.html">project #2 discussion</a></tt></td></tr>
+<tr><td><b>Week-11-Lec-1</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/15hypertext.html">Hypertext model, HTML and XML</a></i></td><td>Classnotes</td><td><tt>-</tt></td></tr>
+<tr><td><b>Week-11-Lec-2</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/17webase.html">WebBase Interface and ODBC concepts</a></i></td><td>Classnotes</td><td><tt><b>(Week-11-Lec-2 Quiz 2)</b></tt></td></tr>
+<tr><td><b>Week-12</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/18network.html">Network Data Model</a> and <a href="http://www.cs.pitt.edu/~chang/156/19oodb.html">Object-oriented database concepts</a></i></td><td>C11 and C12 (C10 and C22)</td><td><tt>-</tt></td></tr>
+<tr><td><b>Week-13-Lec-1</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/16cgi.html">Common Gateway Interface for Web Database</a></i></td><td>Classnotes</td><td><tt>-</tt></td></tr>
+<tr><td><b>Week-13-Lec-2</b></td><td><i> <a href="http://www.cs.pitt.edu/~chang/156/21mining.html">Data Mining</a></i></td><td>-</td><td><tt>-</tt></td></tr>
+<tr><td><b>Week-14</b></td><td><i><a href="http://www.cs.pitt.edu/~chang/156/20dbdesign.html">Database design and comparison of data models</a></i></td><td>C9 and C12 (C12, C14 and C22.8)</td><td><tt>Early submission of projects (+3 bonus points) Week-14-Lec-1</tt></td></tr>
+<tr><td><b>Week-15-Lec-1</b></td><td><i><a href="22review.html">Review</a></i></td><td>C1-C12,C26.2 not C4 (C1-C8, C10-C12, C14, C22) and classnotes</td><td><tt>Miniproject due Week-15-Lec-1</tt></td></tr>
+<tr><td><b>Week-15-Lec-2</b></td><td><i>Final Exam</i></i></td><td>C1-C12, C26.2 not C4 (C1-C8, C10-C12, C14, C22) and classnotes</td><td><tt>Late submission of miniprojects (-2 penalty points, after final exam, no miniprojects may be submitted)</tt></td></tr>
+</table>
+<b>* Chapter references are to the 3rd edition of the textbook.  (References to the 2nd edition are in parentheses)</b><br>

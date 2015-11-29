@@ -1,0 +1,31 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page4.html"><img src="previous.gif" align=left></a>
+<a href="page6.html"><img src="next.gif" align=right></a>
+<center>
+   <br></br>
+   <h1>Scriptlets</h1>
+   <br>
+</center>
+<font size=4>
+<ul>
+   <li>Scriptlets allow for Java code to be directly embedded into a JSP
+page.</li>
+   <li>They are permitted to produce output to the page, but do not
+necessarily have to.</li>
+   <ul>
+      <li>If a scriptlet is to produce output to a page, it uses the
+implicit "out" object.</li>
+   </ul>
+</ul>
+<br><br>
+<p>Example of a scriptlet:</p>
+<font color="red">
+   <p>The current date is:
+      <br>&lt% out.println(new java.util.Date()); %></p>
+</font>
+</font>
+</html>
+

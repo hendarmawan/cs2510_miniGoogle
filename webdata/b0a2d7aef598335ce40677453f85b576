@@ -1,0 +1,50 @@
+<html>
+<body bgcolor="#abcdef" text="#vishnu">
+<a href ="p6.html"><img src="previous.gif" align=left
+width="26" height="26"></a>
+<a href="p8.html"><img src="next.gif" align=right
+width="26" height="26"></a>
+<pre>
+<font face="Arial">
+<center><h1> Situation Metaphor (Contd) </h1>
+
+<h2><u> Interaction Model</u> </h2></center>
+<h2>
+  In Intearction model we formally define a particular situation as
+   
+<center> S&#161=S(L&#161,T&#161,A&#161,F&#161)  </center>
+
+
+where
+
+<ul>
+<li>L&#161 gives physical location co-ordinates(latitude,Longitude)</li>
+
+<li>T&#161 is a continuous period of time with start and end periods</li>
+
+<li> A&#161 is a set of activity points with respect to all activites
+engaged in work space </li>
+
+<li> F&#161 describes the set of contextual factors affecting the
+interaction </li>
+
+<center> F&#161={<i> f1,f2,f3,.....fm</i> } </center>
+
+<li> The relation ship between the situation and entities in given by</li>
+
+<center> ID(S&#161)={<i> e1,e2,e3,.....en </i>}</center>
+
+ which means that a particular situation is defined by the set of all
+ entites that constitute that situation. 
+
+</ul>
+</h2>
+
+
+
+
+
+
+</pre>
+</body>
+</html>

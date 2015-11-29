@@ -1,0 +1,28 @@
+
+<h3>
+<p>
+The following is a template for the OOA/OOD document.
+<pre>
+Object Oriented Analysis for Online Testing System
+1. System Overview
+   (May optionally include use case diagram)
+2. The Class Model
+2.1. The Classes
+2.2. The Class Diagram
+3. The Dynamic Model
+3.1. The Scenarios
+3.2. The State Diagrams
+  (There may be several scenarios with corresponding
+   state diagrams.  Must include at least two
+   scenarios and two state diagrams.)
+4. The Functional Model
+   (May include the top-level data flow diagram)
+
+Object Oriented Design for Online Testing System
+(Must be comprehensive. For each class (or module)
+add a "box" specifying class (or module) name and 
+all attributes, their type and format.
+1. Module 1
+2. Module 2
+ ....
+</pre>

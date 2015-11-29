@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Virtual Classroom for Windows CE based Mobile Devices using J# &amp; JavaScript </title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0in;
+	margin-bottom:.0001pt;
+	font-size:12.0pt;
+	font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+</head>
+
+<body>
+<table width="100%"  border="0">
+  <tr>
+    <td><table width="100%"  border="0">
+        <tr>
+          <td align="left" valign="top"><a href="page3.htm"><img src="previous.gif" width="26" height="26" border="0"></a></td>
+          <td width="100%" align="center"><h2> Java Applications in J#</h2></td>
+          <td align="right" valign="top"><a href="page5.htm"><img src="next.gif" width="26" height="26" border="0"></a></td>
+        </tr>
+    </table></td>
+  </tr>
+  <tr>
+    <td align="center"><table width="735" border="0" align="center">
+      <tr>
+        <td align="left"><ul>
+          <li>As we mentioned, J# can handle Java applications developed using the JDK 1.1.4
+            <ul>
+              <li>Some types of applications were not included originally, but now they are available. </li>
+              <li>They are described below :
+                <ul>
+                  <li><a href="#applets">Applets Equivalent</a></li>
+                  <li><a href="#swing">Swing applications   </a></li>
+                  </ul>
+              </li>
+              </ul>
+          </li>
+          </ul>          
+</ul>
+<hr>
+<ul>
+  <li><a name="applets"></a><strong>Applets</strong>            
+              <ul>
+                <li>The equivalent in J# are the <em>J# Web Browser Controls </em>(JSWBC) </li>
+                <li>Run under Internet Explorer 5 or higher </li>
+                <li>Currently only under Windows</li>
+                <li>JSWBC are compiled as Class Libraries </li>
+                <li>VS.NET 2003 can directly import Applet projects from Microsoft Visual J++ 6.0</li>
+                <li><strong>TagConvert.exe</strong>:&#13;additional tool useful for converting the APPLET tag into the JSWBC equivalent: 
+                  <ul>
+                    <li><u>Original:</u><br>
+&lt; <strong>APPLET </strong> style=&quot;LEFT: 0px; WIDTH: 361px; TOP: 0px; HEIGHT: 350px&quot; height=350 width=361 code=AppletTest.class name=AppletTest&gt;&#13;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;PARAM NAME=&quot;foreground&quot; VALUE=&quot;FFFFFF&quot;&gt;&#13;…&#13;</li>
+                    <li><u>Converted:</u><br>
+&lt; <strong>object </strong>style=&quot;LEFT: 0px; WIDTH: 361px; TOP: 0px; HEIGHT: 350px&quot; height=350 width=361 CLASSID=&quot; <strong>clsid:a399591c-0fd0-41f8-9d25- </strong><strong>bd76f632415f </strong>&quot; ID=&quot;AppletTest&quot; VJSCODEBASE=&quot;bin/Debug/AppletTest.dll#AppletTest &quot; &gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&#13;&lt;PARAM NAME=&quot;foreground&quot; VALUE=&quot;FFFFFF&quot;&gt;&#13;…&#13;</li>
+                  </ul>
+                </li>
+              </ul>
+  </li>
+  <ul>
+    <li>The latest version of JSWBC has scripting support </li>
+    <li>A JSWBC has full access to the .NET framework
+      <ul>
+        <li>You can see an example below showing a Windows .NET Form after pressing the button:</li>
+      </ul>
+    </li>
+    </ul>
+  <p align="center"><img src="images/appletrjsharp.jpg" width="623" height="570"></p>
+</ul><hr>
+<ul>
+<li><a name="swing"></a><strong> Swing Applications 
+                            </strong>
+              </li>
+              <ul>
+                <li> Supported by way of the <em>Supplemental UI Library </em>not included originally in J# </li>
+                <li>Initially available only for the academic community where they were demanding this feature</li>
+                <li>In Visual Studio .NET 2005 you can also develop <strong>commercial</strong> applications using this supplemental library</li>
+                <li> Supports “ … <strong>much </strong> of the functionality described in the Java 2 JFC Swing specification. It also adds support for much of the functionality found in the JDK 1.2 java.util package</li>
+                <li>You can see a limited version of the current Virtual Classroom compiled with J# with minor code modifications: </li>
+              </ul>
+          </ul>          <p align="center"><img src="images/vcrjsswing.jpg" width="702" height="759"></p></td>
+      </tr>
+    </table>
+<p align="left" class=MsoNormal>&nbsp;</p>
+
+<p class=MsoNormal>&nbsp;</p>    </td>
+  </tr>
+  <tr>
+    <td>&nbsp;</td>
+  </tr>
+</table>
+</body>
+</html>

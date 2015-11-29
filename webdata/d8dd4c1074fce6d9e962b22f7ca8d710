@@ -1,0 +1,130 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+
+
+
+
+<title>Multimedia Software Engineering</title>
+
+
+
+
+
+
+
+
+<body>
+
+<p align="center"><a href="p4.htm">
+<img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;<font face="Verdana" size="4"><font color="#0000FF">Concept 
+of Knowledge Plane</font> </font>
+<a href="p6.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></p>
+
+<p>&nbsp;</p>
+<p><span style="font-family: Verdana"><font size="5" color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Knowledge Distance:</font></span></p>
+<p>&nbsp;</p>
+<p><font face="Verdana" size="5" color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</font><font size="5"><span style="font-family: Verdana">Defined as the distance 
+in knowledge measured in terms of the </span>
+</font></p>
+<p><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+the self-model and the alien-model of the set of all other chronobots taking 
+part</span></font></p>
+<p><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+in the process of negotiation</span></font>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<p>&nbsp;</p>
+<p><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Can be formulated also in terms of the Exchange rate between the agents, where</span></font></p>
+<p><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Exchange rate is more formally defined as:</span></font></p>
+<p><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></p>
+<p style="text-align: justify; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<span style="font-family: Verdana; color: black"><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Exchange (agent x, agent y) = e&nbsp; <sup>( 1 &nbsp;/ &nbsp;&#8721; Cji * d &nbsp;( xji , &nbsp;yji ) )&nbsp;
+</sup></font></span></p>
+<p style="text-align: justify; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<sup><font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font></sup><span style="font-family: Verdana; color: black">
+<font size="5">where </font></span></p>
+<p style="text-align: justify; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp; </span>
+</font></p>
+<p style="text-align: justify; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font><span style="font-family: Verdana; color: black"><font size="5">
+The summation is over all the terms C<sub>ji</sub> * d(x<sub>ji</sub>, y<sub>ji</sub>) 
+and</font></span></p>
+<p style="text-align: justify; font-family: Courier New; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<font size="5"><span style="font-family: Verdana">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></font><span style="font-family: Verdana; color: black"><font size="5">&nbsp; 
+C<sub>ji</sub> is a scaling constant</font></span></p>
+
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt"><span style="font-family: Verdana"><font size="5" color="#FF0000">
+Knowledge Plane:</font></span><font size="5">&nbsp;&nbsp;&nbsp; </font></p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; We describe the Knowledge Plane 
+function </font><font face="Times New Roman" size="5">&#934; </font><font face="Verdana" size="5">
+in terms of <i>k, </i> </font></p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<font size="5"><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </i></font><font face="Verdana" size="5">the knowledge 
+distance between the negotiating entities. When the </font></p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; max of the knowledge distance
+</font><font face="Verdana" size="5">among all participating chronobots </font>
+</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font face="Verdana" size="5">exceeds threshold <i>t, </i>
+the knowledge</font><font size="5"> </font><font face="Verdana" size="5">plane 
+function is responsible for </font></p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">&nbsp;</p>
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </font><font face="Verdana" size="5">
+transferring to the </font><font face="Verdana" size="5">higher plane of 
+knowledge</font></p>
+
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+&nbsp;</p>
+
+<p style="text-align: justify; font-family: Verdana; margin-left: .5in; margin-right: 0in; margin-top: 0in; margin-bottom: .0001pt">
+<font size="5" color="#FF0000">Example</font><span style="font-family: Verdana"><font size="5" color="#FF0000">:</font></span><font size="5"> </font></p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify">Let us assume 
+that there are two chronobot agents A<sub>1</sub> and A<sub>2 </sub>in the 
+system. </p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify">The self-model 
+of A<sub>1 </sub>includes the current set of values for the various criteria and 
+the weights that A<sub>1 </sub>assigns for each of those criteria. Similarly the 
+self-model of A<sub>2 </sub>includes the current set of values for the various 
+criteria and the weights that A<sub>2</sub> assigns for each of those criteria.
+</p>
+<p class="MsoNormal" style="margin-left:.5in;text-align:justify">Let chronobot A<sub>2
+</sub>initiate the bid. The alien-model of A<sub>1 </sub>includes the current 
+set of values that it assigns to the multitude of criteria specified by A<sub>2</sub>. 
+Now in order to concretely specify the knowledge distance between A<sub>1 </sub>
+and A<sub>2 </sub>we assume that C<sub>1</sub> d<sub>1 </sub>(x<sub>1</sub>, y<sub>1</sub>) 
+= 0. This means that A<sub>1 </sub>and A<sub>2 </sub>are in the same knowledge 
+plane and their primary skills<sub> </sub>match. For instance, if C<sub>1</sub> 
+is 10,000 and d<sub>1</sub> is between 0 and 1, in this case close to 1.&nbsp; Then C<sub>1</sub> 
+d<sub>1 </sub>(x<sub>1</sub>, y<sub>1</sub>) is close to 100,000 and the 
+exchange rate is close to 1. In this case A<sub>1 </sub>and A<sub>2 </sub>are in 
+different Knowledge planes. Henceforth we need to use the Knowledge Plane 
+function, &#934; in order to scale the knowledge distance as follows. Since their 
+primary skills do not match, we need to look at the correlation in terms of the 
+programming language skills. Lets assume in this case that C<sub>2</sub> d<sub>2
+</sub>(x<sub>2</sub>, y<sub>2</sub>) is small. Then we have ensured that A<sub>1
+</sub>and A<sub>2 </sub>in the same Knowledge Plane and hence A<sub>1 </sub>can 
+satisfy A<sub>2</sub>’s bid.</p>
+
+</body>

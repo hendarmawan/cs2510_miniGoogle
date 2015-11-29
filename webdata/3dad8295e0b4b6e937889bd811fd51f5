@@ -1,0 +1,37 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="seminar_pg14.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="seminar_pg16.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Design Considerations (Cont.)</font></h1> 
+ </center> 
+ 
+<p><br>
+  <font size="5" face="Arial, Helvetica, sans-serif">Things to watch out for...</font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">Termination</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">Termination refers to the graceful 
+    ending to a series of rules executed as a result of a single event (typically 
+    the access of a page)</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Developers should make sure that 
+    there are no conditions in their adaptation rules that would result in an 
+    infinite loop</font></li>
+</ul>
+<p><font size="4" face="Arial, Helvetica, sans-serif">Confluence</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">The Merriam-Wester dictionary 
+    defines confluence as: a coming or flowing together, meeting, or gathering 
+    at one point</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Confluence here refers to the 
+    the execution of the adaptation rules, and the behavior that this execution 
+    should result in the same outcome</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Developers should thoroughly test 
+    that their applications have confluence</font></li>
+</ul>
+<p><font face="Arial, Helvetica, sans-serif">The ultimate goal is to develop an 
+  adaptive system that is useful to the users' specific needs, and doesn't leave 
+  them forever going in circles.</font></p>
+</html> 

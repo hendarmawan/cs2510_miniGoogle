@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>PHP</title>
+</head>
+<body bgcolor="#99CCFF">
+<a href="index.html"><img src="previous.gif" align="left" /></a>
+<a href="page2.html"><img src="next.gif" align="right" /></a>
+<center>
+   <br></br>
+   <h1><font color="#FF0000">What is PHP?</font></h1>
+   <br></br>   
+</center>
+<ul>
+<li>Open Source scripting language
+<li>Used especially for Web development
+<li>Can be embedded in html pages
+<li>Allows web developers to write dynamically generated webpages quickly 
+<li>Relatively simple to learn but has many advanced features
+</ul>
+

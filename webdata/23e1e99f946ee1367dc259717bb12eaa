@@ -1,0 +1,38 @@
+<html>
+<head>
+   <title> The standards of VRML </title>
+</head>
+<body>
+&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" HEIGHT="14" >
+<tr>
+<td WIDTH="5%" HEIGHT="10"><a href="vrml-2.html">
+<img SRC="previous.gif" ALT="previous.gif (632 bytes)" height=26 width=26 align=LEFT></a></td>
+
+<td WIDTH="87%" HEIGHT="10"></td>
+
+<td WIDTH="8%" HEIGHT="10"><a href="vrml-4.html">
+<img SRC="next.gif" ALT="next.gif (623 bytes)" height=26 width=26 align=RIGHT></a></td>
+</tr>
+</table>
+
+<h1><center><b>The standards of VRML</b></center></h1>
+
+<font size = +2>
+<b>VRML 1.0</b>
+<ul>
+<li>The first release of the VRML 1.0 specification was created by Silicon Graphics, Inc. 
+</ul>
+<b>VRML 2.0</b>
+<ul>
+<li>The second release of VRML added significantly more interactive capabilities. It was primarily designed by the Silicon Graphics VRML team with contributions from Sony Research, Mitra, and many others. 
+</ul>
+<b>VRML97</b>
+<ul>
+<li>In December 1997, VRML97 replaced VRML 2.0 and was formally released as International Standard ISO/IEC 14772.
+</ul>
+<BR>
+</font>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<html> <P>
+<title>Formal Definition of the Sentient Map</title> <P>
+<A HREF="senmap2.htm"><IMG SRC="previous.gif" align=left></A> <P>
+<A HREF="senmap3.htm"><IMG SRC="next.gif" align=right></A> <P>
+<center><h2>Formal Definition of the Sentient Map</h2></center>
+<h2>
+If O1, O2, ...., On are sentient maps, so is f({O1, O2, ..., On}).
+In general, a sentient map O is a well-formed expression involving
+other sentient maps Oi, the opening
+bracket '{' and the closing bracket '}'.  We write
+
+       O = f({O1, O2, ..., On}).
+
+Each sentient map Oi has a profile Pi = (Pi1, Pi2, ...., Pim)
+where each attribute Pij denotes some characteristics of Oi.
+
+<br><br>
+The <font color=red>match</font> operator
+match<sub>t</sub>(f({O1, O2, ..., On}, {O1', O2', ..., Om'})) 
+finds threshold-t matched sentient map objects from {O1', O2', ..., Om'}.
+The <font color=red>abstract</font> operator
+abstract<sub>j</sub> (f({O1, O2, ..., On})) 
+extracts level-j sentient map objects.
+The <font color=red>weave</font> operator
+weave<sub>type-k</sub>(f({O1, O2, ..., On})) 
+weaves together type-k sentient map objects.
+The <font color=red>customize</font> operator
+customize<sub>style-s</sub>(f({O1, O2, ..., On})) 
+creates a style-s customized presentation.
+

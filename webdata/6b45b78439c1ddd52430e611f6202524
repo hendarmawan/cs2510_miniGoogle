@@ -1,0 +1,15 @@
+<HTML>
+<TITLE>Component & Deployment Diagram</TITLE>
+<FORM><BODY>
+<font size=+2 color=blue>
+<a href="uml_3.html"><img align="left" src="larrow.gif" border=0></a>
+<a href="compdep1.html"><img align="right" src="rarrow.gif" border=0></a>
+<p><br><br><br>
+<font size=+2><b>Component and Deployment Diagram</b><br><br>
+<LI>Component diagram describes the computer systems<br>
+<LI>Deployement Diagram shows the actual hardware required to implement a system<br>
+- can depict the computers and devices<br>
+- show connections with one another, and show the software that sits on each machine<br>
+<hr><br>
+<img src="umlpal-implement.gif">
+</font><BODY></FORM></HTML>

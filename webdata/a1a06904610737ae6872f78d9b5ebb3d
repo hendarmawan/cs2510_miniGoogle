@@ -1,0 +1,67 @@
+<html>
+<head><title>Chapter 11 : Temporal Models</title></head>
+<body>
+<a href="c11_7.html"><IMG SRC="previous.gif" align=left></a>
+<a href="c11_9.html"><IMG SRC="next.gif" align=right></a>
+<center>
+<h3><font color="blue">Chapter 11</font></h3>
+<h1>Temporal Models</h1>
+</center>
+<hr size=3>
+
+<h2>1. Languaged-Based Model</h2>
+<h3>
+<ul>
+<img src="blue.gif"> Add extension to language to support synchronization<br>
+<img src="blue.gif"> Example : Communicating Sequential Processing (CSP) , Restricted Blocking <br>
+<img src="blue.gif"> <i>Advantage</i> : Lead to implementation <br>
+<img src="blue.gif"> <i>Disadvantage</i> : Hard to visualize and difficult to verify. <br>
+</ul>
+</h3>
+
+<p>
+<h2>2. Petri-Net Model</h2>
+<table border=5 cellpadding=5>
+<tr align=center>
+<td> <b>Type</b>
+<td> <b>Advantage</b>
+<td> <b>Disadvantage</b>
+</tr>
+
+<tr>
+<td> <b>OCPN (Object Composition Petri Net)
+<td> Capture all the necessary temporal relations.
+<td> Lack capabilities to specify communication requirements and control
+    function for distributed composition of multimedia documents
+</tr>
+
+<tr>
+<td> <b>G-Net </b>
+<td> Allow specifications of communication primitives and type of connections
+	that can be established among communication sites.
+<td> Over simplified and does not facilitate generation of multimedia documents
+</tr>
+
+</table>
+<p>
+
+<h3>
+<ul>
+<img src="green.gif"> <a href="petri.jpg">Figure 11-5</a> shows an OCPN with QOP parameters. <br>
+</ul>
+</h3>
+
+<h2>3. User Interaction Models</h2>
+<h3>
+<ul>
+<img src="red.gif"> The means to manipulate or control the presentation of temporal specification <br>
+<img src="red.gif"> Example : reduce or increase the speed of multimedia presentation.
+</ul>
+
+</h3>
+
+</body>
+</html>
+
+ 
+

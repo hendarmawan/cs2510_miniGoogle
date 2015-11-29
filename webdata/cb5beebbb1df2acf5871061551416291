@@ -1,0 +1,13 @@
+<title>Software Architecture</title>
+<A HREF="c01.htm"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c03.htm"><IMG SRC="next.gif" align=right></A>
+<font color=red>
+<h1>Styles of Software Architecture</h1>
+<h2>Pipe and filter: input to one component is processed and the
+resulting output is passed to next component.<br>
+Shared Repository: a data store is accessed by various components.<br>
+Buss: data is broadcast over a shared communication medium from which
+components can choose to withdraw or ignore the data.<br>
+Layered Abstract Machine: components are stratefied into layers, where
+data produced at one layer is available only to layers above.
+<img src="fig20-1.jpg">

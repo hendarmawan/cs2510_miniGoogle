@@ -1,0 +1,31 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Zubeyir Unlu">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="index.html"><img SRC="Previous.gif" BORDER=0 height=26 width=26 align=LEFT></a><a href="proj03.html"><img SRC="Next.gif" BORDER=0 height=26 width=26 align=RIGHT></a>
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<center>
+<p><b><font size=+2>Introduction</font></b>
+<hr WIDTH="100%"></center>
+<font size=+1>Nowadays, E-commerce is a new and rapidly developing area.
+Therefore, e-commerce should be investigated using Multimedia Software
+Engineering point of view and new MICE tools should be developed for this
+area.</font>
+<p><font size=+1>How MICE design methodology can be used in e- commerce
+environment? As known, most of companies have web sites, and they serve
+some services using these pages. Most of these pages need interactive action.
+Using CGI programs performs these actions. These programs should be prepared
+by using different techniques. MICE environment also can be used to realize
+the active systems in e-commerce. In this study, active index system approach
+was applied to make reservation and to buy an airline ticket in optimum
+price as an example.</font>
+</body>
+</html>

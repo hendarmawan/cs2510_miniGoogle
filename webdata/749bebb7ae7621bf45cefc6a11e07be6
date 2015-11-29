@@ -1,0 +1,74 @@
+<hr>
+<h1>Statement of Kinect gesture control for robots</h1>
+<p>
+Author: Yang Hu Qizhang Dai
+<p>
+<h2>Introduction</h2>
+<p>
+We want to develop a system that using Kinect as an input device to recognize human body movements then sends specific command to remote device through SIS Server.
+<p>
+<h2>Idea</h2>
+<p>
+Our idea is that, not like the others, using something like a game pad to control the robot. We can use our natural body movement to achieve it.
+The architect will look like this.
+<p>
+Kinect component: responsible to recognize and classify human body movements, then generate standard control message, send the message to the SIS server.
+<p>
+Device component: connect to the SIS server and wait for the message from the .Kinect component.. Different device component will react differently according to different message sequence.
+<p>
+<h2>Device</h2>
+<p>
+Remote device will be something like a tiny robot car. It can:
+<p>
+<ul>
+<li>	Move forward
+<li>	Turn Right
+<li>	Turn Left
+<li>	Stop
+</ul>
+<p>
+<h2>Gesture</h2>
+<p>
+In order to control the device easily, we are going to design an algorithm that can tell the difference between these gestures below:
+<p>
+<ul>
+<li>	Raise both hands up
+<p>
+Means start the device.
+<p>
+<li>	Left hand to the left
+<p>
+Means turn left.
+<p>
+<li>	Right hand to the right
+<p>
+Means turn right.
+<p>
+<li>	Both hands down
+<p>
+Means stop the car.
+</ul>
+<p>
+<h2>Message Format</h2>
+<br>
+Sample message for "Left" gesture:
+<p>
+<pre>
+&LT ?xml version="1.0" standalone="yes"? &GT
+&LT !--
+Author : Yang Hu
+Email : yah14@pitt.edu
+-- &GT
+&LT Msg &GT
+	&LT Head &GT
+		&LT MsgID &GT410&LT /MsgID &GT
+		&LT Description &GTGesture Command&LT /Description &GT
+	&LT /Head &GT
+	&LT Body &GT
+		&LT Item &GT
+			&LT Key &GTGesture&LT /Key &GT
+			&LT Value &GTLeft&LT /Value &GT
+		&LT /Item &GT
+	&LT /Body &GT
+&LT /Msg &GT
+</pre>

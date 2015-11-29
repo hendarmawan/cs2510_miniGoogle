@@ -1,0 +1,24 @@
+<title>I-card and C-card</title>
+
+<a href="sisic10.htm"><img src="prev.gif" align=left></a>
+<a href="sisic12.htm"><img src="next.gif" align=right></a>
+
+<center>
+<h1>Incremental Specification</h1>
+</center>
+
+<h3>
+The incremental specifications must be consistent,
+so that they can be synthesized into an integrated
+solution.
+<p>
+We need to verify that the incremental specifications
+are consistent, by checking (a) the C-cards are
+consistent,  (b) the I-cards are consistent,
+and (c) the cards can be integrated.
+
+<p>
+(a) Two C-cards are consistent, if either (i) the node names
+and arc names are disjoint, or (ii) the node names
+and arc names are not disjoint, and the overlapped
+sub-nets are identical.

@@ -1,0 +1,489 @@
+<title>PHYSICAL STRUCTURES</title>
+<h1>PHYSICAL STRUCTURES</h1>
+"You have a point there," said Trurl,
+"We will have to figure some way around that......The
+main thing, however, is the algorithm."<br>
+"Any child knows that!  What's a
+beast without an algorithm?"<br>
+<ul>
+Stanislaw Lem,
+The Cyberiad
+</ul>
+
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/08a">Click here for Part A of audio-text lecture and feed it to the speech agent</a></xs></center>
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/08b">Click here for Part B of audio-text lecture and feed it to the speech agent</a></xs></center>
+<br>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/08a.rm">Click here for Part A of an audio lecture that can be played using RealPlayer</a></center>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/08b.rm">Click here for Part B of an audio lecture that can be played using RealPlayer</a></center>
+<hr>
+<h2>Access Methods</h2>
+Accessing
+is the way of obtaining data stored in storage devices.
+<br><br>
+Access methods are generalized I/O routines which conceal most 
+device-dependent details from the file management or database management system.
+Some existing access routines also include functions generally attributed to
+DBMS, such as keyword compression, sequencing, sorting, secondary index 
+generation, etc.<br>
+<br><IMG SRC="images/fig81.gif"><br>
+
+<hr>
+<h3>Buffering</h3>
+The purpose of
+buffering
+is to allow the operating system to 
+transfer one buffer of data, while the application program is processing data
+in another buffer.  An example is illustrated below.
+<br><IMG SRC="images/fig82.gif"><br>
+
+<hr>
+<h3>Blocking</h3>
+Blocking
+refers to the practice of placing several logical records
+within one physical record.  The purposes of blocking are:  (a) to reduce
+access time by reading/writing more data in one I/O access, and (b) to increase the
+amount of data stored on I/O devices.  The first reason is quite evident, 
+because I/O devices such as disks and tapes usually have long latency times,
+and relatively short data transmission times.  The second reason also becomes 
+evident, when we consider the inter-record gaps that are wasted in I/O devices.
+For tapes and disks, it is common 
+practice to block many logical records into a single physical record, in order
+to reduce this inter-record gap.
+<br><IMG SRC="images/fig83.gif"><br>
+
+<hr>
+<h3>Sequential Access Method</h3>
+The logical records are accessed in a sequential  
+order, either according to their natural sequence of entry (or 
+<b>entry-sequence</b>),
+or according to a fixed sequence based upon the sorted value of a key (or  
+<b>key-sequence</b>).
+
+<hr>
+<h3>Direct Access Method</h3>
+If the records are stored in a direct-access storage
+device, then with the correct formatting and blocking, the records could be 
+accessed directly by their physical position, or address, or by a key.  
+A symbolic key may or may not be used directly to locate a logical record in the 
+storage device.  If there exists a
+<b>key-to-address transformation</b>
+which could be
+implemented by a computer program to convert a symbolic key to the physical 
+address of the record, then we can use symbolic keys for direct access of 
+records.
+<br><IMG SRC="images/fig84.gif"><br>
+
+<hr>
+<h3>Indexed Access Method</h3>
+The indexed access method can be used for either 
+sequential or direct processing and accessing of records in a file.  The        
+records are logically arranged with respect to a certain collating sequence,
+according to a key field in each record.  A 
+directory,
+(sometimes called an
+index),
+is maintained for either sequential or direct access.
+<br><br>
+Conceptually, the concept of key-to-address transformation is analogous
+to using a mathematical function to specify a mapping from keys to addresses.  The concept
+of index is analogous to using a table to specify the mapping.
+<br><br>
+An example is illustrated.  Using this table (or index, directory),
+we can find out the address of any record, given the key value.  For example,
+the record with key equal to '00120' has the address "1".
+<br><IMG SRC="images/fig85.gif"><br>
+<br>
+The index above is searched sequentially.  When the number of records
+becomes large, such sequential searching becomes uneconomical.  A
+<b>search tree</b>
+(also called tree structure index, multilevel index, or multilevel 
+directory) can be used, as shown below.  A search tree, or a multilevel 
+directory, is a generalization of the binary search tree.
+<br><IMG SRC="images/fig86.gif"><br>
+To find the address of record with key '04800', we start with the first level
+index, and compare the key '04800' with keys stored in this index.  We find
+the first key which is greater than or equal to the 
+<b>search key</b>
+(the key for the record to be searched) in the collating sequence, and follow the pointer
+to the second level index.  In this example, since '06127' is larger than
+'04800', the second level index B is entered.  We again compare '04800' against
+the stored keys, and find a match.  Since there are no more levels of indices,
+the address for record with key '04800' can be found, which is '5'.
+<br><br>
+In the above example, the directory contains entry for every record.  Such an index is called a 
+<b>dense index</b>.
+If a dense index is used, the indexed access
+method is sometimes called the
+<b>Indexed Direct Access Method (IDAM)</b>.
+<br><br>
+For
+<b>Indexed Sequential Access Method (ISAM)</b>,   
+the index is usually
+<b>nondense</b>.
+As an example, if  the second level tables are removed, then it becomes a
+nondense index.  When nondense index is used, the addresses in the directory 
+are addresses of first records in blocks of records, as shown below.  In 
+order to locate the correct records, a sequential scan of records in a block  
+has to be made.
+<br><IMG SRC="images/fig87.gif"><br>
+<hr>
+<h2>Key-To-Address Transformation</h2>
+
+Key-to-address transformation algorithms
+enable the retrieval of records in one access, by directly computing the 
+record address from the given search key.  An example is illustrated below.
+<br><IMG SRC="images/fig89.gif"><br>
+
+<h3>Hashing Technique</h3>
+In hashing schemes, the key is converted into a near-random 
+number, and this number is used to determine the record address, or the address
+of a group of records, called a
+<b>bucket</b>.
+The number of logical records stored
+in this area is referred to as the 
+<b>bucket capacity</b>.
+The hashing scheme is illustrated below.
+<br><IMG SRC="images/fig8a.gif"><br>
+When the file is initially loaded, the location in which the records are stored
+is determined as follows:
+<br><br>
+<ul>
+(1) The key is converted into a near-random number n, that lies between 1 and M,
+where M is the number of storage buckets.<br>
+(2) The logical bucket address n is converted to the physical bucket address,
+and the physical record constituting that bucket is read.<br>
+(3) If the bucket is full, the record is stored in an  
+<b>overflow area</b>.
+</ul>
+<br>
+When records are read from the file, the method of finding them is as follows:
+<br><ul>
+(1) The key is converted into a near-random number n, using the same hashing algorithm.<br>
+(2) The logical bucket address n is converted to the physical bucket address,
+and the bucket is searched to find the desired logical record, by sequential
+scanning, block-search, or binary-search techniques.<br>
+(3) If the record is not in the bucket, then the overflow area is searched.
+<br></ul>
+
+The factors affecting the performance of a hashing algorithm are the following:
+<br><br>
+(1) The
+<b>bucket size</b>,
+or how many logical records can be stored per bucket.  Smaller
+buckets cause higher proportion of overflows, which will necessitate 
+additional bucket reads and possibly additional seeks.  If a direct-access
+storage device is used which has a long access time, it is desirable to minimize
+the numbers of overflows, by choosing a bucket size of 10 or more.  If the
+entire file is stored in main memory, then a bucket size of 1 can be chosen,
+so that the bucket-searching operation can be more efficient.  In practice,
+bucket capacity is often tailored to the hardware characteristics.  For 
+example, one track of a disk unit, or half a track, may be made one bucket.
+<br><br>
+(2) The
+<b>packing density</b>,
+or the ratio of the number of records in a file, and 
+the total number of records that can be stored in the buckets.  Because of 
+the random nature of the hashing algorithm, it is not possible to achieve
+100% packing density.  A higher packing density means more overflows, and
+more efficient storage.  A lower packing density means less overflows,
+and less efficient storage.  Trade-off between storage and access time can
+be investigated, by adjusting the two parameters - bucket size and packing
+density.
+<br><br>
+(3) The hashing algorithm to perform key-to-address transformation.  The ideal
+transform is one which can distribute the key set uniformly across the
+address space.  The best way to choose a transform is to take the key set 
+for the file in question and simulate the behavior of many possible transforms.
+For each transform, all the keys in the file will be converted, and 
+the numbers of records in each bucket counted.  The percentage of overflows
+for given bucket sizes can be evaluated.  The best hashing algorithm can be
+chosen then.
+<br><br>
+(4) The method of handling overflows, or the way of storing overflowed records 
+in overflow areas.  The commonly used techniques are illustrated below.
+Overflowed records can be organized into
+<b>overflow chains</b>
+in a separate overflow
+area (a).  Overflow area can also be organized with
+<b>overflow buckets</b>,
+so that the number of additional disk seeks can be
+reduced (b).  In the latter case, when a record is deleted, a
+<b>deletion flag</b>
+is set.  Another overflow may fill it at a later time.
+However, if there are many deletions, the overflow area should be reorganized
+periodically, to remove the deleted records.
+<br><IMG SRC="images/fig8b.gif"><br>
+
+The overflow buckets can also be distributed among the 
+buckets in prime area, as shown below (a).  The method has the advantage
+that the overflow bucket is physically close to the overflowed bucket.  No
+additional disk seek is necessary, and no chains have to bee maintained.  In
+case an overflow bucket overflows, the next consecutive overflow bucket is 
+used.
+
+
+<br><br>
+Instead of reserving overflow buckets, the easiest way to handle overflows is the 
+<b>consecutive spill</b>
+method, where overflowed records are stored in the next
+consecutive bucket (b).  If that bucket is full, it is stored in the next bucket,
+and so forth.  The advantage of the consecutive spill
+method is that a lengthy seek is usually not needed for overflows.  However,  
+when neighborhood buckets become crowded, many buckets may have to be examined,
+before a free slot is found.  The method is efficient if the bucket size is    
+large, and inefficient otherwise.
+<br><IMG SRC="images/fig8c.gif"><br>
+The method of handling overflows should be selected, in consideration
+of disk access speeds, percentage of overflows, frequencies of insertion and
+deletion of records, bucket size, file size, etc.
+<br><br>
+
+<hr>
+<h2>Type of Indices</h2>
+
+An index is
+<b>dense</b>
+if it includes all key values of a file, and
+<b>nondense</b>
+otherwise.  Indexed sequential access method uses nondense
+index, and indexed direct access method uses dense index.
+<br><br>
+An index can be built on primary key (or primary composite key).  It can also
+be built on secondary key (or secondary composite key).  The keys can be 
+compressed by the various techniques.  The primary 
+index can be either dense or nondense, depending whether ISAM or IDAM is used.
+The pointers in lowest-level index can be absolute pointers, logical pointers,
+or symbolic pointers.  The pointers can point to an individual record, or a
+block of records, again depending upon the access method used.
+<br><br>
+There is another kind of index which is called a  
+<b>secondary index</b>.
+A secondary index is built upon a non-key attribute, instead of a key or a composite key.
+A secondary index is usually employed as an auxiliary index for information
+retrieval from a file.  Since there is another primary index for record access
+based upon a primary key, the secondary index is an auxiliary
+index.  However, we must note that there is no on-to-one address-key correspondence.
+<br><br>
+The figure below illustrates some of the useful index types.  Whether any index should be
+constructed, depends upon the access patterns exhibited by the queries, and the
+applications intended.
+<br><IMG SRC="images/fig8d.gif"><br>
+
+The file is shown in (a).  The primary key is Ao, and the attributes are 
+A1, A2, and A3.  a non-dense primary index is shown in (b).  (c)
+illustrates a secondary index on A1, where the pointers are logical addresses.
+The same secondary index can also be represented by (d), where symbolic
+pointers are used (so that the primary index must be used to find the records);
+or by (e), where the logical addresses are coded into a bit-string, and
+the entire matrix is called a bit matrix.  (f) illustrates a nondense
+index on A2.  This attribute has values between 0 and 30.  To compress information,
+we have retained only six quantized levels for the attribute A2, and 
+the logical block addresses are represented by a bit matrix.  Finally, a 
+secondary index on A3 is shown in (g), where only the logical addresses
+of records with A3 = "F" are retained.  a composite secondary index can also 
+be formed, as illustrated in (h), where the composite attribute {A2, A3} is
+used.
+
+<hr>
+<h2>Construction of Primary and Secondary Indices</h2>
+As an example, the file shown below has six records, with PNO as the 
+primary key, and SEX as the descriptor.  The generalized loader creates an
+ISAM file and an ISAM index, plus the file containing (SEX,PNO) pairs as shown.
+After sorting on SEX, a secondary index (or descriptor index) is created.
+<br><IMG SRC="images/fig8e.gif"><br>
+
+<hr>
+<h2>Inverted File Structure</h2>
+
+In a regular file structure, the records are ordered according to the
+primary key.  Regular file structures are suitable for answering
+attribute query.
+For example, the RESIDENT file contains
+six records as shown below.
+<br><IMG SRC="images/fig8f.gif"><br>
+
+The inverted file structure is shown below.
+<br><IMG LEFT SRC="images/fig8g1.gif">
+<IMG RIGHT SRC="images/fig8g2.gif"><br>
+
+<hr>
+<h2>Multilist File Structure</h2>
+
+An example of a multilist file structure is illustrated below.
+It should be noted that it is not necessary to have lists for every attribute, 
+and for some attributes, quantized levels are used to reduce the number of lists and size of indices.
+In the directory for multilist file, the list length for every (attribute, value)
+pair is also stored, which can be used to decide which list to search first,
+in query processing.
+<br><IMG SRC="images/fig8h.gif"><br>
+
+<hr>
+<h2>B-Trees</h2>
+
+An example of the construction of B-tree is illustrated below.
+<br><br>
+Whenever one index table overflows, we create two half-full index tables
+to replace the overflowing table.  With every split, one more entry is added
+to the next level up.  When the top level table splits, a new master level is created
+beginning with just two entries.
+<br><br>
+For example, a new record with key "21" is to be inserted.  Since the
+original index table T21 overflows, it is split into two new tables
+T21 and T22, as shown in (b).  Similarly, in (b), after the insertion of record
+with key "41", the original index table T23 overflows.
+The restructuring of the tree results in the creation of a new master table,
+as illustrated in (c).
+<br><IMG SRC="images/fig8i.gif"><br>
+
+
+The IBM VSAM file structure is illustrated below, which employs a variation of Knuth's B+ tree.
+<br><IMG SRC="images/fig8j.gif"><br>
+
+<hr>
+<h2>Extendible Hashing</h2>
+
+This approach
+is similar to B-tree technique of dynamically reorganizing
+the indexing tree.  An example of extendible hashing is illustrated below.
+Suppose the relation R(K1,K2) has two domains 
+K1
+and 
+K2,
+and
+K1
+= {A, B, C, D, E, F, G, H, I, J}, 
+K2
+= {1, 2, 3, 4, 5, 6}.  The relation R is:
+
+<br><br>
+
+K1     K2<br>
+A     1<br>
+B     1<br>
+C     1<br>
+D     2<br>
+E     1<br>
+F     3<br>
+G     2<br>
+H     4<br>
+I     4<br>
+J     6<br>
+
+<br><br>
+The hash function f1:
+K1
+-> I is:
+
+<br><br>
+
+K1    I<br>
+A    0000<br>
+B    0001<br>
+C    0010<br>
+D    0011<br>
+E    0100<br>
+F    0101<br>
+G    0110<br>
+H    0111<br>
+I    1000<br>
+J    1001<br>
+
+<br>
+
+
+The hash function f1 is a one-to-one
+function mapping keys to binary hash codes.  However, to construct the hash file,
+not the entire hash code string is used.
+Suppose there are five records with keys 'A', 'B', 'E', 'G', and 'I', we
+may use only two bits of the hash code.  The situation is illustrated in
+(a), where d is the length of the truncated hash code, in this case
+2.  The hash file contains pointers to blocks, each capable of holding two
+logical records.  Attached to each block, there is another
+number indicating how many bits of the hash code are needed to distinguish
+records stored in this block.  In (a), the first two blocks contain
+2 records each, and the third block contains 1 record.
+<br><IMG SRC="images/fig8k1.gif"><br>
+Suppose record (F, 3) is to be inserted.  Since the truncated hash code of
+key "F" is "01", it should be inserted to the block containing records
+(E, 1) and (G, 2), causing a split because the block can accommodate only two
+records.  After the split, one more block is added, and records in the
+overflowed block are distributed to the two blocks using the new hash code,
+which has been extended by 1 bit, as illustrated in (b).
+Since one more bit is used, the depth d is increased to 3, and the hash
+table is doubled in size.  To avoid doubling the hash table, it is possible
+to use a tree structure to
+encode the hash table.  The resultant <b>dynamic hashing technique</b> is even
+closer to the B-tree technique.
+
+<br><IMG SRC="images/fig8k2.gif"><br>
+
+<hr>
+<h2>Key and Data Compression/Encoding Techniques</h2>
+
+A straight forward technique for compression of character strings is to 
+truncate
+strings into fixed length strings.
+<br><IMG SRC="images/fig8l.gif"><br>
+
+The construction of an index with truncated keys is shown below.
+<br><IMG SRC="images/fig8m.gif"><br>
+
+<b>Rear-end truncation</b>
+is another commonly used technique for key compression.  
+The keys are first sorted.  The truncated key is obtained by using the least
+number of characters, starting from the left, that will be required to completely
+distinguish the key from the one immediately preceding it.  An example is
+illustrated in column 2.
+In order to be able to use truncated keys in an index, a 
+<b>bidirectional read-end truncation technique</b>
+should be used.  In column 3, a truncated
+key is obtained by using the least number of characters, starting from the 
+left, that will be required to completely distinguish the key from the one
+immediately succeeding it.  In column 4, the truncated key is    
+obtained from the longer one in column 2 and column 3.
+Bidirectional truncated keys have the property that no truncated key is the
+initial segment of another truncated key, unless the truncated key is identical
+to the original untruncated key, in which case it is marked by a flag (an asterisk in columns 3 and 4). 
+In making comparisons, such keys are treated as having a blank character as the
+rightmost character.  (Thus, BELL* is treated as a five-character string, where the   
+symbol * indicates a blank).  The bidirectional truncated keys can be used in a tree     
+index without causing confusion.
+<br><IMG SRC="images/fig8n.gif"><br>
+
+Further compression can be obtained, when the index is constructed as a 
+<b>parsing tree</b>
+in one or more levels.  With the parsing tree, the highest level of index contains
+a portion of the key.  The next level of index contains the following character
+or characters, but does not repeat those which were in the higher index.  An
+example is illustrated below.
+It can be seen that this technique combines key compression and tree structure methods.
+<br><IMG SRC="images/fig8p.gif"><br>
+
+Sometimes a
+<b>bit matrix</b>
+can be used to store a variable-length list of values
+of the same descriptor.  For example, an employee may serve both as an
+accountant and as a secretary.  If the job category is encoded in code#1
+then the above information can be stored as {001, 101}.  If the job
+category is encoded in code#2, then it is possible to combine the  
+codes for ACCOUNTANT and SECRETARY into 10001, which is the logical disjunction
+or logical OR of the codes 00001 and 10000, as shown below.
+<br><IMG LEFT SRC="images/fig8q1.gif"><br>
+<br><IMG RIGHT SRC="images/fig8q2.gif"><br>
+
+<b>Hoffman code</b>
+is an example of a variable-length code which results
+in the smallest average code-word length.  The procedure of generating a binary 
+Hoffman code is illustrated below.  First, the code-words are sorted into
+a descending sequence according to their probabilities of occurrence.  Then,
+the two smallest probabilities are added together, leading to a higher node in
+the coding tree.  This node has the probability as the sum of the two descendant
+nodes.  Again, the two smallest probabilities are combined.  The process
+repeats, until the highest node with probability 1 is reached, and a coding
+tree has been constructed.  For each branch in this coding tree, a 0 or a 1 is
+assigned, as shown below.  Finally, each original code-word is encoded
+into the binary sequence shown in the coding tree.  The average code-word 
+length in the above example is 2 bits.  It can be shown that
+Hoffman code is theoretically optimal in the sense of having minimum average code-word   
+length.
+<br><IMG SRC="images/fig8r.gif"><br>

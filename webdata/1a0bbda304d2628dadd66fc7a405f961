@@ -1,0 +1,77 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-7">
+   <META NAME="Author" CONTENT="Emmanouil Vozalis">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (WinNT; I) [Netscape]">
+   <TITLE>Ch10-Background V</TITLE>
+</HEAD>
+<BODY>
+
+<br>
+   <a href="c10-6.html"><IMG SRC="../previous.gif" align=left></a>
+   <a href="c10-8.html"><IMG SRC="../next.gif" align=right></a>  
+<CENTER><B><FONT SIZE=+2>ESSENTIAL BACKGROUND</FONT></B></CENTER>
+
+<CENTER>
+<HR WIDTH="100%"></CENTER>
+<B><FONT SIZE=+1></FONT></B>
+
+<br>
+<P><B><FONT SIZE=+1>PERFORMANCE METRICS</FONT></B>
+<UL>
+<LI>
+<B><FONT SIZE=+1>concurrency</FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=+1>definition: the maximum number of clients that can independently
+access a multimedia document</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>higher concurrency&nbsp; minimizes the need for document
+replication</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT SIZE=+1>access latency</FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=+1>definition: amount of time a client has to wait after sending
+a request to the server, to receive the multimedia document</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT SIZE=+1>operation latency</FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=+1>definition: amount of time required for an interactive operation
+such as fast forward or pause to be effective</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>should be independent of the load of the server</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT SIZE=+1>scalability</FONT></B></LI>
+
+<UL>
+<LI>
+<FONT SIZE=+1>the throughput should scale with the number of clients</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>the server should support heterogeneous clients and multimedia
+data</FONT></LI>
+</UL>
+
+<LI>
+<B><FONT SIZE=+1>extendibility</FONT></B></LI>
+
+<UL><li><FONT SIZE=+1>the server should support all possible application
+scenarios
+and service models</il></FONT></UL>
+</UL>
+
+</BODY>
+</HTML>

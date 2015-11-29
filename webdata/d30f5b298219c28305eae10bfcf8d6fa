@@ -1,0 +1,152 @@
+<title>Multimedia Software Engineering</title>
+<a href="tour.html">  
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+</A> 
+<a href="plus.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+</head>
+<h1 align="center"> 
+Features of Web Matrix</h1> 
+<blockquote>
+<p align="left"> 
+&nbsp;</p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+<b><a href="f1.html">ASP.NET Page Designer</a></b></p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+Quickly create ASP.NET pages using the WYSIWYG designer<br>
+&nbsp;</p> 
+
+
+    </li>
+  </ul>
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+<b><a href="f2.html">SQL and MSDE Database Management</a></b></p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+Integrated support to create and edit SQL and MSDE databases<br>
+&nbsp;</p> 
+
+
+    </li>
+  </ul>
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+<b>Easy Data Bound UI Generation</b></p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+Web Matrix makes it easy to create data bound pages without writing code -- easy 
+to make forms<br>
+&nbsp;</p> 
+
+
+    </li>
+  </ul>
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+<b>XML Web Services Support</b></p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+Easily add XML Web Service support to your applications<br>
+&nbsp;</p> 
+
+
+    </li>
+  </ul>
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+<b><a href="f3.html">Build Mobile Applications</a></b></p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+Write mobile-web-enabled applications for a wide variety of mobile devices such 
+as cell phones, pagers and PDAs<br>
+&nbsp;</p> 
+
+
+    </li>
+  </ul>
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+<b>Development&nbsp;Web Server</b></p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+Develop and test your ASP.NET applications, without requiring IIS Web server.<br>
+&nbsp;</p> 
+
+
+    </li>
+  </ul>
+
+
+    </li>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+<b>Community Integration</b></p> 
+
+
+  <ul>
+    <li> 
+<p align="left" style="margin-bottom: 0"> 
+Web Matrix provides a built-in gateway to the ASP.NET community right within the 
+IDE</p> 
+
+
+    </li>
+  </ul>
+
+
+    </li>
+  </ul>
+<p align="left" style="margin-bottom: 0"> 
+&nbsp;</p> 
+
+
+</blockquote>
+
+
+<body>
+
+
+<p align="left" style="margin-bottom: 0">source: www.asp.net</p>
+
+
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<html>
+<head>
+     <title>Problem of Context in Software Engineering</title>
+</head>
+<body BGCOLOR="#c0c0c0">
+<A HREF="index.html" > <IMG SRC="previous.gif" align=left  < /A width="26" height="26" >
+<A HREF="AK02.html"> <IMG SRC="next.gif" align=right width="26" height="26"> </A>
+
+<center><h1><b><u><font color="blue">CONTENTS OF THE PRESENTATION</font></u> </b></h1></center>
+<P>
+<center>
+<p><b><font size="6"></font></b></p>
+</center>
+<br>
+<font size="5">
+<UL TYPE = square>
+<LI> What is a <b>Context</b> ? <br><br>
+<LI> What is the importance of <b> Context</b> to <b> Software Engineers</b>? <br><br>
+<LI> Is <b> "Context Dynamic"?</b>.<br><br>
+<LI> <b>Approaches </b>  involved in solving the <b>"Problem of Context"</b><br><br>
+<LI> Conclusion<br><br>
+<LI> References<br><br>
+</font>
+</BLOCKQUOTE>
+</UL>
+</UL>
+</font>
+
+</body>
+</html>

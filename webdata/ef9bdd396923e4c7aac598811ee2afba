@@ -1,0 +1,13 @@
+<html>
+
+<head>
+<TITLE>Ad Hoc Network Simulator</TITLE>
+</head>
+
+<frameset cols = 21%,79% frameborder = "yes" border = 5>
+<frame src = "simContents.html">
+</frame>
+<frame name = "right" src = "simMain.html"> 
+</frame>
+</frameset>
+</html>

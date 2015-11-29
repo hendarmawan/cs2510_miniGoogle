@@ -1,0 +1,70 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TinyMotion - Video</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="plain.css">
+<link rel="icon" type="image/png" href="tinymotion.ico">
+</head>
+
+<body>
+
+<div class="page">
+<div class="body">
+
+<div class="sidebar">
+<!-- site navigation -->
+<img src="tinymotionlogo.png" width="140" height="48">
+<p></p>
+<p></p>
+
+  <a class="navlink" href="index.html" title="">Home</a>
+
+  <a class="navlink" href="download.html" title="Download the latest TinyMotion source code">Download</a>
+
+  <a class="navlink" href="papers.html" title="Publications for this project">Papers</a>
+
+  <a class="navlink" href="video.html" title="Demonstration videos">Video</a>
+
+  <a class="navlink" href="resource.html" title="Related Resource">Resource</a>
+
+  <a class="navlink" href="support.html" title="Support Information">Support</a>
+
+<br clear="all">
+&nbsp;
+
+<!-- end sidebar -->
+</div>
+
+<div class="content"> 
+            <h1>TinyMotion - Demostration Video</h1>
+	<h3>Available Formats</h3>
+    <ul>
+      <li><a class="download" href="http://www.cs.pitt.edu/~jingtaow/tinymotion/video/tinymotion.rmvb">Real Media</a> <small> <i>(Download <a  class="download" href="http://www.real.com/freeplayer/?rppr=downloadcom1">Real Player 10</a>)</i> </small><i>(5 Minutes, 30<small>MB</small>)</i>
+
+      </li>
+      <li><a  class="download" href="http://www.cs.pitt.edu/~jingtaow/tinymotion/video/tinymotion.wmv">Windows Media</a> <small> <i>(Download
+        <a  class="download" href="http://www.microsoft.com/windows/windowsmedia/mp10/default.aspx">Windows Media Player 10</a>)</i> </small><i>(5 Minutes, 46 <small>MB</small>)</i>
+      </li>
+      <li><a  class="download" href="http://www.cs.pitt.edu/~jingtaow/tinymotion/video/tinymotion.mov">Apple QuickTime</a> <small> <i>(Download
+        <a  class="download" href="http://www.apple.com/quicktime/download/">QuickTime Player</a>)</i> </small><i>(5 Minutes, 66 <small>MB</small>)</i>
+
+      </li>
+
+
+    </ul>
+
+                         
+</div>  <!-- end of content div -->
+
+<br clear="all">
+
+<div class="copyright">
+Copyright (c) 2004-2008 by the Regents of the University of California Last Updated on 08/16/2008
+</div>  <!-- end of copyright div -->
+
+</div> <!-- end of body div -->
+</div> <!-- end of page div -->
+</body>
+
+</html>

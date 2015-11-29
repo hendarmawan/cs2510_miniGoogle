@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Adam Hobaugh</title>
+    <link rel="stylesheet" type="text/css" href="css/quicksand.css" />
+    <link rel="stylesheet" type="text/css" href="css/colaborate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="content" class="lifted-corners">
+        <div id="yapping">
+          <h2>Welcome!</h2>
+          <p>
+            This is my typical availability throughout the work week. My actual availability may vary as I shedule appointments. The table color key is as follows:
+            <dl>
+              <dt class="open">Open</dt>
+              <dd>This is open time. Please see me or schedule appointments during this time.</dd>
+              <dt class="busy">Busy</dt>
+              <dd>This is when I schedule my long term projects. I would prefer not to be interrupted during this time so I can devote my energy and focus on accomplishing the long term projects.</dd>
+              <dt class="emergency">Emergency</dt>
+              <dd>Please do not interrupt me unless there is an emergency. This is the time I use to perform the needed clerical work for my job. In addition, I am out out of the office on wednesdays and will only be available by phone for emergencies.</dd>
+            </dl>
+          </p>
+          <table style="width:100%">
+            <tr>
+              <th style="width:10%"></th>
+              <th style="width:18%">Monday</th>
+              <th style="width:18%">Tuesday</th>
+              <th style="width:18%">Wednesday</th>
+              <th style="width:18%">Thursday</th>
+              <th style="width:18%">Friday</th>
+            </tr>
+            <tr>
+              <th>08:00</th>
+              <td rowspan="2" class="emergency"></td>
+              <td rowspan="2" class="emergency"></td>
+              <td rowspan="20" class="emergency"></td>
+              <td rowspan="2" class="emergency"></td>
+              <td rowspan="2" class="emergency"></td>
+            </tr>
+            <tr>
+              <th>08:30</th>
+            </tr>
+            <tr>
+              <th>09:00</th>
+              <td rowspan="4" class="busy"></td>
+              <td rowspan="4" class="busy"></td>
+              <td rowspan="4" class="busy"></td>
+              <td rowspan="4" class="busy"></td>
+            </tr>
+            <tr>
+              <th>09:30</th>
+            </tr>
+            <tr>
+              <th>10:00</th>
+            </tr>
+            <tr>
+              <th>10:30</th>
+            </tr>
+            <tr>
+              <th>11:00</th>
+              <td rowspan="3" class="open"></td>
+              <td rowspan="3" class="open"></td>
+              <td rowspan="3" class="open"></td>
+              <td rowspan="3" class="open"></td>
+            </tr>
+            <tr>
+              <th>11:30</th>
+            </tr>
+            <tr>
+              <th>12:00</th>
+            </tr>
+            <tr>
+              <th>12:30</th>
+              <td class="emergency"></td>
+              <td class="emergency"></td>
+              <td class="emergency"></td>
+              <td class="emergency"></td>
+            </tr>
+            <tr>
+              <th>13:00</th>
+              <td class="busy"></td>
+              <td class="busy"></td>
+              <td class="busy"></td>
+              <td class="busy"></td>
+            </tr>
+            <tr>
+              <th>13:30</th>
+              <td rowspan="4" class="open"></td>
+              <td rowspan="4" class="open"></td>
+              <td rowspan="3" class="open"></td>
+              <td rowspan="3" class="open"></td>
+            </tr>
+            <tr>
+              <th>14:00</th>
+            </tr>
+            <tr>
+              <th>14:30</th>
+            </tr>
+            <tr>
+              <th>15:00</th>
+              <td rowspan="2" class="emergency"></td>
+              <td rowspan="2" class="emergency"></td>
+            </tr>
+            <tr>
+              <th>15:30</th>
+              <td class="emergency"></td>
+              <td class="emergency"></td>
+            </tr>
+            <tr>
+              <th>16:00</th>
+              <td rowspan="4" class="busy"></td>
+              <td rowspan="4" class="busy"></td>
+              <td rowspan="4" class="busy"></td>
+              <td rowspan="4" class="busy"></td>
+            </tr>
+            <tr>
+              <th>16:30</th>
+            </tr>
+            <tr>
+              <th>17:00</th>
+            </tr>
+            <tr>
+              <th>17:30</th>
+            </tr>
+          </table>
+          <p>I look forward to working with you!</p>
+          <p>//adam</p>
+        </div>
+        <div id="details">
+          <img src="me.jpg" id="me" />
+          <h3>Contact</h3>
+          <p>
+            adam@cs.pitt.edu
+          </p>
+          <p>
+            6211 Sennot Square<br/>
+            University of Pittsburgh<br/>
+            Pittsburgh, PA 15260
+          </p>
+          <p>
+            Phone: 412-624-8835<br/>
+            Fax: 412-624-8854 
+          </p>
+          <p>
+            <h3>Menu</h3>
+            <a href="index.html">Home</a><br />
+            Availability
+          </p>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <footer>
+        <img src="ach_designs32.png" alt="&copy; ACH Designs" />
+      </footer>
+    </div>
+  </body>
+</html>

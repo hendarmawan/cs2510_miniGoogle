@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Introduction</title>
+</head>
+
+<body>
+
+<p align="center"><font size="6">&nbsp;</font></p>
+<font size="6"><u><a href="page1.htm">
+<img border="0" src="next.gif" width="28" height="31" align="right"></a><a href="http://www.cs.pitt.edu/~chang/163/1631topic.html"><img border="0" src="previous.gif" align="left" width="26" height="26"></a></u></font><p align="center"><font size="6"><u>
+Introduction: Why CORBA?</u></font></p>
+<ul>
+  <li><font size="5">In today's globally competitive software market it is 
+  becoming increasing important to develop, deploy, and maintain complex, 
+  distributed software systems.</font></li>
+  <li><font size="5">Many companies have developed proprietary software to 
+  enable the distribution of applications over a network, but this solution can 
+  be expensive and time-consuming.</font></li>
+</ul>
+<p>&nbsp;</p>
+<p align="center">
+<img border="0" src="logo-corba_vertical.gif" width="124" height="109"></p>
+<ul>
+  <li>
+  <p align="left"><font size="5">The Common Object Request Broker Architecture 
+  (CORBA) enables software applications to invoke operations on distributed 
+  objects without concern for object location, programming language, operating 
+  system communication protocols, interconnections, or hardware platform. </font>
+  </li>
+</ul>
+  <p align="left">&nbsp;<ul>
+  <li>
+  <p align="left"><font size="5">The CORBA specification is controlled by the 
+  Object Management Group (OMG), an open consortium of more than 700 companies 
+  that work together to define open standards for distributed computing. 
+  (http://www.omg.org)</font></li>
+</ul>
+  <p align="left">&nbsp;<ul>
+  <li>
+  <p align="left"><font size="5">OMG is responsible for standardizing an open 
+  middleware specification to support distributed systems. </font></li>
+</ul>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.78 [en] (Windows NT 5.0; U) [Netscape]">
+   <title> Multimedia Software Engineering - HIPR2 Seminar</title>
+</head>
+<body>
+<a href="cs2650-HIPR-2.html"><img SRC="previous.gif" height=26 width=26 align=LEFT></a><a href="cs2650-HIPR-4.html"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+<center>
+<h1>
+Interactive Methods</h1></center>
+
+<center>
+<h2>
+Worksheet Method</h2></center>
+
+<ul>
+<li>
+Brings up a Java applet that implements the technique</li>
+
+<li>
+Allows user to adjust parameters and immediately see the impact of the
+changes</li>
+
+<li>
+Worksheets can guide the user to make certain explorations</li>
+
+<li>
+Source code is available to view how the technique was implemented</li>
+</ul>
+
+<ul>
+<li>
+<a href="http://www.dai.ed.ac.uk/HIPR2/adddemo.htm">Example 1:&nbsp; Addition</a>:
+What happens if:</li>
+
+<ul>
+<li>
+Add a constant value of 50?</li>
+
+<li>
+Add a constant value of 200?</li>
+
+<li>
+Load Scr3, Scr4 - Add together, Where is the bolt?</li>
+
+<li>
+Scale</li>
+</ul>
+
+<li>
+<a href="http://www.dai.ed.ac.uk/HIPR2/subdemo.htm">Example 2: Subtraction</a></li>
+
+<ul>
+<li>
+Use Scr1, Scr2 to show changes</li>
+
+<li>
+How does the "offset" parameter help us?</li>
+</ul>
+
+<li>
+<a href="http://www.dai.ed.ac.uk/HIPR2/histdemo.htm">Example 3: Histogram</a></li>
+
+<ul>
+<li>
+&nbsp;Demonstrate with brg1, scr1</li>
+</ul>
+
+<li>
+<a href="http://www.dai.ed.ac.uk/HIPR2/robertsdemo.htm">Example 4: Roberts
+Cross Edge Detection</a></li>
+
+<ul>
+<li>
+Use trk1, play with offset</li>
+</ul>
+</ul>
+
+</body>
+</html>

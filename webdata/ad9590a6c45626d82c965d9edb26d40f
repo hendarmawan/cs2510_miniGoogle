@@ -1,0 +1,25 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page12.html"><img src="previous.gif" align=left></a>
+<a href="page14.html"><img src="next.gif" align=right></a>
+<center>
+   <br><br>
+   <h1>JSP and XML</h1>
+   <br>
+   <h2>What is the relationship?</h2>
+   <br>
+</center> 
+<font size=4>
+<ul>
+   <li>Java is cross-platform code, and XML is cross-platform data.</li>
+   <li>JSP can be written as valid XML documents (can be considered an XML
+       application).</li>
+   <li>Just as JSP can produce HTML documents, it can also produce XML
+       documents.</li>
+   <li>Java already has a large set of XML libraries and tools
+       available.</li>
+</ul>
+</font>
+</html>

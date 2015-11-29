@@ -1,0 +1,40 @@
+<title>Multimedia Software Engineering</title>
+<p align="center"><b><a href="http://www.cs.pitt.edu/~chang/231/231syl.html">
+<img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;<font face="Verdana" color="#0000FF" size="4">Chronobot 
+protocols on Negotiations: Outline of Presentation</font> <a href="p2.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></b></p>
+<pre>&nbsp;</pre>
+  <div class="O" style="mso-line-spacing:&quot;90 30 0&quot;;mso-margin-left-alt:348">
+    &nbsp;</div>
+<p:colorscheme colors="#35217F,#FFFFFF,#000000,#FFC82D,#FFC66D,#CE6A7D,#A964DC,#648AF6" />
+<div v:shape="_x0000_s1026">
+  <div class="O" style="mso-line-spacing:&quot;90 30 0&quot;;mso-margin-left-alt:348">
+    &nbsp;<p>
+    <span style="text-shadow:auto">
+    <span style="mso-special-format:bullet;
+color:#FFC82D;mso-color-index:3;position:absolute;left:-5.51%;top:.3em;
+font-family:Verdana;"><font size="5">v</font></span></span></div>
+</div>
+<ul>
+  <li><font face="Verdana" size="4" color="#FF0000">&nbsp;&nbsp;&nbsp; Overview 
+  of our CVC system and application of Negotiation</font></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><font face="Verdana" size="4" color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;Negotiation issues in 
+  the context of CVC system</font></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><font face="Verdana" size="4" color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;Automata based 
+  formulation: Definitions</font></li>
+</ul>
+<p><font face="Verdana" size="4" color="#FF0000">&nbsp;</font></p>
+<ul>
+  <li><font face="Verdana" size="4" color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;Concept of Knowledge 
+  Plane and Knowledge Distance</font></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><font face="Verdana" size="4" color="#FF0000">&nbsp;&nbsp;&nbsp;&nbsp;Conclusion</font></li>
+</ul>

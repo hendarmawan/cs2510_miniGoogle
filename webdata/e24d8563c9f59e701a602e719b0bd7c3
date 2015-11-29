@@ -1,0 +1,100 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Times"> 
+	
+			<A href="./Page4.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./Page6.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		<br>
+		<br>
+		<br>
+			<center> 
+				<h1>ActiveMQ Use Cases</h1>
+			</center>
+			
+		</font>
+		
+		
+		<font size = 2 face="Arial"> 
+		
+        <ul class="star">
+            <li>
+                Transactional messaging
+                <ul>
+                    <li>
+                        Transactions
+                    </li>
+                    <li>
+                        Persistance
+                    </li>
+                    <li>
+                        Never missing a message
+                    </li>
+                </ul> 
+            </li>
+            <li>
+                High performance market data distribution
+                <ul>
+                    <li>
+                        focuses on throughput and efficient routing
+                    </li>
+                    <li>
+                        Idea is to distribute massive volumes of rapidly changing data around a large network as quickly as possible.
+                    </li>
+                    <li>
+                        throughtput and performance is key; Persistance rarely used, loss of a few messages is acceptable
+                    </li>
+                </ul>
+            </li>
+            <li>   
+                Clustering and general purpose async messaging model             
+                <ul>
+                    <li>
+                        focuses on latency and speed
+                    </li>
+                    <li>
+                        Aim is to maintain a cluster of nodes
+                    </li>
+                </ul>                
+            </li>
+            <li>   
+                Web Streaming of data             
+                <ul>
+                    <li>
+                        focuses on streamlet support in ActiveMQ
+                    </li>
+                    <li>
+                        For example: streaming financial stock prices, to show live IM conversations, dynamically update live content and news, etc...
+                    </li>
+                    <li>
+                        Can integrate ActiveMQ into a web container and provide close web-integration to enable HTTP POSTs to publish messages and slow JavaScript HTTP GET operations to receive messages
+                    </li>
+                </ul>                
+            </li>
+            <li>   
+                RESTful API to messaging using HTTP            
+                <ul>
+                    <li>
+                        Focuses on connectivity, cross-language & cross-technology connectivity.
+                    </li>
+                    <li>
+                        Can provide a HTTP interface to the message broker.  
+                    </li>
+                    <li>
+                        Allows for simple, cross-language, and technology agnostic API to publishing or receiving messages.
+                    </li>
+                    <li>
+                        Uses HTTP GET and POST
+                    </li>
+                </ul>                
+            </li>
+        </ul>
+			<br>
+			
+		</font>
+	</BODY>
+</html>

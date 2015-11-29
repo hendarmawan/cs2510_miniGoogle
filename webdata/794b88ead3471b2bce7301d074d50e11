@@ -1,0 +1,680 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="./style.css" type="text/css">
+<style type="text/css">
+  table { border-collapse: collapse; }
+  a:link { text-decoration: none;  color: blue; }
+  a:visited { text-decoration: none;  color: blue; }
+</style>
+
+<title>CS 3525: Advanced Topics in Security and Privacy (Fall 2009)</title>
+</head>
+
+<body bgcolor="#FFFCCF">
+
+<h1 align="center"><font color="#660000">Lecture Schedule</font></h1>
+
+<hr>
+<center>
+  <a href="./index.html"><b>[ Home ]</b></a> &nbsp;&nbsp;
+  <a href="./policies.html"><b>[ Policies ]</b></a> &nbsp;&nbsp;
+  <a href="./homework.html"><b>[ Homework ]</b></a> &nbsp;&nbsp;
+  <a href="./project.html"><b>[ Project ]</b></a> &nbsp&nbsp
+</center>
+<hr>
+
+<br>
+
+<center>
+
+<table border="0" cols="1">
+<tr><td width="500">
+  <b><font color="red">Notice:</font></b> Students are responsible for
+  reading all papers listed below prior to the lecture in which they
+  will be discussed.  Paper
+  <a href="./review.txt">reviews</a> are due at the start of lecture
+  and will not be accepted late without prior approval.
+</td></tr>
+</table>
+
+<br><br>
+
+<table border="1" cols="4">
+<tbody><tr>
+  <td bgcolor="#e6ffcc" width="100" align="center"><b><u>Lecture #</u></b></td>
+  <td bgcolor="#e6ffcc" width="100"><b><u>Date</u></b></td>
+  <td bgcolor="#e6ffcc" width="450"><b><u>Topics</u></b></td>
+  <td align="center" bgcolor="#e6ffcc" width="200"><b><u>Presenter</u></b></td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">1</td>
+  <td valign="top" width="100">8/31 (Mon)</td>
+  <td valign="top" width="450">Administrivia, course information, introduction
+  </td>
+  <td align="center" valign="top" width="200"> Adam Lee <a href="./lectures/lecture1.pdf">[PDF]</a> </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">2</td>
+  <td valign="top" width="100">9/2 (Wed)</td>
+  <td valign="top" width="450"> <i>Background:</i>  Access Control </td>
+  <td align="center" valign="center" width="200"> Adam Lee </td>
+</tr>
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center"> - </td>
+  <td valign="top" width="100">9/7 (Mon)</td>
+  <td valign="top" width="450" colspan="2"> Labor Day (No Class) </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">3</td>
+  <td valign="top" width="100">9/9 (Wed)</td>
+  <td valign="top" width="450"> <i>Background:</i>  Cryptography </td>
+  <td align="center" valign="center" width="200"> Adam Lee </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" rowspan="3" align="center">4</td>
+  <td valign="top" width="100" rowspan="3">9/14 (Mon)</td>
+  <td valign="top" colspan="2" bgcolor="orange">
+    <b>Trust Management</b>
+  </td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td>Matt Blaze, Joan Feigenbaum, and Jack
+      Lacy, <a href="http://www.cs.utsa.edu/~winsboro/teaching/CS6463-S06/Papers/BFL96.pdf">
+      Decentralized Trust Management</a>, IEEE Symposium on Security
+      and Privacy, May 1996.</td>
+  <td align="center" rowspan="2">Adam Lee <a href="./lectures/policymaker_and_rt.pdf">[PDF]</a></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td>Ninghui Li, John C. Mitchell, and William
+      H. Winsborough, <a href="http://www.cs.purdue.edu/homes/ninghui/papers/rt_oakland02.pdf">
+      Design of a Role-based Trust-Management Framework</a>, IEEE
+      Symposium on Security and Privacy, May 2002.</td>
+</tr>
+
+<!--------->
+
+<tr>
+  <td valign="top" width="100" rowspan="2" align="center">5</td>
+  <td valign="top" width="100" rowspan="2">9/16 (Wed)</td>
+  <td valign="top" width="450">
+          Moritz Y. Becker and Peter Sewell,
+          <a href="http://research.microsoft.com/pubs/76082/becker04cassandra-policy2004.pdf">Cassandra:
+          distributed access control policies with tunable
+          expressiveness</a>, 5th IEEE International Workshop on
+          Policies for Distributed Systems and Networks (POLICY), 2004
+  </td>
+  <td align="center" valign="center" width="200"> Yue <a href="./lectures/Cassandra_Yue.pdf">[PDF]</a></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+          Moritz Y. Becker, Cedric Fournet, and Andrew D. Gordon,
+          <a href="http://research.microsoft.com/pubs/80148/jcs%20final.pdf">SecPAL:
+          Design and Semantics of a Decentralized Authorization
+          Language</a>, in Journal of Computer Security (JCS), IOS
+          Press, 2009
+  </td>
+  <td align="center" valign="center" width="200"> Brian <a href="./lectures/SecPAL_Brian.pdf">[PDF]</a> </td>
+</tr>
+
+<!--------->
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center" rowspan="2">6</td>
+  <td valign="top" width="100" rowspan="2">9/21 (Mon)</td>
+  <td valign="top" width="450">
+    Ninghui Li, William H. Winsborough, and John C. Mitchell,
+    <a href="http://www.cs.purdue.edu/homes/ninghui/abstracts/discovery_jcs03.html">Distributed
+    Credential Chain Discovery in Trust Management</a>, Journal
+    of Computer Security 11(1):35-86, February 2003.
+   </td>
+   <td align="center" valign="center" width="200"> Onur <a href="./lectures/Onur_discovery.pdf">[PDF]</a></td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Adam J. Lee and Ting
+    Yu, <a href="http://www.cs.pitt.edu/~adamlee/pubs/2009/sacmat09.pdf">Towards
+    a Dynamic and Composite Model of Trust</a>, Proceedings of the
+    14th ACM Symposium on Access Control Models and Technologies
+    (SACMAT), June 2009.
+  </td>
+  <td align="center" valign="center" width="200"> Yue <a href="./lectures/CTM_Yue.pdf">[PDF]</a> </td>
+</tr>
+
+<!--------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="3">7</td>
+  <td valign="top" width="100" rowspan="3">9/23 (Wed)</td>
+  <td colspan="2" bgcolor="orange"><b>Trust Negotiation</b></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+    William H. Winsborough, Kent E. Seamons, and Vicki
+    E. Jones, <a href="http://dx.doi.org/10.1109/DISCEX.2000.824965">Automated
+    Trust Negotiation</a>, DARPA Information Survivability Conference
+    and Exposition, January 2000.
+  </td>
+  <td align="center" valign="center" width="200"> Andrew <a href="./lectures/atn.pdf">[PDF]</a></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+     Ting Yu, Marianne Winslett and Kent E. Seamons,
+     <a href="http://www4.ncsu.edu/~tyu/pubs/tissec03.pdf">Supporting
+     Structured Credentials and Sensitive Policies through
+     Interoperable Strategies in Automated Trust Negotiation</a>, ACM
+     Transaction on Information and System Security (TISSEC) 6(1):
+     1-42, February 2003.
+  </td>
+  <td align="center" valign="center" width="200"> Mohammad <a href="./lectures/interop.pdf">[PDF]</a></td>
+</tr>
+
+
+<!---------->
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center" rowspan="3">8</td>
+  <td valign="top" width="100" rowspan="3">9/28 (Mon)</td>
+  <td valign="top" width="450">
+    Charles C. Zhang, Marianne
+    Winslett, <a href="http://dx.doi.org/10.1007/978-3-540-88313-5_19">Distributed
+    Authorization by Multiparty Trust Negotiation.</a> ESORICS 2008,
+    pages 282-299.
+  </td>
+  <td align="center" valign="center" width="200"> Yue <a href="./lectures/MTN.pdf">[PDF]</a> </td>
+</tr>
+<tr>
+  <td colspan="2" bgcolor="orange"><b>Privacy-Preserving Credentials</b></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Ariel Glenn, Ian Goldberg, Frederic Legare, and Anton Stiglic,
+    <a href="http://eprint.iacr.org/2001/082.pdf">A Description of
+    Protocols for Private Credentials</a>, IACR ePrint report 2001/082.
+  </td>
+  <td align="center" valign="center" width="200"> Onur <a href="./lectures/private_creds.pdf">[PDF]</a></td>
+</tr>
+
+<!---------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="2">9</td>
+  <td valign="top" width="100" rowspan="2">9/30 (Wed)</td>
+  <td valign="top" width="450">
+    Jason Holt, Robert Bradshaw, Kent E. Seamons, and Hillarie
+    Orman, <a href="http://isrl.cs.byu.edu/pubs/wpes03.pdf">Hidden
+    Credentials</a>, 2nd ACM Workshop on Privacy in the Electronic
+    Society, October 2003.
+  </td>
+  <td align="center" valign="center" width="200"> Nick <a href="./lectures/hidden_credentials.pdf">[PDF]</a></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+     Jiangtao Li and Ninghui
+     Li, <a href="http://www.cs.purdue.edu/homes/ninghui/papers/oacerts_tdsc.pdf">OACerts:
+     Oblivious Attribute Certificates</a>, IEEE Transactions on
+     Dependable and Secure Computing, 3(4):340-352, October 2006.
+   </td>
+  <td align="center" valign="center" width="200"> Brian <a href="./lectures/oacerts.pdf">[PDF]</a></td>
+</tr>
+
+<!---------->
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center" rowspan="3">10</td>
+  <td valign="top" width="100" rowspan="3">10/5 (Mon)</td>
+  <td colspan="2" bgcolor="orange"><b>Deployment Considerations</b></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Lujo Bauer, Scott Garriss, and Michael
+    K. Reiter, <a href="http://www.ece.cmu.edu/~lbauer/papers/2005/sp2005-distributed-proving.pdf">Distributed
+    proving in access-control systems</a>, Proceedings of the IEEE
+    Symposium on Security & Privacy, pages 81-95, May 2005.
+  </td>
+  <td align="center" valign="center" width="200"> Andrew <a href="./lectures/dist-prov.pdf">[PDF]</a></td>
+</tr>
+<tr  bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Kevin D. Bowers, Lujo Bauer, Deepak Garg, Frank Pfenning, and
+    Michael
+    K. Reiter, <a href="http://www.ece.cmu.edu/~lbauer/papers/2007/ndss2007-consumable.pdf">Consumable
+    credentials in logic-based access-control systems</a>, Proceedings
+    of the Network & Distributed System Security Symposium (NDSS),
+    pages 143-157, February 2007.
+  </td>
+  <td align="center" valign="center" width="200"> Mohammad <a href="./lectures/consumable.pdf">[PDF]</a></td>
+
+
+<!---------->
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">11</td>
+  <td valign="top" width="100">10/7 (Wed)</td>
+  <td valign="top" width="450"> Proposal presentations </td>
+  <td align="center" valign="center" width="200"> Everyone </td>
+</tr>
+
+<!---------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="2">12</td>
+  <td valign="top" width="100" rowspan="2">10/13 (Tues)</td>
+  <td valign="top" width="450">
+    Adam J. Lee and Marianne
+    Winslett, <a href="http://www.cs.pitt.edu/~adamlee/pubs/2008/tissec08b.pdf">Enforcing
+    Safety and Consistency Constraints in Policy-Based Authorization
+    Systems</a>, ACM Transactions on Information and System Security
+    12(2), December 2008.
+  </td>
+  <td align="center" valign="center" width="200"> Brian <a href="./lectures/brian_enforcing.pdf">[PDF]</a></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+    Adam J. Lee, Kazuhiro Minami, and Nikita Borisov,
+    <a href="http://www.cs.pitt.edu/~adamlee/pubs/2009/asiaccs_2009.pdf">Confidentiality-Preserving
+    Distributed Proofs of Conjunctive Queries</a>, Proceedings of the
+    Fourth ACM Symposium on Information, Computer, and Communication
+    Security (ASIACCS), March 2009.
+  </td>
+  <td align="center" valign="center" width="200"> Nick and Mohammad <font color="red">(Discussion only!)</font> </td>
+</tr>
+
+<!---------->
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center" rowspan="3">13</td>
+  <td valign="top" width="100" rowspan="3">10/14 (Wed)</td>
+  <td colspan="2" bgcolor="orange"><b>Fine-Grained Database Protections</b></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Rakesh Agrawal, Jerry Kiernan, Ramakrishnan Srikant, and Yirong
+    Xu, <a href="http://www.vldb.org/conf/2002/S05P02.pdf">Hippocratic
+    Databases</a>, VLDB 2002, pages 143-154.
+  </td>
+  <td align="center" valign="center" width="200"> George <a href="./lectures/george_hippocratic.pdf">[PDF]</a> </td>
+</tr>
+<tr  bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Kristen LeFevre, Rakesh Agrawal, Vuk Ercegovac, Raghu
+    Ramakrishnan, Yirong Xu, and David
+    J. DeWitt, <a href="http://www.vldb.org/conf/2004/RS3P3.PDF">Limiting
+    Disclosure in Hippocratic Databases</a>, VLDB 2004, pages 108-119.
+  </td>
+  <td align="center" valign="center" width="200"> George, Mehmud, and Thao <font color="red">(Discussion only!)</font> </td>
+</tr>
+
+<!---------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="2">14</td>
+  <td valign="top" width="100" rowspan="2">10/19 (Mon)</td>
+  <td valign="top" width="450">
+    Shariq Rizvi, Alberto O. Mendelzon, S. Sudarshan, and Prasan
+    Roy, <a href="http://www.sigmod.org/sigmod/sigmod04/eproceedings/pdf/R-308.pdf">Extending
+    Query Rewriting Techniques for Fine-Grained Access Control</a>,
+    SIGMOD Conference 2004, pages 551-562.
+  </td>
+  <td align="center" valign="center" width="200"> Thao <a href="./lectures/thao_rewriting.pdf">[PDF]</a></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+    Lars E. Olson, Carl A. Gunter and
+    P. Madhusudan, <a href="http://doi.acm.org/10.1145/1455770.1455808">A
+    formal framework for reflective database access control
+    policies</a>, ACM Conference on Computer and Communications
+    Security 2008, pages 289-298.
+  </td>
+  <td align="center" valign="center" width="200"> Brian <a href="./lectures/brian_reflective.pdf">[PDF]</a> </td>
+</tr>
+
+<!---------->
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center" rowspan="3">15</td>
+  <td valign="top" width="100" rowspan="3">10/21 (Wed)</td>
+  <td colspan="2" bgcolor="orange"><b>Microdata Publishing</b></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Latanya
+    Sweeney, <a href="http://privacy.cs.cmu.edu/people/sweeney/kanonymity.pdf"><i>k</i>-Anonymity:
+    A Model for Protecting Privacy</a>, International Journal on
+    Uncertainty, Fuzziness, and Knowledge-based Systems,
+    10(5):557-570, 2002.
+  </td>
+  <td align="center" valign="center" width="200"> Mohammad <a href="./lectures/k-anon.pdf">[PDF]</a></td>
+</tr>
+<tr  bgcolor="#F0F0F0">
+  <td valign="top" width="450"> Kristen LeFevre, David DeWitt, Raghu
+    Ramakrishnan, <a href="http://www.eecs.umich.edu/~klefevre/Publications_files/MultiDim.pdf">Mondrian
+    Multidimensional <i>k</i>-Anonymity</a>, ICDE, 2006.
+  </td>
+  <td align="center" valign="center" width="200"> George <a href="./lectures/mondrian.pdf">[PDF]</a></td>
+</tr>
+
+
+<!---------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="2">16</td>
+  <td valign="top" width="100" rowspan="2">10/26 (Mon)</td>
+  <td valign="top" width="450">
+    Ashwin Machanavajjhala, Daniel Kifer, Johannes Gehrke, and
+    Muthuramakrishnan
+    Venkitasubramaniam, <a href="http://portal.acm.org/citation.cfm?id=1217299.1217302"><i>l</i>-diversity:
+    Privacy beyond <i>k</i>-anonymity</a>, ACM Transactions on
+    Knowledge Discovery from Data 1(1), March 2007.
+  </td>
+  <td align="center" valign="center" width="200">  Brian and Onur <font color="red">(Discussion only!)</font> </td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+    Arvind Narayanan and Vitaly
+    Shmatikov, <a href="http://www.cs.utexas.edu/~shmat/shmat_oak08netflix.pdf">Robust
+    De-anonymization of Large Sparse Datasets</a>, IEEE Symposium on
+    Security and Privacy, May 2008.
+  </td>
+  <td align="center" valign="center" width="200"> Yue <a href="./lectures/robust.pdf">[PDF]</a></td>
+</tr>
+
+
+<!---------->
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center" rowspan="2">17</td>
+  <td valign="top" width="100" rowspan="2">10/28 (Wed)</td>
+  <td valign="top" width="450">
+    Paul
+    Ohm, <a href="http://papers.ssrn.com/sol3/papers.cfm?abstract_id=1450006">Broken
+    Promises of Privacy: Responding to the Surprising Failure of
+    Anonymization</a>, University of Colorado Law Legal Studies
+    Research Paper No. 09-12, August 2009.
+  </td>
+  <td align="center" valign="center" width="200"> Andrew </td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Cynthia
+    Dwork, <a href="http://research.microsoft.com/pubs/74338/dwork_pinkdd.pdf">An
+    Ad Omnia Approach to Defining and Achieving Private Data
+    Analysis</a>, in Privacy, Security, and Trust in KDD (PinKDD),
+    August 2007.
+  </td>
+  <td align="center" valign="center" width="200"> Mohammad <a href="./lectures/dwork.pdf">[PDF]</a></td>
+</tr>
+
+
+<!---------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="3">18</td>
+  <td valign="top" width="100" rowspan="3">11/2 (Mon)</td>
+  <td colspan="2" bgcolor="orange"><b>Data Stream Security</b></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+    Wolfgang Lindner and Joerg
+    Meier, <a href="http://ieeexplore.ieee.org/search/wrapper.jsp?arnumber=4041613">Securing
+    the Borealis Data Stream Engine</a>, IDEAS 2006.
+  </td>
+  <td align="center" valign="center" width="200"> Thao <a href="./lectures/borealis.pdf">[PDF]</a></td>
+</tr>
+  <td valign="top" width="450">
+    Barbara Carminati, Elena Ferrari, Kian Lee
+    Tan, <a href="http://portal.acm.org/citation.cfm?doid=1266840.1266845">Enforcing
+    Access Control Over Data Streams</a>, 12th ACM Symposium on Access
+    Control Models and Techologies (SACMAT), June 2007.
+  </td>
+  <td align="center" valign="center" width="200"> Mehmud <a href="./lectures/mehmud-stream.pdf">[PDF]</a></td>
+</tr>
+
+
+<!---------->
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center" rowspan="3">19</td>
+  <td valign="top" width="100" rowspan="3">11/4 (Wed)</td>
+  <td valign="top" width="450">
+    Rimma V. Nehme, Elke A. Rundensteiner and Elisa
+    Bertino. <a href="http://www.cs.purdue.edu/homes/rnehme/papers/icde08sp.pdf">Security
+    Punctuation Framework for Enforcing Access Control on Streaming
+    Data</a>, IEEE International Conference on Data Engineering
+    (ICDE), April 2008.
+  </td>
+  <td align="center" valign="center" width="200"> Thao <a href="./lectures/nehme.pdf">[PDF]</a></td>
+</tr>
+<tr bgcolor="#F0F0F0"><td colspan="2" bgcolor="orange"><b>Securely Outsourcing Data</b></td></tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Radu Sion and Bogdan
+    Carbunar, <a href="http://www.cs.sunysb.edu/~sion/research/sion2007pir.pdf">On
+    the Computational Practicality of Private Information
+    Retrieval</a>, Network and Distributed System Security Symposium
+    (NDSS), February 2007.
+  </td>
+  <td align="center" valign="center" width="200"> Nick </td>
+</tr>
+
+
+<!---------->
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">-</td>
+  <td valign="top" width="100">11/9 (Mon)</td>
+  <td valign="top" width="450" colspan="2"> No Class --- Work on projects and progress reports</td>
+</tr>
+
+<!---------->
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">-</td>
+  <td valign="top" width="100">11/11 (Wed)</td>
+  <td valign="top" width="450" colspan="2"> No Class --- Work on projects and progress reports</td>
+</tr>
+
+<!---------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="3">20</td>
+  <td valign="top" width="100" rowspan="3">11/16 (Mon)</td>
+  <td valign="top" width="450">
+    Peter Williams, Radu Sion, and Bogdan
+    Carbunar, <a href="http://www.cs.sunysb.edu/~sion/research/sion2008pir-ccs.pdf">Building
+    Castles out of Mud: Practical Access Pattern Privacy and
+    Correctness on Untrusted Storage</a>, ACM Conference on Computer
+    and Communication Security (CCS), November 2008.
+  </td>
+  <td align="center" valign="center" width="200"> Mehmud <a href="./lectures/fossilized.pdf">[PDF]</a></td>
+</tr>
+<tr><td colspan="2" bgcolor="orange"><b>Regulatory Compliance</b></td></tr>
+<tr>
+  <td valign="top" width="450">
+  Qingbo Zhu and Windsor
+  W. Hsu, <a href="http://portal.acm.org/citation.cfm?id=1066203">Fossilized
+  index: the linchpin of trustworthy non-alterable electronic
+  records</a>, SIGMOD 2005.
+  </td>
+  <td align="center" valign="center" width="200"> Mehmud <a href="./lectures/CastlesOutofMud.pdf">[PDF]</a> </td>
+</tr>
+
+
+<!---------->
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center" rowspan="4">21</td>
+  <td valign="top" width="100" rowspan="4">11/18 (Wed)</td>
+  <td valign="top" width="450">
+  Soumyadeb Mitra, Windsor W. Hsu, and Marianne
+  Winslett, <a href="http://portal.acm.org/citation.cfm?id=1164213">Trustworthy
+  keyword search for regulatory-compliant records retention</a>, VLDB
+  2006.
+  </td>
+  <td align="center" valign="center" width="200"> Thao <a href="./lectures/thao-keyword.pdf">[PDF]</a></td>
+</tr>
+<td colspan="2" bgcolor="orange"><b>Location-Aware Systems</b></td>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Andrew J. Blumberg and Peter
+    Eckersley, <a href="http://www.eff.org/wp/locational-privacy">On
+    Locational Privacy, and How to Avoid Losing it Forever</a>, EFF
+    Whitepaper, August 2009.
+  </td>
+  <td align="center" valign="center" width="200">Background Reading<br> (No presentation)</td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">
+    Alastair R. Beresford and Frank
+    Stajano, <a href="http://www.cl.cam.ac.uk/~fms27/papers/2003-BeresfordSta-location.pdf">Location
+    Privacy in Pervasive Computing</a>, IEEE Pervasive Computing,
+    2(1):46-55, 2003.
+  </td>
+  <td align="center" valign="center" width="200"> Nick <a href="./lectures/locpriv.pdf">[PDF]</a></td>
+</tr>
+
+<!---------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="2">22</td>
+  <td valign="top" width="100" rowspan="2">11/23 (Mon)</td>
+  <td valign="top" width="450">
+    Carmela Troncoso, George Danezis, Eleni Kosta, and Bart Preneel,
+    <a href="http://doi.acm.org/10.1145/1314333.1314353">Pripayd:
+    privacy friendly pay-as-you-drive insurance</a>, WPES 2007, pages
+    99-107.
+  </td>
+  <td align="center" valign="center" width="200"> Andrew and Yue <font color="red">(Discussion only!)</font> </td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+    Apu Kapadia, Tristan Henderson, Jeffrey J. Fielding, and David
+    Kotz, <a href="http://dx.doi.org/10.1007/978-3-540-72037-9_10">Virtual
+    Walls: Protecting Digital Privacy in Pervasive Environments</a>,
+    Pervasive 2007, pages 162-179.
+  </td>
+  <td align="center" valign="center" width="200"> Onur <a href="./lectures/virtual_walls.pdf">[PDF]</a></td>
+</tr>
+
+<!---------->
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">-</td>
+  <td valign="top" width="100">11/25 (Wed)</td>
+  <td valign="top" width="450" colspan="2"> Thanksgiving Holiday (No Class) </td>
+</tr>
+
+<!---------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="3">23</td>
+  <td valign="top" width="100" rowspan="3">11/30 (Mon)</td>
+  <td colspan="2" bgcolor="orange"><b>Social Information Sharing</b></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+    Ralph Gross, Alessandro Acquisti, and H. John Heinz
+    III, <a href="http://doi.acm.org/10.1145/1102199.1102214">Information
+    revelation and privacy in online social networks</a>, WPES 2005,
+    pages 71-80.
+  </td>
+  <td align="center" valign="center" width="200"> George <a href="./lectures/social_networks.pdf">[PDF]</a></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+    Shane Ahern, Dean Eckles, Nathaniel Good, Simon King, Mor Naaman,
+    and Rahul
+    Nair, <a href="http://doi.acm.org/10.1145/1240624.1240683">Over-exposed?:
+    privacy patterns and considerations in online and mobile photo
+    sharing</a>, CHI 2007, pages 357-366.
+  </td>
+  <td align="center" valign="center" width="200"> Onur <a href="./lectures/over_exposed.pdf">[PDF]</a></td>
+</tr>
+
+<!---------->
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center" rowspan="3">24</td>
+  <td valign="top" width="100" rowspan="3">12/2 (Wed)</td>
+  <td valign="top" width="450">
+    Brian Thompson and Danfeng
+    Yao, <a href="http://doi.acm.org/10.1145/1533057.1533088">The
+    union-split algorithm and cluster-based anonymization of social
+    networks</a>, ASIACCS 2009, pages 218-227.
+  </td>
+  <td align="center" valign="center" width="200"> Mehmud </td>
+</tr>
+<tr><td colspan="2" bgcolor="orange"><b>RFID</b></td></tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450"> Simson L. Garfinkel, Ari Juels, and
+  Ravi Pappu, <a href="http://dx.doi.org/10.1109/MSP.2005.78">RFID
+  Privacy: An Overview of Problems and Proposed Solutions,</a> IEEE
+  Security and Privacy, (3)3:34-43, May/June 2005 </td>
+  <td align="center" valign="center" width="200"> George <a href="./lectures/rfid_privacy.pdf">[PDF]</a> </td>
+</tr>
+
+<!---------->
+
+<tr>
+  <td valign="top" width="100" align="center" rowspan="2">25</td>
+  <td valign="top" width="100" rowspan="2">12/7 (Mon)</td>
+  <td valign="top" width="450"> David Molnar and David
+    Wagner, <a href="http://www.cs.berkeley.edu/~daw/papers/librfid-ccs04.pdf">Privacy
+    and Security in Library RFID: Issues, Practices, and
+    Architectures</a>, ACM CCS, October 2004.
+  </td>
+  <td align="center" valign="center" width="200"> Andrew <a href="./lectures/rfid-library.pdf">[PDF]</a></td>
+</tr>
+<tr>
+  <td valign="top" width="450">
+    Alexei Czeskis, Karl Koscher, Joshua R. Smith, and Tadayoshi
+    Kohno, <a href="http://doi.acm.org/10.1145/1455770.1455831">RFIDs
+    and secret handshakes: defending against ghost-and-leech attacks
+    and unauthorized reads with context-aware communications</a>, ACM
+    Conference on Computer and Communications Security, pages 479-490,
+    November 2008.
+  </td>
+  <td align="center" valign="center" width="200"> Nick </td>
+</tr>
+
+<!---------->
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">26</td>
+  <td valign="top" width="100">12/9 (Wed)</td>
+  <td valign="top" width="450"> Project presentations: Mohammad, George, Thao </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<!---------->
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">27</td>
+  <td valign="top" width="100">12/14 (Mon)</td>
+  <td valign="top" width="450"> Project presentations: Brian, Nick, Mehmud </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+<!---------->
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">28</td>
+  <td valign="top" width="100">12/16 (Wed)</td>
+  <td valign="top" width="450"> Project presentations: Onur, Andrew, Yue </td>
+  <td align="center" valign="center" width="200"> - </td>
+</tr>
+
+</table>
+<br><br>
+
+</center>
+
+
+<!-- end page -->
+</body></html>

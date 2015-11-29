@@ -1,0 +1,89 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Page 8</title>
+</head>
+
+<body>
+
+<p><a href="page_7.htm"><img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="page_9.htm"><img border="0" src="next.gif" width="26" height="26"></a></p>
+<p align="center"><font size="7">The SOAP Body Element</font></p>
+<ul>
+  <li>
+  <p align="left"><font size="5">The required SOAP Body element contains the 
+  actual SOAP message intended for the ultimate endpoint of the message.</font></li>
+  <li>
+  <p align="left"><font size="5">SOAP defines one element inside the Body 
+  element in the default namespace (&quot;http://www.w3.org/2001/12/soap-envelope&quot;). 
+  This is the SOAP Fault element, which is used to indicate error messages.</font></li>
+</ul>
+<p align="left">&nbsp;</p>
+<ul>
+  <li>
+  <p align="left"><font size="5">The example below requests the schedule of 
+  student John Doe. Note that the m:GetSchedule and the User elements below are 
+  application-specific elements. They are not a part of the SOAP standard.</font></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p align="left"><font size="4">&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+          &lt;soap:Envelope<br>
+          xmlns:soap=&quot;http://www.w3.org/2001/12/soap-envelope&quot;<br>
+          soap:encodingStyle=&quot;http://www.w3.org/2001/12/soap-encoding&quot;&gt;<br>
+          <br>
+          &lt;soap:Body&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;m:GetSchedule xmlns:m=&quot;http://www.cs.pitt.edu/schedule&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;m:User&gt;johnDoe&lt;/m:User&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/m:GetSchedule&gt;<br>
+          &lt;/soap:Body&gt;<br>
+          <br>
+          &lt;/soap:Envelope&gt;</font></p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<ul>
+  <li><font size="5">A response is provided below:</font></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <p><font size="4">&lt;?xml version=&quot;1.0&quot;?&gt;<br>
+          &lt;soap:Envelope<br>
+          xmlns:soap=&quot;http://www.w3.org/2001/12/soap-envelope&quot;<br>
+          soap:encodingStyle=&quot;http://www.w3.org/2001/12/soap-encoding&quot;&gt;<br>
+          <br>
+          &lt;soap:Body&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;m:GetScheduleRsponse xmlns:m=&quot;http://www.cs.pitt.edu/schedule&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;m:User&gt;johnDoe&lt;/m:User&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;m:Schedule&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;m:Class&gt;401 
+          Introduction to Computer Science&lt;/m:Class&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;m:Class&gt;441 
+          Introduction to Discrete Math&lt;/m:Class&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/m:Schedule&gt;<br>
+&nbsp;&nbsp;&nbsp; &lt;/m:GetSchedule&gt;<br>
+          &lt;/soap:Body&gt;<br>
+          <br>
+          &lt;/soap:Envelope&gt;</font></p>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

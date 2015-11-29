@@ -1,0 +1,52 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="seminar_pg4.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="seminar_pg6.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Dexter Hypertext Model (Cont.)</font></h1> 
+ </center> 
+ 
+<p><br>
+  <font size="4" face="Arial, Helvetica, sans-serif">Run-time Layer</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">describes mechanisms supporting 
+    the user&#8217;s interaction with the hypertext</font></li>
+</ul>
+<p><font size="4" face="Arial, Helvetica, sans-serif">Storage Layer</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">is the main focus of the Dexter 
+    Hypertext Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">models the basic node - link structure 
+    which is composed of data containing components that are arranged in a hierarchy</font></li>
+</ul>
+<p><font size="4" face="Arial, Helvetica, sans-serif">With-in Component Layer</font> 
+</p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">is concerned with the contents that 
+  exist within the components themselves, and is not specifically defined in the 
+  model to allow a wide variety of media (text, audio, video, etc.) to be included.</font></li>
+</ul>
+<p><font size="4" face="Arial, Helvetica, sans-serif">Presentation Specifications</font> 
+</p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">is a mechanism that enables the 
+    storage of information concerning how to display a component to the user</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">allow the component to be displayed 
+    to the user based not only on the hypertext tool (e.g. the browser) that is 
+    displaying the hypertext, but also as an attribute of the component itself</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">also allows a component to be 
+    displayed a certain way depending on the link used to get there</font></li>
+</ul>
+<p><font size="4" face="Arial, Helvetica, sans-serif">Anchoring</font> </p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">is a mechanism that enables links 
+    to locations within a component itself, not just between components</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">If a complete document is a component, 
+    then anchoring allows links to certain characters in that document (e.g. sub-sections 
+    of the document.</font></li>
+</ul>
+<p align="center"><img src="images/dexter_fig1.jpg" width="508" height="478"></p>
+</html> 

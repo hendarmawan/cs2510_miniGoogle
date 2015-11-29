@@ -1,0 +1,22 @@
+<title>Patterns and Index Cells</title>
+<a href="../231syl.html"><img src="previous.gif" align=left></a>
+<a href="pic2.htm"><img src="next.gif" align=right></a>
+<h1>Patterns and Index Cells</h1>
+<h3>
+According to Christopher Alexander, a pattern is a morphological law that establishes a set of relationships in space. In the most general form: 
+
+<p>
+X -> r (A, B, ...), which means: 
+
+<p>
+Within a context of type X, the parts A, B, ... are related by the relationship r. 
+
+<hr>
+Later he expanded his definition as follows:
+
+<p>
+Each pattern is a three-part rule r(P, X, S), which expresses a relation r between a certain context X, a problem P, and a solution S. 
+
+<p>
+(The 'problem' part can be understood as the semantics of the pattern)
+

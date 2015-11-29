@@ -1,0 +1,49 @@
+
+<HTML>
+
+<HEAD>
+
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Structure</TITLE> 
+</HEAD>
+
+<BODY     >
+<center>
+<a href="http://www.cs.pitt.edu/~chang/265/C2/tsld007.htm"><img
+src="../previous.gif" align=left></a>
+<a href="http://www.cs.pitt.edu/~chang/265/C2/tsld009.htm"><img
+src="../next.gif" align=right></a>
+
+<h1>Chapter 2
+<br>Document Model Issues for Hypermedia</h1>
+<p>
+<hr width="80%">
+</center>
+
+ <H1>Structure</H1> 
+ <P><UL>
+<LI>main uses of an anchor
+<UL>
+<LI>provide a destination object within presentation when used with links
+<LI>attach temporal  and spatial relations
+<LI>text anchor-sequence of characters
+</UL><LI>anchors can also specify parts of groups of items 
+<UL>
+<LI>For example, the word "houses" might be a <b>text anchor</b>
+,picture of many houses,<b> an image anchor</b>, and the Dutch word
+"huizen" part of a <b>sound anchor</b>.
+ 
+</UL><LI>As well as defining the extent of media item via anchors, they
+can also have 
+<UL>
+<LI> attributes 
+<UL>
+<LI>which can be used for labeling the parts of the media item 
+they refer to, which leads to attaching information to media
+items which can be used for retrieval of items (will be 
+discussed more later on)</UL></UL></UL></P> <P></P> 
+
+
+
+</Body>
+</HTML>

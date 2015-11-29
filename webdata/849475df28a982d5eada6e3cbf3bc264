@@ -1,0 +1,694 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;
+      charset=windows-1252">
+    <meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+    <title>Kirk Pruhs' Home Page</title>
+    <meta http-equiv="content-type" content="text/html;
+      charset=windows-1252">
+  </head>
+  <body style="color: rgb(255, 255, 255); background-color: rgb(0, 0,
+    176); background-image: url(cycletile.gif);" alink="#ff0000"
+    link="#ffffff" vlink="#ffffff">
+    <!--
+
+<script language="javascript" src="spring.js"></script>
+
+--><font style="color: rgb(255, 255, 255);" size="+1"><br
+        style="font-family: Comic Sans MS Bold;">
+      <span style="font-weight: bold;"></span><span style="font-weight:
+        bold;"></span><br style="font-family: Comic Sans MS Bold;">
+      <span style="font-family: Comic Sans MS Bold;">&nbsp; </span><b
+        style="font-family: Comic Sans MS Bold;"><br>
+      </b></font>
+    <p style="text-align: left; font-family: Comic Sans MS Bold; color:
+      rgb(255, 255, 255);"><font size="+1"><b>Professor Kirk Pruhs </b></font>
+    </p>
+    <p style="text-align: left; font-family: Comic Sans MS Bold; color:
+      rgb(255, 255, 255);"><font size="+1"><b><img style="width: 323px;
+            height: 261px;" alt="Profile Picture" src="profile.jpg"></b>
+        <br>
+      </font></p>
+    <div style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"> </div>
+    <p style="text-align: left; font-family: Comic Sans MS Bold; color:
+      rgb(255, 255, 255);"><font size="+1"><b><a
+            href="http://www.cs.pitt.edu/">Dept. of Computer Science</a>
+          <br>
+          210 South Bouquet Street<br>
+          Sennott Square Building, Room 6415<br>
+          <a href="http://www.pitt.edu/">University of Pittsburgh</a> <br>
+          <a href="http://www.pittsburgh.net/">Pittsburgh</a> , <a
+            href="http://www.state.pa.us/">PA</a> 15260</b></font></p>
+    <div style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"> </div>
+    <p style="text-align: left; font-family: Comic Sans MS Bold; color:
+      rgb(255, 255, 255);"><font size="+1"><b>Primary Email: <a
+            href="mailto:kirk@cs.pitt.edu">kirk@cs.pitt.edu</a><br>
+          Secondary Email: krp2@pitt.edu <br>
+          Phone : 412-624-8844&nbsp;<br>
+          Fax : 412-624-8854<br>
+        </b></font></p>
+    <p style="text-align: left; font-family: Comic Sans MS Bold; color:
+      rgb(255, 255, 255);"><font size="+1"><b><br>
+        </b></font> <blink style="font-family: Comic Sans MS; color:
+        rgb(255, 0, 0);"></blink><br>
+    </p>
+    <hr style="font-family: Comic Sans MS Bold; height: 1px; color:
+      rgb(255, 255, 255);"> <font style="color: rgb(255, 255, 255);"
+      size="+1"><b style="font-family: Comic Sans MS Bold;"> &nbsp; </b></font>
+    <p style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"><font size="+1"><b>Research</b></font></p>
+    <p style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"><font size="+1"><b>My research interests are in algorithmic
+          problems related to green computing, energy and thermal
+          management, resource management, and scheduling.<!--This
+
+research is   currently supported by NSF grants CCR-0098752, ANI-0123705,&nbsp; 
+
+CNS-0325353 and CCF-0448196. --> </b></font></p>
+    <ul style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);">
+      <li><font size="+1"><b> A reasonably accurate list of publications
+            from <a
+href="http://www.informatik.uni-trier.de/%7Eley/db/indices/a-tree/p/Pruhs:Kirk.html">DBLP</a>
+            and <a
+              href="http://scholar.google.com/citations?user=Alc-aWoAAAAJ">Google
+
+
+
+
+
+
+
+
+
+
+
+              Scholar</a> <br>
+          </b></font></li>
+      <li><font size="+1"><b><a href="vita.pdf">Vita</a></b></font></li>
+      <li><font size="+1"><b>A <a href="Wordle.jpg">Wordle</a> view of
+            my research collaborators and publications from
+            www.wordle.net.<br>
+          </b></font></li>
+    </ul>
+    <p style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"><font size="+1"><b><br>
+        </b></font> </p>
+    <div style="text-align: center; font-family: Comic Sans MS Bold;
+      color: rgb(255, 255, 255);"><font size="+1"><a
+          href="http://www.wordle.net/gallery/wrdl/861930/PruhsDBLPWordle"
+          title="Wordle: PruhsDBLPWordle"><br>
+        </a></font></div>
+    <hr style="font-family: Comic Sans MS Bold; height: 1px; color:
+      rgb(255, 255, 255);"><font style="color: rgb(255, 255, 255);"
+      size="+1"><b style="font-family: Comic Sans MS Bold;"><br>
+      </b></font>
+    <p style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"><font size="+1"><b>Teaching and Education</b></font></p>
+    <ul style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);">
+      <li><font size="+1"><b>Current Post-Docs</b></font></li>
+      <ul>
+      </ul>
+    </ul>
+    <p><br>
+    </p>
+    <ul style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);">
+      <li><font size="+1"><b>Recent Post-Docs</b></font>
+        <ul>
+          <li><font size="+1"><b>Ho-Leung Chan <br>
+              </b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.mpi-inf.mpg.de/%7Eaantonia/">Antonios
+                  Antoniadis</a></b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.dei.unipd.it/%7Escquizza/">Michele
+                  Scquizzato</a></b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://blog.pkling.de/academic/">Peter Kling</a><br>
+              </b></font></li>
+        </ul>
+        <p><font size="+1">&nbsp; </font></p>
+      </li>
+      <li><font size="+1"><b>Current PhD Students&nbsp;</b></font>
+        <ul>
+          <li><font size="+1"><b><br>
+              </b></font></li>
+        </ul>
+        <p><font size="+1">&nbsp; </font></p>
+      </li>
+      <li><font size="+1"><b>Recently graduated PhD students with
+            graduation year and first employment:</b></font>
+        <ul>
+          <li><font size="+1"><b><a
+                  href="http://www.cs.pitt.edu/%7Ebeaver">Jonathan
+                  Beaver</a> </b><b>(Joint with Panos Chysanthis) 2006<br>
+              </b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.cs.pitt.edu/%7Emaly">Mohamed Aly</a>
+                (Joint with Panos Chysanthis), 2008, Yahoo Research<br>
+              </b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://cs.conncoll.edu/cchung/">Christine Chung</a>
+                2009, Jean C. Tempel Assistant Professor of Computer
+                Science at Connecticut College</b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.cs.pitt.edu/%7Edcc20/">Daniel Cole</a>
+                2013</b></font></li>
+          <li><a href="http://people.cs.pitt.edu/%7Encb30/"><font
+                size="+1"><b>Neal Barcelo </b></font></a><font
+              size="+1"><b>2015 McKinsey Consulting</b></font><a
+              href="http://people.cs.pitt.edu/%7Encb30/"><font size="+1"><b><br>
+                </b></font></a></li>
+          <li><font size="+1"><b><a
+                  href="http://people.cs.pitt.edu/%7Emnugent/">Michael
+                  Nugent </a>2015<a
+                  href="http://people.cs.pitt.edu/%7Emnugent/"><br>
+                </a></b></font></li>
+        </ul>
+        <p><font size="+1">&nbsp; </font></p>
+      </li>
+      <li><font size="+1"><b>I am currently, or have recently taught, or
+            will soon teach the following courses:</b></font></li>
+      <a href="CS1699Fall2014/index.html"> </a>
+    </ul>
+    <a href="CS1699Fall2014/index.html"> </a>
+    <ul style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);">
+      <a href="CS1699Fall2014/index.html"> </a>
+      <ul>
+        <a href="CS1699Fall2014/index.html"> </a>
+        <li><font size="+1"><b><font size="+1"><b><a
+                    href="http://www.cs.pitt.edu/%7Ekirk/cs2150">CS 2150
+                    Graduate Algorithms</a> </b></font><font size="+1"><b>Spring
+
+
+
+                </b></font><font size="+1"><b>2016</b></font></b></font></li>
+        <li><font size="+1"><b><font size="+1"><b><a
+                    href="http://people.cs.pitt.edu/%7Ekirk/cs1511/index.html">CS
+                    1511 Theory of Computation</a> Spring 2016</b></font></b></font></li>
+        <li><font size="+1"><b><a
+                href="http://www.cs.pitt.edu/%7Ekirk/cs1510">CS 1510
+                Undergraduate Algorithms</a></b></font><font size="+1"><b>
+              Fall 2015</b></font></li>
+        <li><font size="+1"><b><a href="CS1699Fall2014/index.html">CS
+                1699 / CS 3150 Networks, Crowds and Markets</a>&nbsp;
+              Fall 2014</b></font></li>
+        <li><font size="+1"><b><a
+                href="http://people.cs.pitt.edu/%7Ekirk/cs2110/">CS 2110
+                Theory of Computation </a>Fall 2013</b></font></li>
+        <li><font size="+1"><b><a href="cs3150Spring2012/index.html">CS
+                3150 Approximation Algorithms</a> Spring 2012</b></font></li>
+        <li><font size="+1"><b><a href="cs3150spring2010">CS 3150
+                Algorithmic Power Management </a>Spring 2010</b></font></li>
+        <li><font size="+1"><b><a href="cs3150spring2008">CS 3150
+                Algorithmic Game Theory </a>Spring 2008</b></font></li>
+        <li><font size="+1"><b><a href="cs2001/index.html">CS 2001
+                Research Topics in Computer Science</a> Fall 2007</b></font></li>
+        <li><font size="+1"><b> <a
+                href="http://www.cs.pitt.edu/%7Ekirk/cs1501/Pruhs/Fall2006/">CS
+
+
+
+
+
+
+
+
+
+
+
+                1501 Algorithm Implementation</a> Fall 2006</b></font></li>
+        <li><font size="+1"><b><a
+                href="http://www.cs.pitt.edu/%7Ekirk/cs3150spring06"> CS
+                3150 Randomness and Computation</a> Spring 2006</b></font></li>
+        <li><font size="+1"><b><a
+                href="http://www.cs.pitt.edu/%7Ekirk/cs3150"> CS 3150
+                Approximation Algorithms</a> Spring 2004 </b></font></li>
+        <li><font size="+1"><b><a
+                href="http://www.cs.pitt.edu/%7Ekirk/cs1652/"> CS 1652
+                Computer Networks</a> </b></font></li>
+      </ul>
+    </ul>
+    <ul style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);">
+    </ul>
+    <p style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"><font size="+1">&nbsp;</font></p>
+    <ul style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);">
+      <li><font size="+1"><b>I've written two papers on algorithms
+            education, &nbsp;<a
+              href="http://www.cs.pitt.edu/%7Ekirk/papers/dynprog.ps">
+              How to design dynamic programming algorithms sans
+              recursion</a> , and <a
+              href="http://www.cs.pitt.edu/%7Ekirk/papers/sig.ps">&nbsp;The
+
+
+
+
+
+
+
+
+
+
+
+              SPIN-OUT puzzle</a> . <br>
+          </b></font></li>
+    </ul>
+    <font style="color: rgb(255, 255, 255);" size="+1"><b
+        style="font-family: Comic Sans MS Bold;"></b></font>
+    <hr style="font-family: Comic Sans MS Bold; height: 1px; color:
+      rgb(255, 255, 255);">
+    <p style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"><font size="+1"><b>Service</b></font></p>
+    <font style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);" face="Comic Sans MS" size="+1"><b>My recent professional
+        duties include:<br>
+      </b> </font>
+    <ul style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);">
+      <li><font size="+1"><b>Editoral Boards</b></font>
+        <ul>
+          <li><font size="+1"><b><a href="http://talg.acm.org/">ACM
+                  Transactions on Algorithms</a></b></font></li>
+          <li><font size="+1"><b> <a
+                  href="http://www.kluweronline.com/issn/1094-6136">Journal
+
+
+
+
+
+
+
+
+
+
+
+                  of Scheduling </a></b></font></li>
+          <font size="+1"><b><a
+                href="http://www.kluweronline.com/issn/1094-6136"> </a>
+            </b></font>
+          <li><font size="+1"><b> <a
+                  href="http://joc.pubs.informs.org/">INFORMS Journal of
+                  Computing</a></b></font></li>
+        </ul>
+        <font size="+1"> </font>
+        <p><font size="+1">&nbsp; </font> </p>
+      </li>
+      <li><font size="+1"><b>Guest Editor</b></font>
+        <ul>
+          <li><font size="+1"><b>Special issue of Journal of Scheduling
+                devoted to selected papers from 1999&nbsp; Phillips
+                Workshop on Scheduling and Resource Management</b></font></li>
+          <li><font size="+1"><b>Special issue of Journal of Scheduling
+                devoted to selected papers from 2001&nbsp; Phillips
+                Workshop on Scheduling and Resource Management</b></font></li>
+          <li><font size="+1"><b>Special issue of Journal of
+                Scheduling&nbsp; devoted to selected papers from the
+                2002 ACM/SIAM Symposium on Discrete Algorithms</b></font></li>
+          <li><font size="+1"><b>Two special issues of Journal of
+                Scheduling&nbsp; devoted to online scheduling</b></font></li>
+          <li><font size="+1"><b>Special issue of Journal of
+                &nbsp;Algorithms devoted to selected papers from the
+                2001 ACM/SIAM Symposium on Discrete Algorithms</b></font></li>
+          <li><font size="+1"><b>Special issue of Journal of Scheduling
+                devoted to selected papers from the 2007 Workshop on
+                Models and Algorithms for Planning and Scheduling<br>
+              </b></font></li>
+        </ul>
+        <p><font size="+1"><b>&nbsp; </b></font> </p>
+      </li>
+      <li><font size="+1"><b>Program Committee Member</b></font>
+        <ul>
+          <li><font size="+1"><b><a
+                  href="http://www.siam.org/meetings/da01/">2001
+                  ACM/SIAM Symposium on Discrete Algorithms</a> (SODA)</b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.cs.umbc.edu/mobide/">2001 ACM
+                  International Workshop on Data Engineering for
+                  Wireless and Mobile Access</a> (MobiDE)</b></font></li>
+          <li> <font size="+1"><b>2001 International Workshop on
+                Mobility and Databases and Distributed Systems (MDDS)</b></font></li>
+          <li> <font size="+1"><b><a
+                  href="http://softsys.cs.uoi.gr/mdds02/">2002
+                  International Workshop on Mobility and Databases and
+                  Distributed Systems</a> (MDDS)</b></font></li>
+          <li> <font size="+1"><b><a
+                  href="http://www.cs.put.poznan.pl/mapsp">2003 Workshop
+                  on Models and Algorithms for Planning and Scheduling
+                  Problems</a> (MAPSP)</b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.siam.org/meetings/da05">2005 ACM/SIAM
+                  Symposium on Discrete Algorithms </a>(SODA)</b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.siam.org/meetings/alenex05/index.htm">2005
+
+
+
+
+
+
+
+
+
+
+
+                  Conference on Algorithm Engineering and Experience</a>
+                (ALENEX)</b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.lsi.upc.es/%7Eesa05">2005 European
+                  Symposium on Algorithms</a> (ESA)</b></font></li>
+          <li><font size="+1"><b><a href="http://mapsp2005.dii.unisi.it">2005&nbsp;Workshop
+
+on
+Models
+
+
+and
+
+
+
+
+
+
+
+
+
+
+
+                  Algorithms for Planning and Scheduling Problems</a>
+                (MAPSP)</b></font></li>
+          <li><font size="+1"><b> <a
+                  href="http://www.cs.le.ac.uk/%7Ete17/WAOA2005">2005
+                  Workshop on Approximation and Online Algorithms </a>(WAOA)</b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://sirocco06.csc.liv.ac.uk">2006 Colloquium
+                  on Structural Information and Communication Complexity</a>
+                (SIROCCO)</b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.cs.cityu.edu.hk/%7Eaaim06"> 2006
+                  Conference on Algorithmic Aspects of Information and
+                  Management </a>(AAIM)</b></font></li>
+          <li><font size="+1"><b> <a
+href="http://www.google.com/search?sourceid=navclient&amp;ie=UTF-8&amp;rls=GGLG,GGLG:2005-46,GGLG:en&amp;q=2007+Conference+on+Algorithmic+Aspects+of+Information+and+Management">2007
+Conference
+on
+Algorithmic
+Aspects
+of
+Information
+and
+Management
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </a>(AAIM)</b></font></li>
+          <li><font size="+1"><b> <a
+                  href="http://www.algo07.cs.tau.ac.il/esa.html">2007
+                  European Symposium on Algorithms</a> (ESA)</b></font></li>
+          <li><font size="+1"><b> <a
+                  href="http://www.algo07.cs.tau.ac.il/waoa.html">2007
+                  Workshop on Approximation and Online Algorithms </a>(WAOA)</b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.cs.jhu.edu/%7Espaa/2009/">2009
+                  Symposium on Parallelism in Algorithms and
+                  Architectures</a> (SPAA)</b></font></li>
+          <li><font size="+1"><b><a
+                  href="http://www.siam.org/meetings/da10/">2010
+                  ACM/SIAM Symposium on Discrete Algorithms</a> (SODA)</b></font></li>
+          <li><font size="+1"><b>2010 IEEE Parallel and Distributed
+                Processing Symposium</b></font></li>
+          <li><font size="+1"><b>2010 <a
+                  href="http://www.tik.ee.ethz.ch/%7Ejchen/pado10/">Track
+
+
+
+
+
+
+
+
+
+
+
+                  on Power Aware Design and Optimization&nbsp; </a>(PADO)
+
+
+
+
+
+
+
+
+
+
+                of the <a
+                  href="http://www.acm.org/conferences/sac/sac2010/">ACM
+                  Symposium on Applied Computing</a> (SAC)</b></font></li>
+          <li><font size="+1"><b>2010<a
+                  href="http://www.green-conf.org/2010/"> Conference on
+                  Green Computing</a> (IGCC)<a
+                  href="http://www.green-conf.org/2010/"><br>
+                </a></b></font></li>
+          <li><font size="+1"><b>2011 <a
+                  href="http://www.green-conf.org/">Conference on Green
+                  Computing</a> (IGCC)<a
+                  href="http://www.green-conf.org/"><br>
+                </a></b></font></li>
+          <li><font size="+1"><b>2012 <a
+                  href="http://www.green-conf.org/">Conference on Green
+                  Computing</a> (IGCC)<a
+                  href="http://www.green-conf.org/"><br>
+                </a></b></font></li>
+          <li><font size="+1"><b>2012 </b></font><a
+              href="http://www.cs.le.ac.uk/events/WAOA2012/"><font
+                size="+1"><b>Workshop on Approximation and Online
+                  Algorithms</b></font></a><font size="+1"><b> (WAOA)</b></font><a
+              href="http://www.cs.le.ac.uk/events/WAOA2012/"><font
+                size="+1"><b><br>
+                </b></font></a></li>
+          <li><font size="+1"><b>2013 <a
+                  href="http://www.siam.org/meetings/da13/">ACM/SIAM
+                  Symposium on Discrete Algorithms</a> (SODA)<br>
+              </b></font></li>
+          <li><font size="+1"><b>2013 <a
+                  href="http://www.stacs2013.uni-kiel.de/">Symposium on
+                  Theoretical Aspects of Computer Science</a> (STACS)</b></font></li>
+          <li><font size="+1"><b>2013<a
+                  href="http://cm.wsu.edu/ehome/index.php?eventid=51862&amp;">
+                  Conference on Green Computing</a> (IGCC)</b></font></li>
+          <li><font size="+1"><b>2014 <a
+                  href="http://algo2014.ii.uni.wroc.pl/esa/"> European
+                  Symposium on Algorithms </a>(ESA)</b></font></li>
+          <li><font size="+1"><b>2014 <a
+                  href="http://cm.wsu.edu/ehome/index.php?eventid=78292&amp;">
+                  Conference on Green Computing</a> (IGCC)</b></font></li>
+          <li><font size="+1"><b>2015 Workshop on Algorithms and Data
+                Structures<br>
+              </b></font></li>
+        </ul>
+        <a href="http://www.green-conf.org/"><font size="+1"> </font></a>
+        <p><font size="+1">&nbsp;</font></p>
+      </li>
+      <li><font size="+1"><b>Program Committee Chair</b></font>
+        <ul>
+          <li><font size="+1"><b>2007 </b><a
+                href="http://mapsp2007.ku.edu.tr"><b>Workshop on Models
+                  and Algorithms for Planning and Scheduling Problems</b></a><b>
+                (MAPSP)</b></font></li>
+          <li><font size="+1"><b>2013 <a
+                  href="http://algo2013.inria.fr/waoa.shtml">Workshop on
+                  Approximation and Online Algorithms</a> (WAOA)<br>
+              </b></font></li>
+        </ul>
+        <font size="+1"> </font>
+        <p><font size="+1">&nbsp;</font></p>
+      </li>
+      <font size="+1">
+        <li><b>Organizer</b>
+          <ul>
+            <li><b>2004<a href="http://www.cs.pitt.edu/%7Ekirk/MAIN">
+                  Bertinoro Workshop on Models and Algorithms for
+                  Information Networks</a></b></li>
+            <li><b>2006<a href="http://www.ismp2006.org"> Cluster on
+                  Online Optimization at International Symposium on
+                  Mathematical Programming</a> (ISMP)</b></li>
+            <li><b> 2007<a
+                  href="http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=2007261">
+                  Dagstuhl Seminar on Fair Division</a></b></li>
+            <li><b> 2008 <a
+                  href="http://www.dagstuhl.de/en/program/calendar/semhp/?semid=34271">
+                  Dagstuhl Seminar on Scheduling</a></b><a
+                href="http://www.dagstuhl.de/en/program/calendar/semhp/?semid=34271"><font
+                  size="+1"><b> (</b></font></a><font size="+1"><b><a
+href="file:///afs/cs.pitt.edu/usr0/kirk/public/html/dagstuhlopenproblems.pdf"
+                    style="color: rgb(255, 0, 0);">Open Problems
+                    Document</a></b></font><a
+                href="http://www.dagstuhl.de/en/program/calendar/semhp/?semid=34271"><font
+                  size="+1"><b>)</b></font></a></li>
+            <li><b>2009 <a href="http://scipm.cs.vt.edu/">NSF Workshop
+                  on the Science of Power Management</a><a
+                  href="http://scipm.cs.vt.edu/"> </a><br>
+              </b></li>
+            <li><b>2010 <a
+                  href="http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=10071">Dagstuhl
+Seminar
+
+
+on
+
+
+
+
+
+
+
+
+
+
+
+                  Scheduling</a> (<a href="dagstuhl2010openproblems.pdf"><span
+                    style="color: rgb(255, 0, 0);">Open Problems
+                    Document</span></a>)<a
+                  href="http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=10071"><br>
+                </a></b></li>
+            <li><font size="+1"><b>2010 </b></font><a
+                href="http://www.cs.pitt.edu/%7Ekirk/SciPM2/"><font
+                  size="+1"><b>Second NSF Workshop on the Science of
+                    Power Management</b></font></a></li>
+            <li><font size="+1"><b>2012<a
+                    href="http://www.computational-sustainability.org/stoc12/">
+                    Symposium on Theory of Computing (STOC) Workshop on
+                    Computational Sustainability</a><br>
+                </b></font></li>
+            <li><font size="+1"><b>2013<a
+                    href="http://www.dagstuhl.de/en/program/calendar/semhp/?semnr=13111">
+                    Dagstuhl Semianr on Scheduling</a><br>
+                </b></font></li>
+          </ul>
+          <p>&nbsp; </p>
+        </li>
+        <li><b>Invited Speaker Gigs</b>
+          <ul>
+            <li><b> 2004 <a
+                  href="http://www.math.leidenuniv.nl/%7Elnmb/conferences/lunteren2004">
+                  Conference on the Mathematics of Operations Research</a></b></li>
+            <li><b> 2006 <a
+                  href="http://keisan-genkai.lab2.kuis.kyoto-u.ac.jp/nhc">NHC
+
+                  Autumn School on Discrete Algorithms</a></b></li>
+            <li><b>2009<a
+                  href="http://www.polytechnique.fr/osd-chair/workshop.php">
+                  Inaugural Workshop for the Microsoft-CNRS Chair on
+                  Optimisation and Sustainable Development at École
+                  Polytechnique</a></b></li>
+            <li><b>2011<a
+href="International%20ICST%20Conference%20on%20Theory%20and%20Practice%20of%20Algorithms">International
+Conference
+
+
+on
+
+
+
+
+
+
+
+
+
+
+
+                  Theory and Practice of Algorithms in (Computer)
+                  Systems (TAPAS)</a></b></li>
+            <li><b>2011<a href="http://www.cs.ucr.edu/%7Emarek/FOCS11/">
+                  IEEE Symposium on Foundations of Computer Science
+                  (FOCS)</a></b></li>
+            <li><b>2012<a href="http://latin2012.cs.iastate.edu/"> Latin
+                  American Symposium on Theoretical Informatics (LATIN)</a></b></li>
+            <li><b>2015 <a
+href="http://www.eurandom.tue.nl/events/workshops/2015/Scheduling/Scheduling_index.html">Scheduling
+
+                  Under Uncertainty Workshop</a><br>
+              </b></li>
+            <li><b>2015 <a
+                  href="http://resources.mpi-inf.mpg.de/conference/adfocs/">Max
+
+
+                  Planck Advanced Course on the Foundations of Computer
+                  Science (ADFOCS)<br>
+                </a></b></li>
+            <a href="http://resources.mpi-inf.mpg.de/conference/adfocs/">
+            </a>
+          </ul>
+          <a href="http://resources.mpi-inf.mpg.de/conference/adfocs/">
+          </a></li>
+        <a href="http://resources.mpi-inf.mpg.de/conference/adfocs/"> </a></font><a
+        href="http://resources.mpi-inf.mpg.de/conference/adfocs/"> </a>
+    </ul>
+    <a href="http://resources.mpi-inf.mpg.de/conference/adfocs/"> </a>
+    <p style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"><a
+        href="http://resources.mpi-inf.mpg.de/conference/adfocs/"><font
+          size="+1"><b>&nbsp; </b></font></a></p>
+    <font style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);" size="+1"> </font>
+    <ul style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);">
+      <font size="+1">
+        <li><b>Member of various NSF panels for the Theory of Computing
+            Program and various computer systems panels<br>
+          </b></li>
+        <li><b>Reviewer of multitudinous journal and conference papers</b></li>
+      </font>
+    </ul>
+    <hr style="font-family: Comic Sans MS Bold; height: 1px; color:
+      rgb(255, 255, 255);">
+    <p style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"><font size="+1"><b><br>
+        </b></font></p>
+    <p style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);"><font size="+1"><b>Miscellaneous Links</b></font></p>
+    <ul style="font-family: Comic Sans MS Bold; color: rgb(255, 255,
+      255);">
+      <li><font size="+1"><b><a
+              href="http://www.cs.pitt.edu/%7Ekirk/pict/index.html">
+              Family Photos </a> </b></font></li>
+      <li><font size="+1"><b><a href="MAPSP/index.html">My page on the
+              history of the MAPSP scheduling conference</a></b></font></li>
+    </ul>
+    <hr style="font-family: Comic Sans MS Bold; height: 1px; color:
+      rgb(255, 255, 255);"> <font style="color: rgb(255, 255, 255);"
+      size="+1"><b style="font-family: Comic Sans MS Bold;"> <br>
+      </b><br style="font-family: Comic Sans MS Bold;">
+    </font>
+  </body>
+</html>

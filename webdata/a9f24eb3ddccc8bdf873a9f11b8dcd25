@@ -1,0 +1,35 @@
+<hr>
+<h1>Milestone 1</h1>
+Samantha Kuhn, Zachary Parker
+
+
+<h2>
+a)	Statement of Work - 
+</h2>
+
+Scenario 6: Second fight between our hero and the Snakeman (Act 7)
+The hero tries to activate a safety valve (?) on the wall (screen), while the Snakeman is doing its best to prevent that from happening, with visual effects.
+	
+<p>
+In this project, a software component will be developed which will use a Microsoft Kinect to control the obfuscation of a displayed image through gestures of the hands and/or body. This will be applied to the above scenario, in which a safety valve must be hidden. By motioning toward the screen, smoke, etc. can be generated to hide the displayed object.
+
+
+<h2>
+b)	Conceptual Pattern - 
+</h2>
+
+Problem: The safety valve must be obscured by using gestures to generate smoke.
+
+<p>
+Context: The hero is trying to activate a safety valve on the wall while the Snakeman is trying to prevent that from happening.
+
+<p>
+Solution: By using gestures (by the Snakeman), smoke can be generated interactively, in accordance with the Snakeman's movement. By rendering smoke on top of the safety valve, the device can be obscured in order to keep the hero from finding and reaching it.
+
+
+<h2>
+c)	Design Pattern - 
+</h2>
+
+<img src="ms1g3.jpg">
+

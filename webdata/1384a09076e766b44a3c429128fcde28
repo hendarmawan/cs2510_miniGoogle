@@ -1,0 +1,48 @@
+<title>2013 Class Projects</title>
+
+<a href="paper13.htm"><img src="prev.gif" align=left></a>
+<a href="paper13.htm"><img src="next.gif" align=right></a>
+
+<center>
+<h1>2013 Class Projects</h1>
+</center>
+<b>
+<font color=red>(1) You can use SIS testbed to simulate conventional component based
+software engineering (CBSE) systems. No super components.</font>
+(use Lightweight SIS testbed SISServer.zip, or SISv3n5r.zip)
+<p>
+Examples:   Li (sensor cloud system), Ge (patterns for industry/university collaboration)
+
+<p>
+<font color=red>(2) You can use SIS subsystem to specify one
+super component with a single computation cycle.</font>
+(use Developer's SIS testbed SISv3n5r.zip)
+<p>
+Examples:   Choi (recommender), Cui (software visualization), Ye (customer product selection), Liu (fruit recognition)
+
+<p>
+<font color=red>(3) You can use SIS subsystem to specify one
+super component with <a href="sisam7.htm">two (fast and slow) computation cycles</a>.</font>
+
+<p>
+Examples:   Zhuang (restaurant inventory), Guy (low freq noise monitoring)
+<p>
+<font color=blue>
+The following are either (1), (2) or (3): Xu (driver monitoring), Nils (multimedia retrieval),
+Wu and Yao (leap motion classification), Mao (digit recognition), Gao (no supercomponents)
+</font>
+
+<p>
+<font color=red>(4) You can use SIS subsystem to specify two
+independent super components each with one computation cycle.</font>
+(use HealthCare SIS testbed SISv2b.zip, or SISv3n5r.zip)
+<p>
+Example: Lang (blood sugar monitor) and Fan (ECG monitor)
+
+<p>
+<font color=red>(5) You can use multiple super components to model
+social/sensor networks and their interactions (in theory only).</font>
+<p>
+Example: Yung (integrated crowd sourcing), Li (sensor cloud modeling)
+<p>
+<font color=blue>Note: Zheng is responsible for minor modification of SIS source codes to support (3).</font>

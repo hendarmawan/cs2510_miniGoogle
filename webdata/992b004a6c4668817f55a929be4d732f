@@ -1,0 +1,36 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="project_pg1.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="project_intro1.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center>
+  <h1><font face="Arial, Helvetica, sans-serif">Rail Traffic Notifier System</font></h1>
+  <h2><font face="Arial, Helvetica, sans-serif">Adapting Hypermedia Applications<br>
+     Using 
+    The Adaptive Hypermedia Application Model</font></h2> 
+ </center> 
+
+<div align="center">
+  <p><font face="Arial, Helvetica, sans-serif">Jeff Goldsworthy</font><br>
+    <font face="Arial, Helvetica, sans-serif">CS 2310 - Multimedia Software Engineering</font><br>
+    <font size="2" face="Arial, Helvetica, sans-serif">April 17, 2003</font></p>
+  <hr>
+</div>
+<h2><font face="Arial, Helvetica, sans-serif">Contents</font></h2>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">Introduction</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Requirements (System Overview)</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Requirements (IC Cards)</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Relationships</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">IC Structure</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Domain Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">User Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Adaptation Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Run-time Layer and Execution Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">The Application</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Conclusion</font></li>
+</ul>
+<p>&nbsp;</p>
+</html> 

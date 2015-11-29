@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>08</title>
+</head>
+<body>
+<table style="text-align: left; width: 100%;" border="0" cellspacing="2"
+ cellpadding="2">
+  <tbody>
+    <tr>
+      <td style="text-align: left;"><a href="07.htm"><img
+ src="previous.gif" alt="previous"
+ style="border: 0px solid ; width: 26px; height: 26px;"></a></td>
+      <td style="vertical-align: top; text-align: center;"><big><big><big><span
+ style="font-weight: bold;">Bonobo - Interfaces</span></big></big></big></td>
+      <td style="text-align: right;"><a href="09.htm"><img
+ src="next.gif" alt="next"
+ style="border: 0px solid ; width: 26px; height: 26px;"></a></td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+Bonobo's interfaces are very much 'inspired' by the OLE2 interfaces.<br>
+<br>
+Bonobo interfaces are based on the <span
+ style="font-family: monospace;">GNOME::Unknown</span> interface.<br>
+<br>
+<span style="font-weight: bold;">The Unknown interface provides:</span><br>
+<ul>
+  <li>object lifetime management</li>
+  <li>object functionality - discovery.</li>
+</ul>
+<br>
+The interface contains three methods:<br>
+&nbsp;&nbsp;&nbsp; <span style="font-family: monospace;">module GNOME
+{ </span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+interface
+Unknown { </span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+void void ref (); </span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+void void unref (); </span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Object query_interface (in string repoid); </span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+}; </span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; };
+<br>
+<br>
+</span>
+<ul>
+  <li><span style="font-family: monospace;">ref()</span> &amp; <span
+ style="font-family: monospace;">unref() </span>- to control the
+lifetime of an object based on
+reference counting.</li>
+  <li><span style="font-family: monospace;">query_interface()</span> -
+to discover functionality of an object.</li>
+</ul>
+<br>
+To get an interface from an object reference, one would use the
+queryInterface (QI) method in Interface Definition Language (IDL): <br>
+<br>
+The queryInterface method<br>
+<span style="font-family: monospace;">module Bonobo {</span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+interface Unknown {</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+...</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Unknown queryInterface (Unknown obj, in string repoid);</span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+};</span><br style="font-family: monospace;">
+<span style="font-family: monospace;">};</span><br>
+<br>
+<br>
+Clients of the query_interface method use it to discover dynamically if
+a component supports a given interface. <br>
+<br>
+<span style="font-weight: bold;">For example</span>, a help browser can
+load an HTML renderer component and ask
+this component which sort of features are supported by it: <br>
+stop_animations (BrowserHTML html) <br>
+<span style="font-family: monospace;">{ </span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+BrowserControl control </span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;</span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+control = html-&gt;query_interface
+("IDL:Browser/Control:1.0"); </span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if
+(control) </span><br style="font-family: monospace;">
+<span style="font-family: monospace;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+control-&gt;stop_animations (); </span><br
+ style="font-family: monospace;">
+<span style="font-family: monospace;">} </span><br>
+<br>
+The return value of the <span style="font-family: monospace;">query_interface</span>
+invocation contains a reference
+to a CORBA object that is derived from the <span
+ style="font-family: monospace;">GNOME::Unknown</span> interface or
+<span style="font-family: monospace;">CORBA_OBJECT_NIL</span> if the
+interface is not supported by the object. And
+this interface would have been already <span
+ style="font-family: monospace;">ref()</span>ed before it was returned.
+It is up to the caller to call <span style="font-family: monospace;">unref()</span>
+when they are done using the
+interface. <br>
+<br>
+</body>
+</html>

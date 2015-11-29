@@ -1,0 +1,307 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
+<link rel="stylesheet" href="./style.css" type="text/css">
+<style type="text/css">
+  table { border-collapse: collapse; }
+  a:link { text-decoration: none;  color: blue; }
+  a:visited { text-decoration: none;  color: blue; }
+</style>
+
+<title>CS 3525: Advanced Topics in Security and Privacy (Spring 2012)</title>
+</head>
+
+<body bgcolor="#FFFCCF">
+
+<h1 align="center"><font color="#660000">Discussion Schedule (Subject to Change)</font></h1>
+
+<hr>
+<center>
+  <a href="./index.html"><b>[ Home ]</b></a> &nbsp;&nbsp;
+  <a href="./policies.html"><b>[ Policies ]</b></a> &nbsp;&nbsp;
+  <a href="./lectures.html"><b>[ Lectures ]</b></a> &nbsp;&nbsp;
+  <a href="./project.html"><b>[ Project ]</b></a> &nbsp&nbsp
+</center>
+<hr>
+
+<br>
+
+<center>
+
+<table border="0" cols="1">
+<tr><td width="500">
+  <b><font color="red">Notice:</font></b> Students are responsible for
+  reading all papers listed below prior to the lecture in which they
+  will be discussed.  Paper
+  <a href="./review.txt">reviews</a> are due at the start of lecture
+  and will not be accepted late without prior approval.
+</td></tr>
+</table>
+
+<br><br>
+
+<table border="1" cols="4">
+<tbody><tr>
+  <td bgcolor="#e6ffcc" width="100" align="center"><b><u>Lecture #</u></b></td>
+  <td bgcolor="#e6ffcc" width="100"><b><u>Date</u></b></td>
+  <td bgcolor="#e6ffcc" width="450"><b><u>Topics</u></b></td>
+  <td align="center" bgcolor="#e6ffcc" width="200"><b><u>Presenter</u></b></td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">1</td>
+  <td valign="top" width="100">1/5 (Thu)</td>
+  <td valign="top" width="450">Administrivia and course introduction</td>
+  <td align="center" valign="top" width="200"> Prof. Lee </td>
+</tr>
+
+<tr>
+  <td valign="top" rowspan="2" width="100" align="center">2</td>
+  <td valign="top" rowspan="2" width="100">1/10 (Tues)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Cloud Security</b></td>
+</tr>
+<tr>
+  <td valign="top" width="450"> Shai Halevi, Danny Harnik, Benny
+  Pinkas, Alexandra Shulman-Peleg: <i>Proofs of Ownership in Remote
+  Storage Systems</i>, CCS
+  2011.  <a href="http://dx.doi.org/10.1145/2046707.2046765">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Bill </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center"> 3 </td>
+  <td valign="top" width="100">1/12 (Thu)</td>
+  <td valign="top" width="450"> Rui Wang, Shuo Chen, XiaoFeng Wang,
+  Shaz Qadeer: <i>How to Shop for Free Online: Security Analysis of
+  Cashier-as-a-Service Based Web Stores</i>, Oakland
+  2011. <a href="http://research.microsoft.com/pubs/145858/caas-oakland-final.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Huy </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">4</td>
+  <td valign="top" width="100">1/17 (Tues)</td>
+  <td valign="top" width="450"> Keven D. Bowers, Marten van Dijk, Ari Juels, Alina Oprea, Ronald L. Rivest: <i>How to tell if your cloud files are vulnerable to drive crashes</i>, CCS 2011.  <a href="http://dx.doi.org/10.1145/2046707.2046766">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Nick T. </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">5</td>
+  <td valign="top" width="100">1/19 (Thu)</td>
+  <td valign="top" width="450"> <font color="red">Student Choice:</font> Thomas Ristenpart, Eran Tromer, Hovav Shacham, Stefan Savage: <i>Hey, You, Get Off of My Cloud: Exploring Information Leakage in Third-Party Compute Clouds</i>, CCS 2009.  <a href="http://dl.acm.org/ft_gateway.cfm?id=1653687&ftid=707974&dwn=1&CFID=60746345&CFTOKEN=61898370">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Andrew </td>
+</tr>
+
+<tr>
+  <td valign="top" rowspan="2" width="100" align="center">6</td>
+  <td valign="top" rowspan="2" width="100">1/24 (Tues)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Privacy in Social Media</b></td>
+</tr>
+<tr>
+  <td valign="top" width="450"> Yang Wang, Gregory Norcie, Saranga Komanduri, Pedro Giovanni Leon, Lorrie Faith Cranor, Alessandro Acquisti: <i>"I regretted the minute I pressed share": A Qualitative Study of Regrets on Facebook</i>, SOUPS 2011.  <a href="http://cups.cs.cmu.edu/soups/2011/proceedings/a10_Wang.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Marian </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">7</td>
+  <td valign="top" width="100">1/26 (Thu)</td>
+  <td valign="top" width="450"> Serge Egelman, Andrew Oates, Shriram Krishnamurthi: <i>Oops, I Did It Again: Mitigating Repeated Access Control Errors on Facebook</i>, CHI 2011.  <a href="http://dx.doi.org/10.1145/1978942.1979280">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Andrew </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">8</td>
+  <td valign="top" width="100">1/31 (Tues)</td>
+  <td valign="top" width="450"> Ari Lampinen, Vilma Lehtinen, Asko Lehmuskallio, Sakari Tamminen: <i>We're in It Together: Interpersonal Management of Disclosure in Social Network Services</i>, CHI 2011.  <a href="http://dx.doi.org/10.1145/1978942.1979420">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Nathalie </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">9</td>
+  <td valign="top" width="100">2/2 (Thu)</td>
+  <td valign="top" width="450"> Ashwin Machanavajjhala, Aleksandra Korolova, Atish Das Sarma: <i>Personalized Social Recommendations - Accurate or Private?</i>, VLDB 2011.  <a href="http://www.vldb.org/pvldb/vol4/p440-machanavajjhala.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Xuelia </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center"> 10 </td>
+  <td valign="top" width="100">2/7 (Tues)</td>
+  <td valign="top" width="450"> <font color="red">Student Choice:</font> Andrew Besmer and Heather Richter Lipford: <i>Moving beyond untagging: photo privacy in a tagged world</i>, CHI 2010. <a href="http://dl.acm.org/ft_gateway.cfm?id=1753560&ftid=770033&dwn=1&CFID=64278939&CFTOKEN=15810083">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Xiang </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" rowspan="2" width="100" align="center">11</td>
+  <td valign="top" rowspan="2" width="100">2/9 (Thu)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Location Privacy and Exposure</b></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450"> Roman Schlegel, Apu Kapadia, Adam J. Lee, <i>Eyeing your Exposure: Quantifying and Controlling Information Sharing for Improved Privacy</i>, SOUPS 2011. <a href="http://cups.cs.cmu.edu/soups/2011/proceedings/a14_Schlegel.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Yann </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">12</td>
+  <td valign="top" width="100">2/14 (Tues)</td>
+  <td valign="top" width="450">Reza Shokri, George Theodorakopoulos, Jean-Yves Le Boudec, Jean-Pierre Hubaux: <i>Quantifying Location Privacy</i>, Oakland 2011. <a href="http://www.ieee-security.org/TC/SP2011/PAPERS/2011/paper016.pdf">[PDF]</a> </td> 
+  <td align="center" valign="top" width="200"> Xiang </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">13</td>
+  <td valign="top" width="100">2/16 (Thu)</td>
+  <td valign="top" width="450"> Reza Shokri, George Theodorakopoulos, George Danezis, Jean-Pierre Hubaux, Jean-Yves Boudec: <i>Quantifying Location Privacy: The Case of Sporadic Location Exposure</i>, PETS 2011. <a href="http://freehaven.net/anonbib/papers/pets2011/p4-shokri.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> John </td>
+</tr>
+
+
+
+<tr>
+  <td valign="top" width="100" align="center">14</td>
+  <td valign="top" width="100">2/21 (Tue)</td>
+  <td valign="top" width="450"> Jacob T. Biehl, Eleanor Rieffel, Adam J. Lee: <i>When Privacy and Utility are in Harmony: Towards Better Design of Presence Technologies</i>, PUC, <i>In Press</i>. <a href="http://www.springerlink.com/content/b2u181p81482q38v/">[Link]</a></td>
+  <td align="center" valign="top" width="200"> Yann </td>
+</tr>
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">15</td>
+  <td valign="top" width="100">2/23 (Thu)</td>
+  <td valign="top" width="450"> Project proposal mini-presentations </td>
+  <td align="center" valign="top" width="200"> - </td> 
+</tr>
+
+
+<tr>
+  <td valign="top" width="100" align="center">16</td>
+  <td valign="top" width="100">2/28 (Tues)</td>
+  <td valign="top" width="450"> <font color="red">Student Choice:</font> Hui Zang and Jean Bolot: <i>Anonymization of location data does not work: a large-scale measurement study</i>, MobiCom '11. <a href="http://dl.acm.org/citation.cfm?id=2030613.2030630">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Nathalie </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" rowspan="2" width="100" align="center">17</td>
+  <td valign="top" rowspan="2" width="100">3/01 (Thu)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Security and Privacy in Database Systems</b></td>
+</tr bgcolor="#F0F0F0">
+  <td valign="top" width="450">  Mustafa Canim, Murat Kantarcioglu, Bijit Hore, Sharad Mehrotra: <i>Building Disclosure Risk Aware Query Optimizers for Relational Databases</i>, VLDB 2010. <a href="http://www.comp.nus.edu.sg/~vldb2010/proceedings/files/papers/R01.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Thao </td>
+</tr>
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">-</td>
+  <td valign="top" width="100">3/06 (Tues)</td>
+  <td valign="top" colspan="2" width="450">Spring break.  No class.</td>
+</tr>
+
+<tr bgcolor="#ff6666">
+  <td valign="top" width="100" align="center">-</td>
+  <td valign="top" width="100">3/08 (Thu)</td>
+  <td valign="top" colspan="2" width="450">Spring break.  No class.</td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">18</td>
+  <td valign="top" width="100">3/13 (Tues)</td>
+  <td valign="top" width="450"> Nicholas L. Farnan, Adam J. Lee, Panos K. Chrysanthis, Ting Yu: <i>Don't Reveal My Intension: Protecting User Privacy Using Declarative Preferences during Distributed Query Processing</i>, ESORICS 2011.  <a href="http://www.springerlink.com/content/03100g7626330212/">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Nick F.</td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">19</td>
+  <td valign="top" width="100">3/15 (Thu)</td>
+  <td valign="top" width="450"> Sabrina De Capitani di Vimercati, Sara Foresti, Sushil Jajodia, Stefano Paraboschi, Pierangela Samarati: <i>Authorization enforcement in distributed query evaluation,</i> JCS 19(4), 2011. <a href="http://spdp.dti.unimi.it/papers/jcs2011-distributed.pdf">[PDF]</a></td>
+  <td align="center" valign="top" width="200"> Nick F.</td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">20</td>
+  <td valign="top" width="100">3/20 (Tues)</td>
+  <td valign="top" width="450"> <font color="red">Student Choice:</font> Raluca Ada Popa, Catherine M. S. Redfield, Nickolai Zeldovich, and Hari Balakrishnan: <i>CryptDB: Protecting Confidentiality with
+Encrypted Query Processing</i>, SOSP 2011. <a href="http://www.mit.edu/~ralucap/CryptDB-sosp11.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Nick T. </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" rowspan="2" width="100" align="center">21</td>
+  <td valign="top" rowspan="2" width="100">3/22 (Thu)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Privacy in Pervasive Sensing</b></td>
+</tr>
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="450"> Raghu K. Ganti, Nam Pham, Yu-En Tsai, and Tarek F. Abdelzaher: <i>PoolView: stream privacy for grassroots participatory sensing</i>, SenSys 2008.  <a href="http://dx.doi.org/10.1145/1460412.1460440">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Thao </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">22</td>
+  <td valign="top" width="100">3/27 (Tues)</td>
+  <td valign="top" width="450">Predrag Klasnja, Sunny Consolvo, Tanzeem Choudhury, Richard Beckwith, Jeffery Hightower: <i>Exploring Privacy Concerns about Personal Sensing</i>, Pervasive 2009.  <a href="http://www.cs.dartmouth.edu/~tanzeem/pubs/Pervasive09_sensor_privacy.pdf">[PDF]</a>  </td>
+  <td align="center" valign="top" width="200"> Bailing </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">23</td>
+  <td valign="top" width="100">3/29 (Thu)</td>
+  <td valign="top" width="450"> Minho Shin, Cory Cornelius, Daniel Peebles, Apu Kapadia, David Kotz, Nikos Triandopoulos: <i>AnonySense: A system for anonymous opportunistic sensing</i>, Pervasive and Mobile Computing 7(1), 2011. <a href="https://www.cs.indiana.edu/~kapadia/papers/anonysense-pmc-preprint.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Rich </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">24</td>
+  <td valign="top" width="100">4/03 (Tues)</td>
+  <td valign="top" width="450">Emiliano De Cristofaro, Claudio Soriente: <i>PEPSI: Privacy-Enhanced Participatory Sensing Infrastructure</i>, WiSec 2011.
+<a href="http://sprout.ics.uci.edu/PEPSI/pepsi-ext.pdf">[Extended PDF]</a><br><br><font color="red"><b>Note:</b></font> Please read the extended version of the paper linked above, <b>not</b> the short paper that appeared in WiSec.</td>
+  <td align="center" valign="top" width="200"> John </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">25</td>
+  <td valign="top" width="100">4/05 (Thu)</td>
+  <td valign="top" width="450"> <font color="red">Student Choice:</font> Chih-Jye Wang and Wei-Shinn Ku: <i>Anonymous Sensory Data Collection Approach for Mobile Participatory Sensing</i>, In Proceedings of the Workshop on Secure Data Management on Smartphones and Mobiles, held in conjunction with ICDE 2012, Washington, D.C., 2012 <a href="http://www.eng.auburn.edu/~weishinn/papers/SDMSM_CR.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Marian </td>
+</tr>
+
+<tr>
+  <td valign="top" rowspan="2" width="100" align="center">26</td>
+  <td valign="top" rowspan="2" width="100">4/10 (Tues)</td>
+  <td valign="top" colspan="2" bgcolor="orange"><b>Access Control</b></td>
+</tr>
+<tr>
+  <td valign="top" width="450"> Deepak Garg, Limin Jia, and Anupam Datta: <i>Policy auditing over incomplete logs: theory, implementation and applications</i>, CCS 2011.  <a href="http://dx.doi.org/10.1145/2046707.2046726">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Bill </td>
+</tr>
+
+<tr bgcolor="#F0F0F0">
+  <td valign="top" width="100" align="center">27</td>
+  <td valign="top" width="100">4/12 (Thu)</td>
+  <td valign="top" width="450"> Piotr Mardziel, Stephen Magill, Michael Hicks, Mudhakar Srivatsa. <i>Dynamic Enforcement of Knowledge-based Security Policies</i>, CSF 2011. <a href="http://www.cs.cmu.edu/~smagill/papers/belief-submission.pdf">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Rich </td>
+</tr>
+
+<tr>
+  <td valign="top" width="100" align="center">28</td>
+  <td valign="top" width="100">4/17 (Tues)</td>
+  <td valign="top" width="450"> <font color="red">Student Choice:</font> Philip W.L. Fong and Ida Siahaan.  <i>Relationship-based access control policies and their policy languages</i>, SACMAT 2011.  <a href="http://dl.acm.org/citation.cfm?id=1998450">[PDF]</a> </td>
+  <td align="center" valign="top" width="200"> Xuelia </td>
+</tr>
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">29</td>
+  <td valign="top" width="100">4/19 (Thu)</td>
+  <td valign="top" width="450"> Final Project Presentations </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+<tr bgcolor="#70DB93">
+  <td valign="top" width="100" align="center">30</td>
+  <td valign="top" width="100">4/24 (Tues)</td>
+  <td valign="top" width="450"> Final Project Presentations </td>
+  <td align="center" valign="top" width="200"> - </td>
+</tr>
+
+</table>
+<br><br>
+
+
+
+<!-- end page -->
+</body></html>

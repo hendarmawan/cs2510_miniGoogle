@@ -1,0 +1,24 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="../2074/labs.css"/>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>DW forms Lab</title>
+</head>
+
+<body>
+<p>Create a 2 page CONSISTENT website for my video rental store. Include:</p>
+<ol>
+  <li>Create in a <em><strong>Dreamweaver Site</strong></em></li>
+  <li>Layout IN TABLES</li>
+  <li>May use template </li>
+  <li>A navigation bar</li>
+  <li>Style sheet for colors</li>
+  <li>Images in images folder</li>
+  <li><font color="red">The second page should be a &quot;join the DVD club&quot; page where users can enter their name &amp; address into a form and the data will be sent via e-mail to smith@hotdvds.com (do this only after you have studied the notes on <a href="../../notes/2084/week11.htm">forms</a>)</font></li>
+  <li>Publish site.</li>
+</ol>
+<p>&nbsp; </p>
+</body>
+</html>

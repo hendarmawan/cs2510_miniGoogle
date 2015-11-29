@@ -1,0 +1,32 @@
+<title>Petri-Net and Augmented-Petri-Net</title>
+<a href="p2.htm"><img src="previous.gif" align=left></a>
+<a href="p4.htm"><img src="next.gif" align=right></a>
+<center><h2>Petri-Net and Augmented-Petri-Net</h2></center>
+<h3>
+<p>
+The execution of a Petri-net is controlled by the position and
+movement of markers (called
+<i>tokens)</i>
+in the Petri-net.  Tokens, indicated by black dots, reside
+in the circles representing the places of a net.  A Petri-net with tokens is called a
+<i>marked Petri-net.</i>
+Tokens are moved by the
+<i>firing</i>
+of the transitions of the net.  A transition must be
+<i>enabled</i>
+in order to fire.  (A transition is enabled when all of its
+input places have a token in them).  The transition fires by
+removing the enabling tokens from their input places
+and generating new tokens which are deposited in the output places of
+the transition.
+<p>
+As an example, in the marked Petri-net of Figure 2, the transition t2
+is enabled since it has a token in its input place (p1).  If t2 fires,
+the marked Petri-net of Figure 3 results.  The firing of transition t2 removes
+the enabling token from place p1 and puts tokens in p2 and p3, the  two
+outputs of t2.
+<p>
+<p>
+<center><img src="petri2.jpg"><br>Figure 2.  A marked Petri net.</center>
+<p>
+</h3>

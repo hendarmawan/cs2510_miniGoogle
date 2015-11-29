@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<meta name="generator" content="hypermail 2.1.8, see http://www.hypermail.org/" />
+<title>cfps.txt: CFP - RTAS'09 - Submission deadline extended to Octobe</title>
+<meta name="Author" content="Thomas Nolte (thomas.nolte@mdh.se)" />
+<meta name="Subject" content="CFP - RTAS'09 - Submission deadline extended to October 20" />
+<meta name="Date" content="2008-10-01" />
+<style type="text/css">
+/*<![CDATA[*/
+/* To be incorporated in the main stylesheet, don't code it in hypermail! */
+body {color: black; background: #ffffff}
+dfn {font-weight: bold;}
+pre { background-color:inherit;}
+.head { border-bottom:1px solid black;}
+.foot { border-top:1px solid black;}
+th {font-style:italic;}
+table { margin-left:2em;}map ul {list-style:none;}
+#mid { font-size:0.9em;}
+#received { float:right;}
+address { font-style:inherit ;}
+/*]]>*/
+.quotelev1 {color : #990099}
+.quotelev2 {color : #ff7700}
+.quotelev3 {color : #007799}
+.quotelev4 {color : #95c500}
+</style>
+</head>
+<body>
+<div class="head">
+<h1>CFP - RTAS'09 - Submission deadline extended to October 20</h1>
+<!-- received="Wed Oct  1 12:22:20 2008" -->
+<!-- isoreceived="20081001162220" -->
+<!-- sent="Wed, 01 Oct 2008 18:11:41 +0200" -->
+<!-- isosent="20081001161141" -->
+<!-- name="Thomas Nolte" -->
+<!-- email="thomas.nolte@mdh.se" -->
+<!-- subject="CFP - RTAS'09 - Submission deadline extended to October 20" -->
+<!-- id="F9AD7C744DA7AB41961D4A7C690477F44CBD15B647@MBXCLUSTER.mdh.local" -->
+<!-- charset="iso-8859-1" -->
+<!-- expires="-1" -->
+<map id="navbar" name="navbar">
+<ul class="links">
+<li>
+<dfn>This message</dfn>:
+[ <a href="#start" name="options1" id="options1" tabindex="1">Message body</a> ]
+ [ <a href="#options2">More options</a> ]
+</li>
+<li>
+<dfn>Related messages</dfn>:
+<!-- unext="start" -->
+[ <a href="0010.html" title="Infos about ECRTS: &quot;[ECRTS-info] CfP: ECRTS 09, Dublin, Irland - 1st EUROMICRO CONFERENCE ON REAL-TIME SYSTEMS,	July 1-3, 2009&quot;">Next message</a> ]
+[ <a href="0008.html" title="Lieven Eeckhout: &quot;ISPASS 2009: abstract due Oct 3&quot;">Previous message</a> ]
+<!-- unextthread="start" -->
+<!-- ureply="end" -->
+</li>
+</ul>
+</map>
+</div>
+<!-- body="start" -->
+<div class="mail">
+<address class="headers">
+<span id="from">
+<dfn>From</dfn>: Thomas Nolte &lt;<a href="mailto:thomas.nolte&#64;mdh.se?Subject=Re:%20CFP%20-%20RTAS'09%20-%20Submission%20deadline%20extended%20to%20October%2020">thomas.nolte@mdh.se</a>&gt;
+</span><br />
+<span id="date"><dfn>Date</dfn>: Wed Oct 01 2008 - 12:11:41 EDT</span><br />
+</address>
+<p>
+[Please accept our apologies if you get multiple copies of this message]
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;---===&gt; Submission deadline extended to October 20 &lt;===---
+<br />
+<p>------------------------------------------------------------------------
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CALL FOR PAPERS - RTAS'09
+<br />
+------------------------------------------------------------------------
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The 15th IEEE Real Time and Embedded Technology and
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Applications Symposium (RTAS'09)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;April 13-16, 2009, San Francisco, USA
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.rtas.org">http://www.rtas.org</a>
+<br />
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Co-located with
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The 8th ACM/IEEE Conference on Information Processing in
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sensor Networks (IPSN'09)
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;and
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;International Conference on Hybrid Systems:
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Computation and Control (HSCC'09)
+<br />
+<p>------------------------------------------------------------------------
+<br />
+&nbsp;Web site: <a href="http://www.rtas.org/">http://www.rtas.org/</a>
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="http://www.cpsweek.org">http://www.cpsweek.org</a>
+<br />
+------------------------------------------------------------------------
+<br />
+<p>RTAS 2009 seeks papers describing significant contributions both to the
+<br />
+state of the art and the state of the practice in the broad field of
+<br />
+embedded and open real-time systems and computing. The scope of RTAS
+<br />
+2009 consists of the traditional core area of real-time and embedded
+<br />
+systems infrastructure and theory, as well as two additional areas of
+<br />
+special emphasis: cyber-physical systems and embedded applications,
+<br />
+benchmarks and tools.
+<br />
+<p>------------------------------------------------------------------------
+<br />
+&nbsp;Core Area. Real-time and Embedded Systems:
+<br />
+------------------------------------------------------------------------
+<br />
+<p>This has a focus on embedded and real-time systems. Papers should
+<br />
+describe significant contributions to infrastructure, system support,
+<br />
+or theoretic foundations for real-time or embedded computing. Topics
+<br />
+include all of those associated with real-time or embedded computing
+<br />
+platforms and techniques, including:
+<br />
+<p>&nbsp;o ad-hoc networks of embedded computers, real-time communications
+<br />
+&nbsp;o real-time resource management and scheduling
+<br />
+&nbsp;o embedded system security
+<br />
+&nbsp;o programming languages and software engineering for real-time or
+<br />
+&nbsp;&nbsp;&nbsp;embedded systems
+<br />
+&nbsp;o distributed real-time information/ databases
+<br />
+&nbsp;o kernels, operating systems and middleware for real-time or
+<br />
+&nbsp;&nbsp;&nbsp;embedded systems
+<br />
+&nbsp;o support for QoS
+<br />
+&nbsp;o energy aware real-time systems
+<br />
+&nbsp;o real-time system modeling and analysis
+<br />
+&nbsp;o formal methods
+<br />
+&nbsp;o control theoretic models and performance feedback control
+<br />
+&nbsp;o hardware / software codesign
+<br />
+&nbsp;o WCET analysis
+<br />
+&nbsp;o compilation for real-time or embedded systems
+<br />
+&nbsp;o novel hardware or system architectures for real-time or
+<br />
+&nbsp;&nbsp;&nbsp;embedded systems
+<br />
+<p>------------------------------------------------------------------------
+<br />
+&nbsp;Area A. Cyber-Physical Systems:
+<br />
+------------------------------------------------------------------------
+<br />
+<p>Cyber-physical systems (CPS) refers to the tight integration of physical
+<br />
+systems with networked sensing, computation, and actuation to realize
+<br />
+systems that exhibit new capabilities with unprecedented dependability,
+<br />
+safety, security, and efficiency. Applications of cyber-physical systems
+<br />
+range from key industry sectors including transportation (automobiles,
+<br />
+smart highways, mass transportation and infrastructure, avionics,
+<br />
+aviation, airspace management), large-scale critical infrastructures
+<br />
+(structures such as buildings and bridges, human environments, the power
+<br />
+grid), defense systems, health care (medical devices and health
+<br />
+management networks), tele-physical operations (e.g., tele-medicine),
+<br />
+and consumer electronics (video games, audio/video processing, and
+<br />
+mobile communication devices). This special track calls for papers that
+<br />
+identify scientific foundations and technologies that integrate cyber-
+<br />
+concepts with the dynamics of physical and engineered systems, with an
+<br />
+emphasis on physical processes that include HW/SW co-design. Papers on
+<br />
+all aspects of cyber-physical systems will be given due consideration.
+<br />
+Areas of interest include, but are not limited to the following:
+<br />
+<p>&nbsp;o integrated design methods for CPS
+<br />
+&nbsp;o HW/SW co-design for CPS
+<br />
+&nbsp;o simulation and emulation of CPS
+<br />
+&nbsp;o integrated tool chains for CPS
+<br />
+&nbsp;o scalable CPS Architectures
+<br />
+&nbsp;o composability of software, hardware and physical components
+<br />
+&nbsp;o analysis of cyber-physical systems with multiple temporal and
+<br />
+&nbsp;&nbsp;&nbsp;spatial scales
+<br />
+&nbsp;o high-confidence and security in CPS
+<br />
+<p>------------------------------------------------------------------------
+<br />
+&nbsp;Area B. Real-Time and Embedded Applications, Benchmarks and Tools:
+<br />
+------------------------------------------------------------------------
+<br />
+<p>The focus of this track is on contributions associated with systems that
+<br />
+are actually deployed in commercial industry, military, or other
+<br />
+production environments, including automotive, avionics,
+<br />
+telecommunications, industrial control, aerospace, consumer electronics,
+<br />
+and sensors. Papers in this area include, but are not limited to
+<br />
+challenges, requirements, model problems, and constraints associated
+<br />
+with various application domains, use of real-time and embedded
+<br />
+technologies in meeting particular system requirements, performance,
+<br />
+scalability, reliability, security, or other assessments of real-time
+<br />
+and embedded technologies for particular application domains, mining of
+<br />
+architectural and design patterns from applications, and technology
+<br />
+transition lessons learned. Papers on efforts to establish a set of
+<br />
+standard real-time benchmarks are specifically sought, composed of or
+<br />
+derived from real applications as well as synthetic benchmarks with
+<br />
+representative algorithms. We also encourage papers addressing issues in
+<br />
+tools for the development of reliable, scalable, and efficient real-time
+<br />
+and embedded systems. Experience papers are also especially encouraged,
+<br />
+which may be less formal than traditional research papers, as well as
+<br />
+proposals for panels to offer a broader view of industrial activity on
+<br />
+a particular subject.
+<br />
+<p>------------------------------------------------------------------------
+<br />
+&nbsp;Important Dates:
+<br />
+------------------------------------------------------------------------
+<br />
+<p>Submissions by Monday 20th October 2008 (1200 GMT)
+<br />
+Decisions by Friday 19th December 2008
+<br />
+<p>------------------------------------------------------------------------
+<br />
+&nbsp;Conference Committee:
+<br />
+------------------------------------------------------------------------
+<br />
+<p>General Chairs:
+<br />
+&nbsp;Chris Gill, Washington University in St. Louis (USA)
+<br />
+&nbsp;Chenyang Lu, Washington University in St. Louis (USA)
+<br />
+<p>Program Chair:
+<br />
+&nbsp;Neil Audsley, University of York, (UK)
+<br />
+<p>Track Chairs:
+<br />
+&nbsp;Raj Rajkumar (Cyber Physical Systems)
+<br />
+&nbsp;Rolf Ernst (Real-Time and Embedded Applications, Benchmarks and Tools)
+<br />
+<p>Finance Chair:
+<br />
+&nbsp;Scott Brandt, University of California, Santa Cruz (USA)
+<br />
+<p>Publicity Chairs:
+<br />
+&nbsp;Zonghua Gu, Hong Kong University of Science and Technology (Hong Kong)
+<br />
+&nbsp;Xue Liu, McGill University (Canada)
+<br />
+&nbsp;Thomas Nolte, Mälardalen University (Sweden)
+<br />
+<p>Ex-Officio:
+<br />
+&nbsp;Sang Son (IEEE TC-RTS Chair), University of Virginia (USA)
+<br />
+<p>------------------------------------------------------------------------
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SUBMISSION GUIDELINES
+<br />
+------------------------------------------------------------------------
+<br />
+<p>All papers must be submitted electronically, in Portable Document
+<br />
+Format (PDF).  Instructions for submission will be available at the
+<br />
+RTAS'09 website: <a href="http://www.rtas.org">http://www.rtas.org</a> Submissions must meet the
+<br />
+following criteria:
+<br />
+<p>&nbsp;&nbsp;- A paper must be original material that has neither been previously
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;published nor is currently under review by another conference or
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;journal, and
+<br />
+&nbsp;&nbsp;- Submitted papers should be no longer than 10 pages in IEEE 10-point,
+<br />
+&nbsp;&nbsp;&nbsp;&nbsp;two-column conference format.
+<br />
+<p>The program committee of each track is independently responsible for
+<br />
+reviewing its papers, and all accepted papers will appear in the
+<br />
+proceedings.
+<br />
+<p>------------------------------------------------------------------------
+<br />
+<p>--- 8&lt; ------------------------ - -  -     -
+<br />
+<p>Thomas Nolte
+<br />
+Researcher, Mälardalen Real-Time Research Centre, Department of Computer Science and Electronics, Mälardalen University, Västerås,
+<br />
+SWEDEN
+<br />
+Phone: +46(0)21 103178
+<br />
+Cell: +46(0)708 657551
+<br />
+Fax: +46(0)21 103110
+<br />
+Mail: thomas.nolte&#64;mdh.se
+<br />
+More info at: <a href="http://www.mrtc.mdh.se/index.phtml?choice=staff&amp;id=0099">http://www.mrtc.mdh.se/index.phtml?choice=staff&amp;id=0099</a>
+<br />
+<span id="received"><dfn>Received on</dfn> Wed Oct  1 12:22:20 2008</span>
+</div>
+<!-- body="end" -->
+<div class="foot">
+<map id="navbarfoot" name="navbarfoot" title="Related messages">
+<ul class="links">
+<li><dfn>This message</dfn>: [ <a href="#start">Message body</a> ]</li>
+<!-- lnext="start" -->
+<li><dfn>Next message</dfn>: <a href="0010.html" title="Next message in the list">Infos about ECRTS: "[ECRTS-info] CfP: ECRTS 09, Dublin, Irland - 1st EUROMICRO CONFERENCE ON REAL-TIME SYSTEMS,	July 1-3, 2009"</a></li>
+<li><dfn>Previous message</dfn>: <a href="0008.html" title="Previous message in the list">Lieven Eeckhout: "ISPASS 2009: abstract due Oct 3"</a></li>
+<!-- lnextthread="start" -->
+<!-- lreply="end" -->
+</ul>
+<ul class="links">
+<li><a name="options2" id="options2"></a><dfn>Contemporary messages sorted</dfn>: [ <a href="date.html#9" title="Contemporary messages by date">By Date</a> ] [ <a href="index.html#9" title="Contemporary discussion threads">By Thread</a> ] [ <a href="subject.html#9" title="Contemporary messages by subject">By Subject</a> ] [ <a href="author.html#9" title="Contemporary messages by author">By Author</a> ] [ <a href="attachment.html" title="Contemporary messages by attachment">By messages with attachments</a> ]</li>
+</ul>
+</map>
+</div>
+<!-- trailer="footer" -->
+<p><small><em>
+This archive was generated by <a href="http://www.hypermail.org/">hypermail 2.1.8</a> 
+: Mon Dec 08 2008 - 11:59:50 EST
+</em></small></p>
+</body>
+</html>

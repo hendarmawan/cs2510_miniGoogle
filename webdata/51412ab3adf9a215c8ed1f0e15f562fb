@@ -1,0 +1,56 @@
+
+<HTML>
+
+<HEAD>
+
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Media Items</TITLE> 
+</HEAD>
+
+<BODY     >
+<center>
+<a href="http://www.cs.pitt.edu/~chang/265/C2/tsld005.htm"><img
+src="../previous.gif" align=left></a>
+<a href="http://www.cs.pitt.edu/~chang/265/C2/tsld007.htm"><img
+src="../next.gif" align=right></a>
+
+<h1>Chapter 2
+<br>Document Model Issues for Hypermedia</h1>
+<p>
+<hr width="80%">
+</center>
+
+ <H1>Media Items</H1> 
+ <P><UL>
+<LI><H2>It is a data object used as part of a presentation
+</H2><ul><LI> Media items can be monomedium (single medium i.e. text or
+sound) or composite (interlieved video and sound)</ul>
+</UL><UL>
+<LI><H2>Media items have data-type dependent properties such as,
+</H2>
+<UL>
+<LI>Most important property is in relation to time and space.
+<UL>
+<LI>text or graphics-spatial, no intrinsic temporal dimension
+<LI>video or animation- spatial and temporal dimensions
+<LI>sound-temporal But no spatial dimension
+</UL></UL></UL><UL>
+<LI><H2> Media items does not have to be a complete file or object
+</H2>
+<UL>
+<LI>it can be reference to part of a physically stored object.<p> For
+example: in case of text the object may be a complete object, where only a
+section is used. In case of sound, a selection from a music item that
+last few seconds. </UL></UL><UL> <LI><H2>Other media items that can be
+included in a presentation are outputs
+from external processes <font color=red>(real time sources)</font> such as,</h2> <ul> a video camera pointing at a
+scene
+outside, or reading from a monitoring device. We can still treat these as
+objects with similar space dimensions, but they have indefinite time
+dimensions. </UL></P>
+<P></P> 
+
+
+
+</Body>
+</HTML>

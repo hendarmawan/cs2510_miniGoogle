@@ -1,0 +1,142 @@
+<H1>The Smart Image System (Patent US5974201 issued Oct 26, 1999)</H1>
+<p>
+A smart image is an image plus the associated knowledge structure.
+It is a unique technology developed jointly by researchers from
+the University of Pittsburgh and Siemens Corporate Research.
+<p>
+Why we need smart images? Because images require knowledge to
+be interpreted correctly.  Image operations are often time-consuming
+and must be explicitly requested in existing systems.  In the
+smart image system, the smart image is capable of performing
+actions by itself.  It can also provide more information to the user.
+The concept is similar to a Smart House.
+<p>
+In what follows, we present an example, using medical image
+information systems as the potential application.  Other
+applications include the intelligent factory, the intelligent
+office, the service engineer's assistant, and active image
+information management.
+<p>
+<p>
+<a href="images/frame01.gif">  Frame #1 </a>  Initial frame for the smart image system, showing
+   the medical information system application example.
+   For this smart image application, the system will allow the
+   doctor to examine the image data for the patients.
+<p>
+<a href="images/frame02.gif">  Frame #2 </a>  First, the user can select the name of the physician.
+<p>
+<a href="images/frame03.gif">  Frame #3 </a>  Then, the user enters the password.
+<p>
+<a href="images/frame04.gif">  Frame #4 </a>  Once the physician is selected,  his name appears
+   in the upperleft area of the smart image frame.
+<p>
+<a href="images/frame05.gif">  Frame #5 </a>  The patients are displayed, for the user to select.
+<p>
+<a href="images/frame06.gif">  Frame #6 </a>  The selected patient is highlighted.
+<p>
+<a href="images/frame07.gif">  Frame #7 </a>  The patient information is displayed in the upperleft
+   area of the smart image frame.
+<p>
+<a href="images/frame08.gif">  Frame #8 </a>  One of the main purposes of the smart image is to predict
+   the user's intention.  When the smart image is capable
+   of predicting some action, such action will be performed
+   as a background process.  The background window is
+   the light green window on the right hand side.  We show
+   this window to illustrate the smart image capability.
+   Normally, this window need not be shown.
+<p>
+<a href="images/frame09.gif">  Frame #9 </a>  The examination window is shown.  Now the physician can
+   select a particular type of examination that is available.
+<p>
+<a href="images/frame10.gif"> Frame #10 </a>  For example, the physician selected the most recent
+    MUGA study.
+<p>
+<a href="images/frame11.gif"> Frame #11 </a>  Since the physician will most likely also examine the
+    previous MUGA studies, in the background process the
+    system prefetches these images from the PACS, as shown
+    by the two iconic images in the background window.
+<p>
+<a href="images/frame12.gif"> Frame #12 </a>  The current image is retrieved first and displayed.
+<p>
+<a href="images/frame13.gif"> Frame #13 </a>  Once a background image prefetching task is complete,
+    that icon disappears.
+<p>
+<a href="images/frame14.gif"> Frame #14 </a>  The background prefetching task is complete for both
+    studies, therefore both icons disappear.
+<p>
+<a href="images/frame15.gif"> Frame #15 </a>  We close the background window.  Now the physician is
+    examining the current MUGA image.  He can define hotspots
+    to be associated with a smart image.  For example, the
+    current MUGA image already has some associated hotspots.
+<p>
+<a href="images/frame16.gif"> Frame #16 </a>  Again, to illustrate the smart image concept, we will
+    bring up the POSTQUEL window, and show a database
+    query to retrieve the information associated with
+    the smart image from the database.
+<p>
+<a href="images/frame17.gif"> Frame #17 </a>  In the database window, three previously created hotspots
+    are shown.  For each hotspot instance, we can show the image
+    it is associated with, the hotspot type (in this case it
+    is type 10), the region of interest ROI (255,255,0,0), and
+    the agent(s) that created these hotspots (in this case,
+    the hotspots were created by the protocol automatically).
+<p>
+<a href="images/frame18.gif"> Frame #18 </a>  The protocol is the user model for a physician to examine
+    the patient.  The different states reflect the different
+    tasks the physician want to perform.  For example, we are
+    currently at the state "identify abnormalities", shown in
+    red.
+<p>
+<a href="images/frame19.gif"> Frame #19 </a>  Now if the physician introduces a new hotspot, it will
+    activate a hotspot rule, leading to the performing of
+    some actions and the change of protocol state.
+<p>
+<a href="images/frame20.gif"> Frame #20 </a>  The protocol state now changes to "time domain study".
+    It is shown in red.
+<p>
+<a href="images/frame21.gif"> Frame #21 </a>  Now if we examine the contents of the database, three new
+    hotspots have been created.  The first one is created for the
+    current image under examination.  Therefore,  its creator is
+    the user.  The other two hotspots are created by the smart
+    image system, by propagating the hotspots to images of the
+    same type in previous studies.  Therefore, the creator is
+    "propagate".   This illustrates the smart image can automatically
+    add knowledge to itself, i.e. the hotspots can be created and
+    propagated to other images.  The hotspots enable the smart image
+    to automatically react to certain events, such as the presence
+    of a tumor in a medical image.
+<p>
+<a href="images/frame22.gif"> Frame #22 </a>  The physician now finishes the study.  He can record his findings
+    in the diagnosis report, and suggests a treatment plan.  The smart
+    image system has the capability to allow the user to add text
+    information (as shown in the next frame), or voice recording,
+    or links to other studies.  So it is also a powerful multimedia
+    or hypermedia system.
+<p>
+<a href="images/frame23.gif"> Frame #23 </a>  The text information on the diagnosis report and recommendation
+    is illustrated. For example, the report may say the following:
+	|NMR images examined. Ischemia (heart wall muscle damage)|
+	|due to a stenosis (full or partial block in a vein).    |
+	|Recommend a cardiac angiogram be performed.             |
+<p>
+<a href="images/frame24.gif"> Frame #24 </a>  We return to the main smart image frame.
+<p>
+<a href="images/frame25.gif"> Frame #25 </a>  Now the physician can send the smart images to other physicians.
+    The purple "Imail Utility" window allows the user to select the
+    receiver's name, and the name of the smart image to be sent.
+<p>
+<a href="images/frame26.gif"> Frame #26 </a>  The smart image is transmitted progressively, so that the important
+    area (such as the region of interest in the hotspot) will be
+    transmitted and displayed in full resolution, and the background
+    area will become clearer and clearer as time goes by.
+<p>
+The above demo has illustrated some of the important characteristics of the
+smart image.  First, it is capable of performing operations by
+itself, such as the prefetching of images.  Second, it is capable
+of adding knowledge by itself, such as the propagation of hot spots.
+Third, it is capable of reacting to an event, such as the triggering
+of a hotspot rule.  Fourth, all kinds of information, including
+text, audio, video, graphics, can be appended to a smart image.
+Finally, the smart image knows how to transmit itself in the
+most efficient and economical manner.  The University of Pittsburgh and
+Siemens team is now exploring new ways of applying the smart images.

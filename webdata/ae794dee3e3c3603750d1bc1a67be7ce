@@ -1,0 +1,19 @@
+Brandon A. Spires (bas76@pitt.edu), for Group 4
+CS1635 Term Project
+Spring 2011
+EXTRA.txt
+
+Project Demo Video URL:
+http://www.youtube.com/watch?v=u_S65XL55pk
+Our Additional Responsibilities:
+The following is a list of the files associated with our reusable component. 
+- SMG6switch.h
+- SMG6switch.java
+- Snakeman.c
+How to Use:
+- The Snakeman.c class was built to launch all other scenarios that utilized the Snakeman comcept.  These scenarios would be able to provide useful data to other scenarios, which would create a seamless transition between scenes.
+- As of right now, the only groups that are supported by this tool are Group 4(my scenario), and Group 6.  Although their actual scenario isn’t integrated into the component, due to a lack of time, the functionality that they require is available.
+o The Group 6 scenario would have to call the function within SMG6switch.java, which would interface with Snakeman.c in order to store a specific value, which would in turn allow other components to see whether or not Group 6’s “password” was given.
+Other Contributions:
+	I was also a part of the team who worked to get a build of Group 3’s component running on windows.  Since Group 3 built everything within a Linux environment, it was a daunting task.
+

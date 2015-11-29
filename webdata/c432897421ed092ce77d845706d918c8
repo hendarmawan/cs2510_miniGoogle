@@ -1,0 +1,31 @@
+<title>Multimedia Software Engineering</title>
+<a href="SHIDesc.html">  
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+</A> 
+<a href="IC2.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+</head>
+<h1 align="center"> 
+<br><font color="#FF0000">Phase I: Requirements Specification</font></h1> 
+
+
+<blockquote>  <blockquote>
+<p align="left"> 
+The<font color="#0000FF"> first phase</font> of the project is to<font color="#0000FF">specify the requirements</font>.&nbsp; These requirements will be specified in terms of <font color="#0000FF">IC Cards.</font>&nbsp; The following are a set of various IC cards that will serve as the<font color="#0000FF">initial requirements </font>developed from the project description mentioned earlier</p> 
+
+
+<p align="left"> 
+The following IC Cards involve the <font color="#0000FF">login</font> procedure.&nbsp; If the user cannot successfully login, then the user may <font color="#0000FF">register</font> to create a new account:</p> 
+
+
+  </blockquote></blockquote>
+
+
+<body>
+
+
+<p align="center"><img border="0" src="pic2.jpg" width="366" height="192"><img border="0" src="pic1.jpg" width="362" height="186"><img border="0" src="pic4.jpg" width="363" height="186"><img border="0" src="pic9.jpg" width="367" height="191"></p>
+
+
+</body>
+
+</html>

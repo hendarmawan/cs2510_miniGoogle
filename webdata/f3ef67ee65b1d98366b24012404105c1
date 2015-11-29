@@ -1,0 +1,114 @@
+<title>CS1631 Software Design Methodology</title>
+<center>
+<h1>CS1631 Software Design Methodology</h1>
+<p>
+
+</center>
+
+<b>Instructor:</b> <a href="http://www.cs.pitt.edu/~chang"> Prof. S. K. Chang</a><br>
+<b>Office:</b> 6101 Sennott Building<br>
+<b>Office Hours:</b>  4pm to 6pm TuTh<br>
+<b>Telephone:</b> 624-8423<br>
+<b>E-mail:</b> chang@cs.pitt.edu<br>
+<br><br>
+<b>Grader:</b> Steve XiaoYu Ge<br>
+<b>Office:</b> 6508 Sennott Square<br>
+<b>Office Hours:</b> MonWed 3:30pm to 5pm <br>
+<b>Telephone:</b> 412-624-8836<br>
+<b>E-mail:</b> xig34@pitt.edu<br>
+<br>
+<b>Time and Classroom:</b> TuTh 6pm to 7:15pm SQ6110
+<br><br>
+<b>Course Description:</b>
+This course is one of the courses in the <a href="../SEtrack.htm"> software engineering track</a>.
+This course is intended to apply the object-oriented
+approach and especially component-based software engineering (CBSE)
+to the design of practical software systems.
+Students will learn the fundamentals of <a h ref="howmany.html">component-based software engineering</a>
+and participate in a group project on software design.
+The midterm and final cover the principles of software design methodology
+with emphasis on component-based software engineering rather than the traditional
+structural approach.
+<!--
+<br><br>
+<b><a href="club.html">Discussion Group and Bulletin Service</a></b>
+-->
+<br><br>
+<b>Recommended References:</b> 
+<i>Component Based Software Engineering: Putting the Pieces Together</i>
+by George T. Heineman and William T. Councill, 
+Addison-Wesley Pub Co; 1st edition, June 8, 2001,
+ISBN: 0201704854.
+(Hardcover 818 pages,
+List Price: $54.99,
+36 used & new from $15.19)
+<p>
+<i>Visual Modeling with Rational Rose 2002 and UML</i> (3rd Edition)
+by Terry Quatrani,
+Addison-Wesley Pub Co, 3rd edition, October 9, 2002,
+ISBN: 0201729326.
+(Paperback 288 pages, List Price: $39.99
+15 used & new from $20.00)
+<br><br>
+<b>Classnotes:</b> Classnotes will be available at
+<a href="http://www.cs.pitt.edu/~chang/163/1631topic.html">
+http://www.cs.pitt.edu/~chang/163/1631topic.html</a>.
+<br><br>
+<b>Tools:</b>
+You will need to download the following tools.
+(1) ArgoUML is Open Source Software, whose official website is:
+<a href="http://argouml.tigris.org/">
+http://argouml.tigris.org/</a>.
+(2) Virtual Classroom can be found at:
+<a href="http://www.cs.pitt.edu/~chang/cvc/Download/zipfile/vcstu40.zip">
+http://www.cs.pitt.edu/~chang/cvc/Download/zipfile/vcstu40.zip</a>.
+When you unzip this zip file, it contains the following
+two files: StudentTool.exe and config_student.ini.
+You can run StudentTool.exe, and enter the login
+information of first name, last name and password,
+which must match exactly the first name, last name and
+password (c????) in your grade vector.
+
+The first four pages of <a href="http://www.cs.pitt.edu/~chang/dlearn/v02.htm">"How VC Tool works"</a> explains how the VC Student Tool works.
+<br><br>
+<b>Grading:</b> Grades are based upon exercises (20%), project (40%), midterm (20%) and final exam (20%). Please read the <a href="../153/policy.html">grading policy</a>.
+<br><br>
+<b>Pre-requisite:</b> <a href="../153/1530syl.html">CS1530 Software Engineering</a> or consent of the instructor.
+
+<!--
+<font color=red>
+<b>Special Feature of this Course:</b>
+Leading experts from the software industry will
+give guest lectures in this course, brining
+their experiences and insights to share with
+students!  These timely and high relevant
+topics are marked in red.</font>
+-->
+
+<br><br>
+<b>Projects:</b> Projects will apply principles of
+component-based software engineering to design the components for personal healthcare system, or a mobile phone voting system.
+Following the principles of
+<a href="http://www.cs.pitt.edu/~chang/231/1life/Extreme/01intro.html">Extreme Software Engineering</a>
+students will work in pairs on projects.
+
+
+<p><b>On-line interactions:</b>
+In addition to classroom lectures, this course will emphasize
+on-line interactions.  In fact, the instructor hopes to offer
+this course (and other courses) by distance learning in the
+future.  Therefore, on-line interactions will be an important,
+necessary component of this course.  The course materials,
+announcements and exercises will all  be available from the
+Internet.  Impromptu meetings and schedule changes will be
+announced by e-mail.  
+
+
+<br><br>
+<b>Note:</b>
+If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412) 648-7890/(412)
+383-7355 (TTY), as early as possible in the term. DRS will verify your
+disability
+and determine reasonable accommodations for this course.  

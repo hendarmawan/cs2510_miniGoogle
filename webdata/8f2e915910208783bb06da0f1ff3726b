@@ -1,0 +1,55 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page7.html"><img src="previous.gif" align=left></a>
+<a href="page9.html"><img src="next.gif" align=right></a>
+<center>
+   <br><br>
+   <h1>Actions</h1>
+   <br>
+</center>
+<font size=4>
+<ul>
+   <li>Actions provide information for the translation of a JSP page.</li>
+   <li>There are two attributes that are common to all Actions:</li>
+   <ul>
+      <li>ID Attribute</li>
+      <ul>
+         <li>Uniquely identifies the Action element.</li>
+         <li>Allows the Action to be referenced inside the JSP page.</li>
+      </ul>
+      <li>Scope Attribute</li>
+   </ul>
+   <li>Actions can be partitioned into two types of categories:</li>
+   <ul>
+      <li>JavaBean Actions</li>
+      <ul>
+         <li>Interacts with server side JavaBeans within a given JSP
+             page.</li>
+         <li>Three types:</li>
+         <ul>
+            <li>useBean</li>
+            <li>getProperty</li>
+            <li>setProperty</li>
+         </ul>
+      </ul>
+      <li>Resource Actions</li>
+      <ul>
+         <li>Specifies external resources that are to be used within a JSP
+             page.</li>
+         <li>Three types:</li>
+         <ul>
+            <li>include</li>
+            <li>forward</li>
+            <li>plugin</li>
+         </ul>
+   </ul>   
+</ul>
+<br><br>
+<p>Syntax for a general action:</p>
+<font color="red">
+   <p>&ltjsp:action_name id="id_name" scope="lifetime" /></p>
+</font>
+</font>
+</html>

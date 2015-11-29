@@ -1,0 +1,1317 @@
+<html><head><title>
+Chapter 1  Iconic Visual Languages
+</title></head><body>
+<ts>
+<p><h1><a name="SH-1" href="sk1.html#toc-SH-1"></a></h1>
+<h1>Chapter 1       Iconic Visual Languages</h1>
+<ul>Table of Contents<br>
+<ts1><a href="#introduction">Introduction</a></ts1><br>
+<ts2><a href="#generalized icons">1. Generalized Icons</a></ts2><br>
+<ts3><a href="#examples of iconic systems">2. Examples of Iconic Systems</a></ts3><br>
+<ts4><a href="#formal specification">3. Formal Specification of Iconic Systems</a></ts4><br>
+<ts5><a href="#iconic operators">4. Iconic Operators</a></ts5><br>
+<ts6><a href="#syntactic analysis">5. Syntactic Analysis of Iconic Sentence</a></ts6><br>
+<ts7><a href="#semantic analysis">6. Semantic Analysis of Iconic Sentence</a></ts7><br>
+<ts8><a href="#user interface">7. Specification of User Interfaces as Iconic Systems</a></ts8><br>
+<ts9><a href="#determination">8. Determination of Icon Purity</a></ts9><br>
+<ts91><a href="#example 4"> An example of icon purity</a></ts91><br>
+<ts92><a href="#theorem of icon purity"> A theorem on icon purity</a></ts92><br>
+<tsa><a href="#fuzzy">9. Fuzzy Iconic Systems</a></tsa><br>
+</ul>
+
+<ts1><a name="introduction">
+<xs>
+<p>The term "visual language" means different things to different people.
+To some, it means the objects handled by the language are visual.
+To others, it means the language itself is visual.
+To the first group of people, "visual language" means "language for
+processing visual information", or "visual information processing language".
+To the second group of people, "visual language" means "language for
+programming with visual expression", or "visual programming language".
+<p>In visual information processing languages, the objects to be
+dealt with usually have an inherent visual representation.  They are
+images or pictorial objects which are then associated with certain logical interpretation.
+On the other hand, the languages themselves may not have a visual representation.
+These languages are usually based upon traditional "linear" languages,
+enhanced by library subroutines or software packages to deal with visual objects.
+Application domains of visual information processing languages include
+image processing, computer vision, robotics,
+image database management, office automation and image communications.
+<p>In visual programming languages, the objects to be dealt with
+usually do not have an inherent visual representation.  
+They include traditional data types such as arrays, stacks, queues, 
+and application-oriented data types such as forms, documents, databases, etc.
+To achieve a user-friendly man-machine interface, we would
+like to present these objects visually.
+For the same reason, the languages themselves also should be presented visually.
+In other words, both programming constructs and rules to combine these programming
+constructs should be visually presented.
+Application domains of visual programming languages include
+computer graphics, user interface design, database interface, form management, and computer aided design.
+<p>The above two types of visual languages do not exhaust all the
+possibilities.  The objects to be dealt with by a visual language can
+be inherently visual, or inherently nonvisual but with imposed visual representation.
+The programming language constructs can be visual or linear.
+Therefore, there are 
+many different types of visual languages.
+A unifying concept for these visual languages, is that they all deal
+with different aspects of
+<i>generalized icons.</i>
+Generalized icons consist of object icons and process icons.  An
+<i>object icon</i>
+is a dual representation of an object, written as (Xm,Xi), with a
+logical part Xm (the meaning), and a physical part Xi (the image).
+In visual programming languages, we are dealing with
+objects with logical meaning, but no visual image. 
+The objects are then assigned a visual representation, so that it can be visualized.
+In visual information processing languages, we are dealing with
+objects with visual image, but the logical meaning must be assigned.
+<p>The objects handled by a visual language can thus be considered as
+object icons
+or icons with a logical part and a physical part representing an object.
+Similarly, the programming language constructs in a visual language can be considered as
+<i>process icons</i>
+or icons with a logical part and a physical part representing a computation process.
+The distinction between an object icon and a process icon depends both upon
+context and interpretation.  
+For example,
+the road sign of a diagonal line inside a circle
+can be interpreted as a "stop-sign" by a computer vision system.
+It is an object icon under this latter interpretation.
+On the other hand, it could also be interpreted as a "halt" command
+by a mobile robot.  It is a process icon (or action icon) under this interpretation.
+The concept of
+<i>generalized icon</i>
+encompasses both object icons and process icons (or action icons).
+We can then study the syntax and semantics of visual languages for both isolated icon and a spatial arrangement of icons.
+</xs>
+</ts1>
+<p>
+<ts2><a name="generalized icons">
+<b>1. Generalized Icons</b>
+<p>The concept of generalized icons, including object icons and process icons,
+leads to a general approach for designing visual languages.
+First we ask the question: how can we represent visual objects logically, and conversely,
+how can we represent logical objects visually?  This consideration
+leads to the concept of object icons.
+Then we ask the question: how can we represent programming constructs visually and
+specify algorithms in a visual language?
+This consideration leads to the concept of process icons (or action icons).
+<p>Before we proceed further, let us define what we mean by an icon.
+The dictionary defines an icon to be "an image; figure; representation; picture" [WEBSTER83].
+Icon communication concerns the use of images to convey ideas
+or actions (commands) in a non-verbal manner.  Lodding gives a
+taxonomy of icons, providing a classification by their design or their function [LODDING82].
+By his taxonomy, there are three types of icons distinguished by their design and function:
+<p>
+<pre>
+	Design			Function
+	-----				-----
+	representational		picture
+	abstract			symbol
+	arbitrary			sign
+<p>
+</pre>
+<p>An icon image is chosen to relate to the idea or
+action either by resemblance (picture), or by analogy (symbol),
+or by being selected from a previously defined
+and learned group of arbitrarily designed images (sign).
+To assure the correct interpretation of an icon image,
+there are three requirements:
+<p>
+<pre>
+	. the right image,
+	. the right caption,
+	. the right context.
+</pre>
+<p>Iconic languages have their problems and drawbacks.  As pointed out by Lodding, some icons are inherently ambiguous, some can
+only be interpreted within a certain context.
+As pointed out by Korfhage [KORFHAGE86], since there is no commonly accepted universal set of icons, icons
+may evolve in time.
+Therefore, the design process of icons must be well thought out.
+Lodding suggests the design process of icons be divided into three
+distinct steps or phases: a) choosing the representation,
+b) rendering the design, and c) testing the resulting icon.
+<p>As mentioned above, visual languages can be designed based upon the concept of
+<i>generalized icons,</i>
+which are dual representations of objects consisting of a logical part
+and a physical part.  Generalized icons can be further classified into
+<i>object icons</i>
+and
+<i>process icons</i>.
+The main concepts concerning generalized icons are defined below.
+<p>An
+<i>iconic system</i>
+is a structured set of related icons.  A complex
+icon can be composed from other icons in the iconic system,
+and therefore express a more complex visual concept.  An
+<i>iconic sentence</i>
+(called visual sentence by Lakin, iconic sentence or action sentence by Tanimoto [TANIMOTO86], and iconic statement by Korfhage)
+is a spatial arrangement of icons from an iconic system.  A
+<i>visual language</i>
+is a set of iconic sentences constructed with given syntax and semantics.  
+<i>Syntactic analysis of visual language</i>
+(spatial parsing)
+is the analysis of the spatial arrangement of icons (i.e. an iconic sentence)
+to determine the underlying syntactic structure.  Finally,
+<i>semantic analysis of visual language</i>
+(spatial interpretation)
+is the interpretation of an iconic sentence to determine its underlying meaning.
+</ts2>
+<p>
+<ts3><a name="examples of iconic systems">
+<b>2. Examples of Iconic Systems</b>
+<p>Two examples of iconic systems will now be presented.
+The first example illustrates a visaul database query language.
+The database contains information on airline flights -
+flight number, airline, pilot's name, copilot's name, departure
+time, arrival time, current position of aircraft, current speed of
+aircraft, etc.
+The query icons are illustrated in Figure 1.1.
+Each icon has an image, which is the physical part of the icon.
+Each icon also has a name and two additional attributes, constituting
+the logical part of the icon.
+These icons form an iconic system.  They are stored in an icon dictionary.
+<p>
+<is>
+<center><img src="sk1fig/fig11.jpg" width=300></center>
+</is>
+<center>Figure 1.1   Icons for a visual database query language.</center><br>
+To specify a visual query, the user can select some of these
+query icons and place them in a certain spatial arrangement.
+The vertical combination of icons denotes logical conjunction,
+and horizontal combination denotes logical disjunction.
+By filling in an actual value, an asterisk or a question mark,
+the user can create an icon instance to indicate a specific condition,
+a "don't-care" condition, or a retrieval target.
+Four sample iconic sentences (or visual sentences)
+from this iconic system are illustrated in Figure 1.2, each
+denoting a query.
+For example, the first visual sentence corresponds to the
+query: "Who are the Crew on Delta 463?"
+Translated into SQL, the equivalent query is:
+<p>
+<is>
+<center><img src="sk1fig/fig12.jpg" width=600></center>
+</is>
+<center>Figure 1.2   Sample visual queries.</center><br>
+<pre>
+SELECT Pilot,CoPilot FROM PlanArr
+WHERE Airline = 'Delta' AND FlightNo = 463;
+</pre>
+<p>This example illustrates how iconic sentences can be constructed
+using iconic operators, which
+denote either logical conjunction (vertical combination of icons) or
+logical disjunction (horizontal combination of icons).
+In Section 1.4, such iconic operators will be defined formally.
+It should also be noted that a query icon can become either
+an object icon (when its attributes are specified) or
+a process icon (when its attributes are given question marks),
+depending upon the actual query instance.
+<p>The second example illustrates the construction of an iconic system for a pictorial database.
+Figure 1.3 shows an actual SEASAT picture.
+By applying picture processing and pattern recognition algorithms,
+certain shiplike objects in this picture can be reduced to object icons.
+Some more complex objects, such as the shorearea, can be reduced to complex icons.
+The picture now becomes a picture consisting
+in part of the real picture, in part of object icons.
+These icons are related hierarchically to constitute a tree structure.
+<p>
+<is>
+<center><img src="sk1fig/fig13.jpg" width=400></center>
+</is>
+<center>Figure 1.3   Iconic system of a pictorial database.</center><br>
+This example shows that by constructing complex icons,
+we can create a pictorial database.
+The resulting hierarchical structure also enables the
+user to navigate in the pictorial database using zooming techniques.
+<p>
+<p>
+
+</ts3>
+<p>
+<ts4><a name="formal specification">
+<b>3. Formal Specification of Iconic Systems</b>
+<p>We now present a formal specification of iconic systems using generalized icons.  A
+<i>generalized icon</i>
+is a dual representation of an object, written as (Xm,Xi), with a
+logical part Xm (the meaning), and a physical part Xi (the image).
+A formal
+<i>iconic system</i>
+is a quintuple: G (VL, VP, S, xo, R) where
+<p>
+<pre>
+VL  is a set of logical objects
+<p>
+VP  is a set of physical objects
+<p>
+S   is a finite, nonempty set of icon names
+<p>
+xo  is an element in S, denoting the head icon name
+<p>
+R   is a mapping from S into <img src="sk1fig/sk1-eqn.001.gif"> &#215; VP, denoting icon rules
+<p>
+</pre>
+<br>
+<p>
+     The icon rules R specify icons as the dual representation by
+a set of logical objects and a physical object.  Several
+examples will be presented below.
+<p>
+<i>     Example 1:</i>
+For the image database shown in Figure 1.3,
+the formal iconic system is
+G1 ( {c1,c2}, {po,p1,p2,p3,p4}, {xo,x1,x2,x3,x4}, xo, R1),
+where the icon rules R1 are:
+<p>
+<pre>
+<br>
+r1:	xo ::= ({x1,x2}, po)
+r2:	x1 ::= ({x3,x4}, p1)
+r3:	x2 ::= (  { }  , p2)
+r4:	x3 ::= (  {c1} , p3)
+r5:	x4 ::= (  {c2} , p4)
+<p>
+</pre>
+<br>
+<p>
+     In the above, rule r1 specifies an icon xo with the
+logical part {x1,x2} and the physical part po.
+Both x1 and x2 are icon names in S.  Therefore, rule r1 says x1 and x2
+are subicons of the icon xo.
+Rule r2 is similar to rule r1.
+Rule r3 specifies an icon x2, whose logical part is the null object,
+and physical part is p2.
+In other words, x2 is really a "pure image".
+Rule r4 specifies an icon x4, whose logical part is {c1} and physical
+part is p3.  The object c1 is an element of VL, and is used as a
+"label" for the physical image p3.
+<p>
+     The iconic system can be seen to be a special type of picture grammar [FU74].
+The icon grammar rules can also be expressed as commands
+in an iconic language (see [CHANG85] for a proposed language IPL).  We give the following examples to
+illustrate elements of an interactive iconic language.
+In what follows, a command line is indicated by a colon.
+The system response, if any, follows the command line.
+<p>
+<pre>
+<br>
+: X = ICON( Xm, Xi)	create an icon X with logical
+				part Xm and physical part Xi
+<p>
+: X			display contents of icon X
+  ( Xm, Xi )
+<p>
+: VL(X)			display logical part of X
+  Xm
+<p>
+: VP(X)			display physical part of X
+  Xi
+<p>
+: MAT(Xm)		materialization of logical part Xm
+  Xi				as physical part Xi
+<p>
+: DMA(Xi)		dematerialization of physical part Xi
+  Xm				as logical part Xm
+<p>
+<br>
+
+</pre>
+     The above iconic language can be implemented using icons
+in a direct manipulation interface [SHNEID86].
+The materialization operator MAT and dematerialization
+operation DMA will be discussed in the following section.
+The commands to create the five icons of Example 1 are:
+<pre>
+<p>
+<br>
+x4 = ICON(   {c2} , p4)
+x3 = ICON(   {c1} , p3)
+x2 = ICON(   { }  , p2)
+x1 = ICON( {x3,x4}, p1)
+xo = ICON( {x1,x2}, po)
+<p>
+<br>
+
+</pre>
+<p>
+<i>     Example 2:</i>
+Suppose we have a book organized as chapters containing sections,
+as illustrated in Figure 1.4.  
+<p>
+<is>
+<center><img src="sk1fig/fig14.jpg" width=300></center>
+</is>
+<center>Figure 1.4.    Iconic system of a book.</center><br>
+
+<p>
+     The formal iconic system is
+G2 ( {COM}, {e,p2,p3,p4}, {xo,x1,x2,x3,x4}, xo, R2), where the
+icon rules R2 are:
+<p>
+<pre>
+<br>
+r1:	xo ::= ({COM,x1,x2}, e)
+r2:	x1 ::= ({COM,x3,x4}, e)
+r3:	x2 ::= (  { }  ,p2)
+r4:	x3 ::= (  { }  ,p3)
+r5:	x4 ::= (  { }  ,p4)
+<p>
+<br>
+
+</pre>
+     The symbol "e" denotes an "empty picture".  Therefore,
+rule r1 specifies an icon xo with subicons x1, x2 and no physical image.
+The logical part of icon xo is {COM, x1, x2}, where COM is in VL,
+and x1, x2 are in S.  The symbol "COM" is an
+<i>iconic operator</i>
+which operates on the subicons x1 and x2 to create a new icon.
+The inclusion of operators as logical objects gives greater
+flexibility and notational convenience in the specification of the logical part of an icon.
+The location attributes of the subicons x1 and x2 will determine
+the order in applying the iconic operator COM.
+<p>
+     The command VL(xo) will display the logical part of icon xo,
+and the system will respond by evaluating and displaying
+COMm({x1,x2}).
+The iconic operator COM has two parts: COMm for the logical operator,
+and COMi for the physical operator (see the following section).
+In this example, the COMm operator is applied to the icon set {x1,x2} to yield {x1, x2}.
+Therefore, VL(xo) is equivalent to listing the content of "directory" xo.
+On the other hand, the command VP(xo) will generate a blank picture, because
+the physical part of xo is "e".
+<p>
+     The command VP(x2) will display the physical part of icon x2,
+and the system will respond by displaying p2, the content of "file" x2.  On the
+other hand, the command VL(x2) will generate no output, because
+x2 does not have a logical part.
+<p>
+     From these examples, it can be seen that an icon
+can be a pure physical picture ({}, PICTURE), a pure logical label ({LABEL},e), a complex icon
+constructed from subicons ({OP, x1,...,xn}, PICTURE),
+or a complex icon related to subicons with unspecified
+method of construction ({x1,...,xn}, PICTURE).
+Therefore, an icon
+can be one of the following types:
+<p><DL><dt><b>elementary icon:</b><dd>
+if <img src="sk1fig/sk1-eqn.1.gif"> is empty.  In other words,
+<img src="sk1fig/sk1-eqn.2.gif"> is subset of VL, so that <img src="sk1fig/sk1-eqn.3.gif"> is of the form
+( {labels}, image ).  The labels could denote names of objects,
+procedures (including user-defined procedures, system function calls, etc.), or operators,  so that the elementary icon
+can be an object icon, a process icon, or an operator icon.
+<dt> <dd>There are special elementary icons.  An
+<i>image icon</i>
+is one where <img src="sk1fig/sk1-eqn.4.gif"> is empty, so <img src="sk1fig/sk1-eqn.5.gif"> is of the form
+( { }, image ).  A
+<i>label icon</i>
+is one where the physical
+part is null, so <img src="sk1fig/sk1-eqn.6.gif"> is of the form ({labels}, e).
+Finally, a null icon is of the form ({ }, e).
+<dt><b>complex icon:</b><dd>
+if <img src="sk1fig/sk1-eqn.7.gif"> is not empty.  A complex icon
+points to other icons and defines icon relations.
+We can further distinguish the following types:
+<dt> <dd>
+<b>composite icon:</b>
+if <img src="sk1fig/sk1-eqn.8.gif"> is not empty.  The icon
+x is of the form ({OP,<img src="sk1fig/sk1-eqn.9.gif">}, image),
+where <img src="sk1fig/sk1-eqn.10.gif"> are subicons or logical objects,
+and "OP" is an
+<i>iconic operator</i>
+which operates on the subicons <img src="sk1fig/sk1-eqn.11.gif"> to create a new icon.
+The inclusion of iconic operators as logical objects gives greater
+flexibility and notational convenience in the specification of the logical part of a composite icon.
+The location attributes of the subicons will determine
+the order in applying the iconic operator.
+<dt> <dd>
+<b>structural icon:</b>
+if <img src="sk1fig/sk1-eqn.12.gif"> is empty.  The icon
+<img src="sk1fig/sk1-eqn.13.gif"> is of the form ({<img src="sk1fig/sk1-eqn.14.gif">}, image).  In other
+words, <img src="sk1fig/sk1-eqn.15.gif"> is related to <img src="sk1fig/sk1-eqn.16.gif">, but the
+mechanism for composing <img src="sk1fig/sk1-eqn.17.gif"> from <img src="sk1fig/sk1-eqn.18.gif"> is
+unspecified.
+</dl>
+<p>Given an icon system G, we can classify all icons as being either
+<i>elementary, composite</i>
+or
+<i>structural.</i>
+In the above, we described the formal
+specification of an iconic system, where complex icons can be defined in terms of elementary icons.
+For complex icons,
+we need to investigate how
+to construct an icon with
+a physical part (the image) and a
+logical part (the meaning) from subicons by applying iconic operators. 
+</ts4>
+<ts5><a name="iconic operators">
+<p><b>4. Iconic Operators</b>
+<p>Iconic operators operate on generalized icons, and change
+either the logical part (the meaning) or the physical part (the image)
+of an icon, or both.  The concept of duality is essential:
+<i>iconic operators operate on the dual representations of icons.</i>
+In other words, the iconic operator operates simultaneously on logical 
+and physical parts of an icon.  An essential characteristic of the icon is that
+<i>the logical part and the physical part are mutually dependent.</i>
+Therefore, as the image of an icon is changed,
+so will be its meaning, and vice versa.
+<p>An iconic operator OP has two parts: OPm for the logical operator,
+and OPi for the physical operator.  We write:
+<p>
+     OP = (OPm, OPi)
+<p>
+A binary iconic operator OP has two arguments, X and Y:
+<p>
+     OP(X,Y) = (OPm(X,Y), OPi(X,Y))
+<p>
+When there is no mutual dependency, 
+i.e., OPm does not depend on Xi or Yi, and OPi does not 
+depend on Xm or Ym, we can write
+<p>
+     OP(X,Y) = (OPm(Xm,Ym), OPi(Xi,Yi))
+<p>
+A unary iconic operator OP has only one argument X:
+<p>
+     OP(X) = (OPm(X), OPi(X))
+<p>
+Again, when there is no mutual dependency, we can write
+<p>
+     OP(X) = (OPm(Xm), OPi(Xi))
+<p>
+<p>Let WL denote <img src="sk1fig/sk1-eqn.001.gif">.  The
+<i>materialization operator</i>
+MAT is a mapping from WL to 2<sup>VP</sup>, and the
+<i>dematerialization operator</i>
+DMA is a mapping from VP to 2<sup>WL</sup>.
+A
+<i>pure icon</i>
+is an icon X = (Xm, Xi), where
+{Xm} = DMA(Xi) and {Xi} = MAT(Xm).
+<p>
+     For pure icons only, the logical part can be completedly recovered from
+the physical part, and vice versa.
+This is possible, only when MAT(Xm) and DMA(Xi) are both singletons.
+In general, MAT(Xm) may yield a set of icon images.
+For example, MAT("Mona-Lisa") may be the original drawing
+of Mona-Lisa, or a sketch of Mona-Lisa.  DMA(Xi) may also
+yield a set of meanings.
+Such impure icons may cause problems if used for person-machine communication.
+The iconic operators introduced in this section may decrease the purity of icons.
+In Section 8, we will give purity-preserving conditions for iconic operators.
+<p>A
+<i>physical iconic operator</i>
+operates only on the physical part of
+an icon, i.e.,
+<p>
+     OP(X,Y) = (DMA(OPi(Xi,Yi)), OPi(Xi,Yi))
+<p>
+where X and Y are pure icons.
+<p>A
+<i>logical iconic operator</i>
+operates only on the logical part of an icon, i.e.,
+<p>
+     OP(X,Y) = (OPm(Xm,Ym), MAT(OPm(Xm,Ym))
+<p>
+where X and Y are pure icons.
+<p>
+     The usual image processing operations can be regarded as
+physical iconic operators.  Similarly, the usual logical operations
+on objects in a knowledge base can be regarded as logical iconic operators.
+We now investigate those generic operators which may affect both the
+meaning and the image of an icon.
+In what follows, we will use ({Xm},Xi) and (Xm,Xi) interchangeably.
+<p>
+<pre>
+(1) Combination COM:
+<p>
+COM((Am,Ai), (Bm,Bi))
+= (COMm(Am,Bm), COMi(Ai,Bi))
+= (CONCEPT-MERGE(Am,Bm), SUPERPOSE(Ai,Bi))
+<p>
+</pre>
+<i>Explanation:</i>
+The images Ai and Bi are combined by superposition.  At the same time, the
+conceptual merge of the meanings Am and Am becomes the meaning
+of the resultant new icon.
+As an example, COM(\h'0.2i', \h'0.2i') = COM( (do-not,\h'0.2i'), (road,\h'0.2i'))
+= (CONCEPT-MERGE(do-not,road), COMBINE(\h'0.2i',\h'0.2i'))
+= (no-entry,\h'0.2i').
+<pre>
+<p>
+(2) Vertical Combination VER:
+<p>
+VER((Am,Ai), (Bm,Bi))
+= (VERm(Am,Bm), VERi(Ai,Bi))
+= (CONCEPT-MERGE(Am,Bm), VER-COMBINE(Ai,Bi))
+<p>
+</pre>
+<i>Explanation:</i>
+The images Ai and Bi are combined vertically.
+At the same time, the conceptual merge of the meanings Am and Bm
+becomes the meaning of the resultant new icon.
+As an example,
+the queries shown in Figure 1.2 are vertical combinations of
+query icons, and the vertical combination denotes conjunction
+of logical expressions.
+<pre>
+<p>
+(3) Horizontal Combination HOR:
+<p>
+HOR((Am,Ai), (Bm,Bi))
+= (HORm(Am,Bm), VERi(Ai,Bi))
+= (CONCEPT-MERGE(Am,Bm), HOR-COMBINE(Ai,Bi))
+<p>
+</pre>
+<i>Explanation:</i>
+The images Ai and Bi are combined horizontally.
+At the same time, the conceptual merge of the meanings Am and Bm
+becomes the meaning of the resultant new icon.
+As an example,
+the horizontal combination of "character" icons in the Heidelberg
+Text Editor Icon Set (see Appendix 1) denotes a "string" icon.
+<p>
+<pre>
+(4) Contextual Interpretation CON:
+<p>
+CON((Am,Ai), (Bm,Bi))
+= (CONm(Am,Ai,Bm,Bi), CONi(Ai,Bi))
+= (CONTEXT(Am,Ai,Bm,Bi), Ai)
+<p>
+</pre>
+<i>Explanation:</i>
+Contextual interpretation is achieved, by considering icon A in
+the context of icon B.  The two icons A and B occur together.  The new meaning depends upon both A and B.
+In the new icon, the image remains to be the image of Ai.
+Contextual interpretation can obviously incorporate a lot of additional
+attributes to enhance an icon.  
+Contextual interpretation is most useful in interpreting time-varying
+iconic sentences, such as video game snapshots.
+<pre>
+<p>
+(5) Indexing IDX:
+<p>
+IDX(Am,Ai)
+= (IDXm(Am), IDXi(Ai))
+= (CONCEPT-REDUC(Am), IMAGE-REDUC(Ai))
+<p>
+</pre>
+<i>Explanation:</i>
+In iconic indexing, the conceptual meaning as well as the image of
+an icon is simplified, so that a less complicated icon is constructed to serve as
+an index to the original icon.  
+For the logical part (meaning) of an icon, the simplification is achieved
+by reducing the conceptual graph, or by tree pruning.  For the physical part (image) of
+an icon, the simplification is achieved by obtaining the sketch, the
+silhouette, the contour, or the sub-region, of an image.
+More detailed explanation of iconic indexing will be given in
+Section 6.
+<pre>
+<p>
+(6) Clustering CLU:
+<p>
+CLU( (c1,e),...,(cm,e),({},p1),...,({},pn) )
+= { (ci,pj): <img src="sk1fig/sk1-eqn.19.gif"> }
+<p>
+</pre>
+<i>Explanation:</i>
+The objects to be clustered, ({},pj), are images.  The result
+of clustering will enhance the meaning of the images.  The logical part added, ci, is usually
+a label.  We say image pj is assigned to cluster ci.
+CLU returns a set of n icons.
+<pre>
+<p>
+(7) Cross-Indexing CRO:
+<p>
+CRO( (Am,Ai), (Bm,Bi) )
+= ( IDX(A), IDX(B) )
+<p>
+</pre>
+<i>Explanation:</i>
+Cross-indexing is used to relate
+two icons which are similar according to some criteria
+They can be physically similar (having similar images),
+or logically similar (having similar meanings), or a combination of both.
+CRO returns a pair of icons.
+<p>
+(8) Similarity Operator SIM:
+<p>
+SIM(X,Y) = (SIMm(Xm,Ym), SIMi(Xi,Yi))
+<p>
+</pre>
+<i>Explanation:</i>
+Similarity operator returns a "true" icon (true-m, true-i), or
+a "false" icon (false-m, false-i).  True/false icons are
+pure icons.  If SIM(X,Y) depends only on SIMi(Xi,Yi), the similarity operator
+tests the physical similarity of two images.
+On the other hand, if SIM(X,Y) depends only on SIMm(Xm,Ym), the similarity operator tests
+the logical similarity of two images.
+The logical similarity of icons allows for variations of icon images.
+For example, (stop,\h'0.2i') and (stop,\h'0.2i') are considered similar by logical similarity.
+(diner,\h'0.2i'), (diner,\h'0.2i'), (diner,\h'0.2i') are also considered similar by
+logical similarity.
+If a similarity operator returns (true-m,false-i) or (false-m,true-i), it is considered meaningless.
+<p>
+(9) Existence Operator EXI:
+<p>
+EXI(X,Y) = (EXIm(Xm,Ym), EXIi(Xi,Yi))
+<p>
+</pre>
+<i>Explanation:</i>
+The existence operator tests for the existence of X in Y,
+and returns a true/false icon.  We can test for the existence
+of the logical object Xm within Ym, or the existence of the
+physical object Xi within Yi, or both.
+<p>
+     The generic iconic operators discussed above can
+be used to construct arbitrarily complex icons.  
+These operators are generic, in the sense that their
+semantics are not completely specified.  For specific
+formal iconic systems, we can use "custom-made" iconic
+operators to interpret complex icons.
+</ts5>
+<p>
+<ts6><a name="syntactic analysis">
+<b>5. Syntactic Analysis of Iconic Sentence</b>
+<p>Iconic sentences or complex icons are constructed from
+elementary icons using iconic operators.  The syntactic analysis
+of an iconic sentence, or spatial parsing,
+can be based upon the methodology of picture grammars and precedence grammars [CHANG70, CHANG71, FU74].
+Picture grammar was originally designed to parse digital pictures on square grid.  It 
+is based on the fact that digital pictures consist of picture elements 
+(pixels).  This can be demonstrated by following example.  Suppose we have 
+an object set: a point (2,3) and a line with the coordinates of two end points 
+(4,3) and (8,3).  Then a set of grammar rules can be used to describe them:
+<p>
+<pre>
+                      1) h-dash(4,3,2) := point(4,3,1) &amp; point(5,3,1)
+                      2) h-dash(6,3,2) := point(6,3,1) &amp; point(7,3,1)
+                      3) h-line(4,3,4) := h-dash(4,3,2) &amp; h-line(6,3,2)
+                      4) h-line(4,3,5) := h-line(4,3,4) &amp; point(8,3,1)  and 
+  <img src="sk1fig/sk1-eqn.20.gif">
+</pre>
+where <img src="sk1fig/sk1-eqn.21.gif"> is a gap tolerance in a line.  Similarly we can construct other 
+grammar rules for lines other than horizontal lines, and for any other shapes.
+<p>Now we come to the general definition of picture processing grammar:
+
+<p>A
+<i>picture-processing grammar</i>
+G is a quintuple(S,V,C,g,P), where S is the set 
+of basic symbols, V is the set of vocabulary symbols, C <i>!supset</i> V is the set 
+of categorical symbols, g is a function from V <img src="sk1fig/sk1-eqn.23.gif"> S into the set of 
+natural numbers, and P is the set of grammar rules.  Each rule is of the from 
+<p><img src="sk1fig/sk1-eqn.24.gif"><p>
+where <img src="sk1fig/sk1-eqn.25.gif">, the number of parameters of the associate vector <img src="sk1fig/sk1-eqn.26.gif"> is equal 
+to <img src="sk1fig/sk1-eqn.27.gif">, and f is a partially computable function 
+from <img src="sk1fig/sk1-eqn.28.gif">,
+whose completion is also computable.  It is required that <img src="sk1fig/sk1-eqn.29.gif">. 
+<p>According to the definition, rule 1) can be rewritten in general form
+as 
+<p>
+                   h-dash[(4,3,1),(5,3,1)] := point(4,3,1) &amp; point(5,3,1) 
+<p>A picture processing grammar may have a hierarchical structure as defined 
+below:
+<p>A picture processing grammar G=(S,V,C,g,P) is called 
+<i>hierarchical </i>
+if and only if there is a nontrivial partition of the rules P into blocks 
+<img src="sk1fig/sk1-eqn.30.gif">, n&gt;1, such that if <img src="sk1fig/sk1-eqn.31.gif"> appears as the 
+left-hand symbol of a rule in <img src="sk1fig/sk1-eqn.32.gif">, then it will never appear as a 
+right-hand symbol of any rule in <img src="sk1fig/sk1-eqn.33.gif">, provided that j&lt;i.
+<p>The parsing algorithm of the languages generated by hierarchical picture 
+processing grammar is then as follows:
+<pre>
+        1) Partition the set of rules P into hierarchical blocks <img src="sk1fig/sk1-eqn.34.gif">,
+        2) i <img src="sk1fig/sk1-eqn.35.gif"> 1,
+        3) Apply rules in <img src="sk1fig/sk1-eqn.36.gif"> in any sequence to reduce the picture.  
+When no more reduction is possible, go to the next step,
+        4) If i=n or the picture has been reduced to a categorical symbol, 
+stop.  Otherwise let <img src="sk1fig/sk1-eqn.37.gif"> and go to step 3). 
+</pre>
+<p>The picture processing grammar described above was successfully applied to 
+analyze hand-written numericals, where the grammar rules are divided into 
+four groups.  The first level rules are used to reduce a picture consisting 
+of points to one consisting of horizontal strips.  Imperfect strips can be 
+recognized by adjusting <img src="sk1fig/sk1-eqn.38.gif"> to fill gaps.  The second level rules are used 
+to reduce the picture to one consisting of vertical lines (V-L) and horizontal 
+lines (H-L).  In the third level, L-shaped, U-shaped, and O-shaped figures are 
+described.  Finally, in the fourth or last level, the ten numerals are described in terms of their component parts.  
+<p>Precedence grammar [CHANG 70] is another spatial parsing grammar and can be 
+used for 2-D mathematical expression analysis and printed page format analysis. 
+Precedence grammars are in fact more suitable for the syntactic analysis of iconic sentences, because iconic sentences are constructed using elementary icons and iconic operators.
+Let us start explaining it by giving a simple example.  Suppose we have a mathematical
+expression a + ( b ).  The structure specification scheme is then defined 
+to describe these mathematical expressions.  Assume that some or all primitive 
+components are operators, each of them is uniquely associated with a region, 
+a rectangular area on a 2-D plane, mathematically written as 
+<img src="sk1fig/sk1-eqn.39.gif"> 
+where <img src="sk1fig/sk1-eqn.40.gif"> are coordinates of region centroid.  A pattern U is 
+a finite collection of primitive components whose regions are disjoint.  A 
+frame F of a pattern U is the smallest region containing all primitive 
+components of U. 
+<p>The structure tree is then constructed by comparing precedence of operators in 
+a pattern and dividing the pattern into one or several subpatterns.  Further 
+division are carried out on those sub-patterns.  Figure 1.5(b) is the structure 
+tree of expression a + ( b ) and Figure 1.5(a) is the frame partition corresponding 
+to Figure 1.5(b).  The operators "(" and ")" are grouped together because they are regarded as an operator pair.  The structure specification scheme is then defined as finite 
+collection of these division rules.  Thus we have following formal definition:
+<p>
+<i>A well-formed structure </i>
+of a pattern U is a tree T whose nodes (or node-name) are operator sequences 
+and regions such that
+<pre>
+        1) The root of the tree is the frame F of U,
+        2) Every primitive component of U appears as a member of some operator 
+sequence that is a terminal node of T, and the set of all operator sequences 
+of T is U,
+        3) If a region is a terminal node, then it is a non-essential region 
+with respect to some division rule,
+        4) If a region is a non-terminal node, then its successor nodes 
+constitute a division of it with respect to some division rule,
+        5) If operator <img src="sk1fig/sk1-eqn.41.gif"> and region R are successor nodes of some 
+node and operator <img src="sk1fig/sk1-eqn.42.gif"> is a successor node of R, then <img src="sk1fig/sk1-eqn.43.gif"> dominates 
+<img src="sk1fig/sk1-eqn.44.gif"> or <img src="sk1fig/sk1-eqn.45.gif"> procedes <img src="sk1fig/sk1-eqn.46.gif"> or they are of equal precedence. 
+</pre>
+<p>
+<is>
+<center><img src="sk1fig/fig15.jpg" width=600></center>
+</is>
+<center><dd>Figure 1.5. (a) A partition of the expression "a + (b)", (b) structure tree of the expression "a + (b)".</center><br>
+
+</i><p>According to above definition the structural parsing is carried out by first 
+grouping the primitive components of U into operator sequences, and then 
+building up a structural tree T of U.  To build up a structure tree T of U 
+we let <img src="sk1fig/sk1-eqn.47.gif"> be the frame of U.  Let <img src="sk1fig/sk1-eqn.48.gif"> be 
+all the operator sequences of U.  Construct two <img src="sk1fig/sk1-eqn.49.gif"> precedence matrices M1 
+and M2 as follows:  M1(i,j) is "&gt;" if <img src="sk1fig/sk1-eqn.50.gif"> dominates <img src="sk1fig/sk1-eqn.51.gif">, "&lt;" 
+if <img src="sk1fig/sk1-eqn.52.gif"> dominates <img src="sk1fig/sk1-eqn.53.gif">, and blank otherwise.  M2(i,j) is "&gt;" 
+if <img src="sk1fig/sk1-eqn.54.gif"> precedes <img src="sk1fig/sk1-eqn.55.gif">, "&lt;" if <img src="sk1fig/sk1-eqn.56.gif"> precedes <img src="sk1fig/sk1-eqn.57.gif">, "=" 
+if they are of equal precedence, and blank otherwise.  All comparisons are 
+done with respect to <img src="sk1fig/sk1-eqn.58.gif">.  By using these two matrices M1 and M2, 
+we choose <img src="sk1fig/sk1-eqn.59.gif"> to divide <img src="sk1fig/sk1-eqn.60.gif"> with respect to <img src="sk1fig/sk1-eqn.61.gif">, such that 
+<img src="sk1fig/sk1-eqn.62.gif"> is in <img src="sk1fig/sk1-eqn.63.gif"> and <img src="sk1fig/sk1-eqn.64.gif"> is not dominated by any other <img src="sk1fig/sk1-eqn.65.gif"> 
+in <img src="sk1fig/sk1-eqn.66.gif"> and <img src="sk1fig/sk1-eqn.67.gif"> can be divided with respect to <img src="sk1fig/sk1-eqn.68.gif"> into 
+essential and non-essential regions that contain all other w's in <img src="sk1fig/sk1-eqn.69.gif">. 
+<p>In the example shown in Figure 1.5(b), the operator "+" is not dominated
+by any other operator.  Therefore, it is selected as the first
+operato be applied tor to divide the frame.
+<p>In an iconic sentence, the iconic operators are often "invisible".
+resultant icon image.  Therefore, in analyzing an iconic sentence,
+such "invisible" operators must be restored, so that the technique
+of spatial dominance and precedence analysis described above can
+be applied.
+<p>We can first find the minimum enclosing
+rectangles (MERs) of the elementary icons in an iconic sentence.
+By comparing the MERs, invisible operators can be restored.
+For example, the most commonly used iconic operators are COM, HOR and VER.
+If two MERs coincide to a considerable degree, then the operator
+COM is added.  If one MER is on top of another MER, then the operator
+VER is added.  If one MER is to the left of another MER, then the
+operator HOR is added.
+Precedence matrices M1 and M2 are then constructed to
+order the iconic operators.
+Care must be taken to discard "double" iconic operators
+which are created in comparing the MERs,
+so that the input iconic sentence can be analyzed correctly.
+If we don't use the precedence analysis technique, a general parsing algorithm must be used to parse
+the iconic sentence according to G.
+</ts6>
+<p>
+<ts7><a name="semantic analysis">
+<b>6. Semantic Analysis of Iconic Sentence</b>
+<p>The result of the syntactic analysis of an iconic sentence is
+a parsing tree, which can be described by an iconic system,
+with the head icon representing the entire iconic sentence
+(or the complex icon to be analyzed).
+Therefore, in performing the semantic analysis of iconic
+sentence, we are actually evaluating the meaning of
+an iconic system corresponding to that iconic sentence.
+<p>To evaluate an iconic system G,
+we can apply a generic iconic operator INT recursively
+to construct an interpretation of the formal iconic system G.
+Such icon semantics can be implicitly defined.
+Or we can explicitly define icon semantics, by associating
+an iconic operator INT<sub>j</sub> with each rule rj in R.
+The evaluation procedure is described below.
+<p>
+<pre>
+<br>
+
+procedure EVAL(xo)
+begin
+  exp = xo;
+  while there is an icon x in exp
+        and rule rj is x ::= (Xm,Xi) 
+    replace x in exp by INTj(Xm,Xi);
+end
+<br>
+<p>
+</pre>
+<p>For example, head icon xo of Example 1 of Section 3 can be 
+evaluated as follows:
+<pre>
+<p>
+<br>
+1)	xo
+2)	INT1({x1,x2}, po)
+3)	INT1({INT2({x3,x4}, p1),x2}, po)
+4)	INT1({INT2({INT4({c1}, p3),x4}, p1),
+            x2}, po)
+5)	INT1({INT2({INT4({c1}, p3),INT5({c2},
+            p4)}, p1), x2}, po)
+6)	INT1({INT2({INT4({c1}, p3),INT5({c2}, 
+            p4)}, p1),INT3({},p2)}, po)
+<p>
+<br>
+If all the INTi's are identical, we have
+<br>
+<p>
+7)	INT({INT({INT({c1}, p3),INT({c2}, p4)}, 
+            p1),INT({},p2)}, po)
+<p>
+<br>
+
+</pre>
+     Evaluation of the above expression depends upon the INT operator.
+For the image database of Example 1 of Section 3, INT may be defined as follows.
+<pre>
+<br>
+<p>
+Procedure INT(A, B)
+begin
+  draw physical image B to scale;
+  while there is another element u in set A
+  begin
+    if u is of the form INT(C,D) 
+       then INT(C,D)
+       else draw logical object u to scale 
+       within image B;
+  end
+end
+<br>
+
+</pre>
+<p>
+     This INT operator creates an
+<i>image icon</i>
+({}, image) using the above recursive procedure.  It will first draw
+image po.  Within po, the sub-regions for p1 and p2 will be
+redrawn with greater detail.  Within p1, the sub-regions for
+p3 and p4 will be redrawn with even greater detail.  Moreover,
+p3 will be marked with label "c1", and p4 will be marked with label "c2".
+<p>
+     In iconic indexing,
+we can use the generic iconic indexing operator IDX<sub>j</sub>
+to replace the INT<sub>j</sub> operator,
+so that we can reduce a complex icon specified by a formal iconic system into
+a simpler icon.
+This new icon can then serve as an index to the original complex icon.
+Continuing with the above example, the expression in (6) can be replaced by,
+<p>
+8)	IDX1({IDX2({IDX4({c1}, p3),IDX5({c2}, p4)}, p1),IDX3({},p2)}, po)
+<p>
+     The general form of the indexing operator IDX has been defined in sub-section (9) of Section 4.
+We now give a specific indexing operator IDX<sub>j</sub>, which will
+behave differently for different rule-index-set.
+<p>
+<br>
+
+<pre>
+IDXj(A,B)
+begin
+  if j is in rule-index-set
+    then return(union of logical part of 
+                icons in A, B)
+    else return({}, e)
+end
+<p>
+<br>
+
+</pre>
+     With this indexing operator, suppose the rule-index-set is {1},
+then we will reduce the above expression (8) into an icon:  ({}, po).
+In other words, a low-resolution image po is used as an index.
+If the rule-index-set is {1,2,3,4,5,6}, then the indexing icon becomes:  ({c1,c2}, p0).
+In other words, the index has a logical part which is a set of subicons
+(in this case, a set of two ship-like objects), and a physical part which is
+a low-resolution image po.
+<p>
+     Now we can generalize the concept of similarity among icons.
+Suppose X is a complex icon, and Y is a simpler icon.  The
+two icons are similar, if SIM(IDX(X),Y) is true.
+The icon Y can also be considered to be an index of X.
+In icon-oriented information retrieval, we can use Y to retrieve
+similar icons in the set {W: SIM(IDX(W),Y) is true}.
+<p>
+     It can be seen that iconic indexing is a powerful tool to
+construct indexes from a formal iconic system.
+For a different application domain, we can define the appropriate indexing operators IDX<sub>j</sub>, to
+create a specific indexing technique.
+</ts7>
+<p>
+<ts8><a name="user interface">
+<b>7. Specification of User Interfaces as Iconic Systems</b>
+</i><p>The examples presented in Section 3 illustrate complex objects
+such as an image database, a book, or a form, can be specified
+as iconic systems.
+In Section 4, we introduced iconic operators.  The icons used
+in direct manipulation interfaces are then seen to be complex
+icons constructed from elementary icons using iconic operators.
+The concept of generalized icons therefore has wide applicability.
+In this section, we will demonstrate that any type of menu-driven user interfaces
+can also be specified as iconic systems.  This requires the use
+of both object icons and iconic operators.
+<p>In a simple menu-driven user interface, there is only one menu page,
+as illustrated in Figure 1.6.
+<p>
+<is>
+<center><img src="sk1fig/fig16.jpg" width=300></center>
+</is>
+<center>Figure 1.6.    A single-page menu system.</center><br>
+
+<p>The formal iconic system G1 for this menu page is given by:
+<p>
+<pre>
+<img src="sk1fig/sk1-eqn.70.gif"> ::= ({<img src="sk1fig/sk1-eqn.71.gif">,<img src="sk1fig/sk1-eqn.72.gif">,<img src="sk1fig/sk1-eqn.73.gif">}, "<img src="sk1fig/sk1-eqn.74.gif">"^"<img src="sk1fig/sk1-eqn.75.gif">"^"<img src="sk1fig/sk1-eqn.76.gif">")
+<img src="sk1fig/sk1-eqn.77.gif"> ::= (<img src="sk1fig/sk1-eqn.78.gif">, "<img src="sk1fig/sk1-eqn.79.gif">")
+<img src="sk1fig/sk1-eqn.80.gif"> ::= (<img src="sk1fig/sk1-eqn.81.gif">, "<img src="sk1fig/sk1-eqn.82.gif">")
+<img src="sk1fig/sk1-eqn.83.gif"> ::= (<img src="sk1fig/sk1-eqn.84.gif">, "<img src="sk1fig/sk1-eqn.85.gif">")
+<p>
+</pre>
+where the notation "<img src="sk1fig/sk1-eqn.86.gif">" denotes the actual image of <img src="sk1fig/sk1-eqn.87.gif">,
+and the operator ^ is the vertical concatenation operator to
+vertically concatenate two images.
+<p>The following iconic operators are defined:
+<p><img src="sk1fig/sk1-eqn.88.gif"> (<img src="sk1fig/sk1-eqn.89.gif">) = <img src="sk1fig/sk1-eqn.90.gif">  for i=1,2,3,  selects a subicon <img src="sk1fig/sk1-eqn.91.gif"> in menu icon <img src="sk1fig/sk1-eqn.92.gif">,
+<p><img src="sk1fig/sk1-eqn.93.gif"> (<img src="sk1fig/sk1-eqn.94.gif">)  for i=1,2,3,  invokes and executes process pi.
+<p>Therefore, <img src="sk1fig/sk1-eqn.95.gif">, <img src="sk1fig/sk1-eqn.96.gif"> and <img src="sk1fig/sk1-eqn.97.gif"> are <img src="sk1fig/sk1-eqn.98.gif">, and <img src="sk1fig/sk1-eqn.99.gif"> is a complex icon.
+The user can first select an icon from the menu <img src="sk1fig/sk1-eqn.100.gif"> (using the <img src="sk1fig/sk1-eqn.101.gif"> operator).
+The <img src="sk1fig/sk1-eqn.102.gif"> operator can then be applied to invoke and execute the selected
+process.
+Conceptually, the iconic operator <img src="sk1fig/sk1-eqn.103.gif"> is a unary operator, returning
+a null icon.
+<p>
+<p>A more complex, two-page menu system is illustrated in Figure 1.7.
+<p>
+<is>
+<center><img src="sk1fig/fig17.jpg" width=600></center>
+</is>
+<center>Figure 1.7.    A two-page menu system.</center><br>
+
+<p>The formal iconic system G2 for the two-page menu system is given by:
+<p>
+<pre>
+<img src="sk1fig/sk1-eqn.104.gif"> ::= (<img src="sk1fig/sk1-eqn.105.gif">({<img src="sk1fig/sk1-eqn.106.gif">,<img src="sk1fig/sk1-eqn.107.gif">}), <img src="sk1fig/sk1-eqn.108.gif">({<img src="sk1fig/sk1-eqn.109.gif">,<img src="sk1fig/sk1-eqn.110.gif">}))
+<img src="sk1fig/sk1-eqn.111.gif"> ::= ({<img src="sk1fig/sk1-eqn.112.gif">,<img src="sk1fig/sk1-eqn.113.gif">},"<img src="sk1fig/sk1-eqn.114.gif">"^"<img src="sk1fig/sk1-eqn.115.gif">")
+<img src="sk1fig/sk1-eqn.116.gif"> ::= ({<img src="sk1fig/sk1-eqn.117.gif">,<img src="sk1fig/sk1-eqn.118.gif">}),"<img src="sk1fig/sk1-eqn.119.gif">"^"<img src="sk1fig/sk1-eqn.120.gif">")
+<img src="sk1fig/sk1-eqn.121.gif"> ::= (<img src="sk1fig/sk1-eqn.122.gif">, "<img src="sk1fig/sk1-eqn.123.gif">")
+<img src="sk1fig/sk1-eqn.124.gif"> ::= (<img src="sk1fig/sk1-eqn.125.gif">, "<img src="sk1fig/sk1-eqn.126.gif">")
+<img src="sk1fig/sk1-eqn.127.gif"> ::= (<img src="sk1fig/sk1-eqn.128.gif">, "<img src="sk1fig/sk1-eqn.129.gif">")
+<img src="sk1fig/sk1-eqn.130.gif"> ::= (<img src="sk1fig/sk1-eqn.131.gif">, "<img src="sk1fig/sk1-eqn.132.gif">")
+<p>
+</pre>
+<p>The following iconic operators are defined:
+<p>
+<p><img src="sk1fig/sk1-eqn.133.gif">({X,Y}) connects two object icons X and Y.
+<img src="sk1fig/sk1-eqn.134.gif">({X,Y}) gives the logical relationship that icon Y is after icon X,
+and <img src="sk1fig/sk1-eqn.135.gif">( {X,Y} ) is the sketch with two icon sketchs for
+X and Y connected by a directed arc from X to Y.
+<p><img src="sk1fig/sk1-eqn.136.gif">(X) gives the first subicon in the complex icon X.
+<p><img src="sk1fig/sk1-eqn.137.gif">(X) gives the next icon which is logically connected to X.
+<p><img src="sk1fig/sk1-eqn.138.gif">(X) selects the <img src="sk1fig/sk1-eqn.139.gif"> subicon in complex icon X.
+<p>As before, the iconic operators can operate on the icons of this formal iconic system G2 to realize the menu-driven user interface.
+Other types of menu-driven user interfaces can be specified similarly.
+</ts8>
+<p>
+<ts9><a name="determination">
+<b>8. Determination of Icon Purity</b>
+<p>In this section and the next, we turn to some theoretical considerations which are
+necessary for a deeper understanding of the behavior of icons in an iconic system.
+<p>In Section 3, we introduced a formal approach to specifying iconic systems.
+Iconic operators were presented in Section 4, which constitute an
+icon algebra to construct complex icons and define icon semantics.
+We also introduced the notion of pure icons.
+Only for pure icons can the logical part be completedly recovered from
+the physical part, and vice versa.
+Impure icons may cause problems when used for person-machine communication.
+In this section, we give purity-preserving conditions for iconic operators.
+<p>An icon is denoted by <img src="sk1fig/sk1-eqn.140.gif">, its formal identifier, or 
+<img src="sk1fig/sk1-eqn.141.gif">,
+where
+<img src="sk1fig/sk1-eqn.142.gif">
+is subset of
+<img src="sk1fig/sk1-eqn.143.gif">,
+and
+<img src="sk1fig/sk1-eqn.144.gif">
+is an element of VP.
+We will use the notations
+<img src="sk1fig/sk1-eqn.145.gif">, and
+<img src="sk1fig/sk1-eqn.146.gif">,
+interchangeably, to denote an icon.  Given an
+iconic system G, we can determine the iconset RR, which is the
+set of all icons defined by G, or formally,
+<p><img src="sk1fig/sk1-eqn.147.gif"><p>
+
+<p>Let WL denote the power set of VL  S, or the set of meanings.
+The
+<i>materialization</i> and
+<i>dematerialization</i> functions can now be defined.
+<p>The materialization function MAT is a partial function
+from WL to 2<sup>VP</sup>, defined as
+follows.  For every <img src="sk1fig/sk1-eqn.148.gif"> which appears in
+<img src="sk1fig/sk1-eqn.149.gif"> of RR,
+<p><img src="sk1fig/sk1-eqn.150.gif"><p>
+
+<p>The dematerialization function DMA is a partial function
+from VP to the power set of WL, defined as
+follows.  For every <img src="sk1fig/sk1-eqn.151.gif"> which appears in
+<img src="sk1fig/sk1-eqn.152.gif"> of RR,
+<p><img src="sk1fig/sk1-eqn.153.gif"><p>
+
+<p>An icon
+<img src="sk1fig/sk1-eqn.154.gif">
+is pure, iff
+<p><img src="sk1fig/sk1-eqn.155.gif"><p>
+
+<p>For elementary icons, it is easy to determine directly
+their purity from MAT and DMA.  An example follows.
+<p>
+<ts91><a name="example 4">
+<i>     Example 4:
+The icon set RR1 is
+<p><img src="sk1fig/sk1-eqn.156.gif"><p>
+
+The MAT and DMA functions are:
+<p><img src="sk1fig/sk1-eqn.157.gif"><p>
+
+</i><p>Icons <img src="sk1fig/sk1-eqn.158.gif"> is pure, while icons <img src="sk1fig/sk1-eqn.159.gif"> and <img src="sk1fig/sk1-eqn.160.gif"> are not.  The
+icon, <img src="sk1fig/sk1-eqn.161.gif">, is an image icon.  It is pure in this example,
+but if the iconic system has another image icon, <img src="sk1fig/sk1-eqn.162.gif"> will no
+longer be pure.  Since image icons are physical images without
+any label, we usually do not think of them as pure icons.
+<p>If we use the above partial functions MAT and DMA, then the
+structural icons <img src="sk1fig/sk1-eqn.163.gif"> and <img src="sk1fig/sk1-eqn.164.gif"> are also pure.  Again, we usually do
+not think of structural icons as pure icons, because they
+normally represent iconic
+<i>relations.</i> 
+</ts91>
+<p>We now deal with composite icons and their purity.
+A composite icon
+<img src="sk1fig/sk1-eqn.165.gif">
+is composed from subicons
+<img src="sk1fig/sk1-eqn.166.gif"> as follows:
+<p><img src="sk1fig/sk1-eqn.167.gif"><p>
+
+<p>where <img src="sk1fig/sk1-eqn.168.gif"> is an n-ary iconic operator.
+<p>Two conditions for
+<i>purity-preserving</i> composition of
+composite icons can now be stated:
+<p><img src="sk1fig/sk1-eqn.169.gif"><p>
+
+<p><img src="sk1fig/sk1-eqn.170.gif"><p>
+
+<p>Condition (C-1) says that <img src="sk1fig/sk1-eqn.171.gif">, or the materialization of
+<img src="sk1fig/sk1-eqn.172.gif">, is equal to the application of the operator <img src="sk1fig/sk1-eqn.173.gif"> on the
+individual materialization of the subicons
+<img src="sk1fig/sk1-eqn.174.gif">
+The condition (C-2) can be interpreted similarly.
+<p>The consequence of these purity-preserving conditions
+is stated in the next theorem.
+<ts92><a name="theorem of icon purity">
+<p><DL><dt><b>Theorem:</b><dd>
+If <img src="sk1fig/sk1-eqn.175.gif"> are pure icons,
+and the above purity-preserving conditions hold,
+then the composite icon <img src="sk1fig/sk1-eqn.176.gif"> is also pure.
+</b><p>
+</dl>
+<b>Proof:
+</b><p>We need to show MAT(<img src="sk1fig/sk1-eqn.177.gif">) = {<img src="sk1fig/sk1-eqn.178.gif">} and DMA(<img src="sk1fig/sk1-eqn.179.gif">) = {<img src="sk1fig/sk1-eqn.180.gif">}.
+<p><img src="sk1fig/sk1-eqn.181.gif"><p>
+
+<p>Similarly, we can show DMA(<img src="sk1fig/sk1-eqn.182.gif">) = {<img src="sk1fig/sk1-eqn.183.gif">}.
+</ts92>
+<p>
+<p>Structural icons can be regarded as composite icons
+with an implicit operator STC.  Therefore, if
+<img src="sk1fig/sk1-eqn.184.gif">
+is a structural icon, we have
+<p><img src="sk1fig/sk1-eqn.185.gif"><p>
+
+<p>For composite icon <img src="sk1fig/sk1-eqn.186.gif">, the <img src="sk1fig/sk1-eqn.187.gif"> part is formally
+denoted by {OP, <img src="sk1fig/sk1-eqn.188.gif"> }.
+By that we mean <img src="sk1fig/sk1-eqn.189.gif">,
+but we will formally write {OP, <img src="sk1fig/sk1-eqn.190.gif"> }.
+If <img src="sk1fig/sk1-eqn.191.gif">
+really generates a new meaning, then the composite icon <img src="sk1fig/sk1-eqn.192.gif">
+becomes once more an elementary icon, i.e.
+<p><img src="sk1fig/sk1-eqn.193.gif"><p>
+
+<p>If the purity conditions hold, this newly composed icon
+is also a pure icon.
+The implications of the purity-preserving conditions are
+the following:
+<dt>(C-1)<dd>If we find the meanings of all sub-images,
+then we can combine them to find the meaning of the whole image;
+<dt>(C-2)<dd>If we find the images of all the partial meanings, then
+we can combine them to find the image of the whole meaning.
+<p>It should be noted that the purity-preserving conditions
+also imply:
+<p><img src="sk1fig/sk1-eqn.194.gif"><p>
+
+<p>In other words, the operator <img src="sk1fig/sk1-eqn.195.gif">
+<p>
+<p>     In the above, we defined the purity of individual icons.
+Can we give an overall measure of the degree of purity of
+a formal iconic system?  This should tell us how "unambiguous"
+is this iconic system.
+As we will present in the following section, the purity of a formal iconic system can be defined by extending
+the iconic system into a fuzzy iconic system, based upon the
+theory of fuzzy sets.  
+</ts9>
+<p>
+<tsa><a name="fuzzy">
+<b>9. Fuzzy Iconic Systems</b>
+<p>A
+<i>fuzzy iconic system</i>
+is a hexatuple:
+<p><img src="sk1fig/sk1-eqn.198.gif"><p>
+where
+<img src="sk1fig/sk1-eqn.199.gif">
+is a formal iconic system, and
+<img src="sk1fig/sk1-eqn.200.gif"> is the fuzzy membership function from <img src="sk1fig/sk1-eqn.201.gif"> into [0,1].
+<p>
+<i>     Example 5:</i>
+The iconic system
+<img src="sk1fig/sk1-eqn.202.gif"> of Example 4 of the previous section can be extended to a fuzzy icon
+system <img src="sk1fig/sk1-eqn.203.gif"> by associating a fuzzy membership grade with each rule in R1.
+<p><img src="sk1fig/sk1-eqn.204.gif"><p>
+
+<p>R1 can be divided into two sets:
+<dt>(a)<dd>Those rules which define elementary icons
+could be called elementary rules, such as
+<img src="sk1fig/sk1-eqn.205.gif">.
+<dt>(b)<dd>Those rules which define complex icons could be
+called generative rules since they usually
+associate subicons with a complex icon, such as
+<img src="sk1fig/sk1-eqn.206.gif">.
+<p>The
+<i>grade of membership</i>
+of the icon <img src="sk1fig/sk1-eqn.207.gif"> generated by <img src="sk1fig/sk1-eqn.208.gif"> is
+defined as
+<p><img src="sk1fig/sk1-eqn.209.gif"><p>
+where
+<img src="sk1fig/sk1-eqn.210.gif">
+are rules used for generating <img src="sk1fig/sk1-eqn.211.gif"> and
+the supremum is taken over all derivations of <img src="sk1fig/sk1-eqn.212.gif"> by <img src="sk1fig/sk1-eqn.213.gif">.
+<p>A
+<i>fuzzy icon A</i>
+in <img src="sk1fig/sk1-eqn.214.gif"> is written as
+<p><img src="sk1fig/sk1-eqn.215.gif"><p>
+where
+<p><img src="sk1fig/sk1-eqn.216.gif"><p>
+is the membership grade.
+</i><p>The materialization operator <img src="sk1fig/sk1-eqn.217.gif"> is a fuzzy function
+defined as
+<p><img src="sk1fig/sk1-eqn.218.gif"><p>
+where
+<img src="sk1fig/sk1-eqn.219.gif">,
+and <img src="sk1fig/sk1-eqn.220.gif">.
+Therefore,
+<img src="sk1fig/sk1-eqn.221.gif"> is a fuzzy set over <img src="sk1fig/sk1-eqn.222.gif">.
+<p>Similarly, the dematerialization operator <img src="sk1fig/sk1-eqn.223.gif"> is a fuzzy function
+defined as
+<p><img src="sk1fig/sk1-eqn.224.gif"><p>
+where
+<img src="sk1fig/sk1-eqn.225.gif">.
+Therefore,
+<img src="sk1fig/sk1-eqn.226.gif"> is a fuzzy set over <img src="sk1fig/sk1-eqn.227.gif">.
+<p>The
+<i>intension function</i> of a fuzzy set <img src="sk1fig/sk1-eqn.228.gif"> is defined as
+<p><img src="sk1fig/sk1-eqn.229.gif"><p>
+For convenience,
+we have the notations
+<p><img src="sk1fig/sk1-eqn.230.gif"><p>
+and
+<p><img src="sk1fig/sk1-eqn.231.gif"><p>
+We then have:
+<p><img src="sk1fig/sk1-eqn.232.gif"><p>
+
+<p>The
+<i>degree of purity</i> of an icon <img src="sk1fig/sk1-eqn.233.gif"> can be defined as
+<p><img src="sk1fig/sk1-eqn.234.gif"><p>
+where <img src="sk1fig/sk1-eqn.235.gif"> is the
+<i>care-factor</i> for materialization and
+<img src="sk1fig/sk1-eqn.236.gif"> is the
+<i>care-factor</i> for dematerialization.  Both of them are
+non-negative numbers.
+<p>An icon
+<img src="sk1fig/sk1-eqn.237.gif"> is pure if and only if <img src="sk1fig/sk1-eqn.238.gif">.
+In other words,
+<img src="sk1fig/sk1-eqn.239.gif"> and
+<img src="sk1fig/sk1-eqn.240.gif">.
+<p>In general, we care more about dematerialization than materialization.
+That is to say, if the mapping from <img src="sk1fig/sk1-eqn.241.gif"> to <img src="sk1fig/sk1-eqn.242.gif"> is one-to-many (there are
+several pictures associated with a single meaning), it is still acceptable.
+However, if the mapping from <img src="sk1fig/sk1-eqn.243.gif"> to <img src="sk1fig/sk1-eqn.244.gif"> is many-to-one (there are several
+meanings for one picture), it is usually not acceptable.
+Therefore, we can set <img src="sk1fig/sk1-eqn.245.gif"> to be a
+small number such as 1 or 2, and <img src="sk1fig/sk1-eqn.246.gif"> to be a large enough
+number such as 9 or 10.
+If care-factor <img src="sk1fig/sk1-eqn.247.gif"> is 0,
+this means the intension function for materialization can be ignored.
+On the other hand, if care-factor <img src="sk1fig/sk1-eqn.248.gif"> is infinite, this means we can
+only accept an intension function value of 1 for dematerialization,
+when the icon is pure.
+<p>Given a fuzzy iconic system <img src="sk1fig/sk1-eqn.249.gif">, the degree of purity of <img src="sk1fig/sk1-eqn.250.gif">
+can be defined as either
+<p><img src="sk1fig/sk1-eqn.251.gif"><p>
+or
+<p><img src="sk1fig/sk1-eqn.252.gif"><p>
+The first definition gives the
+the worst case in such a system, and the second definition gives the
+average behavior of such a system.
+<p>With the above definitions, we can apply the purity measurement
+on any iconic system <img src="sk1fig/sk1-eqn.253.gif"> as follows.  We first assume a constant fuzzy membership
+function, i.e., <img src="sk1fig/sk1-eqn.254.gif">.
+Thus the iconic system <img src="sk1fig/sk1-eqn.255.gif"> is extended to a fuzzy iconic system <img src="sk1fig/sk1-eqn.256.gif">.
+With given values of <img src="sk1fig/sk1-eqn.257.gif"> and <img src="sk1fig/sk1-eqn.258.gif">, we can then calculate the
+degree of purity of <img src="sk1fig/sk1-eqn.259.gif">, which is also the degree of purity of <img src="sk1fig/sk1-eqn.260.gif">.
+<p>
+<i>     Example 6:</i>
+The following iconic system has six elementary icons:
+<p><img src="sk1fig/sk1-eqn.261.gif"><p>
+
+with <img src="sk1fig/sk1-eqn.262.gif">
+and <img src="sk1fig/sk1-eqn.263.gif">
+<p>The icon <img src="sk1fig/sk1-eqn.264.gif"> is pure, and all the other icons are impure.
+<p>If
+<img src="sk1fig/sk1-eqn.265.gif">
+and
+<img src="sk1fig/sk1-eqn.266.gif">,
+we have:
+<p><img src="sk1fig/sk1-eqn.267.gif"><p>
+
+Therefore,
+<p><img src="sk1fig/sk1-eqn.268.gif"><p>
+If we replace <img src="sk1fig/sk1-eqn.269.gif"> by
+
+<pre>
+	<img src="sk1fig/sk1-eqn.270.gif">	<img src="sk1fig/sk1-eqn.271.gif">	<img src="sk1fig/sk1-eqn.272.gif">
+</pre><p>
+we  have:
+<p><img src="sk1fig/sk1-eqn.273.gif"><p>
+
+Therefore,
+<p><img src="sk1fig/sk1-eqn.274.gif"><p>
+
+<p>The icons are all impure,
+and the average degree of purity is also less than that
+of the previous iconic system.
+However, it is not zero.
+<p>The nice thing about the above definition of degree of purity is that
+<i>there is no need to know the fuzzy membership function of an iconic system.</i>
+We can always assume a constant fuzzy membership function,
+and we are still able to compute a meaningful average degree of purity.
+<p>
+</tsa>
+</DL>
+<hr>
+<ts>
+</body></html>

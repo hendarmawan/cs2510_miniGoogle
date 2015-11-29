@@ -1,0 +1,39 @@
+<title>Object-Oriented Design</title>
+<A HREF="c05.htm"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c11.htm"><IMG SRC="next.gif" align=right></A>
+
+<center>
+<h1>Object-Oriented Design</h1>
+</center>
+
+
+<h2>Three Steps of OOD</h2>
+
+<font color=red>
+<h3>Determine the actions ("methods") of the classes</h3>
+
+
+1. From the <b>functional model</b> determine the messages sent from clients
+to objects.<p>
+
+2. Apply responsibility-driven design.  If a client sends a message to
+an object, then that object is responsible for carrying out the request
+of the client.  The client does not need to know how the request will be
+carried out.<p>
+
+3. Consolidate the actions (methods) of objects.
+
+<pre>
+Class name        Financialinstrument
+Method name       deleteRecord
+Modifiers, type   public void
+Arguments         none
+Error messages    If record to be deleted does not exist
+Files accessed    none
+Files changed     none
+Method called     findRecord, performDeletion
+Narrative         Prompt user to enter ID of record to be deleted. Calls
+                  findRecord to find the specified record, then calls
+                  performDeletion to delete record.  Finally, reprots
+                  that record has been deleted.
+</pre>

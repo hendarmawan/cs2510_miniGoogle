@@ -1,0 +1,40 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+
+
+
+
+
+
+<body>
+
+<p><a href="p11.htm"><img border="0" src="previous.gif" width="26" height="26"></a><font face="Verdana" size="6" color="#0000FF"> 
+COM+ in depth</font>  
+<a href="p13.htm"><img border="0" src="next.gif" width="26" height="26"></a></p>
+
+<p><font face="Verdana" size="5">Call Context: Similar to contexts being 
+represented as objects</font></p>
+
+<p><font face="Verdana" size="5"> 
+Causalities are represented as Call Context objects</font></p>
+
+<p><font face="Verdana" size="5">
+</font></p>
+
+<p><font face="Verdana" size="5" color="#FF0000">Key point:</font></p>
+
+<p><font face="Verdana" size="5" color="#FF0000">Object Contexts are used to 
+model the space an object lives in and
+Call Contexts are used to model 
+the work being done in that space
+in a transparent manner</font></p>
+
+<p></p>
+
+<p></p>
+<p></p>
+<p><img border="0" src="DSC00439.JPG" width="632" height="824"></p>
+<p></p>
+<p></p>
+
+</body>

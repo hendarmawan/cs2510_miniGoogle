@@ -1,0 +1,71 @@
+<title>Multimedia Software Engineering</title>
+<a href="asp1.html">  
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+</A> 
+<a href="history.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+</head>
+<h1 align="center"> 
+What is ASP.net Web Matrix?</h1> 
+<p align="left"> 
+&nbsp;</p> 
+<blockquote>
+<ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">A tool for 
+  developing ASP.NET Web applications</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">A watered-down 
+  version of Visual Studio .Net that supports basic ASP.Net coding for simpler 
+  Web applications</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Implemented 100% 
+  using C# and the .NET Framework</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">A 
+  community-supported, easy-to-use WYSIWYG application development tool</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Build applications 
+  using either the Visual Basic or C# programming languages</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Web Matrix is a 
+  great way to develop ASP.NET skills, then later move to VisualStudios.NET</li>
+</ul>
+
+
+<body>
+
+
+<p><b>Who is Web Matrix for?</b></p>
+<ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Any age and 
+  occupational group that is trying to develop ASP.NET applications</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">College students</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Companies</li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Web administrators 
+  -- for building Web sites and management applications<ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Remotely monitor 
+  your servers</li>
+</ul>
+  </li>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">Web Matrix is 
+  built with the hobbyist developer in mind<ul>
+  <li>
+  <p align="left" style="line-height: 150%; margin-bottom: 0">VisualStudios.NET 
+  is an tool for the enterprise developer</li>
+</ul>
+  </li>
+</ul>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</blockquote>
+
+
+</body>
+
+</html>

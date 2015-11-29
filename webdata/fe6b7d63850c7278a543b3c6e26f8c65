@@ -1,0 +1,17 @@
+<title>Deployment Diagram</title>
+<A HREF="../1635topic.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c02.htm"><IMG SRC="next.gif" align=right></A>
+
+<center><h1>Deployment Diagram</h1></center>
+
+<b>
+The following slides are excerpted from Chapter 10 of The Object Primer 3rd Edition: Agile Model Driven Development with UML 2, by Scott W. Ambler.
+
+<h2>
+<font color=red>
+A deployment diagram depicts a static view of the run-time configuration of processing nodes and the components that run on those nodes.
+<p>
+In other words, deployment diagrams show the hardware for your system, the software that is installed on that hardware, and the middleware used to connect the disparate machines to one another.
+</font>
+<p>
+You want to create a deployment diagram for applications that are deployed to several machines, for example a point-of-sales application running on a thin-client network computer which interacts with several internal servers behind your corporate firewall or a customer service system deployed using a web services architecture.

@@ -1,0 +1,55 @@
+
+<HTML>
+
+<HEAD>
+
+<meta name="GENERATOR" content="Microsoft Internet Assistant for PowerPoint 97">
+ <TITLE>Model Issues</TITLE> 
+</HEAD>
+
+<BODY     >
+<center>
+<a href="http://www.cs.pitt.edu/~chang/265/C2/tsld004.htm"><img
+src="../previous.gif" align=left></a>
+<a href="http://www.cs.pitt.edu/~chang/265/C2/tsld006.htm"><img
+src="../next.gif" align=right></a>
+
+<h1>Chapter 2
+<br>Document Model Issues for Hypermedia</h1>
+<p>
+<hr width="80%">
+</center>
+
+ <H1>Model Issues</H1> 
+ <P><UL>
+<LI><H2>issues addressed by a hypermedia model
+</H2>
+<UL>
+<LI>document specification
+<UL>
+<LI>information to recreate the presentation on a other platforms and to
+ensure that future systems can interpret the information.
+There are 4 items discussed.
+<UL>
+<LI>media items, structure, presentation, and interaction 
+</UL></ul>
+<LI>document transportation
+<UL>
+<LI>not part of the scope of model, but influences the translation of
+model to some language expressing the model
+</UL><LI>information representation
+</UL></UL></UL><UL>
+<LI><H2>hypermedia Vs multimedia  
+</H2>
+<UL>
+<font color=red>
+<LI>hypermedia is a collection of multimedia presentations
+<LI>multimedia is a collection of media items related temporally and/or
+spatially </UL></UL></P>
+</font>
+<P></P> 
+
+
+
+</Body>
+</HTML>

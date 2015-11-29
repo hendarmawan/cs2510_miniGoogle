@@ -1,0 +1,41 @@
+<html>
+<head><title>Chapter 11: ATM concepts</title></head>
+<body>
+<a href="c11_atm1.html"><IMG SRC="previous.gif" align=left></a>
+<a href="c11_atm3.html"><IMG SRC="next.gif" align=right></a>
+
+<center>
+<h3><font color="blue">Chapter 11</font></h3>
+<h1>ATM Concepts</h1>
+<hr size=3>
+</center>
+
+<h2>
+<image src="redball.gif"> <b>ATM</b> stands for <b>A</b>synchronous 
+<b>T</b>ransfer <b>M</b>ode <br>
+<image src="redball.gif"> Packets have small fixed sizes ,called <i>cells</i><br>
+<image src="redball.gif"> Cell has 5 bytes header and payload 48 bytes <br>
+<img src="redball.gif"> ATM protocol is designed to minimize processing
+overhead <br>
+<image src="redball.gif"> Why cells ?
+<p>
+
+<center>
+<table border=5 cellpadding=10>
+<tr>
+<td align=center><b>Advantage</b>
+<td> Reduce the queuing delay for high priority traffic
+</tr>
+<tr>
+<td align=center><b>Disadvantage</b>
+<td> Overhead because of fragmentation and reassembly
+</tr>
+</table>
+</center>
+
+
+</h2>
+</body>
+</html>
+
+

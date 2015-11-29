@@ -1,0 +1,285 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+<title>Rebecca Hwa's home page</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="banner">
+<h1>Rebecca Hwa</h1>
+<span class="description">
+Associate Professor<br/>
+Department of Computer Science, University of Pittsburgh
+</span>
+</div>
+
+<div id="content"> <!---content--->
+
+<div class="sec">
+  <h3 class="sectitle">Research Interests</h3>
+  <div class="sec">
+  <div class="secbody">
+   Natural language processing, machine learning, 
+  artificial intelligence, and human computer interaction.
+  </div></div>
+
+  <h3 class="sectitle">Recent Publications</h3>
+  <div class="sec">  
+  <div class="secbody">
+
+Huichao Xue and Rebecca Hwa. 2014. Improved Correction Detection in Revised ESL Sentences. In The Proceedings of The 52nd Annual Meeting of the Association for Computational Linguistics (ACL short), 2014, Baltimore, Maryland.<br/><br>
+
+Huichao Xue and Rebecca Hwa (2014).Redundancy Detection in ESL Writings. 2014. In the Proceedings of the 14th Conference of the European Chapter of the Association for Computational Linguistics (EACL), Gothenburgh, Sweden. <br/><br> 
+
+Homa Hashemi and Rebecca Hwa. 2014. A Comparison of MT Errors and ESL Errors. In the Proceedings of the 9th edition of the Language Resources and Evaluation Conference (LREC-2014), Reykjavik, Iceland. <br/><br>
+
+<!--
+Huichao Xue and Rebecca Hwa (2012). Modeling ESL Word Choice Similarities By Representing Word Intensions and Extensions. Proceedings of the 24th International Conference on Computational Linguistics(COLING).<br/><br>
+
+Alexander Conrad, Janyce Wiebe, and Rebecca Hwa (2012). Recognizing Arguing Subjectivity and Argument Tags. ACL Workshop on Extra-propositional aspects of Meaning.<br/><br>
+
+Matthias Grabmair, Kevin D. Ashley, Rebecca Hwa and Patricia
+M. Sweeney. 2011. Toward Extracting Information from Public Health
+Statutes using Text Classification and Machine Learning. In <i>Jurix
+2011: The 24th Annual Conference</i>, pp. 73-82 (Katie M. Atkinson
+ed.) IOS Press 2011.<br/><br/>
+
+Behrang Mohit and Rebecca Hwa. 2010. Using Variable Decoding Weight
+for Language Model in Statistical Machine Translation. In <i>The
+Proceedings of the 9th Conference of the Association for Machine
+Translation in the Americas</i>, Colorado.<br/><br/>
+
+Frank Liberato, Behrang Mohit, and Rebecca Hwa. 2010. Improving
+Phrase-Based Translation with Prototypes of Short Phrases. In <i>The
+Proceedings of the 11th Annual Conference of the NAACL/HLT (short
+paper track)</i>, Los Angeles, CA.<br/><br/>
+
+Huichao Xue and Rebecca Hwa. 2010. Syntax-Driven Machine Translation as
+a Model of ESL Revision. In <i>The Proceedings of COLING 2010:
+Posters</i>, Beijing, China. <br/><br/>
+
+   Joshua Albrecht, Rebecca Hwa, and G. Elisabeta Marai. 2009. Correcting
+Automatic Translations through Collaborations between MT and
+Monolingual Target-Language Users. In <i>The Proceedings of the 12th
+Conference of the European Chapter of the ACL (EACL-2009)</i>, Athens,
+Greece.<br/><br/>
+
+  Behrang Mohit, Frank Liberato, and Rebecca Hwa. 2009. Language Model Adaptation
+for Difficult-to-Translate Phrases. In <i>The Proceedings of the 13th
+Annual Conference of the European Association for Machine Translation
+(EAMT-09)</i>, Barcelona, Spain.<br/><br/>
+
+ Joshua Albrecht and Rebecca Hwa. 2009. Regression
+  for Machine Translation Evaluation at the Sentence Level. 
+  <i>Machine Translations</i>. No. 22, vol.1-2. <br/><br/>
+
+  Joshua Albrecht and Rebecca Hwa. 2008. <a
+href="http://www.cs.pitt.edu/~hwa/jsarh08.pdf">The Role of Pseudo
+References in MT Evaluation</a>.  In <i>The Proceedings of the 3rd ACL
+Workshop on Statistical Machine Translations</i>, Columbus, OH.<br/><br/>
+
+  Noah Smith, Michael Heilman, and Rebecca Hwa. 2008. <a
+href="http://www.cs.pitt.edu/~hwa/shh08.pdf">Question Generation as a
+Competitive Undergraduate Course Project</a> In Proceedings of the NSF
+Workshop on the Question Generation Shared Task and Evaluation Challenge, Arlington, VA.<br/><br/>
+
+
+  Joshua Albrecht and Rebecca Hwa. 2007. <a href="http://www.cs.pitt.edu/~hwa/jsarh07a.pdf">A Re-examination of Machine Learning Approaches for Sentence-Level MT Evaluation</a>. In <i>The Proceedings of the 45th Annual Meeting of the ACL</i>, Prague, Czech
+  Republic.<br/><br/>
+
+  Joshua Albrecht and Rebecca Hwa. 2007. <a href="http://www.cs.pitt.edu/~hwa/jsarh07b.pdf">Regression for Sentence-Level MT Evaluation with Pseudo References</a>. In <i>The Proceedings of the 45th Annual Meeting of the ACL</i>, Prague, Czech
+  Republic.<br/><br/>
+
+  Kaihong Liu, Wendy Chapman, Rebecca Hwa, and Rebecca Crowley. 2007. Heuristic Sample Selection to Minimize Reference
+Standard Training Set for a Part-of-Speech Tagger. To appear in <i>Journal of the American Medical Informatics Association.</i><br/><br/>
+
+ Behrang Mohit and Rebecca Hwa. 2007. Localization of
+ Difficult-to-Translate Phrases. To appear in <i>The Proceedings of
+ the 2nd ACL Workshop on Statistical Machine Translations</i>, Prague,
+ Czech Republic.<br/><br/>
+
+  Markos Mylonakis, Khalil Sima'an, and Rebecca
+  Hwa. 2007. <a href="http://www.cs.pitt.edu/~hwa/mmksrh07.pdf">Unsupervised Estimation for Noisy-Channel Models</a>. To
+  appear in <i>Proceedings of International Conference of Machine
+  Learning (ICML)</i>, Corvallis, Oregon.<br/><br/>
+
+  Rebecca Hwa, Carol Nichols, Khalil Sima'an. 2006.  <a
+  href="http://www.cs.pitt.edu/~hwa/amta06.pdf"> Corpus Variations for
+  Translation Lexicon Induction</a>. In Proceedings of the seventh
+  conference of the Association for Machine Translation in the
+  Americas. Poster Session, Cambridge, MA.<br/><br/>
+
+  Theresa Wilson, Janyce Wiebe, and Rebecca Hwa. 2006. <a
+  href="http://www.blackwell-synergy.com/doi/abs/10.1111/j.1467-8640.2006.00275.x">Recognizing
+  Strong and Weak Opinion Clauses</a>. <i>Computational
+  Intelligence</i>, 22:2, pp. 73-99.<br/><br/>
+
+  Rebecca Hwa, Philip Resnik, Amy Weinberg, Clara Cabezas, and Okan
+  Kolak. 2005. <a
+  href="http://www.cs.pitt.edu/~hwa/nle04draft.pdf">Bootstrapping
+  Parsers via Syntactic Projection across Parallel Texts</a>. 
+  <i>Special Issue of the Journal of Natural Language Engineering on
+  Parallel Texts</i>, Eds. Rada Mihalcea and Michel Simard. 11:3,
+  pp. 311-325.<br/><br/>
+
+  Chenhai Xi and Rebecca Hwa. 2005.  <a href="http://www.cs.pitt.edu/~hwa/emnlp05.pdf">A Backoff Model for Bootstrapping
+Resources for Non-English Languages</a>.  (Note: this version has a
+few typos corrected) In <i>The Proceedings
+of HLT/EMNLP-05</i>, Vancouver, Canada.<br/><br/>
+
+  Behrang Mohit and Rebecca Hwa. 2005.  <a href="http://www.cs.pitt.edu/~hwa/mohit_acl05poster.pdf">Syntax-based Semi-Supervised Named Entity Tagging</a>. In <i>The
+Proceedings of the 43rd Meeting of the ACL (Short paper companion volume)</i>, Ann Arbor, Michigan.<br/><br/>
+
+  Carol Nichols and Rebecca Hwa. 2005. <a href="http://www.cs.pitt.edu/~hwa/nichols_acl05demo.pdf">Word Alignment and Cross-Lingual Resource Acquisition</a>. In <i> The
+Proceedings of the 43rd Meeting of the ACL (Short paper companion volume)</i>, Ann Arbor, Michigan.<br/><br/>
+-->
+
+  </div>  </div>
+<!--
+  <h3 class="sectitle">Recent Invited Talks</h3>
+  <div class="sec">
+  <div class="secbody">
+  Bootstrapping Resources for Parsing Arabic Dialects (<i>Presented with Carol Nichols</i>),
+  Language Technologies Institute, Carnegie Mellon University, PA, MT-Lunch Series.  October, 2005.
+  <br/><br/>
+
+  <a href="http://www.cs.pitt.edu/~hwa/presentations/igk04.pdf">Breaking the Resource Bottleneck for Multilingual Processing</a>,
+  University of Edinburgh, UK, IGK Summer School. September, 2004. 
+  <br/><br/>
+
+  <a href="http://www.cs.pitt.edu/~hwa/presentations/rochester.pdf">A
+  comparison of bootstrapping methods for parsing natural
+  languages</a>, University of Rochester, NY, Big Picture Talk Series.
+  December, 2003. 
+
+ </div></div>
+-->
+<!---
+  <h3 class="sectitle">Project</h3>
+  <div class="sec">
+  <div class="secbody">
+  <a href="http://www.cs.pitt.edu/~hwa/semi.htm">Semi-supervised
+  approaches to multilingual processing</a><br/><br/>
+ </div></div>
+-->
+
+  <h3 class="sectitle">Students</h3>
+  <div class="sec">
+  <div class="secbody">
+  <b>PhD Students</b>
+  <ul>
+  <li><a href="http://www.cs.pitt.edu/~hux10/">Huichao Xue</a>
+  <li><a href="http://www.cs.pitt.edu/~hashemi">Homa B. Hashemi</a>
+  </ul>
+
+  <b>Past Students</b>
+  <ul>
+  <li> Ellen Gawryla (BS, 2011). Now at  Microsoft.
+  <li> <a href="http://www.qatar.cmu.edu/~behrang">Behrang Mohit</a> (PhD, 2010); now research project scientist at <a href="http://www.qatar.cmu.edu">CMU-Qatar</a>.
+  <li> Frank Liberato. 
+  <li> Chenhai Xi (MS, 2009).
+  <li> Joshua Albrecht (MS, 2008); Now at Addepar.
+  <li> Carol Nichols (MS, 2006); now at Think Through Learning Inc.
+  <li> Wesley Goodman (BA, 2006); now at Google (Palo Alto).
+  </ul>
+
+  </div></div>
+
+  <h3 class="sectitle">Teaching</h3>
+  <div class="sec">
+  <div class="secbody">
+
+  CS1675 Introduction to Machine Learning [<a
+  href="http://www.cs.pitt.edu/~hwa/cs1675">2152</a>] <br/>
+  CS2730 Introduction to Natural Language Processing [<a
+  href="http://www.cs.pitt.edu/~hwa/cs3730">2152</a>] <br/><br/>
+
+<!--
+  <b>Courses</b>
+
+  <ul>
+  CS2731 (ISSP2230) Introduction to Natural Language Processing [<a
+  href="http://www.cs.pitt.edu/~hwa/cs2731">2010</a>]<br/> <br/>
+
+  <li>CS1590 Social Implications of Computing [<a href="http://www.cs.pitt.edu/~hwa/cs1590/">08-1</a>]
+  <li>CS1566 Introduction to Computer Graphics [<a href="http://www.cs.pitt.edu/~hwa/cs1566/">07-1</a>]
+  CS2750 (ISSP2170) Machine Learning [<a href="http://www.cs.pitt.edu/~hwa/cs2750">06-2</a>]<br/> <br/>
+  CS1571 Introduction to Artificial Intelligence [<a
+  href="http://www.cs.pitt.edu/~hwa/cs1571">06-1</a>]<br/> <br/>
+  CS2731 (ISSP2230) Introduction to Natural Language Processing [<a
+  href="http://www.cs.pitt.edu/~hwa/cs2731">08-1</a>]<br/> <br/>
+-->
+</ul>
+
+  <h3 class="bodytitle">Office Hours</h3>
+  TTh 12:30-1:30pm or by appointment.
+
+  </div>  </div>
+
+<!--
+  <h3 class="sectitle">Past Courses</h3>
+  <div class="sec">
+  <div class="secbody">
+  CS1571 Introduction to Artificial Intelligence [<a href="http://www.cs.pitt.edu/~hwa/cs1571/">05-1</a>]<br/>
+  CS3730 (ISSP3120) Natural Language Processing [<a href="http://www.cs.pitt.edu/~hwa/cs3730/">04-2</a>]<br/>
+  CS1590 Social Implications of Computing [<a href="http://www.cs.pitt.edu/~hwa/cs1590_0401/">04-1</a>]<br/><br/>
+
+  </div>
+  </div>
+
+   <h3 class="sectitle">Misc</h3>
+   <div class="sec">
+   <div class="secbody">
+   <a href="http://www.cs.pitt.edu/~hwa/blog">A bump on the blog</a>
+   </div>
+   </div>
+-->
+
+</div> <!-- sec -->
+</div> <!-- content-->
+
+<div id="links">
+
+<div class="sidetitle">
+Links
+</div>
+
+<div class="side">
+<a href="http://www.cs.pitt.edu/~hwa">Home</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/cv.pdf">CV</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/pubs.htm">Publications</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/activities.htm">Professional
+Activities</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/pat.htm">Patents</a><br/>
+<a href="http://www.cs.pitt.edu/~hwa/courses.htm">Teaching</a><br/>
+</div>
+
+<div class="sidetitle">
+Affiliated Programs
+</div>
+
+<div class="side">
+<a href="http://www.isp.pitt.edu">Intelligent Systems Program</a><br/>
+</div>
+
+<div class="sidetitle">
+Contact Information
+</div>
+
+<div class="side">
+<div class="secbody">
+Sennott Square Building, Room 5103<br/>
+210 S. Bouquet St.<br/>
+Pittsburgh, PA 15260, U.S.A.<br/>
+<i>fax:</i> +1 (412) 624-8854<br/>
+<i>email:</i> my last name at cs dot pitt dot edu<br/>
+</div>
+</div>
+
+<div class="sidetitle">
+Last updated on Feb. 7, 2015.
+</div> 
+
+</div> <!-- links-->
+</body>
+</html>

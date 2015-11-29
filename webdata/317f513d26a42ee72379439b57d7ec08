@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+<title>Students (Jan Wiebe)</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="banner">
+<h2>Students</h2>
+</span>
+</div>
+
+<div id="content"> <!---content--->
+
+  <h3 class="sectitle">Current Students</h3>
+  <div class="sec">
+  <div class="secbody">
+
+
+<A HREF="http://www.isp.pitt.edu/~cem">
+Cem Akkaya </A> 
+<br/>
+
+<A HREF="http://www.cs.pitt.edu/~conrada">
+Alexander Conrad </A> 
+<br/>
+
+  </div></div>
+
+  <h3 class="sectitle"> Graduated Students
+</h3>
+
+
+  <div class="sec">
+  <div class="secbody">
+
+Matthew Bell <br/>
+Rebecca Bruce <br/>
+Lei Duan <br/>
+Puneet Girdhar <br/>
+Yaw Anti Gyamfi <br/>
+Peter Heeman <br/>
+Paul Hoffmann <br/> 
+Nathalie Japkowicz <br/>
+Jason Kessler <br/>
+Mitsutaka Matsumoto <br/>
+Kenneth McKeever <br/>
+Tom O'Hara <br/>
+Arnim Ruelas <br/>
+Thorsten Ohrstrom-Sandgren <br/>
+Swapna Somasundaran <br/>
+Shawn Weis <br/>
+Theresa Wilson <br/>
+Bing Yao <br/>
+</br>
+</br>
+</br>
+  </div></div>
+
+</div> <!-- sec -->
+</div> <!-- content-->
+
+<div id="links">
+
+<div class="sidetitle">
+Links
+</div>
+
+<div class="side">
+<a href="http://www.cs.pitt.edu/~wiebe">Home</a><br/>
+<a
+href="http://www.cs.pitt.edu/~wiebe/pubs/index.html">Publications</a><br/>
+<a
+href="http://www.cs.pitt.edu/~wiebe/courses.html">Teaching</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/projects.html">
+Projects</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/service.html">Professional
+Activities</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/students.html">
+Students</a><br/>
+</div>
+
+<div class="sidetitle">
+Affiliated Programs
+</div>
+
+<div class="side">
+<a href="http://nlp.cs.pitt.edu">NLP@Pitt</a><br/>
+<a href="http://www.cs.pitt.edu">Department of Computer Science</a><br/>
+<a href="http://www.isp.pitt.edu">Intelligent Systems Program</a><br/>
+</div>
+
+
+<div class="sidetitle">
+Contact Information Janyce Wiebe
+</div>
+
+<div class="side">
+<div class="secbody">
+Sennott Square Building, Room 5409 <br/>
+210 S. Bouquet St.<br/>
+Pittsburgh, PA 15260, U.S.A.<br/>
+<i>phone:</i> +1 (412) 624-9590<br/>
+<i>fax:</i> +1 (412) 624-8854<br/>
+<i>email:</i> my last name at cs dot pitt dot edu<br/>
+</div>
+</div>
+
+</div> <!-- links-->
+</body>
+</html>

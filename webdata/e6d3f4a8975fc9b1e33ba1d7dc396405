@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title> Bugs Bee Wee </title>
+<style type="text/css">
+form { background-color: #FFFFFF;
+         border-color: #0000CC;
+         border-style:double;
+         border-width: 4px;
+          }
+</style>
+</head>
+<body>
+<h1>The Good Bug List </h1>
+The editors of <span style="font-family: sans-serif; color: #0000FF">
+Bugs Bee Wee </span> journal are looking for the most
+popular butterfly, (or moth), according to our readers.  Please take
+a moment to select your favorite from the
+list shown below.
+<form
+   action="http://phred.dcccd.edu/cgi-bin/either.pl"
+   method="POST">
+Which of the following <span style="font-style: italic; font-weight: bold;">Lepidoptera</span> is your favorite?<br>
+Choose only one.
+<br>
+<input type="radio" name="fav" value="mb" alt="Monarch">Monarch<br>
+<input type="radio" name="fav" value="lm" alt="Luna">Luna Moth<br>
+<input type="radio" name="fav" value="st" alt="Swallow Tail">Black Swallow Tail<br>
+<input type="radio" name="fav" value="cs" alt="Sulfer">Common Sulfur<br>
+<input type="radio" name="fav" value="mk" alt="Milkweed">Milkweed Butterfly<br>
+<input type="radio" name="fav" value="tm" alt="Tiger">Tiger Moth<br>
+ <input
+   type="SUBMIT"
+   value="Send via POST"
+   alt="Submit via Post"><br>
+</form>
+</body>
+</html>

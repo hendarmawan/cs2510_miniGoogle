@@ -1,0 +1,53 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="cbir-10.htm"><img src="previous.gif" align="left" alt="QBIC"></a>
+<a href="cbdr-02.htm"><img src="next.gif" align="right" alt="Vector Based Model"></a>
+
+<br><br>
+<center>
+<table width="600">
+	<tr>
+		<td>
+			<h1 align="center">Content-Based Document Retrieval</h1>
+			<hr>			
+		
+			<b>Like content-based image retrieval, content-based document retrieval goes through similar process of data flow.  Documents are processed and features were extracted.  A similarity function is applied based on the features extracted to determine relevance of document.</b>
+			<p><b>Pre-Processing:</b></p>
+			<ul>
+				<li>Extract text and structure from raw document (Word document, html, etc.)</li>
+				<li>Remove stop words from document (the, at, all, etc.)</li>
+				<li>Stemming - Converting words to stems (processing => process)</li>
+			</ul>
+			
+			<p>
+				<b>Features Extraction:</b><br>
+				- Words are projected into vectors.
+			</p>
+			
+			<p>
+				<b>Computing Relevance (Similarity):</b><br>
+				<ul>
+					<li>
+						<i>Vector Based Model</i><br>
+						- Document and query is represented by vector.<br>
+						- Elements of vector are frequency of words.<br>
+						- Similarity is calculated by calculating distance between the query vector and document vector.<br>
+					</li>
+					<li>
+						<i>Probabilistic Model</i><br>
+						- Relevance is based on users feedback or ranking of the vector model.<br>
+						- Relevance of the document is represented as probability.
+					</li>
+				</ul>
+			</p>
+		</td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

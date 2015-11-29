@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0044)http://www.cs.pitt.edu/~chang/163/c17/01.htm -->
+  <title>Enterprise Beans</title>
+  <meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+  <meta content="FrontPage.Editor.Document" name="ProgId">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <meta name="author" content="Chirag Vaidya">
+</head>
+<body>
+<a href="c04.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;"
+ src="previous.gif" align="left" title="" alt=""></a> <a href="c06.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;" src="next.gif"
+ align="right" title="" alt=""></a>
+<h2 align="center" style="color: rgb(51, 51, 255);"><big> Component Types -- Enterprise Beans<br>
+</big></h2>
+<big><big><big>Two types of Enterprise Beans:</big></big></big>
+<ul>
+  <li><big><big><font color="#ff0000">Session
+Beans:&nbsp;</font> </big></big></li>
+  <ul>
+    <li>
+      <p style="margin-top: 6px; margin-bottom: 0pt;"><big><big>Can
+update data in a database and participate in
+transactions.</big></big> </p>
+    </li>
+    <li>
+      <p style="margin-top: 6px; margin-bottom: 0pt;"><big><big>Either
+Stateful or Stateless.</big></big> </p>
+    </li>
+  </ul>
+</ul>
+<ul>
+    <li><big><big><font color="#ff0000">Entity
+        Beans:&nbsp;</font> </big></big></li>
+    <ul>
+    <li>
+      <p style="margin-top: 6px; margin-bottom: 0pt;"><big><big>Most
+complex component type in EJB model.</big></big> </p>
+    </li>
+    <li>
+      <p style="margin-top: 6px; margin-bottom: 0pt;"><big><big>Operate
+as business objects and represent data in a
+database or a persistent data storage.
+      </big></big> </p>
+    </li>
+  </ul>
+</ul>
+      <p style="margin-top: 6px; margin-bottom: 0pt;">&nbsp;&nbsp;&nbsp; </p>
+<ul>
+    <li>
+      <p style="margin-top: 6" align="justify">
+<big><big>Each provides its own type of functionality and can enable
+the container to manage that functionality or manage by itself.</big></big></li>
+    <li>
+      <p style="margin-top: 6" align="justify">
+<big><big>
+Beans that manage their own functionality are more complex but also
+have more options.</big></big></li>
+    <li>
+      <p style="margin-top: 6" align="justify"><big><big>Session beans and
+      entity beans use synchronous communication.</big></big></li>
+    <li>
+      <p style="margin-top: 6" align="justify"><big><big>EJB executes client
+      requests and client waits for the EJB response.</big></big><br>
+    </li>
+</ul>
+<p align="center"><img border="0" src="c05.ht1.gif" width="759" height="431"></p>
+</body>
+</html>

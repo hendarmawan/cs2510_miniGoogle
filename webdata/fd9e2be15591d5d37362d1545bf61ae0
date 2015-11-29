@@ -1,0 +1,46 @@
+From: "John Menke" <john.menke@eagleinfosystems.com>
+
+The endorsed.zip file is now located in /home/virtualclassroom
+
+copy these files to the $/TOMCAT_HOME/common/endorsed folder in your Tomcat
+5.0.28 install
+
+If anyone has any questions on how to get the example running please email
+me back.
+
+NOTE:  i have found that different versions of Tomcat require different sets
+of files in the endorsed directory so please only use 5.0.28
+
+I did my best to make this as simple as possible.  I'm hoping the install
+instructions are portable across machines.  I know that if the example can't
+find all the .jars it needs Axis will throw some strange errors.
+
+EVERYONE: please email me when you get it running - i need feedback to see
+it's working for you.
+
+NOTE:  the CVS contains a directory with all the .jar files needed to
+compile run the test client.  Make sure you setup a "runtime" classpath when
+you run the sample application.  It should default to have all the .jars in
+the /lib folder if it doesn't add them.
+
+Also, you need MyEclipse configured correctly.  Please find the application
+servers configuration settings through Window/Preferences then
+/MyEclipse/Application Servers/Tomcat 5 configure the directory to match
+your tomcat install
+
+Make sure "Enable" is selected and deselect "enable" for JBoss3 (the
+default)
+
+
+To deploy just find the deploy icon on the toolbar.  Make sure you follow
+the instructions to copy all the .jar files to /WEB-INF/lib (I think i
+included a picture in the setup docs)
+
+If everything is installed correctly you can find the TestMsgClient.java
+file under the source in the client folder under axis.  Right click on this,
+then select run.  Check the classpath settings on next dialog box and then
+run.  You should get the output i have in the pic in the setup doc.
+
+Again, please let me know if you have any problems.
+
+

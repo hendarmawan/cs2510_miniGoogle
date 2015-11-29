@@ -1,0 +1,1556 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 14">
+<meta name=Originator content="Microsoft Word 14">
+<link rel=File-List href="com_argument_files/filelist.xml">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Huy Nguyen</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Huy Nguyen</o:LastAuthor>
+  <o:Revision>62</o:Revision>
+  <o:TotalTime>1446</o:TotalTime>
+  <o:Created>2014-01-03T17:35:00Z</o:Created>
+  <o:LastSaved>2014-03-31T06:14:00Z</o:LastSaved>
+  <o:Pages>3</o:Pages>
+  <o:Words>2684</o:Words>
+  <o:Characters>15299</o:Characters>
+  <o:Lines>127</o:Lines>
+  <o:Paragraphs>35</o:Paragraphs>
+  <o:CharactersWithSpaces>17948</o:CharactersWithSpaces>
+  <o:Version>14.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData href="com_argument_files/themedata.thmx">
+<link rel=colorSchemeMapping href="com_argument_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>110</w:Zoom>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:1;
+	mso-generic-font-family:roman;
+	mso-font-format:other;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-536870145 1073786111 1 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:10.0pt;
+	margin-left:0mm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:24.0pt;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:0mm;
+	margin-bottom:.0001pt;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:0pt;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:15.0pt;
+	margin-left:0mm;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-bottom-alt:solid #4F81BD 1.0pt;
+	mso-border-bottom-themecolor:accent1;
+	padding:0mm;
+	mso-padding-alt:0mm 0mm 4.0pt 0mm;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#17365D;
+	mso-themecolor:text2;
+	mso-themeshade:191;
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0mm;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-bottom-alt:solid #4F81BD 1.0pt;
+	mso-border-bottom-themecolor:accent1;
+	padding:0mm;
+	mso-padding-alt:0mm 0mm 4.0pt 0mm;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#17365D;
+	mso-themecolor:text2;
+	mso-themeshade:191;
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0mm;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-bottom-alt:solid #4F81BD 1.0pt;
+	mso-border-bottom-themecolor:accent1;
+	padding:0mm;
+	mso-padding-alt:0mm 0mm 4.0pt 0mm;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#17365D;
+	mso-themecolor:text2;
+	mso-themeshade:191;
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:15.0pt;
+	margin-left:0mm;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-bottom-alt:solid #4F81BD 1.0pt;
+	mso-border-bottom-themecolor:accent1;
+	padding:0mm;
+	mso-padding-alt:0mm 0mm 4.0pt 0mm;
+	font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#17365D;
+	mso-themecolor:text2;
+	mso-themeshade:191;
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-priority:11;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Subtitle Char";
+	mso-style-next:Normal;
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:10.0pt;
+	margin-left:0mm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	letter-spacing:.75pt;
+	font-style:italic;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	mso-themecolor:hyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	mso-themecolor:followedhyperlink;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:36.0pt;
+	margin-bottom:.0001pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:10.0pt;
+	margin-left:36.0pt;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#365F91;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-weight:bold;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	mso-ansi-font-size:26.0pt;
+	mso-bidi-font-size:26.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#17365D;
+	mso-themecolor:text2;
+	mso-themeshade:191;
+	letter-spacing:.25pt;
+	mso-font-kerning:14.0pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-priority:11;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Subtitle;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Cambria","serif";
+	mso-ascii-font-family:Cambria;
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Cambria;
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#4F81BD;
+	mso-themecolor:accent1;
+	letter-spacing:.75pt;
+	font-style:italic;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+@page WordSection1
+	{size:612.0pt 792.0pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0mm 5.4pt 0mm 5.4pt;
+	mso-para-margin:0mm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+table.MsoTableGrid
+	{mso-style-name:"Table Grid";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-priority:59;
+	mso-style-unhide:no;
+	border:solid windowtext 1.0pt;
+	mso-border-alt:solid windowtext .5pt;
+	mso-padding-alt:0mm 5.4pt 0mm 5.4pt;
+	mso-border-insideh:.5pt solid windowtext;
+	mso-border-insidev:.5pt solid windowtext;
+	mso-para-margin:0mm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+table.MsoTableLightListAccent1
+	{mso-style-name:"Light List - Accent 1";
+	mso-tstyle-rowband-size:1;
+	mso-tstyle-colband-size:1;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	border:solid #4F81BD 1.0pt;
+	mso-border-themecolor:accent1;
+	mso-padding-alt:0mm 5.4pt 0mm 5.4pt;
+	mso-para-margin:0mm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-ascii-theme-font:minor-latin;
+	mso-hansi-font-family:Calibri;
+	mso-hansi-theme-font:minor-latin;}
+table.MsoTableLightListAccent1FirstRow
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:first-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-shading:#4F81BD;
+	mso-tstyle-shading-themecolor:accent1;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	color:white;
+	mso-themecolor:background1;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent1LastRow
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:last-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:2.25pt double #4F81BD;
+	mso-tstyle-border-top-themecolor:accent1;
+	mso-tstyle-border-left:1.0pt solid #4F81BD;
+	mso-tstyle-border-left-themecolor:accent1;
+	mso-tstyle-border-bottom:1.0pt solid #4F81BD;
+	mso-tstyle-border-bottom-themecolor:accent1;
+	mso-tstyle-border-right:1.0pt solid #4F81BD;
+	mso-tstyle-border-right-themecolor:accent1;
+	mso-para-margin-top:auto;
+	mso-para-margin-bottom:auto;
+	line-height:normal;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent1FirstCol
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:first-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent1LastCol
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:last-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-ansi-font-weight:bold;
+	mso-bidi-font-weight:bold;}
+table.MsoTableLightListAccent1OddColumn
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:odd-column;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #4F81BD;
+	mso-tstyle-border-top-themecolor:accent1;
+	mso-tstyle-border-left:1.0pt solid #4F81BD;
+	mso-tstyle-border-left-themecolor:accent1;
+	mso-tstyle-border-bottom:1.0pt solid #4F81BD;
+	mso-tstyle-border-bottom-themecolor:accent1;
+	mso-tstyle-border-right:1.0pt solid #4F81BD;
+	mso-tstyle-border-right-themecolor:accent1;}
+table.MsoTableLightListAccent1OddRow
+	{mso-style-name:"Light List - Accent 1";
+	mso-table-condition:odd-row;
+	mso-style-priority:61;
+	mso-style-unhide:no;
+	mso-tstyle-border-top:1.0pt solid #4F81BD;
+	mso-tstyle-border-top-themecolor:accent1;
+	mso-tstyle-border-left:1.0pt solid #4F81BD;
+	mso-tstyle-border-left-themecolor:accent1;
+	mso-tstyle-border-bottom:1.0pt solid #4F81BD;
+	mso-tstyle-border-bottom-themecolor:accent1;
+	mso-tstyle-border-right:1.0pt solid #4F81BD;
+	mso-tstyle-border-right-themecolor:accent1;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:36.0pt'>
+
+<div class=WordSection1>
+
+<div style='mso-element:para-border-div;border:none;border-bottom:solid #4F81BD 1.0pt;
+mso-border-bottom-themecolor:accent1;padding:0mm 0mm 4.0pt 0mm'>
+
+<p class=MsoTitle><span style='font-family:"Times New Roman","serif"'>Comprehensive
+Exam<o:p></o:p></span></p>
+
+</div>
+
+<p class=MsoSubtitle><span style='font-size:14.0pt;mso-bidi-font-size:12.0pt;
+line-height:115%;font-family:"Times New Roman","serif"'>Topic: Computational
+Approaches for Argumentation Mining in Natural Language Text<o:p></o:p></span></p>
+
+<h1><span style='font-family:"Times New Roman","serif"'>Reading List<o:p></o:p></span></h1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<table class=MsoTableLightListAccent1 border=1 cellspacing=0 cellpadding=0
+ width=771 style='width:578.15pt;border-collapse:collapse;border:none;
+ mso-border-top-alt:1.0pt;mso-border-left-alt:.5pt;mso-border-bottom-alt:1.0pt;
+ mso-border-right-alt:.5pt;mso-border-color-alt:#4F81BD;mso-border-themecolor:
+ accent1;mso-border-style-alt:solid;mso-yfti-tbllook:1184;mso-padding-alt:0mm 5.4pt 0mm 5.4pt;
+ mso-border-insideh:.5pt solid #4F81BD;mso-border-insideh-themecolor:accent1'>
+ <tr style='mso-yfti-irow:-1;mso-yfti-firstrow:yes'>
+  <td width=100 valign=top style='width:74.95pt;border:solid #4F81BD 1.0pt;
+  mso-border-themecolor:accent1;border-right:none;mso-border-top-alt:solid #4F81BD 1.0pt;
+  mso-border-top-themecolor:accent1;mso-border-left-alt:solid #4F81BD .5pt;
+  mso-border-left-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD .5pt;
+  mso-border-bottom-themecolor:accent1;background:#4F81BD;mso-background-themecolor:
+  accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin:0mm;margin-bottom:.0001pt;line-height:normal;
+  mso-yfti-cnfc:5'><b><span style='font-family:"Times New Roman","serif";
+  color:white;mso-themecolor:background1'>Category<o:p></o:p></span></b></p>
+  </td>
+  <td width=671 valign=top style='width:503.2pt;border:solid #4F81BD 1.0pt;
+  mso-border-themecolor:accent1;border-left:none;mso-border-top-alt:solid #4F81BD 1.0pt;
+  mso-border-top-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD .5pt;
+  mso-border-bottom-themecolor:accent1;mso-border-right-alt:solid #4F81BD .5pt;
+  mso-border-right-themecolor:accent1;background:#4F81BD;mso-background-themecolor:
+  accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin:0mm;margin-bottom:.0001pt;line-height:normal;
+  mso-yfti-cnfc:1'><b><span style='font-family:"Times New Roman","serif";
+  color:white;mso-themecolor:background1'>Paper<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:0'>
+  <td width=100 valign=top style='width:74.95pt;border-top:none;border-left:
+  solid #4F81BD 1.0pt;mso-border-left-themecolor:accent1;border-bottom:solid #4F81BD 1.0pt;
+  mso-border-bottom-themecolor:accent1;border-right:none;mso-border-top-alt:
+  solid #4F81BD .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #4F81BD .5pt;
+  mso-border-top-themecolor:accent1;mso-border-left-alt:solid #4F81BD .5pt;
+  mso-border-left-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD .5pt;
+  mso-border-bottom-themecolor:accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:68'><b><span style='font-family:"Times New Roman","serif"'>Overview<o:p></o:p></span></b></p>
+  </td>
+  <td width=671 valign=top style='width:503.2pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;mso-border-bottom-themecolor:accent1;
+  border-right:solid #4F81BD 1.0pt;mso-border-right-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-bottom-alt:solid #4F81BD .5pt;mso-border-bottom-themecolor:accent1;
+  mso-border-right-alt:solid #4F81BD .5pt;mso-border-right-themecolor:accent1;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Times New Roman","serif"'>Approaches to text mining
+  arguments from legal cases</span></b><span style='font-family:"Times New Roman","serif"'>
+  A Wyner, R Mochales-Palau, MF Moens, D Milward Semantic processing of legal
+  texts, 60-79 &gt;&gt;&gt;good for domain of legal text&lt;&lt;&lt; <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Approaches%20to%20text%20mining%20arguments%20from%20legal%20cases.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Times New Roman","serif"'>Recent advances in
+  computational models of natural argument</span></b><span style='font-family:
+  "Times New Roman","serif"'> C Reed, F Grasso International Journal of
+  Intelligent Systems 22 (1), 1-15 <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Recent%20advances%20in%20computational%20models%20of%20natural%20argument.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Mochales
+  Palau, Raquel; Moens, Marie-Francine. <b style='mso-bidi-font-weight:normal'>Argumentation
+  mining: the detection, classification and structure of arguments in text</b>,
+  Twelfth international conference on artificial intelligence and law (ICAIL
+  2009), Barcelona, Spain, 8-12 June 2009, Proceedings of the Twelfth
+  International Conference on Artificial Intelligence and Law (ICAIL 2009),
+  pages 98-109, ACM <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Argumentation%20mining%20the%20detection,%20classification%20and%20structure%20of%20arguments%20in%20text.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Peldszus,
+  A., &amp; Stede, M. (2013). <b style='mso-bidi-font-weight:normal'>From
+  Argument Diagrams to Argumentation Mining in Texts: A Survey</b>.
+  International Journal of Cognitive Informatics and Natural Intelligence
+  (IJCINI), 7(1), 1-31. doi:10.4018/jcini.2013010101 <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/From%20Argument%20Diagrams%20to%20Argumentation%20Mining%20in%20Texts%20A%20Survey.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td width=100 valign=top style='width:74.95pt;border-top:none;border-left:
+  solid #4F81BD 1.0pt;mso-border-left-themecolor:accent1;border-bottom:solid #4F81BD 1.0pt;
+  mso-border-bottom-themecolor:accent1;border-right:none;mso-border-top-alt:
+  solid #4F81BD .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #4F81BD .5pt;
+  mso-border-top-themecolor:accent1;mso-border-left-alt:solid #4F81BD .5pt;
+  mso-border-left-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD .5pt;
+  mso-border-bottom-themecolor:accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:4'><b><span style='font-family:"Times New Roman","serif"'>Corpora<o:p></o:p></span></b></p>
+  </td>
+  <td width=671 valign=top style='width:503.2pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;mso-border-bottom-themecolor:accent1;
+  border-right:solid #4F81BD 1.0pt;mso-border-right-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-bottom-alt:solid #4F81BD .5pt;mso-border-bottom-themecolor:accent1;
+  mso-border-right-alt:solid #4F81BD .5pt;mso-border-right-themecolor:accent1;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Carlson, L.,
+  Marcu, D., &amp; Okurowski, M. E. (2003). <b style='mso-bidi-font-weight:
+  normal'>Building a discourse-tagged corpus in the framework of rhetorical
+  structure theory</b> (pp. 85-112). Springer Netherlands. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Building%20a%20discourse-tagged%20corpus%20in%20the%20framework%20of%20rhetorical%20structure%20theory.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Rahwan, I.,
+  Zablith, F., &amp; Reed, C. (2007). <b style='mso-bidi-font-weight:normal'>Laying
+  the foundations for a world wide argument web</b>. Artificial intelligence,
+  171(10), 897-921. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Laying%20the%20foundations%20for%20a%20world%20wide%20argument%20web.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Prasad, R.,
+  Dinesh, N., Lee, A., Miltsakaki, E., Robaldo, L., Joshi, A. K., &amp; Webber,
+  B. L. (2008, May). <b style='mso-bidi-font-weight:normal'>The Penn Discourse
+  TreeBank 2.0</b>. In LREC. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/The%20Penn%20Discourse%20TreeBank%202.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Reed, C.,
+  Mochales Palau, R., Rowe, G., &amp; Moens, M. F. (2008). <b style='mso-bidi-font-weight:
+  normal'>Language resources for studying argument</b>. In Proceedings of the
+  6th conference on language resources and evaluation-LREC 2008 (pp. 91-100). <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Language%20resources%20for%20studying%20argument.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Mochales Palau,
+  Raquel; Ieven, Aagje. <b style='mso-bidi-font-weight:normal'>Creating an
+  argumentation corpus: do theories apply to real arguments? A case study on
+  the legal argumentation of the ECHR</b>, Twelfth international conference on
+  artificial intelligence and law (ICAIL 2009)., Barcelona, Spain, 8-12 June
+  2009, Proceedings of the Twelfth International Conference on Artificial
+  Intelligence and Law (ICAIL 2009), pages 21-30, ACM <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Creating%20an%20argumentation%20corpus%20do%20theories%20apply%20to%20real%20arguments.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Liakata M.,
+  Teufel S., Siddharthan A., Batchelor C.. <b style='mso-bidi-font-weight:normal'>Corpora
+  for conceptualisation and zoning of scientific papers</b>. 2010. In
+  Proceedings of the Seventh conference on International Language Resources and
+  Evaluation (LREC10), May 2010. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Corpora%20for%20conceptualisation%20and%20zoning%20of%20scientific%20papers.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td width=100 valign=top style='width:74.95pt;border-top:none;border-left:
+  solid #4F81BD 1.0pt;mso-border-left-themecolor:accent1;border-bottom:solid #4F81BD 1.0pt;
+  mso-border-bottom-themecolor:accent1;border-right:none;mso-border-top-alt:
+  solid #4F81BD .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #4F81BD .5pt;
+  mso-border-top-themecolor:accent1;mso-border-left-alt:solid #4F81BD .5pt;
+  mso-border-left-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD .5pt;
+  mso-border-bottom-themecolor:accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:68'><b><span style='font-family:"Times New Roman","serif"'>Annotation<o:p></o:p></span></b></p>
+  </td>
+  <td width=671 valign=top style='width:503.2pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;mso-border-bottom-themecolor:accent1;
+  border-right:solid #4F81BD 1.0pt;mso-border-right-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-bottom-alt:solid #4F81BD .5pt;mso-border-bottom-themecolor:accent1;
+  mso-border-right-alt:solid #4F81BD .5pt;mso-border-right-themecolor:accent1;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Teufel,
+  S., Carletta, J., &amp; Moens, M. (1999, June). <b style='mso-bidi-font-weight:
+  normal'>An annotation scheme for discourse-level argumentation in research
+  articles</b>. In Proceedings of the ninth conference on European chapter of
+  the Association for Computational Linguistics (pp. 110-117). Association for
+  Computational Linguistics. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/An%20annotation%20scheme%20for%20discourse-level%20argumentation%20in%20research%20articles.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Bal
+  Krishna Bal, Patrick Saint-Dizier. <b style='mso-bidi-font-weight:normal'>Towards
+  Building Annotated Resources for Analyzing Opinions and Argumentation in News
+  Editorials</b>, LREC, Malta, Nicoletta Calzolari (Eds.), ELRA, may 2010. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Towards%20Building%20Annotated%20Resources%20for%20Analyzing%20Opinions%20and%20Argumentation%20in%20News%20Editorials.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Liakata,
+  M., Thompson, P., de Waard, A., Nawaz, R., Maat, H. P., &amp; Ananiadou, S.
+  (2012, July). <b style='mso-bidi-font-weight:normal'>A three-way perspective
+  on scientific discourse annotation for knowledge extraction</b>. In
+  Proceedings of the Workshop on Detecting Structure in Scholarly Discourse
+  (pp. 37-46). Association for Computational Linguistics. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/A%20three-way%20perspective%20on%20scientific%20discourse%20annotation%20for%20knowledge%20extraction.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>A.
+  Peldszus, M. Stede. <b style='mso-bidi-font-weight:normal'>Ranking the
+  annotators: An agreement study on argumentation structure</b>. (PDF) In:
+  Proc. of the 7th Linguistic Annotation Workshop and Interoperability in
+  Discourse. ACL, Sofia, 2013. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Ranking%20the%20annotators%20An%20agreement%20study%20on%20argumentation%20structure.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td width=100 valign=top style='width:74.95pt;border-top:none;border-left:
+  solid #4F81BD 1.0pt;mso-border-left-themecolor:accent1;border-bottom:solid #4F81BD 1.0pt;
+  mso-border-bottom-themecolor:accent1;border-right:none;mso-border-top-alt:
+  solid #4F81BD .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #4F81BD .5pt;
+  mso-border-top-themecolor:accent1;mso-border-left-alt:solid #4F81BD .5pt;
+  mso-border-left-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD .5pt;
+  mso-border-bottom-themecolor:accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:4'><b><span style='font-family:"Times New Roman","serif"'>Methods<o:p></o:p></span></b></p>
+  </td>
+  <td width=671 valign=top style='width:503.2pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;mso-border-bottom-themecolor:accent1;
+  border-right:solid #4F81BD 1.0pt;mso-border-right-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-bottom-alt:solid #4F81BD .5pt;mso-border-bottom-themecolor:accent1;
+  mso-border-right-alt:solid #4F81BD .5pt;mso-border-right-themecolor:accent1;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Girju, R. (2003,
+  July). <b style='mso-bidi-font-weight:normal'>Automatic detection of causal
+  relations for question answering</b>. In Proceedings of the ACL 2003 workshop
+  on Multilingual summarization and question answering-Volume 12 (pp. 76-83).
+  Association for Computational Linguistics. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Automatic%20detection%20of%20causal%20relations%20for%20question%20answering.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Moens,
+  Marie-Francine; Boiy, Erik; Mochales Palau, Raquel; Reed, Chris. <b
+  style='mso-bidi-font-weight:normal'>Automatic detection of arguments in legal
+  texts</b>, Eleventh International Conference on Artificial Intelligence and
+  Law, Stanford, USA, June 4-8, 2007, Proceedings of the Eleventh International
+  Conference on Artificial Intelligence and Law, pages 225-230, ACM
+  &gt;&gt;&gt;<span style='background:yellow;mso-highlight:yellow'>has two
+  other versions</span>&lt;&lt;&lt; <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Automatic%20detection%20of%20arguments%20in%20legal%20texts.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Vanessa Wei Feng
+  and Graeme Hirst, 2011. <b style='mso-bidi-font-weight:normal'>Classifying
+  Arguments by Scheme</b>. In Proceedings of the The 49th Annual Meeting of the
+  Association for Computational Linguistics: Human Language Technologies
+  (ACL-2011), Portland, Oregon. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Classifying%20Arguments%20by%20Scheme.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Madnani, Nitin,
+  et al. &quot;<b style='mso-bidi-font-weight:normal'>Identifying high-level organizational
+  elements in argumentative discourse</b>.&quot; Proceedings of the 2012
+  Conference of the North American Chapter of the Association for Computational
+  Linguistics: Human Language Technologies. Association for Computational
+  Linguistics, 2012. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Identifying%20high-level%20organizational%20elements%20in%20argumentative%20discourse.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td width=100 valign=top style='width:74.95pt;border-top:none;border-left:
+  solid #4F81BD 1.0pt;mso-border-left-themecolor:accent1;border-bottom:solid #4F81BD 1.0pt;
+  mso-border-bottom-themecolor:accent1;border-right:none;mso-border-top-alt:
+  solid #4F81BD .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #4F81BD .5pt;
+  mso-border-top-themecolor:accent1;mso-border-left-alt:solid #4F81BD .5pt;
+  mso-border-left-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD .5pt;
+  mso-border-bottom-themecolor:accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:68'><b><span style='font-family:"Times New Roman","serif"'>Models<o:p></o:p></span></b></p>
+  </td>
+  <td width=671 valign=top style='width:503.2pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;mso-border-bottom-themecolor:accent1;
+  border-right:solid #4F81BD 1.0pt;mso-border-right-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-bottom-alt:solid #4F81BD .5pt;mso-border-bottom-themecolor:accent1;
+  mso-border-right-alt:solid #4F81BD .5pt;mso-border-right-themecolor:accent1;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Times New Roman","serif"'>Generating and evaluating
+  evaluative arguments</span></b><span style='font-family:"Times New Roman","serif"'>
+  G Carenini, JD Moore Artificial Intelligence 170 (11), 925-952 &gt;&gt;&gt;<span
+  style='background:yellow;mso-highlight:yellow'>excellent article</span>&lt;&lt;&lt;
+  <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Generating%20and%20evaluating%20evaluative%20arguments.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><b style='mso-bidi-font-weight:normal'><span
+  style='font-family:"Times New Roman","serif"'>Multi-Document Summarization of
+  Evaluative Text</span></b><span style='font-family:"Times New Roman","serif"'>.
+  G Carenini, RT Ng, A Pauls EACL <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Multi-Document%20Summarization%20of%20Evaluative%20Text.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Teufel,
+  S., &amp; Moens, M. (2000, October). <b style='mso-bidi-font-weight:normal'>What's
+  yours and what's mine: determining intellectual attribution in scientific
+  text</b>. In Proceedings of the 2000 Joint SIGDAT conference on Empirical
+  methods in natural language processing and very large corpora: held in
+  conjunction with the 38th Annual Meeting of the Association for Computational
+  Linguistics-Volume 13 (pp. 9-17). Association for Computational Linguistics.
+  &gt;&gt;&gt;<span style='background:yellow;mso-highlight:yellow'>domain of
+  scientific articles</span>&lt;&lt;&lt; <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/What's%20yours%20and%20what's%20mine%20determining%20intellectual%20attribution%20in%20scientific%20text.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Teufel,
+  S., &amp; Moens, M. (2002). <b style='mso-bidi-font-weight:normal'>Summarizing
+  scientific articles: experiments with relevance and rhetorical status</b>.
+  Computational linguistics, 28(4), 409-445. &gt;&gt;&gt;<span
+  style='background:yellow;mso-highlight:yellow'>domain of scientific articles</span>&lt;&lt;&lt;
+  <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Summarizing%20scientific%20articles%20experiments%20with%20relevance%20and%20rhetorical%20status.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Somasundaran,
+  S., &amp; Wiebe, J. (2009, August). <b style='mso-bidi-font-weight:normal'>Recognizing
+  stances in online debates</b>. In Proceedings of the Joint Conference of the
+  47th Annual Meeting of the ACL and the 4th International Joint Conference on
+  Natural Language Processing of the AFNLP: Volume 1-Volume 1 (pp. 226-234).
+  Association for Computational Linguistics. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Recognizing%20stances%20in%20online%20debates.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Yufan
+  Guo, Anna Korhonen, Maria Liakata, Ilona Silins, Lin Sun and Ulla Stenius.
+  (2010). <b style='mso-bidi-font-weight:normal'>Identifying the Information
+  Structure of Scientific Abstracts: An Investigation of Three Different
+  Schemes</b>. In Proceedings of Bio-NLP 2010. Uppsala, Sweden &gt;&gt;&gt;<span
+  style='background:yellow;mso-highlight:yellow'>domain of scientific articles</span>&lt;&lt;&lt;
+  <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Identifying%20the%20Information%20Structure%20of%20Scientific%20Abstracts%20An%20Investigation%20of%20Three%20Different%20Schemes.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Liakata
+  Maria, Saha Shyamasree, Dobnik Simon and Batchelor Colin and Dietrich
+  Rebholz-Schuhmann. (2012). <b style='mso-bidi-font-weight:normal'>Automatic
+  recognition of conceptualization zones in scientific articles and two life
+  science applications</b>. Bioinformatics 2012 28: 991-1000 &gt;&gt;&gt;<span
+  style='background:yellow;mso-highlight:yellow'>domain of scientific articles</span>&lt;&lt;&lt;
+  <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Automatic%20recognition%20of%20conceptualization%20zones%20in%20scientific%20articles%20and%20two%20life%20science%20applications.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Adam
+  Wyner, Jodi Schneider, Katie Atkinson, and Trevor Bench-Capon. <b
+  style='mso-bidi-font-weight:normal'>Semi-automated argumentative analysis of
+  online product reviews</b>. In Proceedings of the 4th International
+  Conference on Computational Models of Argument (COMMA 2012), pages 43-50,
+  2012. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Semi-automated%20argumentative%20analysis%20of%20online%20product%20reviews.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Elena
+  Cabrio, Serena Villata (2012). <b style='mso-bidi-font-weight:normal'>Combining
+  Textual Entailment and Argumentation Theory for Supporting Online Debates Interactions</b>,
+  Proceedings of the 50th annual meeting of the Association for Computational
+  Linguistics (ACL 2012), pp. 208-212. Short paper. Jeju, Korea. &gt;&gt;&gt;<span
+  style='background:yellow;mso-highlight:yellow'>has another version</span>&lt;&lt;&lt;
+  <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Combining%20Textual%20Entailment%20and%20Argumentation%20Theory%20for%20Supporting%20Online%20Debates%20Interactions.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Isaac
+  Persing and Vincent Ng. (2013). <b style='mso-bidi-font-weight:normal'>Modeling
+  Thesis Clarity in Student Essays</b>. Main Proceedings of the 51st Annual
+  Meeting of the Association for Computational Linguistics (ACL-13), 2013. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Modeling%20Thesis%20Clarity%20in%20Student%20Essays.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td width=100 valign=top style='width:74.95pt;border-top:none;border-left:
+  solid #4F81BD 1.0pt;mso-border-left-themecolor:accent1;border-bottom:solid #4F81BD 1.0pt;
+  mso-border-bottom-themecolor:accent1;border-right:none;mso-border-top-alt:
+  solid #4F81BD .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #4F81BD .5pt;
+  mso-border-top-themecolor:accent1;mso-border-left-alt:solid #4F81BD .5pt;
+  mso-border-left-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD .5pt;
+  mso-border-bottom-themecolor:accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:4'><b><span style='font-family:"Times New Roman","serif"'>Discourse<o:p></o:p></span></b></p>
+  </td>
+  <td width=671 valign=top style='width:503.2pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;mso-border-bottom-themecolor:accent1;
+  border-right:solid #4F81BD 1.0pt;mso-border-right-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-bottom-alt:solid #4F81BD .5pt;mso-border-bottom-themecolor:accent1;
+  mso-border-right-alt:solid #4F81BD .5pt;mso-border-right-themecolor:accent1;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Marcu, D., &amp;
+  Echihabi, A. (2002, July). <b style='mso-bidi-font-weight:normal'>An
+  unsupervised approach to recognizing discourse relations</b>. In Proceedings
+  of the 40th Annual Meeting on Association for Computational Linguistics (pp.
+  368-375). Association for Computational Linguistics. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/An%20unsupervised%20approach%20to%20recognizing%20discourse%20relations.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Sporleder, C.,
+  &amp; Lascarides, A. (2007). <b style='mso-bidi-font-weight:normal'>Exploiting
+  linguistic cues to classify rhetorical relations</b>. AMSTERDAM STUDIES IN
+  THE THEORY AND HISTORY OF LINGUISTIC SCIENCE SERIES 4, 292, 157. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Exploiting%20linguistic%20cues%20to%20classify%20rhetorical%20relations.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Elena Cabrio,
+  Sara Tonelli, Serena Villata (2013). <b style='mso-bidi-font-weight:normal'>From
+  Discourse Analysis to Argumentation Schemes and back: Relations and
+  Differences</b>, Proceedings of the 14th International Workshop on
+  Computational Logic in Multi-Agent Systems (CLIMA 2013). Corunna, Spain. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/From%20Discourse%20Analysis%20to%20Argumentation%20Schemes%20and%20Back%20Relations%20and%20Differences.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td width=100 valign=top style='width:74.95pt;border-top:none;border-left:
+  solid #4F81BD 1.0pt;mso-border-left-themecolor:accent1;border-bottom:solid #4F81BD 1.0pt;
+  mso-border-bottom-themecolor:accent1;border-right:none;mso-border-top-alt:
+  solid #4F81BD .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #4F81BD .5pt;
+  mso-border-top-themecolor:accent1;mso-border-left-alt:solid #4F81BD .5pt;
+  mso-border-left-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD .5pt;
+  mso-border-bottom-themecolor:accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:68'><b><span style='font-family:"Times New Roman","serif"'>Tools<o:p></o:p></span></b></p>
+  </td>
+  <td width=671 valign=top style='width:503.2pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;mso-border-bottom-themecolor:accent1;
+  border-right:solid #4F81BD 1.0pt;mso-border-right-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-bottom-alt:solid #4F81BD .5pt;mso-border-bottom-themecolor:accent1;
+  mso-border-right-alt:solid #4F81BD .5pt;mso-border-right-themecolor:accent1;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Zukerman,
+  I., McConachy, R., Korb, K. and Pickett, D. (1999), <b style='mso-bidi-font-weight:
+  normal'>Exploratory Interaction with a Bayesian Argumentation System</b>. In
+  IJCAI99 Proceedings -- the Sixteenth International Joint Conference on
+  Artificial Intelligence, pp. 1294-1299, Stockholm, Sweden, Morgan Kaufmann
+  Publishers. &gt;&gt;&gt;<span style='background:yellow;mso-highlight:yellow'>seems
+  too obsolete</span>&lt;&lt;&lt; <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Exploratory%20Interaction%20with%20a%20Bayesian%20Argumentation%20System.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Gordon,
+  T. F., &amp; Walton, D. (2006). <b style='mso-bidi-font-weight:normal'>The
+  Carneades argumentation framework. Frontiers in Artificial Intelligence and
+  Applications</b>, 144, 195. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/The%20Carneades%20argumentation%20framework.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>LIN,
+  Z., NG, H. T., &amp; KAN, M. Y. <b style='mso-bidi-font-weight:normal'>A
+  PDTB-Styled End-to-End Discourse Parser</b>. Natural Language Engineering,
+  1(1), 1-35. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/A%20PDTB-Styled%20End-to-End%20Discourse%20Parser.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Vanessa
+  Wei Feng and Graeme Hirst, 2012. <b style='mso-bidi-font-weight:normal'>Text-level
+  discourse parsing with rich linguistic features</b>. In Proceedings of the
+  50th Annual Meeting of the Association for Computational Linguistics: Human
+  Language Technologies (ACL-2012), Jeju, Korea <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Text-level%20discourse%20parsing%20with%20rich%20linguistic%20features.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Lawrence,
+  J., Bex, F., Reed, C., &amp; Snaith, M. (2012). <b style='mso-bidi-font-weight:
+  normal'>AIFdb: Infrastructure for the Argument Web</b>. In COMMA (pp.
+  515-516). <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/AIFdb%20Infrastructure%20for%20the%20Argument%20Web.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Saint-Dizier,
+  P. (2012). <b style='mso-bidi-font-weight:normal'>Processing natural language
+  arguments with the platform</b>. Argument &amp; Computation, 3(1), 49-82. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Processing%20natural%20language%20arguments%20with%20the%20platform.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'>Rahwan,
+  I., Banihashemi, B., Reed, C., Walton, D., &amp; Abdallah, S. (2011). <b
+  style='mso-bidi-font-weight:normal'>Representing and classifying arguments on
+  the semantic web</b>. Knowledge Engineering Review, 26(4), 487-511.
+  &gt;&gt;&gt;<span style='background:yellow;mso-highlight:yellow'>nice survey
+  on argumentation tools</span>&lt;&lt;&lt; <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Representing%20and%20classifying%20arguments%20on%20the%20semantic%20web.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:64'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7;mso-yfti-lastrow:yes'>
+  <td width=100 valign=top style='width:74.95pt;border-top:none;border-left:
+  solid #4F81BD 1.0pt;mso-border-left-themecolor:accent1;border-bottom:solid #4F81BD 1.0pt;
+  mso-border-bottom-themecolor:accent1;border-right:none;mso-border-top-alt:
+  solid #4F81BD .5pt;mso-border-top-themecolor:accent1;mso-border-top-alt:solid #4F81BD .5pt;
+  mso-border-top-themecolor:accent1;mso-border-left-alt:solid #4F81BD .5pt;
+  mso-border-left-themecolor:accent1;mso-border-bottom-alt:solid #4F81BD 1.0pt;
+  mso-border-bottom-themecolor:accent1;padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal;mso-yfti-cnfc:4'><b><span style='font-family:"Times New Roman","serif"'>Application<o:p></o:p></span></b></p>
+  </td>
+  <td width=671 valign=top style='width:503.2pt;border-top:none;border-left:
+  none;border-bottom:solid #4F81BD 1.0pt;mso-border-bottom-themecolor:accent1;
+  border-right:solid #4F81BD 1.0pt;mso-border-right-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-top-alt:solid #4F81BD .5pt;mso-border-top-themecolor:accent1;
+  mso-border-bottom-alt:solid #4F81BD 1.0pt;mso-border-bottom-themecolor:accent1;
+  mso-border-right-alt:solid #4F81BD .5pt;mso-border-right-themecolor:accent1;
+  padding:0mm 5.4pt 0mm 5.4pt'>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Attali, Y., &amp;
+  Burstein, J. (2006). <b style='mso-bidi-font-weight:normal'>Automated essay
+  scoring with e-rater V. 2</b>. The Journal of Technology, Learning and
+  Assessment, 4(3). <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Automated%20essay%20scoring%20with%20e-rater%20V.%202.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Burstein, J.,
+  Marcu, D., &amp; Knight, K. (2003). <b style='mso-bidi-font-weight:normal'>Finding
+  the WRITE stuff: Automatic identification of discourse structure in student
+  essays</b>. Intelligent Systems, IEEE, 18(1), 32-39. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Finding%20the%20WRITE%20stuff%20Automatic%20identification%20of%20discourse%20structure%20in%20student%20essays.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Andrews, P.,
+  Manandhar, S., &amp; De Boni, M. (2008, June). <b style='mso-bidi-font-weight:
+  normal'>Argumentative human computer dialogue for automated persuasion</b>.
+  In Proceedings of the 9th SIGdial Workshop on Discourse and Dialogue (pp.
+  138-147). Association for Computational Linguistics. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Argumentative%20human%20computer%20dialogue%20for%20automated%20persuasion.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Black, E., &amp;
+  Hunter, A. (2009). <b style='mso-bidi-font-weight:normal'>An inquiry dialogue
+  system</b>. Autonomous Agents and Multi-Agent Systems, 19(2), 173-209.
+  &gt;&gt;&gt;<span style='background:yellow;mso-highlight:yellow'>the
+  framework</span>&lt;&lt;&lt; <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/An%20inquiry%20dialogue%20system.%20Autonomous%20Agents%20and%20Multi-Agent%20Systems.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Reiter, E., &amp;
+  Belz, A. (2009). <b style='mso-bidi-font-weight:normal'>An investigation into
+  the validity of some metrics for automatically evaluating natural language
+  generation systems</b>. Computational Linguistics, 35(4), 529-558. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/An%20investigation%20into%20the%20validity%20of%20some%20metrics%20for%20automatically%20evaluating%20natural%20language%20generation%20systems.pdf">[PDF]</a>
+  (<b style='mso-bidi-font-weight:normal'><span style='color:red'>to be removed</span></b>)<o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Chesnevar, C.,
+  Maguitman, A. G., &amp; Gonzalez, M. P. (2009). <b style='mso-bidi-font-weight:
+  normal'>Empowering recommendation technologies through argumentation</b>. In
+  Argumentation in artificial intelligence (pp. 403-422). Springer US. <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/Empowering%20recommendation%20technologies%20through%20argumentation%201.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'>Riley, L.,
+  Atkinson, K., Payne, T., &amp; Black, E. (2012). <b style='mso-bidi-font-weight:
+  normal'>An implemented dialogue system for inquiry and persuasion</b>. In
+  Theorie and Applications of Formal Argumentation (pp. 67-84). Springer Berlin
+  Heidelberg. &gt;&gt;&gt;<span style='background:yellow;mso-highlight:yellow'>the
+  implementation</span>&lt;&lt;&lt; <a
+  href="http://people.cs.pitt.edu/~huynv/research/argument-mining/An%20implemented%20dialogue%20system%20for%20inquiry%20and%20persuasion.pdf">[PDF]</a><o:p></o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  <p class=MsoNormal style='margin-bottom:0mm;margin-bottom:.0001pt;line-height:
+  normal'><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p class=MsoNormal><span style='font-family:"Times New Roman","serif"'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

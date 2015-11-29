@@ -1,0 +1,250 @@
+<H1><A name=top></A>User Interface Patterns • Components for User 
+Interfaces</H1>
+<P><I>Von Udo Arend, User Productivity, SAP AG – 11/19/2004</I></P>
+<P><A 
+href="http://www.sapdesignguild.org/editions/edition8/patterns_d.asp">German 
+Version</A> • This article was published in SAP INFO Online,  SAP AG . 19. November 2004</P>
+<P><I><font color=red>Reusable components, known as user interface patterns, considerably 
+simplify the development of consistent and ergonomic user interfaces</font>. The first 
+part of the following article describes the pattern approach used at SAP. The 
+remainder of the article shows how the patterns are derived from generic user 
+tasks and then mapped on the user interface. </I></P>
+<font color=red>
+<P>Developers are faced by a great many questions when designing the user 
+interface, or UI, for a corporate software application. Should they use icons? 
+Where should the header data and the detail data be positioned? How do users 
+search for objects or data? How should new rows be inserted into a table? Which 
+working areas should make up a view? </P>
+<P>Finding the right answers to all these questions is not easy. This is why SAP 
+uses predefined "floor plans" that are populated by reusable generic "user 
+interface patterns" when developing user interfaces. As part of a user-centric 
+design process ("user interface first"), developers design business applications 
+and configure their user interface using predefined components. They are 
+assisted in this task by appropriate development tools.</P>
+</font>
+<P>&nbsp;</P>
+<H2>The Pattern Approach at SAP</H2>
+<P>Reusable components, or patterns, are not new concepts in software 
+development and user interface design. According to the definition of design 
+experts Douglas van Duyne, James Landay, and Jason Hong, they provide insights 
+into design problems by defining the specifics of a particular issue and its 
+solution in a compact form. A well-known example would be the shopping cart used 
+by online shops, where users can collect all the items they want to buy before 
+placing the order. </P>
+<P><A 
+href="http://www.sapdesignguild.org/editions/edition8/images/ui_decomp.gif" 
+target=_blank><IMG height=381 alt="The UI pattern concept" 
+src="sap1_files/ui_decomp_sm.gif" width=580 border=0></A> </P>
+<P><B><SPAN class=figure>Figure 1</SPAN></B><SPAN class=figure>: The UI pattern 
+concept</SPAN></P>
+<font color=red>
+<P>The pattern approach at SAP is characterized by two special features. 
+Firstly, it separates the description of a task that the user executes from its 
+representation on the user interface. This separation has the advantage that the 
+floor plans and components can be structured both according to the prevailing 
+design paradigm and also in line with the specific features of the terminal, 
+such as a large monitor on a PC or a small monitor on a PDA. Secondly, the 
+approach only works if generic user interface solutions are found for generally 
+applicable, or "generic", tasks - after all, the intention is to be able to use 
+one component for a large number of applications. Both tasks and the elements of 
+the user interface can be mapped in a nested "decomposition hierarchy", that is, 
+simple elements can be combined to produce more complex ones. <BR></P>
+</font>
+<P>The "search for a work object" is one example of a generic task. It is 
+irrelevant whether the object is an order, a delivery, an invoice, or a 
+material. The general assumption is that if generic tasks exhibit similar 
+properties for a specific number of business processes, then a standard solution 
+can be found on the user interface. For instance, a button represents a 
+"classical" solution for the generic "trigger function" problem. </P>
+<font color=red>
+<P>The SAP approach is about moving away from the level of these elementary 
+actions and solutions, such as entering text or clicking a button, and 
+identifying more complex tasks. To achieve this, elementary components, or "user 
+interface controls", such as the button, are assembled into more complex 
+components, the "pattern elements". A pattern element may be a toolbar that 
+combines several controls for triggering functions. Pattern elements themselves 
+can be combined into even more complex components, the user interface patterns. 
+A user interface pattern fulfils one or more generic tasks, such as searching 
+for and selecting a business object. A pattern such as this may consist of a 
+search area, various function buttons in a tool bar, and a collection area for 
+the hit list. </P>
+</font>
+<P>&nbsp;</P>
+<H2>Standardized Floor Plans for Applications</H2>
+<P>During application development, user interface patterns are combined into 
+application floor plans, and are arranged on the screen. The application floor 
+plans can be standardized for identical application types ("business 
+activities"), such as editing a customer order. One part of the "people-centric" 
+mySAP Customer Relationship Management (mySAP CRM) solution, which marks the 
+beginning of the deployment of user interface patterns at SAP, consists of just 
+two floor plans and uses only two different user interface patterns. This 
+provides for a highly consistent solution. However, it is only possible to do 
+with a small number of floor plans in this application area because the 
+applications have a similar structure. Naturally, more floor plans and user 
+interface patterns may be used to make the application more suited to the needs 
+of the user.</P>
+<font color=red>
+<P>SAP bases its development of user interfaces on Karen Holtzblatt's 
+"Contextual Design" method, which takes the users' working practices as its 
+starting point. Developers and UI designers use this method to create the model 
+of an interaction structure ("user environment" model), that is, the structure 
+of a business process from the user's point of view. The interaction structure 
+consists of discrete areas, known as the focus areas, each of which describes a 
+user activity, such as entering invoice line items. A focus area is defined by 
+its purpose for the user, by other areas to which the user can navigate, and by 
+functions available to the user. According to Holtzblatt, the user interface 
+should represent a focus area as a coherent whole on the screen that allows 
+users to concentrate on it and complete their tasks there.</P>
+</font>
+<P>Focus areas are normally derived for one specific business process and are 
+only valid for this. However, the SAP approach requires similar focus areas to 
+be defined from different business processes. Only then can reusable UI 
+components be built that can then be configured for each specific application 
+scenario. One result of this is a consistent user interface structure of 
+different applications that have a similar composition.</P>
+<P>The approach of configuring user interfaces with user interface patterns only 
+works if there are a small number of "generic" tasks, which can describe very 
+many different business activities. The following sections use examples to 
+demonstrate what generic tasks may look like and how they can be used to define 
+reusable components.</P>
+<P>&nbsp;</P>
+<H2>Design Method</H2>
+<P><A 
+href="http://www.sapdesignguild.org/editions/edition8/images/find_work_object.gif" 
+target=_blank><IMG height=21 alt="Searching for and selecting a work object" 
+src="sap1_files/find_work_object_sm.gif" width=560 border=0></A></P>
+<P><B><SPAN class=figure>Figure 2</SPAN></B><SPAN class=figure>: Searching for 
+and selecting a work object</SPAN></P>
+<P>Before users can perform an activity, such as editing an invoice, they need 
+to select the corresponding business process. Users can then search for a work 
+object, or define one directly. The work object can be selected on the user 
+interface by means of a solution with various drop-down boxes and a button, for 
+example. The "Show" drop-down box enables a predefined query to be selected; the 
+"Get" drop-down box enables a key field to be selected instead and also enables 
+a value to be entered in the corresponding input field. The "Advanced" button 
+activates a window in which an extended search query can be launched.</P>
+<P><A 
+href="http://www.sapdesignguild.org/editions/edition8/images/poss_work_objects.gif"><IMG 
+height=140 alt="Possible work objects in a results list" 
+src="sap1_files/poss_work_objects_sm.gif" width=560 border=0></A></P>
+<P><B><SPAN class=figure>Figure 3</SPAN></B><SPAN class=figure>: Possible work 
+objects in a results list</SPAN></P>
+<H3>Orienting, Identifying, Editing</H3>
+<P>The possible work objects that were identified by the query can be grouped in 
+a particular area of the user interface. The user can thus decide how to 
+proceed, that is, whether to select one or more work objects. The user requires 
+information about the current work object, such as its status and navigation 
+options, for orientation purposes. The user interface must enable the user to 
+identify the work object clearly. A work object's most important data can be 
+made available in a form, in a table, in a tree, or displayed graphically.</P>
+<P><A 
+href="http://www.sapdesignguild.org/editions/edition8/images/ex_obj_structure.gif" 
+target=_blank><IMG height=402 alt="Sample object structure for an invoice" 
+src="sap1_files/ex_obj_structure_sm.gif" width=580 border=0></A></P>
+<P><B><SPAN class=figure>Figure 4</SPAN></B><SPAN class=figure>: Sample object 
+structure for an invoice</SPAN></P>
+<H3>Transparent Structures</H3>
+<P>SAP selected an activity such as "recording an invoice" as the unit of 
+measure for the definition of an application. The assumption is that each 
+"business" activity consists of an easily describable underlying structure that 
+a user can make a mental picture of. This structure is made up of concepts 
+(objects) of differing degrees of abstraction. Each object may be of the type 
+"categorial" or "enumerating". The header data of an invoice, for instance, 
+consists of different information that can be represented as a form 
+(categorial). The invoice line items, on the other hand, are enumerating and can 
+be easily represented in a table. During the re-engineering of a large number of 
+business activities, SAP established that the specific object structure is often 
+part of a general object structure.</P>
+<P><IMG height=415 
+alt='Floor plan for generic tasks of the "editing objects" type' 
+src="sap1_files/edit_object.gif" width=490></P>
+<P><B><SPAN class=figure>Figure 5</SPAN></B><SPAN class=figure>: Floor plan for 
+generic tasks of the "editing objects" type</SPAN></P>
+<font color=red>
+<P>The focus areas of a business process can be combined into a floor plan. Each 
+"room" of the floor plan defines a place on the user interface, such as 
+horizontal top, vertical left, or bottom right. Further, each story of the floor 
+plan describes a screen change. In the context of what has been said above, an 
+underlying generic task can be identified for every focus area that describes a 
+specific task. For its "user-centric" mySAP CRM solution, for instance, SAP 
+defined an application floor plan that is suitable for the "edit objects" task. 
+Other floor plans are required for other tasks. </P>
+</font>
+<P><A 
+href="http://www.sapdesignguild.org/editions/edition8/images/example_uip.gif" 
+target=_blank><IMG height=367 alt="Mapping of generic tasks to UI patterns" 
+src="sap1_files/example_uip_sm.gif" width=560 border=0></A></P>
+<P><B><SPAN class=figure>Figure 6</SPAN></B><SPAN class=figure>: Mapping of 
+generic tasks to UI patterns</SPAN></P>
+<P>&nbsp;</P>
+<H2>Mapping Generic Tasks to the User Interface</H2>
+<P>The floor plan of the generic tasks can be mapped to a floor plan of user 
+interface patterns which have been programmed in full. The following 
+applies:</P>
+<OL>
+  <LI>At least one generic task is mapped to a user interface pattern. 
+  <LI>This component is assigned on the screen in accordance with a predefined 
+  floor plan. 
+  <LI>The component contains all functions, data, and links that a user needs 
+  for his or her current task. </LI></OL>
+<P>User interface patterns enable developers to configure interfaces instead of 
+programming them. All the developer has to do is decide which functions and 
+fields should appear on the user interface for each pattern. To do so, the 
+developer selects items from proposal lists provided by the development tool. 
+The actual view seen on screen is generated. For instance, a form view for 
+categorial data that groups and arranges the corresponding screen elements, such 
+as fields, radio buttons, or check boxes, in two dimensions can be generated by 
+layout algorithms.</P>
+<P>&nbsp;</P>
+<H2>Positive Outcome</H2>
+<P>SAP is happy with the outcome of the first project that used user interface 
+patterns. The following results can be noted: </P>
+<UL>
+  <LI>The selected level of abstraction proved suitable for deriving 
+  functionally powerful and general components. 
+  <LI>The number of identifiable, generic functions remains transparent. 
+  <LI>Generic functions can be mapped to generic user interface patterns. A 
+  precise description of the functions is necessary here. 
+  <LI>Composition into floor plans is comparatively simple. In doing so, the way 
+  in which data is to be exchanged between user interface patterns must be 
+  established. In the case of "master detail relationships" between two object 
+  data patterns, the selection of a different row in the superordinate pattern 
+  naturally influences the representation in the subordinate pattern. 
+  <LI>Configuration of the user interface, as opposed to programming it, can be 
+  implemented technically and makes developers' work far easier. </LI></UL>
+<P>Predefined user interface components provide three key advantages. Firstly, 
+they provide a simple means of creating highly consistent user interfaces. 
+Secondly, the usability of individual components can be optimized 
+retrospectively; and thirdly, a high gain in productivity is made during 
+development as the interfaces merely need to be configured. The different types 
+of business activities pose challenges as they demand a compromise between 
+suitability for the task and consistency. Similarly, development requests for 
+functional enhancements may over time complicate the clear structure of a user 
+interface pattern. Experience will show which floor plans are most suited to 
+which application types.</P>
+<P>&nbsp;</P>
+<H3>References</H3>
+<UL>
+  <LI>[1] Alexander C., The Timeless Way of Building. Oxford University Press 
+  (1979). 
+  <LI>[2] Tidwell J., Common Ground: A Pattern Language for Human-Computer 
+  Interface Design (1999). <A 
+  href="http://www.mit.edu/~jtidwell/ui_patterns_essay.html" 
+  target=_blank>http://www.mit.edu/~jtidwell/ui_patterns_essay.html</A> 
+  <LI>[3] Van Welie M., Web Design Patterns (2003). <A 
+  href="http://www.welie.com/patterns/index.html" 
+  target=_blank>http://www.welie.com/patterns/index.html</A> 
+  <LI>[4] Van Duyne D.K., Landay J.A. and Hong J.I., The Design of Sites - 
+  Patterns, Principles, and Proc-esses for Crafting a Customer-Centered Web 
+  Ex-perience. Boston: Addison-Wesley (2003). 
+  <LI>[5] Card S.K., Moran T.P. and Newell A., The Psy-chology of Human-Computer 
+  Interaction. Hills-dale, NJ: Lawrence Erlbaum Ass (1983). 
+  <LI>[6] Beyer H. and Holtzblatt K., Contextual Design: Customer-Centered 
+  Systems. San Francisco: Morgan Kaufman (1998). 
+  <LI>[7] Wesson J. and Cowley L., Designing with Pat-terns: Possibilities and 
+  Pitfalls. In Rauterberg, M., Menozzi, M., Wesson, J., "Human-Computer 
+  In-teraction, Interact 2003, Workshop Software and Usability Cross-pollination 
+  - The Role of Usability Patterns", Zürich (2003). <A 
+  href="http://wwwswt.informatik.uni-rostock.de/deutsch/Interact/index.html" 
+  target=_blank>http://wwwswt.informatik.uni-rostock.de/deutsch/Interact/index.html</A> 
+  </LI></UL>

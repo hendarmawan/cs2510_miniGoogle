@@ -1,0 +1,188 @@
+<title>Relational Database DB2 and Implementation Issues</title>
+<h1>Relational Database DB2 and Implementation Issues</h1>
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/13">Click here for audio-text lecture and feed it to the speech agent</a></xs></center>
+
+
+<h2>RELATIONAL DATABASES</h2>
+<br>
+<li> A relational database consists of a collection
+     of tables.
+<br>
+<li> All data values are atomic.  No repeating groups
+     are allowed.
+<br>
+<li> A relational database is a pointerless database,
+     User does not see or is made aware of pointers.
+<br>
+<li> DB2 supports SQL (structured query language)
+     which is both an interactive query language
+     and a database programming language
+<hr>
+<h1>USER'S VIEW OF THE DB2 SYSTEM</h1>
+<br>
+<li> DB2 supports concurrent users
+<br>
+<li> Ensures consistent updates by locking
+     mechanisms
+<br>
+<li> Base table is the "real" table
+<br>
+<li> A view is a "virtual" table
+<br>
+<li> DB2 supports indexes (B-trees)
+<br>
+<li> SQL Data definition functions:<br>
+     CREATE TABLE<br>
+     CREATE VIEW<br>
+     CREATE INDEX<br>
+<br>
+     DROP TABLE<br>
+     DROP VIEW<br>
+     DROP INDEX<br>
+<br>
+<li> SQL Data manipulation functions:<br>
+     SELECT<br>
+     UPDATE<br>
+     DELETE<br>
+     INSERT<br>
+<hr>
+<br><IMG SRC="images/fig131.gif"><br>
+<hr>
+<h1>VIEWS AND VIEWS</h1>
+<br>
+<li> An SQL "view" is a table that does not
+     exist, but is derived from one or more
+     underlying base tables.
+<br>
+<li> A user, in a given application, may be
+     manipulating several base tables and
+     SEVERAL views.
+<br>
+<li> An "external view" of the database,
+     on the other hand, is the totality
+     of data seen by the user.
+<br>
+<li> Therefore, SQL views are not the same
+     as database external views.
+<hr>
+<h1>MAJOR SYSTEM COMPONENTS</h1>
+<br>
+1. System services component
+<br>
+2. Locking services component
+<br>
+3. Database services component
+<br>
+<li> Precompiler
+<br>
+<li> Bind
+<br>
+<li> Runtime Supervisor
+<br>
+<li> Stored Data Manager
+<br>
+<li> Buffer Manager
+<hr>
+<br><IMG SRC="images/fig132.gif"><br>
+<hr>
+<h1>PRECOMPILER</h1>
+<br>
+<br>
+<li> The DB2 Precompiler is a preprocessor
+     to analyze a source program
+<br>
+<li> SQL statements embedded in the source
+     program such as:
+<br><br>
+     EXEC  SQL  SELECT CITY<br>
+                INTO :XCITY<br>
+                FROM S<br>
+                WHERE S# = 'S4';<br><br>
+     are replaced by CALLS to the
+     Runtime Supervisor.
+<br>
+<li> The SQL statements are stored in
+     Database Request Module (DBRM),
+     which is a stylized international
+     representation of the original
+     SQL statements.
+<hr>
+<h1>BIND</h1>
+<br>
+<li> BIND is the optimizing database
+     compiler.
+<br>
+<li> BIND compiles SQL statements (stored
+     in DBRMs) into "application plan"
+     to be stored in System Catalog.
+<br>
+<li> BIND attempts to optimize the
+     access strategy.
+<br><br>
+     EXEC  SQL  SELECT CITY<br>
+                INTO :XCITY<br>
+                FROM S<br>
+                WHERE S# = 'S4';<br><br>
+<br>
+     Access strategy 1: sequential scan
+<br>
+     Access strategy 2: use index on S#
+<br>
+<li> The optimizer considers:<br>
+     Which tables are referenced<br>
+     How big those tables are<br>
+     What indexes exist<br>
+     How data are physically stored on disk<br>
+     The structure of WHERE conditions<br>
+<hr>
+<h1>RUNTIME SUPERVISOR</h1>
+<br>
+<li> Application program module invokes
+     Runtime Supervisor (calls).
+<br>
+<li> Control goes to Runtime Supervisor.
+<br>
+<li> Supervisor retrieves application plan
+     from Catalog, loads it into main
+     memory and transfers control to it.
+<hr>
+<h1>DATA MANAGER</h1>
+<br>
+<li> Application plan invokes the Data
+     Manager.
+<br>
+<li> Data Manager, like the file manager,
+     performs operations on stored data,
+     and passes data to application.
+<hr>
+<h1>BUFFER MANAGER</h1>
+<br>
+<li> Data Manager invokes the Buffer Manager.
+<br>
+<li> Buffer Manager, like the disk
+     manager, performs the physical
+     transferring of data between disk
+     and storage.
+<hr>
+<br><IMG SRC="images/fig133.gif"><br>
+<hr>
+<h1>COMPILED VS. INTERPRETED</h1>
+<br>
+<li> DB2 is a compiling system.
+<br>
+<li> More efficient than interpretive system.
+<br>
+<li> Dynamic database changes can be handled
+     by the DB2 system automatically by
+     recompiling the Application Plan.
+<br>
+Example:  If an index is dropped, the Runtime
+Supervisor examines the Catalog, and marks
+application plans dependent on this index
+as "invalid".  The Bind (database compiler)
+will attempt to recompile the DBRM of this Application
+Plan to choose a different access strategy.
+<br>
+<li> Important point:  the source program is
+     NOT recompiled, only the DBRM (SQL program)
+     is recompiled to produce new Application Plan.

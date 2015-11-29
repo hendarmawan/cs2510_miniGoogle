@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=iso-8859-1"
+ http-equiv="Content-Type">
+  <title>CS3730</title>
+  <link type="text/css" href="styles-site.css" rel="stylesheet">
+</head>
+<body>
+<div id="banner">
+<h1><a accesskey="1" href="http://www.cs.pitt.edu/%7Ehwa/cs3730/">CS3730
+/ ISSP3120</a></h1>
+<span class="description">Advanced Topics in NLP</span>
+</div>
+<div id="content">
+<div class="blog">
+<div class="blogbody">
+<h3 class="title">Academic Honesty</h3>
+<!--	  <p>Do not plagiarize.&nbsp; See <a
+	  href="http://www.pitt.edu/%7Eciddeweb/FACULTY-DEVELOPMENT/TA_HANDBOOK/end-draft.htm">http://www.pitt.edu/~ciddeweb/FACULTY-DEVELOPMENT/TA_HANDBOOK/end-draft.htm</a> for definition and examples.  <b>Plagiarizers will fail this course and receive disciplinary actions according to university policies</b>.</p> -->
+<p>All submitted work <b>must be your own work</b>.
+<b>Plagiarizers will fail this course and receive
+disciplinary actions according to university policies</b>.<br>
+</p>
+<h3 class="title">Absences</h3>
+<p>If an absence is unavoidable, you are responsible for making
+arrangements <b>to ensure that your assignments are turned in on time</b>.
+You are also responsible for obtaining the materials passed out and the
+information announced during the missed class. In case of extraordinary
+circumstances (hospitalization, family emergency) you should contact me
+as soon as possible so that we may arrange an extension for an
+assignment or schedule a make-up exam <i>prior to the due date</i>.
+Late assignments <b>will not</b> be accepted. No make-ups will be
+given for pop-quizzes</p>
+<h3 class="title">Course Grade</h3>
+<p>The course grade will be decided based on the following factors:</p>
+<ul>
+  <li> Class participation (70%) </li>
+  <ul>
+    <li>Reaction commentaries (40%)</li>
+    <li>Discussion leads (30%) </li>
+  </ul> 
+  <li> Term Project (30%) </li>
+  <ul>
+    <li>Drafts and reviews (10%)</li>
+    <li>Final presentations (5%)</li>
+    <li>Final project report (15%)</li>
+  </ul>
+</ul>
+
+<h3 class="title">Class Participations</h3>
+<p> A large portion of this course is devoted to
+discussing research papers. You will take turns to present the
+papers (probably three times in a semester, depending on the size of the
+class). To help the presenter to direct class discussions
+better, everyone is expected to write a short reaction essay for the
+assigned papers.&nbsp; <b>Do not just summarize the paper</b>. The
+commentary should focus on your critique of the papers.&nbsp; You may
+find this <a href="http://www.cs.pitt.edu/%7Ehwa/ramsey00.ps">guideline
+for reading research paper</a> helpful.&nbsp; Your reactions should be
+concise (200-300 words).</p>
+
+<h3 class="title">Office Hours</h3>
+<p>Please make appointments at least a day in advance.</p>
+
+<h3 class="title">Class Conduct</h3>
+<p>Professional behavior is expected from everyone. Please mute your
+cell phone during class.&nbsp; Phone rings are disruptive to
+lectures because they interrupt everyone's train of thought.
+</p>
+<h3 class="title">Students With Disabilities</h3>
+<p>If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412)
+648-7890/(412) 383-7355 (TTY), as early as possible in the term. DRS
+will verify your disability and determine reasonable accomodations for
+this course. </p>
+</div>
+</div>
+</div>
+<div id="links">
+<div class="side"><a href="index.html">Home</a><br>
+<a href="policy.htm">Course Policies</a><br>
+<a href="syl.htm">Syllabus</a><br>
+<a href="links.htm">Links</a><br>
+</div>
+</div>
+<br clear="all">
+<br>
+</body>
+</html>

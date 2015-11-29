@@ -1,0 +1,105 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Firefly</title>
+<meta name="Microsoft Theme" content="inmotion 011">
+</head>
+
+<body background="inmtextb.gif" bgcolor="#FFFFFF" text="#663300" link="#990066" vlink="#CC6633" alink="#FFCC00">
+
+<!--mstheme--><font face="Arial, Helvetica">
+
+<font FACE="TimesNewRoman,Bold"><b>
+<p ALIGN="JUSTIFY">&nbsp;</p>
+<p ALIGN="JUSTIFY"><a href="16.htm">
+<img border="0" src="previous.gif" width="26" height="26"></a></p>
+<p ALIGN="JUSTIFY"><font size="7">Firefly </font> </p>
+</b></font><!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">In Firefly, temporal composition is expressed in terms of 
+relations between instants (beginning and ending of objects and user 
+interactions). </font> </p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">This is the first work in the constraint-based area that has 
+considered the unpredictable nature of some multimedia objects (like user 
+interactions) (issue 5).</font></p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Working:</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">&nbsp;In order to provide a static formatting process 
+handling this kind of objects, the Firefly scheduler partitions the temporal 
+scenario at compile-time by grouping connected components (i. e. instants 
+related by a temporal relation or a predictable duration). </font> </p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Figure 10 shows the Firefly description of the Mascot 
+scenario: there are two sets of connected components and two unpredictable 
+objects (Button and Message) which appear with a dotted line. </font> </p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">The simplex algorithm is used to independently find the 
+optimal solution of each partition. An event-driven scheduler dynamically 
+handles the integration of the partitions. </font>
+</p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB"><img border="0" src="18.htm3.gif" width="619" height="327"></font></p>
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Disadvantages:</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Unfortunately, the time performances of this batch process is 
+not good-enough  in a interactive and incremental context (issue 12). This is 
+the most important drawback of the Firefly approach. </font>
+</p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Another weak point of Firefly is that it does not provide the 
+user with any abstraction capabilities (issue 13). </font> </p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+
+<p ALIGN="JUSTIFY"><a href="20.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></p>
+<!--mstheme--></font>
+
+</body>
+
+</html>

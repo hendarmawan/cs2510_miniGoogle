@@ -1,0 +1,897 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>CS3710: Visual Recognition</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header"><center>
+<a id="top"><h2>CS3710: Visual Recognition</h2></a>
+</center></div>
+
+<div id="navigation">
+<center>
+<a class="nav" href="#announcements">announcements</a>
+<a class="nav" href="#overview">overview</a>
+<a class="nav" href="#requirements">requirements</a>
+<a class="nav" href="#schedule">schedule</a>
+<a class="nav" href="#resources">resources</a>
+</center>
+</div>
+
+<br>
+
+<div id="intro">
+
+<h3>CS3710: Visual Recognition, Spring 2015</h3>
+
+<b>Location</b>: Sennott Square 5313<br>
+<b>Time</b>: Tuesday and Thursday, 11:30am - 12:45pm<br>
+<b>Instructor</b>: <a href="http://www.cs.pitt.edu/~kovashka">Adriana Kovashka</a> <br>
+<b>Email</b>: kovashka AT cs DOT pitt DOT edu (Note: When emailing, please use "CS3710" at the beginning of the subject line.) <br>
+<b>Office</b>: Sennott Square 5325 <br>
+<b>Office hours</b>: by appointment 
+
+</div>
+
+<br>
+
+<div id="content">
+
+<a id="announcements"><h3>Announcements</h3></a>   
+
+<!--Project proposals are due at 5pm on Friday, March 6, by email to the instructor.
+<br>
+-->
+
+Please remember that you need to meet with me to
+discuss your paper presentation by Friday/Monday (for Tuesday/Thursday
+presentations, respectively), and that I need to <b>receive your
+slides by 10pm on the day before the day when you want to meet</b>, along
+with times when you can meet.
+<br>
+
+<!--
+<b>1/06</b>: By <b>10pm on 1/07, please send the instructor</b> a list
+of the ten topics you are most interested in presenting as a paper presentation, and a list of ten that you might like to present as an experiment presentation. These should be sorted from 1 to 10, where 1 denotes "most interested". Please use "CS3710 Topic Preferences" as the subject line.
+<br>
+-->
+
+<br><a href="#top">[top]</a> 
+
+<a id="overview"><h3>Overview</h3></a>
+
+<b>Course description:</b> In this graduate level seminar course, we will examine recent advances in computer vision, with a focus on high-level recognition tasks. We will analyze approaches to research problems in visual recognition, and discuss future directions that these problems and approaches inspire. The course structure will combine lectures, student presentations on assigned conference and journal publications, in-class discussions, and a course project. The goal of this course is to become knowledgeable about the state of the art and the challenges in visual recognition, as well as to develop the skills to read critically, as well as write up and present research work clearly. Example topics include: object detection and recognition, action recognition, image descriptors, mid-level representations, attribute-based recognition and search, context, saliency and importance, unsupervised visual discovery, active and transfer category learning, interactive vision with a human in the loop, interactions between vision and language, big data, image search and retrieval, image and video summarization, and debugging vision systems. <br><br>
+ 
+<b>Prerequisites:</b> Basic understanding of probability and linear algebra is required. Familiarity or experience with machine learning is recommended. Each student should speak with the instructor to determine if he or she has sufficient background for this course. 
+
+<br><br><a href="#top">[top]</a> 
+
+<a id="requirements"><h3>Requirements</h3></a>
+
+Grading will be based on the following components: 
+
+<ul>
+<li>Paper reviews (20%)</li>
+<li>In-class participation and discussion (20%)</li>
+<li>Paper presentations (20%)</li>
+<li>Experiment presentations (10%)</li>
+<li>Final project (30%)</li>
+</ul>
+
+<h4><u>Paper reviews</u></h4>
+
+Students will be required to write a paper review for <i>one</i> of the two papers discussed in each class. By default, this should be the <u>Primary</u> paper listed for each class, but students can choose to review a <u>Secondary</u> paper. The Primary paper is the one on which we will focus more in class, and we will discuss the Secondary paper at a higher level. In some cases, the Schedule below will have a * next to one paper, which indicates this paper <b>should be read first</b>. <br><br>
+
+Reviews are <b>due at 10pm on the day before the respective class.</b>
+They should be emailed in PDF or Word document format to the
+instructor's email address, with <b>subject</b> "CS3710 Paper
+Review". The <b>filename</b> should be [first name of student]_[last
+name]_review_[month]_[day of the class when paper is discussed].pdf
+(or .doc, .docx), e.g. adriana_kovashka_review_01_15.pdf. 
+Make it clear which of the six questions below
+you're addressing in each paragraph, and use one paragraph for each question.
+Please also put your name in the document text. 
+You can skip writing a review for a class during which you are giving a paper presentation (but not if you are giving an experiment presentation). <br><br>
+
+The reviews should be no longer than one page, and should address the following questions:
+
+<ol>
+<li>Summarize what this paper aims to do, and what its main contribution is.</li>
+<li>Summarize the proposed approach.</li>
+<li>Summarize the experimental validation of the approach.</li>
+<li>What are three advantages of the proposed approach?</li>
+<li>What are three disadvantages or weaknesses of the approach or experimental validation?</li>
+<li>Suggest one possible extension of this approach, i.e. one idea for future work.</li>
+<li>Any other thoughts, comments, or questions on this paper? (optional)</li>
+</ol>
+
+<b>Grading rubric and late policy:</b> If you send me your paper review by the
+deadline, your grade for this review starts at 10 points. I will take
+points or fractions of points off for (1) incorrect statements, (2)
+statements which are too vague to indicate understanding of the paper,
+(3) irrelevant statements, (4) unclear statements, and (5) failure to address the questions
+listed above. If you send me the review late but send it before 9am on
+the day of class, your score will start at 5 points, and I will
+subtract points as above. If you submit after 9am on the day of class,
+your review will not be graded. You get 2 "free" late days, i.e., you can
+submit 2 reviews up to 9am on the day of class, for no penalty. Note
+that these free late days only apply to paper reviews. 
+
+<h4><u>In-class participation and discussion</u></h4>
+
+Students should actively engage in in-class discussions. For example, this could take the form of asking questions or making meaningful remarks and comments about the work following a paper presentation, or responding to others' questions or comments. 
+
+<h4><u>Paper presentations</u></h4>
+
+Each student will be assigned to give about 2 presentations, each of which will cover the 2 papers for the given class. Each presentations will be about 30 minutes long (40 minutes if there is no experiment presentation that day). The presentation will be followed by a discussion capped at 15 (25) minutes, and the presenter will be in charge of driving and moderating this discussion. Presentations should cover the following:
+
+<ul>
+<li>What problem is each paper trying to solve?</li>
+<li>Why should we care about this problem? What challenges does it pose? In 1-2 sentences, what are the previous approaches to solving this problem, if any?</li>
+<li>At a high level, what approach does this work take to solving the problem?</li>
+<li>In more detail, what are the key steps in the approach?</li>
+<li>How do the authors set up the evaluation of their approach? What hypotheses are they trying to verify?</li>
+<li>What experimental outcomes do the authors find? Are the hypotheses confirmed?</li>
+<li>What are some weaknesses of the approach, or some directions for
+future work? <font color="red">Be ready to pose some discussion questions.</font></li>
+</ul>
+
+Students are <b>required to meet with the instructor</b> to discuss
+the presentation on Friday at the latest (if the presentation is next
+Tuesday) or Monday (if the presentation is on Thursday of the same
+week). Prior to that, the student should <b>email the instructor a
+draft of his/her slides, by 10pm on the day before the intended
+meeting date</b>. The student's email should also state when the student is available to meet. Please use "CS3710 Presentation Slides" as the subject line. <br><br>
+
+Make sure to <b>rehearse</b> your presentations so that it is clear and polished. Use many visuals on the slides, and use text sparingly, primarily in bulleted form. You are encouraged to browse the web for resources or slides related to this work, including for original slides from the authors that include results not shown in the paper. However, always <b>cite your sources</b> for any slides that other authors created. Also, always <b>use your own words</b> on slides and during the presentation. Do not simply copy text from the paper or from other resources.
+<br><br>
+
+<b>Grading rubric:</b> Your grade for a paper presentation will be
+based on: (1) whether you sent me a draft of your slides and met with
+me to discuss these by the deadline; (2) whether you adequately,
+clearly and correctly
+addressed and explained all important points of the paper in your presentation; (3)
+how clear and informative your classmates found the presentation; (4) how you
+moderated the discussion of the paper; and (5) how well-rehearsed your
+presentation was.
+
+<h4><u>Experiment presentations</u></h4>
+
+Students will present an experimental evaluation of 1 paper covered in class. This can be either a Primary or Secondary paper. Students can volunteer to present an additional paper in a later class, in which case the better presentation grade will be used. Presentations should be no more than 15 minutes long, and will be followed by a discussion (capped at 10 minutes). <br><br>
+
+The goal of this evaluation is to examine in more detail the
+merits of the paper, and whether the success of the approach is robust
+to changes in the implementation or experimental setup. Further, how
+does including some parts of the full approach and removing others
+affect the experimental outcomes? How do various
+implementation choices affect the performance of the algorithm? 
+How sensitive is the method to
+different parameter choices? 
+<br><br>
+
+The student should <b>pick one to three aspects of the paper to test</b>,
+as opposed to attempting to match all results in the paper. These tests can be disjoint from what the authors of the paper chose to test. If code for the examined paper is not available, the student should implement a basic version (that captures the core idea) of the proposed approach. If code is available, the author should cite it during the presentation. In the presentation, explain what you did, why you did it, what choices you made implementation-wise, and what you found out.
+<br><br>
+
+Please look at the following for examples of experiment
+presentations: <a
+href="http://www.cs.utexas.edu/%7Ecv-fall2012/slides/sanmit-expt.pdf">example
+1</a>, <a
+href="http://www.cs.utexas.edu/%7Ecv-fall2012/slides/elad-expt.pdf">example
+2</a>,
+<a
+href="http://www.cs.utexas.edu/%7Ecv-fall2012/slides/deepti-expt.pdf">example
+3</a>,
+<a
+href="http://www.cs.utexas.edu/%7Ecv-fall2012/slides/dinesh-expt.pdf">example
+4</a>,
+<a
+href="http://www.cs.utexas.edu/%7Ecv-fall2012/slides/randall-expt.pdf">example
+5</a>.
+<br><br>
+
+<b>Grading rubric:</b> Your experiment presentation grade will depend
+on: (1) whether you motivated well your choice of what to test; (2)
+whether your experimental setup was sensible; (3) how well you
+explained what you did, and what conclusions you drew; and (4) how useful your classmates found your presentation.
+
+<h4><u>Final project</u></h4>
+
+Students will complete a project which studies in more depth one of the topics we cover in class. For most types of projects, students can <b>work in pairs</b> (see exception below). A project can become a subsequent conference publication. These projects should focus on one of the following:
+
+<ul>
+<li>an extension of one or more of the works we covered in class, including experimental evaluation</li>
+<li>a novel approach which addresses one of the problems covered in class, properly evaluated</li>
+<li>a definition of a new problem, along with detailed argumentation of why this problem is important and challenging, an approach to solve this problem, and an evaluation of this approach</li>
+<li>an extensive analysis and experimental evaluation of one or more of the approaches covered in class (think of this as an extended combined version of a paper and an experiment presentation)</li>
+<li>an extensive literature review and analysis on one of the topics covered in class (this one can only be done by students working individually)</li>
+</ul>
+
+In the <b>project proposal</b>, students should include the following: clear problem statement, extensive literature review, detailed outline of the approach, and planned experimental setup. Students are encouraged to discuss a draft of the proposal with the instructor before the proposal is due.
+Proposals should be 3-5 pages long. <br><br>
+
+The mid-semester <b>project status report</b> will describe the students' progress on the project, and any problems encountered along the way. The status report should use the <a href="http://www.pamitc.org/cvpr15/files/cvpr2015AuthorKit.zip">CVPR latex template</a>, but can be more informal than a conference paper. The progress report should include the following sections: Introduction, Related Work, Approach, and Results. In Results, include your experimental setup (this can change later). If you have results but they do not yet look great, include them anyway for the purpose of this status report.<br><br>
+
+The <b>project presentation</b> will describe the students' approach and their experimental findings in a clear and engaging fashion. This will be a chance to get feedback from the class before final submission of your report. Presentations will be about 15-20 minutes long. <br><br>
+
+The <b>project final report</b> should resemble a conference paper,
+with clear problem definition and argumentation of why this problem is
+important, overview of related work, detailed explanation of the
+approach, and well-motivated experimental evaluation. The report
+should use the <a
+href="http://www.pamitc.org/cvpr15/files/cvpr2015AuthorKit.zip">CVPR
+latex template</a>. 
+<font color="red">If this project was done with a partner, each
+student should document what part of the project he or she did, and
+how duties and tasks were divided.</font>
+<br><br>
+
+<b>All project written items should be emailed to the instructor by 5pm</b> with the subject line "CS3710 Project". 
+
+The grade breakdown and due dates for the project are:
+
+<ul>
+<li>Project proposal (5% of course grade) - due March 6, 5pm</li>
+<li>Project status report (5% of course grade) - due April 3, 11:59pm</li>
+<li>Project presentations (10% of course grade) - April 16, 21, 23</li>
+<li>Project final report (10% of course grade) - due April 24, <font color="red">11:59pm</font></li>
+</ul>
+
+<h4><u>Note on Academic Dishonesty</u></h4>
+
+The work you turn in must be your own work. Plagiarism will cause you
+to fail the class and receive disciplinary penalty. See info above
+regarding referring to resources in your presentations. 
+
+<h4><u>Note on Disabilities</u></h4>
+
+If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412)
+648-7890/(412) 383-7355 (TTY), as early as possible in the term. DRS
+will verify your disability and determine reasonable accomodations for
+this course. 
+
+<h4><u>Note on Medical Conditions</u></h4>
+
+If you have a medical condition which will prevent you from doing a
+certain assignment or coming to class, you must inform the instructor
+of this <b>before</b> the deadline. You must then submit documentation
+of your condition within a week of the assignment deadline.
+
+<br><br>
+
+<a href="#top">[top]</a> 
+
+<a id="schedule"><h3>Schedule</h3></a>
+
+<table border="1"><tbody>
+
+<tr>
+<td align="middle" valign="middle" height="70" width="50"><b>Date</b></td>
+<td align="middle" width="140"><b>Topic</b></td>
+<td align="middle" width="500"><b>Papers</b></td>
+<td align="middle" width="100"><b>Presenters</b></td>
+<td align="middle" width="100"><b>Due</b></td>
+</tr>
+
+<tr>
+<td align="middle">1/06</td>
+<td colspan="3" align="middle"
+height="70"><b><i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Introduction</i></b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="intro.pdf">[slides]</a>
+</td>
+<td>
+topic preferences due January 7, 10pm
+</td>
+</tr>
+
+<tr>
+<td align="middle">1/08</td>
+<td colspan="4" align="middle" height="70">
+<b><i>Describing images with features</i></b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="features.pdf">[slides]</a>
+</td>
+</tr>
+
+<tr>
+<td align="middle">1/13</td>
+<td colspan="4" align="middle" height="70">
+<b><i>Recognition basics</i></b> 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="recognition.pdf">[slides]</a>
+<br>
+<b><i>Overview of Adriana's research</i></b>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="research.pdf">[slides]</a>
+</td>
+</tr>
+
+<tr>
+<td align="middle">1/15</td>
+<td align="middle" height="160"><b>Features</b></td>
+<td>
+* <u>Secondary:</u> <i>Pages 178-188, 216-220, 254-255 from</i> <b>Local Invariant Feature Detectors: A Survey.</b> T. Tuytelaars and K. Mikolajczyk.  Foundations and Trends in Computer Graphics and Vision, 2008. <a href="http://homes.esat.kuleuven.be/%7Etuytelaa/FT_survey_interestpoints08.pdf">[pdf]</a> <a href="http://www.robots.ox.ac.uk/%7Evgg/research/affine/">[relevant code]</a>
+<br><br>
+<u>Primary:</u> <b>Object Recognition from Local Scale-Invariant Features.</b> D. Lowe. ICCV 1999. <a href="http://people.cs.ubc.ca/%7Elowe/papers/iccv99.pdf">[pdf]</a> <a href="http://people.cs.ubc.ca/%7Elowe/keypoints/">[code]</a>
+</td>
+<td>Papers: Yan <a href="features_yan.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">1/20</td>
+<td align="middle" height="160"><b>Matching</b></td>
+<td>
+<u>Primary:</u> <b>Video Google: A Text Retrieval Approach to Object Matching in Videos.</b> J. Sivic and A. Zisserman. ICCV 2003. <a href="http://www.robots.ox.ac.uk/%7Evgg/publications/papers/sivic03.pdf">[pdf]</a> 
+<br><br>
+<u>Secondary:</u> <b>The Pyramid Match Kernel: Discriminative Classification with Sets of Image Features.</b> K. Grauman and T. Darrell. ICCV 2005. <a href="http://www.cs.utexas.edu/%7Egrauman/papers/grauman_darrell_iccv2005.pdf">[pdf]</a> <a href="http://people.csail.mit.edu/jjl/libpmk/">[code]</a>
+</td>
+<td>Papers: Brandon <a href="matching_brandon.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">1/22</td>
+<td align="middle" height="160"><b>Detection I</b></td>
+<td>
+* <u>Secondary:</u> <b>Histograms of Oriented Gradients for Human Detection.</b> N. Dalal and B. Triggs. CVPR 2005. <a href="http://lear.inrialpes.fr/people/triggs/pubs/Dalal-cvpr05.pdf">[pdf]</a>
+<br><br>
+<u>Primary:</u> <b>A Discriminatively Trained, Multiscale, Deformable Part Model.</b> P. Felzenszwalb,  D. McAllester, and D. Ramanan. CVPR 2008. <a href="http://people.cs.uchicago.edu/%7Epff/papers/latent.pdf">[pdf]</a> <a href="http://people.cs.uchicago.edu/%7Erbg/latent/">[code]</a>
+</td>
+<td>Papers: Chris <a href="detection_chris.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+
+<tr>
+<td align="middle">1/27</td>
+<td align="middle" height="160"><b>Classification</b></td>
+<td>
+* <u>Primary:</u> <b>Beyond Bags of Features: Spatial Pyramid Matching for Recognizing Natural Scene Categories.</b> S. Lazebnik, C. Schmid, and J. Ponce. CVPR 2006. <a href="http://www-cvr.ai.uiuc.edu/ponce_grp/publication/paper/cvpr06b.pdf">[pdf]</a> <a href="http://web.engr.illinois.edu/~slazebni/research/SpatialPyramid.zip">[code]</a> <a href="http://web.engr.illinois.edu/~slazebni/research/scene_categories.zip">[data]</a>
+<br><br>
+<u>Secondary:</u> <b>Object Bank: A High-Level Image Representation for Scene Classification and Semantic Feature Sparsification</b>  L-J. Li, H. Su, E. Xing, L. Fei-Fei. NIPS 2010. 
+<a href="http://vision.stanford.edu/documents/LiSuXingFeiFeiNIPS2010.pdf">[pdf]</a> <a href="http://vision.stanford.edu/projects/objectbank/">[code]</a>
+</td>
+<td>Papers: Connie <a href="classification_connie.pdf">[slides]</a>
+<br><br>
+Experiment: Bhavin <a href="classification_expts_bhavin.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">1/29</td>
+<td align="middle" height="160"><b>Attributes</b></td>
+<td>
+* <u>Primary:</u> <b>Describing Objects by Their Attributes.</b>
+A. Farhadi, I. Endres, D. Hoiem, and D. Forsyth, CVPR 2009. <a
+href="http://www.cs.uiuc.edu/homes/dhoiem/publications/cvpr2009_attributes.pdf">[pdf]</a>
+<a href="http://vision.cs.uiuc.edu/attributes/">[code and data]</a>
+<br><br>
+<u>Secondary:</u> <b>Relative Attributes.</b> D. Parikh and K. Grauman. ICCV 2011. <a href="http://filebox.ece.vt.edu/%7Eparikh/Publications/ParikhGrauman_ICCV2011_relative.pdf">[pdf]</a> <a href="http://filebox.ece.vt.edu/%7Eparikh/relative.html">[code and data]</a>
+</td>
+<td>Papers: Phuong <a href="attributes_phuong.pdf">[slides]</a>
+<br><br>Experiment: Brandon
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">2/03</td>
+<td colspan="4" align="middle" height="120"><b><i>Guest lecture I -- <a
+href="http://abhinav-shrivastava.info/">Abhinav Shrivastava</a>, PhD
+student at CMU</i></b>
+<br><br>
+<b>Homework:</b> Paper review for <a
+href="http://graphics.cs.cmu.edu/projects/crossDomainMatching/abhinav-sa11.pdf">Data-driven
+Visual Similarity for Cross-domain Image Matching</a>, due 10pm on 2/02. 
+</td>
+</tr>
+
+<tr>
+<td align="middle">2/05</td>
+<td colspan="4" align="middle" height="120"><b><i>Guest lecture II -- <a href="http://www.cs.cmu.edu/~dfouhey/">David Fouhey</a>, PhD student at CMU
+</i></b>
+<br><br>
+<b>Homework:</b> Paper review for <a
+href="http://www.cs.cmu.edu/~dfouhey/dfouhey_primitives.pdf">
+Data-Driven 3D Primitives for Single Image Understanding</a>, due 10pm
+on 2/04.
+</td>
+</tr>
+
+<tr>
+<td align="middle">2/10</td>
+<td align="middle" height="160"><b>Segmentation</b></td>
+<td>
+<u>Primary:</u> <b>From Contours to Regions: An Empirical Evaluation.</b> P. Arbelaez, M. Maire, C. Fowlkes, and J. Malik. CVPR 2009. <a href="http://www.cs.berkeley.edu/%7Earbelaez/publications/Arbelaez_Maire_Fowlkes_Malik_CVPR2009.pdf">[pdf]</a> <a href="http://www.eecs.berkeley.edu/Research/Projects/CS/vision/grouping/resources.html">[code and data]</a>
+<br><br>
+<u>Secondary:</u> <b>Constrained Parametric Min-Cuts for Automatic Object Segmentation.</b> J. Carreira and C. Sminchisescu. CVPR 2010. <a href="http://sminchisescu.ins.uni-bonn.de/papers/cs-cvpr10.pdf">[pdf]</a> <a href="http://sminchisescu.ins.uni-bonn.de/code/cpmc/">[code]</a>
+</td>
+<td>Papers: Yingjie <a href="segmentation_yingjie.pdf">[slides]</a>
+<br><br>
+Experiment: Yan <a href="segmentation_expts_yan.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">2/12</td>
+<td align="middle" height="160"><b>Mining and retrieval</b></td>
+<td>
+<u>Primary:</u> <b>Total Recall: Automatic Query Expansion with a Generative Feature Model for Object Retrieval.</b> O. Chum, J. Philbin, J. Sivic, M. Isard, and A. Zisserman. CVPR 2007. <a href="http://www.robots.ox.ac.uk/~vgg/publications/papers/chum07b.pdf">[pdf]</a> <a href="http://www.robots.ox.ac.uk/~vgg/data/oxbuildings/index.html">[data]</a>
+<br><br>
+<u>Secondary:</u> <b>World-scale Mining of Objects and Events from Community Photo Collections.</b> T. Quack, B. Leibe, and L. Van Gool. CIVR 2008. <a href="http://www.vision.ee.ethz.ch/%7Etquack/quack_civr08.pdf">[pdf]</a>
+</td>
+<td>Papers: Bhavin <a href="retrieval_bhavin.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">2/17</td>
+<td align="middle" height="160"><b>Pose</b></td>
+<td>
+* <u>Secondary:</u> <b>Articulated Pose Estimation using Flexible Mixtures of Parts.</b> Y. Yang and D. Ramanan. CVPR 2011. <a href="http://www.ics.uci.edu/%7Edramanan/papers/pose2011.pdf">[pdf]</a> <a href="http://www.ics.uci.edu/%7Edramanan/software/pose/">[code]</a>
+<br><br>
+<u>Primary:</u> <b>Real-Time Human Pose Recognition in Parts from a Single Depth Image.</b> J. Shotton, A. Fitzgibbon, M. Cook, T. Sharp, M. Finocchio, R. Moore, A. Kipman, and A. Blake. CVPR 2011. <a href="http://research.microsoft.com/pubs/145347/BodyPartRecognition.pdf">[pdf]</a> <a href="http://research.microsoft.com/apps/pubs/?id=145347">[slides and video]</a>
+</td>
+<td>Papers: Jesse <a href="pose_jesse.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">2/19</td>
+<td align="middle" height="160"><b>Action recognition</b></td>
+<td>
+<u>Primary:</u> <b>Learning Realistic Human Actions from Movies.</b> I. Laptev, M. Marszalek, C. Schmid, and B. Rozenfeld. CVPR 2008. <a href="http://www.irisa.fr/vista/Papers/2008_cvpr_laptev.pdf">[pdf]</a> <a href="http://www.di.ens.fr/%7Elaptev/download.html#stip">[code]</a> <a href="http://www.irisa.fr/vista/actions/">[data]</a>
+<br><br>
+<u>Secondary:</u> <b>Action Recognition from a Distributed Representation of Pose and Appearance.</b> S. Maji, L. Bourdev, and J. Malik. CVPR 2011. <a href="http://people.cs.umass.edu/~smaji/papers/action-cvpr10.pdf">[pdf]</a> <a href="http://www.cs.berkeley.edu/~smaji/projects/action/">[code]</a>
+</td>
+<td>Papers: Nils <a href="actions_nils.pdf">[slides]</a>
+<br><br>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">2/24</td>
+<td align="middle" height="160"><b>Context</b></td>
+<td>
+<u>Primary:</u> 
+<b>Scene Semantics from Long-term Observation of People.</b> V. Delaitre, D. Fouhey, I. Laptev, J. Sivic, A. Gupta, and A. Efros. ECCV 2012. <a href="http://www.di.ens.fr/willow/pdfscurrent/delaitre_ECCV12.pdf">[pdf]</a> <a href="http://www.di.ens.fr/willow/research/scenesemantics/">[code and data]</a> 
+<br><br>
+<u>Secondary:</u> 
+<b>Object-Graphs for Context-Aware Category Discovery.</b> Y. J. Lee and K. Grauman. CVPR 2010. <a href="http://vision.cs.utexas.edu/projects/objectgraph/lee_objectgraph_cvpr2010.pdf">[pdf]</a> <a href="http://vision.cs.utexas.edu/projects/objectgraph/objectgraph.html">[code and data]</a>
+</td>
+<td>Papers: Zitao <a href="context_zitao.pdf">[slides]</a>
+<br><br>
+Experiment: Phuong <a href="context_expts_phuong.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">2/26</td>
+<td align="middle" height="160"><b>Groups of objects</b></td>
+<td>
+<u>Primary:</u> <b>Finding Things: Image Parsing with Regions and
+Per-Exemplar Detectors.</b> J. Tighe and S. Lazebnik. CVPR 2013. <a
+href="http://www.cs.unc.edu/~jtighe/Papers/CVPR13/jtighe-cvpr13.pdf">[pdf]</a> <a
+href="http://www.cs.unc.edu/~jtighe/Papers/CVPR13/index.html">[code]</a>
+<br><br>
+<u>Secondary:</u> <b>Recognition Using Visual Phrases.</b> M. Sadeghi
+and A. Farhadi. CVPR 2011. <a
+href="http://vision.cs.uiuc.edu/phrasal/recognition_using_visual_phrases.pdf">[pdf]</a>
+</td>
+<td>Papers: Wei <a href="scenes_wei.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">3/03</td>
+<td align="middle" height="160"><b>Unsupervised visual
+discovery</b></td>
+<td>
+* <u>Secondary:</u>
+<b>Unsupervised Discovery of Mid-Level Discriminative patches.</b>
+S. Singh, A. Gupta, and A. Efros. ECCV 2012. <a
+href="http://graphics.cs.cmu.edu/projects/discriminativePatches/discriminativePatches.pdf">[pdf]</a>
+<a
+href="http://graphics.cs.cmu.edu/projects/discriminativePatches/">[code
+and data]</a>
+<br><br>
+<u>Primary:</u>
+<b>Style-aware Mid-level Representation for Discovering Visual
+Connections in Space and Time.</b> Y. J. Lee, A. Efros, and
+M. Hebert. ICCV 2013. <a
+href="http://www.eecs.berkeley.edu/~yjlee22/projects/style_iccv2013.pdf">[pdf]</a>
+<a
+href="http://www.eecs.berkeley.edu/~yjlee22/iccv2013.html">[code and
+data]</a>
+</td>
+<td>Papers: Bhavin <a href="discovery_bhavin.pdf">[slides]</a>
+<br><br>
+Experiment: Zitao <a href="discovery_expts_zitao.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+
+<tr>
+<td align="middle">3/05</td>
+<td align="middle" height="160"><b>Vision and language</b></td>
+<td>
+* <u>Secondary:</u> 
+<b>Every Picture Tells a Story: Generating Sentences for Images.</b> A. Farhadi, M. Hejrati, A. Sadeghi, P. Young, C. Rashtchian, J. Hockenmaier, and D. Forsyth. ECCV 2010. <a href="http://homes.cs.washington.edu/~ali/papers/sentence.pdf">[pdf]</a> <a href="http://vision.cs.uiuc.edu/pascal-sentences/">[data]</a>
+<br><br>
+<u>Primary:</u> 
+<b>Baby Talk: Understanding and Generating Simple Image Descriptions.</b> G. Kulkarni, V. Premraj, S. Dhar, S. Li, Y. Choi, A. Berg, and T. Berg. CVPR 2012. <a href="http://tamaraberg.com/papers/generation_cvpr11.pdf">[pdf]</a>
+</td>
+<td>Papers: Yingjie <a href="language_yingjie.pdf">[slides]</a>
+</td>
+<td>project proposal due March 6, 5pm
+</td>
+</tr>
+
+
+
+<tr>
+<td align="middle">3/10</td>
+<td colspan="4" align="middle" height="70"><i>Spring break</i></td>
+</tr>
+
+<tr>
+<td align="middle">3/12</td>
+<td colspan="4" align="middle" height="70"><i>Spring break</i></td>
+</tr>
+
+
+<tr>
+<td align="middle">3/17</td>
+<td align="middle" height="160"><b>Active learning and interactive recognition</b></td>
+<td>
+* <u>Secondary:</u> 
+<b>What's It Going to Cost You? : Predicting Effort vs. Informativeness for Multi-Label Image Annotations.</b> S. Vijayanarasimhan and K. Grauman. CVPR 2009. <a href="http://www.cs.utexas.edu/%7Egrauman/papers/vijayanarasimhan_cvpr2009.pdf">[pdf]</a> <a href="http://vision.cs.utexas.edu/projects/active-prediction/msrc/msrc_annotation_data.tar.gz">[data]</a>
+<br><br>
+<u>Primary:</u> 
+<b>Visual Recognition with Humans in the Loop.</b> S. Branson, C. Wah, B. Babenko, F. Schroff, P. Welinder, P. Perona, and S. Belongie. ECCV 2010. <a href="http://vision.ucsd.edu/sites/default/files/Visipedia20q.pdf">[pdf]</a> <a href="http://www.vision.caltech.edu/visipedia/index.html">[data]</a>
+</td>
+<td>Papers: Yan <a href="active_learning_yan.pdf">[slides]</a>
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+
+
+<tr>
+<td align="middle">3/19</td>
+<td align="middle" height="160"><b>Transfer learning and adaptation</b></td>
+<td>
+* <u>Primary:</u> 
+<b>Cross-Domain Video Concept Detection using Adaptive SVMs.</b> J. Yang, R. Yan, and A. Hauptmann. ACM Multimedia 2007. <a href="http://www.cs.cmu.edu/~juny/Prof/papers/acmmm07jyang.pdf">[pdf]</a> <a href="http://www.cs.cmu.edu/~juny/AdaptSVM/index.html">[code]</a>
+<br><br>
+<u>Secondary:</u> 
+<b>Tabula Rasa: Model Transfer for Object Category Detection.</b> Y. Aytar and A. Zisserman. <a href="http://www.robots.ox.ac.uk/~yusuf/publications/2011/Aytar11/aytar11.pdf">[pdf]</a>
+</td>
+<td>Papers: Jesse <a href="adaptation_jesse.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">3/24</td>
+<td align="middle" height="160"><b>Visualizing and debugging vision systems</b></td>
+<td>
+<u>Primary:</u>
+<b>HOGgles: Visualizing Object Detection Features.</b> C. Vondrick, A. Khosla, T. Malisiewicz, and A. Torralba. ICCV 2013. <a href="http://web.mit.edu/vondrick/ihog/iccv.pdf">[pdf]</a> <a href="http://web.mit.edu/vondrick/ihog/">[code]</a>
+<br><br>
+<u>Secondary:</u> 
+<b>Finding the Weakest Link in Person Detectors.</b> D. Parikh and C. L. Zitnick. CVPR 2011. <a href="https://filebox.ece.vt.edu/~parikh/Publications/ParikhZitnick_CVPR2011_weakest_link.pdf">[pdf]</a> <a href="https://filebox.ece.vt.edu/~parikh/person_detection.html">[data]</a>
+</td>
+<td>Papers: Connie <a href="debugging_connie.pdf">[slides]</a>
+<br><br>
+Experiment: Nils <a href="debugging_expts_nils.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">3/26</td>
+<td align="middle" height="160"><b>Detection II</b></td>
+<td>
+* <u>Secondary:</u> <b>Diagnosing Error in Object Detectors.</b>
+D. Hoiem, Y. Chodpathumwan, and Q. Dai. ECCV 2012. <a
+href="http://www.cs.illinois.edu/homes/dhoiem/publications/eccv2012_detanalysis_derek.pdf">[pdf]</a> <a
+href="http://www.cs.illinois.edu/homes/dhoiem/publications/counter.php?Down=detectionAnalysis_eccv12.tar.gz&Save=detectionAnalysis_eccv12">[code and data]</a>
+<br><br>
+<u>Primary:</u> <b>What is an Object?</b>  B. Alexe, T. Deselaers, and
+V. Ferrari. CVPR 2010. <a
+href="http://thomas.deselaers.de/publications/papers/alexe-cvpr10.pdf">[pdf]</a> <a
+href="http://groups.inf.ed.ac.uk/calvin/objectness/">[code]</a>
+</td>
+<td>Papers: Brandon <a href="detection_ii_brandon.pdf">[slides]</a>
+<br><br>
+Experiment: Chris <a href="detection_ii_expts_chris.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+
+<tr>
+<td align="middle">3/31</td>
+<td align="middle" height="160"><b>Fine-grained analysis</b></td>
+<td>
+<u>Primary:</u> <b>Annotator Rationales for Visual Recognition.</b> J. Donahue and K. Grauman. ICCV 2011. <a href="http://www.cs.utexas.edu/%7Egrauman/papers/RationalesICCV2011.pdf">[pdf]</a> <a href="http://vision.cs.utexas.edu/projects/rationales/">[data]</a>
+<br><br>
+<u>Secondary:</u> <b>Assessing the Quality of Actions.</b>
+H. Pirsiavash, C, Vondrick, and A. Torralba. ECCV 2014. <a
+href="http://people.csail.mit.edu/hpirsiav/papers/quality_eccv14.pdf">[pdf]</a>
+<a href="http://people.csail.mit.edu/hpirsiav/quality.html">[code and data]</a>
+</td>
+<td>Papers: Xinyue <a href="analyzing_xinyue.pdf">[slides]</a> 
+<!--<br><br><font color="red">Experiment: Brandon</font>-->
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">4/02</td>
+<td align="middle" height="160"><b>Crowdsourcing</b></td>
+<td>
+<u>Primary:</u>
+<b>Peekaboom: A Game for Locating Objects in Images.</b> L. von Ahn, R. Liu, and M. Blum, CHI 2006. <a href="http://www.cs.cmu.edu/%7Ebiglou/Peekaboom.pdf">[pdf]</a>
+<br><br>
+<u>Secondary:</u>
+<b>Crowdsourcing Annotations for Visual Object Detection.</b> H. Su, J. Deng, and L. Fei-Fei. HCOMP 2012. <a href="http://ai.stanford.edu/~haosu/bbox_submission.pdf">[pdf]</a>
+</td>
+<td>Papers: Nils <a href="crowdsourcing_nils.pdf">[slides]</a>
+</td>
+<td>
+project status report due April 3, <font color="red">11:59pm</font>
+</td>
+</tr>
+
+<tr>
+<td align="middle">4/07</td>
+<td align="middle" height="160"><b>Saliency and importance</b></td>
+<td>
+<u>Primary:</u>
+<b>Learning to Predict Where Humans Look.</b> T. Judd, K. Ehinger, F. Durand, and A. Torralba. ICCV 2009. <a href="http://people.csail.mit.edu/torralba/publications/wherepeoplelook.pdf">[pdf]</a> <a href="http://people.csail.mit.edu/tjudd/WherePeopleLook/index.html">[code and data]</a>
+<br><br>
+<u>Secondary:</u>
+<b>Understanding and Predicting Importance in Images.</b> A. Berg et al. CVPR 2012. <a href="http://tamaraberg.com/papers/importancefactors.pdf">[pdf]</a>
+</td>
+<td>Papers: Chris <a href="saliency_chris.pdf">[slides]</a>
+<!--<br><br><font color="red">Experiment: Connie</font>-->
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+
+<!--
+<tr>
+<td align="middle">4/07</td>
+<td align="middle" height="160"><b>Vision and art</b></td>
+<td>
+<u>Primary:</u>
+<b>Data-driven Visual Similarity for Cross-domain Image Matching.</b> A. Shrivastava, T. Malisiewicz, A. Gupta, and A. Efros. SIGGRAPH Asia 2011. <a href="http://graphics.cs.cmu.edu/projects/crossDomainMatching/abhinav-sa11.pdf">[pdf]</a> <a href="http://graphics.cs.cmu.edu/projects/crossDomainMatching/">[code and data]</a>
+<br><br>
+<u>Secondary:</u>
+<b>Image Analogies.</b> A. Hertzmann, C. Jacobs, N. Oliver, B. Curless, and D. Salesin. SIGGRAPH 2001. <a href="http://www.mrl.nyu.edu/publications/image-analogies/analogies-300dpi.pdf">[pdf]</a> <a href="http://www.mrl.nyu.edu/projects/image-analogies/">[code]</a>
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+-->
+
+<tr>
+<td align="middle">4/09</td>
+<td align="middle" height="160"><b>Big data</b></td>
+<td>
+<u>Primary:</u>
+<b>Learning Everything about Anything: Webly-Supervised Visual Concept Learning.</b> S. Divvala, A. Farhadi, and C. Guestrin. CVPR 2014. <a href="http://levan.cs.washington.edu/ngrams/objectNgrams_cvpr14.pdf">[pdf]</a> <a href="http://levan.cs.washington.edu/">[project]</a>
+<br><br>
+<u>Secondary:</u>
+<b>Scene Completion using Millions of Photographs.</b> J. Hays and A. Efros. SIGGRAPH 2007. <a href="http://graphics.cs.cmu.edu/projects/scene-completion/scene-completion.pdf">[pdf]</a> <a href="http://graphics.cs.cmu.edu/projects/scene-completion/">[code and data]</a> 
+</td>
+<td>Papers: Phuong <a href="bigdata_phuong.pdf">[slides]</a>
+<br><br>
+Experiment: Jesse <a href="bigdata_expts_jesse.pdf">[slides]</a>
+</td>
+<td>&nbsp;
+</td>
+</tr>
+
+<tr>
+<td align="middle">4/14</td>
+<td align="middle" height="160">
+<b>Video: ego-centric and summarization</b>
+</td>
+<td>
+<u>Primary:</u>
+<b>Recognizing Activities of Daily Living in First-Person Camera
+Views.</b> H. Pirsiavash and D. Ramanan.  CVPR 2012. <a
+href="http://www.ics.uci.edu/%7Edramanan/papers/ADL_2012.pdf">[pdf]</a> <a
+href="http://people.csail.mit.edu/hpirsiav/codes/ADLdataset/adl.html">[code
+and data]</a> <a href="http://people.csail.mit.edu/hpirsiav/papers/adl_cvpr12_slides.pptx">[slides]</a>
+<br><br>
+<u>Secondary:</u>
+<b>Nonchronological Video Synopsis and Indexing.</b> Y. Pritch,
+A. Rav-Acha, and S. Peleg. PAMI 2008. <a
+href="http://webee.technion.ac.il/~lihi/Teaching/2008_summer_048921/FinalProjectPapers/pami08-synopsis.pdf">[pdf]</a>
+</td>
+<td>Papers: Connie <a href="video_connie.pdf">[slides]</a> 
+<br><br>
+Experiment: Yingjie <a href="video_expts_yingjie.pdf">[slides]</a>
+</td>
+<td>
+&nbsp;
+</td>
+</tr>
+
+
+<!--
+<tr>
+<td align="middle">4/14</td>
+<td align="middle" height="160"><b>Dataset issues</b></td>
+<td>
+* <u>Secondary:</u>
+<b>Unbiased Look at Dataset Bias.</b> A. Torralba and A. Efros. CVPR 2011. <a href="http://people.csail.mit.edu/torralba/publications/datasets_cvpr11.pdf">[pdf]</a> <a href="http://people.csail.mit.edu/torralba/research/bias/">[game]</a>
+<br><br>
+<u>Primary:</u>
+<b>What does classifying more than 10,000 image categories tell us?</b> J. Deng, A. Berg, K. Li, and L. Fei-Fei. ECCV 2010. <a href="http://vision.stanford.edu/documents/DengBergLiFei-Fei_ECCV2010.pdf">[pdf]</a> <a href="http://www.image-net.org/challenges/LSVRC/2010/download/ILSVRC2010_devkit-1.0.tar.gz">[code]</a> <a href="http://vision.stanford.edu/projects/imagenet/ECCV2010/eccv2010_synset_list.tar.gz">[data]</a> <a href="http://www.image-net.org/">[project]</a>
+</td>
+<td>&nbsp;
+</td>
+<td>&nbsp;
+</td>
+</tr>
+-->
+
+
+<tr>
+<td align="middle">4/16</td>
+<td colspan="4" align="middle" height="70">
+<b><i>Project presentations</i></b>:
+<font color="red">(1) Bhavin; (2) Yan </font>
+</td>
+</tr>
+
+<tr>
+<td align="middle">4/21</td>
+<td colspan="4" align="middle" height="70">
+<b><i>Project presentations</i></b>:
+<font color="red">(1) Brandon; (2) Chris </font>
+</td>
+</tr>
+
+<tr>
+<td align="middle">4/23</td>
+<td colspan="3" align="middle" height="70">
+<b><i>
+Project presentations</i></b>: 
+<font color="red">(1) Nils & Phuong; (2) Yingjie & Jesse; (3) Connie </font> 
+</td>
+<td>
+project final report due <font color="red">April 24, 11:59pm</font>
+</td>
+</tr>
+
+</tbody></table>
+
+<br><a href="#top">[top]</a> 
+
+<a id="resources"><h3>Resources</h3></a>
+
+This course was inspired by the following courses:
+
+<ul>
+<li><a href="http://www.cs.utexas.edu/~cv-fall2012/schedule.html">Visual Recognition</a> by <a href="http://www.cs.utexas.edu/~grauman/">Kristen Grauman</a>, UT Austin, Fall 2012</li>
+<li><a href="https://filebox.ece.vt.edu/~S14ECE5984/">Advanced Topics in Computer Vision</a> by <a href="https://filebox.ece.vt.edu/~parikh/">Devi Parikh</a>, Virginia Tech, Spring 2014</li>
+<li><a href="https://sites.google.com/a/ucdavis.edu/ecs-289h-visual-recognition/">Visual Recognition</a> by <a href="http://web.cs.ucdavis.edu/~yjlee/">Yong Jae Lee</a>, UC Davis, Fall 2014</li>
+</ul>
+
+Selected courses and tutorials that may be of interest:
+
+<ul>
+<li><a href="http://people.csail.mit.edu/torralba/shortCourseRLOC/">Recognizing and Learning Object Categories</a> by <a href="http://vision.stanford.edu/feifeili/">Li Fei-Fei</a>, <a href="http://cs.nyu.edu/~fergus/pmwiki/pmwiki.php?n=Main.HomePage">Rob Fergus</a>, <a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></li>
+<li><a href="http://people.csail.mit.edu/torralba/courses/6.870/6.870.recognition.htm">Object Recognition and Scene Understanding</a> by <a href="http://web.mit.edu/torralba/www/">Antonio Torralba</a></li>
+<li><a href="https://docs.google.com/document/pub?id=1jGBn7zPDEaU33fJwi3YI_usWS-U6gpSSJotV_2gDrL0">Learning-Based Methods in Vision</a> by <a href="http://www.eecs.berkeley.edu/~efros/">Alyosha Efros</a></li>
+<li><a href="http://tamaraberg.com/teaching/Fall_13/">Recognizing People, Objects, and Actions</a> by <a href="http://tamaraberg.com/">Tamara Berg</a></li>
+<li><a href="https://filebox.ece.vt.edu/~parikh/attributes/">Attributes</a> by <a href="https://filebox.ece.vt.edu/~parikh/">Devi Parikh</a>, <a href="http://homes.cs.washington.edu/%7Eali/">Ali Farhadi</a>, <a href="http://www.cs.utexas.edu/%7Egrauman/">Kristen Grauman</a>, <a href="http://tamaraberg.com/">Tamara Berg</a>, and <a href="http://www.cs.cmu.edu/%7Eabhinavg/">Abhinav Gupta</a> </li>
+<li><a href="https://sites.google.com/site/humanactionstutorialeccv10/">Statistical and Structural Recognition of Human Actions</a> by <a href="http://www.di.ens.fr/~laptev/">Ivan Laptev</a> and <a href="http://www.cs.sfu.ca/~mori/">Greg Mori</a></li>
+</ul>
+
+Selected textbooks of interest:
+
+<ul>
+<li><a href="http://szeliski.org/Book/">Computer Vision: Algorithms
+and Applications</a> by Richard Szeliski (available for free on
+author's page)</li> 
+<li><a href="http://www.morganclaypool.com/doi/abs/10.2200/S00332ED1V01Y201103AIM011">Visual Object Recognition</a> by Kristen Grauman and Bastian Leibe</li>
+</ul>
+
+Selected code of interest:
+
+<ul>
+<li><a
+href="http://www.csie.ntu.edu.tw/~cjlin/libsvm/">LIBSVM</a> (by
+Chih-Chung Chang and Chih-Jen Lin)</li>
+<li><a href="http://svmlight.joachims.org/">SVM Light</a> (by Thorsten
+Joachims)</li>
+<li><a href="http://www.vlfeat.org/">VLFeat</a>
+(feature extraction, tutorials and more, by Andrea Vedaldi)</li>
+<li><a
+href="http://people.csail.mit.edu/torralba/code/spatialenvelope/">GIST
+feature extraction</a> (by Aude Oliva and Antonio Torralba)</li>
+<li><a href="http://caffe.berkeleyvision.org/">Caffe</a>
+(deep learning code by Yangqing Jia et al.)</li>
+</ul>
+
+Selected datasets of interest:
+
+<ul>
+<li><a href="http://mscoco.org/">Microsoft COCO (Common Objects in Context)</a></li>
+<li><a href="http://www.image-net.org/">ImageNet</a></li>
+<li><a href="http://labelme.csail.mit.edu/">LabelMe</a></li>
+<li><a href="http://pascallin.ecs.soton.ac.uk/challenges/VOC/">PASCAL VOC</a></li>
+<li><a href="http://www.vision.caltech.edu/Image_Datasets/Caltech256/">Caltech 256</a></li>
+<li><a href="http://sundatabase.mit.edu/">SUN Database</a></li>
+<li><a href="http://attributes.kyb.tuebingen.mpg.de/">Animals with Attributes</a></li>
+<li><a href="http://www.vision.caltech.edu/visipedia/CUB-200.html">Caltech-UCSD Birds 200</a></li>
+<li><a href="http://www.irisa.fr/vista/actions/">INRIA Movie Actions</a></li>
+</ul>
+
+Other:
+
+<ul>
+<li><a href="http://cs.brown.edu/courses/cs143/2011/docs/matlab-tutorial/">Matlab tutorial</a> </li>
+<li><a href="http://vision.stanford.edu/teaching/cs131_fall1415/lectures/cs131_linalg_review.pptx">Linear algebra review</a> by Fei-Fei Li</li>
+<li><a href="http://viscomp.csail.mit.edu/resource/slides/lecture4.pdf">Brief machine learning intro</a> by Aditya Khosla and Joseph Lim</li>
+<li><a href="https://filebox.ece.vt.edu/~S14ECE5984/#resources">Resources list</a> (including code and data, tutorials, and other related courses) compiled by Devi Parikh </li>
+<li><a href="http://www.cs.utexas.edu/~grauman/courses/spring2008/datasets.htm">Recognition datasets list</a> compiled by Kristen Grauman </li>
+<li><a href="https://www.cs.utexas.edu/~chaoyeh/web_action_data/dataset_list.html">Human activity datasets list</a> compiled by <a href="https://www.cs.utexas.edu/~chaoyeh/">Chao-Yeh Chen</a> </li>
+</ul>
+
+<a href="#top">[top]</a> 
+
+<br><br><br>
+
+</div>
+
+<div id="footer">
+&nbsp;
+</div>
+
+</div>
+
+</body></html>

@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0045)http://www.cs.pitt.edu/~chang/163/c01/c01.htm -->
+<HTML><HEAD><TITLE>Component-Based Software Engineering</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR></HEAD>
+<BODY><a href="01.htm">
+<IMG 
+src="previous.gif" align=left width="26" height="26"></a>
+<a href="02a.htm">
+<IMG 
+src="next.gif" align=right width="26" height="26"></a> 
+<H1>Concepts&nbsp;Review</H1>
+<p><font size="5"><i><b>COM+</b></i> is the cornerstone of a frame work of 
+technologies designed to support the development of large-scale distributed 
+applications on the Windows platform.</font></p>
+<p><font size="5" color=red>Two basic concepts:</font></p>
+<p><font size="5">(1) Context: is an object within an operating system process 
+that provides a specific set of run-time service</font></p>
+<p><font size="5">(2) Causality:&nbsp; is a distributed chain of COM+ method 
+call that spans any number of contexts in any number of processes, possibly 
+involving multiple machines. </font></p>

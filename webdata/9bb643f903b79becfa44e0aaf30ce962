@@ -1,0 +1,164 @@
+<html>
+
+<head>
+<title>CS 3525: Advanced Topics in Security and Privacy</title>
+<link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+
+<body bgcolor="#FFFCCF">
+
+<h1 align="center"><font color="#660000">Project</font></h1>
+
+<hr>
+<center>
+  <a href="./index.html"><b>[ Home ]</b></a> &nbsp&nbsp
+  <a href="./policies.html"><b>[ Policies ]</b></a> &nbsp&nbsp
+  <a href="./lectures.html"><b>[ Lectures ]</b></a> &nbsp&nbsp
+  <a href="./project.html"><b>[ Project ]</b></a> &nbsp&nbsp
+</center>
+<hr>
+
+<br><br>
+
+<center>
+<h3>Grading Breakdown</h3>
+<table cols="3" border="1">
+<tr>
+  <td bgcolor="#E6FFCC" width="300"><b><u>Component</u></b></td>
+  <td bgcolor="#E6FFCC" width="100" align="center"><b><u>Due Date</u></b></td>
+  <td bgcolor="#E6FFCC" width="100" align="center"><b><u>% Project Grade</u></b></td>
+</tr>
+
+<tr>
+  <td width="200" valign="top"> Proposal </td>
+  <td width="70" valign="top" align="center"> 2/23 </td>
+  <td width="70" valign="top" align="center"> 10% </td>
+</tr>
+
+<tr>
+  <td width="200" valign="top">10-minute proposal presentation </td>
+  <td width="70" valign="top" align="center"> 2/23 </td>
+  <td width="70" valign="top" align="center"> 10% </td>
+</tr>
+
+<tr>
+  <td width="200" valign="top"> Informal progress updates </td>
+  <td width="70" valign="top" align="center"> Throughout </td>
+  <td width="70" valign="top" align="center"> 10% </td>
+</tr>
+
+<tr>
+  <td width="200" valign="top"> Formal progress report </td>
+  <td width="70" valign="top" align="center"> 3/29 </td>
+  <td width="70" valign="top" align="center"> 20% </td>
+</tr>
+
+<tr>
+  <td width="200" valign="top"> 25-minute final presentation </td>
+  <td width="70" valign="top" align="center"> 4/19 and 4/24 </td>
+  <td width="70" valign="top" align="center"> 15% </td>
+</tr>
+
+<tr>
+  <td width="200" valign="top"> Final report </td>
+  <td width="70" valign="top" align="center"> 4/25 </td>
+  <td width="70" valign="top" align="center"> 35% </td>
+</tr>
+
+
+</table><br><br>
+</center>
+
+<hr>
+
+<!-- Proposal instructions -->
+
+<h3>Proposal Instructions</h3>
+
+<p>The proposal for this project is very important, as it provides me
+with an understanding of what you hope to accomplish, and how you plan
+to accomplish it.  To this end, the proposal should have the following
+structure:</p>
+
+<ul>
+
+  <li> <b>Section 1: Introduction.</b>  The introduction section of
+  your proposal should provide sufficient background to motivate your
+  work, as well as answer the following questions:  What problem are
+  you trying to solve?  Why is solving this problem important?  What
+  do you hope to learn by conducting this project?  After reading your
+  introduction, I should have a clear idea of what problem you are
+  addressing, and what the intellectual merit of your proposed
+  research is.</li><br>
+
+  <li> <b>Section 2: Research Plan.</b> This section should define at
+  a more technical level the tasks that need to be done as part of
+  your project. Each task should be numbered and described in
+  detail.</li><br>
+
+  <li> <b>Section 3: Deliverables.</b>  In this section, describe the
+  deliverables that you will produce.  Will you be developing a threat
+  model?  Implementing software?  Proposing new theory and writing
+  proofs?  Each artifact of your research should be numbered and
+  listed in this section.</li><br>
+
+  <li> <b>Section 4: Proposed Timeline.</b>  This section of your
+  proposal should describe the time required to conduct each of the
+  tasks outlined in Section 2.  Furthermore, approximate completion
+  dates should be listed for each deliverable identified in Section
+  3.</li>
+
+</ul>
+
+<p>In total, I expect that your proposal will be approximately 3-5 pages
+in length.  However, this is just a guideline, and you will not be
+penalized for writing a more detailed proposal.  Overall clarity of
+presentation is much more important than page limits!</p>
+
+<hr>
+
+
+<h3>Progress Report Instructions</h3>
+
+<p>The progress report should be a semi-formal write up describing
+your research to date.  Have you proven any theorems?  Developed any
+code?  Configured a testbed?  Have you made significant progress
+reading and characterizing background literature?  In this writeup,
+you should address each task and deliverable mentioned in your
+proposal and describe your progress to date.  In particular, address
+each of the following points:
+
+<ul>
+
+  <li>For each task that <b>should</b> be complete according to your
+  initial proposal, indicate what progress you have made. If you are
+  ahead of schedule, indicate which other tasks have been completed.
+  Please describe your progress in detail (i.e., don't just say that
+ Task T1 is "done") so
+  that I can fully grasp not only what you have done, but what you
+  have learned in the process.<br><br></li>
+
+  <li>If you have fallen behind the timeline set forth in your
+  proposal, explain why.  Research is a complicated process, and if
+  you have hit significant roadblocks, this is your chance to explain
+  them.  <br><br></li>
+
+  <li>Describe your plan to finish this project.  If revisions are
+  needed to the task list set forth in our proposal, identify them
+  here.  If your timeline needs to be revised, indicate which revisions
+  are necessary.  This revised timeline will be discussed during our
+  meeting.</li>     
+
+</ul>
+
+<p>In total, I expect that your progress report will be 3-5 pages in
+length.  However, if you have made fantastic progress and feel that
+you need more space to describe your acheivements, please take as much
+space as is needed!  A well written progress report will serve as a
+good starting point for your final project write up.</p>
+
+<!-- end page -->
+</body>
+
+</html>

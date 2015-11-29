@@ -1,0 +1,27 @@
+<!-- /wag/index.html   home page for WAG system
+	@author Kaiyang Liu
+	@create 10/04/97
+	@last	10/04/97
+-->
+<html>
+<head>
+	<title>Welcome to WAG system -- Web at Glance!</title>
+</head>
+
+<frameset cols="160,*" frameborder=5>
+	<frame src="sidebar.html" name="sidebar" target="wag_main" > 
+	<frameset rows="60%, 40%">
+		<frame src="wag_main.html" name="wag_main" >
+		<frame src="status.html" name="status" >
+	</frameset>
+
+<noframe>
+	<body>
+  		<h3>You are recommanded to use Netscape 2.0 or up to 
+			view this page, or any browser supports Frame
+		</h3>
+	</body>
+</noframe>
+</frameset>
+
+</html>

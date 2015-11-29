@@ -1,0 +1,60 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="CSSD">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="p2.html"><img SRC="previous.gif"  align=LEFT></a><a href="p4.html"><img SRC="next.gif"  align=RIGHT></a>
+<p><br>
+<center><b><font size=+3>1. Introduction</font></b></center>
+
+<ul>
+<ul>
+<ul>
+<li>
+<b><font size=+1>What's component?</font></b></li>
+</ul>
+<b><font size=+1></font></b>
+<p><br><font size=+1><b>&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+A software component can be defined as an executable unit of code that
+provides a set of services</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; through specifed
+interfaces:</font><font size=+1></font>
+<p><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; "A software
+component is a unit of composition with contractually specifed interfaces
+and explicit</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; context dependencies
+only. A software component can be deployed independently and is subject
+to</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; third-party
+composition."&nbsp; It is a binary unit of independent production, acquisition,
+and deployment</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; that interact
+to form a functioning system.</font>
+<br><font size=+1></font>&nbsp;
+<ul><font size=+1>A "component" is a building block program that is self-describing.
+This means that it can be run with a mix of other components and each will
+be able to understand the capabilities and characteristics of the other
+components. Practically, this means that a new application can be built
+by reusing components already known to exist and without having to compile
+the application. It also makes it relatively easy to distribute different
+components of an application among different computers in a network</font>
+<br><font size=+1></font>&nbsp;</ul>
+
+<ul>
+<li>
+<b><font size=+1>Component-Based Software Engineering</font></b></li>
+</ul>
+
+<ul><font size=+1>Component-based software engineering is expected to be
+used so that software systems can be created and maintained at lower costs
+and with increased stability through reuse of approved components in fexible
+software architectures.</font></ul>
+</ul>
+</ul>
+
+</body>
+</html>

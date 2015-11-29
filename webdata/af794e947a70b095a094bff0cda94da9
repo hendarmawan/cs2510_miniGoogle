@@ -1,0 +1,71 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<p><a href="pre4.htm"><img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="pre6.htm"><img border="0" src="next.gif" width="26" height="26"></a></p>
+<p align="center">&nbsp;&nbsp; <font face="Arial" size="7">Microsoft COM</font><font face="Arial" size="6"><br>
+&nbsp;&nbsp; </font><i><font face="Arial" size="6">Component Object Model<br>
+</font></i></p>
+<p:colorscheme
+ colors="#35217F,#FFFFFF,#000000,#FFC82D,#FFC66D,#CE6A7D,#A964DC,#648AF6"/>
+<div v:shape="_x0000_s3074" class="O">
+  <b><span lang="EN-US" style="font-family:Arial;
+mso-ascii-font-family:Arial;mso-fareast-font-family:宋体;mso-hansi-font-family:
+Arial;font-size:200%;text-shadow:auto;color:#FFC82D;mso-color-index:3;
+mso-fareast-language:ZH-CN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><font color="#000080"><span lang="EN-US" style="font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: 宋体; mso-hansi-font-family: Arial; font-size: 200%; text-shadow: auto; mso-color-index: 3; mso-fareast-language: ZH-CN">What 
+  is COM?<br>
+  </span></font></b><font color="#000080"><b><span style="font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: 宋体; mso-hansi-font-family: Arial; font-size: 200%; text-shadow: auto; mso-color-index: 3; mso-fareast-language: ZH-CN" lang="EN-US">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+  </span><i><span lang="EN-US" style="font-family: Arial; mso-ascii-font-family: Arial; mso-fareast-font-family: 宋体; mso-hansi-font-family: Arial; font-size: 117%; text-shadow: auto; mso-color-index: 3; mso-fareast-language: ZH-CN">Build 
+  software fom parts, not from scratch</span></i></b></font>
+</div>
+<p:colorscheme
+ colors="#35217F,#FFFFFF,#000000,#FFC82D,#FFC66D,#CE6A7D,#A964DC,#648AF6"/>
+<div v:shape="_x0000_s3074">
+  <div class="O" style="mso-line-spacing:&quot;90 30 0&quot;;mso-margin-left-alt:348">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-special-format: bullet; color: #FFC82D; mso-color-index: 3; position: absolute; left: -5.51%; top: .3em; font-family: Wingdings; font-size: 75%; text-shadow: auto">v</span>&nbsp;&nbsp; 
+    <span lang="EN-US" style="font-family:Arial;mso-ascii-font-family:Arial;mso-fareast-font-family:
+宋体;mso-hansi-font-family:Arial;font-size:117%;text-shadow:auto;mso-fareast-language:
+ZH-CN"><b>A framework for creating and using components<br>
+    </b></span>
+  </div>
+  <div class="O1" style="mso-line-spacing:&quot;90 30 0&quot;;mso-margin-left-alt:612;
+mso-text-indent-alt:349">
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    <span style="mso-special-format: bullet; color: #FFC82D; mso-color-index: 3; position: absolute; left: -5.28%; top: .3em; font-family: Wingdings; font-size: 75%; text-shadow: auto">&Oslash;</span><span lang="EN-US" style="font-family:Arial;mso-ascii-font-family:Arial;mso-fareast-font-family:
+宋体;mso-hansi-font-family:Arial;text-shadow:auto;mso-fareast-language:ZH-CN"><font size="4">Makes 
+    software easier to write and reuse</font></span>
+  </div>
+  <div class="O1" style="mso-line-spacing:&quot;90 30 0&quot;;mso-margin-left-alt:612;
+mso-text-indent-alt:349">
+    <font size="4"><span style="mso-special-format: bullet; color: #FFC82D; mso-color-index: 3; position: absolute; left: -4.46%; top: .3em; font-family: Wingdings; text-shadow: auto">&Oslash;</span><span lang="EN-US" style="font-family:Arial;mso-ascii-font-family:Arial;mso-fareast-font-family:
+宋体;mso-hansi-font-family:Arial;text-shadow:auto;mso-fareast-language:ZH-CN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    Provides widest choice in services, tools, languages,<span style="mso-spacerun: yes">&nbsp; 
+    </span>and applications</span></font>
+  </div>
+  <div class="O1" style="mso-line-spacing:&quot;90 30 0&quot;;mso-margin-left-alt:612;
+mso-text-indent-alt:349">
+    <font size="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="mso-special-format: bullet; color: #FFC82D; mso-color-index: 3; position: absolute; left: -4.54%; top: .3em; font-family: Wingdings; text-shadow: auto">&Oslash;</span><span lang="EN-US" style="font-family:Arial;mso-ascii-font-family:Arial;mso-fareast-font-family:
+宋体;mso-hansi-font-family:Arial;text-shadow:auto;mso-fareast-language:ZH-CN">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    Provides&nbsp; third party market for off the shelf components<br>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+    Controls, tools, and server components</span></font>
+  </div>
+  <div class="O" style="mso-line-spacing:&quot;100 50 0&quot;;mso-margin-left-alt:348">
+  </div>
+</div>
+
+</body>
+
+</html>

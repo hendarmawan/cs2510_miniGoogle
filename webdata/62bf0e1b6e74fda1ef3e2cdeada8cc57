@@ -1,0 +1,57 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="seminar_pg6.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="seminar_pg8.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Inside The AHAM Storage Layer 
+    - Domain Model</font></h1> 
+ </center> 
+  
+<p><br>
+  <font size="5" face="Arial, Helvetica, sans-serif"> Component (Dexter) vs. Concept 
+  Component (AHAM)</font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The Dexter Component</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">The Dexter component consists 
+    of both nodes and links</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">The node is simply the pieces 
+    of text, images, videos, etc. that make up a hypertext network</font></li>
+</ul>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The AHAM Concept Component</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">The AHAM concept component (also 
+    more simply known as a &quot;concept&quot;) is an abstraction of an information 
+    item</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">The information item is a pair 
+    consisting of a globally unique id, and the component information itself</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">The component information is made 
+    up of: <em>a set of attribute-value pairs, a sequence of anchors, and a presentation 
+    specification</em><br>
+    </font></li>
+</ul>
+<p><font face="Arial, Helvetica, sans-serif">In a nutshell, the Concept Component 
+  embodies the Dexter Component, but is more robust in definition.</font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The Atomic Concept</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">The atomic concept is the smallest 
+    piece of information. It is the primitive object in the model.</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">This smallest piece of information 
+    is know as a <em>fragment</em></font></li>
+  <li><font face="Arial, Helvetica, sans-serif">The content, and anchor values 
+    of the atomic concept exist only in the <em>within-component layer</em></font></li>
+</ul>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The Composite Concept</font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">The composite concept is a concept 
+    composed of a set of children</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Each level of children in a composite 
+    concept are either made up entirely of other composite concepts, or of atomic 
+    concepts</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">A page is a composite concept 
+    consisting of nothing but composite concepts.</font></li>
+</ul>
+<center><img src="images/aham_fig2.jpg"></center>
+</html> 

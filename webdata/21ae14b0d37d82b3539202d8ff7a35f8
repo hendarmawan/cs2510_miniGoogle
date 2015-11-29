@@ -1,0 +1,184 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Xin Li's homepage</title>
+</head>
+
+<body>
+
+<div align="center">
+  <center>
+<TABLE width=600 height="1" style="border-collapse: collapse" bordercolor="#111111" cellpadding="0" cellspacing="0">
+  <TR>
+    <TD height="34" width="594">
+      <a href="index.htm">Home</a>&gt;Publication List</TR>
+  <TR>
+    <TD height="34" width="594">
+      <p class="MsoNormal" align="center" style="text-align:center;line-height:150%">
+      <font face="Arial">
+      <b><span style="font-size:14.0pt;line-height:
+150%">PUBLICATIONS OF XIN LI</span></b></font></TR>
+  <TR>
+    <TD height="468" width="594">
+      <HR>
+
+      <p class="MsoNormal" style="line-height:150%" align="justify"><b>
+		<font face="Arial">DISSERTATION:</font></b></p>
+		<ol>
+			<li>
+			<p class="MsoNormal" style="line-height:150%" align="justify">
+			<font face="Arial"><b>
+			<i>Incremental Query Processing in Information 
+			Fusion Systems</i>. Xin Li, PhD Dissertation</b>, Department of 
+			Computer Science, University of 
+			Pittsburgh, defended on Feb. 23, 2006.&nbsp; [<a href="File/ThesisAbstract.pdf">Abstract</a>] 
+			[<a href="File/ThesisAck.pdf">Acknowledgements</a>] [<a href="File/LiXin04052006.pdf">Full 
+			Text </a>(2,278K)]</font></p></li>
+		</ol>
+		<p class="MsoNormal" style="line-height:150%" align="justify"><b>
+      	<font face="Arial">JOURNAL PAPERS:</font></b></p>
+      <ol start="2">
+        <li>
+
+      <p class="MsoNormal" style="line-height:150%" align="justify">
+		<span style="font-family: Arial"><b><i>User Profiling in the Chronobot/Virtual 
+		Classroom System. </i>Xin Li </b>and S.K. Chang, <b>International 
+		Journal of Software Engineering and Knowledge Engineering (IJSEKE)</b>, 
+		The Special Issue of SEKE'06 (<b><i>the best five papers selected by the 
+		committee and audience</i></b>).</span></p>
+        </li>
+		<li>
+
+      <p class="MsoNormal" style="line-height:150%" align="justify">
+      <i>
+      <b><font face="Arial">A Progressive Query Language and an Interactive 
+		Reasoner for Information Fusion Support</font></b></i><b><i><font face="Arial">.</font></i></b><font face="Arial"><b> </b>S. K. Chang, Erland Jungert and <b>
+      X. Li, Journal of <i>Information Fusion.</i> </b>[<a href="http://authors.elsevier.com/sd/article/S1566253505000837">Abstract</a>] 
+		[<a href="File/IFJ2006.pdf">Full Text</a>]</font></p>
+        </li>
+		<li>
+
+      <p class="MsoNormal" style="line-height:150%" align="justify">
+      <span style="font-family: Arial"><b><i>Face Alive Icons. </i>Xin Li, </b>
+		Chieh-Chih Chang,&nbsp; and S. K. Chang, <i> <b>Journal of Visual Language 
+		and Computing</b></i> (accepted in Feb. 2007). </span></p>
+        </li>
+      </ol>
+
+      <p class="MsoNormal" style="line-height:150%" align="justify"><b>
+      <font face="Arial">CONFERENCE PAPERS:</font></b></p>
+      <ol start="4">
+		<li value="5">
+		<p class="MsoNormal" style="line-height: 150%; " align="justify">
+		<font face="Arial"><b><i>The Design and Implementation of the Chronobot/Virtual 
+		Classroom (CVC) System. </i></b>S. K. Chang, <b>Xin Li</b>, Ricardo 
+		Villamarin, Dan Lyker, Chris Bryant. </font>
+		<span style="font-family: Arial">The twelfth International Conference on 
+		Distributed Multimedia Systems (DMS'06), Grand Canyon, USA [<a href="File/DMS06-CL.bib">BibTex</a>][<a href="File/DMS06-CL.pdf">pdf</a>].</span></p>
+		</li>
+		<li>
+		<p class="MsoNormal" style="line-height: 150%; " align="justify">
+		<span style="font-family: Arial"><b><i>User Profiling in the Chronobot/Virtual 
+		Classroom System. </i>Xin Li </b>and S.K. Chang, The Eighteenth 
+		International Conference on Software Engineering and Knowledge 
+		Engineering (SEKE'06), San Francisco, USA [<a href="File/SEKE06-LC.bib">BibTex</a>][<a href="File/SEKE06-LC.pdf">pdf</a>].</span></p>
+		</li>
+		<li>
+		<p class="MsoNormal" style="line-height: 150%; " align="justify">
+		<span style="font-family: Arial"><b><i>A Personalized E-Learning System 
+		Based on User Profile Constructed Using Information Fusion, </i>Xin Li
+		</b>and S. K. Chang, The eleventh International Conference on Distributed 
+		Multimedia Systems (DMS'05), Banff, Canada. Sep. 5~7, 2005, pp. 109-114 . [<a href="File/DMS05-XinLi.bib">BibTex</a>][<a href="File/DMS05-LC.pdf">pdf</a>]</span></p>
+		</li>
+		<li>
+		<p class="MsoNormal" style="line-height: 150%; " align="justify">
+		<span style="font-family: Arial"><b><i>Face Alive Icons. </i>Xin Li, </b>Chieh-Chih Chang,&nbsp; and S. K. Chang, The Seventeenth International 
+		Conference on Software Engineering and Knowledge Engineering (SEKE'05), 
+		Taipei, Taiwan, July 14-16, 2005, pp. 29-36. [<a href="File/SEKE05-LCC.bib">BibTex</a>][<a href="File/SEKE05-LCC.pdf">pdf</a>] 
+		</span></p></li>
+		<li>
+		<p class="MsoNormal" style="line-height: 150%; " align="justify">
+		<span style="font-family: Arial"><b><i>An 
+      Interactive Visual Query Interface on Spatial/temporal Data</i></b>.<span style="FONT-FAMILY: Arial"><b> Xin Li</b> 
+      and S. K. Chang. Proc. of Int'l Conf. on Distributed Multimedia Systems(DMS'04), 
+		</span>San Francisco Bay, CA, Sep. 8-10, 2004, pp. 257-262. [<a href="File/VLC04-XinLi.bib">BibTex</a>] [<a href="File/VLC04-XinLi.pdf">pdf</a>]</span></p>
+		</li>
+		<li>
+		<p class="MsoNormal" style="line-height: 150%; " align="justify"><b><i>
+		<span style="FONT-FAMILY: Arial">An 
+      Architecture for Interactive Query Refinement in Sensor-based&nbsp;&nbsp;&nbsp; Information 
+      Fusion Systems</span></i></b><span style="font-family: Arial">.</span><span style="FONT-FAMILY: Arial"> 
+      Giovanni Casella, S. K. Chang, Gennaro Costagliola, Erland Jungert, <b>Xin Li</b> and&nbsp; Tobias Horney,
+		</span><span style="font-family: Arial">Proc. of Int'l Conf. on Distributed 
+      Multimedia Systems(DMS'04), San Francisco Bay, CA, Sep. 8-10, 2004, pp. 315-321. [<a href="File/DMS04-CCJ.bib">BibTex</a>][<a href="File/DMS04-CCJ.pdf">pdf</a>]</span></p>
+		</li>
+		<li>
+		<p class="MsoNormal" style="line-height: 150%; " align="justify">
+		<font face="Arial"><b><i>Evolutionary Query Processing, Fusion and Visualization</i></b>.  
+		</font><span style="font-family: Arial">S. K. 
+      Chang, W. Dai, S. Hughes, P. Lakkavaram and <b>Xin Li</b>, Proc. of Int'l Conf. on Distributed 
+      Multimedia Systems(DMS'02), San Francisco Bay, CA, Sep. 2002. 
+      [<a href="File/DMS-02.bib">BibTex</a>][<a href="File/DMS-02.pdf">pdf</a>]</span></p>
+		</li>
+		</ol>
+		<p class="MsoNormal" style="line-height: 150%; " align="justify"><b>
+		<font face="Arial">WORKSHOP PAPERS:</font></b></p>
+		<ol start="11">
+		<li value="12">
+		<p class="MsoNormal" style="line-height: 150%; " align="justify">
+		<font face="Arial"><b><i>An Internet Based Examination Platform (IBEP)---TH-IBEP</i></b>. 
+		<b>Xin Li</b> </font><span style="font-family: Arial">and Weimin Yan, Proceeding of the International Workshop on Distance 
+      Learning and Virtual Campus, Beijing, China, Nov. 2000.&nbsp;[<a href="File/IBEP99.bib">BibTex</a>][<a href="File/IBEP.pdf">pdf</a>]</span></p>
+		</li>
+		</ol>
+
+      <p class="MsoNormal" style="line-height: 150%; " align="justify"><b>
+		<font face="Arial">SELECTED PRESENTATIONS:</font></b></p>
+		<ul>
+			<li>
+			<p class="MsoNormal" style="line-height: 150%; " align="justify">
+			<font face="Arial"><i><b>A Fusion Approach to Infer Preference from 
+			User Behaviors</b></i>, in the 6th Graduate Research Competition, 
+			Department of Computer Science, University of Pittsburgh, 2006. [<a href="File/Comp2006.pdf">slides</a>]</font></p>
+			</li>
+			<li>
+			<p class="MsoNormal" style="line-height: 150%; " align="justify">
+			<font face="Arial"><b><i>Face Alive Icons</i></b>, in the 5th 
+			Graduate Research Competition, Department of Computer Science, 
+			University of Pittsburgh, 2005. [<a href="File/Comp2005.pdf">slides</a>]</font></p>
+			</li>
+		</ul>
+
+      <HR color="#808080">
+
+      <TABLE cellSpacing=0 cellPadding=0 width="593" border=0>
+        <TBODY>
+        <TR>
+          <TD width="573"><SPAN class=negl>
+          Updated:
+          <!--webbot bot="Timestamp" S-Type="EDITED" S-Format="%m/%d/%Y" startspan -->08/11/2006<!--webbot bot="Timestamp" endspan i-checksum="12528" -->   
+          </SPAN>
+         </TD>
+         
+          <TD width="20">
+            
+          <SPAN class=negl>
+          <script language="JavaScript" type="text/javascript" src="http://m1.nedstatbasic.net/basic.js"></script>
+          <a target="_blank" href="http://www.nedstatbasic.net/stats?ACr87g1ajNTqzWDBUCeAQEwlWIsw">
+          <IMG height=18 alt="Web page Counter" 
+            src="http://m1.nedstatbasic.net/n?id=ACr87g1ajNTqzWDBUCeAQEwlWIsw" 
+            width=18 border=0></SPAN></TD>
+         
+        </TR>
+</TBODY></TABLE></TR></TABLE>
+
+  </center>
+</div>
+
+</body>
+
+</html>

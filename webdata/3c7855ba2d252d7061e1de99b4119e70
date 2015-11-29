@@ -1,0 +1,27 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page8.html"><img src="previous.gif" align=left></a>
+<a href="page10.html"><img src="next.gif" align=right></a>
+<center>
+   <br><br>
+   <h1>Directives</h1>
+   <br>
+</center>
+<font size=4>
+<ul>
+   <li>Directives send messages to the JSP engine on how a JSP page
+       should be compiled.</li>
+   <li>Three types of Directives:</li>
+   <ul>
+      <li>Page Directives allows page-specific attriubutes to be set.</li>
+      <li>Include Directives allows data from an external URL to be
+          embedded into a JSP page.</li>
+      <li>Taglib Directives specifies a tag library by which the set of
+          JSP tags can be extended.</li>
+   </ul>
+</ul>
+</font>
+</html>
+      

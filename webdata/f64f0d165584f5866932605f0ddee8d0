@@ -1,0 +1,763 @@
+<title>Visual Abstraction</title>
+<center>
+<h2>
+VISUAL ABSTRACTION IN THE VISUAL DESIGN PROCESS
+</h2>
+<p><p>
+S. K. Chang, W. Hua and C. W. Yoo
+Department of Computer Science
+University of Pittsburgh, Pittsburgh, PA 15260 USA
+{chang, cwyoo, hua}@cs.pitt.edu
+</center>
+<p><p>
+<b>Abstract</b>: We investigate the properties of syntactically well-formed, semantically valid and pragmatically admissable visual diagrams for the visual design
+process, supporting transformations among visual diagrams at different
+levels of abstraction.
+With this characterization of the visual design process,
+sound software engineering principles can be applied
+to the visual design process
+to effectively and efficiently accomplish the design objectives.
+This merger of visual design process with software engineering may also lead to the new discipline of visual software engineering.
+<p><p><p>
+<b>Keywords</b>: Visual abstraction, visual diagrams, software engineering principles for visual design, visual software engineering
+<p><p><p>
+<b>1. Introduction</b>
+<p>
+In many fields of science and engineering, designers rely on visual diagrams
+and their refinements to design products.  For example in designing
+the relay circuit for a railroad control system, the designer will first draw
+a circuit diagram which is then transformed into
+logic equations and finally implemented by a microprocessor-controlled system.
+Although the designer can directly specify the logic equations, it is
+much more convenient to draw the relay circuit diagrams first.
+With CAD tools the creation and display of such visual diagrams is no longer a problem.
+However, visual diagrams are often much larger than the display screen,
+therefore the designer has to scroll the visual diagrams in order to view them.
+Moreover, the current CAD tools are inadequate in supporting the designer to
+visualize and/or conceptualize the visual diagrams, because it is usually
+difficult to provide various levels of abstractions for the visual diagrams. 
+Since there is no adequate theoretical framework for visual abstraction,
+documentation and maintenance of visual diagrams then become a problem.
+On the other hand, adequate design tools should support multiple views in the design environment [7].
+We are therefore faced with the following challenges: (a) how to formulate a theoretical
+framework for visual abstraction,  (b) how to design software tools
+to provide various levels of abstraction and dynamic visualization,
+and (c) how to ensure the tools are adequate in supporting the designer's
+visual design process.
+<p>
+Diagram is a popular representation for visual languages. Daniel
+D. Hils [4] had a survey of data flow visual languages. Some
+research have been done to define the syntax of the visual
+language.  In his papers [2, 3], Eric J. Golin uses the picture
+layout grammar to define the syntax of visual languages. A.
+Papantonakis and P. J. H. King [6] give the attribute grammar and
+semantics of their graphical query language. Joe Marks [5] also
+describes the syntax and semantics of the network diagram. But
+none of the above works considers visual abstraction.
+In this paper, our objective is to formally define visual diagrams at various levels of abstraction, which are
+syntactically well-formed, semantically valid and pragmatically
+admissable, so that techniques and guidelines can be developed to analyze and synthesize
+such visual diagrams.
+With such techniques and guidelines, we can apply sound software engineering principles
+to help a designer in his visual design process
+to effectively and efficiently accomplish the design objectives.
+In other words, design can be done in less time with fewer mistakes
+and is easier to understand by other designers.
+<p><p><p>
+<b>2. A Conceptual Framework for the Visual Design Process</b>
+<p>
+Our viewpoint is that <i>every instance of the visual diagram that the designer creates or sees on the display screen
+is a part of a visual program</i>.  Thus the designer is constantly
+"programming" through continuous interaction with the visual diagram -
+although the designer may not know he (she) is "programming".
+This instance of the visual diagram is called a <i>visual sentence</i> [1].  Moreover, the designer does not merely
+interact with the visual diagram at a fixed level of abstraction.  The
+visual sentence can be transformed into other visual sentences.  Thus our
+viewpoint leads to a <i>transformational framework</i>.
+<p>
+Given a visual sentence, the designer can transform it into another
+visual sentence using a <i>vistractor</i>
+(<i>vis</i>ualization-and-abs<i>trac</i>tion opera<i>tor</i>)
+to accomplish different effects of
+visualization and abstraction.
+In the visual design process, the designer will first create a visual sentence
+as an initial design.  By applying a vistractor, the
+designer can visualize the initial design at a different abstraction level.
+The initial design is improved to the detailed design and eventually led to
+the final design.  Correspondingly, the abstracted initial
+design, detailed design and final design can also be constructed and
+visualized.  This collection of visual sentences used in the visual design
+process is called a <i>visual design configuration</i>.  Similar to a
+software configuration, the visual design configuration provides detailed
+documentation of the visual design process for verification, validation, maintenance and many other purposes.
+<p>
+In order to formally characterize the visual design process, in the following
+sections we will define the visual diagrams and the abstraction of
+visual diagrams using the aggregation vistractor.
+<p><p><p>
+<b>3. Visual Diagrams</b>
+<p>
+A <i>diagram</i> G is a graph that includes nodes N and arcs A.
+Generally the diagram has a hierarchical structure. 
+A portion of the diagram can be compressed into an <i>aggregate node</i>.
+If the node is an aggregate node there will be a subdiagram inside this node.
+Conversely an aggregate node can also be expanded to a subdiagram.  
+<p>
+There are two different types of nodes:
+A <i>complex node</i> s<sub>c</sub>
+is the node that includes a diagram inside it,
+and a <i>port node</i> n<sub>port</sub>
+is the node that does not include a diagram.  Thus
+N = N<sub>c</sub> <tt>U</tt> N<sub>port</sub> where N<sub>c</sub> and N<sub>port</sub> are disjoint
+subsets of complex nodes and port nodes, respectively.
+<p>
+Those complex nodes that include diagrams inside and are expandable to
+lower level diagrams are called <i>aggregate nodes</i>.
+A <i>regular</i> node is a complex node which has a self-contained 
+diagram but its internal structure can not be visualized or expanded any more,
+while an aggregate node is expandable. 
+The union of the set of aggregate nodes N<sub>a</sub> and the set of regular nodes N<sub>r</sub> is N<sub>c</sub>.
+<p>
+A <i>port</i> n<sub>port</sub>
+is the interface between the inside and the outside of the diagram G.
+<p>
+A port can be either an <i>input port</i> n<sub>in</sub> or an 
+<i>output port</i> n<sub>out</sub>,
+and N<sub>port</sub> = N<sub>in</sub> <tt>U</tt> N<sub>out</sub>.
+Since an aggregate node is a compressed diagram, and a regular node has a self-contained diagram inside,
+there are also ports in a complex node.
+<p>
+An <i>arc</i>
+is the link from an input port of a diagram or a complex 
+node, to an output port of a diagram or another complex node.
+<p>
+Finally, each node is associated with a <i>label</i> (the name of the node)
+together with other attributes,
+and each arc is associated with the name of the arc together with
+other attributes.  In general such labels may be strings of arbitrary
+length.
+<p>
+As an example, <a href="diagfig/diagfig-1a.gif"> Figure 1(a) </a> illustrates the visual diagram which may be used in designing a relay circuit, and
+<a href="diagfig/diagfig-1b.gif"> Figure 1(b) </a> illustrates a visual diagram which may be used in specifying
+a finite-state transition diagram.
+The two visual diagrams have the same graph so the syntax is the same, but they
+are used for different purposes so the semantics are different.
+<p>
+The following is the formal definition of a diagram G:
+<p>
+<b>Definition</b>:
+G = (N, N<sub>a</sub>, N<sub>r</sub>, N<sub>in</sub>, N<sub>out</sub>, A, f<sub>N</sub>, f<sub>A</sub>), where
+<ul>
+ N is the set of nodes, N = N<sub>a</sub> <tt>U</tt> N<sub>r</sub> <tt>U</tt> N<sub>in</sub> <tt>U</tt> N<sub>out</sub>;<br>
+ N<sub>a</sub> is the set of aggregate nodes;<br>
+ N<sub>r</sub> is the set of regular nodes;<br>
+ N<sub>in</sub> is the set of input ports;<br>
+ N<sub>out</sub> is the set of output ports;<br>
+ A maps <i>N</i> into the set of all subsets of N: N --> 2<sup>N</sup>; <br>
+ f<sub>N</sub> is a mapping from nodes N to attribute space K<sub>N<sub>1</sub></sub> x K<sub>N<sub>2</sub></sub> x ... x K<sub>N<sub>m</sub></sub>;<br>
+ f<sub>A</sub> is a mapping from arcs A to attribute space K<sub>A<sub>1</sub></sub> x K<sub>A<sub>2</sub></sub> x ... x K<sub>A<sub>n</sub></sub>.<br>
+</ul>
+<p>
+The pair (n<sub>i</sub>, n<sub>j</sub>) with n<sub>j</sub>  <tt>in</tt>   A n<sub>i</sub> is 
+called an <i>arc</i> of G. The node n<sub>i</sub> is the <i>initial node</i> and 
+the node n<sub>j</sub> is the <i>final node</i> of the arc (n<sub>i</sub>, n<sub>j</sub>).
+The node n<sub>i</sub> is the <i>predecessor</i> of 
+n<sub>j</sub>, and n<sub>j</sub> is the <i>successor</i> of n<sub>i</sub>. 
+<p>
+A <i>path</i> is a node-sequence (n<sub>1</sub>,n<sub>2</sub>,...,n<sub>k</sub>),
+where n<sub>i+1</sub>  <tt>in</tt> An<sub>i</sub>, for i=1 to k-1.
+<p>
+As a notational convenience,
+instead of f<sub>N</sub>(n<sub>i</sub>) we will write (k<sub>n<sub>i</sub><sup>1</sup></sub>, ..., k<sub>n<sub>i</sub><sup>m</sup></sub>). 
+Similarly, instead of f<sub>A</sub>(a<sub>j</sub>) we will write
+(k<sub>a<sub>j</sub><sup>1</sup></sub>, ..., k<sub>a<sub>j</sub><sup>n</sup></sub>).
+<p>
+f<sub>N</sub>(n<sub>i</sub>).name<sub>j</sub> stands for k<sub>n<sub>i</sub><sup>j</sup></sub>, 
+j'th attribute of the node n<sub>i</sub>,
+and f<sub>A</sub>(a<sub>i</sub>).name<sub>j</sub> stands for k<sub>a<sub>i</sub><sup>j</sup></sub>,
+j'th attribute of the arc a<sub>i</sub>,
+<p>
+N<sub>c</sub> is the set of complex nodes and N<sub>c</sub> = N<sub>a</sub> <tt>U</tt> N<sub>r</sub>.
+<p>
+N<sub>port</sub> is the set of port nodes and N<sub>port</sub> = N<sub>in</sub> <tt>U</tt> N<sub>out</sub>.
+<p>
+In <a href="diagfig/diagfig-2a.gif"> Figure 2(a)</a>, for example, 
+N<sub>r</sub> = {n<sub>1</sub>,n<sub>2</sub>, n<sub>4</sub>,n<sub>5</sub>},
+N<sub>a</sub> = {n<sub>3</sub>},
+N<sub>in</sub> = {n<sub>0</sub>}, and
+N<sub>out</sub> = { }. In this figure regular nodes are drawn as single circles, 
+aggregate nodes as double circles and port nodes as squares.
+<p>
+If the initial or final node of an arc a<sub>i</sub> is a complex node, 
+then more specific information about interface ports is provided in the 
+attribute space f<sub>A</sub>(a<sub>i</sub>). 
+For example, f<sub>A</sub>(a<sub>i</sub>).<i>initial</i> and 
+f<sub>A</sub>(a<sub>i</sub>).<i>final</i> denote the internal port of initial node and 
+the internal port of the final node in arc a<sub>i</sub>, respectively. 
+<p>
+An aggregate node n<sub>a</sub> has the same definition as that of diagram G.
+<p><p><p>
+<b>4. Abstraction of Visual Diagrams</b>
+<p>
+Given a visual diagram, a user can manipulate it to obtain a new one, or 
+to transform it into another visual diagram. In this section we describe
+the syntax of the diagram to formally characterize such a transformation by
+a vistractor called <i>aggregation</i>.
+<p>
+By convention G - N is the intersection of G and -N, where -N means the complement of N, 
+and |G| represents the number of nodes in the diagram G. In what follows we
+will use the definition G=(N,A) or G=(N) for a diagram instead of formal one, 
+as long as we do not need any other components of G.
+<p>
+If a node doesn't have any predecessor in G, it is called <i>input node</i> of 
+the diagram. We define N<sub>input</sub> to be the non-empty set of input nodes of G.
+An input port is a kind of input node. 
+<p>
+The <i>inverse</i> of A is a function A<sup>-1</sup>: <i>N</i> --> 2<sup>N</sup> defined as:
+<p>
+<ul>
+ A<sup>-1</sup> n<sub>i</sub> = { n<sub>j</sub> | n<sub>i</sub>  <tt>in</tt>  A n<sub>j</sub>}
+</ul>
+<p>
+We define A<sup>2</sup>, A<sup>3</sup>, ... , A<sup>+</sup> and A<sup>*</sup> as:
+<ul>
+ A<sup>2</sup> n<sub>i</sub> = A ( A n<sub>i</sub> )
+<br>
+ A<sup>3</sup> n<sub>i</sub> = A (A ( A n<sub>i</sub> ) )
+<br>
+   ...
+<br>
+ A<sup>+</sup> n<sub>i</sub> = A n<sub>i</sub> <tt>U</tt> A<sup>2</sup> n<sub>i</sub> <tt>U</tt> ...
+<br>
+ A<sup>*</sup> n<sub>i</sub> = n<sub>i</sub> <tt>U</tt> A n<sub>i</sub> <tt>U</tt> A<sup>2</sup> n<sub>i</sub> <tt>U</tt> ...
+<br>
+</ul>
+<p>
+A node n<sub>j</sub> is <i>reachable from</i> n<sub>i</sub> if n<sub>j</sub> is 
+in A<sup>*</sup> n<sub>i</sub>.
+A node n<sub>j</sub> is <i>accessible</i> if it is reachable from one input node in N<sub>input</sub>, and it is <i>inaccessible</i> otherwise.
+<p>
+The <i>connectivity function</i> C: <i>N</i> --> 2<sup>N</sup> is defined as:
+<p>
+<ul>
+ C n<sub>i</sub> = A n<sub>i</sub> <tt>U</tt> A<sup>-1</sup> n<sub>i</sub>
+</ul>
+<p>
+<b>Lemma 1</b>: For every two nodes n<sub>i</sub> and n<sub>j</sub>, if 
+n<sub>i</sub>  <tt>in</tt>  C n<sub>j</sub>, then n<sub>j</sub>  <tt>in</tt>  C n<sub>i</sub>, 
+so the connectivity function C is symmetric.
+<p>
+<b>Proof</b>:
+If n<sub>i</sub>  <tt>in</tt>  C n<sub>j</sub>, then by the definition
+n<sub>i</sub>  <tt>in</tt>   (A n<sub>j</sub> <tt>U</tt> A<sup>-1</sup> n<sub>j</sub>).
+Case-1: if n<sub>i</sub>  <tt>in</tt>   A n<sub>j</sub>, 
+then n<sub>j</sub>  <tt>in</tt>  A<sup>-1</sup> n<sub>i</sub>, so n<sub>j</sub>  <tt>in</tt>  C n<sub>i</sub>. 
+Case-2: if n<sub>i</sub>  <tt>in</tt>  A<sup>-1</sup> n<sub>j</sub>,
+then n<sub>j</sub>  <tt>in</tt>  A n<sub>i</sub>, so n<sub>j</sub>  <tt>in</tt>  C n<sub>i</sub>.
+In both cases, n<sub>j</sub>  <tt>in</tt>  C n<sub>i</sub>, so the function C is symmetric. <b>Q.E.D.</b>
+<p>
+  
+Two nodes n<sub>i</sub> and n<sub>j</sub> are <i>adjacent</i> if n<sub>i</sub>  <tt>in</tt>  C n<sub>j</sub> or n<sub>j</sub>  <tt>in</tt>  C n<sub>i</sub>.
+<p>
+C<sup>*</sup> is the reflexive and transitive closure of C.
+<p>
+A diagram G is <i>connected</i> if for every two nodes n<sub>i</sub> and n<sub>j</sub>, n<sub>i</sub>  <tt>in</tt>  C<sup>*</sup> n<sub>j</sub>.
+<p>
+A diagram G is <i>well-formed</i> if the following two conditions hold:
+<ul>
+ 1) it is connected, and
+<br>
+ 2) every node is accessible
+</ul>
+<p>
+Given a diagram G and a node n<sub>i</sub>, we define SCR(n<sub>i</sub>) as 
+the maximal strongly connected subdiagram which includes the node n<sub>i</sub>.
+A diagram is <i>cycle-free</i> if it does not contain any strongly connected 
+subdiagram. A node n<sub>i</sub> is <i>self-cyclic</i> 
+if n<sub>i</sub>  <tt>in</tt>  A n<sub>i</sub>.
+<p>
+Given a well-formed diagram G=(N,A) and a subdiagram G'=(N',A'), there can be
+an arc between inside and outside of the subdiagram.  In other words, 
+inside of the subdiagram,
+there will be a interface node whose predecessor or successor is in the outside
+of the subdiagram. 
+We define N'<sub>entry</sub> to be the <i>entry nodes</i> of G', and N'<sub>exit</sub> 
+the <i>exit nodes</i> of G' as follows:
+<ul>
+ N'<sub>entry</sub> = { n<sub>i</sub><i> in</i> N' | A<sup>-1</sup> n<sub>i</sub> <tt>is not subset of</tt> N' }
+<br>
+ N'<sub>exit</sub> =  { n<sub>j</sub> <tt>in</tt> N' | A n<sub>j</sub> <tt>is not subset of</tt> N'}
+</ul>
+<p>
+<p>
+Given a well-formed diagram G=(N,A), a subdiagram G' is <i>aggregatable</i>
+if the following four properties hold:
+<ul>
+ 1) G' is connected,
+<br>
+ 2) every node in N' is reachable from at least one node in 
+N'<sub>entry</sub> <tt>U</tt> N'<sub>input</sub>,
+<br>
+ 3) G'-(N'<sub>entry</sub> <tt>U</tt> N'<sub>input</sub>) is cycle-free, and
+<br>
+ 4) for every node n<sub>i</sub> in N'-(N'<sub>entry</sub> <tt>U</tt> N'<sub>input</sub>), A<sup>-1</sup> n<sub>i</sub> is a subset of N'
+</ul>
+<p>
+By this definition, if a subdiagram G' is aggregatable
+then all incoming arcs are through these entry nodes,
+and all cycles within G' must contain at least one entry 
+node n'<sub>entry</sub> in N'<sub>entry</sub>. 
+<p>
+Given a diagram G and a subdiagram G', we use the notation G/G', 
+where the G' is aggregatable,
+as the <i>aggregated diagram</i> in which the aggregatable subdiagram G' 
+is replaced by an aggregate node.
+<p>
+In the visual design process, a subdiagram can be identified by clicking and dragging 
+interactively as in Figures 2(a) and 4, where the dotted rectangle represents
+a dragged subdiagram. If a given subdiagram is aggregatable, 
+the subdiagram can be compressed into an aggregate node.
+<p>
+In Figure 2(a), for example, the whole diagram 
+G=({n<sub>0</sub>,n<sub>1</sub>,n<sub>2</sub>, n<sub>3</sub>,n<sub>4</sub>,n<sub>5</sub>},A) 
+is well-formed, because it is connected and every node is reachable from the 
+input node n<sub>0</sub>.
+The subdiagram G<sub>234</sub> is aggregatable,
+as it is connected, every node of G<sub>234</sub> is reachable from the entry node 
+n<sub>2</sub>, G<sub>234</sub>-{n<sub>2</sub>} is cycle-free, and all the predecessors of the nodes n<sub>3</sub> and n<sub>4</sub> are inside the subdiagram.
+<a href="diagfig/diagfig-2b.gif">Figure 2(b)</a> is the aggregated diagram, where the subdiagram 
+G<sub>234</sub> has been compressed into the aggregate node n<sub>234</sub>. 
+<a href="diagfig/diagfig-3.gif">Figure 3 </a> shows the internal diagram for the aggregate node n<sub>234</sub>,
+with the input/output ports added.
+<p>
+For a well-formed diagram G=(N,A) and an aggregatable subdiagram 
+G'=(N',A'), the <i>aggregation process </i> 
+X(G,G'), which produces an aggregated diagram G/G', is defined as belows:
+<ul>
+<p>
+<p>
+ 1) Assume that the aggregatable subdiagram  is compressed into an aggregate 
+node n<sub>a</sub>, the nodes of X(G,G') = (N-N') <tt>U</tt> {n<sub>a</sub>}. 
+<p>
+ 2) All arcs (A-A') belong to the arcs of X(G,G'). If there is an arc 
+whose initial or final node is in N', then it's initial  or final node is replaced by the aggregate node n<sub>a</sub>.
+<p>
+ 3) The syntax and attributes of the aggregate node n<sub>a</sub> are inherited from the subdiagram G'.
+</ul>
+<p>
+In the above definition, the syntax and attributes of the aggregate node are
+preserved  at the attribute space of the node to keep the same
+characteristics as one of the subdiagram compressed. The preserved 
+characteristics are used for an expansion or de-aggregation of the diagram.
+<p>
+<b>Theorem 1</b>: Given a well-formed diagram G and an aggregatable subdiagram G',
+the aggregated diagram 
+G/G' is also well-formed.
+<p>
+<b>Proof</b>:
+Let G<sub>1</sub> be the aggregated diagram G/G' and n<sub>a</sub> the aggregate node
+of G<sub>1</sub> which is compressed from G'.
+If G=G', then |G<sub>1</sub>|=1, and n<sub>a</sub> is the unique
+node of G<sub>1</sub>. Therefore, the G<sub>1</sub> is connected and accessible. 
+We will now prove the case of G not equal to G'.
+Since the diagram G is connected, for every two nodes n<sub>i</sub> of G' and
+n<sub>j</sub> of (G-G'), 
+n<sub>i</sub>  <tt>in</tt>  C<sup>*</sup> n<sub>j</sub>, and also
+n<sub>j</sub>  <tt>in</tt>  C<sup>*</sup> n<sub>i</sub> by symmetry.
+And by the definition of aggregation process, every arc (n<sub>i</sub>,n<sub>k</sub>)
+and every arc (n<sub>k</sub>,n<sub>i</sub>) of G,
+such that n<sub>i</sub>  <tt>in</tt>  G', are replaced by (n<sub>a</sub>,n<sub>k</sub>) and 
+(n<sub>k</sub>,n<sub>a</sub>), respectively.
+In G<sub>1</sub>, therefore, for every node n<sub>i</sub> of (G<sub>1</sub>-{n<sub>a</sub>}), 
+n<sub>a</sub>  <tt>in</tt>  C<sup>*</sup> n<sub>i</sub> and also
+n<sub>i</sub>  <tt>in</tt>  C<sup>*</sup> n<sub>a</sub> by symmetry. 
+For every two nodes n<sub>i</sub> and n<sub>j</sub>, 
+n<sub>i</sub>  <tt>in</tt>  C<sup>*</sup> n<sub>a</sub> and n<sub>a</sub>  <tt>in</tt>  C<sup>*</sup> n<sub>j</sub>.
+So n<sub>i</sub>  <tt>in</tt>  C<sup>*</sup> n<sub>j</sub> by transitivity, and also
+n<sub>j</sub>  <tt>in</tt>  C<sup>*</sup> n<sub>i</sub> by symmetry. Therefore the aggregated
+diagram G<sub>1</sub> is connected.
+Since G is accessible, every node of G is reachable from one input node of G.
+Let p=(n<sub>1</sub>,n<sub>2</sub>,...,n<sub>k-1</sub>,n<sub>k</sub>) be a path from one 
+input node n<sub>1</sub> of G to the node n<sub>k</sub> of G', such that every node 
+n<sub>i</sub> <tt>in</tt> G for i=1~k-1, and n<sub>k</sub> <tt>in</tt> G'.
+By the definition of aggregation process, the arc (n<sub>k-1</sub>,n<sub>k</sub>) is 
+replaced by (n<sub>k-1</sub>,n<sub>a</sub>). So in G<sub>1</sub>, there exists a path 
+(n<sub>1</sub>,n<sub>2</sub>,...,n<sub>k-1</sub>,n<sub>a</sub>), which means that n<sub>a</sub> 
+is reachable from one input node n<sub>1</sub>. Assume that every node 
+n<sub>i</sub> <tt>in</tt> (G<sub>1</sub>-{n<sub>a</sub>}) of G<sub>1</sub> is reachable from both 
+n<sub>a</sub> and one input node of G<sub>1</sub>. Hence, every node 
+n<sub>j</sub> <tt>in</tt> A<sup>-1</sup>n<sub>i</sub> is also not reachable from one input node, 
+a contradiction to the accessibility of the well-formed diagram G. Therefore 
+every node n<sub>i</sub> <tt>in</tt> (G<sub>1</sub>-{n<sub>a</sub>}) of G<sub>1</sub> is reachable 
+from either n<sub>a</sub> or one input node of G<sub>1</sub>. 
+If n<sub>i</sub> <tt>in</tt> A<sup>*</sup>n<sub>a</sub>, then the node n<sub>a</sub> is 
+always reachable from one input node of G<sub>1</sub>, and n<sub>i</sub> is also 
+reachable by transitivity. Hence the diagram G<sub>1</sub> is accessible. <b>Q.E.D.</b> 
+<p>
+A <i>series of aggregations</i> can be applied to a diagram. 
+In Figure 4, for example, 
+the three diagrams G<sub>0</sub>, G<sub>1</sub> and G<sub>2</sub> 
+constitute a series of aggregations. 
+The diagram G<sub>0</sub> of <a href="diagfig/diagfig-4a.gif">Figure 4(a)</a> can be aggregated to
+G<sub>1</sub> of <a href="diagfig/diagfig-4b.gif">Figure 4(b)</a>, and then finally to G<sub>2</sub> of <a href="diagfig/diagfig-4c.gif">Figure 4(c)</a>. 
+The nodes n<sub>2</sub>, n<sub>3</sub> and n<sub>4</sub> are aggregated to the node
+n<sub>234</sub>, and all the nodes of G<sub>1</sub> are aggregated to the node 
+n<sub>123456</sub> of G<sub>2</sub>.
+Conversely, nodes n<sub>123456</sub> of G<sub>2</sub> 
+can be expanded into the diagram G<sub>1</sub>.  
+<p>
+Once a subdiagram of G is given by an user and then checked whether
+the subdiagram is aggregatable or not, the aggregation process is applied to
+the diagram. The size of the subdiagram and the order of aggregation processes
+are determined through the user's interactions. An undisciplined user may
+not find a proper series of aggregations, and sometimes a user may not
+give a unique series of aggregation to generate a certain aggregated diagram.
+For example, in Figure 4, the two nodes n<sub>2</sub> and n<sub>3</sub> can be aggregated 
+first, and then to n<sub>234</sub> with n<sub>4</sub> next. 
+This shows that there exists another series of aggregations
+which has a different level and depth, to produce the same aggregated diagram 
+as the one of Figure 4. This kind of abstraction level and style may vary
+from designer to designer.
+<p>
+The following algorithm accepts an aggregatable subdiagram G' of G
+and produces another aggregatable subdiagram G" such that |G"| &gt= |G'| 
+and G' is subset of G".
+<p>
+<b>Algorithm 1 (EXTEND_AGGREGATABLE_SUBDIAGRAM)</b>:
+<br>
+Input: a well-formed diagram G=(N,A) and an aggregatable subdiagram G'=(N',A')
+<br>
+Output: an extended aggregatable subdiagram of G' 
+<br>
+Method:
+<ul>
+N" = ENTRY_NODES(G,G');
+<br>
+A" = A';
+<br>
+change = true;
+<br>
+while (change)
+<br><ul>
+change = false;
+<br>
+for each node n<sub>i</sub> <tt>in</tt> N' 
+<br><ul>
+for each node n<sub>j</sub> <tt>in</tt> An<sub>i</sub>
+<br><ul>
+if (n<sub>j</sub> is not in N") and (A<sup>-1</sup>n<sub>j</sub> <tt>is subset of</tt> N")
+<br><ul>
+N" = N" <tt>U</tt> {n<sub>j</sub>};
+<br>
+n<sub>j</sub> is also in A"n<sub>j</sub>;
+<br>
+change = true;
+</ul></ul></ul></ul>
+return(N",A");
+<p>
+</ul>
+Algorithm 1 iterates through successor nodes of the entry nodes 
+of G', applying the four properties of aggregatable diagram 
+until no more changes take place. For example, in Figure 4, 
+if G'={n<sub>2</sub>,n<sub>3</sub>}, then Algorithm 1 will extend it to the set 
+{n<sub>2</sub>,n<sub>3</sub>,n<sub>4</sub>}. So the algorithm adds as many nodes 
+as possible to the given aggregatable subdiagram G' if it satisfies the above mentioned four properties, 
+that is, the algorithm produces a submaximal and unique aggregatable subdiagram 
+including G'. Therefore, the algorithm will make it easy to find a series of 
+aggregation and to reduce the aggregation steps.
+<p>
+<b>Lemma 2</b>: If a diagram G is made up of only one node which is self-cyclic, 
+then the diagram is aggregatable.
+<p>
+<b>Proof</b>: The diagram G is clearly connected  and has only one entry
+node, which is accessible by the definition of aggregatable diagram. 
+G-{n} is empty, cycle-free, and is of no predecessors. 
+Hence the diagram is aggregatable.  <b>Q.E.D.</b>
+<p><p>
+<b>Lemma 3</b>: Given a well-formed diagram G which is not a degenerated graph of
+a single aggregate node, there exists a subdiagram G' of G which is
+aggregatable.
+<p>
+<b>Proof</b>: Since the diagram G is connected, we can find a topological 
+order (n<sub>1</sub>,n<sub>2</sub>,...,n<sub>k-m</sub>,...,n<sub>k</sub>) for all nodes of G
+such that n<sub>k-m</sub> <tt>in</tt> A<sup>-1</sup>n<sub>k</sub> and 
+n<sub>k-m+1</sub> <i>is not in</i> A<sup>-1</sup>n<sub>k</sub> for i=1~m-1, that is, 
+n<sub>k-m</sub> is the nearest predecessor of n<sub>k</sub>. If the node n<sub>k</sub> 
+is self-cyclic then the subdiagram G' which is made up of only one node n<sub>k</sub>
+is aggregatable by Lemma-2. If the node n<sub>k</sub> is not self-cyclic then we 
+can construct the subdiagram G' which is made up of two node n<sub>k-m</sub> and 
+n<sub>k</sub>. Now we will show that G' is aggregatable. Case-1: if n<sub>k-m</sub>
+is the only predecessor of n<sub>k</sub>, then by the topology the node n<sub>k-m</sub>
+will be either an entry node or an input node of G', as the subdiagram G' is well-formed and the node n<sub>k-m</sub> is reachable from one input node of G. Since G'
+is connected, both nodes n<sub>k-m</sub> and n<sub>k</sub> are reachable from n<sub>k-m</sub>,
+and G'-{n<sub>k-m</sub>} is cycle-free by the assumption such that the node 
+n<sub>k-m</sub> is not self-cyclic. And A<sup>-1</sup>n<sub>k</sub> is a subset of G', so the subdiagram G' is aggregatable. Case-2: if there exists a predecessor of 
+n<sub>k</sub> outside of G', then n<sub>k</sub> will be an entry node of G' by the 
+definition of entry node. And by the topology,
+the node n<sub>k</sub> will be either an entry node or an input node of G', 
+as mentioned above Case-1. Since G' is connected, both n<sub>k-m</sub> 
+and n<sub>k</sub> are reachable from the node n<sub>k-m</sub>, and 
+G'-{n<sub>k-m</sub>,n<sub>k</sub>} is empty and cycle-free, so the subdiagram G' is 
+aggregatable.  <b>Q.E.D.</b>
+<p>
+<b>Theorem 2</b>: If a diagram G is well-formed, then the diagram can be compressed into 
+one aggregate node.
+<p>
+<b>Proof</b>:  By Lemma 3, there exists an aggregatable subdiagram G' of the 
+well formed diagram G. And by Theorem-1 its aggregated diagram G/G' is also 
+well-formed. So there exists a series of aggregations 
+(G<sub>0</sub>,G<sub>1</sub>,...,G<sub>n</sub>) such that 
+G<sub>0</sub>=G, G<sub>i</sub>=X(G<sub>i-1</sub>, G'<sup>(i)</sup>) and 
+G<sub>i</sub> is not equal to G<sub>i-1</sub> for i=1~n.
+And by the definition of the aggregation process,
+|G<sub>i</sub>| &gt= |G<sub>i-1</sub>| for i=1~n. Since number of arcs and nodes of G 
+are finite, we can conclude that  
+|G<sub>n</sub>|=1  and n &lt K for a certain constant K. <b>Q.E.D.</b>
+<p><p>
+<b>Definition</b>: A diagram is <i>completely aggregatable</b> if there exists a series of 
+aggregations (G<sub>0</sub>,G<sub>1</sub>,...,G<sub>n</sub>) such that |G<sub>n</sub>|=1 
+and n<K for a constant K.
+<p>
+For example, Figure 4 shows that the diagram G<sub>0</sub> is completely
+aggregatable, as it can be compressed finally into 
+one aggregate node with the series of aggregation (G<sub>0</sub>,G<sub>1</sub>,G<sub>2</sub>).
+<p>
+<b>Theorem 3</b>:  A diagram G is well-formed if and only if it is completely 
+aggregatable.
+<p>
+<b>Proof</b>: If the diagram G is well-formed, then by Theorem 2 the diagram is
+completely aggregatable. If the diagram G is completely aggregatable, then by the
+definition of aggregatable diagram it should be connected. Assume that G is not 
+accessible. Since there exists a node n which is not reachable from one
+input node of G, we can not find any aggregatable subdiagram which includes 
+the node n. Since the diagram G can not be aggregated any more, it is not 
+completely aggregatable, a contradiction.  <b>Q.E.D.</b>
+ 
+<p>
+The above lemmas and theorems show that well-formedness and
+aggregatability are equivalent concepts.
+<p><p><p>
+<b>5. Valid and Admissable Visual Diagrams</b>
+<p>
+A well-formed diagram is syntactically correct, but additional constraints
+must be satisfied so that the diagram can be semantically valid.  We
+now describe the constraints for a diagram to be semantically valid.
+<p>
+V1. Arcs and nodes must be compatible.  If the nodes n<sub>i1</sub> and n<sub>i2</sub>
+have attributes x<sub>i1</sub> and x<sub>i2</sub>, respectively, and arc
+a<sub>i</sub> =(n<sub>i1</sub>, n<sub>i2</sub>) has attributes y<sub>i</sub>,
+then (x<sub>i1</sub>, x<sub>i2</sub>, y<sub>i</sub>) is in constraints set R.
+<p>
+V2. Every input port in N<sub>in</sub> can not be used as a final node of an arc, and
+every output port in N<sub>out</sub> can not be used as an initial node of an arc.
+<p>
+V3. The intersection of N<sub>in</sub> iN<sub>out</sub> is empty.
+<p>
+V4. The visual diagrams must be unambiguous.  Let
+a<sub>i</sub> = (n<sub>i1</sub>, n<sub>i2</sub>), a<sub>j</sub> = (n<sub>j1</sub>, n<sub>j2</sub>)
+be two arcs of G.  If f<sub>N</sub>(n<sub>i1</sub>) = f<sub>N</sub>(n<sub>j1</sub>) and
+f<sub>N</sub>(n<sub>i2</sub>) = f<sub>N</sub>(n<sub>j2</sub>),
+then f<sub>A</sub>(a<sub>i</sub>) <tt>is not equal to</tt> f<sub>A</sub>(a<sub>j</sub>).
+<p>
+V5. Every interface port of a complex node can not be
+used for both input port and output port of the complex node. 
+Let a<sub>i</sub> = (n<sub>i1</sub>, n<sub>i2</sub>), a<sub>j</sub> = (n<sub>j1</sub>, n<sub>j2</sub>)
+be two distinct arcs of G, 
+where n<sub>i</sub>,n<sub>j</sub>  <tt>in</tt>  N<sub>c</sub>.
+If f<sub>N</sub>(n<sub>i1</sub>) = f<sub>N</sub>(n<sub>j2</sub>), then
+f<sub>A</sub>(a<sub>i</sub>).<i>initial</i> <tt>is not equal to</tt> f<sub>A</sub>(a<sub>j</sub>).<i>final</i>.
+Similarly if f<sub>N</sub>(n<sub>i2</sub>) = f<sub>N</sub>(n<sub>j1</sub>), then
+f<sub>A</sub>(a<sub>i</sub>).<i>final</i> <tt>is not equal to</tt> f<sub>A</sub>(a<sub>j</sub>).<i>initial</i>.
+<p>
+V6. If an interface port of a complex node is used for an input inside,
+then its indegree should be no more than one. That is, 
+if a<sub>i</sub> = (n<sub>i1</sub>, n<sub>i2</sub>), a<sub>j</sub> = (n<sub>j1</sub>, n<sub>j2</sub>)
+be two distinct arcs of G, 
+where n<sub>i2</sub>,n<sub>j2</sub>  <tt>in</tt>  N<sub>c</sub>,
+and if f<sub>N</sub>(n<sub>i2</sub>) = f<sub>N</sub>(n<sub>j2</sub>), then
+f<sub>A</sub>(a<sub>i</sub>).<i>final</i> <tt>is not equal to</tt> f<sub>A</sub>(a<sub>j</sub>).<i>final</i>.
+<p>
+<p>
+In addition to the above described semantic constraints, there are also
+pragmatic constraints, because
+we must put some constraints on the diagram drawn by the user in order to
+obtain a pragmatically admissable diagram.
+<p>
+A1. |N| &lt MAX_NODE_NUM
+<p>
+|N| means the cardinality of the set N, and this constraint means the number
+of nodes in one diagram should not exceed a maximum number.
+<p>
+A2. constraints on node degree 
+<p>
+f<sub>N</sub>(n).degree &lt MAX_NODE_DEGREE 
+<p>
+f<sub>N</sub>(n).degree means the degree attribute of the node n. 
+<p>
+Assume n  <tt>in</tt>  N<sub>a</sub>, we define the diagram which describes n
+as G<sub>a</sub>=lookdown(n)=( N<sup>a</sup>, N<sub>a</sub><sup>a</sup>, N<sub>r</sub><sup>a</sup>,
+N<sub>{in}</sub><sup>a</sup>, N<sub>{out}</sub><sup>a</sup>, A<sup>a</sup>, f<sub>N</sub><sup>a</sup>, 
+f<sub>A</sub><sup>a</sup>).
+<p>
+G and G<sub>a</sub> should satisfy:
+<p>
+a) |N<sub>{in}</sub><sup>a</sup> <tt>U</tt> N<sub>{out}</sub><sup>a</sup>| &lt MAX_NODE_DEGREE.
+<p>
+b) f<sub>N</sub>(n).degree=|N<sub>{in}</sub><sup>a</sup> <tt>U</tt> N<sub>{out}</sub><sup>a</sup>|
+<p>
+c) f<sub>N</sub>(n).degree_in=|N<sub>{in}</sub><sup>a</sup>|
+<p>
+d) f<sub>N</sub>(n).degree_out=|N<sub>{out}</sub><sup>a</sup>|
+<p>
+e) f<sub>N</sub>(n).degree_in>0, for all n  <tt>in</tt>  N - N<sub>{in}</sub>
+<p>
+f) f<sub>N</sub>(n).degree_out>0, for all n  <tt>in</tt>  N<sub>{in}</sub>
+<p>
+A3. |N<sub>{in}</sub>| &gt 0, |N<sub>{out}</sub>| &gt= 0
+<p>
+Every diagram should have at least one input port, which allows the digram
+to be connected to the other diagram or the environment. This constraint
+is also a connectivity constraint.
+<p>
+In addition to the above pragmatic constraints, we may also add other informal constraints
+to incorporate certain design guidelines (see Section 7).
+<p><p><p>
+<b>6. The Visual Design Process</b>
+<p>
+In the previous sections we defined well-formed, valid, admissable visual diagrams.
+We can develop analysis algorithms for deciding whether a visual diagram is
+well-formed, valid and admissable.
+Only such diagrams will be in the collection of diagrams maintained
+by the system to form a visual design configuration.
+The analysis algorithms can be formal or informal.
+For syntactic checking, formal algorithms that are checked automatically are readily available:
+<p><p><p>
+<b>Algorithm 2 (CHECK_WELL_FORMEDNESS)</b>:
+<br>
+Input: a diagram G=(N,A)
+<br>
+Output: "yes" if well-formed, "no" otherwise
+<br>
+Method:
+<ul>
+1) if not CONNECTED(G) return("no");
+<br>
+2) for each node n<sub>i</sub> in N
+<ul>
+if not REACHABLE(n<sub>i</sub>,N<sub>input</sub>)
+<ul>
+return("no");
+</ul></ul>
+3) return("yes");
+</ul>
+</ul>
+<p>
+<b>Algorithm 3 (CHECK_AGGREGATABILITY)</b>:
+<br>
+Input: a well-formed diagram G=(N,A) and a subdiagram G'=(N',A')
+<br>
+Output: "yes" if the subdiagram G' is aggregatable, "no"  otherwise.
+<br>
+Method:
+<ul>
+1) if not CONNECTED(G') return("no");
+<br>
+2) N'<sub>entry</sub> = ENTRY_NODES(G,G');
+<br>
+3) for each node n<sub>i</sub> in N'
+<ul>
+if not REACHABLE(n<sub>i</sub>, N'<sub>entry</sub>) return("no");
+</ul>
+<br>
+4) if not CYCLE_FREE(G'-N'<sub>entry</sub>) return("no");
+<br>
+5) for each node n<sub>i</sub> in (N'-N'<sub>entry</sub>)
+<ul>
+if PREDECESSORS(n<sub>i</sub>) is not a subset of N'
+<ul>
+return("no");
+<br></ul></ul>
+6) return("yes");
+<p>
+</ul>
+It is also straightforward to develop an algorithm to check whether a visual
+diagram is valid and admissable.
+Thus the visual design configuration can be documented and maintained
+following sound software engineering principles.
+<p>
+As mentioned above, the aggregate node is based upon the concept of abstraction.  With
+aggregate nodes, the designer can work on the design problem at
+any desirable level of abstraction.  We can apply the above described analysis algorithms
+to help the designer synthesize visual diagrams correctly.
+The aggregation vistractor enables the designer to generate diagrams at different
+levels of abstraction.  Informal or heuristic rules can also be incorporated
+into the analysis algorithms,
+so that they serve as design guidelines for the designer.
+<p>
+<p><p><p>
+<b>7. Discussion</b>
+<p>
+Visual diagrams are only one type of visual languages
+which are becoming increasingly important in human-computer 
+interaction.  Compared to traditional programming languages, in general visual languages are simpler to learn
+and use, avoid the need for experienced user, interact more
+effectively, and are more appealing to the average user.  Even
+though visual languages are rapidly gaining importance, there is yet to be
+developed a standard set of criteria that measures the quality of visual
+languages.  In [1] S.K. Chang and P. Mussio proposed a practical
+set of design criteria for visual languages, based upon the theory of visual sentences as programs.  These criteria 
+were used to rate the quality of nine popular software and
+the visual programming software developed by
+the Visual Computer Laboratory at the University of Pittsburgh.
+The results show a trend of improved ratings from older software to more recent
+ones.  Also, the ratings help us understand how practical the proposed
+criteria are in measuring the quality of visual languages. 
+These criteria are based upon the theory of visual languages with emphasis
+on adequate communication between human and computer or between human
+and human.  Thus it is a principled approach.
+We will further refine the criteria based upon the above framework of visual abstraction,
+aided by further experiments and empirical observations.  These evaluation criteria will lead to the
+formulation of constraints (the DO's and DONT's) for the designer to follow,
+to be incorporated into the "guidebook" of the visual design process.
+<p>
+Conversely, the visual design process may also lead to a visual
+software design process and become useful to software design in general.
+Traditionally, visual design is used only at the initial design phase
+in the software design process.  A refined visual design process may
+facilitate the incorporation of visual design in every phase of software
+design, leading to what we tentatively call <i>visual software
+engineering</i>.  The exploration of visual software engineering will become
+increasingly important, aided by the merger of software engineering
+principles with the visual design process.
+<p><p><p>
+<b>References</b>
+<p>
+[1] S. K. Chang and P. Mussio, "Customized Visual Language Design", Proc. of
+Eighth Int'l Conference on Software Engineering and Knowledge Engineering,
+June 10-12, 1996, Lake Tahoe, Nevada, 553-562.
+<p>
+[2] Eric J. Golin, "Parsing Visual Languages with Picture Layout Grammars", <i>Journal of Visual Languages and Computing</i>, Vol. 2, No. 4, pp. 371-393, 1991.
+<p>
+[3] Eric J. Golin and Steven P. Reiss, "The Specification of  Visual Language syntax", <i>Journal of Visual Languages and Computing</i>, Vol. 1, No. 2, pp. 141-157, 1990.
+<p>
+[4] Daniel D. Hils, "Visual Languages and Computing Survey: Data Flow Visual Programming Languages", <i>Journal of Visual Languages and Computing</i>, Vol.3, No. 4, pp. 69-101, 1992.
+<p>
+[5] Joe Marks, "A Formal Specification Scheme for Network Diagrams That Facilitates Automated Design", <i>Journal of Visual Languages and Computing</i>, Vol. 2, No. 4, pp. 395-414, 1991.
+<p>
+[6] A. Papantonakis and P. J. H. King, "Syntax and Semantics of Gql, a Graphical Query Language", <i>Journal of Visual Languages and Computing</i>, Vol. 6, No. 1, pp. 3-25, 1995.
+<p>
+[7] P. Roesch, "User Interaction in a Multi-View Design Environment", IEEE Symposium on Visual Languages, Sept 3-6, 1996, Boulder, 316-323.
+<p>
+<p>
+<p>
+<b>Technical Report TR 97-02</b>, February 1997, Department of Computer Science, University of Pittsburgh.
+<br><br>
+<b>Figures:</b>
+<a href="diagfig/diagfig-1a.gif"> Figure-1a</a>,
+<a href="diagfig/diagfig-1b.gif"> Figure-1b</a>,
+<a href="diagfig/diagfig-2a.gif"> Figure-2a</a>,
+<a href="diagfig/diagfig-2b.gif"> Figure-2b</a>,
+<a href="diagfig/diagfig-3.gif"> Figure-3</a>,
+<a href="diagfig/diagfig-4a.gif"> Figure-4a</a>,
+<a href="diagfig/diagfig-4b.gif"> Figure-4b</a>,
+<a href="diagfig/diagfig-4c.gif"> Figure-4c</a>.

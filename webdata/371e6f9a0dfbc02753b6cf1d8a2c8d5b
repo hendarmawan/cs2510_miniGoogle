@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <title>cs1590</title>
+  <link rel="stylesheet" href="styles-site.css" type="text/css">
+</head>
+<body>
+<div id="banner">
+<h1><a href="http://www.cs.pitt.edu/%7Ehwa/cs1590/" accesskey="1">cs1590@pitt</a></h1>
+<span class="description">Social Implications of Computing</span>
+</div>
+<div id="content">
+<div class="blog">
+<div class="blogbody">
+<h3 class="title">A Tentative Schedule of Topics</h3>
+<ul>
+  <li>Week 1: Introduction  </li>
+  <li>Week 2: Ethical Frameworks </li>
+  <li>Week 3: Government Regulation I </li>
+  <li>Week 4: Government Regulation II </li>
+  <li>Week 5: Free Speech and Content Control I </li>
+  <li>Week 6: Free Speech and Content Control II</li>
+  <li>Week 7: Intellectual Property I 
+  <li>Week 8: Intellectual Property II
+  <li> Week 9: Privacy I
+  <li> Week 10: Privacy II 
+  <li>Week 11: Privacy III 
+  <li>Week 12:  Security I
+  <li> Week 13: Security II
+  <li> Week 14: Intelligent Machines and the Society
+  <li> Week 15: Final project presentation </li>
+</ul>
+</div>
+</div>
+</div>
+<div id="links">
+<div class="side"><a href="index.html">Home</a><br>
+<a href="policy.htm">Course Policies</a><br>
+<a href="syl.htm">Syllabus</a><br>
+<a href="links.htm">Links</a><br>
+</div>
+</div>
+<br clear="all">
+</body>
+</html>

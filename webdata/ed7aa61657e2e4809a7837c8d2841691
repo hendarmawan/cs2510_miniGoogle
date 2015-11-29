@@ -1,0 +1,75 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Page 7</title>
+</head>
+
+<body>
+
+<p><a href="page_6.htm"><img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="page_8.htm"><img border="0" src="next.gif" width="26" height="26"></a></p>
+<p align="center"><font size="7">The SOAP Header Element</font></p>
+<ul>
+  <li><font size="5">The optional SOAP Header element contains application 
+  specific information (like authentication, payment, etc) about the SOAP 
+  message</font></li>
+  <li><font size="5">&nbsp;If the Header element is present, it must be the 
+  first child element of the Envelope element</font></li>
+</ul>
+<blockquote>
+  <blockquote>
+    <blockquote>
+      <blockquote>
+        <blockquote>
+          <blockquote>
+            <pre><font size="4">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;SOAP-ENV:Envelope
+xmlns:SOAP-ENV=&quot;http://www.w3.org/2001/12/soap-envelope&quot;
+SOAP-ENV:encodingStyle=&quot;http://www.w3.org/2001/12/soap-encoding&quot;&gt;</font></pre>
+            <pre><font size="4">&lt;SOAP-ENV:Header&gt;
+&lt;ns1:username
+	xmls:ns1=&quot;JavaSoapBook&quot;
+	SOAP-ENV:actor=&quot;<a href="http://www.mindstrm.com/AppServer">http://www.mindstrm.com/AppServer</a>&quot;
+	SOAP-ENV:mustUnderstand=&quot;1&quot;&gt;
+	Jessica
+&lt;/ns1:username&gt;
+&lt;/SOAP-ENV:Header&gt;</font></pre>
+            <pre><font size="4">...
+...</font></pre>
+            <pre><font size="4">&lt;/SOAP-ENV:Envelope&gt;</font></pre>
+          </blockquote>
+        </blockquote>
+      </blockquote>
+    </blockquote>
+  </blockquote>
+</blockquote>
+<ul>
+  <li><font size="5">SOAP defines three attributes in the default namespace &quot;<a href="http://www.w3.org/2001/12/soap-envelope">http://www.w3.org/2001/12/soap-envelope</a>&quot;</font></li>
+  <li><font size="5">These attributes are: actor, mustUnderstand, and 
+  encodingStyle. </font></li>
+  <li><font size="5">The attributes defined in the SOAP Header defines how a 
+  recipient should process the SOAP message.</font></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><font size="5"><b>actor</b> - A SOAP message may travel from a sender to a 
+  receiver by passing different endpoints along the message path. Not all parts 
+  of the SOAP message may be intended for the ultimate endpoint of the SOAP 
+  message but, instead, may be intended for one or more of the endpoints on the 
+  message path</font></li>
+</ul>
+<p>&nbsp;</p>
+<ul>
+  <li><font size="5"><b>mustUnderStand </b>-If you add &quot;mustUnderstand=&quot;1&quot; to a 
+  child element of the Header element it indicates that the receiver processing 
+  the Header must recognize the element. If the receiver does not recognize the 
+  element it must fail when processing the Header</font></li>
+</ul>
+
+</body>
+
+</html>

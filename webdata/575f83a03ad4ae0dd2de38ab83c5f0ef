@@ -1,0 +1,51 @@
+<pre>
+
+The output from John's Example
+
+Before calling Service
+ &lt ?xml version="1.0" encoding="UTF-8"? &gt 
+ &lt virtualclassroomDO xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://localhost/axis/virtualclassroom.xsd" &gt 
+     &lt userProfile &gt 
+         &lt userId &gt 001 &lt /userId &gt 
+         &lt firstName &gt John &lt /firstName &gt 
+         &lt lastName &gt Menke &lt /lastName &gt 
+         &lt creditCardNumber &gt 123456789 &lt /creditCardNumber &gt 
+         &lt admin &gt true &lt /admin &gt 
+     &lt /userProfile &gt 
+     &lt comment &gt Test Commment &lt /comment &gt 
+     &lt Messages &gt 
+         &lt messageId &gt 1 &lt /messageId &gt 
+         &lt sender &gt sender &lt /sender &gt 
+         &lt receiver &gt receiver &lt /receiver &gt 
+         &lt messageName &gt Message1 &lt /messageName &gt 
+         &lt message &gt messageString &lt /message &gt 
+     &lt /Messages &gt 
+ &lt /virtualclassroomDO &gt 
+ReturningFrom Service!!!!
+ &lt virtualclassroomDO 
+xsi:schemaLocation="http://localhost/axis/virtualclassroom.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" &gt 
+     &lt userProfile xmlns="" &gt 
+         &lt userId xmlns="" &gt 001 &lt /userId &gt 
+         &lt firstName xmlns="" &gt John &lt /firstName &gt 
+         &lt lastName xmlns="" &gt Menke &lt /lastName &gt 
+         &lt creditCardNumber xmlns="" &gt 123456789 &lt /creditCardNumber &gt 
+         &lt admin xmlns="" &gt true &lt /admin &gt 
+     &lt /userProfile &gt 
+     &lt comment xmlns="" &gt Comment Changed!!! &lt /comment &gt 
+     &lt Messages xmlns="" &gt 
+         &lt messageId xmlns="" &gt 1 &lt /messageId &gt 
+         &lt sender xmlns="" &gt sender &lt /sender &gt 
+         &lt receiver xmlns="" &gt receiver &lt /receiver &gt 
+         &lt messageName xmlns="" &gt Message1 &lt /messageName &gt 
+         &lt message xmlns="" &gt messageString &lt /message &gt 
+     &lt /Messages &gt 
+ &lt /virtualclassroomDO &gt 
+Output Serialized DO!!!!
+VirtualClassRoomDO:Comment: Comment Changed!!! Message: messageString
+
+
+
+
+</pre>

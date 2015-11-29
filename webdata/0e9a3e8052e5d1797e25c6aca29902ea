@@ -1,0 +1,25 @@
+<HTML>
+<HEAD><TITLE>CS2310 Seminar -- By Suresh Rangan</TITLE></HEAD>
+
+<BODY>
+
+<A href="index.html" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="02.html"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1><FONT color=mediumblue>What is VC Transcript ?</FONT></H1>
+</CENTER>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><FONT size=5>A VC Transcript is a collection of statements tagged by authorID 
+	made by all participating members in a virtual classroom.</FONT></LI>
+       <BR><BR>
+       <LI><FONT size=5>Each classroom session has an unique id.</FONT></LI>
+       <BR><BR>
+       <LI><FONT size=5>Each statement has an unique id within a session.</FONT></LI>
+</UL></UL></UL></UL></UL></UL></UL>
+
+</BODY>
+</HTML>
+

@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+        <title>Security issues in the current implementation of the VC - Page 14</title>
+	<style>
+		body {
+			width: 600px;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		dl {
+			margin: 0;
+			padding: 0;
+		}
+		dd {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="page13.html"><img src = "previous.gif" align = "left"></a>
+        <a href="page15.html"><img src = "next.gif" align = "right"></a>
+	<center>
+		<h1>Timestamp spoofing</h1>
+		<hr>
+	</center>
+	<p>Exported transcripts can be modified by the user, it would be nice if we could check the validity of transcripts</p>
+        <p>Possible remedy</p>
+	<ul>
+            <li>Arbitrated solution with the VC server acting as arbitrator</li>
+            <li>VC server can enter transcripts into arbitrated timestamp database automatically</li>
+	</ul>
+</body>
+</html>
+

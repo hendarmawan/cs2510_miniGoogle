@@ -1,0 +1,19 @@
+<title>Abstract Machine for SIS</title>
+
+<a href="sisam7.htm"><img src="prev.gif" align=left></a>
+<a href="sisam9.htm"><img src="next.gif" align=right></a>
+
+<center>
+<h1>Puzzle Solving Example: <font color=red>Short Cycle</font></h1>
+</center>
+<h2>
+cycle1: P0 -enum< P1 >elim- P2
+
+<p>
+P0= {<123,084,765>}
+<p>
+P1= {<023,184,765>, <123,804,765>, <123,784,065>}
+<p>
+P2= {<123,804,765>}
+<br><br>
+<img src="puzzle1.jpg">

@@ -1,0 +1,169 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Untitled</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript">
+<!--
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</script>
+</head>
+<body onLoad="MM_preloadImages('images/m1-1.gif','images/m2-2.gif','images/m3-3.gif','images/m4-4.gif','images/m5-5.gif')">
+
+<table id="page5" class="bg" align="center"> 
+	<tr>
+		<td class="header">
+        	<img alt="" src="images/logo.gif" style="margin:24px 0 9px 10px"><br>
+            <a href="#"><img alt="" src="images/p1.jpg" style="margin:0 0 0 10px"></a><a href="#"><img alt="" src="images/p2.jpg" style="margin:0 0 0 10px"></a><br>
+            <br style="line-height:10px">
+             <a href="#"><img alt="" src="images/p3.jpg" style="margin:0 0 0 10px"></a><a href="#"><img alt="" src="images/p4.jpg" style="margin:0 0 0 10px"></a><br>
+            <br style="line-height:10px">
+            <a href="index.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','images/m1-1.gif',1)"><img alt="" src="images/m1.gif" name="Image6" width="172" height="45" border="0"></a><a href="index-1.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image7','','images/m2-2.gif',1)"><img alt="" src="images/m2.gif" name="Image7" width="145" height="45" border="0"></a><a href="index-2.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image8','','images/m3-3.gif',1)"><img alt="" src="images/m3.gif" name="Image8" width="148" height="45" border="0"></a><a href="index-3.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','images/m4-4.gif',1)"><img alt="" src="images/m4.gif" name="Image9" width="142" height="45" border="0"></a><a href="index-4.html" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','images/m5-5.gif',1)"><img alt="" src="images/m5-5.gif" name="Image10" width="159" height="45" border="0"></a><br>            
+      </td>
+	</tr>
+	<tr>
+		<td>
+        	<table id="content">
+                <tr>
+                    <td class="col1">
+                        <img alt="" src="images/5_w1.gif" class="title"><br>
+                        <div style="margin:9px 15px 8px 21px ">
+                        	<strong>Training Center:</strong><br>
+                            Tel.: &nbsp; &nbsp;+44 959 603 6035<br>
+                            E-mail: <a href="#">training@companyname.com</a>
+                            <br><br style="line-height:14px">
+                            <strong>Innovations Information:</strong><br>
+                            Tel.: &nbsp; &nbsp;+44 959 603 6035<br>
+                            E-mail: <a href="#">innovations@companyname.com</a>
+                            <br><br style="line-height:14px">
+                            <strong>Job opportunities:</strong><br>
+                            Tel.: &nbsp; &nbsp;+44 959 603 6035<br>
+                            E-mail: <a href="#">job@companyname.com</a>
+                            <br><br style="line-height:14px">
+                            <strong>Technical Department:</strong><br>
+                            Tel.: &nbsp; &nbsp;+44 959 603 6035<br>
+                            E-mail: <a href="#">tech@companyname.com</a>
+                            <br><br style="line-height:14px">
+                            <strong>Web Site Questions:</strong><br>
+                            Tel.: &nbsp; &nbsp;+44 959 603 6035<br>
+                            E-mail: <a href="#">web@companyname.com</a>   <br>           
+                        </div>
+                    </td>
+                    <td>
+                    	<table class="col2">
+                            <tr>
+                                <td class="row3"></td>
+                            </tr>
+                            <tr>
+                                <td height="322"></td>
+                            </tr>
+                        </table>
+                    </td>
+                   <td>
+                    	<table class="col3">
+                            <tr>
+                                <td class="row1">
+                                	<img alt="" src="images/5_w2.gif" class="title"><br>
+                                </td>
+                            </tr>
+                             <tr>
+                                <td class="row2 set2">
+                                	Your name:<br>
+                                    <input type="text"><br>
+                                    <br style="line-height:4px"> 
+                                	Phone number:<br>
+                                    <input type="text"><br>
+                                    <br style="line-height:4px"> 
+                                	E-mail address:<br>
+                                    <input type="text"><br>
+                                    <br style="line-height:4px"> 
+                                    Message:<br>
+                                    <textarea name="textarea"  cols="35" rows="35"></textarea><br>
+                                    <br style="line-height:10px ">
+                                    <form action="" id="form" style="margin:0; padding:0 ">
+                                        <input type="image" class="input2" src="images/5_k1.gif" alt=""><input type="image" class="input3" src="images/5_k2.gif" alt=""><br>
+                                    </form>	                           
+                                </td>
+                            </tr>
+                        </table>
+                    </td>   
+                    <td>
+                    	<table class="col4">
+                            <tr>
+                                <td class="row3"></td>
+                            </tr>
+                            <tr>
+                                <td height="322"></td>
+                            </tr>
+                        </table>
+                    </td>
+                    <td class="col5">
+                    	<img alt="" src="images/5_w3.gif" class="title"><br>
+                        <div style="margin:9px 15px 8px 21px ">
+                        	<b>Argentina</b><br>
+                            Praesent vestibulum molestie lacus. Aenean nonummy hendrerit mauris. Phasellus porta. Fusce suscipit varius mi. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla dui. Fusce feugiat malesuada odio. 
+                            <br><br style="line-height:15px">
+                            <b>United States of America</b><br>
+                            Morbi nunc odio, gravida at, cursus nec, luctus a, lorem. Maecenas tristique orci ac sem. Duis ultricies pharetra magna. Donec accumsan malesuada orci. Donec sit amet eros. Lorem ipsum dolor sit amet, consect-<br>
+                            etuer adipiscing elit. 
+                            <br><br style="line-height:15px">
+                            <b>United Kingdom</b><br>
+                            Mauris fermentum dictum magna. Sed laoreet aliquam leo. Ut tellus dolor, dapibus eget, elementum vel, cursus eleifend, elit. Aenean auctor wisi et urna. Aliquam erat volutpat. Duis ac turpis integer.         
+                        </div>
+                    </td>                    	
+                </tr>
+            </table>
+     	 </td>
+	</tr>
+	<tr>
+		<td>
+       	  <br style="line-height:5px">
+          <table id="footer">
+                <tr>
+                  <td class="col1">
+                    	Education Center &copy; 2008 <br>
+                        <a href="#">Terms of Use</a> / <a href="index-5.html">Privacy Policy</a><br>
+                  </td>
+                    <td class="col2">
+                   	  <a href="index.html">main page</a> &nbsp;&middot; &nbsp; <a href="index-1.html">calendar</a> &nbsp;&middot; &nbsp; <a href="index-2.html">programs</a> &nbsp;&middot; &nbsp; <a href="index-3.html">students</a> &nbsp;&middot; &nbsp; <a href="#index-4.html">contacts</a><br>
+                  </td>
+                </tr>
+          </table>
+        </td>
+	</tr>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><HEAD><TITLE>UML, Petri-Net in Software Engineering?</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=unicode">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY> 
+
+ <A href="2.htm" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+ <A href="4.htm">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+<center> 
+ <h1> 
+  What's UML?
+ </h1>
+</center>
+<H3 align=left>UML : Unified Modeling language.</H3> 
+<H3>
+<UL>
+  <LI>
+  <P align=left>A standard of Object Management Group (OMG) </P>
+  <LI>
+  <P align=left>A graphical language for visualizing, specifying, constructing, 
+  and documenting the artifacts of a software system, as well as for business 
+  modeling and other non-software systems. </P></LI></UL>
+
+ 
+ </H3>
+<P align=left><STRONG><FONT size=4>Is it easy?</FONT></STRONG></P>
+<CENTER><IMG src="1.jpg" align=center ></CENTER>
+<DIV align=left><STRONG>Solution: Different Diagrams for 
+different Views</STRONG></DIV></BODY>
+ </html>

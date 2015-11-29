@@ -1,0 +1,41 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>2310-2</title>
+</head>
+
+<body>
+
+<p><a href="page_2.htm">
+<img src="previous.gif" align="left" width="26" height="26"></a>
+<a href="page_4.htm">
+<img src="next.gif" align="right" width="26" height="26"></a>
+</p>
+<p align="center"><font size="7">Starting the Virtual Classroom Image Server</font></p>
+
+<p align="center">&nbsp;</p>
+
+<p align="left"><font size="6">In order to share your personal emoticons with 
+other people in the classroom, you must connect be able to connect to a known 
+Image Server.&nbsp; This tutorial will show you how to set up the image server 
+on your local host should one not exist.</font></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">1. Using the command line utility, browse to the 
+location of the Image Server on your hard drive.</font></p>
+<p align="left"><img border="0" src="page_35.jpg" width="669" height="254"></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">2. Start the Image Server as follows:</font></p>
+<p align="left"><img border="0" src="page_36.jpg" width="669" height="254"></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">3. Configure the port number you wish the server 
+to run on (default is 7654) and then click the start button:</font></p>
+<p align="left"><img border="0" src="page_33.jpg" width="408" height="134"></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">4. The image server is now up and running.</font></p>
+
+</body>
+
+</html>

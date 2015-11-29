@@ -1,0 +1,22 @@
+<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="04.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="06.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>How to Insert Time Specification?</H1>
+<H1><FONT color=mediumblue>Time may be associated with Arcs (TAPN)</FONT></H1>
+</CENTER>
+
+<UL><UL><UL> <UL><UL><UL>
+  <LI><FONT size=5>TA traveling delay is associated with each arc</FONT></LI>
+  <LI><FONT size=5>Tokens are available for firing only when they reach a transition</FONT></LI>
+</UL></UL></UL></UL></UL></UL>
+
+<CENTER><IMG src="images/tapn.jpg"></CENTER>
+
+</BODY></HTML>
+

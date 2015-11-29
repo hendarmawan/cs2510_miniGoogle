@@ -1,0 +1,60 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page18a.html"><img src="previous.gif" align=left></a>
+<a href="page20.html"><img src="next.gif" align=right></a>
+<center>
+   <br><br>
+   <h1>How do Custom Tags Work?</h1>
+   <br>
+</center> 
+<font size=4>
+<ul>
+   <li>Three features must be in place for custom tags can be used:</li>
+   <ul>
+      <li>Tag Library</li>
+      <ul>
+         <li>Collection of classes that provide the functionality of the
+             custom tag.</li>
+         <li>Usually distributed in a .jar file (portability).</li>
+         <li>Increases maintainability.</li>
+         <ul>
+            <li>Due to the relative simplicity, almost anyone can decipher
+                the code.</li>
+            <li>Updating the code allows for one update in the central
+                files, not in every page that uses this code.</li>
+            <li>New functionality can be added without changing the
+                already existing pages.</li>
+         </ul>
+         <li>Tag Handler</li>
+         <ul>
+            <li>"Server-side object that is created to evaluate actions
+                 during the execution of a JSP page."</li> 
+            <li>Controls the passing of information between a JSP page and
+                a custom tag.</li>
+            <li>Can be thought of as a JavaBean.</li>
+         </ul>
+      </ul>
+      <li>taglib Directive</li>
+      <ul>
+         <li>Ties the tag library description to the JSP page.</li>
+         <li>Sets the tag namespace prefix to be used in the JSP
+             page.</li>
+         <li>
+         <font color="red">&lt%@ taglib
+             <br>uri-"http://www.javadesktop.com/taglib/htmltool.jar"
+             <br>prefix="tool"
+             <br>%>
+         </font>
+      </ul>
+      <li>Tag Library Descriptor</li>
+      <ul>
+         <li>XML document that describes a tag library as a whole
+             (individual tags, attributes, etc.).</li>
+         <li>Information can be found out about a tag library without
+             having to instantiate objects or look at actual code.</li>
+      </ul>
+</ul>
+</font>
+</html>

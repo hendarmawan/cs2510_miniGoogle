@@ -1,0 +1,31 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Zubeyir Unlu">
+   <meta name="GENERATOR" content="Mozilla/4.7 [en] (Win98; I) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="proj05.html"><img SRC="Previous.gif" BORDER=0 height=26 width=26 align=LEFT></a><a href="proj07.html"><img SRC="Next.gif" BORDER=0 height=26 width=26 align=RIGHT></a>
+<br>&nbsp;
+<br>&nbsp;
+<br>
+<br>
+<center>
+<p><b><font size=+2>ICs</font></b>
+<hr WIDTH="100%"></center>
+<font size=+1>IC Builder program was used to obtain index cells (ICs).
+Two index cells, IC1 and IC2 shown in below figures, are used in this study.
+One of them (IC1) defines and realizes query process and the other (IC2)
+makes reservation and comparison among the prices. For this index cells,
+state-transition diagrams are below.</font>
+<p><b><u><font size=+2>IC1:</font></u></b>
+<br><img SRC="01.jpg" height=153 width=400><img SRC="04.jpg" height=279 width=297>
+<br>M1: Input of the desired destination and date.
+<br>MX, MY, MZ: The prices and the company serves or doesn’t serve for
+this destination acknowledge.
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

@@ -1,0 +1,82 @@
+<p>
+<a href="page7.html"><img src="previous.gif" align=left width="26" height="26"></a></p>
+<p><a href="page9.html"><img src="next.gif" align=right width="26" height="26"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><b><font face="Tahoma" size="5">A Multimedia Presentation Tool 
+at Work:&nbsp; Properties of PHPNuke</font></b></p>
+<p class="MsoNormal" align="center">See my website in action
+<a href="http://www.bick.dns2go.com/nuke/html/index.php">here</a>.<br>
+The admin page can be found
+<a href="http://www.bick.dns2go.com/nuke/html/admin.php">here</a>.<br>
+Another nuke site can be seen <a href="http://www.riocar.org">here</a>.</p>
+  <p align="center">&nbsp;</p>
+  <p align="center"><font face="Tahoma" size="4"><b>Database Driven</b></font></p>
+  <p align="center">Based on the open source database system
+  <a href="http://www.mysql.org">MySQL</a>.&nbsp; 
+<p class="MsoNormal" align="center" style="text-align:center">&nbsp;</p>
+<p class="MsoNormal" align="center" style="text-align:center"><b>
+<font size="4" face="Tahoma">Multilingual</font></b></p>
+<p style="text-indent: -.25in; margin-left: .25in" align="center">
+Supports presentation of content with alternate language versions, 
+if the alternate content is authored (does not translate for you.)</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center"><font face="Tahoma" size="4"><b>Abstraction</b></font></p>
+<p class="MsoNormal" align="center">In current versions, there are only two 
+levels of abstraction available - the summary and detailed views.&nbsp; However, 
+this could be expanded to provide a more customizable view of content.</p>
+<p class="MsoNormal" align="center">&nbsp;</p>
+<p class="MsoNormal" align="center"><b><font face="Tahoma" size="4">
+Customization</font></b></p>
+<p class="MsoNormal" align="center">The styles are implemented using custom html and cascading 
+style sheets.&nbsp; This allows a custom look and feel to the content 
+presentation, based on the user logged in.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center"><b><font size="4" face="Tahoma">Plug-in 
+Architecture</font></b></p>
+<p class="MsoNormal" align="center">PHPNuke allows custom coded PHP plugins to 
+be added to the foundation code.&nbsp; Custom &quot;Blocks&quot; can be created.&nbsp; And 
+of course, any html can be linked from the main page, if using something other 
+than PHP.</p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal" align="center"><font face="Tahoma" size="4"><b>Multimedia</b></font></p>
+<p class="MsoNormal" align="center">Supports all media objects available through web browsers 
+- Flash, video, sound.</p>
+<p>&nbsp;</p>
+<p class="MsoNormal" align="center">&nbsp;</p>
+<p class="MsoNormal" align="center"><font face="Tahoma" size="4"><b>Details</b></font></p>
+<ul>
+  <li>
+<p class="MsoNormal" align="left">PHP-Nuke is a web based portal system implemented using PHP.&nbsp; 
+PHP is a server-side scripting language similar to ASP in the Microsoft world.&nbsp; 
+One benefit of server-side interpreted code is speed.&nbsp; Using the Apache web 
+server platform with a MySQL backend, the site can handle a decent amount of 
+traffic. The code is 
+open source, which is good if you plan on extending the functionality.&nbsp; There 
+are many open source extensions and plugins available on the
+<a href="http://www.phpnuke.org/" style="color: blue; text-decoration: underline; text-underline: single">
+PHPNuke homepage</a>.&nbsp; They add features such as picture galleries and 
+dynamic weather reports.</p>
+  </li>
+  <li>
+<p class="MsoNormal">Another software system in use today is called Slash.&nbsp; It 
+is used by the web site
+<a href="http://www.slashdot.org/" style="color: blue; text-decoration: underline; text-underline: single">
+www.slashdot.org</a>.&nbsp; It shares many of the same features as PHPNuke.&nbsp; It is 
+perl based and uses the mod_perl extensions to Apache.&nbsp; The makers of slash 
+claim that perl is more efficient on resources than PHP.&nbsp; In fact, the 
+slashdot site gets an extraordinary amount of hits every day and maintains good 
+speed.</p>
+  </li>
+  <li>
+<p class="MsoNormal">One great benefit of this system is the ease of adding 
+multimedia content.&nbsp; The interface allows entries to the database to be made 
+easily through the web interface.&nbsp; Of course, any content other than text that 
+will be stored on the web server must be copied to the web server.&nbsp; However, if 
+the content (pictures, embedded sound, etc.) is stored elsewhere, referencing it 
+is as simple as providing the URL.</p>
+  </li>
+</ul>
+<p align="center">&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p>&nbsp;</p>

@@ -1,0 +1,51 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.78 [en]C-CCK-MCD EBM-Compaq  (Win98; U) [Netscape]">
+   <title>X-Smiles</title>
+</head>
+<body>
+<a href="page5.html"><img SRC="previous.gif" height=26 width=26 align=LEFT></a><a href="page7.html"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+<p><b><font face="Garamond"><font size=+3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+XSLT</font></font></b>
+<p><b><font face="Garamond"><font size=+1>XSLT stands for <font color="#CC0000">Extensible
+Stylesheet Language Transformation</font><font color="#000000">.</font></font></font></b>
+<p><b><font face="Garamond"><font size=+1>XSLT is an XML application that
+designates the rules by which one XML document is transformed into another.</font></font></b>
+<p><b><font face="Garamond"><font size=+1>An XSLT stylesheet contains templates.&nbsp;
+The XSL processor compares the templates to a given input document and
+if a match is found, the transformation process continues.</font></font></b>
+<p><b><font face="Garamond"><font size=+1>The XSL Transformation process:</font></font></b>
+<br><b><font face="Garamond"><font size=+1>&nbsp;&nbsp;&nbsp; 1. Processor
+reads the input XML document.</font></font></b>
+<br><b><font face="Garamond"><font size=+1>&nbsp;&nbsp;&nbsp; 2. A matching
+template is searched for.</font></font></b>
+<br><b><font face="Garamond"><font size=+1>&nbsp;&nbsp;&nbsp; 3. If match
+is found, an output tree is generated.</font></font></b>
+<br><b><font face="Garamond"><font size=+1>&nbsp;&nbsp;&nbsp; 4. Output
+tree is written out as another XML document or a text or html file.</font></font></b>
+<p><b><font face="Garamond"><font size=+1>Common XSLT Processors Include:</font></font></b>
+<br>&nbsp;
+<ul>
+<li>
+<b><font face="Garamond"><font size=+1><font color="#CC0000">MSXML</font>
+found in Internet Explorer 5.5 and later.</font></font></b></li>
+
+<li>
+<b><font face="Garamond"><font size=+1><font color="#CC0000">Cocoon</font>
+is an XSLT processor built into the Apache web server.</font></font></b></li>
+
+<li>
+<b><font face="Garamond"><font size=+1>A command line program from Michael
+Kay called <font color="#CC0000">SAXON</font><font color="#000000">.</font></font></font></b></li>
+</ul>
+
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+<br>&nbsp;
+</body>
+</html>

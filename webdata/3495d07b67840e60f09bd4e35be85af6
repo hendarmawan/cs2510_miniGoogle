@@ -1,0 +1,39 @@
+<html>
+<head>
+   <title> The tools for making VRML world</title>
+</head>
+<body >
+&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" HEIGHT="14" >
+<tr>
+<td WIDTH="5%" HEIGHT="10"><a href="vrml-3.html">
+<img SRC="previous.gif" ALT="previous.gif (632 bytes)" height=26 width=26 align=LEFT></a></td>
+
+<td WIDTH="87%" HEIGHT="10"></td>
+
+<td WIDTH="8%" HEIGHT="10"><a href="vrml-5.html">
+<img SRC="next.gif" ALT="next.gif (623 bytes)" height=26 width=26 align=RIGHT></a></td>
+</tr>
+</table>
+
+<center>
+<h1>The tools for making VRML world</h1>
+</center>
+<BR>
+<P>
+<font size = +2>
+<ul>
+<li>Even though the web page is change to 3D, the base of web site still need to use HTML to build. At this point, user may use Notepad, Front Page98 or some other programs to build a web page.
+<p>
+<li>For more colorful on 3D space, user may use Photoshop, PhotoImpact, or other graphic programs to make pictures, clip arts and those objects can put on 3D model.
+<P>
+<li>Use Truespace¡B3D Max Studio, or other 3D programs that support output of VRML format. The file will named like *.wrl, and it is VRML file.
+<P>
+<li>For more interactive interface, user can add movies, sound, MIDI, or combine with Java Script or Java Applet to make it better.
+</ul>
+<BR>
+
+</font>
+
+</body>
+</html>

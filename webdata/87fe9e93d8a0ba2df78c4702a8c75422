@@ -1,0 +1,213 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>javascript notes</title>
+</head>
+
+<body bgcolor="#FFFFCC">
+
+<p align="center"><font size="5"> Java</font><font size="5" face="Script MT Bold">Script</font></p>
+<p align="left"><h2>Chapter 9 Functions and Parameters</h2></p>
+
+<h3>Declaring a function</h3>
+Functions are usually declared (defined) in the header
+element of the html document.
+<br><br>
+function someName()
+<br>
+{
+<br>
+ JavaScript instructions go here
+<br>
+}
+
+<h3>Calling a function</h3>
+someName()
+
+<h3>Functions with parameters</h3>
+
+function printGreeting(personName)
+<br>
+{ alert("Hello, " + personName)
+<br>
+}
+<br><br>
+printGreeting("Fred")
+
+<br><br>
+This would produce the alert message:
+
+<br><br>
+Hello Fred
+
+<br><br>
+We can pass parameters that are numbers, strings
+or booleans.
+
+<br><br>
+Common functions are provided by the system, such as
+<br>
+document.write that displays the value of the
+input parameter.
+
+<h3>If statement</h3>
+
+if (booleanPredicate)
+<br>
+{ executeThisIfTrue }
+<br>
+else
+<br>
+{ executeThisIfFalse }
+
+<br><br>
+<hr>
+
+<p align="left"><b>Sample JavaScripts:</b></p>
+<p align="left"><a href="week10/x1.htm">IN THE BODY</a>:</p>
+<p align="left">&lt;html&gt;<br>
+&lt;body&gt;</p>
+<p>&lt;script type=&quot;text/javascript&quot;&gt;<br>
+  document.write(&quot;&lt;h1&gt;Hello World!&lt;/h1&gt;&quot;)<br>
+&lt;/script&gt;</p>
+<p>&lt;/body&gt;<br>
+&lt;/html&gt;</p>
+<p><a href="week10/x2.htm">IN THE HEAD</a>:</p>
+<p>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;script type=&quot;text/javascript&quot;&gt;<br>
+  function message()<br>
+  {<br>
+  alert(&quot;This alert box was called with the onload event&quot;)<br>
+  }<br>
+  &lt;/script&gt;<br>
+&lt;/head&gt;</p>
+<p>&lt;body onload=&quot;message()&quot;&gt;</p>
+<p>&lt;/body&gt;<br>
+&lt;/html&gt;</p>
+<p><a href="week10/x3.htm">IF STATEMENT</a>:</p>
+<p>&lt;html&gt;<br>
+&lt;body&gt;</p>
+<p>&lt;script type=&quot;text/javascript&quot;&gt;<br>
+  var d = new Date()<br>
+  var time = d.getHours()</p>
+<p>if (time &lt; 10) <br>
+  {<br>
+  document.write(&quot;&lt;b&gt;Good morning&lt;/b&gt;&quot;)<br>
+  }<br>
+  else<br>
+  {<br>
+  document.write(&quot;&lt;b&gt;Good day&lt;/b&gt;&quot;)<br>
+  }<br>
+&lt;/script&gt;</p>
+<p>&lt;p&gt;<br>
+  This example demonstrates the If...Else statement.<br>
+&lt;/p&gt;</p>
+<p>&lt;p&gt;<br>
+  If the time on your browser is less than 10,<br>
+  you will get a &quot;Good morning&quot; greeting.<br>
+  Otherwise you will get a &quot;Good day&quot; greeting.<br>
+&lt;/p&gt;</p>
+<p>&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</p>
+<p><a href="week10/x4.htm">ALERT</a>:</p>
+<p>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;script type=&quot;text/javascript&quot;&gt;<br>
+  function disp_alert()<br>
+  {<br>
+  alert(&quot;I am an alert box!!&quot;)<br>
+  }<br>
+  &lt;/script&gt;<br>
+  &lt;/head&gt;<br>
+&lt;body&gt;</p>
+<p>&lt;input type=&quot;button&quot; onclick=&quot;disp_alert()&quot; value=&quot;Display alert box&quot; /&gt;</p>
+<p>&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</p>
+<p><a href="week10/x5.htm">PROMPT</a>:</p>
+<p>&lt;html&gt;<br>
+  &lt;head&gt;<br>
+  &lt;script type=&quot;text/javascript&quot;&gt;<br>
+  function disp_prompt()<br>
+{<br>
+var name=prompt(&quot;Please enter your name&quot;,&quot;Harry Potter&quot;)<br>
+if (name!=null &amp;&amp; name!=&quot;&quot;)<br>
+{<br>
+document.write(&quot;Hello &quot; + name + &quot;! How are you today?&quot;)<br>
+}<br>
+}<br>
+&lt;/script&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;</p>
+<p>&lt;input type=&quot;button&quot; onclick=&quot;disp_prompt()&quot; value=&quot;Display a prompt box&quot; /&gt;</p>
+<p>&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</p>
+<p><a href="week10/x6.htm">FUNCTIONS</a>:</p>
+<p>&lt;html&gt;<br>
+&lt;head&gt;</p>
+<p>&lt;script type=&quot;text/javascript&quot;&gt;<br>
+  function myfunction()<br>
+  {<br>
+  alert(&quot;HELLO&quot;)<br>
+  }<br>
+&lt;/script&gt;</p>
+<p>&lt;/head&gt;<br>
+&lt;body&gt;</p>
+<p>&lt;form&gt;<br>
+&lt;input type=&quot;button&quot; <br>
+  onclick=&quot;myfunction()&quot; <br>
+  value=&quot;Call function&quot;&gt;<br>
+&lt;/form&gt;</p>
+<p>&lt;p&gt;By pressing the button, a function will be called. The function will alert a message.&lt;/p&gt;</p>
+<p>&lt;/body&gt;<br>
+&lt;/html&gt;<br>
+</p>
+
+<h3><a href="week10/x7.htm">SELECTIVE ALERTS</a></h3>
+
+<p>&lt;html&gt; <br>
+&lt;head&gt; <br>
+&lt;script type=&quot;text/javascript&quot;&gt; <br>
+  function myfunction(txt) <br>
+  { <br>
+  alert(txt) <br>
+  } <br>
+&lt;/script&gt; <br>
+&lt;/head&gt;
+</p>
+<p>&nbsp;</p>
+<p>&lt;body&gt; <br>
+&lt;form&gt; <br>
+&lt;input type=&quot;button&quot; <br>
+  onclick=&quot;myfunction('Good Morning!')&quot; <br>
+  value=&quot;In the Morning&quot;&gt; </p>
+<p>&lt;input type=&quot;button&quot; <br>
+  onclick=&quot;myfunction('Good Evening!')&quot; <br>
+  value=&quot;In the Evening&quot;&gt; <br>
+&lt;/form&gt; </p>
+<p>&lt;p&gt;<br>
+  When you click on one of the buttons, a function will be called. The function will alert<br>
+  the argument that is passed to it.<br>
+&lt;/p&gt;</p>
+<p>&lt;/body&gt; <br>
+&lt;/html&gt; <br>
+</p>
+<p>&nbsp; </p>
+<p>&nbsp; </p>
+<p>&nbsp; </p>
+<p><br>
+</p>
+<p>&nbsp; </p>
+<p>&nbsp;</p>
+<p><br>
+</p>
+<p align="left">&nbsp;</p>
+
+</body>
+
+</html>

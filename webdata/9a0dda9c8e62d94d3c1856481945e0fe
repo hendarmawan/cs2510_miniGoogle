@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>2310-2</title>
+</head>
+
+<body>
+
+<p><a href="index.htm">
+<img src="previous.gif" align="left" width="26" height="26"></a>
+<a href="page_2.htm">
+<img src="next.gif" align="right" width="26" height="26"></a>
+</p>
+<p align="center"><font size="7">Introduction</font></p>
+
+<p class="MsoNormal"><font size="6">To allow users to individualize and 
+customize their emoticons the Face Alive feature set was implemented. The Face 
+Alive feature set consists of an Image Server, and tabbed pane in the virtual 
+classroom. The tabbed pane in the virtual classroom allows the users to change 
+their emoticons whenever their current emoticon no longer suits their needs.&nbsp; 
+The implementation will automatically resize any JPG image the user selects so 
+that it fits in the space allotted.&nbsp; The user can choose when to upload 
+emoticons to, and download emoticons from, the Image Server. </font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font size="6">The Face Alive feature set consists of 
+approximately three new class files, and five modifications to the existing code 
+base. All modified files are available.</font></p>
+<p class="MsoNormal">&nbsp;</p>
+<p class="MsoNormal"><font size="6"><a href="StudentTool410.zip">Complete 
+Implementation</a></font></p>
+<p class="MsoNormal"><font size="6"><a href="modFiles.zip">Modified Files</a></font></p>
+
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="seminar_pg1.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="seminar_pg3.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Introduction</font></h1> 
+ </center> 
+ <br>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">Background (Adaptive Hypermedia 
+    Application Model)</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Dexter Hypertext Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Adaptive Hypermedia Application 
+    Model (AHAM) - A Closer Look</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Inside the AHAM Storage Layer 
+    - The Domain Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Inside the AHAM Storage Layer 
+    - The User Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Inside the AHAM Storage Layer 
+    - The Adaptation Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">What's under the hood? - The Adaptation 
+    Engine</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Adaptation Rules</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Adaptation Rules - Examples</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">The Execution Model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Design Considerations</font></li>
+</ul>
+</html> 

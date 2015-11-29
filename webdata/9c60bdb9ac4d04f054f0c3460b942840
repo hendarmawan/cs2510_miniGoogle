@@ -1,0 +1,432 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_increment</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_increment
+</h1>    
+<a name="wp3685748"> </a><p class="pBody" >
+Ensures that the value of a specified expression changes only by the specified increment value.  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3685743"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkersa10.gif" height="107" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3685745"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3771996"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3771997"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">width </em>
+</div>    
+<a name="wp3771998"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">value </em>
+</div>    
+<a name="wp3771999"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3772000"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3772001"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3685747"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Class: </span>
+</div>    
+<a name="wp3772002"> </a><div class="pCellBodyLeft" >
+2-cycle assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3685749"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3685750"> </a><pre class="pCode1" >assert_increment 
+</pre>    <a name="wp3772003"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level</em>, <em class="cEmphasis">width, value, property_type</em>,<em class="cEmphasis"> msg</em>,<em class="cEmphasis"> coverage_level </em>)] 
+</pre>    <a name="wp3772004"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, test_expr </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3685794"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3685753"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685755"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3685757"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3685759"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685761"> </a><div class="pCellBodyLeft" >
+width
+</div>    
+</td>
+    <td><a name="wp3685763"> </a><div class="pCellBodyLeft" >
+Width of the <em class="cEmphasis">test_expr</em> argument. Default: 1. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3685765"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685767"> </a><div class="pCellBodyLeft" >
+value
+</div>    
+</td>
+    <td><a name="wp3685769"> </a><div class="pCellBodyLeft" >
+Increment value for <em class="cEmphasis">test_expr</em>. Default: 1.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3685777"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685779"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3685781"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3685783"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685785"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3685787"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3685789"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685791"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3685793"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3685820"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3685797"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685799"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3685801"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685803"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3685805"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685807"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3685809"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685811"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3685813"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685815"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">test_expr</em>
+</div>    
+</td>
+    <td><a name="wp3685817"> </a><div class="pCellBodyLeft" >
+[ <em class="cEmphasis">width</em> - 1: 0 ]
+</div>    
+</td>
+    <td><a name="wp3685819"> </a><div class="pCellBodyLeft" >
+Expression that should increment by <em class="cEmphasis">value</em> whenever its value changes from the rising edge of clk to the next rising edge of clk.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3685821"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3685822"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_increment</code> assertion checker checks the expression <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> at each rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> to determine if its value has changed from its value at the previous rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>. If so, the checker verifies that the new value equals the previous value incremented by <span style="font-style: oblique" class="cCodeBodyEmphasis">value</span>. The checker allows the value of <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> to wrap, if the total change equals the increment <span style="font-style: oblique" class="cCodeBodyEmphasis">value</span>. For example, if <span style="font-style: oblique" class="cCodeBodyEmphasis">width</span> is 5 and <span style="font-style: oblique" class="cCodeBodyEmphasis">value</span> is 4, then the following change in <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> is valid:
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3686148"> </a><pre class="pCode3" >	5&#8217;b11110 &#8212;&#8212;&gt; 5&#8217;b00010
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3685823"> </a><p class="pBody" >
+The checker is useful for ensuring proper changes in structures such as counters and finite-state machines. For example, the checker is useful for circular queue structures with address counters that can wrap. Do not use this checker for variables or expressions that can decrement. Instead consider using the <code class="cCodeBody">assert_delta</code> checker. 
+</p>    
+<a name="wp3685831"> </a><h4 class="pHead4" >
+Assertion Check  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3685826"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685828"> </a><div class="pCellBodyLeft" >
+ASSERT_INCREMENT
+</div>    
+</td>
+    <td><a name="wp3685830"> </a><div class="pCellBodyLeft" >
+Expression evaluated to a value that is not its previous value incremented by <em class="cEmphasis">value</em>. 
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3685851"> </a><h4 class="pHead4" >
+Cover Point  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3685834"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3685836"> </a><div class="pCellBodyLeft" >
+test_expr_change
+</div>    
+</td>
+    <td><a name="wp3685838"> </a><div class="pCellBodyLeft" >
+Expression changed value.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3686177"> </a><h3 class="pHead3" >
+Notes
+</h3>    
+
+<a name="wp3686178"> </a><p class="pNumber" >
+ 1.	The assertion check compares the current value of <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> with its previous value. Therefore, checking does not start until the second rising clock edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> after <span style="font-style: oblique" class="cCodeBodyEmphasis">reset_n</span> deasserts.
+</p>    
+<a name="wp3685854"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3685855"> </a><pre class="pCode2" >assert_decrement, assert_delta, assert_no_overflow
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3685856"> </a><h3 class="pHead3" >
+Example
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3685900"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3750008"> </a><div class="pCellBodyLeft" >
+assert_increment #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3750016"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3750018"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772005"> </a><div class="pCellBodyLeft" >
+4, 
+</div>    
+<a name="wp3772006"> </a><div class="pCellBodyLeft" >
+1, 
+</div>    
+<a name="wp3772007"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772008"> </a><div class="pCellBodyLeft" >
+&#8220;Error: invalid binary increment&#8221;, 
+</div>    
+<a name="wp3772009"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3750022"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772010"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772011"> </a><div class="pCellBodyLeft" >
+// value 
+</div>    
+<a name="wp3772012"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772013"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772014"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3750024"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3750026"> </a><div class="pCellBodyLeft" >
+valid_count (
+</div>    
+</td>
+    <td><a name="wp3750030"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3750032"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3750034"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3750036"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772015"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772016"> </a><div class="pCellBodyLeft" >
+count  );
+</div>    
+</td>
+    <td><a name="wp3750038"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772017"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772018"> </a><div class="pCellBodyLeft" >
+// test_expr
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3685901"> </a><p class="pBody" >
+Ensures that the programmable counter&#8217;s <code class="cCodeBody">count</code> variable only increments by 1. If <code class="cCodeBody">count</code> wraps, the assertion fails, because the change is not a binary increment.  </p>    <div align="left"><img src="images/ovl_checkersa20.gif" height="77" width="451" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3685975"> </a><p class="pBody" >
+
+</p>    
+<a name="wp3685976"> </a><p class="pBody" >
+
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

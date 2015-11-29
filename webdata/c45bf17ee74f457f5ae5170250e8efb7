@@ -1,0 +1,450 @@
+<HTML>
+
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1252">
+<META NAME="GENERATOR" CONTENT="Notepad/Robert Hofmann">
+<BASE TARGET="1502main">
+<TITLE>Unit1a : Adding Ports, Signals, and Busses to the Block Diagram</TITLE>
+
+<BODY BACKGROUND="../Unitbkg.jpg">
+<H2><CENTER>Unit1a</H2></CENTER>
+<H2><CENTER>Adding Ports, Signals, and Busses to the Block Diagram
+    </CENTER></H2>
+<UL>
+<LI>
+  <P>
+    First, go to the <I>Add Bus</I> button on the toolbar, 
+    <IMG SRC="./BusButton.jpg">, and click the arrow just to the 
+    right.  Select the <I>Bus with Port</I> option.  Now make sure the 
+    <I>Add Bus</I> button is highlighted, or selected, if not left-click
+    on it to do so.  Now when you move the mouse over the design area 
+    you will see the pointer is now a crosshair.  Left-click once with the 
+    left button near the left hand side of the design area to begin drawing 
+    a bus.  If you move the pointer you will see the outline of an input port
+    with a bus extending out of it to the point where the pointer currently is.
+    Move the pointer to the right six or seven grid spaces and double-click 
+    with the left button to terminate the bus with a dangling net connector,
+    which will be represented by an open circle at the end of the bus.  The left 
+    hand side of the bus should have an input port attached to it and the right 
+    hand side should end in an open circle, meaning it is not yet connected to 
+    anything. Also a default name, <I>dbus0</I>, has been assigned to the 
+    bus with a default type <I>unsigned(15 DOWNTO 0)</I> and this has 
+    been added to the Declarations list.  
+  </P>
+  <P>
+    By default, the <I>Add Bus</I> button will remain active until you
+    press the Escape key or click with the right mouse button or on 
+    another button on the toolbar.  While it remains active, add three
+    more busses to the diagram below the first one so that it looks 
+    something like Figure 2.  Space your ports and busses at least 
+    two to three grid spaces apart.
+  </P>
+  <P>
+    You may move the bus around on the block diagram by making sure that
+    the selection tool, <IMG SRC="./SelectButton.jpg">, is active and then
+    pressing and holding the left mouse button over a point in the middle of 
+    the bus and dragging it to the new position.  You should see the outline
+    of the bus as you drag and reposition it.  You may make the bus longer
+    or shorter at this point by pressing and holding the left mouse button
+    over the dangling net connector circle and dragging it to the new location.
+  <P>
+</LI>
+
+<CENTER>
+  <P>
+    <IMG SRC="./ALUBlock3.jpg">
+    <H4>Figure 2</H4>
+  </P>
+</CENTER>
+
+<LI>
+  <P>
+    Add an input signal in the same way you added buses.  Click on the <I>Add Signal</I> 
+    button on the toolbar, <IMG SRC="./SignalButton.jpg">, and click the arrow just to
+    the right.  Select the <I>Add Signal with a port</I> option.  Add the signal input so
+    that your design looks something like Figure 3.  This input signal will be used for
+    SHAMT_HIGH.
+  </P>
+</LI>
+
+<CENTER>
+  <P>
+    <IMG SRC="./ALUBlock3a.jpg">
+    <H4>Figure 3</H4>
+  </P>
+</CENTER>
+    
+<LI>
+  <P>
+    The <I>Add Bus</I> button, unfortunately, cannot be used to add an
+    output port in the manner described above.  Before adding the output
+    ports, resize the design area so that it extends almost the width of
+    the screen.  This way we can add output ports at the far right and
+    have plenty of room in between to place the blocks which will give the
+    ALU its functionality.  
+  </P>
+  <P>
+    In order to add an output port click on the <I>Add Port Out</I> button: 
+    <IMG SRC="./PortOutButton.jpg">.  Now move the pointer to the right hand 
+    side of the design area and place an output port in the design.  While 
+    the tool is still active, place two more output ports, making sure to
+    leave at least two vertical grid dots between each port. 
+  </P>
+  <P>
+    Now change the <I>Add Bus</I> button back to <I>Bus Without Port</I>.
+    Move the pointer to the design area and left-click on the hanging 
+    end of output port.  Move the mouse about six or seven grid spaces 
+    to the left and double-left-click to terminate the bus with a dangling
+    net connector.  For the other two output ports, follow the same procedure, 
+    except using the <I>Add Signal</I> button, <IMG SRC="./SignalButton.jpg">,
+    set to <I>Signal Without Port</I>.  The <I>Add Signal</I> button is used 
+    because two of the outputs, <I>Zero</I> and <I>Overflow</I>, are single
+    bit signals instead of multi-bit busses. Your Design should now look like
+    Figure 4.
+  </P>
+</LI>
+
+<CENTER>
+  <P>
+    <IMG SRC="ALUBlock4.jpg">
+    <H4>Figure 4</H4>
+  </P>
+</CENTER>
+
+<LI>
+  <P>
+    Since we do not want to use the default names for the signals and 
+    busses, we need to assign our own.  To do this, first make sure 
+    that the selection tool, <IMG SRC="./SelectButton.jpg">, is active
+    and then double-left-click on the bus <I>dbus0</I>.  This will 
+    bring up the <I>Object Properties</I> window opened to the signals
+    tab with the <I>dbus0</I> signal selected.  In the name field
+    replace <I>dbus0</I> with <I>ALUOp</I>.  In the declaration section,
+    set the bounds as <I>3 DOWNTO 0</I>.
+    Finally click OK.  These changes should be reflected on the signal 
+    name and the Declarations.
+  </P>
+  <P>
+    Change the rest of the signals and busses as shown in the following
+    table.  The design should now resemble Figure 5.
+  </P>
+  <P>
+    <CENTER><TABLE border=1>
+      <TR>
+        <TD>
+          <B><BIG>Original Name</BIG></B>
+        </TD>
+        <TD>
+          <B><BIG>New Name</BIG></B>
+        </TD>
+        <TD>
+          <B><BIG>New Type</BIG></B>
+        </TD>
+        <TD>
+          <B><BIG>New Range</BIG></B>
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          dbus0
+        </TD>
+        <TD>
+          ALUOp
+        </TD>
+        <TD>
+          std_logic_vector
+        </TD>
+        <TD>
+          3 DOWNTO 0
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          dbus1
+        </TD>
+        <TD>
+          A
+        </TD>
+        <TD>
+          std_logic_vector
+        </TD>
+        <TD>
+          63 DOWNTO 0
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          dbus2
+        </TD>
+        <TD>
+          B
+        </TD>
+        <TD>
+          std_logic_vector
+        </TD>
+        <TD>
+          63 DOWNTO 0
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          dbus3
+        </TD>
+        <TD>
+          SHAMT
+        </TD>
+        <TD>
+          std_logic_vector
+        </TD>
+        <TD>
+          4 DOWNTO 0
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          dbus4
+        </TD>
+        <TD>
+          R
+        </TD>
+        <TD>
+          std_logic_vector
+        </TD>
+        <TD>
+          63 DOWNTO 0
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          sig0
+        </TD>
+        <TD>
+          SHAMT_HIGH
+        </TD>
+        <TD>
+          std_logic
+        </TD>
+        <TD>
+          NONE
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          sig1
+        </TD>
+        <TD>
+          Zero
+        </TD>
+        <TD>
+          std_logic
+        </TD>
+        <TD>
+          NONE
+        </TD>
+      </TR>
+      <TR>
+        <TD>
+          sig2
+        </TD>
+        <TD>
+          Overflow
+        </TD>
+        <TD>
+          std_logic
+        </TD>
+        <TD>
+          NONE
+        </TD>
+      </TR>
+    </TABLE></CENTER>
+  </P>
+</LI>
+</UL>
+
+<CENTER>
+  <P>
+    <IMG SRC="ALUBlock5.jpg">
+    <H4>Figure 5</H4>
+  </P>
+</CENTER>
+
+<UL>
+<LI>
+  <P>
+    Once you have finished making all of the changes, you need to save the 
+    Block Diagram by selecting <I>Save</I> from the <I>File</I> menu.
+    Select <I>ALU</I> as the library to save the design in, enter ALU as
+    the design unit name, and struct as the view name.  This will save
+    the block diagram source data and also create a symbol for the design unit
+    with ports matching those in the block diagram.
+  <P>
+</LI>
+
+<LI>
+  <P>
+    To see what effect our work thus far has had, go back to the 
+    <I>Design Manager</I> menu and double-click the ALU symbol.
+    
+<CENTER>
+  <P>
+    <IMG SRC="SymbolOpen.jpg">
+    <H4>Figure 6</H4>
+  </P>
+</CENTER>
+    
+    <p>A window similar to Figure 7 should appear.
+    You should see input ports for A, B, ALUOp, SHAMT, and SHAMT_HIGH and output
+    ports for Zero, Overflow, and R.  We will modify the symbol later
+    to make it more readable.  Once you have examined it, you may 
+    close the window containing the symbol.
+  </P>
+</LI>
+
+<CENTER>
+  <P>
+    <IMG SRC="ALUBlock6.jpg">
+    <H4>Figure 7</H4>
+  </P>
+</CENTER>
+
+</LI>
+  <P>
+    Now that we have examined the symbol, lets generate the VHDL code
+    for this file and see what is produced.  First, back on the Design Manager, highlight the ALU component.  Then, click
+    the <b>Generate Through Components</b> button:
+    
+    <center>
+    <p>
+    <img src="genbutton.jpg">
+    </p>
+    </center>
+    
+    <p>Note that this button can also be used from
+    a design editor window, such as the block diagram editor.  In other words, you could have also clicked this button
+    from the ALU block diagram editor.
+    This will generate HDL for the current design unit.  A <I>Log Window</I>
+    will appear.  If the log window reports any errors, ask the 
+    professor or TA for help.
+  </P>
+  <P>
+    If the HDL generation completes with no errors, activate the 
+    <B>Design Manager</B> window again.  Make sure you have the <b>ALU library window open</b>.  Put the Design Manager in HDL
+    mode by clicking the HDL mode button: <img src="hdlbutton.jpg">.
+    Left-click on the plus sign to expand
+    the tree under ALU and you should see an entry for ALU_struct.vhd as in
+    Figure 8.  Double-left-click on this file to open it up in a 
+    VHDL editor.
+  </P>
+</LI>
+ 
+<CENTER>
+  <P>
+    <IMG SRC="ALUBlock7.jpg">
+    <H4>Figure 8</H4>
+  </P>
+</CENTER>
+
+</LI>
+  <P>
+    The generated HDL code should be similar to the following:
+  </P>
+
+<CENTER>
+<P>
+<TABLE border=2>
+  <TR>
+    <TD>
+      <PRE>
+-- VHDL Entity ALU.ALU.symbol
+--
+-- Created:
+--          by - ajnoyola.UNKNOWN (TWEETY)
+--          at - 12:16:05 08/30/2005
+--
+-- Generated by Mentor Graphics' HDL Designer(TM) 2004.1 (Build 41)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+
+ENTITY ALU IS
+   PORT( 
+      A          : IN     std_logic_vector (63 DOWNTO 0);
+      ALUOp      : IN     std_logic_vector (3 DOWNTO 0);
+      B          : IN     std_logic_vector (63 DOWNTO 0);
+      SHAMT      : IN     std_logic_vector (4 DOWNTO 0);
+      SHAMT_HIGH : IN     std_logic;
+      Overflow   : OUT    std_logic;
+      R          : OUT    std_logic_vector (63 DOWNTO 0);
+      Zero       : OUT    std_logic
+   );
+
+-- Declarations
+
+END ALU ;
+
+--
+-- VHDL Architecture ALU.ALU.struct
+--
+-- Created:
+--          by - ajnoyola.UNKNOWN (TWEETY)
+--          at - 12:16:05 08/30/2005
+--
+-- Generated by Mentor Graphics' HDL Designer(TM) 2004.1 (Build 41)
+--
+LIBRARY ieee;
+USE ieee.std_logic_1164.all;
+USE ieee.std_logic_arith.all;
+
+
+ARCHITECTURE struct OF ALU IS
+
+   -- Architecture declarations
+
+   -- Internal signal declarations
+
+
+
+BEGIN
+
+   -- Instance port mappings.
+
+END struct;
+      </PRE>
+    </TD>
+  </TR>
+</TABLE>
+</P>
+</CENTER>
+
+<LI>
+  <P>
+    Examine the generated HDL.  The first section is the 
+    <I>Entity Declaration</I> which describes I/O for our 
+    black box design unit.  The ports with connected and named
+    busses and signals which we placed on the block diagram 
+    have been translated into ports in the entity declaration.
+  </P>
+  <P>
+    The second section of the generated HDL is the <I>Architecture
+    Declaration</I> for our <I>struct</I> architecture of the 
+    <I>ALU</I> entity.  So far, we have only placed ports and
+    signals or busses directly connected to those ports onto the
+    block diagram.  Since the signals for these ports are inherently
+    declared in the architecture by their presence in the entity 
+    declaration, there is nothing left to do.  Hence, the architecture
+    is empty except for a few comments.
+  </P>
+</LI>
+
+<LI>
+  <P>
+    Now that we have placed the ports on the block diagram and 
+    looked at the simple VHDL generated by it, it is time to 
+    <A HREF="./ALU_BlockSubblocks.html">Add Subblocks to the Block
+    Diagram</A>.
+  </P>
+</LI>
+</UL>
+</HTML>
+</UL>

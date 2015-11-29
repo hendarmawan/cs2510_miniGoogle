@@ -1,0 +1,58 @@
+<title>Running Title</title>
+
+<a href="12-5.htm"><IMG
+SRC="../previous.gif" align=left></a>
+
+
+
+<! The following is your presentation>
+
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (Win95; I) [Netscape]">
+</HEAD>
+<BODY>
+<B><FONT SIZE=+2>&nbsp;VIMSYS: Visual Information Management System</FONT></B>
+
+<P><B><FONT SIZE=+1>Data Model</FONT></B>
+
+<P>-establishes and relation between semantic attributes of images and
+computable features of those attributes.
+
+<P><B>Image Prepresentations and relations</B>:&nbsp; representing the
+actual image data and upoon which all the objects are constructed.
+
+<P><B>Image Objects and relations</B>:&nbsp; relationship among objects
+in the image
+
+<P><B>Domain</B>:&nbsp; semantic interpretation of the image objects
+
+<P><B>Domain events and relations</B>:&nbsp; relationship among domain
+objects
+
+<P><B><FONT SIZE=+1>Content Similarity Matching</FONT></B>
+
+<P>-basd on exemplar image instances with incompletely specified feature
+attributes.
+
+<P><B><FONT SIZE=+1>Query and User Interface</FONT></B>
+<BR>&nbsp;
+<OL>
+<LI>
+The user is recursively guided down a decision tree by the knowledge module&nbsp;
+(think of going down the pyramid, multi-layered domain)</LI>
+
+<LI>
+objects, relations and acess path can be selected</LI>
+
+<LI>
+user defined attributes allowed using lower level features</LI>
+</OL>
+
+
+<P>
+<HR WIDTH="100%"><A HREF="index.htm">Return to Index</A>
+<BR>&nbsp;
+</BODY>
+</HTML>

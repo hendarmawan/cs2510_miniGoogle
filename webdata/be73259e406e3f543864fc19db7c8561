@@ -1,0 +1,229 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>New Page 1</title>
+</head>
+
+<body>
+
+<p><a href="page05.htm">
+<img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="page07.htm"><img border="0" src="next.gif" width="26" height="26"></a></p>
+<h1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Specification</h1>
+<p>　</p>
+<p><b>Patients' information:</b></p>
+<p><b>&nbsp;&nbsp;&nbsp; </b></p>
+<table border="1" cellpadding="0" cellspacing="0" style="border-collapse: collapse" bordercolor="#111111" width="43%" id="AutoNumber1" height="667">
+  <tr>
+    <td width="14%" height="40"><b>patient id #</b></td>
+    <td width="13%" height="40"><b>location</b></td>
+    <td width="73%" height="40"><b>served time</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>0</b></td>
+    <td width="13%" height="20"><b>(13,44)</b></td>
+    <td width="73%" height="20"><b>[9:30,9:50]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>1</b></td>
+    <td width="13%" height="20"><b>(45,32)</b></td>
+    <td width="73%" height="20"><b>[14:10,14:40]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>2</b></td>
+    <td width="13%" height="20"><b>(6,89)</b></td>
+    <td width="73%" height="20"><b>[10:10,10:20]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>3*</b></td>
+    <td width="13%" height="20"><b>(6,89)</b></td>
+    <td width="73%" height="20"><b>[10:20,10:30]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>4*</b></td>
+    <td width="13%" height="20"><b>(6,89)</b></td>
+    <td width="73%" height="20"><b>[10:30,10:40]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>5</b></td>
+    <td width="13%" height="20"><b>(55,71)</b></td>
+    <td width="73%" height="20"><b>[9:40,10:00]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>6</b></td>
+    <td width="13%" height="20"><b>(85,21)</b></td>
+    <td width="73%" height="20"><b>[9:30,9:50]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>7</b></td>
+    <td width="13%" height="20"><b>(28,60)</b></td>
+    <td width="73%" height="20"><b>[11:10,11:50]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>8</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:20,15:40]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>9*</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:20,15:40]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>10*</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:20,15:40]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>11*</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:30,15:40]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>12*</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:30,15:40]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>13*</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:30,15:40]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>14*</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:40,16:00]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>15*</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:40,16:00]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>16*</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:40,16:00]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>17*</b></td>
+    <td width="13%" height="20"><b>(19,4)</b></td>
+    <td width="73%" height="20"><b>[15:40,16:00]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>18</b></td>
+    <td width="13%" height="20"><b>(76,11)</b></td>
+    <td width="73%" height="20"><b>[17:10,17:30]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>19</b></td>
+    <td width="13%" height="20"><b>(32,49)</b></td>
+    <td width="73%" height="20"><b>[13:20,13:30]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>20</b></td>
+    <td width="13%" height="20"><b>(91,3)</b></td>
+    <td width="73%" height="20"><b>[15:10,15:40]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>21</b></td>
+    <td width="13%" height="20"><b>(34,38)</b></td>
+    <td width="73%" height="20"><b>[11:00,11;20]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>22</b></td>
+    <td width="13%" height="20"><b>(90,57)</b></td>
+    <td width="73%" height="20"><b>[14:00,14:20]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>23</b></td>
+    <td width="13%" height="20"><b>(22,75)</b></td>
+    <td width="73%" height="20"><b>[16:20,16:50]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>24</b></td>
+    <td width="13%" height="20"><b>(71,96)</b></td>
+    <td width="73%" height="20"><b>[8:50,9:10]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>25</b></td>
+    <td width="13%" height="20"><b>(66,16)</b></td>
+    <td width="73%" height="20"><b>[10:20,10:50]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>26*</b></td>
+    <td width="13%" height="20"><b>(66,16)</b></td>
+    <td width="73%" height="20"><b>[10:20,10:50]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>27*</b></td>
+    <td width="13%" height="20"><b>(66,16)</b></td>
+    <td width="73%" height="20"><b>[15:50,16;10]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="20"><b>28*</b></td>
+    <td width="13%" height="20"><b>(66,16)</b></td>
+    <td width="73%" height="20"><b>[15:50,16;10]</b></td>
+  </tr>
+  <tr>
+    <td width="14%" height="17"><b>29*</b></td>
+    <td width="13%" height="17"><b>(66,16)</b></td>
+    <td width="73%" height="17"><b>[15:50,16;10]</b></td>
+  </tr>
+</table>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp; Table 1: patients' information</b></p>
+<p><b>Note that * means the patient only appear in the problem 2 and 4. </b></p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+<p>　</p>
+
+</body>
+
+</html>

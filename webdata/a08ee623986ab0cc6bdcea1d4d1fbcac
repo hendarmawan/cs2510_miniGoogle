@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>2310-2</title>
+</head>
+
+<body>
+
+<p><a href="page_6.htm">
+<img src="previous.gif" align="left" width="26" height="26"></a>
+<a href="page_8.htm">
+<img src="next.gif" align="right" width="26" height="26"></a>
+</p>
+<p align="center"><font size="7">Changing an emoticon</font></p>
+<p align="left"><font size="6">To change an emoticon you must first select which 
+emotion you would like to change and then click the corresponding browse button.</font></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">1. Lets change the happy, or &quot;online&quot; emoticon. 
+Click browse and navigate to the image you wish to use to replace your current 
+emoticon. It is import to remember that you can only select JPG, or JPEG images 
+to replace emoticons. The FaceAlive implementation currently does not recognize 
+Bitmap, or GIF images.</font></p>
+<p align="left"><img border="0" src="page_712.jpg" width="508" height="360"></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">2. Once you have selected the image you wish to 
+replace your current emoticon with press the open button. The FaceAlive 
+implementation will automatically resize your image to the proper size for you 
+and store it in the temporary image store. All images that are updated reside in 
+the temporary image store until you upload them to the Image Server.</font></p>
+<p align="left"><img border="0" src="page_713.jpg" width="810" height="810"></p>
+<p align="left">&nbsp;</p>
+<p align="left"><font size="6">3. To make your new emoticon available to the 
+classroom you must upload it to the image server.</font></p>
+
+</body>
+
+</html>

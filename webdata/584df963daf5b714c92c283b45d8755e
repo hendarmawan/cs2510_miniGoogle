@@ -1,0 +1,166 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>TinyMotion - Project Home Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" type="text/css" href="plain.css">
+<link rel="icon" type="image/png" href="tinymotion.ico">
+</head>
+
+<body>
+
+<div class="page">
+<div class="body">
+
+<div class="sidebar">
+<!-- site navigation -->
+<img src="tinymotionlogo.png" width="140" height="48">
+<p></p>
+<p></p>
+  <a class="navlink" href="index.html" title="">Home</a>
+
+  <a class="navlink" href="download.html" title="Download the latest TinyMotion source code">Download</a>
+
+  <a class="navlink" href="papers.html" title="Publications for this project">Papers</a>
+
+  <a class="navlink" href="video.html" title="Demonstration videos">Video</a>
+
+  <a class="navlink" href="resource.html" title="Related Resource">Resource</a>
+
+  <a class="navlink" href="support.html" title="Support Information">Support</a>
+
+<br clear="all">
+&nbsp;
+
+<!-- end sidebar -->
+</div>
+
+<div class="content"> 
+
+<h1>TinyMotion</h1>
+
+<p><h3 class="project-header">Camera Phone Based Interaction Methods</h3></p>
+<table width="670" border="0" cellspacing="0" cellpadding="0"><tr>
+  <td width="500">
+
+<p class="project-para">
+   <i>TinyMotion</i> is a pure software approach that detects the movements of 
+   cell phones in real time by analyzing image sequences captured by the built-in camera. 
+   Typical movements that <i>TinyMotion</i> detects include - horizontal and vertical movements, 
+   rotational movements and tilt movements. 
+
+   As a result, a user can activate and access different functions of a phone (For example, 
+   scrolling and selecting the phone menu, Zooming in/out pictures, Moving an on-screen cursor 
+    to a given region and even gesture/handwriting input) by moving, tilting or rotating the phone.
+
+</p>
+<p class="project-para">
+
+   Different from existing research work, 
+   <i>TinyMotion</i> does not require additional sensors (accelerometers, motion sensors), markers (barcodes, 
+   anchor symbols, dots) or external computing powers 
+  and can run on today's main-stream camera phones without hardware modifications. Even more, 
+  <i>TinyMotion</i> can detect camera movement reliablely under diverse background and illumination conditions.
+
+</p>
+
+  </td>
+  <td width="20"> </td>
+  <td width="180" align="center">
+    <img src="tinymotion.jpg" border="1" width="180" height="245"><br>
+    <span class="caption">Playing a <i>TinyMotion</i> Enabled Game</span>
+
+  </td>
+</tr></table><br>
+
+<!-- the Publications Session -->
+<h3 class="project-header">News</h3>
+<div class="line"></div>
+<ul>
+	<li>SHRIMP received an Honorable Mention, CHI Best Paper Award at the upcoming CHI 2010!  03/01/2010</li>
+	<li><a class="download" href="http://www.cs.pitt.edu/~jingtaow/SHRIMP/">SHRIMP</a> (<b>S</b>mall <b>H</b>andheld <b>R</b>apid <b>I</b>nput with <b>M</b>otion and <b>P</b>rediction) has been accepted as a full paper by the upcoming CHI 2010!  12/18/2009</li>
+	<li>The GUIR server hosting TinyMotion is retired this summer, TinyMotion now moved to a new server!  8/18/2008</li>
+	<li>TinyMotion now has an easier to remember permanent url - <a class="download" href="http://tinymotion.org"> http://tinymotion.org </a> ! 6/12/2008</li>
+</ul>
+
+<!-- the Publications Session -->
+
+<!-- the Applications and Games session -->
+<h3 class="project-header">Applications and Games</h3>
+<div class="line"></div>
+<ul>
+    <li><a class="download" href="http://www.cs.pitt.edu/~jingtaow/SHRIMP/">SHRIMP</a> (<b>S</b>mall <b>H</b>andheld <b>R</b>apid <b>I</b>nput with <b>M</b>otion and <b>P</b>rediction)</li>
+	<li>Motion Menu : Scrolling and Selecting Menu Items by Moving or Tilting the Phone</li>
+	<li>Image View : Button-Free Image/Map Viewer</li>
+	<li>Vision TiltText : A Remake of the TiltText Input Method Without Additional Accelerometer Hardware</li>
+	<li>Mobile Gesture : Gesture and Handwriting Input by Camera Phones</li>
+	<li>Camera Tetris : Play the Tetris Game Without Pressing Any Button</li>
+	<li>Camera Snake : Play this Classic Cell Phone Game by Tilting/Moving Your Phone</li>
+	<li>Camera BreakOut : Play this Classic Arcade Game by Tilting/Moving Your Phone</li>
+</ul>
+<!--  the Applications and Games session -->
+
+
+
+<!-- the Video Session -->
+<h3 class="project-header">Video</h3>
+<div class="line"></div>
+<ul>
+	<li><p><a class="download" href="video.html">Demo Videos</a> are available <a class="download" href="video.html">here</a>.</p></li>
+</ul>
+<!-- the Video Session -->
+
+
+<!-- the Publications Session -->
+<h3 class="project-header">Publications</h3>
+<div class="line"></div>
+<ul>
+
+	<li>Jingtao Wang, Shumin Zhai, John Canny, SHRIMP - Solving Collision and Out of Vocabulary Problems in Mobile Predictive Input with Motion Gesture, In ACM CHI 2010, Atlanta, Georgia,  April 10 -15, 2010.  (TO APPEAR) <b>Honorable Mention, CHI Best Paper Award</b><br>
+	
+	</li>
+	
+	<li>Jingtao Wang, Shumin Zhai, John Canny, Camera Phone Based Motion Sensing: Interaction Techniques, Applications and Performance Study, In ACM UIST 2006, Montreux, Switzerland, October 15-18, 2006. 
+		<a class="download" href="http://www.cs.pitt.edu/~jingtaow/research/fp143-wang.pdf">PDF</a>
+	</li>
+	<li>Jingtao Wang, John Canny, TinyMotion: Camera Phone Based Interaction Methods, in alt.chi of ACM CHI 2006, Montreal, Canada, April 24-27, 2006.
+		<a class="download"  href="http://www.cs.pitt.edu/~jingtaow/research/ac210-wang.pdf">PDF</a>
+	</li>
+
+</ul>
+
+<!-- the Publications Session -->
+
+<!-- the Contact Information Session -->
+<h3 class="project-header">Contact Information</h3>
+<div class="line"></div>
+<ul>
+	<li><p><a href="http://www.cs.pitt.edu/~jingtaow">Jingtao Wang</a></p></li>
+	<li><p><a href="http://www.cs.berkeley.edu/~jfc">John Canny</a></p></li>
+</ul>
+<!-- the Contact Information Session -->
+
+                     
+<!-- the collaborator session -->
+<h3 class="project-header">Collaborator</h3>
+<div class="line"></div>
+<ul>
+<a href="http://www.almaden.ibm.com/u/zhai/">Shumin Zhai</a>
+</ul>
+
+<!-- the collaborator session -->
+
+                         
+</div>  <!-- end of content div -->
+
+<br clear="all">
+
+<div class="copyright">
+Copyright (c) 2004-2008 by the Regents of the University of California Last Updated on 08/16/2008
+</div>  <!-- end of copyright div -->
+
+</div> <!-- end of body div -->
+</div> <!-- end of page div -->
+</body>
+
+</html>

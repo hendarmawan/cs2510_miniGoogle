@@ -1,0 +1,71 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>dreamweaver</title>
+</head>
+
+<body bgcolor="#00FFFF">
+<h3>Getting started with Dreamweaver CS4</h3>
+
+If you're new to Dreamweaver, this is just the answer you are looking for to get up to speed fast.
+Go to this tutorial page:
+
+<p>
+<!--
+<a href="http://www.adobe.com/devnet-archive/dreamweaver/articles/dwcs4_getting_started.html">http://www.adobe.com/devnet-archive/dreamweaver/articles/dwcs4_getting_started.html</a>
+-->
+<a href="https://helpx.adobe.com/dreamweaver/how-to/make-style-web-page.html">https://helpx.adobe.com/dreamweaver/how-to/make-style-web-page.html</a>
+
+<p>
+This tutorial includes a series of interactive Adobe Captivate simulations that will help you get started with Adobe Dreamweaver CS4.
+These simulate the Dreamweaver web development environment and let you participate as if you were actually using Dreamweaver.
+However you must have already installed CS4 before getting on with this tutorial.
+
+<p>
+The lab computers have DreamWeaver MX 2004 pre-installed.
+This is the version you will use in practicing DreamWeaver.
+The newest version is DreamWeaver CS4.  If you purchase it
+recently this is the version you have on your PC.  The
+above mentioned tutorial is also for CS4.  However since you
+are dealing with the basics, it will not make too much
+difference.
+
+
+<h3>Introducing Dreamweaver</h3>
+<p>It will be 
+a dream................</p>
+<p>Text editor vs Web editor.</p>
+<p>WYSIWYG - what you see is what you get.</p>
+<p>Getting started.<br>
+New document dialog box options. HTML, CSS, Javascript will be the ones we are 
+concerned with.</p>
+<p>Templates and layouts.</p>
+<p>Views. </p>
+<p>Code vs Split vs Design.</p>
+<p>Code - 
+similar to the text editor. You create your html document using the html tags 
+and such that we have already learned. Still it allows for the MOST control of 
+your document.</p>
+<p>Design. 
+- 
+allow you to see and design your page as if it were a word processor using a 
+WYSIWYG interface. Can be restrictive in both design and function if you are not 
+familiar with the web editor and it's abilities. Have the ability to crate new 
+pages very quickly. Familiar formatting methods. HTML coding is done for you!</p>
+<p>Split - 
+this view allows the best of both world. You can simultaneously create your 
+document using the html code you know and the WYSIWYG interface.</p>
+<p>Exploring menu bars &amp; tool bars.</p>
+<p>Creating and defining a site: Dreamweaver allows you to create and define a 
+website. This would allow you to manage and edit your site as one unit. </p>
+<p>Page properties.</p>
+<p>Editing text.</p>
+<p>File structure.</p>
+<p>Reports and other neat things </p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<html>
+
+<head>
+<link href="../2074%20notes/2074-style.css" type="text/css" rel="stylesheet"/>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>images</title>
+</head>
+
+<body>
+
+<h1>Images &amp; Lists :Class notes</h1>
+<p>More Chapter 5 stuff </p>
+<p>Adding images to your web site. </p>
+<p>Types of image formats</p>
+<ol>
+  <li>GIF - Graphics Interchange Format (.gif) Transparent background possible. 
+  Animated GIFs</li>
+  <li>JPEG or JPG - Joint Photographics Experts Group (.jpg or .jpeg) Better 
+  photographic quality color than GIF</li>
+  <li>PNG - Portable Network Graphics (.png) New, supported by most but not all 
+  NEWER browsers. Still developing. </li>
+  <li>SVG- Scalable Vector Graphic (.svg)&nbsp; Released 2001 mathematically 
+  based, xml complient.</li>
+  <li>PDF - Portable Data Format (.pdf) Cannot be read by current browser. </li>
+  <li>TIFF -Tagged Image File Format commonly used across platforms (.tif on MS 
+  .tiff on Apple &amp; Unix)</li>
+  <li>BMP - Bit-Mapped Picture (.bmp) Standard Windows image format.<br>
+&nbsp;</li>
+</ol>
+<p>So, what format is the best?&nbsp;&nbsp; </p>
+<p>&nbsp;</p>
+<p>Image file sizes and download time . </p>
+<p>Suppose you had a 600 pixel x 300 pixel image or 180,000 pixels. If we used a 
+file format with 8 bits per pixel, we would have to download a </p>
+<p>1,440,000 bit file. Point is, the more images the slower the download time!</p>
+<p>Image tag<br>
+<br>
+<b>&lt;img&gt; &lt;/img&gt;</b>&nbsp; OR use</p>
+<p><b>&lt;img/&gt;</b></p>
+<p><b>Important attributes</b></p>
+<ul>
+  <li><b>src </b>- source attribute - needed to identify the file name (including 
+  extension) and path to image.</li>
+  <li><b>alt</b> - alternative text - used to identify what image will be displayed 
+  if image is not displayed. Also, identifies the image when mouse rests over 
+  image.</li>
+</ul>
+<p>
+<img border="0" src="../old%20notes/MMj02827530000%5B1%5D.gif" alt="girls" width="128" height="128" >&nbsp;&nbsp;&nbsp; 
+</p>
+<p><font face="Tahoma, Arial" size="2">
+<img src="../old%20notes/sensq.jpg" border="1" alt="CS building" width="229" height="153"> 
+&lt;img src=&quot;sensq.jpg&quot; alt=&quot;picture of SENSQ&quot;/&gt;</font></p>
+<p>&nbsp;</p>
+<p><b>Sizing the image.</b></p>
+<p>height and width attributes</p>
+<p>picture distortion</p>
+<p>Pixels vs Percentage</p>
+<p>Alignments - There are several different vertical and horizontal alignments 
+available for images. Please see pages 150-152 in your book.</p>
+<p>Borders are also available using the &quot;border&quot; attrbutes.</p>
+<p>Using images in the internet??? </p>
+<p><b>Images as links</b></p>
+<p>You can use images as links much the same way you use text!</p>
+<p>&lt;a href=&quot;http://www.cs.pitt.edu&quot;&gt; &lt;img src=&quot;sensq.jpg&quot; alt=&quot;CS building link&quot; 
+height=&quot;150&quot;/&gt;&lt;/a&gt;</p>
+<p>&nbsp;</p>
+<p><b>NOW FOR SOME CHAPTER 4 stuff.</b></p>
+<p>How do I love my CS134 class......Let me count the ways!</p>
+<ol>
+  <li>Its as exciting as an Olympic gold medal moment.</li>
+  <li>Its as educational as a PBS documentary.</li>
+  <li>Its the best value in education at Pitt</li>
+</ol>
+<p>But you know, I have some points that would make it just a little better!</p>
+<ul>
+  <li>Give everyone an &quot;A&quot; if the football team goes undefeated this year!</li>
+  <li>Cancel any class the falls on a nice weather day in Pittsburgh.</li>
+  <li>Increase the homework load significantly to ensure that no student &quot;gets 
+  cheated out of a good quality education!&quot;<br>
+&nbsp;</li>
+</ul>
+<p>Yes, you guessed it. LISTS!!</p>
+<p>There are Three basic list types</p>
+<ol>
+  <li>Ordered list</li>
+  <li>Unordered list</li>
+  <li>Definition list</li>
+</ol>
+<p><b>Ordered list</b><br>
+<br>
+Yes, new tags.</p>
+<p><b>&lt;ol&gt; &lt;/ol&gt; to declare the list</b></p>
+<p><b>&lt;li&gt; &lt;/li&gt; to define the list items</b></p>
+<p><b>example - this will provide a numerical list (list can also be Alpha). 
+However, both list are increasing.</b></p>
+<p><b>&lt;ol&gt;</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt; list item #1 &lt;/li&gt;</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt; list item #2 &lt;/li&gt;</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt; list item #2 &lt;/li&gt;</b></p>
+<p><b>&lt;/ol&gt;</b></p>
+<p><b>&lt;ul&gt; &lt;/ul&gt; to declare the list</b></p>
+<p><b>&lt;li&gt; &lt;/li&gt; to define the list items</b></p>
+<p><b>example - this will provide a bulleted list.</b></p>
+<p><b>&lt;ul&gt;</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt; list item #1 &lt;/li&gt;</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt; list item #2 &lt;/li&gt;</b></p>
+<p><b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;li&gt; list item #2 &lt;/li&gt;</b></p>
+<p><b>&lt;/ul&gt;</b></p>
+<p>&nbsp;</p>
+<p>These list can be nested so PLEASE make use of an indenting style when 
+coding!!</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

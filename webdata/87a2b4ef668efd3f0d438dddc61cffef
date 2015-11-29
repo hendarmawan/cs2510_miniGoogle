@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	<title>
+		Pitt Computer Science :
+		People	</title>
+	<link href="/favicon.ico" type="image/x-icon" rel="icon" /><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" /><link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /><link rel="stylesheet" type="text/css" href="/css/application.css" /><script type="text/javascript" src="/js/MooTools-Core-1.5.1-compressed.js"></script><script type="text/javascript" src="/js/MooTools-More-1.5.1-compressed.js"></script><script type="text/javascript" src="/js/ck/ckeditor.js"></script><script type="text/javascript" src="/js/global.js"></script></head>
+<body>
+	<header>
+		<div id="header" class="container_16">
+			<span class="homeLink">
+				<a href="/"><img src="/img/blank.gif" alt="" /></a>			</span>
+			<ul id="pittLinks">
+				<li><a href="http://pitt.edu">Pitt Home</a></li>
+				<li><a href="http://as.pitt.edu">Dietrich School</a></li>
+			</ul>
+			<div class="clear"></div>
+			<nav id="mainMenu">
+			<div class="flip-container vertical">
+				<div class="flipper">
+					<div class="back" id="cardBack">
+<div id="cse-search-form" style="width: 100%;">Loading</div>
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'en'});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};
+    var customSearchControl = new google.search.CustomSearchControl(
+      '009128518159301701545:WMX415819481', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.enableSearchboxOnly('https://cs.pitt.edu/search');
+    customSearchControl.draw('cse-search-form', options);
+  }, true);
+</script>
+<style type="text/css">
+	#cardBack #cse-search-form {
+		margin:				3px 20px 0 20px;
+		width:				96%!important;
+		padding:			0;
+	}
+	#cardBack #cse-search-form td {
+		border-width:		0;
+		padding:			0;
+		padding-right:		2px;
+	}
+	#cardBack input.gsc-input {
+		border-width:		0;
+		margin-right:		10px;
+		padding:			1px 3px;
+	}
+	#cardBack input.gsc-search-button {
+		background-color:	#E9E9E9;
+		margin-left:		10px;
+		border-width:		0;
+	}
+	#cardBack .gsc-clear-button {
+		display:			none;
+	}
+	#cardBack .gsc-branding-text, #cardBack .gsc-branding-img {
+		display:			none;
+	}
+</style>
+					</div>
+					<div class="front" id="cardFront"><ul ><li><a href="/">Home</a></li><li><a href="/about">About</a><ul ><li><a href="/about">Welcome</a></li><li><a href="/about/history">History</a></li><li><a href="/about/Pittsburgh">Pittsburgh</a></li><li><a href="/about/directions">Directions</a></li><li><a href="/about/sennottmaps">Sennott Square Maps</a></li><li><a href="/about/csstudentorgs">CS Student Clubs</a></li><li><span class="title">Affiliated Programs</span><ul ><li><a href="http://www.isp.pitt.edu/">Intelligent System Program (ISP)</a></li><li><a href="http://www.psc.edu/">Pittsburgh Supercomputing Center</a></li></ul></li><li><a href="http://tech.cs.pitt.edu/accounts" target="_blank">Apply for a CS Account</a></li><li><a href="/about/contact">Contact Us</a></li></ul></li><li><span class="title">People</span><ul ><li><a href="/people/faculty/tenure_stream">Faculty</a></li><li><a href="/people/staff">Staff</a></li><li><a href="/people/grad">Graduate Students</a></li><li><a href="/people/visiting_scholar">Visiting Scholars</a></li><li><a href="http://industryboard.cs.pitt.edu/board.php" target="_blank">Industry Board</a></li><li><a href="/people">Directory</a></li></ul></li><li><a href="/research">Research</a><ul ></ul></li><li><a href="/undergrads">Undergraduate</a><ul ><li><span class="title">Courses</span><ul ><li><a href="http://www.courses.as.pitt.edu/">Course Descriptions</a></li><li><a href="http://www.registrar.pitt.edu/courseclass.html">Course Schedule</a></li><li><a href="https://oldwww.cs.pitt.edu/undergrad/courses/index.php" target="_blank">Internal Course Descriptions</a></li><li><a href="https://oldwww.cs.pitt.edu/schedule/" target="_blank">Internal Course Schedule</a></li></ul></li><li><span class="title">Special Degrees</span><ul ><li><a href="/undergrads/bioinformatics">Bioinformatics</a></li><li><a href="http://www.engineering.pitt.edu/computer/">Computer Engineering</a></li><li><a href="/undergrads/bsms">BS + MS Degree</a></li></ul></li><li><a href="/undergrads/finaid">Career Resources</a><ul ><li><a href="/undergrads/coop">Co-Op Program</a></li><li><a href="/undergrads/internships">Internships</a></li><li><a href="/undergrads/opportunities">CS Student Jobs</a></li></ul></li><li><a href="/undergrads/crc">Peer Tutoring</a></li></ul></li><li><a href="/grads">Graduate</a><ul ><li><span class="title">Courses</span><ul ><li><a href="http://www.courses.as.pitt.edu/" target="_blank">Course Descriptions</a></li><li><a href="http://www.registrar.pitt.edu/courseclass.html" target="_blank">Course Schedule</a></li><li><a href="https://oldwww.cs.pitt.edu/grad/courses/index.php" target="_blank">Internal Course Descriptions</a></li><li><a href="https://oldwww.cs.pitt.edu/schedule/" target="_blank">Internal Course Schedule</a></li></ul></li><li><a href="/grads/admission">Admissions</a></li><li><span class="title">Graduate Handbook</span><ul ><li><a href="/grads/regulationsPages#3">PhD Degree</a></li><li><a href="/grads/regulationsPages#4">MS Degree</a></li></ul></li><li><a href="/grads/dualms">Dual MS Degree</a></li><li><a href="/grads/forms">Grad Forms</a></li></ul></li><li><span class="title">News & Events</span><ul ><li><a href="/News">News</a><ul ><li><a href="/News/PressReleases">Press Releases</a></li><li><a href="/News/Accolades">Accolades</a></li><li><a href="/News/OutreachNews">Outreach News</a></li><li><a href="/News/DepartmentalNews">Departmental News</a></li></ul></li><li><a href="/events">Events</a><ul ><li><a href="/events/TechnicalTalks">Technical Talks</a></li><li><a href="/events/colloquiums">Colloquiums</a></li><li><a href="/events/BrownBagLunchSeries">Brown Bag Lunch Series</a></li><li><a href="/events/Hackathons">Hackathons</a></li><li><a href="/events/CSDay">CS Day</a></li><li><a href="/events/archive">Archive</a></li></ul></li><li><a href="/gallery">Photo Gallery</a></li></ul></li><li><a href="/outreach">Outreach</a><ul ><li><a href="/outreach/WomenDiversityInitiatives">Women / Diversity</a></li><li><a href="/outreach/K12Outreach">K - 12 Outreach</a></li><li><a href="/outreach/corporateRelations">Corporate Relations</a><ul ><li><a href="/outreach/industryBoard">Industry Board</a></li></ul></li><li><a href="/outreach/AlumniRelations">Alumni Relations</a></li><li><a href="/outreach/scholarships">Scholarships</a></li><li><a href="/News/OutreachNews">Outreach News</a></li></ul></li></ul></div>
+				</div>
+			</div>
+			</nav>			<i class="fa fa-search" id="globalSearch" onclick="document.querySelector('#cardFront').classList.toggle('flip');document.querySelector('#cardBack').classList.toggle('flip');"></i>
+		</div>
+	</header>
+						<div id="content">
+				<div class="container_16">
+					<div id="sidebar" class="grid_4">
+						<nav><h2>QUICKLINKS</h2><ul><li><a href="/people/faculty/tenure_stream">Faculty</a></li><li><a href="/people/staff">Staff</a></li><li><a href="/people/grad">Graduate Students</a></li><li><a href="/people/visiting_scholar">Visiting Scholars</a></li><li><a href="http://industryboard.cs.pitt.edu/board.php" target="_blank">Industry Board</a></li><li><a href="/people">Directory</a></li></ul></nav>						<div id="eventWrapper">
+							<h2>Upcoming Events</h2>
+							<ul id="eventList">
+																	<li>
+									<span class="dateBullet">
+										17<br/>Nov									</span>
+									<span class="title multiline">
+										FedEx Information Session									</span>
+									</li>
+																	<li>
+									<span class="dateBullet">
+										17<br/>Nov									</span>
+									<span class="title multiline">
+										WiCS Meeting									</span>
+									</li>
+																	<li>
+									<span class="dateBullet">
+										18<br/>Nov									</span>
+									<span class="title multiline">
+										 Toward Next Generation Mobile Learning									</span>
+									</li>
+																	<li>
+									<span class="dateBullet">
+										18<br/>Nov									</span>
+									<span class="title multiline">
+										Highmark Info Session									</span>
+									</li>
+																	<li>
+									<span class="dateBullet">
+										19<br/>Nov									</span>
+									<span class="title multiline">
+										GrapeCity Echo Conference									</span>
+									</li>
+															</ul>
+							<a href="/events" id="moreEvents">[Event Calendar]</a>						</div>
+					</div>
+					<div id="main" class="grid_12">
+						<div class="personBox">
+	<img src="/img/users/default.png" class="personImage" alt="" />	<div class="personInfo">
+		<h1>Yingjie Tang</h1>
+		<h2></h2>
+		<table>
+			<tr>
+				<th>Email:</th>
+				<td>
+					<span class="email"><n uers="znvygb:lwgnat@pf.cvgg.rqh">lwgnat@pf.cvgg.rqh</n></span>				</td>
+			</tr>
+			<tr>
+				<th>Office:</th>
+				<td></td>
+			</tr>
+			<tr>
+				<th>Mailbox:</th>
+				<td>
+									</td>
+			</tr>
+			<tr><th>Telephone:</th><td></td></tr>
+			<tr>
+				<th>Website:</th>
+				<td>
+									</td>
+			</tr>
+		</table>
+	</div>
+</div>
+<script type="text/javascript" src="/js/people.js"></script>					</div>
+				</div>
+			</div>
+			<footer>
+		<div id="footer" class="container_16">
+			<div id="footerCols">
+				<div class="grid_3" id="footerLinks">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/research">Research</a></li>
+					<li><a href="/undergrads">Undergraduate</a></li>
+					<li><a href="/grads">Graduate</a></li>
+					<li><a href="/outreach">Outreach</a></li>
+					<li><a href="http://my.pitt.edu">My Pitt</a></li>
+					<li>
+						<a href="/login">Login</a>					</li>
+				</ul>
+				</div>
+				<div class="grid_6" id="pittNews">
+					<h2>Latest Pitt News</h2>
+					<ul>
+													<li>
+								<a href="http://www.news.pitt.edu/news/reduce-risk-infant-death-shed-excess-pounds-becoming-pregnant">To Reduce Risk of Infant Death, Shed Excess Pounds Before Becoming Pregnant</a>							</li>
+													<li>
+								<a href="http://www.news.pitt.edu/news/hail-paris">Hail to Paris</a>							</li>
+													<li>
+								<a href="http://www.news.pitt.edu/news/pitt-and-upmc-host-pulmonary-hypertension-research-day">Pitt and UPMC Host Pulmonary Hypertension Research Day</a>							</li>
+											</ul>
+					<a href="http://www.news.pitt.edu" class="more">[More Pitt News]</a>				</div>
+				<div class="grid_3" id="visitUs">
+					<h2>CONTACT US</h2>
+					<p>
+						Dept of Computer Science<br />
+						6135 Sennott Square<br />
+						210 S Bouquet St<br />
+						Pittsburgh, PA 15260-9161<br />
+						USA
+					</p>
+					<p>
+						Tel: 412-624-8490<br />
+						Fax: 412-624-8854
+					</p>
+				</div>
+				<div class="grid_4" id="contactUs">
+					<h2>CONNECT WITH US</h2>
+					<p>
+						<a href="//www.facebook.com/pittcomputerscience"><img src="/img/social/fb.png" alt="" /></a><a href="//twitter.com/PittCompSci"><img src="/img/social/twitter.png" alt="" /></a><a href="//www.linkedin.com/groupInvitation?groupID=1782392&amp;sharedKey=2F738D0E72F3"><img src="/img/social/linkedin.png" alt="" /></a><a href="//plus.google.com/communities/112792463665301126749"><img src="/img/social/googleplus.png" alt="" /></a><a href="//www.youtube.com/user/CSatPitt"><img src="/img/social/youtube.png" alt="" /></a>					</p>
+					<p>
+						<a href="https://secure.giveto.pitt.edu/ascomsc" class="give"><img src="/img/give.png" alt="" /></a>					</p>
+				</div>
+			</div>
+			<div id="copyright">
+			<i class="fa fa-copyright"></i> 2015 Department Of Computer Science
+			</div>
+		</div>
+	</footer>
+	</body>
+</html>

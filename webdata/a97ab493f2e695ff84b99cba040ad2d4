@@ -1,0 +1,67 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Microsoft .NET Presentation</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="100%">
+    <tr>
+        <td valign="top"><a href="slide-15.htm"><img
+        src="previous.gif" border="0" width="26" height="26"></a></td>
+        <td align="center" valign="top"><h1>.NET's Approach</h1>
+        </td>
+        <td align="right" valign="top"><a href="slide-17.htm"><img
+        src="next.gif" border="0" width="26" height="26"></a></td>
+    </tr>
+</table>
+
+<p><font color="#000000" size="4">The reason why these libraries
+fall prey to DLL Hell is that neither the applications nor the
+libraries they use are self-containing or self-describing and
+uncontrolled component sharing.</font></p>
+
+<h2>.NET vs. DLL Hell</h2>
+
+<ul>
+    <li><font size="4">All applications are self-describing. This
+        eliminates the central registry, and thus simplifies
+        install replication and uninstall.</font></li>
+    <li><font size="4">Version information regarding application
+        library usage and the libraries themselves are enforced,
+        to ensure that applications load the appropriate version
+        of the libraries they need.</font></li>
+    <li><font size="4">.NET remembers the &quot;last known good&quot;
+        - the last component and version combination known to
+        have successfully worked with an application.</font></li>
+    <li><font size="4">.NET supports &quot;side-by-side&quot;.
+        Component callers may explicitly specify the version they
+        need to load, or may allow .NET freedom to locate the
+        most recent version of a component they need. This means
+        that multiple versions of the exact same component may
+        exist on a system without conflict with each other.</font><ul>
+            <li><font size="4">The .NET Framework itself is
+                versioned in this manner. Hence, it too can be
+                upgraded and improved without fearing system
+                breakdown.</font></li>
+        </ul>
+    </li>
+    <li><font size="4">Isolation of applications are supported.
+        Changes libraries internal to one application have no
+        effect on another (more or less given). Changes to shared
+        libraries used by multiple applications will only affect
+        those applications that allow it.</font></li>
+</ul>
+
+<p><font size="4">.NET accomplishes this through its basic unit
+of logical functionality: the &quot;assembly&quot;.</font></p>
+
+<hr>
+
+<p><a href="references.htm"><em>References</em></a><em>: D</em></p>
+</body>
+</html>

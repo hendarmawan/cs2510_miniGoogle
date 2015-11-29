@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//w3c//dtd html 4.0 transitional//en">
+<html><head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="Baptiste">
+   <meta name="GENERATOR" content="Mozilla/4.6 [fr] (WinNT; I) [Netscape]"><title>Accepted Papers MAPS01</title></head>
+
+<body>
+
+<center><b><font color="#ff6600"><font size="+2">Accepted Papers</font></font></b></center>
+
+<blockquote>
+<li>
+Aerts, Korst and Verhaegh. Multiprocessor scheduling with machine eligibility:
+time complexity results.</li>
+
+<li>
+Agnetis, Hall and Pacciarelli. Sequence coordination in supply chains.</li>
+
+<li>
+Alfieri, Nicosia and Agnetis. Part batching and scheduling in a flexible
+cell to minimize setup costs.</li>
+
+<li>
+Aloulou, Kovalyov and Portmann. Single machine scheduling to maximize maximum
+cost. Single machine scheduling to maximize maximum cost</li>
+
+<li>
+Ammerlaan and van de Velde. Prodcution planning and scheduling of a foundry.</li>
+
+<li>
+Anderson and Potts. On-line scheduling of a single machine to minimize
+total weighted completion time.</li>
+
+<li>
+Angel and Bampis. A multi-start Dynasearch algorithm for the time dependant
+single machine total weighted tardiness scheduling problem.</li>
+
+<li>
+Angelelli, Speranza and Tuza. Semi on-line scheduling problems on two parallel
+processors with bounds on the tasks.</li>
+
+<li>
+Artigues, Demassey and Michelon. A new LP based lower bound for the RCPSP.</li>
+
+<li>
+Babu, Peridy and Pinson. Single machine total weighted tardiness scheduling
+problem.</li>
+
+<li>
+Bachman and Janiak. Complexity results for some scheduling problems with
+time-dependent processing times to minimize the total weighted completion
+time.</li>
+
+<li>
+Baldacci and Dell'Amico. Optimization of a large scale planning and scheduling problem
+in a business-to-buisness context.</li>
+
+<li>
+Bampis, Giroudeau and Kononov. Scheduling tasks with small hierarchical
+communication delays.</li>
+
+<li>
+Baptiste. Preemptive scheduling of Identical machines.</li>
+
+<li>
+Blazewicz, Finke and Pawlak. Circular-Arc Graph model for FMS.</li>
+
+<li>
+Blazewicz, Pesch and Sterna. Tabu search approach for FMS scheduling.</li>
+
+<li>
+Brasel and Dhamala. On groups in the set of sequences.</li>
+
+<li>
+Brauner, Crama, Grigoriev and van de Klundert. On the complexity of high
+multiplicity scheduling problems.</li>
+
+<li>
+Brucker, Heitmann and Hurink. Flow-Shop Problems with intermedfiate buffers.</li>
+
+<li>
+Caramia, Dell'Olmo and Iovanella. New lower bound algorithms for multiprocessor
+task scheduling with ready times.</li>
+
+<li>
+Cheng, Kovalyov and Shakhlevich. Scheduling with controllable release dates
+and processing times.</li>
+
+<li>
+Chrobak, Csirik, Imreh, Noga, Sgall and Woeginger. The buffer minimization
+problem for scheduling with conflicts.</li>
+
+<li>
+Chu and Gordon. Scheduling with due date determination under TWK model:
+NP-Hardness and polynomially solvable case.</li>
+
+<li>
+De Bontridder. A purchase lot sizing problem with quantity discount.</li>
+
+<li>
+Della'Croce and T'kindt. A recoveriung Beam search algorithm for the one
+machine dynamic total completion time scheduling problem.</li>
+
+<li>
+Den Boef, Verhaegh and Korst. Smoothing streams in an in-home digital network.</li>
+
+<li>
+Dolgui and Sotskova. Stability analysis for assembly lines sequencing with
+uncertain processing times.</li>
+
+<li>
+Drobouchevitch, Sethi, Sidney and Sriskandarajah. Scheduling multiple parts
+in two-machines dual-gripper robot cells: heuristic algorithms and performance
+guarantee.</li>
+
+<li>
+Drozdowski and Wolniewicz. Scheduling divisible loads in systems with limited
+memory.</li>
+
+<li>
+Erlebach and Spieksma. On a weighted interval selection problem: applications,
+algortihms and approximation.</li>
+
+<li>
+Franca, Junior and Buriol. The non-wait flowshop problem with sequence
+dependent setup times and release dates.</li>
+
+<li>
+Gawiejnowicz, Kononov and Lai. Scheduling time-dependant tasks subject
+to precedence constraints.</li>
+
+<li>
+Gawiejnowicz, Kurc and Pankowska. Polynomial time solution of a bicriterion
+single machine time dependent scheduling problem.</li>
+
+<li>
+Gimadi, Zalyubovsky and Sevastianov. On polynomial solvability of the Resource
+Constrained Project Scheduling problem under stored resources.</li>
+
+<li>
+Hanen, Munier, Singh and Zinder. Priority algorithms for scheduling on
+parallel processors with precedence constraints.</li>
+
+<li>
+Hou and Hoogeven. The three machine proportionate flowshop problem with
+unequal machine speeds.</li>
+
+<li>
+Hurink and Knust. List scheduling in a parallel machine environment with
+precedence constraints and setup times.</li>
+
+<li>
+Janiak, Kovalyov and Portmann. Single machine group scheduling with resource
+dependent setup and processing times.</li>
+
+<li>
+Jeunehomme, Legait, Baptiste. Hoist Scheduling Problem: A real time approach
+based on taboo search.</li>
+
+<li>
+Jouglet, Baptiste and Carlier. Minimizing total tardiness on one machine
+with release dates.</li>
+
+<li>
+Jozefowska, Mika, Rozycki, Waligora and Weglarz. An almost optimal heuristic
+for preemptive Cmax scheduling of dependant jobs on identical parallel
+machines.</li>
+
+<li>
+Kellerer and Strusevich. Scheduling problems for parallel dedicated machines
+under resource constraints.</li>
+
+<li>
+Kis. Solving the job-insertion problem by branch-and-bound.</li>
+
+<li>
+Kubiak. Scheduling half-products.</li>
+
+<li>
+Lazarev and Kvaratskhelia. Experimental Research of Measure of Decidability for Minimizing Total Tardiness on a Single Machine.</li>
+
+<li>
+Lichtenstein, Oguz, Do and Zinder. Deterministic scheduling problems with multiprocessor
+tasks: NP-hardness results, polynomilally sovable cases and approximation
+algorithms.</li>
+
+<li>
+Lorigeon, Bouquard and Billaut. Two machines openshop scheduling problems
+with availability constraint.</li>
+
+<li>
+Marte. Tracks and Symmetry Exclusion in School Timetabling.</li>
+
+<li>
+Mascis and Pacciarelli. Train scheduling on rail networks at the operational
+level.</li>
+
+<li>
+Mastrolilli. Core instances for Constrained Scheduling problems.</li>
+
+<li>
+Mattfeld and Branke. A modification to performance criteria for non-deterministic
+scheduling problems.</li>
+
+<li>
+Michiels and Korst. Performance ratios for the grouped best fit algorithm.</li>
+
+<li>
+Nazarathy and Weiss. Fluid Heuristics for Job Shop Scheduling.</li>
+
+<li>
+Oguz, Hou. A heuristic algorithm for scheduling multiprocessor tasks with
+precedence cosntraints.</li>
+
+<li>
+Prianichnikova. Off-line scheduling for a communication system in air traffic
+control.</li>
+
+<li>
+Pruhs. Minimizing weighted flow time with preemption.</li>
+
+<li>
+Salido and Barber. Preprocessing algorithms for non-binary disjunctive
+constraints in scheduling problems; Application to non-linear constraints</li>
+
+<li>
+Schuurman and Vredeveld. Performance guarantees of loca search for multiprocessor
+scheduling.</li>
+
+<li>
+Servakh. A dynamic programming algorithm for scheduling under resource
+constraints.</li>
+
+<li>
+Sevastianov and Tchernykh. 4-Parameter complexity analysis of the open-shop
+problem.</li>
+
+<li>
+Siraev. An experimental study of approximation algorithms to minimize total
+weighted completion time with precedence constraints.</li>
+
+<li>
+Sitters. On the complexity of scheduling unrelated parallel machines.</li>
+
+<li>
+Sotskov and Allahverdi. Two-machine flowshop scheduling with bounded processing
+times.</li>
+
+<li>
+Soukhal and Martineau. Mathematical programming model for flowshop robotic
+cell.</li>
+
+<li>
+Szwarc, Grosso and Della Croce. Algorithmic paradoxes of the single machine
+total tardiness problem.</li>
+
+<li>
+Willenius. How to solve a scheduling problem with uncertain numerical data.</li>
+</blockquote>
+
+</body></html>

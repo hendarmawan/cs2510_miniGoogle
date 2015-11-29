@@ -1,0 +1,35 @@
+<p>
+<a href="page3.html"><img src="previous.gif" align=left width="26" height="26"></a></p>
+<p><a href="page5.html"><img src="next.gif" align=right width="26" height="26"></a></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p align="center"><b><font size="6" face="Tahoma">Some Presentation Tools</font></b></p>
+<p align="center">&nbsp;</p>
+<p align="center"><b><font size="4" face="Tahoma">Microsoft PowerPoint</font></b></p>
+<p align="center">Single environment for creating presentation parameters.&nbsp; 
+The tool is geared towards ease of content creation, however the closed file 
+format limits us from doing too much outside of the application.</p>
+<p align="center">&nbsp;</p>
+<p align="center"><b><font face="Tahoma" size="4">Macromedia Director</font></b></p>
+<p align="center">Director is a cross-platform animation and authoring program.&nbsp; 
+It can create 3D media, interactive product demonstrations, and online learning 
+applications for the Web, CD, DVD and corporate intranets. The presentation can 
+be published to the Web and viewed via
+<a href="http://www.macromedia.com/software/shockwaveplayer/" target="_top">
+<font color="#ff6600">Shockwave Player</font></a>.</p>
+<p align="center">It is developed for both the MacOS (Apple's Macintosh 
+operating system) and MS-DOS/Windows/Win95 (Microsoft operating system and 
+related applications). Projects created on one platform can be run on the other, 
+but you must purchase and install two versions on the two platforms.&nbsp; 
+Again, we would prefer to have less restrictive platform.<br>
+&nbsp;</p>
+<p align="center">&nbsp;</p>
+<p align="center"><b><font face="Tahoma" size="4">Pure HTML</font></b></p>
+<p align="center">Most flexible option, but also requires more effort.&nbsp; 
+This is an open standard, so creation of a presentation is based on how a 
+browser will interpret the presentation.&nbsp; A custom solution can be coded - 
+the Growing Book for example.&nbsp; This also allows for a system of content 
+submission and management to be coded as well.&nbsp; As I'll be discussing, a 
+web portal provides a good example for presentation of HTML based media.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>

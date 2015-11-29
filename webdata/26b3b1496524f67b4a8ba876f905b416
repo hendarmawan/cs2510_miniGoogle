@@ -1,0 +1,26 @@
+<title>The Sentient Map</title>
+<a href="senmap6.htm"><img src="previous.gif" align=left></a>
+<a href="senmap7.htm"><img src="next.gif" align=right></a>
+<center>
+<h1>C-Gestures and Finger Gestures</h1>
+</center>
+<b>Basic gestures are represented by clicks, or c-gestures.
+In the future, finger gestures will be used:
+(1) To make a point gesture, the user moves his finger to
+<a href="point1.jpg">point at a sentient map</a> and
+rests his finger there for a few seconds.
+(2) To make a time-line gesture, the user first points
+at a sentient map, and then moves his finger to
+<a href="point2.jpg"> a second point on the map</a>
+and rests his finger there for a few seconds.
+(3) Finally, to make an area gesture, the user first points
+at a sentient map, then moves his finger to a second
+point, then <a href="point3.jpg"> a third point on the map</a>,
+and finally moves his finger <a href="point1.jpg">back to
+the original point</a>, and rests his finger there
+for a few seconds.
+</b><br>
+<img src="point1.jpg" width=180>
+<img src="point2.jpg" width=180>
+<img src="point3.jpg" width=180>
+

@@ -1,0 +1,122 @@
+<h3>Slow Intelligence Systems project suggestions</h3>
+
+(1) The current SIS testbed supports the development of
+SIS applications.  However, the SIS modules must be designed
+carefully and the messages clearly specified.  It will be
+nice to have a visual tool and a supporting environment
+to do SIS application development.  This project is
+implementation-oriented.
+You can build the visual tool and supporting environment
+on top of the SIS testbed.  The experimental application
+can be the healthcare application.
+
+<p>
+(2) The topic/trend analysis system can utilize SIS
+concepts.  In Shih's paper, four possible SIS sub-systems
+are suggested.  You can pick one of such SIS sub-system
+and work out the details.  This project is
+theoretically oriented.  You need to work out the
+mathematical model for the SIS sub-system.
+See the following  <a href="dms10sis.ppt">Powerpoint presentation</a>.
+
+<p>
+(3) Design of the Time Controller and the Knowledge Base.  The Time Controller
+and the Knowledge Base are what make SIS approach different
+from other evolutionary approaches.
+At the most simplistic level, the Time Controller is just
+a panic button (which can be modelled by a simple
+Petri net with a single transition), and the Knowledge
+Base is just a table.
+A more sophisticated Time Controller will have different
+states (or modes), modelled by a Petri net.
+In each different state a different KB can be used
+and a different decision cycle can be invoked.
+The initial state could be the state where the
+slow decision cycle is invoked.  In other words,
+if the Time Controller remains in the initial state,
+the SIS will operate in the slow decision cycle.
+If the Time Controller enters other states, other
+KB can be used and other decision cycle can be invoked.
+An interesting project can be the design of the Time
+Controller and the KB.
+
+<p>
+(4) Other topics such as the analysis of an existing
+social network as a SIS.  This kind of topic does
+not require programming or modeling.  It is a case
+study.
+
+<h3>Papers on Slow Intelligence Systems
+in DMS2010 Proceedings</h3>
+Dong paper<br><a href="18dong.pdf">18dong.pdf</a><br>
+<br>Dong powerpoint<br><a href="dms10dong.ppt">dms10dong.ppt</a><br>
+<a href="bird-rabbit-1-small.jpg">Bird and rabbit 1</a>
+<br><a href="bird-rabbit-2-small.jpg">Bird and rabbit 2</a><br>
+<br>Chang paper<br><a href="dms10v08.pdf">dms10v08.pdf</a><br>
+<br>Chang powerpoint<br><a href="dms10sis.ppt">dms10sis.ppt</a><br>
+<br>Colace paper<br><a href="56colace.pdf">56colace.pdf</a><br>
+<br>Colace powerpoint<br><a href="dms10net.ppt">dms10net.ppt</a><br>
+<br>Shih paper<br><a href="57shih.pdf">57shih.pdf</a><br>
+<br>Shih powerpoint<br><a href="57shih.ppt">57shih.ppt</a><br>
+<br>Shih paper references:<br>
+<a href="sisref/1.pdf">reference [1]</a>
+<br><a href="sisref/3.pdf">reference [3]</a>
+<br><a href="sisref/4.pdf">reference [4]</a>
+<br><a href="sisref/5.pdf">reference [5]</a>
+<br><a href="sisref/7.pdf">reference [7]</a>
+<br><a href="sisref/8.pdf">reference [8]</a>
+<br><a href="sisref/13.pdf">reference [13]</a>
+<br>Message exchanges in SIS system<br>
+<img src="SISsystem.jpg">
+<br><br>SIS system for human vision<br>
+<img src="SISdiagram.gif">
+
+
+<h3>Seminars and Projects</h3>
+
+<br><a href="ms1hu.htm">ms1hu.htm</a>
+<br><a href="ms2hu.doc">ms2hu.doc</a>
+<br><a href="cs2650hu.zip">cs2650hu.zip</a>
+<br><a href="sem-hu.ppt">sem-hu.ppt</a>
+<br><a href="ms1kim">ms1kim</a>
+<br><a href="ms2kim.doc">ms2kim.doc</a>
+<br><a href="cs2650kimhu.zip">cs2650kimhu.zip</a>
+<br><a href="sem-kim.pptx">sem-kim.pptx</a>
+<br><a href="ms1lin">ms1lin</a>
+<br><a href="ms2lin.docx">ms2lin.docx</a>
+<br><a href="cs2650lin.zip">cs2650lin.zip</a>
+<br><a href="sem-lin.docx">sem-lin.docx</a>
+<br><a href="ms1nawn">ms1nawn</a>
+<br><a href="ms2nawn.doc">ms2nawn.doc</a>
+<br><a href="cs2650nawn.zip">cs2650nawn.zip</a>
+<br><a href="sem-nawn.ppt">sem-nawn.ppt</a>
+<br><a href="ms1shaw">ms1shaw</a>
+<br><a href="ms2shaw">ms2shaw</a>
+<br><a href="cs2650shaw.zip">cs2650shaw.zip</a>
+<br><a href="cs2650shawEx4.zip">cs2650shawEx4.zip</a>
+<br><a href="cs2650shawMan.doc">cs2650shawMan.doc</a>
+<br><a href="sem-shaw.ppt">sem-shaw.ppt</a>
+<br><a href="ms1sun.htm">ms1sun.htm</a>
+<br><a href="prjRemote.jar">cs2650sun ms2sun prjRemote.jar</a>
+<br><a href="sem-sunReNew.ppt">sem-sunReNew.ppt</a>
+<br><a href="ms1sz">ms1sz</a>
+<br><a h ref="ms2sz">ms2sz</a>
+<br><a href="sem-sz.ppt">sem-sz.ppt</a>
+<br><a href="ms1wang">ms1wang</a>
+<br><a href="ms2wang.doc">ms2wang.doc</a>
+<br><a href="cs2650wang.doc">cs2650wang.doc</a>
+<br><a href="cs2650wang.zip">cs2650wang.zip</a>
+<br><a href="sem-wang.ppt">sem-wang.ppt</a>
+<br><a href="ms1xu">ms1xu</a>
+<br><a href="ms2xu">ms2xu</a>
+<br><a href="cs2650xu.zip">cs2650xu.zip</a>
+<br><a href="cs2650Pipe3_demo.avi">cs2650Pipe3_demo.avi</a>
+<br><a href="sem-xuPipe2.ppt">sem-xuPipe2.ppt</a>
+<br><a href="ms1zim">ms1zim</a>
+<br><a href="ms2zim.doc">ms2zim.doc</a>
+<br><a href="cs2650zim.zip">cs2650zim.zip</a>
+<br><a href="sem-zim.ppt">sem-zim.ppt</a>
+<br><a href="zim/imaginedcom.pdf">paper imaginedcom.pdf</a>
+<br><a href="zim/noyb.pdf">paper noyb.pdf</a>
+<br><a href="zim/inforevelation.pdf">paper inforevelation.pdf</a>
+<br><a href="zim/measureprivacyrisk.pdf">paper measureprivacyrisk.pdf</a>

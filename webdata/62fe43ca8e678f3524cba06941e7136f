@@ -1,0 +1,17 @@
+<title> Multimedia Functional Dependency </title>
+<A HREF="../231syl.html"><IMG SRC="previous.gif" align=left></A>
+<A HREF="fd2.htm"><IMG SRC="next.gif" align=right></A>
+<center>
+<h1>
+Multimedia Functional Dependency</h1>
+</center>
+<center>
+<img src="car.gif">
+</center>
+<h3>
+The above example illustrates we need to extend the
+usual notion of functional dependency to handle
+multimedia data models.
+</h3>
+
+

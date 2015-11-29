@@ -1,0 +1,80 @@
+<HTML>
+<HEAD><TITLE>CS2310 Seminar -- By Suresh Rangan</TITLE></HEAD>
+
+<BODY>
+
+<A href="index.html" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="Introduction.html"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1><font color="mediumblue">Contents</font></H1>
+</CENTER>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><font color="mediumblue" size="5">What is VC Transcript ?</font></LI>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><FONT size=5><font color="mediumblue">Applications and Configuration
+        Files Download</font>.</FONT></LI>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><FONT size=5><font color="mediumblue">Configuring Application To Run</font>.
+        </FONT></LI>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><font size="5"><font color="mediumblue">Scope of This Project : USE
+        CASE DIAGRAM</font></font></LI>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <LI><font color="mediumblue" size="5">Activity Diagram</font></LI>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <li><font color="mediumblue" size="5">Class Diagram</font></li>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <li><font color="mediumblue" size="5">Class Documentation</font></li>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <li><font color="mediumblue" size="5">Interaction Diagram - 1</font></li>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <li><font color="mediumblue" size="5">Interaction Diagram - 2</font></li>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <li><font color="mediumblue" size="5">Application USAGE</font>
+        <p><font size="5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b><span style="FONT-FAMILY: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">Execute
+        the runRIIndex.bat</span></b>
+        </font>
+        <p><b><span style="FONT-FAMILY: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA"><font size="5">&nbsp;&nbsp;
+        &nbsp;&nbsp;&nbsp;&nbsp; Select Convert VC to XML function from menu</font></span></b></p>
+        <p><font size="5">&nbsp;&nbsp; <b><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <span style="FONT-FAMILY: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">SEARCH
+        VC Text Mining</span></span></b></font></li>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <li><font color="mediumblue" size="5">Conclusion</font></li>
+</UL></UL></UL></UL></UL></UL></UL>
+
+<UL><UL><UL><UL><UL><UL><UL>
+       <li><font color="mediumblue" size="5">References</font>
+        <p>&nbsp;</p>
+        <p></p>
+        <p>&nbsp;&nbsp; <font size="5"><b><span style="font-family: Times New Roman; mso-fareast-font-family: Times New Roman; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA">&nbsp;
+        </span></b> <br>
+        </font></li>
+</UL></UL></UL></UL></UL></UL></UL>
+
+</BODY>
+</HTML>
+

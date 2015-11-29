@@ -1,0 +1,42 @@
+<title>Content Based Retrieval</title>
+
+<a href="c3-2.html"><IMG
+SRC="../previous.gif" align=left></a>
+
+<a href="c3-4.html"><IMG SRC="../next.gif" align=right></a>
+
+<center><h1>Content Based Retrieval</center>
+<center><h1>Approximate Matching</h1></center>
+<h3>
+<br>
+<br>
+<ul>
+<li> If we want to find objects that are similar, by what terms do we
+define "similarity"?
+<P>
+<li> Use a <B>Transformation Function</B>
+<br> -it can let the user decide what similarities to look for
+<br> -we can take these similarities and map objects in attribute space so
+     that "like" objects are mapped closer than unlike ones
+<P>
+<li> Shape Similarity Example
+<br> -We want to find objects with little area difference when the two
+      objects are place over each other 
+    <ul>
+    <li> Blur the query point
+    <li> Only look at the first k rectangles since these are increasingly
+         good approximations of the shapes
+    <li> Problems
+        <ul>
+        - Multiple Representations
+        <ul> Possible solutions: store all representations in DB -BIG DB
+        <br> at query time, query for all reresentations of the query
+             object and take union of these -Longer query time
+        </ul>
+        - Dimension Mismatch
+        <ul> Add Dummy rectangles of size zero
+        </ul>
+
+    </ul>
+    
+    <li> Experiment and Results

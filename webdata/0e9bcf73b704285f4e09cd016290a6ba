@@ -1,0 +1,38 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>AK02</title>
+</head>
+
+<body BGCOLOR="#C0C0C0">
+<A HREF="AK01.htm"><IMG SRC="previous.gif" align=left width="26" height="26"> </A>
+<A HREF="page3.htm"><IMG SRC="next.gif" align=right width="26" height="26"> </A>
+<ul>
+<center> <h2><font color =blue >What is CORBA? </font>
+</center>
+<p align="center">
+<img border="0" src="logo-corba_vertical.gif" width="124" height="109"></p>
+<ul>
+  <li>
+  <p align="left"><font size="5" color=red>The Common Object Request Broker Architecture 
+  (CORBA)</font> enables software applications to invoke operations on distributed 
+  objects without concern for object location, programming language, operating 
+  system communication protocols, interconnections, or hardware platform. 
+  </li>
+</ul>
+  <p align="left">&nbsp;<ul>
+  <li>
+  <p align="left"><font size="5" color=red>The CORBA specification is controlled by the 
+  Object Management Group (OMG)</font>, an open consortium of more than 700 companies 
+  that work together to define open standards for distributed computing. 
+  (http://www.omg.org)</li>
+</ul>
+  <p align="left">&nbsp;<ul>
+  <li>
+  <p align="left"><font size="5">OMG is responsible for standardizing an open 
+  middleware specification to support distributed systems. </font></li>
+</ul>
+

@@ -1,0 +1,24 @@
+<html>
+
+ <head>
+ <title> Multimedia Software Engineering </title>
+ </head>
+
+ <A HREF="c06.htm">  <IMG SRC="previous.gif" align=left>  </A>
+ <A HREF="03.html">  <IMG SRC="next.gif" align=right>  </A>
+ <center>
+ <h1>
+CRC Cards
+ </h1>
+ </center>
+ <ul>
+  <li><B><P>Background</li></B></P>
+  <li><B><P>What is CRC card?</li></B></P>
+  <li><B><P>Two features of the CRC card</li></B></P>
+  <li><B><P>An example of CRC cards</li></B></P>
+  <li><B><P>Strength and weakness of CRC card</li></B></P>
+  <li><B><P>An example technique based on CRC card</li></B></P>
+  <li><B><P>Summary</li></B></P>
+ </ul>
+</html>
+

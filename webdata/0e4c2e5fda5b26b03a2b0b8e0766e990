@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Jingtao's Homepage">
+    <meta name="author" content="Jingtao Wang">
+
+
+    <title>Welcome to Jingtao Wang's Homepage</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <style>
+    body {
+        padding-top: 70px;
+        /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    }
+    </style>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#jingtaow-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>                    
+                </button>
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-home" id="homeIcon"></span> Home</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="jingtaow-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li> <a href="teaching.html">Teaching</a> </li>
+                    <li> <a href="projects.html">Projects</a> </li>
+                    <li> <a href="publications.html">Publications</a> </li>
+                    <li> <a href="downloads.html">Downloads</a> </li> 
+                    <li> <a href="http://mips.lrdc.pitt.edu"><font color="#00CC99"><b><abbr title="Mobile Interfaces and Pedagogical Systems">MIPS</b> Lab</abbr></font></a> </li>                     
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+            <div class="col-lg-2 col-md-2 col-sm-2"> <br/><br/> <a href="jingtaow_full.jpg"><img  class="img-responsive"  src="jingtaow.jpg" alt="Jingtao's Photo"></a> </div> 
+            <div class="row">
+                <div class="col-lg-9 col-md-9 col-sm-9"><h2>Jingtao Wang</h2>
+                                        <h4>Assistant Professor</h4>
+                                        <a href="http://mips.lrdc.pitt.edu">Mobile Interfaces and Pedagogical Systems (MIPS) Group</a><br/>
+                                        E-Mail:  <a href="mailto:jingtaow{_at_} cs {dot} pitt {dot} edu"><img border="0" src="email2.png"></a><br/> 
+                                        <br/>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6">                    
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Department of Computer Science</div>
+                            <div class="panel-body">210 S Bouquet Street, Room 5423</br>
+                                        University of Pittsburgh  <br/>
+                                        Pittsburgh, PA 15260  <br/>
+                                        Phone: 412-624-8454<br/>
+                            </div>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 col-md-5 col-sm-6">
+                    <div class="panel-group">
+                        <div class="panel panel-default">
+                            <div class="panel-heading">Learning Research and Development Center</div>
+                            <div class="panel-body">3939 O'Hara Street, Room 702</br>
+                                        University of Pittsburgh  <br/>
+                                        Pittsburgh, PA 15260  <br/>
+                                        Phone: 412-624-7498  <br/>                          
+                            </div>
+                        </div>
+                    </div>             
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+<br/>
+
+<P>Jingtao Wang is an Assistant Professor in Computer Science and LRDC at the University of Pittsburgh. He leads the <a href="http://mips.lrdc.pitt.edu">Mobile Interfaces and Pedagogical Systems (MIPS) Research Group</a>. His primary research direction is Human-Computer Interaction. Jingtao's research interests include Mobile Interfaces, Education/Learning Technology, Intelligent User Interfaces, and End-User Programming. Jingtao received his Ph.D. in <a href="http://www.cs.berkeley.edu">Computer Science</a> from 
+<a href="http://www.berkeley.edu">UC Berkeley</a>, Master degree in <a href="http://www.aiar.xjtu.edu.cn">Computer Engineering</a>, Bachelor degree in E.E. both from <a href="http://www.xjtu.edu.cn">Xi'an Jiaotong University</a>, China.</P>  
+
+<a href="http://mips.lrdc.pitt.edu">MIPS Lab</a>, <a href="teaching.html">teaching</a>, <a href="publications.html">recent publications</a>, and <a href="jingtaow-cv.pdf">CV</a>.
+
+
+         <hr>
+
+
+        <h3>Recent News</h3>
+        <ul>
+          <li>I have received a NVIDIA Academic Hardware Grant for using deep learning to enhance <a href="http://www.attentivelearner.com">mobile MOOC learning</a>.
+          <li>CourseMIRROR is available on <a href="https://itunes.apple.com/us/app/coursemirror-from-mips-research/id1039044798?mt=8">Apple iOS App Store</a> now.</>
+          <li>The class website for <a href="http://mips.lrdc.pitt.edu/cs2610-fall15/">CS2610 Fall 2015</a> is online. <span class="label label-info">New</span> </li>
+          <li>MindMiner's <a href="http://mips.lrdc.pitt.edu/mindminer">public website</a> is online.</>
+          <li>AttentiveLearner's <a href="http://www.attentivelearner.com">public website</a> is online.</>
+           <li>We have released the <a href="http://mips.lrdc.pitt.edu/livepulsegames">source code of LivePulse Games</a> under BSD license.</li>
+           <li>We have released the <a href="http://mips.lrdc.pitt.edu/bayesheart">source code of BayesHeart</a> under BSD license.</li>
+          <li>CourseMIRROR's <a href="http://www.coursemirror.com">public website</a> is online.</>
+          <li>CourseMIRROR is available on <a href="https://play.google.com/store/apps/details?id=edu.pitt.cs.mips.coursemirror">Google Play</a> now.</>
+          <li>The class website for <a href="http://mips.lrdc.pitt.edu/cs2610-fall14/">CS2610 Fall 2014</a> is online. </li>
+           <li>We have released the <a href="http://mips.lrdc.pitt.edu/lensgesture">source code of LensGesture</a> under BSD license.</li>
+        </ul>
+
+        <br/>
+        <br/>
+        <br/>
+
+        <div class="well well-sm">Last modified: 08/02/2015 5:13:05 PM </div>
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+
+<!DOCTYPE html -//W3C//DTD HTML 4.01 Transitional/EN>
+<html>
+<head>
+   <meta charset="UTF-8"> -->
+   <meta http-equiv="refresh" content="1;url=http://www.ward-art.com"> 
+   <script type="text/javascript"> 
+     window.location.href = "http://www.ward-art.com" 
+   </script> 
+
+<title>My site has moved. Please update your links.</title>
+<script type="text/javascript">
+<!-
+window.location="www.ward-art.com"
+//->
+</script>
+</head>
+<body>
+
+   My page has moved to "www.ward-art.com." If you are not redirected
+   automatically, please follow the 
+<a href='http://www.ward-art.com'>link to my new page.</a> 
+</body> 
+</html>
+
+

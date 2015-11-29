@@ -1,0 +1,28 @@
+<HTML><HEAD><TITLE>CS2310 Project -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="03.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="05.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>    Design Petri Net    Model</H1>
+<H1><FONT color=mediumblue>      Assumption</FONT></H1>
+</CENTER>
+
+<UL><UL><UL> <UL><UL>
+  <LI><FONT size=5>Assume there are two streets 
+          (NS/EW), and the lights are set to the same for the opposite 
+          directions (N with S, and E with W); </FONT>
+          <LI><FONT size=5>Average stop time (Yellow light 
+          duration) is set to be constant;</FONT>
+          <LI><FONT size=5>Considering the very possibility 
+          of drivers’ driving through Red lights, set some constant elapsing 
+          time (VR) between the NS’s change to Green and EW’s change to Red, and 
+          vs.</FONT></LI></UL></UL></UL></UL></UL>
+
+<CENTER><IMG src="images/interface.jpg"></CENTER>
+
+</BODY></HTML>
+

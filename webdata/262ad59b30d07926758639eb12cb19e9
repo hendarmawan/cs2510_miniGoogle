@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link href="images/main.css" rel="stylesheet" type="text/css" />
+    <title>Fan Zhang</title>
+</head>
+<body>
+<div id ="container">
+    <div id = "navdiv">
+                    <ul class = "mainlinks">
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan" ><b><font face='Helvetica' size = '3'>Home</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/misc.html" class="selected"><b><font face='Helvetica' size = '3'>Misc</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/research.html"><b><font face='Helvetica' size = '3'>Research</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/experiences.html" ><b><font face='Helvetica' size = '3'>Experiences</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/about.html" ><b><font face='Helvetica' size = '3'>About</font></b></a></li>
+                </ul>
+    </div>
+	<div id="content">
+		
+		<h2>Interests
+	</h2>
+    
+    I enjoy a variety of stuff, and my favorite hobby always changes, and I am not an expert in any of them. Here is a list (but not complete): Badminton, Table Tennis, Basketball, Hiking, History, Nunchaku, Anime
+	<br>
+    <br>
+    I also enjoy watching soccer (but I don't really play it). My favorite clubs are <a href = "http://www.fcbarcelona.com/">Barcelona</a> and <a href = "http://www.arsenal.com/home">Arsenal</a>. My officemate loves Real Madrid but we haven't fight each other (so far) so this indicates that we are both very nice and tolerant :-) 
+	
+    <h2> Comprehensive Exam </h2>
+	<a href="complist.html">paper list</a>
+
+		<div id="contentsidebar">
+<img src="./photos/football(small).png">
+	</div>
+	</div>
+</div>
+</body>
+</html>
+

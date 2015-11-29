@@ -1,0 +1,119 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+<title>NIH project</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="banner">
+<h2> 
+Interactive Search and Review of Clinical Records with Multi-layered
+Semantic
+Annotations
+</h2>
+<span class="description">
+Joint work with Wendy Chapman (UCSD), Harry Hockheiser
+(U. Pittsburgh), 
+and Rebecca Hwa (U. Pittsburgh)
+</span>
+</div>
+
+<div id="content"> <!---content--->
+
+<div class="sec">
+  <h3 class="sectitle">Description</h3>
+  <div class="sec">
+  <div class="secbody">
+
+Natural language processing (NLP) research has matured to the point of
+being used successfully in applications ranging from search to
+information extraction to text analytics such as sentiment.
+Biomedical NLP has shown great diversity of domains, genres,
+methods, tasks, and applications e.g.. 
+In spite of burgeoning research, few, if any, published papers
+describe usability or utility of biomedical NLP applications. NLP
+has not reached its full potential, and one of the reasons may be that
+there is a disconnect between the linguistically-motivated annotations
+and the needs of the end users. A central goal of this proposal is to
+address that gap.   
+We propose to directly link the clinical research user with automated
+NLP annotations through a general, iterative process correlating the
+many layers of annotations with user views of the data. The NLP
+annotators (auto-annotators) and the user interface will mutually
+inform each other in order to develop an interactive search
+application for clinical researchers that increases efficiency in
+reviewing retrospective patient data. We will perform formative and
+summative evaluations of our NLP-enabled search application, using
+four research studies as use cases, and will evaluate the final
+application on four unseen use cases. The final application will
+comprise a back end for storing annotations and the associated text,
+auto-annotators, and user interfaces. The application will be released
+as a stand-alone application and with plug-ins for existing clinical
+data repositories so that a researcher with an approved research study
+can use the tool to search and review the relevant patient records.  
+
+<p>
+This project is funded by the National Library of Medicine.
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+  </div></div>
+
+</div> <!-- sec -->
+</div> <!-- content-->
+
+<div id="links">
+
+<div class="sidetitle">
+Links
+</div>
+
+<div class="side">
+<a href="http://www.cs.pitt.edu/~wiebe">Home</a><br/>
+<a
+href="http://www.cs.pitt.edu/~wiebe/pubs/index.html">Publications</a><br/>
+<a
+href="http://www.cs.pitt.edu/~wiebe/courses.html">Teaching</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/projects.html">
+Projects</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/service.html">Professional
+Activities</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/students.html">
+Students</a><br/>
+</div>
+
+<div class="sidetitle">
+Affiliated Programs
+</div>
+
+<div class="side">
+<a href="http://nlp.cs.pitt.edu">NLP@Pitt</a><br/>
+<a href="http://www.cs.pitt.edu">Department of Computer Science</a><br/>
+<a href="http://www.isp.pitt.edu">Intelligent Systems Program</a><br/>
+</div>
+
+
+<div class="sidetitle">
+Contact Information Janyce Wiebe
+</div>
+
+<div class="side">
+<div class="secbody">
+Sennott Square Building, Room 5409 <br/>
+210 S. Bouquet St.<br/>
+Pittsburgh, PA 15260, U.S.A.<br/>
+<i>phone:</i> +1 (412) 624-9590<br/>
+<i>fax:</i> +1 (412) 624-8854<br/>
+<i>email:</i> my last name at cs dot pitt dot edu<br/>
+</div>
+</div>
+
+</div> <!-- links-->
+
+</body>
+</html>
+
+

@@ -1,0 +1,96 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="GENERATOR" content="Mozilla/4.78 [en] (Windows NT 5.0; U) [Netscape]">
+   <title> Iconic Language for Mobile Communications</title>
+</head>
+<body>
+<a href="Slide4.html"><img SRC="previous.gif" height=26 width=26 align=LEFT></a>
+<a href="Slide10.html"><img SRC="next.gif" height=26 width=26 align=RIGHT></a>
+<center><h1><b>Design Considerations for MinSpeak</b></h1></center>
+<p>There are two primary methods of representing vocabulary on a communication device and
+each uses pictures. The following discusses the difference between the two approaches.</p>
+
+<p><b>Pictures</b><br>
+When looking at pictures as a method of coding vocabulary, it is interesting to consider
+the following:</p>
+
+<p>1. <i>Words can be divided into Picture Producers and Non-Picture Producers.</i> Some
+words, like car, cat, house, can be represented easily by pictures. Other words like hard,
+fun, or healthy cannot be.</p>
+
+<p>2. <i>The vast majority of words that people use regularly are not Picture Producers.</i>
+If you look at a list of the 330 most frequently occurring preschool words, you will find
+that only about 10% are true Picture Producers.</p>
+
+<p><img SRC="you.jpg" ALIGN="LEFT" BORDER="1" WIDTH="54" HEIGHT="54" NATURALSIZEFLAG="0" ALT="graphic of finger pointing">3.<i> Efforts to represent Non-Picture Producing words in
+graphics require the use of metaphor and memory.</i> The meaning of this picture appears
+obvious. It means &#147;you.&#148; But is it really a picture of you? No, it's a picture
+of a hand with a finger pointing. More appropriate meanings might be hand, finger, or
+point.</p>
+
+<p>4. <i>No sentence is a Picture Producer.</i><br>
+If representing a single word with a picture is difficult, you can imagine the difficulty
+representing sentences.</p>
+
+
+<p>If pictures are to be used to represent language, then an attempt must be made to
+reduce the size of the symbol set. Two systems attempt to do just that, levels (multiple
+overlays), and semantic compaction (Minspeak).</p>
+
+<p><b>Levels</b><br>
+Levels systems don&#146;t actually reduce the size of the symbol set, but they do limit
+the number of pictures that the operator has to deal with at any given moment. This is
+done by creating communication environments and having a separate overlay for each. For
+example, you might have an overlay for eating, one for dressing, one for games, and one
+for going shopping. Whenever any of these activities takes place, the appropriate overlay
+is put on. This way, while the total system might have hundreds of pictures, only a small
+portion of them are visible at a time.</p>
+
+<p>To actually talk about anything would require changing overlays to access other words.
+ Let&#146;s look at the following sentence: Where did she put my coat?</p>
+
+<p>To get the word &quot;where,&quot; you would need to go to the question words overlay
+and select the correct picture. &quot;Did&quot; might be found on an action word (or verb)
+overlay so you would have to go back to the master overlay, select the action word overlay
+and select the picture. &quot;She&quot; might be on a people (or pronoun) overlay, so it's
+back to the master overlay, then to the people overlay to select the picture. The same
+process would occur for &quot;put&quot; on an action word overlay, &quot;my&quot; on the
+pronoun overlay, and &quot;coat&quot; on a clothing overlay.</p>
+
+<p>If you want the ability to put words together, to be able to converse, levels systems
+just don&#146;t work very well.</p>
+
+<p><b>Semantic Compaction (Minspeak)</b><br>
+Semantic Compaction also uses pictures (icons) but is actually able to reduce the size of
+the symbol set. It does this by assigning more than one meaning to each icon and then
+sequencing them together to produce those different meanings.</p>
+
+<p><img SRC="apple.jpg" ALIGN="LEFT" BORDER="1" NATURALSIZEFLAG="3" ALT="apple icon" WIDTH="54" HEIGHT="54">Each
+icon has a primary (picture producer) meaning and several secondary meanings. This icon
+certainly represents apple but can also mean red, food, or eat. Which word is generated
+depends on with what it is sequenced. For example, the symbol sequence</p>
+
+<p><img SRC="rainbow.jpg" ALIGN="BOTTOM" NATURALSIZEFLAG="3" ALT="rainbow icon" WIDTH="32" HEIGHT="34"><img SRC="smapple.jpg" ALIGN="BOTTOM" NATURALSIZEFLAG="3" ALT="apple icon" WIDTH="36" HEIGHT="36">might mean red while
+<img SRC="house.jpg" ALIGN="BOTTOM" NATURALSIZEFLAG="3" ALT="house icon" WIDTH="47" HEIGHT="36"><img SRC="smapple.jpg" ALIGN="BOTTOM" NATURALSIZEFLAG="3" ALT="apple icon" WIDTH="36" HEIGHT="36">might mean grocery.</p>
+
+<p>In these examples, the first icon represents a category (colors and buildings) and the
+second icon represents the specific word.</p>
+
+<p>Minspeak reduces the size of the symbol set permitting it to fit on a single overlay.
+This is crucial to effective communication because there is a link between physical action
+and the language it produces.</p>
+
+<p>Minspeak truly does it all. It is a system that has a small symbol set yet needs only a
+few symbols in a sequence, it requires no literacy skills but enhances communication for
+people who can spell and read, it can help teach language but will never be outgrown, and
+it permits people to be the most effective communicators that they can be.</p>
+
+
+
+
+
+
+</body>
+</html>

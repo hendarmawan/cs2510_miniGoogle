@@ -1,0 +1,178 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+<HTML>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 9">
+<meta name=Originator content="Microsoft Word 9">
+<base target=1502main>
+<link rel=File-List href="./PlaceandRoute_files/filelist.xml">
+<link rel=Edit-Time-Data href="./PlaceandRoute_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Unit 2b: Mapping, Placing and Routing the ALU Design</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Optical Computing Labratory</o:Author>
+  <o:LastAuthor>Optical Computing Labratory</o:LastAuthor>
+  <o:Revision>3</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2006-09-06T16:20:00Z</o:Created>
+  <o:LastSaved>2006-09-06T16:22:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>535</o:Words>
+  <o:Characters>3054</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>25</o:Lines>
+  <o:Paragraphs>6</o:Paragraphs>
+  <o:CharactersWithSpaces>3750</o:CharactersWithSpaces>
+  <o:Version>9.2720</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white background="..\Unitbkg.jpg" lang=EN-US link=blue
+vlink=blue style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center'>Unit 2b</h2>
+
+<h2 align=center style='text-align:center'>Mapping, Placing and Routing the ALU
+Design</h2>
+
+<p>Now that you have synthesized the design, it is time to combine it with the
+interface logic, map it into the Xilinx Virtex-II Pro architecture, and place
+and route it. </p>
+
+<p>First, open the Xilinx ISE 7.1i tool. You will be presented with a &quot;Tip
+of the Day&quot;. Uncheck the &quot;Show Tips at Startup&quot; option and click
+OK. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=378
+height=261 id="_x0000_i1025" src=tipoftheday.jpg></p>
+
+<p>You will now be presented with ISE's main window. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=960
+height=896 id="_x0000_i1026" src=ise1.jpg></p>
+
+<p>We want to create a new project, so select File | New Project. Name the
+project whatever you wish and select a path in your home directory. Change the
+&quot;Top-Level Module Type&quot; to &quot;NGC/NGO&quot; and click Next. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=525
+height=379 id="_x0000_i1027" src=ise2.jpg></p>
+
+<p>Set the input design by browsing to I:\1502\PE0 and selecting pe.ngc. Click
+Next. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=525
+height=379 id="_x0000_i1028" src=ise3.jpg></p>
+
+<p>The next window allows you to set the FPGA device settings, however the
+current settings were read from the netlist file and are therefore correct.
+Click Next. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=525
+height=379 id="_x0000_i1029" src=ise4.jpg></p>
+
+<p>This window provides a summary of the project. Click Finish. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=525
+height=379 id="_x0000_i1030" src=ise5.jpg></p>
+
+<p>You will now be returned to the ISE project window. Before we proceed, you
+need to <b>copy</b> your synthesized wrapper netlist into the Xilinx ISE
+project directory. The wrapper netlist is located under your project directory
+in the XST downstream directory for the ALU library. This directory is located
+at: <b>&quot;H:\ALU\ise\wrapper_struct&quot;</b> and the filename is <b>wrapper.ngc</b>.
+Copy this file to the directory that you selected for the Xilinx ISE project
+(i.e. <b>&quot;H:\alu_synth&quot;</b>). </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=960
+height=896 id="_x0000_i1031" src=ise6.jpg></p>
+
+<p>Before we can perform the place-and-route, we need to make a change to one
+of the flow settings. In the <b>Processes</b> frame, expand the &quot;Implement
+Design&quot; item, right-click on &quot;Map&quot;, and click
+&quot;Settings.&quot; </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=356
+height=331 id="_x0000_i1032" src=ise7.jpg></p>
+
+<p>In the settings window, change the &quot;Property display level&quot; to
+&quot;Advanced&quot;. Next, turn on &quot;Allow Logic Optimization Across
+Hierarchy&quot;. Then click OK on this window. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=448
+height=292 id="_x0000_i1033" src=ise8.jpg></p>
+
+<p>We are now ready to place-and-route the design. In the <b>Processes</b>
+frame, right-click on &quot;Generate Programming File&quot; and click on
+&quot;Run&quot;. The place-and-route will run, taking a few minutes. You'll
+know when the process is complete when you see &quot;Process 'Generate
+Programming File' is up to date.&quot; at the bottom of the ISE window. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=356
+height=325 id="_x0000_i1034" src=ise9.jpg></p>
+
+<p>The result of this process is a BIT file. This file must be converted to a
+BIN file before it can be loaded onto the FPGA. To perform this conversion,
+open a command window (Start | Run | &quot;cmd&quot;). Change the drive to I:
+(type &quot;I:&quot;), and change directory to your ISE project directory (for
+example, type: &quot;cd \alpha\alu_synth&quot;). Next, type: &quot;promgen -u 0
+pe.bit -p bin -w&quot;. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=668
+height=331 id="_x0000_i1035" src=ise10.jpg></p>
+
+<p>Now that you have a valid <i>BIN</i> image of your design, you are ready to <a
+href="./RunDesign.html">Run your Design in the Wild-One Board</a>. </p>
+
+</div>
+
+</body>
+
+</html>

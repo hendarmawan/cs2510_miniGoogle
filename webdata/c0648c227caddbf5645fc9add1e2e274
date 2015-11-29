@@ -1,0 +1,854 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+
+<title>cs1590@pitt</title>
+
+<link rel="stylesheet" href="https://www.cs.pitt.edu/~hwa/cs1590/styles-site.css" type="text/css" />
+<link rel="alternate" type="application/rss+xml" title="RSS" href="https://www.cs.pitt.edu/~hwa/cs1590/index.rdf" />
+<link rel="alternate" type="application/atom+xml" title="Atom" href="https://www.cs.pitt.edu/~hwa/cs1590/atom.xml" />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cs.pitt.edu/~hwa/cs1590/rsd.xml" />
+
+<script language="javascript" type="text/javascript">
+function OpenComments (c) {
+    window.open(c,
+                    'comments',
+                    'width=480,height=480,scrollbars=yes,status=yes');
+}
+
+function OpenTrackback (c) {
+    window.open(c,
+                    'trackback',
+                    'width=480,height=480,scrollbars=yes,status=yes');
+}
+</script>
+
+
+
+</head>
+
+<body>
+
+<div id="banner">
+<h1><a href="https://www.cs.pitt.edu/~hwa/cs1590/" accesskey="1">cs1590@pitt</a></h1>
+<span class="description">Social Implications of Computing</span>
+</div>
+
+<div id="content">
+<div class="blog">
+<div class="blogbody">
+
+<h3 class="title">Course Information</h3><br/>
+
+Time and place: &nbsp; TTh 2:30-3:45pm (Term 2091), SENSQ 6110<br/>
+Prerequisite:   &nbsp; Graduating CS Senior or by instructor's permission<br/><br/>
+
+RSS Support: 
+<ul>
+<li>(rss+xml) http://www.cs.pitt.edu/~hwa/cs1590/index.rdf<br/>
+<li>(atom+xml) http://www.cs.pitt.edu/~hwa/cs1590/atom.xml<br/>
+<li>(rsd+xml) http://www.cs.pitt.edu/~hwa/cs1590/rsd.xml<br/>
+</ul>
+
+<h3 class="title">Required Textbook</h3><br/>
+
+Spinello, R. (2002) <a href="http://www.amazon.com/gp/product/0763700649/ref=pd_bxgy_img_a/103-6148528-0348626?ie=UTF8">CyberEthics: Morality and Law in 
+  Cyberspace</a>. 2nd edition. Sudbury, MA: Jones and Bartlett Publishers.<br/>
+<img align=top src="http://ec1.images-amazon.com/images/P/0763700649.01._SCTHUMBZZZ_SS40_.jpg" width=50>
+<br/><br/>
+Spinello, R. and H. Tavani, eds. (2004) <a href="http://www.amazon.com/gp/product/0763724106/ref=pd_bxgy_img_b/103-6148528-0348626?ie=UTF8">Readings in 
+  CyberEthics</a>. 2nd edition. Sudbury, MA: Jones and Bartlett Publishers.<br/>
+<img align=top src="http://ec1.images-amazon.com/images/P/0763724106.01._SCTHUMBZZZ_SS40_.jpg" width=50>
+<br/><br/>
+
+<h3 class="title">Optional but recommended references</h3>
+<ul>
+    <li>Strunk, W. Jr., and E. B. White (2000) <i>The Elements 
+    of Style</i>, 4th edition. Pearson Allyn &amp; Bacon [NB: First edition of <i>The Elements of Style</i> 
+    (1918) is online:
+    <a href="http://www.bartleby.com/usage/">http://www.bartleby.com/usage/</a>.</li>
+  </ul>
+  </li>
+</ul>
+
+<h3 class="title">Instructor</h3><br/>
+
+<a href="http://www.cs.pitt.edu/~hwa/">Rebecca Hwa</a>, SENSQ 5421<br/>
+Email: &nbsp; hwa at cs<br/>
+Office Hours: &nbsp; by appointment<br/><br/>
+
+<h3 class="title">Teaching Assistant</h3><br/>
+
+Joshua Geiger <br/>
+Email: jjg55@cs.pitt.edu<br/>
+Office Hours: MW 1:30-300, TH 1:00-2:30<br/>
+
+</div>
+</div>
+<div class="blog">
+<h3 class="title">Class Announcements</h3><br/>
+
+
+
+		<h2 class="date">
+	November 25, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001189"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	<p>Here is our final reading for the semester. Comments are due on 12/1.
+
+<p>Searle, J. R. (1980) <a href="http://www.bbsonline.org/documents/a/00/00/04/84/bbs00000484-00/bbs.searle2.html">Minds, brains, and programs</a>. <i>Behavioral and Brain Sciences</i> 3 (3): 417-457.
+
+<p>Discussion leads: Andre (12/2) and Sami (12/4).  Andre, please cover Searle's discussions of the first three replies (i.e., the system reply, the robot reply, and the brain simulation reply). Sami, please cover the rest of the article.
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001189.html">12:20 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1189" onclick="OpenComments(this.href); return false">Comments (13)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	November 21, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001185"></a>
+	<h3 class="title">Final writing assignment</h3>
+	
+	<p>For the final writing assignment, you will have to write a longer paper (between 8-10 pages) on a topic of your choice about the social implications of computing. <i>Your paper should argue for a position.</i> Although you have a wide choice of topics, you will have to narrow your focus to something that is appropriate for the scope of an 8-10 page paper. For example, if you decide to write about "censorship," you should explore a particular aspect concerning censorship; do not cram loosely related subtopics (parental control, hate speech, authoritarian governmental censorship) all into one paper. At the same time, you should make sure that your topic is complex enough that you'd have interesting materials to discuss for 8-10 pages. 
+
+<p>By the end of November, you should have already defined the thesis of your paper; you should also have some ideas about how you will structure your paper. The final draft of your paper is due by noon, December 12th. <b>Please email your paper to me as well as to the TA.</b>
+
+<p>If you need some suggestions to get started, take a look at this <a href="http://www-rohan.sdsu.edu/faculty/giftfire/papertopics">website</a> for a similar class. It contains an extensive list of potential paper topics, and some of them seem quite interesting. <b>Note:</b> although this list is a good starting point for brain-storming, some of the suggested outlines are not well suited for a position paper. So if you wish to pursue one of these suggested topics, you will still have to further refine it into a workable thesis. 
+
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001185.html">02:27 AM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1185" onclick="OpenComments(this.href); return false">Comments (1)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	November 11, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001182"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	<p> Two readings this week (Please comment by noon 11/17):
+<ul>
+<li> Philip Brey. (2001) Ethical Aspects of Facial Recognition Systems in Public Places. In Readings in CyberEthics, pp. 585 -- 600. 
+<li> Manion and Goodrum (2000). Terrorism or Civil Disobedience: Toward a Hacktivist Ethic. In Readings in CyberEthics, pp. 525 -- 535.
+</ul>
+
+<p> Eric will lead the discussion on the Brey paper on 11/18, and Pat will lead the discussion on the Manion and Goodrum paper on 11/20.
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001182.html">01:48 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1182" onclick="OpenComments(this.href); return false">Comments (10)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	November 04, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001178"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	<p>Please submit your commentary by noon, Nov. 10
+
+<p>Thompson, C. <a href="http://www.nytimes.com/2008/09/07/magazine/07awareness-t.html?_r=2&pagewanted=1&oref=slogin">Brave New World of Digital Intimacy</a>, New York Times Sunday Magazine, Sept. 2008.
+
+<p>Discussion lead: Randy on Nov. 11
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001178.html">02:17 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1178" onclick="OpenComments(this.href); return false">Comments (16)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	October 30, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001176"></a>
+	<h3 class="title">Writing Assignment #2</h3>
+	
+	<p>The second writing assignment is due by noon, Tuesday Nov. 18th.  Please email your paper to the TA and to me.  Note: there will be no official peer reviewing and revision process for the second paper, so your paper should be in its most polished form when you turn it in.  
+	
+		<span class="extended"><a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001176.html#more">Continue reading "Writing Assignment #2"</a></span><br />
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001176.html">12:53 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1176" onclick="OpenComments(this.href); return false">Comments (1)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	October 28, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001175"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	<p>Please comment on the following reading by noon, 11/3 (Monday).</p>
+
+<p>Moor, James H. "Toward a Theory of Privacy for the Information Age" in Readings in CyberEthics, pp. 407 - 417.</p>
+
+<p>Discussion lead: Theodore DePietro on 11/4.</p>
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001175.html">01:55 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1175" onclick="OpenComments(this.href); return false">Comments (13)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	October 23, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001174"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	<p>Please comment on the following article by noon 10/28.
+
+<p>Jonathan Dee. <a href="http://www.nytimes.com/2007/07/01/magazine/01WIKIPEDIA-t.html?_r=1&oref=slogin">All the News That’s Fit to Print Out</a>, New York Times, Sunday Magazine, July 1, 2007.
+
+<p>Discussion lead: Chris Brack. 
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001174.html">11:55 AM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1174" onclick="OpenComments(this.href); return false">Comments (17)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	October 09, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001166"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	Please comment on the following two articles by Oct. 14.
+<ul>
+<li> Boyle, J. (1997) "A Politics of Intellectual Property: Environmentalism for the Net?" in <u>Readings</u> in CyberEthics, pp. 273 -- 293.
+<li> Warwick, S. (1999) "Is Copyright Ethical? An Examination of the Theories, Laws, and Practices Regarding the Private Ownership of Intellectual Work in the United States," in <u>Readings in CyberEthics</u>, pp. 305 -- 321. 
+</ul>
+
+<p>The Boyle article will be led by Tom on Oct. 16, and the Warwick article will be led by Jacob on Oct. 21.
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001166.html">11:20 AM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1166" onclick="OpenComments(this.href); return false">Comments (12)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	October 02, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001163"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	<p>Please comment on the following article by next Tuesday.  
+
+<p> OSCE. <a href="http://www.osce.org/publications/rfm/2004/12/12239_94_en.pdf">Hate Speech on the Internet</a>. In <u>The Media Freedom Internet Cookbook</u> Eds. Christian Moller and Arnaud Amouroux, Vienna, Organization for Security and Co-operation in Europe, 2004. Note:  the file  contains three articles.  
+
+<p> Vanessa Anderson and Mike Rietmiller will lead the discussion for this set of papers on 10/9 (Thursday). 
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001163.html">12:40 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1163" onclick="OpenComments(this.href); return false">Comments (17)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	September 25, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001161"></a>
+	<h3 class="title">Review form</h3>
+	
+	<h3>What to look for in the paper</h3>
+<ul>
+<li> <b>well-structured</b>: Is the paper clearly organized? Does it have an initial overview, a final summary, and is its structure logical?
+<li> <b>well-written</b>: Does the paper use good prose, reasonable sentence length, correct grammar usage?
+<li> <b>well-motivated</b>: Does the paper identify important issues(s) to address? Has the paper considered alternative view points?
+<li> <b>focused</b>: Does the paper have a clear central narrative (not too many digressions)?
+<li> <b>situated</b>: Does the paper show an awareness of relevant papers?
+<li> <b>exemplified</b>: Are analogies are intuitive and  clearly explained? 
+<li> <b>accessible</b>: Are technical terminologies explained on their first use? Is the paper reasonably self-contained?
+</ul>
+
+<h3>Format of your review</h3>
+
+<ul>
+<li> What do you think is the thesis of this paper? Briefly, outline the author's argument for the thesis of the paper.
+<li> What are the paper's major strengths and weaknesses?
+<li> Discuss the originality of the ideas presented in the paper.  
+<li> Provide feedback to the author on ways to improve the paper with respect to the criteria above.  For example:
+<ul>
+<li> Is the paper easy to follow? Would you recommend a different way to organize the paper?
+<li> Point out glaring grammar errors and typos.
+<li> Are there aspects of the argument that you would like to see the author pursue further?
+<li> Are there more suitable analogies that the author could have used?
+</ul>
+<li> Provide any other comments you may have about this paper.
+</ul>
+
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001161.html">12:13 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1161" onclick="OpenComments(this.href); return false">Comments (0)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	September 18, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001157"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	<p>Please read the following two articles.  Your commentaries are due by noon 9/25:
+<ul>
+<li>Thompson, Clive <a href="http://www.nytimes.com/2006/04/23/magazine/23google.html?ei=5070&en=dd0a07f4827d62dc&ex=1158984000&pagewanted=print">Google's China Problem (and China's Google Problem)</a> New York Times, Sunday Magazine, April 23, 2006.
+
+<li>ACLU (1997) Fahrenheit 451.2: Is Cyberspace Burning? How Rating and Blocking Pr\oposals May Torch Free Speech on the Internet. In <u>Readings in CyberEthics</u>, pp. 159 -- 172.
+</ul>
+
+<p>Discussion leads: Jessie Hromiko will cover the Thompson article on 9/30, and Woody March-Steinman will cover the ACLU article on 10/2. 
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001157.html">01:14 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1157" onclick="OpenComments(this.href); return false">Comments (16)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	September 11, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001147"></a>
+	<h3 class="title">reading assignment</h3>
+	
+	<p>Here is the next reading:
+
+<p>Gasser, Urs, <a href="http://www.cs.pitt.edu/~hwa/cs1590/gasser.pdf">Regulating Search Engines: Taking Stock and Looking Ahead.</a> Berkman Center Research Publication No. 2006-03
+
+The next reaction is due by noon 9/16; the discussion will be lead by Tony on 9/18. 
+
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001147.html">04:30 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1147" onclick="OpenComments(this.href); return false">Comments (17)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	September 09, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001142"></a>
+	<h3 class="title">Writing Assignment #1</h3>
+	
+	<p>In his article, <i>Reason, Relativity and Responsibility in Computer Ethics,</i> Moor (1998) argued that computing technologies sometimes bring out situations for which there are policy vacuums.  Johnson (1997), too, conceded that "the issues have a new twist that make them unusual, even though the core issue is not."  Choose an <b>old</b> technology or innovation (e.g., telephone, railroads, electricity), and discuss what issues arose about them.  Analyze the issues in terms of one of the ethical frameworks discussed in Chapter One of CyberEthics (the small text book).  Compare the issues to current concerns about computing technologies.  What solutions have been developed?  To what extent can they help to address the new concerns about computing technologies?
+
+<p>**This topic is based on one of the suggested term paper topics in A Gift of Fire (Baase, 2003).
+
+<h3>Due Dates</h3>
+<ul>
+<li> <b>By noon 9/18</b> you should turn in (via email to the TA) one paragraph on your topic plus a list of <i>at least</i> five references about your chosen technology.
+<li> <b>By noon 9/25</b> you should turn in (via email to the TA) a first draft of your full paper. You should also bring two hard copies of your first draft to class.
+<li> You will receive two papers written by your classmates. You will have to review them.  A review form will be provided.  <b>By noon 9/30</b> you should send your reviews to the authors of the papers (you should also return to them the edited hard copies).
+<li> <b>The full writing assignment is due by noon 10/7</b>  You should turn in all of the following in hard copies in class: the final version of your paper, the two reviews from your reviewers (and the earlier drafts that the reviewers edited).
+</ul>
+
+<h3>Guideline</h3>
+<ol>
+<li> Your paper should be between 3 - 5 pages (about 1000 words).  The paper should express your views.  You should support your position with sound reasoning and evidences.  You are encouraged to use well-reasoned analogies in your arguments (e.g., Moor used money, war, privacy and copyright as examples of informational enrichment), but avoid having just anecdotal evidences as your support.
+<li> Use 12-point Times New Roman, with 1.5 line spacing.  The margins should be: 1" for top and bottom, and 1.25" for the sides.
+<li> Your paper should be written carefully, using good English style, with proper grammar, punctuation, and spelling.
+<li> Divide your paper appropriately into relevant sections, with their own headings of your choosing
+<li> Your paper must contain properly formatted citations to the literature, and include a properly formatted bibliography, if appropriate.
+</ol>
+<h3>References</h3>
+<ul>
+<li> Baase, S. (2003) <i>A Gift of Fire: Social, Legal, and Ethical Issues for Computers and the Internet</i>, 2nd. edition. Prentice Hall.
+<li> Johnson, D. (1997) " Ethics On-Line," in <i>Readings in Cyberethics</i>, (eds.) Spinello and Tavani. pp. 30-39.
+<li> Moor, J. (1998) "Reason, Relativity, and Responsibility in Computer Ethics," in <i>Readings in Cyberethics</i>, (eds.) Spinello and Tavani. pp. 40-54.
+<li> Spinello, R. CyberEthics: Morality and Law in Cyberspace, 2nd edition. Jones and Bartlett Publishers, 2003.
+</ul>
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001142.html">01:51 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1142" onclick="OpenComments(this.href); return false">Comments (4)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	September 04, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001140"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	<p>For the next reading assignment, please read the following <i>two</i> essays:
+<ul>
+<li>  Larry Lessig (1998).  The Laws of Cyberspace.  In <i>Readings in CyberEthics</i> pp.134 --pp 144.
+<li>  David G. Post (2000). <a href="http://www.temple.edu/lawschool/dpost/Code.pdf">What Larry Doesn't Get: Code, Law, and Liberty in Cyberspace</a>. In <i>Stanford Law Review</i> Vol. 52:1439.
+</ul>
+<p>Write <i>one</i> response, discussing the views expressed in these two essays. <b>Due by noon, Sept. 9.</b>
+
+<p>Discussion leads: Doug Davis (Lessig) and Michael Toussaint (Post).
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001140.html">11:26 AM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1140" onclick="OpenComments(this.href); return false">Comments (15)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	August 28, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001133"></a>
+	<h3 class="title">Discussion Lead Signup</h3>
+	
+	<p>Please sign up (by commenting) for one of the following topics.  Note: the dates are somewhat approximate for the topic to be covered. You will only have to lead discussions for one of the days.  You may be leading the discussion on your own or you may be paired with one other student (possibly to represent opposing views).
+
+<ul>
+<li> Ethical concepts (the Moor article) 9/4 <b>Jarrett Billingsley</b>
+<li> Government and regulations 9/9 -- 9/18 <b>Doug Davis, Tony Blatt, Michael Toussaint</b>
+<li> Free speech and content control 9/23 -- 10/2 <b>Woody March-Steinman, Vanessa Anderson,  Jessie Hedges Hromiko, Michael Riethmiller</b>
+<li> Intellectual properties 10/7 -- 10/23 <b>Jacob Busofsky,  Chris Brack, Tom Murray </b>
+<li> Privacy and security 10/28 -- 11/13 <b>Theodore DePietro,  Pat McNulty,  Eric Greif, Randall Schultheis</b>
+<li> machine and intelligence 11/18 -- 11/25 <b> Andre Wynn, Sami Al-Qaisi </b>
+</ul>
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001133.html">05:50 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1133" onclick="OpenComments(this.href); return false">Comments (14)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+	
+
+	<div class="blogbody">
+	
+	<a name="001132"></a>
+	<h3 class="title">Reading Assignment</h3>
+	
+	<p>Moor, J. 1998.  "Reason, Relativity, and Responsibility in Computer Ethics." In <i>Readings in Cyber Ethics</i>.
+
+<p>Please submit your reading reactions as a comment to this entry by noon, September 2.
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001132.html">05:17 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1132" onclick="OpenComments(this.href); return false">Comments (14)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+		<h2 class="date">
+	August 26, 2008
+	</h2>
+	
+
+	<div class="blogbody">
+	
+	<a name="001129"></a>
+	<h3 class="title">Introduction</h3>
+	
+	<p><p>Welcome to <i>Social Implications of Computing</i>. Please read the course policies page (follow the link on the side panel).  By September 2nd, you should have turned in a signed statement acknowledging that you have read and understood the course policies.</p>
+
+<p><h3>First reading assignment</h3></p>
+
+<p><p>Please read the following article:</p>
+
+<blockquote>
+<p>Tierney, John <a href="http://www.nytimes.com/2008/08/26/science/26tier.html?8dpc">Technology That Outthinks Us: A Partner or a Master?</a> New York Times, August 25, 2008.
+</blockquote>
+
+<p><p>You should then write a short "reading reaction" to this article and post it as a comment to this entry.  The reaction is due by noon 8/28 (this Thursday).</p>
+	
+	
+	
+	<div class="posted">Posted by hwa at <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/001129.html">01:56 PM</a>
+		| <a href="https://blogs.cs.pitt.edu/mt-comments.cgi?entry_id=1129" onclick="OpenComments(this.href); return false">Comments (16)</a>
+	
+	
+	</div>
+	
+	</div>
+	
+
+
+
+
+<hr>
+
+
+</div>
+
+
+</div>
+
+
+<div id="links">
+<div class="side">
+<a href="index.html">Home</a><br/>
+<a href="policy.htm">Course Policies</a><br/>
+<a href="syl.htm">Syllabus</a><br/>
+<a href="links.htm">Links</a><br/>
+</div>
+
+
+<div class="sidetitle">
+Course Calendar
+</div>
+
+<div class="side">
+<a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/2008_11.html">November 2008</a><br />
+<a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/2008_10.html">October 2008</a><br />
+<a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/2008_09.html">September 2008</a><br />
+<a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/2008_08.html">August 2008</a><br />
+
+</div>
+
+<div align="center" class="calendar">
+
+<table border="0" cellspacing="4" cellpadding="0" summary="Monthly calendar with links to each day's posts">
+<caption class="calendarhead">December 2008</caption>
+<tr>
+<th abbr="Sunday" align="center"><span class="calendar">Sun</span></th>
+<th abbr="Monday" align="center"><span class="calendar">Mon</span></th>
+<th abbr="Tuesday" align="center"><span class="calendar">Tue</span></th>
+<th abbr="Wednesday" align="center"><span class="calendar">Wed</span></th>
+<th abbr="Thursday" align="center"><span class="calendar">Thu</span></th>
+<th abbr="Friday" align="center"><span class="calendar">Fri</span></th>
+<th abbr="Saturday" align="center"><span class="calendar">Sat</span></th>
+</tr>
+
+<tr>
+
+<td align="center"><span class="calendar">
+&nbsp;</span></td>
+
+<td align="center"><span class="calendar">
+1</span></td>
+
+<td align="center"><span class="calendar">
+2</span></td>
+
+<td align="center"><span class="calendar">
+3</span></td>
+
+<td align="center"><span class="calendar">
+4</span></td>
+
+<td align="center"><span class="calendar">
+5</span></td>
+
+<td align="center"><span class="calendar">
+6</span></td></tr><tr>
+
+<td align="center"><span class="calendar">
+7</span></td>
+
+<td align="center"><span class="calendar">
+8</span></td>
+
+<td align="center"><span class="calendar">
+9</span></td>
+
+<td align="center"><span class="calendar">
+10</span></td>
+
+<td align="center"><span class="calendar">
+11</span></td>
+
+<td align="center"><span class="calendar">
+12</span></td>
+
+<td align="center"><span class="calendar">
+13</span></td></tr><tr>
+
+<td align="center"><span class="calendar">
+14</span></td>
+
+<td align="center"><span class="calendar">
+15</span></td>
+
+<td align="center"><span class="calendar">
+16</span></td>
+
+<td align="center"><span class="calendar">
+17</span></td>
+
+<td align="center"><span class="calendar">
+18</span></td>
+
+<td align="center"><span class="calendar">
+19</span></td>
+
+<td align="center"><span class="calendar">
+20</span></td></tr><tr>
+
+<td align="center"><span class="calendar">
+21</span></td>
+
+<td align="center"><span class="calendar">
+22</span></td>
+
+<td align="center"><span class="calendar">
+23</span></td>
+
+<td align="center"><span class="calendar">
+24</span></td>
+
+<td align="center"><span class="calendar">
+25</span></td>
+
+<td align="center"><span class="calendar">
+26</span></td>
+
+<td align="center"><span class="calendar">
+27</span></td></tr><tr>
+
+<td align="center"><span class="calendar">
+28</span></td>
+
+<td align="center"><span class="calendar">
+29</span></td>
+
+<td align="center"><span class="calendar">
+30</span></td>
+
+<td align="center"><span class="calendar">
+31</span></td>
+
+<td align="center"><span class="calendar">
+&nbsp;</span></td>
+
+<td align="center"><span class="calendar">
+&nbsp;</span></td>
+
+<td align="center"><span class="calendar">
+&nbsp;</span></td></tr>
+</table>
+
+</div>
+
+
+<div class="sidetitle">
+Categories
+</div>
+
+<div class="side">
+  <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/cat_announcements.html">announcements</a><br>
+  <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/cat_events.html">events</a><br>
+  <a href="https://www.cs.pitt.edu/~hwa/cs1590/archives/cat_writing_assignments.html">Writing Assignments</a><br>
+
+</div>
+
+
+<div class="sidetitle">
+Search
+</div>
+ 
+<div class="side">
+<form method="get" action="https://blogs.cs.pitt.edu/mt-search.cgi">
+<input type="hidden" name="IncludeBlogs" value="28" />
+<label for="search" accesskey="4">Search this site:</label><br />
+<input id="search" name="search" size="20" /><br /><br/>
+<input type="submit" value="Search" />
+</form>
+</div>
+
+<div class="powered">
+Powered by<br /><a href="http://www.movabletype.org">Movable Type 2.661</a><br />    
+</div>
+
+
+</div>
+
+<br clear="all" />
+
+</body>
+</html>

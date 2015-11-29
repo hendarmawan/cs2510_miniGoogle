@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+     "http://www.w3.org/TR/html4/transitional.dtd">
+<html>
+<head>
+  <meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+  <title>Slide 28</title>
+</head>
+<body text="#198A8A" bgcolor="#BED2A3" link="#0000CC" vlink="#000080" alink="#0000CC">
+<center>
+<a href="text0.html">First page</a> <a href="text26.html">Back</a> <a href="text28.html">Continue</a> <a href="text50.html">Last page</a> <a href="finalReport.html">Overview</a> <a href="img27.html">Graphics</a></center><br>
+<h1><font color="#5C8526">Milestone:Informal Statement</font></h1>
+<ul><li><h2>Informal statement of the problem</h2></li>
+<li><h2>A multimedia database for dogs is R1(ID, NAME, PHOTO, TYPE) where ID is the primary key. This database R1 can be searched by TYPE. The SQL query Q1 is:</h2></li>
+<li><h2>select *</h2></li>
+<li><h2>from R1</h2></li>
+<li><h2>where type == “pugs”</h2></li>
+<li><h2>A new multimedia dependency is introduced: PHOTO --&gt; TYPE so that we can now search by matching photos of different dogs.</h2></li>
+<li><h2>Problem 1 : Describe the transformation algorithm in psuedocode and show how the database R1 can be systematically transformed into a normalized database R2.</h2></li>
+<li><h2>Problem 2 : Describe the transformation algorithm in pseudocode and show how the query Q1 can be systematically transformed into a new query Q2.</h2></li>
+</ul></body>
+</html>

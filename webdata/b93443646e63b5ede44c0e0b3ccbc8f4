@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html ><HEAD><TITLE>Multimedia Software Engineering</TITLE>
+<META content="text/html; charset=unicode" http-equiv=Content-Type>
+<META content="MSHTML 5.00.3315.2870" name=GENERATOR></HEAD>
+<BODY> 
+
+ <A href="231p-1.html">  <IMG align=left src="previous.gif" >  </A> 
+ <A href="231p-3.html">  <IMG align=right src="next.gif" >  </A>
+<CENTER> 
+ <h1 > 
+   Introduction&nbsp;
+ </h1></CENTER>
+<H2 align=left>Motivation --Information 
+Personalization</H2>
+<P align=left>To increase the functionality of hypermedia by making it 
+personalized.</P>
+<P align=left>Users with <EM>different goals and knowledge</EM> may be 
+interested in <EM>different pieces</EM> of information with&nbsp;<EM>different 
+presentation</EM> on a hypermedia page and may use 
+<EM>different&nbsp;navigation(</EM>limiting browsing space, suggesting most 
+relevant links to follow, or providing adaptive comments to visible 
+links<EM>)</EM>.</P>
+<H2 align=left>Definiton of&nbsp; "Adaptive Hypermedia(AH) System"</H2>
+<P align=left><FONT size=4>By <STRONG>adaptive hypermedia 
+systems</STRONG> we mean all hypertext and hypermedia systems which reflect some 
+features of the user in the <EM>user model</EM> and apply this model to 
+<EM>adapt various visible aspects</EM> of the system to the 
+user.[Peter1]</FONT></P>
+<P align=left>The system should satisfy&nbsp;<U>3 
+criteria</U>:</P>
+<UL>
+  <LI>
+<DIV align=left>it should be a <STRONG>hypertext or 
+  hypermedia</STRONG> system,</DIV>
+  <LI>
+<DIV align=left>it should have a <STRONG>user 
+  model</STRONG>,</DIV>
+  <LI>
+<DIV align=left>it should be able to 
+  <STRONG>adapt</STRONG> the hypermedia using this model (i.e. the same system 
+  can look different to the users with different models)</DIV></LI></UL>
+<P align=left>&nbsp;</P>
+<IMG align=center src="fig1.jpg" >
+<P align=left>The <U>critical feature</U>: the possibility 
+of providing hypermedia adaptation on the basis of the user 
+model.</P>               
+</BODY> 
+ </html>

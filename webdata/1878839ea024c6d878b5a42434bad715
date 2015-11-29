@@ -1,0 +1,26 @@
+<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="02.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="04.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>How to Insert Time Specification?</H1>
+<H1><FONT color=mediumblue>Time may be associated with Places (TPPN)</FONT></H1>
+</CENTER>
+
+<UL><UL><UL> <UL><UL><UL>
+  <LI><FONT size=5>Tokens generated in an output 
+            place become available to fire a transition only after a delay has 
+            elapsed</FONT>
+  <LI><FONT size=5>The delay is an attribute of 
+            the place</FONT>
+  </LI>
+</UL></UL></UL></UL></UL></UL>
+
+<CENTER><IMG src="images/tppn.jpg"></CENTER>
+
+</BODY></HTML>
+

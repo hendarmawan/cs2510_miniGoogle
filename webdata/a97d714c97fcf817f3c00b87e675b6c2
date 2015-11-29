@@ -1,0 +1,115 @@
+<html>
+
+<head>
+<title>CS2310 XML Based Servers</title>
+<!--mstheme--><link rel="stylesheet" href="ice1011.css">
+<meta name="Microsoft Theme" content="ice 1011">
+</head>
+<a href="pg5.htm"> <img src="previous.gif" align=left></a><a href="index.html" > </a>
+<a href="pg7.htm"> <img src="next.gif" align=right ></a><a href="pg1.html" > </a>
+ 
+<center> 
+<h1>Queue Manager</h1>
+</center> 
+<body>
+
+<div style="border-style: double; border-width: 3px">
+	<p align="justify"><code>public void run() {<br>
+&nbsp;&nbsp; try {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; String msg = readSocket();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Message inboundMessage = new Message(msg);<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //find the correct queue in the container<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if ((queue = (Hashtable) 
+	queueContainer.get(inboundMessage.getQueueName())) == null) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Message outboundMessage = new 
+	Message();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	outboundMessage.setStatus(Message.STATUS_QUEUE_NOT_FOUND);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	writeSocket(outboundMessage.toString());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //put message on queue<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else if (inboundMessage.isCommand(Message.COMMAND_PUT)) 
+	{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; put(inboundMessage);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Message outboundMessage = new 
+	Message();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	outboundMessage.setStatus(status);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	writeSocket(outboundMessage.toString());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //get message from queue and remove it<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else if (inboundMessage.isCommand(Message.COMMAND_GET)) 
+	{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Message outboundMessage = 
+	get(inboundMessage);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; if (outboundMessage == null) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	outboundMessage = new Message();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	outboundMessage.setStatus(Message.STATUS_NOT_FOUND);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	outboundMessage.setStatus(status);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	remove(inboundMessage);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	writeSocket(outboundMessage.toString());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //purge the queue<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else if (inboundMessage.isCommand(Message.COMMAND_DELETE)) 
+	{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; purge(inboundMessage);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Message outboundMessage = new 
+	Message();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	outboundMessage.setStatus(status);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	writeSocket(outboundMessage.toString());<br>
+	<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; //invalid command <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; } else {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Message outboundMessage = new 
+	Message();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	outboundMessage.setStatus(Message.STATUS_INVALID_COMMAND);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+	writeSocket(outboundMessage.toString()); <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; }<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; socket.close();<br>
+&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp; } catch (Exception e) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; System.out.println(&quot;QueueManager:run:1:&quot; + 
+	e.toString());<br>
+&nbsp;&nbsp; }<br>
+	}&nbsp; </code></p>
+	<p align="justify"><code>private String readSocket() throws IOException {<br>
+&nbsp;&nbsp; //first line contains the message length<br>
+&nbsp;&nbsp; String line = in.readLine();<br>
+&nbsp;&nbsp; int headerMessageLength = Integer.parseInt(line);<br>
+&nbsp; <br>
+&nbsp;&nbsp; //read lines from socket until the entire message length has been 
+	read<br>
+&nbsp;&nbsp; StringBuffer sb = new StringBuffer();<br>
+&nbsp;&nbsp; int incrementalMessageLength = 0;<br>
+&nbsp;&nbsp; line = in.readLine();<br>
+&nbsp;&nbsp; incrementalMessageLength += line.length() + 1;<br>
+&nbsp;&nbsp; sb.append(line);<br>
+	<br>
+&nbsp;&nbsp; while (incrementalMessageLength &lt; headerMessageLength) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; line = in.readLine();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; incrementalMessageLength += line.length() + 1; 
+	//add 1 for new line char<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; sb.append(line);<br>
+&nbsp;&nbsp; }<br>
+&nbsp;&nbsp; return sb.toString();<br>
+	}</code></div>
+
+</body>
+
+</html>

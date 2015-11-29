@@ -1,0 +1,15 @@
+<HTML>
+<TITLE>UML</TITLE>
+<FORM>
+<BODY background="grey.gif"><font color=blue>
+<a href="uml_1.html"><img align="left" src="larrow.gif" border=0></a>
+<a href="uml_3.html"><img align="right" src="rarrow.gif" border=0></a>
+<p><br><br>
+<p><font size=+2><br><br>
+<b>Benefits</b><br>
+<UL type="square">
+<LI>Lower cost in training and retooling when changing between projects/organizations
+<LI>Good organization system design for analysts, clients, developers, and programmers
+<LI>Blueprint 
+</UL>
+</font></BODY></FORM></HTML>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0045)http://www.cs.pitt.edu/~chang/163/c01/c01.htm -->
+<HTML><HEAD><TITLE>Component-Based Software Engineering</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR></HEAD>
+<BODY><a href="02a.htm">
+<IMG 
+src="previous.gif" align=left width="26" height="26"></a>
+<a href="04.htm">
+<IMG 
+src="next.gif" align=right width="26" height="26"></a> 
+<H1>&nbsp;A Simple Security Example</H1>
+<p>&nbsp;</p>
+
+<p><font face="Courier New"><font color="#0000FF">ISecurityCallContext *pCallCtx ;<br>
+<b>CoGetCallContext</b> (<b>IID_ISecurityCallContext</b>, (void **) &amp;pCallCtx) ;</font><br>
+&nbsp;</font></p>
+
+<p><font face="Courier New">Code Explain:</font></p>
+
+<H1><font size="3">Msdn Library Calls:</font></H1>
+<p>(1) C/C++</p>
+<pre class="syntax"><b><font size="3">HRESULT CoGetCallContext(
+  REFIID</font></b><font size="3"><i> <a class="synParam" onclick="showTip(this)" href>riid</a></i><b>,</b>
+<b>  void </b>**<i> <a class="synParam" onclick="showTip(this)" href>ppInterface</a></i>
+</font><b><font size="3">);</font></b></pre>
+<p><b>CoGetCallContext</b> retrieves the 
+context of the current call on the current thread</p>
+
+<p><font face="Times New Roman">For COM+ applications using role-based security, <b>
+IID_ISecurityCallContext</b> is available.</font></p>
+
+<p><font face="Times New Roman">retrieve a pointer to the
+<a h ref="http://msdn.microsoft.com/library/en-us/cossdk/htm/isecuritycallcontext_594k.asp">
+ISecurityCallContext</a> interface.</font></p>
+
+<p><i>riid</i>: Interface identifier (IID) of the call context 
+that is being requested.</p>
+<p><i>*ppInterface: </i>&nbsp;contains the 
+requested interface pointer.</p>

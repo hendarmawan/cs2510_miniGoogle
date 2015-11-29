@@ -1,0 +1,29 @@
+# you can substitute the "gcc" compiler for your favorite compiler
+CC = gcc
+
+# the "-g" flag is used for debugging.  you can add any other flags you want.
+#    removing the  "-g" flag  will cause the program to be compiled faster
+CFLAGS = -g
+
+all: receiver sender name_server
+
+receiver: receiver.o
+	$(CC) $(CFLAGS) -o receiver receiver.o
+
+sender: sender.o
+	$(CC) $(CFLAGS) -o sender sender.o
+
+name_server: name_server.o
+	$(CC) $(CFLAGS) -o name_server name_server.o
+
+receiver.o: receiver.c
+	$(CC) -c $(CFLAGS) receiver.c
+
+sender.o: sender.c
+	$(CC) -c $(CFLAGS) sender.c
+
+name_server.o: name_server.c
+	$(CC) -c $(CFLAGS) name_server.c
+
+clean:
+	-rm -f *.o core receiver sender name_server

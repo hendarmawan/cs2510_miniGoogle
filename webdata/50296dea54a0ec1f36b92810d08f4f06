@@ -1,0 +1,609 @@
+     PROFESSOR:   Here is our game plan.
+This weekend, this Friday, tomorrow, I'll
+send you E-mail regarding the chapters and
+sections you need to study.  And then next
+Tuesday, I go over in detail, do a review,
+emphasizing what you need to cover, but
+just give you some hint.
+     You notice that before the midterm,
+we have a lot of substantial topics
+whereas after the midterm is you guys
+doing a project and we have more
+conceptual topic, except what I'm going to
+talk about today.  Database design.  Very
+substantial thing.  So which means you
+need to study or review very carefully
+what we covered before the midterm, okay?
+But I'm go into more detail next Tuesday.
+And then Tuesday of course will be the
+final deadline for your mini project and
+then Thursday we have the final exam.  So
+what we'll do today is take one example
+and work on the details.  So that you will
+see clearly what we are doing.  And you
+can fully -- what you can fully expect in
+the final.  We will have something similar
+to this one.
+     Okay.  This is something that you
+have seen before.  Maybe not exactly but
+in the first part we talk about ER
+diagram, so here we have employee and the
+key is social security number and
+department, they have many to one
+relationship and employee can also manage
+some departments.  Employee may be working
+on project and his relationship is many to
+many and each department can control a
+number of projects and there is a weak
+relationship, entity, weak entity, called
+the dependent of employee and dependent of
+relationship and finally there is a where
+employee can be super visor and
+supervisee.  One who wan manage many.
+     Okay.  So here is the ER diagram.
+The problem or the question is that you
+would like to design relational database,
+starting from this ER diagram.  And
+hopefully, the design is optimal in a
+sense that we do not use too many
+relationships.  And then we're going to
+use the same example to see how we can
+realize hierarchical database and network
+database from this one.  Okay?
+     So, I think you have this printout,
+right?  Anyway I'm going to turn on the
+light.  It's easier that I can work on the
+board.  I think you get the picture.  So
+what we'll do is that we'll work on that
+and see how we can come up with the design
+and of course what I do is to ask you to
+help me as we go along, like I said, it's
+not too clear now but hopefully it should
+be okay.  So what we'll do is we start
+from the simplest, the obvious, and then
+we gradually try to refine.  Okay?
+     So, let's start by first making some
+relation tables that should be from the
+obvious analysis.  So we start with you,
+young lady.  So what should we make
+relational tables just by looking at this.
+     STUDENT:   Employee?
+     PROFESSOR:   Be a little more
+general.  Employee is an entity and you
+expect what else?  You will make -- all of
+the entities, right?
+     STUDENT:   Yeah.
+     PROFESSOR:   Okay.  So I think that
+will be a good guess, right?  So if we
+start with one approach is let's make all
+of them all of the entities as relations.
+So what I have after employee, department,
+project, and dependent.  Okay.  So what
+are the attributes for employee?  Next
+person.
+     STUDENT:   B date, SSN, sex, salary,
+address.
+     PROFESSOR:   All of those you see
+there, right?
+     STUDENT:   Yeah.
+     PROFESSOR:   Okay.  So we have, the
+key, SSN, right?  And a whole bunch of
+stuff.  Department?
+     STUDENT:   I can't see it?
+     PROFESSOR:   I know.  It's a little
+hard to see.  But whatever the attributes
+are.
+     STUDENT:   But whatever the
+attributes are.
+     PROFESSOR:   I can't see either.
+Sorry about that. but we have department,
+department has a name has a number.  Okay?
+Actually, I think what it means here is
+that department number is unique and the
+name is the alternate key.  So we can use
+either one as the key.  Let's say we use
+the number as the key.  And name is
+alternate key.  And the rest of the stuff.
+Project?
+     STUDENT:   Name, number, location.
+     PROFESSOR:   Name, number, location.
+Again, maybe project number should be the
+key and project name, location.  And then
+we have dependent.
+     STUDENT:   Name sex and birthdate.
+     PROFESSOR:   Name, sex and birthdate.
+Okay.  So tentatively, name, sex,
+birthday.  Okay.  So just the first run,
+right?  What we do is just make every
+entity a relationship.  I mean a relation.
+Okay.  Yeah.  A table.  But this is not
+the end of it.  This is just the
+beginning.  Okay.
+     Now, what we'll do is that we are
+going to argue for every relationship to
+see whether it pays for us to establish
+another relation.  So let's start from the
+top.  Which is works for.  Okay?  Works
+for is the many to one relationship
+between employee and department.  Yes?
+What do you think?  What do we do with it?
+Okay.  First, we have those tables, right?
+No problem, right?  Now we need to capture
+those relationships, okay?  So what I'm
+asking is that we look at each
+relationship and decide either to add more
+attributes to this table or to add another
+table.  You follow me?
+     STUDENT:   Okay.
+     PROFESSOR:   So now let's look at
+works for.
+     STUDENT:   Um, would you create a
+relation between the two, wouldn't you?
+     PROFESSOR:   You want to create
+another table?
+     STUDENT:   Yeah.
+     PROFESSOR:   Okay.  Yeah, you want --
+hold on.  So you OPT for create another
+table?  What table?  Tell me.
+     STUDENT:   Works for.
+     PROFESSOR:   Works for.  What
+attribute should I put there?
+     STUDENT:   You just want to use ones
+from employee and department.
+     PROFESSOR:   Use what?
+     STUDENT:   The attributes that are
+from employee and department.
+     PROFESSOR:   All of the attributes.
+     STUDENT:   You don't need to create a
+new one.
+     PROFESSOR:   I'm asking, do we put
+all of the attributes there or just a key?
+     STUDENT:   Just a key.
+     PROFESSOR:   Just a key, right.  So
+in other words, works for is relationship
+between employee and department, right?
+So we need only take the key off employee
+and department.  Put it there.  Is that
+what you mean, right.
+     STUDENT:   Sure.
+     PROFESSOR:   Okay.  What's the key
+for this relation?
+     STUDENT:   For which?
+     PROFESSOR:   This one, the one you
+just created, works for.
+     STUDENT:   The social security
+number.
+     PROFESSOR:   Just the social security
+number?
+     STUDENT:   Well, both of them are --
+     PROFESSOR:   Both of them.  In other
+words, the key is composite key.
+Including both attributes.  Okay?  Then
+you can see that this guy becomes the
+foreign key right?  This is the foreign
+key and this guy is the foreign key.  So
+everything link together yes?
+     STUDENT:   Why do we make another
+table you can put department number as
+another attribute for employee?
+     PROFESSOR:   Very good.  And your
+logic is?
+     STUDENT:   Well, since only one
+employee can -- the employee is in one
+department, so you put employee one
+department number -- one department
+number.
+     PROFESSOR:   I add what?
+     STUDENT:   Department number.
+     PROFESSOR:   Very good.  Actually,
+you see, guys I put number here.  This is
+really not a very good idea, right?  So I
+really should be using like D number, P
+number.  This name, okay.  So then I put
+department number here.  In other words,
+whenever I have this many to one
+relationship, in order to avoid creating
+another table, what I can do is to take
+the key from the one side in this case
+it's the department side, and put it into
+the other relation as a foreign key.
+Everybody see that?  This is critical.
+This is definitely I'm going to test on of
+the in other words, when you have two
+re -- two entities engaging in
+relationship, which is many to one
+relationship we do not have to create
+another table.  You can just put a key on
+the other side like what he just suggest.
+     You have a question?
+     STUDENT:   You answered it.
+     PROFESSOR:   Good.  Any questions
+about that?  Okay.  You are heal happy,
+right?  Either way we'll do it.  In exam
+if you forgot rules, you first do this,
+okay.  I would take off some point, but
+still at least it works.  But then you can
+argue, hopefully, to get to knock off some
+of the relationships.  Yeah?
+     STUDENT:   You take the key from the
+one side and add it to the many side?
+     PROFESSOR:   Right.  I have to -- I
+have the formal rules but those rules
+sometimes are somewhat difficult to read.
+So that's why I'm explaining in example.
+In fact this six rules is what you need to
+study carefully.  Here I wrote it in
+abstract way so it's harder to understand.
+Here I say one to many relationship, Y and
+S correspond to entity the N side and T is
+entity of other side then I should include
+primary key of T the key on one side as a
+foreign key in a relationship on many
+side.
+     So these are the stuff that you will
+find in my notes, okay?  But it's easier
+to understand if you go through some
+critical examples.  Okay.
+     Let's go back to our story.  Okay.
+Everybody happy now, right?  Next one.
+Yeah, thank you.
+     Manage, manage is a one to one
+relationship between employee and
+department.  What should I do?
+     STUDENT:   You put it in department
+like manager social security number.
+     PROFESSOR:   First if I want to do
+stupid way how do I do it in stupid way.
+     STUDENT:   Do what you did.
+     PROFESSOR:   I create another
+relationship called manage with what
+relations?  What attributes?
+     STUDENT:   I guess social security
+number of the manager and department
+number of the manager.
+     PROFESSOR:   Social security number,
+same thing, department number.  I do have
+an attribute in this case, right?  Which
+is start date.  Where is different from
+last time.
+     So if I just want to create a
+database and I don't care about the cost,
+I create a manager relationship with SSN,
+DNO, the combination, composition is the
+key and then I do have an attribute which
+is start date.  That is fine.  Okay.  This
+is one way, but this redundant.  Now going
+back to your way.  What did you say?
+     STUDENT:   Put the manager's
+associate security number in the
+department.
+     PROFESSOR:   You want to put this
+side?  That's fine.  In fact maybe this
+better, because this is the way, I mean
+semantically this what we do.  We have
+department, every department has a
+manager, so it seems logical to put it on
+this side.  So the department has a
+manager and we put social security number
+of the manager here.
+     Since every department has just one
+manager, obviously we can do that.  Is
+that it?  Or we need -- yeah?
+     STUDENT:   You can add start date to
+the department also and just update it
+every time you change manager.
+     PROFESSOR:   Right.  I better do that
+because otherwise I have no other place to
+put it.
+     Okay.  Because I'm not going to have
+that relation.  Knock out that relation.
+So this attribute has to be somewhere so I
+can add the social security number of the
+manager and start date to the department
+relation.  Yeah?
+     STUDENT:   In one to one it would be
+create to add them to either of the two
+relations.
+     PROFESSOR:   Create.
+     STUDENT:   Actually --
+     PROFESSOR:   However, add it to the
+other side.
+     STUDENT:   Might not make sense.
+     PROFESSOR:   Think about that.  What
+will happen?  If I add it to this side
+what will happen?
+     STUDENT:   You would end up wasting
+space because there is not full
+participation on that side.
+     PROFESSOR:   Correct.  And I also
+have to put in some stuffing there because
+there are people who are not managers, you
+know, they are just Indians, so you just
+waste that space.
+     STUDENT:   So in the one to one
+relationship you would have to examine the
+participation.
+     PROFESSOR:   Right.  Right.  Although
+both are correct, we can do it either way,
+but this will be semantically better.  I
+mean, this seems to conform to what we
+mean.
+     Okay.  So good.  So we took care of
+works for and manages.  And now let's pick
+up this one, supervise.  Each employee is
+super sized by somebody.  Who -- super
+vised by somebody, so this is one to many
+relationship, each manager super vise a
+number of people.
+     So what do you think?  Where am I
+now?  Finish this row.  Yeah?
+     STUDENT:   You should put add manager
+to employee.
+     PROFESSOR:   Okay.  The easiest way
+as you suggest is that I can add here, I
+won't call this social security number,
+but I say maybe M, SSN, manager's social
+security number and add it here and since
+that's one to many, that will work.
+     Yeah?
+     STUDENT:   Won't you have a problem
+enforcing referential integrity if you did
+it that way?  When you're entering a new
+record how do you say you're entering
+manager SSN, we don't know if there is
+already a record for an employee with that
+SSN?
+     PROFESSOR:   You're quite right.  You
+have to be very careful, that's right.
+Here you are talking about remember last
+time I showed you when we create relation
+we have to do dependency analysis do be
+sure we can do that.  If we do not have
+third normal form relations, we may get
+into trouble this way.  Yeah, it's
+possible.
+     Okay.  We are here.  And if we just
+follow what you just mentioned, if we
+don't like that, what do we do?
+     STUDENT:   Add a supervision
+relation.
+     PROFESSOR:   Yes.  In other words we
+have supervise and that relation basically
+SSN and M, SSN.  And then I don't have to
+add it here.  This is the composition.
+Okay?  In other words, it's a tradeoff, we
+can have more relations or less relations
+on the other hand, this may not be what
+the user perceives.  He doesn't see things
+that way, so it may be easier to put it in
+single employee relation and take care of
+things that way.
+     Okay.  Now we come to works on.  So
+employees can work on project and that's a
+many to many relationship now.
+     STUDENT:   Many to many so, I would
+go with making a new relation called works
+on, attributes hours and SSN and P number
+from project.
+     PROFESSOR:   Right.  So works out
+we'll have SSN, and this works on project,
+so we have project number here and then we
+keep track of hours, hours worked.
+     Since this is many to many there is
+no question we should create a separate
+table for that.  Because it would be
+tremendous wasteful if I absorb it
+anywhere.
+     How about controls?  Department
+controls project?  One to many.  Up here.
+     STUDENT:   Add the department number
+to project.  I can't see.
+     PROFESSOR:   Add department to
+project because project is on the many
+side to we can do that.  Okay.
+     I think we are almost done except one
+thing.  We have a weak relation here, the
+dependents which we try to make a separate
+relation but we really cannot because they
+could be easily duplicate entries.  What
+should we do?
+     STUDENT:   Make a separate table.
+     PROFESSOR:   Make a separate table
+but do we need to add something there?
+     STUDENT:   Yeah you need to add
+their -- what's --
+     PROFESSOR:   We need to add here.
+     STUDENT:   Employee's SSN.
+     PROFESSOR:   We need to add social
+security number, the key of the parent the
+owner relation.  Okay.  So we need to add
+social security number.  So if John DOE is
+the parent of the dependent we need add
+that here which makes that -- so that's
+relational database design.  So we start
+with ER diagram and then we first make the
+entities as relations, tables and then go
+through the relationship one by one and
+each case we analyze whether we should
+absorb it or make it a separate relation
+and et cetera.
+     Any questions?  Okay.  Good.  So now
+let's turn to hierarchy.
+     Hierarchy as I showed you before is
+basically one to many.  And this occurs
+easily in many organizations, hospitals,
+companies, they normally we'll have a
+hierarchical structure.  In fact, even
+these days when you design your web site,
+although you could make any links, any you
+want, but by and average, people would
+follow a hierarchical structure.  So you
+have a home page and then you link to some
+other second level pages and so on and so
+forth.  So this will be primary
+hierarchical structure and then you can
+add more links and make it arbitrary graph
+but it is their hierarchy.
+     When you talk about hierarchy and we
+look at ER diagram, immediately we have a
+puzzle.  You see the relational database
+is basically flat.  Flat, by flat I mean
+all I'm doing is to try to establish this
+entity as tables and then add some
+attributes or make some other tables.  So
+all of the tables are equal.  And when we
+use the database we can access any table.
+     Using SQL language.  But when you
+design the hierarchy, things are not equal
+because the root has advantage, you go
+through the root first.
+     So when you look at these then you
+have to ask yourself what do you want to
+establish as the root?  Now, in this case
+if our purpose is to serve the employees
+we want to retrieve information based upon
+employees, what we could do is to start by
+having the employee.  And then we try to
+make department its subordinate.
+     Will this work?
+     STUDENT:   No.
+     PROFESSOR:   Why not?
+     STUDENT:   Because department has to
+go to employee.
+     PROFESSOR:   The way I draw it is one
+to many.  One employee for many
+departments.  But that's not right, right?
+Because we looked at this and we all know
+we really have a single department with
+many employees, so a good way to do that
+would be to have department on top of
+employees.  Okay.
+     So in other words, when you see a one
+to many relationship in the high ary we
+should have it this way and you see
+something else here, department manages
+employees.  Sorry.  Employee manages
+department.  What do we do with that?
+     STUDENT:   Add the attributes that
+you like we did before, add those
+attributes to the department relation.
+     PROFESSOR:   Right.  So we can add
+the department segment, the attributes
+because it's one to one.  So that we --
+every department has managers.
+Departments works on project.  It's a many
+to many relationship.  This why -- clearly
+you cannot do it here.  Because the
+hierarchy is one to many relationship.
+How on earth can we represent a many to
+many relationship?  Well, the trick is
+that we have another tree and another
+hierarchy.  We have project as the root.
+So underneath each project we have people
+working for the project so we have then
+the notes which we won't call it employee,
+just use EMP because in this node the
+employee node, I have all the attributes.
+And here all I have is just the social
+security number.
+     So what I'm saying is I'm making two
+trees.  Here I have department and
+underneath department I have employees.
+Here I have project.  Underneath each
+project I have employees.  Yes?
+     STUDENT:   So if the department you
+have another level saying like PRJ for
+project or something?  The department-.
+     PROFESSOR:   Yes, this accomplish
+that purpose.  And basically because the
+SSN and SSN they are the same.  So this is
+the concept of a virtual segment.  Or
+virtual node.  In other words, they match.
+So what you said is really put it here.
+You have project, so each department has
+employee, employee then works for certain
+project.  Same thing.
+     Okay.  So we took care of the works
+on and finally the dependent.  The
+dependent is easy now.  Where am I?  Yes?
+To take up dependent.  Employee has
+dependents.
+     STUDENT:   That would branch off of
+employee.
+     PROFESSOR:   Just put one more level.
+Because each employee like John DOE, he
+will have at the next level number of
+dependents.  So that will be another level
+of the tree.
+     Okay?  So to recap, the main thing is
+we have to think through to establish the
+root node and you go one level it's always
+one to many, one to many that reflects one
+to many relationships.  You have many to
+many, you have to use this kind of device
+of having two trees and essentially they
+one becomes virtual record.  In other
+words this will link to those nodes.
+Okay.
+     Now we are almost done because final,
+the last one is so-called network.  The
+network is actually very similar to the
+hierarchical because network is also one
+to many, only difference is that it is now
+more strict.  You have to be one to many
+and you cannot have overlapped records.
+So in this kind of hierarchy, SSN, SSN
+they actually have shared works on
+relationship.  Which defines what
+employees works on, what project for what
+department to link them together.  Okay.
+     So it will be easier for you if you
+work from the example and at the same time
+look at the more abstract description in
+terms of the steps.  So in each case, I
+have put down a number of steps we have to
+go through, but essentially that's what
+I'm describing to you right now.
+     Okay.  Finally, just to summarize,
+what we talked about it start from a
+conceptual model like ER diagram and then
+you can create different database model,
+relational, hierarchical, network.  And
+how to represent that link, in relational
+model, well, we just include the same
+attributes in two relations.  Then we
+create a link.
+     In the network it's called a set
+type.  In hierarchy it's called parent
+child relationship.  You can see
+undoubtably the relational is simplest.
+It's easy to follow.  Even if you develop
+object Oriented we can still use similar
+logic to think it through.  So just recap,
+first establish every entity as a
+relational table.  Then analyze every
+relationship to see whether it's one to
+one, one to many, or many to many.  If it
+is one to one or one to many, what do we
+do?  We absorb it.  Many to many you have
+to establish a separate relational table.
+     Finally, the weak entities, we add
+the key.  Okay?  That will give us
+efficient design but in some cases, as you
+pointed out, we need to do the dependency
+analysis to make sure there is no update
+anomaly.  Okay.
+     So that's all there is to it.  And
+then finally, in the notes, I also show
+you the equivalents of the terminologies,
+because in this database, it's just like
+any other field in computer science, you
+know, the terminology changes all of the
+time, so you call it tuple, a record,
+whatever.  Row, whatever, so by looking at
+those tables, you can find correspondents.
+So that's all we're going to cover.  Like
+I said, I'll send you E-mail to tell you
+what sections, subsections, in the
+textbook you have to read.  But if I were
+you, I would start with the class notes.

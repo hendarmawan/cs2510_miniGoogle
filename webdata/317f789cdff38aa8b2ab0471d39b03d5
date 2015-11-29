@@ -1,0 +1,46 @@
+<html> 
+ <title> Multimedia Software Engineering </title> 
+
+ <!--- A HREF="previous.html" >  < IMG SRC="previous.gif" align=left >  </A ---> 
+ <A HREF="bb2.html">  <IMG SRC="next.gif" align=right>  </A> 
+ <center> 
+ <h1> 
+class Panel
+ </h1> 
+<P align=left>
+Class Panel is part of the awt package API and can be packaged as a bean.
+Recall the fully qualified name of class Panel is java.awt.Panel,
+and API packages come with the Java Development Kit(JDK) in a jar file called src.jar .
+
+<P align=left>
+Use the WinZip application to open the src.jar file.  Find the archive of the Panel.java .
+This file has the path src\java\awt associated with it, and those directories will be created.
+The package of class Panel is java.awt; therefore, the class Panel will only be recognized
+by java applications from a perspective where the java directory is a subdirectory, i.e. from the
+src directory.
+
+<P align=left>
+Warning: The folks at Sun did not create text source files (.java) for the windows environment.
+Consequently, the return is seen as a funky character.  Microsoft uses both a carriage return and line feed
+for a new line.  Don't ask me what order because I don't know at the moment.  Unix uses one of the two.  Yes,
+I don't recall which one.  Determining that is left as an exercise to the reader.
+
+<P align=left>
+Warning: Know what the path and class path variables do before trying to run javac, jar, and the beanbox.
+Hey, another reader exercise!
+
+<P align=left>
+From the src directory at a DOS command line we can run the jar utility where the class path is set to
+at least the current directory (or the directory specification of the src directory).  So to make a jar
+file we can type:
+<BR> <DIR> jar cfv Panel.jar java/awt/Panel.java.</DIR>
+
+<P align=left>
+But a bean must be packaged properly for a beanbox application.  We forgot two important points:
+<BR>The source file is not required, the Jave byte code is.  (.class files)
+<BR>A manifest is required to identify the Panel.class as a bean.  I will leave using the javac utility
+to make a Panel.class file in the same directory as the Panel.java location an exercise again.
+
+The next page in this presentation will discuss the manifest.
+ </center> 
+</html> 

@@ -1,0 +1,27 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page17.html"><img src="previous.gif" align=left></a>
+<a href="page18a.html"><img src="next.gif" align=right></a>
+<center>
+   <br><br>
+   <h1>What are Custom Tags?</h1>
+   <br>
+</center> 
+<font size=4>
+<ul>
+   <li>Custom Tags are becoming the standard in modulizing JavaServer
+       pages.</li> 
+   <li>They provide a portable way of defining and creating JSP
+       libraries.</li>
+   <li>They incorporate all of the tag features of Actions, and can be
+       used to instantiate new objects.</li>
+   <li>A programmer can develop a component and never have to fully
+       understand the underlying features of the tag library or calling
+       methods.</li>
+   <li>Enhance the separation between business logic and presentation
+       logic, and are extremely portable.</li>
+</ul>
+</font>
+</html>

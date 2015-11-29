@@ -1,0 +1,344 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 11">
+<meta name=Originator content="Microsoft Word 11">
+<base target=1502main>
+<link rel=File-List href="RunDesign_files/filelist.xml">
+<link rel=Edit-Time-Data href="RunDesign_files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Unit 2c: Running your Design in the Wild-One Board</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Sam Dickerson</o:Author>
+  <o:LastAuthor>Sam Dickerson</o:LastAuthor>
+  <o:Revision>13</o:Revision>
+  <o:TotalTime>60</o:TotalTime>
+  <o:Created>2005-09-30T17:56:00Z</o:Created>
+  <o:LastSaved>2005-09-30T18:58:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>704</o:Words>
+  <o:Characters>4017</o:Characters>
+  <o:Company>University of Pittsburgh</o:Company>
+  <o:Lines>33</o:Lines>
+  <o:Paragraphs>9</o:Paragraphs>
+  <o:CharactersWithSpaces>4712</o:CharactersWithSpaces>
+  <o:Version>11.6408</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" LatentStyleCount="156">
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+p
+	{mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+@page Section1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.25in 1.0in 1.25in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";
+	mso-ansi-language:#0400;
+	mso-fareast-language:#0400;
+	mso-bidi-language:#0400;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="3074"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white background=Unitbkg.jpg lang=EN-US style='tab-interval:.5in'>
+
+<div class=Section1>
+
+<h2 align=center style='text-align:center'>Unit 2c</h2>
+
+<h2 align=center style='text-align:center'>Running your Design in the Wild-One
+Board</h2>
+
+<p>You may synthesize your design on any machine but, once you have reached
+this point, it is necessary that you are working on a computer that has the
+FPGA we targeted in synthesis installed. These are the black machines shown in
+the picture below.<span style='mso-spacerun:yes'>  </span>You may need to use
+the KVM switch (Located below your monitor) so that your keyboard, mouse and
+monitor are connected to the correct machine.</p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p align=center style='text-align:center'><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
+ coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
+ filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:242.25pt;
+ height:182.25pt'>
+ <v:imagedata src="RunDesign_files/image001.jpg" o:title="DSCN3718"/>
+</v:shape><![endif]--><![if !vml]><img width=323 height=243
+src="RunDesign_files/image002.jpg" v:shapes="_x0000_i1025"><![endif]><!--[if gte vml 1]><v:shape
+ id="_x0000_i1026" type="#_x0000_t75" style='width:81.75pt;height:61.5pt'>
+ <v:imagedata src="RunDesign_files/image003.jpg" o:title="DSCN3720"/>
+</v:shape><![endif]--><![if !vml]><img width=109 height=82
+src="RunDesign_files/image004.jpg" v:shapes="_x0000_i1026"><![endif]></p>
+
+<p align=center style='text-align:center'><span style='mso-spacerun:yes'>    
+</span>PC w/Correct FPGA &amp; KVM Switch</p>
+
+<p>Make sure that the logic analyzer data cables are plugged into the
+appropriate connectors on the back of the PC. The connector(s) you use will
+depend on which signals you want to see on the logic analyzer. </p>
+
+<p><span class=GramE>Some logic analyzer support up to 64 channels, while
+others only support 32 channels.</span> In either case, you will only be able
+to see a subset of your output signals at any time, depending on which
+connectors you use on the back of your PC. </p>
+
+<p>Configure the logic analyzer to display the signals which you have connected
+to the <span class=SpellE><i>ioconn_out</i></span> outputs of your design which
+map to the physical ports on the Wildfire board as shown below.<span
+style='mso-spacerun:yes'>  </span>Refer to the Logic analyzer documentation on
+the website if necessary. </p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p align=center style='text-align:center'><!--[if mso & !supportInlineShapes & supportFields]><span
+style='mso-element:field-begin;mso-field-lock:yes'></span><span
+style='mso-spacerun:yes'> </span>SHAPE <span
+style='mso-spacerun:yes'> </span>\* MERGEFORMAT <span style='mso-element:field-separator'></span><![endif]--><!--[if gte vml 1]><v:group
+ id="_x0000_s1040" style='width:387pt;height:291pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="1868,7143" coordsize="7740,5820">
+ <v:shape id="_x0000_s1041" type="#_x0000_t75" style='position:absolute;left:1868;
+  top:7143;width:7740;height:5820'>
+  <v:imagedata src="RunDesign_files/image005.jpg" o:title="DSCN3725"/>
+ </v:shape><v:group id="_x0000_s1042" style='position:absolute;left:3600;top:9887;
+  width:5347;height:659;mso-position-vertical-relative:line' coordorigin="7335,13230"
+  coordsize="5347,434">
+  <v:shapetype id="_x0000_t202" coordsize="21600,21600" o:spt="202" path="m,l,21600r21600,l21600,xe">
+   <v:stroke joinstyle="miter"/>
+   <v:path gradientshapeok="t" o:connecttype="rect"/>
+  </v:shapetype><v:shape id="_x0000_s1043" type="#_x0000_t202" style='position:absolute;
+   left:7335;top:13230;width:1650;height:434' filled="f" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1043'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>ioconn_out2<o:p></o:p></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1044" type="#_x0000_t202" style='position:absolute;
+   left:9142;top:13230;width:1650;height:434' filled="f" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1044'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>ioconn_out1<o:p></o:p></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape><v:shape id="_x0000_s1045" type="#_x0000_t202" style='position:absolute;
+   left:11032;top:13230;width:1650;height:434' filled="f" stroked="f">
+   <v:textbox style='mso-next-textbox:#_x0000_s1045'>
+    <![if !mso]>
+    <table cellpadding=0 cellspacing=0 width="100%">
+     <tr>
+      <td><![endif]>
+      <div>
+      <p class=MsoNormal><b style='mso-bidi-font-weight:normal'>ioconn_out0<o:p></o:p></b></p>
+      </div>
+      <![if !mso]></td>
+     </tr>
+    </table>
+    <![endif]></v:textbox>
+  </v:shape></v:group><w:wrap type="none"/>
+ <w:anchorlock/>
+</v:group><![endif]--><![if !vml]><img width=516 height=388
+src="RunDesign_files/image007.gif" v:shapes="_x0000_s1040 _x0000_s1041 _x0000_s1042 _x0000_s1043 _x0000_s1044 _x0000_s1045"><![endif]><!--[if mso & !supportInlineShapes & supportFields]><v:shape
+ id="_x0000_i1033" type="#_x0000_t75" style='width:387pt;height:291pt'>
+ <v:imagedata croptop="-65520f" cropbottom="65520f"/>
+</v:shape><span style='mso-element:field-end'></span><![endif]--></p>
+
+<p><o:p>&nbsp;</o:p></p>
+
+<p>To test your design you will also use a GUI API program, which is located at
+<i style='mso-bidi-font-style:normal'>I:\1502\Wild-Star Host App\wsii_<span
+class=GramE>host.exe<span style='mso-spacerun:yes'>  </span><span
+style='font-style:normal'>The</span></span></i> following dialog box will
+appear. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=531
+height=478 id="_x0000_i1027" src=host1.jpg></p>
+
+<p>The first thing to do is configure the FPGA. Click the &quot;Browse&quot;
+button corresponding to the &quot;PE0 file path&quot; field. Browse for your
+&quot;<span class=SpellE>pe.bin</span>&quot; file that was generated in the
+place-and-route step. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=531
+height=478 id="_x0000_i1028" src=host2.jpg></p>
+
+<p>Next, select a clock speed for your design. <span class=GramE>To begin, type
+50 into the &quot;clock speed&quot; field.</span> </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=531
+height=478 id="_x0000_i1029" src=host3.jpg></p>
+
+<p>Now you can configure the FPGA with your design. Click the &quot;Program PE0
+button. You'll see several messages scroll in the Messages frame, indicating
+the activity between the host (your PC) and the Wild-Star card. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=531
+height=478 id="_x0000_i1030" src=host4.jpg></p>
+
+<p>At this point the FPGA is configured. You may now enter inputs for your ALU.
+The A and B fields are used to set the inputs for your ALU. Because you have
+designed a 64-bit ALU while your host PC is based on a 32-bit processor, two
+fields are required for each of these inputs. The first field is used to set
+the most significant 32 bits and the second field is used to set the least
+significant 32 bits. For example, let's drive the A input with
+0x0000000B0000000A. <span class=GramE>To do this, enter &quot;B&quot; for word1
+and &quot;A&quot; for word0.</span> Now let's drive the B input with
+0x0000000A00000009. To do this, enter &quot;A&quot; for word1 and &quot;9&quot;
+for word0. Set the SHAMT field to 0, and finally set the <span class=SpellE>ALUOp</span>
+to SUB. Your window should now look like this: </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=531
+height=478 id="_x0000_i1031" src=host5.jpg></p>
+
+<p>Click the &quot;Set data!&quot; button to set the inputs to the ALU. The
+results from ALU will be displayed in the message window. You will also be able
+to witness the operation of the ALU on the logic analyzer by setting the
+triggers and running the just prior to clicking the &quot;Set data!&quot;
+button. </p>
+
+<p class=MsoNormal align=center style='text-align:center'><img width=531
+height=478 id="_x0000_i1032" src=host6.jpg></p>
+
+<p>This architecture will allow you to effectively test the timing for critical
+paths in the design which begin with one of the inputs and end with the ALU <span
+class=SpellE>ouputs</span>. </p>
+
+<p>Experiment with different operations, clock speeds, and values as inputs and
+with different triggers on the logic <span class=SpellE>analzyer</span> to
+examine the timing characteristics of your design. </p>
+
+<p>Finally, demonstrate to a TA the images on the logic analyzer screen of the <i>A</i>
+value transition and the resulting <i>R</i> value transitions for the following
+test cases. </p>
+
+<p>Run eight tests, two of each <i>Logical</i>, <i>Arithmetic</i>, <i>Comparison</i>,
+and <i>Shift</i> operations. Some examples are listed below, but don't be
+afraid to experiment. In particular, you may want to observe the behavior of
+the ALU when you intentionally cause overflow for <i>Arithmetic</i> operations.
+This ALU will form the core of your <span class=SpellE>MultiCycle</span> and
+Pipelined CPU; the more you understand how it behaves the fewer problems later
+in your design. </p>
+
+<h4 align=center style='text-align:center'>Example ALU Tests </h4>
+
+<p class=MsoNormal style='margin-left:.5in'>1) AND A = 15 (0X0000000F) to B = 5
+(0X00000005) </p>
+
+<p style='margin-left:.5in'>2) ADD A = 2,147,483,646 (0X7FFFFFFE) to B = 3
+(0X00000003) </p>
+
+<p style='margin-left:.5in'>3) SLT A = -1 (0xFFFFFFFF) and B = 1 (0x00000001) </p>
+
+<p style='margin-left:.5in'>4) SRL A = -2,147,483,648 (0x80000000) and SHAMT =
+31 (0x0000001F) </p>
+
+</div>
+
+</body>
+
+</html>

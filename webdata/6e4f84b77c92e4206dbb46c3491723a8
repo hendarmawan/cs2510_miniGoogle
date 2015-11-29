@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>Views</title>
+</head>
+<body>
+
+The next step in creating your database is to build VIEWS.  Views are essentially queries that show, in table format, the information you have selected.<br>
+So select NEW VIEW from the drop down menu.  Give it a name and owner and then select the DESIGN tab.<br>
+Select the database, you should only have one choice.  Open the folders that contain your tables.<br>
+Inside these tables you should see all of the attributes.<br><br>
+
+<img src="CreateView.gif"><br><br>
+
+
+At the bottom of this window is the section where you define what you want the view to display.<br>
+To begin double click on the first attribute you want in your SELECT statement.<br>
+Then go to the conditions section and type in the portion of your WHERE statement that applies to that attribute.<br><br>
+Repeat for each item to be in the view.<br><br>
+
+<img src="SelectFromWhere.gif"><br><br>
+
+In this example I have selected PET_NAME and OWNER_NAME using the mouse.<br><br>
+In the CONDITION column for the PET_NAME I have typed :<br>
+     HOPEMAN.PETS.PET_OWNER = HOPEMAN.OWNERS.OWNER_NAME<br><br>
+In the CONDITION column for OWNER_NAME I have typed:<br>
+     HOPEMAN.OWNERS.CITY = 'Pittsburgh'<br><br>
+
+This gives the view the following Select-From-Where statement:<br><br>
+
+Select : PET_NAME, OWNER_NAME<br>
+From : HOPEMAN.PETS, HOPEMAN.OWNERS<br>
+WHERE :     HOPEMAN.PETS.PET_OWNER = HOPEMAN.OWNERS.OWNER_NAME AND HOPEMAN.OWNERS.CITY = 'Pittsburgh'<br><br>
+
+
+Which produces the following view:<br><br>
+
+<img src="NewView.gif"><br><br>
+
+
+Once you have created all of your tables and views you will need to dismount your active database,<br>
+unless it was not mounted when you started Oracle8 Navigator,<br>
+for the tables and views to be added to the active database folders.<br>
+Then remount the database and select the view or table folders and see that your new objects have been added.<br>
+
+<br><br><a href="gendirpo8.html" align=center>Return to General Directions</a><br>
+<a href="cs1555.html" align=center>Return to Cs 1555</a>
+</body>
+</html>

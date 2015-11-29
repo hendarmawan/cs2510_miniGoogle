@@ -1,0 +1,457 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_win_unchange</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_win_unchange
+</h1>    
+<a name="wp3719613"> </a><p class="pBody" >
+Ensures that the value of a specified expression does not change in a specified window between a start event and an end event.  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3719628"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkersa23.gif" height="107" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3719630"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3772548"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3772549"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">width </em>
+</div>    
+<a name="wp3772550"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3772551"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3772552"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3719632"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Class: </span>
+</div>    
+<a name="wp3772553"> </a><div class="pCellBodyLeft" >
+event-bounded assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3719633"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3719810"> </a><pre class="pCode1" >assert_win_unchange 
+</pre>    <a name="wp3772554"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level</em>, <em class="cEmphasis">width, property_type</em>,<em class="cEmphasis"> msg</em>,<em class="cEmphasis"> coverage_level </em>)] 
+</pre>    <a name="wp3772555"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, start_event, test_expr, end_event </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3719678"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3719637"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719639"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3719641"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719643"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719645"> </a><div class="pCellBodyLeft" >
+width
+</div>    
+</td>
+    <td><a name="wp3719647"> </a><div class="pCellBodyLeft" >
+Width of the <em class="cEmphasis">test_expr</em> argument. Default: 1. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719661"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719663"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3719665"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719667"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719669"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3719671"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719673"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719675"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3719677"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3719712"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3719681"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719683"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3719685"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719687"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719689"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719691"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3719693"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719695"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719697"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719699"> </a><div class="pCellBodyLeft" >
+start_event
+</div>    
+</td>
+    <td><a name="wp3719701"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719703"> </a><div class="pCellBodyLeft" >
+Expression that opens an event window.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719705"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719707"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">test_expr</em>
+</div>    
+</td>
+    <td><a name="wp3719709"> </a><div class="pCellBodyLeft" >
+[ <em class="cEmphasis">width</em> - 1: 0 ]
+</div>    
+</td>
+    <td><a name="wp3719711"> </a><div class="pCellBodyLeft" >
+Expression that should not change value in the event window
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3720040"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3720042"> </a><div class="pCellBodyLeft" >
+end_event
+</div>    
+</td>
+    <td><a name="wp3720044"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3720078"> </a><div class="pCellBodyLeft" >
+Expression that closes an event window.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3719713"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3768843"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_win_unchange</code> assertion checker checks the expression <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> at each rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> to determine if it should open an event window at the start of the next cycle. If <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> is sampled TRUE, the checker evaluates <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span>. At each subsequent rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>, the checker evaluates <span style="font-style: oblique" class="cCodeBodyEmphasis">end_event</span> and re-evaluates <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span>. If a sampled value of <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> is changed from its value in the previous cycle, then the assertion fails. If <span style="font-style: oblique" class="cCodeBodyEmphasis">end_event</span> is TRUE, the checker closes the event window and returns to the state of monitoring <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> at the next rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>.
+</p>    
+<a name="wp3720312"> </a><p class="pBody" >
+The checker is useful for ensuring certain variables and expressions do not change in various event windows. A typical use is to verify that synchronization logic responds after a stimulus (for example, bus transactions occurs without interrupts or write commands are not issued during read cycles). Another typical use is to verify that non-deterministic multiple-cycle operations with enabling conditions function properly with the same data.
+</p>    
+<a name="wp3719736"> </a><h4 class="pHead4" >
+Assertion Check  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3719725"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719727"> </a><div class="pCellBodyLeft" >
+ASSERT_WIN_UNCHANGE
+</div>    
+</td>
+    <td><a name="wp3720505"> </a><div class="pCellBodyLeft" >
+The <em class="cEmphasis">test_expr</em> expression changed value during an open event window.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3719756"> </a><h4 class="pHead4" >
+Cover Points  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3719739"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719741"> </a><div class="pCellBodyLeft" >
+window_open
+</div>    
+</td>
+    <td><a name="wp3719743"> </a><div class="pCellBodyLeft" >
+An event window opened (<em class="cEmphasis">start_event</em> was TRUE).
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719745"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719747"> </a><div class="pCellBodyLeft" >
+window_close
+</div>    
+</td>
+    <td><a name="wp3720910"> </a><div class="pCellBodyLeft" >
+An event window closed (<em class="cEmphasis">end_event</em> was TRUE in an open event window).
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3719757"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3719758"> </a><pre class="pCode2" >assert_change, assert_time, assert_unchange, assert_win_change, 
+assert_window
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3719944"> </a><h3 class="pHead3" >
+Example
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3719988"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3719949"> </a><div class="pCellBodyLeft" >
+assert_win_unchange #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719957"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3719959"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772556"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3772557"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772558"> </a><div class="pCellBodyLeft" >
+&#8220;Error: a changed during divide&#8221;, 
+</div>    
+<a name="wp3772559"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3719963"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772560"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772561"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772562"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772563"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719965"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3719967"> </a><div class="pCellBodyLeft" >
+valid_div_win_unchange_a (
+</div>    
+</td>
+    <td><a name="wp3719971"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3719973"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719975"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3719977"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772564"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772565"> </a><div class="pCellBodyLeft" >
+start, 
+</div>    
+<a name="wp3772566"> </a><div class="pCellBodyLeft" >
+a, 
+</div>    
+<a name="wp3772567"> </a><div class="pCellBodyLeft" >
+done);
+</div>    
+</td>
+    <td><a name="wp3719979"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772568"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772569"> </a><div class="pCellBodyLeft" >
+// start_event 
+</div>    
+<a name="wp3772570"> </a><div class="pCellBodyLeft" >
+// test_expr 
+</div>    
+<a name="wp3772571"> </a><div class="pCellBodyLeft" >
+// end_event
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3719989"> </a><p class="pBody" >
+Ensures that the <code class="cCodeBody">a</code> input to the divider remains unchanged while a divide operation is performed (i.e., in the window from <code class="cCodeBody">start</code> to <code class="cCodeBody">done</code>).  </p>    <div align="left"><img src="images/ovl_checkersa31.gif" height="102" width="435" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3751523"> </a><p class="pBody" >
+
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

@@ -1,0 +1,189 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><TITLE>Chapter 35. Choosing between COM+, EJB, ad CCM</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=windows-1252">
+<META content="Microsoft FrontPage 5.0" name=GENERATOR></HEAD>
+<BODY><a href="p7.htm">
+<IMG 
+src="previous.gif" align=left width="26" height="26"></a>
+<a href="p9.htm">
+<IMG 
+src="next.gif" align=right width="26" height="26"></a> 
+<H1>&nbsp;&nbsp;&nbsp; </H1>
+<H1>COM+ </H1>
+<p><font size="5">1. Scalability</font></p>
+<ul>
+  <li><font size="5" color="#000080">Any system must recycle resources quickly 
+  and efficiently</font></li>
+  <li><font size="5">JIT/ASAP life cycle ensures all resources are recycled to 
+  central resource pools at the end of a transaction </font></li>
+  <li><font size="5">COM+ Load Balancing service direct new clients to lightly 
+  loaded servers</font></li>
+  <li><font size="5">Short component life spans are of great benefit</font></li>
+</ul>
+<p><font size="5">2. State Management</font></p>
+<ul>
+  <li><font size="5" color="#000080">&quot;The process which maintains state and page 
+  information over multiple requests. As is true for any HTTP-based technology, 
+  Web Forms pages are stateless, which means that they do not automatically 
+  indicate whether the requests in a sequence are all from the same client or 
+  even whether a single browser instance is still actively viewing a page or 
+  site. Furthermore, pages are destroyed and recreated with each round trip to 
+  the server; therefore page information will not exist beyond the life cycle of 
+  a single page&quot;&nbsp; -- page state management from MSDN</font></li>
+  <li><font size="5">Provides data integrity by ensuring another transaction 
+  cannot access data pertaining to one transaction until the first transaction 
+  has completed</font></li>
+  <li><font size="5">Restrict to access application's data will limit 
+  scalability</font></li>
+  <li><font size="5">All access to data must be performed explicitly by 
+  component using a data access mechanism such as ADO (ActiveX Data Objects) or 
+  OLE DB (Object Linking and Embedding DataBase)</font></li>
+</ul>
+<div style="background-color: #C0C0C0">
+  <pre class="code">// OleDbSample.cs
+using System;
+using System.Data;
+using System.Data.OleDb;
+using System.Xml.Serialization;
+
+public class MainClass {
+    public static void Main ()
+    {
+            // Set Access connection and select strings.
+            string strAccessConn = &quot;Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\\..\\BugTypes.MDB&quot;;
+            string strAccessSelect = &quot;SELECT * FROM Categories&quot;;
+ 
+            // Create the dataset and add the Categories table to it:
+            DataSet myDataSet = new DataSet();
+            OleDbConnection myAccessConn = null;
+            myAccessConn = new OleDbConnection(strAccessConn);
+            
+            OleDbCommand myAccessCommand = new OleDbCommand(strAccessSelect,myAccessConn);
+            OleDbDataAdapter myDataAdapter = new OleDbDataAdapter(myAccessCommand);
+ 
+            myAccessConn.Open();
+            myDataAdapter.Fill(myDataSet,&quot;Categories&quot;);
+ 
+            myAccessConn.Close();
+.......   </pre>
+</div>
+<p><font size="5">3. Simpler Security</font></p>
+<ul>
+  <li><font size="5">Built on top of Windows 2000 security infrastructure and 
+  original COM security mechanism</font></li>
+  <li><font size="5">A hierarchy of authentication levels</font></li>
+  <li><font size="5">Access control is defined on per-interface or per-method</font></li>
+  <li><font size="5">Role-based security to allow access right to be assigned to 
+  named roles, such as &quot;administrator&quot;</font></li>
+  <li><font size="5">Some identity issues still remain, such as identity used to 
+  access pooled resources</font></li>
+</ul>
+<p><font size="5">4. Fault Tolerance</font></p>
+<ul>
+  <li><font size="5">COM+ Component Load Balancing compensates for a server 
+  failure by sending new clients to alternative servers</font></li>
+  <li><font size="5">Queued components can be delivered when the server is back 
+  up -- for existing clients of&nbsp; the failed server&nbsp; </font></li>
+</ul>
+<p><font size="5">5. Ease of Development</font></p>
+<ul>
+  <li><font size="5">Components calls the <i>SetComplete</i> and <i>SetAbort </i>
+  methods to indicate a transaction outcome</font></li>
+  <li><font size="5">Call are available in COM-aware languages, such as VB, 
+  VC++, and VBScript</font></li>
+  <li><font size="5">Existing COM components can be used as COM+ components 
+  without recoding</font></li>
+</ul>
+<span id="ContentSpan">
+<table class="tblMatrix" cellSpacing="0" borderColorDark="#999999" cellPadding="5" width="100%" borderColorLight="#ffffff" border="1" frame="below">
+  <tr>
+    <td class="tblHeader" vAlign="top" colSpan="3">Supported programming 
+    languages by .NET</td>
+  </tr>
+  <tr>
+    <!-- BEGIN CELL // row-2 column-1 -->
+    <td class="tblData" vAlign="top">APL</td>
+    <!-- BEGIN CELL // row-2 column-2 -->
+    <td class="tblData" vAlign="top">Fortran</td>
+    <!-- BEGIN CELL // row-2 column-3 -->
+    <td class="tblData" vAlign="top">Pascal </td>
+  </tr>
+  <tr>
+    <!-- BEGIN CELL // row-3 column-1 -->
+    <td class="tblData" vAlign="top">C++</td>
+    <!-- BEGIN CELL // row-3 column-2 -->
+    <td class="tblData" vAlign="top">Haskell</td>
+    <!-- BEGIN CELL // row-3 column-3 -->
+    <td class="tblData" vAlign="top">Perl</td>
+  </tr>
+  <tr>
+    <!-- BEGIN CELL // row-4 column-1 -->
+    <td class="tblData" vAlign="top">C#</td>
+    <!-- BEGIN CELL // row-4 column-2 -->
+    <td class="tblData" vAlign="top">Java Language</td>
+    <!-- BEGIN CELL // row-4 column-3 -->
+    <td class="tblData" vAlign="top">Python</td>
+  </tr>
+  <tr>
+    <!-- BEGIN CELL // row-5 column-1 -->
+    <td class="tblData" vAlign="top">COBOL</td>
+    <!-- BEGIN CELL // row-5 column-2 -->
+    <td class="tblData" vAlign="top">Microsoft JScript®</td>
+    <!-- BEGIN CELL // row-5 column-3 -->
+    <td class="tblData" vAlign="top">RPG</td>
+  </tr>
+  <tr>
+    <!-- BEGIN CELL // row-6 column-1 -->
+    <td class="tblData" vAlign="top">Component Pascal</td>
+    <!-- BEGIN CELL // row-6 column-2 -->
+    <td class="tblData" vAlign="top">Mercury</td>
+    <!-- BEGIN CELL // row-6 column-3 -->
+    <td class="tblData" vAlign="top">Scheme</td>
+  </tr>
+  <tr>
+    <!-- BEGIN CELL // row-7 column-1 -->
+    <td class="tblData" vAlign="top">Curriculum</td>
+    <!-- BEGIN CELL // row-7 column-2 -->
+    <td class="tblData" vAlign="top">Mondrian</td>
+    <!-- BEGIN CELL // row-7 column-3 -->
+    <td class="tblData" vAlign="top">SmallTalk</td>
+  </tr>
+  <tr>
+    <!-- BEGIN CELL // row-8 column-1 -->
+    <td class="tblData" vAlign="top">Eiffel</td>
+    <!-- BEGIN CELL // row-8 column-2 -->
+    <td class="tblData" vAlign="top">Oberon</td>
+    <!-- BEGIN CELL // row-8 column-3 -->
+    <td class="tblData" vAlign="top">Standard ML</td>
+  </tr>
+  <tr>
+    <!-- BEGIN CELL // row-9 column-1 -->
+    <td class="tblData" vAlign="top">Forth</td>
+    <!-- BEGIN CELL // row-9 column-2 -->
+    <td class="tblData" vAlign="top">Oz</td>
+    <!-- BEGIN CELL // row-9 column-3 -->
+    <td class="tblData" vAlign="top">Microsoft Visual Basic®</td>
+  </tr>
+</table>
+</span>
+<p><font size="5">6. Help With Deployment</font></p>
+
+<ul>
+  <li><font size="5">COM+ applications can be used from any COM-enabled platform</font></li>
+  <li><font size="5">COM+ server can only run on Windows 2000</font></li>
+  <li><font size="5">A COM+ application can be exported as a Windows installer 
+  package </font></li>
+</ul>
+<p><img border="0" src="image/net-basics5.gif" width="570" height="309"></p>
+<p><font size="5" color="#000080">&quot;In Visual Basic 6.0, you typically used the 
+Package and Deployment Wizard to create a script-based Setup.exe for your 
+application. The Package and Deployment Wizard could be run as a stand-alone 
+tool or as an add-in to Visual Basic; it could only be used with Visual Basic 
+projects. </font></p>
+<p><font size="5" color="#000080">In Visual Basic .NET, you use a deployment 
+project to create an installer (.msi file) for your application. Unlike the 
+script-based setups, the installer uses Microsoft Windows Installer technology 
+to manage the installation for you. For example, the installer automatically 
+rolls back installation when something goes wrong. &quot; -- from MSDN</font></p>
+
+</BODY></HTML>

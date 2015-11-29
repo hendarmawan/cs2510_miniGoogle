@@ -1,0 +1,27 @@
+<title>Multimedia Software Engineering</title>
+<a href="IC1.html">  
+<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
+</A> 
+<a href="IC3.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
+</head>
+<h1 align="center"> 
+<br><font color="#FF0000">Requirements Specification <i>(cont..)</i></font></h1> 
+
+
+<blockquote>  <blockquote>
+<p align="left"> 
+The following IC Cards deal with the <font color="#0000FF">personalized</font> page that is created for the user <font color="#0000FF">after logging in. </font>&nbsp;Recall it will retrieve the user information on how to personalize the page through the database:</p> 
+
+
+  </blockquote></blockquote>
+
+
+<body>
+
+
+<p align="center"><img border="0" src="pic5.jpg" width="363" height="192"><img border="0" src="pic13.jpg" width="369" height="189"><img border="0" src="pic6.jpg" width="364" height="184"><img border="0" src="pic3.jpg" width="365" height="188"></p>
+
+
+</body>
+
+</html>

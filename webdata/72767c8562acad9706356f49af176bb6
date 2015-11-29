@@ -1,0 +1,601 @@
+<!--
+<h1>CS2310 Exercise 1: David against Goliath</h1>
+<i>USA Today</i> on December 31, 1998 carried an interesting article, "Birth of a New Order",
+talking about the year that world's lines of time and space
+collapsed.  The year is of course 1998.  The most incisive paragraphs are excerpted below:
+<p>
+
+<ul>
+The global, time-crunched market driven by electronic information
+"forces things to get bigger and smaller at the same time," says
+Nicholas Negroponte, author and technologist at the Massachusetts
+Institute of Technology.  "And that's so ironic, when things
+want to do both but not stay in the middle.  There will be an
+increasing absence of things that aren't either very local
+or very global".  Oil and cars aren't much suited to
+being small and local.  So they're moving to become gigantic and
+cross-border.
+As for being small and local, that's where the Internet, or
+World Wide Web, comes in -- and it works in two ways.
+<p>
+
+It lets little companies be global, so a start-up in a garage
+can put its goods or services on a Web site and sell worldwide,
+competing against midsize or big companies, wiping out disadvantages
+(such as distribution and scope) that once had to do with
+distance.  And since little companies can change direction faster
+than bigger ones, they have an advantage in time.  Big companies
+used to have time and distance on their side.  Increasingly,
+little ones do.
+And so in 1998, we had the phenomenon of Amazon.com, which has
+become such a symbol of small beating big that business people
+have turned it into a verb: to be "amazoned".
+<p>
+</ul>
+
+In the context of the above, write a mini-essay to discuss what do you envision multimedia software
+engineering will become, and how multimedia software engineering
+might help the "little guys" compete against the "big guys".
+The mini-essay should be between 1,500 and 2,000 words, with
+no less than 3 and no more than 5 references.
+A "template" is provided:
+<p>
+
+<ul>
+1st paragraph: My vision of multimedia software engineering
+in the year 20xx.
+<p>
+
+2nd paragraph: My vision of a small company in the year 20xx.
+<p>
+
+3rd paragraph: A scenario of the small company in action.
+<p>
+
+4th paragraph: Reasons why MSE can help the small company
+compete against the big guys.
+<p>
+
+5th paragraph: More discussions.
+<p>
+
+3 to 5 references.
+</ul>
+
+
+<p>
+The mini-essay should be e-mailed to chang@cs.pitt.edu
+by the deadline.
+
+<font color=blue>(Note: This Exercise 1 was used in 1999)</font>
+-->
+
+<h1>CS2310 Exercise 1:</h1>
+The purpose of this exercise is to experiment with patterns in software engineering.
+(a) Use the <a href="vl01/t6.htm">IC cards</a> to specify the activities involved in organizing a
+personal health care system such as processing sensor
+input from blood pressure meter, body temperature,
+heart rate and so on, scheduling routine and non-routine
+appointments with physician, obtaining and processing
+prescriptions, following up test results and so on.
+(b) Can you identify certain <b>patterns</b> from the above activities?
+Describe some of the patterns you have identified.
+(see the <a href="http://www.cs.pitt.edu/~chang/budha/coplien.htm">article by James Coplien</a>.)
+<!--
+(c) When ambiguous icons are combined in an <a href="http://www.cs.pitt.edu/~chang/365/iconlan/Slide3.html">iconic language</a>, their meanings are also
+fused together, leading to unique interpretations.  This has
+been exemplified by the Minspeak language.
+Map the activities involved in organizing a picnic into such
+short iconic sentences.
+-->
+
+<!--  2006 to 2009 Solution to Exercise 1
+<br>
+  <font color="red"><a href="../265/picnic/">Solution to Exercise 1(a)</a></font>  
+  <font color="red"><a href="231ex/ex1sol">Solution to Exercise 1(b)</a></font>   
+-->
+<!--
+  <font color="red"><a href="y11/231ex/ex1rush.pdf">Solution to Exercise 1</a></font>
+<br>
+  <font color="red"><a href="y11/231ex/ex1wang.pdf">Another Solution to Exercise 1</a></font>
+-->
+<!--
+<br>
+  <font color="red"><a href="y13/231ex/ex1zheng.docx">Solution to Exercise 1</a></font>
+-->
+<br>
+  <font color="red"><a href="y15/231ex/ex1zhua.pdf">2015 solution to Exercise 1</a></font>
+<br>
+  <font color="red"><a href="y15/231ex/ex1xian.pdf">2015 solution to Exercise 1</a></font>
+
+<hr>
+
+<h1>CS2310 Exercise 2:</h1>
+
+The purpose of this exercise is to enable the students to gain familiarity with the active index
+approach to active information system design.  As discussed in class, the
+hypermedia model and the active index together can be used to model
+active distributed multimedia information systems.  In this exercise we will
+first concentrate on the active index component.
+<p>
+Let us consider a
+<a href="http://www.cs.pitt.edu/~chang/163/interface/SequenceSIS.htm">Personal Health Care System</a>
+for a senior citizen living alone at home.
+The senior citizen may not be computer-literate.
+Therefore he/she will use gestures to communicate
+with the system.  Let us assume there is a <b>gesture
+recognition index cell</b> that can recognize user's
+hand gestures.
+If the gesture index cell detects a "I need help" gesture
+then it will send a message, "Patient Smith needs help",
+to the <b>emergency manager index cell</b>.
+The emergency manager cell will send a message,
+"Call patient Smith",
+to the <b>homecare staff index cell</b>.
+If the senior citizen makes another "I need help"
+gesture, which is again sent by gesture index cell to
+the emergency manager cell, the emergency manager cell will send a
+message, "Visit patient Smith", to the homecare
+staff index cell.
+In other words, multiple "I need help" messages from
+the gesture index cell will prompt the emergency
+manager cell to send "Visit patient Smith" to
+the homecare staff cell.
+The homecare staff cell will call the patient if he/she
+receives a message "Call patient Smith" from the
+emergency manager cell.  If the homecare staff cell cannot
+reach patient Smith by phone, or a message
+"Visit patient Smith" is received from the emergency manager cell, then the
+homecare staff will jump into the ambulance and
+drive to Mr. Smith's home.
+<font color=blue>(Note: Exercise 2 is similar to previous Exercise 2, except the application was changed from distance learning to personal healthcare in 2011)</font>
+<!--
+Let us consider an adaptive distance learning system.
+The distance learning materials are organized into a hypermedia structure.
+A student user can browse through these multimedia documents and
+follow the links to access related multimedia documents.  As such, the
+hypermedia structure is <i>passive</i>, waiting to be accessed by the user.
+<p>
+We can make the hypermedia structure <i>active</i> by associating index cells
+with selected multimedia documents.
+The idea is to designate a special document so that when many students
+access this document, it means they have reached a certain level of
+proficiency and therefore the learning materials should be adjusted to
+become more difficult.  Likewise when many students access a special
+document indicating deficiency, it means they have problems and therefore
+the learning materials should be made simpler.
+The following index cell types are specified:
+
+<p>
+<b>Proficiency-level index cell</b>: The proficiency-level index cell is associated
+with a certain specific multimedia document (such as doc-1, usually reacheable only by proficient students).  When this index cell is triggered, it
+will increase the proficiency-level by 1.  When the proficiency-level has reached a predefined threshold (such as 3), it
+will send message to the instructor, informing the instructor that
+a sufficient number of students have reached this level of proficiency.
+It will also send messages to certain documents (such as doc-3, doc-4, doc-5) to become harder.
+
+<p>
+<b>Deficiency-level index cell</b>: The deficiency-level index cell is associated
+with a certain specific multimedia document (such as doc-2, usually reacheable only by deficient students).  When this index cell is triggered, it
+will increase the deficiency-level by 1.  When the deficiency-level has reached a predefined threshold (such as 2), it
+will send message to the instructor, informing the instructor that
+a significant number of students have reached this level of deficiency.
+It will also send messages to certain documents (such as doc-3, doc-4, doc-5) to become easier.
+
+<p>
+<b>Self-adjustment index cell</b>:  This self-adjustment index cell is
+associated with multimedia documents containing learning materials (such as doc-3, doc-4 and doc-5).
+When it receives a "harder" message, it upgrades the learning materials
+to become harder.
+Likewise, when it receives a "easier" message, it downgrades the learning materials
+to become easier.
+
+<p>
+The above are three index cell <i>types</i>.  The <i>instances</i>
+can be associated with individual multimedia documents (such as doc-1, ..., doc-5).
+There is also a home page (such as doc-0), with links to the other documents (such as doc-1, ..., doc-5).
+-->
+<p><p>
+
+(a) Draw state-transition diagrams to define graphically the three index
+cell types.
+
+<p>
+(b) Specify the three index cell types formally using mathematical notations
+ic = (X, Y, S, s<sub>o</sub>, A, t<sub>max</sub>, f, g).
+
+<p>
+(c) Draw a diagram showing three multimedia interfaces (webpages such as doc-1, ..., doc-3) enhanced with the index
+cells to illustrate how these index cells work together to form
+an active index system.
+
+<!--
+
+<font color=green>
+<br><br>
+(d) Use the <b>IC Builder</b> to construct the three index cell types.
+The output from IC Builder, together
+with the appropriate actions (C functions) and specification of input
+message space, output message space, will become input to the
+<b>IC Compiler</b> to generate the <b>IC Manager</b>.
+
+<p>
+<b>How to download the IC Builder</b>:
+There are four files in the directory http://www.cs.pitt.edu/~chang/231/ictools/IC_Builder:
+  <a href="ictools/IC_Builder/README.ICB.html">README</a>,
+  <a href="ictools/IC_Builder/icb_manual.html">IC Builder Manual</a>,
+  <a href="ictools/IC_Builder/ictapp.zip"> ictapp.zip</a> and
+  <a href="ictools/IC_Builder/ictype.zip"> ictype.zip</a>.
+  Unzip and install under Windows.
+  To run IC Builder under new Windows, follow instructions in
+  <a href="ictools/IC_Builder/xicbuilder"> xicbuilder</a>.
+
+<p>
+<b>Additional Explanation:</b>
+For this exercise there is NO NEED to write any C functions.
+The assignment can be handed in either as a hard copy or via the
+Internet.  For the part where you use IC_Builder to construct IC
+types, you can turn in the output file(s) generated by the IC_Builder,
+which are ascii files X.in.  If you cannot creat X.in, <a href="ictools/IC_Builder/warning">
+read this</a>.  You can also provide screen dumps captured during
+the construction process.  If you use Internet, it will be the best
+if you can give me URL so that I can browse the web pages containing
+the solutions.  In other words, please prepare a set of web pages and
+figures can be embedded as gif/jpg files.  This will be the easiest
+for other people to read.  It will also be useful when you later
+develop a presentation based upon such materials.
+</font>
+
+-->
+<p>
+(d) Following the discussion on the concept of patterns,
+<!-- refine/expand part (d) of Exercise 1, to --> define more clearly the
+pattern(s) you have identified.  If you feel the patterns you
+have identified are lacking in certain respect, you may replace
+them by some new patterns.
+<p>
+(e) A visual specification of the identified
+pattern(s) should be included, using for example visual grammar rules.  Remember Alexander's dictum:
+"If you can't draw a picture of it, it isn't a pattern.")
+
+<br>
+<!-- 2006 to 2009 Solution to Exercise 2    <font color="red"><a href="231ex/ex2zhang.pdf">Solution to Exercise 2</a></font>    -->
+<!--
+<br>
+  <font color="red"><a href="y13/231ex/ex2nils.pdf">2013 Solution to Exercise 2</a></font>
+-->
+<!--
+<br>
+  <font color="red"><a href="y11/231ex/ex2ireland.pdf">2011 Solution to Exercise 2</a></font>
+<br>
+  <font color="red"><a href="y11/231ex/ex2jiang.pdf">2011 Another Solution to Exercise 2</a></font>
+-->
+<br>
+  <font color="red"><a href="y15/231ex/ex2lee.pdf">2015 Solution to Exercise 2</a></font>
+<br>
+  <font color="red"><a href="y15/231ex/ex2agha.pdf">2015 Solution to Exercise 2</a></font>
+
+<hr>
+
+<h1>CS2310 Exercise 3:</h1>
+
+
+The purpose of this exercise is to understand the relationship
+between active index and Petri nets.  Both are tools for the
+modeling of distributed multimedia systems.  Active index cells
+are added incrementally to build a dynamic index, and the
+connections can also change dynamically.  However, if the
+massages passed between index cells are deterministically
+routed, then it is possible to convert active index into a
+Petri net.  Otherwise you must use a Petri net with conditions
+(predicates) associated with the transitions, or an <b>Evaluation Net</b> (E-net).
+<p>
+(a) Convert the active index you constructed in Exercise #2
+into a Petri net (or an E-net).
+<p>
+(b) Take the diagram you drew in part (c) of Exercise #2.
+Redraw it here (because you may want to make some changes), and
+now use the marked Petri net to illustrate the scenario.
+You can draw a sequence of marked Petri net to show how the
+system works.
+<p>
+(c) Suppose the emergency manager index cell corresponds
+to a <b>super-component</b>, i.e., the emergency manager can
+enumerate a number of feasible solutions and select
+the most appropriate one.  Draw the personal health
+care system as a pair of (I-card, C-card), and convert
+it into an ordinary Petri net. (To do that, you need
+to assume a specific number of feasible solutions for
+the emergency manager to evaluate.  Let us say three.)
+<font color=blue>(Note: part (c) was added in 2011)</font>
+
+<!--
+<p>
+<b>Additional Explanation</b>: (a) If we consider how the active index system passes
+messages and reaches equilibrium state (if one exists), this
+leads to a formal study using, for instance, the Petri net model.
+(b) Notice this is the beginning of a systematical approach to
+build prototypes for active distributed multimedia systems. Can
+we create a new systematic approach, i.e., a new software process
+model, for distributed multimedia systems design?
+(c) The index cells could span several nodes.  Therefore, the active index
+system is a distributed index.  The IC Managers must also be distributed
+to the nodes in the networks.
+-->
+
+<br>
+<font color="red"><a href="y15/231ex/ex3lugini.pdf">2015 Solution to Exercise 3</a></font>
+<br>
+<font color="red"><a href="y15/231ex/ex3joseph.pdf">2015 Solution to Exercise 3</a></font>
+<!--
+<br>
+ <font color="red"><a href="y13/231ex/ex3choi.pdf">2013 Solution to Exercise 3</a></font>  
+-->
+<!--
+<br>
+ <font color="red"><a href="y11/231ex/ex3ouyang.pdf">2011 Solution to Exercise 3</a></font>  
+<br>
+ <font color="red"><a href="y11/231ex/ex3wilkin.pdf">2011 Another solution to Exercise 3</a></font>  
+-->
+<!--  <font color="red"><a href="231ex/ex3mill.htm">2006 to 2009 Solution to Exercise 3</a></font>  -->
+<hr>
+<h1>CS2310 Exercise 4:</h1>
+The purpose of this exercise is to experiment with the prototyping
+tool for distributed multimedia computing
+using the SIS testbed.
+The practically oriented student can then continue to
+develop an application based upon the SIS testbed as
+one of the options for the term project.
+The theoretically oriented student can work on the
+suggested theoretical topics for the term project.
+<br>(a) For the perosnal healthcare system,
+specify components and messages for your version of personal
+healthcare system developed in previous exercises.
+You should define all the messages to your components and
+from your components.  Each message can be defined
+by specifying a message type, scope, a short description,
+a list of senders and receivers, your own variables, and an example
+as an XML document.
+The name of messages and variables used in the exercise should remain
+consistent with the <a href="../163/interface/MessageSIS.htm">basic SIS message types and variables</a>.
+Your specification should make use of at least one supercomponent.
+<br>
+(b) In addition to message definitions, please also submit
+a step-by-step detailed scenario showing what messages
+are exchanged and what are the expected effects.
+In particular, show how the messages are exchanged by supercomponents
+and/or components at different levels.
+<br>
+(c) Using SIS testbed, you can test your component(s)
+according to the submitted scenario using the debugging
+tool PrjRemote.
+Your implemented components could be "stubs" 
+for debugging only without actual codes.
+Present a demo to the TA during his specified office hours.
+Try to give a clear demonstration of the scenario with
+messages exchanged by supercomponents and components at different levels.
+<hr>
+<font color="green">
+<h1>CS2310 Exercise 4v1:</h1>
+The purpose of this exercise is to apply multimedia functional
+dependency to multimedia applications design.
+Given an application (its requirements), design the multimedia
+database using multimedia functional dependency theory.
+Then specify the patterns (IC cards) associated with the
+multimedia database.
+The application is the personal health care system that allows the user (a senior citizen) to
+access related multimedia documents using gestures.  A new classification scheme based upon the gestures associated with the multimedia documents is to be introduced.  This would allow users to search for multimedia documents similar to a known audio search key (such as the voice of a certain author).  Your task is to design the multimedia database and associate patterns (IC cards), which can in turn be transformed into IC index and finally an implementation.
+<font color=blue>(Note: Exercise 4 is similar to previous Exercise 4, except the application was changed from distance learning to personal healthcare in 2011)</font>
+</font>
+
+<!--
+The purpose of this exercise is to apply multimedia functional
+dependency to multimedia applications design.
+Given an application (its requirements), design the multimedia
+database using multimedia functional dependency theory.
+Then specify the patterns (IC cards) associated with the
+multimedia database.
+The application is the distance learning system that allows the user to
+access related multimedia documents.  A new classification scheme based upon the audio content of the multimedia documents is to be introduced.  This would allow users to search for multimedia titles similar to a known audio search key (such as the voice of a certain author).  Your task is to design the multimedia database and associate patterns (IC cards), which can in turn be transformed into IC index and finally an implementation.
+-->
+
+<!--
+<br>
+<br>
+  <font color="red"><a href="y13/231ex/ex4zhen.pdf">Solution to Exercise 4</a></font>  
+<br>
+-->
+<!--
+  <font color="red"><a href="y11/231ex/ex4a.pdf">Solution to Exercise 4</a></font>  
+<br>
+
+ <font color="red"><a href="y11/231ex/ex4b.pdf">Another Solution to Exercise 4</a></font> 
+<br>
+-->
+
+<!--  <font color="red"><a href="231ex/ex4zhou.pdf">Solution to Exercise 4</a></font>  -->
+
+<!-- <font color="red"><a href="231ex/ex4gui.doc">Another Solution to Exercise 4</a></font> -->
+
+<hr>
+<font color=green>
+<h1>CS2310 Exercise 4v2:</h1>
+The purpose of this alternate exercise is to use
+visual specification, i.e., I-card and
+C-card, for the design of supercomponents in slow intelligence systems,
+and transform them into Petri nets.
+<br>
+<br>
+(a) Continuing with Exercise 3(c), explore different Petri net realizations
+for the super-components.
+We can make the execution of the algorithms all
+serial, all parallel, probabilistic, and so on.
+There are many different sub-types of Petri nets that
+can be explored.
+You should at least try serial and parallel nets.
+There will be bonus if you try other nets such as
+probabilistic nets.
+<br>
+<br>
+(b) Develop on paper the algorithm for a transformer to transform
+original Petri net specification (in pnml format)
+into the expanded Petri net specification (in pnml format).
+Demonstrate on paper how your algorithm works by going
+through the critical steps and illustarting with
+an example such as the one described in Exercise 3(c).
+<br>
+<br>
+*(c) (optional bonus part/term project) If you can come up with Java implementation to transform
+original Petri net (in pnml format) to expanded
+Petri net (also in pnml format) you will get bonus.
+Or this option work can be part of your
+term project.
+<br>
+<br>
+This topic is for those who are already familiar
+with Petri net and those who are interested in
+implementation type of projects.
+</font>
+
+<!--
+<br>
+<br>
+<font color="red"><a href="y13/231ex/ex4v2gadola.docx">Solution to Exercise 4v2</a></font>
+-->
+<br>
+
+<!--
+<font color=green>
+<h1>CS2310 Exercise 4v3:</h1>
+The purpose of this exercise is to experiment with the prototyping
+tool for distributed multimedia computing.
+First, you need to compile the index cell specifications using
+the <a href="ictools/IC_Compiler/README.ICC.html">IC_Compiler</a> to create the customized IC_Manager.
+This customized <a href="ictools/IC_Manager/README.ICM.html">IC_Manager</a> becomes the CGI program to be invoked when
+the user clicks on the Web pages.
+Then, you build the HTML pages for the active index system for distance learning
+you did in exercise #2.
+The end result should be a demonstration.  If you do it on a Unix workstation, you only need to e-mail your
+URL to me so that the TA and I can try your demo.
+<b>If you do this exercise on a PC, please set up a time with the
+teaching assistant, so that you can demo to the TA on a PC.</b>
+<p>
+All the necessary files are available under the sub-directory called "ictools".
+The most important document for you to read first is the 
+<a href="ictools/README.IC.html">MICE Developer's Guide</a>.
+
+<p>
+<b>How to do this exercise on a Unix workstation</b>: 
+You should
+put your html pages under the public web pages directory, and your cgi programs
+under the cgi-bin directory.
+After that you can set up your working directory, by creating two
+subdirectories called "TAOML" and "source", and then copying all the files
+from the three directories IC_Compiler, IC_Manager and IC_Taoml to this
+"source" directory.  Then you can follow the steps spelled out in
+<a href="ictools/IC_Work/README.ICW.html">MICE Application Development Steps</a>.
+You may find the following <a href="http://www.cs.pitt.edu/~chang/231/how-icm">tips</a> useful.
+<br><br>
+<b>How to download the PC version of the IC Compiler</b>:
+You can also do this exercise on a PC.  To do that, you need to download
+a zip file in the directory http://www.cs.pitt.edu/~chang/231/ictools/IC_Manager/
+<a href="ictools/IC_Manager/icm.zip">icm.zip</a> and
+unzip and install under Windows.
+Follow the <a href="http://www.cs.pitt.edu/~chang/231/ictools/IC_Manager/icm.readme">ICM.ReadMe</a> file to set up the PC version of the IC Compiler.
+An <a href="ictools/IC_Manager/icmic.html">example</a> of
+the <a href="ictools/IC_Manager/icmic.dat">ic.dat</a>  and
+the <a href="ictools/IC_Manager/icmic.in">test.in</a>  is included, which relays a single-click or a double-click to the ic_manager.
+There is also a <a href="ictools/IC_Manager/corba.readme">Corba Unix version</a> for distributed IC manager, which can be used for more advanced projects. However you don't need it for this exercise.
+
+</font>
+<br><br>
+<!--
+<font color=red><b>You can also use other commercially available tools, or build your own tools to do
+this exercise your way.  This will give you additional flexibility.
+In particular you are encouraged to use the newly available
+<a href="cbse.html">developer's environment for component-based
+software engineering</a> to do this exercise.  Since this is an ongoing effort, a lot of patience is needed. Thus there will be 2 bonus
+points if you succeeded in using the CBSE developer's environment.</b></font>
+<p>
+The TA needs to see a demo of this exercise because each one of you may be
+doing different things.  Please contact the TA to schedule an appointment
+with the TA.
+-->
+
+<!--
+<hr>
+<h1>CS2310 Exercise 5:</h1>
+The purpose of this exercise is to experiment with the TAO Editor,
+and build the <a href="../365/w5.txt">TAOML</a> pages for the active index system for distance learning
+you did in exercise #4.
+In other words, you will use the TAO Editor to create the TAOML specifications for the
+adaptive distance learning system,
+and then use the TAOML Interpreter, which has already been downloaded when you download the IC Compiler, to interpret the
+TAOML pages.
+The end result should be a demonstration.  If you do it on a Unix workstation, you only need to e-mail your
+URL to me so that the TA and I can try your demo.
+<b>If you do this exercise on a PC, please set up a time with the
+teaching assistant, so that you can demo to the TA on a PC.</b>
+<br><br>
+<b>How to download the PC version of the TAO Editor</b>:
+You can download the TaoEditor from hale.ksi.edu using anonymous
+ftp.  Please do the following:<br>
+<ul>
+    ftp hale.ksi.edu 26<br>
+    login name: anonymous<br>
+    password: your_e-mail_address<br>
+    cd tao (this step may not be necessary)<br>
+    binary<br>
+    mget *<br>
+</ul>
+An example in a subdirectory is also included for you to download. The Tao Editor is explained in the following <a href="taoedit.readme">TaoEdit.ReadMe</a> file.
+You can also read the MS project report, <a href="http://www.ksi.edu/thesis/guercio/taoedit.pdf"><i>A Visual Editor for Multimedia Application Development</i></a> by Angela Guercio, which explains the Tao Editor in detail.
+-->
+
+<!--
+<hr>
+<h1>CS2310 Exercise 5v2:</h1>
+After you have studied the various approaches, write a critique of
+these approaches, and a proposal of what you intend to do as
+a term project.
+The critique and proposal should be between 1,500 and 2,000 words,
+with no less than 5 and no more than 10 references.
+A "template" is provided:
+<p>
+
+<ul>
+1st paragraph: Introduction.
+<p>
+2nd paragraph: My critique of various approaches.
+(this could be the longest paragraph)
+<p>
+3rd paragraph: What I propose to do and how.
+<p>
+4th paragraph: Why this project is worth doing.
+<p>
+5th paragraph: Discussions.
+<p>
+5 to 10 references.
+</ul>
+
+The critique/proposal should be e-mailed to chang@cs.pitt.edu.
+-->
+
+<hr>
+<h1>CS2310 Project Milestone #1:</h1>
+When the nature of the project is clear, a project milestone will
+be posted.  For programming projects, this project milestone is
+for the delivery of the most essential programs.  Since this is
+a class project, programming should be kept straightforward.
+Remember, the goal is to prove it can be done.  Please observe
+the KISS (Keep it simple stupid) principle.
+If the program works, you have accomplished the objective.
+For theoretical projects, this project milestone is for
+the clear formulation of the problem.  All definitions
+should be clearly worked out by this milestone.
+
+<h1>CS2310 Project Milestone #2:</h1>
+For programming projects, this project milestone is
+for the delivery of all programs, ready for testing.
+For theoretical projects, this project milestone is for
+the completion of formulation of the algorithms.

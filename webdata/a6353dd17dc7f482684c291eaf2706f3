@@ -1,0 +1,36 @@
+<HTML>
+<HEAD><TITLE>CS2310 Seminar -- By Suresh Rangan</TITLE></HEAD>
+
+<BODY>
+
+<A href="07.html" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="09.html"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1><FONT color="mediumblue">Singular Value Decomposition </FONT> </H1>
+</CENTER>
+
+<UL><UL><UL><UL><UL><UL><UL>
+<H2>The final step </H2>
+       <LI><FONT size=5>A technique that decomposes a given matrix into three components –&nbsp;</FONT>&nbsp;&nbsp;&nbsp;&nbsp;
+        <font color="#FF0000" size="5">U, S and V.</font></LI>
+       <BR><BR>
+       <LI><FONT size=5><font color="#FF0000">m x n </font> content-word-transcript matrix
+        <font color="#FF0000">A</font>, of rank r, can be expressed as the product:</FONT></LI>
+<p align="left">
+       <BR><BR>
+       <FONT size=5 color="#FF0000">A = U * S * V<sup>T</sup></FONT>
+       <BR><BR>
+       <FONT size=5><font color="#FF0000">U</font> is <font color="#FF0000"> m x r</font> content-word matrix </FONT>
+       <BR><BR>
+       <FONT size=5><font color="#FF0000">S</font> is <font color="#FF0000"> r x r
+       </font> diagonal matrix </FONT>
+       <BR><BR>
+       <FONT size=5><font color="#FF0000">V</font></FONT><FONT size=5 color="#FF0000"><sup>T</sup></FONT>
+       <FONT size=5> is <font color="#FF0000"> r x n</font> transcript matrix </FONT>
+</UL></UL></UL></UL></UL></UL></UL>
+
+</BODY>
+</HTML>
+

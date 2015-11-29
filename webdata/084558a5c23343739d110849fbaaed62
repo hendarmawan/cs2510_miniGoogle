@@ -1,0 +1,39 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page1.html"><img src="previous.gif" align=left></a>
+<a href="page3.html"><img src="next.gif" align=right></a>
+<center>
+   <br></br>
+   <h1>Introduction to JSP</h1>
+   <br></br>
+</center>
+<font size=4>
+<ul>
+   <li>In today's environment, dynamic content is critical for a
+successful web site. Users want to have these sites
+"personalized" for their own use.</li>
+   <li>Using JavaServer Pages is one answer to provide powerful and
+efficient creation of dynamic content.</li>
+   <li>Utilizes the full Java API.</li>
+   <li>Enables rapid development of web-based applications that are
+platform independent.</li>
+   <li>Allows the use of standard HTML, but adds the power and
+flexibility of Java.</li>
+   <li>Enables web applications to be broken down into separate
+components.</li>
+   <ul>
+      <li>Allows HTML code and design to be generated without much
+knowledge of the Java code that is creating the dynamic content.</li>
+      <li>Due to this fact, businesses no longer need to hunt down
+software developers who understands graphic design, application
+programming, and software design.</li>
+   </ul>
+   <li>Allows for the use of code reuse by supporting 
+       <a href="jb.html">JavaBeans</a> and
+       <a href="ejb.html">Enterprise JavaBeans.</a></li>
+</ul>
+</font>
+</html>
+

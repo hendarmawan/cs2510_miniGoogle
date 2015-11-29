@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Adam Hobaugh</title>
+    <link rel="stylesheet" type="text/css" href="css/quicksand.css" />
+    <link rel="stylesheet" type="text/css" href="css/colaborate.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <div id="content" class="lifted-corners">
+        <div id="yapping">
+          <h2>Welcome!</h2>
+          <p>My name is Adam Hobaugh. I am the Tech Coordinator, a member of the Webteam and the primary web developer for the Department of Computer Science at the University of Pittsburgh.</p> 
+          <p>Each member of the CS Department receives some webspace when they get their accounts. I debated for a while on what to put here. Should it be all work? Should it be all play? Well, we all know what they say about devoting something to one thing. So, I decided I would do a little of each.</p>
+          <div class="split">
+            <div class="split_col1">
+            <h4>Work</h4>
+            <p>First the work, if you have any issues regarding the CS Department's technical resources or website, please go to <a href="http://tech.cs.pitt.edu/tickets/send">http://tech.cs.pitt.edu/tickets/send</a> to submit a help ticket.
+            </p>
+            <p>
+              Some useful resources for the department are:
+              <ul>
+                <li>
+                  <a href="http://tech.cs.pitt.edu/">
+                    The Tech Staff Website
+                  </a>
+                </li>
+                <li>
+                  <a href="http://tech.cs.pitt.edu/faqs">
+                    The Tech Staff FAQ
+                  </a>
+                </li>
+                <li>
+                  <a href="https://www.cs.pitt.edu/people">
+                    The CS Directory
+                  </a>
+                </li>
+                <li>
+                  We sign our own certificates. If you are having unknown signing authority errors, install <a href="http://tech.cs.pitt.edu/certificate">Our Certificate</a>
+                </li>
+              </ul>
+            </p>
+            <p>If you need to meet with me, please see my <a href="availability.html">availability</a>.</p>
+            </div>
+            <div class="split_col2">
+            <h4 class="fun">Fun</h4>
+              <p>Now for the fun. Outside of work, I have some very non-technical interests. The first of which is permaculture. Some links for permaculture are.
+                <ul>
+                  <li>
+                    <a href="http://www.permies.com/t/2594/permaculture/permaculture">
+                      What is Permaculture?
+                    </a>
+                  </li>
+                  <li>
+                    <a href="http://www.permies.com">Permies.com</a>
+                  </li>
+                  <li>
+                    <a href="http://www.richsoil.com/">richsoil.com</a>
+                  </li>
+                </ul>
+              </p>
+              <p>I am also an active member in the Pittsburgh Pagan Community. When I was a student, I had no idea that Pittsburgh had a pagan community, let alone anyone other than me at Pitt. If you are a pagan student and feel that you are alone at Pitt, please feel free to contact me and I can put you in contact with the community.</p>
+          </div>
+        <div class="clear"></div>
+          </div>
+          <p>Well, I have probably used up enough of your time. Go off and check out the links I gave you or drop me a line.</p>
+          <p>//adam</p>
+          <p>PS: This page uses HTML5 and CSS3, some tags and attributes may not be supported by your browser. Since this is just my personal page, I am leaving the page as is so I can easily see when various browsers adopt the tags and attributes.</p>
+        </div>
+        <div id="details">
+          <img src="me.jpg" id="me" />
+          <h3>Contact</h3>
+          <p>
+            adam@cs.pitt.edu
+          </p>
+          <p>
+            6211 Sennot Square<br/>
+            University of Pittsburgh<br/>
+            Pittsburgh, PA 15260
+          </p>
+          <p>
+            Phone: 412-624-8835<br/>
+            Fax: 412-624-8854 
+          </p>
+          <p>
+            <h3>Menu</h3>
+            Home</a><br />
+            <a href="availability.html">Availability</a>
+          </p>
+        </div>
+        <div class="clear"></div>
+      </div>
+      <footer>
+        <img src="ach_designs32.png" alt="&copy; ACH Designs" />
+      </footer>
+    </div>
+  </body>
+</html>

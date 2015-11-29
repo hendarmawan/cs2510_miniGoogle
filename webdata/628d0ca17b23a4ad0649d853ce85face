@@ -1,0 +1,22 @@
+<HTML><HEAD><TITLE>CS2310 Project -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="11.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
+<A href="01.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>CS2310/Spring 2003 -- Project Presentation</H1>
+<H1><FONT color=crimson>Adaptive Intersection Traffic Light</FONT></H1>
+<H2><FONT color=mediumblue>Implemented with Hierarchical Timed Petri Nets</FONT></H2>
+
+<H1>&nbsp;</H1>
+<H1><FONT size=4> Yuqiang Huang</FONT></H1>
+<P><FONT size=3>Computer Science Department, University of Pittsburgh </FONT></P>
+<P><FONT size=3>Email: <A href="mailto:yuqiangh@cs.pitt.edu">yuqiangh@cs.pitt.edu</A></FONT>
+<P align=center>April 18, 2003</P>
+</CENTER></CENTER>
+</BODY></HTML>

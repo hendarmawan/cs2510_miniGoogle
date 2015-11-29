@@ -1,0 +1,12 @@
+<HTML>
+<TITLE>Use Case Diagram</TITLE>
+<FORM><font color=blue>
+<a href="uml_3.html"><img align="left" src="larrow.gif" border=0></a>
+<a href="usecase1.html"><img align="right" src="rarrow.gif" border=0></a>
+<p><br><br><br>
+<font size=+2><b>Use Case Diagram</b><br><br>
+<LI>This diagram describes a system's behavior from a user's standpoint<br>
+<LI>Use case statements and diagrams are used by the users to clearly communicate their requirements to the development team.<br>
+<hr><br>
+<img src="umlpal-usecase.gif">
+</font></BODY></FORM></HTML>

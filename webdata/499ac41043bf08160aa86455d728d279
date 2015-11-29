@@ -1,0 +1,32 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="page1.html"><img src="previous.gif" align=left></a>
+<a href="page3.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>Image Search Engine???</h1>
+   <br></br>
+<b>Scenario 1:</b> You are doing a report on Galileo and you find that a
+picture of him would complement your research perfectly. You have seen
+many pictures of him on the web before, but only in documents concerning
+him. Wouldn't a large collection of pictures of Galileo be ideal to
+choose the perfect one?
+<br>
+<br>
+<b>Scenario 2:</b> You are looking for pictures of family or friends on
+the web. How would you even attempt to find a picture of such where there
+could only be a few locations where this picture is located?
+<br><br><br>
+<font size="5">
+<b>Answer: Image Search Engine!!!</b>
+</font>
+<br><br>
+An image search engine allows you to search for online images of specified
+content by returning just the image found (along with a variety of other
+information).
+</font>
+</center>    
+</html>

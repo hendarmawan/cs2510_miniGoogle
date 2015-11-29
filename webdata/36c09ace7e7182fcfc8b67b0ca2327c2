@@ -1,0 +1,66 @@
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-7">
+   <META NAME="Author" CONTENT="Emmanouil Vozalis">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (WinNT; I) [Netscape]">
+
+<br>
+
+   <a href="c10.html"><IMG SRC="../previous.gif" align=left></a>
+   <a href="c10-2.html"><IMG SRC="../next.gif" align=right></a>  
+
+   <TITLE>Ch10-Overview</TITLE>
+</HEAD>
+<BODY>
+
+<CENTER><B><FONT SIZE=+2>OVERVIEW</FONT></B></CENTER>
+
+<CENTER>
+<HR WIDTH="100%"></CENTER>
+<FONT SIZE=+1>&nbsp;</FONT>
+<BR><FONT SIZE=+1>&nbsp;&nbsp;&nbsp; <A HREF="c10-2.html">Introduction</A></FONT>
+<BR>&nbsp;
+
+<P><FONT SIZE=+1>&nbsp;&nbsp;&nbsp; <A HREF="c10-3.html">Essential
+Background</A></FONT>
+<UL>
+<UL>
+<LI>
+<FONT SIZE=+1>Application Scenarios</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>Properties of Request Arrival Process</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>On-Demand Service Types</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>Network Model</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>Performance Metrics</FONT></LI>
+</UL>
+&nbsp;</UL>
+<FONT SIZE=+1>&nbsp;&nbsp;&nbsp; <A HREF="c10-7.html">Multimedia Storage
+Server
+Architectures</A></FONT>
+<UL>
+<UL>
+<LI>
+<FONT SIZE=+1>The problem with Large-Scale Servers</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>MARS Architecture</FONT></LI>
+
+<LI>
+<FONT SIZE=+1>CBS Architecture</FONT></LI>
+
+</UL>
+</UL>
+
+<UL>&nbsp;</UL>
+<FONT SIZE=+1>&nbsp;</FONT>
+
+<P><FONT SIZE=+1>&nbsp;</FONT>
+</BODY>
+</HTML>

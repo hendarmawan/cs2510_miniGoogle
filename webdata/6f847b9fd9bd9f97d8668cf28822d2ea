@@ -1,0 +1,37 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems - Query by Example & Content-Based Information Retrieval</title>
+</head>
+
+<body>
+<a href="background-01.htm"><img src="previous.gif" align="left" alt="Query-by-Example in Relational Database Management System"></a>
+<a href="motivation-01.htm"><img src="next.gif" align="right"></a>
+
+<br><br>
+<center>
+<table width="600">
+	<tr>
+		<td align="center">
+			<h1 align="center">Query-by-Example in Multimedia</h1>
+			<hr>			
+		
+			<p align=left>
+			<h3>Definition expanded to multimedia</h3>
+			<p align="left">A method of query creation that allows the user to search for multimedia objects based on an example in the form of...			</p>
+			
+			<ul>
+				<li>
+				<p align="left">Text description or concept of the multimedia object (tags, annotations, title, filename, etc.)</li>
+				<li>
+				<p align="left">Symbolic images or drawings (drawing pen, color selection, icons, etc.)</li>
+				<li>
+				<p align="left">Multimedia objects (actual image file, video file, etc.)</li>
+			</ul>
+			</p>
+		</td>
+	</tr>
+</table>
+</center>
+
+</body>
+</html>

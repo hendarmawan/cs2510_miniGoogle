@@ -1,0 +1,53 @@
+<HTML>
+
+<HEAD> <TITLE>CobotDS:  A Spoken Dialogue System for Chat </TITLE> </HEAD>
+
+<BODY>
+<H1>CobotDS: A Spoken Dialogue System for Chat</H1>
+<p>
+Traditional dialogue systems are designed to provide access to a
+relatively structured and static back-end database (such as airline
+reservation information), where users have well-defined, task-oriented
+goals.  Compared to such systems, building a spoken dialogue system to
+a chat environment is novel in many ways, and raises interesting
+challenges for dialogue system design.  To explore these issues, we
+have designed and implemented CobotDS (Cobot Dialogue System).
+CobotDS extends ongoing work on <a href="http://cobot.research.att.com/">Cobot</a>, a software agent that resides
+in a well-known internet chat server called LambdaMOO.  Founded in
+1990, LambdaMOO is frequented by hundreds of users who converse with
+each other using both natural language text and verbs for expressing
+(in text) common real-world gestures (such as laughing, hugging,
+nodding and many others).  Cobot is one of the most popular LambdaMOO
+residents, and both chats with human users, and provides them with
+``social statistics'' summarizing their usage of verbs and
+interactions with other users (such as who they interact with, who are
+the most ``popular'' users, and so on).
+<p>
+CobotDS provides LambdaMOO users with real-time spoken telephony
+access to Cobot, and is an experiment in providing a rich social
+connection between a telephone user and the text-based LambdaMOO
+users.  To support conversation, CobotDS passes messages and verbs
+from the phone user to LambdaMOO users (via automatic speech
+recognition, or ASR), and from LambdaMOO to the phone user (via
+text-to-speech, or TTS).  CobotDS also provides ``listening''
+(allowing phone users to hear a description of all LambdaMOO
+activity), chat summarization and filtering, personalized grammars,
+and many other features.  
+We hope that CobotDS will provide an
+alternate means of access to LambdaMOO - either out of necessity (such
+as when a user is unable to access the internet), out of a desire to
+use a different input modality (speech instead of typing), or as an
+entertaining accompaniment to logging on directly.  We also believe
+that our experiences may hold lessons for future attempts to provide
+spoken access to text systems (such as instant messaging), and more
+generally for multimodal systems.
+<HR>
+
+<ADDRESS>
+February 2001<BR>
+Back to <A HREF="index.html">home page.</a>
+</ADDRESS>
+
+</BODY>
+
+</HTML>

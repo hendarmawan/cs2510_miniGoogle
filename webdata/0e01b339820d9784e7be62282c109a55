@@ -1,0 +1,684 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0054)http://www.cs.brown.edu/people/milos/publications.html -->
+<HTML><HEAD><TITLE>Milos Hauskrecht's papers</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=iso-8859-1">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<body bgcolor="#CCCCCC"  link= "#0033EE" vlink="#AF805F">
+<H1>List of publications </H1>
+
+<ul>
+
+<li> E. Heim, M. Berger, L.M. Seversky, and M. Hauskrecht.<br>
+Efficient Online Relative Comparison Kernel Learning
+<br> <em> SIAM Data Mining Conference (SDM-15)</em>, Vancouver, Canada, April 2015.</p>
+ 
+<li> M. Pakdaman Naeini, G. Cooper, and M. Hauskrecht. <br>
+Binary classifier calibration using a Bayesian non-parametric
+approach. <br> 
+<em> SIAM Data Mining Conference (SDM-15)</em>, Vancouver, Canada, April 2015.</p>
+
+<li> C. Hong, I. Batal, and M. Hauskrecht. <br>
+<a href="http://people.cs.pitt.edu/~milos/research/SDM_2015_ME_Multilabel.pdf"> 
+A Generalized Mixture Framework for Multi-label Classification.</a> <br> 
+<em> SIAM Data Mining Conference (SDM-15)</em>, Vancouver, Canada, April 2015. </p>
+
+<li> C. Hong, and M. Hauskrecht. <br> 
+Multivariate Conditional Anomaly Detection and Its Clinical Application. <br>
+Doctoral Consortium. The Twenty-Ninth AAAI Conference on
+Artificial Intelligence (AAAI-15)</em>, Austin, TX, January 2015.</p>
+
+<li> Z. Liu, and M. Hauskrecht. <br> <a href="http://people.cs.pitt.edu/~milos/research/AAAI_SparseLDS.pdf"> A Regularized Linear Dynamical System
+Framework for Multivariate Time Series Analysis.</a> <br> <em> The Twenty-Ninth AAAI Conference on
+Artificial Intelligence (AAAI-15)</em>, Austin, TX, January 2015.</p>
+
+<li> M. Pakdaman Naeini, G. Cooper, and M. Hauskrecht. <br> <a href="http://people.cs.pitt.edu/~milos/research/AAAI_Calibration.pdf"> Obtaining well-calibrated probabilities using Bayesian binning.</a> <br> <em> The Twenty-Ninth AAAI Conference on
+Artificial Intelligence (AAAI-15)</em>, Austin, TX, January 2015. </p>
+</ul>
+
+
+<H2> 2014: </H2>
+
+<ul>
+
+<li>I. Batal, G. Cooper, D. Fradkin, J. Harrison, F. Moerchen, and M. Hauskrecht.<br>  <a href="./research/KAIS_Batal_2014.pdf">An Efficient Pattern Mining Approach for Event
+Detection in Multivariate Temporal Data</a> (review version)<br> <em>Knowledge and Information Science Journal </em>, 2014, accepted</p>
+
+<li> Z. Liu, and M. Hauskrecht. <br> <a href="./research/JAMIE_2014_review_version.pdf"> Clinical time series prediction: Towards a hierarchical dynamical system framework</a> (review version) <br> <em>Journal of Artificial Intelligence in Medicine</em>, 2014, in press </p>
+
+<li> C. Hong, I. Batal, and M. Hauskrecht. <br> <a href="./research/MC_CIKM2014.pdf"> A Mixtures-of-Trees Framework
+for Multi-Label Classification </a><br> <em>ACM International Conference on Information and Knowledge Management</em> (CIKM), October 2014.</p>
+
+<li> E. Heim, H. Valizadegan, and M. Hauskrecht. "<br>  <a href="./research/Heim_ECML_2014.pdf"> Relative Comparison Kernel Learning with Auxiliary Kernels </a> <br> <em> Europian Machine Learning Conference (ECML)</em>, September 2014.</p>
+
+<li> M. Pakdaman Naeini, I. Batal, Z. Liu, C. Hong, and M. Hauskrecht. <br> <a href="./research/SDM_2014_Multilabel_CRF.pdf"> An Optimization-based Framework to Learn Conditional Random
+Fields for Multi-label Classification</a><br> <em> SIAM Data Mining Conference</em>, April 2014.</p>
+
+<li> Q. Nguyen, H. Valizadegan, and M. Hauskrecht. <br> <a href="http://jamia.bmj.com/content/early/2013/11/20/amiajnl-2013-001964.abstract"> Learning classification models with soft-label information.</a> <br> <em> Journal of American Medical Informatics Association</em>, 21:3, pp. 501-508, 2014. DOI information: 10.1016/j.jbi.2013.08.007 doi:10.1136/amiajnl-2013-001964, 2013.</p>
+
+
+</ul>
+
+
+<H2> 2013: </H2>
+
+<ul>
+<li> Z. Liu, and M. Hauskrecht. <br> <a href="./research/nips2013_workshop.pdf"> Sparse Linear Dynamical System with Its Application in Multivariate Clinical Time Series</a>. <br> <em> NIPS 2013 Workshop on Machine Learning for Clinical Data Analysis and Healthcare</em>, December 2013.</p> 
+
+<li> I. Batal, C. Hong, and M. Hauskrecht. <br> 
+<a href="./research/CIKM_13_multilabel.pdf"> An Efficient Probabilistic Framework for
+Multi-Dimensional Classification.</a> <br> <em> Proceedings of the 19th ACM international conference on Information and knowledge management </em>, November 2013. </p>
+
+<li> H. Valizadegan, Q. Nguyen, and M. Hauskrecht. <br>  <a href="http://dx.doi.org/10.1016/j.jbi.2013.08.007"> Learning Classification Models from Multiple Experts</a>.<br> 
+<em> Journal of Biomedical Informatics</em>, 46:6, pp. 1125-1135, 2013. DOI information: http://dx.doi.org/10.1016/j.jbi.2013.08.007, 2013.</p> 
+
+<li> Hauskrecht, S. Visweswaran, G. Cooper and G. Clermont.<br> 
+<a href="./research/outlier_amia2013.pdf"> Data-driven identification of unusual clinical actions in the ICU</a>.<br> 
+<i>Annual American Medical Informatics Association Symposium</i>, Washington, DC, 2013. </p>
+
+<li>A. Amizadeh, B. Thiesson, M. Hauskrecht. <br> <a href="./research/UAI_Amizadeh_2013.pdf">
+The Bregman Variational Dual-Tree Framework</a>.<br>  <i>The 29th International Conference on Uncertainty in Artificial Intelligence (UAI)</i>, 
+Seattle, WA, July 2013.</p>
+
+
+<li> Hauskrecht, S. Visweswaran, G. Cooper and G. Clermont.<br> 
+<a href="./research/milos_AAAI_2013.pdf"> Conditional outlier approach for detection of unusual patient care actions</a>.<br>  
+<em> The Twenty-Seventh AAAI Conference on Artificial Intelligence</em>, Seattle, WA, July 2013.</p>
+
+<li> Z. Liu, and M. Hauskrecht. <br> <a href="./research/aime_zitao_2013.pdf"> Clinical Time Series Prediction with a 
+Hierarchical Dynamical System</a>. <br> <i>The 14th Conference on Artificial Intelligence in Medicine</i>, Murcia, Spain, May 2013.</p>
+
+<li> I. Batal, H. Valizadegan, G. Cooper and M. Hauskrecht. <br> <a href="http://dl.acm.org/citation.cfm?doid=2508037.2508044"> A Temporal 
+Pattern Mining Approach for Classifying Electronic Health Record Data.</a> <br> <i>Transactions on Intelligent Systems and Technology</i>, 
+Special Issue on Health Informatics, 4: 4, 2013. (<a href="./research/TIST_2012_pattern_mining.pdf"> submitted version </a>)</p>
+
+<li> Z. Liu, L. Wu, and M. Hauskrecht. <br> 
+<a href="./research/sdm_zitao_2013.pdf"> Modeling Clinical Time Series Using Gaussian Process 
+Sequences</a>. <br> <i>SIAM Data Mining Conference </i>, Austin, TX, April 2013.</p>
+
+</ul>
+
+<H2> 2012: </H2>
+
+<ul> 
+<li> M. Hauskrecht, I. Batal, M. Valko, S. Visweswaran, G. Cooper, G. Clermont. <br> <a href="http://www.sciencedirect.com/science/article/pii/S1532046412001281">
+Outlier-detection for patient monitoring and alerting</a>.<br>  <i>Journal of Biomedical Informatics</i>, 46:1, pages 47 -- 55, February 2013.</p>
+
+<li>H. Valizadegan, Q. Nguyen, and M. Hauskrecht. <br>  <a href="./research/AMIA_2012_MExperts.pdf"> Learning Medical Diagnosis Models from Multiple Experts.</a> <br> 
+<i>Annual American Medical Informatics Association Symposium</i> , Chicago, IL, November 2012.</p>
+
+<li>S. Wang, M. Hauskrecht. <br> <a href="http://www.computer.org/csdl/proceedings/bibm/2012/2559/00/06392698-abs.html">
+Keyword Annotation of Biomedical Documents with Graph-based Similarity Methods.</a><br>  <i>IEEE International Conference 
+on Bioinformatics and Biomedicine (BIBM)</i>, Philadelphia, October 2012.</p>
+
+<li>I. Batal, G. Cooper, and M. Hauskrecht. <br> <a href="./research/PKDD_2012_Bayesian_scoring.pdf"> A Bayesian Scoring Technique for 
+Mining Predictive and Non-Spurious Rules.</a><br>  <i>The European Conference on Machine Learning and Principles and 
+Practice of Knowledge Discovery in Databases,</i> Bristol, UK, September 2012.</p>
+
+<li>S. Amizadeh, B. Thiesson, and M. Hauskrecht. <br> <a href="./research/UAI_2012_Dual_tree.pdf"><span class="s1">Variational Dual-Tree Framework for Large-Scale Transition Matrix Approximation.</span></a><br>  <i>The 28th International Conference on Uncertainty in Artificial Intelligence (UAI)</i>, Catalina Island, CA, August 2012.</p>
+
+<li>I. Batal, D. Fradkin, J. Harrison, F. Moerchen, and M. Hauskrecht.<br>  <a href="./research/KDD_2012_recent_patterns.pdf"><span class="s1">Mining Recent Temporal Patterns for Event Detection in Multivariate Time Series Data.</span></a> <br> <i>The 18th ACMSIGKDD Conference on Knowledge Discovery and Data Mining (KDD)</i>, Beijing, China, August 2012.</p>
+
+<li>S. Amizadeh, H. Valizadegan, and M. Hauskrecht. <br> <a href="./research/AISTATS_12_factorized_diffusion.pdf">
+Factorized Diffusion Map Approximation.</a><br>  <i>15th International Conference on Artificial Intelligence and 
+Statistics (AISTATS)</i>, La Palma, Canary Islands, April 2012. (<a href="./research/AISTATS_12_factorized_diffusion_appendix.pdf">
+appendix</a>)</p>
+
+<li>Z. Liu, L. Wu, and M. Hauskrecht. <br> <a href="./research/Oral_Liu_elal_ICML_Clinical_2012.pdf"> State-space Gaussian Process 
+Prediction</a>.<br>  ICML workshop on Clinical Data Analysis, Edinburgh, Scotland, June 2012.</p>
+
+<li>H. Valizadegan, S. Amizadeh, M. Hauskrecht. <br> <a href="./research/SDM_2012_active_sampling.pdf">Sampling Strategies to 
+Evaluate the Performance of Unknown Predictors.</a><br>  <i>SIAM Data Mining Conference</i>, Anaheim, CA, April 2012.</p>
+
+<li>Yuriy Sverchkov, S.Visweswaran, G. Clermont, M. Hauskrecht, and G. Cooper. <br> <a href="./research/IHI_2012_Data_comparison.pdf">
+A Multivariate Probabilistic Method for Comparing Two Clinical Datasets</a>.<br>  <i>ACM International Health Informatics Symposium</i>, 
+January 2012. </p>
+</ul>
+
+
+<H2> 2011: </H2>
+
+<ul>
+<li> Q. Nguyen, H. Valizadegan, and M. Hauskrecht. <br> <a href="./research/auxiliary_icdm_2011.pdf"> Learning classification with auxiliary probabilistic information</a>.<br> 
+<em> IEEE International Conference on Data Mining</em>, Vancouver, Canada, pp. 477-486, December 2011. </p>
+
+<li> M. Valko, H. Valizadegan, B. Kveton, GF. Cooper, and M. Hauskrecht. <br><a href="./research/ICDM_2011_Anomaly.pdf"> Conditional Anomaly Detection with Soft Harmonic Functions</a>.<br>
+<em> IEEE International Conference on Data Mining</em>, Vancouver, Canada, pp. 735-743, December 2011.</p>
+
+<li> TC. Hart, PM. Corby, M. Hauskrecht, OH Ryu, R. Pelikan, M. Valko, MB. Oliveira, GT. Hoehn, and WA. Bretz. <br>
+<a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3195543/pdf/IJD2011-196721.pdf"> Identification of Microbial and Proteomic Biomarkers in Early Childhood Caries</a>.<br> <em> <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3195543/?tool=pubmed">International Journal of Dentistry</a></em>, 2011.</p>
+
+<li> I. Batal, H. Valizadegan, GF. Cooper, and M. Hauskrecht.<br> <a href="./research/batal_bibm_2011.pdf"> A Pattern Mining Approach for Classifying Multivariate Temporal Data</a>. <br>
+<em> IEEE International Conference on Bioinformatics and Biomedicine </em>, Atlanta, Georgia, November 2011.</p>
+
+<li> Q. Nguyen, H. Valizadegan, A. Seybert, and M. Hauskrecht. <br> <a href="./research/AMIA_2011_AuxLabels.pdf"> Sample-efficient learning with auxiliary class-label information.</a><br> 
+<em> Annual American Medical Informatics Association (AMIA) Symposium </em>, October 2011. </p>
+
+<li>S. Amizadeh, S. Wang, and M. Hauskrecht. <br><a href="./research/IJCAI-11-Amizadeh.pdf"> An Efficient Framework for Constructing Generalized Locally-Induced Text
+Metrics</a>. <br> <em> International Joint Conference on AI (IJCAI)</em>, Barcelona, Spain, July 2011.</p>
+
+<li>M. Valko, H. Valizadegan, B. Kveton, GF. Cooper, and M. Hauskrecht.<br> 
+<a href="./research/ICMLW_2011_Outlier_soft_harmonic.pdf"> Conditional Anomaly Detection Using Soft Harmonic Functions: An Application to Clinical Alerting</a>. <br> 
+<em> ICML Workshop For Global Challenges</em>, Bellevue, Washington, June 2011.</p>
+</ul> 
+
+<H2> 2010: </H2>
+
+<ul>
+<li> M. Hauskrecht, M. Valko, I.Batal, G. Clermont, S. Visweswaran, G. Cooper. <br>
+<a href="./research/Hauskrecht_AMIA_2010.pdf">Conditional Outlier Detection for Clinical Alerting</a>.<br>
+
+ <em> <a href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC3041310/?tool=pubmed"> Annual American Medical Informatics Association (AMIA) Symposium </a> </em>, November 2010 [Homer Warner Award]</p>
+
+<li> I. Batal, and M. Hauskrecht. <br>
+ <a href="./research/AMIA_2010_Batal.pdf"> Mining Clinical Data using Minimal Predictive Rules</a>.<br> 
+<em> Annual American Medical Informatics Association (AMIA) Symposium </em>, November 2010. </p>
+
+<li> S. Visweswaran, J. Mezger, G. Clermont, M. Hauskrecht, G. Cooper. <br>
+<a href="./research/AMIA_2010_Anomaly_shyam.pdf">Identifying Deviations from Usual Medical Care using a Statistical Approach.</a><br>
+<em> Annual American Medical Informatics Association (AMIA) Symposium </em>, November 2010. </p>
+
+<li> R. Pelikan and M. Hauskrecht.<br> <a href="./research/AMIA_2010_proteomics_preprocessing.pdf"> Automatic Selection of Preprocessing Methods for Mass Spectrometry Data.</a> <br>
+<em> Annual American Medical Informatics Association (AMIA) Symposium </em>, November 2010. </p>
+
+<li> I. Batal, M. Hauskrecht. <br><a href="./research/CIKM_2010_minimal_predictive_patterns.pdf">Constructing Classification Features using Minimal Predictive Patterns.</a><br>
+<em> Proceedings of the 19th ACM international conference on Information and knowledge management </em>, November 2010, pp. 869-878. </p> 
+
+<li> I. Batal, M. Hauskrecht. <br><a href="./research/Batal_PKDD_2010.pdf"> A Concise Representation of Association
+Rules using Minimal Predictive Rules</a>.<br> <em> Europian Conference on Machine Learning and Knowledge Discovery in Databases</em>, September 2010.</p> 
+
+<li> S. Amizadeh, and M. Hauskrecht. <br> <a href="./research/Amizadeh_Hauskrecht_AAAI-10.pdf"> Latent Variable Model for 
+Learning in Pairwise Markov Networks</a>. <br> 
+<em> Proceeding of the National Conference on Artificial Intelligence (AAAI) </em>, Atlanta, GA, July 2010.</p> 
+
+<li> S. Wang, and M. Hauskrecht. <br> <a href="./research/SIGIR_2010_Wang.pdf">
+Effective Query Expansion with the Resistance Based Term Similarity Metric</a>. <br> 
+<em> Proceedings of the 33rd international ACM SIGIR conference on Research and development in information retrieval </em>, July 2010, pp. 715-716. </p>
+
+<li> M. Valko, and M. Hauskrecht. <br> <a href="./research/MEDINFO_2010_feature_analysis.pdf"> Feature importance analysis for patient management 
+decisions.</a> <br> <em> 13th International Congress on Medical Informatics </em>, Cape Town, South Africa,
+September 2010.</p>
+
+<li> S. Wang, M. Hauskrecht, S. Visweswaran.<br> <a href="./research/STB_2010_gene_prioritization.pdf"> Candidate Gene Prioritization Using Network Based Probabilistic Models.</a> <br><em> AMIA Summit on Translation Bioinformatics </em>, March 2010. </p>
+</ul>
+ 
+
+<H2> 2009: </H2>
+
+<ul> 
+<li> T. Singliar, and M. Hauskrecht.<br> 
+<a href="./research/MLJ_incidence_detection.pdf"> 
+Learning to detect incidents from noisily labeled data.</a> <br>
+<em> Machine Learning Journal</em>, September 2009. </p>
+
+<li> I. Batal, L. Sacchi, R. Bellazzi, and M. Hauskrecht.<br> <a href="./research/AMIA_2009_Temp_abstraction"> A Temporal Abstraction Framework for Classifying Clinical Temporal Data</a> .<br>
+<em> Annual American Medical Informatics Association (AMIA) Symposium </em>, 2009. </p>
+
+<li> I. Batal, M. Hauskrecht. <br> <a href="./research/CIKM_2009_boosting_KNN.pdf"> Boosting KNN Text Classification Accuracy by using Supervised 
+Term Weighting Schemes.</a><br> <em> 18th ACM Conference on Information and Knowledge 
+Management (CIKM) </em>, 2009. </p>
+  
+<li> S. Wang, S. Visweswaran, and M. Hauskrecht. <br><a href="./research/kdir09_Wang.pdf"> Learning Probabilistic Knowledge Model for Document Retrieval. </a><br>
+<em> International Conference on Knowledge Discovery and Information Retrieval </em>, 2009. </p> 
+
+
+<li> S. Wang, M. Hauskrecht, S. Visweswaran. <br> <a href="./research/BIBM_Shuguang_workshop_2009.pdf"> Gene prioritization using a probabilistic knowledge model. </a><br>
+<em> IEEE International Conference on Bioinformatics and Biomedicine</em>, Workshop on Graph Techniques for Biomedical Networks, pp. 272 - 278, 2009.</p>
+
+<li> I. Batal, L. Sacchi, R. Bellazzi, and M. Hauskrecht.<br> <a href="./research/Batal_abstraction_FLAIRS2009.pdf"> Multivariate Time Series Classification with Temporal Abstractions.</a><br> In <em> Proceedings of the
+Twenty-Second International Florida AI Research Society Conference (FLAIRS 2009)</em>,  May 2009.</p>
+
+<li> S. Wang and M. Hauskrecht.<br> <a href="./research/FLAIRS_2009_biomed_retrieval.pdf"> Improving Biomedical Document Retrieval by Mining Domain Knowledge.</a><br>
+<em> Proceedings of the Twenty-Second International Florida AI Research Society Conference (FLAIRS 2009)</em>,  May 2009.</p>
+
+</ul>
+
+<H2> 2008: </H2>
+
+
+<ul> 
+
+<li> Branislav Kveton, Milos Hauskrecht. <br> <a href="./research/Kveton_uai2008.pdf">
+Partitioned Linear Programming Approximations for MDPs. </a> <br> 
+<em> Proceedings of the 24th Conference on Uncertainty in Artificial Intelligence</em>, Helsinki, Finland, July 2008. </p>
+
+<li> Michal Valko, Gregory Cooper, Amy Seybert, Shyam Visweswaran, Melissa Saul, Milos Hauskrecht. <br> <a href="./research/valko2008conditional.pdf">  Conditional anomaly detection methods for patient-management alert systems.</a><br> 
+Proceedings of the ICML Workshop on Machine Learning in Health Care Applications, 25th International Machine Learning Conference, Helsinki, Finland, 2008. </p> 
+
+
+<li> S. Wang, M. Hauskrecht. <br> <a href="./research/SIGIR_2008_biomedical_retrieval.pdf"> Improving Biomedical Document Retrieval using Domain Knowledge.</a> <br> <em> Proceedings of the 31st 
+Annual International ACM SIGIR Conference </em>, Singapore, July 2008. </p>
+
+
+<li> M. Valko and M. Hauskrecht. <br> <a href="./research/valko2008distance.pdf"> Distance metric learning for conditional anomaly detection.</a><br>  <em> Proceedings of the
+Twenty-First International Florida AI Research Society Conference (FLAIRS 2008)</em>,  May 2008.</p>
+
+
+<li>
+R. Pelikan and M. Hauskrecht.<br> 
+<a href="./add-publications/IEEE_pelikan-hauskrecht_peak.pdf"> Efficient peak labeling algorithms for whole-sample mass spectrometry
+proteomics.</a><br>  <em> IEEE Transactions on Computational Biology and Bioinformatics</em>, 2008.</p>
+
+
+<li>
+M. Valko, R. Pelikan and M. Hauskrecht. <br> <a href="./research/valko2008learning_STB.pdf"> Learning predictive models for multiple heterogeneous proteomic data sources.</a> <br> 
+<em> AMIA Summit on Translational Bioinformatics</em>, San Francisco, CA, March 2008.</p>
+
+<li>
+M. Hauskrecht, R. Pelikan. <br> <a href="./research/STB_2008_Hauskrecht_Pelikan.pdf"> Inter-session reproducibility measures for high-throughput data sources.</a><br>  <em>AMIA Summit on Translational Bioinformatics</em>, San Francisco, CA, March 2008.</p> 
+
+
+<li> T. Singliar, M. Hauskrecht.<br>  <a href="./research/ISAIM_2008_smart_routing.pdf"> Approximation strategies for routing in stochastic dynamic
+networks.</a><br>  <em> In Proceedings of the Tenth International Symposium on Artificial Intelligence and Mathematics </em>, Ft. Lauderdale, FL, January 2008.</p>
+
+</ul>
+
+<H2> 2007 </H2>
+
+<ul>
+<li> R. Pelikan, W.Bigbee, D. Malehorn, J. Lyons-Weiler, M. Hauskrecht. <br>  
+<a href="./research/bioinformatics_m_2007.pdf"> Intersession Reproducibility of Mass Spectrometry Proteomic Profiles 
+and its Effect on the Accuracy of Multivariate Classification Models. <a/> <br> <em> Bioinformatics </em>, 23 
+(22), pp. 3065-3072, 2007.</p>
+
+ 
+<li> M. Hauskrecht, M. Valko, B. Kveton, S. Visweswaram, G. Cooper.<br>  
+<a href="./research/AMIA-07.pdf"> Evidence-based anomaly detection in clinical domains.</a> <br> <em> Proceedings of the 
+Annual American Medical Informatics Association (AMIA) conference,</em>, 2007.</p>
+
+<li> R. Pelikan, M. Hauskrecht. <br> <a href="./research/AMIA2007_peptide.pdf"> Peptide Identification in 
+Whole-Sample Mass Spectrometry Proteomics.</a><br>  
+<em> Annual American Medical Infortmatics Association (AMIA) Conference</em>, poster abstract, 2007.</p>
+
+<li> J. Mezger, G. F. Cooper, <b>M. Hauskrecht</b>, G. Clermont, S Visweswaran. <br> 
+<a href="./research/AMIA2007_jim.pdf"> Detecting Deviations  from Usual Medical Care.</a><br>  <em> Annual American Medical Infortmatics Association (AMIA) 
+Conference</em>, poster abstract, 2007.</p>
+
+<li> M. Hauskrecht, R. Pelikan.<br>  <a href="./research/Prior_knowledge.pdf"> Enhancing the analysis of MS proteomic profiles using prior
+knowledge and past data repositories.</a><br>  <em> Proceedings of 39th Symposium on the Interface of
+Computing Science and Statistics: Systems Biology </em>, 2007.</p>
+
+
+<li>T. Singliar and M. Hauskrecht. <br> <a href="./research/trafmodel_ECML.pdf"> Modeling Highway Traffic Volumes.</a><br> 
+<em> Proceedings of Eighteen Europian Conference on Machine Learning (ECML)</em>, 2007. </p> 
+
+<li>T. Singliar and M. Hauskrecht. <br> <a href="./research/relabeling_ECML.pdf"> Learning to detect 
+traffic incidents from imperfectly labeled data. </a> <br> <em> Proceedings of Eleventh International 
+Conference on Principles of Knowledge Discovery in Databases, </em>, pp. 236-247
+2007.</p>
+
+</ul>
+
+<H2>2006</H2>
+
+<ul>
+
+<li> W. W. Chapman, J. N. Dowling, G. F. Cooper, M. Hauskrecht, M. Valko. <br> 
+<a href="./research/chapman2007comparison.pdf"> Comparison of Chief Complaints and Emergency Department Reports for Identifying 
+Patients with Acute Lower Respiratory Syndrome. </a> <br> <em> Proceedings of the National Syndromic Surveillance Conference</em>, 2006.</p>  
+
+
+<li>T. Singliar and M. Hauskrecht. <br> <a href="./research/NOCA-JMLR-06.pdf"> Noisy-or 
+Component Analysis and its Application to Link Analysis.</a> <br> <em> Journal of Machine Learning
+Research </em>, vol 7, pp. 2189-2213, 2006. </p>
+
+<li> B. Kveton, M. Hauskrecht, C. Guestrin. <br> <a href="./research/HALP-JAIR-2006.pdf"> Solving
+Factored MDPs with Hybrid State and Action Variables. </a><br> 
+<em> Journal of Artificial Intelligence Research </em>, vol. 27, pp. 153-201, 2006.</p>
+
+<li> T. Jahnukainen, D. Malehorn, M. Sun, J. Lyons-Weiler,W. Bigbee,
+G. Gupta, R.Shapiro, P. Randhawa, R. Pelikan, <b>M. Hauskrecht</b>,
+A. Vats. <br> <a href="./add-publications/JASN-Timo_BKV.pdf"> Proteomic Analysis 
+of Urine in Kidney Transplant Patients with BK Virus Nephropathy.</a> <br> <em> Journal of American
+Society of Nephrology (JASN) </em>, vol 17, pp. 3248-3256, 2006.</p>
+
+
+<li> M. Hauskrecht, R. Pelikan, M. Valko, J. Lyons-Weiler. <br>  <a href="./add-publications/Feature-chapter_2006.pdf"> Feature
+Selection and Dimensionality Reduction in Genomics and
+Proteomics. </a> <br> <em> Fundamentals of Data Mining in Genomics and
+Proteomics</em>, eds. Berrar, Dubitzky, Granzow. pp. 149-172, Springer, Fall 2006. </p>
+ 
+
+<li> B. Kveton and M. Hauskrecht. <br> <a href="./research/aaai2006.pdf">
+Learning Basis Functions in Hybrid Domains. </a> <br> 
+<em> Proceedings of the 21st National Conference on AI (AAAI-06)</em>, Boston,
+MA, pages 1161-1166, July 2006.</p>
+
+<li> T. Singliar and M. Hauskrecht. <br> <a href="./research/incident-icmlW-2006.pdf"> Towards a learning traffic 
+incident detection system.</a><br> 
+<em>ICML 2006 Workshop on Machine Learning Algorithms for Surveillance and Event
+Detection</em>, Pittsburgh, June 2006.</p> 
+
+<li> B. Kveton and M. Hauskrecht. <br> <a href="./research/icaps2006.pdf"> Solving Factored MDPs with 
+Exponential-Family Transition Models.</a> <br> <em> Proceedings of the 16th International Conference 
+on Planning and Scheduling </em>, UK, pp. 114-120, June 2006.</p> 
+
+
+<li> D. Mosse, L. Comfort, A. Labrinidis, A. Amer, J. Brustoloni, P. Chrysanthis, M. Hauskrecht, T. Znati, R. Melhem, K. Pruhs.<br> 
+<a href="./research/S-CITI-highlights.pdf"> Secure-CITI Project Highlights.</a> <br> Featured in <em> the 7th Annual International Conference on Digital 
+Government Research (dg.o 2006)</em>
+San Diego, CA, May 2006. </p>
+
+<li>M. Hauskrecht, B. Kveton. <br> <a href="./research/aimath2006.pdf"> 
+Approximate Linear Programming 
+for Solving Hybrid Factored MDPs.</a><br> 
+<em> Proceedings of the 9th International Symposium on Artificial 
+Intelligence and Mathematics</em>, Fort Lauderdale, Florida, January 2006. </p>
+</ul>
+
+<H2>2005</H2>
+
+<ul>
+<li> B. Kveton and M. Hauskrecht. <br> <a href="./research/ijcai2005.pdf"> An MCMC Approach to Solving Hybrid Factored MDPs.</a><br> 
+In <EM> Proceedings of the 19th International Joint Conference on Artificial Intelligence </EM>, Edinburgh, Scotland, August 2005.</p>
+
+<li> T. Singliar and M. Hauskrecht. <br> <a 
+href="./research/sdm05.pdf"> Variational Learning for the Noisy-OR
+Component Analysis.</a><br> <EM> the Proceedings of the SIAM
+International Data Mining conference</EM>, pp. 370--379
+, 2005. </p>
+
+
+<li>M. Hauskrecht, R. Pelikan, W.L. Bigbee, D. Malehorn,
+M.T. Lotze, H.J. Zeh, D.C. Whitcomb, and J. Lyons-Weiler. <br> <a href="./add-publications/Applied-bio-2005.pdf">Feature
+Selection for Classification of SELDI-TOF-MS Proteomic Profiles </a>.<br> 
+<i>Applied Bioinformatics </i>, 4:4, pp. 227-246, 2005.</p>
+
+
+<li> J. Lyons-Weiler, R. Pelikan, H.J. Zeh III,
+D.C. Whitcomb, D.E. Malehorn, W.L. Bigbee and <b>M. Hauskrecht</b>.<br>  <a href= "./research/
+Cancer-Informatics-2005.pdf"> Assessing the
+Statistical Significance of the Achieved Classification Error of
+Classifiers Constructed Using Serum Peptide Profiles and a
+Prescription for Random Resampling Repeated Studies for Massive
+High-Throughput Genomic and Proteomic Studies </a>.<br>  <em>Cancer Informatics</em>,1:1, pp. 53-77, 2005.</p>
+
+</ul>
+
+<H2>2004</H2>
+
+<ul>
+<li> R. Pelikan, M. Lotze, J. Lyons-Weiler, D. Malehorn and 
+ <b>M. Hauskrecht.</b><br>  <a href="./add-publications/Immunity-chapter-proofreads-2004.pdf"> Serum Proteomic 
+Profiling and Analysis.</a> <br> In
+ Lotze MT, 
+Thomson AW, eds. <i> Measuring Immunity: Basic Biology and Clinical 
+Applications</i>, Elsevier, London, 2004.</p>
+ 
+
+<li> L.K. Comfort, M. Hauskrecht, J.S. Lin. <br>  Dynamic Networks: Modeling Change in Environments
+Exposed to Risk. <br> <em> Annual Research Conference of the Association of Public Policy and Management</em>, Atlanta, Georgia, 
+October 28-30, 2004.</p>
+
+
+<li> C. Guestrin, M. Hauskrecht, B. Kveton.<br>  <a
+href="./research/UAI-04.pdf"> Solving Factored MDPs with
+Continuous and Discrete Variables.</a> <br> <EM> Proceedings of the 20th
+Conference on Uncertainty in Artificial Intelligence</EM>, pages 235-242, 2004.</p>
+
+
+<li> C. Guestrin, M. Hauskrecht, B. Kveton. <br>  <a
+href="./research/aaai2004.pdf"> Solving Factored MDPs with
+Continuous and Discrete Variables.</a> <br> 
+In <em> Proceedings of AAAI Workshop on Learning and Planning in Markov
+Processes - Advances and Challenges </em>, pages 19-24, 2004.</p> 
+
+
+<li> V. Grigorian, D, Chiarulli, M. Hauskrecht. <br> <a
+href="./research/ifcs04_filtering.pdf"> Subject Filtering for
+Passive Biometric Monitoring.</a> <br>  <EM> Proceedings of the 2004 Meeting
+of the International Federation of Classification Societies (IFCS04)</EM>, pages 485-494,
+2004.</p>
+
+<li> B. Kveton, M. Hauskrecht. <br> <a
+href="./research/icaps2004.pdf">Heuristic Refinements of Approximate 
+Linear Programming for Factored Continuous-State Markov Decision
+Processes.</a> <br> <EM> Proceedings of the 14th International
+Conference on Automated Planning and Scheduling</EM>, pages
+306-314, 2004.</p>
+
+
+<li> X. Lu, M. Hauskrecht, R.S. Day. <br> <a href="./research/psb04_lu.pdf">
+Modeling cellular processes with
+variational Bayesian cooperative vector quantizer.</a> <br> <EM> In the
+Proceedings of the Pacific Symposium on Biocomputing (PSB)</EM>, pp.533-544, 2004. </p>
+</ul>
+
+<H2>2003</H2>
+
+<ul>
+<li> M. Hauskrecht, B. Kveton. <br> <a 
+href="./research/nips-03.pdf"> Linear program approximations  for
+factored continuous-state Markov Decision Processes.</a> <br>  <EM>
+Advances in Neural Information Processing Systems 16 </EM>, pages 895-
+902, 2003. </p>
+
+<li> M. Hauskrecht, T. Singliar. <br> <A 
+href="./research/MCO-uai-03.pdf"> Monte Carlo optimizations for resource
+allocation problems in stochastic network systems.</a> <br>  <EM>
+In Proceedings of the Nineteenth International Conference on Uncertainty in Artificial
+Intelligence</EM>, pp. 305-312, 2003. </p> 
+</ul>
+
+<H2>2001</H2>
+
+<ul>
+
+<li>M. Hauskrecht, E. Upfal. <br> <A 
+href="./research/UAI-01.pdf">A clustering 
+approach to solving large stochastic matching problems. </A> <br> <EM> In Proceedings 
+of the Seventeenth International Conference on Uncertainty in Artificial 
+Intelligence</EM>, pp. 219-226, 2001. </p>
+
+<li>M. Hauskrecht. <br> Evaluation and optimization of management plans in stochastic 
+domains with imperfect information. <br> <EM>In Proceedings of the Twelfth 
+International Workshop on Principles of Diagnosis</EM>, pp. 71--78, 2001. </p>
+
+<li><b>M. Hauskrecht</b>, L. Ortiz, I. Tsochantaridis, E. Upfal.<br>  <A 
+href="./research/AppliedAI-2001.pdf">Efficient 
+methods for computing investment strategies for multi-market commodity 
+trading.</A> <br> <EM>Applied Artificial Intelligence</EM>, vol. 15, pp. 429-452, 
+2001.</p>
+</ul>
+
+<H2>2000</H2>
+
+<ul>
+<li><b>M. Hauskrecht</b>.<br>  <A 
+href="./research/JAIR-2000.pdf">Value-function 
+approximations for partially observable Markov decision processes </A>. <br> 
+<EM>Journal of Artificial Intelligence Research</EM>, vol.13, pp. 33-94, 2000. </p>
+
+<li><b>M. Hauskrecht</b>, H. Fraser. <br> <A 
+href="./research/AIMJ-2000.pdf"> Planning treatment of ischemic 
+heart disease with partially observable Markov decision processes.</A><br> <EM> 
+Artificial Intelligence in Medicine</EM>, vol. 18, pp. 221-244, 2000. </p>
+
+
+<li>M. Hauskrecht, L. Ortiz, I. Tsochantaridis, E. Upfal. <br> <A 
+href="./research/aips-2000.pdf">Computing global 
+strategies for multi-market commodity trading.</A><br>  <EM>In Proceedings of the 
+Fifth International Conference on Artificial Intelligence Planning and 
+Scheduling</EM>, pp. 159--166, 2000.</p> 
+</ul>
+
+<H2>1999</H2>
+
+<ul>
+<li>M. Hauskrecht, G. Pandurangan, E. Upfal.<br>  <A 
+href="./research/IJCAI-99.pdf">Computing 
+near optimal strategies for stochastic investment planning problems.</A><br> <EM> In 
+Proceedings of the 16-th International Joint Conference on Artificial 
+Intelligence</EM>, pp. 1310-1315, 1999.</p> 
+</ul>
+
+<H2>1998</H2>
+
+<ul>
+<li>M. Hauskrecht, H. Fraser. <br> <A 
+href="./research/amia-98.pdf">Modeling 
+Treatment of Ischemic Heart Disease with Partially Observable Markov Decision 
+Processes.</A> <br> <EM>In Proceedings of American Medical Informatics Association 
+annual symposium on Computer Applications in Health Care </em>, Orlando, Florida, pp. 
+538-542, 1998.</p>
+
+<li>M. Hauskrecht, N. Meuleau, C. Boutilier, L. Pack Kaelbling, T. Dean. <br> <A 
+href="./research/macros.ps">Hierarchical 
+solution of Markov decision processes using macro-actions.</A> <br> <EM>In 
+Proceedings of the 14-th Conference on Uncertainty in Artificial Intelligence</EM> , 
+pp. 220-229, 1998. </p>
+
+<li>M. Hauskrecht, H. Fraser. <br> <A 
+href="./research/dx-98.ps">Planning medical 
+therapy using partially observable Markov decision processes.</A> <br> <EM>In 
+Proceedings of the 9-th International Workshop on Principles of Diagnosis 
+(DX-98)</EM> , Cape Cod, MA, pp. 182-189, 1998.</p> 
+
+<li>N. Meuleau, M. Hauskrecht, K. Kim, L. Peshkin, L. Pack Kaelbling, T. Dean, C. 
+Boutilier. <br> <A 
+href="./research/mtd.ps">Solving very large 
+weakly-coupled Markov decision processes.</A><br>  <EM>In Proceedings of the 15-th 
+National Conference on Artificial Intelligence</EM> , Madison, WI, pp. 165-172, 
+1998. </p>
+
+</ul>
+
+<H2> 1997 </H2>
+
+<ul>
+<li>M. Hauskrecht. <br> <A 
+href="./research/thesis.htm">Planning and 
+control in stochastic domains with imperfect information</A>. <br> <EM> PhD 
+dissertation</EM> , MIT-LCS-TR-738, 1997. </p>
+
+<li>M. Hauskrecht. <br> <A 
+href="./research/AAAI-97.pdf">Incremental 
+methods for computing bounds in partially observable Markov decision 
+processes.</A><br> <EM> In Proceedings of the 14-th National Conference on Artificial 
+Intelligence</EM> , Providence, RI, pp. 734-739, 1997.</p>
+
+<li>M. Hauskrecht. <br> <A 
+href="./research/AIME-97.ps">Dynamic decision 
+making in stochastic partially observable medical domains: ischemic heart 
+disease example.</A> <br> <EM>In Proceedings of AI in Medicine Europe (AIME)</EM> , 
+Grenoble, France, pp. 296-299, 1997.</p>
+</ul>
+
+<H2> 1996 and before </H2>
+
+<ul>
+<li>M. Hauskrecht. <br> Dynamic decision making in stochastic partially observable 
+medical domains.<br>  <EM>In Proceedings of AAAI symposium on AI in Medicine, 
+Stanford University</EM> , pp. 69-72, 1996.</p>
+
+<li>M. Hauskrecht.<br>  Tradeoffs in approaches to the ventilator controller 
+design.</A> <br> <EM>In Proceedings of AAAI Symposium on AI in Medicine</EM> , Stanford 
+University, pp. 72-75, 1994.</p>
+
+<li>M. Popper, M. Hauskrecht. <br> Declarative and operational in knowledge based 
+systems. <br> <EM>In Proceedings of Medical Informatics Europe</EM> , pp. 299-303, 
+1991.</p>
+
+<li>J. Stanek, M. Popper, M. Hauskrecht.<br>  The operational aspects of an object 
+oriented approach in a medical expert system design. <br> <EM>In Proceedings of 
+Medical Informatics Europe</EM> , pp. 304-308, 1991. </p>
+
+<li>M. Popper, M. Hauskrecht, J. Stanek. <br> The role of operational knowledge in 
+knowledge based systems design. <br> <EM>In Proceedings of Applications of Artificial 
+Intelligence</EM> , Prague, Czechoslovakia, pp. 53-60, 1991. </p>
+
+</ul>
+
+<H2>PhD dissertation </H2>
+<ul>
+<li>M. Hauskrecht. <br> <A 
+href="./research/thesis.htm">Planning and 
+control in stochastic domains with imperfect information</A>. <br> <EM> PhD 
+dissertation</EM> , MIT-LCS-TR-738, 1997.</p>
+</ul>
+ 
+<H2>MS thesis </H2>
+<ul> 
+<li>M. Hauskrecht. <br> A planning mechanism for selecting inference goals in a 
+diagnostic expert system. <br> <EM>MS thesis</EM> , EF STU, Bratislava, May 1988.</p>
+</ul>
+
+<H2>Technical Reports and other papers </H2>
+<ul>
+<li> I. Batal, and M. Hauskrecht. <a href="./research/report_temp_abstraction.pdf"> Mining predictive patterns in Electronic Health
+Record data </a>, CS Technical report, 2013.</p> 
+<li> I. Batal. <a 
+href="./research/Iyad_Batal_thesis.pdf"> Mining Predictive Temporal Patterns and its Extension to Multivariate Temporal Data</a>, PhD Dissertation, CS department, October 2012.</p>  
+<li> M. Hauskrecht. <a 
+href="./research/summary_CMDP_paper.pdf"> Overview of Linear Program Approximations for
+Factored Continuous and Hybrid-State Markov
+Decision Processes</a>. CS Technical report, 2012.</p> 
+<li>M. Hauskrecht and T. Singliar. <a 
+href="./research/TR-CS-03-01.pdf"> Monte-Carlo approximations to
+resource allocation problems in stochastic networks.</a> <EM> Technical Report,
+CS-03-01, University of Pittsburgh</EM>, 2003.</p>  
+<li>M. Hauskrecht. <a 
+href="./research/TR-CS-03-02.pdf"> Monte-Carlo approximations to
+continuous-time semi-Markov processes.</a> <EM> Technical Report,
+CS-03-02, University of Pittsburgh </EM>, 2003.</p>  
+<li> X. Lu, M. Hauskrecht, R.S. Day. <A 
+href="./research/TR-var-model.pdf"> Variational Bayesian
+learning of the cooperative vector quantizer model. Part I: The
+Theory. </A> <EM> Technical Report, Center for Biomedical Informatics,
+CBMI-02-181,</EM> 2002.</p>  
+<li>M. Hauskrecht. <A 
+href="./research/TR-CS-98-01x.ps">Planning 
+with temporally abstract actions.</A> <EM>TR-CS-98-01</EM>, Brown University, 
+Providence, RI, 1998.</p>
+<li>M. Hauskrecht. <A href="./research/macros-workpap.ps">Planning 
+with macro-actions: Effect of initial value function estimate on convergence 
+rate of value iteration.</A> <EM>Working paper</EM>, 1998 </p>
+
+<li>M. Hauskrecht. <A 
+href="./research/hybrid-MDP.ps">Combining 
+fully and partially observable MDPs.</A> <EM>Working paper </EM>, 1998. </p>
+<li>M. Hauskrecht. Learning Bayesian belief networks from data. <EM>MIT EECS Area 
+exam</EM>, 1995.</p>
+
+<li>M. Hauskrecht. Reinforcement learning of control policies. <EM>Working paper </EM>, 
+1994. </p>
+<li>R. Bodkin, M. Hauskrecht. Examining recursive decomposition. <EM>Working 
+paper</EM>, 1992. </p>
+
+</ul>
+
+<H2> Theses of my PhD students </H2>
+<ul>
+<li> Branislav Kveton.
+ <a href="http://d-scholarship.pitt.edu/9828/1/BranislavKveton_09-07-2006.pdf">  
+Planning in hybrid structured domains</a>, 
+PhD thesis, University of Pittsburgh, Fall 2006. </p>
+<li> Tomas Singliar.  
+<a href="http://d-scholarship.pitt.edu/10321/1/TomasSingliar2008Thesis.pdf"> Machine Learning Solutions
+for Transportation Networks</a>, 
+PhD thesis, University of Pittsburgh, Fall 2008.</p>
+<li> Richard Pelikan. <a href="http://d-scholarship.pitt.edu/6659/1/PelikanRichardC_2011_Dissertation.pdf">
+Analytical Techniques for the Improvement of Mass Spectrometry Protein Profiling</a>, PhD thesis, University of Pittsburgh, Spring 2011.</p>
+<li> Michal Valko. <a href="http://d-scholarship.pitt.edu/8173/1/valko2011adaptive_1.pdf">
+Adaptive Graph-based Methods for Conditional Anomaly Detection and 
+Semi-Supervised Learning</a>, PhD thesis, University of Pittsburgh, Summer 2011. </p>
+<li> Iyad Batal. <a href="./research/Iyad_Batal_thesis.pdf">
+Mining Predictive Temporal Patterns and Extension to Multivariate temporal</a>, PhD thesis, University of Pittsburgh, Fall 2012.</p> 
+<li> Saeed Amizadeh. <a href="./research/Saeed_Amizadeh-Thesis.pdf"> Non-parametric graph-based methods for
+large scale problems.</a> PhD thesis, University of Pittsburgh, Fall 2013. </p> 
+<li> Quang Nguyen. <a href="./research/Quang_Nguyen_PhD_thesis.pdf"> Efficient learning with soft label information and multiple annotators. </a> PhD thesis, University of Pittsburgh, Spring 2014. 
+</ul>
+
+<HR>
+<I><A href="./">milos</A> 12/01/13 </I></BODY></HTML>
+
+
+
+
+
+
+
+
+
+
+
+

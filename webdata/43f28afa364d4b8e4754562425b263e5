@@ -1,0 +1,86 @@
+<title>Running Title</title>
+
+<a href="12-3.htm"><IMG
+SRC="../previous.gif" align=left></a>
+
+<a href="12-5.htm"><IMG SRC="../next.gif" align=right></a>
+
+
+<! The following is your presentation>
+
+<HTML>
+<HEAD>
+   <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+   <META NAME="GENERATOR" CONTENT="Mozilla/4.02 [en] (Win95; I) [Netscape]">
+</HEAD>
+<BODY>
+<B><FONT SIZE=+2>QBIC: Query by Image Content</FONT></B>
+
+<P>Developed by IBM
+<BR>Extensive use of human computer interaction
+
+<P><FONT SIZE=+1><B>Data</B> <B>Model</B></FONT>
+
+<P><B>Database population</B>
+
+<P>Arbitrary number of image objects are identified by the user using semi-automatic
+tool.
+
+<P><B>Feature calculation</B>
+
+<P><B>Image query</B>
+
+<P>The user navigates and refines the query until satisfied.
+
+<P><B><FONT SIZE=+1>Content Similarity Retrieval</FONT></B>
+
+<P><B>Semi-Automatic Object Identification</B>
+
+<P>-more acurate than automatic object identification
+<BR>-outlines the object in the image
+<BR>-floodfill the local region with the similar pixel
+
+<P><B>Automatic Object Identification</B>
+
+<P>-partition based
+<BR>-region-based "Query-by-painting" for color
+
+<P><B>Similarity Measures</B>
+
+<P>All of these are user adjustable.&nbsp; This measure is taken by the
+weighted sum of the Euclidean distance.
+<UL>
+<LI>
+<B>Color</B></LI>
+
+<LI>
+<B>Texture</B></LI>
+
+<LI>
+<B>Shape</B></LI>
+
+<LI>
+<B>Scene Sketch</B></LI>
+</UL>
+<FONT SIZE=+1><B>Queries</B> <B>and User Interface</B></FONT>
+
+<P><B>Query by example</B>
+
+<P><B>Direct</B> <B>query:&nbsp; </B>The user specifies the color/shape/texture/sketch
+or combination of these.
+
+<P><B>Feature palettes or pickers</B>
+
+<P><B>Query</B> <B>by sketch</B>
+
+<P><B>Query-by-painting</B>
+
+<P><B>Results and Query Refinement</B>
+
+<P>Ranked set of thumnail images that may be browsed.
+
+<P>
+<HR WIDTH="100%">
+<BR><A HREF="12-5.htm">Next</A>
+</BODY>
+</HTML>

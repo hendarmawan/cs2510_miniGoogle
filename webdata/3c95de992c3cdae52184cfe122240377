@@ -1,0 +1,74 @@
+<HTML>
+<TITLE>Modeling Time-Based Media</TITLE>
+
+<A HREF="http://www.cs.pitt.edu/~chang/265/265syl.html"><IMG SRC="../previous.gif" ALIGN=LEFT></A>
+
+<A HREF="http://www.cs.pitt.edu/~chang/265/C1/c1_2.html"><IMG SRC="../next.gif" ALIGN=RIGHT></A>
+
+<CENTER><H1>Modeling Time-Based Media</H1></CENTER>
+
+<HR WIDTH="75%">
+<P>
+<H3>Modeling Issues</H3>
+<DL>
+<DT>Differences between traditional data modeling and time-based data modeling:
+<UL>
+<LI>Data Flow
+<LI>Timing
+<LI>Temporal Composition
+<LI>Synchronization
+</UL>
+</DL>
+<P>
+Support for a BLOB (Binary Large Object) data type has been added to most commercial database systems. Although a BLOB does allow the user to reference large data objects, a BLOB does not provide enough support for complex data types.
+<P>
+Key Problem: <B>The description of the structure of time-based media in a form appropriate for querying, updating, and presentation.</B>
+<P>
+<UL>
+<LI>Interpretation
+<DD>Traditional data modeling does not consider the interpretation of the data; mainly because the data is of a simple type.
+<UL>
+<LI>Heterogeneity
+<UL>
+<LI>Different media types may be contained within a single storage unit.
+</UL>
+<LI>Interleaving
+<UL>
+<LI>Elements of different media types may be interleaved in a single storage unit.
+</UL>
+<LI>Padding
+<UL>
+<LI>Unused (or blank) data may be added to account for differences in transfer rates.
+</UL>
+<LI>Out-of-order Elements
+<UL>
+<LI>Key elements may be placed ahead of elements that precede it in time.
+</UL>
+<LI>Scalability
+<UL>
+<LI>Only the necessary parts of the data need to be sent to the client. Example, scaling the video stream to a lower resolution before sending it.
+</UL>
+</UL>
+<LI>Quality Factors
+<UL>
+<LI>The encoding scheme used determines the quality of the stored information. Some encoding schemes, such as JPEG and MPEG, are lossy.
+<LI>The low level parameters should not be viewable due to the specific nature of the parameters. Only generic quality factors should be viewable.
+</UL>
+<LI>Timing
+<UL>
+<LI>There are two timing issues: real-time constraints (display or playback rates) and temporal correlations (relationships between media objects).
+<LI>Real-time constraints are concerned with the sampling rates of record and playback.
+<LI>Temporal correlations are concerned with the timing between media objects, such as synchronization.
+</UL>
+<LI>Derivation
+<UL>
+<LI>Derivation is the construction of a media object from another (possible more than one) media object. All that is needed to construct the derived object is the non-derived objects and various parameters needed in the transformation.
+<LI>An example is a "wipe" video transition where one video scene is wiped away to reveal the following scene. The "wipe" video transition can be constructed from the first and second video sequences.
+<LI>The derived object may or may not be stored in the database depending upon the available space and the resources required to construct the derived object.
+</UL>
+<LI>Composition
+<UL>
+<LI>Composition refers to the ability to combine two or more "simpler" media types to construct a more complicated media object.  This is usually in the form of spatial or temporal relationships.
+</UL>
+</UL>
+</HTML>

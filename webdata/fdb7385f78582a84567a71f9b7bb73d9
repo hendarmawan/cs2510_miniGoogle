@@ -1,0 +1,60 @@
+<!doctype html public "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="seminar_pg2.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="seminar_pg4.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Background (Adaptive Hypermedia 
+    Application Model)</font></h1> 
+ </center> 
+ 
+<p><br>
+  <strong><font size="4" face="Arial, Helvetica, sans-serif">What's the need?</font></strong></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">Educational applications</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">Online information systems (Information 
+    retrieval systems)</font></li>
+  <li><em><font face="Arial, Helvetica, sans-serif">Personalized</font></em><font face="Arial, Helvetica, sans-serif"> 
+    websites (this is a growing area) (e.g. My Yahoo)</font></li>
+</ul>
+<p><font face="Arial, Helvetica, sans-serif">Personalized websites typically do 
+  not exibit the behavior we call an adaptive system. Typically, the user sets 
+  up a profile and the system will not change it. However, competition between 
+  sites, such as My Yahoo and My Excite, will continue, and progression towards 
+  an adaptive system seems logical.</font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif"><strong>Adaptive Hypermedia 
+  Application Model (AHAM)</strong></font></p>
+<ul>
+  <li><font face="Arial, Helvetica, sans-serif">is an extension of the Dexter 
+    hypermedia reference model</font></li>
+  <li><font face="Arial, Helvetica, sans-serif">provides a foundation for developing 
+    new Adaptive Hypermedia Systems</font></li
+>
+</ul>
+<p><font size="2" face="Arial, Helvetica, sans-serif">&quot;<font size="3">AHAM 
+  acknowledges that doing &quot;useful&quot; and &quot;usable&quot; adaptation 
+  in a given application depends on three factors:</font></font></p>
+<ol>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">The application must 
+    be based on a <em>domain model</em>, describing how the information content 
+    of the application or &quot;hyper-document&quot; is structored (using concepts 
+    and concept relationships).</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">The system must construct 
+    and maintain a fine-grained <em>user model</em> that represents a user's preferences, 
+    knowledge, goals, browsing history and other relevant aspects.</font></li>
+  <li><font size="2" face="Arial, Helvetica, sans-serif">The system must be able 
+    to perform adaptation of the content and link structure, based on the domain 
+    model and user model. In order to do so the author must provide an <em>adaptation 
+    model</em> consisting of <em>adaptation rules</em>. The rules define both 
+    the process of generating the adaptive presentation and that of updating the 
+    user model. An AHS may offer some built-in rules for common adaptation aspects 
+    and user model updates. This reduces the author&#8217;s task of providing 
+    such rules. The AHS may also offer a rule language through which authors can 
+    define additional rules.</font></li>
+</ol>
+<font size="3" face="Arial, Helvetica, sans-serif">The division into a domain 
+model (DM), user model (UM) and adaptation model (AM) provides a clear separation 
+of concerns when developing an adaptive hypermedia application.&quot;</font><font face="Arial, Helvetica, sans-serif"> 
+[WDD01]</font></html> 

@@ -1,0 +1,15 @@
+<h1>
+Requirements Spec Questionnaire
+</h1>
+<b>
+   o Have you identified the corresponding tasks in the data flow diagrams, or on the flowcharts or in the UMLs that will implement the requirements?<p>
+   o Have you checked that all functions have been represented and where are they described?<p>
+   o Have the data flow diagrams, flowcharts or UMLs been agreed by the client and the development teams?<p>
+   o Have the implementation priorities been agreed by the client and the development teams?<p>
+   o Has the client agreed to the user manual?<p>
+   o Does the client have a chance to go through some sample runs according to the user manual?<p>
+   o Have you checked that the client and the development teams agree to the performance forecast?<p>
+   o Have you checked that the client and the development teams agree to the acceptance criteria?<p>
+   o Have you completed the risk analysis and put in place the necessary management controls to minimize the risks?<p>
+   o Have you communicated with executive management so that they understand the risks and agree to your risk analysis?<p>
+   o Have you checked with executive management to get approval of management controls to minimize the risks?<p>

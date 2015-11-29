@@ -1,0 +1,50 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<title>Metrics for CBSE</title>
+</head>
+
+<body>
+
+<p><a href="9.htm"><img src="previous.gif" align="left" width="26" height="26"></a> <a href="11.htm">
+<img src="next.gif" align="right" width="26" height="26"></a> </p>
+<h1 align="center">&nbsp;<font size="7" face="Arial">Metrics for CBSE</font></h1>
+<p class="MsoNormal">　</p>
+<p><font size="6" face="Arial">3. Product stability</font></p>
+<p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+customer request</font></p>
+<p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+developer estimates cost and schedule</font></p>
+<p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+customer agree</font></p>
+<p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+developing</font></p>
+<p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+customer change request</font></p>
+<p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+developer estimates the cost and schedule</font></p>
+<p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+customer agree</font></p>
+<p><font face="BernhardFashion BT" size="6">&nbsp;&nbsp;&nbsp;&nbsp; </font>
+<font size="7" face="Chiller">&nbsp;Time consuming and may never end!</font></p>
+<p><font face="BernhardFashion BT" size="6">&nbsp;&nbsp; </font>
+<font size="6" face="Arial">&nbsp;&nbsp;&nbsp;&nbsp; Iterative development:
+</font></p>
+<p><font face="Arial" size="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+Developers give an initial version of the software from a vague functional 
+description and work closely with the customer to understand, price, implement 
+CRs, and rapidly produce new release.</font></p>
+<p>　</p>
+<p><img border="0" src="changeRequest.jpg" width="687" height="509"></p>
+<p>　</p>
+<p><font face="Arial" size="6">You can check CR status by the above chart or compute the ratio:
+ </font></p>
+<p><font face="Arial" size="6" color="red">openCR / (openCR + ImplementedCR)</font></p>
+<p>　</p>
+</body>
+
+</html>

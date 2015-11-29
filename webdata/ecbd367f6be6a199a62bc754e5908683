@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+ <title> Multimedia Software Engineering </title> 
+
+ <a href="project_req5.html"> <img src="images/previous.gif" align=left> </a>
+ <a href="project_req7.html"> <img src="images/next.gif" align=right> </a> 
+ <br>
+ <center> 
+  <h1><font face="Arial, Helvetica, sans-serif">Requirements (IC Cards)</font></h1> 
+ 
+</center> 
+<body>
+<p><font size="4" face="Arial, Helvetica, sans-serif">IC Cards continued:</font></p>
+<p align="center"><img src="images/crossing_ic_card.jpg" width="469" height="268"></p>
+<p align="center"><img src="images/crossing_ic_card2.jpg" width="469" height="268"></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The crossing IC is used 
+  to keep information about the state of the crossing. It is responsible for the 
+  delay time and time until block for the crossing. The crossing IC sends simulation 
+  data requests to the simulator in order to get the current simulation data. 
+  It also sends a crossing data reply message containing the data for the crossing 
+  described above.</font></p>
+<p align="center"><font size="4" face="Arial, Helvetica, sans-serif"><img src="images/track_ic_card.jpg" width="469" height="268"></font></p>
+<p align="center"><font size="4" face="Arial, Helvetica, sans-serif"><img src="images/track_ic_card2.jpg" width="469" height="268"></font></p>
+<p><font size="4" face="Arial, Helvetica, sans-serif">The track IC is used to 
+  keep the states of the track sections. The track needs to know what color it 
+  should be displayed as, and whether it should be displayed at all (as in the 
+  case of a handheld device which uses only text in it's presentation). This IC 
+  sends simulation data request messages to the simulator to request the current 
+  simulation information about the location of the train. It also sends a track 
+  data reply message to the desktop, handheld, and vehicle ICs with information 
+  concerning how the track section should be displayed.</font></p>
+</body>
+</html>

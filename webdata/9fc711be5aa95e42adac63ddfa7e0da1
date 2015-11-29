@@ -1,0 +1,36 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Arial"> 
+	
+			<A href="./ex3.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./ex5.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		
+			<center> 
+				<h1>Running the Message Server Example on your PC</h1>
+			</center>
+			
+		</font>
+		
+		
+		<font size = 5 face="Arial"> 
+			<br>
+			9. Select 'Choose a new repository location'
+			<br>
+			<br>
+			10. Enter the following information
+			<br>
+			<br>
+			
+			<center>
+				<img src="./02.JPG" border="0">
+				<br>
+				Use one of the user/password combinations provided by Dr. Chang
+			</center>
+		</font>
+	</BODY>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title> Bugs Bee Wee </title>
+<style type="text/css">
+    form { background:#CCCCCC;
+         border-color: #0000CC;
+         border-style:dotted;
+         border-width:4px;
+         padding-left:3em;
+         padding-right:2em;
+         text-align: left;
+          }
+</style>
+</head>
+<body>
+<h1>Munch-a Bunch-a Bugs</h1>
+Helping our customers find their favorite bug treats is also a
+priority for us here at
+<span style="font-family: sans-serif; color: #0000FF">
+Bugs Bee Wee</span>.
+<form
+   action="mailto:scarab@bugsbeewee.com"
+   method="post">
+What is your favorite insect snack?<br />
+ <input type="radio"
+ 		  name="snack" value="mwm" alt="meal" />Meal Worm Meal<br />
+ <input type="radio"
+ 		  name="snack" value="cc"  alt="cricket" />Crispy Crickets<br />
+ <input type="radio"
+ 		  name="snack" value="gf" alt="hopper" />Grasshopper Fritters<br />
+ <input type="radio"
+ 		  name="snack" value="cca" alt="ant" />Chocolate Covered Ants<br />
+ <input type="radio"
+ 		  name="snack" value="rgs" alt="grub" />Roast Grub Worm Surprise<br />
+<input type="submit" value="Tell Us" alt="submit" />
+</form>
+</body>
+</html>

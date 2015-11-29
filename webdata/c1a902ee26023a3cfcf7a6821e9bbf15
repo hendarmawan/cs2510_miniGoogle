@@ -1,0 +1,18 @@
+WHY YOU CANNOT CREATE *.IN FILES
+
+The reason that sometimes you could not create *.in files is that
+you have not specified the project directory's full path name.
+To do that you need to click on "simulation" and then "options" and specify the
+full path name for both IC manager and Message files.  You must
+do this when you first launch IC_Builder, before you do anything
+else.  Moreover, when you enter IC_Builder again, you must do this
+again, otherwise IC_Builder may place the generated *.in files
+and ic.dat file in some buffer area under Windows and you may
+never find them.  For example, suppose your project directory is
+   c:\ic_builder\proj1
+then you need to enter this after you select "simulation" and
+then "options", as the path for both IC_Manager and Messages.
+You also shoud select "simulation" and then "project" and
+add a new file "x16.gra" and then click "okay", if you are
+defining a new ic called x16.gra.  You will then click
+the Export icon to generate x16.in under project directory proj1.

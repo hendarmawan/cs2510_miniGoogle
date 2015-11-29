@@ -1,0 +1,96 @@
+<title>CS1635 Interface Design Methodology</title>
+<h1>CS1635 Interface Design Methodology</h1>
+
+<b>
+<p>
+<a href="calendar">Calendar</a>
+<p>
+Topic 1: <a href="c01UI00/c01.htm">Basic Concepts of Interface</a>
+<br><br>
+
+
+
+Topic 2: <a href="c02CBSE01/c01.htm">Definition of Components</a>
+
+<br><br>
+Lab 1: <a href="kinect/">Kinect Interface</a>
+
+<br><br>
+Topic 3: <a href="http://www.cs.pitt.edu/~chang/153/UML/UML.htm">
+Universal Modeling Language UML</a>
+(Please download ArgoUML, which is a tool to create UML diagrams.
+The official website is: http://argouml.tigris.org/
+and there is also a well-written extensive
+<a href="ArgoUMLman.pdf">Argo UML user manual</a>.)
+<br>
+<a href="c03UMLDPL/c01.htm">More information about deployment diagram</a>
+
+<br><br>
+Topic 4: <a href="c04UMLc14/AK01.htm">Software Components and UML</a>
+
+<br><br>
+<a href="exercise.htm">Exercise 1</a>
+<br><br>
+<a href="exercise.htm">Exercise 2</a>
+
+<br><br>
+Topic 5: 
+<a href="c05CONCEPT/">Introduction to Patterns</a>
+
+<br><br>
+Topic 6: 
+<a href="c06wang.ppt">Introduction to Interface Patterns</a> (guest lecture by Prof. Jing-Tao Wang jingtaow@cs.pitt.edu)
+
+<br><br>
+Midterm Exam
+
+<br><br>
+Topic 7: 
+<a href="c07PATTERN01/">Software Patterns</a>
+
+<br><br>
+Lab 2: <a href="SequenceSIS.htm">Testbed for Intelligent Interface Design</a>
+
+<br><br>
+Topic 8a: 
+<a href="c08SAP/sap1.htm">Reuseable Components as User Interface Patterns</a>
+
+<br>
+Topic 8b:
+<a href="c08UIDP/">User Interface Design Patterns</a>
+
+<br>
+Topic 8c:
+<a href="c08HYPER/">Hypermedia Patterns</a>
+
+<br><br>
+<a href="exercise.htm">Exercise 3</a>
+<br><br>
+<a href="exercise.htm">Exercise 4</a>
+
+<br><br>
+Topic 9: 
+<a href="c09visual.htm">Visualization and Visual Analytics</a>
+
+<br><br>
+Topic 10: Gestural Computing and Sketch Computing (guest lecture by Prof. Levent Burak Kara lkara@cmu.edu)
+
+
+<br><br>
+Topic 11: 
+<a href="c11SIS/si01.htm">Slow Intelligence Patterns</a>
+
+<br><br>
+Topic 12: 
+<a href="http://www.cs.pitt.edu/~chang/365/vail/t01.htm">Visual Languages and Patterns</a>
+
+<br><br>
+Topic 13: 
+<a href="c13health/">Interface for Smarter Healthcare Systems</a>
+
+<br><br>
+<a href="proj11/">Project presentations</a> based on
+<a href="../fallencity/scenarios.html">Project Scenarios</a>
+
+<br><br>
+Final Exam

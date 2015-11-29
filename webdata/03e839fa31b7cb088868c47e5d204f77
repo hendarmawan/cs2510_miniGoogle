@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=iso-8859-1"
+ http-equiv="Content-Type">
+  <title>CS2731</title>
+  <link type="text/css" href="styles-site.css" rel="stylesheet">
+</head>
+<body>
+<div id="banner">
+<h1><a accesskey="1" href="http://www.cs.pitt.edu/%7Ehwa/cs2731/">CS2731
+/ ISSP2230</a></h1>
+<span class="description">Introduction to Natural Language Processing</span>
+</div>
+<div id="content">
+<div class="blog">
+<div class="blogbody">
+<h3 class="title">Academic Honesty</h3>
+<!--	  <p>Do not plagiarize.&nbsp; See <a
+	  href="http://www.pitt.edu/%7Eciddeweb/FACULTY-DEVELOPMENT/TA_HANDBOOK/end-draft.htm">http://www.pitt.edu/~ciddeweb/FACULTY-DEVELOPMENT/TA_HANDBOOK/end-draft.htm</a> for definition and examples.  <b>Plagiarizers will fail this course and receive disciplinary actions according to university policies</b>.</p> -->
+<p>All submitted work <b>must be your own work</b>.
+<b>Plagiarizers will fail this course and receive
+disciplinary actions according to university policies</b>.<br>
+</p>
+<p>You may discuss the assignments with each other;
+you may also refer to printed literature and web resources for
+background research. <b>However</b> you must list the names of people
+with whom you have had discussions and provide proper citations to any
+resources to which you referred. Failure to do so is considered
+plagiarism. </p>
+<h3 class="title">Absences</h3>
+<p>If an absence is unavoidable, you are responsible for making
+arrangements <b>to ensure that your assignments are turned in on time</b>.
+You are also responsible for obtaining the materials passed out and the
+information announced during the missed class. In case of extraordinary
+circumstances (hospitalization, family emergency) you should contact me
+as soon as possible so that we may arrange an extension for an
+assignment or schedule a make-up exam <i>prior to the due date</i>.
+Late assignments <b>will not</b> be accepted. No make-ups will be
+given for pop-quizzes</p>
+<h3 class="title">Course Grade</h3>
+<p>The course grade will be decided based on the following factors:</p>
+<ul>
+  <li> Class participation (10%) </li>
+  <li> Assignments (20%) </li>
+  <li> Exam 1 (15%) </li>
+  <li> Exam 2 (20%) </li>
+  <li> Term Project (35%) </li>
+  <ul>
+    <li>Project Proposal (10%)</li>
+    <li>Project Presentation (10%)</li>
+    <li>Project Draft Review (5%)</li>
+    <li>Project Report (10%)</li>
+  </ul>
+</ul>
+<!---
+<h3 class="title">Lecture Notes</h3>
+<p>Lectures will be presented using "traditional" methods of magic
+markers on whiteboards. Powerpoint presentations will be minimal (See <a
+ href="http://www.norvig.com/Gettysburg/">here</a> for why too much
+Powerpoint is a bad idea). Therefore, lecture notes <span
+ style="font-style: italic;">will not</span> typically be online. You
+are responsible for taking good notes during class.</p>
+
+<h3 class="title">Homework Assignments</h3>
+-->
+<h3 class="title">Required Textbook</h3>
+<p>By <i>required</i>, I mean that you are responsible for the
+assigned materials in the specified textbook(s). You have the
+perogative to choose any <b>legal</b> means of obtaining the required
+information in the textbook (NB: I have reserved a copy of the
+textbook(s) in Hillman Library). However, <b>the responsibility of
+obtaining the material in a timely manner is yours alone</b>. For
+example, if the book you purchased should arrive three weeks late, you
+are responsible to find alternative means of accessing the textbook.
+Similarly, if you inherited an earlier edition of the book, it is your
+responsibility to discover the differences between your version and the
+official version. </p>
+<h3 class="title">Office Hours</h3>
+<p>In addition to regularly scheduled office hours, you may make
+appointments for further meetings with the TA and the instructor;
+however, these appointments should be made at least a day in
+advance.</p>
+
+<h3 class="title">Students With Disabilities</h3>
+<p>If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412)
+648-7890/(412) 383-7355 (TTY), as early as possible in the term. DRS
+will verify your disability and determine reasonable accomodations for
+this course. </p>
+</div>
+</div>
+</div>
+<div id="links">
+<div class="side"><a href="index.html">Home</a><br>
+<a href="policy.htm">Course Policies</a><br>
+<a href="syl.htm">Syllabus</a><br>
+<a href="links.htm">Links</a><br>
+</div>
+</div>
+<br clear="all">
+<br>
+</body>
+</html>

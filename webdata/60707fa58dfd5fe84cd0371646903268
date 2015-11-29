@@ -1,0 +1,448 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<title>CS1699: Introduction to Computer Vision</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<div id="container">
+
+<div id="header"><center>
+<a id="top"><h2>CS1699: Introduction to Computer Vision</h2></a>
+</center></div>
+
+<div id="navigation">
+<center>
+<a class="nav" href="#announcements">announcements</a>
+<a class="nav" href="#overview">overview</a>
+<a class="nav" href="#policies">policies</a>
+<a class="nav" href="#schedule">schedule</a>
+<a class="nav" href="#resources">resources</a>
+</center>
+</div>
+
+<br>
+
+<div id="intro">
+
+<h3>CS1699: Introduction to Computer Vision, Fall 2015</h3>
+
+<b>Location</b>: Sennott Square 5502<br>
+<b>Time</b>: Tuesday and Thursday, 2:30pm - 3:45pm<br>
+<b>Instructor</b>: <a href="http://www.cs.pitt.edu/~kovashka">Adriana Kovashka</a> (email: kovashka AT cs DOT pitt DOT edu; <i>use "CS1699" at the beginning of the subject line</i>) <br>
+<b>Office</b>: Sennott Square 5325 <br>
+<b>Office hours</b>: Tuesday and Thursday, 4pm-5pm<br>
+<b>Grader</b>: Nils Murrugarra-Llerena (email: nineil AT cs DOT pitt DOT edu)
+
+</div>
+
+<br>
+
+<div id="content">
+
+<a id="announcements"><h3>Announcements</h3></a>   
+
+<a href="hw4.html">Homework 4</a> has been released, and is due at 11:59pm on <font color="red">November 24</font>. 
+<br><br>
+
+<br><a href="#top">[top]</a> 
+
+<a id="overview"><h3>Overview</h3></a>
+
+<b>Course description:</b> In this class, students will learn the
+basics of modern computer vision. The first major part of the course
+will cover fundamental concepts such as image formation, color
+perception, image filtering, edge detection, texture description,
+feature extraction and matching, and grouping and fitting. A crash
+course in Machine Learning will follow, in preparation for the second
+course chapter on visual recognition. We will study state of the art
+approaches in object and scene recognition, activity recognition and
+first-person video, attribute-based description, image retrieval,
+unsupervised learning, and learning from big data. Finally, we will
+discuss a few newly introduced topics from the most recent computer
+vision conferences. The course format will include lectures, homework and exams.<br><br>
+ 
+<b>Prerequisites:</b> CS1501, CS1502 <br><br>
+
+<b>Textbooks:</b> 
+<ul>
+<li><a href="http://szeliski.org/Book/">Computer Vision: Algorithms
+and Applications</a> by Richard Szeliski (available for free on
+author's page)</li> 
+<li><a href="http://www.morganclaypool.com/doi/abs/10.2200/S00332ED1V01Y201103AIM011">Visual Object Recognition</a> by Kristen Grauman and Bastian Leibe (accessible for free from campus)</li>
+</ul>
+
+<a href="#top">[top]</a> 
+
+<a id="policies"><h3>Policies</h3></a>
+
+<h4><u>Grading</u></h4>
+
+Grading will be based on the following components: 
+
+<ul>
+<li>Homework (5 problem sets) (50%)</li>
+<li>Midterm exam (20%)</li>
+<li>Final exam (20%)</li>
+<li>Participation (10%)</li>
+</ul>
+
+<h4><u>Homework Submission Mechanics</u></h4>
+
+You will submit your homework using CourseWeb. Navigate to the CourseWeb page for CS1699, then click on "Assignments" (on the left) and the corresponding homework number. Attach, in a single zip file, your written responses and code. Name the file as YourFirstName_YourLastName.zip or YourFirstName_YourLastName.tar. Homework is due at 11:59pm on the due date. 
+
+<h4><u>Exams</u></h4>
+
+There will be one in-class midterm exam, and a final exam (December 14 at 12pm) which will focus on material from the latter part of the course.
+
+<h4><u>Attendance, in-class participation and discussion</u></h4>
+
+Students are expected to regularly attend the class lectures, and should actively engage in in-class discussions. Your participation grade will be based on what fraction of lectures you attended, and how actively you participated in class. You have two "free" absences that you will not affect your participation grade. If you are absent beyond these, please let me know and explain. You can actively participate by, for example, responding to the instructor's or others' questions, asking questions or making meaningful remarks and comments about the lecture. <i>You are also encouraged to bring in relevant articles you saw in the news.</i>
+
+<h4><u>Late Policy</u></h4>
+
+You get 3 "free" late days, i.e., you can
+submit homework a total of 3 days late. For example, you can submit one problem set 12 hours late, and another 60 hours late. Once you've used up your free late days, you will incur a penalty of 25% from the total project credit possible for each late day. A late day is anything from 1 minute to 24 hours. 
+
+<h4><u>Collaboration Policy and Academic Honesty</u></h4>
+
+You will do your work (exams and homework) individually. The work you turn in must be your own work. You are allowed to discuss the problem sets with your classmates, but do not look at code they might have written for the problem sets. You are also not allowed to search for code on the internet, use solutions posted online unless you are explicitly allowed to look at those, or to use Matlab's implementation if you are asked to write your own code. When in doubt about what you can or cannot use, ask the instructor! Plagiarism will cause you to fail the class and receive disciplinary penalty. Please consult the <a href="http://www.provost.pitt.edu/info/ai1.html">University Guidelines on Academic Integrity</a>.
+
+<h4><u>Note on Disabilities</u></h4>
+
+If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services (DRS), 140 William Pitt Union, (412)
+648-7890, drsrecep@pitt.edu, (412) 228-5347 for P3 ASL users, as early as possible in the term. DRS
+will verify your disability and determine reasonable accommodations for
+this course. 
+
+<h4><u>Note on Medical Conditions</u></h4>
+
+If you have a medical condition which will prevent you from doing a
+certain assignment or coming to class, you must inform the instructor
+of this <b>before</b> the deadline. You must then submit documentation
+of your condition within a week of the assignment deadline.
+
+<h4><u>Statement on Classroom Recording</u></h4>
+
+To ensure the free and open discussion of ideas, students may not record classroom lectures, discussion and/or activities without the advance written permission of the instructor, and any such recording properly approved in advance can be used solely for the student's own private use.
+
+<br><br>
+
+<a href="#top">[top]</a> 
+
+<a id="schedule"><h3>Schedule</h3></a>
+
+<table border="1"><tbody>
+
+<tr>
+<td align="middle" valign="middle" height="70" width="50"><b>Date</b></td>
+<td align="middle" width="440"><b>Topic</b></td>
+<td align="middle" width="260"><b>Readings</b></td>
+<td align="middle" width="100"><b>Lecture slides</b></td>
+<td align="middle" width="100"><b>Due</b></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">9/01</td>
+<td align="middle">Introduction</td>
+<td align="middle"></td>
+<td align="middle"><a href="vision_01_intro.pptx">[pptx]</a> <a href="vision_01_intro.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">9/03</td>
+<td align="middle">Matlab tutorial; Filters</td>
+<td align="middle">Szeliski Sec. 1.1-1.2</td>
+<td align="middle"><a href="vision_02_matlab_hw1.pptx">[pptx]</a> <a href="vision_02_matlab_hw1.pdf">[pdf]</a></td>
+<td align="middle"><a href="hw1.html">HW1 out</a></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">9/08</td>
+<td align="middle">Filters (cont'd) and texture</td>
+<td align="middle">Szeliski Sec. 3.1.1, 3.2, 10.5</td>
+<td align="middle"><a href="vision_03_filters_texture.pptx">[pptx]</a> <a href="vision_03_filters_texture.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">9/10</td>
+<td align="middle">Texture and other uses of filters</td>
+<td align="middle">Szeliski Sec. 3.1.1, 3.2, 10.5</td>
+<td align="middle"><a href="vision_04_texture_pyramids.pptx">[pptx]</a> <a href="vision_04_texture_pyramids.pdf">[pdf]</a> </td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">9/15</td>
+<td align="middle">Edges and binary images</td>
+<td align="middle">Szeliski Sec. 3.3.2-4, 4.2</td>
+<td align="middle"><a href="vision_05_edges.pptx">[pptx]</a> <a href="vision_05_edges.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">9/17</td>
+<td align="middle">Interest points and feature description </td>
+<td align="middle">Szeliski Sec. 4.1, Grauman/Leibe Ch. 1-3; <a href="http://www.cs.ubc.ca/~lowe/papers/ijcv04.pdf">SIFT paper by David Lowe</a></td>
+<td align="middle"><a href="vision_06_features.pptx">[pptx]</a> <a href="vision_06_features.pdf">[pdf]</a></td>
+<td align="middle"><a href="hw2.html">HW2 out</a></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">9/22</td>
+<td align="middle">Color</td>
+<td align="middle">Szeliski Sec. 2.3.2</td>
+<td align="middle"><a href="vision_07_color.pptx">[pptx]</a> <a href="vision_07_color.pdf">[pdf]</a></td>
+<td align="middle"><b><a href="hw1.html">HW1 due</a></b></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">9/24</td>
+<td align="middle">Segmentation and grouping</td>
+<td align="middle">Szeliski Sec. 5.3-4</td>
+<td align="middle"><a href="vision_08_segmentation.pptx">[pptx]</a> <a href="vision_08_segmentation.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">9/29</td>
+<td align="middle">Fitting models</td>
+<td align="middle">Szeliski Sec. 2.1.1-2, 4.3.2;<br>Grauman/Leibe Ch. 5</td>
+<td align="middle"><a href="vision_09_hough.pptx">[pptx]</a> <a href="vision_09_hough.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">10/01</td>
+<td align="middle">Matching features; Indexing and retrieval</td>
+<td align="middle">Szeliski Sec. 14.3;<br>Grauman/Leibe Ch. 4, 6</td>
+<td align="middle"><a href="vision_10_matching_retrieval.pptx">[pptx]</a> <a href="vision_10_matching_retrieval.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">10/06</td>
+<td align="middle">Projective transformations and image stitching</td>
+<td align="middle">Szeliski Sec 2.1.5, 3.6.1, 7.1, 7.2</td>
+<td align="middle"><a href="vision_11_homographies.pptx">[pptx]</a> <a href="vision_11_homographies.pdf">[pdf]</a></td>
+<td align="middle"><a href="hw3.html">HW3 out</a></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">10/08</td>
+<td align="middle">Epipolar geometry and stereo vision</td>
+<td align="middle">(see above)</td>
+<td align="middle"><a href="vision_12_stereo.pptx">[pptx]</a> <a href="vision_12_stereo.pdf">[pdf]</a></td>
+<td align="middle"><b><a href="hw2.html">HW2 due</a></b></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">10/13</td>
+<td align="middle">Midterm review</td>
+<td align="middle"></td>
+<td align="middle"><a href="vision_13_review.pptx">[pptx]</a> <a href="vision_13_review.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">10/15</td>
+<td align="middle"><b>Midterm (in class)</b></td>
+<td align="middle"></td>
+<td align="middle"></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">10/20</td>
+<td align="middle"><i>No class due to Fall Break</i></td>
+<td align="middle"></td>
+<td align="middle"></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">10/22</td>
+<td align="middle">Intro to machine learning and visual recognition</td>
+<td align="middle">Grauman/Leibe Ch. 7, Sec. 8.1</td>
+<td align="middle"><a href="vision_15_ml_recognition_intro_part1.pptx">[pptx]</a> <a href="vision_15_ml_recognition_intro_part1.pdf">[pdf]</a></td> 
+<td align="middle"><a href="hw4.html">HW4 out</a></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">10/27</td>
+<td align="middle">Intro to machine learning and visual recognition (cont'd)</td>
+<td align="middle"><a href="bishop_chapter1_part.pdf">Chapter 1 from Bishop's PRML</a></td>
+<td align="middle"><a href="vision_16_ml_recognition_intro_part2.pptx">[pptx]</a> <a href="vision_16_ml_recognition_intro_part2.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">10/29</td>
+<td align="middle">Support vector machines</td>
+<td align="middle"><a href="bishop_chapter7_section1.pdf">Section 7.1 from Bishop's PRML</a></td>
+<td align="middle"><a href="vision_17_svms.pptx">[pptx]</a> <a href="vision_17_svms.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">11/03</td>
+<td align="middle">Bias-variance trade-off; Other models and problems</td>
+<td align="middle"></td>
+<td align="middle"><a href="vision_18_overfitting_other.pptx">[pptx]</a> <a href="vision_18_overfitting_other.pdf">[pdf]</a></td>
+<td align="middle"><b><a href="hw3.html">HW3 due</a></b></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">11/05</td>
+<td align="middle">Interactive image search with attributes</td>
+<td align="middle">
+<b><a href="http://www.cs.utexas.edu/%7Egrauman/papers/whittle-search-cvpr2012.pdf">WhittleSearch: Image Search with Relative Attribute Feedback.</a></b> (A. Kovashka et al., CVPR 2012)
+<!--<b><a href="http://web.engr.illinois.edu/~iendres2/publications/cvpr2009_att.pdf">Describing Objects by Their Attributes.</a></b> (A. Farhadi et al., CVPR 2009)-->
+</td>
+<td align="middle"><a href="vision_19_search_attributes.pptx">[pptx]</a> <a href="vision_19_search_attributes.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">11/10</td>
+<td align="middle">Detection I: Faces</td>
+<td align="middle">Szeliski Sec. 14.1, Grauman/Leibe Sec. 11.1 </td>
+<td align="middle"><a href="vision_20_faces.pptx">[pptx]</a> <a href="vision_20_faces.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">11/12</td>
+<td align="middle">Detection II: Deformable part models</td>
+<td align="middle">Szeliski Sec. 14.4, Grauman/Leibe Sec. 8.2, 9, 10.3.3, 11.2,3,5<!--10.2.1--></td>
+<td align="middle"><a href="vision_21_dpms.pptx">[pptx]</a> <a href="vision_21_dpms.pdf">[pdf]</a></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">11/17</td>
+<td align="middle">Detection III: Understanding detection failures</td>
+<td align="middle"></td>
+<td align="middle">[pptx] [pdf]</td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">11/19</td>
+<td align="middle">Human factors (crowdsourcing and saliency)</td>
+<td align="middle">Grauman/Leibe Sec. 10.1, <b><a href="http://www.cs.cmu.edu/%7Ebiglou/Peekaboom.pdf">Peekaboom: A Game for Locating Objects in Images.</a></b> (L. von Ahn et al., CHI 2006)</td>
+<td align="middle">[pptx] [pdf]</td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">11/24</td>
+<td align="middle">Active and unsupervised learning</td>
+<td align="middle"><b><a href="http://vision.ucsd.edu/sites/default/files/Visipedia20q.pdf">Visual Recognition with Humans in the Loop.</a></b> (S. Branson et al., ECCV 2010)</td>
+<td align="middle">[pptx] [pdf]</td>
+<td align="middle"><b><a href="hw4.html">HW4 due</a></b>; HW5 out</td>
+</tr>
+
+<tr>
+<td align="middle" height="40">11/26</td>
+<td align="middle"><i>Thanksgiving break</i></td>
+<td align="middle"></td>
+<td align="middle"></td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">12/01</td>
+<td align="middle">Deep learning</td>
+<td align="middle"></td>
+<td align="middle">[pptx] [pdf]</td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">12/03</td>
+<td align="middle">Tracking</td>
+<td align="middle">Szeliski Sec. 4.1.4, 8.4, 12.6.4</td>
+<td align="middle">[pptx] [pdf]</td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">12/08</td>
+<td align="middle">Human pose and actions</td>
+<td align="middle"><b><a
+href="http://www.ics.uci.edu/%7Edramanan/papers/ADL_2012.pdf">Recognizing Activities of Daily Living in First-Person Camera
+Views.</a></b> (H. Pirsiavash and D. Ramanan, CVPR 2012)</td>
+<td align="middle">[pptx] [pdf]</td>
+<td align="middle"></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">12/10</td>
+<td align="middle">Wrap-up and final review</td>
+<td align="middle"></td>
+<td align="middle"></td>
+<td align="middle"><b>HW5 due</b></td>
+</tr>
+
+<tr>
+<td align="middle" height="40">12/14</td>
+<td align="middle"><b>Final exam</b></td>
+<td align="middle"></td>
+<td align="middle"></td>
+<td align="middle"></td>
+</tr>
+
+</tbody></table>
+
+<br><a href="#top">[top]</a> 
+
+<a id="resources"><h3>Resources</h3></a>
+
+This course was inspired by the following courses:
+
+<ul>
+<li><a href="http://www.cs.utexas.edu/~grauman/courses/spring2011/index.html">Computer Vision</a> by Kristen Grauman, UT Austin, Spring 2011</li>
+<li><a href="https://courses.engr.illinois.edu/cs543/sp2015/">Computer Vision</a> by Derek Hoiem, UIUC, Spring 2015</li>
+</ul>
+
+Tutorials:
+
+<ul>
+<li><a href="http://cs.brown.edu/courses/cs143/2011/docs/matlab-tutorial/">Matlab tutorial</a> </li>
+<li><a href="http://vision.stanford.edu/teaching/cs131_fall1415/lectures/cs131_linalg_review.pptx">Linear algebra review</a> by Fei-Fei Li</li>
+<li><a href="http://viscomp.csail.mit.edu/resource/slides/lecture4.pdf">Brief machine learning intro</a> by Aditya Khosla and Joseph Lim</li>
+<li><a href="https://filebox.ece.vt.edu/~S14ECE5984/#resources">Resources list</a> (including code and data, tutorials, and other related courses) compiled by Devi Parikh </li>
+</ul>
+
+Some datasets:
+
+<ul>
+<li><a href="http://mscoco.org/">Microsoft COCO (Common Objects in Context)</a></li>
+<li><a href="http://www.image-net.org/">ImageNet</a></li>
+<li><a href="http://sundatabase.mit.edu/">SUN Database</a></li>
+<li><a href="http://attributes.kyb.tuebingen.mpg.de/">Animals with Attributes</a></li>
+<li><a href="http://www.vision.caltech.edu/visipedia/CUB-200.html">Caltech-UCSD Birds 200</a></li>
+<li><a href="http://www.irisa.fr/vista/actions/">INRIA Movie Actions</a></li>
+<li><a href="http://www.cs.utexas.edu/~grauman/courses/spring2008/datasets.htm">Recognition datasets list</a> compiled by Kristen Grauman </li>
+<li><a href="https://www.cs.utexas.edu/~chaoyeh/web_action_data/dataset_list.html">Human activity datasets list</a> compiled by Chao-Yeh Chen </li>
+</ul>
+
+<a href="#top">[top]</a> 
+
+<br><br><br>
+
+</div>
+
+<div id="footer">
+&nbsp;
+</div>
+
+</div>
+
+</body></html>

@@ -1,0 +1,83 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Expressive power</title>
+<meta name="Microsoft Theme" content="inmotion 011">
+</head>
+
+<body background="inmtextb.gif" bgcolor="#FFFFFF" text="#663300" link="#990066" vlink="#CC6633" alink="#FFCC00">
+
+<!--mstheme--><font face="Arial, Helvetica">
+
+<p>&nbsp;</p>
+
+<p><a href="5.htm"><img border="0" src="previous.gif" width="26" height="26"></a></p>
+
+<p><u><font size="7" face="Times New Roman">Expressive power</font></u></p>
+<p ALIGN="JUSTIFY"><i><font size="5" face="Agency FB">Ability to cover a broad 
+range of temporal scenarios required by the author.</font></i></p>
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">A formal approach to define expressive power.
+</font> </p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Document presented by an authoring system as a state machine (see Figure 2) 
+characterized by: </font> </p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+<blockquote>
+  <!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+    <!--msthemelist--><tr>
+      <!--msthemelist--><td valign="top" width="42">
+      <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+      <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">A set of objects O. </font> </p>
+      <!--mstheme--></font><!--msthemelist--></td>
+    </tr>
+    <!--msthemelist--><tr>
+      <!--msthemelist--><td valign="baseline" width="42">
+      <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+      <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">A set of inputs IN (clock tics and events on the objects).
+</font> </p>
+      <!--mstheme--></font><!--msthemelist--></td>
+    </tr>
+    <!--msthemelist--><tr>
+      <!--msthemelist--><td valign="baseline" width="42">
+      <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+      <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">A set of outputs OUT (start, stop, ... on the objects).
+</font> </p>
+      <!--mstheme--></font><!--msthemelist--></td>
+    </tr>
+    <!--msthemelist--><tr>
+      <!--msthemelist--><td valign="baseline" width="42">
+      <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+      <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">An execution loop defined as: getting some inputs, producing 
+some outputs and updating some state variables. </font> </p>
+      <!--mstheme--></font><!--msthemelist--></td>
+    </tr>
+    <!--msthemelist--></table>
+  <!--mstheme--><font face="Arial, Helvetica">
+</blockquote>
+<font FACE="TimesNewRoman" SIZE="2">
+<p ALIGN="JUSTIFY">&nbsp;</p>
+</font>
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB"><img border="0" src="6.htm7.gif" width="508" height="237"></font></p>
+<p ALIGN="JUSTIFY"><i><font face="Agency FB" size="5">The expressive power of a 
+specification language can be evaluated by its ability to describe any state 
+machine from a given set of objects and their related events.</font></i></p>
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="4"><a href="7.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></font></p>
+<!--mstheme--></font>
+</body>
+
+</html>

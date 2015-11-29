@@ -1,0 +1,262 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=iso-8859-1">
+  <meta name="GENERATOR"
+ content="Mozilla/4.73 [en] (Win98; U) [Netscape]">
+  <title>Introduction to Robotics</title>
+  <script language="JavaScript">
+
+  </script>
+</head>
+<body
+ onload="MM_preloadImages('images/CMPS111NavBar_r1_c1_f3.gif','images/CMPS111NavBar_r1_c1_f2.gif','images/CMPS111NavBar_r1_c2_f3.gif','images/CMPS111NavBar_r1_c2_f2.gif','images/CMPS111NavBar_r1_c3_f3.gif','images/CMPS111NavBar_r1_c3_f2.gif','images/CMPS111NavBar_r1_c4_f3.gif','images/CMPS111NavBar_r1_c4_f2.gif','images/CMPS111NavBar_r1_c5_f3.gif','images/CMPS111NavBar_r1_c5_f2.gif')"
+ bgcolor="WHITE">
+<hr>
+<center>
+<h1><small>CS 1567:<font><font color="#ffffcc"> <span
+ style="color: rgb(0, 0, 0);">Programming and System Design</span><span
+ style="color: rgb(0, 0, 0);"> using a Mobile Robot</span></font></font><br>
+<small>Spring 2010</small>
+</small></h1>
+<small></small></center>
+<center><small>
+</small>
+<h2><small></small></h2>
+<small></small></center>
+<center><small>
+</small>
+<h2><small><small><a href="http://www.cs.pitt.edu/%7Emosse/">Daniel
+Mosse</a></small></small></h2>
+<h3><small><a href="http://www.cs.pitt.edu/">Computer Science Department</a>,
+<a href="http://www.pitt.edu/">University of Pittsburgh</a></small></h3>
+</center>
+<hr>
+<center>
+<table cellpad="10" cellspace="10" border="1" width="90%">
+  <tbody>
+    <tr>
+      <td height="30">
+      <center>
+      <p><font color="#ff0000"><span style="font-weight: bold;">NEWS:</span>
+      </font></p>
+<!--#include file="news.txt" --></center>
+      <ul>
+<li>
+<!--<font size="+2"><a href="http://www.cs.pitt.edu/%7Emosse/courses/cs1567/finalprojects.html">Final projects 2007</a></font>
+</li>
+<li> More in Matt Stock's 
+<a href="http://www.cs.pitt.edu/%7Emstock">homepage</a>
+</li>
+
+        <li>project 1a and 1b <span
+ style="font-weight: bold; color: rgb(0, 0, 153);">due on Jan 23</span>
+(10% penalty per late day)</li>
+        <li>project descriptions: <a
+ href="http://www.cs.pitt.edu/%7Emosse/courses/cs1567/lab1.pdf">project
+1a</a> and <a
+ href="http://www.cs.pitt.edu/%7Emosse/courses/cs1567/lab2.pdf">project
+1b</a>&nbsp;
+        </li>
+-->
+<li>Control Guest Lecture: <a href="dara-kusic-control.ppt">ppt slides</a> and <a href="reidmiller_robocup.pdf">background reading</a>
+<p>
+<li> cyberMouse competition 2006: <a href="http://www.ieeta.pt/~lau/web_ciberRTSS/">main page</a> and  <a href="http://www.ieeta.pt/~lau/web_ciberRTSS/docs.htm">reports page</a> </li>
+<li> cyberMouse competition 2006: <a href="http://www.ieeta.pt/~lau/web_ciberRTSS07/">main page</a> and  <a href="http://www.ieeta.pt/~lau/web_ciberRTSS07/techdata.htm#teamreports/">reports page</a> </li>
+<li> cyberMouse competition 2008: <a href="http://www.ieeta.pt/lse/ciberRTSS08/">main page</a> and  <a href="http://www.ieeta.pt/lse/ciberRTSS08/docs/proceedings2008-final.pdf">reports pdf</a> </li>
+<p>
+        <li>ppt file for <a href="controller-intro.ppt">controllers</a></li>
+      </ul>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</center>
+<hr>
+<p><a href="http://www.cs.pitt.edu/%7Emosse/cs1550/schedule.html"><strong></strong></a></p>
+<table style="width: 791px; height: 82px;">
+  <tbody>
+    <tr>
+      <td height="21">
+      <p><b>Class:</b></p>
+      </td>
+      <td>MW 3:00pm-4:15pm, SENSQ 5804 (Bot Lab)<br>
+      </td>
+      <td style="vertical-align: top;"><br>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Instructor/TA</b></td>
+      <td>Prof. Daniel Mosse (<a href="mailto:mosse@cs.pitt.edu">mosse@cs.pitt.edu</a>)
+      </td>
+      <td style="vertical-align: top;">Nick Farnam (<a
+ href="mailto:nlf4@cs.pitt.edu">nlf4@cs.pitt.edu</a>),</td>
+    </tr>
+    <tr>
+      <td><b>Office Hours:</b></td>
+      <td>TH 10-11am (or by appointment)</td>
+      <td style="vertical-align: top;">in Robot Lab, Mon,Wed 1-3pm, Thu 3-5pm</td>
+    </tr>
+  </tbody>
+</table>
+<br>
+<br>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Mailing
+List Announcement</font></font></b>
+<br>
+A class mailing list will be compiled, and will be used for important
+announcements. It is VERY important that you be included in this list.
+It is therefore your responsibility to e-mail the TA and request
+to be included on the CS1567 class mailing list.
+</p>
+<p></p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Course
+Objectives</font></font></b>
+<br>
+The purpose of this course is to understand and use the basic concepts
+of small mobile robots, implement some algorithms in an actual
+platform, interfacing
+the program (software) with the machine (hardware). In particular, this
+class is meant to
+be very hands-on, relying on implementations and labs, while also
+introducing several concepts needed to make the robots move.
+</p>
+<p></p>
+<p></p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Grading</font></font></b>
+</p>
+<ul>
+  <li><b>100%</b> Programming projects. The projects have an estimated
+10 hours
+per week for a good programmer <br>
+  </li>
+</ul>
+<p>
+</p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Programming
+Assignments</font></font></b> <br>
+<br>
+The programming assignments are THE ESSENTIAL component of the course.
+If all goes as planned, you will be implementing several programs
+running atop a Linux OS.&nbsp; In the first third of the course, these
+programs will be downloaded onto a laptop, which commands the
+robots.&nbsp; The 2nd part of the course will have to program SONY AIBO
+dogs to perform several tasks.<br>
+</p>
+<dl>
+  <dt>The programming assignments will be evaluated on several factors:</dt>
+  <li>
+    <b>Documentation:</b> your code must be well-commented and must
+include
+a design document describing your solution.</li>
+  <li>
+    <b>Correctness:</b> your code must do what it is supposed to do.</li>
+  <li>
+    <b>Structure:</b> your code should be broken into natural functions
+and
+modules.</li>
+  <li>
+    <b>Style:</b> your code should be easy to read, well indented, well
+commented,
+and use clear, self-explanatory variable and function names.</li>
+</dl>
+Your grade for each assignment will be based on your design (40%) and
+your
+code (60%). Good design and documentation are absolutely crucial for
+this
+class because of the difficulty of the concepts.
+<p><b>Due dates and lateness:</b>
+</p>
+<li><!--Late work will not be accepted except when due to true documented emergencies.</li>-->
+Late work will be accepted up to a week late, at a penalty of 10% per
+day.</li>
+<li>Graded work will be returned as soon as possible, usually within
+one week.</li>
+<p></p>
+<hr>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Getting
+Answers to your Questions</font></font></b>
+</p>
+<li>Attend class<br>
+</li>
+<li>
+Check the class web page frequently - we will post as much information
+as we can</li>
+<li>
+Meet with the professor and TA during office hours</li>
+<li>
+Email the professor and TA</li>
+<p>
+</p>
+<hr>
+<center><i></i></center>
+<p><b><font face="Verdana, Arial, Helvetica, sans-serif"><font size="+2">Academic
+Honesty: Collaboration vs. Cheating</font></font></b> <br>
+<br>
+This really should not be an issue, but to make things as clear as
+possible the following is necessary.
+</p>
+<p>You are encouraged to discuss the course material and concepts with
+other students in the class. However, all work that you submit must be
+your own. Under no circumstances may you look at anyone else's code or
+show anyone else your code. And while you may discuss the concepts used
+in the programming assignments, you may not discuss implementation
+details
+of the assignments themselves.
+</p>
+<p>If you are caught copying or otherwise turning in work that is not <i>solely</i>
+your own, <b>you will fail the course.</b>
+</p>
+<p>The bottom line is that you are expected to conduct yourself as a
+person
+of integrity - you are expected to adhere to the highest standards of
+academic
+integrity. This means that plagiarism<sup>1</sup> in any form is
+completely
+unacceptable. As a (soon to be) computing professional, I encourage you
+to consult the code of ethics appropriate to your discipline<sup>2</sup>.
+</p>
+<p>Plagiarism will be assumed until disproved on work that is
+essentially
+the same as that of other students. This includes identically
+incorrect,
+off-the-wall, and highly unusual duplicate answers where the
+probability
+of a sheer coincidence is extremely unlikely. All parties to this
+unacceptable
+collaboration will receive the same treatment.
+</p>
+<p>You should bring a picture identification with you to all
+examinations
+and be prepared to show it upon request.
+</p>
+<p><i>If you are unsure of what is and is not allowed by this policy,
+talk
+to the instructor.</i>
+</p>
+<p><font size="-1"><sup>1 </sup><b>pla-gia-rize</b> <i>vt.</i> to
+steal and
+pass of as one's own (the ideas or words of another) to present as
+one's
+own an idea or product derived from an existing source - <b>pla-gia-riz-er</b><i>n.</i>
+(source: Webster's New World Dictionary).</font>
+<br>
+<font size="-1"><sup>2 </sup>The Association for Computing Machinery
+is http://www.acm.org/, the IEEE is http://www.ieee.org/ and the IEEE
+Computer
+Society is http://www.computer.org/.</font>
+</p>
+<p></p>
+<hr><br>
+<center><i>These web pages contain format kindly provided by
+<a href="http://www.cs.ucsc.edu/%7Esbrandt">Prof. Scott A. Brandt</a>
+and materials kindly provided by <a
+ href="http://www.cs.pitt.edu/%7Edon/">Prof Don Chiarulli</a><br>
+</i></center>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<html>
+<head><title>Chapter 11: Synchronization over net</title></head>
+<body>
+<a href="c11_8.html"><IMG SRC="previous.gif" align=left></a>
+<a href="c11_10.html"><IMG SRC="next.gif" align=right></a>
+
+<center>
+<h3><font color="blue">Chapter 11</font></h3>
+<h1>Synchronization Mechanisms over Broadband Networks</h1>
+</center>
+<hr size=3>
+
+<h2>
+<image src="gr_ball.gif"> Synchronization Interval Unit (SIU) <br></h2>
+<h3>
+<ul>
+  <image src="yellow.gif"> Smallest unit for maintaining synchronization <br>
+  <image src="yellow.gif"> SIU for a video object can be 1/30th of a second. <br>
+  <image src="yellow.gif"> SIU for an image or text can be the entire object. <br>
+</ul>
+</h3>
+
+<h2>
+<image src="gr_ball.gif"> Deadline-Based Scheduling for Synchronization<br>
+</h2>
+<h3>
+<ul>
+   <img src="yellow.gif"> SIU should be pre-scheduled because of network delay :
+   <i>control time</i> <br>
+   <img src="yellow.gif"> Control time depends on size,delay and channel capacity 
+   requirement of a representative data object. <br>
+   <img src="yellow.gif"> If the QOP parameters can not meet, the connection can
+   be denied or use partial dropping. <br>
+</ul>
+<h3>
+
+<h2>
+<image src="gr_ball.gif"> Feedback Techniques for Synchronization <br> </h2>
+<h3>
+<ul>
+   <img src="yellow.gif"> Multimedia server must keep some data in the buffer.<br>
+   <img src="yellow.gif"> Client send light-weighted message called <i>feedback
+   unit</i> periodically to server. <br>
+   <img src="yellow.gif"> Server use feedback unit to estimate a better actual
+   playback rate. <br>
+   <img src="yellow.gif"> Re-synchronization policies are 
+   <p>
+   <center>
+   <table border=5 cellpadding=5>
+   <tr>
+   <td><b>conservative</b>
+   <td>Server reacts only when play-out of different streams is guaranteed to be
+   asynchronous.
+   </tr>
+   <tr>
+   <td><b>aggressive</b>
+   <td>Server reacts as soon as there is even a slight chance that playback
+   is asynchronous.
+   </tr>
+   <tr>
+   <td><b>probabilistic</b>
+   <td>Server reacts on the average
+   </tr>
+   </table>
+   <p>
+
+</ul>
+<h3>
+
+
+</body>
+</html>
+
+
+

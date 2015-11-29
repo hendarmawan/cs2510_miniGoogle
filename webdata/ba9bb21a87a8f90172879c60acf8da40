@@ -1,0 +1,32 @@
+<title>The Software Life-Cycle Models</title>
+<A HREF="c04.htm"><IMG SRC="previous.gif" align=left></A>
+<A HREF="c06.htm"><IMG SRC="next.gif" align=right></A>
+
+
+<h1>The Software Life-Cycle Models</h1>
+
+
+<font color=red>
+<h2>Waterfall Model</h2>
+</font>
+<h3>
+<img src="s31.gif" height=750><br>Waterfall model<p>
+
+
+(1) The feedback loops permits modifications to be made to
+design documents, the software project management plan, and even
+the specification document, if necessary.
+<p>
+(2) No phase is complete until the documentation for that phase
+has been completed and the products of that phase has been
+approved by the SQA group.
+<p>
+(3) Once the client has accepted the product, any changes constitute
+maintenance.
+<p>
+(4) Inherent in every phase is testing.
+<p>
+<font color=red>Software configuration</font> is the entire set of documents,
+including specification document, design document, code, user
+manual, operations manual, etc.
+</h3>

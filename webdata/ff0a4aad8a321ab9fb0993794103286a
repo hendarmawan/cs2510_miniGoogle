@@ -1,0 +1,122 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<!-- saved from url=(0044)http://www.cs.pitt.edu/~chang/163/c17/01.htm -->
+  <title>Variables and Messages for Knowledge Exchange Management (Contd)...</title>
+  <meta content="Microsoft FrontPage 4.0" name="GENERATOR">
+  <meta content="FrontPage.Editor.Document" name="ProgId">
+  <meta http-equiv="Content-Type"
+ content="text/html; charset=windows-1252">
+  <meta name="author" content="Chirag Vaidya">
+</head>
+<body>
+<a href="c01.htm"><img
+ style="border: 0px solid ; height: 26px; width: 26px;"
+ src="previous.gif" align="left" title="" alt="" width="26" height="26"></a> <a href="http://www.cs.pitt.edu/~cvaidya/research"><img
+ style="border: 0px solid ; height: 26px; width: 26px;" src="next.gif"
+ align="right" title="" alt="" width="26" height="26"></a>
+<h2 align="center" style="color: rgb(51, 51, 255);">Variables and Messages for
+Knowledge Exchange Management</h2>
+<p align="center"><b><font color="#0000FF" size="4">Presented by: Chirag Vaidya
+(<a href="mailto:cvaidya@cs.pitt.edu">cvaidya@cs.pitt.edu</a>)</font></b></p>
+<p align="left">&nbsp;</p>
+<h2 align="left"><font color="#FF00FF"><b>Messages from DB Admin to Bidding Manager
+(MsgIds 2410 - 2419)</b></font></h2>
+<p align="left"><b><font color="#FF0000">MsgID</font>: 2410&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Description: </b>Create Bidding Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>Example:</b> <a href="msgs/2410-1-create-bid-room.XML">2410.xml</a></p>
+<p align="left"><b>Variables:</b></p>
+<ul>
+  <li>
+    <p align="left"><b>BidRoomName</b></li>
+  <li>
+    <p align="left"><b>BidRoomDescr</b> (The description of the bidding room)</li>
+</ul>
+<p align="left"><b><font color="#FF0000">MsgID</font>: 2411&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Description: </b>Delete Bidding Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>Example:</b> <a href="msgs/2411-1-delete-bid-room.XML">2411.xml</a></p>
+<p align="left"><b>Variables:</b></p>
+<ul>
+  <li>
+    <p align="left"><b>BidRoomId</b></li>
+</ul>
+<p align="left"><b><font color="#FF0000">MsgID</font>: 2412&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Description: </b>List Users in Bidding Room&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>Example:</b> <a href="msgs/2412-list-users.XML">2412.xml</a></p>
+<p align="left"><b>Variables:</b></p>
+<ul>
+  <li>
+    <p align="left"><b>BidRoomId</b></li>
+</ul>
+<h2 align="left"><font color="#FF00FF"><b>Messages from Bidding Manager to DB
+Admin (MsgIds 2460 - 2469)</b></font></h2>
+<p align="left"><b><font color="#FF0000">MsgID</font>: 2460&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Description: </b>Bidding Room Result</p>
+<p align="left"><b>Variables:</b></p>
+<ul>
+  <li>
+    <p align="left"><b>BidRoomId</b></li>
+  <li>
+    <p align="left"><b>Success </b>(True or False)</li>
+  <li>
+    <p align="left"><b>Reason</b> (Is empty if the Success is True and a reason
+    if Success is false)</li>
+</ul>
+
+<p align="left"><b><font color="#FF0000">MsgID</font>: 2461&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Description: </b>Users in Bidding Room List</p>
+<p align="left"><b>Variables:</b></p>
+<ul>
+  <li>
+    <p align="left"><b>BidRoomId</b></li>
+  <li>
+    <p align="left"><b>UserId{i}</b>(i=0,1,2,....N-1) e.g., UserId0, UserId1,
+    .... </li>
+</ul>
+
+
+<h2 align="left"><font color="#FF00FF"><b>Messages from Bidding Mgr to 
+	Exception Handler ( 2470 - 2479)</b></font></h2>
+<p align="left"><b><font color="#FF0000">MsgID</font>: 2470&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Description: </b>Call Exception Handler&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<b>Example:</b> <a href="msgs/2420-1-eh%20-%20results.XML">2470.xml</a></p>
+<p align="left"><b>Variables:</b></p>
+<ul>
+  <li>
+    <p align="left"><b>UserId</b></li>
+  <li>
+    <p align="left"><b>BidRoomId</b></li>
+  <li>
+    <p align="left"><b>BidId</b></li>
+  <li>
+    <p align="left"><b>NumHoursDefaulted</b></li>
+</ul>
+<h2 align="left"><font color="#FF00FF"><b>Messages from Exception Handler 
+		to Bidding Mgr( 2420 - 2429)</b></font></h2>
+<p align="left"><b><font color="#FF0000">MsgID</font>: 2420&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Description: </b>Exception Handler Result</p>
+<p align="left"><b>Variables:</b></p>
+<ul>
+  <li>
+    <p align="left"><b>BidRoomId</b></li>
+  <li>
+    <p align="left"><b>BidId</b></li>
+  <li>
+    <p align="left"><b>Success </b>(True - Found a paid replacement, False -
+    restart bidding)</li>
+  <li>
+    <p align="left"><b>NewUserId </b>(If Success is True)</li>
+  <li>
+    <p align="left"><b>NumHours </b>(Number of hours the new user is willing to give)</li>
+</ul>
+
+<hr noshade="noshade" size="2"><!-- date -->
+
+<TABLE cellSpacing=0 cellPadding=0 width="530" border=0>
+<TBODY> <TR><TD width="510">
+<p align="left" style="margin-top: 0; margin-bottom: 0">
+Last Updated on 11:50:31 EST April 30, 2004</p>
+</TD>
+</TBODY>
+
+</body>

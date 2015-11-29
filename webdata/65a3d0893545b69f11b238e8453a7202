@@ -1,0 +1,45 @@
+<html>
+
+<head>
+<title>XML - INTRODUCTION</title>
+</head>
+
+<body background="Background.gif">
+
+<p align="center"><a href="p3.html"><img SRC="previous.gif" align="left" width="26"
+height="26"></a> <a href="p5.html"><img SRC="next.gif" align="right" width="26"
+height="26"></a> </p>
+
+<h1 align="center"><font size="7" color="#FF00FF"><b>XML Versus HTML</b></font></h1>
+<div align="center"><center>
+
+<table border="0" width="761" cellpadding="0" height="386">
+  <tr>
+    <td align="left" height="38" colspan="2" width="759"><h4 align="left"><font size="6"
+    color="#0000FF"><u>Structure -- Format</u></font></h4>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" height="88" width="642"><ul>
+      <li><font size="6" color="#0000FF">HTML and XML are cousins</font></li>
+    </ul>
+    </td>
+    <td align="left" height="88" width="115"><font size="6" color="#0000FF"><img src="p4.jpg"
+    width="135" height="77" alt="p4.jpg (2715 bytes)"></font></td>
+  </tr>
+  <tr>
+    <td align="left" height="92" colspan="2" width="759"><ul>
+      <li><font size="6" color="#0000FF">HMTL describes the look, feel and action of a web page</font></li>
+    </ul>
+    </td>
+  </tr>
+  <tr>
+    <td align="left" height="82" colspan="2" width="759"><ul>
+      <li><font size="6" color="#0000FF">XML describes what the words in a document are</font></li>
+    </ul>
+    </td>
+  </tr>
+</table>
+</center></div>
+</body>
+</html>

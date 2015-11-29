@@ -1,0 +1,29 @@
+<html>
+<head>
+   <title>Distributed Multimedia Systems</title>
+</head>
+<a href="index.html"><img src="previous.gif" align=left></a>
+<a href="page2.html"><img src="next.gif" align=right></a>
+<center>
+<font size="4" face="Tahoma">
+   <br></br>
+   <h1>Overview of Presentation</h1>
+   <br></br>   
+<h3>Image Search Engines</h3>
+<a href="page3.html">What They Should Do</a><br>
+<a href="page4.html">What They Currently Do</a><br>
+<a href="page5.html">How They Work</a><br><br>
+<h3>Google</h3>
+<a href="page5-1.html">Google Search Engine</a><br>
+<a href="page6.html">Google Image Search</a><br>
+<a href="page8.html">GoogImager</a><br><br>
+<h3>SIMPLIcity</h3>
+<a href="page10.html">What is SIMPLIcity?</a><br>
+<a href="page11.html">Why Search for Image Content?</a><br>
+<a href="page12.html">SIMPLIcity Architecture</a><br><br>
+<h3><a href="page15.html">Conclusions</a></h3>
+<h3><a href="page16.html">References</a></h3>
+</center>
+</font>
+</html>
+

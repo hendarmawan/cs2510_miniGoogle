@@ -1,0 +1,81 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 4.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<title>COM Fundamentals&nbsp; 1</title>
+</head>
+
+<body>
+
+<p><a href="pre7.htm"><img border="0" src="previous.gif" width="26" height="26"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<a href="pre9.htm"><img border="0" src="next.gif" width="26" height="26"></a><br>
+</p>
+<p><font color="#000080"><font size="6" face="Arial">COM Fundamentals<br> 
+</font><br> 
+<font size="5" face="Arial">2. Interfaces</font></font></p>
+<p><font face="Arial" size="4" color="#000080">In COM, applications interact 
+with each other and with the system through collections of functions called <i>interfaces</i>.</font></p>
+<h4><br>
+<font face="Arial" size="4" color="#000080"><i>Attributes of interfaces</i></font></h4>
+<p><font face="Arial" size="4" color="#000080">Given that an interface is a 
+contractual way for a component object to expose its services, there are four 
+very important points to understand:</font>
+<ul type="disc">
+  <li><font face="Arial" color="#000080"><b>An interface is not a class.</b><br>
+    </font>
+  <li><font face="Arial" color="#000080"><b>An interface is not a component 
+    object.</b> <br>
+    </font>
+  <li><font face="Arial" color="#000080"><b>Clients only interact with pointers 
+    to interfaces.</b> <br>
+    </font>
+  <li><font face="Arial" color="#000080"><b>Component objects can implement 
+    multiple interfaces.</b> <br>
+    </font>
+  <li><font face="Arial" color="#000080"><b>Interfaces are strongly typed.</b><br>
+    </font>
+  <li><font face="Arial" color="#000080"><b>Interfaces are immutable.</b> </font></li>
+</ul>
+<p><font face="Arial" size="4" color="#000080">It is convenient to adopt a 
+standard pictorial representation for objects and their interfaces. The adopted 
+convention is to draw each interface on an object as a &quot;plug-in jack.&quot;</font></p>
+<p><font face="Arial" size="4" color="#000080"><br>
+</font><img alt border="0" src="comppr3.gif" width="340" height="151"></p>
+<p class="label"><b><font face="Arial" color="#000080">Figure 1. A typical 
+picture of a component object that supports three interfaces A, B, and C.</font></b></p>
+<p><img alt border="0" src="comppr4.gif" width="380" height="99"></p>
+<p class="label"><b><font color="#000080" face="Arial">Figure 2. Interfaces 
+extend toward the clients connected to them.</font></b></p>
+<p><img alt border="0" src="comppr5.gif" width="347" height="103"></p>
+<p class="label"><b><font color="#000080" face="Arial">Figure 3. Two 
+applications may connect to each other's objects, in which case they extend 
+their interfaces toward each other.<br>
+<br>
+</font></b></p>
+<p><font size="4" face="Arial" color="#000080">The unique use of interfaces in 
+COM provides five major benefits:</font>
+<ol>
+  <li><font face="Arial" color="#000080"><b>The ability for functionality in 
+    applications (clients or servers of objects) to evolve over time.</b> This 
+    is accomplished through a request called <b>QueryInterface </b>that 
+    absolutely all COM objects support (or else they are not COM objects). <br>
+    </font>
+  <li><font face="Arial" color="#000080"><b>Fast and simple object interaction.</b> 
+    <br>
+    </font>
+  <li><font face="Arial" color="#000080"><b>Interface reuse.</b> <br>
+    </font>
+  <li><font face="Arial" color="#000080"><b>&quot;Local/Remote 
+    Transparency.&quot;</b> <br>
+    </font>
+  <li><font face="Arial" color="#000080"><b>Programming language independence.</b> 
+    </font></li>
+</ol>
+<p>　</p>
+
+</body>
+
+</html>

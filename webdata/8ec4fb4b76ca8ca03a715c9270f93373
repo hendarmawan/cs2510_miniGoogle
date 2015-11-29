@@ -1,0 +1,692 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Language" content="en-us">
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgID" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Slow Intelligence System Messages</title>
+</head>
+
+<body>
+
+<TABLE width=604 height="1">
+  <TR>
+    <TD colSpan=3 height="30" width="594">
+      <a href="../index.htm">Home</a>&gt;<a href="../VirtualClassroom.htm">Virtual 
+      Classroom</a>&gt;Messages</TD>
+        </TR>
+  <TR>
+    <TD colSpan=3 height="30" width="594">
+      <p align="center">&nbsp;<p align="center"><font size="4"><b>Variables and Messages for<br></b></font><b><font size="4"> 
+      <a href="SequenceSIS.htm">Personal HealthCare Slow Intelligence System</a></font></b><p align="center">&nbsp;</TD>
+        </TR>
+  <TR>
+    <TD height="20" width="95">
+      <b>MsgID</b>:20</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Create Basic Building Block Component</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a href="Msg20.htm">initialization example</a></TD>
+        </TR>
+        <tr>
+    <TD colSpan=3 height="23" width="594">
+      <b>Variables</b>:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>Passcode</b> (Passcode of Administrator)</li>
+        <li><b>SecurityLevel</b> (Security Level of Administrator)</li>
+        <li><b>Name</b> (Name of created Component)</li>
+        <li><b>SourceCode</b> (Source code file name of created Component)</li>
+        <li><b>InputMsgID 1</b> (MsgID of first input message)</li>
+        <li><b>...</b> </li>
+        <li><b>InputMsgID k</b> (MsgID of last input message)</li>
+        <li><b>OutputMsgID 1</b> (MsgID of first ouput message)</li>
+        <li><b>...</b> </li>
+        <li><b>OutputMsgID m</b> (MsgID of last ouput message)</li>
+        <li><b>Component Description</b>(Description of created Component)</li>
+        <li><b>Component Var 1</b>(Variable name 1 of created Component)</li>
+        <li><b>...</b></li>
+        <li><b>Component Var n</b>(Variable name n of created Component)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID</b>:21</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Create Advanced Building Block Component</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a href="Msg20.htm">initialization example</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      <b>Variables</b>:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>Passcode</b> (Passcode of Administrator)</li>
+        <li><b>SecurityLevel</b> (Security Level of Administrator)</li>
+        <li><b>Name</b> (Name of created Component)</li>
+        <li><b>SourceCode</b> (Source code file name of created Component)</li>
+        <li><b>InputMsgID 1</b> (MsgID of first input message)</li>
+        <li><b>...</b> </li>
+        <li><b>InputMsgID k</b> (MsgID of last input message)</li>
+        <li><b>OutputMsgID 1</b> (MsgID of first ouput message)</li>
+        <li><b>...</b> </li>
+        <li><b>OutputMsgID m</b> (MsgID of last ouput message)</li>
+        <li><b>Component Description</b>(Description of created Component)</li>
+        <li><b>Component Var 1</b>(Variable name 1 of created Component)</li>
+        <li><b>...</b></li>
+        <li><b>Component Var n</b>(Variable name n of created Component)</li>
+        <li><b>KnowledgeBase</b> (Name of knowledge base)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <TR>
+    <TD height="20" width="95">
+      <b>MsgID</b>:22</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Kill Component</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a href="Testbed/PersonalHealthCare/xml/SysXML/22.XML">Msg22.XML</a></TD>
+        </TR>
+        <tr>
+    <TD colSpan=3 height="23" width="594">
+      <b>Variables</b>:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>Passcode</b> (Passcode of Administrator)</li>
+        <li><b>SecurityLevel</b> (Security Level of Administrator)</li>
+        <li><b>Name</b> (Name of killed Component)</li>
+        <li><b>SourceCode</b> (Source code file name of killed Component)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <TR>
+    <TD height="20" width="95">
+      <b>MsgID</b>:23</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Connect to server</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a href="Testbed/PersonalHealthCare/xml/SysXML/23.XML">Msg23.XML</a></TD>
+        </TR>
+        <tr>
+    <TD colSpan=3 height="23" width="594">
+      <b>Variables</b>:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>Passcode</b> (Passcode of Administrator)</li>
+        <li><b>SecurityLevel</b> (Security Level of Administrator)</li>
+        <li><b>Name</b> (Name of Component to be connected to server)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <TR>
+    <TD height="20" width="95">
+      <b>MsgID</b>:24</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Activate Component</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a href="Testbed/PersonalHealthCare/xml/SysXML/24.XML">Msg24.XML</a></TD>
+        </TR>
+        <tr>
+    <TD colSpan=3 height="23" width="594">
+      <b>Variables</b>:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>Passcode</b> (Passcode of Administrator)</li>
+        <li><b>SecurityLevel</b> (Security Level of Administrator)</li>
+        <li><b>Name</b> (Name of activated Component)</li>
+        <li><b>SourceCode</b> (Source code file name of activated Component)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <TR>
+    <TD height="20" width="95">
+      <b>MsgID</b>:25</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: DeActivate Component</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a href="Testbed/PersonalHealthCare/xml/SysXML/25.XML">Msg25.XML</a></TD>
+        </TR>
+        <tr>
+    <TD colSpan=3 height="23" width="594">
+      <b>Variables</b>:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>Passcode</b> (Passcode of Administrator)</li>
+        <li><b>SecurityLevel</b> (Security Level of Administrator)</li>
+        <li><b>Name</b> (Name of deactivated Component)</li>
+        <li><b>SourceCode</b> (Source code file name of activated Component)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <TR>
+    <TD height="20" width="95">
+      <b>MsgID</b>:26</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Acknowledgement</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a href="Testbed/PersonalHealthCare/xml/SysXML/26.XML">Msg26.XML</a></TD>
+        </TR>
+        <tr>
+    <TD colSpan=3 height="23" width="594">
+      <b>Variables</b>:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>AckMsgID</b> (This is Ack for MsgID)</li>
+        <li><b>YesNo</b> (Yes/No for positive/negative Ack)</li>
+        <li><b>Name</b> (Name of involved Component)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID</b>:30</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Sensor Data Input</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/30.XML">Msg30.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>SensorType</b> (blood pressure, EKG, etc.)</li>
+        <li><b>DataStream</b></li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>31</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Blood Pressure Reading</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/31.XML">Msg31.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>DataStream</b> (blood pressure data stream)</li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>32</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Blood Pressure Alert</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/32.XML">Msg32.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>DataStream</b> (blood pressure data stream)</li>
+        <li><b>Alert Type</b> (blood pressure alert type)</li>
+        <li><font color="red"><b>Name</b> (name of component generating blood pressure alert)</font></li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>33</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: SPO2 Reading</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/33.XML">Msg33.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>DataStream</b> (SPO2 data stream)</li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>34</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: SPO2 Alert</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/34.XML">Msg34.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>DataStream</b> (SPO2 data stream)</li>
+        <li><b>Alert Type</b> (SPO2 alert type)</li>
+        <li><font color="red"><b>Name</b> (name of component generating SPO2 alert)</font></li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>35</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: EKG Reading</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/35.XML">Msg35.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>DataStream</b> (EKG data stream)</li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>36</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: EKG Alert</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/36.XML">Msg36.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>DataStream</b> (EKG data stream)</li>
+        <li><b>Alert Type</b> (EKG alert type)</li>
+        <li><font color="red"><b>Name</b> (name of component generating EKG alert)</font></li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>37</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: General Health Readings </TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/37.XML">Msg37.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>BloodPressureDataStream</b></li>
+        <li><b>DateTimeBP</b> (time stamp)</li>
+        <li><b>SPO2DataStream</b></li>
+        <li><b>DateTimeSPO2</b> (time stamp)</li>
+        <li><b>EKG DataStream</b></li>
+        <li><b>DateTimeEKG</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>38</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Emergency Alert</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/38.XML">Msg38.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>DataStream</b></li>
+        <li><b>GeneralAlert</b> </li>
+        <li><b>Protocol</b></li>
+        <li><font color="red"><b>Name</b> (name of component generating general alert)</font></li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>41</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Blood Sugar Reading</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/41.XML">Msg41.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>DataStream</b> (blood sugar data stream)</li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>42</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Blood Sugar Alert</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/42.XML">Msg42.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>DataStream</b> (blood sugar data stream)</li>
+        <li><b>Alert Type</b> (blood sugar alert type)</li>
+        <li><font color="red"><b>Diagnosis</b> (such as "high risk")</font></li>
+        <li><font color="red"><b>Suggestions</b> (such as "see doctor immediately")</font></li>
+        <li><font color="red"><b>Name</b> (name of component generating blood sugar alert)</font></li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID:</b>45</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: <font color="red">User Profile</font></TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="xml/DataXML/45.XML">Msg45.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>UserName</b> (user's name such as "user001")</li>
+        <li><b>Sex</b> ("male" or "female")</li>
+        <li><b>Age</b> (age in years such as "51")</li>
+        <li><b>Weight</b> (weight in pounds such as "167")</li>
+        <li><b>Height</b> (height in inches such as "62")</li>
+        <li><b>Diabetes</b> ("normal", "prediabetic" or "diabetic")</li>
+        <li><b>Heart Disease</b> ("yes" or "no")</li>
+        <li><b>Meal</b> ("fasting", "before" or "after")</li>
+        <li><b>DateTime</b> (time stamp)</li>
+      </ul>
+    </TD>
+        </tr>
+<!-- xxx
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID</b>:35</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Class Roster</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="Msg35.XML">Msg35.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>TeacherFirst</b> [note: Teacher's First Name]</li>
+        <li><b>TeacherLast</b> [note: Teacher's Last Name]</li>
+        <li><b>CourseNo</b></li>
+        <li><b>StudentCount</b> (total # of students e.g. N)</li>
+        <li><b>FirstName{i}(</b>i=0,1,2......N-1) e.g. FirstName0, 
+        FirstName1......</li>
+        <li><b>LastName{i}(</b>i=0,1,2......N-1) e.g. LastName0, LastName1.....</li>
+        <li><b>State{i}(</b>i=0,1,2......N-1) e.g. State0, State1.......</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID</b>:5</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Changing State</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="Msg5.XML">Msg5.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>CourseNo</b></li>
+        <li><b>IsTeacher</b> (True or False)</li>
+        <li><b>FirstName</b></li>
+        <li><b>LastName</b></li>
+        <li><b>State</b></li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID</b>:6</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Operation Acknowledge</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="Msg6.XML">Msg6.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>Operation</b> (Success or Failure)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID</b>:7</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: URLs Pushed</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="Msg7.XML">Msg7.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>MainURL</b></li>
+        <li><b>AudioURL</b></li>
+        <li><b>VideoURL</b></li>
+        <li><b>ForTeacherOnly</b>(True or False)[ note: student is allowed to 
+        push page only to teacher ]</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID</b>:8</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Instant Message</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="Msg8.XML">Msg8.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>FromFirstName</b> [note: sender's first name]</li>
+        <li><b>FromLastName</b> [note: sender's last name ]</li>
+        <li><b>ToFirstName</b> [note: receiver's first name ]</li>
+        <li><b>ToLastName</b> [note: receiver's last name ]</li>
+        <li><b>MsgColor</b></li>
+        <li><b>IsAudio</b> (True or False)</li>
+        <li><b>IsBroadcase</b>(True of False) [note: when true, ToFirstName and 
+        ToLastName will be null)</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID</b>:9</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: Whiteboard Drawing </TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="Msg9.XML">Msg9.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>ShapeNum</b> (total # of shapes on the board e.g. N)</li>
+        <li><b>ShapeType{i}(</b>i=0,1,2......N-1) e.g. ShapeType0, 
+        ShapeType1.....[note: there are four kinds of shape types:&nbsp; 
+        0:Line;1:Rectangle;2:Ellipse;3:RoundRect;4:Text;]</li>
+      </ul>
+      <p>If ShapeType is 4: Text, it will followed by</p>
+      <ul>
+        <li><b>PosX{i}</b>(i=0,1,2......N-1) e.g. PosX0, PosX1.......</li>
+        <li><b>PosY{i}</b>(i=0,1,2......N-1) e.g. PosY0, PosY1.......</li>
+        <li><b>TextStr{i}</b>(i=0,1,2......N-1) e.g. TextStr0, TextStr1.......</li>
+      </ul>
+      <p>Otherwise, for other shapes:</p>
+      <ul>
+        <li><b>LeftTopX{i}</b> (i=0,1,2......N-1) e.g. LeftTopX0, 
+        LeftTopX1.......</li>
+        <li><b>LeftTopY{i}</b> (i=0,1,2......N-1) e.g. LeftTopY0, 
+        LeftTopY1.......</li>
+        <li><b>RightBottomX{i}</b>(i=0,1,2......N-1) e.g. RightBottomX0, 
+        RightBottomX1.......</li>
+        <li><b>RightBottomY{i}</b>(i=0,1,2......N-1) e.g. RightBottomY0, 
+        RightBottomY1......</li>
+        <li><b>LineStyle{i}</b>(i=0,1,2......N-1) e.g. LineStyle0, 
+        LineStyle1......</li>
+        <li><b>LineColor{i}</b>(i=0,1,2......N-1) e.g. LineColor0, 
+        LineColor1......</li>
+        <li><b>LineWidth{i}</b>(i=0,1,2......N-1) e.g. LineWidth0, 
+        LineWidth1......</li>
+        <li><b>BrushStyle{i}</b>(i=0,1,2......N-1) e.g. BrushStyle0, 
+        BrushStyle1......</li>
+        <li><b>BrushColor{i}</b>(i=0,1,2......N-1) e.g. BrushColor0, 
+        BrushColor1......</li>
+      </ul>
+    </TD>
+        </tr>
+  <tr>
+    <TD height="20" width="95">
+      <b>MsgID</b>:10</TD>
+    <TD height="20" width="381">
+      <b>Description</b>: System Error Message</TD>
+    <TD height="20" width="113">
+      <b>Example</b>:<a h ref="Msg10.XML">Msg10.XML</a></TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="23" width="594">
+      Variables:</TD>
+        </tr>
+  <tr>
+    <TD colSpan=3 height="13" width="594">
+      <ul>
+        <li><b>MsgText</b> [note: the content of message]</li>
+        <li><b>toFristName</b></li>
+        <li><b>toLastName</b></li>
+        <li><b>ForceLogout</b> (True of False) [note: in case of fatal errors, 
+        set true forcing client to quit]</li>
+      </ul>
+    </TD>
+        </tr>
+  <TR>
+    <TD colSpan=3 height="20" width="594">
+
+      <TABLE cellSpacing=0 cellPadding=0 width="593" border=0>
+        <TBODY>
+        <TR>
+          <TD width="573"><SPAN class=negl>
+          Updated: 02/12/2004   
+          </SPAN>
+         </TD>
+         
+          <TD width="20">
+            
+          <SPAN class=negl>
+          <script language="JavaScript" type="text/javascript" src="http://m1.nedstatbasic.net/basic.js"></script>
+          <a target="_blank" href="http://www.nedstatbasic.net/stats?ACr87g1ajNTqzWDBUCeAQEwlWIsw">
+          <IMG height=18 alt="Web page Counter" 
+            src="http://m1.nedstatbasic.net/n?id=ACr87g1ajNTqzWDBUCeAQEwlWIsw" 
+            width=18 border=0></SPAN></TD>
+         
+        </TR>
+        
+        </TBODY>
+        </TABLE></TD>
+        </TR>
+        </TABLE>
+xxx -->
+        
+        </body>
+
+</html>

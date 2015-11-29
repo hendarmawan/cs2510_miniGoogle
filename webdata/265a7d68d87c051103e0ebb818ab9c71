@@ -1,0 +1,20 @@
+ <html> 
+
+ <head>
+ <title> Requirement Engineering </title> 
+
+ </head>
+
+ <A HREF="http://www.cs.pitt.edu/~chang/153/1530syl.html">  <IMG SRC="images/previous.gif" align=left width="26" height="26">  </A> 
+ <A HREF="syria.html">  <IMG SRC="images/next.gif" align=right width="26" height="26">  </A> 
+ <center> 
+ <h1> 
+REQUIREMENTS ENGINEERING
+ </h1> 
+ &nbsp;&nbsp;&nbsp; <!-- Prepared by Adam Borbidge --></center> 
+<center>Based upon
+    Berztiss, Alfs T., Requirements Engineering, Handbook of Software Engineering and Knowledge Engineering (S. K. Chang, ed.) Vol. I 2001, World Scientific Pub. Co. 
+<!--
+ :&nbsp; &quot;<a href="ftp://cs.pitt.edu/~chang/handbook/01REQ.pdf">ftp://cs.pitt.edu/~chang/handbook/01REQ.pdf</a>&quot;
+-->
+<img src="req.jpg" align=center>

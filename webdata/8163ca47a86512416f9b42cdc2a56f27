@@ -1,0 +1,45 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="CSSD">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="p18.html"><img SRC="previous.gif"  align=LEFT></a><a href="p20.html"><img SRC="next.gif"  align=RIGHT></a>
+<p><br>
+<p><br>
+<center>
+<p><b><font size=+3>8. Finding Components</font></b></center>
+
+<p><b><font size=+1>The difficulties for designing and implementing a component-based
+systems:</font></b>
+<ul>
+<li>
+Identify and resolve mismatches between products, and to avoid becoming
+dependent on the products of a single vendor or set of vendors.</li>
+
+<li>
+Forecast what technologies and products will be relevant over the life
+of the system.</li>
+</ul>
+<b><font size=+1>Professional library management is a prorequisite for
+finding the right components</font></b>
+<ul>
+<li>
+Librarian --Manage the resuable components in a way that the application
+engineers are able to effectively and efficiently reuse those components.</li>
+</ul>
+<b><font size=+1>How domains and components can be described for retrieval</font></b>
+<br><b><font size=+1>&nbsp;&nbsp;&nbsp; two approaches:</font></b>
+<ul>
+<li>
+Hierarchical enumeration of classes</li>
+
+<li>
+grouping on the basis of features</li>
+</ul>
+
+</body>
+</html>

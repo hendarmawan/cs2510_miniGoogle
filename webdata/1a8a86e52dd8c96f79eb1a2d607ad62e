@@ -1,0 +1,26 @@
+<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
+
+<BODY>
+
+<A href="18.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left></A> 
+<A href="20.htm"><IMG height=26 src="images/next.gif" width=26 align=right></A> 
+
+<CENTER>
+<H1>&nbsp;</H1>
+<H1>Petri Net Tools</H1>
+</CENTER>
+
+<UL><UL><UL> <UL><UL><UL>
+  <LI><FONT size=5><A href="http://www.daimi.au.dk/PetriNets/tools/quick.html">Petri Net Design Tools</A></FONT>
+    <UL>
+	<LI><FONT size=4>Types of Petri Net</FONT>
+	<LI><FONT size=4>Functions</FONT>
+	<LI><FONT size=4>Supporting Platforms</FONT></LI>
+  </UL>
+  <LI><FONT size=5>Generating Code for Petri Net
+  <A href="http://markun.cs.shinshu-u.ac.jp/kiso/projects_old/petrinet/pds/code/index-e.html">PDS</A></FONT>
+  </LI>
+</UL></UL></UL></UL></UL></UL>
+
+<CENTER><IMG src="images/pds.gif"></CENTER>
+</BODY></HTML>

@@ -1,0 +1,30 @@
+<HTML>
+	<TITLE>Business Components</TITLE>
+	<FORM ID="Form1">
+		<BODY bgcolor="#cccc99" text="#333333">
+			<a href="bc1a.html"><img align="left" src="previous.gif" border="0"></a> <a href="bc2.html"><img align="right" src="next.gif" border="0"></a>
+			<br>
+			<center>
+				<br>
+				<font face="Arial,Helvetica" size="12"><b>Business Components </b></font>
+			</center>
+			<br>
+			<table width="100%" border="0">
+				<tr>
+					<td width="20%"></td>
+					<td width="60%">
+						<font face="Arial,Helvetica" size="6"><i>Example of Voting System</i></font>
+						<br>
+						<img src="IMAGEHERE" width="1" height="1" border="0"><br>
+						<font face="Arial,Helvetica" size="4">
+<br><br>
+We may start with the Voting Component
+=> Coarse grained component
+<br><br>
+Then we can refine it to include
+more functionalities such as
+voting trends analysis
+=> Fine grained component
+<br><br>
+Technique: Expand the class diagram
+to more detailed class diagrams

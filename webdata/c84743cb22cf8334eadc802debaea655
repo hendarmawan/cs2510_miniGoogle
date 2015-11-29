@@ -1,0 +1,62 @@
+<html>
+
+<head>
+<meta http-equiv="Content-Type"
+content="text/html; charset=iso-8859-1">
+<meta name="GENERATOR" content="Microsoft FrontPage Express 2.0">
+<title>Microsoft .NET Presentation</title>
+</head>
+
+<body bgcolor="#FFFFFF">
+
+<table border="0" width="100%">
+    <tr>
+        <td valign="top"><a href="slide-17.htm"><img
+        src="previous.gif" border="0" width="26" height="26"></a></td>
+        <td align="center" valign="top"><h1>Assemblies and
+        Version Control</h1>
+        </td>
+        <td align="right" valign="top"><a href="slide-19.htm"><img
+        src="next.gif" border="0" width="26" height="26"></a></td>
+    </tr>
+</table>
+
+<h2>Isolated assemblies</h2>
+
+<p><font size="4">An assembly that is <u>isolated</u> is only
+accessible to the application that provides it. It is completely
+internal to it. This simplifies version control since you don't
+have other application dependencies except the owner's to deal
+with. However, .NET version control can even assist here to
+permit upgrade patches of an application's constituent assemblies.</font></p>
+
+<h2>Shared assemblies</h2>
+
+<p><font size="4">Sharing an assembly is an explicit decision
+made by the application. Assemblies that do this support .NET's
+&quot;side-by-side&quot; approach and are placed into a global
+system-wide storage. Since they are to be shared, an additional
+constraint is placed on assembly names: they must be globally
+unique. Also, to maintain the integrity of assembly upgrades, .NET
+prevents &quot;name spoofing&quot; - attempts for a 3rd party to
+provide an &quot;upgrade&quot; to someone else's assembly. Only
+the originator has the power to create new versions of an
+assembly.</font></p>
+
+<h2>Versioning</h2>
+
+<p><font size="4">Assembly version numbers use a &quot;major/minor/build/revision&quot;
+version format. To .NET, identical assemblies with differing
+major and minor numbers are &quot;incompatible&quot;, whereas
+identical assemblies with differing build and revision numbers
+are considered compatible. .NET will automatically load the
+highest build/revision assembly on behalf of an application.
+However, through overriding configuration files, an assembly or
+application can request a specific version number of an assembly
+to work with.</font></p>
+
+<hr>
+
+<p><a href="references.htm"><em>References</em></a><em>: D</em></p>
+</body>
+</html>

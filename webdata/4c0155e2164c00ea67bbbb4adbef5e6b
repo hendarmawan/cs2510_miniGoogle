@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html><HEAD><TITLE>UML, Petri-Net in Software Engineering?</TITLE>
+<META http-equiv=Content-Type content="text/html; charset=unicode">
+<META content="MSHTML 6.00.2600.0" name=GENERATOR></HEAD>
+<BODY> 
+ <A href="15.htm" ><STRONG><IMG height=26 src="previous.gif" width=26 align=left > </STRONG>  </A> 
+ <A href="1.htm"><STRONG>  <IMG height=26 src="next.gif" width=26 align=right > </STRONG>  </A> 
+<center> 
+ <h1> 
+    References
+ </h1>
+</center> 
+<H3>
+ <br>
+  [1]J. Saldhana and S. M. 
+Shatz, "UML Diagrams to Object Petri Net Models: An Approach for Modeling and 
+Analysis," Proceedings of the Int. Conference on Software Engineering and 
+Knowledge Engineering (SEKE), Chicago, July 2000, pp. 103-110. [<A 
+href="http://www.cs.uic.edu/~shatz/papers/seke00.pdf">pdf</A>
+       
+             
+          
+       ]
+ </H3>
+<P><FONT size=4><STRONG>[2]Robert G. Pettit IV1 and Hassan, 
+"Validation of Dynamic Behavior in UML Using Colored Petri Nets"&nbsp; G George 
+Mason University, Department of Information and Software 
+Engineering.[</STRONG></FONT><A 
+href="http://www.disi.unige.it/person/ReggioG/UMLWORKSHOP/Pettit.pdf"><FONT 
+size=4><STRONG>pdf</STRONG></FONT></A><FONT size=4><STRONG>]</STRONG></FONT></P>
+<P><FONT size=4><STRONG>[3]Simona Bernardi,Susanna Donatelli,Jos¡äe 
+Merseguer,"From UML Sequence Diagrams and Statecharts to analysable Petri Net 
+models" Dipartimento di Informatica Universit `a di Torino, 
+Italy.[</STRONG></FONT><A 
+href="http://delivery.acm.org/10.1145/590000/584376/p35-bernardi.pdf?key1=584376&amp;key2=2089778401&amp;coll=portal&amp;dl=ACM&amp;CFID=9192763&amp;CFTOKEN=80242087"><FONT 
+size=4><STRONG>pdf</STRONG></FONT></A><FONT size=4><STRONG>]</STRONG></FONT></P>
+<P><FONT size=4><STRONG>[4]Ian Sommerville, "Software Engineering",6th 
+Edition,Addison-Wesley Publisher</STRONG></FONT></P>
+<P><FONT size=4><STRONG>[5]<FONT size=3>The UML and Data Modeling, Rational 
+Inc., </FONT></STRONG><A 
+href="http://www.rational.com/products/whitepapers/101516.jsp"><FONT 
+size=3><STRONG>http://www.rational.com/products/whitepapers/101516.jsp</STRONG></FONT></A></FONT></P>
+<P><STRONG></STRONG>&nbsp;</P></BODY>
+ </html>

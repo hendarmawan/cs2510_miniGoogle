@@ -1,0 +1,76 @@
+<HTML>
+  <HEAD>
+  <TITLE>Adlet Homepage</TITLE>
+  <META NAME="Adlet" CONTENT="Adlet Query Form">
+  <META NAME="Author" CONTENT="Longjiang Yang">
+  <META NAME="Date" CONTENT="Apr. 19 1998">
+  </HEAD>
+
+<BODY TEXT="#5959ab" LINK="#0000FF" VLINK="#800080" BGCOLOR="ccccff">
+
+<FONT FACE="TIMES NEW ROMAN">
+<CENTER><IMG SRC="a-welcom.gif" BORDER=0 ALIGN=CENTER><BR><BR>
+<B><FONT SIZE=+4><FONT COLOR=RED><!/FONT><!/FONT><!/B>
+<!B><!FONT SIZE=+3>ADLET Command Page for CS Virtual Site</FONT></FONT></B>
+</CENTER>
+
+<BR>
+<HR><! WIDTH=%80 ALIGN=CENTER>
+
+<CENTER>
+<P><P>
+
+<TABLE border=4 cellspacing=4 width=50% BGCOLOR=LIGHTGREY><tr><td>
+<CENTER><a href="adlet_create.html"><IMG SRC="new.gif" BORDER=0 ALIGN=CENTER></A> &nbsp;&nbsp;
+<A HREF="adlet_create.html"><!CENTER>
+<FONT SIZE=+2><b>CREATE</b></FONT></center></a></td></tr></table>
+
+<BR>
+
+<table border=4 cellspacing=4 width=50% BGCOLOR=LIGHTGREY><tr><td>
+<CENTER><a href="adlet_delete.html"><IMG SRC="del.gif" BORDER=0 ALIGN=CENTER></A> &nbsp;&nbsp;
+<FONT SIZE=+2><A HREF="adlet_delete.html"><b>DELETE</b></A></FONT></center></td></tr></table>
+
+<BR>
+
+<table border=4 cellspacing=4 width=50% BGCOLOR=LIGHTGREY><tr><td>
+<CENTER><a href="adlet_move.html"><IMG SRC="move.gif" BORDER=0 ALIGN=CENTER></A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<FONT SIZE=+2><a href="adlet_move.html"><b>MOVE</b></center></a></FONT></td></tr></table>
+
+<BR>
+
+<table border=4 cellspacing=4 width=50% BGCOLOR=LIGHTGREY><tr><td>
+<CENTER><a href="adlet_retrieve.html"><IMG SRC="move.gif" BORDER=0 ALIGN=CENTER></A> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<FONT SIZE=+2><a href="adlet_retrieve.html"><b>RETRIEVE</b></center></a></FONT></td></tr></table>
+
+<BR>
+
+
+<table border=4 cellspacing=4 width=50% BGCOLOR=LIGHTGREY><tr><td>
+<CENTER>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<FONT SIZE=+2><a href="corba_client.cgi?flag=icm&ic_type=&ic_id_list=&message_type=MSG_BACKUP&content=&tao_name=&db_access=&ic_par_num=0">
+<b>BACKUP ALL ADLETS</b></center></a></FONT></td></tr></table>
+<BR>
+
+<table border=4 cellspacing=4 width=50% BGCOLOR=LIGHTGREY><tr><td>
+<CENTER>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<FONT SIZE=+2><a href="corba_client.cgi?flag=icm&ic_type=&ic_id_list=&message_type=MSG_RESTORE&content=&tao_name=&db_access=&ic_par_num=0">
+<b>RESTORE ALL ADLETS</b></center></a></FONT></td></tr></table>
+<BR>
+
+<table border=4 cellspacing=4 width=50% BGCOLOR=LIGHTGREY><tr><td>
+<CENTER>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<FONT SIZE=+2><a href="corba_client.cgi?flag=old&ic_type=ADLET&ic_id_list=-1&message_type=MSG_SHOW_ALL&content=&tao_name=&db_access=&ic_par_num=0">
+<b>SHOW ALL ADLETS in CS VIRTUAL SITE</b></center></a></FONT></td></tr></table>
+
+
+<BR><BR>
+<HR>
+<BR>
+<FONT SIZE=+1><I>ANY COMMENTS? SEND EMAIL TO:</I><BR>
+<A HREF="mailto:chang@cs.pitt.edu">chang@cs.pitt.edu</A><BR>
+
+
+</BODY>
+</HTML>
+

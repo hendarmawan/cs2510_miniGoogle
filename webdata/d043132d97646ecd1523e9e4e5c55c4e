@@ -1,0 +1,195 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<link rel="File-List" href="p4_files/filelist.xml">
+<!--[if !mso]>
+<style>
+v\:*         { behavior: url(#default#VML) }
+o\:*         { behavior: url(#default#VML) }
+.shape       { behavior: url(#default#VML) }
+</style>
+<![endif]-->
+<title>Multimedia Software Engineering</title>
+
+
+
+<!--[if gte mso 9]>
+<xml><o:shapedefaults v:ext="edit" spidmax="1027"/>
+</xml><![endif]-->
+
+
+
+
+
+
+<body>
+
+<p align="center"><font face="Verdana"><a href="p3.htm">
+<img border="0" src="previous.gif" width="26" height="26"></a><font color="#0000FF"><b>Why 
+Negotiation is a good principle instead of Integration</b></font>
+<a href="p5.htm">
+<img border="0" src="next.gif" width="26" height="26"></a></font></p>
+<p>&nbsp;</p>
+<p class="MsoNormal" style="text-align: center; text-indent: -1.0in; line-height: 150%; margin-left: 1.0in">
+<span style="font-style: normal; font-variant: normal; font-weight: 700; font-size: 7.0pt; font-family: Verdana">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></p>
+<p align="center"><span style="font-size: 12.0pt; font-family: Times New Roman"><!--[if gte vml 1]><v:group id="_x0000_s1025"
+ editas="canvas" style='width:618pt;height:477pt;
+ mso-position-horizontal-relative:char;mso-position-vertical-relative:line'
+ coordorigin="2743,1680" coordsize="14710,11666">
+ <o:lock v:ext="edit" aspectratio="t"/>
+ <v:shapetype id="_x0000_t75" coordsize="21600,21600" o:spt="75"
+  o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+  <v:stroke joinstyle="miter"/>
+  <v:formulas>
+   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+   <v:f eqn="sum @0 1 0"/>
+   <v:f eqn="sum 0 0 @1"/>
+   <v:f eqn="prod @2 1 2"/>
+   <v:f eqn="prod @3 21600 pixelWidth"/>
+   <v:f eqn="prod @3 21600 pixelHeight"/>
+   <v:f eqn="sum @0 0 1"/>
+   <v:f eqn="prod @6 1 2"/>
+   <v:f eqn="prod @7 21600 pixelWidth"/>
+   <v:f eqn="sum @8 21600 0"/>
+   <v:f eqn="prod @7 21600 pixelHeight"/>
+   <v:f eqn="sum @10 21600 0"/>
+  </v:formulas>
+  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+  <o:lock v:ext="edit" aspectratio="t"/>
+ </v:shapetype><v:shape id="_x0000_s1026" type="#_x0000_t75" style='position:absolute;
+  left:2743;top:1680;width:14710;height:11666' o:preferrelative="f">
+  <v:fill o:detectmouseclick="t"/>
+  <v:path o:extrusionok="t" o:connecttype="none"/>
+  <o:lock v:ext="edit" text="t"/>
+ </v:shape><v:rect id="_x0000_s1027" style='position:absolute;left:4135;top:2652;
+  width:5338;height:10639;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" strokeweight="1pt">
+  <v:shadow color="#969696"/>
+  <v:textbox inset="1.79036mm,.89519mm,1.79036mm,.89519mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-list: l0 level1 lfo2; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <![if !supportLists]>
+      <span style="mso-list: Ignore; font-size: 24.0pt; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      Enormous complexity<o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-list: l0 level1 lfo2; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <![if !supportLists]>
+      <span style="mso-list: Ignore; font-size: 24.0pt; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      Top down doesn’t scale<br style="mso-special-character: line-break">
+      <![if !supportLineBreakNewLine]>
+      <br style="mso-special-character: line-break">
+      &nbsp;<![endif]><o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-list: l0 level1 lfo2; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <![if !supportLists]>
+      <span style="mso-list: Ignore; font-size: 24.0pt; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      Computing power wasted<br>
+      <br>
+      <span style="mso-spacerun: yes">&nbsp;</span><o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-list: l0 level1 lfo2; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <![if !supportLists]>
+      <span style="mso-list: Ignore; font-size: 24.0pt; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      Initiative, Timeliness essential but unsupported<o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-list: l0 level1 lfo2; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <![if !supportLists]>
+      <span style="mso-list: Ignore; font-size: 24.0pt; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      Autonomous operation required by problem scale<o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      <o:p>&nbsp;</o:p></span></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect><v:rect id="_x0000_s1028" style='position:absolute;left:11062;top:2762;
+  width:5373;height:10474;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" strokeweight="1pt">
+  <v:shadow color="#969696"/>
+  <v:textbox inset="1.79036mm,.89519mm,1.79036mm,.89519mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-list: l0 level1 lfo2; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <![if !supportLists]>
+      <span style="mso-list: Ignore; font-size: 24.0pt; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      Self-organizing systems, &amp; bottom-up organization based on negotiation<o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-list: l0 level1 lfo2; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <![if !supportLists]>
+      <span style="mso-list: Ignore; font-size: 24.0pt; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      Distributed computation easier with bottom-up organization<o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-list: l0 level1 lfo2; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <![if !supportLists]>
+      <span style="mso-list: Ignore; font-size: 24.0pt; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      Bottom-up organization allows timely initiative<o:p></o:p></span></p>
+      <p class="MsoNormal" style="text-indent: -27.0pt; mso-list: l0 level1 lfo2; mso-layout-grid-align: none; text-autospace: none; margin-left: 27.0pt">
+      <![if !supportLists]>
+      <span style="mso-list: Ignore; font-size: 24.0pt; color: black">•<span style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7.0pt; font-family: Times New Roman">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      </span></span><![endif]>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; color: black">
+      Intelligent systems based on real-time, satisficing SW entities</span></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect><v:rect id="_x0000_s1029" style='position:absolute;left:4439;top:1772;
+  width:4695;height:623;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" stroked="f">
+  <v:shadow color="#969696"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="1.79036mm,.89519mm,1.79036mm,.89519mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" align="center" style="text-align: center; mso-layout-grid-align: none; text-autospace: none">
+      <b>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; font-family: Arial; color: black">
+      Problems<o:p></o:p></span></b></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect><v:rect id="_x0000_s1030" style='position:absolute;left:11258;top:1753;
+  width:4695;height:606;mso-position-horizontal:absolute;
+  mso-position-vertical:absolute' filled="f" fillcolor="#0c9" stroked="f">
+  <v:shadow color="#969696"/>
+  <v:textbox style='mso-fit-shape-to-text:t' inset="1.79036mm,.89519mm,1.79036mm,.89519mm">
+<![if !mso]>
+<table cellpadding="0" cellspacing="0" width="100%">
+  <tr>
+    <td><![endif]>
+    <div>
+      <p class="MsoNormal" align="center" style="text-align: center; mso-layout-grid-align: none; text-autospace: none">
+      <b>
+      <span style="font-size: 17.0pt; mso-bidi-font-size: 24.0pt; font-family: Arial; color: black">
+      Responses<o:p></o:p></span></b></div>
+    <![if !mso]></td>
+  </tr>
+</table>
+<![endif]></v:textbox>
+ </v:rect></v:group><![endif]--><![if !vml]><img width=824 height=636
+src="p4_files/image001.gif" v:shapes="_x0000_s1025 _x0000_s1026 _x0000_s1027 _x0000_s1028 _x0000_s1029 _x0000_s1030"><![endif]></span></p>
+
+<p align="center"><font size="1">Source: ANT Overview: http://www.dsic-web.net/ito/programs/ant/overview.html</font></p>
+
+</body>

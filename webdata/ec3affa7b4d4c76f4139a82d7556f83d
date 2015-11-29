@@ -1,0 +1,225 @@
+<title>RELATIONAL DATABASES</title>
+<h1>RELATIONAL DATABASES</h1>
+<center><xs><a href="http://www.cs.pitt.edu/~chang/156/lecture/04">Click here for audio-text lecture and feed it to the speech agent</a></xs></center>
+<br>
+<center><a href="http://blue.cs.ksi.edu/dl/cs156x/04.rm">Click here for an audio lecture that can be played using RealPlayer</a></center>
+<li>A relational database is a collection
+of time-varying, normalized relations
+of assorted degrees.<br>
+<br>
+<li>The following intiutitve correspondence
+can be made:<br>
+<br>
+1. A relation is a file<br>
+2. Each file contains only one record type<br>
+3. The records have no particular order <br>
+4. Every field is single-valued<br>
+5. The records have a unique identifying field
+or composite field, called the primary key field.
+<hr>
+<br>
+<li> A relational database consists of a collection
+     of tables.
+<br>
+<li> All data values are atomic.  No repeating groups
+     are allowed.
+<br>
+<li> A relational database is a pointerless database,
+     User does not see or is made aware of pointers.
+<br><IMG SRC="images/fig41.gif"><br>
+<hr>
+<h1>Relational Database Concepts</h1>
+<br>
+<li> Relation
+<br>
+<li> Tuple
+<br>
+<li> Attribute
+<br>
+<li> Cardinality
+<br>
+<li> Degree
+<br>
+<li> Primary key
+<br>
+<li> Domain
+<hr>
+<h1>Equivalent Database Concepts</h1>
+<br>
+<li> Relation <->	Table
+<br>
+<li> Tuple <->	Row or record
+<br>
+<li> Attribute <->	Column or field
+<br>
+<li> Cardinality <->	Number of rows
+<br>
+<li> Degree <->	Number of columns
+<br>
+<li> Primary key <->	Unique identifier
+<br>
+<li> Domain <->	Pool of legal values
+<hr>
+<h1>DOMAINS</h1>
+<br>
+<li> A domain is a named set of scalar values,
+     all of the same type.
+<br>
+Example 1: Domain of P# is the set of character
+strings of length 6.
+<br>
+Example 2: Domain of WEIGHT is the set of
+small integers less than 10,000.
+<br>
+Example 3: Domain of QTY is the set of
+integers less than one billion.
+<br>
+<li> Therefore, a "domain" is a "data type".
+<br>
+<hr>
+<h1>DOMAINS</h1>
+<br>
+<li> Domains (or data types) can be used to
+     impose semantic constraints.
+<br>
+Example 1:
+<br>
+SELECT P.*, SP.*<br>
+FROM   P, SP<br>
+WHERE  P.P# = SP.P# ;
+<br>
+The comparison in the conditional clause
+is sensible.
+<br>
+<br>
+Example 2:
+<br>
+SELECT P.*, SP.*<br>
+FROM   P, SP<br>
+WHERE  P.WEIGHT = SP.QTY ;
+<br>
+The comparision involves two attributes
+of different types, and therefore should
+not be allowed.
+<hr>
+<h1>RELATIONS</h1>
+<br>
+<br>
+<li> A relation R on a collection of domains
+     D1, D2, ..., Dn, consists of two parts:
+     a "heading" and a "body".
+<br>
+<li> The heading consists of a fixed set of
+     attribute-domain pairs,
+<br>
+     { (A1:D1),(A2:D2), ... , (An,Dn) }
+<br>
+<li> The heading is also called the schema.
+<br>
+<li> The body consists of a time-varying
+     set of tuples, where each tuple
+     consists of a set of attribute-value pairs,
+<br>
+     { (A1:vi1), (A2:vi2),..., (An:vin) }
+<br>
+     and i = 1, 2, ..., m.
+<br>
+<li> The body is also called the instance.
+<hr>
+<h1>RELATIONS</h1>
+<br>
+<li> In the above, n is the degree of the relation
+     and  m is the cardinality of the relation.
+<br>
+<br>
+<li> A relation R can be considered as a variable.
+<br>
+<li> The heading of a relation is the "type"
+     of the variable R.
+<br>
+<li> The type of R is (D1,D2,...,Dn).
+<br>
+<li> The body of a relation is the "value"
+     of the variable R.
+<br>
+<li> The value of R is a subset of the Cartesian
+     Product of <b>D1, D2, ..., Dn</b>.
+<hr>
+<h1>AN EXAMPLE OF A RELATION</h1>
+<br>
+<li> The heading of R is
+     (S#, SNAME, STATUS, CITY )
+<br>
+<li> This is a shorthand notation for
+     { (S#:S#), (SNAME:NAME),
+       (STATUS:STATUS), (CITY,CITY) }
+<br>
+<li> The body of R is a subset of the
+     product of the underlying domains.
+<br>
+<li> A typical tuple is an element of
+     this product of domains.
+<br>
+     ( S1, Smith, 20, London )
+<br>
+<li> This is a shorthand notation for
+     { (S#: S1), (SNAME: SMith),
+       (STATUS: 20), (CITY: London) }
+<hr>
+<h1>CARTESIAN PRODUCT OF DOMAINS</h1>
+<br>
+<li> Suppose the domain of S# is {1,2,3}
+     and the domain of NAME is {Smith, Doe}
+<br>
+<li> The Cartesian Product of the two
+     domains is denoted by
+<br>
+     S# x NAME
+<br>
+<li> The Cartesian Product is:
+<br>
+     {(1,Smith),
+      (1, Doe),
+      (2,Smith),
+      (2,Doe),
+      (3,Smith),
+      (3, Doe) }
+<br>
+<li> Later we will use the Cartesian
+     Product to explain "equijoin" and
+     "natural join".
+<hr>
+<h1>PROPERTIES OF RELATIONS</h1>
+<br>
+<li> P1: There are no duplicate tuples.
+<br>
+<li> P2: Tuples are unordered.
+<br>
+<li> P3: Attributes are unordered.
+<br>
+<li> P4: All attribute values are atomic.
+<br>
+<br>
+<br>
+*Notice the implementation of a relational
+ database system often deviates from the
+ above properties (which ones?).
+<hr>
+<h1>KINDS OF RELATIONS</h1>
+<br>
+<li> Base relations: The real relations.
+     Called "base table" in SQL.
+<br>
+<li> Views: The virtual relations.  A view
+     is a named, derived relation.
+<br>
+<li> Snapshots: A snapshot is a real, not
+     virtual, named derived relation.
+<br>
+<li> Query results: The final output
+     relation from a specified query.
+     It may not be named and has no
+     permanent existence.
+<br>
+<li> Temporary relations: A nonpermanent
+     named derived relation.

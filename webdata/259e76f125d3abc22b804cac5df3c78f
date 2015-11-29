@@ -1,0 +1,85 @@
+<html>
+	<HEAD>
+		<TITLE>CS2310 - Multimedia Software Engineering</TITLE>
+	</HEAD>
+	
+	<BODY>
+	
+		<font face="Times"> 
+	
+			<A href="./Page8.html" ><IMG height=26 src="previous.gif" width=26 align=left >  </A> 
+			<A href="./Page10.html">  <IMG height=26 src="next.gif" width=26 align=right >  </A> 
+		<br>
+		<br>
+		<br>
+			<center> 
+			    <h1>Topologies</h1>
+				<h2>ActiveMQ supports many different topologies</h2>
+			</center>			
+		</font>		
+		
+		<font size = 2 face="Arial"> 
+		<br>
+        <ul class="star">
+            <li>
+            VM
+                <ul>
+                    <li>
+                        Used for testing.
+                    </li>                    
+                </ul>
+            </li>
+            <li>
+            Client-Server
+            <ul>
+                    <li>
+                        Efficient and fast solution for large numbers of clients 
+                    </li>                 
+                    <li>
+                        Handles diverse range of communication options 
+                    </li>   
+                    <li>
+                        Can use Discovery to find available brokers
+                    </li>                    
+                </ul>
+            </li>
+            <li>
+                Embedded Broker
+                <ul>
+                    <li>
+                        Similar to Client Server but clients contain a locally embedded broker
+                    </li>
+                    <li>
+                        Client and broker are on same JVM
+                    </li>
+                    <li>
+                        Allows for point to point networking, but with the scalabilty of flexible messaging. 
+                    </li>
+                    <li>
+                        For example the entire network could fail, but a service could continue publishing messages to its embedded broker.
+                    </li>
+                </ul>    
+            </li>
+            <li>
+                Peer to Peer
+                <ul>
+                    <li>
+                        Allows peer based clusters to be created where there is no server - just clients connecting together
+                    </li>
+                </ul>
+            </li>
+            <li>
+                JXTA
+                <ul>
+                    <li>
+                        Uses the full JXTA stack for negotiating NAT 
+                    </li>                    
+                </ul>  
+            </li>
+        </ul>       
+        <p>
+            Examples:&nbsp<a href="http://activemq.codehaus.org/Topologies">http://activemq.codehaus.org/Topologies</a></p>
+			<br>			
+		</font>
+	</BODY>
+</html>

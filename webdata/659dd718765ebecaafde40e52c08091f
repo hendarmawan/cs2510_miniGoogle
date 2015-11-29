@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<link href="images/main.css" rel="stylesheet" type="text/css" />
+    <title>Fan Zhang</title>
+</head>
+<body>
+<div id ="container">
+    <div id = "navdiv">
+                    <ul class = "mainlinks">
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan" class="selected"><b><font face='Helvetica' size = '3'>Home</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/misc.html"><b><font face='Helvetica' size = '3'>Misc</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/research.html"><b><font face='Helvetica' size = '3'>Research</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/experiences.html"><b><font face='Helvetica' size = '3'>Experiences</font></b></a></li>
+                    <li><a href="http://people.cs.pitt.edu/~zhangfan/about.html"><b><font face='Helvetica' size = '3'>About</font></b></a></li>
+                </ul>
+    </div>
+	<div id="content">
+		 <h2>Fan Zhang (张帆)</h2>
+                          <p>Ph.D. Student, University of Pittsburgh</p>
+                          <p>Room 5420, 210 S Bouquet St.</p>
+                          <p>Pittsburgh, PA 15260</p>
+                          <p>Email: zhangfan(at) cs (dot) pitt (dot) edu</p>
+		<h2>About Me
+	</h2>
+	I am a PhD student in the CS department of PITT. I joined the department in 2011. My advisor is
+	<a href="http://people.cs.pitt.edu/~litman/" rel="external" target="_blank">Prof. Litman</a>.
+	
+	<br>
+	<br>My interest involves Natural Language Processing and Human Computer Interaction. My current research focuses on using NLP techniques for revision analysis.  
+
+		<div id="contentsidebar">
+<img src="./photos/ca.png">
+	</div>
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,756 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+ <!-- Copyright Accellera Organization, Inc. 2005. All Rights Reserved. -->
+ <!-- THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION WHICH IS THE PROPERTY
+      OF Accellera Organization, Inc. OR ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS. -->
+
+ <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="GENERATOR" content="Quadralay WebWorks AutoMap 7.0.5.1025" />
+  <meta name="TEMPLATEBASE" content="V2.0-img" />
+  <meta name="LASTUPDATED" content="Wed Aug 24 16:31:05 2005" />
+  <title>assert_unchange</title>
+  <link rel="StyleSheet" href="default.css" type="text/css" />
+  
+ </head>
+
+ <body ><br><h1 class="pHead1" >
+assert_unchange
+</h1>    
+<a name="wp3701259"> </a><p class="pBody" >
+Ensures that the value of a specified expression does not change for a specified number of cycles after a start event initiates checking.  </p>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3701274"> </a><div class="pCellBodyLeft" >
+<img src="images/ovl_checkers76.gif" height="107" width="220" border="0" vspace="0" hspace="0" />
+</div>    
+</td>
+    <td><a name="wp3701276"> </a><div class="pCellBodyLeft" >
+<span class="cStrong">Parameters</span>: 
+</div>    
+<a name="wp3772436"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level </em>
+</div>    
+<a name="wp3772437"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">width </em>
+</div>    
+<a name="wp3772438"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">num_cks </em>
+</div>    
+<a name="wp3772439"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">action_on_new_start </em>
+</div>    
+<a name="wp3772440"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type </em>
+</div>    
+<a name="wp3772441"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg </em>
+</div>    
+<a name="wp3772442"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3701278"> </a><div class="pCellBodyLeft" >
+<span style="font-weight: bold" class="cStrong">Class: </span>
+</div>    
+<a name="wp3772443"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">n</em>-cycle assertion
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <p class="pBody" >
+</p>    
+<a name="wp3701279"> </a><h3 class="pHead3" >
+Syntax
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3701280"> </a><pre class="pCode1" >assert_unchange 
+</pre>    <a name="wp3772444"> </a><pre class="pCode1" >		[#(<em class="cEmphasis">severity_level</em>, <em class="cEmphasis">width, num_cks, action_on_new_start, property_type</em>,<em class="cEmphasis">  
+</em></pre>    <a name="wp3772445"> </a><pre class="pCode1" ><em class="cEmphasis">		msg</em>,<em class="cEmphasis"> coverage_level </em>)] 
+</pre>    <a name="wp3772446"> </a><pre class="pCode1" >		<em class="cEmphasis">instance_name</em> (<em class="cEmphasis">clk, reset_n, start_event, test_expr </em>);
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3701324"> </a><h4 class="pHead4" >
+Parameters  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3701283"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701285"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">severity_level</em>
+</div>    
+</td>
+    <td><a name="wp3701287"> </a><div class="pCellBodyLeft" >
+Severity of the failure. Default: &#8216;OVL_ERROR.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701289"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701291"> </a><div class="pCellBodyLeft" >
+width
+</div>    
+</td>
+    <td><a name="wp3701293"> </a><div class="pCellBodyLeft" >
+Width of the <em class="cEmphasis">test_expr</em> argument. Default: 1. 
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3703388"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3703390"> </a><div class="pCellBodyLeft" >
+num_cks
+</div>    
+</td>
+    <td><a name="wp3703392"> </a><div class="pCellBodyLeft" >
+Number of cycles <em class="cEmphasis">test_expr</em> should remain unchanged after a start event. Default: 1.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701301"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701303"> </a><div class="pCellBodyLeft" >
+action_on_new_start
+</div>    
+</td>
+    <td><a name="wp3701305"> </a><div class="pCellBodyLeft" >
+Method for handling a new start event that occurs before <em class="cEmphasis">num_cks</em> clock cycles transpire without a change in the value of <em class="cEmphasis">test_expr</em>. Values are: &#8216;OVL_IGNORE_NEW_START, &#8216;OVL_RESET_ON_NEW_START and &#8216;OVL_ERROR_ON_NEW_START. Default: &#8216;OVL_IGNORE_NEW_START.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701307"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701309"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">property_type</em>
+</div>    
+</td>
+    <td><a name="wp3701311"> </a><div class="pCellBodyLeft" >
+Property type. Default: &#8216;OVL_ASSERT.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701313"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701315"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">msg</em>
+</div>    
+</td>
+    <td><a name="wp3701317"> </a><div class="pCellBodyLeft" >
+Error message printed when assertion fails. Default: &#8220;VIOLATION&#8221;.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701319"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701321"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">coverage_level</em>
+</div>    
+</td>
+    <td><a name="wp3701323"> </a><div class="pCellBodyLeft" >
+Coverage level. Default: &#8216;OVL_COVER_ALL.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3701358"> </a><h4 class="pHead4" >
+Ports  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3701327"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701329"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">clk</em>
+</div>    
+</td>
+    <td><a name="wp3701331"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701333"> </a><div class="pCellBodyLeft" >
+Clock event for the assertion. The checker samples on the rising edge of the clock.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701335"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701337"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">reset_n</em>
+</div>    
+</td>
+    <td><a name="wp3701339"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701341"> </a><div class="pCellBodyLeft" >
+Active low synchronous reset signal indicating completed initialization.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701343"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701345"> </a><div class="pCellBodyLeft" >
+start_event
+</div>    
+</td>
+    <td><a name="wp3701347"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701349"> </a><div class="pCellBodyLeft" >
+Expression that (along with <em class="cEmphasis">action_on_new_start</em>) identifies when to start checking <em class="cEmphasis">test_expr</em> .
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701351"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701353"> </a><div class="pCellBodyLeft" >
+<em class="cEmphasis">test_expr</em>
+</div>    
+</td>
+    <td><a name="wp3701355"> </a><div class="pCellBodyLeft" >
+[ <em class="cEmphasis">width</em> - 1: 0 ]
+</div>    
+</td>
+    <td><a name="wp3701357"> </a><div class="pCellBodyLeft" >
+Expression that should not change value for <em class="cEmphasis">num_cks</em> cycles from the start event unless the check is interrupted by a valid new start event.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3701359"> </a><h3 class="pHead3" >
+Description
+</h3>    
+
+<a name="wp3768507"> </a><p class="pBody" >
+The <code class="cCodeBody">assert_unchange</code> assertion checker checks the expression <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> at each rising edge of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span> to determine if it should check for a change in the value of <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span>. If <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> is sampled TRUE, the checker evaluates <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> and re-evaluates <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span> at each of the subsequent <span style="font-style: oblique" class="cCodeBodyEmphasis">num_cks</span> rising edges of <span style="font-style: oblique" class="cCodeBodyEmphasis">clk</span>.  Each time the checker re-evaluates <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span>, if its value has changed from its value in the previous cycle, the assertion fails.
+</p>    
+<a name="wp3768508"> </a><p class="pBody" >
+The method used to determine how to handle a new start event, when the checker is in the state of checking for a change in <span style="font-style: oblique" class="cCodeBodyEmphasis">test_expr</span>, is controlled by the <span style="font-style: oblique" class="cCodeBodyEmphasis">action_on_new_start</span> parameter. The checker has the following actions:
+</p>    
+<a name="wp3768509"> </a><p class="pBullet1" >
+<img src="images/bullet1.gif" align="top" />&#8216;OVL_IGNORE_NEW_START
+</p>    
+<a name="wp3768510"> </a><p class="pIndent1" >
+The checker does not sample <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> for the next <span style="font-style: oblique" class="cCodeBodyEmphasis">num_cks</span> cycles after a start event.
+</p>    
+<a name="wp3768511"> </a><p class="pBullet1" >
+<img src="images/bullet1.gif" align="top" />&#8216;OVL_RESET_ON_NEW_START
+</p>    
+<a name="wp3768512"> </a><p class="pIndent1" >
+The checker samples <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> every cycle. If a check is pending and the value of <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> is TRUE, the checker terminates the check and initiates a new check. 
+</p>    
+<a name="wp3768513"> </a><p class="pBullet1" >
+<img src="images/bullet1.gif" align="top" />&#8216;OVL_ERROR_ON_NEW_START
+</p>    
+<a name="wp3768514"> </a><p class="pIndent1" >
+The checker samples <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> every cycle. If a check is pending and the value of <span style="font-style: oblique" class="cCodeBodyEmphasis">start_event</span> is TRUE, the assertion fails with an <code class="cCodeBody">illegal start event</code> violation. In this case, the checker does not initiate a new check and does not terminate a pending check. 
+</p>    
+<a name="wp3768505"> </a><p class="pBody" >
+The checker is useful for ensuring proper changes in structures after various events. For example, it can be used to check that multiple-cycle operations with enabling conditions function properly with the same data. It can be used to check that single-cycle operations function correctly with data loaded at different cycles. It also can be used to verify synchronizing conditions that require date to be stable after an initial triggering event.
+</p>    
+<a name="wp3701382"> </a><h4 class="pHead4" >
+Assertion Checks  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3701371"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701373"> </a><div class="pCellBodyLeft" >
+ASSERT_UNCHANGE
+</div>    
+</td>
+    <td><a name="wp3701375"> </a><div class="pCellBodyLeft" >
+The <em class="cEmphasis">test_expr</em> expression changed value within <em class="cEmphasis">num_cks</em> cycles after <em class="cEmphasis">start_event</em> was sampled TRUE.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701377"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701379"> </a><div class="pCellBodyLeft" >
+illegal start event
+</div>    
+</td>
+    <td><a name="wp3701381"> </a><div class="pCellBodyLeft" >
+The <em class="cEmphasis">action_on_new_start</em> parameter is set to &#8216;OVL_ERROR_ON_NEW_START and <em class="cEmphasis">start_event</em> expression evaluated to TRUE while the checker was in the state of checking for a change in the value of <em class="cEmphasis">test_expr</em>.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3701402"> </a><h4 class="pHead4" >
+Cover Points  </h4>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td><a name="wp3701385"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701387"> </a><div class="pCellBodyLeft" >
+window_open
+</div>    
+</td>
+    <td><a name="wp3701389"> </a><div class="pCellBodyLeft" >
+A change check was initiated.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701391"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701393"> </a><div class="pCellBodyLeft" >
+window_close
+</div>    
+</td>
+    <td><a name="wp3701395"> </a><div class="pCellBodyLeft" >
+A change check lasted the full <em class="cEmphasis">num_cks</em> cycles.
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701397"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701399"> </a><div class="pCellBodyLeft" >
+window_resets
+</div>    
+</td>
+    <td><a name="wp3701401"> </a><div class="pCellBodyLeft" >
+The <em class="cEmphasis">action_on_new_start</em> parameter is &#8216;OVL_RESET_ON_NEW_START, and <em class="cEmphasis">start_event</em> was sampled TRUE while the checker was monitoring <em class="cEmphasis">test_expr </em>without detecting a changed value.
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <h4 class="pHead4" >
+</h4>    
+
+<a name="wp3701403"> </a><h3 class="pHead3" >
+See also
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3701404"> </a><pre class="pCode2" >assert_change, assert_time, assert_win_change, assert_win_unchange, 
+assert_window
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3701405"> </a><h3 class="pHead3" >
+Examples
+</h3>    
+
+<p class="pCodeShiftTop"></p><a name="wp3701450"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3701411"> </a><div class="pCellBodyLeft" >
+ assert_unchange #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701419"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3701421"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772447"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3772448"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3772449"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_IGNORE_NEW_START, 
+</div>    
+<a name="wp3772450"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772451"> </a><div class="pCellBodyLeft" >
+&#8220;Error: a changed during divide&#8221;, 
+</div>    
+<a name="wp3772452"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3701425"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772453"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772454"> </a><div class="pCellBodyLeft" >
+// num_cks 
+</div>    
+<a name="wp3772455"> </a><div class="pCellBodyLeft" >
+// action_on_new_start 
+</div>    
+<a name="wp3772456"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772457"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772458"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701427"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3701429"> </a><div class="pCellBodyLeft" >
+valid_div_unchange_a (
+</div>    
+</td>
+    <td><a name="wp3701433"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3701435"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701437"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3701439"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772459"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772460"> </a><div class="pCellBodyLeft" >
+start == 1, 
+</div>    
+<a name="wp3772461"> </a><div class="pCellBodyLeft" >
+a);
+</div>    
+</td>
+    <td><a name="wp3701441"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772462"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772463"> </a><div class="pCellBodyLeft" >
+// start_event 
+</div>    
+<a name="wp3772464"> </a><div class="pCellBodyLeft" >
+// test_expr
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3701498"> </a><p class="pBody" >
+Ensures that <code class="cCodeBody">a</code> remains unchanged while a divide operation is performed (8 cycles). Restarts during divide operations are ignored.  </p>    <div align="left"><img src="images/ovl_checkers77.gif" height="96" width="443" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3748454"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3748423"> </a><div class="pCellBodyLeft" >
+ assert_unchange #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3748431"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3748433"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772465"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3772466"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3772467"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_RESET_ON_NEW_START, 
+</div>    
+<a name="wp3772468"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772469"> </a><div class="pCellBodyLeft" >
+&#8220;Error: a changed during divide&#8221;, 
+</div>    
+<a name="wp3772470"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3748437"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772471"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772472"> </a><div class="pCellBodyLeft" >
+// num_cks 
+</div>    
+<a name="wp3772473"> </a><div class="pCellBodyLeft" >
+// action_on_new_start 
+</div>    
+<a name="wp3772474"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772475"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772476"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3748439"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3748441"> </a><div class="pCellBodyLeft" >
+valid_div_unchange_a (
+</div>    
+</td>
+    <td><a name="wp3748445"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3748447"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3748449"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3748451"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772477"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772478"> </a><div class="pCellBodyLeft" >
+start == 1, 
+</div>    
+<a name="wp3772479"> </a><div class="pCellBodyLeft" >
+a);
+</div>    
+</td>
+    <td><a name="wp3748453"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772480"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772481"> </a><div class="pCellBodyLeft" >
+// start_event 
+</div>    
+<a name="wp3772482"> </a><div class="pCellBodyLeft" >
+// test_expr
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3748487"> </a><p class="pBody" >
+Ensures that <code class="cCodeBody">a</code> remains unchanged while a divide operation is performed (8 cycles). A restart during a divide operation starts the check over.  </p>    <div align="left"><img src="images/ovl_checkers38.gif" height="96" width="443" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<p class="pCodeShiftTop"></p><a name="wp3748384"> </a><pre class="pCode2" >  </pre>    <div align="left" class="tbl">
+<table border="0">
+  <caption></caption>
+  <tr align="left" valign="top">    <td colspan="4" rowspan="1"><a name="wp3748353"> </a><div class="pCellBodyLeft" >
+ assert_unchange #(
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3748361"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3748363"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR, 
+</div>    
+<a name="wp3772483"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3772484"> </a><div class="pCellBodyLeft" >
+8, 
+</div>    
+<a name="wp3772485"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ERROR_ON_NEW_START, 
+</div>    
+<a name="wp3772486"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_ASSERT, 
+</div>    
+<a name="wp3772487"> </a><div class="pCellBodyLeft" >
+&#8220;Error: a changed during divide&#8221;, 
+</div>    
+<a name="wp3772488"> </a><div class="pCellBodyLeft" >
+&#8216;OVL_COVER_ALL)
+</div>    
+</td>
+    <td><a name="wp3748367"> </a><div class="pCellBodyLeft" >
+// severity_level 
+</div>    
+<a name="wp3772489"> </a><div class="pCellBodyLeft" >
+// width 
+</div>    
+<a name="wp3772490"> </a><div class="pCellBodyLeft" >
+// num_cks 
+</div>    
+<a name="wp3772491"> </a><div class="pCellBodyLeft" >
+// action_on_new_start 
+</div>    
+<a name="wp3772492"> </a><div class="pCellBodyLeft" >
+// property_type 
+</div>    
+<a name="wp3772493"> </a><div class="pCellBodyLeft" >
+// msg 
+</div>    
+<a name="wp3772494"> </a><div class="pCellBodyLeft" >
+// coverage_level
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3748369"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td colspan="2" rowspan="1"><a name="wp3748371"> </a><div class="pCellBodyLeft" >
+valid_div_unchange_a (
+</div>    
+</td>
+    <td><a name="wp3748375"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+</tr>
+  <tr align="left" valign="top">    <td><a name="wp3748377"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3748379"> </a><div class="pCellBodyLeft" >
+&#160;
+</div>    
+</td>
+    <td><a name="wp3748381"> </a><div class="pCellBodyLeft" >
+clk,  
+</div>    
+<a name="wp3772495"> </a><div class="pCellBodyLeft" >
+reset_n,  
+</div>    
+<a name="wp3772496"> </a><div class="pCellBodyLeft" >
+start == 1, 
+</div>    
+<a name="wp3772497"> </a><div class="pCellBodyLeft" >
+a);
+</div>    
+</td>
+    <td><a name="wp3748383"> </a><div class="pCellBodyLeft" >
+// clock 
+</div>    
+<a name="wp3772498"> </a><div class="pCellBodyLeft" >
+// reset 
+</div>    
+<a name="wp3772499"> </a><div class="pCellBodyLeft" >
+// start_event 
+</div>    
+<a name="wp3772500"> </a><div class="pCellBodyLeft" >
+// test_expr
+</div>    
+</td>
+</tr>
+</table>
+</div>
+	
+  <pre class="pCode2" >
+</pre>    
+<p class="pCodeShiftBottom"></p>
+<a name="wp3748616"> </a><p class="pBody" >
+Ensures that <code class="cCodeBody">a</code> remains unchanged while a divide operation is performed (8 cycles). A restart during a divide operation is a violation.  </p>    <div align="left"><img src="images/ovl_checkersa26.gif" height="96" width="443" border="0" vspace="0" hspace="100" />  </div>	
+  <p class="pBody" >
+</p>    
+<a name="wp3748649"> </a><p class="pBody" >
+
+</p>
+<p style="margin-top:10px"> </p>
+ <hr noshade="noshade" size="3" />
+
+<center>
+ <table border="0" cellspacing="5px" cellpadding="0" width= "100%" bgcolor="#ddf5ff">
+ <tr>
+  <td>&nbsp;</td>
+  <td align="left" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    &copy; Accellera Organization, Inc. 2005<br /> All Rights Reserved.</span>
+  </td>
+  <td align="right" valign="top">
+    <span style="font-size: 11px ; font-weight: bold; font-family: Arial, Verdana, Helvetica, sans-serif">
+    Standard OVL V1.1a</span>
+  </td>
+ </tr>
+ </table>
+</center>
+ <hr />
+
+
+ </body>
+</html>
+
+

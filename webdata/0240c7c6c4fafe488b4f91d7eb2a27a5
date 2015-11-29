@@ -1,0 +1,1075 @@
+<HTML>
+
+<HEAD> <TITLE>Diane J. Litman's Home Page</TITLE> </HEAD>
+
+<ADDRESS>
+
+<!--<body text="`#000000" bgcolor="#DFFFFF" link="#0000ED" vlink="#551A8A" alink="#FE0000">&nbsp;-->
+<body text="`#000000" bgcolor="#FACD8A" link="#0000ED" vlink="#551A8A"
+alink="#FE0000">&nbsp;
+
+<!-- 
+<P ALIGN=CENTER>
+<IMG ALIGN="CENTER" SRC="Diane_Litman_small.jpg" ALT="[photo]">
+</P>-->
+
+
+<br>
+
+<H1><P ALIGN=CENTER><font size="6">Diane J. Litman  </font></P></H1>
+<map name="Dept" id="dept">
+<area alt="CS" shape="rect" coords="0,0,150,75"
+href="http://www.cs.pitt.edu/" />
+<area alt="LRDC" shape="rect" coords="0,75,150,150"
+href="http://www.lrdc.pitt.edu/" />
+</map>
+<center><table BORDER CELLSPACING=2 BGCOLOR="#FFFFFF" CELLPADDING=5 NOSAVE >
+<tr>
+<td ALIGN=CENTER><b><a href=http://www.cs.pitt.edu>Department of Computer Science</a></b></td>
+<td ROWSPAN=7><img src="DianeMap.JPG" width="150" height="150" usemap="#Dept"></td>
+<td ALIGN=CENTER><b><a href=http://www.lrdc.pitt.edu>Learning Research
+& Development Ctr.</a></b></td>
+
+</tr>
+
+<!--<tr>
+<td>Professor</td>
+<td>Senior Scientist</td></tr>-->
+
+<tr><td>5105 Sennott Square</td>
+<td>741 LRDC</td></tr>
+
+<tr><td>210 South Bouquet Street</td>
+<td>3939 O'Hara Street</td></tr>
+
+<tr><td>University of Pittsburgh</td>
+<td>University of Pittsburgh</td></tr>
+
+<tr><td>Pittsburgh, PA 15260</td>
+<td>Pittsburgh, PA 15260</td></tr>
+
+<tr><td>(phone) 412-624-8838</td>
+<td>(phone) 412-624-1261 </td></tr>
+
+<tr><td>(fax) 412-624-8854</td>
+<td> (fax) 412-624-9149 </td></tr>
+</table></center>
+</ADDRESS>
+<center>
+<br><b>Faculty:</b> <a href="http://www.isp.pitt.edu">Intelligent Systems Program</a> (Co-Director 2014-2016)
+<br><b>Director:</b> <a
+href="http://www.cs.pitt.edu/~litman/itspoke.html">Litman Lab</a> 
+<!--<br><b>Co-PI:</b> <a
+href=https://sites.google.com/site/swordlrdc/>SWoRD</a> and RTA projects-->
+</center>
+<!---and Co-Director <a href="http://nlp.cs.pitt.edu">nlp@pitt</a> 
+<br>
+Member of the <a href="http://www.learnlab.org">Pittsburgh Science of Learning Center</a>-->
+<!--<br><a href=DJL-schedule06s.html>Schedule</a>-->
+</center>
+<H2> Research </H2>
+<p>
+My research is in the area of
+<a href="http://www.aaai.org">artificial intelligence</a>,  
+and includes contributions in the areas of
+<a href="http://iaied.org">
+artificial intelligence and education</a>, <a href="http://www.aclweb.org">computational linguistics</a>,
+<a href=http://www.kr.org>knowledge representation and reasoning</a>, 
+<a href="http://ifarm.nl/signll">natural language learning</a>,
+<!---plan recognition,--> 
+<a href="http://www.isca-speech.org">spoken language</a>, 
+and <a href="http://www.um.org">user modeling</a>.
+My work has included both
+fundamental research and applied research resulting in technology
+transfer and patents.  
+<!-- as summarized in my  <a href=litman-vita.pdf>CV</a> and 
+<a href=shortbio.html>biographical sketch<a> (circa 2011).--->
+<p>My most recent research has been in the area of Speech and Natural Language
+Technology for Educational Applications.
+Currently funded projects</a> include:
+<dl>
+<!--<dt><li>(ITSPOKE) An Affect-Adaptive Spoken Dialogue System that Responds Based on User Model and Multiple Affective States-->
+<dt><li> (<a href=https://sites.google.com/site/swordlrdc/>ArgumentPeer</a>) Teaching Writing and Argumentation with AI-Supported Diagramming and Peer Review 
+<!---<dt><li>(<a href=https://sites.google.com/site/swordlrdc/>SWORD</a>) Intelligent Scaffolding for Peer Reviews of Writing
+<dt><li>(RTA) Response-to-Text Prompts to Assess Students' Writing
+Ability: Using Natural Language Processing for Scoring Writing at Scale--->
+<dt><li> (<a href=http://www.coursemirror.com>CourseMIRROR</a>) Improving Undergraduate STEM Education by Integrating Natural
+Language Processing with Mobile Technologies
+<!---<dt><li> Peer Review Search & Analytics in MOOCs via Natural Language Processing--->
+<dt><li> An Intelligent Ecosystem for Science Writing Instruction
+<dt><li> <a href=https://sites.google.com/site/teamentrainmentstudy>Entrainment and Task Success in Team Conversations</a>
+<dt><li> Computational Models of Essay Rewritings
+<!---Sabbaticals--->
+
+<p>My research as aggregated by <a
+href=http://scholar.google.com/citations?user=8MFFVgEAAAAJ&hl=en>Google Scholar</a> and <a href=http://academic.research.microsoft.com/author/2307297>Microsoft Academic Search</a>.
+<!---<p>
+My most recent research has been in the area of spoken dialogue
+systems, <a href="http://www.cs.cmu.edu/~dbohus/SDS">
+systems</a> in which human users speak to a computer in order to
+achieve their goals.  The potential benefits of such systems include
+remote or hands-free access to a variety of information services, ease
+of use, and naturalness.  Spoken dialogue systems are among the few
+realized examples of open-ended, real-time, goal-oriented interaction
+between humans and computers, and are therefore an exciting testbed
+for artificial intelligence research.  At AT&T, my research focused on the
+use of machine learning techniques for optimizing and adapting
+dialogue system behavior, the use of user intonation in spoken
+utterances to detect and repair system errors, and performance
+evaluation.
+-- (for which we received a best paper award).--
+At the University of Pittsburgh, I am continuing these lines of research
+in the context of <a href="http://www.cs.pitt.edu/~litman/itspoke.html">ITSPOKE</a> (an Intelligent Tutoring SPOKEn dialogue system), and am in addition
+focusing on how to enhance the effectiveness of text-based tutorial dialogue systems
+through the use of spoken language processing and affective computing.
+The <a
+href=http://nlp.cs.pitt.edu/>Natural Language
+Processing Lab</A> homepage contains further details about my research
+and that of my colleagues.  
+<p>
+In
+the areas of knowledge representation and plan recognition, my
+research has emphasized the design and implementation of plan-based
+knowledge representation systems, the application of plan recognition
+to natural language and graphical intelligent interfaces, and the
+development of a rule-based extension of C++ with an application to
+alarm monitoring in a telephone switching system.
+--->
+
+<!---<H2> Employment Opportunity!</H2>
+<p> The <a href=http://www.cs.pitt.edu/~litman/itspoke.html>ITSPOKE</a> project is accepting applications for a 2-3 year <a href=http://www.cs.pitt.edu/~litman/ad.postdoc.html>researcher/postdoc</a> position. 
+<p>For complete details on my research, please see my
+<a href=http://www.cs.pitt.edu/~litman/vita.pdf>vita</a> as well as my
+<a href=http://www.cs.pitt.edu/~litman/research.pdf>research</a> and 
+<a href=http://www.cs.pitt.edu/~litman/teaching.pdf>teaching</a> statements.-->
+<!--<h2 class="sectitle">Prospective PhD Students</h2>
+ 
+ 
+Artificial Intelligence is a specialty of the 
+Computer Science Department. 
+To apply, <A HREF="http://www.cs.pitt.edu/"> click here </A> and then 
+look at the drop-down menu under "Graduate". 
+<p>
+The <A HREF="http://www.isp.pitt.edu">Intelligent Systems Program 
+</A>, a PhD graduate program in Artificial 
+Intelligence, is also accepting applications.  To apply, <A
+HREF="https://app.applyyourself.com/?id=up-as"> click here </A>.  For
+admissions requirements, please <A
+HREF="http://www.isp.pitt.edu/admission/admit.html">
+click here </A>.
+-->
+<H2> Selected Publications (by year)</H2>
+<dl>
+<dt> <li> <a href="http://www.cs.pitt.edu/~litman/pubs.html">2003-present</a>
+
+<H2> Dissertations Supervised</H2><!--- (both past and current)-->
+<dl>
+<dt>   <LI><A href=https://www.linkedin.com/profile/view?id=17487346&authType=NAME_SEARCH&authToken=yIde&locale=en_US&srchid=3552952841418495512479&srchindex=3&srchtotal=14&trk=vsrp_people_res_name&trkInfo=VSRPsearchId%3A3552952841418495512479%2CVSRPtargetId%3A17487346%2CVSRPcmpt%3Aprimary>Hua Ai</a>, Intelligent
+   Systems, PhD 2009: <a
+   href=http://etd.library.pitt.edu/ETD/available/etd-12032009-115538/>User
+  Simulation for Spoken Dialog System Develpment</a> (now Analytics Consultant,
+360i)</LI>
+
+   <LI><A href="http://workthatmatters.ncsu.edu/newhires/chi.php">Min Chi</a>,
+   Intelligent Systems, PhD 2009:
+   <a href=http://etd.library.pitt.edu/ETD/available/etd-12092009-144719/>Do
+   Micro-Level Tutorial Decisions Matter: Applying Reinforcement
+   Learning To Induce Pedagogical Tutorial Tactics</a> (now Assistant
+   Professor, NC State University)</LI>
+
+   <LI><a href="http://www.cs.pitt.edu/~lipschultz">Michael Lipschultz</a>,
+Computer Science, Phd 2015: <a href=http://d-scholarship.pitt.edu/20409/>Adapting the Scheduling of Illustrations and Graphs to Learners in Conceptual Physics Tutoring</a>
+</LI> 
+
+   <LI><A href="http://nl.linkedin.com/in/mrotaru">Mihai
+   Rotaru</a>, Computer Science, PhD 2008: <a href=http://etd.library.pitt.edu/ETD/available/etd-12102008-151922/>	Applications of Discourse Structure for Spoken Dialogue Systems</a> (now at <a href=http://www.textkernel.com/>Textkernel</a>)</LI>
+
+   <LI><a href="http://www.cs.pitt.edu/~artward">Arthur Ward</a>, Intelligent Systems, PhD 2010: <a href=http://etd.library.pitt.edu/ETD/available/etd-06082010-143656/>Reflection and Learning Robustness in a Natural Language Conceptual Physics Tutoring System</a> (now Postdoctoral Research Associate, Department of Biomedical Informatics, University of Pittsburgh)</LI> 
+
+   <LI><a href=https://www.linkedin.com/pub/wenting-wendy-xiong/9/497/853>Wenting Xiong</a>,
+Computer Science, PhD 2015: <a href=http://d-scholarship.pitt.edu/22509/>Helpfulness-Guided Review
+     Summarization</a> (now Research Staff Member, Watson Innovations)</LI>  
+
+
+<H2> Recent News </H2>
+<dt>
+<!---NUS: visiting prof, keynote, smu photos  https://www.facebook.com/larc.cmu.smu?fref=photo--->
+
+<li><i>August 2015</i>: Elected to 3 year term as  <a href=http://www.aaai.org/Organization/officers.php>Councilor</a>, Association for the
+Advancement of Artificial Intelligence
+<li><i>August 2015</i>: Summarizing Student Reflection Corpus is now available
+  for scientific purposes <a href=http://www.coursemirror.com/download/dataset/>(download)</a>
+<li><i>January-April 2015</i>:  <a href=http://www.emma.cam.ac.uk/contact/fellows/visiting/>Derek Brewer Visiting
+    Fellow</a>, Emmanuel College, Cambridge University
+<li><i>December 2014</i>:  <a
+  href=http://www.cs.pitt.edu/~lipschultz>Michael Lipschultz</a> <a href=images/mikeDefense.JPG>defends</a> his dissertation!
+  <li><i>September 2014:</i> <a href=http://www.isca-speech.org/iscaweb/index.php/honors/awards>ISCA Best Paper</a> Published in <i>Speech Communication</i> (2011-2013) for
+"Benefits and challenges of real-time uncertainty detection and
+adaptation in a spoken dialogue computer tutor" (with
+K. Forbes-Riley)
+<li><i>September 2014:</i> Keynote Speaker, <a href=http://comma2014.arg.dundee.ac.uk/>Fifth International
+Conference on Computational Models of Argument</a>
+<li><i>August 2014</i>:  <a
+  href=http://www.cs.pitt.edu/~wex12>Wenting Xiong<a> <a href=images/wentingDefense.JPG>defends</a> her dissertation!
+
+  <li><i>May 2014:</i> <a href=http://www.raeng.org.uk/grants-and-prizes/international-research-and-collaborations/distinguished-visiting-fellowships/current-and-recent-awards>
+Royal Academy
+of Engineering Distinguished Visiting Fellowship Award</a>
+<li><i>May 2014:</i> Invited Speaker, <a href=SafeSeaWshop.pdf>
+Computational Linguistics and Educational Technology</a>
+<li><i>Winter 2014:</i> 
+<a
+href=http://googleresearch.blogspot.com/2014/02/google-research-awards-winter-2014.html>
+Google Faculty Research Award</a> 
+(<a href=http://services.google.com/fh/files/blogs/research-awards-winter2014.pdf>Natural
+  Language Processing</a>) (Pitt Chronicle <a href=http://www.chronicle.pitt.edu/story/awards-more-55>listing</a>)
+
+<li><a href=newsArchive.html>Archived News</a>
+
+  <!---
+  <li><i>September 2013:</i> CS Department Teaching Award, graduate
+seminar category 
+<li><i>September 2013:</i> Invited Speaker, <a href=http://events.cambridgeenglish.org/cambridge-english-centenary-symposium/>Cambridge English Centenary Symposium on Speaking Assessment</a> 
+<li><i>August 2013:</i> Keynote Speaker, <a href=http://www.slate2013.org/program.html>
+SLaTe Workshop (Speech & Language Technology in Education)</a> 
+<li><i>May 2013:</i> <a href=http://www.utimes.pitt.edu/?p=25934>
+LRDC turns 50</a> (see Today section)
+</li>
+
+<dt>
+<li><i>July 2012:</i> Keynote Speaker, <a href=http://www.sigdial.org/workshops/conference13/>
+13th Annual SIGdial Meeting on Discourse and Dialogue</a> (<a href=http://www.superlectures.com/sigdial2012>video</a>) 
+</li>
+
+<li><i>Summer 2011:</i> <a
+href=http://www.zinio.com/pages/PittMagazine/Summer-11/416185377/pg-30>Pitt
+Magazine</a> features NLP faculty!</li>
+
+<li><i>August 2011:</i> Awarded 
+Senior
+Member status by the Association for the Advancement of Artificial
+Intelligence (<a href=aaaiSenior.txt>AAAI</a> and <a href=http://www.news.pitt.edu/news/news-pitt-news-note-pitt-news-awards-and-developments-university-pittsburgh-0>Pitt</a> announcements)</li> 
+
+<li><i>March 2011:</i> U. of Pittsburgh <a href=http://www.chronicle.pitt.edu/?p=8062>participant</a> in IBM Watson comes to Pitt and CMU</a>; 
+<a href=http://www.chronicle.pitt.edu/?p=8167>Pitt Panel</a>;
+
+<a href=http://www.livestream.com/ibmwatson/video?clipId=pla_23b4bc2f-004f-4614-aa4a-9afdc60f9cec&utm_source=lslibrary&utm_medium=ui-thumb>IBM Interview</a>
+
+and <a
+href=http://www.livestream.com/IBMWatson/video?clipId=pla_ec5cd129-218d-41b6-8804-fc695168db71&utm_source=lslibrary&utm_medium=ui-thumb>CMU Q/A</a>;
+<a
+href=http://www.convergemag.com/college-career/University-Researchers-Find-Business-Applications-for-Watson.html>Converge</a> article
+
+
+<li><i>June 2010</i>:  <a href=http://www.cs.pitt.edu/~artward>Art Ward</a> 
+(6/23/10) defends his dissertation!
+
+<li><i>June 2010</i>: <a href=http://sites.google.com/site/its2010home/awards>Best Paper Award</a> at 
+the 10th International Conference
+on Intelligent Tutoring Systems for
+<a href=http://www.cs.pitt.edu/~litman/60940224.pdf>
+Do Micro-Level Tutorial Decisions Matter: Applying Reinforcement
+Learning to Induce Pedagogical Tutorial Tactics</a> (by
+Chi, VanLehn and Litman)
+
+
+
+
+<li><i>November 2009</i>: 
+<a
+href=http://www.utimes.pitt.edu/?p=10325>University Times 
+</a> and <a href=http://www.as.pitt.edu/news/articles/computer_science_faculty_recognized_with_nsf_grants.html>School of Arts and Sciences</a> on latest NSF award
+
+
+<li><i>September 2008 - November 2009</i>:  <a href=http://www.cs.pitt.edu/~mrotaru>Mihai Rotaru</a> (9/11/08), <A href="http://www.cs.cmu.edu/~huaai/">Hua Ai</a> (9/21/09), and <A href="http://www.cs.pitt.edu/~mic31/">Min Chi</a> (11/20/09) defend their dissertations!
+
+<li><i>June 2008</i>: <a href=136_Paper.pdf>Uncertainty Corpus</a> 
+
+is now available for scientific purposes through the Pittsburgh Science of Learning Center's <a href=https://learnlab.web.cmu.edu/datashop/index.jsp>Datashop</a>
+
+
+
+<li><i>Aug. 2007 - July 2008</i>: <a href=http://www.leverhulme.ac.uk>Leverhulme</a>
+Visiting Professor, University of Edinburgh 
+<a href=http://www.inf.ed.ac.uk>(Informatics)</a>.  
+Here is my UK <a href=leverhulmeLectures.html>Leverhulme Lecture</a> series.
+
+<dt><li>
+<i>April 2008</i>: Invited Speaker, <a href=http://www.csd.abdn.ac.uk/~cmellish/aisb08/>Affective Language in Human and Machine Symposium of the AISB Convention</a>
+
+<dt><li>
+<i>February 2008</i>: <a href=http://www.inf.ed.ac.uk/events/lectures/>Distinguished Lecturer</a>,  School of Informatics, University of Edinburgh.
+
+
+<li>
+<i>June 2007</i>: U. of Pittsburgh Exhibitor, <a href=http://www.cnsfweb.org/>Coalition for
+National Science Funding</a>, Capitol Hill.
+<li><i>April 2007</i>: Best Paper Award (Late-Breaking News) at <a
+href=http://www.cs.rochester.edu/meetings/hlt-naacl07/summary-schedule.shtml>HLT-NAACL
+2007</a> for <a href=frtl-naacl07-final.pdf>Exploring
+Affect-Context Dependencies for Adaptive System Development</a>
+by Forbes-Riley, Rotaru, Litman, and Tetreault</a> 
+
+<dt> <li><i>September 2006</i>:
+People's Choice Best Paper Award for <a href=http://www.cs.pitt.edu/~litman/Interspeech06-final.pdf>Discourse Structure and Speech Recognition Problems</a> (by Mihai Rotaru and Diane Litman), Ninth International Conference on Spoken Language Processing (<a href=http://www.interspeech2006.org>Interspeech/ICSLP</a>),  2006
+</li>
+
+<dt><li>
+<i>July 2006</i>: Invited Speaker at <a href=http://sigdial06.dfki.de/>7th SIGdial Workshop on Discourse and Dialogue </a> 
+
+<dt><li>
+<i>June 2006</i>: Keynote Speaker at <a href=http://nlp.cs.nyu.edu/hlt-naacl06/keynotes.html>Human Language Technology Conference/North American chapter of the Association for Computational Linguistics Annual Meeting</a>  (<a href=http://www.cs.pitt.edu/~litman/keynote06_noav.ppt>ppt</a>)
+
+<dt><li>
+<i>September 2005</i>: <i>Speech Communications</i> Best Paper Award 2003-2004 was given
+by the European Association for Signal Processing (Eurasip) for
+"Prosodic and other cues to speech recognition failures" by Hirschberg,
+Litman and Swerts 
+<dt><li>
+<i>June 2004</i>: <a
+href=http://www.discover.pitt.edu/media/pcc040607/comps_like_humans.html>Teaching
+Computers to Teach Like Humans</a>, Pitt Chronicle 
+<!---<a href=ITRpitt.htm>Press Release</a>, June 3 2004
+--->
+
+  <H2> Teaching</H2>
+<p>
+<dt><li>
+<a href="http://courseweb.pitt.edu/">
+CS 0441: Discrete Structures
+for Computer Science</a> (Spring 2005, Fall 2006, Spring 2007, Spring 2010)
+<dt><li>
+<a href=http://courseweb.pitt.edu/>
+CS 1571: Introduction to Artificial Intelligence</a> (Fall 2008)
+<dt><li>
+<a href=http://www.cs.pitt.edu/~litman/courses/cs1573/1573.html>
+CS 1573: Artificial Intelligence Application Development</a> (Spring
+2003, 2004)
+<dt><li>
+<a href="http://courseweb.pitt.edu">
+CS 1590: Social Implications of Computing Technology</a> (Spring 2012,
+2013)
+<dt><li>
+<a href=http://people.cs.pitt.edu/~litman/courses/cs2001/>
+CS 2001: Research Topics in Computer Science</a> (Fall 2014)
+<dt><li>
+<a href="http://courseweb.pitt.edu">
+CS 2710 / ISSP 2160: Foundations of
+Artificial Intelligence</a> (Fall 2006, 2009, 2010)
+<dt><li>
+<a href="http://courseweb.pitt.edu">
+CS 2731 / ISSP 2230: Introduction to Natural Language Processing</a>
+(Fall 2001, 2002, 2003, 2004, 2011, 2013)
+<dt><li>
+<a href="http://www.cs.pitt.edu/~litman/courses/cs3710/cs3710.html">
+CS 3710 / ISSP 3565: Advanced Topics in Artificial Intelligence (Dialog Systems)</a>
+(Spring 2002)
+<dt><li>
+<a href="http://www.cs.pitt.edu/~litman/courses/ads">
+CS 3710 / ISSP
+3565: Advanced Topics in Artificial Intelligence (Affective Spoken Dialogue Systems)</a>
+(Spring 2006)
+<dt><li>
+<a href="http://www.cs.pitt.edu/~litman/courses/slate">
+CS 3710 / ISSP 3565: Advanced Topics in Artificial Intelligence (Speech and Natural Language Processing for Educational Applications)</a>
+(Spring 2009)
+<dt><li><a href="http://courseweb.pitt.edu">
+CS 3710 / ISSP 3565: Advanced Topics in Artificial Intelligence (Natural Language Processing for Extracting Social and Interactional Meaning)</a>
+(Fall 2012)
+
+<!--<H2>2004 Activities</H2>
+
+<dt><li>Program Committee, <a
+href="http://www.hlt-naacl04.org">
+Human Language Technology Conference: 4th Meeting of the North American Chapter
+of the Association for Computational Linguistics</a> (HLT/NAACL)
+
+<dt><li>Program Committee, <a
+href="http://www.acl2004.org">
+42nd Meeting of the Association for Computational Linguistics</a> (ACL)
+
+<dt><li>Program Committee, <a
+href="http://www.aaai.org/Conferences/IAAI/2004/iaai04.html">Sixteenth Conference on
+Innovative Applications of Artificial Intelligence</a> (IAAI)
+
+<dt><li>Program Committee, <a href=http://cnts.uia.ac.be/conll2004/>
+Eighth Conference on Natural Language
+Learning </a>(CoNLL)
+
+<dt><li>Organizing Committee, <a href=http://nth.wpi.edu/ITS2004-WS/CFP.htm>
+Dialog-based Intelligent Tutoring Systems: State of the art and new
+research directions </a>, Workshop at
+<a href=http://www.itsconference.org/2004>Seventh International Conference on Intelligent Tutoring Systems</a> (ITS)
+
+<dt><li>Organizing Committee, <a href=http://www.andrew.cmu.edu/~jb8n/W2%20log%20analysis.htm>
+Analyzing Student-Tutor Interaction Logs to Improve Educational Outcomes
+ </a>, Workshop at
+<a href=http://www.itsconference.org/2004>Seventh International Conference on Intelligent Tutoring Systems</a> (ITS)
+
+<H2>2005 Activities</H2>
+
+<dt><li>Program Committee, <a href=http://www.eecs.umich.edu/~radev/acl2005>
+43rd Annual Meeting of the Association for Computational Linguistics
+</a>(ACL-05)
+
+<dt><li>Program Committee, <a href=http://www.ijcai-05.org>
+Nineteenth International Joint Conference on Artificial Intelligence
+</a>(IJCAI-05)
+
+<dt><li>Program Committee, <a
+href="http://www.aaai.org/Conferences/IAAI/2005/iaai05.html">Seventeenth Conference on
+Innovative Applications of Artificial Intelligence</a> (IAAI-05)
+
+<dt><li>Program Committee, <a href=http://gate.ac.uk/conferences/um2005/>
+10th International Conference on User Modeling 
+</a>(UM'05)
+
+<dt><li>Program Committee, 2nd ACL Workshop on <a
+href=http://www.ets.org/research/conferences/nlp.html>
+Building Educational Applications Using Natural Language Processing</a> 
+
+
+<dt><li>Program Committee, 4th <a href=http://www.ijcai-05.org>IJCAI</a> Workshop on Knowledge and
+Reasoning in Practical Dialogue Systems
+
+<dt><li>Program Committee, <a
+href=http://gate.ac.uk/conferences/um2005/>UM</a>
+Workshop on Adapting The Interaction Style To Affective Factors 
+ 
+<dt><li>Program Committee, <a href=http://cnts.uia.ac.be/conll2005/>
+Ninth Conference on Natural Language
+Learning </a>(CoNLL-05)
+
+<H2>2006 Activities</H2>
+
+<dt><li>Organizing Committee, <a href=http://www.interspeech2006.org/>
+9th International Conference on Speech and Language Processing
+</a>(INTERSPEECH/ICSLP) 
+
+<dt><li>Program Committee, <a
+href=http://eacl06.itc.it/>  11th Meeting of the European Chapter of
+the Association for Computational Linguistics</a>
+(EACL)
+
+<dt><li>Scientific Committee, <a
+href=http://www.slt2006.org>  IEEE 2006 Workshop on Spoken Language
+Technology</a> (SLT)
+
+<dt><li>Lecturer, <a href=http://www.grammars.grlmc.com/Grammars/GRLMC/docs/phd1LST/PhD1.pdf>
+1st International PhD School in Language and Speech Technologies</a>
+
+<dt><li>Presenter, <a
+href=http://lt.csse.unimelb.edu.au/nlp06>  ACL/HCSNet Advanced Program in Natural Language Processing</a>
+
+<dt><li>Invited Speaker, <a href=http://www.coli.uni-saarland.de/projects/igk/annualMeeting/contents/2006/index.php>DFG/ESRC Summer School in Computational Linguistics and Psycholinguistics </a>
+
+<dt><li>Advisory Committee, <a href=http://www.yrrsds.org>  Young
+Researchers' Roundtable on Spoken Dialog Systems</a>
+
+
+<H2>2007 Activities</H2>
+
+<dt><li>Program Committee, 
+<a href=http://gaips.inesc-id.pt/acii2007/index.html>Second International Conference on Affective Computing and Intelligent Interaction</a> (ACII)
+<dt><li>Reviewer, 
+<a href=http://www.acl2007.org>45th Annual Meeting of the Association for Computational Linguistics</a> (ACL)
+<dt><li>Reviewer, 
+<a href=http://www.isi.edu/AIED2007>13th International Conference on Artificial Intelligence in Education</a> (AIED)
+<dt><li>Progamme Committee, 
+<a href=http://gracehopper.org/2007/>Grace Hopper Celebration of Women in Computing</a> (GHC)
+<dt><li>Progamme Committee, 
+<a href=http://www.dfki.de/paraling07>Paralinguistic Speech - between models and data</a> (ParaLing)
+<dt><li>Scientific Committee, 
+<a
+href="http://www.cs.cmu.edu/~max/mainpage_files/SLATE_files/SLaTE07-Call for Participation.htm">
+SLaTE Workshop on Speech and Language Technology in Education</a> (SLaTE)
+<dt><li>Program Committee, 
+<a href=http://www.iit.demokritos.gr/um2007>11th International Conference on User Modeling</a> (UM)
+<dt><li>Program Committee, 
+<a
+href=http://www.informatics.sussex.ac.uk/users/gr20/aied07/>Workshop
+on Modeling and Scaffolding Affective Experiences To Impact
+Learning</a> (at AIED)
+
+<H2>2008 Activities</H2>
+
+<dt><li>Program Committee, 
+<a href=http://www.acl2008.org>46th Annual Meeting of the Association for Computational Linguistics</a> (ACL)
+</dt></li>
+
+<dt><li>Program Committee, 
+<a href=http://www.sigdial.org/workshops/workshop9> 9th
+SIGdial Workshop on Discourse and Dialogue</a> (SIGdial)
+</dt></li>
+
+<dt><li>Scientific Committee, 
+<a href=http://www.lrec-conf.org/lrec2008/>6th edition of the Language Resources and Evaluation Conference</a> (LREC)
+</dt></li>
+
+<dt><li>Review Committee, 
+<a href=http://www.coling2008.org.uk/>The 22nd International Conference on Computational Linguistics</a> (COLING)
+</dt></li>
+
+<dt><li>Advisory Committee, 
+Young Researchers' Roundtable on Spoken Dialog Systems (YRRSDS)
+
+
+<H2>2009 Activities</H2>
+
+<dt><li>Senior Programme Committee, <a href=http://www.aied2009.com>
+14th International Conference of Artificial Intelligence in  
+Education</a> (AIED)
+</dt></li>
+
+<dt><li>Program Committee, 
+<a href=http://www.sigdial.org/workshops/workshop10/>10th
+Annual Meeting of the Special Interest Group on Discourse and Dialogue</a> (SIGDIAL)</a>
+</dt></li>
+
+<dt><li>Program Committee, <a href=http://www.acii2009.nl>International Conference on Affective Computing and Intelligent Interaction</a> (ACII)
+</dt></li>
+
+<dt><li>Program Committee, <a href=http://www.diaholmia.org>
+The 13th Workshop on the Semantics and Pragmatics of Dialogue</a> (DIAHOLMIA)
+</dt></li>
+
+<dt><li>Program Committee, <a href=http://www.cs.rochester.edu/~tetreaul/naacl-bea4.html>
+The 4th Workshop on Innovative Use of NLP for Building Educational Applications
+</a> (NAACL-HLT 2009 Workshop)
+</dt></li>
+
+<dt><li>Program Committee,
+<a href="http://www.eee.bham.ac.uk/SLaTE2009/index.html">2nd ISCA Worskhop on Speech and Language Technology in Education</a> (SLATE)
+</dt></li>
+
+<dt><li>Reviewer,
+<a href=http://www.acl-ijcnlp-2009.org/index.html>
+Annual Meeting of the Association for Computational Linguistics</a> (ACL)
+</dt></li>
+
+
+
+<H2>2010 Activities</H2>
+
+<dt><li>Senior Programme Committee, <a href=http://www.cmu.edu/its2010>
+Tenth International Conference on Intelligent Tutoring Systems</a> (ITS)
+</dt></li>
+
+<dt><li>Programme Committee, <a href=http://www.acl2010.org>
+48th Annual Meeting of the Association for Computational Linguistics</a> (ACL)
+</dt></li>
+
+<dt><li>Programme Committee, <a href=http://naaclhlt2010.isi.edu>
+Human Language Technologies: The 11th Annual Conference of the North 
+American Chapter of the Association for Computational Linguistics
+</a> (NAACL HLT)
+</dt></li>
+
+<dt><li>Program Committee, 
+<a href=http://www.sigdial.org/workshops/workshop11> 11th
+Annual SIGdial Meeting on Discourse and Dialogue</a> (SIGdial)
+</dt></li>
+
+<dt><li>Program Committee, <a href=http://www.cs.rochester.edu/u/tetreaul/naacl-bea5.html>
+The 5th Workshop on Innovative Use of NLP for Building Educational Applications
+</a> (NAACL HLT 2010 Workshop)
+</dt></li>
+
+<dt><li>Student Research Workshop Faculty Co-Advisor, 
+<a href=http://naaclhlt2010.isi.edu>
+Human Language Technologies: The 11th Annual Conference of the North 
+American Chapter of the Association for Computational Linguistics
+</a> (NAACL HLT)
+
+
+<dt><li>Program Committee, <a href=http://www.cspred.org>
+Computer-Supported Peer Review in Education
+</a> (ITS 2010 Workshop)
+</dt></li>
+
+</dt></li>
+<dt><li>Program Committee, 
+<a href=http://www.csc.liv.ac.uk/~floriana/UM4Motivation/>User Models for Motivational Systems:
+the affective and the rational routes to persuasion</a>
+(UMAP Workshop)
+
+</dt></li>
+<dt><li>Reviewer, <a href=http://www.coling-2010.org>The 23rd
+International Conference on Computational Linguistics</a> (COLING)
+</dt></li>
+
+<dt><li>Doctoral Consortium Member, <a href=http://www.hawaii.edu/UMAP2010/>
+Eighteenth International Conference on User Modeling, Adaptation, and Personalization</a> (UMAP)
+</dt></li>
+
+
+<H2>2011 Activities</H2>
+
+<dt><li>Senior Program Committee, <a href=http://www.aied2011.canterbury.ac.nz>Artificial Intelligence in Education</a>
+(AIED)
+</dt></li>
+
+<dt><li>Senior Program Committee, 
+<a href=http://www.acii2011.org>Affective Computing and Intelligent Interaction</a> (ACII)
+</dt></li>
+
+<dt><li>Program Committee, <a href=http://www.acl2011.org/>
+The 49th Annual Meeting of the Association for Computational Linguistics: Human Language Technologies</a>  (ACL-HLT)
+</dt></li
+
+<dt><li>Program Committee, 
+<a href=http://www.sigdial.org/workshops/conference12> 12th
+Annual SIGdial Meeting on Discourse and Dialogue</a> (SIGdial)
+</dt></li>
+
+</dt></li><dt><li>Program Committee, <a href=http://www.flairs-24.info/>
+Flairs24 - Special Track on Affective Computing</a> 
+</dt></li>
+
+<dt><li>Program Committee, <a href=http://www.cs.rochester.edu/u/tetreaul/acl-bea6.html>
+The 6th Workshop on Innovative Use of NLP for Building Educational Applications
+</a> (ACL-HLT Workshop)
+
+<dt><li>Scientific Review Committee, <a href=http://www.interspeech2011.org>
+INTERSPEECH</a> 
+</dt></li>
+
+<dt><li>Scientific Review Committee, 
+<a
+href=http://project.cgm.unive.it/events/SLaTE2011/index.html>
+Workshop on Speech and Language Technology in Education</a> (SLATE)
+
+</dt></li>
+
+
+
+<H2>2012 Activities</H2>
+
+<dt><li>Area Chair (Discourse, Dialogue and Pragmatics), <a href=http://www.naaclhlt2012.org/>
+North American Chapter of the Association for Computational Linguistics - Human Language Technologies</a> (NAACL HLT) 
+</dt></li>
+
+<dt><li>Senior Program Committee, <a href=http://its2012.teicrete.gr>
+11th International Conference on Intelligent Tutoring Systems</a> (ITS) 
+</dt></li>
+
+<dt><li>Program Committee, 
+<a href=http://www.sigdial.org/workshops/conference13> 13th
+Annual SIGdial Meeting on Discourse and Dialogue</a> (SIGdial)
+</dt></li>
+
+<dt><li>Program Committee, <a href=http://www.cs.rochester.edu/~tetreaul/naacl-bea7.html>
+The 7th Workshop on Innovative Use of NLP for Building Educational Applications
+</a> (NAACL-HLT Workshop)
+
+<dt><li>Scientific Committee, <a href=http://projects.ict.usc.edu/nld/SDCTD2012/>
+Future directions and needs in the Spoken Dialog Community: Tools and Data
+</a> (NAACL-HLT Workshop)
+
+
+</dt></li><dt><li>Program Committee, <a href=http://www.flairs-25.info/>
+Flairs25 - Special Track on Affective Computing</a> 
+</dt></li>
+
+<dt><li>Program Committee, 
+Student Research Workshop, <a href=http://www.naaclhlt2012.org/conference/students.php>
+North American Chapter of the Association for Computational Linguistics - Human Language Technologies</a> (NAACL HLT) 
+</dt></li>
+
+<dt><li>Program Committee, <a
+href=https://sites.google.com/site/islg2012/>Intelligent Support for
+Learning in Groups</a> (ITS Workshop)
+
+<dt><li>Program Committee, <a href=
+http://srlet.idoroll.org/its12/>
+Workshop on Self-Regulated Learning in Educational Technologies</a> (ITS Workshop)
+
+
+<dt><li>Review Committee, <a href=http://interspeech2012.org/>
+13th International Conference of the International Speech
+Communication Association
+</a>(INTERSPEECH) 
+
+<dt><li>Co-Organizer, <a href=http://interspeech2012.org/Special.html>
+Special Session on Speech and Language Technologies for
+STEM </a>(INTERSPEECH).
+
+<dt><li>Advisory Committee, 
+<a href=http://www.yrrsds.org/>Young Researchers' Roundtable on Spoken Dialog Systems</a> (YRRSDS) <a href=yrrsds.pdf>(poster)</a>
+
+-->
+
+<H2>Editorial Positions</H2>
+
+<dt><li> 
+<a href=http://ijaied.org/journal/board/>Associate Editor</a>,
+<a href=http://ijaied.org/journal>International Journal of
+Artificial Intelligence in Education</a>
+
+</dt>
+</li>
+
+<dt><li> 
+<a href=http://www.jair.org/vol/mast46.html>Editorial Board</a>,
+<a href=http://www.jair.org/>Journal of Artificial Intelligence Research</a>
+</dt></li>
+
+<!---
+<dt><li> 
+<a href=http://www.transacl.org/editorial-board/>Action Editor</a>,
+<a href=http://www.transacl.org/>Transactions of the Association for
+Computational Linguistics</a>
+</dt></li>
+
+-->
+
+
+<H2>2015 Activities</H2>
+<!---naacl and comma and its and acl 2016--->
+
+<dt><li>Organizing Committee, 
+<a href=http://naacl.org/naacl-hlt-2015/workshops.html>
+  The Second Workshop on Argumentation Mining</a>
+(NAACL Workshop) 
+</dt></li>
+
+<dt><li>Advisory Committee, <a href=http://www.yrrsds.org>  Young 
+Researchers' Roundtable on Spoken Dialog Systems</a>
+
+<!---
+
+<H2>2014 Activities</H2>
+
+<dt><li>Organizing Committee, 
+<a href=http://www.uncg.edu/cmp/ArgMining2014/>The First Workshop on Argumentation Mining</a>
+(ACL Workshop) 
+</dt></li>
+
+<dt><li>Organizing Committee, 
+<a href=http://junionsjlee.wix.com/interspeech>
+Tutorial Dialogues and Spoken Dialogue Systems 
+</a>
+(Interspeech Special Session)
+</dt></li>
+
+
+<dt><li>Senior Program Committee, 
+<a href=http://its2014.its-conferences.com/>
+12th International Conference on Intelligent Tutoring Systems</a>
+(ITS)
+</dt></li>
+
+
+<dt><li>Program Committee, 
+<a href=http://www.sigdial.org/workshops/conference15> 15th
+Annual SIGdial Meeting on Discourse and Dialogue</a> (SIGdial)
+</dt></li>
+
+<dt><li>Program Committee, 
+<a href=http://www.cs.rochester.edu/~tetreaul/acl-bea9.html>
+The 9th Workshop on Innovative Use of NLP for Building Educational
+Applications</a> 
+(ACL Workshop)
+</dt></li>
+
+<dt><li>Scientific Review Committee, <a href=http://www.interspeech2014.org>
+Interspeech</a> 
+</dt></li>
+
+<dt><li>Review Committee, <a
+href=http://www.slt2014.org>  IEEE 2014 Workshop on Spoken Language
+Technology</a> (SLT)
+
+<dt><li>Advisory Committee, <a href=http://www.yrrsds.org>  Young 
+Researchers' Roundtable on Spoken Dialog Systems</a>
+
+
+
+
+<H2>2013 Activities</H2>
+
+<dt><li>Senior Program Committee, <a
+href=https://sites.google.com/a/iis.memphis.edu/aied-2013-conference>16th
+International Conference on Artificial Intelligence in Education</a> (AIED) 
+</dt></li>
+
+<dt><li>Program Committee, <a href=http://acl2013.org>
+The 51st Annual Meeting of the Association for Computational Linguistics</a> (ACL)
+
+<dt><li>Program Committee, <a href=http://naacl2013.naacl.org>
+North American Chapter of the Association for Computational Linguistics - Human Language Technologies</a> 
+</a> (NAACL HLT) 
+
+<dt><li>Program Committee, 
+<a href=http://www.sigdial.org/workshops/conference14> 14th
+Annual SIGdial Meeting on Discourse and Dialogue</a> (SIGdial)
+</dt></li>
+
+<dt><li>Program Committee, <a href=http://edm2013.memphis.edu>
+The 6th International Conference on Educational Data Mining
+</a> (EDM)
+
+<dt><li>Program Committee, <a href=http://www.cs.rochester.edu/~tetreaul/naacl-bea8.html>
+The 8th Workshop on Innovative Use of NLP for Building Educational Applications
+</a> (NAACL HLT Workshop)
+
+<dt><li>Program Committee, <a href=http://www.ida.liu.se/~arnjo/KRPDS13>
+The 8th Workshop on Knowledge and Reasoning in Practical Dialogue Systems
+</a> (IJCAI Workshop)
+
+<dt><li>Program Committee, <a href=https://sites.google.com/site/islg2013/>
+2nd Workshop on Intelligent Support for Learning in Groups
+</a> (AIED Workshop)
+
+<dt><li>Program Committee, 
+Student Research Workshop, <a href=http://naacl2013.naacl.org>
+North American Chapter of the Association for Computational
+Linguistics - Human Language Technologies</a> (NAACL HLT Workshop) 
+</dt></li>
+
+<dt><li>Scientific Review Committee, <a href=http://www.interspeech2013.org>
+INTERSPEECH</a> 
+</dt></li>
+
+<dt><li>Scientific Review Committee,
+<a href=http://www.slate2013.org>Workshop on Speech and Language
+Technology in Education</a> (SLaTE)</dt></li> 
+
+<dt><li>Advisory Committee, 
+<a href=http://www.yrrsds.org/>Young Researchers' Roundtable on Spoken Dialog Systems</a> (YRRSDS) 
+
+--->
+
+<H2> Brief Biography</H2>
+<p>I am Professor of <a href=http://www.cs.pitt.edu/>Computer Science</a>, and a Senior
+Scientist with the <a href=http://www.lrdc.pitt.edu/>Learning Research
+and Development Center (LRDC)</a>, at the <a href=http://www.pitt.edu>University of Pittsburgh</a>.
+I moved here from the Garden State (aka New Jersey),
+where from 1985-2001 I was a member of the Artificial Intelligence
+Principles Research Department, 
+<a href="http://www.research.att.com">AT&T Labs - Research</a> (formerly 
+<a href="http://www.bell-labs.com">Bell Laboratories</a>); 
+From 1990-1992, I was also an Assistant Professor of
+<a href="http://www.cs.columbia.edu">Computer Science</a>  
+at 
+<a href="http://www.columbia.edu">Columbia University</a>.  
+I received my
+Ph.D. and M.S. in 
+<a href="http://www.cs.rochester.edu">Computer Science</a>  
+from the <a href="http://www.rochester.edu">University of Rochester</a>,
+and  my A.B. in Mathematics and <a
+href="http://www.cs.wm.edu/index.html">Computer Science</a>   from the
+<a href="http://www.wm.edu">College of William and Mary in
+Virginia</a>.  Here are <a href=geneology.txt>my informal </a> and
+<a href=http://genealogy.math.ndsu.nodak.edu/id.php?id=195409>more formal</a>
+versions of my academic geneology.
+<!---<p><a href=personal.html>Some Personal Stuff </a> --->
+<!---<ahref="THE_GET_ME_DOWNS-sexsie_volv.m3u">My Car</a>-->
+
+</H2>
+
+<H2> Selected Older Publications (by topic)</H2>
+<dl>
+<dt> <li><b>Spoken Dialogue and Affect for Intelligent Tutoring Systems:</b> 
+Spoken dialogue is a natural and highly desirable form of
+student-computer interaction, which provides both opportunities and
+challenges to both dialogue-based tutoring systems, and to spoken language systems.
+The goal of my research is  to wed spoken language
+technology with instructional technology, in order to promote learning
+gains by enhancing communication richness.  
+For further details,  see the <a href="itspoke.html">ITSPOKE webpage</a>,
+which contains information on the ITSPOKE system and corpora, as
+well as information on the 
+back-end (<a href=http://www.pitt.edu/~vanlehn/why2000.html>Why2</a>,
+a text-based tutoring system in the domain of qualitative physics).
+<!--Click for <a href="why2-pubs.html">online publications</a>.
+This project is supported by NSF grant
+<a
+href=https://www.fastlane.nsf.gov/servlet/showaward?award=9720359>
+9720359</a> to
+<A href="http://www.pitt.edu/~circle/">CIRCLE</A>,  
+and by collaborative
+NSF grants (<a  href=https://www.fastlane.nsf.gov/servlet/showaward?award=0328431>
+0328431</a>, <a
+href=https://www.fastlane.nsf.gov/servlet/showaward?award=0328295>
+0329295)</a>
+ to Pitt and Columbia</a>.-->
+
+
+<p><dt> <li><b>Exceptionality and Natural Language Learning:</b> 
+Previous work has shown that
+when machine learning is applied to many natural language processing
+tasks, exceptional training examples play an important role in
+improving generalization accuracy. We are exploring whether such
+results generalize to spoken dialogue, and how different
+formalizations of "exceptionality" impact the performance of memory-based
+and rule-based learning algorithms.
+Click for <a href="ml.html">further details and online publications</a>.
+
+<p><dt> <li><b>Question Answering:</b>
+The development of resources for extending the current automatic question-answering paradigm to hande opinion-oriented, rather than fact-oriented, questions.
+Also, the use of ensemble methods to combine the output of multiple QA
+systems to improve performance, in the reading comprehension domain. 
+Click for <a href="mpqa.html">further details and online publications</a>.
+
+<p><dt> <li><b>Spoken Dialogue for CHAT:</b> The design,
+implementation, and empirical experiences of CobotDS, a
+spoken dialogue system for accessing the LambdaMoo
+text-based chat environment.
+CobotDS allows phone users to talk with LambdaMoo users
+via <a href="http://cobot.research.att.com/">Cobot</a>, a
+software agent residing in LambdaMOO.
+Click for <a href="cobotds.html">further details</a>
+and <a href="cobotds-pubs.html">online publications</a>.
+
+<p><dt> <li><b>Reinforcement Learning for Optimizing Spoken Dialogue Agents:</b>
+The use of reinforcement learning to analyze and optimize 
+dialogue strategy design in spoken dialogue systems.
+An empirical evaluation of an automatically optimized dialogue manager.
+Click for <a href="rlds.html">further details</a>
+and <a href="rlds-pubs.html">online publications</a>.
+
+<p><dt> <li><b>Prosodic Analysis of Misrecognitions and Corrections in Spoken Dialogue:</b>
+Analytic and machine learning results indicating how
+prosodic differences can predict
+misrecognized vs. correctly recognized turns, and correction vs.
+other types of utterances.
+Click for <a href="prosody.html">further details</a>
+and <a href="prosody-pubs.html">online publications</a>.
+
+<p><dt> <li><b>Learning how to Predict Problematic Dialogue Situations, and an Application
+to Adaptive Spoken Dialogue:</b>
+The use of rule induction to predict problematic dialogue situations
+(e.g. poor speech recognition, "bail out" situations where 
+a caller should be transferred to a human operator).
+The design and evaluation of a spoken dialogue system that adapts its behavior when problematic situations
+are detected.
+Click for <a href="dslearning.html">further details</a>
+and <a href="dslearning-pubs.html">online publications</a>.
+
+<p><dt> <li><b>Evaluating Spoken Dialogue Agents:</b>
+The PARADISE (PARAdigm for DIalogue System Evaluation) framework for empirically
+deriving an objective performance function, and PARADISE evaluations of
+cooperative responses, the use of tutorial dialogues,
+and adaptable dialogue behavior.
+Click for <a href="evaluation.html">further details</a>
+and <a href="evaluation-pubs.html">online publications</a>.
+
+<p><dt><li> <b>Device Representation and Reasoning with Affective Relations, and an Implementation in R++:</b>
+An approach to monitoring and diagnosis of complex systems that
+integrates classical model-based diagnosis and heuristic expert systems.  
+Implemented using <a href="http://www.research.att.com/sw/tools/r++">R++</a>, an extension of C++ that incorporates rules into the object-oriented paradigm.  
+Click for <a href="r++.html">further details</a>, and
+<a href="r++-pubs.html">online publications</a>.
+<!--- <a href="http://www.techweb.com/se/directlink.cgi?IWK20001009S0048">an article from InformationWeek</a>.  -->
+
+<p><dt> <li><b>Terminological Reasoning with Plans and an Application to Plan Recognition:</b>
+A plan-based knowledge representation system that integrates
+<a href="http://www.ida.liu.se/labs/iislab/people/patla/DL/index.html">description logics</a>
+with metric and qualitative temporal constraint languages, and 
+a companion plan recognition system (T-REX) that uses the plan-based description logic.
+CLASP is an alternative plan-based knowledge representation system that extends description logics to handle temporal information by representing plans as regular expressions.
+Click for <a href="kr.html">further details</a>
+and <a href="kr-pubs.html">online publications</a>.
+
+<p><dt><li> <b>A Corpus-Based Approach to Classifying Discourse Segment Boundaries and Cue Phrases in Text and Speech:</b>
+Empirical discourse analysis, with an emphasis on coding of data,
+the use of machine learning for hypothesis formation, 
+and quantitative evaluation of results.  
+Click for <a href="discourse.html">further details</a>
+and <a href="discourse-pubs.html">online publications</a>.
+
+<p><dt><li> <b>Plan Recognition:</b>
+The use of plan recognition in both natural language dialogue
+systems and in intelligent graphical interfaces.
+Click for <a href="pr.html">further details</a>
+and <a href="pr-pubs.html">online publications</a>.
+</dl>
+
+
+<!----
+<H2>Patents</H2>
+
+<li>Integrating Rules into Object-Oriented Programming Systems (with J. Crawford, D. Dvorak, A. Mishra, P. Patel-Schneider), Patent 5768480, issued June 16, 1998.
+
+<H2>Editorial</H2>
+
+<p><dt><li>Book Review Editor, <a
+href="http://umuai.informatik.uni-essen.de/"> <i>User Modeling and
+User-Adapted Interaction </i></a>, 1993-2003  
+ 
+<dt><li>Editorial Board, <a href="http://mitpress.mit.edu/journal-home.tcl?issn=08912017"><i> Computational Linguistics</i></a>, 1991-1993
+
+<H2>Offices </H2>
+
+<p><dt><li>Chair (elected), <a href="http://www.aclweb.org/naacl">North American Chapter of the Association for Computational Linguistics (NAACL) </a>, 2000-2001, 2002-2003
+<dt><li>Past Chair, <a href="http://www.aclweb.org/naacl">North American Chapter of the Association for Computational Linguistics (NAACL) </a>, 2004-2005
+<dt><li>Executive Committee, <a href="http://www.aclweb.org">Association for Computational Linguistics (ACL)</a>, 2000-2003
+<dt><li>International Advisory Committee for the ACL's Special Interest Group on Natural Language
+Learning (<a href="http://ifarm.nl/signll">SIGNLL</a>), 2003-present
+<dt><li>Advisory Board, <a href="http://www.um.org">UM Inc.</a>, 2002-present
+
+--->
+<H2>Offices </H2>
+
+<dt><li>Past Chair, <a href="http://www.aclweb.org/naacl">North American Chapter of the Association for Computational Linguistics (NAACL) </a>, 2004-2005
+<dt><li>International Advisory Committee for the ACL's Special Interest Group on Natural Language
+Learning (<a href="http://ifarm.nl/signll">SIGNLL</a>), 2003-present
+<dt><li>Advisory Board, <a href="http://www.um.org">UM Inc.</a>, 2002-present
+
+
+<H2>Memberships </H2>
+
+<p><dt><li><a href="http://www.aaai.org">American Association for Artificial Intelligence</a> (AAAI)
+
+<dt><li><a href="http://www.aclweb.org">Association for Computational Linguistics</a> (ACL)
+(also <a href="http://www.sigdial.org">SIGDIAL</a>, 
+<a href="http://www.siggen.org">SIGGEN</a>,
+<a href="http://ifarm.nl/signll">SIGNLL</a>)
+<dt><li><a href="http://iaied.org">International Artificial
+Intelligence in Education Society</a> (AIED)
+<dt><li><a href="http://www.isca-speech.org">International Speech Communication Association</a> (ISCA)
+<dt><li><a href="http://www.pitt.edu/~provost/pacwc.html">Provost's Advisory Committee on Women's Concerns</a> at the University of Pittsburgh (2002-2005)
+<dt><li><a href="http://www.daffodilusa.org">American Daffodil Society</a>
+
+
+<!--
+<H2>Complete List of Publications </H2>
+add? umuai survey; sigdial workshop paper; isca workshop paper;
+<p><dt><li> <a href="vita2.ps">Curriculum Vitae  </a> (as of Jan. 5, 2001)-->
+
+<HR>
+
+<ADDRESS>
+<!---December 2008--->
+<BR>
+litman at cs dot pitt dot edu
+</ADDRESS>
+<!-- Start of StatCounter Code -->
+<script type="text/javascript">
+var sc_project=3294573; 
+var sc_invisible=0; 
+var sc_partition=21; 
+var sc_security="84144b5d"; 
+</script>
+
+<script type="text/javascript"
+src="http://www.statcounter.com/counter/counter_xhtml.js"></script><noscript><div
+class="statcounter"><a class="statcounter"
+href="http://www.statcounter.com/"><img class="statcounter"
+src="http://c22.statcounter.com/3294573/0/84144b5d/0/" alt="web
+metrics" /></a></div></noscript>
+<!-- End of StatCounter Code -->
+</BODY>
+
+</HTML>
+
+
+
+
+
+
+<!--
+data
+http://AmericanNationalCorpus.org
+-->

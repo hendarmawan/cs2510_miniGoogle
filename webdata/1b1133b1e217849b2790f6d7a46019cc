@@ -1,0 +1,234 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+
+<!--Converted with LaTeX2HTML 2K.1beta (1.61)
+original version by:  Nikos Drakos, CBLU, University of Leeds
+* revised and updated by:  Marcus Hennecke, Ross Moore, Herb Swan
+* with significant contributions from:
+  Jens Lippmann, Marek Rouchal, Martin Wilck and others -->
+<HTML>
+<HEAD>
+<TITLE>S06-proj4</TITLE>
+<META NAME="description" CONTENT="F02-proj4">
+<META NAME="keywords" CONTENT="F02-proj4">
+<META NAME="resource-type" CONTENT="document">
+<META NAME="distribution" CONTENT="global">
+
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<META NAME="Generator" CONTENT="Microsoft FrontPage 5.0">
+<META HTTP-EQUIV="Content-Style-Type" CONTENT="text/css">
+
+<LINK REL="next" HREF="http://www.cs.pitt.edu/~mosse/cs1550/node1.html">
+</HEAD>
+
+<BODY >
+<hr>
+<center>
+  <table border="0" cellpadding="0" cellspacing="0" width="749">
+    <!-- fwtable fwsrc="CMPS111NavBar.png" fwbase="CMPS111NavBar.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+    <tr> 
+      <td>
+      <img src="http://www.cs.pitt.edu/~mosse/cs1550/images/spacer.gif" width="150" height="1" border="0" name="undefined_3"></td>
+      <td>
+      <img src="http://www.cs.pitt.edu/~mosse/cs1550/images/spacer.gif" width="150" height="1" border="0" name="undefined_3"></td>
+      <td>
+      <img src="http://www.cs.pitt.edu/~mosse/cs1550/images/spacer.gif" width="149" height="1" border="0" name="undefined_3"></td>
+      <td>
+      <img src="http://www.cs.pitt.edu/~mosse/cs1550/images/spacer.gif" width="150" height="1" border="0" name="undefined_3"></td>
+      <td>
+      <img src="http://www.cs.pitt.edu/~mosse/cs1550/images/spacer.gif" width="150" height="1" border="0" name="undefined_3"></td>
+      <td>
+      <img src="http://www.cs.pitt.edu/~mosse/cs1550/images/spacer.gif" width="1" height="1" border="0" name="undefined_3"></td>
+    </tr>
+    <tr> 
+      <td><a href="index.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Home Page');MM_nbGroup('over','CMPS111NavBar_r1_c1_2','images/CMPS111NavBar_r1_c1_f2.gif','images/CMPS111NavBar_r1_c1_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c1_2','images/CMPS111NavBar_r1_c1_f3.gif',1);" >
+      <img name="CMPS111NavBar_r1_c1_2" src="http://www.cs.pitt.edu/~mosse/cs1550/images/CMPS111NavBar_r1_c1.gif" width="150" height="37" border="0"></a></td>
+      <td><a href="homework.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Homework');MM_nbGroup('over','CMPS111NavBar_r1_c2_2','images/CMPS111NavBar_r1_c2_f2.gif','images/CMPS111NavBar_r1_c2_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c2_2','images/CMPS111NavBar_r1_c2_f3.gif',1);" >
+      <img name="CMPS111NavBar_r1_c2_2" src="http://www.cs.pitt.edu/~mosse/cs1550/images/CMPS111NavBar_r1_c2.gif" width="150" height="37" border="0"></a></td>
+      <td><a href="assignments.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Assignments');MM_nbGroup('over','CMPS111NavBar_r1_c3_2','images/CMPS111NavBar_r1_c3_f2.gif','images/CMPS111NavBar_r1_c3_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c3_2','images/CMPS111NavBar_r1_c3_f3.gif',1);" >
+      <img name="CMPS111NavBar_r1_c3_2" src="http://www.cs.pitt.edu/~mosse/cs1550/images/CMPS111NavBar_r1_c3.gif" width="149" height="37" border="0"></a></td>
+      <td><a href="exams.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Exams');MM_nbGroup('over','CMPS111NavBar_r1_c4_2','images/CMPS111NavBar_r1_c4_f2.gif','images/CMPS111NavBar_r1_c4_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c4_2','images/CMPS111NavBar_r1_c4_f3.gif',1);" >
+      <img name="CMPS111NavBar_r1_c4_2" src="http://www.cs.pitt.edu/~mosse/cs1550/images/CMPS111NavBar_r1_c4.gif" width="150" height="37" border="0"></a></td>
+      <td><a href="slides.html" onMouseOut="MM_nbGroup('out');"  onMouseOver="MM_displayStatusMsg('Slides');MM_nbGroup('over','CMPS111NavBar_r1_c5','images/CMPS111NavBar_r1_c5_f2.gif','images/CMPS111NavBar_r1_c5_f3.gif',1);return document.MM_returnValue"  onClick="MM_nbGroup('down','navbar1','CMPS111NavBar_r1_c5','images/CMPS111NavBar_r1_c5_f3.gif',1);" >
+      <img name="CMPS111NavBar_r1_c5" src="http://www.cs.pitt.edu/~mosse/cs1550/images/CMPS111NavBar_r1_c5.gif" width="150" height="37" border="0"></a></td>
+      <td>
+      <img src="http://www.cs.pitt.edu/~mosse/cs1550/images/spacer.gif" width="1" height="37" border="0" name="undefined_3"></td>
+    </tr>
+  </table>
+</center>
+<hr>
+<p>
+
+<center>
+  <H1>CS 1550: Introduction to Operating Systems</H1>
+
+  <h2>Programming Assignment #4: NachOS Multiprogramming</h2>
+
+  <p>Due Date:<br><i>For this project you may work alone, in a pair,
+  or in a group of three. 
+  </center>
+	<ul>
+
+		<li> The project is due by <b>midnight March 17th,
+		2006</b>. If you work alone you will receive 20%
+		extra credit.  Groups of 2 are eligible for 10% extra
+		credit.<br> <br></li>
+
+		<li> If you work with a group of three, your due date is 
+		<b>March 17th at midnight</b>, and there will be no extra
+		credit. If you intend to work with someone, one of you must
+		email the T/A with both / all three of of your names by 
+		<b>March 3rd</b> to let us know. There will be <b>no</b>
+		further extensions given.<br><br></li>
+
+		<li> you can get a fresh copy of nachos with an
+		editable userprog directory by running
+		'~/jalst114/public/1550/1550-Syscalls.pl'
+
+	</ul>
+</i></p>
+
+<hr>
+<p><i>This project can be done without a working implementation of VM. 
+Use Halt as an example of how to implement the other system 
+calls.</i></p> 
+<hr> &nbsp;<p>This project will enhance NACHOS scheduling support from
+single-tasking to other types of scheduling, multiprogramming, and 
+system calls.  We give you some of the code
+you need; your job is to complete the system and enhance it.  
+There are several parts to this project; read on. </p>
+<p>
+The first step is to read and understand the part of the system
+we give to you.  The current NACHOS code can run a single user-level `C'
+program at a time (non-preemptive).  As a test case, we've provided you with 
+a trivial user program, `halt'; all halt does is to turn around
+and ask the operating system to shut the 
+"machine" down.  Run the program `nachos -x ../test/halt'.
+As before, trace what happens as the user program
+gets loaded, runs, and invokes a system call.
+<p>
+The directory <TT>.../code/userprog</TT>
+contains the nachos executable mentioned above.
+The files for this assignment are:
+<p>
+<ul>
+<LI>progtest.cc -- test routines for running user programs.
+
+
+<LI>addrspace.h, addrspace.cc - create an address space in which
+to run a user program, and load the program from disk.
+
+
+<LI>syscall.h - the system call interface: kernel procedures that 
+user programs can invoke.
+
+
+<LI>exception.cc - the handler for system calls and other user-level
+exceptions, such as page faults (page faults are not used in this
+project).  In the code we supply, only the `halt' system call is supported.
+
+
+<LI>bitmap.h, bitmap.cc - routines for manipulating bitmaps
+(this might be useful for keeping track of physical page frames)
+
+
+<LI>filesys.h, openfile.h (found in the filesys directory) - a stub 
+defining the Nachos file system routines.
+For this assignment, we have implemented the Nachos file system
+by directly making the corresponding calls to the UNIX file system;
+this is so that you need to debug only one thing at a time.
+
+
+<LI>translate.h, translate.cc - translation table routines.  In the code
+we supply, we assume that every virtual address is the same as its 
+physical address - this restricts us to running one user program at 
+a time.  You will generalize this to allow multiple user programs to
+be run concurrently.  We are not asking you to implement virtual 
+memory support for this assignment; for now, every page must be in 
+physical memory.  
+
+
+<LI>machine.h, machine.cc - emulates the part of the machine that
+executes user programs: main memory, processor registers, etc.
+
+
+<LI>mipssim.cc - emulates the integer instruction set of a 
+MIPS R2/3000 processor.
+
+
+<LI>console.h, console.cc - emulates a terminal device using UNIX files.
+A terminal is (i) byte oriented, (ii) incoming bytes can be read and 
+written at the same time, and (iii) bytes arrive asynchronously (as a 
+result of user keystrokes), without being explicitly requested.  
+
+
+<LI>code/test/start.s - system call interface between user program
+and kernel.
+</ul>
+</DL>
+
+So far, all the code you have written for Nachos has been part of the
+operating system kernel (recall your threadtest was compiled within
+nachos and nachos ran by itself, no user threads, that is no "-x" switch).  
+In a real operating system, the kernel not only 
+uses its procedures internally, but allows user-level programs to access 
+some of its routines via ``system calls''.
+<p>
+In this assignment we are giving you a simulated CPU that models a real CPU.
+In fact, the simulated
+CPU is almost the same as the real CPU (a MIPS chip), but we cannot just run
+user programs as regular UNIX processes, because we want to have complete
+control over how many instructions are executed at a time, how the
+address spaces work, and how interrupts and exceptions (including
+system calls) are handled.
+<p>
+Our simulator can only run C programs - see 
+the Makefile in the `test' subdirectory for an example.  The compiled
+programs must be linked with some special flags, then converted into 
+Nachos format, using the program ``coff2noff'' (which we supply).
+One caveat is that floating point operations are NOT supported.   
+
+<P>Part 1.
+<B>Implement simple system calls.</B>
+
+You must support simple system calls: exit, open, read and write. We
+have provided you with an assembly-language routine, "syscall", for
+invoking a system call from a C routine (UNIX has something similar -
+try 'man syscall').  Look at the <TT>halt</TT> system call for an
+example.  In addition to clean up (hint: make sure the calling process
+stops running), exit is essentially a multiprogrammed version of halt
+i.e., it halts, but only after EVERY running program has exited.
+
+<P>Part 2.
+<B>Implement multiprogramming.</B> The code we have given you is
+restricted to running one user program at a time.  You will need to
+come up with a way of allocating physical memory frames so that 
+multiple programs can be loaded into memory at once (cf. bitmap.h).
+You can assume that all processes that you want to run will fit into memory.
+If they do not, increase the physical memory of your NACHOS machine.
+<p>
+You will implement the scheduler such that all tasks are inserted in
+the ready queue at the beginning of the nachos execution
+<p>
+You will also need to 
+<B>implement time-slicing and round-robin scheduling.</B>
+You will need to use timer interrupts 
+to force threads to yield after a certain number of ticks (a <EM>
+quantum</EM>).  That is, 
+after each quantum, the scheduler will be invoked to make
+a decision on who to dispatch next.
+Note that scheduler.cc now saves and restores user machine state
+on context switches.
+<P>Part 3.
+<B>Instrument the operating system</B> to keep track of average response time
+for executing user programs.  Use <TT>TotalTicks</TT>) to keep track of the
+performance of the scheduler.
+Write a test case (a set of user programs to run) that performs well 
+using your policy for scheduling the CPU among user programs, and a 
+test case that performs poorly (has very long average response time).
+Run the test cases and explain the measured performance. 
+What would you need to do in order to fix this? Write your answer in
+<TT>README</TT> file.
+</DD>
+</DL>
+</BODY>
+</HTML>

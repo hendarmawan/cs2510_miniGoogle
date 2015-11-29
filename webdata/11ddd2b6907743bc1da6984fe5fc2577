@@ -1,0 +1,62 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+	<title>Multimedia Software Engineering - Page 4</title>
+	<style>
+		body {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		dl {
+			margin: 0;
+			padding: 0;
+		}
+		dd {
+			margin: 0;
+			padding: 0;
+		}
+		li {
+			margin: 0;
+			padding-bottom: 5px;
+		}
+	</style>
+</head>
+
+<body>
+	<a href="page3.html"><img src = "previous.gif" align = "left"></a>
+	<a href="page5.html"><img src = "next.gif" align = "right"></a>
+	<center>
+		<h1>Creating the Relational Index cont.</h1>
+		<hr>
+	</center>
+	<p>
+		The original code to create the Relational Index was provided by
+		Chris Santamaria.  I modified the process to make it more transparent
+		to the user.  When the exit file menu is selected the transcript is
+		automatically added to the SessionDB and the RelationalIndex is updated
+		or created.  This process is detailed in the pseudocode below.
+	</p>
+	<h4>Pseudocode</h4>
+<pre>
+<tt>
+On Exit (
+	Save current transcript to SessionDB
+
+	if(keywords.txt exists) {
+		// User has specificed keywords to build a relational index on
+
+		if(RelationalIndex exists) {
+			Read in old Relational Index	
+		}
+		else {
+			Create new Relational Index
+		}
+		Add current transcript to Relational Index
+	}
+)
+</tt>
+</pre>
+</body>
+</html>

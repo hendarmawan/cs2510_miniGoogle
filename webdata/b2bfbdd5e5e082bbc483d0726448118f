@@ -1,0 +1,154 @@
+<html>
+
+<head>
+<meta name="GENERATOR" content="Microsoft FrontPage 5.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+<title>Constraint</title>
+<meta name="Microsoft Theme" content="inmotion 011">
+</head>
+
+<body background="inmtextb.gif" bgcolor="#FFFFFF" text="#663300" link="#990066" vlink="#CC6633" alink="#FFCC00">
+
+<!--mstheme--><font face="Arial, Helvetica">
+
+<p>&nbsp;</p>
+
+<p><a href="15.htm"><img border="0" src="previous.gif" width="26" height="26"></a></p>
+
+<p><u><b><font size="7" face="Times New Roman"><a href="9.htm">Constraint-based Approaches</a></font></b></u></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<font FACE="Agency FB" SIZE="5">
+    The author declares a set of relations between either instants (=, &gt;, &lt;) or 
+    intervals.</font><!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+
+<p><font face="Agency FB" size="5">&nbsp;&nbsp;&nbsp; Elastic Time Model:</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<font FACE="Agency FB" SIZE="5">
+    each multimedia object can also be associated with a minimum, a maximum and 
+    an optimal duration, either chosen by the author or automatically fixed by 
+    the authoring system depending on the nature of the object (text, image. 
+    video, etc.).</font><!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<font FACE="Agency FB" SIZE="5">
+    first introduced in TemporalGlue and Firefly.</font><!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<font FACE="Agency FB" SIZE="5">
+    For instance, the Company part of our example can be described by the 
+    Allen's relations given in Figure 8. The DelayGlob object is a fictive 
+object (without content) which fixes the global duration of the Company part.
+</font>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+<font FACE="TimesNewRoman" SIZE="2">
+<p ALIGN="JUSTIFY">&nbsp;</p>
+</font>
+<p ALIGN="JUSTIFY"><font size="5"><img border="0" src="16.htm1.gif" width="682" height="229"></font></p>
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="5">The aim of the temporal 
+formatter(Figure 3):</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="5">check the temporal 
+consistency of this set.</font></p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font face="Agency FB" size="5">compute one solution.</font></p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<font FACE="Agency FB" SIZE="5">
+<p ALIGN="JUSTIFY">Algorithms used for these two phases are issued from either 
+the temporal constraint satisfaction area or linear programming. </p>
+</font><!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Expressive Power:</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Intuitive way of expression.</font></p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Can easily capture the temporal information of multimedia 
+documents.</font></p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Autoring Capabilities:</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Modifications of the scenario are made easier since the 
+author has not to reconsider the whole structure but only to add or delete a 
+relation.</font></p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">Challenges:</font></p>
+<!--mstheme--></font><!--msthemelist--><table border="0" cellpadding="0" cellspacing="0" width="100%">
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">systems with good time performances.</font></p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--><tr>
+    <!--msthemelist--><td valign="baseline" width="42">
+    <img src="inmbul1a.gif" width="15" height="15" hspace="13" alt="bullet"></td>
+    <td valign="top" width="100%"><!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><font size="5" face="Agency FB">handling local interactions and unpredictable objects.</font></p>
+    <!--mstheme--></font><!--msthemelist--></td>
+  </tr>
+  <!--msthemelist--></table>
+<!--mstheme--><font face="Arial, Helvetica">
+<p ALIGN="JUSTIFY"><a href="18.htm">
+<font size="5" face="Agency FB">
+<img border="0" src="next.gif" width="26" height="26"></font></a></p>
+<!--mstheme--></font>
+
+</body>
+
+</html>

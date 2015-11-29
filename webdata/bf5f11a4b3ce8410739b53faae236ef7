@@ -1,0 +1,120 @@
+<html>
+<head>
+   <title> The difference of VRML1 and VRML2 </title>
+</head>
+<body>
+&nbsp;
+<table BORDER=0 CELLSPACING=0 CELLPADDING=0 WIDTH="100%" HEIGHT="14" >
+<tr>
+<td WIDTH="5%" HEIGHT="10"><a href="vrml-6.html">
+<img SRC="previous.gif" ALT="previous.gif (632 bytes)" height=26 width=26 align=LEFT></a></td>
+
+<td WIDTH="87%" HEIGHT="10"></td>
+
+<td WIDTH="8%" HEIGHT="10"><a href="vrml-8.html">
+<img SRC="next.gif" ALT="next.gif (623 bytes)" height=26 width=26 align=RIGHT></a></td>
+</tr>
+</table>
+
+<center>
+<h1>The difference of VRML1 and VRML2</h1>
+</center>
+<BR>
+<table border=1>
+<tr>
+<td>
+
+<font size=+1>
+<PRE>
+#VRML V1.0 ascii
+#this document was created with CINEMA4D
+
+Coordinate3
+{
+  point [ -100 -100 100, 100 -100 100, 100 -100 -100,
+          -100 -100 -100, -100 100 100, 100 100 100, 
+           100 100 -100, -100 100 -100, ]
+}
+ShapeHints
+{
+  vertexOrdering CLOCKWISE
+  shapeType UNKNOWN_SHAPE_TYPE
+}
+DEF Cube IndexedFaceSet
+{
+  coordIndex [ 0,1,2,3,-1,4,7,6,5,-1,0,4,5,1,
+              -1,2,6,7,3,-1,1,5,6,2,-1,0,3,7,4,-1,]
+}
+MatrixTransform
+{
+  matrix 0.707 0 -0.707 0
+    -0.299 0.906 -0.299 0
+    0.641 0.423 0.641 0
+    600 400 600 1
+}
+DEF EditorView PerspectiveCamera
+{
+  position 0 0 0
+  heightAngle 0.927
+}
+</PRE>
+
+</td>
+
+<td>
+<pre>
+#VRML V2.0 utf8
+
+#this document was created with CINEMA4D
+
+DEF Cube Transform {
+  children [ 
+    Shape {
+      appearance Appearance {
+        material Material {
+        }
+      }
+      geometry DEF FACESET_Cube IndexedFaceSet {
+        ccw FALSE
+        solid FALSE
+        coord Coordinate {
+          point [ -1 -1 -1,-1 -1 1,1 -1 1,1 -1 -1,-1 1 -1,
+            -1 1 1,1 1 1,1 1 -1
+          ]
+        }
+        coordIndex [ 0,1,2,3,-1,4,7,6,5,-1,0,4,5,1,-1,2,6,7,3,-1,
+          1,5,6,2,-1,0,3,7,4,-1
+        ]
+      }
+    }
+  ]
+}
+Transform {
+  translation -6 4 6.000001
+  rotation 0.19183 -0.865288 0.463118 -0.892926
+  children [ 
+    Viewpoint {
+      position 0 0 0
+      orientation 0 -1 0 1.570796
+      fieldOfView 0.927295
+      jump TRUE
+      description "EditorView"
+    }
+  ]
+}
+DEF Timer TimeSensor {
+  startTime 0
+  stopTime 0
+  cycleInterval 5
+  loop TRUE
+}
+</pre>
+</td>
+</tr>
+</font>
+</table>
+
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Style-Type" content="text/css">
+<title> Bugs Bee Wee Journal</title>
+<style type="text/css">
+    form { background-color: #FFFFFF;
+         border-color: #0000CC;
+         border-style:double;
+         border-width: 4px;
+          }
+</style>
+</head>
+<body>
+<h1>The Good Bug List </h1>
+The editors of <span style="font-family:sans-serif;
+color: #0000FF">
+Bugs Bee Wee </span> journal are looking for those
+insects our readers feel are most helpful in their
+gardens.  Please cast your vote for the insect you
+feel is your very best helper. <br />
+
+<form
+   action="http://www.bugsbeewee.com/cgi-bin/vote.cgi"
+   method="post">
+Which of these insects do you feel is most beneficial
+in YOUR garden?
+<br />
+<select
+   name="goodbug"
+   size="4">
+<option selected>Vote early and often</option>
+<option>Lady Bug</option>
+<option>Assassin Bug</option>
+<option>Lace Wing</option>
+<option>Praying Mantis</option>
+<option>Orchard Bee</option>
+<option>Dung Beetle</option>
+</select>
+ <input
+   type="submit"
+   value="Send"
+   alt="Select-a-bug"><br />
+</form>
+
+</body>
+</html>

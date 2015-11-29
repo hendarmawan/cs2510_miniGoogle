@@ -1,0 +1,53 @@
+<HTML>
+
+<HEAD> <TITLE>Reinforcement Learning for Spoken Dialogue System Optimization: Selected Publications by Diane J. Litman </TITLE> </HEAD>
+
+<BODY><H1>Reinforcement Learning for Spoken Dialogue System Optimization Publications</h1>
+
+<p><li>
+Satinder Singh, 
+Diane Litman,
+Michael Kearns, and
+Marilyn Walker.
+<a href="singh02a.pdf">Optimizing Dialogue Managment with Reinforcement Learning: Experiments with the NJFun System.</a>
+<i>Journal of Artificial Intelligence Research</i>, 
+Vol. 16, pp. 105-133, 2002.
+
+<p><li>
+Diane J. Litman,
+Michael S. Kearns,
+Satinder Singh, and
+Marilyn A. Walker.
+<a href="coling00.ps">Automatic Optimization of Dialogue Management.</a>
+In <i>Proceedings of the 18th International Conference on Computational Linguistics (COLING-2000)</i>, 
+pp.,
+Saarbrucken, Germany, July-August 2000.
+
+<p><li>
+Satinder Singh,
+Michael S. Kearns,
+Diane J. Litman, and
+Marilyn A. Walker.
+<a href="SSingh00.ps">Empirical Evaluation of a Reinforcement Learning Spoken Dialogue System.</a>
+In <i>Proceedings of the Seventeenth National Conference on Artificial Intelligence (AAAI-2000)</i>, 
+pp. 645-651, Austin, TX, August 2000. 
+
+<p><li>
+Satinder Singh,
+Michael S. Kearns,
+Diane J. Litman, and
+Marilyn A. Walker.
+<a href="nips99.ps">Reinforcement Learning for Spoken Dialogue Systems.</a>
+In <i>Proceedings of NIPS*99</i>.
+
+<HR>
+
+<ADDRESS>
+May 2002<BR>
+Back to <A HREF="index.html">home page.</a>
+</ADDRESS>
+
+</BODY>
+
+</HTML>
+

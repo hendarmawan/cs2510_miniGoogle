@@ -1,0 +1,36 @@
+<!doctype html public "-//w3c//dtd html 4.0 transitional//en">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <meta name="Author" content="CSSD">
+   <meta name="GENERATOR" content="Mozilla/4.74 [en] (Windows NT 5.0; U) [Netscape]">
+   <title>Multimedia Software Engineering</title>
+</head>
+<body>
+<a href="p13.html"><img SRC="previous.gif"  align=LEFT></a><a href="p15.html"><img SRC="next.gif"  align=RIGHT></a>
+<p><br>
+<p><br>
+<center>
+<p><b><font size=+3>5.2 Component Integration</font></b></center>
+
+<ol><b><font size=+1>Enterprise Application Integration</font></b>
+<ol>&nbsp;
+<br>EAI (enterprise application integration) is a business computing term
+for the plans, methods, and tools aimed at modernizing, consolidating,
+and coordinating the computer applications in an enterprise. Typically,
+an enterprise has existing legacy applications and databases and wants
+to continue to use them while adding or migrating to a new set of applications
+that exploit the Internet, e-commerce, extranet, and other new technologies.
+EAI may involve developing a new total view of an enterprise's business
+and its applications, seeing how existing applications fit into the new
+view, and then devising ways to efficiently reuse what already exists while
+adding new applications.</ol>
+<b><font size=+1>Component-based software engineering amis at supporting
+the business processes with flexible component architecures that are readily
+adaptable to changing requirements.</font></b>
+<p><font size=+1>Technology involved:</font>
+<br><font size=+1>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CORBA, COM+,
+XML</font></ol>
+
+</body>
+</html>

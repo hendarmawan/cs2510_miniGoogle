@@ -1,0 +1,25 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"><html ><HEAD><TITLE>Multimedia Software Engineering</TITLE>
+<META content="text/html; charset=unicode" http-equiv=Content-Type>
+<META content="MSHTML 5.00.3315.2870" name=GENERATOR></HEAD>
+<BODY> 
+
+ <A href="231p-5.html">  <IMG align=left src="previous.gif" >  </A> 
+ <A href="231p-7.html">  <IMG align=right src="next.gif" >  </A>
+<CENTER> 
+ <h1 ><FONT size=6><STRONG>  What can be adapted 
+in&nbsp;AH</STRONG></FONT> 
+   
+ </h1></CENTER>
+<P align=left>What can be adapted in this system? Which features of the system can differ for 
+different users?</P>
+<UL>
+  <LI>
+  <DIV align=left><EM>adaptive presentation </EM>(<EM>content-level 
+  adaptation)</EM> -- the content of regular pages</DIV></LI>
+  <LI>
+  <DIV align=left><EM>adaptive navigation support </EM>(<EM>link-level 
+  adaptation)</EM> -- the links from regular pages, index pages, and 
+  maps</DIV></LI></UL>
+<IMG align=center src="fig5.jpg" >
+</BODY> 
+ </html>

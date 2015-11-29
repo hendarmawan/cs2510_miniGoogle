@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta content="text/html; charset=iso-8859-1"
+ http-equiv="Content-Type">
+  <title>cs1571</title>
+  <link type="text/css" href="styles-site.css" rel="stylesheet">
+</head>
+<body>
+<div id="banner">
+<h1><a accesskey="1" href="http://www.cs.pitt.edu/%7Ehwa/cs1571/">cs1571@pitt</a></h1>
+<span class="description">Introduction to Artificial Intelligence</span>
+</div>
+<div id="content">
+<div class="blog">
+<div class="blogbody">
+<h3 class="title">Academic Honesty</h3>
+<!--	  <p>Do not plagiarize.&nbsp; See <a
+	  href="http://www.pitt.edu/%7Eciddeweb/FACULTY-DEVELOPMENT/TA_HANDBOOK/end-draft.htm">http://www.pitt.edu/~ciddeweb/FACULTY-DEVELOPMENT/TA_HANDBOOK/end-draft.htm</a> for definition and examples.  <b>Plagiarizers will receive disciplinary actions according to university policies</b>.</p> -->
+
+<p>All submitted work <b>must be your own</b>. In terms of programming
+assignments, this means that you must not have any code relevant to
+the assignment <i>communicated to you in any form</i>, and that you
+are responsible in <i>protecting your work from exploitation by
+someone else</i>. In the event of suspected plagiarism, both parties
+will be investigated. <b>Plagiarizers will receive disciplinary
+actions according to university policies</b>. </p>
+
+<p>You may discuss the assignments with each other <i>in general terms</i>;
+you may also refer to printed literature and web resources for
+background research. <b>However</b> you must list the names of people
+with whom you have had discussions and provide proper citations to any
+resources to which you referred.  Failure to do so is considered
+plagiarism.
+
+<h3 class="title">Absences</h3>
+
+<p>If an absence is unavoidable, you are responsible for making
+arrangements <b>to ensure that your assignments are turned in on time</b>.
+You are also responsible for obtaining the materials passed out and the
+information announced during the missed class. In case of extraordinary
+circumstances (hospitalization, family emergency) you should contact me
+as soon as possible so that we may arrange an extension for an
+assignment or schedule a make-up exam <i>prior to the due date</i>.
+<b>Late assignments will not be accepted.</b> 
+
+<h3 class="title">Final Exam</h3>
+
+<p> Our final exam is scheduled for Dec. 18 (Friday) between
+4pm-5:50pm. The exam will only be administered at its scheduled
+time. You may not take the exam earlier. If you have a valid reason
+for not being able to take the exam at the scheduled time (e.g.,
+hospitalization, family emergency), you must make arrangements with me
+as soon as possible. Typically, the make-up exam will be given during
+Finals Week of the <i>following semester</i>; in the interim, you will
+be given an "incomplete" grade.
+
+<h3 class="title">Course Grade</h3>
+<p>The course grade will be computed as follows: <br>
+<pre>
+    <i>Prelim</i> * <i>Overall</i>,
+</pre>
+where <a
+href="http://www.cs.pitt.edu/~hwa/cs1571/prelim.pdf">Prelim</a> is a
+preliminary assignment graded on a 1/0 basis.
+
+<p><i>Overall</i> is the sum of the following factors:
+<ul>
+  <li> Class participation (10%) </li>
+  <li> Assignments 1-5 (40%) </li>
+  <li> Midterm exam (20%) </li>
+  <li> Final exam (30%) </li>
+</ul>
+
+<h3 class="title">Homework Assignments</h3>
+<p>There will be ~5 assignments; some will be problem sets, and some
+will be programming projects.</p>
+
+<p>The language to use for the programming portion of the assignments
+is <a href="http://www.python.org">Python</a> (v2.7 or later). 
+
+<h3 class="title">Required Textbook</h3>
+<p>By <i>required</i>, I mean that you are responsible for the
+assigned materials in the specified textbook(s). You have the
+perogative to choose any <b>legal</b> means of obtaining the required
+information in the textbook (NB: I have reserved a copy of the
+textbook(s) in Hillman Library). However, <b>the responsibility of
+obtaining the material in a timely manner is yours alone</b>. For
+example, if the book you purchased should arrive three weeks late, you
+are responsible to find alternative means of accessing the textbook.
+Similarly, if you inherited an earlier edition of the book, it is your
+responsibility to discover the differences between your version and the
+official version. </p>
+
+<h3 class="title">Office Hours</h3>
+<p>Aside from the regular office hours, you may request for additional
+appointments; however, these appointments must be made at least a day
+in advance.</p> 
+
+<h3 class="title">Class Conduct</h3>
+<p>Professional behavior is expected from everyone. Please mute your
+cell phone during class.&nbsp; Phone rings are disruptive to
+lectures because they interrupt everyone's train of thought.</p>
+
+<h3 class="title">Students With Disabilities</h3>
+<p>If you have a disability for which you are or may be requesting an
+accommodation, you are encouraged to contact both your instructor and
+Disability Resources and Services, 216 William Pitt Union, (412)
+648-7890/(412) 383-7355 (TTY), as early as possible in the term. DRS
+will verify your disability and determine reasonable accomodations for
+this course. </p>
+
+</div>
+</div>
+</div>
+<div id="links">
+<div class="side"><a href="index.html">Home</a><br>
+<a href="policy.htm">Course Policies</a><br>
+<a href="syl.htm">Syllabus</a><br>
+</div>
+</div>
+<br clear="all">
+<br>
+</body>
+</html>

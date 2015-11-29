@@ -1,0 +1,62 @@
+<html>
+
+<head>
+<title>CS2310 XML Based Servers</title>
+<!--mstheme--><link rel="stylesheet" href="ice1011.css">
+<meta name="Microsoft Theme" content="ice 1011">
+</head>
+<a href="index.htm"> <img src="previous.gif" align=left></a><a href="index.html">
+</a><a href="pg2.htm"> <img src="next.gif" align=right ></a><a href="pg1.html" > </a>
+ 
+<center> <h1> Message Oriented Communication</h1> </center> 
+<body>
+
+<ul>
+	<li>
+	<h2><b><font face="verdana, arial, helvetica" size="3">Uses messages to 
+	communicate with different systems to perform some kind of function.</font></b></h2>
+	</li>
+	<li><b>Message </b>
+	<ul>
+		<li>A collection of data fields sent together between sender and 
+		receiver</li>
+		<li>Contain information on what action is requested from one end point
+		</li>
+		<li>Header + Payload <br>
+&nbsp;</li>
+	</ul>
+	</li>
+	<li><b>Types of Message Oriented Communication</b><ul>
+		<li>Asynchronous or Synchronous Communication</li>
+		<li>Persistent or Transient Communication<br>
+&nbsp;</li>
+	</ul>
+	</li>
+	<li><b>Built using some kind of Message Oriented Middleware (MOM) like IBM's MQSeries or protocols like 
+	HTTP, SMTP.<br>
+&nbsp;</b></li>
+	<li><b>Pros &amp; Cons of Messaging:</b><p><b>Pros:</b><ul>
+		<li>Loose Coupling</li>
+		<li>Easier Message routing and Transformation</li>
+		<li>More flexible payload (binary attachments)</li>
+		<li>Good for homogeneous and heterogeneous systems</li>
+	</ul>
+	<p><b>Cons:</b><ul>
+		<li>Added complexity of message handling code in client and server</li>
+		<li>Risk of losing type information</li>
+		<li>Transactional context in which the message was sent does not 
+		propagate to <br>
+		the message server</li>
+	</ul>
+	<p><b><br>
+	<br>
+&nbsp;</b></p>
+	<p>&nbsp;</li>
+</ul>
+<p><b>&nbsp;&nbsp;&nbsp; </b></p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+<head>
+   <title>Multimedia Software Engineering</title>
+</head>
+<a href="page18.html"><img src="previous.gif" align=left></a>
+<a href="page19.html"><img src="next.gif" align=right></a>
+<center>
+   <br><br>
+   <h1>Why Have Custom Tags?</h1>
+   <br>
+</center>
+<font size=4>
+<ul>
+   <li>Different scripting paradigms and objects can be easily intermixed
+       with server pages.</li>
+   <li>As the project size increases, maintainability can become
+       complex. This can lead to weaker graphical design and
+       implementation.</li>
+   <li>Development speed can be effected by this, leading to late and
+       overbudget applications.</li>
+</ul>
+</font>
+</html>

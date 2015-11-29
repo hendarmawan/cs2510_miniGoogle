@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />	<title>
+		Pitt Computer Science :
+		People	</title>
+	<link href="/favicon.ico" type="image/x-icon" rel="icon" /><link href="/favicon.ico" type="image/x-icon" rel="shortcut icon" /><link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" /><link rel="stylesheet" type="text/css" href="/css/application.css" /><script type="text/javascript" src="/js/MooTools-Core-1.5.1-compressed.js"></script><script type="text/javascript" src="/js/MooTools-More-1.5.1-compressed.js"></script><script type="text/javascript" src="/js/ck/ckeditor.js"></script><script type="text/javascript" src="/js/global.js"></script></head>
+<body>
+	<header>
+		<div id="header" class="container_16">
+			<span class="homeLink">
+				<a href="/"><img src="/img/blank.gif" alt="" /></a>			</span>
+			<ul id="pittLinks">
+				<li><a href="http://pitt.edu">Pitt Home</a></li>
+				<li><a href="http://as.pitt.edu">Dietrich School</a></li>
+			</ul>
+			<div class="clear"></div>
+			<nav id="mainMenu">
+			<div class="flip-container vertical">
+				<div class="flipper">
+					<div class="back" id="cardBack">
+<div id="cse-search-form" style="width: 100%;">Loading</div>
+<script src="https://www.google.com/jsapi" type="text/javascript"></script>
+<script type="text/javascript"> 
+  google.load('search', '1', {language : 'en'});
+  google.setOnLoadCallback(function() {
+    var customSearchOptions = {};
+    var customSearchControl = new google.search.CustomSearchControl(
+      '009128518159301701545:WMX415819481', customSearchOptions);
+    customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
+    var options = new google.search.DrawOptions();
+    options.enableSearchboxOnly('https://cs.pitt.edu/search');
+    customSearchControl.draw('cse-search-form', options);
+  }, true);
+</script>
+<style type="text/css">
+	#cardBack #cse-search-form {
+		margin:				3px 20px 0 20px;
+		width:				96%!important;
+		padding:			0;
+	}
+	#cardBack #cse-search-form td {
+		border-width:		0;
+		padding:			0;
+		padding-right:		2px;
+	}
+	#cardBack input.gsc-input {
+		border-width:		0;
+		margin-right:		10px;
+		padding:			1px 3px;
+	}
+	#cardBack input.gsc-search-button {
+		background-color:	#E9E9E9;
+		margin-left:		10px;
+		border-width:		0;
+	}
+	#cardBack .gsc-clear-button {
+		display:			none;
+	}
+	#cardBack .gsc-branding-text, #cardBack .gsc-branding-img {
+		display:			none;
+	}
+</style>
+					</div>
+					<div class="front" id="cardFront"><ul ><li><a href="/">Home</a></li><li><a href="/about">About</a><ul ><li><a href="/about">Welcome</a></li><li><a href="/about/history">History</a></li><li><a href="/about/Pittsburgh">Pittsburgh</a></li><li><a href="/about/directions">Directions</a></li><li><a href="/about/sennottmaps">Sennott Square Maps</a></li><li><a href="/about/csstudentorgs">CS Student Clubs</a></li><li><span class="title">Affiliated Programs</span><ul ><li><a href="http://www.isp.pitt.edu/">Intelligent System Program (ISP)</a></li><li><a href="http://www.psc.edu/">Pittsburgh Supercomputing Center</a></li></ul></li><li><a href="http://tech.cs.pitt.edu/accounts" target="_blank">Apply for a CS Account</a></li><li><a href="/about/contact">Contact Us</a></li></ul></li><li><span class="title">People</span><ul ><li><a href="/people/faculty/tenure_stream">Faculty</a></li><li><a href="/people/staff">Staff</a></li><li><a href="/people/grad">Graduate Students</a></li><li><a href="/people/visiting_scholar">Visiting Scholars</a></li><li><a href="http://industryboard.cs.pitt.edu/board.php" target="_blank">Industry Board</a></li><li><a href="/people">Directory</a></li></ul></li><li><a href="/research">Research</a><ul ></ul></li><li><a href="/undergrads">Undergraduate</a><ul ><li><span class="title">Courses</span><ul ><li><a href="http://www.courses.as.pitt.edu/">Course Descriptions</a></li><li><a href="http://www.registrar.pitt.edu/courseclass.html">Course Schedule</a></li><li><a href="https://oldwww.cs.pitt.edu/undergrad/courses/index.php" target="_blank">Internal Course Descriptions</a></li><li><a href="https://oldwww.cs.pitt.edu/schedule/" target="_blank">Internal Course Schedule</a></li></ul></li><li><span class="title">Special Degrees</span><ul ><li><a href="/undergrads/bioinformatics">Bioinformatics</a></li><li><a href="http://www.engineering.pitt.edu/computer/">Computer Engineering</a></li><li><a href="/undergrads/bsms">BS + MS Degree</a></li></ul></li><li><a href="/undergrads/finaid">Career Resources</a><ul ><li><a href="/undergrads/coop">Co-Op Program</a></li><li><a href="/undergrads/internships">Internships</a></li><li><a href="/undergrads/opportunities">CS Student Jobs</a></li></ul></li><li><a href="/undergrads/crc">Peer Tutoring</a></li></ul></li><li><a href="/grads">Graduate</a><ul ><li><span class="title">Courses</span><ul ><li><a href="http://www.courses.as.pitt.edu/" target="_blank">Course Descriptions</a></li><li><a href="http://www.registrar.pitt.edu/courseclass.html" target="_blank">Course Schedule</a></li><li><a href="https://oldwww.cs.pitt.edu/grad/courses/index.php" target="_blank">Internal Course Descriptions</a></li><li><a href="https://oldwww.cs.pitt.edu/schedule/" target="_blank">Internal Course Schedule</a></li></ul></li><li><a href="/grads/admission">Admissions</a></li><li><span class="title">Graduate Handbook</span><ul ><li><a href="/grads/regulationsPages#3">PhD Degree</a></li><li><a href="/grads/regulationsPages#4">MS Degree</a></li></ul></li><li><a href="/grads/dualms">Dual MS Degree</a></li><li><a href="/grads/forms">Grad Forms</a></li></ul></li><li><span class="title">News & Events</span><ul ><li><a href="/News">News</a><ul ><li><a href="/News/PressReleases">Press Releases</a></li><li><a href="/News/Accolades">Accolades</a></li><li><a href="/News/OutreachNews">Outreach News</a></li><li><a href="/News/DepartmentalNews">Departmental News</a></li></ul></li><li><a href="/events">Events</a><ul ><li><a href="/events/TechnicalTalks">Technical Talks</a></li><li><a href="/events/colloquiums">Colloquiums</a></li><li><a href="/events/BrownBagLunchSeries">Brown Bag Lunch Series</a></li><li><a href="/events/Hackathons">Hackathons</a></li><li><a href="/events/CSDay">CS Day</a></li><li><a href="/events/archive">Archive</a></li></ul></li><li><a href="/gallery">Photo Gallery</a></li></ul></li><li><a href="/outreach">Outreach</a><ul ><li><a href="/outreach/WomenDiversityInitiatives">Women / Diversity</a></li><li><a href="/outreach/K12Outreach">K - 12 Outreach</a></li><li><a href="/outreach/corporateRelations">Corporate Relations</a><ul ><li><a href="/outreach/industryBoard">Industry Board</a></li></ul></li><li><a href="/outreach/AlumniRelations">Alumni Relations</a></li><li><a href="/outreach/scholarships">Scholarships</a></li><li><a href="/News/OutreachNews">Outreach News</a></li></ul></li></ul></div>
+				</div>
+			</div>
+			</nav>			<i class="fa fa-search" id="globalSearch" onclick="document.querySelector('#cardFront').classList.toggle('flip');document.querySelector('#cardBack').classList.toggle('flip');"></i>
+		</div>
+	</header>
+						<div id="content">
+				<div class="container_16">
+					<div id="sidebar" class="grid_4">
+						<nav><h2>QUICKLINKS</h2><ul><li><a href="/people/faculty/tenure_stream">Faculty</a></li><li><a href="/people/staff">Staff</a></li><li><a href="/people/grad">Graduate Students</a>&nbsp;<i class="fa fa-caret-left" style="color:#d4d4aa"></i></li><li><a href="/people/visiting_scholar">Visiting Scholars</a></li><li><a href="http://industryboard.cs.pitt.edu/board.php" target="_blank">Industry Board</a></li><li><a href="/people">Directory</a></li></ul></nav>						<div id="eventWrapper">
+							<h2>Upcoming Events</h2>
+							<ul id="eventList">
+																	<li>
+									<span class="dateBullet">
+										16<br/>Nov									</span>
+									<span class="title multiline">
+										Town Hall Meeting - CS/IS unit									</span>
+									</li>
+																	<li>
+									<span class="dateBullet">
+										17<br/>Nov									</span>
+									<span class="title multiline">
+										Fed Ex									</span>
+									</li>
+																	<li>
+									<span class="dateBullet">
+										17<br/>Nov									</span>
+									<span class="title multiline">
+										WiCS Meeting									</span>
+									</li>
+																	<li>
+									<span class="dateBullet">
+										18<br/>Nov									</span>
+									<span class="title multiline">
+										 Toward Next Generation Mobile Learning									</span>
+									</li>
+																	<li>
+									<span class="dateBullet">
+										18<br/>Nov									</span>
+									<span class="title multiline">
+										Highmark Info Session									</span>
+									</li>
+															</ul>
+							<a href="/events" id="moreEvents">[Event Calendar]</a>						</div>
+					</div>
+					<div id="main" class="grid_12">
+						<h1>Graduate Students</h1>
+<table id="gradBox">
+	
+	<thead>
+		<tr>
+			<th>A</th>
+			<th>B</th>
+			<th>C</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<a href="/people/view/tazinafrin">Tazin Afrin</a>		<br />
+	<a href="/people/view/zua2">Zuha Agha</a>		<br />
+	<a href="/people/view/ralseghayer">Rakan A. Alseghayer</a>		<br />
+	<a href="/people/view/aja37">Andrew Armstrong</a>		<br />
+				</td>
+			<td>
+				<a href="/people/view/mattbarren">Matthew P. Barren</a>		<br />
+	<a href="http://people.cs.pitt.edu/~sab104/">Santiago Bock</a>		<br />
+	<a href="/people/view/sbray333">Samuel Bray</a>		<br />
+				</td>
+			<td>
+			<a href="/people/view/jimchang">Jin Chang</a>		<br />
+	<a href="/people/view/dextercoder">Junhui Chen</a>		<br />
+	<a href="/people/view/yjchoi">Yoonjung Choi</a>		<br />
+	<a href="/people/view/mclarencui">Xiaolong Cui</a>		<br />
+				</td>
+		</tr>
+	</tbody>
+	
+	<thead>
+		<tr>
+			<th>D</th>
+			<th>E</th>
+			<th>F</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<a href="/people/view/abd51">Ameya B. Daphalapurkar</a>		<br />
+	<a href="/people/view/debarun">Debarun Das</a>		<br />
+				</td>
+			<td>
+				<a href="/people/view/mae82">Mahbaneh Eshaghzadeh Torbati</a>		<br />
+				</td>
+			<td>
+			<a href="/people/view/xiangmin">Xiangmin Fan</a>		<br />
+	<a href="/people/view/zhenjiangfan">Zhenjiang Fan</a>		<br />
+	<a href="/people/view/sfaurie">Steven T. Faurie</a>		<br />
+	<a href="/people/view/yuf24">Yubo Feng</a>		<br />
+	<a href="/people/view/kenrick">Kenrick O. Fernandes</a>		<br />
+				</td>
+		</tr>
+	</tbody>
+	
+	<thead>
+		<tr>
+			<th>G</th>
+			<th>H</th>
+			<th>I</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<a href="https://people.cs.pitt.edu/~debashis/">Debashis Ganguly</a>		<br />
+	<a href="/people/view/bill">William C. Garrison</a>		<br />
+	<a href="/people/view/xiaoyu">Xiaoyu Ge</a>		<br />
+	<a href="/people/view/weg21">Wei Guo</a>		<br />
+				</td>
+			<td>
+				<a href="http://people.cs.pitt.edu/~hasanzadeh/">Mohammad Hasanzadeh Mofrad</a>		<br />
+	<a href="/people/view/eth13">Eric T. Heim</a>		<br />
+	<a href="/people/view/charmgil">Charmgil Hong</a>		<br />
+	<a href="/people/view/xinyuh">Xinyue Huang</a>		<br />
+	<a href="/people/view/zaeem">Zaeem Hussain</a>		<br />
+				</td>
+			<td>
+			<a href="/people/view/marianky">Marian K. Iskander</a>		<br />
+				</td>
+		</tr>
+	</tbody>
+	
+	<thead>
+		<tr>
+			<th>J</th>
+			<th>K</th>
+			<th>L</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<a href="/people/view/jjezak">Joseph A. Jezak</a>		<br />
+	<a href="/people/view/yuhuan">Yuhuan Jiang</a>		<br />
+	<a href="/people/view/juyoung">Ju-Young Jung</a>		<br />
+				</td>
+			<td>
+				<a href="/people/view/katsip">Nikolaos R. Katsipoulakis</a>		<br />
+	<a href="/people/view/briankoco">Brian J. Kocoloski</a>		<br />
+	<a href="/people/view/anuradha">Anuradha Kulkarni</a>		<br />
+	<a href="/people/view/akk48">Adriano M. Kurz Maron</a>		<br />
+				</td>
+			<td>
+			<a href="/people/view/jlee">Jeongmin Lee</a>		<br />
+	<a href="/people/view/lol16">Longhao Li</a>		<br />
+	<a href="/people/view/veronica">Xiaoyu Liang</a>		<br />
+	<a href="/people/view/changsheng">Changsheng Liu</a>		<br />
+	<a href="/people/view/siqiliu">Siqi Liu</a>		<br />
+	<a href="/people/view/ztliu">Zitao Liu</a>		<br />
+	<a href="/people/view/shl125">Shijia Liu</a>		<br />
+	<a href="/people/view/mel128">Mengsi Lou</a>		<br />
+	<a href="/people/view/janinelove">Janine Love</a>		<br />
+	<a href="/people/view/lucalugini">Luca Lugini</a>		<br />
+	<a href="/people/view/wencan">Wencan Luo</a>		<br />
+	<a href="/people/view/zpluo">Zhipeng Luo</a>		<br />
+				</td>
+		</tr>
+	</tbody>
+	
+	<thead>
+		<tr>
+			<th>M</th>
+			<th>N</th>
+			<th>O</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<a href="/people/view/salimm">SeyedSalim Malakouti</a>		<br />
+	<a href="/people/view/sudeepthi">Sudeepthi Manukonda</a>		<br />
+	<a href="/people/view/josemichael">Jose Michael Joseph</a>		<br />
+	<a href="/people/view/ayush">Ayush Mishra</a>		<br />
+	<a href="/people/view/bhavin">Bhavin M. Modi</a>		<br />
+	<a href="/people/view/ankita">Ankita Mohapatra</a>		<br />
+	<a href="/people/view/nineil">Nils E. Murrugarra Llerena</a>		<br />
+				</td>
+			<td>
+				<a href="/people/view/huynv">Huy V. Nguyen</a>		<br />
+	<a href="/people/view/long">Long H. Nguyen</a>		<br />
+	<a href="/people/view/mnugent">Michael P. Nugent</a>		<br />
+				</td>
+			<td>
+			<a href="/people/view/ouyang">Jiannan Ouyang</a>		<br />
+				</td>
+		</tr>
+	</tbody>
+	
+	<thead>
+		<tr>
+			<th>P</th>
+			<th>Q</th>
+			<th>R</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<a href="/people/view/dpetrov">Daniel P. Petrov</a>		<br />
+	<a href="/people/view/phuongpham">Phuong N. Pham</a>		<br />
+	<a href="/people/view/thao">Thao N. Pham</a>		<br />
+	<a href="/people/view/vivek">Vivek D. Punjabi</a>		<br />
+				</td>
+			<td>
+				<a href="/people/view/yeq1">Yechen Qiao</a>		<br />
+				</td>
+			<td>
+			<a href="/people/view/vineet">Vineet K. Raghu</a>		<br />
+	<a href="/people/view/sampanati">Samanvoy Reddy Panati</a>		<br />
+				</td>
+		</tr>
+	</tbody>
+	
+	<thead>
+		<tr>
+			<th>S</th>
+			<th>T</th>
+			<th>U</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<a href="/people/view/aus">Anatoli U. Shein</a>		<br />
+	<a href="/people/view/darshan">Darshan Balakrishna Shetty</a>		<br />
+	<a href="/people/view/mcs116">Manali C. Shimpi</a>		<br />
+	<a href="/people/view/sobhani">Amin Sobhani</a>		<br />
+				</td>
+			<td>
+				<a href="/people/view/yjtang">Yingjie Tang</a>		<br />
+	<a href="http://people.cs.pitt.edu/~corythoma/">Cory M. Thoma</a>		<br />
+	<a href="/people/view/chris">Christopher L. Thomas</a>		<br />
+				</td>
+			<td>
+						</td>
+		</tr>
+	</tbody>
+	
+	<thead>
+		<tr>
+			<th>V</th>
+			<th>W</th>
+			<th>X</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+							</td>
+			<td>
+				<a href="/people/view/wangwenchen">Wenchen Wang</a>		<br />
+	<a href="/people/view/naw66">Nannan Wen</a>		<br />
+				</td>
+			<td>
+			<a href="/people/view/xiangxiao">Xiang Xiao</a>		<br />
+	<a href="/people/view/yanbing">Yanbing Xue</a>		<br />
+				</td>
+		</tr>
+	</tbody>
+	
+	<thead>
+		<tr>
+			<th>Y</th>
+			<th>Z</th>
+			<th></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<a href="/people/view/yekeren">Keren Ye</a>		<br />
+	<a href="/people/view/xiyaoyin">Xiyao Yin</a>		<br />
+	<a href="https://sites.google.com/site/pittkawaiyung/">Ka W. Yung</a>		<br />
+				</td>
+			<td>
+				<a href="http://people.cs.pitt.edu/~chizhang/">Chi Zhang</a>		<br />
+	<a href="/people/view/zhangfan">Fan Zhang</a>		<br />
+	<a href="https://people.cs.pitt.edu/~xianeizhang/">Xianwei Zhang</a>		<br />
+	<a href="/people/view/qz">Qiao Zhang</a>		<br />
+	<a href="/people/view/colinzhang">Haoran Zhang</a>		<br />
+	<a href="/people/view/mzhang">Mingda Zhang</a>		<br />
+	<a href="/people/view/zhangzinan">Zinan Zhang</a>		<br />
+	<a href="http://people.cs.pitt.edu/~leizhao/">Lei Zhao</a>		<br />
+	<a href="/people/view/zhaozihao">Zihao Zhao</a>		<br />
+	<a href="/people/view/anz28">Angen Zheng</a>		<br />
+	<a href="/people/view/yuyuzhou">Yuyu Zhou</a>		<br />
+				</td>
+			<td>
+			</table>
+					</div>
+				</div>
+			</div>
+			<footer>
+		<div id="footer" class="container_16">
+			<div id="footerCols">
+				<div class="grid_3" id="footerLinks">
+				<ul>
+					<li><a href="/">Home</a></li>
+					<li><a href="/research">Research</a></li>
+					<li><a href="/undergrads">Undergraduate</a></li>
+					<li><a href="/grads">Graduate</a></li>
+					<li><a href="/outreach">Outreach</a></li>
+					<li><a href="http://my.pitt.edu">My Pitt</a></li>
+					<li>
+						<a href="/login">Login</a>					</li>
+				</ul>
+				</div>
+				<div class="grid_6" id="pittNews">
+					<h2>Latest Pitt News</h2>
+					<ul>
+													<li>
+								<a href="http://www.news.pitt.edu/news/university-pittsburgh-calendar-events-nov-22-28">University of Pittsburgh Calendar of Events, Nov. 22-28</a>							</li>
+													<li>
+								<a href="http://www.news.pitt.edu/news/chronic-arsenic-exposure-impairs-muscle-healing">Chronic Arsenic Exposure Impairs Muscle Healing</a>							</li>
+													<li>
+								<a href="http://www.news.pitt.edu/news/pitt-partners-major-biopharmaceutical-company">Pitt Partners with Major Biopharmaceutical Company</a>							</li>
+											</ul>
+					<a href="http://www.news.pitt.edu" class="more">[More Pitt News]</a>				</div>
+				<div class="grid_3" id="visitUs">
+					<h2>CONTACT US</h2>
+					<p>
+						Dept of Computer Science<br />
+						6135 Sennott Square<br />
+						210 S Bouquet St<br />
+						Pittsburgh, PA 15260-9161<br />
+						USA
+					</p>
+					<p>
+						Tel: 412-624-8490<br />
+						Fax: 412-624-8854
+					</p>
+				</div>
+				<div class="grid_4" id="contactUs">
+					<h2>CONNECT WITH US</h2>
+					<p>
+						<a href="//www.facebook.com/pittcomputerscience"><img src="/img/social/fb.png" alt="" /></a><a href="//twitter.com/PittCompSci"><img src="/img/social/twitter.png" alt="" /></a><a href="//www.linkedin.com/groupInvitation?groupID=1782392&amp;sharedKey=2F738D0E72F3"><img src="/img/social/linkedin.png" alt="" /></a><a href="//plus.google.com/communities/112792463665301126749"><img src="/img/social/googleplus.png" alt="" /></a><a href="//www.youtube.com/user/CSatPitt"><img src="/img/social/youtube.png" alt="" /></a>					</p>
+					<p>
+						<a href="https://secure.giveto.pitt.edu/ascomsc" class="give"><img src="/img/give.png" alt="" /></a>					</p>
+				</div>
+			</div>
+			<div id="copyright">
+			<i class="fa fa-copyright"></i> 2015 Department Of Computer Science
+			</div>
+		</div>
+	</footer>
+	</body>
+</html>

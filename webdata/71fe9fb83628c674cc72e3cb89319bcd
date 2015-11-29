@@ -1,0 +1,366 @@
+<h1>Exercises, Milestones and Term Projects:</h1>
+
+<b>Exercise 1:</b> (5 points)
+Use ArgoUML as a tool to draw the UML class diagram and use-case diagrams for the following software system.
+(Grading: 2 points for each type of diagram, and 1 point for providng argoUML zargo file or WORD file containing all diagrams as jpg images)
+<!--
+For CS3650 students the diagrams should be zipped and e-mailed to the instructor (chang@cs.pitt.edu).
+-->
+For CS1631 students the diagrams should be zipped and e-mailed to the TA.
+Diagrams may require footnotes and/or comments.
+<p>
+Consider the following set of requirements for a university information system
+that is used to keep track of students transcripts. 
+The first requirement RS1 concerns the data to be kept in permanent storage, which is further broken down into five parts.
+<br><br>
+RS1a.  The university keeps track of each student's name, student number,
+    social security number, current address and phone, permanent address and
+    phone, birthdate, sex, class (freshman, sophomore, ..., graduate), major
+    department, minor department (if any), and degree program (B.A., B.S.,
+    ..., Ph.D.).  Some user applications need to refer to the city, state,  
+    and zip of the student's permanent address, and to the students' last
+    name.  Both social security number and student number have unique values
+    for each student.
+<br><br>
+RS1b.  Each department is described by a name, department code, office number,
+    office phone and college. Both name and code have unique values for
+    each department.
+<br><br>
+RS1c.  Each course has a course name, description, code number, number of 
+    semester hours, level, and offering department.  The value of code number
+    is unique for each course.
+<br><br>
+RS1d.  Each section has an instructor, semester, year, course, and section 
+    number.  The section number distinguishes different sections of the same
+    course that are taught during the same semester/year; its values are 
+    1, 2, 3, ...; up to the number of sections taught during each semester.
+<br><br>
+RS1e.  A grade report has a student, section, and grade.
+<br><br>
+The other requirements for this application are:
+(RS2) An administrator can update the courses to be taught by instructors,
+and enter the list of students taking a course.
+(RS3) An instructor can enter and update the grades of the course(s) taught
+by this instructor.
+(RS4) A student can request a grade report from the information system.
+
+<br><br>
+<font color=purple><b>Solution to Exercise 1: There can be different solutions.
+<a href="exercise/ex1CLASS.jpg">Class diagram</a> with labelled associations such as teacher teaches class.
+<a href="exercise/ex1USE.jpg">Use case diagram</a> with some "include" relations for commonly used cases.
+<a href="exercise/ex1Y15.pdf">Solution class of 2015</a>.</b></font>
+
+<br><br><br>
+<b>Exercise 2:</b> (5 points)
+Continue with Exercise 1 and draw the state and activity diagrams,
+the sequence and collaboration diagrams, and the component/deployment diagram
+(each diagram is 1 point).
+<!--
+For CS3650 students the diagrams should be zipped and e-mailed to the instructor (chang@cs.pitt.edu).
+-->
+For CS1631 students the diagrams should be zipped and e-mailed to the TA.
+<br><br>
+The additional requirements for this application to be considered:
+(RS5) A student can fill out an online add/drop form.
+(RS6) A student may request an instructor to approve the add/drop form.
+(RS7) The add/drop form must be approved by the administrator.
+(RS8) The add/drop information is entered into the database.
+
+<br><br>
+<font color=purple><b>Solution to Exercise 2: There can be different solutions.
+A solution should include at least the <a href="exercise/ex2USE.jpg">(revised) use case diagram</a>, the <a href="exercise/ex2CLASS.jpg">(revised) class diagram</a>,
+one or more <a href="exercise/ex2COL.jpg">collaboration and sequence diagram</a> (only collaboration diagram is shown here),
+one or more <a href="exercise/ex2ACT.jpg">activity and state diagram</a> (only activity diagram is shown here),
+and one or more <a href="http://people.cs.pitt.edu/~chang/1635/c03UMLDPL/deployFig2.jpg">deployment diagram</a>.
+The seven types of diagrams should form a complete specification
+of the application described above.  The degree of completeness is 1 point.
+A solution using only
+a single ArgoUML zargo file containing all the diagrams is the most elegant solution, but a hybrid solution consisting of multiple zargo file(s) and WORD file(s) is equally acceptable.
+<a href="exercise/ex2Y15.pdf">Solution class of 2015</a>.</b></font>
+<br><br><br>
+<b>Exercise 3:</b> (5 points)
+Make a business case to justify either the in-house development
+of the university information system, or farming it out to
+a software developer, or taking a "hybrid" approach.  There is no "correct" answer for this
+exercise.  Rather, what matters is how you argue your case
+based upon a combination of logic, facts, simple calculations
+and reasonable assumptions.
+The time-window for making the business case is five years.
+The following are known facts:
+(a) labor cost for programmers is $50/hour for in-house development,
+(b) labor cost for programmers is $30/hour for external developers,
+(c) each GUI component takes 300 hours on the average to develop,
+50 hours of end-user time to test and $40/hour for end-user to do testing,
+(d) each service component takes 500 hours on the average to develop,
+(e) each domain component takes 800 hours on the average to develop,
+(f) maintenance efforts in a five-year period is equal to development efforts,
+(g) productivity factors are the same as given in the text book,
+(h) total number of unduplicated users is 10,000,
+(i) number of applications over a five-year period is 50 regardless of
+the type of components,
+(j) complexity cost is $20,000 per component,
+(k) application framework cost is assumed to be zero (i.e., absorbed by the corporation).
+(Any other parameters you need must be estimated by you.)
+
+<font color=purple><b>Solution to Exercise 3: There can be different solutions.
+<br><br>
+A <a href="exercise/ex3solu">canonical solution</a> shows the possible
+range of answers and how grading is to be done.
+<a href="exercise/ex3Y15.pdf">Solution class of 2015</a>.
+</b></font>
+<br><br><br>
+<b>Exercise 4:</b> (5 points)
+The UML provides a common language for software
+developers to communicate with each other. In the
+term project, each team/person will use UML for
+the specification of the software component to
+be developed by this team/person.
+<br>
+<font color=blue>
+For CS1631 students this becomes a 2-person group exercise to develop
+the <a href="http://www.cs.pitt.edu/~chang/153/1plan.html">project plan</a>
+and the UML specification.
+The final deliverables are the specification, implementation, testing and
+delivery of the project.
+</font>
+<!--
+<br>
+<font color=red>
+For CS3650 students it remains an individual exercise to
+provide a high-level description, rationale, and initial
+UML specification (software project) or problem formulation (theoretical project) of  your term project.
+If it is a software project, the final deliverables are the specification, implementation, testing and
+delivery of the project (40 points).
+If it is a theoretical project, the final deliverable is the final
+report (also 40 points).
+</font>
+-->
+<br>
+The UML diagrams to be delivered include the use case diagram,
+the class diagram, the activity diagram (or state diagram) the collaboration diagram (or sequence diagram), and development/deployment diagram.  These
+five types of diagrams are chosen because they can all be created
+using the software tool ArgoUML as long as feedback loops are avoided.
+In creating the class diagram, try to remain consistent with the
+<a href="proj13/vote.htm">requirements</a> for the 
+mobile phone voting system, or the
+<a href="proj14/healthcare.htm">requirements</a> for the
+personal healthcare system, or the
+<a href="proj14/petcare.htm">requirements</a> for
+the pet care system.
+For the mobile phone voting system,
+the name of messages and variables used in the diagrams should remain
+consistent with the <a href="interface/MessageVote.htm">basic voting message types and variables</a> supplied
+by the instructor. 
+For the perosnal healthcare system,
+the name of messages and variables used in the diagrams should also remain
+consistent with the <a href="interface/MessageSIS.htm">basic SIS message types and variables</a> supplied
+by the instructor. 
+If you follow  these rules it will
+be easier later to integrate the UML diagrams
+to generate a combined overall specification.
+
+
+
+<!--
+<br><br>
+<font color=purple><b>Solution to Exercise 4: 
+Firstly the <a href="exercise/ex4g17.docx">UML diagrams</a> for the
+mobile voting project are illustrated.
+Secondly the <a href="exercise/ex4gor.htm">software plan</a>
+without UML diagram for a digital board is illustrated.
+Thirdly the <a href="exercise/ex4chang.doc">software plan with UML diagrams</a> for a
+voting gesture language is illustrated.
+-->
+<!--
+Finally for the theoretical project a <a href="exercise/ex4santh.doc">problem
+formulation</a> for knowledge exchange is illustrated.
+-->
+<!--
+(Grading: 4 points for providing adequate UML diagrams with emphasis on
+providing appropriate initial interface specification, and 1 point for providng
+the argoUML zargo file.)
+</b></font>
+-->
+
+<!--
+<br><br>
+<b>Milestone 1: Specify messages to a component.</b> (5 points)
+You should define all the messages to your component and
+from your component.  Each message can be defined
+by specifying a message ID, a short description,
+a list of variables, and an example
+as an XML document.
+The <a href="http://www.cs.pitt.edu/~chang/cvc/Specification/VC/Message.htm">existing messages</a> should be used whenever possible.
+(For Project II, the Personal HealthCare System project, use the following
+<a href="interface/MessageSIS.htm">existing messages</a>.)
+If you need an extra message type, you may introduce your
+own.  Start with message ID: 100 + 10 x GroupID + i, i=0, 1, 2 and
+so on.  For example, if your group is 2, your first
+message is 120 and so on.
+(Note: Sometimes we can add message sub-types in the body
+of the message so that no new message types need be
+introduced)
+In addition to message definitions, please also submit
+a step-by-step detailed scenario, showing what messages
+are exchanged and what are the expected effects.
+In the next Milestone, you can test your component(s)
+according to the submitted scenario.
+<br><br>
+
+<font color=purple><b>Solution to Milestone 1: There can be different
+solutions.  A <a href="exercise/mile1sol.htm">typical solution</a> for
+the software project of a gesture language for voting is illustrated,
+where the emphasis is more on voting management than on the gesture
+language itself.
+(Grading: Check if messages and variables are clearly defined.
+Reused common messages should have the same message id.
+Bonus point if a <a href="exercise/mile1sol.doc">report including
+the project plan</a> is also submitted,
+which can be incrementally expanded to become the final project report.)
+</b></font>
+-->
+<br><br>
+<b>Milestone 1: Test interface between remote control and component.</b> (5 points)
+You should have already
+started the implementation of the component, concentrating on the
+interface with the <a h ref="../153/UInterface/prjRemote.exe file">remote control (prjRemote.exe)</a>. You will
+demonstrate how your component can interact
+with the remote control.  The scenario is as follows:
+First you run the remote control, which will appear on the screen.
+Then you use the remote control to send a message to your
+component.  The message typically consists of some variables and
+their values.  You can enter the variable names and values through
+the remote control.  The output message should also appear on the
+remote control.  You can test most of your messages this way.
+Test your component using the
+<a href="interface/SISServer.zip">remote control and server (Java version, please download and unzip)</a>.
+Once downloaded, just following the following
+<a href="interface/SISServer/SISsetup">Setup Procedure</a>
+to install them.
+<!--
+Please read the <a href="interface/tutorial.htm">tutorial</a> on how to use the remote control.
+(Beware: The tutorial is somewhat dated. Interface Daemon is now called the SIS server.)
+A <a href="interface/Interface.tar">C++ Interface for the components (works with the Remote Control 1.0)</a> is provided,
+which has been tested with GNU's g++ compiler on elements machines.
+
+Finally, you can test the interaction between two or more components using
+<a href="../153/UInterface/UIreadme.htm">the Universal Interface</a>
+which is like the remote control but allows for the communication between
+components. You can download the
+<a href="../153/UInterface/uinterface.zip">zip file for Universal Interface</a> and follow the
+<a href="../153/UInterface/UIreadme2">setup procedure for the Universal Interface</a>
+to run it with your own PlugIn component (a 'dummy' is supplied in the zip file for initial setup and testing).
+-->
+
+<!-- the <a href="http://www.cs.pitt.edu/~chang/cvc/Specification/SuperRemote/super.htm">Super Remote</a>, -->
+
+<p>
+<!--
+The following is an example of a 
+<a href="../265/proj08/eco.htm">PlugIn component to tally student attendance and their interests</a>
+implemented using the Universal Interface and its
+<a href="../265/proj08/ecoffPlugIn.java">Java code</a>.
+To understand how the VC works, read the
+<a href="../231/y08ms1/ms1moh.pdf">guide for VC source codes</a>.
+-->
+<br><br>
+<b>Milestone 2: Give a demo of your component.
+</b> (15 points for CS1631<!-- and 25 points for CS3650-->)
+The demo is similar to the demo you give at the first milestone,
+except that the details of the application of your component should
+be demonstrated. Most of you, unless you have successfully implemented the Input Processor to transform incoming phone call into CastVote message 701, will still
+use the remote control to give the demo.  But now you need to simulate
+a longer scenario.  You should pre-store the messages (as XML documents)
+so that you can do the demo quickly.  You can also instantiate more
+than one remote control in your demo, in case you need them.  
+(For those working on Android app for smart phones,
+you may combine the input processor and voting software
+component into one Android program.)
+
+<br><br>
+
+<!--
+(For the CS3650 students, to give the presentation you may need a few
+HTML pages, but you are not required to turn them in.)
+-->
+<p>
+
+<!--
+<font color=purple><b>
+(Grading:
+For CS1631 students,
+15 points for Milestone 2, making component work and giving demo successfully -
+8 points for fair,
+11 points for good,
+14 points for very good,
+15 points for excellent,
+plus one or more bonus point for extra accomplishment.)</font>
+-->
+<!--
+For CS3650 students,
+25 points for making component work and giving demo successfully -
+15 points for fair,
+19 points for good,
+23 points for very good,
+25 points for excellent,
+plus one bonus point for extra accomplishment.
+-->
+<br><br>
+<b>Rehearsal</b>: (bonus points) If your group have
+successfully implemented the InputProcessor and VotingSoftware Component (or the Android app), you will be rehearsing to deal with
+the real voting events on CSDay.
+<br><br>
+<br><br>
+<b>Milestone 3: Based upon <a href="../153/c02process/agile01.htm">agile programming</a>, give final demo of an integrated
+project involving two groups and at least one extra component (the GUI or the Trends Analyzer or both) and provide final report.</b>
+</b>
+<br><br>
+The extra componenent can be the GUI replacing the more
+primitive PrjRemote.  The GUI can be used to test
+all types of administrative messages: 700, 701, 702
+and new types of messages for Trends Analyzer, and to run test scripts
+based upon <a href="../153/c08testauto/c01.htm">test-driven development (TDD)</a>.
+Minimally the GUI should be able to <a href="proj13/gui.htm">load a test script
+consisting of a sequence of messages (in XML format)</a>
+and send the messages to the component(s) being tested.
+<p>
+The extra component can also be the <a href="proj13/trend.htm">Trends Analyzer</a> that
+analyzes the voting trends of people with different interests, in different
+age group/education background/income group, etc.
+using a simple <a href="ontology/onto04c.htm">knowledge-base</a>.
+<p>
+If two groups are working together on MS3,
+one group can take on the implementation and <a href="c29/05.htm">management</a> of the extra component(s) and the
+other group can design the test scripts and do testing and <a href="c23/6.htm">measurements</a>.
+<br><br>
+The final documentation is in the form of a zip file.  When
+unzipped, it contains the following:
+
+<li>A Word file, which is your primary documentation.  It contains
+the updated and enhanced documents that you submitted in Exercise 4 and previous milestones.  The
+document thus consists of: a) enhanced project plan, b) updated UML diagrams,
+c) revised messages and variables, and d) a detailed example or test script with explanation
+and screen shots showing how your component works.
+(The last item is especially important in case Murphy's Law strikes again
+and your component does not work during the demo.  At least you have
+something to show on paper.)
+The appendix of this document is the source codes, zargo file and XML messages.
+<li>The source codes. Yes, the source codes should be included both as an
+appendix in the report and also separately in a subdirectory Source.
+<li> updated zargo file for the updated UML diagrams.
+<li> A subdirectory Message containing the XML messages.
+<br>
+Please name your zip file, WORD file, zargo file using the first
+five letters of your last name.  For example, your name is Davenport.
+Then your zip file is daven.zip, your WORD file is daven.doc, your zargo file is daven.zargo.
+For team projects use one of the team member's name.
+You will lose 2 points if you do not follow this naming convention.
+</b>
+<br><br>
+<!--
+<font color=purple>
+<b>
+(Grading:
+For CS1631 students, 5 points for making the baseline system work (including Input Processor), 5 points for Milestone 3 demo of the extra GUI component and running test scripts (for two groups working together), and 5 points for documentation (zip file).
+)</font></b>
+-->

@@ -1,0 +1,31 @@
+<title>Costing Techniques</title>
+<A HREF="risk3.htm"><IMG SRC="previous.gif" align=left></A>
+<A HREF="cost2.htm"><IMG SRC="next.gif" align=right></A>
+
+<center>
+<h1>Costing Techniques</h1>
+</center>
+
+<h2>LOC Cost Table</h2>
+
+We want to estimate the cost for a project to develop a
+CAD (computer-aided design) system.  The LOC Cost Table
+is developed:
+<pre>
+
+Function  Optimistic  Most  Pessimistic  Expected Deviation $/Line Line/Month Cost Months
+             a         m       b           Le      Ld
+
+Interface      1800   2400   2650         2340     140
+
+2-D geometric  4100   5200   7400         5380     550
+analysis
+
+3-D geometric  4600   6900   8600         6800     670
+analysis
+
+ ...
+
+
+</pre>
+

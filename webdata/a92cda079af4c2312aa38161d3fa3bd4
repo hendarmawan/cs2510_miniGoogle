@@ -1,0 +1,81 @@
+<html>
+<body bgcolor="#abcdef" text="#vishnu">
+<a href ="p9.html"><img src="previous.gif" align=left
+width="26" height="26"></a>
+<a href="p11.html"><img src="next.gif" align=right
+width="26" height="26"></a>
+<pre>
+<font face="Arial">
+<center><h1> Situation Metaphor (Contd) </h1>
+
+<h2><u> Situation Space</u> </h2></center>
+<h2>
+<center>Notations Used in Situation Space</center>
+<ul>
+
+<li>SS-> defines the situation space</li>
+
+
+<li>S',S"-> define two distinct situations</li>
+
+
+then  <center>S' = S" </center>  <i>iff</i> 
+
+<center>( L' = L"  ^  T' = T"  ^  A' = A"  ^  F' = F" ) </center>
+
+where " ^ " is the symbol representing "logical and" operation.
+
+
+<li> if " * " denotes the concatenation between two situations then
+
+<center>S' *  S" belongs to SS   </center>
+
+if | L' - L" | < e  for e > 0    and    T' + T" is a continuous period
+
+| L' - L" | represents the geographic distance between the Locations L',L"
+ 
+T' + T" is a single segment on the time line
+
+thus if  S' * S" belongs to SS we can call 
+
+<center> S" is the sucessor situation of S' </center></li>
+
+<li> if ID(S')=NULL then  S' is defined as a<i> null situation</i></li>
+
+<li> Related Ness property between two Non-null situations in SS
+
+ <center> R(S',S") = | ID(S')  &#238  ID(S") |  +  k </center>
+ 
+
+where &#238 represents the set intersection and the value of k depends on
+the content analysis of the two sets.
+
+
+<li> If R(S',S") > h  for a given value of h,then S',S" are said to be 
+strongly related situations </li>
+
+
+
+<li> If R(S',S") >h and R(S",S"') > h but R(S',S"') < h then 
+R(S',S"') are said to be weakly related for a given threshold h</li>
+
+
+<li> The Navigation Function for a particular situation is given by
+<center>F(S',d)={Sd1,Sd2,Sd3,....Sdn }</center>
+such that for all k=d1,d2,d3,...dn Sk is in SS and R(Sk,S') > h
+</li> 
+
+</ul>
+
+
+ 
+</h2>
+
+
+
+
+
+
+</pre>
+</body>
+</html>

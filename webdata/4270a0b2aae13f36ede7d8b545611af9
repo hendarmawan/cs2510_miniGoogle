@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html>
+<head>
+<title>Projects (Jan Wiebe)</title>
+<link type="text/css" rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div id="banner">
+<h2> 
+Current Projects 
+</h2>
+</div>
+
+<div id="content"> <!---content--->
+
+  <div class="sec">
+  <div class="secbody">
+
+  <h3 class="sectitle">Current Projects</h3>
+  <div class="sec">
+  <div class="secbody">
+<a href="projects0.html">
+Word Sense and Multilingual Subjectivity Analysis; </a>with Rada
+Mihalcea; funded by the National Science Foundation. 
+  <br><br>
+<a href="projects1.html">
+Interactive Search and Review of Clinical Records with Multi-layered
+Semantic
+Annotations; </a>with Wendy Chapman, Harry Hockheiser, and Rebecca Hwa;
+funded by the National
+Library of Medicine.
+
+<br> <br>
+<a href="projects2.html">
+Uncovering Motivations, Stances and Anomalies Through Private-State
+Recognition and Interpretation; </a>
+with Claire Cardie and Rada Mihalcea; funded by the  DARPA DEFT program.
+
+  </div></div>
+
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+  </div></div>
+
+</div> <!-- sec -->
+</div> <!-- content-->
+
+<div id="links">
+
+<div class="sidetitle">
+Links
+</div>
+
+<div class="side">
+<a href="http://www.cs.pitt.edu/~wiebe">Home</a><br/>
+<a
+href="http://www.cs.pitt.edu/~wiebe/pubs/index.html">Publications</a><br/>
+<a
+href="http://www.cs.pitt.edu/~wiebe/courses/CS1502/Fall04">Teaching</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/projects.html">
+Projects</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/service.html">Professional
+Activities</a><br/>
+<a href="http://www.cs.pitt.edu/~wiebe/students.html">
+Students</a><br/>
+</div>
+
+<div class="sidetitle">
+Affiliated Programs
+</div>
+
+<div class="side">
+<a href="http://nlp.cs.pitt.edu">NLP@Pitt</a><br/>
+<a href="http://www.cs.pitt.edu">Department of Computer Science</a><br/>
+<a href="http://www.isp.pitt.edu">Intelligent Systems Program</a><br/>
+</div>
+
+
+<div class="sidetitle">
+Contact Information Janyce Wiebe
+</div>
+
+<div class="side">
+<div class="secbody">
+Sennott Square Building, Room 5409 <br/>
+210 S. Bouquet St.<br/>
+Pittsburgh, PA 15260, U.S.A.<br/>
+<i>phone:</i> +1 (412) 624-9590<br/>
+<i>fax:</i> +1 (412) 624-8854<br/>
+<i>email:</i> my last name at cs dot pitt dot edu<br/>
+</div>
+</div>
+
+</div> <!-- links-->
+
+</body>
+</html>
+
+

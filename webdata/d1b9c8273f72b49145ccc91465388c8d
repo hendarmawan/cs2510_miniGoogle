@@ -1,0 +1,21 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="../2074/labs.css" />
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>stylesheet lab</title>
+</head>
+
+<body>
+<p>If it is the Fall Term, make a two page website for your Halloween Party!</p>
+<p>If it is the Spring Term, make a two page website for your Spring Break Party!</p>
+<p> Create &amp; publish site. Include a stylesheet. </p>
+<ul>
+  <li>All formatting styles (colors, font sizes and types, alignments) are to be in a seperate stylesheet.</li>
+  <li>Layout in tables</li>
+  <li>Pics &amp; content(rate PG only)on both pages. </li>
+  <li>Publish site </li>
+</ul>
+</body>
+</html>
