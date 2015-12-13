@@ -1,8 +1,6 @@
 OS=$(shell uname -s)
 INCLUDE='./include'
 
-IDLFILE=conf/idl2.xml
-
 CXX=g++
 CXXFLAGS=-g -std=c++0x -I$(INCLUDE)
 CC=gcc
@@ -10,7 +8,7 @@ CFLAGS=-g -I$(INCLUDE)
 
 COMMON_LIB=common_lib.a
 MINI_GOOGLE_MASTER=mini_google_master
-MINI_GOOGLE_SLAVE=mini_google_slave
+MINI_GOOGLE_SLAVE=mini_google_worker
 UISHELL=uishell
 
 cchighlight=\033[0;31m
@@ -67,7 +65,15 @@ UISHELL_OBJS=\
 	src/main_uishell.o
 
 # compiling all
-all: $(COMMON_LIB) $(UISHELL) $(DIRECTORY_SERVER) $(MINI_GOOGLE_SLAVE) $(MINI_GOOGLE_MASTER)
+all: $(COMMON_LIB) $(UISHELL) $(MINI_GOOGLE_SLAVE) $(MINI_GOOGLE_MASTER)
+	mkdir -p output/bin
+	cp $(UISHELL) output/bin
+	cp $(MINI_GOOGLE_SLAVE) output/bin
+	cp $(MINI_GOOGLE_MASTER) output/bin
+	cp $(UISHELL) output/
+	cp $(MINI_GOOGLE_SLAVE) output/
+	cp $(MINI_GOOGLE_MASTER) output/
+	cp $(UISHELL) output/bin
 	@echo -e "$(cchighlight)finish compiling$(ccend)"
 
 # compiling common_lib
@@ -109,7 +115,6 @@ endif
 clean:
 	rm -f src/*.o
 	rm -f *.o
-	rm -f $(DIRECTORY_SERVER)
 	rm -f $(COMMON_LIB)
 	rm -f $(MINI_GOOGLE_MASTER)
 	rm -f $(MINI_GOOGLE_SLAVE)
