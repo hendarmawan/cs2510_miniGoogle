@@ -42,6 +42,18 @@ int unregister_to_master(const std::string &ip, unsigned short port,
         const std::string &my_ip, unsigned short my_port);
 
 /**
+ * @brief get slave from master
+ *
+ * @param ip
+ * @param port
+ * @param slave_list
+ *
+ * @return 
+ */
+int get_slave_from_master(const std::string &ip, unsigned short port,
+        std::vector<std::pair<std::string, unsigned short> > &slave_list);
+
+/**
  * @brief put a task to the master
  *
  * @param ip

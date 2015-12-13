@@ -250,6 +250,19 @@ class mini_google_svr: public svr_base {
             return m_lookup_table;
         }
 
+        /**
+         * @brief get slaves list
+         *
+         * @return 
+         */
+        svr_insts_list_t get_slaves_list() {
+            m_svr_lock.lock();
+            svr_insts_list_t svr_list = m_svr_list;
+            m_svr_lock.unlock();
+
+            return svr_list;
+        }
+
     public:
         /**
          * @brief running in slave mode, back up lookup table from master
@@ -271,8 +284,6 @@ class mini_google_svr: public svr_base {
         /* task queue */
         mutex_lock m_queue_lock;
         std::queue<index_task_t> m_queue;
-
-        /* slave nodes */
 
         /* index data structure */
         invert_table m_invert_table;

@@ -5,6 +5,8 @@
 #include "index_common.h"
 #include "mini_google_common.h"
 
+typedef std::vector<std::pair<std::string, unsigned short> > slaves_list_t;
+
 class uishell {
     public:
         /**
@@ -56,11 +58,21 @@ class uishell {
         void close();
 
     private:
-        std::string m_ip;
-        unsigned short m_port;
+        /**
+         * @brief cache slave address
+         */
+        void cache_slave_address();
 
+    private:
+        /* last cache msec */
+        unsigned long long m_last_cache_msec;
+
+        /* master address */
         std::string m_master_ip;
         unsigned short m_master_port;
+
+        /* slave list */
+        slaves_list_t m_slaves_list;
 };
 
 #endif

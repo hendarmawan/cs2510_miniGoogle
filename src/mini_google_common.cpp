@@ -39,7 +39,7 @@ int register_to_master(const std::string &ip, unsigned short port,
     req_body = data;
     int ret = http_talk(ip, port, req_head, req_body, rsp_head, rsp_body);
     if (0 > ret) {
-        RPC_WARNING("http_talk() to directory server error");
+        RPC_WARNING("http_talk() to master server error");
         return -1;
     }
     return 0;
@@ -78,9 +78,43 @@ int unregister_to_master(const std::string &ip, unsigned short port,
     req_body = data;
     int ret = http_talk(ip, port, req_head, req_body, rsp_head, rsp_body);
     if (0 > ret) {
-        RPC_WARNING("http_talk() to directory server error");
+        RPC_WARNING("http_talk() to master server error");
         return -1;
     }
+    return 0;
+}
+
+/**
+ * @brief get slave from master
+ *
+ * @param ip
+ * @param port
+ * @param std::vector
+ *
+ * @return 
+ */
+int get_slave_from_master(const std::string &ip, unsigned short port,
+        std::vector<std::pair<std::string, unsigned short> > &slave_list) {
+
+    /* talk to master server */
+    std::string req_head;
+    std::string rsp_head, rsp_body;
+
+    req_head = gen_http_head("/query-slave", ip, 0);
+    int ret = http_talk(ip, port, req_head, "", rsp_head, rsp_body);
+    if (0 > ret) {
+        RPC_WARNING("http_talk() to master server error");
+        return -1;
+    }
+
+    /* parse the data */
+    ezxml_t root = ezxml_parse_str((char*)rsp_body.c_str(), rsp_body.length());
+
+    for (ezxml_t slave = ezxml_child(root, "single_slave"); slave != NULL; slave = slave->next) {
+        slave_list.push_back(std::pair<std::string, unsigned short>(
+                ezxml_attr(slave, "slave_ip"), atoi(ezxml_attr(slave, "slave_port"))));
+    }
+    ezxml_free(root);
     return 0;
 }
 
@@ -218,7 +252,7 @@ int retrieve_file(const std::string &ip, unsigned short port,
         return -1;
     }
     if (strcasestr(rsp_head.c_str(), "HTTP/1.1 200 Ok") != rsp_head.c_str()) {
-        RPC_INFO("retrieve_file failed, file_id=%s, ip=%s, port=%u",
+        RPC_DEBUG("file not existed, file_id=%s, ip=%s, port=%u",
                 file_id.c_str(), ip.c_str(), port);
         return -2;
     }

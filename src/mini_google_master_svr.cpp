@@ -207,6 +207,24 @@ void mini_google_event::process_report(
         }
     }
     rsp_head = gen_http_head("200 Ok", 0);
+
+    /* transfer report to slaves */
+    svr_insts_list_t svr_list = svr->get_slaves_list();
+    svr_insts_list_t::iterator iter = svr_list.begin();
+
+    for (; iter != svr_list.end(); ++iter) {
+        std::string slave_req_head, slave_req_body(req_body);
+        std::string slave_rsp_head, slave_rsp_body;
+
+        slave_req_head = gen_http_head("/report", iter->first.ip, slave_req_body.size());
+        int ret = http_talk(iter->first.ip, iter->first.port, 
+                slave_req_head, slave_req_body, slave_rsp_head, slave_rsp_body);
+
+        if (ret < 0) {
+            RPC_WARNING("report to slave error, slave_ip=%s, slave_port=%u, file_id=%s", 
+                    iter->first.ip.c_str(), iter->first.port, file_id.c_str());
+        }
+    }
 }
 
 /**

@@ -30,7 +30,7 @@ accept_event::~accept_event() {
  * @param port
  * @param backlog
  *
- * @return 
+ * @return
  */
 int accept_event::bind(unsigned short port, int backlog) {
 

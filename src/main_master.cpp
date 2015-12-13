@@ -101,6 +101,8 @@ int main(int argc, char *argv[]) {
         /* register */
         if (0 != register_to_master(master_ip, master_port, ip, port)) {
             RPC_WARNING("register error");
+        } else {
+            RPC_INFO("register succ");
         }
 
         /* backup master's memory */
@@ -125,6 +127,8 @@ int main(int argc, char *argv[]) {
             if (master_ip && master_port) {
                 if (0 != register_to_master(master_ip, master_port, ip, port)) {
                     RPC_WARNING("register error");
+                } else {
+                    RPC_INFO("register succ");
                 }
             }
 

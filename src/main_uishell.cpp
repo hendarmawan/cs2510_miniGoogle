@@ -187,7 +187,11 @@ static void proc_cmdline(const std::string &ip,
                     if (*ptr == ' ') {
                         query += "%20";
                     } else {
-                        query += *ptr;
+                        if (*ptr >= 'A' && *ptr <= 'Z') {
+                            query += *ptr - 'A' + 'a';
+                        } else {
+                            query += *ptr;
+                        }
                     }
                 }
 
