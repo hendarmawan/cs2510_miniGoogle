@@ -113,4 +113,5 @@ clean:
 	rm -f $(COMMON_LIB)
 	rm -f $(MINI_GOOGLE_MASTER)
 	rm -f $(MINI_GOOGLE_SLAVE)
+	rm -f $(UISHELL)
 	rm -rf output
