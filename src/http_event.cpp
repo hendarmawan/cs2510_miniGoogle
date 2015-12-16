@@ -74,6 +74,7 @@ void http_event::on_read_head() {
 
         this->parse_http_head();
         if (m_body.size() < m_content_len) {
+            RPC_DEBUG("body_size=%u content_len=%u", m_body.size(), m_content_len);
             this->set_state("read_body");
             m_svr->add_io_event(this);
         } else {
@@ -102,7 +103,7 @@ void http_event::on_read_body() {
                 m_fd, errno, m_ip.c_str(), m_port);
         return;
     }
-    //RPC_DEBUG("recv body, fd=%d, read_len=%d", m_fd, len);
+    buf.resize(len);
     m_body.append(buf);
     if (m_body.size() < m_content_len) {
         this->set_state("read_body");

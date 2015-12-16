@@ -182,7 +182,8 @@ int send_ex(int fd, char *buf, int expect_len,
             if (len > 0) { 
                 send_len += len;
             } else {
-                RPC_WARNING("send() error, fd=%d, errno=%d", fd, errno);
+                RPC_WARNING("send() error, fd=%d, errno=%d, msg=%s, sent=%lu, expect=%lu", 
+                        fd, errno, strerror(errno), send_len, expect_len);
                 return -1;
             }
         }

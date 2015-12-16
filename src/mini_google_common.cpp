@@ -137,6 +137,8 @@ int put_task_to_master(const std::string &ip,
     sprintf(head_buf, "POST /put HTTP/1.1\r\nHost: %s\r\nContent-Length: %lu\r\n\r\n", 
             ip.c_str(), file_content.size());
 
+    RPC_INFO("http_talk() to master server, file_size=%lu", file_content.size());
+
     req_head.assign(head_buf);
     int ret = http_talk(ip, port, req_head, file_content, rsp_head, rsp_body);
     if (0 > ret) {
@@ -300,7 +302,7 @@ void split_string(const std::string &str,
  */
 std::string get_file_id(const std::string &file_content) {
     unsigned char md5[16] = { 0 };
-    MD5((const unsigned char*)file_content.c_str(), file_content.length(), md5);
+    MD5((const unsigned char*)file_content.data(), file_content.size(), md5);
 
     std::string file_id;
 
