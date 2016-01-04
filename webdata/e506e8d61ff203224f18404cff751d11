@@ -1,6 +1,0 @@
-For our "extra responsibilities" we were asked to make use of some kind of sound recognition 
-application. We found a tutorial on working with sound, and integrated it into our Microphone class.
-While recording audio, the checkVolume() method checks the audio byte array to see if it breaches
-a set dB level at any point. This allows us to create a back and forth between the Hero's motions, 
-and the Snakeman's curses. Additionally, our program works with ONI files when entered asa command
-line argument

@@ -1,23 +1,0 @@
-<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
-
-<BODY>
-
-<A href="06.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left ></A> 
-<A href="08.htm"><IMG height=26 src="images/next.gif" width=26 align=right ></A> 
-
-<CENTER>
-<H1>&nbsp;</H1>
-<H1>Firing Policies (1) : <FONT color=mediumblue>Three 
-Phase Firing</FONT>      </H1>
-</CENTER>
-
-<UL><UL><UL> <UL><UL><UL>
-  <LI><FONT size=5>Tokens are consumed from input places when the transition is enabled</FONT>
-  <LI><FONT size=5>The delay elapses</FONT></LI>
-  <LI><FONT size=5>Token are generated in output places</FONT></LI>
-</UL></UL></UL></UL></UL></UL>
-
-<CENTER><IMG src="images/fire1.jpg"></CENTER>
-
-</BODY></HTML>
-

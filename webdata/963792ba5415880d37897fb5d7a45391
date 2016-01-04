@@ -1,8 +1,0 @@
-<hr>
-<h1>Statement of Work: Group 1</h1>
-We are going to use the Kinect to emulate the shadow of the Hero and Snakeman
-during their first battle using full body tracking.  The shadow for the 
-Hero will look like a normal human, while the Snakeman's shadow will look 
-snake-like.  We are going to also work on the possibility of using 2 (or 
-more) Kinects at the same time to extend the lateral range of the sensor and 
-allow the actors more flexibility in their movements across the stage.

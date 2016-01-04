@@ -1,34 +1,0 @@
-<title>Multimedia Software Engineering</title>
-<a href="WMBackground.html">  
-<IMG SRC="previous.gif" align=left width="26" height="26"></a><A HREF="previous.html">  
-</A> 
-<a href="IC1.html">  <IMG SRC="next.gif" align=right width="26" height="26"></a><A HREF="next.html">  </A> 
-</head>
-<h1 align="center"><font color="#FF0000"><br>More About My Application</font></h1>
-
-
-<body>
-
-
-<blockquote>  <blockquote>
-  <p align="left" style="margin-bottom: 0; margin-top:0">
-  <b><br>  Name of my application: <font color="#0000FF">S</font></b><font color="#0000FF">apana'sHorocopeIt.com  <br>&nbsp;</font><p align="left" style="margin-bottom: 0; margin-top:0">
-  <b>Description:</b> My <font color="#0000FF">project</font> has to do with   users being able to view their <font color="#0000FF">horoscopes</font> at any   time of the day.&nbsp; A more personalized approach will be offered when the   user has to <font color="#0000FF">register</font> and then log on each time   they go to this web site. The username, password, and <font color="#0000FF">  relevant information</font> regarding the users sun sign will be stored into a  <font color="#0000FF">database</font>. Whenever the user logs in, this   information will be retrieved and the user will automatically be viewed   his/her <font color="#0000FF">daily</font> horoscope. 
-  <p align="left" style="margin-bottom: 0; margin-top:0">
-  &nbsp;<p align="left" style="margin-bottom: 0; margin-top:0">
-  Since email and <font color="#0000FF">cell phones</font> seem to be quite   popular and a very big source of communication <font color="#0000FF">nowadays</font>,   I would also like to extend this service to those <font color="#0000FF">  devices</font>. So using Web Matrix and its features, the user would have the   option of having&nbsp; <font color="#0000FF">emails sent</font> to the user   which contain their daily horoscope. Also, if the user wishes,  <font color="#0000FF">messages</font> can be sent to their mobile device which   contain their daily <font color="#0000FF">horoscope</font> at any time simply by   the   click of a button. 
-  <p align="left" style="margin-bottom: 0; margin-top:0">
-  &nbsp;<p align="left" style="margin-bottom: 0; margin-top:0">
-  <font color="#0000FF">Additional features</font> include being able to view   any additional information regarding the signs and what it says more about   their personality.&nbsp; Also, it is possible to <font color="#0000FF">update   you information</font> at any time, which will be saved immediately to the   database.&nbsp; Additionally, the user can view the horoscopes for other signs   as well simply by clicking on the <font color="#0000FF">different images</font>   in the personal page.<br>  <br>  <b>Location of Web Application:</b><a href="http://sapana.www2.dotnetplayground.com">  http://sapana.www2.dotnetplayground.net</a><ul>      <li>
-  <p align="left" style="line-height: 150%; margin-bottom: 0">Please use  <font color="#0000FF">Internet Explorer </font>(using Netscape may cause some  <font color="#0000FF">minor</font> problems)</li>    </ul>  </blockquote></blockquote>
-
-
-<body>
-
-
-</body>
-
-
-</body>
-
-</html>

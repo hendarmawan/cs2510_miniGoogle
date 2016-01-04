@@ -1,25 +1,0 @@
-<HTML><HEAD><TITLE>CS2310 Project -- By Yuqiang Huang</TITLE></HEAD>
-
-<BODY>
-
-<A href="08.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left></A> 
-<A href="10.htm"><IMG height=26 src="images/next.gif" width=26 align=right></A> 
-
-<CENTER>
-<H1>&nbsp;</H1>
-<H1>Implementation With Java Applet</H1>
-<H1><FONT color=mediumblue>Coding</FONT></H1>
-</CENTER>
-
-<UL><UL><UL> <UL>
-  <LI><FONT size=5>Two files 
-            (Classes) are written and the code is self-explanative;</FONT>
-  <LI><FONT size=5>The first file is 
-			“<A href="./code/TrafficLights.java">TrafficLights.java</A>” 
-			for the interfacing layout (Panels, 
-            Labels, Buttons, Scroll Bar);</FONT>
-  <LI><FONT size=5>The second file is 
-			“<A href="./code/LightController.java">LightController.java”</A>”
-			used to control the timer, 
-            event, and actions.</FONT></LI></UL></UL></UL></UL>
-</BODY></HTML>

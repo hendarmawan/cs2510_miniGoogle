@@ -88,26 +88,26 @@ $(COMMON_LIB): $(COMMON_LIB_OBJS)
 # compiling master server
 $(MINI_GOOGLE_MASTER): $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS)
 ifeq ($(OS),Linux)
-	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_MASTER) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS) -Xlinker "-)"
+	$(CXX) $(CXXFLAGS) -o $(MINI_GOOGLE_MASTER) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS) -Xlinker "-)" -pthread -lcrypto -lssl 
 else
-	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_MASTER) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS)
+	$(CXX) $(CXXFLAGS) -pthread -lcrypto -o $(MINI_GOOGLE_MASTER) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_MASTER_OBJS)
 endif
 	@echo -e "$(cchighlight)successfully compiling $(MINI_GOOGLE_MASTER)$(ccend)"
 
 # compiling slave server
 $(MINI_GOOGLE_SLAVE): $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS)
 ifeq ($(OS),Linux)
-	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_SLAVE) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS) -Xlinker "-)"
+	$(CXX) $(CXXFLAGS) -o $(MINI_GOOGLE_SLAVE) -Xlinker "-(" $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS) -Xlinker "-)" -pthread -lcrypto -lssl
 else
-	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(MINI_GOOGLE_SLAVE) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS)
+	$(CXX) $(CXXFLAGS) -pthread -lcrypto -o $(MINI_GOOGLE_SLAVE) -Xlinker $(COMMON_LIB) $(MINI_GOOGLE_SLAVE_OBJS)
 endif
 	@echo -e "$(cchighlight)successfully compiling $(MINI_GOOGLE_SLAVE)$(ccend)"
 
 $(UISHELL): $(COMMON_LIB) $(UISHELL_OBJS)
 ifeq ($(OS),Linux)
-	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(UISHELL) -Xlinker "-(" $(COMMON_LIB) $(UISHELL_OBJS) -Xlinker "-)"
+	$(CXX) $(CXXFLAGS) -o $(UISHELL) -Xlinker "-(" $(COMMON_LIB) $(UISHELL_OBJS) -Xlinker "-)" -pthread -lcrypto -lssl
 else
-	$(CXX) $(CXXFLAGS) -lpthread -lcrypto -o $(UISHELL) -Xlinker $(COMMON_LIB) $(UISHELL_OBJS)
+	$(CXX) $(CXXFLAGS) -pthread -lcrypto -o $(UISHELL) -Xlinker $(COMMON_LIB) $(UISHELL_OBJS)
 endif
 	@echo -e "$(cchighlight)successfully compiling $(UISHELL)$(ccend)"
 

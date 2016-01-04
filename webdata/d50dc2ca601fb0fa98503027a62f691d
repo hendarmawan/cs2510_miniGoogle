@@ -1,9 +1,0 @@
-Project:
-<p>
-
-For CS2650 term project, I would like to rewrite the prjRemote part of the SIS testbed using Java. prjRemote is an administrator tool for the SIS testbed system. It can load msgs with no limitation and can monitor the whole process of Msg routing. Current version of the prjRemote is an .exe executable, which makes the SIS testbed system run under only Windows platform. If the prjRemote can be rewritten in Java, the SIS testbed system should work platform independently. Also I would like to make some improvements upon it. First, the Java version of the prjRemote will include messenger within it, thus if we want to load a batch of msgs, we don't need to start a messenger component separately. Second, I would like to modify the way we edit msgs, I would like to remove the "Add Key","Delete Key"... buttons. Instead, users can edit on the msg pane directly. Third, I would like to add an option for the refresh rate of the right pane(Msgs received by the SISServer).
-
-<p>
-
-Comment:
-Make sure the new version is upward-compatible with the old version.

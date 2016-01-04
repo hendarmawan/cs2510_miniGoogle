@@ -1,25 +1,0 @@
-<HTML><HEAD><TITLE>CS2310 Seminar -- By Yuqiang Huang</TITLE></HEAD>
-
-<BODY>
-
-<A href="19.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left></A> 
-<A href="21.htm"><IMG height=26 src="images/next.gif" width=26 align=right></A> 
-
-<CENTER>
-<H1>&nbsp;</H1>
-<H1>Conclusion</H1>
-</CENTER>
-
-<UL><UL><UL> <UL><UL><UL>
-  <LI><FONT size=5>Petri Nets 
-            have been extended over the years in many directions<BR>
-            including time, color, data, and hierarchy, etc.</FONT>
-  <BR>
-  <LI><FONT size=5>With more 
-            applications in the explored areas, more powerful<BR>
-            features should be added to Petr Nets; and more types of Petri<BR>        
-           Nets and more Design Tools will appear in the futre.</FONT>
-  </LI>
-</UL></UL></UL></UL></UL></UL>
-
-</BODY></HTML>

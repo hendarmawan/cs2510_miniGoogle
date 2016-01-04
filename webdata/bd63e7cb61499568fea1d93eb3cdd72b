@@ -1,6 +1,0 @@
-<hr>
-<h1>STATEMENT OF WORK</h1>
-<h2>Bradlee Krupa and Chaitanya Sathi</h2>
-<h3>Group 2</h3>
-
-	For our semester project for CS1635, we plan to design a system for tracking the motion of a thrown object.  The object will be thrown from real-space and be translated into virtual space while maintaining trajectory and speed.  The motion tracking will be done with the Kinect software.

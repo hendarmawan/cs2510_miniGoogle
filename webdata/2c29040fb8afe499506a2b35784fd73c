@@ -1,7 +1,0 @@
-James Weaver
-Bryan Metzger
-Group 1
-CS 1635
-Extra
-
-For the extra component of the Kinect project, we created the Machine Interface.  This file contains the reusable function calls for each group based on the integration diagram.  This allows each group's code to be called from a single main program.

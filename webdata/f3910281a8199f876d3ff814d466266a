@@ -1,24 +1,0 @@
-<HTML><HEAD><TITLE>CS2310 Project -- By Yuqiang Huang</TITLE></HEAD>
-
-<BODY>
-
-<A href="09.htm" ><IMG height=26 src="images/previous.gif" width=26 align=left></A> 
-<A href="11.htm"><IMG height=26 src="images/next.gif" width=26 align=right></A> 
-
-<CENTER>
-<H1>&nbsp;</H1>
-<H1>Conclusion</H1>
-</CENTER>
-
-<UL><UL><UL> <UL>
-  <LI><FONT size=5>Petri 
-        Net is a powerful tool for the software design area, as advanced 
-        features such as time, color, and hierarchical concept are added.
-	  </FONT><BR><BR>
-  <LI><FONT size=5>This project really <FONT color=mediumblue>could be put 
-        into realities</FONT> to generate the real traffic light systems, as we 
-        could add more constraints such more lanes in each direction and add 
-        pedestrian lights, and left turn lights, 
-etc.</FONT></LI></UL></UL></UL></UL>
-
-</BODY></HTML>
