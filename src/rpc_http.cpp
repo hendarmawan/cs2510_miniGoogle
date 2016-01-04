@@ -78,7 +78,6 @@ int http_send(int fd, const std::string &head,
         const std::string &body, int send_timeout_ms) {
 
     std::string data = head + body;
-    RPC_WARNING("\nlen %lu", data.size());
     int ret = send_ex(fd, (char*)data.data(), data.size(), 
             0, send_timeout_ms);
     if (ret < 0) {
@@ -191,7 +190,6 @@ int http_talk(const std::string &ip, unsigned short port,
     }
 
     /* send data to the remote server */
-    RPC_INFO("%s", req_head.c_str());
     int ret = http_send(fd, req_head, req_body, send_timeout_ms);
     if (ret < 0) {
         RPC_WARNING("http_send() error, fd=%d", fd);
